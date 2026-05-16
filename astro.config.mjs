@@ -3,9 +3,9 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // Used for canonical URLs, Open Graph tags and the sitemap.
-  // UPDATE this to the production URL after the Vercel deploy (Phase 7).
-  site: 'https://japan-finds.vercel.app',
+  // Production canonical URL — used for canonical tags, Open Graph, sitemap.
+  // The site is served from the `japan` subdomain (apex is a separate hub).
+  site: 'https://japan.allstarsteven.com',
   // Inline all CSS into the page — removes render-blocking stylesheet requests.
   build: { inlineStylesheets: 'always' },
 });
