@@ -1,0 +1,192 @@
+---
+/* §02 The Map — headline + faux map preview card + filter chips + CTA.
+   Mobile: text, then map card, then chips, then CTA.
+   Desktop: 2-col — text/chips/CTA left, map card right. */
+import Eyebrow from "./Eyebrow.astro";
+import MapPreview from "./MapPreview.astro";
+---
+
+<section id="map" class="map-sec" aria-labelledby="map-h2">
+  <div class="map-sec__inner">
+    <div class="map-sec__text">
+      <Eyebrow n={2} title="THE MAP" after="OPENS IN GOOGLE MAPS" />
+      <h2 id="map-h2" class="map-sec__h2">
+        A Japan map you'll<br />
+        <span class="hl">actually use.</span>
+      </h2>
+      <p class="map-sec__body">
+        Built for your first Japan trip. Food, shopping, rainy-day, and useful
+        saves — not every place from every video. Just the ones worth pinning.
+      </p>
+      <ul class="map-sec__chips">
+        <li class="chip chip--red">● FOOD</li>
+        <li class="chip chip--blue">● SHOPS</li>
+        <li class="chip chip--green">● RAINY DAY</li>
+        <li class="chip chip--yellow">● WEIRDLY USEFUL</li>
+      </ul>
+      <div class="map-sec__cta-block">
+        <a class="btn btn--primary btn--lg btn--responsive" href="#map">
+          Get the Japan Map&nbsp;→
+        </a>
+        <p class="map-sec__micro">
+          OPENS IN GOOGLE MAPS · NO COPY-PASTING ADDRESSES LIKE A MANIAC
+        </p>
+      </div>
+    </div>
+
+    <div class="map-sec__card">
+      <div class="map-sec__strip">
+        <span class="map-sec__dot" aria-hidden="true"></span>
+        JAPAN-FINDS-MAP / UPDATED REGULARLY
+      </div>
+      <div class="map-sec__figure">
+        <MapPreview />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .map-sec {
+    padding: 34px 0 30px;
+  }
+  .map-sec__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--gutter-mobile);
+  }
+  .map-sec__text {
+    display: contents;
+  }
+
+  .map-sec__h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+  .hl {
+    display: inline-block;
+    background: var(--color-tokyo-red);
+    color: #fff;
+    padding: 0 8px;
+    box-shadow: var(--shadow-sm);
+    transform: rotate(-1deg);
+  }
+
+  .map-sec__body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .map-sec__chips {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .map-sec__cta-block {
+    order: 1;
+    margin-top: 20px;
+  }
+  .map-sec__micro {
+    margin-top: 10px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+    text-align: center;
+  }
+
+  /* Map card */
+  .map-sec__card {
+    background: #fff;
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    margin-top: 18px;
+  }
+  .map-sec__strip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-bottom: var(--border-ink);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+  .map-sec__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-tokyo-red);
+    flex-shrink: 0;
+  }
+  .map-sec__figure {
+    height: 220px;
+  }
+
+  @media (min-width: 1024px) {
+    .map-sec {
+      padding: 72px 0;
+    }
+    .map-sec__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter-desktop);
+    }
+    .map-sec__text {
+      display: block;
+    }
+    .map-sec__h2 {
+      margin-bottom: 18px;
+      font-size: 54px;
+      line-height: 1;
+      letter-spacing: -0.025em;
+    }
+    .hl {
+      padding: 0 10px;
+      box-shadow: var(--shadow-md);
+    }
+    .map-sec__body {
+      margin-bottom: 22px;
+      font-size: 16px;
+      line-height: 1.55;
+      max-width: 520px;
+    }
+    .map-sec__chips {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+    .map-sec__cta-block {
+      margin-top: 0;
+    }
+    .map-sec__micro {
+      margin-top: 14px;
+      font-size: 11px;
+      text-align: left;
+    }
+    .map-sec__card {
+      margin-top: 0;
+    }
+    .map-sec__strip {
+      padding: 10px 14px;
+      font-size: 11px;
+    }
+    .map-sec__dot {
+      width: 9px;
+      height: 9px;
+    }
+    .map-sec__figure {
+      height: 420px;
+    }
+  }
+</style>

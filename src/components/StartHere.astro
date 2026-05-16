@@ -1,0 +1,215 @@
+---
+/* §01 Start Here — four resource cards, each with a category color stripe. */
+import Eyebrow from "./Eyebrow.astro";
+
+const cards = [
+  {
+    sec: 1,
+    stripe: "var(--color-tokyo-red)",
+    chipClass: "chip--red",
+    label: "MAP",
+    title: "The Japan Map",
+    body: "Food spots, shops, rainy-day saves, and weirdly useful places worth pinning before you land.",
+    micro: 'For when "I saw it in a Reel once" is not a travel plan.',
+    cta: "Get the map",
+    href: "#map",
+  },
+  {
+    sec: 2,
+    stripe: "var(--color-egg-yellow)",
+    chipClass: "chip--yellow",
+    label: "SHOPPING",
+    title: "Shopping Lists",
+    body: "Konbini foods, Donki finds, drugstore basics, snacks, skincare, and oddly useful products.",
+    micro: "For when you walk into Donki and immediately lose your sense of self.",
+    cta: "Browse the lists",
+    href: "#shopping",
+  },
+  {
+    sec: 3,
+    stripe: "var(--color-matcha-green)",
+    chipClass: "chip--green",
+    label: "CHEAT SHEETS",
+    title: "Travel Cheat Sheets",
+    body: "Suica, eSIMs, luggage forwarding, airport arrival, JR Pass basics, and first-trip friction killers.",
+    micro: "Tiny panic reducers for your first 24 hours.",
+    cta: "Open cheat sheets",
+    href: "#cheat-sheets",
+  },
+  {
+    sec: 4,
+    stripe: "var(--color-konbini-blue)",
+    chipClass: "chip--blue",
+    label: "SHOP",
+    title: "Shop Waitlist",
+    body: "A future shop for Japanese snacks, tools, travel items, design finds, and weirdly useful things people keep asking about.",
+    micro: "Some of it is genius. Some of it is ridiculous. That's usually the sweet spot.",
+    cta: "Join the waitlist",
+    href: "#shop",
+  },
+];
+---
+
+<section id="start-here" class="start" aria-labelledby="start-h2">
+  <div class="start__inner">
+    <Eyebrow n={1} title="START HERE" after="FOUR USEFUL THINGS" />
+    <h2 id="start-h2" class="start__h2">Start here.</h2>
+
+    <div class="rc-grid">
+      {
+        cards.map((c) => (
+          <article class="rc" style={`--stripe:${c.stripe}`}>
+            <div class="rc__stripe" aria-hidden="true" />
+            <div class="rc__body">
+              <div class="rc__head">
+                <span class:list={["chip", c.chipClass]}>{c.label}</span>
+                <span class="rc__sec">§0{c.sec}</span>
+              </div>
+              <h3 class="rc__title">{c.title}</h3>
+              <p class="rc__copy">{c.body}</p>
+              <p class="rc__micro">{c.micro}</p>
+              <a class="rc__cta" href={c.href}>{c.cta} →</a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .start {
+    padding: 26px 0 36px;
+    background: var(--color-rice-tint);
+    border-top: var(--border-ink);
+    border-bottom: var(--border-ink);
+  }
+  .start__inner {
+    padding: 0 var(--gutter-mobile);
+  }
+  .start__h2 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+
+  .rc-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .rc {
+    display: flex;
+    background: #fff;
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+  .rc__stripe {
+    width: 8px;
+    flex-shrink: 0;
+    background: var(--stripe);
+  }
+  .rc__body {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .rc__head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .rc__sec {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-ink-60);
+  }
+  .rc__title {
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .rc__copy {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .rc__micro {
+    margin-bottom: 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--color-ink-60);
+  }
+  .rc__cta {
+    align-self: flex-start;
+    background: var(--color-ink-black);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 120ms ease-out;
+  }
+  .rc__cta:hover {
+    background: #000;
+  }
+
+  @media (min-width: 1024px) {
+    .start {
+      padding: 56px 0 64px;
+    }
+    .start__inner {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter-desktop);
+    }
+    .start__h2 {
+      margin-bottom: 36px;
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -0.025em;
+    }
+    .rc-grid {
+      flex-direction: row;
+    }
+    .rc {
+      flex: 1;
+      min-width: 0;
+      height: 380px;
+    }
+    .rc__stripe {
+      width: 10px;
+    }
+    .rc__body {
+      padding: 18px;
+    }
+    .rc__head {
+      margin-bottom: 14px;
+    }
+    .rc__title {
+      margin-bottom: 8px;
+    }
+    .rc__copy {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .rc__micro {
+      margin-bottom: 18px;
+    }
+    .rc__cta {
+      margin-top: auto;
+    }
+  }
+</style>

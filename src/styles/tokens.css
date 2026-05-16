@@ -1,0 +1,55 @@
+/* Japan Finds — design tokens
+   Palette and type families are canonical per BUILD_SPEC.md.
+   Ink tints, radii, shadows, borders per HANDOFF.md §2. */
+
+:root {
+  /* Palette — locked (BUILD_SPEC.md) */
+  --color-rice-white: #f7f3ea;
+  --color-ink-black: #151515;
+  --color-tokyo-red: #ff3b30;
+  --color-konbini-blue: #176bff;
+  --color-matcha-green: #4d8b57;
+  --color-egg-yellow: #ffd84d;
+  --color-concrete-gray: #e6e1d8;
+
+  /* Ink tints — HANDOFF §2.1 (8-digit hex = ink-black + alpha) */
+  --color-ink-60: #1515159e; /* secondary text: captions, microcopy, support */
+  --color-ink-30: #1515154d; /* dashed row dividers, trust-strip border */
+  --color-ink-15: #15151526; /* hairline dividers */
+  --color-hair: #1515151a;   /* section hairlines */
+
+  /* Surfaces */
+  --color-white: #ffffff;
+  --color-rice-tint: #f1ecdd; /* §01 Start Here background — HANDOFF §2.1 */
+
+  /* Hover-state derivations — HANDOFF §6 */
+  --color-tokyo-red-dark: #e5342b; /* primary button hover */
+
+  /* Type — locked families (BUILD_SPEC.md) */
+  --font-head: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Radius — HANDOFF §2.4 */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-card: 10px;
+  --radius-pill: 999px;
+
+  /* Chunky offset shadows — HANDOFF §2.4 / D10 scale */
+  --shadow-sm: 2px 2px 0 var(--color-ink-black); /* buttons */
+  --shadow-md: 3px 3px 0 var(--color-ink-black); /* cards, stickers, receipts */
+  --shadow-lg: 4px 4px 0 var(--color-ink-black); /* large highlighter spans */
+
+  /* Borders — HANDOFF §2.4 */
+  --border-ink: 1.5px solid var(--color-ink-black);
+  --border-dash: 1.5px dashed var(--color-ink-black);
+  --border-row: 1px dashed var(--color-ink-30);
+  --border-hair: 1px solid var(--color-hair);
+
+  /* Layout */
+  --content-max: 1280px;   /* desktop content max-width */
+  --gutter-mobile: 20px;
+  --gutter-desktop: 80px;
+}

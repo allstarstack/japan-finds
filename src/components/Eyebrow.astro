@@ -1,0 +1,67 @@
+---
+/* Section eyebrow — "§0N · TITLE" with a short rule and optional after-tag.
+   Horizontal padding is owned by the section's content wrapper. */
+interface Props {
+  n: number;
+  title: string;
+  after?: string;
+}
+const { n, title, after } = Astro.props;
+---
+
+<div class="eyebrow">
+  <span class="eyebrow__num">§0{n}</span>
+  <span class="eyebrow__rule" aria-hidden="true"></span>
+  <span class="eyebrow__title">{title}</span>
+  {after && <span class="eyebrow__after">{after}</span>}
+</div>
+
+<style>
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-family: var(--font-mono);
+  }
+  .eyebrow__num,
+  .eyebrow__title {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .eyebrow__num {
+    letter-spacing: 0.14em;
+  }
+  .eyebrow__title {
+    letter-spacing: 0.16em;
+  }
+  .eyebrow__rule {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 1px;
+    background: var(--color-ink-black);
+  }
+  .eyebrow__after {
+    margin-left: auto;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-60);
+  }
+  @media (min-width: 1024px) {
+    .eyebrow {
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .eyebrow__num,
+    .eyebrow__title {
+      font-size: 12px;
+    }
+    .eyebrow__rule {
+      width: 22px;
+    }
+    .eyebrow__after {
+      margin-left: 14px;
+      font-size: 11px;
+    }
+  }
+</style>

@@ -1,0 +1,41 @@
+---
+/* <picture> helper — WebP with JPG fallback, explicit intrinsic dimensions
+   to prevent CLS. Looks the slot up in the build-time image manifest. */
+import images from "../data/images.json";
+
+interface Props {
+  name: keyof typeof images;
+  alt: string;
+  loading?: "lazy" | "eager";
+  class?: string;
+}
+const { name, alt, loading = "lazy", class: className } = Astro.props;
+const img = images[name];
+if (!img) throw new Error(`Picture: unknown image "${String(name)}"`);
+---
+
+<picture class:list={["pic", className]}>
+  <source srcset={img.webp} type="image/webp" />
+  <img
+    src={img.jpg}
+    alt={alt}
+    width={img.w}
+    height={img.h}
+    loading={loading}
+    decoding="async"
+  />
+</picture>
+
+<style>
+  .pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .pic img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

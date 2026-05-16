@@ -1,0 +1,252 @@
+---
+/* Hero — calm headline, two CTAs, trust strip.
+   Desktop adds a saved-finds preview cluster (4 offset cards). */
+import Picture from "./Picture.astro";
+
+const previews = [
+  {
+    name: "hero-preview-1-egg-sando" as const,
+    alt: "Egg sando from a Lawson konbini",
+    photo: 150,
+    chip: "SHOPPING",
+    chipClass: "chip--yellow",
+    meta: "¥285",
+    pos: "left:24px;top:0;width:240px",
+    rot: -2,
+  },
+  {
+    name: "hero-preview-2-soba-shop" as const,
+    alt: "Tiny standing soba shop in Shimokitazawa",
+    photo: 180,
+    chip: "FOOD",
+    chipClass: "chip--red",
+    meta: "WORTH IT",
+    pos: "right:0;top:30px;width:260px",
+    rot: 2,
+  },
+  {
+    name: "hero-preview-3-rainy-mall" as const,
+    alt: "Rainy-day mall stop in Marunouchi",
+    photo: 140,
+    chip: "RAINY DAY",
+    chipClass: "chip--green",
+    meta: "MARUNOUCHI",
+    pos: "left:0;top:240px;width:280px",
+    rot: -1,
+  },
+  {
+    name: "hero-preview-4-donki-haul" as const,
+    alt: "100-yen haul from Donki in Umeda",
+    photo: 150,
+    chip: "WEIRDLY USEFUL",
+    chipClass: "chip--blue",
+    meta: "UMEDA",
+    pos: "right:30px;top:300px;width:220px",
+    rot: 3,
+  },
+];
+---
+
+<section class="hero" aria-labelledby="hero-h1">
+  <div class="hero__inner">
+    <div class="hero__main">
+      <p class="hero__eyebrow">
+        <span class="hero__dot" aria-hidden="true"></span>
+        JAPAN MAPS · LISTS · TRAVEL SHORTCUTS
+      </p>
+      <h1 id="hero-h1" class="hero__h1">
+        Japan finds<br />worth saving<br />
+        <span class="hero__h1-dim">before your trip.</span>
+      </h1>
+      <p class="hero__subhead">
+        Maps, food picks, shopping cheat sheets, and travel shortcuts from the
+        weirdly useful side of Japan.
+      </p>
+      <p class="hero__support">
+        For people who saved way too many Japan videos and still don't know
+        what's worth pinning, buying, or skipping.
+      </p>
+      <div class="hero__ctas">
+        <a class="btn btn--primary btn--lg btn--responsive" href="#map">
+          Get the Japan Map&nbsp;→
+        </a>
+        <a class="btn btn--secondary btn--lg btn--responsive" href="#shopping">
+          Browse Shopping Lists
+        </a>
+      </div>
+      <ul class="hero__trust">
+        <li>● UPDATED REGULARLY</li>
+        <li>● ONE EMAIL · INSTANT MAP LINK</li>
+        <li class="hero__trust-free">FREE</li>
+      </ul>
+    </div>
+
+    <div class="hero__preview">
+      {
+        previews.map((p) => (
+          <div class="hp-card" style={`${p.pos};transform:rotate(${p.rot}deg)`}>
+            <div class="hp-card__photo" style={`height:${p.photo}px`}>
+              <Picture name={p.name} alt={p.alt} />
+            </div>
+            <div class="hp-card__row">
+              <span class:list={["chip", p.chipClass]}>{p.chip}</span>
+              <span class="hp-card__meta">{p.meta}</span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+  .hero__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-tokyo-red);
+    flex-shrink: 0;
+  }
+
+  .hero__h1 {
+    margin: 0 0 18px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+  }
+  .hero__h1-dim {
+    color: var(--color-ink-60);
+  }
+
+  .hero__subhead {
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .hero__support {
+    margin-bottom: 24px;
+    font-size: 13px;
+    line-height: 1.55;
+    color: var(--color-ink-60);
+  }
+
+  .hero__ctas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero__trust {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: var(--border-row);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--color-ink-60);
+  }
+  .hero__trust-free {
+    margin-left: auto;
+  }
+
+  /* Saved-finds preview — desktop only */
+  .hero__preview {
+    display: none;
+  }
+  .hp-card {
+    position: absolute;
+    background: #fff;
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    padding: 8px;
+  }
+  .hp-card__photo {
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+  .hp-card__row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 4px 4px;
+  }
+  .hp-card__meta {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--color-ink-60);
+  }
+
+  @media (min-width: 1024px) {
+    .hero {
+      padding: 72px 0 80px;
+    }
+    .hero__inner {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter-desktop);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.92fr);
+      gap: 80px;
+      align-items: center;
+    }
+    .hero__eyebrow {
+      gap: 10px;
+      margin-bottom: 24px;
+      font-size: 11px;
+    }
+    .hero__dot {
+      width: 9px;
+      height: 9px;
+    }
+    .hero__h1 {
+      margin-bottom: 28px;
+      font-size: 84px;
+      line-height: 0.96;
+      letter-spacing: -0.035em;
+    }
+    .hero__subhead {
+      margin-bottom: 16px;
+      font-size: 19px;
+      max-width: 560px;
+    }
+    .hero__support {
+      margin-bottom: 32px;
+      font-size: 15px;
+      max-width: 540px;
+    }
+    .hero__ctas {
+      flex-direction: row;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .hero__trust {
+      margin-top: 0;
+      gap: 18px;
+      font-size: 11px;
+    }
+    .hero__preview {
+      display: block;
+      position: relative;
+      height: 560px;
+    }
+  }
+</style>

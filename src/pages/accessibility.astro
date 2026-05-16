@@ -1,0 +1,164 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<Base
+  title="Accessibility — Japan Finds"
+  description="How Japan Finds approaches accessibility: our WCAG 2.1 AA target, what we test, known issues, and how to report a barrier."
+>
+  <Header />
+  <main id="main" class="page">
+    <article class="prose">
+      <p class="eyebrow">ACCESSIBILITY STATEMENT</p>
+      <h1>Accessibility</h1>
+
+      <p class="lead">
+        Japan Finds should work the same whether you're on a trackpad, a
+        keyboard, a screen reader, or a phone clinging to one bar of signal in a
+        basement konbini. This is the honest version: what we build to, what we
+        check, and what's still on the list.
+      </p>
+
+      <h2>What we build to</h2>
+      <p>
+        We target <strong>WCAG 2.1 Level AA</strong>. In plain terms: every
+        control reachable by keyboard, a focus outline you can actually see,
+        text that survives being zoomed, form fields that announce themselves,
+        and motion that backs off when your device asks it to.
+      </p>
+
+      <h2>What we check</h2>
+      <ul class="checks">
+        <li>Semantic structure — real headings, landmarks, and lists.</li>
+        <li>Keyboard access, with a visible focus state on every link, button, and field.</li>
+        <li>Form fields with names that get read aloud.</li>
+        <li>Reduced-motion support for anyone whose system requests it.</li>
+        <li>Color contrast measured against AA thresholds.</li>
+      </ul>
+      <p>
+        This site was last audited on <strong>16 May 2026</strong>, using
+        automated tooling (axe) plus a manual keyboard and screen-reader pass.
+      </p>
+
+      <h2>Known issues</h2>
+      <p>We'd rather tell you than let you find out:</p>
+      <div class="callout">
+        <ul>
+          <li>
+            <strong>Contrast on red and green labels.</strong> The red
+            call-to-action buttons and the red and green category chips set
+            white text on a saturated brand color — about 3.5:1. That clears AA
+            for large text and interface elements, but sits under the 4.5:1 line
+            for small text. The palette is locked for this release; a darker red
+            or ink-black labels are on the table for the next pass. Text stays
+            readable at the sizes we ship.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Found something we didn't?</h2>
+      <p>
+        Audits help, but you'll catch things a tool never will. Email
+        <a href="mailto:welfmgmt@gmail.com">welfmgmt@gmail.com</a> with the page,
+        your browser, and what got in your way. We read every one — and "this
+        was annoying" is a completely valid bug report.
+      </p>
+    </article>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .page {
+    padding: 40px 20px 56px;
+  }
+  .prose {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    color: var(--color-ink-60);
+    margin-bottom: 12px;
+  }
+
+  .prose h1 {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+  }
+  .prose h2 {
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-top: 36px;
+    margin-bottom: 10px;
+  }
+  .prose p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .lead {
+    font-size: 18px;
+  }
+  .prose a {
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .checks {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .checks li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .checks li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 10px;
+    height: 1px;
+    background: var(--color-ink-black);
+  }
+
+  .callout {
+    background: #fff;
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    padding: 18px 18px 18px 20px;
+    margin-bottom: 14px;
+  }
+  .callout li {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  @media (min-width: 1024px) {
+    .page {
+      padding: 72px 20px 88px;
+    }
+    .prose h1 {
+      font-size: 56px;
+    }
+    .prose h2 {
+      font-size: 26px;
+    }
+  }
+</style>

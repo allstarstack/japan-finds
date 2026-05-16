@@ -1,0 +1,116 @@
+---
+/* Faux map preview — original CSS/SVG illustration, no real city, no
+   copyrighted map UI. Placeholder for a future My Maps export (HANDOFF §5).
+   8 pins on mobile; a 9th is added at the desktop breakpoint. */
+const pins = [
+  { x: 18, y: 30, color: "var(--color-tokyo-red)" },
+  { x: 32, y: 55, color: "var(--color-tokyo-red)" },
+  { x: 58, y: 45, color: "var(--color-konbini-blue)" },
+  { x: 72, y: 62, color: "var(--color-matcha-green)" },
+  { x: 48, y: 75, color: "var(--color-egg-yellow)" },
+  { x: 82, y: 30, color: "var(--color-tokyo-red)" },
+  { x: 25, y: 78, color: "var(--color-konbini-blue)" },
+  { x: 65, y: 22, color: "var(--color-matcha-green)" },
+  { x: 46, y: 34, color: "var(--color-tokyo-red)", desktopOnly: true },
+];
+---
+
+<div class="map">
+  <svg
+    class="map__art"
+    viewBox="0 0 390 400"
+    preserveAspectRatio="xMidYMid slice"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path d="M -10 320 C 60 300, 120 360, 200 340 S 360 300, 420 330 L 420 420 L -10 420 Z" fill="#cfd9d4"></path>
+    <path d="M 280 -10 C 300 40, 260 80, 300 130 L 420 130 L 420 -20 Z" fill="#cfd9d4" opacity="0.6"></path>
+    <ellipse cx="80" cy="120" rx="40" ry="28" fill="#c9d3c3" opacity="0.6"></ellipse>
+    <ellipse cx="310" cy="220" rx="30" ry="22" fill="#c9d3c3" opacity="0.55"></ellipse>
+    <g stroke="#fff" stroke-width="14" fill="none" stroke-linecap="round" opacity="0.85">
+      <path d="M -10 80 L 410 100"></path>
+      <path d="M -10 200 L 410 220"></path>
+      <path d="M -10 280 L 410 280"></path>
+      <path d="M 60 -10 L 80 410"></path>
+      <path d="M 200 -10 L 210 410"></path>
+      <path d="M 330 -10 L 330 410"></path>
+    </g>
+    <g stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M -10 50 L 410 60"></path>
+      <path d="M -10 150 L 410 160"></path>
+      <path d="M -10 350 L 410 360"></path>
+      <path d="M 140 -10 L 150 410"></path>
+      <path d="M 270 -10 L 280 410"></path>
+    </g>
+    <g stroke="#d9d2bf" stroke-width="1.5" fill="none" opacity="0.7">
+      <path d="M -10 110 L 410 120"></path>
+      <path d="M -10 175 L 410 180"></path>
+      <path d="M -10 240 L 410 250"></path>
+      <path d="M -10 310 L 410 315"></path>
+      <path d="M 100 -10 L 110 410"></path>
+      <path d="M 170 -10 L 180 410"></path>
+      <path d="M 240 -10 L 250 410"></path>
+      <path d="M 360 -10 L 365 410"></path>
+    </g>
+    <path d="M 30 -10 C 60 80, 20 160, 90 240 S 130 360, 180 410" stroke="#cfd9d4" stroke-width="10" fill="none" opacity="0.9"></path>
+  </svg>
+
+  <span class="map__label" style="left:18%;top:22%">SHIMOKITA-ISH</span>
+  <span class="map__label" style="left:58%;top:46%">EBISU-ISH</span>
+  <span class="map__label" style="left:30%;top:72%">RIVER</span>
+
+  {
+    pins.map((p) => (
+      <span
+        class:list={["map__pin", { "map__pin--desktop": p.desktopOnly }]}
+        style={`left:${p.x}%;top:${p.y}%`}
+      >
+        <span class="map__teardrop" style={`background:${p.color}`} />
+      </span>
+    ))
+  }
+</div>
+
+<style>
+  .map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #efe9d8;
+  }
+  .map__art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .map__label {
+    position: absolute;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .map__pin {
+    position: absolute;
+    transform: translate(-50%, -100%);
+  }
+  .map__teardrop {
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  }
+  .map__pin--desktop {
+    display: none;
+  }
+  @media (min-width: 1024px) {
+    .map__pin--desktop {
+      display: block;
+    }
+  }
+</style>

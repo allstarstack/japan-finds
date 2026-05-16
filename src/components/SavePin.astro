@@ -1,0 +1,67 @@
+---
+/* Save Pin brand mark — map-pin teardrop, ink outline, red center dot,
+   optional yellow sparkle accent NE. Geometry verbatim from the comp.
+   Size: pass `size`, or let a parent set `--save-pin-size` (responsive). */
+interface Props {
+  size?: number;
+  withSparkle?: boolean;
+  class?: string;
+}
+const { size, withSparkle = true, class: className } = Astro.props;
+const sizeStyle = size != null ? `--save-pin-size:${size}px` : undefined;
+---
+
+<span class:list={["save-pin", className]} style={sizeStyle}>
+  <svg class="save-pin__mark" viewBox="0 0 100 112" aria-hidden="true" focusable="false">
+    <path
+      d="M50 8 C72 8 90 26 90 48 C90 76 60 104 50 110 C40 104 10 76 10 48 C10 26 28 8 50 8 Z"
+      fill="#F7F3EA"
+      stroke="#151515"
+      stroke-width="7"
+      stroke-linejoin="round"
+    ></path>
+    <circle cx="50" cy="46" r="14" fill="#FF3B30" stroke="#151515" stroke-width="3"></circle>
+  </svg>
+  {
+    withSparkle && (
+      <svg
+        class="save-pin__sparkle"
+        viewBox="-12 -12 24 24"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M 0 -10 L 2.4 -2.4 L 10 0 L 2.4 2.4 L 0 10 L -2.4 2.4 L -10 0 L -2.4 -2.4 Z"
+          fill="#FFD84D"
+          stroke="#151515"
+          stroke-width="1.8"
+          stroke-linejoin="round"
+        />
+      </svg>
+    )
+  }
+</span>
+
+<style>
+  .save-pin {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    width: var(--save-pin-size, 36px);
+    height: var(--save-pin-size, 36px);
+  }
+  .save-pin__mark {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+  .save-pin__sparkle {
+    position: absolute;
+    width: 38%;
+    height: 38%;
+    right: -12%;
+    top: -6%;
+    overflow: visible;
+  }
+</style>

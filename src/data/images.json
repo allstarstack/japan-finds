@@ -1,0 +1,86 @@
+{
+  "hero-preview-1-egg-sando": {
+    "jpg": "/images/hero-preview-1-egg-sando.jpg",
+    "webp": "/images/hero-preview-1-egg-sando.webp",
+    "w": 640,
+    "h": 400
+  },
+  "hero-preview-2-soba-shop": {
+    "jpg": "/images/hero-preview-2-soba-shop.jpg",
+    "webp": "/images/hero-preview-2-soba-shop.webp",
+    "w": 640,
+    "h": 400
+  },
+  "hero-preview-3-rainy-mall": {
+    "jpg": "/images/hero-preview-3-rainy-mall.jpg",
+    "webp": "/images/hero-preview-3-rainy-mall.webp",
+    "w": 640,
+    "h": 400
+  },
+  "hero-preview-4-donki-haul": {
+    "jpg": "/images/hero-preview-4-donki-haul.jpg",
+    "webp": "/images/hero-preview-4-donki-haul.webp",
+    "w": 640,
+    "h": 400
+  },
+  "list-cover-1-konbini": {
+    "jpg": "/images/list-cover-1-konbini.jpg",
+    "webp": "/images/list-cover-1-konbini.webp",
+    "w": 800,
+    "h": 500
+  },
+  "list-cover-2-donki": {
+    "jpg": "/images/list-cover-2-donki.jpg",
+    "webp": "/images/list-cover-2-donki.webp",
+    "w": 800,
+    "h": 500
+  },
+  "list-cover-3-drugstore": {
+    "jpg": "/images/list-cover-3-drugstore.jpg",
+    "webp": "/images/list-cover-3-drugstore.webp",
+    "w": 800,
+    "h": 500
+  },
+  "partner-reel-1-donki": {
+    "jpg": "/images/partner-reel-1-donki.jpg",
+    "webp": "/images/partner-reel-1-donki.webp",
+    "w": 620,
+    "h": 1102
+  },
+  "partner-reel-2-ramen": {
+    "jpg": "/images/partner-reel-2-ramen.jpg",
+    "webp": "/images/partner-reel-2-ramen.webp",
+    "w": 620,
+    "h": 1102
+  },
+  "receipt-1-egg-sando": {
+    "jpg": "/images/receipt-1-egg-sando.jpg",
+    "webp": "/images/receipt-1-egg-sando.webp",
+    "w": 200,
+    "h": 200
+  },
+  "receipt-2-tamago-onigiri": {
+    "jpg": "/images/receipt-2-tamago-onigiri.jpg",
+    "webp": "/images/receipt-2-tamago-onigiri.webp",
+    "w": 200,
+    "h": 200
+  },
+  "receipt-3-cafe-au-lait": {
+    "jpg": "/images/receipt-3-cafe-au-lait.jpg",
+    "webp": "/images/receipt-3-cafe-au-lait.webp",
+    "w": 200,
+    "h": 200
+  },
+  "receipt-4-frozen-mikan": {
+    "jpg": "/images/receipt-4-frozen-mikan.jpg",
+    "webp": "/images/receipt-4-frozen-mikan.webp",
+    "w": 200,
+    "h": 200
+  },
+  "receipt-5-plastic-salad": {
+    "jpg": "/images/receipt-5-plastic-salad.jpg",
+    "webp": "/images/receipt-5-plastic-salad.webp",
+    "w": 200,
+    "h": 200
+  }
+}

@@ -1,0 +1,185 @@
+---
+/* Site footer — wordmark, in-page nav columns, social, sign-off.
+   Mobile: brand, 2-col link grid, social, stacked sign-off.
+   Desktop: 4-col (brand · SITE · MORE · FOLLOW) + inline sign-off row. */
+const siteLinks = [
+  { label: "Map", href: "/#map" },
+  { label: "Shopping Lists", href: "/#shopping" },
+  { label: "Cheat Sheets", href: "/#cheat-sheets" },
+];
+const moreLinks = [
+  { label: "Shop Waitlist", href: "/#shop" },
+  { label: "Partner", href: "/#partner" },
+  { label: "Accessibility", href: "/accessibility/" },
+];
+const social = ["@allstarsteven · IG", "@allstarsteven · TT", "@allstarsteven · YT"];
+---
+
+<footer class="ftr">
+  <div class="ftr__inner">
+    <div class="ftr__brand">
+      <p class="ftr__wordmark">Japan Finds</p>
+      <p class="ftr__descriptor">MAPS · LISTS · WEIRDLY USEFUL FINDS</p>
+    </div>
+
+    <nav class="ftr__col ftr__col--site" aria-label="Site">
+      <p class="ftr__label">SITE</p>
+      <ul>
+        {siteLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <nav class="ftr__col ftr__col--more" aria-label="More">
+      <p class="ftr__label">MORE</p>
+      <ul>
+        {moreLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <div class="ftr__col ftr__col--follow">
+      <p class="ftr__label">FOLLOW</p>
+      <ul class="ftr__social">
+        {social.map((s) => <li>{s}</li>)}
+      </ul>
+    </div>
+  </div>
+
+  <div class="ftr__signoff">
+    <p class="ftr__copy">© 2026 ALLSTARSTEVEN</p>
+    <p class="ftr__made">Made with egg sando and anxiety.</p>
+  </div>
+</footer>
+
+<style>
+  .ftr {
+    padding: 28px 20px 36px;
+    background: var(--color-ink-black);
+    color: #fff;
+  }
+  .ftr__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 22px;
+  }
+
+  .ftr__brand {
+    grid-column: 1 / -1;
+  }
+  .ftr__wordmark {
+    font-family: var(--font-head);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .ftr__descriptor {
+    margin-top: 3px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .ftr__col--site {
+    grid-column: 1;
+  }
+  .ftr__col--more {
+    grid-column: 2;
+  }
+  .ftr__col--follow {
+    grid-column: 1 / -1;
+  }
+  .ftr__label {
+    display: none;
+  }
+  .ftr__col ul {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+  .ftr__col a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .ftr__col a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .ftr__social {
+    font-size: 13px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .ftr__signoff {
+    margin-top: 22px;
+  }
+  .ftr__copy {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .ftr__made {
+    margin-top: 4px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: 0.06em;
+    /* 0.55 (not the comp's 0.40) to clear WCAG AA contrast on ink */
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  @media (min-width: 1024px) {
+    .ftr {
+      padding: 48px 0 56px;
+    }
+    .ftr__inner {
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      column-gap: 48px;
+      row-gap: 0;
+      align-items: start;
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter-desktop);
+    }
+    .ftr__brand,
+    .ftr__col--site,
+    .ftr__col--more,
+    .ftr__col--follow {
+      grid-column: auto;
+    }
+    .ftr__wordmark {
+      font-size: 28px;
+    }
+    .ftr__descriptor {
+      margin-top: 5px;
+    }
+    .ftr__label {
+      display: block;
+      margin-bottom: 6px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .ftr__col ul,
+    .ftr__social {
+      font-size: 14px;
+      line-height: 2;
+    }
+    .ftr__signoff {
+      display: flex;
+      justify-content: space-between;
+      max-width: var(--content-max);
+      margin: 36px auto 0;
+      padding: 18px var(--gutter-desktop) 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .ftr__copy,
+    .ftr__made {
+      font-size: 11px;
+    }
+    .ftr__made {
+      margin-top: 0;
+    }
+  }
+</style>

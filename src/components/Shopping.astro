@@ -1,0 +1,420 @@
+---
+/* §03 Shopping Lists.
+   Mobile: one sample receipt card (5 items).
+   Desktop: three list-preview cards (HANDOFF D1 — locked comps differ).
+   Sample list data is illustrative placeholder per HANDOFF §4.6. */
+import Eyebrow from "./Eyebrow.astro";
+import Picture from "./Picture.astro";
+
+const subCategories = ["KONBINI", "DONKI", "DRUGSTORE", "100¥ SHOP", "SNACKS", "SKINCARE"];
+
+const receiptItems = [
+  { img: "receipt-1-egg-sando" as const, name: "Egg sando", note: "Don't fight it", yen: "285", tag: "YES", chip: "chip--green" },
+  { img: "receipt-2-tamago-onigiri" as const, name: "Tamago onigiri", note: "Filter is better than salmon", yen: "138", tag: "YES", chip: "chip--green" },
+  { img: "receipt-3-cafe-au-lait" as const, name: "Cafe au lait paper carton", note: "Cold. Not optional.", yen: "128", tag: "YES", chip: "chip--green" },
+  { img: "receipt-4-frozen-mikan" as const, name: "Frozen mikan", note: "Underrated dessert tech", yen: "168", tag: "WEIRD", chip: "chip--blue" },
+  { img: "receipt-5-plastic-salad" as const, name: "Plastic-wrapped salad", note: "Skip. You're on vacation.", yen: "498", tag: "SKIP", chip: "chip--ink", skip: true },
+];
+
+const listCards = [
+  {
+    tag: "KONBINI", chipClass: "chip--green", cover: "list-cover-1-konbini" as const,
+    title: "Konbini midnight haul", meta: "14 items · LAWSON / 7-ELEVEN",
+    items: [
+      { name: "Egg sando", yen: "285", tag: "YES", tagColor: "green" },
+      { name: "Tamago onigiri", yen: "138", tag: "YES", tagColor: "green" },
+      { name: "Cafe au lait", yen: "128", tag: "YES", tagColor: "green" },
+      { name: "Plastic salad", yen: "498", tag: "SKIP", tagColor: "ink", skip: true },
+    ],
+  },
+  {
+    tag: "DONKI", chipClass: "chip--blue", cover: "list-cover-2-donki" as const,
+    title: "Donki without crying", meta: "22 items · SKINCARE / SNACKS / WEIRD",
+    items: [
+      { name: "Eye drops (cold)", yen: "780", tag: "YES", tagColor: "green" },
+      { name: "Cushion compact", yen: "1,490", tag: "YES", tagColor: "green" },
+      { name: "Frozen mikan", yen: "168", tag: "WEIRD", tagColor: "blue" },
+      { name: "Mystery cleanser", yen: "2,180", tag: "SKIP", tagColor: "ink", skip: true },
+    ],
+  },
+  {
+    tag: "DRUGSTORE", chipClass: "chip--green", cover: "list-cover-3-drugstore" as const,
+    title: "Drugstore basics that work", meta: "11 items · MATSUKIYO / WELCIA",
+    items: [
+      { name: "Sunscreen (good one)", yen: "1,320", tag: "YES", tagColor: "green" },
+      { name: "Plasters (cute)", yen: "298", tag: "YES", tagColor: "green" },
+      { name: "Eye drops (mild)", yen: "528", tag: "YES", tagColor: "green" },
+      { name: "Heating pads", yen: "498", tag: "WEIRD", tagColor: "blue" },
+    ],
+  },
+];
+---
+
+<section id="shopping" class="shop" aria-labelledby="shop-h2">
+  <div class="shop__inner">
+    <div class="shop__head">
+      <Eyebrow n={3} title="SHOPPING LISTS" />
+      <h2 id="shop-h2" class="shop__h2">Shopping lists for<br />the good stuff.</h2>
+    </div>
+
+    <div class="shop__lede">
+      <p class="shop__body">
+        Konbini snacks. Donki finds. Drugstore basics. 100-yen gems. The
+        products that make you ask, <i>"why is this better designed than my
+        apartment?"</i>
+      </p>
+      <ul class="shop__subchips">
+        {subCategories.map((c) => <li class="chip chip--white">{c}</li>)}
+      </ul>
+    </div>
+
+    {/* Mobile — sample receipt */}
+    <div class="receipt">
+      <div class="receipt__head">
+        <h3 class="receipt__title">Konbini midnight haul</h3>
+        <p class="receipt__sub">SAMPLE LIST · LAWSON / 7-ELEVEN</p>
+      </div>
+      <ul class="receipt__rows">
+        {
+          receiptItems.map((r) => (
+            <li class:list={["receipt__row", { "is-skip": r.skip }]}>
+              <span class="receipt__check" aria-hidden="true">{r.skip ? "✕" : ""}</span>
+              <span class="receipt__thumb">
+                <Picture name={r.img} alt="" />
+              </span>
+              <span class="receipt__info">
+                <span class="receipt__name">{r.name}</span>
+                <span class="receipt__note">{r.note}</span>
+              </span>
+              <span class:list={["chip", r.chip]}>{r.tag}</span>
+              <span class="receipt__price">¥{r.yen}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    {/* Desktop — three list-preview cards */}
+    <div class="shop__grid">
+      {
+        listCards.map((card) => (
+          <article class="lcard">
+            <div class="lcard__cover">
+              <Picture name={card.cover} alt="" />
+            </div>
+            <div class="lcard__head">
+              <span class:list={["chip", card.chipClass]}>{card.tag}</span>
+              <h3 class="lcard__title">{card.title}</h3>
+              <p class="lcard__meta">{card.meta}</p>
+            </div>
+            <ul class="lcard__items">
+              {card.items.map((it) => (
+                <li class:list={["lcard__row", { "is-skip": it.skip }]}>
+                  <span class="lcard__check" aria-hidden="true">{it.skip ? "✕" : ""}</span>
+                  <span class="lcard__name">{it.name}</span>
+                  <span class:list={["lcard__tag", `tag--${it.tagColor}`]}>{it.tag}</span>
+                  <span class="lcard__price">¥{it.yen}</span>
+                </li>
+              ))}
+            </ul>
+            <div class="lcard__foot"><span>Open list →</span></div>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="shop__cta-wrap">
+      <a class="btn btn--ink btn--lg btn--responsive" href="#shopping">
+        Browse Shopping Lists&nbsp;→
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .shop {
+    padding: 30px 0;
+    background: var(--color-egg-yellow);
+    border-top: var(--border-ink);
+    border-bottom: var(--border-ink);
+  }
+  .shop__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--gutter-mobile);
+  }
+  .shop__lede {
+    display: contents;
+  }
+
+  .shop__h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+  .shop__body {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .shop__subchips {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .shop__cta-wrap {
+    order: 3;
+    margin-top: 18px;
+  }
+
+  /* Receipt (mobile) */
+  .receipt {
+    order: 1;
+    margin-top: 10px;
+    background: #fff;
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+  .receipt__head {
+    padding: 14px 14px 12px;
+    border-bottom: var(--border-dash);
+  }
+  .receipt__title {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .receipt__sub {
+    margin-top: 5px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+  .receipt__row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    border-bottom: var(--border-row);
+  }
+  .receipt__row.is-skip {
+    opacity: 0.55;
+  }
+  .receipt__check {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-ink);
+    border-radius: var(--radius-sm);
+    background: #fff;
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .is-skip .receipt__check {
+    background: var(--color-ink-black);
+  }
+  .receipt__thumb {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+  .receipt__info {
+    flex: 1;
+    min-width: 0;
+  }
+  .receipt__name {
+    display: block;
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .is-skip .receipt__name {
+    text-decoration: line-through;
+  }
+  .receipt__note {
+    display: block;
+    margin-top: 2px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--color-ink-60);
+  }
+  .receipt__price {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  /* List-preview cards (desktop) */
+  .shop__grid {
+    display: none;
+  }
+  .lcard {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+  .lcard__cover {
+    height: 140px;
+  }
+  .lcard__head {
+    padding: 14px 14px 12px;
+    border-top: var(--border-ink);
+  }
+  .lcard__head .chip {
+    margin-bottom: 8px;
+  }
+  .lcard__title {
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 4px;
+  }
+  .lcard__meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+  .lcard__items {
+    padding: 0 14px 14px;
+  }
+  .lcard__row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+  }
+  .lcard__row + .lcard__row {
+    border-top: var(--border-row);
+  }
+  .lcard__row.is-skip {
+    opacity: 0.55;
+  }
+  .lcard__check {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-ink);
+    border-radius: var(--radius-sm);
+    background: #fff;
+    color: #fff;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 10px;
+  }
+  .is-skip .lcard__check {
+    background: var(--color-ink-black);
+  }
+  .lcard__name {
+    flex: 1;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .is-skip .lcard__name {
+    text-decoration: line-through;
+  }
+  .lcard__tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+  .tag--green {
+    color: var(--color-matcha-green);
+  }
+  .tag--blue {
+    color: var(--color-konbini-blue);
+  }
+  .tag--ink {
+    color: var(--color-ink-black);
+  }
+  .lcard__price {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    min-width: 40px;
+    text-align: right;
+  }
+  .lcard__foot {
+    margin-top: auto;
+    padding: 10px 14px 14px;
+    border-top: var(--border-dash);
+    font-family: var(--font-head);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  @media (min-width: 1024px) {
+    .shop {
+      padding: 64px 0 72px;
+    }
+    .shop__inner {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      grid-template-areas:
+        "head lede"
+        "grid grid"
+        "cta cta";
+      align-items: end;
+      column-gap: 64px;
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter-desktop);
+    }
+    .shop__head {
+      grid-area: head;
+    }
+    .shop__lede {
+      grid-area: lede;
+      display: block;
+    }
+    .shop__h2 {
+      margin-bottom: 0;
+      font-size: 52px;
+      line-height: 1;
+      letter-spacing: -0.025em;
+    }
+    .shop__body {
+      margin-bottom: 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .shop__subchips {
+      margin-top: 0;
+    }
+    .receipt {
+      display: none;
+    }
+    .shop__grid {
+      grid-area: grid;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 36px;
+    }
+    .shop__cta-wrap {
+      grid-area: cta;
+      margin-top: 28px;
+    }
+  }
+</style>

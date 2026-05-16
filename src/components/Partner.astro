@@ -1,0 +1,215 @@
+---
+/* §06 Partner — editorial. Two reel previews + a 4-cell spec grid.
+   Mobile: text, reels, spec, CTA. Desktop: 2-col — text/spec/CTA left, reels right. */
+import Picture from "./Picture.astro";
+
+const reels = [
+  { name: "partner-reel-1-donki" as const, alt: "Reel — Donki haul" },
+  { name: "partner-reel-2-ramen" as const, alt: "Reel — ramen breakdown" },
+];
+
+const specs = [
+  ["Branded reels", "Made in Steven's voice"],
+  ["Destinations", "Hotels, restaurants, regions"],
+  ["Product", "Snacks, design objects, tools"],
+  ["Distribution", "IG · TikTok · YouTube Shorts"],
+];
+---
+
+<section id="partner" class="partner" aria-labelledby="partner-h2">
+  <div class="partner__inner">
+    <div class="partner__text">
+      <p class="partner__eyebrow">
+        <span class="partner__rule" aria-hidden="true"></span>
+        §06 · PARTNER WITH ALLSTARSTEVEN
+      </p>
+      <h2 id="partner-h2" class="partner__h2">
+        Short-form Japan<br />content that gets sent<br />to the group chat.
+      </h2>
+      <p class="partner__body">
+        For brands, destinations, restaurants, hotels, and products that want
+        people to stop scrolling — not just see an ad.
+      </p>
+
+      <div class="partner__spec">
+        {
+          specs.map(([k, v]) => (
+            <div class="spec">
+              <p class="spec__k">{k}</p>
+              <p class="spec__v">{v}</p>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="partner__cta-wrap">
+        <a class="btn btn--ink btn--lg btn--responsive" href="mailto:welfmgmt@gmail.com">
+          Start a partnership&nbsp;→
+        </a>
+        <p class="partner__micro">REPLIES WITHIN A WEEK · welfmgmt@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="partner__reels">
+      {
+        reels.map((r) => (
+          <div class="partner__reel">
+            <Picture name={r.name} alt={r.alt} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .partner {
+    padding: 48px 22px 44px;
+    background: #fff;
+    border-top: var(--border-ink);
+  }
+  .partner__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .partner__text {
+    display: contents;
+  }
+
+  .partner__eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+  .partner__rule {
+    width: 18px;
+    height: 1px;
+    background: var(--color-ink-60);
+    flex-shrink: 0;
+  }
+
+  .partner__h2 {
+    margin-bottom: 16px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+  }
+  .partner__body {
+    margin-bottom: 28px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: rgba(21, 21, 21, 0.85);
+  }
+
+  .partner__reels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .partner__reel {
+    height: 180px;
+    overflow: hidden;
+  }
+
+  .partner__spec {
+    order: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 18px;
+    padding: 18px 0;
+    margin-bottom: 24px;
+    border-top: var(--border-hair);
+    border-bottom: var(--border-hair);
+  }
+  .spec__k {
+    font-family: var(--font-head);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .spec__v {
+    margin-top: 4px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-60);
+  }
+
+  .partner__cta-wrap {
+    order: 1;
+  }
+  .partner__micro {
+    margin-top: 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--color-ink-60);
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .partner {
+      padding: 88px 0 80px;
+    }
+    .partner__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter-desktop);
+    }
+    .partner__text {
+      display: block;
+    }
+    .partner__eyebrow {
+      gap: 12px;
+      margin-bottom: 22px;
+      font-size: 11px;
+    }
+    .partner__rule {
+      width: 22px;
+    }
+    .partner__h2 {
+      margin-bottom: 22px;
+      font-size: 52px;
+      line-height: 1.04;
+    }
+    .partner__body {
+      margin-bottom: 32px;
+      font-size: 17px;
+      line-height: 1.6;
+      max-width: 520px;
+    }
+    .partner__reels {
+      gap: 14px;
+      margin-bottom: 0;
+    }
+    .partner__reel {
+      height: 300px;
+    }
+    .partner__spec {
+      gap: 18px;
+      padding: 22px 0;
+      margin-bottom: 28px;
+      max-width: 540px;
+    }
+    .spec__k {
+      font-size: 16px;
+    }
+    .partner__micro {
+      margin-top: 14px;
+      font-size: 11px;
+      text-align: left;
+    }
+  }
+</style>
