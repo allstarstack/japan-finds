@@ -1,0 +1,21 @@
+id: "JF-0138"
+slug: "ohta-s-isan-stomach-powder"
+name_en: "Ohta's Isan Stomach Powder"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "太田胃散"
+brand: "Ohta's Isan"
+where_found:
+  - "All drugstores"
+price_yen: "1000-2200"
+what_it_is: "Herbal-mineral antacid powder, refreshing herbal taste."
+why_travelers_care: "Long-running 'Japan stomach reset' product, ritual-feel."
+risk_flags:
+  - "medicine/regulated"
+source_links:
+  - "ohta-isan.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

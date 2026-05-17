@@ -1,0 +1,21 @@
+id: "JF-0054"
+slug: "tea-ceremony-sweets-namagashi"
+name_en: "Tea Ceremony Sweets (Namagashi)"
+category: "other"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "生菓子（茶道用）"
+brand: "Various"
+where_found:
+  - "Wagashi shops"
+price_yen: "300-1500"
+what_it_is: "Same-day wagashi made for tea ceremony."
+why_travelers_care: "Eat during the experience."
+risk_flags:
+  - "perishable"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 0

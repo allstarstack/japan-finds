@@ -1,0 +1,26 @@
+id: "JF-0252"
+slug: "fruit-sandwich"
+name_en: "Fruit sandwich"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "フルーツサンド"
+brand: "Konbini / fruit parlors"
+where_found:
+  - "7-Eleven / FamilyMart / Lawson / specialty shops"
+price_yen: "~¥350–¥700"
+what_it_is: "Whipped cream and fresh fruit sandwich on soft bread."
+why_travelers_care: "Photogenic, weird-to-outsiders, and easy to try on-site."
+risk_flags:
+  - "perishable"
+  - "dairy"
+  - "allergen"
+  - "fragile"
+verification_notes: "Freshness and fruit variety rotate daily/seasonally."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "medium"
+trip_score: 8

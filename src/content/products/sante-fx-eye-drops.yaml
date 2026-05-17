@@ -1,0 +1,26 @@
+id: "JF-0163"
+slug: "sante-fx-eye-drops"
+name_en: "Sante FX eye drops"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "サンテFX"
+brand: "Santen"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥400–¥900"
+what_it_is: "Cooling eye drops in silver/blue packaging."
+why_travelers_care: "Famous Japanese eye-drop experience, but medicinal."
+risk_flags:
+  - "medicine/regulated"
+  - "liquid"
+  - "eye safety"
+verification_notes: "Verify suitability for contacts and active ingredients."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 5

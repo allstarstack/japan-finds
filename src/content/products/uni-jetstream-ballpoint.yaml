@@ -1,0 +1,21 @@
+id: "JF-0441"
+slug: "uni-jetstream-ballpoint"
+name_en: "Uni Jetstream Ballpoint"
+category: "stationery"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ジェットストリーム"
+brand: "Mitsubishi Pencil"
+where_found:
+  - "Stationery stores"
+  - "konbini"
+price_yen: "150-1500"
+what_it_is: "Smooth low-viscosity ink, the everyday ballpoint reference."
+why_travelers_care: "Internationally recommended, multiple form factors including multi-pen."
+source_links:
+  - "mpuni.co.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

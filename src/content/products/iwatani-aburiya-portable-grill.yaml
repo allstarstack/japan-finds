@@ -1,0 +1,24 @@
+id: "JF-0274"
+slug: "iwatani-aburiya-portable-grill"
+name_en: "Iwatani Aburiya Portable Grill"
+category: "other"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "炉ばた焼器 炙りや"
+brand: "Iwatani"
+where_found:
+  - "Donki / Yodobashi"
+price_yen: "~¥6,000"
+what_it_is: "Cassette-gas tabletop grill."
+why_travelers_care: "Interesting but bulky; gas canisters cannot fly."
+risk_flags:
+  - "bulky"
+  - "gas-related"
+  - "travel restriction"
+verification_notes: "Verify airline rules and model availability; never include gas canisters."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 1
+suitcase_score: 4

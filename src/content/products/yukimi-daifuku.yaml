@@ -1,0 +1,22 @@
+id: "JF-0283"
+slug: "yukimi-daifuku"
+name_en: "Yukimi Daifuku"
+category: "other"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "雪見だいふく"
+brand: "Lotte"
+where_found:
+  - "Konbini / supermarkets"
+price_yen: "~¥150"
+what_it_is: "Mochi-wrapped ice cream."
+why_travelers_care: "Texture contrast; seasonal flavors make it saveable."
+risk_flags:
+  - "perishable"
+  - "dairy"
+verification_notes: "Verify current seasonal flavors."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 8

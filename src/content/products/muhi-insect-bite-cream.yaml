@@ -1,0 +1,25 @@
+id: "JF-0154"
+slug: "muhi-insect-bite-cream"
+name_en: "Muhi insect bite cream"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ムヒアルファ / ムヒ"
+brand: "Ikeda Mohando"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥500–¥1,200"
+what_it_is: "Topical itch relief for mosquito/insect bites."
+why_travelers_care: "Useful in humid seasons and countryside trips."
+risk_flags:
+  - "medicine/regulated"
+  - "skincare/cosmetic claim"
+verification_notes: "Check active ingredients and personal medical restrictions."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 6

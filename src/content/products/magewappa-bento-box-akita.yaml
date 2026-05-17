@@ -1,0 +1,24 @@
+id: "JF-0207"
+slug: "magewappa-bento-box-akita"
+name_en: "Magewappa Bento Box (Akita)"
+category: "kitchen"
+intent:
+  - "bring_home"
+  - "local_editions"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "曲げわっぱ"
+brand: "Various Akita makers"
+where_found:
+  - "Akita region"
+  - "dept stores"
+price_yen: "3000-15000"
+what_it_is: "Bent cedar bento box, traditional Akita craft."
+why_travelers_care: "Heritage gift, photogenic, functional."
+risk_flags:
+  - "fragile (avoid crushing)"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

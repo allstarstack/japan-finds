@@ -1,0 +1,26 @@
+id: "JF-0433"
+slug: "pilot-frixion-erasable-pen"
+name_en: "Pilot Frixion Erasable Pen"
+category: "stationery"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "フリクション"
+brand: "Pilot"
+where_found:
+  - "Loft"
+  - "Tokyu Hands"
+  - "Itoya"
+  - "drugstores"
+price_yen: "180-400"
+what_it_is: "Friction-erasable gel pen — erases with rubber tip via friction heat."
+why_travelers_care: "International cult pen, multiple sub-formats (Ball, Slim, Point)."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Available abroad but Japan SKU range much wider"
+source_links:
+  - "pilot.co.jp/products/pen/erasable"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

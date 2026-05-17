@@ -1,0 +1,24 @@
+id: "JF-0025"
+slug: "laundry-net"
+name_en: "Laundry net"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "洗濯ネット"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+  - "drugstores"
+price_yen: "~¥110–¥330"
+what_it_is: "Mesh bag for laundry machines or organizing clothes."
+why_travelers_care: "Immediate hotel laundry and packing organizer fix."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Confirm size and zipper durability."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

@@ -1,0 +1,24 @@
+id: "JF-0175"
+slug: "bandai-gunpla-model-kits"
+name_en: "Bandai Gunpla Model Kits"
+category: "other"
+intent:
+  - "bring_home"
+  - "make_it_yours"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "ガンプラ"
+brand: "Bandai"
+where_found:
+  - "Yodobashi"
+  - "Akihabara"
+  - "Gundam Base Tokyo"
+price_yen: "1000-15000"
+what_it_is: "Gundam plastic model kits, hobby-grade."
+why_travelers_care: "Cult hobby, much cheaper in Japan than abroad."
+verification_notes: "Gundam Base Tokyo has exclusive kits"
+source_links:
+  - "bandai-hobby.net"
+confidence: "high"
+trip_score: 9
+suitcase_score: 9

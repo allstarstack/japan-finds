@@ -1,0 +1,23 @@
+id: "JF-0224"
+slug: "ramune"
+name_en: "Ramune"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "ラムネ"
+brand: "Various (Sangaria, Hata)"
+where_found:
+  - "Konbini"
+  - "festivals"
+  - "druids"
+price_yen: "120-200"
+what_it_is: "Marble-stopper Codd-neck bottle soda. The bottle itself is the experience."
+why_travelers_care: "Marble mechanism is content gold, dozens of flavors."
+risk_flags:
+  - "liquid, fragile"
+verification_notes: "Available abroad but the in-Japan unboxing is the point"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 9

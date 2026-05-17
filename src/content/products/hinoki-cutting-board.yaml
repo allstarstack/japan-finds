@@ -1,0 +1,22 @@
+id: "JF-0204"
+slug: "hinoki-cutting-board"
+name_en: "Hinoki Cutting Board"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "桧まな板"
+brand: "Various"
+where_found:
+  - "Kappabashi"
+  - "dept stores"
+price_yen: "2000-8000"
+what_it_is: "Aromatic cypress cutting board, anti-bacterial wood."
+why_travelers_care: "Smells incredible, lifetime tool."
+risk_flags:
+  - "bulky"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 6
+suitcase_score: 3

@@ -1,0 +1,22 @@
+id: "JF-0130"
+slug: "eve-a-pain-reliever"
+name_en: "Eve A Pain Reliever"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "イブA"
+brand: "SS Pharmaceutical"
+where_found:
+  - "All drugstores"
+price_yen: "600-1200"
+what_it_is: "Ibuprofen-based pain reliever, common headache go-to in Japan."
+why_travelers_care: "Easier-on-stomach formula vs Loxonin for some travelers."
+risk_flags:
+  - "medicine/regulated, allergen-NSAID"
+verification_notes: "Standard ibuprofen; no special reason to import unless familiar with brand"
+source_links:
+  - "ssp.co.jp/eve"
+confidence: "high"
+trip_score: 5
+suitcase_score: 9

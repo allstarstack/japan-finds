@@ -1,0 +1,24 @@
+id: "JF-0401"
+slug: "calbee-pizza-potato-chips"
+name_en: "Calbee Pizza Potato Chips"
+category: "snacks"
+intent:
+  - "try_in_japan"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ピザポテト"
+brand: "Calbee"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "180-280"
+what_it_is: "Pizza-flavored thick chips with melted-cheese-on-top branding."
+why_travelers_care: "Cult Japan chip flavor."
+risk_flags:
+  - "allergen-dairy-wheat"
+verification_notes: "Bag pressure-pops in suitcase; pack in clothing"
+source_links:
+  - "calbee.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

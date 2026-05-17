@@ -1,0 +1,26 @@
+id: "JF-0382"
+slug: "kao-merit-day-dry-shampoo-sheets"
+name_en: "Kao Merit Day+ dry shampoo sheets"
+category: "skincare"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "メリット ドライシャンプーシート"
+brand: "Kao"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥300–¥600"
+what_it_is: "Hair/scalp refresh sheets."
+why_travelers_care: "Excellent for summer travel and long walking days."
+risk_flags:
+  - "liquid"
+  - "cosmetic claim"
+  - "fragrance"
+verification_notes: "Check scent and scalp sensitivity."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 8

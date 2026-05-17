@@ -1,0 +1,23 @@
+id: "JF-0039"
+slug: "sponge-holder-with-suction-cup"
+name_en: "Sponge holder with suction cup"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "スポンジホルダー"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+price_yen: "~¥110–¥330"
+what_it_is: "Small sink accessory for sponge storage."
+why_travelers_care: "Japanese micro-organization angle."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check suction quality."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 7

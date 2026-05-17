@@ -1,0 +1,26 @@
+id: "JF-0188"
+slug: "clip-on-towel-pacifier-strap"
+name_en: "Clip-on towel / pacifier strap"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "マルチクリップ"
+brand: "Daiso / Pigeon / baby brands"
+where_found:
+  - "100-yen shops"
+  - "baby stores"
+  - "drugstores"
+price_yen: "~¥110–¥800"
+what_it_is: "Clips for towels, bibs, hats, or baby items."
+why_travelers_care: "Small, practical travel fix."
+risk_flags:
+  - "small parts"
+  - "age safety"
+verification_notes: "Check safety label and clip strength."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

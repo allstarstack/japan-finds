@@ -1,0 +1,27 @@
+id: "JF-0070"
+slug: "unverified-contact-lenses-color-contacts"
+name_en: "Unverified contact lenses / color contacts"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "カラコン"
+brand: "Various"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "specialty shops"
+price_yen: "~¥1,000–¥3,000"
+what_it_is: "Decorative contact lenses."
+why_travelers_care: "Visually tempting but eye safety/regulation matters."
+risk_flags:
+  - "medicine/regulated"
+  - "eye safety"
+  - "cosmetic claim"
+verification_notes: "Verify prescription/legal requirements and reputable brand."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "low"
+trip_score: 4
+suitcase_score: 4

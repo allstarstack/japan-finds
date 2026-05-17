@@ -1,0 +1,27 @@
+id: "JF-0297"
+slug: "hanko-name-stamp"
+name_en: "Hanko name stamp"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "判子・印鑑"
+brand: "Hanko shops / vending machines"
+where_found:
+  - "Hanko shops"
+  - "Donki"
+  - "Tokyu Hands-like stores"
+price_yen: "~¥500–¥5,000"
+what_it_is: "Personal name stamp, sometimes made by machine."
+why_travelers_care: "Japan-specific personalization; good desk object/gift."
+risk_flags:
+  - "name translation"
+  - "custom item"
+verification_notes: "Verify katakana/kanji choice and machine availability."
+source_links:
+  - "https://info.hands.net/en/"
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 8

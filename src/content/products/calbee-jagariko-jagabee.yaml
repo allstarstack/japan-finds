@@ -1,0 +1,23 @@
+id: "JF-0400"
+slug: "calbee-jagariko-jagabee"
+name_en: "Calbee Jagariko / Jagabee"
+category: "snacks"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "じゃがりこ / じゃがビー"
+brand: "Calbee"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "120-200"
+what_it_is: "Crunchy potato sticks in a cup. Cheese/Salad/Butter flavors are standard."
+why_travelers_care: "Travel-friendly cup format."
+risk_flags:
+  - "allergen-dairy-wheat"
+source_links:
+  - "calbee.co.jp/jagariko"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

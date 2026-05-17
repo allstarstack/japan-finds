@@ -1,0 +1,21 @@
+id: "JF-0370"
+slug: "senka-perfect-whip-cleanser"
+name_en: "Senka Perfect Whip Cleanser"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "専科 パーフェクトホイップ"
+brand: "Shiseido"
+where_found:
+  - "All drugstores"
+price_yen: "400-700"
+what_it_is: "Foaming face cleanser, internet-famous for dense foam."
+why_travelers_care: "Cult cleanser, very cheap, content-friendly foam."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "shiseido.co.jp/senka"
+confidence: "high"
+trip_score: 9
+suitcase_score: 9

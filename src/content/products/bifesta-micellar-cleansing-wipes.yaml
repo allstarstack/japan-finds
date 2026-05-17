@@ -1,0 +1,23 @@
+id: "JF-0269"
+slug: "bifesta-micellar-cleansing-wipes"
+name_en: "Bifesta Micellar Cleansing Wipes"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ビフェスタ クレンジングシート"
+brand: "Mandom"
+where_found:
+  - "Drugstores"
+price_yen: "~¥500"
+what_it_is: "Makeup removal cleansing sheets with snap lid."
+why_travelers_care: "Useful hotel/flight fatigue fix."
+risk_flags:
+  - "liquid"
+  - "cosmetic claim"
+verification_notes: "Verify variant and ingredients."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 9
+suitcase_score: 7

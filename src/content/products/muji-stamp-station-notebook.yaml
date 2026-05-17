@@ -1,0 +1,23 @@
+id: "JF-0301"
+slug: "muji-stamp-station-notebook"
+name_en: "MUJI stamp-station notebook"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "無印良品 スタンプ"
+brand: "MUJI"
+where_found:
+  - "Select MUJI stores"
+price_yen: "~¥100–¥1,500+"
+what_it_is: "Notebook/card customized with in-store stamps where available."
+why_travelers_care: "Cheap personal proof-of-visit with Japan design vibe."
+risk_flags:
+  - "ink smudge"
+  - "location-specific"
+verification_notes: "Verify participating store stamp station."
+source_links:
+  - "https://www.muji.com/jp/ja/store"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

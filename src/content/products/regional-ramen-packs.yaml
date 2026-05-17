@@ -1,0 +1,28 @@
+id: "JF-0343"
+slug: "regional-ramen-packs"
+name_en: "Regional ramen packs"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "ご当地ラーメン"
+brand: "Various"
+where_found:
+  - "Donki"
+  - "supermarkets"
+  - "stations"
+  - "airports"
+price_yen: "~¥300–¥1,500"
+what_it_is: "Shelf-stable ramen tied to Sapporo, Hakata, Kitakata, etc."
+why_travelers_care: "Easy way to bring regional flavor home."
+risk_flags:
+  - "bulky"
+  - "allergen"
+  - "meat/seafood possible"
+verification_notes: "Check customs rules and ingredients."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 7

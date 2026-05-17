@@ -1,0 +1,26 @@
+id: "JF-0184"
+slug: "bos-odor-proof-diaper-bags"
+name_en: "BOS odor-proof diaper bags"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "BOS おむつが臭わない袋"
+brand: "BOS / Kurilon"
+where_found:
+  - "Drugstores"
+  - "baby stores"
+  - "Donki"
+price_yen: "~¥300–¥1,500"
+what_it_is: "Odor-control bags for diapers, trash, or travel messes."
+why_travelers_care: "Parent travel lifesaver; genuinely useful in hotel rooms."
+risk_flags:
+  - "plastic"
+  - "easy to buy outside Japan"
+verification_notes: "Confirm size and pack count."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 9
+suitcase_score: 8

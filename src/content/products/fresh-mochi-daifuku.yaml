@@ -1,0 +1,26 @@
+id: "JF-0326"
+slug: "fresh-mochi-daifuku"
+name_en: "Fresh mochi / daifuku"
+category: "snacks"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "大福・餅菓子"
+brand: "Various"
+where_found:
+  - "Department food halls"
+  - "konbini"
+  - "wagashi shops"
+price_yen: "~¥150–¥1,500"
+what_it_is: "Soft rice cake sweets with fillings like red bean or fruit."
+why_travelers_care: "Freshness/texture makes it better on-site."
+risk_flags:
+  - "perishable"
+  - "allergen"
+  - "choking risk"
+verification_notes: "Check shelf life and consume carefully."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "high"
+trip_score: 8

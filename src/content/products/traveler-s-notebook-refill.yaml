@@ -1,0 +1,27 @@
+id: "JF-0042"
+slug: "traveler-s-notebook-refill"
+name_en: "Traveler’s Notebook refill"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "トラベラーズノート リフィル"
+brand: "Traveler’s Company"
+where_found:
+  - "Traveler’s Factory"
+  - "Loft"
+  - "Hands"
+  - "stationery stores"
+price_yen: "~¥300–¥2,000"
+what_it_is: "Leather notebook/refill/accessory system."
+why_travelers_care: "Personal travel-memory product with Japan origin story."
+risk_flags:
+  - "easy to buy outside Japan for standard items"
+verification_notes: "Look for Japan/store-limited editions."
+source_links:
+  - "https://www.travelers-company.com/"
+  - "https://www.loft.co.jp/store/"
+  - "https://info.hands.net/en/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 9

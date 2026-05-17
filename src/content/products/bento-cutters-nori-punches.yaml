@@ -1,0 +1,25 @@
+id: "JF-0186"
+slug: "bento-cutters-nori-punches"
+name_en: "Bento cutters / nori punches"
+category: "other"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "海苔パンチ・抜き型"
+brand: "Daiso / Seria / bento brands"
+where_found:
+  - "100-yen shops"
+  - "kitchen stores"
+price_yen: "~¥110–¥800"
+what_it_is: "Tools for cutting seaweed/cheese/ham into shapes."
+why_travelers_care: "Tiny, cute, very Japan bento-core gift."
+risk_flags:
+  - "small parts"
+  - "sharp edges possible"
+verification_notes: "Check age warning and cleaning instructions."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

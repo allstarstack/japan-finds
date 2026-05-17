@@ -1,0 +1,26 @@
+id: "JF-0112"
+slug: "cooling-body-wipes"
+name_en: "Cooling body wipes"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "冷感ボディシート"
+brand: "Biore / Gatsby / Ag / private label"
+where_found:
+  - "Donki"
+  - "drugstores"
+  - "konbini"
+price_yen: "~¥300–¥700"
+what_it_is: "Mentholated body wipes for hot, sweaty days."
+why_travelers_care: "Summer Japan survival item; very practical first purchase."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Check scent/menthol sensitivity."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "high"
+trip_score: 9
+suitcase_score: 7

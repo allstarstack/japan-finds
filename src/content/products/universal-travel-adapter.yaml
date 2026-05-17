@@ -1,0 +1,26 @@
+id: "JF-0125"
+slug: "universal-travel-adapter"
+name_en: "Universal travel adapter"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "hold"
+name_jp: "変換プラグ"
+brand: "Various"
+where_found:
+  - "Donki"
+  - "Bic Camera"
+  - "airports"
+price_yen: "~¥500–¥2,000"
+what_it_is: "Plug adapter or USB charging accessory."
+why_travelers_care: "Immediate fix for travelers who forgot adapters."
+risk_flags:
+  - "electronics"
+  - "easy to buy outside Japan"
+verification_notes: "Check voltage, certification, and device compatibility."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 6

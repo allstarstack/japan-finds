@@ -1,0 +1,22 @@
+id: "JF-0278"
+slug: "plus-picofriends-box-cutter"
+name_en: "Plus Picofriends Box Cutter"
+category: "other"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "ピコフレンズ カッター"
+brand: "Plus"
+where_found:
+  - "Hands / Loft"
+price_yen: "~¥600"
+what_it_is: "Animal-shaped ceramic box cutter."
+why_travelers_care: "Cute but useful desk object; check blade/travel rules."
+risk_flags:
+  - "sharp object"
+verification_notes: "Verify carry/checked baggage restrictions and exact item name."
+source_links:
+  - "User-pasted response"
+confidence: "medium"
+trip_score: 2
+suitcase_score: 10

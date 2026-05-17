@@ -1,0 +1,20 @@
+id: "JF-0455"
+slug: "mobile-battery-power-bank-konbini"
+name_en: "Mobile Battery / Power Bank (Konbini)"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "モバイルバッテリー"
+brand: "All konbini"
+where_found:
+  - "Konbini and Bic/Yodobashi"
+price_yen: "1500-4000"
+what_it_is: "Emergency power bank if you forgot or lost yours."
+why_travelers_care: "Day-1 fix; konbini stock decent options."
+verification_notes: "Bic Camera and Yodobashi have better quality at slightly higher price"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

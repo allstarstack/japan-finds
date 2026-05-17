@@ -1,0 +1,28 @@
+id: "JF-0373"
+slug: "biore-uv-aqua-rich-watery-essence"
+name_en: "Bioré UV Aqua Rich Watery Essence"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ビオレUV アクアリッチ ウォータリーエッセンス"
+brand: "Kao"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "Loft"
+  - "@cosme"
+price_yen: "~¥700–¥1,300"
+what_it_is: "Lightweight Japanese facial/body sunscreen SPF50+ PA++++ versions."
+why_travelers_care: "Globally famous Japanese sunscreen texture; often cheaper in Japan."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm current formula/size and destination sunscreen rules."
+source_links:
+  - "https://www.kao.com/jp/products/bioreuv/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 9
+suitcase_score: 8

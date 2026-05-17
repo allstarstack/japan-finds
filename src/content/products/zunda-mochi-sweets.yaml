@@ -1,0 +1,24 @@
+id: "JF-0354"
+slug: "zunda-mochi-sweets"
+name_en: "Zunda mochi sweets"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "hold"
+name_jp: "ずんだ餅"
+brand: "Various Sendai makers"
+where_found:
+  - "Sendai/Miyagi stations"
+  - "souvenir shops"
+price_yen: "~¥500–¥1,500"
+what_it_is: "Sweet edamame paste over mochi or in packaged sweets."
+why_travelers_care: "Regional flavor that surprises travelers."
+risk_flags:
+  - "perishable for fresh"
+  - "allergen"
+verification_notes: "Choose shelf-stable versions for suitcase."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 5

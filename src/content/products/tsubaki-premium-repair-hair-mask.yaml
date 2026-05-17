@@ -1,0 +1,26 @@
+id: "JF-0394"
+slug: "tsubaki-premium-repair-hair-mask"
+name_en: "Tsubaki Premium Repair Hair Mask"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ツバキ プレミアムリペアマスク"
+brand: "Shiseido / Fine Today"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥900–¥1,400"
+what_it_is: "Hair repair mask tub."
+why_travelers_care: "Good value and easy drugstore find."
+risk_flags:
+  - "liquid/cream"
+  - "bulky"
+  - "cosmetic claim"
+verification_notes: "Verify current formula and size."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 5

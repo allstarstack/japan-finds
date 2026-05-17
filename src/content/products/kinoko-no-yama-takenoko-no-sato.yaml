@@ -1,0 +1,23 @@
+id: "JF-0406"
+slug: "kinoko-no-yama-takenoko-no-sato"
+name_en: "Kinoko no Yama / Takenoko no Sato"
+category: "snacks"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "きのこの山 / たけのこの里"
+brand: "Meiji"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "200-400"
+what_it_is: "Mushroom/bamboo-shoot-shaped chocolate-and-biscuit snacks. The two factions of Japanese snack debate."
+why_travelers_care: "Cultural debate is content-worthy."
+risk_flags:
+  - "allergen-dairy-wheat-soy"
+source_links:
+  - "meiji.co.jp/sweets/chocolate/kinotake"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

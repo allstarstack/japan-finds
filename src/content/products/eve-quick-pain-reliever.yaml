@@ -1,0 +1,23 @@
+id: "JF-0148"
+slug: "eve-quick-pain-reliever"
+name_en: "EVE Quick pain reliever"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "イブクイック"
+brand: "SSP"
+where_found:
+  - "Drugstores"
+price_yen: "~¥700–¥1,500"
+what_it_is: "OTC pain reliever tablets."
+why_travelers_care: "Travelers search for pain meds, but website should not casually recommend ingestion."
+risk_flags:
+  - "medicine/regulated"
+  - "health claim"
+verification_notes: "Needs pharmacist/doctor suitability and import rule verification."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 5
+suitcase_score: 5

@@ -1,0 +1,27 @@
+id: "JF-0375"
+slug: "canmake-mermaid-skin-gel-uv"
+name_en: "Canmake Mermaid Skin Gel UV"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "キャンメイク マーメイドスキンジェルUV"
+brand: "Canmake / IDA Laboratories"
+where_found:
+  - "Drugstores"
+  - "Loft"
+  - "@cosme"
+price_yen: "~¥770–¥900"
+what_it_is: "Makeup-friendly sunscreen gel in small tube."
+why_travelers_care: "Affordable, cute packaging, common beauty haul item."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm shade/formula and skin sensitivity."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://www.cosme.net/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 7

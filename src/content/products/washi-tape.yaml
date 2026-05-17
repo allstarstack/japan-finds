@@ -1,0 +1,28 @@
+id: "JF-0044"
+slug: "washi-tape"
+name_en: "Washi tape"
+category: "100-yen"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "マスキングテープ"
+brand: "mt / Daiso / Seria / various"
+where_found:
+  - "100-yen shops"
+  - "Loft"
+  - "Hands"
+  - "Itoya"
+price_yen: "~¥110–¥500"
+what_it_is: "Decorative paper tape with patterns and seasonal designs."
+why_travelers_care: "Tiny, giftable, highly Japan-stationery coded."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Verify brand and adhesive quality."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://info.hands.net/en/"
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.ito-ya.co.jp/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

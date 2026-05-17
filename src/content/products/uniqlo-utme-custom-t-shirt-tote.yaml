@@ -1,0 +1,24 @@
+id: "JF-0306"
+slug: "uniqlo-utme-custom-t-shirt-tote"
+name_en: "UNIQLO UTme! custom T-shirt/tote"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "UTme!"
+brand: "UNIQLO"
+where_found:
+  - "Select UNIQLO stores / UTme service"
+price_yen: "~¥1,500–¥3,000+"
+what_it_is: "Custom printed shirt or tote using app/store tools."
+why_travelers_care: "Personalized proof-of-trip product; useful wearable souvenir."
+risk_flags:
+  - "size"
+  - "store availability"
+  - "copyright restrictions"
+verification_notes: "Confirm participating stores and design rules."
+source_links:
+  - "https://utme.uniqlo.com/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

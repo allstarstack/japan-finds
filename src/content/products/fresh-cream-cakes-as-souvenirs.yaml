@@ -1,0 +1,24 @@
+id: "JF-0062"
+slug: "fresh-cream-cakes-as-souvenirs"
+name_en: "Fresh cream cakes as souvenirs"
+category: "other"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "生クリームケーキ"
+brand: "Various patisseries"
+where_found:
+  - "Department food halls"
+  - "cake shops"
+price_yen: "~¥500–¥5,000"
+what_it_is: "Fresh cakes and pastries."
+why_travelers_care: "Amazing on-site, usually bad suitcase idea."
+risk_flags:
+  - "perishable"
+  - "dairy"
+  - "fragile"
+verification_notes: "Eat in Japan; do not treat as bring-home."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7

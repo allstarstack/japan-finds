@@ -1,0 +1,26 @@
+id: "JF-0304"
+slug: "plastic-food-sample-workshop-item"
+name_en: "Plastic food sample workshop item"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "食品サンプル体験"
+brand: "Sample food makers"
+where_found:
+  - "Kappabashi"
+  - "workshops"
+  - "tourist areas"
+price_yen: "~¥1,500–¥5,000+"
+what_it_is: "Fake food sample made in workshop or bought as keychain/magnet."
+why_travelers_care: "Very Japan-core, visual, and personal proof-of-experience."
+risk_flags:
+  - "fragile"
+  - "bulky depending item"
+verification_notes: "Verify booking, age rules, and dry/cure time."
+source_links:
+  - "https://www.kappabashi.or.jp/en/"
+  - "https://www.japan.travel/en/"
+confidence: "medium"
+trip_score: 9
+suitcase_score: 7

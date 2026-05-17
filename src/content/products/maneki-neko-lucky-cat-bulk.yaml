@@ -1,0 +1,21 @@
+id: "JF-0102"
+slug: "maneki-neko-lucky-cat-bulk"
+name_en: "Maneki Neko / Lucky Cat Bulk"
+category: "donki-drugstore"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "招き猫"
+brand: "Various"
+where_found:
+  - "Donki and Asakusa"
+price_yen: "300-3000"
+what_it_is: "Lucky cat figurines, sizes from keychain to shelf piece."
+why_travelers_care: "Recognizable Japan gift, cheap-and-cheerful tier."
+risk_flags:
+  - "fragile"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 6
+suitcase_score: 8

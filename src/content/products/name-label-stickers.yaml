@@ -1,0 +1,27 @@
+id: "JF-0195"
+slug: "name-label-stickers"
+name_en: "Name label stickers"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "お名前シール"
+brand: "Daiso / stationery brands"
+where_found:
+  - "100-yen shops"
+  - "Loft"
+  - "baby stores"
+price_yen: "~¥110–¥1,000"
+what_it_is: "Labels for kids’ belongings, sometimes customizable."
+why_travelers_care: "Useful if traveling with school/daycare items or souvenirs."
+risk_flags:
+  - "adhesive"
+  - "easy to buy outside Japan"
+verification_notes: "Customization availability varies."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.loft.co.jp/store/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 9

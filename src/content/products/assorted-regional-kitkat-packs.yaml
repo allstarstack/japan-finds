@@ -1,0 +1,27 @@
+id: "JF-0107"
+slug: "assorted-regional-kitkat-packs"
+name_en: "Assorted regional KitKat packs"
+category: "donki-drugstore"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "ご当地キットカット"
+brand: "Nestlé Japan"
+where_found:
+  - "Donki"
+  - "airports"
+  - "souvenir shops"
+price_yen: "~¥500–¥1,500"
+what_it_is: "Japan-only or regional KitKat flavors in shareable packaging."
+why_travelers_care: "Obvious but still works as readable, low-effort gift."
+risk_flags:
+  - "allergen"
+  - "easy to buy outside Japan for some flavors"
+verification_notes: "Verify current flavors and import rules."
+source_links:
+  - "https://nestle.jp/brand/kit/"
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "high"
+trip_score: 8
+suitcase_score: 9

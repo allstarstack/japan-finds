@@ -1,0 +1,22 @@
+id: "JF-0247"
+slug: "convenience-wear-socks"
+name_en: "Convenience Wear socks"
+category: "konbini"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "コンビニエンスウェア 靴下"
+brand: "FamilyMart / Hiromichi Ochiai collaboration"
+where_found:
+  - "FamilyMart"
+price_yen: "~¥400–¥600"
+what_it_is: "Basic socks and apparel sold at FamilyMart."
+why_travelers_care: "Immediate fix for wet socks, laundry gaps, or packing mistakes."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Confirm sizes and current colors."
+source_links:
+  - "https://www.family.co.jp/for_tourist/en.html"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

@@ -1,0 +1,21 @@
+id: "JF-0133"
+slug: "kinkan-anti-itch-liquid"
+name_en: "Kinkan Anti-Itch Liquid"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "キンカン"
+brand: "Kinkan Co."
+where_found:
+  - "All drugstores"
+price_yen: "500-900"
+what_it_is: "Old-school ammonia-based topical for bites and sore muscles. Strong smell."
+why_travelers_care: "Heritage product, polarizing smell, content-friendly."
+risk_flags:
+  - "medicine/regulated, liquid, strong odor"
+source_links:
+  - "kinkan.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 8

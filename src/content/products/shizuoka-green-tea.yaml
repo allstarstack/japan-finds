@@ -1,0 +1,21 @@
+id: "JF-0320"
+slug: "shizuoka-green-tea"
+name_en: "Shizuoka Green Tea"
+category: "other"
+intent:
+  - "local_editions"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "静岡茶"
+brand: "Various Shizuoka producers"
+where_found:
+  - "Shizuoka"
+  - "dept stores"
+price_yen: "500-3000"
+what_it_is: "Most of Japan's tea production. Direct producer purchases possible."
+why_travelers_care: "Authentic, gift-grade."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

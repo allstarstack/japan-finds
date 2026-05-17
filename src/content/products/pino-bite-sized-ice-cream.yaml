@@ -1,0 +1,22 @@
+id: "JF-0242"
+slug: "pino-bite-sized-ice-cream"
+name_en: "Pino Bite-Sized Ice Cream"
+category: "konbini"
+intent:
+  - "try_in_japan"
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "ピノ"
+brand: "Morinaga"
+where_found:
+  - "Konbini freezer"
+price_yen: "150-180"
+what_it_is: "Tiny chocolate-coated vanilla ice cream balls in a 6-pack."
+why_travelers_care: "Pocket-friendly, rotating flavors, cult-following."
+risk_flags:
+  - "perishable, allergen-dairy"
+source_links:
+  - "morinaga.co.jp/pino"
+confidence: "high"
+trip_score: 8
+suitcase_score: 2

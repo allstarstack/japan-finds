@@ -1,0 +1,26 @@
+id: "JF-0376"
+slug: "cezanne-lipstick-tint"
+name_en: "Cezanne lipstick/tint"
+category: "skincare"
+intent:
+  - "gift_easy"
+status: "needs_verification"
+name_jp: "セザンヌ リップカラー"
+brand: "Cezanne"
+where_found:
+  - "Drugstores"
+  - "Loft"
+  - "@cosme"
+price_yen: "~¥500–¥800"
+what_it_is: "Affordable Japanese lip color."
+why_travelers_care: "Small, cheap, good beauty gift filler."
+risk_flags:
+  - "skincare/cosmetic claim"
+verification_notes: "Shade and formula verification needed."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://www.cosme.net/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

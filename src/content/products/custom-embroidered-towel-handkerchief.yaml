@@ -1,0 +1,24 @@
+id: "JF-0292"
+slug: "custom-embroidered-towel-handkerchief"
+name_en: "Custom embroidered towel/handkerchief"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "hold"
+name_jp: "刺繍タオル"
+brand: "Department stores / souvenir shops"
+where_found:
+  - "Department stores"
+  - "specialty shops"
+price_yen: "~¥1,000–¥3,000"
+what_it_is: "Small towel with name/initial embroidery."
+why_travelers_care: "Practical, personal, easy gift."
+risk_flags:
+  - "lead time"
+  - "language accuracy"
+verification_notes: "Verify same-day service and spelling."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "low"
+trip_score: 7
+suitcase_score: 8

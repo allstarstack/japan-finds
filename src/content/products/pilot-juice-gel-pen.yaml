@@ -1,0 +1,20 @@
+id: "JF-0277"
+slug: "pilot-juice-gel-pen"
+name_en: "Pilot Juice+ Gel Pen"
+category: "other"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "パイロット ジュースプラス"
+brand: "Pilot"
+where_found:
+  - "Loft / Hands / Itoya"
+price_yen: "~¥150"
+what_it_is: "Smooth gel pen."
+why_travelers_care: "Stationery micro-gift / stock-up item."
+verification_notes: "Verify exact product name and award claim."
+source_links:
+  - "User-pasted response"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 10

@@ -1,0 +1,23 @@
+id: "JF-0414"
+slug: "puccho-chewy-candy"
+name_en: "Puccho Chewy Candy"
+category: "snacks"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "ぷっちょ"
+brand: "UHA Mikakuto"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "100-200"
+what_it_is: "Chewy candy with embedded juicy soft chunks. Dozens of flavors."
+why_travelers_care: "Texture novelty, less-known than Hi-Chew abroad."
+risk_flags:
+  - "allergen-dairy-soy"
+source_links:
+  - "uha-mikakuto.co.jp/seihin/puccho"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

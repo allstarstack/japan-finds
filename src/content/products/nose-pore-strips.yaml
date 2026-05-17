@@ -1,0 +1,25 @@
+id: "JF-0155"
+slug: "nose-pore-strips"
+name_en: "Nose pore strips"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "毛穴すっきりパック"
+brand: "Bioré / Kao"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥400–¥800"
+what_it_is: "Adhesive strip for removing pore plugs."
+why_travelers_care: "Visually recognizable but not essential or universally skin-friendly."
+risk_flags:
+  - "skincare/cosmetic claim"
+  - "irritation risk"
+verification_notes: "Dermatology suitability and ingredients need checking."
+source_links:
+  - "https://www.kao.com/jp/products/bioreuv/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 5
+suitcase_score: 5

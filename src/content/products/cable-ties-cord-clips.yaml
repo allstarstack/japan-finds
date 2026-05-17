@@ -1,0 +1,23 @@
+id: "JF-0017"
+slug: "cable-ties-cord-clips"
+name_en: "Cable ties / cord clips"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "ケーブルタイ"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+price_yen: "~¥110–¥330"
+what_it_is: "Small organizers for charging cables."
+why_travelers_care: "Cheap fix for tech chaos while traveling."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check adhesive/clip quality."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 9

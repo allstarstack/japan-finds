@@ -1,0 +1,20 @@
+slug: "seria"
+name_en: "Seria"
+layer: "100_yen"
+status: "needs_verification"
+name_jp: "セリア"
+best_for: "Design-forward 100-yen goods, clean storage, kitchen, stationery, crafts."
+core_categories:
+  - "Kitchen/home goods"
+  - "storage"
+  - "washi/stationery"
+  - "craft supplies"
+  - "bento accessories"
+  - "minimalist tableware."
+tax_free_notes: "Tax-free less common; mall counters may handle it."
+airport_availability: "No real airport role."
+risk_flags:
+  - "Fragile tableware"
+  - "branch inventory variance."
+source_links:
+  - "https://www.seria-group.com/"

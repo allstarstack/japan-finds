@@ -1,0 +1,20 @@
+id: "JF-0450"
+slug: "coin-locker-eki-locker"
+name_en: "Coin Locker (Eki-Locker)"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "コインロッカー"
+brand: "Various"
+where_found:
+  - "Most JR and metro stations"
+price_yen: "300-700"
+what_it_is: "Station luggage lockers, sizes from carry-on to large."
+why_travelers_care: "Drop bags + walk all-day routine."
+verification_notes: "Some stations have IC-card lockers vs cash-only"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 0

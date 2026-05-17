@@ -1,0 +1,23 @@
+id: "JF-0101"
+slug: "jonetsu-kakaku-pb-snacks"
+name_en: "Jonetsu Kakaku PB Snacks"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "hold"
+name_jp: "情熱価格"
+brand: "Don Quijote PB"
+where_found:
+  - "Don Quijote"
+price_yen: "100-500"
+what_it_is: "Don Quijote private brand snacks, often oversized formats."
+why_travelers_care: "Cheap, bulky, weirdly specific products (giant gummy, mega chips)."
+risk_flags:
+  - "allergen-varies, bulky"
+verification_notes: "Verify PB product range monthly"
+source_links:
+  - "donki.com/pb"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 5

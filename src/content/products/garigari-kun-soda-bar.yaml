@@ -1,0 +1,21 @@
+id: "JF-0238"
+slug: "garigari-kun-soda-bar"
+name_en: "Garigari-kun Soda Bar"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "ガリガリ君"
+brand: "Akagi Nyugyo"
+where_found:
+  - "Konbini freezer"
+price_yen: "70-100"
+what_it_is: "Cheap soda-flavored ice bar with shaved ice center. Mascot is iconic. Occasional weird flavors (corn potage, napolitan)."
+why_travelers_care: "Cheap thrill, weird flavor drops are content moments."
+risk_flags:
+  - "perishable"
+verification_notes: "Flavor of the season changes frequently"
+source_links:
+  - "akagi.com"
+confidence: "high"
+trip_score: 8

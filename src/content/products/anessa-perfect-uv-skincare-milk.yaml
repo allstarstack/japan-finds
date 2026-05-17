@@ -1,0 +1,28 @@
+id: "JF-0372"
+slug: "anessa-perfect-uv-skincare-milk"
+name_en: "Anessa Perfect UV Skincare Milk"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "アネッサ パーフェクトUV スキンケアミルク"
+brand: "Shiseido"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "@cosme"
+  - "department stores"
+price_yen: "~¥2,500–¥3,500"
+what_it_is: "Premium Japanese sunscreen milk SPF50+ PA++++."
+why_travelers_care: "High-performance reputation; useful for hot/humid travel."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm formula year and skin suitability."
+source_links:
+  - "https://www.shiseido.co.jp/anessa/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 9
+suitcase_score: 8

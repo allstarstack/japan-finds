@@ -1,0 +1,22 @@
+id: "JF-0268"
+slug: "apagard-premio-toothpaste"
+name_en: "Apagard Premio Toothpaste"
+category: "other"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "アパガード プレミオ"
+brand: "Sangi"
+where_found:
+  - "Drugstores"
+price_yen: "~¥1,500"
+what_it_is: "Nano-hydroxyapatite toothpaste."
+why_travelers_care: "High-intent oral-care stock-up item; avoid medical overclaims."
+risk_flags:
+  - "cosmetic/health claim"
+verification_notes: "Verify formulation and claim language."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 4
+suitcase_score: 10

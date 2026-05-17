@@ -1,0 +1,25 @@
+id: "JF-0027"
+slug: "microwave-ramen-cooker"
+name_en: "Microwave ramen cooker"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "電子レンジラーメン調理器"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+price_yen: "~¥110–¥550"
+what_it_is: "Plastic microwave container for instant noodles."
+why_travelers_care: "Functional, visually clear, and cheap."
+risk_flags:
+  - "bulky"
+  - "plastic"
+  - "heat use"
+verification_notes: "Check microwave safety and suitcase space."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 6

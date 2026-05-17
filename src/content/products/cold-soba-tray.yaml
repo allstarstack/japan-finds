@@ -1,0 +1,25 @@
+id: "JF-0246"
+slug: "cold-soba-tray"
+name_en: "Cold soba tray"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "冷しそば"
+brand: "Major konbini"
+where_found:
+  - "Major konbini chilled meal section"
+price_yen: "~¥400–¥650"
+what_it_is: "Ready-to-eat chilled soba with dipping sauce and toppings."
+why_travelers_care: "Shows how far Japan takes convenience meals."
+risk_flags:
+  - "perishable"
+  - "allergen"
+  - "fresh food"
+verification_notes: "Check buckwheat allergy and sauce packet ingredients."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "medium"
+trip_score: 8

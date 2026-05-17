@@ -1,0 +1,20 @@
+id: "JF-0077"
+slug: "jr-eki-stamp-rally"
+name_en: "JR Eki Stamp Rally"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "駅スタンプラリー"
+brand: "JR"
+where_found:
+  - "JR stations + special campaigns"
+price_yen: "0"
+what_it_is: "Free station stamp collection through trip."
+why_travelers_care: "Free, accumulative, near-zero effort."
+verification_notes: "Some campaigns are limited-time"
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 10

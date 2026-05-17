@@ -1,0 +1,21 @@
+id: "JF-0007"
+slug: "daiso-furoshiki-wrapping-cloth"
+name_en: "Daiso Furoshiki Wrapping Cloth"
+category: "100-yen"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "風呂敷"
+brand: "Daiso"
+where_found:
+  - "Daiso"
+  - "Seria"
+price_yen: "110-330"
+what_it_is: "Square wrapping cloth, Japanese patterns."
+why_travelers_care: "Cheap, beautiful, packs flat, real cultural object."
+source_links:
+  - "daiso-sangyo.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

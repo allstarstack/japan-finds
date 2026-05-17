@@ -1,0 +1,23 @@
+id: "JF-0312"
+slug: "hokkaido-letao-cheese-snacks"
+name_en: "Hokkaido Letao Cheese Snacks"
+category: "other"
+intent:
+  - "local_editions"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ルタオ"
+brand: "LeTAO"
+where_found:
+  - "Hokkaido"
+  - "dept stores"
+price_yen: "1000-2500"
+what_it_is: "Hokkaido dairy snacks from LeTAO line."
+why_travelers_care: "Hokkaido dairy story."
+risk_flags:
+  - "allergen-dairy"
+source_links:
+  - "letao.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

@@ -1,0 +1,21 @@
+id: "JF-0367"
+slug: "minon-amino-moist-line"
+name_en: "Minon Amino Moist Line"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ミノン"
+brand: "Daiichi Sankyo Healthcare"
+where_found:
+  - "All drugstores"
+price_yen: "1500-3000"
+what_it_is: "Amino-acid-based sensitive-skin line, gentle cleanser and moisturizer."
+why_travelers_care: "Strong pick for reactive skin travelers."
+risk_flags:
+  - "liquid, skincare/cosmetic claim"
+source_links:
+  - "daiichisankyo-hc.co.jp/site/minon"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

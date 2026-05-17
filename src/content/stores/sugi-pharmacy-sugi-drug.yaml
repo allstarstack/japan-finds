@@ -1,0 +1,20 @@
+slug: "sugi-pharmacy-sugi-drug"
+name_en: "Sugi Pharmacy / Sugi Drug"
+layer: "drugstore"
+status: "needs_verification"
+name_jp: "スギ薬局"
+best_for: "Kansai/Chubu-strong drugstore, supplements, pharmacy basics, and less tourist-chaos backups."
+core_categories:
+  - "Skincare/cosmetics"
+  - "OTC comfort items"
+  - "supplements"
+  - "masks"
+  - "daily goods."
+tax_free_notes: "Tax-free at participating stores; coupons may stack; verify exact active terms before publishing."
+airport_availability: "Rare at airports."
+risk_flags:
+  - "Supplements/OTC products need extra caution"
+  - "avoid universal medicine recommendations."
+source_links:
+  - "https://www.sugi-net.jp/"
+  - "https://cs.sugi-net.jp/fa/support-en/web/index.html"

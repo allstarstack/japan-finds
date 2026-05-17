@@ -1,0 +1,19 @@
+id: "JF-0437"
+slug: "stalogy-editor-s-series-365"
+name_en: "Stalogy Editor's Series 365"
+category: "stationery"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "スタロジー"
+brand: "Nitto"
+where_found:
+  - "Stationery stores"
+price_yen: "1500-2500"
+what_it_is: "Thin daily notebook, designed by Nikkei Design."
+why_travelers_care: "Designer cult notebook."
+source_links:
+  - "stalogy.com"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

@@ -1,0 +1,21 @@
+id: "JF-0453"
+slug: "kairo-hand-warmers-winter"
+name_en: "Kairo Hand Warmers (Winter)"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "カイロ"
+brand: "Kao Pokka, etc."
+where_found:
+  - "Konbini"
+  - "drugstores"
+price_yen: "100-300"
+what_it_is: "Disposable iron-oxide hand warmers, 8-24h heat."
+why_travelers_care: "Winter essential, sold absolutely everywhere."
+verification_notes: "Limit 4 in carry-on for some airlines; check policy"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

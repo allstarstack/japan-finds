@@ -1,0 +1,23 @@
+id: "JF-0173"
+slug: "toraya-yokan"
+name_en: "Toraya Yokan"
+category: "other"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "とらや 羊羹"
+brand: "Toraya"
+where_found:
+  - "Toraya stores"
+  - "dept stores"
+price_yen: "1000-5000"
+what_it_is: "Premium red bean jellied confection from a 500-year-old wagashi house."
+why_travelers_care: "Heritage gift with long shelf life."
+risk_flags:
+  - "allergen-soy"
+source_links:
+  - "toraya-group.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

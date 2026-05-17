@@ -1,0 +1,24 @@
+id: "JF-0412"
+slug: "pocky-pretz-standard-regional"
+name_en: "Pocky / Pretz (Standard + Regional)"
+category: "snacks"
+intent:
+  - "bring_home"
+  - "gift_easy"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "ポッキー / プリッツ"
+brand: "Glico"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "150-400"
+what_it_is: "Chocolate-coated biscuit sticks (Pocky) or salted/savory sticks (Pretz). Regional variants exist (Tokyo amazake, Kyoto matcha, etc.)."
+why_travelers_care: "Recognizable, bring back the regional ones not the standard."
+risk_flags:
+  - "allergen-wheat-dairy-soy"
+source_links:
+  - "glico.com/jp/product/pocky"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

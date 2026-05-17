@@ -1,0 +1,25 @@
+id: "JF-0104"
+slug: "tokyo-banana-variations"
+name_en: "Tokyo Banana Variations"
+category: "donki-drugstore"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "東京ばな奈"
+brand: "Grapestone"
+where_found:
+  - "Tokyo stations"
+  - "Donki"
+  - "airport"
+price_yen: "1100-2000"
+what_it_is: "Sponge cake filled with banana custard. Now sells dozens of variants."
+why_travelers_care: "Default Tokyo omiyage; safe gift for coworkers."
+risk_flags:
+  - "perishable (~7 day shelf), allergen-egg-wheat-dairy"
+verification_notes: "Shelf life shorter than most omiyage; check date on box"
+source_links:
+  - "tokyobanana.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 9

@@ -1,0 +1,21 @@
+id: "JF-0099"
+slug: "costume-cosplay-floor-finds"
+name_en: "Costume / Cosplay Floor Finds"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "コスプレ"
+brand: "Various"
+where_found:
+  - "Donki costume floor"
+price_yen: "1000-10000"
+what_it_is: "Halloween costumes, party wigs, novelty items."
+why_travelers_care: "Pure content fuel — not really a buy unless event-relevant."
+risk_flags:
+  - "bulky"
+source_links:
+  - "donki.com"
+confidence: "high"
+trip_score: 4
+suitcase_score: 3

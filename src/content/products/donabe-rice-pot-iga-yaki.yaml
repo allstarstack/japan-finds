@@ -1,0 +1,24 @@
+id: "JF-0201"
+slug: "donabe-rice-pot-iga-yaki"
+name_en: "Donabe Rice Pot (Iga-yaki)"
+category: "kitchen"
+intent:
+  - "bring_home"
+  - "local_editions"
+status: "hold"
+name_jp: "土鍋"
+brand: "Various (Nagatani-en for premium)"
+where_found:
+  - "Kappabashi"
+  - "Iga region"
+  - "dept stores"
+price_yen: "5000-30000"
+what_it_is: "Clay rice pot, the high-end alternative to electric rice cookers."
+why_travelers_care: "Photogenic, cooks rice extraordinarily well."
+risk_flags:
+  - "fragile, bulky"
+source_links:
+  - "nagatani-en.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 2

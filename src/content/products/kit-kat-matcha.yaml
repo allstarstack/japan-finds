@@ -1,0 +1,24 @@
+id: "JF-0408"
+slug: "kit-kat-matcha"
+name_en: "Kit Kat Matcha"
+category: "snacks"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "キットカット 抹茶"
+brand: "Nestle Japan"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+  - "airports"
+price_yen: "180-400"
+what_it_is: "Matcha-flavored Kit Kat, available year-round."
+why_travelers_care: "Default Kit Kat purchase."
+risk_flags:
+  - "allergen-dairy-soy-wheat"
+source_links:
+  - "nestle.co.jp/brands/kitkat"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

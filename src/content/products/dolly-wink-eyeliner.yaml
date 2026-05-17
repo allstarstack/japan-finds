@@ -1,0 +1,26 @@
+id: "JF-0377"
+slug: "dolly-wink-eyeliner"
+name_en: "Dolly Wink eyeliner"
+category: "skincare"
+intent:
+  - "bring_home"
+status: "needs_verification"
+name_jp: "ドーリーウインク アイライナー"
+brand: "Koji / Dolly Wink"
+where_found:
+  - "Drugstores"
+  - "Loft"
+  - "@cosme"
+price_yen: "~¥1,300–¥1,700"
+what_it_is: "Liquid eyeliner line associated with Japanese makeup culture."
+why_travelers_care: "Small, readable beauty gift for makeup users."
+risk_flags:
+  - "skincare/cosmetic claim"
+verification_notes: "Check color and formula."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://www.cosme.net/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

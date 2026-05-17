@@ -1,0 +1,23 @@
+id: "JF-0208"
+slug: "microplane-oroshigane-japanese-grater"
+name_en: "Microplane / Oroshigane (Japanese Grater)"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "おろし金"
+brand: "Various"
+where_found:
+  - "Kappabashi"
+  - "kitchen stores"
+price_yen: "1500-5000"
+what_it_is: "Copper or stainless ginger/daikon grater. Sharp pyramidal teeth."
+why_travelers_care: "Distinctive, useful, mid-weight."
+risk_flags:
+  - "sharp"
+verification_notes: "Some sold abroad as Joyce Chen or Microplane copies"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 6

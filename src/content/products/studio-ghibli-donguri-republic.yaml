@@ -1,0 +1,22 @@
+id: "JF-0181"
+slug: "studio-ghibli-donguri-republic"
+name_en: "Studio Ghibli Donguri Republic"
+category: "other"
+intent:
+  - "bring_home"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "どんぐり共和国"
+brand: "Ghibli"
+where_found:
+  - "Donguri stores"
+price_yen: "500-10000+"
+what_it_is: "Studio Ghibli official goods."
+why_travelers_care: "Reliable kid + adult gift."
+risk_flags:
+  - "fragile (some)"
+source_links:
+  - "benelic.com/donguri"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

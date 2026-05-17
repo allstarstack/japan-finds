@@ -1,0 +1,23 @@
+id: "JF-0263"
+slug: "souffle-pudding"
+name_en: "Soufflé pudding"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "スフレ・プリン"
+brand: "FamilyMart / Famimaru"
+where_found:
+  - "FamilyMart chilled sweets"
+price_yen: "~¥300–¥400"
+what_it_is: "Layered pudding with soufflé cheesecake-style top."
+why_travelers_care: "More dramatic than standard pudding; good visual spoon shot."
+risk_flags:
+  - "perishable"
+  - "dairy"
+  - "allergen"
+verification_notes: "Confirm current version and region."
+source_links:
+  - "https://www.family.co.jp/for_tourist/en.html"
+confidence: "high"
+trip_score: 8

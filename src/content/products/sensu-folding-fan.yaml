@@ -1,0 +1,24 @@
+id: "JF-0091"
+slug: "sensu-folding-fan"
+name_en: "Sensu (Folding Fan)"
+category: "other"
+intent:
+  - "bring_home"
+  - "gift_easy"
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "扇子"
+brand: "Various"
+where_found:
+  - "Dept stores"
+  - "specialty fan shops in Kyoto"
+price_yen: "1000-10000"
+what_it_is: "Folding paper fan, can be customized."
+why_travelers_care: "Photogenic, summer-functional."
+risk_flags:
+  - "fragile"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

@@ -1,0 +1,26 @@
+id: "JF-0409"
+slug: "kit-kat-sake-hojicha-daigaku-imo-regional-flavors"
+name_en: "Kit Kat Sake / Hojicha / Daigaku Imo / Regional Flavors"
+category: "snacks"
+intent:
+  - "bring_home"
+  - "gift_easy"
+  - "local_editions"
+status: "needs_verification"
+name_jp: "ご当地キットカット"
+brand: "Nestle Japan"
+where_found:
+  - "Airports"
+  - "regional shops"
+  - "Donki"
+price_yen: "400-1000"
+what_it_is: "Regional/seasonal Kit Kat variants, 30+ active SKUs."
+why_travelers_care: "Best souvenir-tier item: light, durable, social."
+risk_flags:
+  - "allergen-dairy-soy-wheat, contains alcohol (sake variant)"
+verification_notes: "Variants rotate; check current lineup"
+source_links:
+  - "nestle.co.jp/brands/kitkat"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

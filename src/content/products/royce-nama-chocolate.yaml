@@ -1,0 +1,25 @@
+id: "JF-0415"
+slug: "royce-nama-chocolate"
+name_en: "Royce' Nama Chocolate"
+category: "snacks"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ロイズ 生チョコレート"
+brand: "Royce'"
+where_found:
+  - "Royce' stores"
+  - "airports"
+  - "Donki"
+price_yen: "850-1200 per box"
+what_it_is: "Soft ganache cubes dusted in cocoa, refrigerated."
+why_travelers_care: "Premium chocolate omiyage."
+risk_flags:
+  - "perishable (refrigerate), allergen-dairy"
+verification_notes: "Requires cold transport — only viable for short flights or insulated bags"
+source_links:
+  - "royce.com"
+confidence: "high"
+trip_score: 9
+suitcase_score: 5

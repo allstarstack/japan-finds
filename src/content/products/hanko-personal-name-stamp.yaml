@@ -1,0 +1,22 @@
+id: "JF-0089"
+slug: "hanko-personal-name-stamp"
+name_en: "Hanko Personal Name Stamp"
+category: "other"
+intent:
+  - "make_it_yours"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "判子"
+brand: "Various stamp shops"
+where_found:
+  - "Stamp shops"
+  - "dept stores"
+  - "online before trip"
+price_yen: "3000-30000"
+what_it_is: "Personal name stamp carved in kanji or katakana, used legally in Japan."
+why_travelers_care: "Personalization moment; collectors love."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

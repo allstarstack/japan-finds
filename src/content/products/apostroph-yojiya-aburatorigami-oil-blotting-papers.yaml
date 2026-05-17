@@ -1,0 +1,21 @@
+id: "JF-0355"
+slug: "apostroph-yojiya-aburatorigami-oil-blotting-papers"
+name_en: "Apostroph / Yojiya Aburatorigami (Oil Blotting Papers)"
+category: "skincare"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "あぶらとり紙"
+brand: "Yojiya / various"
+where_found:
+  - "Yojiya stores in Kyoto"
+  - "drugstores"
+price_yen: "300-500"
+what_it_is: "Oil-blotting paper in a flat envelope, used pre-makeup or mid-day."
+why_travelers_care: "Yojiya Kyoto is the iconic source; mirror-faced packaging is the souvenir."
+source_links:
+  - "yojiya.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

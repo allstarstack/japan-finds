@@ -1,0 +1,26 @@
+id: "JF-0106"
+slug: "alfort-mini-chocolate-biscuits"
+name_en: "Alfort mini chocolate biscuits"
+category: "donki-drugstore"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "アルフォート"
+brand: "Bourbon"
+where_found:
+  - "Donki"
+  - "konbini"
+  - "supermarkets"
+price_yen: "~¥150–¥400"
+what_it_is: "Chocolate-topped biscuit snack."
+why_travelers_care: "Tastes better than it looks; easy office gift filler."
+risk_flags:
+  - "allergen"
+  - "heat-sensitive"
+verification_notes: "Check melt risk in summer."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

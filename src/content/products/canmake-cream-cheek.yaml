@@ -1,0 +1,26 @@
+id: "JF-0374"
+slug: "canmake-cream-cheek"
+name_en: "Canmake Cream Cheek"
+category: "skincare"
+intent:
+  - "bring_home"
+status: "needs_verification"
+name_jp: "キャンメイク クリームチーク"
+brand: "Canmake"
+where_found:
+  - "Drugstores"
+  - "Loft"
+  - "@cosme"
+price_yen: "~¥600–¥800"
+what_it_is: "Affordable cream blush compact."
+why_travelers_care: "Tiny, cute, and strong value beauty souvenir."
+risk_flags:
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm shade availability."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://www.cosme.net/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

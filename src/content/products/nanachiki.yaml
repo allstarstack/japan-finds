@@ -1,0 +1,24 @@
+id: "JF-0258"
+slug: "nanachiki"
+name_en: "Nanachiki"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "ななチキ"
+brand: "7-Eleven"
+where_found:
+  - "7-Eleven hot snack counter"
+price_yen: "~¥240–¥280"
+what_it_is: "7-Eleven fried chicken seasoned with spices."
+why_travelers_care: "Good comparison item vs Fami-Chiki/Lawson chicken."
+risk_flags:
+  - "perishable"
+  - "meat"
+  - "fried food"
+  - "allergen"
+verification_notes: "Confirm current price and spice variant."
+source_links:
+  - "https://www.sej.co.jp/in/en.html"
+confidence: "high"
+trip_score: 8

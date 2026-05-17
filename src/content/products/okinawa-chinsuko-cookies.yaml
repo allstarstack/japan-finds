@@ -1,0 +1,25 @@
+id: "JF-0341"
+slug: "okinawa-chinsuko-cookies"
+name_en: "Okinawa chinsuko cookies"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "ちんすこう"
+brand: "Various"
+where_found:
+  - "Okinawa"
+  - "airports"
+  - "souvenir shops"
+price_yen: "~¥300–¥1,500"
+what_it_is: "Okinawan shortbread-like cookies."
+why_travelers_care: "Durable, regional, easy group gift."
+risk_flags:
+  - "allergen"
+  - "fragile"
+verification_notes: "Verify flavor and packaging."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

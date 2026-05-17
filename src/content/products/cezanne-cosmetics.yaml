@@ -1,0 +1,22 @@
+id: "JF-0358"
+slug: "cezanne-cosmetics"
+name_en: "Cezanne Cosmetics"
+category: "skincare"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "needs_verification"
+name_jp: "セザンヌ"
+brand: "Cezanne Keshohin"
+where_found:
+  - "All drugstores"
+price_yen: "500-1200"
+what_it_is: "Ultra-cheap base makeup, often dupes for high-end products."
+why_travelers_care: "Bargain beauty haul staple."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "cezanne.co.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 9

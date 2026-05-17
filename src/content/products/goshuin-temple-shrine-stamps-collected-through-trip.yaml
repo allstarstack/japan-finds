@@ -1,0 +1,20 @@
+id: "JF-0075"
+slug: "goshuin-temple-shrine-stamps-collected-through-trip"
+name_en: "Goshuin Temple/Shrine Stamps (Collected Through Trip)"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "御朱印"
+brand: "Temples and shrines"
+where_found:
+  - "Almost any temple or shrine"
+price_yen: "300-500 per stamp"
+what_it_is: "Calligraphy stamp in goshuin-cho, accumulated through pilgrimage."
+why_travelers_care: "Trip-spanning collectible."
+verification_notes: "Some temples no longer offer goshuin; check before"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 10
+suitcase_score: 10

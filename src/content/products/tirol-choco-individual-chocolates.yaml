@@ -1,0 +1,22 @@
+id: "JF-0418"
+slug: "tirol-choco-individual-chocolates"
+name_en: "Tirol-Choco Individual Chocolates"
+category: "snacks"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "チロルチョコ"
+brand: "Tirol-Choco Co."
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "30-100"
+what_it_is: "Tiny individually wrapped chocolates, dozens of flavors."
+why_travelers_care: "Easy mass omiyage."
+risk_flags:
+  - "allergen-dairy-wheat-soy"
+source_links:
+  - "tirol-choco.com"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

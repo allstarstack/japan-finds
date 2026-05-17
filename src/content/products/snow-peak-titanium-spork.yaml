@@ -1,0 +1,20 @@
+id: "JF-0281"
+slug: "snow-peak-titanium-spork"
+name_en: "Snow Peak Titanium Spork"
+category: "other"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "チタンスポーク"
+brand: "Snow Peak"
+where_found:
+  - "Snow Peak / outdoor shops"
+price_yen: "~¥1,200"
+what_it_is: "Lightweight titanium eating utensil."
+why_travelers_care: "Useful outdoor/travel object; not uniquely Japan-only but brand-relevant."
+verification_notes: "Verify local price and availability."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

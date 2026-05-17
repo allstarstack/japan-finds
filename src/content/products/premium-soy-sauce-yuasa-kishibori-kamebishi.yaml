@@ -1,0 +1,24 @@
+id: "JF-0169"
+slug: "premium-soy-sauce-yuasa-kishibori-kamebishi"
+name_en: "Premium Soy Sauce (Yuasa, Kishibori, Kamebishi)"
+category: "other"
+intent:
+  - "bring_home"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "湯浅醤油 / 岸本 / かめびし"
+brand: "Various"
+where_found:
+  - "Dept store food halls"
+  - "specialty shops"
+price_yen: "1500-5000"
+what_it_is: "Aged premium soy sauce from heritage breweries."
+why_travelers_care: "Real upgrade vs supermarket; gift-grade."
+risk_flags:
+  - "liquid, allergen-soy-wheat, fragile"
+verification_notes: "Glass bottle requires careful packing"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

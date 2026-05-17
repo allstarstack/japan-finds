@@ -1,0 +1,25 @@
+id: "JF-0331"
+slug: "kaminari-okoshi"
+name_en: "Kaminari Okoshi"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "雷おこし"
+brand: "Tokiwado / various"
+where_found:
+  - "Asakusa"
+  - "Tokyo souvenir shops"
+price_yen: "~¥500–¥1,500"
+what_it_is: "Traditional puffed rice snack from Asakusa/Tokyo."
+why_travelers_care: "Classic local souvenir with old-school Japan feel."
+risk_flags:
+  - "allergen"
+  - "fragile"
+verification_notes: "Check freshness and packaging."
+source_links:
+  - "https://www.tokiwado.com/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

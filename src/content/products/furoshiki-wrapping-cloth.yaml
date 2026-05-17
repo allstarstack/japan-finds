@@ -1,0 +1,21 @@
+id: "JF-0086"
+slug: "furoshiki-wrapping-cloth"
+name_en: "Furoshiki Wrapping Cloth"
+category: "other"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "風呂敷"
+brand: "Various"
+where_found:
+  - "Dept stores"
+  - "specialty shops"
+price_yen: "500-5000"
+what_it_is: "Square reusable wrapping cloth."
+why_travelers_care: "Cultural object that's also a functional gift wrap and bag."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

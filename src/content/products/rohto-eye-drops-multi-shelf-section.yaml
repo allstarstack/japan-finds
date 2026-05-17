@@ -1,0 +1,26 @@
+id: "JF-0120"
+slug: "rohto-eye-drops-multi-shelf-section"
+name_en: "Rohto eye drops multi-shelf section"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "目薬"
+brand: "Rohto / Santen / others"
+where_found:
+  - "Donki"
+  - "drugstores"
+price_yen: "~¥400–¥1,500"
+what_it_is: "Cooling, dry-eye, or contact-lens eye drops."
+why_travelers_care: "Immediate fix for dry hotel air, screens, contacts, or pollen."
+risk_flags:
+  - "medicine/regulated"
+  - "liquid"
+verification_notes: "Confirm active ingredients and destination rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://jp.rohto.com/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 6

@@ -1,0 +1,23 @@
+id: "JF-0026"
+slug: "mesh-travel-pouch"
+name_en: "Mesh travel pouch"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "メッシュポーチ"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+price_yen: "~¥110–¥330"
+what_it_is: "Small mesh pouch for cables, toiletries, or receipts."
+why_travelers_care: "Cheap organization upgrade during trip."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Verify zipper quality."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 9

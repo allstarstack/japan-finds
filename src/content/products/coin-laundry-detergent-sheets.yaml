@@ -1,0 +1,20 @@
+id: "JF-0284"
+slug: "coin-laundry-detergent-sheets"
+name_en: "Coin Laundry Detergent Sheets"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "シート洗剤"
+brand: "Various"
+where_found:
+  - "Drugstores"
+  - "konbini"
+price_yen: "300-800"
+what_it_is: "Single-use detergent sheets for hostel/coin laundries."
+why_travelers_care: "Hotel laundry fix."
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 10

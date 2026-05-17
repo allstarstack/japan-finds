@@ -1,0 +1,25 @@
+id: "JF-0353"
+slug: "yubari-melon-jelly"
+name_en: "Yubari melon jelly"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "hold"
+name_jp: "夕張メロンゼリー"
+brand: "Hori / various"
+where_found:
+  - "Hokkaido"
+  - "airports"
+  - "souvenir shops"
+price_yen: "~¥800–¥2,000"
+what_it_is: "Melon-flavored jelly cups."
+why_travelers_care: "Giftable Hokkaido flavor without refrigeration."
+risk_flags:
+  - "liquid/gel"
+  - "allergen possible"
+verification_notes: "Check liquid/gel baggage rules."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 7

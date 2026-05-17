@@ -1,0 +1,21 @@
+id: "JF-0129"
+slug: "cabagin-kowa-alpha-stomach"
+name_en: "Cabagin Kowa Alpha (Stomach)"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "キャベジンコーワα"
+brand: "Kowa"
+where_found:
+  - "All drugstores"
+price_yen: "1500-2500"
+what_it_is: "Cabbage-derived (methylmethionine sulfonium) stomach soother for indigestion."
+why_travelers_care: "Pre/post-izakaya stomach insurance."
+risk_flags:
+  - "medicine/regulated"
+source_links:
+  - "kowa.co.jp/cabagin"
+confidence: "high"
+trip_score: 6
+suitcase_score: 9

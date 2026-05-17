@@ -1,0 +1,22 @@
+id: "JF-0141"
+slug: "rohto-cool-40-alpha-eye-drops"
+name_en: "Rohto Cool 40 Alpha Eye Drops"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ロート Cool40アルファ"
+brand: "Rohto"
+where_found:
+  - "All drugstores"
+price_yen: "300-500"
+what_it_is: "Cheap cooling eye drops, the entry-level Japanese eye drop experience."
+why_travelers_care: "Cheaper than the V Premium for the same novelty hit."
+risk_flags:
+  - "medicine/regulated"
+verification_notes: "Same customs caveat as V Premium"
+source_links:
+  - "rohto.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

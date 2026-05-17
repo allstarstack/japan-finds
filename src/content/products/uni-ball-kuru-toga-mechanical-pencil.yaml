@@ -1,0 +1,20 @@
+id: "JF-0442"
+slug: "uni-ball-kuru-toga-mechanical-pencil"
+name_en: "Uni-ball Kuru Toga Mechanical Pencil"
+category: "stationery"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "クルトガ"
+brand: "Mitsubishi Pencil"
+where_found:
+  - "Stationery stores"
+price_yen: "550-2000"
+what_it_is: "Rotating mechanical pencil that keeps tip sharp."
+why_travelers_care: "Cult pencil, engineering-design moment."
+source_links:
+  - "mpuni.co.jp/products/pencil/kurutoga"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

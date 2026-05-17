@@ -1,0 +1,22 @@
+id: "JF-0460"
+slug: "yodobashi-bic-camera-tax-free-electronics"
+name_en: "Yodobashi/Bic Camera Tax-Free Electronics"
+category: "other"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "ヨドバシ / ビックカメラ"
+brand: "Various"
+where_found:
+  - "Yodobashi/Bic flagship stores"
+price_yen: "Variable"
+what_it_is: "One-stop tax-free electronics, cameras, appliances."
+why_travelers_care: "Tax-free 10% saving on big-ticket items."
+risk_flags:
+  - "voltage mismatch"
+verification_notes: "Verify dual-voltage on every appliance"
+source_links:
+  - "yodobashi.com"
+  - "biccamera.com"
+confidence: "high"
+trip_score: 7

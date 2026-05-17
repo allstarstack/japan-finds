@@ -1,0 +1,25 @@
+id: "JF-0295"
+slug: "engraved-chopsticks"
+name_en: "Engraved chopsticks"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "名入れ箸"
+brand: "Various"
+where_found:
+  - "Souvenir shops"
+  - "department stores"
+  - "chopstick shops"
+price_yen: "~¥800–¥3,000"
+what_it_is: "Personalized chopsticks with name engraving."
+why_travelers_care: "Small, readable, highly giftable."
+risk_flags:
+  - "food-contact"
+  - "lead time"
+verification_notes: "Verify name language and turnaround."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 10

@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# V2 source material (working drafts, not for git)
+data/source/
+
+# Conversion artifacts
+.convert-log

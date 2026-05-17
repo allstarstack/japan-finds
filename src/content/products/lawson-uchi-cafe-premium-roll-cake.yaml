@@ -1,0 +1,23 @@
+id: "JF-0256"
+slug: "lawson-uchi-cafe-premium-roll-cake"
+name_en: "Lawson Uchi Café Premium Roll Cake"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "プレミアムロールケーキ"
+brand: "Lawson / Uchi Café"
+where_found:
+  - "Lawson chilled sweets"
+price_yen: "~¥200–¥300"
+what_it_is: "Cream-filled sponge roll cake from Lawson’s sweets line."
+why_travelers_care: "Iconic konbini dessert; good comparison against bakery quality."
+risk_flags:
+  - "perishable"
+  - "dairy"
+  - "allergen"
+verification_notes: "Check current packaging and price."
+source_links:
+  - "https://www.lawson.co.jp/recommend/original/"
+confidence: "medium"
+trip_score: 8

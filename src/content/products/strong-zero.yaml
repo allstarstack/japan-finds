@@ -1,0 +1,23 @@
+id: "JF-0226"
+slug: "strong-zero"
+name_en: "Strong Zero"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "needs_verification"
+name_jp: "ストロングゼロ"
+brand: "Suntory"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "180-220"
+what_it_is: "9% ABV chuhai, cheap, hits very hard. Multiple fruit flavors including grapefruit."
+why_travelers_care: "Infamous for its punch, viral 'sad drink' meme status."
+risk_flags:
+  - "liquid, alcohol, allergen-citrus (grapefruit variant)"
+verification_notes: "Confirm which flavors still in lineup; double lemon and dry are core"
+source_links:
+  - "suntory.co.jp/rtd/strongzero"
+confidence: "high"
+trip_score: 8
+suitcase_score: 5

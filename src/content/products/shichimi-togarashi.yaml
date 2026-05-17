@@ -1,0 +1,26 @@
+id: "JF-0123"
+slug: "shichimi-togarashi"
+name_en: "Shichimi togarashi"
+category: "donki-drugstore"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "七味唐辛子"
+brand: "Yawataya Isogoro / House / various"
+where_found:
+  - "Donki"
+  - "supermarkets"
+  - "specialty shops"
+price_yen: "~¥300–¥900"
+what_it_is: "Japanese seven-spice chili blend."
+why_travelers_care: "Tiny, useful, shelf-stable, good for food-loving travelers."
+risk_flags:
+  - "spice"
+  - "allergen possible"
+verification_notes: "Verify brand and spice ingredients."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 9

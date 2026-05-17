@@ -1,0 +1,19 @@
+id: "JF-0081"
+slug: "ramen-making-class-tokyo-osaka"
+name_en: "Ramen-Making Class (Tokyo / Osaka)"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "ラーメン作り体験"
+brand: "Various"
+where_found:
+  - "Tokyo and Osaka schools"
+price_yen: "4000-10000"
+what_it_is: "Make ramen broth and noodles, eat the result."
+why_travelers_care: "Newer popular class, less saturated than sushi."
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 0

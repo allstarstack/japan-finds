@@ -1,0 +1,24 @@
+id: "JF-0067"
+slug: "nicotine-vape-products"
+name_en: "Nicotine/vape products"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "ニコチン製品・電子タバコ"
+brand: "Various"
+where_found:
+  - "Tobacco shops"
+  - "konbini depending item"
+price_yen: "varies"
+what_it_is: "Nicotine or vaping-related products."
+why_travelers_care: "Regulated category; should not be promoted as a find."
+risk_flags:
+  - "nicotine"
+  - "regulated"
+  - "age-restricted"
+verification_notes: "Exclude from shopping recommendations."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "low"
+trip_score: 1

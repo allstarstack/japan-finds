@@ -1,0 +1,21 @@
+id: "JF-0444"
+slug: "allie-chrono-beauty-gel-uv"
+name_en: "Allie Chrono Beauty Gel UV"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "アリィー"
+brand: "Kanebo"
+where_found:
+  - "Drugstores"
+price_yen: "2300-3000"
+what_it_is: "SPF 50+ with skincare actives."
+why_travelers_care: "Premium alternative to Anessa, lighter feel."
+risk_flags:
+  - "liquid, skincare/cosmetic claim"
+source_links:
+  - "allie.kanebo-cosmetics.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

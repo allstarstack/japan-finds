@@ -1,0 +1,24 @@
+id: "JF-0171"
+slug: "suzukake-tsuruya-yoshinobu-wagashi"
+name_en: "Suzukake / Tsuruya Yoshinobu Wagashi"
+category: "other"
+intent:
+  - "gift_easy"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "鈴懸 / 鶴屋吉信"
+brand: "Suzukake / Tsuruya Yoshinobu"
+where_found:
+  - "Dept store food halls"
+price_yen: "1500-5000"
+what_it_is: "Premium wagashi gift boxes."
+why_travelers_care: "Beautiful packaging, real-deal craft."
+risk_flags:
+  - "allergen-soy-varies"
+verification_notes: "Some are perishable; check shelf life"
+source_links:
+  - "suzukake.co.jp"
+  - "tsuruyayoshinobu.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

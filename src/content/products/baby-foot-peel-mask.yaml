@@ -1,0 +1,24 @@
+id: "JF-0127"
+slug: "baby-foot-peel-mask"
+name_en: "Baby Foot Peel Mask"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "needs_verification"
+name_jp: "ベビーフット"
+brand: "Liberta"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "1200-1800 per pair"
+what_it_is: "Booties with chemical exfoliant, peels foot skin over 5-7 days."
+why_travelers_care: "Viral cult product, originally Japan-only."
+risk_flags:
+  - "skincare/cosmetic claim, liquid (gel)"
+verification_notes: "Sold abroad but typically 2-3x the price"
+source_links:
+  - "babyfoot.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

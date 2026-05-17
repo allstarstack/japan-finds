@@ -1,0 +1,25 @@
+id: "JF-0261"
+slug: "pocari-sweat-aquarius"
+name_en: "Pocari Sweat / Aquarius"
+category: "konbini"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "ポカリスエット・アクエリアス"
+brand: "Otsuka / Coca-Cola Japan"
+where_found:
+  - "Konbini"
+  - "vending machines"
+  - "drugstores"
+price_yen: "~¥130–¥180"
+what_it_is: "Japanese sports/electrolyte drink."
+why_travelers_care: "Useful for summer, walking days, and first-day travel fatigue."
+risk_flags:
+  - "liquid"
+  - "sugar"
+verification_notes: "Check sugar/caffeine and health constraints."
+source_links:
+  - "https://www.japan-guide.com/e/e2071.html"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "high"
+trip_score: 9

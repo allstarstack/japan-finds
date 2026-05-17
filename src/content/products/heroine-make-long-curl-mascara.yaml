@@ -1,0 +1,26 @@
+id: "JF-0381"
+slug: "heroine-make-long-curl-mascara"
+name_en: "Heroine Make Long & Curl Mascara"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ヒロインメイク ロング＆カールマスカラ"
+brand: "Kiss Me / Isehan"
+where_found:
+  - "Drugstores"
+  - "Loft"
+  - "@cosme"
+price_yen: "~¥1,200–¥1,500"
+what_it_is: "Japanese waterproof mascara."
+why_travelers_care: "Cult reputation for staying power; tiny and suitcase-efficient."
+risk_flags:
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm waterproof remover needs and sensitivity."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://www.cosme.net/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 9

@@ -1,0 +1,27 @@
+id: "JF-0383"
+slug: "keana-nadeshiko-rice-mask"
+name_en: "Keana Nadeshiko Rice Mask"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "毛穴撫子 お米のマスク"
+brand: "Ishizawa Laboratories"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "Loft"
+price_yen: "~¥700–¥1,000"
+what_it_is: "Rice-themed sheet mask pack."
+why_travelers_care: "Memorable packaging, high tourist visibility."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm skin suitability and current pack size."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.loft.co.jp/store/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

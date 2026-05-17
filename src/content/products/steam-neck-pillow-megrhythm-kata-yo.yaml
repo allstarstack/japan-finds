@@ -1,0 +1,22 @@
+id: "JF-0145"
+slug: "steam-neck-pillow-megrhythm-kata-yo"
+name_en: "Steam Neck Pillow (Megrhythm Kata-yo)"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "めぐりズム蒸気の温熱シート"
+brand: "Kao"
+where_found:
+  - "Drugstores"
+  - "konbini"
+price_yen: "500-900"
+what_it_is: "Heated stick-on shoulder/neck patches, 5-8 hour warmth."
+why_travelers_care: "Travel-tension fix; works through clothes."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "kao.com/jp/products/megurism"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

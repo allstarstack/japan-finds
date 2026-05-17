@@ -1,0 +1,20 @@
+id: "JF-0285"
+slug: "compression-socks"
+name_en: "Compression Socks"
+category: "other"
+intent:
+  - "stock_up"
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "着圧ソックス"
+brand: "Medilex, others"
+where_found:
+  - "Drugstores"
+price_yen: "1000-3000"
+what_it_is: "Graduated compression for travel days."
+why_travelers_care: "Long-flight + walking-heavy trip aid."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

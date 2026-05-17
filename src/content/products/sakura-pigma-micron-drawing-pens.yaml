@@ -1,0 +1,21 @@
+id: "JF-0436"
+slug: "sakura-pigma-micron-drawing-pens"
+name_en: "Sakura Pigma Micron Drawing Pens"
+category: "stationery"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ピグマミクロン"
+brand: "Sakura"
+where_found:
+  - "Stationery stores"
+  - "art stores"
+price_yen: "200-300 per pen"
+what_it_is: "Archival pigment drawing pen."
+why_travelers_care: "Illustrator staple internationally."
+verification_notes: "Available abroad widely"
+source_links:
+  - "sakuracolor.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

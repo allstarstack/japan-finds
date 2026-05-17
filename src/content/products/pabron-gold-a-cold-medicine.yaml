@@ -1,0 +1,22 @@
+id: "JF-0139"
+slug: "pabron-gold-a-cold-medicine"
+name_en: "Pabron Gold A Cold Medicine"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "パブロンゴールドA"
+brand: "Taisho Pharmaceutical"
+where_found:
+  - "All drugstores"
+price_yen: "1500-2500"
+what_it_is: "Combination cold/flu powder or tablets, broad-spectrum."
+why_travelers_care: "Travel-cold rescue; contains acetaminophen + other actives."
+risk_flags:
+  - "medicine/regulated, multiple actives"
+verification_notes: "Multi-ingredient — check with doctor before mixing with other meds"
+source_links:
+  - "catalog.taisho.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 9

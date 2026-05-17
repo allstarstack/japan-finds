@@ -1,0 +1,24 @@
+id: "JF-0213"
+slug: "wakasa-nuri-edo-style-chopsticks"
+name_en: "Wakasa-nuri / Edo-style Chopsticks"
+category: "kitchen"
+intent:
+  - "bring_home"
+  - "gift_easy"
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "若狭塗 / 江戸箸"
+brand: "Various"
+where_found:
+  - "Dept stores"
+  - "specialty chopstick shops"
+price_yen: "500-5000"
+what_it_is: "Lacquered chopsticks, often with shell inlay or family-name engraving."
+why_travelers_care: "Top-tier omiyage, customizable."
+risk_flags:
+  - "fragile (lacquer)"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

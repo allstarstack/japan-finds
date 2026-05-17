@@ -1,0 +1,25 @@
+id: "JF-0253"
+slug: "japanese-custard-pudding"
+name_en: "Japanese custard pudding"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "プリン"
+brand: "Major konbini / Morinaga / Glico variants"
+where_found:
+  - "Major konbini chilled sweets"
+price_yen: "~¥150–¥350"
+what_it_is: "Flan-style custard pudding with caramel or creamy variants."
+why_travelers_care: "Low-risk dessert that shows konbini quality."
+risk_flags:
+  - "perishable"
+  - "dairy"
+  - "allergen"
+verification_notes: "Brand and texture vary by chain."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.lawson.co.jp/recommend/original/"
+confidence: "high"
+trip_score: 7

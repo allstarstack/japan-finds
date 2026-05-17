@@ -1,0 +1,20 @@
+id: "JF-0280"
+slug: "seed-kadoloop-eraser"
+name_en: "Seed Kadoloop Eraser"
+category: "other"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "シード カドループ"
+brand: "Seed"
+where_found:
+  - "Loft / Hands"
+price_yen: "~¥300"
+what_it_is: "Self-reshaping sharp-corner eraser."
+why_travelers_care: "Novelty + functional stationery; likely strong video object."
+verification_notes: "Verify heating/reshaping spec."
+source_links:
+  - "User-pasted response"
+confidence: "medium"
+trip_score: 3
+suitcase_score: 10

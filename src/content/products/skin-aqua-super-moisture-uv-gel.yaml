@@ -1,0 +1,25 @@
+id: "JF-0393"
+slug: "skin-aqua-super-moisture-uv-gel"
+name_en: "Skin Aqua Super Moisture UV Gel"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "スキンアクア スーパーモイスチャーUVジェル"
+brand: "Rohto"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥800–¥1,300"
+what_it_is: "Large-format lightweight sunscreen gel."
+why_travelers_care: "Good value; easy body sunscreen for travel and home."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm SPF/PA and size."
+source_links:
+  - "https://jp.rohto.com/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

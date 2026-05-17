@@ -1,0 +1,26 @@
+id: "JF-0159"
+slug: "pitta-mask"
+name_en: "Pitta Mask"
+category: "donki-drugstore"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "ピッタマスク"
+brand: "Arax"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥400–¥800"
+what_it_is: "Soft polyurethane fashion mask."
+why_travelers_care: "Distinctive look and color options; less functional than medical masks."
+risk_flags:
+  - "easy to buy outside Japan"
+  - "fit"
+  - "material sensitivity"
+verification_notes: "Check filtration claims and current availability."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 6

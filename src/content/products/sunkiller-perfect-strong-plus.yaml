@@ -1,0 +1,21 @@
+id: "JF-0448"
+slug: "sunkiller-perfect-strong-plus"
+name_en: "Sunkiller Perfect Strong Plus"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "サンキラー"
+brand: "Isehan"
+where_found:
+  - "Drugstores"
+price_yen: "1200-1800"
+what_it_is: "Mid-tier SPF 50+ PA++++, often discounted at Donki."
+why_travelers_care: "Solid mid-tier value pick."
+risk_flags:
+  - "liquid, skincare/cosmetic claim"
+source_links:
+  - "kissme-isehan.com"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

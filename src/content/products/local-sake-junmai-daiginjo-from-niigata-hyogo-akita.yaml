@@ -1,0 +1,25 @@
+id: "JF-0314"
+slug: "local-sake-junmai-daiginjo-from-niigata-hyogo-akita"
+name_en: "Local Sake (Junmai Daiginjo from Niigata, Hyogo, Akita)"
+category: "other"
+intent:
+  - "bring_home"
+  - "local_editions"
+status: "needs_verification"
+name_jp: "日本酒"
+brand: "Various breweries"
+where_found:
+  - "Liquor stores"
+  - "breweries"
+  - "dept stores"
+price_yen: "1500-15000+"
+what_it_is: "Regional sake; brewery direct purchases give content angle."
+why_travelers_care: "Premium gift, conversation-starter at home."
+risk_flags:
+  - "liquid, alcohol, fragile"
+verification_notes: "Customs limits; check destination"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 4

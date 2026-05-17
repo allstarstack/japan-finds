@@ -1,0 +1,19 @@
+id: "JF-0013"
+slug: "seria-stationery"
+name_en: "Seria Stationery"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "セリア文房具"
+brand: "Seria"
+where_found:
+  - "Seria locations"
+price_yen: "110"
+what_it_is: "Better-designed than Daiso in many categories; folders, pen cases, journals."
+why_travelers_care: "Higher design ceiling at the same 100-yen price."
+source_links:
+  - "seria-group.com"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

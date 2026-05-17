@@ -1,0 +1,25 @@
+id: "JF-0161"
+slug: "roihi-tsuboko-patches"
+name_en: "Roihi-Tsuboko patches"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "ロイヒつぼ膏"
+brand: "Nichiban"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥700–¥1,500"
+what_it_is: "Small circular medicated pain patches."
+why_travelers_care: "Popular haul item, but should be treated carefully as medicine."
+risk_flags:
+  - "medicine/regulated"
+  - "skin irritation"
+verification_notes: "Medical suitability and active ingredients must be verified."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 5

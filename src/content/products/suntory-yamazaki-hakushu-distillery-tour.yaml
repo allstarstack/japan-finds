@@ -1,0 +1,23 @@
+id: "JF-0083"
+slug: "suntory-yamazaki-hakushu-distillery-tour"
+name_en: "Suntory Yamazaki / Hakushu Distillery Tour"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "needs_verification"
+name_jp: "山崎蒸溜所 / 白州蒸溜所"
+brand: "Suntory"
+where_found:
+  - "Yamazaki (Osaka)"
+  - "Hakushu (Yamanashi)"
+price_yen: "1000-3000"
+what_it_is: "Whisky distillery tour and tasting."
+why_travelers_care: "Bucket-list for whisky fans, advance booking required."
+risk_flags:
+  - "alcohol"
+verification_notes: "Lottery booking system; book 1-3 months out"
+source_links:
+  - "suntory.co.jp/factory"
+confidence: "high"
+trip_score: 9
+suitcase_score: 5

@@ -1,0 +1,20 @@
+id: "JF-0288"
+slug: "muji-packing-cubes"
+name_en: "Muji Packing Cubes"
+category: "other"
+intent:
+  - "day_one_fixes"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "無印良品 トラベルポーチ"
+brand: "Muji"
+where_found:
+  - "Muji stores"
+price_yen: "990-2000"
+what_it_is: "Mesh and fabric packing cubes, multiple sizes."
+why_travelers_care: "Loved organization tool; refreshable at any Muji."
+source_links:
+  - "muji.com/jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

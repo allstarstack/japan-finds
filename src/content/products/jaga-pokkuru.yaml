@@ -1,0 +1,26 @@
+id: "JF-0329"
+slug: "jaga-pokkuru"
+name_en: "Jaga Pokkuru"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "じゃがポックル"
+brand: "Calbee Potato Farm"
+where_found:
+  - "Hokkaido"
+  - "airports"
+  - "souvenir shops"
+price_yen: "~¥1,000–¥1,300"
+what_it_is: "Crispy potato snack made for souvenir market."
+why_travelers_care: "Easy, durable Hokkaido snack gift."
+risk_flags:
+  - "allergen"
+  - "bulky"
+verification_notes: "Verify regional availability and pack size."
+source_links:
+  - "https://www.calbee.co.jp/potatofarm/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

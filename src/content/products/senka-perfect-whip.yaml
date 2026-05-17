@@ -1,0 +1,26 @@
+id: "JF-0391"
+slug: "senka-perfect-whip"
+name_en: "Senka Perfect Whip"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "専科 パーフェクトホイップ"
+brand: "Shiseido / Fine Today"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥500–¥800"
+what_it_is: "Foaming facial cleanser tube."
+why_travelers_care: "Recognizable Japanese cleanser; cheap and easy to find."
+risk_flags:
+  - "liquid/cream"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm formula and skin suitability."
+source_links:
+  - "https://www.shiseido.co.jp/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 7

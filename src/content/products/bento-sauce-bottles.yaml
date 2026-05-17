@@ -1,0 +1,24 @@
+id: "JF-0016"
+slug: "bento-sauce-bottles"
+name_en: "Bento sauce bottles"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "たれびん"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+price_yen: "~¥110"
+what_it_is: "Tiny containers for sauces in bento/lunch boxes."
+why_travelers_care: "Cute Japan-specific utility and giftable to food people."
+risk_flags:
+  - "liquid use"
+  - "small parts"
+verification_notes: "Check food-safe label."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

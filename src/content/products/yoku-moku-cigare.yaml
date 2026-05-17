@@ -1,0 +1,26 @@
+id: "JF-0352"
+slug: "yoku-moku-cigare"
+name_en: "Yoku Moku Cigare"
+category: "snacks"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "シガール"
+brand: "Yoku Moku"
+where_found:
+  - "Department stores"
+  - "airports"
+  - "souvenir shops"
+price_yen: "~¥1,000–¥3,000"
+what_it_is: "Rolled butter cookie in tins/boxes."
+why_travelers_care: "Safe premium gift; very office-friendly."
+risk_flags:
+  - "allergen"
+  - "fragile"
+verification_notes: "Check tin/box sizes."
+source_links:
+  - "https://www.yokumoku.jp/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

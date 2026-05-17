@@ -1,0 +1,24 @@
+id: "JF-0413"
+slug: "press-butter-sand"
+name_en: "Press Butter Sand"
+category: "snacks"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "プレスバターサンド"
+brand: "BAKE Inc."
+where_found:
+  - "Tokyo Station"
+  - "Solamachi"
+price_yen: "1300-1700"
+what_it_is: "Butter caramel + butter cream sandwich cookie, signature embossed logo."
+why_travelers_care: "Visual gift, durable."
+risk_flags:
+  - "allergen-dairy-wheat-egg"
+verification_notes: "Check limited flavors and shelf life."
+source_links:
+  - "buttersand.com"
+confidence: "high"
+trip_score: 9
+suitcase_score: 9

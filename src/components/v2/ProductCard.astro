@@ -1,0 +1,77 @@
+---
+/* V2 ProductCard — Phase A scaffold.
+   Unstyled inspection markup; Phase B replaces it with the comp design.
+   Public render gate: renders nothing unless status === "ready". */
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  entry: CollectionEntry<"products">;
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const visible = d.status === "ready";
+
+const rows: [string, string | undefined][] = [
+  ["category", d.category],
+  ["intent", d.intent.join(", ")],
+  ["where to buy", d.where_found?.join(", ")],
+  ["what it is", d.what_it_is],
+  ["why travelers care", d.why_travelers_care],
+  ["risk flags", d.risk_flags?.join(" · ")],
+];
+const shown = rows.filter(([, v]) => v);
+---
+
+{
+  visible && (
+    <article class="v2-card">
+      <h3>
+        {d.name_en}
+        {d.name_jp && <span class="v2-sub"> · {d.name_jp}</span>}
+      </h3>
+      <dl>
+        {shown.map(([k, v]) => (
+          <>
+            <dt>{k}</dt>
+            <dd>{v}</dd>
+          </>
+        ))}
+      </dl>
+    </article>
+  )
+}
+
+<style>
+  .v2-card {
+    border: 1px solid var(--color-ink-black);
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    font-family: var(--font-body);
+    font-size: 14px;
+  }
+  .v2-card h3 {
+    margin: 0 0 8px;
+    font-family: var(--font-head);
+    font-size: 16px;
+  }
+  .v2-sub {
+    font-weight: 400;
+    color: var(--color-ink-60);
+  }
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 2px 12px;
+  }
+  dt {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+  dd {
+    margin: 0;
+  }
+</style>

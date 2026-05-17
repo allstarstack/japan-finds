@@ -1,0 +1,26 @@
+id: "JF-0114"
+slug: "heat-patches-kairo-multipacks"
+name_en: "Heat patches / kairo multipacks"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "使い捨てカイロ"
+brand: "Kobayashi / Kiribai / private label"
+where_found:
+  - "Donki"
+  - "drugstores"
+  - "konbini"
+price_yen: "~¥300–¥900"
+what_it_is: "Disposable warming packs for pockets, feet, or body."
+why_travelers_care: "Cold-weather lifesaver and useful trip fix."
+risk_flags:
+  - "heat-generating item"
+  - "regulated by airline rules possible"
+verification_notes: "Check airline and destination rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 6

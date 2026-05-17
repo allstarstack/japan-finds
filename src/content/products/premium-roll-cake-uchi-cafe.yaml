@@ -1,0 +1,20 @@
+id: "JF-0243"
+slug: "premium-roll-cake-uchi-cafe"
+name_en: "Premium Roll Cake (Uchi Cafe)"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "プレミアムロールケーキ"
+brand: "Lawson Uchi Cafe"
+where_found:
+  - "Lawson dessert section"
+price_yen: "180-200"
+what_it_is: "Single-serve roll cake with whipped cream, ate-with-spoon design."
+why_travelers_care: "Convenience store dessert that punches above its weight."
+risk_flags:
+  - "perishable, allergen-dairy-wheat-egg"
+source_links:
+  - "lawson.co.jp/recommend/uchicafe"
+confidence: "high"
+trip_score: 8

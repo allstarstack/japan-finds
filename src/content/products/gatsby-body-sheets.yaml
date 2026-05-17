@@ -1,0 +1,23 @@
+id: "JF-0451"
+slug: "gatsby-body-sheets"
+name_en: "Gatsby Body Sheets"
+category: "other"
+intent:
+  - "day_one_fixes"
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ギャツビー"
+brand: "Mandom"
+where_found:
+  - "Konbini"
+  - "drugstores"
+price_yen: "300-500"
+what_it_is: "Mentholated body wipes, summer humidity essential."
+why_travelers_care: "Summer hot-day reset."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "mandom.co.jp/gatsby"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

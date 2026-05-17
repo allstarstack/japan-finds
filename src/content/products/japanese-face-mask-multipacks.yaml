@@ -1,0 +1,27 @@
+id: "JF-0116"
+slug: "japanese-face-mask-multipacks"
+name_en: "Japanese face mask multipacks"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "フェイスマスク"
+brand: "LuLuLun / Saborino / Keana / various"
+where_found:
+  - "Donki"
+  - "drugstores"
+  - "Loft"
+price_yen: "~¥500–¥2,000"
+what_it_is: "Sheet masks sold in packs or travel sizes."
+why_travelers_care: "Easy bulk purchase for beauty shoppers; good value in Japan."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Check skin sensitivity, ingredients, and liquid baggage rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

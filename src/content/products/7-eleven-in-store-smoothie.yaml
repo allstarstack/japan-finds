@@ -1,0 +1,23 @@
+id: "JF-0244"
+slug: "7-eleven-in-store-smoothie"
+name_en: "7-Eleven in-store smoothie"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "セブンカフェ スムージー"
+brand: "7-Eleven"
+where_found:
+  - "7-Eleven with smoothie machine"
+price_yen: "~¥300–¥400"
+what_it_is: "Frozen fruit/veg cup blended in-store using a machine."
+why_travelers_care: "Fun on-site process and photogenic machine interaction."
+risk_flags:
+  - "perishable"
+  - "liquid"
+  - "fresh food"
+verification_notes: "Machine availability differs by store."
+source_links:
+  - "https://www.sej.co.jp/in/en.html"
+confidence: "high"
+trip_score: 8

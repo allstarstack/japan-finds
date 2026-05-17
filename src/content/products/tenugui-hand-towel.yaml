@@ -1,0 +1,22 @@
+id: "JF-0095"
+slug: "tenugui-hand-towel"
+name_en: "Tenugui Hand Towel"
+category: "other"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "手ぬぐい"
+brand: "Kamawanu, Eirakuya, etc."
+where_found:
+  - "Specialty shops"
+  - "dept stores"
+price_yen: "500-2500"
+what_it_is: "Thin cotton hand towel, dyed patterns. Many uses: towel, scarf, wrap, decor."
+why_travelers_care: "Beautiful, versatile, packs flat."
+source_links:
+  - "kamawanu.co.jp"
+  - "eirakuya.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

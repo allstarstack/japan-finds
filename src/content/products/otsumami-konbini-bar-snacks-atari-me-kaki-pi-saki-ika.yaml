@@ -1,0 +1,22 @@
+id: "JF-0411"
+slug: "otsumami-konbini-bar-snacks-atari-me-kaki-pi-saki-ika"
+name_en: "Otsumami Konbini Bar Snacks (Atari-Me, Kaki Pi, Saki-Ika)"
+category: "snacks"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "おつまみ"
+brand: "Various"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+price_yen: "200-500"
+what_it_is: "Dried squid, peanut/rice cracker mixes, beer snacks."
+why_travelers_care: "Authentic izakaya-at-home content."
+risk_flags:
+  - "allergen-seafood-soy-peanut"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 9

@@ -1,0 +1,27 @@
+id: "JF-0392"
+slug: "shiseido-eyelash-curler"
+name_en: "Shiseido eyelash curler"
+category: "skincare"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "資生堂 アイラッシュカーラー"
+brand: "Shiseido"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "department stores"
+price_yen: "~¥900–¥1,500"
+what_it_is: "Metal eyelash curler with refill pads."
+why_travelers_care: "Small, durable, famous beauty tool."
+risk_flags:
+  - "cosmetic tool"
+  - "easy to buy outside Japan"
+verification_notes: "Confirm model number and spare pad availability."
+source_links:
+  - "https://www.shiseido.co.jp/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 9

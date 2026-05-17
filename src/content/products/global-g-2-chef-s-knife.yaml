@@ -1,0 +1,24 @@
+id: "JF-0203"
+slug: "global-g-2-chef-s-knife"
+name_en: "Global G-2 Chef's Knife"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "Global G-2"
+brand: "Yoshikin"
+where_found:
+  - "Tokyu Hands"
+  - "Bic Camera"
+  - "Kappabashi"
+price_yen: "10000-15000"
+what_it_is: "Stamped one-piece stainless chef's knife, the standard Japanese export knife."
+why_travelers_care: "Recognizable, beginner-grade Japanese knife, durable."
+risk_flags:
+  - "fragile, sharp"
+verification_notes: "Available abroad at higher price; Bic Camera tax-free still competitive"
+source_links:
+  - "global-knife.com"
+confidence: "high"
+trip_score: 8
+suitcase_score: 6

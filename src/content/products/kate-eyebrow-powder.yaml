@@ -1,0 +1,21 @@
+id: "JF-0363"
+slug: "kate-eyebrow-powder"
+name_en: "KATE Eyebrow Powder"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "KATE"
+brand: "Kanebo"
+where_found:
+  - "Drugstores"
+price_yen: "1000-1300"
+what_it_is: "3-shade brow palette, the dominant Japan drugstore brow product."
+why_travelers_care: "Reliable brow staple, cheaper than Western dupes."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "kanebo-cosmetics.jp/kate"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

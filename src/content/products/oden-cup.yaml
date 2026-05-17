@@ -1,0 +1,27 @@
+id: "JF-0260"
+slug: "oden-cup"
+name_en: "Oden cup"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "おでん"
+brand: "Major konbini"
+where_found:
+  - "Konbini hot food case"
+  - "seasonal"
+price_yen: "~¥100–¥200 per piece"
+what_it_is: "Simmered daikon, egg, fishcake, tofu, and other items in broth."
+why_travelers_care: "Cultural food moment; best experienced hot in Japan."
+risk_flags:
+  - "perishable"
+  - "allergen"
+  - "seasonal"
+  - "seafood"
+verification_notes: "Seasonal and store availability vary widely."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.lawson.co.jp/recommend/original/"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "medium"
+trip_score: 8

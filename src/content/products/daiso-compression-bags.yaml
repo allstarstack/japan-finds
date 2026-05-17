@@ -1,0 +1,20 @@
+id: "JF-0006"
+slug: "daiso-compression-bags"
+name_en: "Daiso Compression Bags"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "圧縮袋"
+brand: "Daiso"
+where_found:
+  - "Daiso"
+  - "Can Do"
+price_yen: "110-330"
+what_it_is: "Vacuum/roll-style compression bags for clothes."
+why_travelers_care: "Suitcase overflow fix."
+source_links:
+  - "daiso-sangyo.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

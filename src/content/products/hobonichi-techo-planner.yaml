@@ -1,0 +1,23 @@
+id: "JF-0424"
+slug: "hobonichi-techo-planner"
+name_en: "Hobonichi Techo Planner"
+category: "stationery"
+intent:
+  - "bring_home"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "ほぼ日手帳"
+brand: "Hobonichi"
+where_found:
+  - "Loft"
+  - "dept stores"
+  - "Hobonichi pop-ups"
+price_yen: "2500-5000"
+what_it_is: "Daily planner with Tomoe River paper, designed by Shigesato Itoi (Mother/EarthBound)."
+why_travelers_care: "Cult planner, ships only Sept-Feb new year edition."
+verification_notes: "Sold internationally but Japan covers and limited editions are wider"
+source_links:
+  - "1101.com/store/techo"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

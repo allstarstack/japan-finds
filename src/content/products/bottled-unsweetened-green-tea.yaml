@@ -1,0 +1,25 @@
+id: "JF-0245"
+slug: "bottled-unsweetened-green-tea"
+name_en: "Bottled unsweetened green tea"
+category: "konbini"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "緑茶 ペットボトル"
+brand: "Ito En / Suntory / private label"
+where_found:
+  - "Konbini"
+  - "vending machines"
+  - "supermarkets"
+price_yen: "~¥120–¥180"
+what_it_is: "Ready-to-drink unsweetened tea."
+why_travelers_care: "Solves jetlag dehydration without sugar; feels very Japan-normal."
+risk_flags:
+  - "liquid"
+verification_notes: "Brand taste varies; not suitcase-relevant."
+source_links:
+  - "https://www.japan-guide.com/e/e2071.html"
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+confidence: "high"
+trip_score: 9

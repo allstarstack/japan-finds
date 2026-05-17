@@ -1,0 +1,23 @@
+id: "JF-0276"
+slug: "panshiron-cure"
+name_en: "Panshiron Cure"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "パンシロンキュア"
+brand: "Rohto"
+where_found:
+  - "Drugstores"
+price_yen: "~¥1,000"
+what_it_is: "Stomach medicine."
+why_travelers_care: "Useful travel-stomach candidate but should not be generalized without pharmacist/ingredient caution."
+risk_flags:
+  - "medicine"
+  - "regulated"
+verification_notes: "Verify ingredients, legal import, and safety language."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 9
+suitcase_score: 7

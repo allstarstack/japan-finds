@@ -1,0 +1,23 @@
+id: "JF-0166"
+slug: "hashioki-chopstick-rests-gift-sets"
+name_en: "Hashioki (Chopstick Rests) Gift Sets"
+category: "other"
+intent:
+  - "gift_easy"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "箸置きセット"
+brand: "Various"
+where_found:
+  - "Dept stores"
+  - "specialty ceramic shops"
+price_yen: "1000-5000"
+what_it_is: "Boxed sets of artisan chopstick rests."
+why_travelers_care: "Tiny, durable, decorative."
+risk_flags:
+  - "fragile"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 9

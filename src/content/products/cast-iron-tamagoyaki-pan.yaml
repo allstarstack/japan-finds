@@ -1,0 +1,22 @@
+id: "JF-0199"
+slug: "cast-iron-tamagoyaki-pan"
+name_en: "Cast Iron Tamagoyaki Pan"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "玉子焼き器"
+brand: "Various (Iwachu, Iwatani)"
+where_found:
+  - "Kappabashi"
+  - "dept stores"
+price_yen: "2000-8000"
+what_it_is: "Rectangular omelette pan for tamagoyaki."
+why_travelers_care: "Functional and specific, content-worthy."
+risk_flags:
+  - "bulky, heavy"
+source_links:
+  - "iwachu.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 4

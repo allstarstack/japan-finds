@@ -1,0 +1,21 @@
+id: "JF-0048"
+slug: "donki-pheromone-perfumes"
+name_en: "Donki Pheromone Perfumes"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "フェロモン香水"
+brand: "Various"
+where_found:
+  - "Donki cosmetics"
+price_yen: "1000-3000"
+what_it_is: "Pheromone claim perfumes."
+why_travelers_care: "Pseudoscience, novelty content only."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 2
+suitcase_score: 8

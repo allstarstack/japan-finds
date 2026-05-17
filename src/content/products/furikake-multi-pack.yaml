@@ -1,0 +1,26 @@
+id: "JF-0113"
+slug: "furikake-multi-pack"
+name_en: "Furikake multi-pack"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "ふりかけパック"
+brand: "Marumiya / Nagatanien / various"
+where_found:
+  - "Donki"
+  - "supermarkets"
+  - "drugstores"
+price_yen: "~¥200–¥700"
+what_it_is: "Rice seasoning sachets with seaweed, sesame, salmon, egg, or character themes."
+why_travelers_care: "Tiny, cheap, useful after the trip; good kid/family angle."
+risk_flags:
+  - "allergen"
+  - "seafood possible"
+verification_notes: "Check ingredient labels and destination food rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 9

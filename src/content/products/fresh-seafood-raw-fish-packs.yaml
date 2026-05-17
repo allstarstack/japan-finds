@@ -1,0 +1,25 @@
+id: "JF-0063"
+slug: "fresh-seafood-raw-fish-packs"
+name_en: "Fresh seafood / raw fish packs"
+category: "other"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "刺身・生鮮魚介"
+brand: "Various"
+where_found:
+  - "Markets"
+  - "supermarkets"
+price_yen: "varies"
+what_it_is: "Fresh seafood or sashimi packs."
+why_travelers_care: "Great to eat in Japan; poor/illegal carry-home risk."
+risk_flags:
+  - "perishable"
+  - "seafood"
+  - "import rules"
+verification_notes: "Never assume carry-home; check local laws."
+source_links:
+  - "https://www.japan.travel/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8

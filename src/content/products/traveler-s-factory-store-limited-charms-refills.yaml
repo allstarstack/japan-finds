@@ -1,0 +1,22 @@
+id: "JF-0305"
+slug: "traveler-s-factory-store-limited-charms-refills"
+name_en: "Traveler’s Factory store-limited charms/refills"
+category: "other"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "トラベラーズファクトリー限定"
+brand: "Traveler’s Company"
+where_found:
+  - "Traveler’s Factory stores"
+price_yen: "~¥300–¥3,000"
+what_it_is: "Location-limited notebook accessories or stamps."
+why_travelers_care: "Perfect for travel-memory buyers and stationery fans."
+risk_flags:
+  - "limited availability"
+verification_notes: "Verify store stock and edition."
+source_links:
+  - "https://www.travelers-company.com/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 9

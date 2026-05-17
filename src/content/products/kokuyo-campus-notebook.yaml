@@ -1,0 +1,30 @@
+id: "JF-0024"
+slug: "kokuyo-campus-notebook"
+name_en: "Kokuyo Campus notebook"
+category: "100-yen"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "キャンパスノート"
+brand: "Kokuyo"
+where_found:
+  - "Loft"
+  - "Hands"
+  - "Itoya"
+  - "konbini"
+  - "bookstores"
+price_yen: "~¥150–¥500"
+what_it_is: "Classic Japanese notebook line."
+why_travelers_care: "Affordable, useful, readable stationery gift."
+risk_flags:
+  - "easy to buy outside Japan"
+  - "paper weight"
+verification_notes: "Confirm size/ruling."
+source_links:
+  - "https://www.kokuyo-st.co.jp/"
+  - "https://www.loft.co.jp/store/"
+  - "https://info.hands.net/en/"
+  - "https://www.ito-ya.co.jp/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

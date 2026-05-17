@@ -1,0 +1,22 @@
+id: "JF-0365"
+slug: "majolica-majorca-lash-expander"
+name_en: "Majolica Majorca Lash Expander"
+category: "skincare"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "needs_verification"
+name_jp: "マジョリカマジョルカ"
+brand: "Shiseido"
+where_found:
+  - "Drugstores"
+price_yen: "1500-1800"
+what_it_is: "Cult lash mascara, Shiseido's discontinued-and-revived classic."
+why_travelers_care: "International cult product."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "shiseido.co.jp/mj"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

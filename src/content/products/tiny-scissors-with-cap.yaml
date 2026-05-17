@@ -1,0 +1,27 @@
+id: "JF-0041"
+slug: "tiny-scissors-with-cap"
+name_en: "Tiny scissors with cap"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "携帯はさみ"
+brand: "Daiso / Can Do / stationery brands"
+where_found:
+  - "100-yen shops"
+  - "Loft"
+  - "Hands"
+price_yen: "~¥110–¥800"
+what_it_is: "Portable scissors for tags, packaging, receipts."
+why_travelers_care: "Useful travel fix but airline rules matter."
+risk_flags:
+  - "regulated blade"
+  - "airport security risk"
+verification_notes: "Do not carry on; verify blade length rules."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+  - "https://info.hands.net/en/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 6

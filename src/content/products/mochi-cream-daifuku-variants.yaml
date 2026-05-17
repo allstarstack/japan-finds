@@ -1,0 +1,20 @@
+id: "JF-0240"
+slug: "mochi-cream-daifuku-variants"
+name_en: "Mochi Cream / Daifuku Variants"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "餅クリーム / 大福"
+brand: "All konbini"
+where_found:
+  - "Cold dessert case"
+price_yen: "180-250"
+what_it_is: "Soft mochi exterior, cream or fruit interior, rotating seasonal flavors."
+why_travelers_care: "Texture moment, hyper-seasonal flavor drops."
+risk_flags:
+  - "perishable, allergen-dairy"
+source_links:
+  - "konbini sites"
+confidence: "high"
+trip_score: 8

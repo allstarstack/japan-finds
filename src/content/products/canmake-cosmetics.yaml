@@ -1,0 +1,24 @@
+id: "JF-0357"
+slug: "canmake-cosmetics"
+name_en: "Canmake Cosmetics"
+category: "skincare"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "needs_verification"
+name_jp: "キャンメイク"
+brand: "Ida Laboratories"
+where_found:
+  - "All drugstores"
+  - "Plaza"
+  - "Tokyu Hands"
+price_yen: "500-1500"
+what_it_is: "Cute drugstore makeup, cream blush + tinted lips are signature."
+why_travelers_care: "Beauty TikTok darling, cute packaging, cheap."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "canmake.com"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

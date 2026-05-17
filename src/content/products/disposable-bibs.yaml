@@ -1,0 +1,27 @@
+id: "JF-0189"
+slug: "disposable-bibs"
+name_en: "Disposable bibs"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "使い捨てエプロン"
+brand: "Daiso / Pigeon / baby brands"
+where_found:
+  - "100-yen shops"
+  - "drugstores"
+  - "baby stores"
+price_yen: "~¥110–¥500"
+what_it_is: "Paper/plastic bibs for meals."
+why_travelers_care: "Restaurant and train snack mess solver."
+risk_flags:
+  - "plastic/paper"
+  - "small parts"
+verification_notes: "Check age/fit."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 8

@@ -1,0 +1,28 @@
+id: "JF-0183"
+slug: "anpanman-gummies"
+name_en: "Anpanman gummies"
+category: "other"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "アンパンマングミ"
+brand: "Fujiya / Bandai / various"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+  - "drugstores"
+price_yen: "~¥100–¥300"
+what_it_is: "Character-shaped gummies for kids."
+why_travelers_care: "Low-cost kid gift and recognizable Japan character angle."
+risk_flags:
+  - "allergen"
+  - "sugar"
+  - "choking risk"
+verification_notes: "Check age warning and ingredients."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

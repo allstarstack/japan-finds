@@ -1,0 +1,22 @@
+id: "JF-0137"
+slug: "netsusama-cooling-sheets"
+name_en: "Netsusama Cooling Sheets"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "熱さまシート"
+brand: "Kobayashi Pharmaceutical"
+where_found:
+  - "All drugstores"
+price_yen: "400-700"
+what_it_is: "Gel cooling forehead patches for fever or summer heat."
+why_travelers_care: "Summer heat-stroke aid + jet-lag fever pickup."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "kobayashi.co.jp/seihin/np"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

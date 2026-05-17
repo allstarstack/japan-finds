@@ -1,0 +1,22 @@
+id: "JF-0072"
+slug: "chopstick-engraving-wakasa-nuri-edo-hashi"
+name_en: "Chopstick Engraving (Wakasa-nuri / Edo Hashi)"
+category: "other"
+intent:
+  - "make_it_yours"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "箸名入れ"
+brand: "Hyozaemon, Hashikura Matsukan, Hashikura"
+where_found:
+  - "Specialty shops in Tokyo"
+  - "Kyoto"
+  - "Wakasa"
+price_yen: "1000-10000 + engrave fee"
+what_it_is: "Name- or message-engraved chopsticks."
+why_travelers_care: "Personal gift, fast turnaround at most shops."
+source_links:
+  - "hyozaemon.co.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

@@ -1,0 +1,22 @@
+id: "JF-0313"
+slug: "kanazawa-gold-leaf-items-kinpaku"
+name_en: "Kanazawa Gold Leaf Items (Kinpaku)"
+category: "other"
+intent:
+  - "local_editions"
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "金箔"
+brand: "Hakuichi"
+where_found:
+  - "Kanazawa"
+  - "dept stores"
+price_yen: "500-10000"
+what_it_is: "Edible gold leaf, gold-coated chopsticks, gold-flake sake, gold facial masks."
+why_travelers_care: "Specific Kanazawa story; gold leaf in everything is the angle."
+source_links:
+  - "hakuichi.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

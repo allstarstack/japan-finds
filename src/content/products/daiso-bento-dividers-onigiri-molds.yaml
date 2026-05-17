@@ -1,0 +1,20 @@
+id: "JF-0003"
+slug: "daiso-bento-dividers-onigiri-molds"
+name_en: "Daiso Bento Dividers / Onigiri Molds"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "おにぎり型"
+brand: "Daiso"
+where_found:
+  - "Daiso"
+  - "Seria"
+price_yen: "110"
+what_it_is: "Cute food-shape molds, dividers, picks."
+why_travelers_care: "Practical and adorable, gift-friendly."
+source_links:
+  - "daiso-sangyo.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

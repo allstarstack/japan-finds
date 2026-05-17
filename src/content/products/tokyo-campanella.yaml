@@ -1,0 +1,24 @@
+id: "JF-0347"
+slug: "tokyo-campanella"
+name_en: "Tokyo Campanella"
+category: "snacks"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "東京カンパネラ"
+brand: "Tokyo Campanella"
+where_found:
+  - "Tokyo stations"
+  - "airports"
+price_yen: "~¥1,000–¥2,000"
+what_it_is: "Layered langue de chat-style chocolate cookie."
+why_travelers_care: "Elegant Tokyo gift alternative to Tokyo Banana."
+risk_flags:
+  - "allergen"
+  - "fragile"
+verification_notes: "Verify current package/flavors."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

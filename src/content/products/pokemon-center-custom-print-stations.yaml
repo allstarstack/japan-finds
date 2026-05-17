@@ -1,0 +1,19 @@
+id: "JF-0079"
+slug: "pokemon-center-custom-print-stations"
+name_en: "Pokemon Center Custom Print Stations"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "ポケモンセンター カスタム"
+brand: "Pokemon Company"
+where_found:
+  - "Pokemon Centers"
+price_yen: "1000-3000"
+what_it_is: "Some stores offer custom-print shirts or accessories."
+why_travelers_care: "Kid + adult personalization moment."
+source_links:
+  - "pokemoncenter-online.com"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 10

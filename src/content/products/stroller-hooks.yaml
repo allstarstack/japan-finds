@@ -1,0 +1,26 @@
+id: "JF-0197"
+slug: "stroller-hooks"
+name_en: "Stroller hooks"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "ベビーカーフック"
+brand: "Daiso / baby brands"
+where_found:
+  - "100-yen shops"
+  - "baby stores"
+  - "drugstores"
+price_yen: "~¥110–¥800"
+what_it_is: "Hooks for hanging bags from a stroller."
+why_travelers_care: "Immediate family travel utility."
+risk_flags:
+  - "safety/tipping risk"
+  - "easy to buy outside Japan"
+verification_notes: "Warn against overloading stroller."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

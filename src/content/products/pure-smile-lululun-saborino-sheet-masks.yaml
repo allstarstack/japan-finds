@@ -1,0 +1,25 @@
+id: "JF-0140"
+slug: "pure-smile-lululun-saborino-sheet-masks"
+name_en: "Pure Smile / Lululun / Saborino Sheet Masks"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "gift_easy"
+status: "needs_verification"
+name_jp: "ルルルン / サボリーノ"
+brand: "Glide Enterprise / BCL"
+where_found:
+  - "Drugstores"
+  - "konbini"
+  - "Donki"
+price_yen: "300-2000"
+what_it_is: "Cheap-to-mid sheet masks, daily-use formats sold in 7/30-packs."
+why_travelers_care: "High-volume haul item, lighter than skincare bottles."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "lululun.com"
+  - "saborino.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

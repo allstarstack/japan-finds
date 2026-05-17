@@ -1,0 +1,21 @@
+id: "JF-0454"
+slug: "konbini-vinyl-umbrella"
+name_en: "Konbini Vinyl Umbrella"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "ビニール傘"
+brand: "All konbini"
+where_found:
+  - "Konbini umbrella stand"
+price_yen: "500-700"
+what_it_is: "Cheap clear vinyl umbrella, the universal Japan rainy-day fix."
+why_travelers_care: "Mandatory rainy-day pickup."
+risk_flags:
+  - "bulky"
+source_links:
+  - "konbini sites"
+confidence: "high"
+trip_score: 9
+suitcase_score: 0

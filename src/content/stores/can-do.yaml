@@ -1,0 +1,20 @@
+slug: "can-do"
+name_en: "Can Do"
+layer: "100_yen"
+status: "needs_verification"
+name_jp: "キャンドゥ"
+best_for: "100-yen basics, cute small goods, character/IP collaborations, emergency fixes."
+core_categories:
+  - "Stationery"
+  - "kitchen/household"
+  - "phone items"
+  - "small toys"
+  - "seasonal and character goods."
+tax_free_notes: "Tax-free unclear/sporadic; verify by branch."
+airport_availability: "Rare airport role."
+risk_flags:
+  - "Collabs sell out"
+  - "tax-free uncertainty."
+source_links:
+  - "https://www.cando-web.co.jp/"
+  - "https://en.cando-web.co.jp/"

@@ -1,0 +1,22 @@
+id: "JF-0073"
+slug: "custom-hanko-name-stamp-carving"
+name_en: "Custom Hanko Name Stamp Carving"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "判子彫り"
+brand: "Various stamp artisans"
+where_found:
+  - "Stamp shops"
+  - "dept stores"
+  - "pre-trip online order"
+price_yen: "3000-50000"
+what_it_is: "Personal-name carved stamp, kanji/katakana/hiragana."
+why_travelers_care: "True personalization, legally functional in Japan."
+verification_notes: "Higher-end requires multi-day turnaround"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

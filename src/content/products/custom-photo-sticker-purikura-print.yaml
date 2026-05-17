@@ -1,0 +1,24 @@
+id: "JF-0293"
+slug: "custom-photo-sticker-purikura-print"
+name_en: "Custom photo sticker / purikura print"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "プリクラ"
+brand: "Purikura machine makers"
+where_found:
+  - "Arcades"
+  - "malls"
+price_yen: "~¥400–¥600 per session"
+what_it_is: "Japanese photo booth print with filters/decorations."
+why_travelers_care: "Low-cost proof-of-trip and very visual experience."
+risk_flags:
+  - "privacy"
+  - "image rights"
+verification_notes: "Check machine rules and storage/QR options."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 10

@@ -1,0 +1,22 @@
+slug: "daiso-standard-products-threeppy"
+name_en: "Daiso / Standard Products / Threeppy"
+layer: "100_yen"
+status: "needs_verification"
+name_jp: "ダイソー"
+best_for: "Cheap practical goods, travel helpers, kitchen tools, stationery, organization, low-risk gifts."
+core_categories:
+  - "Stationery"
+  - "kitchen tools"
+  - "storage"
+  - "travel accessories"
+  - "beauty tools"
+  - "snacks"
+  - "craft/seasonal goods."
+tax_free_notes: "Tax-free only at select larger/tourist stores; often not worth optimizing unless buying volume."
+airport_availability: "Limited airport displays only."
+risk_flags:
+  - "Small items can become clutter"
+  - "product availability rotates fast."
+source_links:
+  - "https://www.daiso-sangyo.co.jp/"
+  - "https://standardproducts.jp/"

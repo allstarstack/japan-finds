@@ -1,0 +1,23 @@
+id: "JF-0319"
+slug: "sapporo-soup-curry-mix"
+name_en: "Sapporo Soup Curry Mix"
+category: "other"
+intent:
+  - "local_editions"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "スープカレー"
+brand: "Various Sapporo makers"
+where_found:
+  - "Hokkaido"
+  - "supermarkets"
+price_yen: "300-800"
+what_it_is: "Soup curry packets, Hokkaido specialty (different from regular Japanese curry)."
+why_travelers_care: "Easy bring-home gift with regional story."
+risk_flags:
+  - "allergen-varies"
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 10

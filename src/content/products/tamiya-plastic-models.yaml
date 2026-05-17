@@ -1,0 +1,20 @@
+id: "JF-0182"
+slug: "tamiya-plastic-models"
+name_en: "Tamiya Plastic Models"
+category: "other"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "タミヤ"
+brand: "Tamiya"
+where_found:
+  - "Hobby shops"
+  - "Yodobashi"
+price_yen: "1500-10000"
+what_it_is: "Plastic car/airplane/military model kits."
+why_travelers_care: "Hobby grail, Japan-priced."
+source_links:
+  - "tamiya.com"
+confidence: "high"
+trip_score: 7
+suitcase_score: 9

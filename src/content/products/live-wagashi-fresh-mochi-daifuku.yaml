@@ -1,0 +1,23 @@
+id: "JF-0051"
+slug: "live-wagashi-fresh-mochi-daifuku"
+name_en: "Live Wagashi (Fresh Mochi, Daifuku)"
+category: "other"
+intent:
+  - "content_only"
+  - "try_in_japan"
+status: "hold"
+name_jp: "生菓子"
+brand: "Wagashi shops"
+where_found:
+  - "Specialty shops"
+  - "depachika"
+price_yen: "300-2000"
+what_it_is: "Fresh wagashi has 1-3 day shelf life."
+why_travelers_care: "Eat there, don't bring home."
+risk_flags:
+  - "perishable"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 0
+suitcase_score: 0

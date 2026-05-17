@@ -1,0 +1,26 @@
+id: "JF-0033"
+slug: "planner-stickers"
+name_en: "Planner stickers"
+category: "100-yen"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "手帳シール"
+brand: "Daiso / Seria / Mind Wave / BGM"
+where_found:
+  - "100-yen shops"
+  - "Loft"
+  - "Itoya"
+price_yen: "~¥110–¥500"
+what_it_is: "Small decorative stickers for planners and journaling."
+why_travelers_care: "Cheap, readable gifts for stationery people."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check paper/plastic and design licensing."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://www.ito-ya.co.jp/"
+  - "https://www.gltjp.com/en/article/item/21322/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

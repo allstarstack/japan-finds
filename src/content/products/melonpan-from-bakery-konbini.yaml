@@ -1,0 +1,25 @@
+id: "JF-0336"
+slug: "melonpan-from-bakery-konbini"
+name_en: "Melonpan from bakery/konbini"
+category: "snacks"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "メロンパン"
+brand: "Konbini / bakeries"
+where_found:
+  - "Konbini"
+  - "bakeries"
+price_yen: "~¥150–¥350"
+what_it_is: "Sweet bun with cookie-like top."
+why_travelers_care: "Simple classic snack; good konbini-vs-bakery comparison."
+risk_flags:
+  - "perishable"
+  - "allergen"
+verification_notes: "Eat fresh; not a bring-home item."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "high"
+trip_score: 7

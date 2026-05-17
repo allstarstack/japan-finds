@@ -1,0 +1,26 @@
+id: "JF-0346"
+slug: "sakura-tea-salted-sakura-packets"
+name_en: "Sakura tea / salted sakura packets"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "桜茶・桜の塩漬け"
+brand: "Various"
+where_found:
+  - "Department stores"
+  - "tea shops"
+  - "seasonal shops"
+price_yen: "~¥500–¥1,500"
+what_it_is: "Salted cherry blossoms used for tea or sweets."
+why_travelers_care: "Seasonal, pretty, and Japan-specific."
+risk_flags:
+  - "food import rules"
+  - "seasonal"
+  - "salty"
+verification_notes: "Verify season and ingredient rules."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

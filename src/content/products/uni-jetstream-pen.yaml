@@ -1,0 +1,28 @@
+id: "JF-0043"
+slug: "uni-jetstream-pen"
+name_en: "Uni Jetstream pen"
+category: "100-yen"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "ジェットストリーム"
+brand: "Mitsubishi Pencil / uni"
+where_found:
+  - "Loft"
+  - "Hands"
+  - "Itoya"
+  - "konbini"
+price_yen: "~¥150–¥1,500"
+what_it_is: "Smooth low-viscosity ballpoint pen."
+why_travelers_care: "Practical and widely loved by stationery fans."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check model and refill compatibility."
+source_links:
+  - "https://www.mpuni.co.jp/"
+  - "https://www.loft.co.jp/store/"
+  - "https://info.hands.net/en/"
+  - "https://www.ito-ya.co.jp/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

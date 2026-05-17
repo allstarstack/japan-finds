@@ -1,0 +1,20 @@
+id: "JF-0452"
+slug: "hiyaron-cold-packs-summer"
+name_en: "Hiyaron Cold Packs (Summer)"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "ヒヤロン"
+brand: "Wakodo / various"
+where_found:
+  - "Konbini"
+  - "drugstores"
+price_yen: "200-400"
+what_it_is: "Disposable cold packs that activate with a squeeze."
+why_travelers_care: "Summer heat-stroke ER."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

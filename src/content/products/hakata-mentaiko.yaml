@@ -1,0 +1,25 @@
+id: "JF-0309"
+slug: "hakata-mentaiko"
+name_en: "Hakata Mentaiko"
+category: "other"
+intent:
+  - "local_editions"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "博多明太子"
+brand: "Fukuya / Yamaya"
+where_found:
+  - "Fukuoka airport"
+  - "dept store food halls"
+price_yen: "1500-5000"
+what_it_is: "Spicy salted pollock roe, Hakata/Fukuoka specialty."
+why_travelers_care: "Top Kyushu omiyage."
+risk_flags:
+  - "perishable, frozen needed for export, allergen-fish"
+verification_notes: "Refrigeration; some countries restrict roe imports"
+source_links:
+  - "fukuya.com"
+  - "yamaya.com"
+confidence: "high"
+trip_score: 9
+suitcase_score: 3

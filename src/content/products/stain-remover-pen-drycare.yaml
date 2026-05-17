@@ -1,0 +1,19 @@
+id: "JF-0291"
+slug: "stain-remover-pen-drycare"
+name_en: "Stain Remover Pen (Drycare)"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "シミ取りペン"
+brand: "Various"
+where_found:
+  - "Drugstores"
+price_yen: "500-900"
+what_it_is: "Travel-size stain pens."
+why_travelers_care: "Day-1 ramen splash fix."
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 10

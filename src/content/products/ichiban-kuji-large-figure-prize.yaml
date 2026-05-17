@@ -1,0 +1,28 @@
+id: "JF-0065"
+slug: "ichiban-kuji-large-figure-prize"
+name_en: "Ichiban Kuji large figure prize"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "一番くじ フィギュア"
+brand: "Bandai Spirits / licensed brands"
+where_found:
+  - "Konbini"
+  - "anime shops"
+  - "bookstores"
+price_yen: "~¥700–¥900 per draw"
+what_it_is: "Lottery prize figures and merch."
+why_travelers_care: "Fun content and fandom item, but random/spendy/bulky."
+risk_flags:
+  - "bulky"
+  - "fragile"
+  - "gambling-like spend"
+verification_notes: "Verify license, odds, and box condition."
+source_links:
+  - "https://www.family.co.jp/for_tourist/en.html"
+  - "https://www.sej.co.jp/products/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 3

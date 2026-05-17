@@ -1,0 +1,25 @@
+id: "JF-0196"
+slug: "pocket-tissue-with-characters"
+name_en: "Pocket tissue with characters"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "キャラクターポケットティッシュ"
+brand: "Various"
+where_found:
+  - "100-yen shops"
+  - "drugstores"
+  - "character shops"
+price_yen: "~¥110–¥500"
+what_it_is: "Small tissue packs with cute wrappers."
+why_travelers_care: "Very useful in Japan and cute enough for kids."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Verify licensing if character-branded."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 10

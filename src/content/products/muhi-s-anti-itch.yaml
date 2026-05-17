@@ -1,0 +1,22 @@
+id: "JF-0136"
+slug: "muhi-s-anti-itch"
+name_en: "Muhi S Anti-Itch"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ムヒS"
+brand: "Ikeda Mohando"
+where_found:
+  - "All drugstores"
+price_yen: "500-800"
+what_it_is: "Topical anti-itch for bug bites and rashes; the diphenhydramine + camphor classic."
+why_travelers_care: "Summer essential; mosquitoes hit hard in humid months."
+risk_flags:
+  - "medicine/regulated, liquid"
+source_links:
+  - "muhi.com"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

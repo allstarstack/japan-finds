@@ -1,0 +1,23 @@
+id: "JF-0360"
+slug: "dhc-deep-cleansing-oil"
+name_en: "DHC Deep Cleansing Oil"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "DHC ディープクレンジングオイル"
+brand: "DHC"
+where_found:
+  - "DHC stores"
+  - "drugstores"
+price_yen: "1800-2700"
+what_it_is: "Olive-oil based makeup remover, OG of the Japanese cleansing oil category."
+why_travelers_care: "Reliable category leader, decades of cult status."
+risk_flags:
+  - "liquid, skincare/cosmetic claim"
+verification_notes: "Sold abroad but ~30% more expensive"
+source_links:
+  - "dhccare.com"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

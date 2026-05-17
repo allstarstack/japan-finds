@@ -1,0 +1,22 @@
+id: "JF-0005"
+slug: "daiso-chopstick-rests"
+name_en: "Daiso Chopstick Rests"
+category: "100-yen"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "箸置き"
+brand: "Daiso"
+where_found:
+  - "Daiso"
+  - "Seria"
+price_yen: "110"
+what_it_is: "Cute ceramic chopstick rests."
+why_travelers_care: "Tiny gift, easy."
+risk_flags:
+  - "fragile"
+source_links:
+  - "daiso-sangyo.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

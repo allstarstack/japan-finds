@@ -1,0 +1,22 @@
+id: "JF-0211"
+slug: "shun-classic-chef-s-knife"
+name_en: "Shun Classic Chef's Knife"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "旬"
+brand: "Kai Group"
+where_found:
+  - "Kappabashi"
+  - "dept stores"
+price_yen: "20000-40000"
+what_it_is: "Higher-tier VG-MAX layered stainless, walnut handle."
+why_travelers_care: "Beautiful, more serious gift-tier."
+risk_flags:
+  - "fragile, sharp"
+source_links:
+  - "kai-group.com/products/global/shun"
+confidence: "high"
+trip_score: 7
+suitcase_score: 5

@@ -1,0 +1,22 @@
+id: "JF-0231"
+slug: "nikuman-pork-bun-hot-case"
+name_en: "Nikuman / Pork Bun (Hot Case)"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "肉まん"
+brand: "All konbini"
+where_found:
+  - "Hot case"
+  - "winter dominant"
+price_yen: "130-180"
+what_it_is: "Steamed white bun filled with seasoned pork."
+why_travelers_care: "Winter ritual, cheap, warming, transports easily within a single afternoon."
+risk_flags:
+  - "perishable, hot food, allergen-wheat"
+verification_notes: "Best Oct-Mar, limited in summer"
+source_links:
+  - "konbini sites"
+confidence: "high"
+trip_score: 8

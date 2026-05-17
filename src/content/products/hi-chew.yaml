@@ -1,0 +1,25 @@
+id: "JF-0403"
+slug: "hi-chew"
+name_en: "Hi-Chew"
+category: "snacks"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "ハイチュウ"
+brand: "Morinaga"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+  - "Donki"
+price_yen: "100-250"
+what_it_is: "Chewy fruit candy, dozens of flavors, soft texture."
+why_travelers_care: "Now widely sold abroad but Japan flavor variety is much wider."
+risk_flags:
+  - "allergen-soy"
+verification_notes: "Sold in US/EU but Japan flavor range is broader"
+source_links:
+  - "morinaga.co.jp/hichew"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

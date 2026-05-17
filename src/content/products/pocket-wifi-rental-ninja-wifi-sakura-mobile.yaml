@@ -1,0 +1,21 @@
+id: "JF-0457"
+slug: "pocket-wifi-rental-ninja-wifi-sakura-mobile"
+name_en: "Pocket WiFi Rental (Ninja WiFi, Sakura Mobile)"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "hold"
+name_jp: "ポケットWiFi"
+brand: "Various"
+where_found:
+  - "Airport counters or pre-order pickup"
+price_yen: "500-1000/day"
+what_it_is: "Pocket hotspot for the trip, return at airport."
+why_travelers_care: "Avoids roaming charges."
+verification_notes: "Many travelers now use eSIM (Airalo, Ubigi) instead; pocket WiFi less essential than pre-2023"
+source_links:
+  - "ninjawifi.com"
+  - "sakuramobile.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 0

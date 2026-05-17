@@ -1,0 +1,25 @@
+id: "JF-0335"
+slug: "matcha-powder"
+name_en: "Matcha powder"
+category: "snacks"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "抹茶"
+brand: "Ippodo / Marukyu Koyamaen / various"
+where_found:
+  - "Tea shops"
+  - "department stores"
+  - "Kyoto/Uji"
+price_yen: "~¥800–¥5,000+"
+what_it_is: "Powdered green tea for drinking or baking."
+why_travelers_care: "High global demand and strong Japan trip tie-in."
+risk_flags:
+  - "food import rules"
+  - "caffeine"
+verification_notes: "Verify grade, freshness, and storage."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 9
+suitcase_score: 9

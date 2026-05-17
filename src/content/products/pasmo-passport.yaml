@@ -1,0 +1,20 @@
+id: "JF-0456"
+slug: "pasmo-passport"
+name_en: "Pasmo Passport"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "Pasmoパスポート"
+brand: "Pasmo"
+where_found:
+  - "Narita / Haneda private rail counters"
+price_yen: "0 (loadable)"
+what_it_is: "Tourist version of Pasmo, similar to Welcome Suica."
+why_travelers_care: "Alternative to Welcome Suica."
+verification_notes: "Confirm 2026 availability and reload locations"
+source_links:
+  - "pasmo.co.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 5

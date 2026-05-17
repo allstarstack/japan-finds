@@ -1,0 +1,25 @@
+id: "JF-0248"
+slug: "coolish-pouch-ice-cream"
+name_en: "Coolish pouch ice cream"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "クーリッシュ"
+brand: "Lotte"
+where_found:
+  - "Konbini / supermarkets"
+price_yen: "~¥170–¥220"
+what_it_is: "Drinkable ice cream pouch, usually vanilla or seasonal flavors."
+why_travelers_care: "Novel format; easy summer walking snack."
+risk_flags:
+  - "perishable"
+  - "frozen"
+  - "dairy"
+verification_notes: "Seasonal flavors rotate; cannot bring home frozen."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.lawson.co.jp/recommend/original/"
+confidence: "medium"
+trip_score: 8

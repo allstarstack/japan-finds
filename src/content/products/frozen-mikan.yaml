@@ -1,0 +1,23 @@
+id: "JF-0251"
+slug: "frozen-mikan"
+name_en: "Frozen mikan"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "冷凍みかん"
+brand: "Various / konbini private label"
+where_found:
+  - "Konbini freezer section"
+price_yen: "~¥180–¥350"
+what_it_is: "Frozen mandarin oranges sold as a cold snack."
+why_travelers_care: "Wholesome, visually simple, and perfect summer Japan moment."
+risk_flags:
+  - "perishable"
+  - "frozen"
+verification_notes: "Seasonal availability varies."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+confidence: "medium"
+trip_score: 7

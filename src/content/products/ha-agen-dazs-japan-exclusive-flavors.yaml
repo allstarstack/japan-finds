@@ -1,0 +1,21 @@
+id: "JF-0239"
+slug: "ha-agen-dazs-japan-exclusive-flavors"
+name_en: "Häagen-Dazs Japan Exclusive Flavors"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "ハーゲンダッツ"
+brand: "Häagen-Dazs Japan"
+where_found:
+  - "Konbini freezer"
+price_yen: "320-380"
+what_it_is: "Japan-only flavors: hojicha, sakura, kinako kuromitsu, etc."
+why_travelers_care: "Familiar brand, unfamiliar Japan-only flavor drops."
+risk_flags:
+  - "perishable, allergen-dairy"
+verification_notes: "Flavor lineup rotates seasonally"
+source_links:
+  - "haagen-dazs.co.jp"
+confidence: "high"
+trip_score: 8

@@ -1,0 +1,24 @@
+id: "JF-0110"
+slug: "cheap-costume-animal-hat-aisle"
+name_en: "Cheap costume / animal hat aisle"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "コスプレ・動物帽子"
+brand: "Various"
+where_found:
+  - "Donki novelty aisles"
+price_yen: "~¥500–¥3,000"
+what_it_is: "Novelty costume pieces, animal hats, party props."
+why_travelers_care: "Good chaos footage, not a serious shopping-list item."
+risk_flags:
+  - "bulky"
+  - "low utility"
+verification_notes: "Check store photo/filming policy before content use."
+source_links:
+  - "https://www.donki.com/en/tax_free/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 5
+suitcase_score: 2

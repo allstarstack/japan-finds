@@ -1,0 +1,22 @@
+id: "JF-0096"
+slug: "beauty-mega-bargain-bin"
+name_en: "Beauty Mega-Bargain Bin"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "コスメ激安"
+brand: "Various"
+where_found:
+  - "Donki cosmetics"
+price_yen: "Variable"
+what_it_is: "Discounted-cosmetics chaos including discontinued and overstock product."
+why_travelers_care: "Treasure-hunt vibe is the content angle."
+risk_flags:
+  - "skincare/cosmetic claim"
+verification_notes: "Always check expiration on discount cosmetics"
+source_links:
+  - "donki.com"
+confidence: "medium"
+trip_score: 5
+suitcase_score: 7

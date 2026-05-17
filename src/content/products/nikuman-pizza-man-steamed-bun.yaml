@@ -1,0 +1,27 @@
+id: "JF-0259"
+slug: "nikuman-pizza-man-steamed-bun"
+name_en: "Nikuman / pizza-man steamed bun"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "肉まん・ピザまん"
+brand: "Major konbini"
+where_found:
+  - "Konbini hot case"
+  - "especially colder months"
+price_yen: "~¥160–¥250"
+what_it_is: "Steamed bun filled with pork, curry, pizza sauce, or seasonal fillings."
+why_travelers_care: "Immediate winter Japan comfort food; easy low-cost try."
+risk_flags:
+  - "perishable"
+  - "meat"
+  - "allergen"
+  - "seasonal"
+verification_notes: "Check seasonal availability and filling ingredients."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.lawson.co.jp/recommend/original/"
+confidence: "medium"
+trip_score: 8

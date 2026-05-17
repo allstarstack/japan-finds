@@ -1,0 +1,23 @@
+id: "JF-0158"
+slug: "pabron-cold-medicine"
+name_en: "Pabron cold medicine"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "パブロン"
+brand: "Taisho"
+where_found:
+  - "Drugstores"
+price_yen: "~¥1,000–¥2,000"
+what_it_is: "Japanese OTC cold medicine line."
+why_travelers_care: "Useful topic to warn/educate, not a suitcase recommendation."
+risk_flags:
+  - "medicine/regulated"
+  - "health claim"
+verification_notes: "Do not recommend without pharmacist/doctor guidance."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 4
+suitcase_score: 4

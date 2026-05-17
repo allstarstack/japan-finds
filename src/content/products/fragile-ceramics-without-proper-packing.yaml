@@ -1,0 +1,25 @@
+id: "JF-0061"
+slug: "fragile-ceramics-without-proper-packing"
+name_en: "Fragile ceramics without proper packing"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "陶器・食器"
+brand: "Various"
+where_found:
+  - "Souvenir shops"
+  - "craft markets"
+  - "100-yen shops"
+price_yen: "varies"
+what_it_is: "Cups, bowls, plates, ceramics."
+why_travelers_care: "Can be excellent but not raw-list default unless well packed."
+risk_flags:
+  - "fragile"
+  - "bulky"
+verification_notes: "Only include as buy if packing/shipping is available."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 3

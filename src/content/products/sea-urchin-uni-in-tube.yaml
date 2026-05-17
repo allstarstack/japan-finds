@@ -1,0 +1,23 @@
+id: "JF-0053"
+slug: "sea-urchin-uni-in-tube"
+name_en: "Sea Urchin / Uni in Tube"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "うにペースト"
+brand: "Various"
+where_found:
+  - "Supermarkets"
+  - "depachika"
+price_yen: "800-3000"
+what_it_is: "Tubed sea urchin paste."
+why_travelers_care: "Polarizing taste + perishable + may have customs issues."
+risk_flags:
+  - "perishable, fragile, allergen-seafood, customs"
+verification_notes: "Many countries restrict seafood imports"
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 3
+suitcase_score: 3

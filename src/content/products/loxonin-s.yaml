@@ -1,0 +1,22 @@
+id: "JF-0134"
+slug: "loxonin-s"
+name_en: "Loxonin S"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ロキソニンS"
+brand: "Daiichi Sankyo"
+where_found:
+  - "All drugstores"
+price_yen: "600-700"
+what_it_is: "Loxoprofen-based pain reliever, the heavy hitter."
+why_travelers_care: "Significantly stronger pain relief than Eve A; well-known recommendation."
+risk_flags:
+  - "medicine/regulated, allergen-NSAID"
+verification_notes: "Prescription-only in many countries; declare on customs forms"
+source_links:
+  - "lulu-lab.jp/loxonin-s"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

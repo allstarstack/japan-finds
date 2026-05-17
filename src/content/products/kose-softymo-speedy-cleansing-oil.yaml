@@ -1,0 +1,26 @@
+id: "JF-0384"
+slug: "kose-softymo-speedy-cleansing-oil"
+name_en: "Kose Softymo Speedy Cleansing Oil"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ソフティモ スピーディ クレンジングオイル"
+brand: "KOSÉ Cosmeport"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥600–¥1,000"
+what_it_is: "Affordable cleansing oil in pump or refill pouch."
+why_travelers_care: "Strong value buy; easy to stock up on refills."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm formula and refill compatibility."
+source_links:
+  - "https://www.kose.co.jp/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

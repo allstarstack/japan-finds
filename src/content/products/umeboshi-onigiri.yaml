@@ -1,0 +1,25 @@
+id: "JF-0265"
+slug: "umeboshi-onigiri"
+name_en: "Umeboshi onigiri"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "梅干しおにぎり"
+brand: "7-Eleven / FamilyMart / Lawson"
+where_found:
+  - "Major konbini"
+price_yen: "~¥140–¥220"
+what_it_is: "Rice ball with sour pickled plum."
+why_travelers_care: "Very Japanese, portable, and polarizing in a comment-friendly way."
+risk_flags:
+  - "perishable"
+  - "salty"
+  - "allergen possible"
+verification_notes: "Confirm exact plum variety and ingredient label."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "high"
+trip_score: 7

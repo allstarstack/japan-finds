@@ -1,0 +1,24 @@
+id: "JF-0344"
+slug: "rikuro-ojisan-cheesecake"
+name_en: "Rikuro Ojisan cheesecake"
+category: "snacks"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "りくろーおじさんのチーズケーキ"
+brand: "Rikuro Ojisan"
+where_found:
+  - "Osaka stores"
+price_yen: "~¥1,000–¥1,200"
+what_it_is: "Fresh fluffy Japanese cheesecake."
+why_travelers_care: "High visual payoff; best eaten in Osaka, not packed long-distance."
+risk_flags:
+  - "perishable"
+  - "dairy"
+  - "fragile"
+verification_notes: "Check same-day transport and shelf life."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 9
+suitcase_score: 3

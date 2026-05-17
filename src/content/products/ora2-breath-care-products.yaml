@@ -1,0 +1,26 @@
+id: "JF-0157"
+slug: "ora2-breath-care-products"
+name_en: "Ora2 breath care products"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "オーラツー"
+brand: "Sunstar"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥300–¥700"
+what_it_is: "Breath spray, toothpaste, or oral-care accessories."
+why_travelers_care: "Useful small travel fix; Japanese flavors/designs can be fun."
+risk_flags:
+  - "liquid"
+  - "cosmetic claim"
+  - "easy to buy outside Japan"
+verification_notes: "Verify flavor and baggage limits."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

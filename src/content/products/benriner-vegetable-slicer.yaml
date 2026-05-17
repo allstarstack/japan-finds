@@ -1,0 +1,24 @@
+id: "JF-0198"
+slug: "benriner-vegetable-slicer"
+name_en: "Benriner Vegetable Slicer"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "ベンリナー"
+brand: "Benriner"
+where_found:
+  - "Kappabashi"
+  - "dept stores"
+  - "Amazon JP"
+price_yen: "3000-5000"
+what_it_is: "Japanese mandoline, prized by chefs internationally."
+why_travelers_care: "Pro-grade tool at consumer price."
+risk_flags:
+  - "sharp"
+verification_notes: "Sold abroad but Japan price is the value"
+source_links:
+  - "benriner.com"
+confidence: "high"
+trip_score: 7
+suitcase_score: 7

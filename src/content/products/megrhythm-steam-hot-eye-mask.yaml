@@ -1,0 +1,26 @@
+id: "JF-0153"
+slug: "megrhythm-steam-hot-eye-mask"
+name_en: "MegRhythm Steam Hot Eye Mask"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "めぐりズム 蒸気でホットアイマスク"
+brand: "Kao"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "konbini"
+price_yen: "~¥500–¥1,200"
+what_it_is: "Self-warming disposable eye masks."
+why_travelers_care: "Jetlag, train, and hotel-room comfort item; giftable too."
+risk_flags:
+  - "heat-generating item"
+  - "fragrance sensitivity"
+verification_notes: "Check scent variety and airline rules if buying bulk."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "high"
+trip_score: 9
+suitcase_score: 8

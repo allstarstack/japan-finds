@@ -1,0 +1,22 @@
+id: "JF-0322"
+slug: "yamanashi-wine-grape-juice"
+name_en: "Yamanashi Wine / Grape Juice"
+category: "other"
+intent:
+  - "local_editions"
+status: "hold"
+name_jp: "ぶどう / 山梨ワイン"
+brand: "Various Yamanashi vineyards"
+where_found:
+  - "Yamanashi"
+  - "dept stores"
+price_yen: "1500-5000"
+what_it_is: "Japanese wine region, Koshu varietal."
+why_travelers_care: "Underrated wine region."
+risk_flags:
+  - "liquid, fragile"
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 3

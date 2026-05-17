@@ -1,0 +1,26 @@
+id: "JF-0023"
+slug: "hobonichi-techo"
+name_en: "Hobonichi Techo"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ほぼ日手帳"
+brand: "Hobonichi"
+where_found:
+  - "Tobichi"
+  - "Loft"
+  - "stationery stores"
+price_yen: "~¥2,000–¥8,000+"
+what_it_is: "Planner system with covers, inserts, accessories."
+why_travelers_care: "High-intent purchase for stationery travelers."
+risk_flags:
+  - "bulky if accessories"
+  - "easy to buy online"
+verification_notes: "Confirm year, language, and format."
+source_links:
+  - "https://www.1101.com/store/techo/en/"
+  - "https://www.loft.co.jp/store/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

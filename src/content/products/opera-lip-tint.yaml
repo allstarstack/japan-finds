@@ -1,0 +1,23 @@
+id: "JF-0369"
+slug: "opera-lip-tint"
+name_en: "Opera Lip Tint"
+category: "skincare"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "needs_verification"
+name_jp: "オペラ"
+brand: "Imju"
+where_found:
+  - "Drugstores"
+  - "Plaza"
+price_yen: "1700-1800"
+what_it_is: "Glossy lip tint, #5 Coral Pink is the famous SKU."
+why_travelers_care: "Beauty-press most-awarded lip product in Japan."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "operabeauty.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

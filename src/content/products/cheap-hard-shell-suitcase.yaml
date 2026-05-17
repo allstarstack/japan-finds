@@ -1,0 +1,21 @@
+id: "JF-0098"
+slug: "cheap-hard-shell-suitcase"
+name_en: "Cheap Hard-Shell Suitcase"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "hold"
+name_jp: "スーツケース"
+brand: "Various Donki PB and 3rd party"
+where_found:
+  - "Donki luggage floor"
+price_yen: "5000-15000"
+what_it_is: "Cheap hard-shell luggage to cover overflow shopping on the way home."
+why_travelers_care: "Common day-3 panic purchase when shopping outpaces packing."
+risk_flags:
+  - "bulky"
+verification_notes: "Quality varies wildly; expect single-trip durability at the low end"
+source_links:
+  - "donki.com"
+confidence: "high"
+trip_score: 7

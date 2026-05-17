@@ -1,0 +1,21 @@
+id: "JF-0085"
+slug: "washi-paper-making-mino-echizen"
+name_en: "Washi Paper Making (Mino / Echizen)"
+category: "other"
+intent:
+  - "make_it_yours"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "和紙作り"
+brand: "Various studios"
+where_found:
+  - "Mino (Gifu)"
+  - "Echizen (Fukui)"
+price_yen: "1500-5000"
+what_it_is: "Hand-pulled washi paper sheet."
+why_travelers_care: "Quiet, hands-on, tiny takeaway."
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 10

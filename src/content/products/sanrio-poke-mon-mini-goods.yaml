@@ -1,0 +1,26 @@
+id: "JF-0121"
+slug: "sanrio-poke-mon-mini-goods"
+name_en: "Sanrio / Pokémon mini goods"
+category: "donki-drugstore"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "キャラクター雑貨"
+brand: "Sanrio / Pokémon / licensed brands"
+where_found:
+  - "Donki"
+  - "character shops"
+  - "stations"
+price_yen: "~¥300–¥2,000"
+what_it_is: "Small licensed goods: socks, keychains, pouches, stationery."
+why_travelers_care: "Readable gifts and good impulse-buy section."
+risk_flags:
+  - "easy to buy outside Japan"
+  - "counterfeit risk at non-official sellers"
+verification_notes: "Verify official licensing and price."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

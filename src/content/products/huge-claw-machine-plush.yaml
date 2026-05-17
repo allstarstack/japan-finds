@@ -1,0 +1,25 @@
+id: "JF-0064"
+slug: "huge-claw-machine-plush"
+name_en: "Huge claw-machine plush"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "巨大ぬいぐるみ"
+brand: "Licensed / arcade prizes"
+where_found:
+  - "Arcades"
+  - "claw machines"
+price_yen: "~¥100–¥500 per play"
+what_it_is: "Oversized plush prize from crane games."
+why_travelers_care: "Great content moment, terrible suitcase math."
+risk_flags:
+  - "bulky"
+  - "low utility"
+  - "licensed goods"
+verification_notes: "Check if shipping available; avoid buying just for suitcase."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 1

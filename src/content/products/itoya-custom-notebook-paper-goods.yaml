@@ -1,0 +1,23 @@
+id: "JF-0298"
+slug: "itoya-custom-notebook-paper-goods"
+name_en: "Itoya custom notebook / paper goods"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "カスタムノート"
+brand: "Itoya"
+where_found:
+  - "Ginza Itoya / select stationery shops"
+price_yen: "~¥1,000–¥5,000+"
+what_it_is: "Custom assembled notebook or stationery experience."
+why_travelers_care: "Premium stationery pilgrimage item."
+risk_flags:
+  - "availability"
+  - "appointment/wait possible"
+verification_notes: "Verify current service and lead time."
+source_links:
+  - "https://www.ito-ya.co.jp/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 7

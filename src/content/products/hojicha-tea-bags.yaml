@@ -1,0 +1,26 @@
+id: "JF-0328"
+slug: "hojicha-tea-bags"
+name_en: "Hojicha tea bags"
+category: "snacks"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "ほうじ茶ティーバッグ"
+brand: "Various tea makers"
+where_found:
+  - "Tea shops"
+  - "supermarkets"
+  - "Muji"
+price_yen: "~¥300–¥1,500"
+what_it_is: "Roasted green tea bags."
+why_travelers_care: "Low-caffeine-feeling, useful, packable gift."
+risk_flags:
+  - "food import rules"
+  - "caffeine"
+verification_notes: "Verify tea type and origin."
+source_links:
+  - "https://www.muji.com/jp/ja/store"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 9

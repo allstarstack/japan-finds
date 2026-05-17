@@ -1,0 +1,23 @@
+id: "JF-0449"
+slug: "biore-sara-sara-body-sheets-women-s"
+name_en: "Biore Sara Sara Body Sheets (Women's)"
+category: "other"
+intent:
+  - "day_one_fixes"
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ビオレさらさら"
+brand: "Kao"
+where_found:
+  - "Konbini"
+  - "drugstores"
+price_yen: "300-500"
+what_it_is: "Cooling body wipes, milder than Gatsby."
+why_travelers_care: "Summer essential."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "biore.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

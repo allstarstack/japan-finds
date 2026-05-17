@@ -1,0 +1,26 @@
+id: "JF-0135"
+slug: "megrhythm-steam-eye-mask"
+name_en: "Megrhythm Steam Eye Mask"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "gift_easy"
+status: "needs_verification"
+name_jp: "めぐりズム蒸気でホットアイマスク"
+brand: "Kao"
+where_found:
+  - "Matsumoto Kiyoshi"
+  - "Sundrug"
+  - "Welcia"
+  - "konbini"
+price_yen: "550-1200 per box"
+what_it_is: "Disposable eye masks that warm to ~40C for 20 minutes using air-activated heating element."
+why_travelers_care: "Cult favorite, works on planes, sells in scented variants (lavender, yuzu, chamomile, rose, unscented)."
+risk_flags:
+  - "skincare/cosmetic claim"
+verification_notes: "Available some places abroad at higher price; Japan price is the value play"
+source_links:
+  - "kao.com/jp/products/megurism"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

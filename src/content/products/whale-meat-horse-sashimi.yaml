@@ -1,0 +1,21 @@
+id: "JF-0055"
+slug: "whale-meat-horse-sashimi"
+name_en: "Whale Meat / Horse Sashimi"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "鯨肉 / 馬刺し"
+brand: "Various"
+where_found:
+  - "Specialty restaurants and shops"
+price_yen: "Variable"
+what_it_is: "Ethically/legally complicated abroad."
+why_travelers_care: "Content angle only, do not bring home."
+risk_flags:
+  - "ethical, legal, perishable"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 2
+suitcase_score: 0

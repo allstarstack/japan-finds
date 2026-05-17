@@ -1,0 +1,26 @@
+id: "JF-0187"
+slug: "character-toothbrushes"
+name_en: "Character toothbrushes"
+category: "other"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "キャラクター歯ブラシ"
+brand: "Lion / Sunstar / licensed brands"
+where_found:
+  - "Drugstores"
+  - "100-yen shops"
+  - "supermarkets"
+price_yen: "~¥100–¥500"
+what_it_is: "Kids toothbrushes with characters."
+why_travelers_care: "Small practical gift/fix if forgotten."
+risk_flags:
+  - "small parts"
+  - "hygiene"
+verification_notes: "Check age size and bristle softness."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.gltjp.com/en/article/item/21322/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

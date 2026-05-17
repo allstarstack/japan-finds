@@ -1,0 +1,22 @@
+id: "JF-0410"
+slug: "kit-kat-wasabi"
+name_en: "Kit Kat Wasabi"
+category: "snacks"
+intent:
+  - "content_only"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "キットカット わさび"
+brand: "Nestle Japan"
+where_found:
+  - "Tourist channels"
+price_yen: "400-700"
+what_it_is: "Wasabi-flavored Kit Kat."
+why_travelers_care: "Polarizing — usually a content moment rather than genuine gift."
+risk_flags:
+  - "allergen-dairy-soy-wheat"
+source_links:
+  - "nestle.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

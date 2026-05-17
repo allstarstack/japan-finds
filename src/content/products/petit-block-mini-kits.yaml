@@ -1,0 +1,24 @@
+id: "JF-0031"
+slug: "petit-block-mini-kits"
+name_en: "Petit Block mini kits"
+category: "100-yen"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "プチブロック"
+brand: "Daiso"
+where_found:
+  - "Daiso"
+price_yen: "~¥110–¥330"
+what_it_is: "Tiny block-building kits, often animals/vehicles."
+why_travelers_care: "Cheap, packable kid/friend gift."
+risk_flags:
+  - "small parts"
+  - "choking risk"
+verification_notes: "Check age suitability."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.daiso-sangyo.co.jp/en/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 9

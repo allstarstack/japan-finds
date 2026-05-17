@@ -1,0 +1,27 @@
+id: "JF-0115"
+slug: "instant-miso-soup-variety-pack"
+name_en: "Instant miso soup variety pack"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "即席みそ汁"
+brand: "Marukome / Nagatanien / various"
+where_found:
+  - "Donki"
+  - "supermarkets"
+  - "drugstores"
+price_yen: "~¥300–¥900"
+what_it_is: "Shelf-stable miso soup packets or freeze-dried blocks."
+why_travelers_care: "Practical taste-of-Japan item that actually gets used."
+risk_flags:
+  - "liquid after preparation"
+  - "allergen"
+  - "food import rules"
+verification_notes: "Verify ingredients and import rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 8

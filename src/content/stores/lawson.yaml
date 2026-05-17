@@ -1,0 +1,22 @@
+slug: "lawson"
+name_en: "Lawson"
+layer: "konbini"
+status: "needs_verification"
+name_jp: "ローソン"
+best_for: "Karaage-kun, desserts, seasonal collabs, Natural Lawson, Lawson Store 100."
+core_categories:
+  - "Hot snacks"
+  - "desserts"
+  - "onigiri"
+  - "bento"
+  - "drinks"
+  - "collab goods"
+  - "health-focused snacks."
+tax_free_notes: "Tax-free at selected stores; exclusions apply; not all items qualify."
+airport_availability: "Strong at airports."
+risk_flags:
+  - "Food allergens"
+  - "alcohol/grapefruit drinks"
+  - "collab scarcity."
+source_links:
+  - "https://www.lawson.co.jp/"

@@ -1,0 +1,23 @@
+id: "JF-0142"
+slug: "rohto-v-premium-eye-drops"
+name_en: "Rohto V Premium Eye Drops"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "Vロート プレミアム"
+brand: "Rohto"
+where_found:
+  - "All drugstores"
+price_yen: "1500-1800"
+what_it_is: "Premium multi-active eye drops, classic teal box."
+why_travelers_care: "Famous TikTok 'tingly Japanese eye drops' product, polarizing sensation."
+risk_flags:
+  - "medicine/regulated"
+verification_notes: "DO NOT carry on if traveling to certain countries; check destination customs for naphazoline/tetrahydrozoline"
+source_links:
+  - "rohto.co.jp/v-rohto"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

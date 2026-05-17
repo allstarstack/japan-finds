@@ -1,0 +1,25 @@
+id: "JF-0395"
+slug: "unlabeled-miracle-whitening-creams"
+name_en: "Unlabeled miracle whitening creams"
+category: "skincare"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "美白クリーム類"
+brand: "Various unknown brands"
+where_found:
+  - "Tourist-heavy discount shops / online resellers"
+price_yen: "varies"
+what_it_is: "Aggressively marketed brightening/whitening skincare."
+why_travelers_care: "Useful as a warning/content angle, not a recommended buy."
+risk_flags:
+  - "skincare/cosmetic claim"
+  - "low trust"
+  - "ingredient risk"
+verification_notes: "Need ingredient, manufacturer, and regulatory verification."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "low"
+trip_score: 3
+suitcase_score: 2

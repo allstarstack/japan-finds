@@ -1,0 +1,26 @@
+id: "JF-0160"
+slug: "rohto-z-eye-drops"
+name_en: "Rohto Z! eye drops"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ロートジー！"
+brand: "Rohto"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥400–¥900"
+what_it_is: "Strong cooling eye drops."
+why_travelers_care: "Memorable sensation; good content but not universal."
+risk_flags:
+  - "medicine/regulated"
+  - "liquid"
+  - "eye safety"
+verification_notes: "Verify active ingredients and personal suitability."
+source_links:
+  - "https://jp.rohto.com/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 5

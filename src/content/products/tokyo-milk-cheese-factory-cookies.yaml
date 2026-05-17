@@ -1,0 +1,23 @@
+id: "JF-0420"
+slug: "tokyo-milk-cheese-factory-cookies"
+name_en: "Tokyo Milk Cheese Factory Cookies"
+category: "snacks"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "東京ミルクチーズ工場"
+brand: "Cheese Garden"
+where_found:
+  - "Tokyo Station"
+  - "airport"
+price_yen: "1000-1500"
+what_it_is: "Cheese-cookie sandwich with white chocolate or salted-cheese filling."
+why_travelers_care: "Tokyo Station gift staple."
+risk_flags:
+  - "allergen-dairy-wheat-egg"
+source_links:
+  - "tokyomilkcheese.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

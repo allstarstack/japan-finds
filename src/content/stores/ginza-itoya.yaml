@@ -1,0 +1,21 @@
+slug: "ginza-itoya"
+name_en: "Ginza Itoya"
+layer: "specialty"
+status: "needs_verification"
+name_jp: "銀座伊東屋 / 伊東屋"
+best_for: "Premium stationery, paper, pens, cards, custom gifts, stationery pilgrimage."
+core_categories:
+  - "Fountain pens"
+  - "notebooks"
+  - "washi"
+  - "letter sets"
+  - "leather goods"
+  - "gift wrap"
+  - "custom stationery/engraving/hanko."
+tax_free_notes: "Tax-free availability should be verified directly; custom services may have lead times and tax-free shipping caveats."
+airport_availability: "Small airport outpost reported; verify current inventory."
+risk_flags:
+  - "Lead times, shipping rules, expensive pens require secure packing."
+source_links:
+  - "https://www.ito-ya.co.jp/"
+  - "https://www.ito-ya.co.jp/ginza/en/"

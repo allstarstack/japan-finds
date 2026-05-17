@@ -1,0 +1,24 @@
+id: "JF-0164"
+slug: "soft-santear-contact-lens-drops"
+name_en: "Soft Santear contact lens drops"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ソフトサンティア"
+brand: "Santen"
+where_found:
+  - "Drugstores"
+price_yen: "~¥500–¥1,000"
+what_it_is: "Eye drops often used for contact lens dryness."
+why_travelers_care: "Practical for travelers with dry eyes/contacts."
+risk_flags:
+  - "medicine/regulated"
+  - "liquid"
+  - "eye safety"
+verification_notes: "Confirm contact compatibility and active ingredients."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 6

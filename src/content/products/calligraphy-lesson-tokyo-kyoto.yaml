@@ -1,0 +1,19 @@
+id: "JF-0071"
+slug: "calligraphy-lesson-tokyo-kyoto"
+name_en: "Calligraphy Lesson (Tokyo / Kyoto)"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "書道体験"
+brand: "Various studios"
+where_found:
+  - "Tokyo and Kyoto studios"
+price_yen: "3000-10000"
+what_it_is: "1-2hr shodo lesson, take home your scroll."
+why_travelers_care: "Cultural experience + takeaway."
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 10

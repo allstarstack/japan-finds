@@ -1,0 +1,25 @@
+id: "JF-0037"
+slug: "roll-up-compression-bag"
+name_en: "Roll-up compression bag"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "衣類圧縮袋"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+  - "Donki"
+price_yen: "~¥110–¥550"
+what_it_is: "Manual compression bag for clothing."
+why_travelers_care: "Solves overpacking and dirty laundry separation."
+risk_flags:
+  - "plastic"
+  - "easy to buy outside Japan"
+verification_notes: "Check seal quality and dimensions."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

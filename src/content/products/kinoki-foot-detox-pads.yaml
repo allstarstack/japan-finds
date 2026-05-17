@@ -1,0 +1,23 @@
+id: "JF-0049"
+slug: "kinoki-foot-detox-pads"
+name_en: "Kinoki Foot Detox Pads"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "樹液シート"
+brand: "Various"
+where_found:
+  - "Donki"
+  - "drugstores"
+price_yen: "500-2000"
+what_it_is: "Black-staining 'detox' foot pads. Color is from oxidation, not toxins."
+why_travelers_care: "Pseudoscience; pure content angle only."
+risk_flags:
+  - "skincare/cosmetic claim, pseudoscience"
+verification_notes: "No clinical evidence of detox effect"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 3
+suitcase_score: 10

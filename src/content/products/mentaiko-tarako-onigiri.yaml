@@ -1,0 +1,25 @@
+id: "JF-0257"
+slug: "mentaiko-tarako-onigiri"
+name_en: "Mentaiko / tarako onigiri"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "明太子・たらこおにぎり"
+brand: "7-Eleven / FamilyMart / Lawson"
+where_found:
+  - "Major konbini"
+price_yen: "~¥170–¥260"
+what_it_is: "Rice ball filled with spicy cod roe or salted pollock roe."
+why_travelers_care: "Japan-specific flavor contrast; good for adventurous travelers."
+risk_flags:
+  - "perishable"
+  - "seafood"
+  - "allergen"
+verification_notes: "Confirm spice level, roe type, and current store rotation."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "medium"
+trip_score: 8

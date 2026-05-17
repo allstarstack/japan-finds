@@ -1,0 +1,26 @@
+id: "JF-0380"
+slug: "hada-labo-gokujyun-premium-lotion"
+name_en: "Hada Labo Gokujyun Premium Lotion"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "肌ラボ 極潤プレミアム"
+brand: "Rohto"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥900–¥1,500"
+what_it_is: "Richer hydrating lotion in gold packaging."
+why_travelers_care: "Very popular with dry-skin/J-beauty audiences."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Check formula and skin compatibility."
+source_links:
+  - "https://jp.rohto.com/hadalabo/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

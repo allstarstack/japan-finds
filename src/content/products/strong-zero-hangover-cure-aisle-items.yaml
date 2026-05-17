@@ -1,0 +1,26 @@
+id: "JF-0165"
+slug: "strong-zero-hangover-cure-aisle-items"
+name_en: "Strong Zero / hangover cure aisle items"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "二日酔い対策商品"
+brand: "Various"
+where_found:
+  - "Donki"
+  - "drugstores"
+  - "konbini"
+price_yen: "varies"
+what_it_is: "Hangover drinks/tablets and alcohol-adjacent products."
+why_travelers_care: "Content angle only; regulated/supplement-like and not universal."
+risk_flags:
+  - "supplement/regulated"
+  - "health claim"
+  - "alcohol-adjacent"
+verification_notes: "Avoid medical claims; verify ingredients and legal import rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "low"
+trip_score: 4

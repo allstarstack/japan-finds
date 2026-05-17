@@ -1,0 +1,23 @@
+id: "JF-0143"
+slug: "salonpas-pain-patches"
+name_en: "Salonpas Pain Patches"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "サロンパス"
+brand: "Hisamitsu"
+where_found:
+  - "All drugstores"
+price_yen: "500-1200"
+what_it_is: "Methyl salicylate / menthol topical pain patches for muscle aches."
+why_travelers_care: "Travel hack for walking-blown feet and shoulders, well-known import."
+risk_flags:
+  - "medicine/regulated, allergen-aspirin-related"
+verification_notes: "Sold in US but Japan formulation/sizes differ"
+source_links:
+  - "hisamitsu.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

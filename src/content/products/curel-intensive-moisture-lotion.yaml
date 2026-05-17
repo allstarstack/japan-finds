@@ -1,0 +1,21 @@
+id: "JF-0359"
+slug: "curel-intensive-moisture-lotion"
+name_en: "Curel Intensive Moisture Lotion"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "キュレル"
+brand: "Kao"
+where_found:
+  - "All drugstores"
+price_yen: "1500-2500"
+what_it_is: "Ceramide-focused sensitive skin line."
+why_travelers_care: "Dermatologist favorite for sensitive/dry travelers."
+risk_flags:
+  - "liquid, skincare/cosmetic claim"
+source_links:
+  - "curel.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

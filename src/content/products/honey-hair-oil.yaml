@@ -1,0 +1,28 @@
+id: "JF-0371"
+slug: "honey-hair-oil"
+name_en: "&honey hair oil"
+category: "skincare"
+intent:
+  - "bring_home"
+status: "needs_verification"
+name_jp: "アンドハニー ヘアオイル"
+brand: "ViCREA"
+where_found:
+  - "Drugstores"
+  - "Loft"
+  - "Donki"
+price_yen: "~¥1,400–¥1,800"
+what_it_is: "Scented hair oil in honey-themed packaging."
+why_travelers_care: "Highly giftable packaging and strong beauty shelf appeal."
+risk_flags:
+  - "liquid"
+  - "cosmetic claim"
+  - "fragrance"
+verification_notes: "Check leakage risk and scent."
+source_links:
+  - "https://www.loft.co.jp/store/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 6

@@ -1,0 +1,24 @@
+id: "JF-0308"
+slug: "awamori-okinawan-distilled-spirit"
+name_en: "Awamori (Okinawan Distilled Spirit)"
+category: "other"
+intent:
+  - "local_editions"
+  - "bring_home"
+status: "needs_verification"
+name_jp: "泡盛"
+brand: "Various Okinawa distilleries"
+where_found:
+  - "Okinawa"
+  - "liquor shops"
+price_yen: "1500-10000+"
+what_it_is: "Rice-based distilled spirit, Okinawa specialty."
+why_travelers_care: "Distinct from sake/shochu, aged versions are collectible."
+risk_flags:
+  - "liquid, alcohol"
+verification_notes: "Customs limits on liquor"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 5

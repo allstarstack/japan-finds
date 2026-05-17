@@ -1,0 +1,24 @@
+id: "JF-0315"
+slug: "nagoya-uiro"
+name_en: "Nagoya Uiro"
+category: "other"
+intent:
+  - "local_editions"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "ういろう"
+brand: "Aoyagi Sohonke / Ohsu Uiro"
+where_found:
+  - "Nagoya station"
+  - "shops"
+price_yen: "500-1500"
+what_it_is: "Rice-flour cake, Nagoya specialty."
+why_travelers_care: "Subtler omiyage option."
+risk_flags:
+  - "allergen-wheat (some)"
+source_links:
+  - "uirou.co.jp"
+  - "oosu-uirou.com"
+confidence: "high"
+trip_score: 6
+suitcase_score: 9

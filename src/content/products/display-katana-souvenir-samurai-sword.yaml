@@ -1,0 +1,23 @@
+id: "JF-0272"
+slug: "display-katana-souvenir-samurai-sword"
+name_en: "Display Katana / Souvenir Samurai Sword"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "模造刀"
+brand: "Generic"
+where_found:
+  - "Tourist shops"
+price_yen: "¥5,000+"
+what_it_is: "Decorative sword replica."
+why_travelers_care: "Avoid as recommendation due travel/security friction."
+risk_flags:
+  - "weapon lookalike"
+  - "bulky"
+verification_notes: "Verify local laws/travel restrictions if discussed."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 1
+suitcase_score: 0

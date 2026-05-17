@@ -1,0 +1,22 @@
+id: "JF-0178"
+slug: "pigeon-baby-wipes-diaper-cream"
+name_en: "Pigeon Baby Wipes / Diaper Cream"
+category: "other"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ピジョン"
+brand: "Pigeon"
+where_found:
+  - "Drugstores"
+  - "baby stores"
+price_yen: "500-2000"
+what_it_is: "Japanese baby brand, gentle formulas."
+why_travelers_care: "Trusted baby brand for traveling parents."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "pigeon.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

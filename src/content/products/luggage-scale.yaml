@@ -1,0 +1,26 @@
+id: "JF-0117"
+slug: "luggage-scale"
+name_en: "Luggage scale"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "hold"
+name_jp: "ラゲッジスケール"
+brand: "Various"
+where_found:
+  - "Donki"
+  - "Bic Camera"
+  - "travel stores"
+price_yen: "~¥800–¥2,000"
+what_it_is: "Small hanging scale for checking suitcase weight."
+why_travelers_care: "Prevents airport suitcase panic after shopping."
+risk_flags:
+  - "battery"
+  - "easy to buy outside Japan"
+verification_notes: "Check battery type and accuracy."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 7

@@ -1,0 +1,21 @@
+id: "JF-0131"
+slug: "hibiscrub-pharmacy-hand-sanitizers"
+name_en: "Hibiscrub / Pharmacy Hand Sanitizers"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ハンドジェル"
+brand: "Various"
+where_found:
+  - "Drugstores"
+price_yen: "300-700"
+what_it_is: "Pharmacy-grade sanitizers, often with cleaner scents than Western options."
+why_travelers_care: "Quick day-one pickup."
+risk_flags:
+  - "liquid, allergen-alcohol"
+source_links:
+  - "general"
+confidence: "medium"
+trip_score: 4
+suitcase_score: 8

@@ -1,0 +1,25 @@
+id: "JF-0348"
+slug: "tsukemono-pickles-pack"
+name_en: "Tsukemono pickles pack"
+category: "snacks"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "漬物"
+brand: "Various"
+where_found:
+  - "Kyoto/Nara/department food halls"
+  - "supermarkets"
+price_yen: "~¥300–¥1,500"
+what_it_is: "Japanese pickled vegetables in sealed packs."
+why_travelers_care: "Great food-person souvenir, but liquid/odor risks."
+risk_flags:
+  - "liquid/brine"
+  - "odor"
+  - "food import rules"
+verification_notes: "Verify customs and leakage risk."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 5

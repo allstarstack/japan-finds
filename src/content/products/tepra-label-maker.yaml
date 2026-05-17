@@ -1,0 +1,22 @@
+id: "JF-0438"
+slug: "tepra-label-maker"
+name_en: "Tepra Label Maker"
+category: "stationery"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "テプラ"
+brand: "King Jim"
+where_found:
+  - "Bic Camera"
+  - "Yodobashi"
+price_yen: "5000-15000"
+what_it_is: "Cult Japanese label maker."
+why_travelers_care: "Organizer's dream."
+risk_flags:
+  - "bulky"
+source_links:
+  - "kingjim.co.jp/tepra"
+confidence: "high"
+trip_score: 6
+suitcase_score: 7

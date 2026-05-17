@@ -1,0 +1,25 @@
+id: "JF-0151"
+slug: "japanese-surgical-masks"
+name_en: "Japanese surgical masks"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "不織布マスク"
+brand: "Unicharm / Iris Ohyama / various"
+where_found:
+  - "Drugstores"
+  - "konbini"
+  - "Donki"
+price_yen: "~¥300–¥1,000"
+what_it_is: "Disposable masks in multiple sizes/colors."
+why_travelers_care: "Immediate fix for pollen, crowds, illness etiquette, or cold weather."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check fit, size, and material."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 6

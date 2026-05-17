@@ -1,0 +1,25 @@
+id: "JF-0219"
+slug: "calpis-calpico"
+name_en: "Calpis / Calpico"
+category: "konbini"
+intent:
+  - "try_in_japan"
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "カルピス"
+brand: "Asahi"
+where_found:
+  - "Konbini"
+  - "vending"
+  - "supermarkets"
+price_yen: "150-200 single, ~500 concentrate"
+what_it_is: "Fermented milk soft drink, tangy-sweet. Sold as ready-to-drink or concentrate to dilute."
+why_travelers_care: "Polarizing flavor, concentrate bottle works as a bring-home."
+risk_flags:
+  - "liquid, allergen-dairy"
+verification_notes: "Concentrate sold abroad as Calpico in many Asian groceries"
+source_links:
+  - "calpis.asahi-inryo.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 6

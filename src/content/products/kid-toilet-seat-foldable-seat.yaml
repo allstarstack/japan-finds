@@ -1,0 +1,26 @@
+id: "JF-0192"
+slug: "kid-toilet-seat-foldable-seat"
+name_en: "Kid toilet seat / foldable seat"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "子ども用便座"
+brand: "Daiso / baby stores"
+where_found:
+  - "100-yen shops"
+  - "baby stores"
+price_yen: "~¥330–¥2,000"
+what_it_is: "Portable child toilet seat accessory."
+why_travelers_care: "Practical for some families but bulky and hygiene-sensitive."
+risk_flags:
+  - "bulky"
+  - "hygiene"
+  - "easy to buy outside Japan"
+verification_notes: "Verify size, cleaning, and trip need."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "low"
+trip_score: 5
+suitcase_score: 3

@@ -1,0 +1,21 @@
+id: "JF-0227"
+slug: "egg-salad-sandwich-tamago-sando"
+name_en: "Egg Salad Sandwich (Tamago Sando)"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "たまごサンド"
+brand: "7-Eleven (Sebun-Irebun)"
+where_found:
+  - "7-Eleven primarily"
+price_yen: "270-320"
+what_it_is: "Pillowy white shokupan with kewpie-style egg salad. The 7-Eleven version is the famous one."
+why_travelers_care: "Anthony Bourdain made this internationally famous; viral content staple."
+risk_flags:
+  - "perishable, allergen-egg-dairy"
+verification_notes: "Confirm 7-Eleven still leads vs Lawson/FamilyMart variants in 2026"
+source_links:
+  - "7-eleven.co.jp"
+confidence: "high"
+trip_score: 10

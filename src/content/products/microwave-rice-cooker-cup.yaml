@@ -1,0 +1,25 @@
+id: "JF-0028"
+slug: "microwave-rice-cooker-cup"
+name_en: "Microwave rice cooker cup"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "電子レンジ炊飯器"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+price_yen: "~¥330–¥1,100"
+what_it_is: "Small microwave tool for cooking rice."
+why_travelers_care: "Japan-core kitchen practicality; good content test."
+risk_flags:
+  - "bulky"
+  - "plastic"
+  - "heat use"
+verification_notes: "Verify instructions and rice capacity."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 5

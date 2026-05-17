@@ -1,0 +1,23 @@
+id: "JF-0307"
+slug: "aomori-apple-products-juice-pie-apple-senbei"
+name_en: "Aomori Apple Products (Juice, Pie, Apple Senbei)"
+category: "other"
+intent:
+  - "local_editions"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "青森りんご"
+brand: "Various"
+where_found:
+  - "Aomori"
+  - "dept stores"
+price_yen: "500-3000"
+what_it_is: "Apple juices, dried snacks, apple pies."
+why_travelers_care: "Aomori is the apple region."
+risk_flags:
+  - "allergen-varies"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 9

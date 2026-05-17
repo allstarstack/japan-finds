@@ -1,0 +1,25 @@
+id: "JF-0255"
+slug: "konbini-bento-box"
+name_en: "Konbini bento box"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "コンビニ弁当"
+brand: "Major konbini"
+where_found:
+  - "Major konbini chilled meal section"
+price_yen: "~¥500–¥900"
+what_it_is: "Ready-made boxed meal: rice, protein, sides, or regional menus."
+why_travelers_care: "Useful, affordable travel meal that feels more complete than overseas convenience food."
+risk_flags:
+  - "perishable"
+  - "allergen"
+  - "fresh food"
+verification_notes: "Current menus rotate by chain and region."
+source_links:
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+  - "https://www.japan-guide.com/e/e2071.html"
+confidence: "high"
+trip_score: 8

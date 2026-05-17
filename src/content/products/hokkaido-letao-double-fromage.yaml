@@ -1,0 +1,24 @@
+id: "JF-0405"
+slug: "hokkaido-letao-double-fromage"
+name_en: "Hokkaido Letao Double Fromage"
+category: "snacks"
+intent:
+  - "try_in_japan"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "ルタオ ドゥーブルフロマージュ"
+brand: "LeTAO"
+where_found:
+  - "LeTAO Hokkaido"
+  - "airport"
+  - "online"
+price_yen: "1800-2200"
+what_it_is: "Two-layer cheesecake, soft + baked. Hokkaido specialty."
+why_travelers_care: "Premium dessert souvenir, ships frozen domestically."
+risk_flags:
+  - "perishable, allergen-dairy"
+source_links:
+  - "letao.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 3

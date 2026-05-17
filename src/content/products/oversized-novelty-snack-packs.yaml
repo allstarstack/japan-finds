@@ -1,0 +1,24 @@
+id: "JF-0118"
+slug: "oversized-novelty-snack-packs"
+name_en: "Oversized novelty snack packs"
+category: "donki-drugstore"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "巨大お菓子"
+brand: "Various"
+where_found:
+  - "Donki novelty aisles"
+price_yen: "~¥1,000–¥4,000"
+what_it_is: "Huge candy/snack packaging or giant gift boxes."
+why_travelers_care: "Funny on camera, usually terrible suitcase math."
+risk_flags:
+  - "bulky"
+  - "allergen"
+  - "fragile"
+verification_notes: "Verify if actually useful or just visual bait."
+source_links:
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 2

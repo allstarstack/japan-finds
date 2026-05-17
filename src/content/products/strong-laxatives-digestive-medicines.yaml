@@ -1,0 +1,22 @@
+id: "JF-0069"
+slug: "strong-laxatives-digestive-medicines"
+name_en: "Strong laxatives / digestive medicines"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "便秘薬・胃腸薬"
+brand: "Various"
+where_found:
+  - "Drugstores"
+price_yen: "varies"
+what_it_is: "OTC digestive or laxative medicines."
+why_travelers_care: "Travelers ask about them, but medical risk is high."
+risk_flags:
+  - "medicine/regulated"
+  - "health claim"
+verification_notes: "Require pharmacist/doctor guidance; check import rules."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "low"
+trip_score: 3

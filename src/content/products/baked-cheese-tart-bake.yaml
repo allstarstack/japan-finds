@@ -1,0 +1,21 @@
+id: "JF-0398"
+slug: "baked-cheese-tart-bake"
+name_en: "Baked Cheese Tart (BAKE)"
+category: "snacks"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "ベイク チーズタルト"
+brand: "BAKE Inc."
+where_found:
+  - "Stations and malls"
+price_yen: "250 single"
+what_it_is: "Mini cheese tart, eaten warm or cold, very Japanese-style."
+why_travelers_care: "Quick-bite content moment."
+risk_flags:
+  - "perishable, allergen-dairy"
+source_links:
+  - "bakecheesetart.com"
+confidence: "high"
+trip_score: 7
+suitcase_score: 2

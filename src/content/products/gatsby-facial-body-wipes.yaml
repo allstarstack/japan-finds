@@ -1,0 +1,27 @@
+id: "JF-0149"
+slug: "gatsby-facial-body-wipes"
+name_en: "Gatsby facial/body wipes"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ギャツビー フェイシャルペーパー"
+brand: "Mandom"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "konbini"
+price_yen: "~¥300–¥600"
+what_it_is: "Cooling face/body wipes marketed often to men."
+why_travelers_care: "Immediate hot-weather fix; very visible in konbini/drugstore aisles."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+  - "menthol"
+verification_notes: "Check menthol strength and skin sensitivity."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

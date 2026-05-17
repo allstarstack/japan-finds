@@ -1,0 +1,23 @@
+id: "JF-0168"
+slug: "premium-senbei-tins-souka-senbei"
+name_en: "Premium Senbei Tins (Souka Senbei)"
+category: "other"
+intent:
+  - "gift_easy"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "草加せんべい"
+brand: "Various Saitama makers"
+where_found:
+  - "Souka"
+  - "dept stores"
+price_yen: "1500-5000"
+what_it_is: "Premium rice crackers in collectible tins."
+why_travelers_care: "Savory alternative to sweet omiyage."
+risk_flags:
+  - "allergen-soy-wheat"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

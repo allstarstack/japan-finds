@@ -1,0 +1,25 @@
+id: "JF-0294"
+slug: "eki-stamp-notebook"
+name_en: "Eki stamp notebook"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "駅スタンプ帳"
+brand: "JR/station shops / generic notebooks"
+where_found:
+  - "Train stations"
+  - "stationery stores"
+price_yen: "~¥200–¥1,500"
+what_it_is: "Notebook used to collect free station stamps."
+why_travelers_care: "Turns transit into a collectible trip game."
+risk_flags:
+  - "ink transfer"
+  - "easy to buy outside Japan notebook only"
+verification_notes: "Verify station stamp locations and ink condition."
+source_links:
+  - "https://www.japan.travel/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 9
+suitcase_score: 9

@@ -1,0 +1,21 @@
+id: "JF-0427"
+slug: "kokuyo-campus-notebooks"
+name_en: "Kokuyo Campus Notebooks"
+category: "stationery"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "キャンパスノート"
+brand: "Kokuyo"
+where_found:
+  - "Stationery stores"
+  - "konbini"
+price_yen: "150-400"
+what_it_is: "Standard student notebook, Japan's default."
+why_travelers_care: "Cheap, recognizable, multiple grids/dot variants."
+source_links:
+  - "kokuyo.co.jp/stationery/campus"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

@@ -1,0 +1,19 @@
+id: "JF-0429"
+slug: "maruman-mnemosyne-notebook"
+name_en: "Maruman Mnemosyne Notebook"
+category: "stationery"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ニーモシネ"
+brand: "Maruman"
+where_found:
+  - "Stationery stores"
+price_yen: "500-1500"
+what_it_is: "Professional black-cover notebook, perforated pages."
+why_travelers_care: "Pro-grade alternative to Moleskine."
+source_links:
+  - "e-maruman.co.jp/mnemosyne"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

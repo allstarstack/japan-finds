@@ -1,0 +1,26 @@
+id: "JF-0296"
+slug: "goshuincho-temple-shrine-stamp-book"
+name_en: "Goshuincho temple/shrine stamp book"
+category: "other"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "御朱印帳"
+brand: "Temples/shrines / stationery makers"
+where_found:
+  - "Shrines"
+  - "temples"
+  - "Loft"
+  - "bookstores"
+price_yen: "~¥1,000–¥3,000"
+what_it_is: "Accordion book for collecting shrine/temple calligraphy stamps."
+why_travelers_care: "Meaningful, beautiful, and location-specific."
+risk_flags:
+  - "religious/cultural etiquette"
+verification_notes: "Needs etiquette guidance and cash for stamps."
+source_links:
+  - "https://www.japan.travel/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 9
+suitcase_score: 9

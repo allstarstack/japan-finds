@@ -1,0 +1,19 @@
+id: "JF-0001"
+slug: "can-do-random-finds"
+name_en: "Can Do Random Finds"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "キャンドゥ"
+brand: "Can Do"
+where_found:
+  - "Can Do locations"
+price_yen: "110"
+what_it_is: "Third major 100-yen chain, more random/quirky inventory."
+why_travelers_care: "Treasure-hunt format."
+source_links:
+  - "cando-web.co.jp"
+confidence: "high"
+trip_score: 5
+suitcase_score: 9

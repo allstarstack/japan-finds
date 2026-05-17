@@ -1,0 +1,23 @@
+id: "JF-0317"
+slug: "okinawan-chinsuko-cookies"
+name_en: "Okinawan Chinsuko Cookies"
+category: "other"
+intent:
+  - "local_editions"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "ちんすこう"
+brand: "Various"
+where_found:
+  - "Okinawa"
+  - "airports"
+price_yen: "300-1500"
+what_it_is: "Pork-fat shortbread cookies, Okinawan specialty."
+why_travelers_care: "Distinctive Okinawa omiyage."
+risk_flags:
+  - "allergen-wheat"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

@@ -1,0 +1,20 @@
+id: "JF-0205"
+slug: "hojicha-roasted-green-tea"
+name_en: "Hojicha (Roasted Green Tea)"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ほうじ茶"
+brand: "Various"
+where_found:
+  - "Specialty tea shops"
+  - "supermarkets"
+price_yen: "500-2000"
+what_it_is: "Roasted green tea, lower caffeine, nutty profile."
+why_travelers_care: "Underdog tea, gentle for evening drinking."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

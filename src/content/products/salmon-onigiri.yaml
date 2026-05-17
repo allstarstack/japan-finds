@@ -1,0 +1,21 @@
+id: "JF-0234"
+slug: "salmon-onigiri"
+name_en: "Salmon Onigiri"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "鮭おにぎり"
+brand: "7-Eleven / Lawson / FamilyMart"
+where_found:
+  - "All major konbini"
+price_yen: "150-200"
+what_it_is: "Onigiri with grilled salmon flake center."
+why_travelers_care: "Less polarizing than tuna mayo, often the daily breakfast pick."
+risk_flags:
+  - "perishable"
+verification_notes: "Check specific filling and allergy label."
+source_links:
+  - "konbini sites"
+confidence: "high"
+trip_score: 9

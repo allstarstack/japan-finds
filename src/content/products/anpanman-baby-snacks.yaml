@@ -1,0 +1,23 @@
+id: "JF-0174"
+slug: "anpanman-baby-snacks"
+name_en: "Anpanman Baby Snacks"
+category: "other"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "アンパンマン"
+brand: "Various"
+where_found:
+  - "Supermarkets"
+  - "baby stores"
+price_yen: "150-300"
+what_it_is: "Anpanman-branded baby crackers, biscuits."
+why_travelers_care: "Cute, safe, kid-recognizable."
+risk_flags:
+  - "allergen-varies"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

@@ -1,0 +1,26 @@
+id: "JF-0190"
+slug: "japanese-baby-wipes-travel-packs"
+name_en: "Japanese baby wipes travel packs"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "赤ちゃん用おしりふき"
+brand: "Pigeon / Unicharm / Akachan Honpo / private label"
+where_found:
+  - "Drugstores"
+  - "konbini"
+  - "baby stores"
+price_yen: "~¥100–¥500"
+what_it_is: "Small wet-wipe packs for babies/kids."
+why_travelers_care: "Immediate family travel fix."
+risk_flags:
+  - "liquid"
+  - "bulky if bulk"
+verification_notes: "Check ingredients and sensitivity."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 5

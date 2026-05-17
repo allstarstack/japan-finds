@@ -1,0 +1,28 @@
+id: "JF-0385"
+slug: "lululun-sheet-masks"
+name_en: "LuLuLun sheet masks"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ルルルン フェイスマスク"
+brand: "LuLuLun"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "Loft"
+  - "regional shops"
+price_yen: "~¥400–¥2,000"
+what_it_is: "Sheet mask packs, including regional limited editions."
+why_travelers_care: "Beauty stock-up plus local-edition angle."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm regional/seasonal editions."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 7

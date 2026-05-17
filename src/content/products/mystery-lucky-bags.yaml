@@ -1,0 +1,29 @@
+id: "JF-0066"
+slug: "mystery-lucky-bags"
+name_en: "Mystery lucky bags"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "福袋"
+brand: "Various retailers"
+where_found:
+  - "Department stores"
+  - "Donki"
+  - "shops"
+  - "New Year season"
+price_yen: "~¥1,000–¥50,000+"
+what_it_is: "Sealed lucky bags sold especially around New Year."
+why_travelers_care: "Fun content and gambling-like reveal; utility varies wildly."
+risk_flags:
+  - "seasonal"
+  - "bulky"
+  - "gambling-like spend"
+  - "returns limited"
+verification_notes: "Verify contents, value, and return policy."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 6
+suitcase_score: 4

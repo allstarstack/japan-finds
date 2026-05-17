@@ -1,0 +1,22 @@
+id: "JF-0128"
+slug: "bathclin-onsen-style-bath-salts"
+name_en: "Bathclin Onsen-Style Bath Salts"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "バスクリン"
+brand: "Bathclin"
+where_found:
+  - "All drugstores"
+price_yen: "500-1500"
+what_it_is: "Powdered bath salts mimicking famous Japanese onsen (Kusatsu, Beppu, etc.)."
+why_travelers_care: "Onsen omiyage in powder form."
+risk_flags:
+  - "allergen-fragrance"
+source_links:
+  - "bathclin.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 9

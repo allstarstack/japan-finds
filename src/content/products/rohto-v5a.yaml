@@ -1,0 +1,23 @@
+id: "JF-0279"
+slug: "rohto-v5a"
+name_en: "Rohto V5a"
+category: "other"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ロートV5a"
+brand: "Rohto"
+where_found:
+  - "Drugstores"
+price_yen: "~¥1,500"
+what_it_is: "Eye-health supplement, not standard eye drops."
+why_travelers_care: "Potentially useful but needs correction because source described it inconsistently."
+risk_flags:
+  - "supplement"
+  - "regulated"
+verification_notes: "Fact-check product type, ingredients, and transplant/medication suitability before publishing."
+source_links:
+  - "User-pasted response"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 10

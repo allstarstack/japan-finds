@@ -1,0 +1,26 @@
+id: "JF-0249"
+slug: "cup-noodle-limited-flavors"
+name_en: "Cup Noodle limited flavors"
+category: "konbini"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "カップヌードル 限定味"
+brand: "Nissin"
+where_found:
+  - "Konbini / supermarkets / Donki"
+price_yen: "~¥170–¥350"
+what_it_is: "Instant cup noodles with Japan-only, seasonal, or collab flavors."
+why_travelers_care: "Cheap, recognizable, and suitcase-friendly if space allows."
+risk_flags:
+  - "bulky"
+  - "allergen"
+  - "food import rules"
+verification_notes: "Verify current limited flavor and destination food rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.sej.co.jp/products/"
+  - "https://www.family.co.jp/goods.html"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 6

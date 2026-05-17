@@ -1,0 +1,21 @@
+id: "JF-0459"
+slug: "yamato-takkyubin-luggage-forwarding"
+name_en: "Yamato Takkyubin Luggage Forwarding"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "宅急便"
+brand: "Yamato Transport"
+where_found:
+  - "Hotels"
+  - "airport counters"
+price_yen: "2000-3500 per piece"
+what_it_is: "Same/next-day luggage forwarding hotel-to-hotel or airport-to-hotel."
+why_travelers_care: "Travel light through Shinkansen routes."
+verification_notes: "Most hotels accept dropoff at front desk"
+source_links:
+  - "kuronekoyamato.co.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 0

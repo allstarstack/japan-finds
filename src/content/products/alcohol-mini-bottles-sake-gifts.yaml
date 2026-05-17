@@ -1,0 +1,28 @@
+id: "JF-0057"
+slug: "alcohol-mini-bottles-sake-gifts"
+name_en: "Alcohol mini bottles / sake gifts"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "日本酒ミニボトル"
+brand: "Various breweries"
+where_found:
+  - "Donki"
+  - "liquor shops"
+  - "airports"
+price_yen: "varies"
+what_it_is: "Sake/liqueur gifts and mini bottles."
+why_travelers_care: "Can be good for eligible adults but regulated and not universal."
+risk_flags:
+  - "alcohol"
+  - "liquid"
+  - "regulated"
+  - "age-restricted"
+verification_notes: "Must verify age, customs limits, and baggage rules."
+source_links:
+  - "https://www.donki.com/en/tax_free/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 5
+suitcase_score: 5

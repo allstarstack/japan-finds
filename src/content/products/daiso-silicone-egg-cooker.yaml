@@ -1,0 +1,19 @@
+id: "JF-0009"
+slug: "daiso-silicone-egg-cooker"
+name_en: "Daiso Silicone Egg Cooker"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "シリコンエッグクッカー"
+brand: "Daiso"
+where_found:
+  - "Daiso"
+price_yen: "110"
+what_it_is: "Microwave egg poacher. Sold for $5+ abroad."
+why_travelers_care: "Random useful, cheap kitchen find."
+source_links:
+  - "daiso-sangyo.co.jp"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

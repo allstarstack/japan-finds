@@ -1,0 +1,23 @@
+id: "JF-0262"
+slug: "spam-musubi-rice-ball"
+name_en: "SPAM musubi rice ball"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "SPAMむすび"
+brand: "FamilyMart / Hormel collaboration variants"
+where_found:
+  - "FamilyMart / selected konbini / Major konbini"
+price_yen: "~¥250–¥350"
+what_it_is: "Rice ball or musubi with SPAM and fillings such as tuna mayo."
+why_travelers_care: "Recognizable for US travelers but localized through Japan konbini execution."
+risk_flags:
+  - "perishable"
+  - "meat"
+  - "allergen"
+verification_notes: "Confirm current seasonal availability by region."
+source_links:
+  - "https://www.family.co.jp/for_tourist/en.html"
+confidence: "high"
+trip_score: 7

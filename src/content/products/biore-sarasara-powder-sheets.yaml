@@ -1,0 +1,27 @@
+id: "JF-0146"
+slug: "biore-sarasara-powder-sheets"
+name_en: "Bioré SaraSara powder sheets"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "ビオレ さらさらパウダーシート"
+brand: "Kao"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "konbini"
+price_yen: "~¥300–¥600"
+what_it_is: "Body wipes that leave powdery dry finish."
+why_travelers_care: "Excellent summer subway survival item."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+  - "fragrance"
+verification_notes: "Check scent and sensitivity."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.kao.com/jp/products/bioreuv/"
+confidence: "high"
+trip_score: 9
+suitcase_score: 7

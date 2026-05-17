@@ -1,0 +1,26 @@
+id: "JF-0035"
+slug: "reusable-shopping-bag"
+name_en: "Reusable shopping bag"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "エコバッグ"
+brand: "Daiso / Seria / Can Do / MUJI / konbini"
+where_found:
+  - "100-yen shops"
+  - "konbini"
+  - "MUJI"
+price_yen: "~¥110–¥1,000"
+what_it_is: "Foldable bag for purchases."
+why_travelers_care: "Japan charges for bags; useful immediately."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check capacity and handle strength."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+  - "https://www.muji.com/jp/ja/store"
+confidence: "high"
+trip_score: 9
+suitcase_score: 9

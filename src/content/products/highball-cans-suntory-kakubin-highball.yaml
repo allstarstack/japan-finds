@@ -1,0 +1,23 @@
+id: "JF-0220"
+slug: "highball-cans-suntory-kakubin-highball"
+name_en: "Highball Cans (Suntory Kakubin Highball)"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "needs_verification"
+name_jp: "角ハイボール"
+brand: "Suntory"
+where_found:
+  - "Konbini"
+  - "supermarkets"
+  - "izakaya"
+price_yen: "180-260"
+what_it_is: "Pre-mixed whisky highball in can, the standard izakaya drink in portable form."
+why_travelers_care: "Authentic and easy intro to Japanese highball culture."
+risk_flags:
+  - "liquid, alcohol"
+source_links:
+  - "suntory.co.jp/rtd/kakuhigh"
+confidence: "high"
+trip_score: 8
+suitcase_score: 5

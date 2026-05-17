@@ -1,0 +1,23 @@
+id: "JF-0038"
+slug: "shoe-bag"
+name_en: "Shoe bag"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "シューズバッグ"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+price_yen: "~¥110–¥330"
+what_it_is: "Bag for separating shoes or dirty items in luggage."
+why_travelers_care: "Useful before packing home."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check size for shoe type."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

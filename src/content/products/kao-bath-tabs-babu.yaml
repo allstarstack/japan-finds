@@ -1,0 +1,22 @@
+id: "JF-0132"
+slug: "kao-bath-tabs-babu"
+name_en: "Kao Bath Tabs (Babu)"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "バブ"
+brand: "Kao"
+where_found:
+  - "All drugstores"
+price_yen: "500-1200"
+what_it_is: "Carbonated tablet bath additives, multiple scent variants."
+why_travelers_care: "Onsen-at-home gift, lightweight, multiple pack sizes."
+risk_flags:
+  - "allergen-fragrance"
+source_links:
+  - "kao.co.jp/bub"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

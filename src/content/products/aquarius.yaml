@@ -1,0 +1,21 @@
+id: "JF-0216"
+slug: "aquarius"
+name_en: "Aquarius"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "hold"
+name_jp: "アクエリアス"
+brand: "Coca-Cola Japan"
+where_found:
+  - "Konbini"
+  - "vending machines"
+price_yen: "120-150"
+what_it_is: "Coca-Cola Japan's sports drink, more citrus-forward than Pocari."
+why_travelers_care: "The other electrolyte option; debate vs Pocari is a real thing."
+risk_flags:
+  - "liquid"
+source_links:
+  - "cocacola.co.jp/brands/aquarius"
+confidence: "high"
+trip_score: 7

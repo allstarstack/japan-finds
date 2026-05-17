@@ -1,0 +1,21 @@
+id: "JF-0052"
+slug: "onigiri-brought-home"
+name_en: "Onigiri Brought Home"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "おにぎりお持ち帰り"
+brand: "Konbini"
+where_found:
+  - "Konbini"
+price_yen: "Varies"
+what_it_is: "Konbini onigiri 12-24h shelf life; not exportable."
+why_travelers_care: "Eat in country only."
+risk_flags:
+  - "perishable"
+source_links:
+  - "konbini sites"
+confidence: "high"
+trip_score: 0
+suitcase_score: 0

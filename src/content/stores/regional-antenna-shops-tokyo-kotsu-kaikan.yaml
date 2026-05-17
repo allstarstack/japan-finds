@@ -1,0 +1,18 @@
+slug: "regional-antenna-shops-tokyo-kotsu-kaikan"
+name_en: "Regional Antenna Shops / Tokyo Kotsu Kaikan"
+layer: "specialty"
+status: "needs_verification"
+name_jp: "アンテナショップ / 東京交通会館"
+best_for: "Local/regional editions without leaving Tokyo."
+core_categories:
+  - "Regional snacks"
+  - "sweets"
+  - "sake"
+  - "condiments"
+  - "crafts"
+  - "prefecture mascots"
+  - "travel pamphlets."
+tax_free_notes: "Hours vary by prefecture shop; food availability rotates."
+airport_availability: "Alcohol/food import rules; freshness/shelf-life; branch-specific items."
+risk_flags:
+  - "Shop hours, tax-free status, product freshness, official shop list."

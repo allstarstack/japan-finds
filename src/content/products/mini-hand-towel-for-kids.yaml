@@ -1,0 +1,26 @@
+id: "JF-0194"
+slug: "mini-hand-towel-for-kids"
+name_en: "Mini hand towel for kids"
+category: "other"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "子ども用ミニタオル"
+brand: "Sanrio / Pokémon / Daiso / various"
+where_found:
+  - "100-yen shops"
+  - "character shops"
+  - "konbini"
+price_yen: "~¥110–¥800"
+what_it_is: "Small character towel for school/travel."
+why_travelers_care: "Useful in Japan restrooms and giftable."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check official licensing."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.donki.com/en/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 9

@@ -1,0 +1,23 @@
+id: "JF-0250"
+slug: "famima-frappe"
+name_en: "Famima Frappé"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "ファミマフラッペ"
+brand: "FamilyMart"
+where_found:
+  - "FamilyMart freezer + coffee machine"
+price_yen: "~¥300–¥400"
+what_it_is: "Frozen drink cup finished with hot milk from café machine."
+why_travelers_care: "Interactive konbini drink; flavors rotate and feel Japan-specific."
+risk_flags:
+  - "perishable"
+  - "dairy"
+  - "liquid"
+verification_notes: "Verify flavor and machine availability."
+source_links:
+  - "https://www.family.co.jp/for_tourist/en.html"
+confidence: "high"
+trip_score: 8

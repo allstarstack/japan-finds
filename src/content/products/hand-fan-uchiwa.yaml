@@ -1,0 +1,23 @@
+id: "JF-0088"
+slug: "hand-fan-uchiwa"
+name_en: "Hand Fan Uchiwa"
+category: "other"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "うちわ"
+brand: "Various"
+where_found:
+  - "Dept stores"
+  - "summer events"
+price_yen: "300-2000"
+what_it_is: "Rigid round paper hand fan."
+why_travelers_care: "Cheaper than sensu, festival-feel."
+risk_flags:
+  - "fragile"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 6
+suitcase_score: 8

@@ -1,0 +1,22 @@
+id: "JF-0167"
+slug: "mizuhiki-decorative-cord-crafts"
+name_en: "Mizuhiki Decorative Cord Crafts"
+category: "other"
+intent:
+  - "gift_easy"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "水引"
+brand: "Various Iida/Nagano makers"
+where_found:
+  - "Iida"
+  - "dept stores"
+  - "specialty shops"
+price_yen: "300-3000"
+what_it_is: "Decorative paper-cord ornaments, traditionally used on gift envelopes."
+why_travelers_care: "Beautiful, tiny, photogenic."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

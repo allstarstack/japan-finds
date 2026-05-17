@@ -1,0 +1,24 @@
+id: "JF-0032"
+slug: "phone-stand"
+name_en: "Phone stand"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "スマホスタンド"
+brand: "Daiso / Seria / Can Do"
+where_found:
+  - "100-yen shops"
+  - "electronics stores"
+price_yen: "~¥110–¥550"
+what_it_is: "Foldable stand for phone on planes, hotels, restaurants."
+why_travelers_care: "Useful for solo meals and filming quick shots."
+risk_flags:
+  - "easy to buy outside Japan"
+verification_notes: "Check angle/weight support."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 8

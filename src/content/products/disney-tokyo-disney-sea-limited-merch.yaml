@@ -1,0 +1,22 @@
+id: "JF-0176"
+slug: "disney-tokyo-disney-sea-limited-merch"
+name_en: "Disney Tokyo / Disney Sea Limited Merch"
+category: "other"
+intent:
+  - "local_editions"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "東京ディズニー"
+brand: "Disney Japan"
+where_found:
+  - "Disney parks only"
+price_yen: "500-10000"
+what_it_is: "Park-exclusive Duffy & Friends, Ariel, Toy Story merch."
+why_travelers_care: "Park-only items don't exist outside Japan; Duffy is the standout."
+risk_flags:
+  - "fragile (some)"
+source_links:
+  - "tokyodisneyresort.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

@@ -1,0 +1,26 @@
+id: "JF-0124"
+slug: "umaibo-multipack"
+name_en: "Umaibo multipack"
+category: "donki-drugstore"
+intent:
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "うまい棒"
+brand: "Yaokin"
+where_found:
+  - "Donki"
+  - "supermarkets"
+  - "100-yen shops"
+price_yen: "~¥300–¥800"
+what_it_is: "Cheap puffed corn snack sticks in many flavors."
+why_travelers_care: "Funny, affordable, and easy to distribute as casual gifts."
+risk_flags:
+  - "allergen"
+  - "bulky if multipack"
+verification_notes: "Verify flavor availability and package size."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "medium"
+trip_score: 7
+suitcase_score: 8

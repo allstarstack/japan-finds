@@ -1,0 +1,26 @@
+id: "JF-0345"
+slug: "s-b-tube-condiments"
+name_en: "S&B tube condiments"
+category: "snacks"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "チューブ調味料"
+brand: "S&B Foods"
+where_found:
+  - "Supermarkets"
+  - "Donki"
+  - "drugstores"
+price_yen: "~¥150–¥400"
+what_it_is: "Tubes of wasabi, yuzu, ginger, garlic, shiso, etc."
+why_travelers_care: "Tiny, cheap, actually useful kitchen stock-up."
+risk_flags:
+  - "liquid/paste"
+  - "food import rules"
+verification_notes: "Check ingredients and customs rules."
+source_links:
+  - "https://www.donki.com/en/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 9

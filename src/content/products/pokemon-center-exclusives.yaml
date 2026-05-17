@@ -1,0 +1,24 @@
+id: "JF-0179"
+slug: "pokemon-center-exclusives"
+name_en: "Pokemon Center Exclusives"
+category: "other"
+intent:
+  - "bring_home"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "ポケモンセンター"
+brand: "The Pokemon Company"
+where_found:
+  - "Pokemon Center stores (Tokyo"
+  - "Osaka"
+  - "etc.)"
+price_yen: "500-15000"
+what_it_is: "Store-exclusive plush, cards, apparel. Different stores have different city-exclusives."
+why_travelers_care: "Kids' top-shelf souvenir, parents end up spending more."
+risk_flags:
+  - "fragile (some)"
+source_links:
+  - "pokemoncenter-online.com"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

@@ -1,0 +1,24 @@
+id: "JF-0156"
+slug: "os-1-oral-rehydration-drink-jelly"
+name_en: "OS-1 oral rehydration drink/jelly"
+category: "donki-drugstore"
+intent:
+  - "day_one_fixes"
+status: "needs_verification"
+name_jp: "オーエスワン"
+brand: "Otsuka"
+where_found:
+  - "Drugstores"
+  - "some konbini"
+price_yen: "~¥200–¥300"
+what_it_is: "Oral rehydration solution or jelly marketed for dehydration care."
+why_travelers_care: "Could help during extreme heat, but not a casual drink."
+risk_flags:
+  - "medicine/regulated"
+  - "health claim"
+  - "liquid"
+verification_notes: "Medical suitability must be verified; avoid casual recommendation language."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+confidence: "medium"
+trip_score: 6

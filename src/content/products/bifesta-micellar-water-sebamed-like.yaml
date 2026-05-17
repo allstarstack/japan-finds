@@ -1,0 +1,21 @@
+id: "JF-0356"
+slug: "bifesta-micellar-water-sebamed-like"
+name_en: "Bifesta Micellar Water (Sebamed-like)"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ビフェスタ"
+brand: "Mandom"
+where_found:
+  - "All drugstores"
+price_yen: "700-1200"
+what_it_is: "Micellar cleansing water in pump bottle."
+why_travelers_care: "Easy travel cleanser, multiple skin-type variants."
+risk_flags:
+  - "liquid, skincare/cosmetic claim"
+source_links:
+  - "mandom.co.jp/bifesta"
+confidence: "high"
+trip_score: 7
+suitcase_score: 7

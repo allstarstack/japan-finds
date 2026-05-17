@@ -1,0 +1,21 @@
+id: "JF-0225"
+slug: "royal-milk-tea-bottle"
+name_en: "Royal Milk Tea (Bottle)"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "ロイヤルミルクティー"
+brand: "Kirin Gogo-no-Kocha"
+where_found:
+  - "Konbini"
+  - "vending"
+price_yen: "150-180"
+what_it_is: "Strong-brewed black tea with milk, sweet, cold or hot vending."
+why_travelers_care: "Hot bottle drinks from vending machines are a winter content moment."
+risk_flags:
+  - "liquid, allergen-dairy"
+source_links:
+  - "kirin.co.jp/products/softdrink/gogo"
+confidence: "high"
+trip_score: 8

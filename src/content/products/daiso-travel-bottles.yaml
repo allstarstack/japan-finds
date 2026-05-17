@@ -1,0 +1,22 @@
+id: "JF-0011"
+slug: "daiso-travel-bottles"
+name_en: "Daiso Travel Bottles"
+category: "100-yen"
+intent:
+  - "day_one_fixes"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ダイソートラベルボトル"
+brand: "Daiso"
+where_found:
+  - "Daiso"
+  - "Can Do"
+  - "Seria"
+price_yen: "110"
+what_it_is: "Tiny bottles, jars, vials for decanting toiletries."
+why_travelers_care: "Solves the airport rush every traveler hits."
+source_links:
+  - "daiso-sangyo.co.jp"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

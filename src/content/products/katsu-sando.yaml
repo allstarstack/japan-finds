@@ -1,0 +1,22 @@
+id: "JF-0230"
+slug: "katsu-sando"
+name_en: "Katsu Sando"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "カツサンド"
+brand: "All konbini, also dedicated shops"
+where_found:
+  - "All konbini"
+  - "Maisen for premium"
+price_yen: "400-700"
+what_it_is: "Breaded pork cutlet between white bread with tonkatsu sauce."
+why_travelers_care: "Easy hand-held cultural staple, premium Maisen version is a Tokyo Station pickup."
+risk_flags:
+  - "perishable, allergen-wheat"
+source_links:
+  - "mai-sen.com"
+  - "konbini sites"
+confidence: "high"
+trip_score: 9

@@ -1,0 +1,21 @@
+id: "JF-0425"
+slug: "iwako-puzzle-erasers"
+name_en: "Iwako Puzzle Erasers"
+category: "stationery"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "イワコー消しゴム"
+brand: "Iwako"
+where_found:
+  - "Stationery"
+  - "gift shops"
+price_yen: "100-300 each"
+what_it_is: "Tiny puzzle erasers shaped like sushi, animals, food, etc."
+why_travelers_care: "Adorable, cheap, kid-friendly gift."
+source_links:
+  - "iwako.com"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

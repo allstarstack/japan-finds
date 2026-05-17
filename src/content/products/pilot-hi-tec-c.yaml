@@ -1,0 +1,20 @@
+id: "JF-0434"
+slug: "pilot-hi-tec-c"
+name_en: "Pilot Hi-Tec-C"
+category: "stationery"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "ハイテックC"
+brand: "Pilot"
+where_found:
+  - "Stationery stores"
+price_yen: "200-400"
+what_it_is: "Ultra-fine gel pen (0.25-0.4mm)."
+why_travelers_care: "Pen-nerd staple, precise lines."
+source_links:
+  - "pilot.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

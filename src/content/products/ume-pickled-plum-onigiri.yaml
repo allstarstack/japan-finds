@@ -1,0 +1,20 @@
+id: "JF-0237"
+slug: "ume-pickled-plum-onigiri"
+name_en: "Ume (Pickled Plum) Onigiri"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "梅おにぎり"
+brand: "All konbini"
+where_found:
+  - "All major konbini"
+price_yen: "140-160"
+what_it_is: "Rice ball with single salted plum center."
+why_travelers_care: "Most traditional flavor, surprising tartness for first-timers."
+risk_flags:
+  - "perishable, allergen-low"
+source_links:
+  - "konbini sites"
+confidence: "high"
+trip_score: 8

@@ -1,0 +1,22 @@
+id: "JF-0097"
+slug: "bulk-kit-kat-assortment-bags"
+name_en: "Bulk Kit Kat Assortment Bags"
+category: "donki-drugstore"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "キットカット詰め合わせ"
+brand: "Nestle Japan"
+where_found:
+  - "Donki / airport"
+price_yen: "1000-2500"
+what_it_is: "Large mixed bags of regional and seasonal Kit Kats, tax-free at Donki."
+why_travelers_care: "One-stop for the Kit Kat tour without traveling regions."
+risk_flags:
+  - "allergen-dairy-soy-wheat"
+source_links:
+  - "nestle.co.jp/brands/kitkat"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

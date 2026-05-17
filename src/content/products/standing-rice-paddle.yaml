@@ -1,0 +1,27 @@
+id: "JF-0040"
+slug: "standing-rice-paddle"
+name_en: "Standing rice paddle"
+category: "100-yen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "立つしゃもじ"
+brand: "Daiso / kitchen brands"
+where_found:
+  - "100-yen shops"
+  - "supermarkets"
+  - "Hands"
+price_yen: "~¥110–¥800"
+what_it_is: "Rice paddle that stands upright."
+why_travelers_care: "Simple Japanese design practicality; nice visual demo."
+risk_flags:
+  - "plastic"
+  - "food-contact"
+verification_notes: "Check material and heat rating."
+source_links:
+  - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://info.hands.net/en/"
+  - "https://www.gltjp.com/en/article/item/21292/"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

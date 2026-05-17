@@ -1,0 +1,22 @@
+id: "JF-0430"
+slug: "midori-traveler-s-notebook"
+name_en: "Midori Traveler's Notebook"
+category: "stationery"
+intent:
+  - "bring_home"
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "ミドリ トラベラーズノート"
+brand: "Designphil / Midori"
+where_found:
+  - "Itoya"
+  - "dept stores"
+price_yen: "5000-9000 + refills"
+what_it_is: "Leather pass-through notebook, refill-based system, infinite customization."
+why_travelers_care: "Cult product, stamp + sticker collection moment, customization base."
+verification_notes: "Available abroad but Japan flagship Tokyo Station has limited editions"
+source_links:
+  - "travelers-company.com"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

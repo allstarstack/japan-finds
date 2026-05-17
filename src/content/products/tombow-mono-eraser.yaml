@@ -1,0 +1,21 @@
+id: "JF-0440"
+slug: "tombow-mono-eraser"
+name_en: "Tombow Mono Eraser"
+category: "stationery"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "MONO消しゴム"
+brand: "Tombow"
+where_found:
+  - "Stationery stores"
+  - "konbini"
+price_yen: "100-300"
+what_it_is: "The blue-white-black striped eraser."
+why_travelers_care: "Iconic design + actually clean erase."
+source_links:
+  - "tombow.com/sp/mono"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

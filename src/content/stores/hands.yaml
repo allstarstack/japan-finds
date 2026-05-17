@@ -1,0 +1,22 @@
+slug: "hands"
+name_en: "Hands"
+layer: "specialty"
+status: "needs_verification"
+name_jp: "ハンズ"
+best_for: "Practical design, DIY, travel helpers, kitchen tools, beauty tools, specialty problem-solvers."
+core_categories:
+  - "Travel gear"
+  - "stationery/art"
+  - "kitchen gadgets"
+  - "beauty tools"
+  - "bath/personal care"
+  - "DIY/craft"
+  - "repair items."
+tax_free_notes: "Tax-free at participating stores; same-day before closing."
+airport_availability: "Small travel-focused airport branches may exist."
+risk_flags:
+  - "Knife/blade carry-on restrictions"
+  - "DIY tools may be bulky."
+source_links:
+  - "https://hands.net/"
+  - "https://info.hands.net/en/list/"

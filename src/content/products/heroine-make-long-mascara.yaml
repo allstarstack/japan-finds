@@ -1,0 +1,22 @@
+id: "JF-0362"
+slug: "heroine-make-long-mascara"
+name_en: "Heroine Make Long Mascara"
+category: "skincare"
+intent:
+  - "stock_up"
+  - "bring_home"
+status: "needs_verification"
+name_jp: "ヒロインメイク"
+brand: "KissMe / Isehan"
+where_found:
+  - "All drugstores"
+price_yen: "1300-1800"
+what_it_is: "Manga-eyed waterproof mascara, anime-girl branding."
+why_travelers_care: "Cult mascara, waterproof claims rated highest by Japanese beauty press."
+risk_flags:
+  - "skincare/cosmetic claim"
+source_links:
+  - "heroine-make.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

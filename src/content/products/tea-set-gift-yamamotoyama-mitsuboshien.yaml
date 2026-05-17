@@ -1,0 +1,20 @@
+id: "JF-0172"
+slug: "tea-set-gift-yamamotoyama-mitsuboshien"
+name_en: "Tea Set Gift (Yamamotoyama, Mitsuboshien)"
+category: "other"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "山本山"
+brand: "Various"
+where_found:
+  - "Dept store food halls"
+price_yen: "1500-5000"
+what_it_is: "Boxed gift-grade tea, often a sencha + hojicha + matcha set."
+why_travelers_care: "Gift-grade tea sets are wrapped beautifully."
+source_links:
+  - "yamamotoyama.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

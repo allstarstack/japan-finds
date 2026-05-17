@@ -1,0 +1,23 @@
+id: "JF-0445"
+slug: "anessa-perfect-uv-sunscreen-milk"
+name_en: "Anessa Perfect UV Sunscreen Milk"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "アネッサ"
+brand: "Shiseido"
+where_found:
+  - "Drugstores"
+  - "Don Quijote"
+price_yen: "2500-3500"
+what_it_is: "SPF 50+ PA++++ sunscreen, gold-bottle classic, sweat/water responsive."
+why_travelers_care: "Beauty-press top-rated, internationally cult."
+risk_flags:
+  - "liquid, skincare/cosmetic claim"
+verification_notes: "Sold abroad at 2x; Japan version is the reference"
+source_links:
+  - "anessa.shiseido.co.jp"
+confidence: "high"
+trip_score: 10
+suitcase_score: 10

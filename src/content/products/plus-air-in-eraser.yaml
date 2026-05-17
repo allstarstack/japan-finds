@@ -1,0 +1,19 @@
+id: "JF-0435"
+slug: "plus-air-in-eraser"
+name_en: "Plus Air-In Eraser"
+category: "stationery"
+intent:
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "エアイン消しゴム"
+brand: "Plus"
+where_found:
+  - "Stationery stores"
+price_yen: "100-200"
+what_it_is: "Soft eraser with internal air pockets, clean erase."
+why_travelers_care: "Pen-nerd cult eraser."
+source_links:
+  - "plus.co.jp"
+confidence: "high"
+trip_score: 5
+suitcase_score: 10

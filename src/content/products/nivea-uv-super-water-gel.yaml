@@ -1,0 +1,25 @@
+id: "JF-0389"
+slug: "nivea-uv-super-water-gel"
+name_en: "Nivea UV Super Water Gel"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "ニベアUV スーパーウォータージェル"
+brand: "Kao / Nivea Japan"
+where_found:
+  - "Drugstores"
+  - "Donki"
+price_yen: "~¥800–¥1,200"
+what_it_is: "Large pump or bottle sunscreen gel."
+why_travelers_care: "Practical everyday sunscreen with good value in Japan."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+verification_notes: "Confirm Japanese formula and size."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 7

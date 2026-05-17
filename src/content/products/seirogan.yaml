@@ -1,0 +1,22 @@
+id: "JF-0144"
+slug: "seirogan"
+name_en: "Seirogan"
+category: "donki-drugstore"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "正露丸"
+brand: "Taiko Pharmaceutical"
+where_found:
+  - "All drugstores"
+price_yen: "500-1500"
+what_it_is: "Traditional wood creosote-based anti-diarrheal pills, distinct medicinal smell."
+why_travelers_care: "Heritage product, content-worthy but acquired-taste."
+risk_flags:
+  - "medicine/regulated, strong odor"
+verification_notes: "Strong smell; pack in sealed bag"
+source_links:
+  - "seirogan.co.jp"
+confidence: "high"
+trip_score: 5
+suitcase_score: 10

@@ -1,0 +1,21 @@
+id: "JF-0229"
+slug: "karaage-kun"
+name_en: "Karaage-kun"
+category: "konbini"
+intent:
+  - "try_in_japan"
+status: "v1_candidate"
+name_jp: "からあげクン"
+brand: "Lawson"
+where_found:
+  - "Lawson only"
+price_yen: "240-260"
+what_it_is: "Lawson's bite-sized fried chicken nuggets, multiple rotating flavors (Regular, Red, Cheese, regional)."
+why_travelers_care: "Has its own mascot, rotating flavors mean each trip yields something new."
+risk_flags:
+  - "perishable, hot food, allergen-wheat"
+verification_notes: "Flavor lineup rotates monthly"
+source_links:
+  - "lawson.co.jp/recommend/original/karaagekun"
+confidence: "high"
+trip_score: 10

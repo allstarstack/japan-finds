@@ -1,0 +1,25 @@
+id: "JF-0351"
+slug: "yatsuhashi-nama-yatsuhashi"
+name_en: "Yatsuhashi / Nama Yatsuhashi"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "八ッ橋・生八ッ橋"
+brand: "Izutsu / Shogoin / various"
+where_found:
+  - "Kyoto souvenir shops"
+  - "stations"
+price_yen: "~¥500–¥1,500"
+what_it_is: "Cinnamon rice-flour sweet, baked or soft with fillings."
+why_travelers_care: "Kyoto classic; great regional food education item."
+risk_flags:
+  - "allergen"
+  - "perishable for nama type"
+verification_notes: "Check type, shelf life, and flavor."
+source_links:
+  - "https://www.8284.co.jp/"
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "high"
+trip_score: 9
+suitcase_score: 7

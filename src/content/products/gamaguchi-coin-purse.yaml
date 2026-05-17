@@ -1,0 +1,21 @@
+id: "JF-0087"
+slug: "gamaguchi-coin-purse"
+name_en: "Gamaguchi Coin Purse"
+category: "other"
+intent:
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "がま口"
+brand: "Various"
+where_found:
+  - "Dept stores"
+  - "specialty leather/textile shops"
+price_yen: "1500-8000"
+what_it_is: "Snap-clasp coin purse, often kimono fabric or leather."
+why_travelers_care: "Distinctive, useful gift."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

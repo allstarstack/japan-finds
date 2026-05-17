@@ -1,0 +1,25 @@
+id: "JF-0419"
+slug: "tokyo-banana"
+name_en: "Tokyo Banana"
+category: "snacks"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "東京ばな奈"
+brand: "Grapestone"
+where_found:
+  - "Tokyo stations"
+  - "Donki"
+  - "airport"
+price_yen: "1100-2000"
+what_it_is: "Banana custard cream sponge cake, dozens of variants."
+why_travelers_care: "Default Tokyo omiyage."
+risk_flags:
+  - "perishable (~7 days), allergen-egg-wheat-dairy"
+verification_notes: "Check shelf life and flavor/character editions."
+source_links:
+  - "tokyobanana.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

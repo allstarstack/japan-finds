@@ -1,0 +1,21 @@
+id: "JF-0461"
+slug: "esim-airalo-ubigi-japan"
+name_en: "eSIM (Airalo / Ubigi Japan)"
+category: "other"
+intent:
+  - "day_one_fixes"
+status: "v1_candidate"
+name_jp: "eSIM"
+brand: "Various"
+where_found:
+  - "App download pre-trip"
+price_yen: "1000-3000"
+what_it_is: "Digital SIM activated before landing, often cheaper than pocket WiFi for solo travelers."
+why_travelers_care: "Better solo option than WiFi rental in 2026."
+verification_notes: "Phone must be eSIM compatible and carrier-unlocked"
+source_links:
+  - "airalo.com"
+  - "ubigi.com"
+confidence: "high"
+trip_score: 9
+suitcase_score: 0

@@ -1,0 +1,24 @@
+id: "JF-0210"
+slug: "s-b-shichimi-togarashi-yawataya-isogoro-premium"
+name_en: "S&B Shichimi Togarashi (Yawataya Isogoro premium)"
+category: "kitchen"
+intent:
+  - "bring_home"
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "七味唐辛子"
+brand: "S&B / Yawataya Isogoro (Nagano)"
+where_found:
+  - "Supermarkets"
+  - "Yawataya Nagano store"
+price_yen: "300-1500"
+what_it_is: "Seven-spice chili blend. Yawataya in Zenkoji is the gourmet version."
+why_travelers_care: "Photogenic spice tin, customization available at Yawataya."
+risk_flags:
+  - "allergen-sesame"
+source_links:
+  - "sbfoods.co.jp"
+  - "yawataya.co.jp"
+confidence: "high"
+trip_score: 8
+suitcase_score: 10

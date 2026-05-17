@@ -1,0 +1,23 @@
+id: "JF-0214"
+slug: "yuzu-kosho"
+name_en: "Yuzu Kosho"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "柚子胡椒"
+brand: "Various Kyushu makers"
+where_found:
+  - "Supermarkets"
+  - "dept stores"
+price_yen: "500-1500"
+what_it_is: "Fermented yuzu peel + chili paste, Kyushu specialty."
+why_travelers_care: "Distinctive condiment, hard to find at home."
+risk_flags:
+  - "liquid (paste), allergen-citrus"
+verification_notes: "Yuzu is citrus but generally safer than grapefruit for transplant patients"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 8
+suitcase_score: 8

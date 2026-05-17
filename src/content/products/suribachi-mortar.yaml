@@ -1,0 +1,22 @@
+id: "JF-0212"
+slug: "suribachi-mortar"
+name_en: "Suribachi Mortar"
+category: "kitchen"
+intent:
+  - "bring_home"
+status: "hold"
+name_jp: "すり鉢"
+brand: "Various"
+where_found:
+  - "Kappabashi"
+  - "kitchen stores"
+price_yen: "1500-4000"
+what_it_is: "Ceramic ridged mortar for grinding sesame, miso, etc."
+why_travelers_care: "Beautiful, durable, ridged interior is the design moment."
+risk_flags:
+  - "fragile, bulky"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 6
+suitcase_score: 5

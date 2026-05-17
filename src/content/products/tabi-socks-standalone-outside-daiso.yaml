@@ -1,0 +1,20 @@
+id: "JF-0094"
+slug: "tabi-socks-standalone-outside-daiso"
+name_en: "Tabi Socks (Standalone Outside Daiso)"
+category: "other"
+intent:
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "足袋"
+brand: "Various"
+where_found:
+  - "Dept stores"
+  - "kimono shops"
+price_yen: "500-3000"
+what_it_is: "Toe-split socks for traditional sandals."
+why_travelers_care: "Iconic Japanese garment."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 6
+suitcase_score: 10

@@ -1,0 +1,22 @@
+slug: "welcia-pharmacy"
+name_en: "Welcia Pharmacy"
+layer: "drugstore"
+status: "needs_verification"
+name_jp: "ウエルシア薬局"
+best_for: "Less chaotic drugstore backup with pharmacy basics, groceries, beauty, and daily goods."
+core_categories:
+  - "OTC comfort items"
+  - "skincare"
+  - "haircare"
+  - "masks"
+  - "toiletries"
+  - "snacks"
+  - "grocery basics."
+tax_free_notes: "Tax-free/coupons appear in some sources but official English confirmation needs store-level verification."
+airport_availability: "No major airport role."
+risk_flags:
+  - "OTC/pharmacy caution"
+  - "medicine/ingredient verification."
+source_links:
+  - "https://www.welcia.co.jp/"
+  - "https://www.welcia-yakkyoku.co.jp/"

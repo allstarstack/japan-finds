@@ -1,0 +1,23 @@
+id: "JF-0282"
+slug: "strong-zero-double-lemon"
+name_en: "Strong Zero Double Lemon"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "ストロングゼロ ダブルレモン"
+brand: "Suntory"
+where_found:
+  - "Konbini / supermarkets"
+price_yen: "~¥160"
+what_it_is: "High-ABV chuhai."
+why_travelers_care: "Meme status but should not be a main recommendation; alcohol risk."
+risk_flags:
+  - "liquid"
+  - "alcohol"
+verification_notes: "Verify current ABV/flavor lineup. Steven should avoid grapefruit variants."
+source_links:
+  - "User-pasted response"
+confidence: "high"
+trip_score: 7
+suitcase_score: 1

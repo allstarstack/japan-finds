@@ -1,0 +1,25 @@
+id: "JF-0337"
+slug: "momiji-manju"
+name_en: "Momiji Manju"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "もみじ饅頭"
+brand: "Various Hiroshima makers"
+where_found:
+  - "Hiroshima"
+  - "Miyajima"
+  - "airports/stations"
+price_yen: "~¥800–¥1,500"
+what_it_is: "Maple-leaf shaped cake with fillings."
+why_travelers_care: "Readable regional gift from Hiroshima/Miyajima."
+risk_flags:
+  - "allergen"
+  - "fragile"
+verification_notes: "Check filling and shelf life."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 7

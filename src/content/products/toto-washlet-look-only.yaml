@@ -1,0 +1,24 @@
+id: "JF-0093"
+slug: "toto-washlet-look-only"
+name_en: "TOTO Washlet (Look Only)"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "TOTOウォシュレット"
+brand: "TOTO"
+where_found:
+  - "Bic Camera"
+  - "Yodobashi"
+  - "TOTO showrooms"
+price_yen: "30000-150000"
+what_it_is: "Heated electronic toilet seats. Look but generally don't buy unless you can install + electrical work."
+why_travelers_care: "Iconic but not actually a souvenir-tier purchase for most."
+risk_flags:
+  - "bulky, voltage, plumbing"
+verification_notes: "100V / requires GFCI outlet / requires bidet plumbing"
+source_links:
+  - "toto.com"
+confidence: "high"
+trip_score: 4
+suitcase_score: 1

@@ -1,0 +1,25 @@
+id: "JF-0338"
+slug: "nagasaki-castella"
+name_en: "Nagasaki Castella"
+category: "snacks"
+intent:
+  - "local_editions"
+status: "v1_candidate"
+name_jp: "長崎カステラ"
+brand: "Fukusaya / Bunmeido / various"
+where_found:
+  - "Nagasaki"
+  - "department stores"
+  - "airports"
+price_yen: "~¥1,000–¥3,000"
+what_it_is: "Japanese sponge cake with Portuguese influence."
+why_travelers_care: "Historic food story + giftable box."
+risk_flags:
+  - "allergen"
+  - "fragile"
+verification_notes: "Check shelf life and brand."
+source_links:
+  - "https://www.japan-guide.com/e/e2450.html"
+confidence: "medium"
+trip_score: 8
+suitcase_score: 7

@@ -1,0 +1,28 @@
+id: "JF-0390"
+slug: "saborino-morning-masks"
+name_en: "Saborino morning masks"
+category: "skincare"
+intent:
+  - "stock_up"
+status: "needs_verification"
+name_jp: "サボリーノ 目ざまシート"
+brand: "BCL"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "Loft"
+price_yen: "~¥400–¥1,500"
+what_it_is: "Quick morning sheet masks marketed as one-step prep."
+why_travelers_care: "Fun concept and highly recognizable packaging."
+risk_flags:
+  - "liquid"
+  - "skincare/cosmetic claim"
+  - "fragrance"
+verification_notes: "Check menthol/fragrance sensitivity."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.loft.co.jp/store/"
+  - "https://www.cosme.net/"
+confidence: "high"
+trip_score: 7
+suitcase_score: 7

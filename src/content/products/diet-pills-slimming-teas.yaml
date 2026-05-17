@@ -1,0 +1,25 @@
+id: "JF-0060"
+slug: "diet-pills-slimming-teas"
+name_en: "Diet pills / slimming teas"
+category: "other"
+intent:
+  - "content_only"
+status: "content_only"
+name_jp: "ダイエットサプリ"
+brand: "Various"
+where_found:
+  - "Drugstores"
+  - "Donki"
+  - "online"
+price_yen: "varies"
+what_it_is: "Weight-loss supplements or teas."
+why_travelers_care: "Good warning category; not a souvenir recommendation."
+risk_flags:
+  - "supplement/regulated"
+  - "health claim"
+verification_notes: "Do not recommend; verify legality/safety."
+source_links:
+  - "https://www.matsukiyococokara-online.com/"
+  - "https://www.donki.com/en/"
+confidence: "low"
+trip_score: 2

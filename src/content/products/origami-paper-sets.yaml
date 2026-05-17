@@ -1,0 +1,22 @@
+id: "JF-0431"
+slug: "origami-paper-sets"
+name_en: "Origami Paper Sets"
+category: "stationery"
+intent:
+  - "gift_easy"
+  - "bring_home"
+status: "v1_candidate"
+name_jp: "折り紙"
+brand: "Various"
+where_found:
+  - "Stationery"
+  - "Daiso"
+  - "dept stores"
+price_yen: "110-1500"
+what_it_is: "Square folding paper in dozens of patterns."
+why_travelers_care: "Educational gift, easy."
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 10

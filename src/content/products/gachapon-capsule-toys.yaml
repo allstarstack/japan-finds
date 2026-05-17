@@ -1,0 +1,28 @@
+id: "JF-0177"
+slug: "gachapon-capsule-toys"
+name_en: "Gachapon Capsule Toys"
+category: "other"
+intent:
+  - "make_it_yours"
+  - "bring_home"
+  - "gift_easy"
+status: "v1_candidate"
+name_jp: "ガチャポン"
+brand: "Bandai et al."
+where_found:
+  - "Gachapon Halls"
+  - "Donki"
+  - "malls"
+price_yen: "300-500 per pull"
+what_it_is: "Capsule machine toys, every theme imaginable."
+why_travelers_care: "Cheap thrill, kids love, content gold."
+risk_flags:
+  - "small parts"
+  - "gambling-like spend"
+  - "choking risk"
+verification_notes: "Gachapon Halls in Akihabara/Ikebukuro are content destinations"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 9
+suitcase_score: 10

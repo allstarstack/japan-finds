@@ -1,0 +1,23 @@
+id: "JF-0241"
+slug: "mochi-ice-cream-yukimi-daifuku"
+name_en: "Mochi Ice Cream (Yukimi Daifuku)"
+category: "konbini"
+intent:
+  - "try_in_japan"
+  - "stock_up"
+status: "v1_candidate"
+name_jp: "雪見だいふく"
+brand: "Lotte"
+where_found:
+  - "All konbini freezer + supermarkets"
+price_yen: "150-180"
+what_it_is: "Vanilla ice cream wrapped in stretchy mochi exterior. Yukimi Daifuku is the dominant brand."
+why_travelers_care: "Long-running cult item, multiple seasonal flavors."
+risk_flags:
+  - "perishable, allergen-dairy"
+verification_notes: "Lotte distributes outside Japan but flavors differ"
+source_links:
+  - "lotte.co.jp"
+confidence: "high"
+trip_score: 9
+suitcase_score: 3

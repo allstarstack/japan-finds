@@ -1,0 +1,24 @@
+id: "JF-0092"
+slug: "sento-bathhouse-kerorin-bucket"
+name_en: "Sento Bathhouse Kerorin Bucket"
+category: "other"
+intent:
+  - "bring_home"
+  - "gift_easy"
+  - "local_editions"
+status: "hold"
+name_jp: "ケロリン桶"
+brand: "Naigai Yakuhin (yes, a medicine company)"
+where_found:
+  - "Sento shops"
+  - "dept stores"
+price_yen: "1500-3500"
+what_it_is: "Yellow plastic bucket used in public baths, branded with old medicine ad."
+why_travelers_care: "Iconic, retro, fun home decor."
+risk_flags:
+  - "bulky"
+source_links:
+  - "general"
+confidence: "high"
+trip_score: 7
+suitcase_score: 5

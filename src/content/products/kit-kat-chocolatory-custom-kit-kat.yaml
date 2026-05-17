@@ -1,0 +1,24 @@
+id: "JF-0407"
+slug: "kit-kat-chocolatory-custom-kit-kat"
+name_en: "Kit Kat Chocolatory Custom Kit Kat"
+category: "snacks"
+intent:
+  - "make_it_yours"
+status: "v1_candidate"
+name_jp: "キットカット ショコラトリー"
+brand: "Nestle Japan"
+where_found:
+  - "Ginza"
+  - "Tokyo Solamachi"
+  - "Osaka"
+price_yen: "300-3000+"
+what_it_is: "Limited and custom-designed Kit Kats, in-store-only flavors and packaging."
+why_travelers_care: "Customization experience + premium souvenir."
+risk_flags:
+  - "allergen-dairy-soy-wheat, perishable (premium fresh-cream variants)"
+verification_notes: "Some variants must be eaten within 24-48h"
+source_links:
+  - "nestle.jp/brand/kit/chocolatory"
+confidence: "high"
+trip_score: 9
+suitcase_score: 9
