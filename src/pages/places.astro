@@ -105,7 +105,7 @@ for (const chip of FEATURED_CHIPS) {
       </div>
     </section>
 
-    <section class="pfeat">
+    <section class="pfeat" data-featured>
       <div class="wrap">
         <p class="eyebrow">START HERE</p>
         <h2 class="pfeat-h2">Six to start with.</h2>
@@ -206,6 +206,10 @@ for (const chip of FEATURED_CHIPS) {
   .pfeat {
     padding: 28px 0;
     border-top: var(--border-ink);
+  }
+  /* Hidden by the filter rail while a filter is active. */
+  .pfeat[hidden] {
+    display: none;
   }
   .pfeat-h2 {
     margin: 8px 0 16px;

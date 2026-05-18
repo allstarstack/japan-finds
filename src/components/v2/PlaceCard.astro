@@ -45,6 +45,11 @@ const cat = d.primary_category;
 const color = CAT_COLOR[cat];
 const isBase = d.launch_tier === "base";
 
+/* Badge label. The data field stays primary_category: "Eat", but these
+   are food markets / yokocho / depachika — not restaurants — so the
+   badge reads "Food Markets". Other categories show the verb as-is. */
+const catLabel = cat === "Eat" ? "Food Markets" : cat;
+
 /* Area-level addresses by design (BUILD_SPEC) — the search-by-name link
    lets Google's geocoder find the right pin. */
 const mapsUrl =
@@ -63,7 +68,7 @@ const mapsUrl =
     >
       <div class:list={["plc-block", `plc-block--${color}`]} aria-hidden="true" />
       <div class="plc-body">
-        <span class:list={["chip", `chip--${color}`]}>{cat}</span>
+        <span class:list={["chip", `chip--${color}`]}>{catLabel}</span>
         <h3 class="plc-name">{en}</h3>
         {jp && <p class="plc-jp">{jp}</p>}
         <p class="plc-area">{d.address_or_area}</p>

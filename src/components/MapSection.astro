@@ -1,7 +1,7 @@
 ---
-/* §02 The Map — headline + faux map preview card + filter chips + CTA.
-   Mobile: text, then map card, then chips, then CTA.
-   Desktop: 2-col — text/chips/CTA left, map card right. */
+/* §02 The Map — headline + faux map preview card + CTA.
+   Mobile: text, then map card, then CTA.
+   Desktop: 2-col — text/CTA left, map card right. */
 import Eyebrow from "./Eyebrow.astro";
 import MapPreview from "./MapPreview.astro";
 import { JAPAN_MAP_URL } from "../data/site.js";
@@ -19,12 +19,6 @@ import { JAPAN_MAP_URL } from "../data/site.js";
         Built for your first Japan trip. Food, shopping, rainy-day, and useful
         saves — not every place from every video. Just the ones worth pinning.
       </p>
-      <ul class="map-sec__chips">
-        <li class="chip chip--red">● FOOD</li>
-        <li class="chip chip--blue">● SHOPS</li>
-        <li class="chip chip--green">● RAINY DAY</li>
-        <li class="chip chip--yellow">● WEIRDLY USEFUL</li>
-      </ul>
       <div class="map-sec__cta-block">
         <a
           class="btn btn--primary btn--lg btn--responsive"
@@ -83,14 +77,6 @@ import { JAPAN_MAP_URL } from "../data/site.js";
   .map-sec__body {
     font-size: 14px;
     line-height: 1.5;
-  }
-
-  .map-sec__chips {
-    order: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 14px;
   }
 
   .map-sec__cta-block {
@@ -167,10 +153,6 @@ import { JAPAN_MAP_URL } from "../data/site.js";
       font-size: 16px;
       line-height: 1.55;
       max-width: 520px;
-    }
-    .map-sec__chips {
-      margin-top: 0;
-      margin-bottom: 24px;
     }
     .map-sec__cta-block {
       margin-top: 0;

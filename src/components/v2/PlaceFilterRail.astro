@@ -199,6 +199,9 @@ const { counts, flagCounts, baseCount } = Astro.props;
     const grid = document.querySelector("[data-grid]");
     const countEl = document.querySelector("[data-count]");
     const emptyEl = document.querySelector("[data-empty]");
+    // "Six to start with" strip — hidden while a filter is active so the
+    // page unambiguously reflects the filter (the strip never filters).
+    const featuredEl = document.querySelector("[data-featured]");
 
     let activeChip = null;
     const activeFlags = new Set();
@@ -250,6 +253,8 @@ const { counts, flagCounts, baseCount } = Astro.props;
       if (countEl) countEl.textContent = n + (n === 1 ? " place" : " places");
       if (emptyEl) emptyEl.hidden = n !== 0;
       if (grid) grid.hidden = n === 0;
+      const filtering = !!activeChip || activeFlags.size > 0 || showBase;
+      if (featuredEl) featuredEl.hidden = filtering;
     };
 
     chips.forEach((c) =>
