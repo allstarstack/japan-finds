@@ -1,0 +1,254 @@
+---
+/* /products — Phase B-1 catalog launch.
+   Hero + 6 featured cards, sticky filter rail, and the full 384-product
+   grid. Sort: rail order, then verified-before-creator-fill, then name_en
+   alphabetical — so any single-chip filter shows verified-first + A→Z. */
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import ProductCard from "../components/v2/ProductCard.astro";
+import FilterRail from "../components/v2/FilterRail.astro";
+import { CHIP_ORDER, SUB_CHIPS } from "../data/launch-chips.js";
+
+const launch = (await getCollection("products")).filter(
+  (p) => p.data.status === "ready" && p.data.launch_category,
+);
+
+launch.sort((a, b) => {
+  const co = CHIP_ORDER[a.data.launch_category] - CHIP_ORDER[b.data.launch_category];
+  if (co) return co;
+  const fo =
+    (a.data.fill_type === "verified" ? 0 : 1) -
+    (b.data.fill_type === "verified" ? 0 : 1);
+  if (fo) return fo;
+  return a.data.name_en.localeCompare(b.data.name_en);
+});
+
+const total = launch.length;
+
+/* Per-category counts for the chips. */
+const counts: Record<string, number> = {};
+for (const p of launch)
+  counts[p.data.launch_category!] = (counts[p.data.launch_category!] ?? 0) + 1;
+
+/* Which sub-chips actually have items — empty sets are never rendered. */
+const subAvail: Record<string, string[]> = {};
+for (const p of launch) {
+  const c = p.data.launch_category!;
+  if (p.data.sub_chip && SUB_CHIPS[c as keyof typeof SUB_CHIPS])
+    (subAvail[c] ??= []).push(p.data.sub_chip);
+}
+
+/* Featured 6 hero cards, in the order locked by the Phase B-1 prompt. */
+const FEATURED_ORDER = [
+  "JF-0228", "JF-0135", "JF-0010", "JF-0297", "JF-0379", "JF-0099",
+];
+const featured = FEATURED_ORDER.map((id) =>
+  launch.find((p) => p.data.id === id),
+).filter((p) => p !== undefined);
+---
+
+<Base
+  title="What to buy in Japan — Japan Finds"
+  description="384 Japan shopping picks — konbini, drugstores, Donki, 100-yen and more. Filter by what you're shopping for."
+>
+  <Header />
+  <main id="main">
+    <section class="phero">
+      <div class="wrap">
+        <p class="eyebrow">JAPAN FINDS · SHOPPING</p>
+        <h1>What to actually buy in Japan.</h1>
+        <p class="phero-sub">
+          {total} picks across konbini, drugstores, Donki, 100-yen shops and
+          more. Filter to what you're shopping for.
+        </p>
+      </div>
+    </section>
+
+    <section class="pfeat">
+      <div class="wrap">
+        <p class="eyebrow">START HERE</p>
+        <h2 class="pfeat-h2">Six to start with.</h2>
+        <div class="feat-strip">
+          {
+            featured.map((p) => (
+              <div class="feat-cell">
+                <ProductCard entry={p} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <FilterRail counts={counts} subAvail={subAvail} />
+
+    <section class="presults">
+      <div class="wrap">
+        <h2 class="results-count" data-count>{total} finds</h2>
+        <div class="grid" data-grid>
+          {launch.map((p) => <ProductCard entry={p} />)}
+        </div>
+        <p class="results-empty" data-empty hidden>
+          Nothing here yet. Back when there is.
+        </p>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .wrap {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--gutter-mobile);
+  }
+
+  /* Shared mono eyebrow */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+
+  /* Hero — rice-white, sits on the body background */
+  .phero {
+    padding: 30px 0 28px;
+  }
+  .phero h1 {
+    margin: 10px 0 0;
+    font-family: var(--font-head);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+  }
+  .phero-sub {
+    margin: 14px 0 0;
+    max-width: 36ch;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-ink-60);
+  }
+
+  /* Featured block + results sit on white so the rice-white cards read */
+  .pfeat,
+  .presults {
+    background: var(--color-white);
+  }
+  .pfeat {
+    padding: 28px 0;
+    border-top: var(--border-ink);
+  }
+  .pfeat-h2 {
+    margin: 8px 0 16px;
+    font-family: var(--font-head);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  /* Featured strip — horizontal-scroll on mobile, grid above 640px */
+  .feat-strip {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+    padding-bottom: 4px;
+  }
+  .feat-strip::-webkit-scrollbar {
+    display: none;
+  }
+  .feat-cell {
+    flex: 0 0 72%;
+    max-width: 280px;
+    scroll-snap-align: start;
+  }
+
+  /* Results */
+  .presults {
+    padding: 20px 0 56px;
+  }
+  .results-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+    margin-bottom: 14px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  /* Native lazy-render: the browser skips layout/paint for off-screen
+     cards, so all 384 stay in the DOM (instant filtering) without the
+     cost of rendering them all up front. */
+  .grid :global(.pc) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 190px;
+  }
+  .results-empty {
+    padding: 48px 0;
+    font-family: var(--font-head);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .feat-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      overflow: visible;
+    }
+    .feat-cell {
+      flex: none;
+      max-width: none;
+    }
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding: 0 var(--gutter-desktop);
+    }
+    .phero {
+      padding: 56px 0 40px;
+    }
+    .phero h1 {
+      font-size: 72px;
+      letter-spacing: -0.035em;
+    }
+    .phero-sub {
+      font-size: 19px;
+    }
+    .pfeat {
+      padding: 40px 0;
+    }
+    .pfeat-h2 {
+      font-size: 32px;
+    }
+    .feat-strip {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .presults {
+      padding: 24px 0 72px;
+    }
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+  }
+</style>

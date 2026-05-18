@@ -71,7 +71,7 @@ const { counts, subAvail } = Astro.props;
     position: sticky;
     top: 0;
     z-index: 20;
-    background: var(--color-rice-white);
+    background: var(--color-white);
     border-bottom: var(--border-ink);
   }
   .rail-inner {
@@ -99,7 +99,7 @@ const { counts, subAvail } = Astro.props;
     gap: 6px;
     min-height: 38px;
     padding: 8px 14px;
-    background: var(--color-rice-white);
+    background: transparent;
     border: 1.5px solid var(--color-ink-black);
     border-radius: var(--radius-pill);
     font-family: var(--font-mono);
@@ -188,7 +188,7 @@ const { counts, subAvail } = Astro.props;
     const chips = [...rail.querySelectorAll(".fchip")];
     const subrails = [...rail.querySelectorAll("[data-subrail]")];
     const subchips = [...rail.querySelectorAll(".subchip")];
-    const cards = [...document.querySelectorAll(".pc")];
+    const cards = [...document.querySelectorAll("[data-grid] .pc")];
     const grid = document.querySelector("[data-grid]");
     const countEl = document.querySelector("[data-count]");
     const emptyEl = document.querySelector("[data-empty]");
