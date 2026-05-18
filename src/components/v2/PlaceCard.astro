@@ -1,8 +1,19 @@
 ---
-/* V2 PlaceCard — Phase A scaffold.
-   Unstyled inspection markup; Phase B replaces it with the comp design.
-   Public render gate: renders nothing unless status === "ready". */
+/* Phase B-2 place card.
+   Mobile-first, text-forward. No creator photos exist for ~95% of places
+   at launch (BUILD_SPEC photo strategy), so the card leads with a solid
+   colour-block placeholder keyed to primary_category — not faked or
+   AI imagery (brand.md). Photo swap is a background task.
+
+   Renders nothing unless status === "ready" && public_render.
+   Does NOT render planning_flags or any internal field — those are
+   filter-only (BUILD_SPEC Step 5).
+
+   data-* attributes drive the client-side filter in PlaceFilterRail.
+   Base-tier cards render with `hidden` — they are excluded from the
+   default browse and revealed only by the "Stay bases" toggle. */
 import type { CollectionEntry } from "astro:content";
+import { CAT_COLOR } from "../../data/place-chips.js";
 
 interface Props {
   entry: CollectionEntry<"places">;
@@ -10,65 +21,157 @@ interface Props {
 
 const { entry } = Astro.props;
 const d = entry.data;
-const visible = d.status === "ready";
+const visible = d.status === "ready" && d.public_render !== false;
 
-const rows: [string, string | undefined][] = [
-  ["area", d.area],
-  ["category", d.category],
-  ["why it belongs", d.why_it_belongs],
-];
-const shown = rows.filter(([, v]) => v);
+/* Split an embedded Japanese name out of the `name` field: a parenthetical
+   containing CJK is the JP name; a romaji/descriptor parenthetical stays
+   in the English name. */
+function splitName(name) {
+  // CJK ranges: hiragana, katakana, ideographs, half-width katakana.
+  const m = name.match(
+    /\(([^)]*[぀-ヿ㐀-鿿ｦ-ﾟ][^)]*)\)/,
+  );
+  if (!m) return { en: name, jp: "" };
+  const en = name
+    .replace(m[0], "")
+    .replace(/\s{2,}/g, " ")
+    .replace(/[\s–—-]+$/, "")
+    .trim();
+  return { en: en || name, jp: m[1].trim() };
+}
+
+const { en, jp } = splitName(d.name);
+const cat = d.primary_category;
+const color = CAT_COLOR[cat];
+const isBase = d.launch_tier === "base";
+
+/* Area-level addresses by design (BUILD_SPEC) — the search-by-name link
+   lets Google's geocoder find the right pin. */
+const mapsUrl =
+  "https://www.google.com/maps/search/?api=1&query=" +
+  encodeURIComponent(`${en}, ${d.prefecture}`);
 ---
 
 {
   visible && (
-    <article class="v2-card">
-      <h3>
-        {d.name_en}
-        {d.name_jp && <span class="v2-sub"> · {d.name_jp}</span>}
-      </h3>
-      <dl>
-        {shown.map(([k, v]) => (
-          <>
-            <dt>{k}</dt>
-            <dd>{v}</dd>
-          </>
-        ))}
-      </dl>
+    <article
+      class="plc"
+      data-chip={d.public_label ?? ""}
+      data-flags={d.planning_flags ?? ""}
+      data-tier={d.launch_tier}
+      hidden={isBase}
+    >
+      <div class:list={["plc-block", `plc-block--${color}`]} aria-hidden="true" />
+      <div class="plc-body">
+        <span class:list={["chip", `chip--${color}`]}>{cat}</span>
+        <h3 class="plc-name">{en}</h3>
+        {jp && <p class="plc-jp">{jp}</p>}
+        <p class="plc-area">{d.address_or_area}</p>
+        <a class="plc-map" href={mapsUrl} target="_blank" rel="noopener">
+          View on Google Maps&nbsp;→
+        </a>
+      </div>
     </article>
   )
 }
 
 <style>
-  .v2-card {
-    border: 1px solid var(--color-ink-black);
-    padding: 12px 16px;
-    margin-bottom: 8px;
-    font-family: var(--font-body);
-    font-size: 14px;
+  .plc {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    transition: border-color 120ms ease-out;
   }
-  .v2-card h3 {
-    margin: 0 0 8px;
+  /* The filter rail toggles cards via the `hidden` attribute; an author
+     `display` declaration outranks the UA [hidden] rule, so restore it. */
+  .plc[hidden] {
+    display: none;
+  }
+  /* Hover: border emphasis only — no shadow gimmicks (BUILD_SPEC Step 5). */
+  .plc:hover,
+  .plc:focus-within {
+    border-color: var(--color-ink-black);
+  }
+
+  /* Colour-block placeholder — keyed to primary_category. */
+  .plc-block {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+  .plc-block--green {
+    background: var(--color-matcha-green);
+  }
+  .plc-block--red {
+    background: var(--color-tokyo-red);
+  }
+  .plc-block--yellow {
+    background: var(--color-egg-yellow);
+  }
+  .plc-block--blue {
+    background: var(--color-konbini-blue);
+  }
+
+  .plc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    padding: 12px;
+  }
+
+  .plc .chip {
+    align-self: flex-start;
+  }
+
+  .plc-name {
+    margin: 3px 0 0;
     font-family: var(--font-head);
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
   }
-  .v2-sub {
-    font-weight: 400;
+  .plc-jp {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
     color: var(--color-ink-60);
   }
-  dl {
+  .plc-area {
     margin: 0;
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 2px 12px;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-ink-60);
   }
-  dt {
+
+  /* Maps link pinned to the card bottom so wrapped names stay aligned. */
+  .plc-map {
+    margin: auto 0 0;
+    padding-top: 10px;
     font-family: var(--font-mono);
     font-size: 11px;
-    text-transform: uppercase;
-    color: var(--color-ink-60);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+    text-decoration: none;
   }
-  dd {
-    margin: 0;
+  .plc-map:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  @media (min-width: 1024px) {
+    .plc-body {
+      padding: 14px;
+    }
+    .plc-name {
+      font-size: 16px;
+    }
   }
 </style>

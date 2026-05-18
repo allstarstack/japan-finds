@@ -1,0 +1,289 @@
+---
+/* Phase B-2 places filter rail (BUILD_SPEC Step 4).
+   - 12 primary chips, single-select, horizontal-scroll, sticky-on-scroll.
+   - 3 planning chips (Rainy Day / With Kids / By Train), multi-select,
+     always visible below the primary rail; they combine with any chip.
+   - "Stay bases" toggle — base-tier places are excluded from the default
+     browse and from every chip; this reveals the 23 stay-base entries.
+
+   Filtering is client-side and in place. Chip state mirrors to the URL
+   (?chip=&flags=&base=) for shareable links. Counts and the empty state
+   live on /places; this component drives them by data-attribute. */
+import { PRIMARY_CHIPS, SECONDARY_CHIPS } from "../../data/place-chips.js";
+
+interface Props {
+  counts: Record<string, number>; // public_label -> standard-tier count
+  flagCounts: Record<string, number>; // planning flag -> count
+  baseCount: number;
+}
+const { counts, flagCounts, baseCount } = Astro.props;
+---
+
+<div class="prail" data-place-rail>
+  <div class="prail-inner">
+    <div class="prail-track" role="group" aria-label="Filter places by type">
+      {
+        PRIMARY_CHIPS.map((c) => (
+          <button
+            type="button"
+            class="pchip"
+            data-chip={c.value}
+            data-color={c.color}
+            aria-pressed="false"
+          >
+            {c.label}
+            <span class="pchip-n">{counts[c.value] ?? 0}</span>
+          </button>
+        ))
+      }
+    </div>
+
+    <div class="psec" role="group" aria-label="Filter by planning need">
+      {
+        SECONDARY_CHIPS.map((c) => (
+          <button
+            type="button"
+            class="pflag"
+            data-flag={c.value}
+            aria-pressed="false"
+          >
+            {c.label}
+            <span class="pflag-n">{flagCounts[c.value] ?? 0}</span>
+          </button>
+        ))
+      }
+      {
+        baseCount > 0 && (
+          <button
+            type="button"
+            class="pflag pflag--base"
+            data-base-toggle
+            aria-pressed="false"
+          >
+            Stay bases
+            <span class="pflag-n">{baseCount}</span>
+          </button>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .prail {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-white);
+    border-bottom: var(--border-ink);
+  }
+  .prail-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  /* Primary chips — horizontal-scroll on mobile, no visible scrollbar. */
+  .prail-track {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 12px var(--gutter-mobile) 8px;
+    scroll-padding-inline: var(--gutter-mobile);
+  }
+  .prail-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pchip {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 38px;
+    padding: 8px 14px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  .pchip[data-color="red"] {
+    --c: var(--color-tokyo-red);
+  }
+  .pchip[data-color="blue"] {
+    --c: var(--color-konbini-blue);
+  }
+  .pchip[data-color="green"] {
+    --c: var(--color-matcha-green);
+  }
+  .pchip[data-color="yellow"] {
+    --c: var(--color-egg-yellow);
+  }
+  .pchip-n {
+    font-weight: 700;
+  }
+  .pchip.is-active {
+    background: var(--c);
+    border-color: var(--c);
+    color: #fff;
+  }
+  .pchip[data-color="yellow"].is-active {
+    color: var(--color-ink-black);
+  }
+
+  /* Planning chips + base toggle — wrap, always visible. */
+  .psec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 var(--gutter-mobile) 12px;
+  }
+  .pflag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    padding: 6px 12px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-30);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  .pflag-n {
+    font-weight: 700;
+  }
+  .pflag.is-active {
+    background: var(--color-ink-black);
+    border-color: var(--color-ink-black);
+    color: #fff;
+  }
+  /* Base toggle reads as a distinct affordance — dashed until active. */
+  .pflag--base {
+    margin-left: auto;
+    border-style: dashed;
+    border-color: var(--color-ink-black);
+  }
+
+  @media (min-width: 1024px) {
+    .prail-track {
+      flex-wrap: wrap;
+      overflow-x: visible;
+      padding: 16px var(--gutter-desktop) 10px;
+    }
+    .psec {
+      padding: 0 var(--gutter-desktop) 16px;
+    }
+  }
+</style>
+
+<script>
+  const rail = document.querySelector("[data-place-rail]");
+  if (rail) {
+    const chips = [...rail.querySelectorAll(".pchip")];
+    const flags = [...rail.querySelectorAll(".pflag[data-flag]")];
+    const baseBtn = rail.querySelector("[data-base-toggle]");
+    const cards = [...document.querySelectorAll("[data-grid] .plc")];
+    const grid = document.querySelector("[data-grid]");
+    const countEl = document.querySelector("[data-count]");
+    const emptyEl = document.querySelector("[data-empty]");
+
+    let activeChip = null;
+    const activeFlags = new Set();
+    let showBase = false;
+
+    const cardFlags = (card) =>
+      (card.dataset.flags || "")
+        .split(";")
+        .map((s) => s.trim())
+        .filter(Boolean);
+
+    const syncURL = () => {
+      const p = new URLSearchParams();
+      if (activeChip) p.set("chip", activeChip);
+      if (activeFlags.size) p.set("flags", [...activeFlags].join(","));
+      if (showBase) p.set("base", "1");
+      const qs = p.toString();
+      history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+    };
+
+    const apply = () => {
+      let n = 0;
+      for (const card of cards) {
+        const isBase = card.dataset.tier === "base";
+        const fl = cardFlags(card);
+        const okFlags = [...activeFlags].every((f) => fl.includes(f));
+        // Base places carry no experience chip — they show only via the
+        // toggle, and never alongside a primary chip.
+        const show = isBase
+          ? showBase && !activeChip && okFlags
+          : (!activeChip || card.dataset.chip === activeChip) && okFlags;
+        card.hidden = !show;
+        if (show) n++;
+      }
+      for (const chip of chips) {
+        const on = chip.dataset.chip === activeChip;
+        chip.setAttribute("aria-pressed", String(on));
+        chip.classList.toggle("is-active", on);
+      }
+      for (const f of flags) {
+        const on = activeFlags.has(f.dataset.flag);
+        f.setAttribute("aria-pressed", String(on));
+        f.classList.toggle("is-active", on);
+      }
+      if (baseBtn) {
+        baseBtn.setAttribute("aria-pressed", String(showBase));
+        baseBtn.classList.toggle("is-active", showBase);
+      }
+      if (countEl) countEl.textContent = n + (n === 1 ? " place" : " places");
+      if (emptyEl) emptyEl.hidden = n !== 0;
+      if (grid) grid.hidden = n === 0;
+    };
+
+    chips.forEach((c) =>
+      c.addEventListener("click", () => {
+        activeChip = activeChip === c.dataset.chip ? null : c.dataset.chip;
+        if (activeChip) showBase = false; // a chip and bases are exclusive
+        apply();
+        syncURL();
+        c.scrollIntoView({ inline: "center", block: "nearest" });
+      }),
+    );
+    flags.forEach((f) =>
+      f.addEventListener("click", () => {
+        const v = f.dataset.flag;
+        activeFlags.has(v) ? activeFlags.delete(v) : activeFlags.add(v);
+        apply();
+        syncURL();
+      }),
+    );
+    if (baseBtn)
+      baseBtn.addEventListener("click", () => {
+        showBase = !showBase;
+        if (showBase) activeChip = null;
+        apply();
+        syncURL();
+      });
+
+    // Initial state from the URL — supports shareable /places?chip=…
+    const params = new URLSearchParams(location.search);
+    const chip0 = params.get("chip");
+    if (chip0 && chips.some((c) => c.dataset.chip === chip0)) activeChip = chip0;
+    for (const f of (params.get("flags") || "").split(",").filter(Boolean))
+      if (flags.some((x) => x.dataset.flag === f)) activeFlags.add(f);
+    if (params.get("base") === "1" && !activeChip) showBase = true;
+    apply();
+  }
+</script>
