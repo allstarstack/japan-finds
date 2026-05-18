@@ -123,9 +123,10 @@ const { counts, subAvail } = Astro.props;
   .fchip[data-color="yellow"] {
     --c: var(--color-egg-yellow);
   }
+  /* Count inherits the chip's text colour — no opacity, so it keeps a
+     full-contrast ink value on the inactive (white) chip. */
   .fchip-n {
     font-weight: 700;
-    opacity: 0.5;
   }
   .fchip.is-active {
     background: var(--c);
@@ -134,9 +135,6 @@ const { counts, subAvail } = Astro.props;
   }
   .fchip[data-color="yellow"].is-active {
     color: var(--color-ink-black);
-  }
-  .fchip.is-active .fchip-n {
-    opacity: 0.7;
   }
 
   /* Sub-chips — revealed beneath the rail only while the parent is active */
