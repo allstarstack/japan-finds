@@ -6,7 +6,10 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "Donki, supermarkets, souvenir shops"
+  - "Aeon"
+  - "Ito-Yokado"
+  - "Don Quijote"
+  - "airport souvenir shops"
 price_yen: "~¥300–¥1,200"
 what_it_is: "Assorted savory rice crackers."
 why_travelers_care: "Durable gift that shows Japanese snack texture/flavors."
@@ -17,9 +20,13 @@ verification_notes: "Check ingredient labels for soy/seafood."
 source_links:
   - "https://www.donki.com/en/"
   - "https://www.japan-guide.com/e/e2450.html"
+  - "https://www.kamedaseika.co.jp/product/"
+  - "https://www.befco.jp/products/"
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "せんべい詰め合わせ"
+agent_notes: "Category row maker varies"

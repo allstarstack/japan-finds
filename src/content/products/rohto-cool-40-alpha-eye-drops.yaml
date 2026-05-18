@@ -6,7 +6,10 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "All drugstores"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "300-500"
 what_it_is: "Cheap cooling eye drops, the entry-level Japanese eye drop experience."
 why_travelers_care: "Cheaper than the V Premium for the same novelty hit."
@@ -15,10 +18,13 @@ risk_flags:
 verification_notes: "Same customs caveat as V Premium"
 source_links:
   - "rohto.co.jp"
+  - "https://jp.rohto.com/cool40/"
+  - "https://jp.rohto.com/eyecare/"
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "ロートクール40α"

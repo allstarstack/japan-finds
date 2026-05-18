@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, konbini, baby stores"
+  - "Akachan Honpo"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Aeon"
 price_yen: "~¥100–¥500"
 what_it_is: "Small wet-wipe packs for babies/kids."
 why_travelers_care: "Immediate family travel fix."
@@ -17,9 +20,13 @@ verification_notes: "Check ingredients and sensitivity."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.donki.com/en/"
+  - "https://www.pigeon.co.jp/products/category/babycare/wipe/"
+  - "https://www.akachan.jp/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 5
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "赤ちゃん用おしりふき"
+agent_notes: "Category row brand varies"

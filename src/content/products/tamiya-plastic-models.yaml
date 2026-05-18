@@ -6,15 +6,22 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Hobby shops, Yodobashi"
+  - "Tamiya Plamodel Factory"
+  - "Yodobashi Camera"
+  - "Bic Camera"
+  - "Joshin"
 price_yen: "1500-10000"
 what_it_is: "Plastic car/airplane/military model kits."
 why_travelers_care: "Hobby grail, Japan-priced."
 source_links:
   - "tamiya.com"
+  - "https://tamiya.com/japan/newitems_month/list.html"
+  - "https://www.tamiya.com/japan/newstopics/2026/64shs_newitem/index.html"
 confidence: "high"
 trip_score: 7
 suitcase_score: 9
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "タミヤ プラモデル"
+agent_notes: "New-kit schedule rotates monthly"

@@ -6,7 +6,9 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini, vending"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
 price_yen: "120-150"
 what_it_is: "Cold/hot canned coffee, the Tommy Lee Jones ads are legendary."
 why_travelers_care: "Vending machine ritual, hot can in winter is a sensory moment."
@@ -15,9 +17,12 @@ risk_flags:
 verification_notes: "Many varieties; Rainbow Mountain Blend is the standard"
 source_links:
   - "suntory.co.jp/softdrink/boss"
+  - "https://www.suntory.co.jp/softdrink/boss/"
+  - "https://products.suntory.co.jp/b/0000000001/ボス"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "ボス"

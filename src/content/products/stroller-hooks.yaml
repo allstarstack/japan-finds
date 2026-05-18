@@ -6,7 +6,9 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "100-yen shops, baby stores, drugstores"
+  - "Daiso"
+  - "Akachan Honpo"
+  - "Nishimatsuya"
 price_yen: "~¥110–¥800"
 what_it_is: "Hooks for hanging bags from a stroller."
 why_travelers_care: "Immediate family travel utility."
@@ -17,9 +19,12 @@ verification_notes: "Warn against overloading stroller."
 source_links:
   - "https://www.gltjp.com/en/article/item/21322/"
   - "https://www.matsukiyococokara-online.com/"
+  - "https://jp.daisonet.com/products/4549131954456"
+  - "https://jpbulk.daisonet.com/products/4549131954456"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ベビーカーフック"

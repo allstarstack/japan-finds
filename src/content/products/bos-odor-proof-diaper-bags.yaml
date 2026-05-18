@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, baby stores, Donki"
+  - "Akachan Honpo"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Amazon Japan"
 price_yen: "~¥300–¥1,500"
 what_it_is: "Odor-control bags for diapers, trash, or travel messes."
 why_travelers_care: "Parent travel lifesaver; genuinely useful in hotel rooms."
@@ -17,9 +20,12 @@ verification_notes: "Confirm size and pack count."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.donki.com/en/"
+  - "https://bos-bos.com/products/diaper/"
+  - "https://bos-bos.com/"
 confidence: "medium"
 trip_score: 9
 suitcase_score: 8
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "BOS おむつが臭わない袋"

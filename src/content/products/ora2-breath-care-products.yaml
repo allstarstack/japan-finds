@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, Donki"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "~¥300–¥700"
 what_it_is: "Breath spray, toothpaste, or oral-care accessories."
 why_travelers_care: "Useful small travel fix; Japanese flavors/designs can be fun."
@@ -18,10 +21,13 @@ verification_notes: "Verify flavor and baggage limits."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.donki.com/en/"
+  - "https://jp.ora2.com/"
+  - "https://www.sunstar.com/jp/oral-care/products/ora2/"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "オーラツー"

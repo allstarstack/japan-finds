@@ -6,7 +6,10 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "Donki, supermarkets, drugstores"
+  - "Aeon"
+  - "Ito-Yokado"
+  - "Don Quijote"
+  - "7-Eleven"
 price_yen: "~¥200–¥700"
 what_it_is: "Rice seasoning sachets with seaweed, sesame, salmon, egg, or character themes."
 why_travelers_care: "Tiny, cheap, useful after the trip; good kid/family angle."
@@ -17,9 +20,13 @@ verification_notes: "Check ingredient labels and destination food rules."
 source_links:
   - "https://www.donki.com/en/"
   - "https://www.japan-guide.com/e/e2450.html"
+  - "https://www.marumiya.co.jp/cms/web/viewitem/3054/1"
+  - "https://www.nagatanien.co.jp/product/search/furikake/"
 confidence: "medium"
 trip_score: 8
 suitcase_score: 9
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ふりかけパック"
+agent_notes: "Category row maker varies"

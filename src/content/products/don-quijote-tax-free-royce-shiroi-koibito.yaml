@@ -7,7 +7,8 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "Donki tax-free counter"
+  - "Don Quijote"
+  - "airport souvenir shops"
 price_yen: "800-2500"
 what_it_is: "Hokkaido confections without the Hokkaido trip; Donki carries the big sellers."
 why_travelers_care: "Time-saver for non-Hokkaido travelers."
@@ -17,9 +18,13 @@ verification_notes: "Confirm Royce' stocking varies by store"
 source_links:
   - "royce.com"
   - "ishiya.co.jp"
+  - "https://www.royce.com/goods/list/?in_category=C000"
+  - "https://www.ishiya.co.jp/item/shiroi/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ロイズ / 白い恋人"
+agent_notes: "Tax-free stock varies by branch"

@@ -6,19 +6,26 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "All drugstores"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
 price_yen: "1500-2500"
 what_it_is: "Combination cold/flu powder or tablets, broad-spectrum."
 why_travelers_care: "Travel-cold rescue; contains acetaminophen + other actives."
 risk_flags:
   - "medicine/regulated, multiple actives"
+  - "multi_active_med"
 verification_notes: "Multi-ingredient — check with doctor before mixing with other meds"
 source_links:
   - "catalog.taisho.co.jp"
+  - "https://www.catalog-taisho.com/category/02/001/04513/"
+  - "https://www.taisho.co.jp/company/news/2026/"
 confidence: "high"
 trip_score: 6
 suitcase_score: 9
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "meds"
+name_jp: "パブロンゴールドA"
+agent_notes: "Multi-active cold medicine"

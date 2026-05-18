@@ -6,7 +6,10 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "Konbini, supermarkets, drugstores"
+  - "Aeon"
+  - "Ito-Yokado"
+  - "Akachan Honpo"
+  - "supermarkets"
 price_yen: "~¥100–¥300"
 what_it_is: "Character-shaped gummies for kids."
 why_travelers_care: "Low-cost kid gift and recognizable Japan character angle."
@@ -14,14 +17,19 @@ risk_flags:
   - "allergen"
   - "sugar"
   - "choking risk"
+  - "citrus_ingestible"
 verification_notes: "Check age warning and ingredients."
 source_links:
   - "https://www.sej.co.jp/products/"
   - "https://www.family.co.jp/goods.html"
   - "https://www.matsukiyococokara-online.com/"
+  - "https://www.fujiya-peko.co.jp/sweets/candy/anpanman.html"
+  - "https://www.fujiya-peko.co.jp/sweets/item/12639.html"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "アンパンマングミ"
+agent_notes: "Some Fujiya Anpanman gummies include orange flavor"

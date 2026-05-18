@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, konbini, Donki"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "~¥200–¥600"
 what_it_is: "Hand cleaning gel, wipes, or soap products."
 why_travelers_care: "Practical first-day purchase for food-heavy trip."
@@ -17,10 +20,13 @@ verification_notes: "Check alcohol content and baggage rules."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.donki.com/en/"
+  - "https://kireikirei.lion.co.jp/"
+  - "https://www.lion.co.jp/ja/products/category/hand/"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "キレイキレイ 薬用手指の消毒ジェル"

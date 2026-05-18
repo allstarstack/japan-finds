@@ -6,7 +6,7 @@ intent:
   - "content_only"
 status: "ready"
 where_found:
-  - "Donki novelty aisles"
+  - "Don Quijote"
 price_yen: "~¥500–¥3,000"
 what_it_is: "Novelty costume pieces, animal hats, party props."
 why_travelers_care: "Good chaos footage, not a serious shopping-list item."
@@ -17,9 +17,13 @@ verification_notes: "Check store photo/filming policy before content use."
 source_links:
   - "https://www.donki.com/en/tax_free/"
   - "https://www.donki.com/en/"
+  - "https://www.donki.com/"
+  - "unknown"
 confidence: "medium"
 trip_score: 5
 suitcase_score: 2
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "コスプレ・動物帽子"
+agent_notes: "Category-level only exact novelty items vary"

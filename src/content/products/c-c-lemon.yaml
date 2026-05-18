@@ -6,17 +6,24 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini, vending"
+  - "Lawson"
+  - "7-Eleven"
+  - "FamilyMart"
 price_yen: "120-150"
 what_it_is: "Lemon soda fortified with vitamin C. The yellow bottle is the icon."
 why_travelers_care: "Recognizable visual, mild flavor, kid-safe option for content."
 risk_flags:
   - "liquid"
+  - "citrus_ingestible"
 source_links:
   - "suntory.co.jp/softdrink/cclemon"
+  - "https://www.lawson.co.jp/recommend/sale/detail/1511477_3677.html"
+  - "https://products.suntory.co.jp/b/0000000006/C.C.レモン"
 confidence: "high"
 trip_score: 6
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "C.C.レモン"
+agent_notes: "citrus-family beverage"

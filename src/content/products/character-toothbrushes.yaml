@@ -6,7 +6,10 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "Drugstores, 100-yen shops, supermarkets"
+  - "Matsumoto Kiyoshi"
+  - "Akachan Honpo"
+  - "Aeon"
+  - "Sanrio"
 price_yen: "~¥100–¥500"
 what_it_is: "Kids toothbrushes with characters."
 why_travelers_care: "Small practical gift/fix if forgotten."
@@ -17,9 +20,13 @@ verification_notes: "Check age size and bristle softness."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.gltjp.com/en/article/item/21322/"
+  - "https://www.lion.co.jp/ja/products/category/oral/"
+  - "https://jp.ora2.com/kids/"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "キャラクター歯ブラシ"
+agent_notes: "Licensed character varies"

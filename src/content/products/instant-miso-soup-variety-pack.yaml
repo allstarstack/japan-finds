@@ -6,7 +6,10 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "Donki, supermarkets, drugstores"
+  - "Aeon"
+  - "Ito-Yokado"
+  - "Don Quijote"
+  - "7-Eleven"
 price_yen: "~¥300–¥900"
 what_it_is: "Shelf-stable miso soup packets or freeze-dried blocks."
 why_travelers_care: "Practical taste-of-Japan item that actually gets used."
@@ -18,9 +21,13 @@ verification_notes: "Verify ingredients and import rules."
 source_links:
   - "https://www.donki.com/en/"
   - "https://www.japan-guide.com/e/e2450.html"
+  - "https://www.marukome.co.jp/product/miso_soup/"
+  - "https://www.nagatanien.co.jp/product/search/soup/"
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "即席みそ汁"
+agent_notes: "Category row maker varies"

@@ -6,7 +6,9 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "100-yen shops, baby stores, drugstores"
+  - "Daiso"
+  - "Akachan Honpo"
+  - "Pigeon"
 price_yen: "~¥110–¥800"
 what_it_is: "Clips for towels, bibs, hats, or baby items."
 why_travelers_care: "Small, practical travel fix."
@@ -17,9 +19,13 @@ verification_notes: "Check safety label and clip strength."
 source_links:
   - "https://www.gltjp.com/en/article/item/21322/"
   - "https://www.matsukiyococokara-online.com/"
+  - "https://products.pigeon.co.jp/category/index-115.html"
+  - "https://jp.daisonet.com/"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "マルチクリップ"
+agent_notes: "Exact clip type varies"

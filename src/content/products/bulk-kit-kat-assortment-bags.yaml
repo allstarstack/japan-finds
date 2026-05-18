@@ -7,7 +7,9 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "Donki / airport"
+  - "Don Quijote"
+  - "Narita Airport"
+  - "Haneda Airport"
 price_yen: "1000-2500"
 what_it_is: "Large mixed bags of regional and seasonal Kit Kats, tax-free at Donki."
 why_travelers_care: "One-stop for the Kit Kat tour without traveling regions."
@@ -15,9 +17,13 @@ risk_flags:
   - "allergen-dairy-soy-wheat"
 source_links:
   - "nestle.co.jp/brands/kitkat"
+  - "https://nestle.jp/kitkat/products"
+  - "https://nestle.jp/kitkat/gift"
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "キットカット ミニ 詰め合わせ"
+agent_notes: "Assortment contents vary"

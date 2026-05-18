@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, supermarkets"
+  - "Akachan Honpo"
+  - "Aeon"
+  - "Ito-Yokado"
+  - "Matsumoto Kiyoshi"
 price_yen: "~¥150–¥400"
 what_it_is: "Light rice crackers marketed for babies/toddlers."
 why_travelers_care: "Useful snack for family travel days."
@@ -18,9 +21,13 @@ verification_notes: "Check age suitability and ingredients."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.donki.com/en/"
+  - "https://www.pigeon.co.jp/products/category/babyfood/"
+  - "https://www.wakodo.co.jp/product/babyfood/"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 7
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ベビーせんべい"
+agent_notes: "Category row maker varies"

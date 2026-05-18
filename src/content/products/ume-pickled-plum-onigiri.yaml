@@ -6,7 +6,9 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "All major konbini"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
 price_yen: "140-160"
 what_it_is: "Rice ball with single salted plum center."
 why_travelers_care: "Most traditional flavor, surprising tartness for first-timers."
@@ -14,9 +16,13 @@ risk_flags:
   - "perishable, allergen-low"
 source_links:
   - "konbini sites"
+  - "https://www.sej.co.jp/products/a/onigiri/"
+  - "https://www.family.co.jp/goods/omusubi.html"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "梅おにぎり"
+agent_notes: "Specific SKU varies by chain"

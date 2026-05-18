@@ -6,7 +6,9 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Hot case, winter dominant"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
 price_yen: "140-180"
 what_it_is: "Same format as nikuman, filled with pizza-style cheese/tomato/pepperoni."
 why_travelers_care: "Weird-good Japan adaptation of a Western flavor, content gold."
@@ -14,9 +16,13 @@ risk_flags:
   - "perishable, hot food, allergen-wheat-dairy"
 source_links:
   - "konbini sites"
+  - "https://www.sej.co.jp/products/a/chukaman/"
+  - "https://www.family.co.jp/goods/chukaman.html"
 confidence: "high"
 trip_score: 7
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "ピザまん"
+agent_notes: "Seasonal hot-case item"

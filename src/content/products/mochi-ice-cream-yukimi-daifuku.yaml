@@ -7,7 +7,10 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "All konbini freezer + supermarkets"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
+  - "Aeon"
 price_yen: "150-180"
 what_it_is: "Vanilla ice cream wrapped in stretchy mochi exterior. Yukimi Daifuku is the dominant brand."
 why_travelers_care: "Long-running cult item, multiple seasonal flavors."
@@ -16,10 +19,13 @@ risk_flags:
 verification_notes: "Lotte distributes outside Japan but flavors differ"
 source_links:
   - "lotte.co.jp"
+  - "https://www.lotte.co.jp/products/brand/yukimi/"
+  - "https://www.lotte.co.jp/products/catalogue/ice/"
 confidence: "high"
 trip_score: 9
 suitcase_score: 3
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "sweet"
+name_jp: "雪見だいふく"

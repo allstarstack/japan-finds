@@ -7,7 +7,9 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "All drugstores"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
 price_yen: "500-800"
 what_it_is: "Topical anti-itch for bug bites and rashes; the diphenhydramine + camphor classic."
 why_travelers_care: "Summer essential; mosquitoes hit hard in humid months."
@@ -15,10 +17,13 @@ risk_flags:
   - "medicine/regulated, liquid"
 source_links:
   - "muhi.com"
+  - "https://www.ikedamohando.co.jp/products/muhi_s.html"
+  - "https://www.ikedamohando.co.jp/products/"
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "meds"
+name_jp: "ムヒS"

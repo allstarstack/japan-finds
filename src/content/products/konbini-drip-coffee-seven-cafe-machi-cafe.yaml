@@ -6,7 +6,8 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "In-store machine"
+  - "7-Eleven"
+  - "Lawson"
 price_yen: "110-180"
 what_it_is: "Fresh-brewed drip coffee from in-store bean grinder."
 why_travelers_care: "Punches above price, the machine UI itself is content."
@@ -15,9 +16,13 @@ risk_flags:
 source_links:
   - "7-eleven.co.jp"
   - "lawson.co.jp"
+  - "https://www.sej.co.jp/products/sevencafe/"
+  - "https://www.lawson.co.jp/recommend/original/machicafe/"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "セブンカフェ / マチカフェ"
+agent_notes: "Chain-specific in-store coffee lines"

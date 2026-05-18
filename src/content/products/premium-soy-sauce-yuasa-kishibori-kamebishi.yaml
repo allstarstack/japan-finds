@@ -7,7 +7,9 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Dept store food halls, specialty shops"
+  - "Yuasa Soy Sauce"
+  - "Kamebishi"
+  - "department-store food halls"
 price_yen: "1500-5000"
 what_it_is: "Aged premium soy sauce from heritage breweries."
 why_travelers_care: "Real upgrade vs supermarket; gift-grade."
@@ -16,9 +18,13 @@ risk_flags:
 verification_notes: "Glass bottle requires careful packing"
 source_links:
   - "general"
+  - "https://www.yuasasyouyu.co.jp/"
+  - "https://kamebishi.com/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "湯浅醤油 / かめびし醤油"
+agent_notes: "Row combines multiple premium soy sauce makers"

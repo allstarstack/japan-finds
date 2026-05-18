@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "FamilyMart / selected konbini / Major konbini"
+  - "FamilyMart"
 price_yen: "~¥250–¥350"
 what_it_is: "Rice ball or musubi with SPAM and fillings such as tuna mayo."
 why_travelers_care: "Recognizable for US travelers but localized through Japan konbini execution."
@@ -17,9 +17,13 @@ risk_flags:
 verification_notes: "Confirm current seasonal availability by region."
 source_links:
   - "https://www.family.co.jp/for_tourist/en.html"
+  - "https://www.family.co.jp/goods/omusubi.html"
+  - "https://www.spam-jp.com/"
 confidence: "high"
 trip_score: 7
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "SPAMむすび"
+agent_notes: "Current FamilyMart SKU not consistently listed"

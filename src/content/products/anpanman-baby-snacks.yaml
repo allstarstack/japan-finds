@@ -7,7 +7,10 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "Supermarkets, baby stores"
+  - "Akachan Honpo"
+  - "Aeon"
+  - "Ito-Yokado"
+  - "supermarkets"
 price_yen: "150-300"
 what_it_is: "Anpanman-branded baby crackers, biscuits."
 why_travelers_care: "Cute, safe, kid-recognizable."
@@ -15,9 +18,13 @@ risk_flags:
   - "allergen-varies"
 source_links:
   - "general"
+  - "https://www.fujiya-peko.co.jp/anpanman/sweets/"
+  - "https://www.bandai.co.jp/candy/"
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "アンパンマン幼児用お菓子"
+agent_notes: "Brand and snack type vary"

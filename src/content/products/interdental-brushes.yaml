@@ -6,7 +6,9 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, konbini"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
 price_yen: "~¥200–¥600"
 what_it_is: "Small dental cleaning tools in travel sizes."
 why_travelers_care: "Useful if you forgot travel dental gear."
@@ -15,10 +17,14 @@ risk_flags:
 verification_notes: "Check size and material."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
+  - "https://www.lion.co.jp/ja/products/category/oral/42"
+  - "https://jp.sunstargum.com/products/interdental/"
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "歯間ブラシ"
+agent_notes: "Category row brand varies"

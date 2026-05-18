@@ -6,7 +6,7 @@ intent:
   - "content_only"
 status: "ready"
 where_found:
-  - "Donki novelty aisles"
+  - "Don Quijote"
 price_yen: "~¥1,000–¥4,000"
 what_it_is: "Huge candy/snack packaging or giant gift boxes."
 why_travelers_care: "Funny on camera, usually terrible suitcase math."
@@ -17,9 +17,13 @@ risk_flags:
 verification_notes: "Verify if actually useful or just visual bait."
 source_links:
   - "https://www.donki.com/en/"
+  - "https://www.donki.com/"
+  - "unknown"
 confidence: "medium"
 trip_score: 6
 suitcase_score: 2
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "巨大お菓子"
+agent_notes: "Novelty assortment varies by store"

@@ -6,7 +6,9 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini seasonal, depachika year-round"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
 price_yen: "350-800"
 what_it_is: "Cream and whole strawberries between sweet bread, cross-section is the photo."
 why_travelers_care: "Cross-section moment is pure content; depachika versions look like jewelry."
@@ -15,9 +17,13 @@ risk_flags:
 verification_notes: "Seasonality varies by region; winter/spring is peak"
 source_links:
   - "japan-guide.com fruit sando"
+  - "https://www.sej.co.jp/products/a/sandwich/"
+  - "https://www.lawson.co.jp/recommend/original/sandwich/"
 confidence: "high"
 trip_score: 9
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "sweet"
+name_jp: "いちごサンド"
+agent_notes: "Seasonal fruit-sando availability varies"

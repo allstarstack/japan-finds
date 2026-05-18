@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "FamilyMart hot case only"
+  - "FamilyMart"
 price_yen: "200-220 | ¥220"
 what_it_is: "FamilyMart's hot fried chicken, single boneless thigh piece. | Boneless fried chicken served in a tear-away paper pouch."
 why_travelers_care: "Cult favorite, has its own anniversary day in Japan (8/7). | Strong konbini hot-snack staple; should stay as Try in Japan, not suitcase item."
@@ -17,10 +17,13 @@ verification_notes: "Hot case items vary by store stocking schedule | Verify cur
 source_links:
   - "family.co.jp/services/famichiki"
   - "User-pasted response"
+  - "https://www.family.co.jp/goods/friedfoods/0253116.html"
+  - "https://www.family.co.jp/goods/friedfoods.html"
 confidence: "high"
 trip_score: 10
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 featured: true
 sub_chip: "food"
+name_jp: "ファミチキ（骨なし）"

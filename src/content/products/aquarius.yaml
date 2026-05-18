@@ -6,7 +6,8 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini, vending machines"
+  - "7-Eleven"
+  - "Lawson"
 price_yen: "120-150"
 what_it_is: "Coca-Cola Japan's sports drink, more citrus-forward than Pocari."
 why_travelers_care: "The other electrolyte option; debate vs Pocari is a real thing."
@@ -14,9 +15,12 @@ risk_flags:
   - "liquid"
 source_links:
   - "cocacola.co.jp/brands/aquarius"
+  - "https://www.sej.co.jp/products/a/item/460658/"
+  - "https://www.coca-cola.com/jp/ja/brands/aquarius"
 confidence: "high"
 trip_score: 7
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "アクエリアス"

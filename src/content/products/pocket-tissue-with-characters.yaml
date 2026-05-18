@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "100-yen shops, drugstores, character shops"
+  - "Daiso"
+  - "Sanrio"
+  - "Pokemon Center"
+  - "Aeon"
 price_yen: "~¥110–¥500"
 what_it_is: "Small tissue packs with cute wrappers."
 why_travelers_care: "Very useful in Japan and cute enough for kids."
@@ -16,9 +19,13 @@ verification_notes: "Verify licensing if character-branded."
 source_links:
   - "https://www.gltjp.com/en/article/item/21322/"
   - "https://www.matsukiyococokara-online.com/"
+  - "https://shop.sanrio.co.jp/"
+  - "https://jp.daisonet.com/"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 10
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "キャラクターポケットティッシュ"
+agent_notes: "Category row character varies"

@@ -7,15 +7,20 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Dept store food halls"
+  - "Yamamotoyama"
+  - "department-store food halls"
+  - "Yamamotoyama online shop"
 price_yen: "1500-5000"
 what_it_is: "Boxed gift-grade tea, often a sencha + hojicha + matcha set."
 why_travelers_care: "Gift-grade tea sets are wrapped beautifully."
 source_links:
   - "yamamotoyama.co.jp"
+  - "https://ec.yamamotoyama.co.jp/collections/2026newtea"
+  - "https://ec.yamamotoyama.co.jp/collections/teagift"
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "山本山 お茶ギフト"
