@@ -67,6 +67,34 @@ export const productSchema = z.object({
   confidence: z.enum(["high", "medium", "low"]).optional(),
   trip_score: score.optional(),
   suitcase_score: score.optional(),
+  // Phase B-1 catalog-launch fields. Optional: only the 385 launch products
+  // carry them — the other ~75 YAMLs in the collection are not in the launch
+  // set, and a required enum would fail schema validation on those and break
+  // the build. The /products UI keys off `launch_category` + `status: ready`.
+  launch_category: z
+    .enum([
+      "konbini",
+      "hundred_yen",
+      "drugstore",
+      "donki",
+      "skincare_beauty",
+      "regional_food",
+      "snacks",
+      "stationery",
+      "kitchen",
+      "kids_family",
+      "customization",
+      "travel_gear",
+      "gift",
+    ])
+    .optional(),
+  fill_type: z.enum(["verified", "creator_fill"]).optional(),
+  display_strategy: z
+    .enum(["show_all", "hide_jp_and_brand_until_enriched"])
+    .optional(),
+  featured: z.boolean().optional().default(false),
+  // konbini → food|drink|sweet · drugstore → skincare|comfort|beauty|meds
+  sub_chip: z.string().optional(),
 });
 
 export const placeSchema = z.object({
