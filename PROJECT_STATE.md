@@ -33,9 +33,9 @@
 ## Phase B-2 outcomes (built 2026-05-18, awaiting merge)
 
 - **`/places` page** ("Where" in the nav — label is Steven's call; route stays `/places`, parallel to `/products`'s "Finds" label).
-- **335 place YAMLs**: 323 imported from `japan_locations_v2.csv` (7 skipped as exact V1 duplicates) + 19 V1 Phase A places migrated to the new schema. The other 16 V1 places were retail/lodging and were dropped — they belong in the `stores` collection, not a "where to go" page.
+- **333 place YAMLs**: 316 imported from `japan_locations_v2.csv` (7 of 323 rows skipped as exact V1 duplicates) + 17 V1 Phase A places migrated to the new schema. The other 18 V1 places were dropped — 16 retail/lodging (belong in `stores`) + 2 combined multi-place entries superseded by specific import rows.
 - **Schema replaced.** The Phase A inspection schema (`name_en`/`area`/`category`) is gone; places now key off `primary_category` (See/Do/Eat/Stay → card colour) and `public_label` (the experience chip).
-- **12 primary chips** (single-select) + **3 planning chips** (Rainy Day / With Kids / By Train, multi-select) + a **"Stay bases" toggle** for the 23 base-tier places. The spec's 11 chips became 12: 11 backlog rows tagged `with_kids` as a *label* were all parks → got a `parks` chip. `day_trips` planning chip dropped (0 rows carry it).
+- **12 primary chips** (single-select) + **3 planning chips** (Rainy Day / With Kids / By Train, multi-select) + a **"Stay bases" toggle** for the 22 base-tier places. The spec's 11 chips became 12: 11 backlog rows tagged `with_kids` as a *label* were all parks → got a `parks` chip. `day_trips` planning chip dropped (0 rows carry it).
 - **Filter** is client-side, URL-shareable via `?chip=&flags=&base=`. Sort: alphabetical.
 - **Cards** use a colour-block placeholder keyed to primary_category (no photos exist yet); JP name parsed from the `name` field; "View on Google Maps" search link per card.
 - **Japan Map CTA** wired site-wide to the public Google My Map URL (header, homepage Hero/StartHere/MapSection, `/places` hero). ⚠ The `mid` is taken verbatim from the BUILD_SPEC and contains `XX` — confirm it resolves before relying on it (see `src/data/site.js`).
@@ -129,7 +129,9 @@ After merge, Vercel auto-deploys to japan.allstarsteven.com.
 - Product card copy writing in brand voice (30-60 hrs across the 384 launch cards; polish high-traffic ones first)
 - Real image swap from stock to creator-shot stills
 - Color contrast fix on red/green chips (current Lighthouse a11y 96 — known background-queue item, identical to live homepage score)
-- Google My Maps real URL needed for "Get the Japan Map" CTAs
+- Google My Map: CTAs are now wired site-wide (Phase B-2), but the `mid` came from the BUILD_SPEC with `XX` in it — confirm it resolves (`src/data/site.js`)
+- Quick-Add follow-ups from the B-2 places import: add separate **Kenrokuen Garden** (Ishikawa) and **Beppu Onsen** (Oita) entries — their combined V1 entries were dropped in favour of the specific `omicho-market` / `yufuin-onsen-town` import rows
+- Add creator photos to high-priority place cards (color-block placeholders ship for ~all 333 places)
 - Sponsor outreach to Klook, MIMARU, @cosme, JNTO, Matsumoto Kiyoshi (top 5 from sponsor leads XLSX)
 
 ---
