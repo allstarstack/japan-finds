@@ -4,11 +4,11 @@ name_en: "New York Perfect Cheese"
 category: "snacks"
 intent:
   - "gift_easy"
-status: "hold"
+status: "ready"
 name_jp: "ニューヨークパーフェクトチーズ"
 brand: "Tokyo Milk Cheese Factory-related retail | New York Perfect Cheese"
 where_found:
-  - "Tokyo Station / airports | Tokyo Station / Haneda"
+  - "Tokyo Station / Haneda"
 price_yen: "~¥900–¥2,000 | ~¥1,200"
 what_it_is: "Cheese/chocolate cookie souvenir often sold in Tokyo queues. | Cheese-cookie souvenir sweet."
 why_travelers_care: "Queue/social proof angle; giftable box. | High-demand Tokyo Station omiyage, but fragile/short shelf life."
@@ -25,3 +25,6 @@ source_links:
 confidence: "low"
 trip_score: 8
 suitcase_score: 7
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -5,11 +5,14 @@ category: "stationery"
 intent:
   - "stock_up"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ハイテックC"
 brand: "Pilot"
 where_found:
-  - "Stationery stores"
+  - "Pilot webcatalog"
+  - "Amazon JP"
+  - "Yodobashi"
+  - "Loft"
 price_yen: "200-400"
 what_it_is: "Ultra-fine gel pen (0.25-0.4mm)."
 why_travelers_care: "Pen-nerd staple, precise lines."
@@ -18,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

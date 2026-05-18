@@ -4,11 +4,13 @@ name_en: "Milk frother"
 category: "100-yen"
 intent:
   - "bring_home"
-status: "hold"
+status: "ready"
 name_jp: "ミルクフォーマー"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
   - "kitchen stores"
 price_yen: "~¥110–¥330"
 what_it_is: "Battery handheld frother for drinks."
@@ -23,3 +25,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 7
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

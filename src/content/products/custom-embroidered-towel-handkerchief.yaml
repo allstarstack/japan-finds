@@ -4,11 +4,11 @@ name_en: "Custom embroidered towel/handkerchief"
 category: "other"
 intent:
   - "make_it_yours"
-status: "hold"
+status: "ready"
 name_jp: "刺繍タオル"
 brand: "Department stores / souvenir shops"
 where_found:
-  - "Department stores"
+  - "Dept stores"
   - "specialty shops"
 price_yen: "~¥1,000–¥3,000"
 what_it_is: "Small towel with name/initial embroidery."
@@ -22,3 +22,6 @@ source_links:
 confidence: "low"
 trip_score: 7
 suitcase_score: 8
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

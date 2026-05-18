@@ -5,11 +5,13 @@ category: "stationery"
 intent:
   - "stock_up"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "クルトガ"
 brand: "Mitsubishi Pencil"
 where_found:
-  - "Stationery stores"
+  - "Mitsubishi Pencil official"
+  - "Amazon JP"
+  - "Yodobashi"
 price_yen: "550-2000"
 what_it_is: "Rotating mechanical pencil that keeps tip sharp."
 why_travelers_care: "Cult pencil, engineering-design moment."
@@ -18,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

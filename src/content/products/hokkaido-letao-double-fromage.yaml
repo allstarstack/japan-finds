@@ -5,7 +5,7 @@ category: "snacks"
 intent:
   - "try_in_japan"
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ルタオ ドゥーブルフロマージュ"
 brand: "LeTAO"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 3
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

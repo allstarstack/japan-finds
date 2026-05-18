@@ -5,11 +5,14 @@ category: "snacks"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "うまい棒"
 brand: "Yaokin"
 where_found:
-  - "Supermarkets"
+  - "Yaokin official"
+  - "LOHACO"
+  - "Rakuten"
+  - "Amazon JP"
   - "dagashi shops"
 price_yen: "10-15"
 what_it_is: "10-yen puffed corn snack sticks, 30+ flavors."
@@ -21,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

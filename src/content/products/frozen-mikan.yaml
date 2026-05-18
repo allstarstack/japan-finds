@@ -4,9 +4,7 @@ name_en: "Frozen mikan"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "hold"
-name_jp: "冷凍みかん"
-brand: "Various / konbini private label"
+status: "ready"
 where_found:
   - "Konbini freezer section"
 price_yen: "~¥180–¥350"
@@ -21,3 +19,7 @@ source_links:
   - "https://www.family.co.jp/goods.html"
 confidence: "medium"
 trip_score: 7
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "sweet"

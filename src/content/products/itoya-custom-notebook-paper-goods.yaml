@@ -4,11 +4,12 @@ name_en: "Itoya custom notebook / paper goods"
 category: "other"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "カスタムノート"
 brand: "Itoya"
 where_found:
-  - "Ginza Itoya / select stationery shops"
+  - "Itoya Ginza flagship"
+  - "select stationery shops"
 price_yen: "~¥1,000–¥5,000+"
 what_it_is: "Custom assembled notebook or stationery experience."
 why_travelers_care: "Premium stationery pilgrimage item."
@@ -21,3 +22,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 7
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,13 +4,9 @@ name_en: "Cooling forehead sheets"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "needs_verification"
-name_jp: "熱さまシート"
-brand: "Kobayashi / other brands"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "Donki"
-  - "konbini"
+  - "Drugstores, Donki, konbini"
 price_yen: "~¥300–¥700"
 what_it_is: "Gel sheets for forehead cooling during heat or fever."
 why_travelers_care: "Travel comfort item, especially families and summer trips."
@@ -24,3 +20,7 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

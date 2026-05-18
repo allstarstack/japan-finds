@@ -4,7 +4,7 @@ name_en: "Kit Kat Chocolatory Custom Kit Kat"
 category: "snacks"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "キットカット ショコラトリー"
 brand: "Nestle Japan"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 9
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

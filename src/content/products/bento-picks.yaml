@@ -4,11 +4,13 @@ name_en: "Bento picks"
 category: "100-yen"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "お弁当ピック"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
 price_yen: "~¥110"
 what_it_is: "Cute picks for lunch boxes."
 why_travelers_care: "Tiny, cheap, family-friendly gift."
@@ -22,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "kitchen"
+fill_type: "verified"
+display_strategy: "show_all"

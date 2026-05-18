@@ -4,11 +4,13 @@ name_en: "Roll-up compression bag"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "衣類圧縮袋"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
   - "Donki"
 price_yen: "~¥110–¥550"
 what_it_is: "Manual compression bag for clothing."
@@ -23,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

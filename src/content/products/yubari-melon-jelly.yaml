@@ -4,7 +4,7 @@ name_en: "Yubari melon jelly"
 category: "snacks"
 intent:
   - "local_editions"
-status: "hold"
+status: "ready"
 name_jp: "夕張メロンゼリー"
 brand: "Hori / various"
 where_found:
@@ -23,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 7
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,7 +4,7 @@ name_en: "Lip Bambi Sleeping Pack / Laneige-style overnight balm"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "リップ寝マスク"
 brand: "Various"
 where_found:
@@ -19,3 +19,6 @@ source_links:
 confidence: "medium"
 trip_score: 6
 suitcase_score: 10
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

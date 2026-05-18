@@ -4,11 +4,11 @@ name_en: "Traveler’s Notebook refill"
 category: "100-yen"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "トラベラーズノート リフィル"
 brand: "Traveler’s Company"
 where_found:
-  - "Traveler’s Factory"
+  - "Traveler's Factory"
   - "Loft"
   - "Hands"
   - "stationery stores"
@@ -25,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

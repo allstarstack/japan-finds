@@ -4,12 +4,13 @@ name_en: "Kappabashi engraved kitchen knife"
 category: "other"
 intent:
   - "make_it_yours"
-status: "needs_verification"
+status: "ready"
 name_jp: "名入れ包丁"
 brand: "Various knife makers"
 where_found:
-  - "Kappabashi"
-  - "specialty knife shops"
+  - "Kappabashi knife shops"
+  - "Tsubaya"
+  - "Tower Knives"
 price_yen: "~¥5,000–¥30,000+"
 what_it_is: "Japanese kitchen knife with optional engraving."
 why_travelers_care: "High-value functional souvenir for cooks."
@@ -23,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 4
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

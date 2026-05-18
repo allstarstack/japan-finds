@@ -6,13 +6,9 @@ intent:
   - "bring_home"
   - "make_it_yours"
   - "local_editions"
-status: "v1_candidate"
-name_jp: "ガンプラ"
-brand: "Bandai"
+status: "ready"
 where_found:
-  - "Yodobashi"
-  - "Akihabara"
-  - "Gundam Base Tokyo"
+  - "Yodobashi, Akihabara, Gundam Base Tokyo"
 price_yen: "1000-15000"
 what_it_is: "Gundam plastic model kits, hobby-grade."
 why_travelers_care: "Cult hobby, much cheaper in Japan than abroad."
@@ -22,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 9
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

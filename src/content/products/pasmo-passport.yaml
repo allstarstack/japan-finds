@@ -4,11 +4,12 @@ name_en: "Pasmo Passport"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "Pasmoパスポート"
 brand: "Pasmo"
 where_found:
-  - "Narita / Haneda private rail counters"
+  - "Haneda/Narita ticket counters TOURIST PASMO"
+  - "major stations"
 price_yen: "0 (loadable)"
 what_it_is: "Tourist version of Pasmo, similar to Welcome Suica."
 why_travelers_care: "Alternative to Welcome Suica."
@@ -18,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 5
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

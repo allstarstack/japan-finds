@@ -4,9 +4,7 @@ name_en: "Kinkan Anti-Itch Liquid"
 category: "donki-drugstore"
 intent:
   - "stock_up"
-status: "needs_verification"
-name_jp: "キンカン"
-brand: "Kinkan Co."
+status: "ready"
 where_found:
   - "All drugstores"
 price_yen: "500-900"
@@ -19,3 +17,7 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 8
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "meds"

@@ -4,13 +4,9 @@ name_en: "Umaibo multipack"
 category: "donki-drugstore"
 intent:
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "うまい棒"
-brand: "Yaokin"
+status: "ready"
 where_found:
-  - "Donki"
-  - "supermarkets"
-  - "100-yen shops"
+  - "Donki, supermarkets, 100-yen shops"
 price_yen: "~¥300–¥800"
 what_it_is: "Cheap puffed corn snack sticks in many flavors."
 why_travelers_care: "Funny, affordable, and easy to distribute as casual gifts."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

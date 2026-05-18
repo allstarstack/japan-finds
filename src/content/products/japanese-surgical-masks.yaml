@@ -4,13 +4,9 @@ name_en: "Japanese surgical masks"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "不織布マスク"
-brand: "Unicharm / Iris Ohyama / various"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "konbini"
-  - "Donki"
+  - "Drugstores, konbini, Donki"
 price_yen: "~¥300–¥1,000"
 what_it_is: "Disposable masks in multiple sizes/colors."
 why_travelers_care: "Immediate fix for pollen, crowds, illness etiquette, or cold weather."
@@ -23,3 +19,7 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 6
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

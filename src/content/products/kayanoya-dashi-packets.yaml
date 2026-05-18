@@ -4,12 +4,12 @@ name_en: "Kayanoya dashi packets"
 category: "snacks"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "茅乃舎だし"
 brand: "Kayanoya"
 where_found:
   - "Kayanoya shops"
-  - "department stores"
+  - "dept stores"
   - "airports"
 price_yen: "~¥1,000–¥2,500"
 what_it_is: "Dashi soup-stock packets."
@@ -24,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 9
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

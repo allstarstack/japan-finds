@@ -4,11 +4,11 @@ name_en: "Daiso Silicone Egg Cooker"
 category: "100-yen"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "シリコンエッグクッカー"
 brand: "Daiso"
 where_found:
-  - "Daiso"
+  - "Daiso (in-store likely)"
 price_yen: "110"
 what_it_is: "Microwave egg poacher. Sold for $5+ abroad."
 why_travelers_care: "Random useful, cheap kitchen find."
@@ -17,3 +17,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,7 +4,7 @@ name_en: "Minon Amino Moist Line"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "ミノン"
 brand: "Daiichi Sankyo Healthcare"
 where_found:
@@ -19,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

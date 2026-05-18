@@ -4,11 +4,14 @@ name_en: "Coin Sorting Wallet"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "コインキャッチャー"
 brand: "Various"
 where_found:
-  - "Hands / Loft"
+  - "Hands"
+  - "Loft"
+  - "Tokyu Hands"
+  - "Amazon JP"
 price_yen: "¥2,000–¥5,000"
 what_it_is: "Wallet/coin holder that sorts Japanese coins."
 why_travelers_care: "Useful for cash-heavy travel, good demo object."
@@ -18,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 9
 suitcase_score: 7
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

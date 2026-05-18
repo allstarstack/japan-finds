@@ -5,12 +5,9 @@ category: "other"
 intent:
   - "gift_easy"
   - "local_editions"
-status: "v1_candidate"
-name_jp: "草加せんべい"
-brand: "Various Saitama makers"
+status: "ready"
 where_found:
-  - "Souka"
-  - "dept stores"
+  - "Souka, dept stores"
 price_yen: "1500-5000"
 what_it_is: "Premium rice crackers in collectible tins."
 why_travelers_care: "Savory alternative to sweet omiyage."
@@ -21,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "gift"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

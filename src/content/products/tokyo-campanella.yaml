@@ -4,7 +4,7 @@ name_en: "Tokyo Campanella"
 category: "snacks"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "東京カンパネラ"
 brand: "Tokyo Campanella"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

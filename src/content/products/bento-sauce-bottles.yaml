@@ -4,11 +4,13 @@ name_en: "Bento sauce bottles"
 category: "100-yen"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "たれびん"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
 price_yen: "~¥110"
 what_it_is: "Tiny containers for sauces in bento/lunch boxes."
 why_travelers_care: "Cute Japan-specific utility and giftable to food people."
@@ -22,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
+launch_category: "kitchen"
+fill_type: "verified"
+display_strategy: "show_all"

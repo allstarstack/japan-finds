@@ -4,12 +4,9 @@ name_en: "Tamiya Plastic Models"
 category: "other"
 intent:
   - "bring_home"
-status: "v1_candidate"
-name_jp: "タミヤ"
-brand: "Tamiya"
+status: "ready"
 where_found:
-  - "Hobby shops"
-  - "Yodobashi"
+  - "Hobby shops, Yodobashi"
 price_yen: "1500-10000"
 what_it_is: "Plastic car/airplane/military model kits."
 why_travelers_care: "Hobby grail, Japan-priced."
@@ -18,3 +15,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 9
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

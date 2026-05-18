@@ -4,13 +4,9 @@ name_en: "Compression travel bags"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "圧縮袋"
-brand: "Various / Donki private label"
+status: "ready"
 where_found:
-  - "Donki"
-  - "Daiso"
-  - "travel stores"
+  - "Donki, Daiso, travel stores"
 price_yen: "~¥300–¥1,500"
 what_it_is: "Plastic bags that compress clothing by rolling or vacuuming."
 why_travelers_care: "Solves souvenir/laundry packing problem mid-trip."
@@ -25,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

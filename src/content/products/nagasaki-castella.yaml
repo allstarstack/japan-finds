@@ -4,12 +4,12 @@ name_en: "Nagasaki Castella"
 category: "snacks"
 intent:
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "長崎カステラ"
 brand: "Fukusaya / Bunmeido / various"
 where_found:
   - "Nagasaki"
-  - "department stores"
+  - "dept stores"
   - "airports"
 price_yen: "~¥1,000–¥3,000"
 what_it_is: "Japanese sponge cake with Portuguese influence."
@@ -23,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 7
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

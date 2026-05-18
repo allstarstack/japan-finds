@@ -5,12 +5,9 @@ category: "donki-drugstore"
 intent:
   - "stock_up"
   - "bring_home"
-status: "needs_verification"
-name_jp: "ベビーフット"
-brand: "Liberta"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "Donki"
+  - "Drugstores, Donki"
 price_yen: "1200-1800 per pair"
 what_it_is: "Booties with chemical exfoliant, peels foot skin over 5-7 days."
 why_travelers_care: "Viral cult product, originally Japan-only."
@@ -22,3 +19,7 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "skincare"

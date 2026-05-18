@@ -4,7 +4,7 @@ name_en: "Heroine Make Long & Curl Mascara"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "ヒロインメイク ロング＆カールマスカラ"
 brand: "Kiss Me / Isehan"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

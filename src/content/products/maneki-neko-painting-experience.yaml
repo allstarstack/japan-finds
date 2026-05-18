@@ -4,13 +4,12 @@ name_en: "Maneki-neko painting experience"
 category: "other"
 intent:
   - "make_it_yours"
-status: "hold"
+status: "ready"
 name_jp: "招き猫絵付け体験"
 brand: "Various craft studios"
 where_found:
-  - "Asakusa"
-  - "Kyoto"
-  - "craft workshops"
+  - "Asakusa, Kyoto craft workshops"
+  - "airbnb-experiences"
 price_yen: "~¥1,500–¥4,000+"
 what_it_is: "Paint-your-own lucky cat figure."
 why_travelers_care: "Custom, cute, giftable, and content-friendly."
@@ -24,3 +23,6 @@ source_links:
 confidence: "low"
 trip_score: 8
 suitcase_score: 6
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,11 +4,11 @@ name_en: "Reusable shopping bag"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "エコバッグ"
 brand: "Daiso / Seria / Can Do / MUJI / konbini"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
   - "konbini"
   - "MUJI"
 price_yen: "~¥110–¥1,000"
@@ -24,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 9
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

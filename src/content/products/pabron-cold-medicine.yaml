@@ -4,9 +4,7 @@ name_en: "Pabron cold medicine"
 category: "donki-drugstore"
 intent:
   - "content_only"
-status: "content_only"
-name_jp: "パブロン"
-brand: "Taisho"
+status: "ready"
 where_found:
   - "Drugstores"
 price_yen: "~¥1,000–¥2,000"
@@ -21,3 +19,7 @@ source_links:
 confidence: "medium"
 trip_score: 4
 suitcase_score: 4
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "meds"

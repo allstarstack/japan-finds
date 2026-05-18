@@ -4,12 +4,9 @@ name_en: "Pizzaman"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "hold"
-name_jp: "ピザまん"
-brand: "All konbini"
+status: "ready"
 where_found:
-  - "Hot case"
-  - "winter dominant"
+  - "Hot case, winter dominant"
 price_yen: "140-180"
 what_it_is: "Same format as nikuman, filled with pizza-style cheese/tomato/pepperoni."
 why_travelers_care: "Weird-good Japan adaptation of a Western flavor, content gold."
@@ -19,3 +16,7 @@ source_links:
   - "konbini sites"
 confidence: "high"
 trip_score: 7
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "food"

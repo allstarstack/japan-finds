@@ -5,13 +5,9 @@ category: "other"
 intent:
   - "bring_home"
   - "local_editions"
-status: "v1_candidate"
-name_jp: "ポケモンセンター"
-brand: "The Pokemon Company"
+status: "ready"
 where_found:
-  - "Pokemon Center stores (Tokyo"
-  - "Osaka"
-  - "etc.)"
+  - "Pokemon Center stores (Tokyo, Osaka, etc.)"
 price_yen: "500-15000"
 what_it_is: "Store-exclusive plush, cards, apparel. Different stores have different city-exclusives."
 why_travelers_care: "Kids' top-shelf souvenir, parents end up spending more."
@@ -22,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

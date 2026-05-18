@@ -4,7 +4,7 @@ name_en: "Tsubaki Premium Repair Hair Mask"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "ツバキ プレミアムリペアマスク"
 brand: "Shiseido / Fine Today"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 5
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

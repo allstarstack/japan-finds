@@ -4,12 +4,9 @@ name_en: "Baby rice crackers"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "hold"
-name_jp: "ベビーせんべい"
-brand: "Kameda / Pigeon / Wakodo"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "supermarkets"
+  - "Drugstores, supermarkets"
 price_yen: "~¥150–¥400"
 what_it_is: "Light rice crackers marketed for babies/toddlers."
 why_travelers_care: "Useful snack for family travel days."
@@ -24,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 7
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

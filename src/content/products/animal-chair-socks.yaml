@@ -4,11 +4,11 @@ name_en: "Animal chair socks"
 category: "100-yen"
 intent:
   - "content_only"
-status: "content_only"
+status: "ready"
 name_jp: "椅子脚カバー"
 brand: "Daiso"
 where_found:
-  - "Daiso / 100-yen shops"
+  - "Daiso"
 price_yen: "~¥110–¥330"
 what_it_is: "Cute fabric covers for chair legs."
 why_travelers_care: "Very visual and absurdly specific, but not traveler-essential."
@@ -22,3 +22,6 @@ source_links:
 confidence: "medium"
 trip_score: 6
 suitcase_score: 5
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

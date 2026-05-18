@@ -4,11 +4,13 @@ name_en: "Zip storage bags"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ジッパーバッグ"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
   - "supermarkets"
 price_yen: "~¥110–¥330"
 what_it_is: "Cute or practical resealable bags."
@@ -23,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -5,9 +5,7 @@ category: "other"
 intent:
   - "gift_easy"
   - "local_editions"
-status: "v1_candidate"
-name_jp: "鈴懸 / 鶴屋吉信"
-brand: "Suzukake / Tsuruya Yoshinobu"
+status: "ready"
 where_found:
   - "Dept store food halls"
 price_yen: "1500-5000"
@@ -22,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "gift"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

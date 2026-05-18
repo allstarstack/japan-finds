@@ -4,11 +4,11 @@ name_en: "JR Eki Stamps (Station Stamps)"
 category: "stationery"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "駅スタンプ"
 brand: "JR / private rail"
 where_found:
-  - "Almost every JR major station"
+  - "JR East/West/Central stations free at staff counters"
 price_yen: "Free"
 what_it_is: "Free station rubber stamps; bring a notebook and collect through trip."
 why_travelers_care: "Free proof-of-visit collectible, completely overlooked by tourists."
@@ -18,3 +18,6 @@ source_links:
 confidence: "medium"
 trip_score: 9
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

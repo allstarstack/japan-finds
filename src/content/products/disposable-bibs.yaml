@@ -4,13 +4,9 @@ name_en: "Disposable bibs"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "使い捨てエプロン"
-brand: "Daiso / Pigeon / baby brands"
+status: "ready"
 where_found:
-  - "100-yen shops"
-  - "drugstores"
-  - "baby stores"
+  - "100-yen shops, drugstores, baby stores"
 price_yen: "~¥110–¥500"
 what_it_is: "Paper/plastic bibs for meals."
 why_travelers_care: "Restaurant and train snack mess solver."
@@ -25,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

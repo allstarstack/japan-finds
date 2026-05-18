@@ -4,7 +4,7 @@ name_en: "Kao Merit Day+ dry shampoo sheets"
 category: "skincare"
 intent:
   - "day_one_fixes"
-status: "needs_verification"
+status: "ready"
 name_jp: "メリット ドライシャンプーシート"
 brand: "Kao"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

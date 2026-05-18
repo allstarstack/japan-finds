@@ -4,12 +4,9 @@ name_en: "Strawberry Fruit Sando"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "いちごサンド"
-brand: "Konbini + Daimaru/Takashimaya depachika"
+status: "ready"
 where_found:
-  - "Konbini seasonal"
-  - "depachika year-round"
+  - "Konbini seasonal, depachika year-round"
 price_yen: "350-800"
 what_it_is: "Cream and whole strawberries between sweet bread, cross-section is the photo."
 why_travelers_care: "Cross-section moment is pure content; depachika versions look like jewelry."
@@ -20,3 +17,7 @@ source_links:
   - "japan-guide.com fruit sando"
 confidence: "high"
 trip_score: 9
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "sweet"

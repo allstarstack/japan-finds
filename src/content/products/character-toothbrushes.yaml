@@ -4,13 +4,9 @@ name_en: "Character toothbrushes"
 category: "other"
 intent:
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "キャラクター歯ブラシ"
-brand: "Lion / Sunstar / licensed brands"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "100-yen shops"
-  - "supermarkets"
+  - "Drugstores, 100-yen shops, supermarkets"
 price_yen: "~¥100–¥500"
 what_it_is: "Kids toothbrushes with characters."
 why_travelers_care: "Small practical gift/fix if forgotten."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

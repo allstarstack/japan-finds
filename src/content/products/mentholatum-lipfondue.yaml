@@ -4,7 +4,7 @@ name_en: "Mentholatum Lipfondue"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "リップフォンデュ"
 brand: "Rohto Mentholatum"
 where_found:
@@ -19,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

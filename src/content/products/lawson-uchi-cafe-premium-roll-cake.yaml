@@ -4,9 +4,7 @@ name_en: "Lawson Uchi Café Premium Roll Cake"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "プレミアムロールケーキ"
-brand: "Lawson / Uchi Café"
+status: "ready"
 where_found:
   - "Lawson chilled sweets"
 price_yen: "~¥200–¥300"
@@ -21,3 +19,7 @@ source_links:
   - "https://www.lawson.co.jp/recommend/original/"
 confidence: "medium"
 trip_score: 8
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "sweet"

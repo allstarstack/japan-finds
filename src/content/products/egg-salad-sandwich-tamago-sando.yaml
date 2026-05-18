@@ -4,9 +4,7 @@ name_en: "Egg Salad Sandwich (Tamago Sando)"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "たまごサンド"
-brand: "7-Eleven (Sebun-Irebun)"
+status: "ready"
 where_found:
   - "7-Eleven primarily"
 price_yen: "270-320"
@@ -19,3 +17,7 @@ source_links:
   - "7-eleven.co.jp"
 confidence: "high"
 trip_score: 10
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "food"

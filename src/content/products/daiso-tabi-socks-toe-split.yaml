@@ -5,7 +5,7 @@ category: "100-yen"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "足袋ソックス"
 brand: "Daiso"
 where_found:
@@ -18,3 +18,7 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"
+featured: true

@@ -4,12 +4,14 @@ name_en: "Sakura Pigma Micron Drawing Pens"
 category: "stationery"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ピグマミクロン"
 brand: "Sakura"
 where_found:
-  - "Stationery stores"
-  - "art stores"
+  - "Sakura Cray-Pas official"
+  - "Amazon JP"
+  - "Yodobashi"
+  - "Sekaido"
 price_yen: "200-300 per pen"
 what_it_is: "Archival pigment drawing pen."
 why_travelers_care: "Illustrator staple internationally."
@@ -19,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

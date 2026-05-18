@@ -4,7 +4,7 @@ name_en: "Muji Sensitive Skin Toner"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "敏感肌用化粧水"
 brand: "MUJI"
 where_found:
@@ -21,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 7
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

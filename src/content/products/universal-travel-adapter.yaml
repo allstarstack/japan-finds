@@ -4,13 +4,9 @@ name_en: "Universal travel adapter"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "hold"
-name_jp: "変換プラグ"
-brand: "Various"
+status: "ready"
 where_found:
-  - "Donki"
-  - "Bic Camera"
-  - "airports"
+  - "Donki, Bic Camera, airports"
 price_yen: "~¥500–¥2,000"
 what_it_is: "Plug adapter or USB charging accessory."
 why_travelers_care: "Immediate fix for travelers who forgot adapters."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

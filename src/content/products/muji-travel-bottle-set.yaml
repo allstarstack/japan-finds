@@ -4,10 +4,11 @@ name_en: "Muji Travel Bottle Set"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "無印良品 ボトルセット"
 brand: "Muji"
 where_found:
+  - "Muji official"
   - "Muji stores"
 price_yen: "490-990"
 what_it_is: "Decanting bottles in cohesive design."
@@ -17,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

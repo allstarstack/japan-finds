@@ -4,7 +4,7 @@ name_en: "Daiso Phone Stands and Cable Organizers"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "スマホスタンド"
 brand: "Daiso"
 where_found:
@@ -17,3 +17,6 @@ source_links:
 confidence: "high"
 trip_score: 5
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

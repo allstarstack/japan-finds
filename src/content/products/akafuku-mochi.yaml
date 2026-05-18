@@ -4,7 +4,7 @@ name_en: "Akafuku mochi"
 category: "snacks"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
+status: "ready"
 name_jp: "赤福餅"
 brand: "Akafuku"
 where_found:
@@ -26,3 +26,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 4
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

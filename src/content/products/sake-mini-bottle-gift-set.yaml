@@ -5,13 +5,9 @@ category: "other"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "needs_verification"
-name_jp: "日本酒ミニ"
-brand: "Various breweries"
+status: "ready"
 where_found:
-  - "Liquor stores"
-  - "dept stores"
-  - "airports"
+  - "Liquor stores, dept stores, airports"
 price_yen: "1500-5000"
 what_it_is: "Variety pack of 180ml sake bottles."
 why_travelers_care: "Sample multiple breweries; gift-friendly."
@@ -23,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 6
+launch_category: "gift"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

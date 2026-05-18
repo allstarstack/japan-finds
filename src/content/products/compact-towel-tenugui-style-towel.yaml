@@ -4,12 +4,13 @@ name_en: "Compact towel / tenugui-style towel"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "手ぬぐい・タオル"
 brand: "Daiso / souvenir shops / MUJI"
 where_found:
-  - "100-yen shops"
-  - "souvenir shops"
+  - "Daiso"
+  - "MUJI"
+  - "Souvenir shops"
 price_yen: "~¥110–¥1,000"
 what_it_is: "Small towel for sweat, handwashing, onsen, or gifts."
 why_travelers_care: "Japan restrooms may not always have dryers; useful daily."
@@ -23,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

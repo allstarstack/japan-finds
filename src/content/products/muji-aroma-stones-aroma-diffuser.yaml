@@ -5,10 +5,11 @@ category: "other"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "無印良品 アロマ"
 brand: "Muji"
 where_found:
+  - "Muji official"
   - "Muji stores"
 price_yen: "390-3000"
 what_it_is: "Ceramic + essential oils kit. Hinoki and yuzu scents."
@@ -21,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

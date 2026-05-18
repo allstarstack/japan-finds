@@ -4,12 +4,9 @@ name_en: "BOSS Canned Coffee"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "ボス"
-brand: "Suntory"
+status: "ready"
 where_found:
-  - "Konbini"
-  - "vending"
+  - "Konbini, vending"
 price_yen: "120-150"
 what_it_is: "Cold/hot canned coffee, the Tommy Lee Jones ads are legendary."
 why_travelers_care: "Vending machine ritual, hot can in winter is a sensory moment."
@@ -20,3 +17,7 @@ source_links:
   - "suntory.co.jp/softdrink/boss"
 confidence: "high"
 trip_score: 8
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "drink"

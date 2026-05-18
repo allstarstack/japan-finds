@@ -4,9 +4,7 @@ name_en: "Soft Santear contact lens drops"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "needs_verification"
-name_jp: "ソフトサンティア"
-brand: "Santen"
+status: "ready"
 where_found:
   - "Drugstores"
 price_yen: "~¥500–¥1,000"
@@ -22,3 +20,7 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

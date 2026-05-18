@@ -6,7 +6,7 @@ intent:
   - "bring_home"
   - "gift_easy"
   - "local_editions"
-status: "needs_verification"
+status: "ready"
 name_jp: "ご当地キットカット"
 brand: "Nestle Japan"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

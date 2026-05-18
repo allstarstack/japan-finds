@@ -4,11 +4,12 @@ name_en: "Daiso Anti-Fog Wipes (for glasses)"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "メガネ拭き 曇り止め"
 brand: "Daiso"
 where_found:
-  - "Daiso"
+  - "Amazon JP (third-party)"
+  - "Daiso (in-store likely)"
 price_yen: "110-330"
 what_it_is: "Anti-fog wipes for glasses (mask use legacy)."
 why_travelers_care: "Day-1 fix in humid Japan summers."
@@ -17,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 5
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

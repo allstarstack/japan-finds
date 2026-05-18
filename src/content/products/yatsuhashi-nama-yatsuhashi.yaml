@@ -4,7 +4,7 @@ name_en: "Yatsuhashi / Nama Yatsuhashi"
 category: "snacks"
 intent:
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "八ッ橋・生八ッ橋"
 brand: "Izutsu / Shogoin / various"
 where_found:
@@ -23,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 7
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

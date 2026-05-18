@@ -4,11 +4,13 @@ name_en: "Plus Air-In Eraser"
 category: "stationery"
 intent:
   - "stock_up"
-status: "v1_candidate"
+status: "ready"
 name_jp: "エアイン消しゴム"
 brand: "Plus"
 where_found:
-  - "Stationery stores"
+  - "Plus official"
+  - "Amazon JP"
+  - "Yodobashi"
 price_yen: "100-200"
 what_it_is: "Soft eraser with internal air pockets, clean erase."
 why_travelers_care: "Pen-nerd cult eraser."
@@ -17,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 5
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

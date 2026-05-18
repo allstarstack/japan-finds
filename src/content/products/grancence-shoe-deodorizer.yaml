@@ -4,12 +4,13 @@ name_en: "Grancence Shoe Deodorizer"
 category: "other"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "グランズレメディ系 / GRANCENCE"
 brand: "Grancence"
 where_found:
   - "Drugstores"
   - "Donki"
+  - "Amazon JP"
 price_yen: "1500-2500"
 what_it_is: "Shoe-powder deodorizer, alternative to NZ-made Gran's Remedy."
 why_travelers_care: "Shoes-off culture means feet-prep matters."
@@ -20,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 6
 suitcase_score: 10
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

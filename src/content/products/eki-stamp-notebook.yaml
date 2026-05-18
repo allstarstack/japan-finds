@@ -4,12 +4,13 @@ name_en: "Eki stamp notebook"
 category: "other"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "駅スタンプ帳"
 brand: "JR/station shops / generic notebooks"
 where_found:
-  - "Train stations"
-  - "stationery stores"
+  - "JR station shops"
+  - "Loft"
+  - "Hands"
 price_yen: "~¥200–¥1,500"
 what_it_is: "Notebook used to collect free station stamps."
 why_travelers_care: "Turns transit into a collectible trip game."
@@ -23,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 9
 suitcase_score: 9
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

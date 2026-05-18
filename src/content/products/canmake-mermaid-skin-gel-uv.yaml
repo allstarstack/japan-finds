@@ -4,7 +4,7 @@ name_en: "Canmake Mermaid Skin Gel UV"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "キャンメイク マーメイドスキンジェルUV"
 brand: "Canmake / IDA Laboratories"
 where_found:
@@ -25,3 +25,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 7
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

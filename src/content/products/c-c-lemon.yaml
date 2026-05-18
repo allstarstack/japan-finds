@@ -4,12 +4,9 @@ name_en: "C.C. Lemon"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "hold"
-name_jp: "C.C.レモン"
-brand: "Suntory"
+status: "ready"
 where_found:
-  - "Konbini"
-  - "vending"
+  - "Konbini, vending"
 price_yen: "120-150"
 what_it_is: "Lemon soda fortified with vitamin C. The yellow bottle is the icon."
 why_travelers_care: "Recognizable visual, mild flavor, kid-safe option for content."
@@ -19,3 +16,7 @@ source_links:
   - "suntory.co.jp/softdrink/cclemon"
 confidence: "high"
 trip_score: 6
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "drink"

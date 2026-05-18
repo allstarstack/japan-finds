@@ -5,9 +5,7 @@ category: "other"
 intent:
   - "bring_home"
   - "local_editions"
-status: "v1_candidate"
-name_jp: "どんぐり共和国"
-brand: "Ghibli"
+status: "ready"
 where_found:
   - "Donguri stores"
 price_yen: "500-10000+"
@@ -20,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

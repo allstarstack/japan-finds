@@ -4,12 +4,14 @@ name_en: "Anessa Perfect UV Sunscreen Milk"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "アネッサ"
 brand: "Shiseido"
 where_found:
-  - "Drugstores"
-  - "Don Quijote"
+  - "Shiseido official"
+  - "Amazon JP"
+  - "Yodobashi"
+  - "cosme"
 price_yen: "2500-3500"
 what_it_is: "SPF 50+ PA++++ sunscreen, gold-bottle classic, sweat/water responsive."
 why_travelers_care: "Beauty-press top-rated, internationally cult."
@@ -21,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 10
 suitcase_score: 10
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -6,12 +6,9 @@ intent:
   - "bring_home"
   - "gift_easy"
   - "local_editions"
-status: "v1_candidate"
-name_jp: "サンリオ"
-brand: "Sanrio"
+status: "ready"
 where_found:
-  - "Sanrio shops"
-  - "dept stores"
+  - "Sanrio shops, dept stores"
 price_yen: "300-5000"
 what_it_is: "Plush, stationery, accessories. Some character-specific shops sell exclusives."
 why_travelers_care: "Cinnamoroll and Pochacco are the breakout 2020s characters."
@@ -22,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

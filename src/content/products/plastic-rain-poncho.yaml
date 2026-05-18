@@ -4,11 +4,13 @@ name_en: "Plastic rain poncho"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "レインポンチョ"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
   - "konbini"
 price_yen: "~¥110–¥330"
 what_it_is: "Disposable or reusable rain poncho."
@@ -23,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 6
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

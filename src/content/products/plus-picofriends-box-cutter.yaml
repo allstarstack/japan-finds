@@ -4,11 +4,14 @@ name_en: "Plus Picofriends Box Cutter"
 category: "other"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ピコフレンズ カッター"
 brand: "Plus"
 where_found:
-  - "Hands / Loft"
+  - "Plus official"
+  - "Hands"
+  - "Loft"
+  - "Amazon JP"
 price_yen: "~¥600"
 what_it_is: "Animal-shaped ceramic box cutter."
 why_travelers_care: "Cute but useful desk object; check blade/travel rules."
@@ -20,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 2
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

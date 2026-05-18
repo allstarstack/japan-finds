@@ -4,12 +4,11 @@ name_en: "Yamato Takkyubin Luggage Forwarding"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "宅急便"
 brand: "Yamato Transport"
 where_found:
-  - "Hotels"
-  - "airport counters"
+  - "Yamato Transport hotel/airport counters"
 price_yen: "2000-3500 per piece"
 what_it_is: "Same/next-day luggage forwarding hotel-to-hotel or airport-to-hotel."
 why_travelers_care: "Travel light through Shinkansen routes."
@@ -19,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 0
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

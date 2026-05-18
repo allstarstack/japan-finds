@@ -5,10 +5,11 @@ category: "other"
 intent:
   - "day_one_fixes"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "無印良品 トラベルポーチ"
 brand: "Muji"
 where_found:
+  - "Muji official"
   - "Muji stores"
 price_yen: "990-2000"
 what_it_is: "Mesh and fabric packing cubes, multiple sizes."
@@ -18,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -5,13 +5,14 @@ category: "snacks"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "東京ばな奈"
 brand: "Grapestone"
 where_found:
-  - "Tokyo stations"
-  - "Donki"
-  - "airport"
+  - "Tokyo Banana official"
+  - "Tokyo Station"
+  - "Haneda"
+  - "Narita"
 price_yen: "1100-2000"
 what_it_is: "Banana custard cream sponge cake, dozens of variants."
 why_travelers_care: "Default Tokyo omiyage."
@@ -23,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

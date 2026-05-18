@@ -4,12 +4,13 @@ name_en: "Coin purse"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "小銭入れ"
 brand: "Daiso / Seria / Can Do / souvenir shops"
 where_found:
-  - "100-yen shops"
-  - "stations"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
 price_yen: "~¥110–¥1,000"
 what_it_is: "Small pouch for coins."
 why_travelers_care: "Still useful for gachapon, temples, lockers, and vending machines."
@@ -22,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

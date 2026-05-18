@@ -4,11 +4,12 @@ name_en: "Display Katana / Souvenir Samurai Sword"
 category: "other"
 intent:
   - "content_only"
-status: "content_only"
+status: "ready"
 name_jp: "模造刀"
 brand: "Generic"
 where_found:
   - "Tourist shops"
+  - "specialty katana shops"
 price_yen: "¥5,000+"
 what_it_is: "Decorative sword replica."
 why_travelers_care: "Avoid as recommendation due travel/security friction."
@@ -21,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 1
 suitcase_score: 0
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,7 +4,7 @@ name_en: "Keana Nadeshiko Rice Mask"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "毛穴撫子 お米のマスク"
 brand: "Ishizawa Laboratories"
 where_found:
@@ -25,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 7
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

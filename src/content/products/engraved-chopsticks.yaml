@@ -4,13 +4,13 @@ name_en: "Engraved chopsticks"
 category: "other"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "名入れ箸"
 brand: "Various"
 where_found:
-  - "Souvenir shops"
-  - "department stores"
-  - "chopstick shops"
+  - "Hyozaemon"
+  - "Hashikura Matsukan"
+  - "specialty shops"
 price_yen: "~¥800–¥3,000"
 what_it_is: "Personalized chopsticks with name engraving."
 why_travelers_care: "Small, readable, highly giftable."
@@ -23,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 10
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

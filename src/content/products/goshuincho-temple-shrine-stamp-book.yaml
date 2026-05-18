@@ -4,7 +4,7 @@ name_en: "Goshuincho temple/shrine stamp book"
 category: "other"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "御朱印帳"
 brand: "Temples/shrines / stationery makers"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 9
 suitcase_score: 9
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

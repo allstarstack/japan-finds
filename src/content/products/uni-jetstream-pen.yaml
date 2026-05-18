@@ -4,13 +4,14 @@ name_en: "Uni Jetstream pen"
 category: "100-yen"
 intent:
   - "stock_up"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ジェットストリーム"
 brand: "Mitsubishi Pencil / uni"
 where_found:
   - "Loft"
   - "Hands"
   - "Itoya"
+  - "Amazon JP"
   - "konbini"
 price_yen: "~¥150–¥1,500"
 what_it_is: "Smooth low-viscosity ballpoint pen."
@@ -26,3 +27,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

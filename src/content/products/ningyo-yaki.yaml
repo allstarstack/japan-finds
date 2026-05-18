@@ -4,13 +4,13 @@ name_en: "Ningyo-yaki"
 category: "snacks"
 intent:
   - "local_editions"
-status: "hold"
+status: "ready"
 name_jp: "人形焼"
 brand: "Various"
 where_found:
   - "Asakusa"
   - "Ningyocho"
-  - "Tokyo souvenir shops"
+  - "Tokyo souvenir"
 price_yen: "~¥500–¥1,500"
 what_it_is: "Small molded cakes often filled with red bean paste."
 why_travelers_care: "Cute shape, local story, good on-site snack or short-life gift."
@@ -23,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 5
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

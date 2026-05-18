@@ -4,11 +4,12 @@ name_en: "Washi tape"
 category: "100-yen"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "マスキングテープ"
 brand: "mt / Daiso / Seria / various"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
   - "Loft"
   - "Hands"
   - "Itoya"
@@ -26,3 +27,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

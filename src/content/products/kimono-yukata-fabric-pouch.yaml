@@ -4,13 +4,13 @@ name_en: "Kimono/yukata fabric pouch"
 category: "other"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "着物生地ポーチ"
 brand: "Various makers"
 where_found:
   - "Souvenir shops"
   - "craft markets"
-  - "department stores"
+  - "dept stores"
 price_yen: "~¥800–¥3,000"
 what_it_is: "Small pouch made from Japanese-pattern fabric."
 why_travelers_care: "Giftable, light, more durable than food."
@@ -23,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

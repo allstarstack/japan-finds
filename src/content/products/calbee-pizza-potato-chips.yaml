@@ -5,7 +5,7 @@ category: "snacks"
 intent:
   - "try_in_japan"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ピザポテト"
 brand: "Calbee"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

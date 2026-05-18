@@ -4,12 +4,13 @@ name_en: "Daiso Chopstick Rests"
 category: "100-yen"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "箸置き"
 brand: "Daiso"
 where_found:
   - "Daiso"
   - "Seria"
+  - "Can Do"
 price_yen: "110"
 what_it_is: "Cute ceramic chopstick rests."
 why_travelers_care: "Tiny gift, easy."
@@ -20,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

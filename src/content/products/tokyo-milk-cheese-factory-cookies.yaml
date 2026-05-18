@@ -5,12 +5,13 @@ category: "snacks"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "東京ミルクチーズ工場"
 brand: "Cheese Garden"
 where_found:
+  - "Tokyo Milk Cheese official"
   - "Tokyo Station"
-  - "airport"
+  - "airport shops"
 price_yen: "1000-1500"
 what_it_is: "Cheese-cookie sandwich with white chocolate or salted-cheese filling."
 why_travelers_care: "Tokyo Station gift staple."
@@ -21,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"
