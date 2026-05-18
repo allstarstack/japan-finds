@@ -4,6 +4,7 @@
    Desktop: 2-col — text/chips/CTA left, map card right. */
 import Eyebrow from "./Eyebrow.astro";
 import MapPreview from "./MapPreview.astro";
+import { JAPAN_MAP_URL } from "../data/site.js";
 ---
 
 <section id="map" class="map-sec" aria-labelledby="map-h2">
@@ -25,7 +26,12 @@ import MapPreview from "./MapPreview.astro";
         <li class="chip chip--yellow">● WEIRDLY USEFUL</li>
       </ul>
       <div class="map-sec__cta-block">
-        <a class="btn btn--primary btn--lg btn--responsive" href="#map">
+        <a
+          class="btn btn--primary btn--lg btn--responsive"
+          href={JAPAN_MAP_URL}
+          target="_blank"
+          rel="noopener"
+        >
           Get the Japan Map&nbsp;→
         </a>
         <p class="map-sec__micro">

@@ -1,6 +1,7 @@
 ---
 /* §01 Start Here — four resource cards, each with a category color stripe. */
 import Eyebrow from "./Eyebrow.astro";
+import { JAPAN_MAP_URL } from "../data/site.js";
 
 const cards = [
   {
@@ -12,7 +13,8 @@ const cards = [
     body: "Food spots, shops, rainy-day saves, and weirdly useful places worth pinning before you land.",
     micro: 'For when "I saw it in a Reel once" is not a travel plan.',
     cta: "Get the map",
-    href: "#map",
+    href: JAPAN_MAP_URL,
+    external: true,
   },
   {
     sec: 2,
@@ -68,7 +70,14 @@ const cards = [
               <h3 class="rc__title">{c.title}</h3>
               <p class="rc__copy">{c.body}</p>
               <p class="rc__micro">{c.micro}</p>
-              <a class="rc__cta" href={c.href}>{c.cta} →</a>
+              <a
+                class="rc__cta"
+                href={c.href}
+                target={c.external ? "_blank" : undefined}
+                rel={c.external ? "noopener" : undefined}
+              >
+                {c.cta} →
+              </a>
             </div>
           </article>
         ))

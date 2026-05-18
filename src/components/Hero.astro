@@ -2,6 +2,7 @@
 /* Hero — calm headline, two CTAs, trust strip.
    Desktop adds a saved-finds preview cluster (4 offset cards). */
 import Picture from "./Picture.astro";
+import { JAPAN_MAP_URL } from "../data/site.js";
 
 const previews = [
   {
@@ -67,7 +68,12 @@ const previews = [
         what's worth pinning, buying, or skipping.
       </p>
       <div class="hero__ctas">
-        <a class="btn btn--primary btn--lg btn--responsive" href="#map">
+        <a
+          class="btn btn--primary btn--lg btn--responsive"
+          href={JAPAN_MAP_URL}
+          target="_blank"
+          rel="noopener"
+        >
           Get the Japan Map&nbsp;→
         </a>
         <a class="btn btn--secondary btn--lg btn--responsive" href="/products">
