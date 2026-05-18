@@ -7,7 +7,8 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Donguri stores"
+  - "Donguri Republic"
+  - "Donguri Sora online"
 price_yen: "500-10000+"
 what_it_is: "Studio Ghibli official goods."
 why_travelers_care: "Reliable kid + adult gift."
@@ -15,9 +16,12 @@ risk_flags:
   - "fragile (some)"
 source_links:
   - "benelic.com/donguri"
+  - "https://www.donguri-sora.com/"
+  - "https://www.donguri-sora.com/page/202604_mothersgift.html"
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "どんぐり共和国 ジブリグッズ"

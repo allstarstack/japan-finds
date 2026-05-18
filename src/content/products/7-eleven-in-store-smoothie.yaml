@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "7-Eleven with smoothie machine"
+  - "7-Eleven"
 price_yen: "~¥300–¥400"
 what_it_is: "Frozen fruit/veg cup blended in-store using a machine."
 why_travelers_care: "Fun on-site process and photogenic machine interaction."
@@ -17,9 +17,13 @@ risk_flags:
 verification_notes: "Machine availability differs by store."
 source_links:
   - "https://www.sej.co.jp/in/en.html"
+  - "https://www.sej.co.jp/products/smoothie/"
+  - "https://www.sej.co.jp/products/a/smoothie/"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "セブンカフェ スムージー"
+agent_notes: "Machine-prepared frozen cup line"

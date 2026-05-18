@@ -6,7 +6,9 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "100-yen shops, kitchen stores"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
 price_yen: "~¥110–¥800"
 what_it_is: "Tools for cutting seaweed/cheese/ham into shapes."
 why_travelers_care: "Tiny, cute, very Japan bento-core gift."
@@ -17,9 +19,13 @@ verification_notes: "Check age warning and cleaning instructions."
 source_links:
   - "https://www.gltjp.com/en/article/item/21322/"
   - "https://www.gltjp.com/en/article/item/21292/"
+  - "https://jp.daisonet.com/products/4550480470641"
+  - "https://jp.daisonet.com/products/4549131591262"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "海苔パンチ・抜き型"
+agent_notes: "Daiso confirms nori punch cutters vary"

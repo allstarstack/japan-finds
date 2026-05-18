@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "All major konbini"
+  - "7-Eleven"
 price_yen: "150-200"
 what_it_is: "Onigiri with grilled salmon flake center."
 why_travelers_care: "Less polarizing than tuna mayo, often the daily breakfast pick."
@@ -15,9 +15,12 @@ risk_flags:
 verification_notes: "Check specific filling and allergy label."
 source_links:
   - "konbini sites"
+  - "https://www.sej.co.jp/products/a/item/041908/"
+  - "https://www.sej.co.jp/products/a/onigiri/"
 confidence: "high"
 trip_score: 9
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "手巻おにぎり 炭火焼熟成紅しゃけ"

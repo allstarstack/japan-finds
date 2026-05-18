@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, Donki"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "~¥400–¥900"
 what_it_is: "Cooling eye drops in silver/blue packaging."
 why_travelers_care: "Famous Japanese eye-drop experience, but medicinal."
@@ -18,10 +21,13 @@ verification_notes: "Verify suitability for contacts and active ingredients."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.donki.com/en/"
+  - "https://www.santen.com/jp/healthcare/eye/products/brand/sante_fx"
+  - "https://www.santen.com/jp/healthcare/eye/products"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 5
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "サンテFX"

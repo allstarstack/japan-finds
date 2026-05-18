@@ -6,7 +6,10 @@ intent:
   - "content_only"
 status: "ready"
 where_found:
-  - "Drugstores, Donki"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "~¥400–¥800"
 what_it_is: "Adhesive strip for removing pore plugs."
 why_travelers_care: "Visually recognizable but not essential or universally skin-friendly."
@@ -17,10 +20,13 @@ verification_notes: "Dermatology suitability and ingredients need checking."
 source_links:
   - "https://www.kao.com/jp/products/bioreuv/"
   - "https://www.matsukiyococokara-online.com/"
+  - "https://www.kao.co.jp/biore/lineup/keana/"
+  - "https://www.kao-kirei.com/ja/brand/khg/biore/"
 confidence: "medium"
 trip_score: 5
 suitcase_score: 5
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "skincare"
+name_jp: "ビオレ 毛穴すっきりパック"

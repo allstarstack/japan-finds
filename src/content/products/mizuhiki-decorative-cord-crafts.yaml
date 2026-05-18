@@ -7,15 +7,21 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Iida, dept stores, specialty shops"
+  - "Iida Mizuhiki shops"
+  - "Loft"
+  - "Hands"
 price_yen: "300-3000"
 what_it_is: "Decorative paper-cord ornaments, traditionally used on gift envelopes."
 why_travelers_care: "Beautiful, tiny, photogenic."
 source_links:
   - "general"
+  - "https://www.iida-mizuhiki.jp/"
+  - "unknown"
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "水引"
+agent_notes: "Craft category maker varies"

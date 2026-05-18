@@ -7,7 +7,9 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Disney parks only"
+  - "Tokyo Disneyland"
+  - "Tokyo DisneySea"
+  - "Tokyo Disney Resort App"
 price_yen: "500-10000"
 what_it_is: "Park-exclusive Duffy & Friends, Ariel, Toy Story merch."
 why_travelers_care: "Park-only items don't exist outside Japan; Duffy is the standout."
@@ -15,9 +17,13 @@ risk_flags:
   - "fragile (some)"
 source_links:
   - "tokyodisneyresort.jp"
+  - "https://www.tokyodisneyresort.jp/tds/goods/comingsoon.html"
+  - "https://www.tokyodisneyresort.jp/treasure/tds25th/goods06.html"
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "東京ディズニーリゾート グッズ"
+agent_notes: "Park-limited and season-limited items rotate"

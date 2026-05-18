@@ -7,7 +7,9 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Souka, dept stores"
+  - "Soka Senbei shops"
+  - "Aeon"
+  - "department-store food halls"
 price_yen: "1500-5000"
 what_it_is: "Premium rice crackers in collectible tins."
 why_travelers_care: "Savory alternative to sweet omiyage."
@@ -15,9 +17,13 @@ risk_flags:
   - "allergen-soy-wheat"
 source_links:
   - "general"
+  - "https://www.sokasenbei.com/"
+  - "unknown"
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "草加せんべい"
+agent_notes: "Regional maker varies"

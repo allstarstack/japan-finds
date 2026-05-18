@@ -8,7 +8,10 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "Gachapon Halls, Donki, malls"
+  - "Gashapon Bandai Official Shop"
+  - "Yodobashi Camera"
+  - "Bic Camera"
+  - "Aeon Mall"
 price_yen: "300-500 per pull"
 what_it_is: "Capsule machine toys, every theme imaginable."
 why_travelers_care: "Cheap thrill, kids love, content gold."
@@ -19,9 +22,13 @@ risk_flags:
 verification_notes: "Gachapon Halls in Akihabara/Ikebukuro are content destinations"
 source_links:
   - "general"
+  - "https://www.gashapon.jp/schedule/"
+  - "https://gashapon.jp/schedule/"
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ガシャポン"
+agent_notes: "Capsule lineup changes monthly"

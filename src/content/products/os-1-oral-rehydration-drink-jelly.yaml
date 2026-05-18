@@ -6,7 +6,9 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Drugstores, some konbini"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
 price_yen: "~¥200–¥300"
 what_it_is: "Oral rehydration solution or jelly marketed for dehydration care."
 why_travelers_care: "Could help during extreme heat, but not a casual drink."
@@ -17,9 +19,13 @@ risk_flags:
 verification_notes: "Medical suitability must be verified; avoid casual recommendation language."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
+  - "https://www.os-1.jp/"
+  - "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987035576402"
 confidence: "medium"
 trip_score: 6
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "オーエスワン"
+agent_notes: "Medical-use rehydration drink"

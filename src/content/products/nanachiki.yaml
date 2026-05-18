@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "7-Eleven hot snack counter"
+  - "7-Eleven"
 price_yen: "~¥240–¥280"
 what_it_is: "7-Eleven fried chicken seasoned with spices."
 why_travelers_care: "Good comparison item vs Fami-Chiki/Lawson chicken."
@@ -18,9 +18,12 @@ risk_flags:
 verification_notes: "Confirm current price and spice variant."
 source_links:
   - "https://www.sej.co.jp/in/en.html"
+  - "https://www.sej.co.jp/products/a/item/150398/"
+  - "https://www.sej.co.jp/products/a/hotsnack/"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "ななチキ"

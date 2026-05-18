@@ -6,7 +6,9 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Hot case, Oct-Mar"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
 price_yen: "80-150 per item"
 what_it_is: "Dashi-simmered ingredients: daikon, egg, konnyaku, hanpen, etc., assembled by piece."
 why_travelers_care: "Communal hot-case ritual, pick-your-own assembly is content-friendly."
@@ -15,9 +17,13 @@ risk_flags:
 verification_notes: "Stocking varies by region; Kansai vs Kanto dashi differs"
 source_links:
   - "konbini sites"
+  - "https://www.sej.co.jp/products/a/oden/"
+  - "https://www.lawson.co.jp/recommend/original/oden/"
 confidence: "high"
 trip_score: 9
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "おでん"
+agent_notes: "Seasonal and store-dependent"

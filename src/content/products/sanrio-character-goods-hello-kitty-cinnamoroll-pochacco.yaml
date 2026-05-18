@@ -8,7 +8,9 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Sanrio shops, dept stores"
+  - "Sanrio"
+  - "Sanrio Shop"
+  - "Sanrio Online Shop"
 price_yen: "300-5000"
 what_it_is: "Plush, stationery, accessories. Some character-specific shops sell exclusives."
 why_travelers_care: "Cinnamoroll and Pochacco are the breakout 2020s characters."
@@ -16,9 +18,12 @@ risk_flags:
   - "fragile (some)"
 source_links:
   - "sanrio.co.jp"
+  - "https://shop.sanrio.co.jp/"
+  - "https://shop.sanrio.co.jp/item?new=30"
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "サンリオキャラクターグッズ"

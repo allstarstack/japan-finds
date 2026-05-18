@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "FamilyMart chilled sweets"
+  - "FamilyMart"
 price_yen: "~¥300–¥400"
 what_it_is: "Layered pudding with soufflé cheesecake-style top."
 why_travelers_care: "More dramatic than standard pudding; good visual spoon shot."
@@ -17,9 +17,13 @@ risk_flags:
 verification_notes: "Confirm current version and region."
 source_links:
   - "https://www.family.co.jp/for_tourist/en.html"
+  - "https://www.family.co.jp/goods/dessert.html"
+  - "unknown"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "sweet"
+name_jp: "スフレ・プリン"
+agent_notes: "Current SKU not confirmed on listing"

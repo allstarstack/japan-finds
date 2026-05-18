@@ -6,7 +6,10 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "100-yen shops, character shops, konbini"
+  - "Daiso"
+  - "Sanrio"
+  - "Pokemon Center"
+  - "Aeon"
 price_yen: "~¥110–¥800"
 what_it_is: "Small character towel for school/travel."
 why_travelers_care: "Useful in Japan restrooms and giftable."
@@ -17,9 +20,13 @@ source_links:
   - "https://www.gltjp.com/en/article/item/21322/"
   - "https://www.donki.com/en/"
   - "https://www.gltjp.com/en/article/item/21292/"
+  - "https://shop.sanrio.co.jp/"
+  - "https://www.pokemoncenter-online.com/"
 confidence: "medium"
 trip_score: 8
 suitcase_score: 9
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "子ども用ミニタオル"
+agent_notes: "Category row character and maker vary"

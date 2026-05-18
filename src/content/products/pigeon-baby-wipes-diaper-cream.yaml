@@ -6,7 +6,10 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "Drugstores, baby stores"
+  - "Akachan Honpo"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Aeon"
 price_yen: "500-2000"
 what_it_is: "Japanese baby brand, gentle formulas."
 why_travelers_care: "Trusted baby brand for traveling parents."
@@ -14,9 +17,13 @@ risk_flags:
   - "skincare/cosmetic claim"
 source_links:
   - "pigeon.co.jp"
+  - "https://pigeon.info/products/category/babycare/"
+  - "https://pigeon.info/products/category/skincare/"
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ピジョン おしりナップ / ベビークリーム"
+agent_notes: "Row combines wipes and skincare"

@@ -6,7 +6,7 @@ intent:
   - "content_only"
 status: "ready"
 where_found:
-  - "Donki costume floor"
+  - "Don Quijote"
 price_yen: "1000-10000"
 what_it_is: "Halloween costumes, party wigs, novelty items."
 why_travelers_care: "Pure content fuel — not really a buy unless event-relevant."
@@ -14,10 +14,14 @@ risk_flags:
   - "bulky"
 source_links:
   - "donki.com"
+  - "https://www.donki.com/"
+  - "unknown"
 confidence: "high"
 trip_score: 4
 suitcase_score: 3
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 featured: true
+name_jp: "コスプレ"
+agent_notes: "Category-level only exact items vary by store"

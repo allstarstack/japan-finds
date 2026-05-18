@@ -7,7 +7,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "All drugstores"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "1500-1800"
 what_it_is: "Premium multi-active eye drops, classic teal box."
 why_travelers_care: "Famous TikTok 'tingly Japanese eye drops' product, polarizing sensation."
@@ -16,10 +19,13 @@ risk_flags:
 verification_notes: "DO NOT carry on if traveling to certain countries; check destination customs for naphazoline/tetrahydrozoline"
 source_links:
   - "rohto.co.jp/v-rohto"
+  - "https://jp.rohto.com/vrohto-premium/"
+  - "https://jp.rohto.com/eyecare/"
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "Vロートプレミアム"

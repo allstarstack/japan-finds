@@ -6,7 +6,10 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "Donki, drugstores, Loft"
+  - "Don Quijote"
+  - "Matsumoto Kiyoshi"
+  - "Loft"
+  - "@cosme STORE"
 price_yen: "~¥500–¥2,000"
 what_it_is: "Sheet masks sold in packs or travel sizes."
 why_travelers_care: "Easy bulk purchase for beauty shoppers; good value in Japan."
@@ -18,9 +21,13 @@ source_links:
   - "https://www.donki.com/en/"
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.cosme.net/"
+  - "https://lululun.com/"
+  - "https://saborino.jp/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 7
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "フェイスマスク"
+agent_notes: "Brand varies by retailer"

@@ -7,7 +7,9 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Dept store food halls"
+  - "Suzukake"
+  - "Tsuruya Yoshinobu"
+  - "department-store food halls"
 price_yen: "1500-5000"
 what_it_is: "Premium wagashi gift boxes."
 why_travelers_care: "Beautiful packaging, real-deal craft."
@@ -17,9 +19,13 @@ verification_notes: "Some are perishable; check shelf life"
 source_links:
   - "suzukake.co.jp"
   - "tsuruyayoshinobu.jp"
+  - "https://www.suzukake.co.jp/onlineshop"
+  - "https://www.tsuruyayoshinobu.jp/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "鈴懸 和菓子 / 鶴屋吉信 和菓子"
+agent_notes: "Row combines two wagashi makers"

@@ -6,7 +6,10 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini, vending, everywhere"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
+  - "Aeon"
 price_yen: "120-160"
 what_it_is: "Cold bottled unsweetened green tea, ubiquitous."
 why_travelers_care: "Hydration baseline, replaces water for most travelers after day 2."
@@ -15,9 +18,13 @@ risk_flags:
 source_links:
   - "itoen.co.jp"
   - "suntory.co.jp/water/iyemon"
+  - "https://products.suntory.co.jp/d/4901777449657/"
+  - "https://www.itoen.jp/oiocha/"
 confidence: "high"
 trip_score: 7
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "伊右衛門 / お～いお茶"
+agent_notes: "Row combines two separate green-tea brands"

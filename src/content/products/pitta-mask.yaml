@@ -6,7 +6,10 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Drugstores, Donki"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "~¥400–¥800"
 what_it_is: "Soft polyurethane fashion mask."
 why_travelers_care: "Distinctive look and color options; less functional than medical masks."
@@ -18,10 +21,13 @@ verification_notes: "Check filtration claims and current availability."
 source_links:
   - "https://www.matsukiyococokara-online.com/"
   - "https://www.donki.com/en/"
+  - "https://www.arax.co.jp/pittamask/"
+  - "https://www.arax.co.jp/seihin/mask.html"
 confidence: "medium"
 trip_score: 6
 suitcase_score: 6
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "ピッタマスク"

@@ -7,18 +7,25 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Liquor stores, dept stores, airports"
+  - "Seijo Ishii"
+  - "department-store liquor floors"
+  - "airport shops"
 price_yen: "1500-5000"
 what_it_is: "Variety pack of 180ml sake bottles."
 why_travelers_care: "Sample multiple breweries; gift-friendly."
 risk_flags:
   - "liquid, alcohol, fragile"
+  - "alcohol"
 verification_notes: "Customs limits, packaging fragility"
 source_links:
   - "general"
+  - "https://seijoishii.com/collections/cat12-09-01"
+  - "https://corporate.seijoishii.com/blogs/press/20260514"
 confidence: "high"
 trip_score: 7
 suitcase_score: 6
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "日本酒ミニボトルセット"
+agent_notes: "Mini-bottle set varies by brewery"

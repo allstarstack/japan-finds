@@ -7,7 +7,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Konbini, vending machines, drugstores"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
+  - "Matsumoto Kiyoshi"
 price_yen: "120-150"
 what_it_is: "Electrolyte sports drink, lighter and less sweet than Gatorade."
 why_travelers_care: "Hangover and heat-stroke staple, the name alone is content."
@@ -16,9 +19,12 @@ risk_flags:
 verification_notes: "Available some Asian groceries abroad but Japan version is standard reference"
 source_links:
   - "otsuka.co.jp/en/health-and-illness/pocari-sweat"
+  - "https://pocarisweat.jp/"
+  - "https://www.otsuka-plus1.com/shop/c/c1010/"
 confidence: "high"
 trip_score: 9
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "ポカリスエット"

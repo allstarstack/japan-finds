@@ -6,7 +6,9 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Hot case, winter dominant"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
 price_yen: "130-180"
 what_it_is: "Steamed white bun filled with seasoned pork."
 why_travelers_care: "Winter ritual, cheap, warming, transports easily within a single afternoon."
@@ -15,9 +17,13 @@ risk_flags:
 verification_notes: "Best Oct-Mar, limited in summer"
 source_links:
   - "konbini sites"
+  - "https://www.sej.co.jp/products/a/chukaman/"
+  - "https://www.family.co.jp/goods/chukaman.html"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "肉まん"
+agent_notes: "Seasonal hot-case item"

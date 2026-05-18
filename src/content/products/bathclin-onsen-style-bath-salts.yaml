@@ -7,7 +7,10 @@ intent:
   - "gift_easy"
 status: "ready"
 where_found:
-  - "All drugstores"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
+  - "Don Quijote"
 price_yen: "500-1500"
 what_it_is: "Powdered bath salts mimicking famous Japanese onsen (Kusatsu, Beppu, etc.)."
 why_travelers_care: "Onsen omiyage in powder form."
@@ -15,10 +18,14 @@ risk_flags:
   - "allergen-fragrance"
 source_links:
   - "bathclin.co.jp"
+  - "https://www.bathclin.co.jp/products/bathclin/"
+  - "https://www.bathclin.co.jp/news/"
 confidence: "high"
 trip_score: 7
 suitcase_score: 9
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "comfort"
+name_jp: "バスクリン"
+agent_notes: "Bathclin merged into Earth Corp Jan 2026"

@@ -7,7 +7,9 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Tokyo stations, Donki, airport"
+  - "Tokyo Station"
+  - "Haneda Airport"
+  - "Narita Airport"
 price_yen: "1100-2000"
 what_it_is: "Sponge cake filled with banana custard. Now sells dozens of variants."
 why_travelers_care: "Default Tokyo omiyage; safe gift for coworkers."
@@ -16,9 +18,13 @@ risk_flags:
 verification_notes: "Shelf life shorter than most omiyage; check date on box"
 source_links:
   - "tokyobanana.jp"
+  - "https://www.tokyobanana.jp/products/"
+  - "https://www.tokyobanana.jp/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "東京ばな奈"
+agent_notes: "Not all variants sold at Donki"

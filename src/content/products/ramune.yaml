@@ -6,7 +6,9 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini, festivals, druids"
+  - "Don Quijote"
+  - "Aeon"
+  - "festival stalls"
 price_yen: "120-200"
 what_it_is: "Marble-stopper Codd-neck bottle soda. The bottle itself is the experience."
 why_travelers_care: "Marble mechanism is content gold, dozens of flavors."
@@ -15,9 +17,13 @@ risk_flags:
 verification_notes: "Available abroad but the in-Japan unboxing is the point"
 source_links:
   - "general"
+  - "https://www.hata-kosen.co.jp/ramune/"
+  - "https://www.sangaria.co.jp/products/soda/"
 confidence: "high"
 trip_score: 9
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "ラムネ"
+agent_notes: "Brand varies widely"

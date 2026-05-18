@@ -6,7 +6,9 @@ intent:
   - "content_only"
 status: "ready"
 where_found:
-  - "100-yen shops, baby stores"
+  - "Daiso"
+  - "Akachan Honpo"
+  - "Nishimatsuya"
 price_yen: "~¥330–¥2,000"
 what_it_is: "Portable child toilet seat accessory."
 why_travelers_care: "Practical for some families but bulky and hygiene-sensitive."
@@ -18,9 +20,13 @@ verification_notes: "Verify size, cleaning, and trip need."
 source_links:
   - "https://www.gltjp.com/en/article/item/21322/"
   - "https://www.gltjp.com/en/article/item/21292/"
+  - "https://www.akachan.jp/"
+  - "https://www.nishimatsuya.com/"
 confidence: "low"
 trip_score: 5
 suitcase_score: 3
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "子ども用便座"
+agent_notes: "Current exact SKU not confirmed"

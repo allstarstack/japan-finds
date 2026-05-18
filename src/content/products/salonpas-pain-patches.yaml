@@ -7,19 +7,26 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "All drugstores"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "Sundrug"
 price_yen: "500-1200"
 what_it_is: "Methyl salicylate / menthol topical pain patches for muscle aches."
 why_travelers_care: "Travel hack for walking-blown feet and shoulders, well-known import."
 risk_flags:
   - "medicine/regulated, allergen-aspirin-related"
+  - "NSAID"
 verification_notes: "Sold in US but Japan formulation/sizes differ"
 source_links:
   - "hisamitsu.co.jp"
+  - "https://www.hisamitsu.co.jp/healthcare/products/016.html"
+  - "https://www.salonpas.jp/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
 launch_category: "drugstore"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "meds"
+name_jp: "サロンパス"
+agent_notes: "Contains methyl salicylate"

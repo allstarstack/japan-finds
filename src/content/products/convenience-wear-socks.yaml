@@ -15,9 +15,13 @@ risk_flags:
 verification_notes: "Confirm sizes and current colors."
 source_links:
   - "https://www.family.co.jp/for_tourist/en.html"
+  - "https://www.family.co.jp/goods/cw.html"
+  - "https://www.family.co.jp/goods/cw/7410895.html"
 confidence: "high"
 trip_score: 8
 suitcase_score: 7
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "コンビニエンスウェア ラインソックス"
+agent_notes: "FamilyMart x Hiroshi Ochiai line"

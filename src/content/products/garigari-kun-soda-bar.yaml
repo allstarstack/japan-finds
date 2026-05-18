@@ -6,7 +6,10 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini freezer"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
+  - "Aeon"
 price_yen: "70-100"
 what_it_is: "Cheap soda-flavored ice bar with shaved ice center. Mascot is iconic. Occasional weird flavors (corn potage, napolitan)."
 why_travelers_care: "Cheap thrill, weird flavor drops are content moments."
@@ -15,9 +18,12 @@ risk_flags:
 verification_notes: "Flavor of the season changes frequently"
 source_links:
   - "akagi.com"
+  - "https://www.akagi.com/products/garigari/soda.html"
+  - "https://www.akagi.com/brand/garigarikun/"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "sweet"
+name_jp: "ガリガリ君ソーダ"

@@ -7,7 +7,10 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Toraya stores, dept stores"
+  - "Toraya"
+  - "Isetan"
+  - "Takashimaya"
+  - "Toraya online shop"
 price_yen: "1000-5000"
 what_it_is: "Premium red bean jellied confection from a 500-year-old wagashi house."
 why_travelers_care: "Heritage gift with long shelf life."
@@ -15,9 +18,12 @@ risk_flags:
   - "allergen-soy"
 source_links:
   - "toraya-group.co.jp"
+  - "https://www.toraya-group.co.jp/products/yokan-petite-yorunoume_2026"
+  - "https://www.toraya-group.co.jp/news/20260420-2"
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "とらや 小形羊羹"

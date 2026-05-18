@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Lawson only"
+  - "Lawson"
 price_yen: "240-260"
 what_it_is: "Lawson's bite-sized fried chicken nuggets, multiple rotating flavors (Regular, Red, Cheese, regional)."
 why_travelers_care: "Has its own mascot, rotating flavors mean each trip yields something new."
@@ -15,9 +15,13 @@ risk_flags:
 verification_notes: "Flavor lineup rotates monthly"
 source_links:
   - "lawson.co.jp/recommend/original/karaagekun"
+  - "https://www.lawson.co.jp/recommend/karaagekun40th/"
+  - "https://www.lawson.co.jp/lab/karaagekun/art/1520247_5304.html"
 confidence: "high"
 trip_score: 10
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "からあげクン"
+agent_notes: "40th anniversary campaign in 2026"

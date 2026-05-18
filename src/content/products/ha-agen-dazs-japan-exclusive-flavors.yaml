@@ -6,7 +6,10 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Konbini freezer"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
+  - "Aeon"
 price_yen: "320-380"
 what_it_is: "Japan-only flavors: hojicha, sakura, kinako kuromitsu, etc."
 why_travelers_care: "Familiar brand, unfamiliar Japan-only flavor drops."
@@ -15,9 +18,13 @@ risk_flags:
 verification_notes: "Flavor lineup rotates seasonally"
 source_links:
   - "haagen-dazs.co.jp"
+  - "https://www.haagen-dazs.co.jp/products/minicup/"
+  - "https://www.haagen-dazs.co.jp/news/"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "sweet"
+name_jp: "ハーゲンダッツ ミニカップ"
+agent_notes: "Japan-exclusive flavors rotate"

@@ -8,16 +8,22 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Yodobashi, Akihabara, Gundam Base Tokyo"
+  - "Gundam Base"
+  - "Yodobashi Camera"
+  - "Bic Camera"
+  - "Joshin"
 price_yen: "1000-15000"
 what_it_is: "Gundam plastic model kits, hobby-grade."
 why_travelers_care: "Cult hobby, much cheaper in Japan than abroad."
 verification_notes: "Gundam Base Tokyo has exclusive kits"
 source_links:
   - "bandai-hobby.net"
+  - "https://bandai-hobby.net/gunpla/"
+  - "https://bandai-hobby.net/schedule/"
 confidence: "high"
 trip_score: 9
 suitcase_score: 9
 launch_category: "kids_family"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ガンプラ"

@@ -6,7 +6,10 @@ intent:
   - "day_one_fixes"
 status: "ready"
 where_found:
-  - "Donki, drugstores, konbini"
+  - "Don Quijote"
+  - "Matsumoto Kiyoshi"
+  - "Welcia"
+  - "7-Eleven"
 price_yen: "~¥300–¥700"
 what_it_is: "Mentholated body wipes for hot, sweaty days."
 why_travelers_care: "Summer Japan survival item; very practical first purchase."
@@ -17,9 +20,13 @@ verification_notes: "Check scent/menthol sensitivity."
 source_links:
   - "https://www.donki.com/en/"
   - "https://www.matsukiyococokara-online.com/"
+  - "https://www.kao-kirei.com/ja/brand/khg/bioresarasara/"
+  - "https://www.gatsby.jp/product/facecare/facial-paper/"
 confidence: "high"
 trip_score: 9
 suitcase_score: 7
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "冷感ボディシート"
+agent_notes: "Brand varies by shelf"

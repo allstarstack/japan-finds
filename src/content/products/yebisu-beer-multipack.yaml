@@ -6,17 +6,26 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "Donki, supermarkets, konbini"
+  - "Don Quijote"
+  - "Aeon"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
 price_yen: "250 single / ~1500 6-pack"
 what_it_is: "Sapporo's premium all-malt lager."
 why_travelers_care: "Better than Asahi/Kirin baseline if drinking domestic."
 risk_flags:
   - "liquid, alcohol, fragile"
+  - "alcohol"
 source_links:
   - "sapporobeer.jp/yebisu"
+  - "https://www.sapporobeer.jp/news_release/0000018552/"
+  - "https://www.sapporobeer.jp/yebisu/"
 confidence: "high"
 trip_score: 7
 suitcase_score: 3
 launch_category: "donki"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "ヱビスビール"
+agent_notes: "2026 limited collaboration cans confirmed"

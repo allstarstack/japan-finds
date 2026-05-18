@@ -7,7 +7,10 @@ intent:
   - "local_editions"
 status: "ready"
 where_found:
-  - "Dept stores, specialty ceramic shops"
+  - "Kappabashi"
+  - "Loft"
+  - "Hands"
+  - "department-store tableware floors"
 price_yen: "1000-5000"
 what_it_is: "Boxed sets of artisan chopstick rests."
 why_travelers_care: "Tiny, durable, decorative."
@@ -15,9 +18,12 @@ risk_flags:
   - "fragile"
 source_links:
   - "general"
+  - "unknown"
 confidence: "high"
 trip_score: 7
 suitcase_score: 9
 launch_category: "gift"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
+name_jp: "箸置きセット"
+agent_notes: "No single product confirmed from input"

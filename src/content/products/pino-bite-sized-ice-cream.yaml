@@ -7,7 +7,10 @@ intent:
   - "stock_up"
 status: "ready"
 where_found:
-  - "Konbini freezer"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
+  - "Aeon"
 price_yen: "150-180"
 what_it_is: "Tiny chocolate-coated vanilla ice cream balls in a 6-pack."
 why_travelers_care: "Pocket-friendly, rotating flavors, cult-following."
@@ -15,10 +18,13 @@ risk_flags:
   - "perishable, allergen-dairy"
 source_links:
   - "morinaga.co.jp/pino"
+  - "https://www.pinoice.com/"
+  - "https://www.morinagamilk.co.jp/products/icecream/pino/"
 confidence: "high"
 trip_score: 8
 suitcase_score: 2
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "sweet"
+name_jp: "ピノ"

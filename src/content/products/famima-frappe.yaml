@@ -6,7 +6,7 @@ intent:
   - "try_in_japan"
 status: "ready"
 where_found:
-  - "FamilyMart freezer + coffee machine"
+  - "FamilyMart"
 price_yen: "~¥300–¥400"
 what_it_is: "Frozen drink cup finished with hot milk from café machine."
 why_travelers_care: "Interactive konbini drink; flavors rotate and feel Japan-specific."
@@ -17,9 +17,12 @@ risk_flags:
 verification_notes: "Verify flavor and machine availability."
 source_links:
   - "https://www.family.co.jp/for_tourist/en.html"
+  - "https://www.family.co.jp/goods/cafe.html"
+  - "https://www.family.co.jp/goods/cafe/0210577.html"
 confidence: "high"
 trip_score: 8
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "drink"
+name_jp: "ファミマフラッペ"

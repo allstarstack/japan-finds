@@ -6,7 +6,10 @@ intent:
   - "bring_home"
 status: "ready"
 where_found:
-  - "Konbini / supermarkets / Donki"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart"
+  - "Aeon"
 price_yen: "~¥170–¥350"
 what_it_is: "Instant cup noodles with Japan-only, seasonal, or collab flavors."
 why_travelers_care: "Cheap, recognizable, and suitcase-friendly if space allows."
@@ -19,10 +22,14 @@ source_links:
   - "https://www.donki.com/en/"
   - "https://www.sej.co.jp/products/"
   - "https://www.family.co.jp/goods.html"
+  - "https://www.cupnoodle.jp/"
+  - "https://www.nissin.com/jp/products/brands/cupnoodle/"
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
 launch_category: "konbini"
 fill_type: "creator_fill"
-display_strategy: "hide_jp_and_brand_until_enriched"
+display_strategy: "show_all"
 sub_chip: "food"
+name_jp: "カップヌードル"
+agent_notes: "Limited flavors rotate"
