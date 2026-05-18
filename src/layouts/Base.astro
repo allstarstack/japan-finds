@@ -1,6 +1,7 @@
 ---
 /* Base layout — document shell, meta, Open Graph, fonts, global styles. */
 import "../styles/tokens.css";
+import "../styles/fonts.css";
 import "../styles/global.css";
 
 interface Props {
@@ -54,30 +55,23 @@ const ogImage = new URL("/og-image.jpg", Astro.site).href;
     <link rel="apple-touch-icon" href="/icon-192.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
 
-    <!-- Fonts: Google Fonts, font-display: swap (BUILD_SPEC) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Preload the hero headline weight: Space Grotesk 700, latin subset -->
+    <!-- Fonts: self-hosted woff2, latin subset (brand.md — no external font
+         CDNs). @font-face rules are in fonts.css; preload the above-the-fold
+         weights so the headline and body paint without a swap flash. -->
     <link
       rel="preload"
       as="font"
       type="font/woff2"
-      href="https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVnskPMBBSSJLm2E.woff2"
+      href="/fonts/space-grotesk-700.woff2"
       crossorigin
     />
-    <!-- Load the font CSS without blocking render; swap applies it once ready -->
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400&family=Space+Grotesk:wght@500;600;700&display=swap"
-      media="print"
-      onload="this.media='all'"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/inter-400.woff2"
+      crossorigin
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400&family=Space+Grotesk:wght@500;600;700&display=swap"
-      />
-    </noscript>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
