@@ -1,13 +1,13 @@
 # Japan Finds — Project State
 
-**Last updated:** 2026-05-17 (late evening)
+**Last updated:** 2026-05-18
 **Purpose:** Orientation doc for any new Claude/Claude Code session. Read this first before making changes.
 
 ---
 
 ## Live state
 
-- **japan.allstarsteven.com** — V1 landing page shipped (Lighthouse 100/96/100/100). **Phase B-1 catalog launch built but not yet live.** PR #1 (`phase-b1-catalog-launch` branch) is open and Vercel preview is green. Awaiting Steven's pre-merge review, then merge → auto-deploy.
+- **japan.allstarsteven.com** — V1 landing page shipped (Lighthouse 100/96/100/100). Phase B-1 catalog launch merged (PR #1). **Phase B-2 places import (`/places`) built but not yet live** — PR open on `phase-b2-places-import`, awaiting review + merge.
 - **allstarsteven.com** — hub page deploying (separate repo: `allstarstack/allstarsteven-hub`, separate Vercel project).
 - **shop.allstarsteven.com** — Shopify launching ~30 days from this update.
 - **Kit form** — working, tested, list ID committed.
@@ -29,6 +29,17 @@
 - **21 items deferred to v2 wave** (the original "skip" chip concept dropped — items need Steven's per-item review for product card / cheat-sheet / cut classification).
 
 ---
+
+## Phase B-2 outcomes (built 2026-05-18, awaiting merge)
+
+- **`/places` page** ("Where" in the nav — label is Steven's call; route stays `/places`, parallel to `/products`'s "Finds" label).
+- **335 place YAMLs**: 323 imported from `japan_locations_v2.csv` (7 skipped as exact V1 duplicates) + 19 V1 Phase A places migrated to the new schema. The other 16 V1 places were retail/lodging and were dropped — they belong in the `stores` collection, not a "where to go" page.
+- **Schema replaced.** The Phase A inspection schema (`name_en`/`area`/`category`) is gone; places now key off `primary_category` (See/Do/Eat/Stay → card colour) and `public_label` (the experience chip).
+- **12 primary chips** (single-select) + **3 planning chips** (Rainy Day / With Kids / By Train, multi-select) + a **"Stay bases" toggle** for the 23 base-tier places. The spec's 11 chips became 12: 11 backlog rows tagged `with_kids` as a *label* were all parks → got a `parks` chip. `day_trips` planning chip dropped (0 rows carry it).
+- **Filter** is client-side, URL-shareable via `?chip=&flags=&base=`. Sort: alphabetical.
+- **Cards** use a colour-block placeholder keyed to primary_category (no photos exist yet); JP name parsed from the `name` field; "View on Google Maps" search link per card.
+- **Japan Map CTA** wired site-wide to the public Google My Map URL (header, homepage Hero/StartHere/MapSection, `/places` hero). ⚠ The `mid` is taken verbatim from the BUILD_SPEC and contains `XX` — confirm it resolves before relying on it (see `src/data/site.js`).
+- Migration calls + dedupe conflicts + 2 unresolved near-duplicates logged to `docs/places-import-conflicts.md`.
 
 ## Stack (locked)
 
@@ -104,8 +115,8 @@ After merge, Vercel auto-deploys to japan.allstarsteven.com.
 1. **Pre-merge tasks above** — must clear before merge.
 2. **Enrichment LLM pass on 145 CF rows** — run `japan-finds-creator-fill-enrichment v1.0` prompt (drafted in chat 2026-05-17) against CF rows. Upgrades them from English-only display to full-info. Runs post-launch.
 3. **21 v2-deferred items review** — Steven decides per-item: regular product card, behavioral tip → cheat-sheets, or cut.
-4. **Places Backlog Import BUILD_SPEC** — 272-row regional places import with V1 dedupe. Needs Claude proposal + Steven review. Parallel prep Steven can do tonight/tomorrow: locate the 272-row source file, audit address quality, decide on Google My Maps integration pattern (recommended: option 2 — master Google My Map with "Get the Japan Map" CTA).
-5. **Phase B-2 Shopping Lists feature BUILD_SPEC** — original Phase B headline feature, deferred. ~3-4 hr Claude Code build.
+4. ~~Places Backlog Import BUILD_SPEC~~ — **done** (Phase B-2, see outcomes above).
+5. **Shopping Lists feature BUILD_SPEC** — original Phase B headline feature, deferred. ~3-4 hr Claude Code build.
 6. **Quick-Add Phase 0** — 15 min, can run in parallel after Phase B-1 merges.
 7. **Quick-Add Phase 1** — GitHub Issue Form + Action, ~1-2 hr build.
 8. **Cheat sheets content synthesis** — Phase C content lift.
