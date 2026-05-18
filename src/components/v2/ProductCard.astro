@@ -69,6 +69,13 @@ const color = cat ? CHIP_COLOR[cat] : "white";
     border: 1.5px solid var(--color-concrete-gray);
     border-radius: var(--radius-card);
   }
+  /* The filter rail hides non-matching cards via the `hidden` attribute.
+     An author `display` declaration outranks the UA `[hidden]` rule, so
+     this must restore `display: none` explicitly or hidden cards stay
+     visible (the chip state would update but the grid would not). */
+  .pc[hidden] {
+    display: none;
+  }
 
   .pc .chip {
     align-self: flex-start;
