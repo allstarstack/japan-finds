@@ -1,0 +1,224 @@
+---
+/* /eat — Phase C Tabelog Hyakumeiten restaurants ("Eat" in the nav).
+   Hero + Restaurants Map CTA, sticky two-tier chip rail, and the full
+   282-restaurant grid. Mirrors /places architecture.
+
+   Sort is fixed (BUILD_SPEC "Out of scope" — no sort controls): cuisine
+   chip order, then rank_in_city ascending within each cuisine. Data is
+   read at build time from restaurants.json — no client-side fetch. */
+import restaurants from "../data/restaurants.json";
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import ChipRow from "../components/eat/ChipRow.astro";
+import RestaurantCard from "../components/eat/RestaurantCard.astro";
+import MethodologyFooter from "../components/eat/MethodologyFooter.astro";
+import { RESTAURANTS_MAP_URL } from "../data/site.js";
+import {
+  CUISINE_CHIPS,
+  FLAG_CHIPS,
+  cuisineSlug,
+  restaurantFlags,
+} from "../data/eat-chips.js";
+
+/* Fixed sort: cuisine chip order, then rank_in_city ascending. */
+const cuisineOrder = new Map(CUISINE_CHIPS.map((c, i) => [c.value, i]));
+const sorted = [...restaurants].sort((a, b) => {
+  const o =
+    (cuisineOrder.get(a.cuisine_chip) ?? 999) -
+    (cuisineOrder.get(b.cuisine_chip) ?? 999);
+  return o !== 0 ? o : a.rank_in_city - b.rank_in_city;
+});
+const total = sorted.length;
+
+/* Per-chip counts (keyed by slug) for the rail. */
+const cuisineCounts: Record<string, number> = {};
+for (const c of CUISINE_CHIPS) cuisineCounts[c.slug] = 0;
+for (const r of sorted) {
+  const s = cuisineSlug(r.cuisine_chip);
+  if (s) cuisineCounts[s]++;
+}
+const flagCounts: Record<string, number> = {};
+for (const f of FLAG_CHIPS) flagCounts[f.slug] = 0;
+for (const r of sorted)
+  for (const f of restaurantFlags(r)) flagCounts[f]++;
+---
+
+<Base
+  title="Where to eat in Japan — Japan Finds"
+  description="282 restaurants from Tabelog's Hyakumeiten lists — sushi, ramen, yakitori and the shokudo picks. Filter by cuisine, price tier and reservation status, then take the map with you."
+>
+  <Header />
+  <main id="main">
+    <section class="ehero">
+      <div class="wrap">
+        <h1>Where to eat in Japan, ranked by people who live there.</h1>
+        <p class="ehero-sub">
+          Tabelog Hyakumeiten — 282 restaurants across 13 categories. The
+          specialty kind (sushi, tempura, sukiyaki) and the everyday kind
+          (ramen, soba, the shokudo lists). Steven isn't a foodie. These are
+          the picks because the locals voted, not because he ate there.
+        </p>
+      </div>
+    </section>
+
+    <section class="emap">
+      <div class="wrap">
+        <a
+          class="btn btn--primary btn--lg btn--responsive"
+          href={RESTAURANTS_MAP_URL}
+          target="_blank"
+          rel="noopener"
+        >
+          View on the Restaurants Map&nbsp;→
+        </a>
+      </div>
+    </section>
+
+    <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
+
+    <section class="eresults">
+      <div class="wrap">
+        <div class="eresults-bar">
+          <p class="eresults-count" data-count>Showing {total} of {total}</p>
+          <button type="button" class="eclear" data-clear hidden>
+            Clear filters
+          </button>
+        </div>
+        <div class="grid" data-grid>
+          {sorted.map((r) => <RestaurantCard restaurant={r} />)}
+        </div>
+        <p class="eresults-empty" data-empty hidden>
+          Nothing here yet. Back when there is.
+        </p>
+      </div>
+    </section>
+
+    <MethodologyFooter />
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .wrap {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--gutter-mobile);
+  }
+
+  /* Hero — text on the body background, no image (BUILD_SPEC §1). */
+  .ehero {
+    padding: 30px 0 24px;
+  }
+  .ehero h1 {
+    margin: 0;
+    max-width: 22ch;
+    font-family: var(--font-head);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+  }
+  .ehero-sub {
+    margin: 14px 0 0;
+    max-width: 52ch;
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--color-ink-60);
+  }
+
+  /* Restaurants Map CTA — single button (BUILD_SPEC §2). */
+  .emap {
+    padding: 0 0 26px;
+  }
+
+  /* Results sit on white so the rice-white cards read. */
+  .eresults {
+    background: var(--color-white);
+    padding: 18px 0 8px;
+  }
+  .eresults-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 14px;
+    margin-bottom: 14px;
+  }
+  .eresults-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+  .eclear {
+    padding: 0;
+    background: none;
+    border: 0;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .eclear[hidden] {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  /* Native lazy-render: the browser skips layout/paint for off-screen
+     cards, so all 282 stay in the DOM (instant filtering) without the
+     cost of painting every card up front. */
+  .grid :global(.rc) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 340px;
+  }
+  .eresults-empty {
+    padding: 48px 0;
+    font-family: var(--font-head);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding: 0 var(--gutter-desktop);
+    }
+    .ehero {
+      padding: 52px 0 32px;
+    }
+    .ehero h1 {
+      font-size: 60px;
+      letter-spacing: -0.035em;
+    }
+    .ehero-sub {
+      font-size: 18px;
+    }
+    .emap {
+      padding: 0 0 36px;
+    }
+    .eresults {
+      padding: 22px 0 8px;
+    }
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+  }
+</style>

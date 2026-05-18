@@ -1,0 +1,72 @@
+---
+/* /eat methodology footer (BUILD_SPEC §6). Plain prose, no callout box.
+   Copy is verbatim from the spec and pre-approved — do not rewrite. */
+---
+
+<section class="emethod">
+  <div class="emethod-wrap">
+    <h2 class="emethod-h">About this list</h2>
+    <p>
+      282 restaurants from Tabelog's Hyakumeiten lists — 2024, 2025, and 2026
+      selections across 13 cuisine categories plus the shokudo (small-eatery)
+      list. Tabelog's Hyakumeiten are voted by Japanese diners; each list is
+      the top 100 in that category for the year. We aggregate. We don't review.
+    </p>
+    <p>
+      Tabelog publishes one Hyakumeiten list per cuisine, not a single
+      cross-genre "top 100." There's no "best of best." The closest is the
+      Shokudo Hyakumeiten, which ranks the top 100 small everyday eateries
+      nationwide — that's the Shokudo chip on this page.
+    </p>
+    <p>
+      What's missing: individual restaurant pages on Tabelog, current
+      open/closed status, and detailed addresses are not in this build. Use
+      the Google Maps link on each card for those. Some restaurants may have
+      closed since the list was published; we'll prune as that becomes known.
+    </p>
+  </div>
+</section>
+
+<style>
+  .emethod {
+    background: var(--color-white);
+    padding: 8px 0 56px;
+  }
+  .emethod-wrap {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--gutter-mobile);
+  }
+  .emethod-h {
+    margin: 0 0 12px;
+    font-family: var(--font-head);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .emethod p {
+    max-width: 64ch;
+    margin: 0 0 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--color-ink-60);
+  }
+  .emethod p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .emethod {
+      padding: 16px 0 72px;
+    }
+    .emethod-wrap {
+      padding: 0 var(--gutter-desktop);
+    }
+    .emethod-h {
+      font-size: 24px;
+    }
+    .emethod p {
+      font-size: 15px;
+    }
+  }
+</style>

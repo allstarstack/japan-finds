@@ -1,0 +1,303 @@
+---
+/* /eat filter rail (BUILD_SPEC §3-4). Two tiers, mirroring PlaceFilterRail:
+   - 13 cuisine chips — multi-select, OR logic across chips. Horizontal
+     scroll with an edge fade on mobile; wrap on desktop.
+   - 4 planning-flag chips — multi-select, AND logic, combine with the
+     cuisine filter. A hairline divider separates the two tiers.
+
+   Filtering is client-side and in place. Chip state mirrors to the URL
+   (?cuisine=&flag=) for shareable links. The "Showing N of 282" count,
+   the empty state and the "Clear filters" control live on /eat; this
+   component's script drives them by data-attribute. */
+import { CUISINE_CHIPS, FLAG_CHIPS, CUISINE_COLOR } from "../../data/eat-chips.js";
+
+interface Props {
+  cuisineCounts: Record<string, number>; // cuisine slug -> count
+  flagCounts: Record<string, number>; // flag slug -> count
+}
+const { cuisineCounts, flagCounts } = Astro.props;
+---
+
+<div class="ec-rail" data-eat-rail>
+  <div class="ec-inner">
+    <div class="ec-cuisine" role="group" aria-label="Filter restaurants by cuisine">
+      {
+        CUISINE_CHIPS.map((c) => (
+          <button
+            type="button"
+            class="ec-chip"
+            data-cuisine-chip={c.slug}
+            data-color={CUISINE_COLOR[c.value]}
+            aria-pressed="false"
+          >
+            {c.label}
+            <span class="ec-n">{cuisineCounts[c.slug] ?? 0}</span>
+          </button>
+        ))
+      }
+    </div>
+
+    <div class="ec-flags" role="group" aria-label="Filter by planning need">
+      {
+        FLAG_CHIPS.map((f) => (
+          <button
+            type="button"
+            class="ec-flag"
+            data-flag-chip={f.slug}
+            aria-pressed="false"
+          >
+            {f.label}
+            <span class="ec-n">{flagCounts[f.slug] ?? 0}</span>
+          </button>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .ec-rail {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-white);
+    border-bottom: var(--border-ink);
+  }
+  .ec-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  /* Cuisine chips — horizontal-scroll on mobile, no visible scrollbar, with
+     an edge fade so a clipped chip reads as "more this way". */
+  .ec-cuisine {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 12px var(--gutter-mobile) 8px;
+    scroll-padding-inline: var(--gutter-mobile);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 16px,
+      #000 calc(100% - 16px),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 16px,
+      #000 calc(100% - 16px),
+      transparent
+    );
+  }
+  .ec-cuisine::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ec-chip {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 38px;
+    padding: 8px 14px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  /* Active chip fills with the cuisine's card colour, so the rail previews
+     the block colour you will land on. Soba/Udon (gray) fill ink instead —
+     concrete gray reads as inactive against the white rail. */
+  .ec-chip[data-color="red"] {
+    --c: var(--color-tokyo-red);
+  }
+  .ec-chip[data-color="red-deep"] {
+    --c: #b93028;
+  }
+  .ec-chip[data-color="yellow"] {
+    --c: var(--color-egg-yellow);
+  }
+  .ec-chip[data-color="ink"] {
+    --c: var(--color-ink-black);
+  }
+  .ec-chip[data-color="blue"] {
+    --c: var(--color-konbini-blue);
+  }
+  .ec-chip[data-color="green"] {
+    --c: var(--color-matcha-green);
+  }
+  .ec-chip[data-color="gray"] {
+    --c: var(--color-ink-black);
+  }
+  .ec-chip.is-active {
+    background: var(--c);
+    border-color: var(--c);
+    color: #fff;
+  }
+  .ec-chip[data-color="yellow"].is-active {
+    color: var(--color-ink-black);
+  }
+
+  /* Planning-flag chips — wrap, always visible, divided from the cuisine
+     row by a hairline. Uniform ink fill when active. */
+  .ec-flags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px var(--gutter-mobile) 12px;
+    border-top: 1px solid var(--color-ink-15);
+  }
+  .ec-flag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    padding: 6px 12px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-30);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  .ec-flag.is-active {
+    background: var(--color-ink-black);
+    border-color: var(--color-ink-black);
+    color: #fff;
+  }
+
+  .ec-n {
+    font-weight: 700;
+  }
+
+  @media (min-width: 1024px) {
+    /* All 13 cuisine chips visible — wrap, no scroll, no edge fade. */
+    .ec-cuisine {
+      flex-wrap: wrap;
+      overflow-x: visible;
+      padding: 16px var(--gutter-desktop) 10px;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+    .ec-flags {
+      padding: 12px var(--gutter-desktop) 16px;
+    }
+  }
+</style>
+
+<script>
+  const rail = document.querySelector("[data-eat-rail]");
+  if (rail) {
+    const cuisineBtns = [
+      ...rail.querySelectorAll<HTMLButtonElement>("[data-cuisine-chip]"),
+    ];
+    const flagBtns = [
+      ...rail.querySelectorAll<HTMLButtonElement>("[data-flag-chip]"),
+    ];
+    const cards = [
+      ...document.querySelectorAll<HTMLElement>("[data-grid] .rc"),
+    ];
+    const grid = document.querySelector<HTMLElement>("[data-grid]");
+    const countEl = document.querySelector("[data-count]");
+    const emptyEl = document.querySelector<HTMLElement>("[data-empty]");
+    const clearEl = document.querySelector<HTMLElement>("[data-clear]");
+    const TOTAL = cards.length;
+
+    const activeCuisines = new Set<string>();
+    const activeFlags = new Set<string>();
+
+    const cardFlags = (card: HTMLElement) =>
+      (card.dataset.flags || "").split(" ").filter(Boolean);
+
+    const syncURL = () => {
+      const p = new URLSearchParams();
+      if (activeCuisines.size) p.set("cuisine", [...activeCuisines].join(","));
+      if (activeFlags.size) p.set("flag", [...activeFlags].join(","));
+      const qs = p.toString();
+      history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+    };
+
+    const apply = () => {
+      let n = 0;
+      for (const card of cards) {
+        // Cuisine: OR across chips. Flags: AND — every active flag matches.
+        const okCuisine =
+          activeCuisines.size === 0 ||
+          activeCuisines.has(card.dataset.cuisine || "");
+        const fl = cardFlags(card);
+        const okFlags = [...activeFlags].every((f) => fl.includes(f));
+        const show = okCuisine && okFlags;
+        card.hidden = !show;
+        if (show) n++;
+      }
+      for (const b of cuisineBtns) {
+        const on = activeCuisines.has(b.dataset.cuisineChip || "");
+        b.setAttribute("aria-pressed", String(on));
+        b.classList.toggle("is-active", on);
+      }
+      for (const b of flagBtns) {
+        const on = activeFlags.has(b.dataset.flagChip || "");
+        b.setAttribute("aria-pressed", String(on));
+        b.classList.toggle("is-active", on);
+      }
+      if (countEl) countEl.textContent = `Showing ${n} of ${TOTAL}`;
+      if (emptyEl) emptyEl.hidden = n !== 0;
+      if (grid) grid.hidden = n === 0;
+      if (clearEl)
+        clearEl.hidden = activeCuisines.size === 0 && activeFlags.size === 0;
+    };
+
+    cuisineBtns.forEach((b) =>
+      b.addEventListener("click", () => {
+        const v = b.dataset.cuisineChip || "";
+        activeCuisines.has(v)
+          ? activeCuisines.delete(v)
+          : activeCuisines.add(v);
+        apply();
+        syncURL();
+        b.scrollIntoView({ inline: "center", block: "nearest" });
+      }),
+    );
+    flagBtns.forEach((b) =>
+      b.addEventListener("click", () => {
+        const v = b.dataset.flagChip || "";
+        activeFlags.has(v) ? activeFlags.delete(v) : activeFlags.add(v);
+        apply();
+        syncURL();
+      }),
+    );
+    if (clearEl)
+      clearEl.addEventListener("click", () => {
+        activeCuisines.clear();
+        activeFlags.clear();
+        apply();
+        syncURL();
+      });
+
+    // Initial state from the URL — supports shareable /eat?cuisine=…&flag=…
+    const params = new URLSearchParams(location.search);
+    const validCuisines = new Set(
+      cuisineBtns.map((b) => b.dataset.cuisineChip),
+    );
+    for (const c of (params.get("cuisine") || "").split(",").filter(Boolean))
+      if (validCuisines.has(c)) activeCuisines.add(c);
+    const validFlags = new Set(flagBtns.map((b) => b.dataset.flagChip));
+    for (const f of (params.get("flag") || "").split(",").filter(Boolean))
+      if (validFlags.has(f)) activeFlags.add(f);
+    apply();
+  }
+</script>
