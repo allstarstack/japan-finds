@@ -1,0 +1,13 @@
+name: "Jigokudani Monkey Park (Snow Monkeys)"
+address_or_area: "6845 Hirao, Yamanouchi, Shimotakai District, Nagano 381-0401"
+region: "Chubu"
+prefecture: "Nagano"
+primary_category: "See"
+public_label: "animals"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Animals & Aquariums"

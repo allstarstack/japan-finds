@@ -1,0 +1,13 @@
+name: "Kids Plaza Osaka"
+address_or_area: "2-1-7 Ogimachi, Kita Ward, Osaka 530-0025"
+region: "Kansai"
+prefecture: "Osaka"
+primary_category: "Do"
+public_label: "quirky_museums"
+planning_flags: "rainy_day;with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Quirky & Interactive Museums"

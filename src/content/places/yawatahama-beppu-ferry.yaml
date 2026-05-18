@@ -1,0 +1,12 @@
+name: "Yawatahama–Beppu Ferry"
+address_or_area: "Yawatahama (Ehime) / Beppu (Oita)"
+region: "Shikoku"
+prefecture: "Ehime"
+primary_category: "Do"
+public_label: "scenic_transport"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Ferries / Transit"

@@ -1,0 +1,13 @@
+name: "Rusutsu Resort (Summer & Winter)"
+address_or_area: "13 Izumikawa, Rusutsu, Abuta District, Hokkaido 048-1711"
+region: "Hokkaido"
+prefecture: "Hokkaido"
+primary_category: "Do"
+public_label: "theme_parks"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Theme Parks & Big Attractions"

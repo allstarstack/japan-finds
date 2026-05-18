@@ -1,7 +1,11 @@
-slug: "beppu-yufuin-onsen-towns"
-name_en: "Beppu / Yufuin onsen towns"
-area: "Oita"
-category: "quiet-japan-towns"
-status: "needs_verification"
-why_it_belongs: "Quiet-city and onsen interest; seed-list support."
-verification_notes: "Tattoo/private onsen policies, access — Strong future regional map."
+name: "Beppu & Yufuin Onsen Towns"
+address_or_area: "Beppu & Yufuin, Oita"
+region: "Kyushu"
+prefecture: "Oita"
+primary_category: "Stay"
+public_label: ""
+launch_tier: "base"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "v1_curated"

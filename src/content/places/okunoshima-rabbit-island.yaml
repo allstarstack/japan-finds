@@ -1,0 +1,13 @@
+name: "Okunoshima Rabbit Island"
+address_or_area: "Okunoshima (Takehara), Hiroshima"
+region: "Chugoku"
+prefecture: "Hiroshima"
+primary_category: "See"
+public_label: "animals"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Animals & Aquariums"

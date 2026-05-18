@@ -1,0 +1,12 @@
+name: "Dogo Onsen"
+address_or_area: "Matsuyama, Ehime"
+region: "Shikoku"
+prefecture: "Ehime"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Onsen & Ryokan Towns"

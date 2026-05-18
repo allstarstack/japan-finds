@@ -1,0 +1,13 @@
+name: "Shiroi Koibito Park (Chocolate Factory)"
+address_or_area: "Sapporo, Hokkaido"
+region: "Hokkaido"
+prefecture: "Hokkaido"
+primary_category: "Do"
+public_label: "quirky_museums"
+planning_flags: "rainy_day;with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Quirky & Interactive Museums"

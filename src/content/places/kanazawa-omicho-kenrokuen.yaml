@@ -1,7 +1,11 @@
-slug: "kanazawa-omicho-kenrokuen"
-name_en: "Kanazawa / Omicho / Kenrokuen"
-area: "Kanazawa"
-category: "quiet-japan-towns"
-status: "needs_verification"
-why_it_belongs: "Secondary-city alternative with strong crowd-avoidance value."
-verification_notes: "Access time, market hours, garden hours — Regional expansion."
+name: "Kanazawa: Omicho Market & Kenrokuen"
+address_or_area: "Kanazawa, Ishikawa"
+region: "Chubu"
+prefecture: "Ishikawa"
+primary_category: "See"
+public_label: "nature_water"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "v1_curated"

@@ -1,0 +1,12 @@
+name: "Kibi Plains Cycling"
+address_or_area: "Okayama, Okayama"
+region: "Chugoku"
+prefecture: "Okayama"
+primary_category: "See"
+public_label: "nature_water"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Nature & Water"

@@ -1,0 +1,13 @@
+name: "Toei Kyoto Studio Park"
+address_or_area: "10 Uzumasa Higashihachiokacho, Ukyo Ward, Kyoto 616-8586"
+region: "Kansai"
+prefecture: "Kyoto"
+primary_category: "Do"
+public_label: "theme_parks"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Theme Parks & Big Attractions"

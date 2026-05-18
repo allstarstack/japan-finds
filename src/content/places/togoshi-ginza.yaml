@@ -1,7 +1,11 @@
-slug: "togoshi-ginza"
-name_en: "Togoshi Ginza"
-area: "Shinagawa, Tokyo"
-category: "local-food-streets"
-status: "needs_verification"
-why_it_belongs: "Food street + Donki signal from Meta."
-verification_notes: "Stall hours, access, Donki details — Good local-food/shop crossover."
+name: "Togoshi Ginza"
+address_or_area: "Shinagawa, Tokyo"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "Eat"
+public_label: "food_markets"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "v1_curated"

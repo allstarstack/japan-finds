@@ -1,0 +1,12 @@
+name: "Takachiho Kagura (高千穂夜神楽)"
+address_or_area: "Takachiho, Miyazaki"
+region: "Kyushu"
+prefecture: "Miyazaki"
+primary_category: "See"
+public_label: "culture_history"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Culture & Night Show"

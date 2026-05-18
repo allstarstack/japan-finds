@@ -1,7 +1,11 @@
-slug: "gorilla-building"
-name_en: "Gorilla Building"
-area: "Sangenjaya, Tokyo"
-category: "quiet-japan-towns"
-status: "needs_verification"
-why_it_belongs: "Quirky local landmark; strong content hook."
-verification_notes: "Exact address, photo etiquette — Small but very Japan Finds."
+name: "Gorilla Building"
+address_or_area: "Sangenjaya, Tokyo"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "photo_spots"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "v1_curated"

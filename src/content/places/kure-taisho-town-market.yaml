@@ -1,0 +1,12 @@
+name: "Kure Taisho Town Market (久礼大正町市場)"
+address_or_area: "Nakatosa, Kochi"
+region: "Shikoku"
+prefecture: "Kochi"
+primary_category: "Eat"
+public_label: "food_markets"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "food_research_v1"
+original_category: "Food & Markets"

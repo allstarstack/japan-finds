@@ -1,0 +1,12 @@
+name: "Otaru Canal + Glass Shops"
+address_or_area: "Otaru, Hokkaido"
+region: "Hokkaido"
+prefecture: "Hokkaido"
+primary_category: "Do"
+public_label: "workshops_crafts"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Crafts & Making"

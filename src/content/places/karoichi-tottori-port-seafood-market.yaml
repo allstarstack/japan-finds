@@ -1,0 +1,12 @@
+name: "Karoichi Tottori Port Seafood Market (かろいち)"
+address_or_area: "Tottori, Tottori"
+region: "Chugoku"
+prefecture: "Tottori"
+primary_category: "Eat"
+public_label: "food_markets"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "food_research_v1"
+original_category: "Food & Markets"

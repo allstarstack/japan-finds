@@ -1,0 +1,13 @@
+name: "Fuji-Q Highland"
+address_or_area: "5-6-1 Shinnishihara, Fujiyoshida, Yamanashi 403-0017"
+region: "Chubu"
+prefecture: "Yamanashi"
+primary_category: "Do"
+public_label: "theme_parks"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Theme Parks & Big Attractions"
