@@ -1,0 +1,12 @@
+name: "Nishiki Market Snack Crawl"
+address_or_area: "Kyoto, Kyoto"
+region: "Kansai"
+prefecture: "Kyoto"
+primary_category: "Eat"
+public_label: "food_markets"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Food & Markets"

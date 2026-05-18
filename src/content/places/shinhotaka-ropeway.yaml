@@ -1,0 +1,13 @@
+name: "Shinhotaka Ropeway"
+address_or_area: "Okuhida, Gifu"
+region: "Chubu"
+prefecture: "Gifu"
+primary_category: "Do"
+public_label: "scenic_transport"
+planning_flags: "by_train"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Trains & Scenic Transport"

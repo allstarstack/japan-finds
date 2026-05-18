@@ -1,0 +1,12 @@
+name: "Shimanami Kaido (2-day easy pace)"
+address_or_area: "Shimanami, Ehime/Hiroshima"
+region: "Shikoku"
+prefecture: "Ehime/Hiroshima"
+primary_category: "See"
+public_label: "nature_water"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Nature & Water"

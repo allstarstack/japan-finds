@@ -1,0 +1,12 @@
+name: "Kujupama Beach (九十浜海水浴場)"
+address_or_area: "Suzaki, Shimoda, Shizuoka 415-0014"
+region: "Chubu"
+prefecture: "Shizuoka"
+primary_category: "Do"
+public_label: "nature_water"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Beaches & Tidepooling"

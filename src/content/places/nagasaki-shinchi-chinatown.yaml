@@ -1,0 +1,12 @@
+name: "Nagasaki Shinchi Chinatown (長崎新地中華街)"
+address_or_area: "Nagasaki, Nagasaki"
+region: "Kyushu"
+prefecture: "Nagasaki"
+primary_category: "Eat"
+public_label: "food_markets"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "food_research_v1"
+original_category: "Food & Markets"

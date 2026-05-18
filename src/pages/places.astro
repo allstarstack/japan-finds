@@ -1,0 +1,334 @@
+---
+/* /places — Phase B-2 places import ("Where" in the nav).
+   Hero + Japan Map CTA + 6 featured cards, sticky filter rail, and the
+   full place grid. Mirrors /products structure. Sort: alphabetical by
+   name — places have no verified/unverified split like products do. */
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import PlaceCard from "../components/v2/PlaceCard.astro";
+import PlaceFilterRail from "../components/v2/PlaceFilterRail.astro";
+import { JAPAN_MAP_URL } from "../data/site.js";
+
+const places = (await getCollection("places")).filter(
+  (p) => p.data.status === "ready" && p.data.public_render !== false,
+);
+places.sort((a, b) =>
+  a.data.name.toLowerCase().localeCompare(b.data.name.toLowerCase()),
+);
+
+/* Standard-tier places are the default browse; base-tier ("stay bases")
+   are excluded until the rail's toggle reveals them. */
+const standard = places.filter((p) => p.data.launch_tier !== "base");
+const total = standard.length;
+const baseCount = places.length - total;
+
+/* Per-chip counts (standard tier) for the primary rail. */
+const counts: Record<string, number> = {};
+for (const p of standard) {
+  const c = p.data.public_label;
+  if (c) counts[c] = (counts[c] ?? 0) + 1;
+}
+
+/* Per-flag counts for the planning chips. */
+const flagCounts: Record<string, number> = {};
+for (const p of standard)
+  for (const f of (p.data.planning_flags ?? "")
+    .split(";")
+    .map((s) => s.trim())
+    .filter(Boolean))
+    flagCounts[f] = (flagCounts[f] ?? 0) + 1;
+
+/* Featured 6 — auto-pick (BUILD_SPEC says an algorithm is fine here).
+   One place from each of six experience chips, spread across regions.
+   Deterministic: within each chip's alphabetical list the scan starts
+   from the midpoint, so the picks aren't all clustered at the start of
+   the alphabet, then takes the first place in a not-yet-used region. */
+const FEATURED_CHIPS = [
+  "nature_water",
+  "food_markets",
+  "animals",
+  "onsen_ryokan",
+  "quirky_museums",
+  "culture_history",
+];
+const featured = [];
+const usedRegions = new Set<string>();
+for (const chip of FEATURED_CHIPS) {
+  const pool = standard.filter((p) => p.data.public_label === chip);
+  if (!pool.length) continue;
+  const mid = Math.floor(pool.length / 2);
+  const rotated = [...pool.slice(mid), ...pool.slice(0, mid)];
+  const pick = rotated.find((p) => !usedRegions.has(p.data.region)) ?? rotated[0];
+  featured.push(pick);
+  usedRegions.add(pick.data.region);
+}
+---
+
+<Base
+  title="Where to go in Japan — Japan Finds"
+  description="Hundreds of places to visit in Japan — nature, food markets, museums, onsen and more. Filter by what you want to see, then take the map with you."
+>
+  <Header />
+  <main id="main">
+    <section class="phero">
+      <div class="wrap">
+        <p class="eyebrow">JAPAN FINDS · WHERE TO GO</p>
+        <h1>Where to actually go in Japan.</h1>
+        <p class="phero-sub">
+          {total} places, Hokkaido to Okinawa — nature, food markets, museums,
+          onsen and more. Filter to what you want to see.
+        </p>
+      </div>
+    </section>
+
+    <section class="pmap">
+      <div class="wrap">
+        <div class="pmap-card">
+          <div class="pmap-text">
+            <p class="eyebrow">THE JAPAN MAP</p>
+            <p class="pmap-sub">
+              One Google Map. Every place on this site. Add it to your phone,
+              take it with you.
+            </p>
+          </div>
+          <a
+            class="btn btn--primary btn--lg"
+            href={JAPAN_MAP_URL}
+            target="_blank"
+            rel="noopener"
+          >
+            Get the Japan map&nbsp;→
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="pfeat" data-featured>
+      <div class="wrap">
+        <p class="eyebrow">START HERE</p>
+        <h2 class="pfeat-h2">Six to start with.</h2>
+        <div class="feat-strip">
+          {
+            featured.map((p) => (
+              <div class="feat-cell">
+                <PlaceCard entry={p} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <PlaceFilterRail counts={counts} flagCounts={flagCounts} baseCount={baseCount} />
+
+    <section class="presults">
+      <div class="wrap">
+        <h2 class="results-count" data-count>{total} places</h2>
+        <div class="grid" data-grid>
+          {places.map((p) => <PlaceCard entry={p} />)}
+        </div>
+        <p class="results-empty" data-empty hidden>
+          Nothing here yet. Back when there is.
+        </p>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .wrap {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--gutter-mobile);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+
+  /* Hero — rice-white, sits on the body background */
+  .phero {
+    padding: 30px 0 28px;
+  }
+  .phero h1 {
+    margin: 10px 0 0;
+    font-family: var(--font-head);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+  }
+  .phero-sub {
+    margin: 14px 0 0;
+    max-width: 36ch;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-ink-60);
+  }
+
+  /* Japan Map CTA card */
+  .pmap {
+    padding: 0 0 28px;
+  }
+  .pmap-card {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    background: var(--color-white);
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+  }
+  .pmap-sub {
+    margin: 8px 0 0;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 42ch;
+  }
+  .pmap-card .btn {
+    align-self: flex-start;
+  }
+
+  /* Featured block + results sit on white so the rice-white cards read */
+  .pfeat,
+  .presults {
+    background: var(--color-white);
+  }
+  .pfeat {
+    padding: 28px 0;
+    border-top: var(--border-ink);
+  }
+  /* Hidden by the filter rail while a filter is active. */
+  .pfeat[hidden] {
+    display: none;
+  }
+  .pfeat-h2 {
+    margin: 8px 0 16px;
+    font-family: var(--font-head);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  /* Featured strip — horizontal-scroll on mobile, grid above 640px */
+  .feat-strip {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+    padding-bottom: 4px;
+  }
+  .feat-strip::-webkit-scrollbar {
+    display: none;
+  }
+  .feat-cell {
+    flex: 0 0 60%;
+    max-width: 240px;
+    scroll-snap-align: start;
+  }
+
+  /* Results */
+  .presults {
+    padding: 20px 0 56px;
+  }
+  .results-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+    margin-bottom: 14px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  /* Native lazy-render: the browser skips layout/paint for off-screen
+     cards, so the whole grid stays in the DOM (instant filtering)
+     without the cost of rendering every card up front. */
+  .grid :global(.plc) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 280px;
+  }
+  .results-empty {
+    padding: 48px 0;
+    font-family: var(--font-head);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .feat-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      overflow: visible;
+    }
+    .feat-cell {
+      flex: none;
+      max-width: none;
+    }
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding: 0 var(--gutter-desktop);
+    }
+    .phero {
+      padding: 56px 0 40px;
+    }
+    .phero h1 {
+      font-size: 72px;
+      letter-spacing: -0.035em;
+    }
+    .phero-sub {
+      font-size: 19px;
+    }
+    .pmap {
+      padding: 0 0 40px;
+    }
+    .pmap-card {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 24px 28px;
+    }
+    .pmap-card .btn {
+      align-self: auto;
+      flex-shrink: 0;
+    }
+    .pfeat {
+      padding: 40px 0;
+    }
+    .pfeat-h2 {
+      font-size: 32px;
+    }
+    .feat-strip {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .presults {
+      padding: 24px 0 72px;
+    }
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+  }
+</style>

@@ -1,0 +1,12 @@
+name: "Kerama Islands Day Trip (snorkel beaches)"
+address_or_area: "Kerama Islands, Okinawa"
+region: "Okinawa"
+prefecture: "Okinawa"
+primary_category: "See"
+public_label: "nature_water"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Nature & Water"

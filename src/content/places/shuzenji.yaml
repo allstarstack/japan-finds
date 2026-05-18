@@ -1,0 +1,12 @@
+name: "Shuzenji (Onsen town base)"
+address_or_area: "Izu City, Shizuoka"
+region: "Chubu"
+prefecture: "Shizuoka"
+primary_category: "Stay"
+public_label: ""
+launch_tier: "base"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Base Town"

@@ -1,0 +1,13 @@
+name: "Huis Ten Bosch"
+address_or_area: "1-1 Huis Ten Bosch Machi, Sasebo, Nagasaki 859-3292"
+region: "Kyushu"
+prefecture: "Nagasaki"
+primary_category: "Do"
+public_label: "theme_parks"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Theme Parks & Big Attractions"

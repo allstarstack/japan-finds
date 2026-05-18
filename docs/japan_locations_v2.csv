@@ -1,0 +1,324 @@
+name,address_or_area,region,prefecture,primary_category,public_label,planning_flags,launch_tier,status,public_render,address_verified,source_type,original_category
+Asahiyama Zoo,"Asahikawa, Hokkaido",Hokkaido,Hokkaido,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Shirogane Blue Pond (Aoiike),"Biei, Hokkaido",Hokkaido,Hokkaido,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Farm Tomita (Lavender/Flower Fields),"Furano, Hokkaido",Hokkaido,Hokkaido,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Biei Patchwork Road (scenic countryside),"Biei, Hokkaido",Hokkaido,Hokkaido,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Shiretoko Five Lakes,"Shiretoko (Shari), Hokkaido",Hokkaido,Hokkaido,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Lake Mashu Viewpoints,"Teshikaga, Hokkaido",Hokkaido,Hokkaido,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Lake Akan & Ainu Kotan,"Kushiro, Hokkaido",Hokkaido,Hokkaido,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Kushiro Marsh Observatory,"Kushiro, Hokkaido",Hokkaido,Hokkaido,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Noboribetsu Onsen & Hell Valley,"Noboribetsu, Hokkaido",Hokkaido,Hokkaido,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+Lake Toya Lakeside Day,"Toyako, Hokkaido",Hokkaido,Hokkaido,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Mount Usu Ropeway,"Toyako, Hokkaido",Hokkaido,Hokkaido,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Otaru Canal + Glass Shops,"Otaru, Hokkaido",Hokkaido,Hokkaido,Do,workshops_crafts,,standard,ready,True,False,backlog_import,Crafts & Making
+Otaru Aquarium,"Otaru, Hokkaido",Hokkaido,Hokkaido,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Sapporo Maruyama Zoo,"Sapporo, Hokkaido",Hokkaido,Hokkaido,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Moerenuma Park,"Sapporo, Hokkaido",Hokkaido,Hokkaido,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Shiroi Koibito Park (Chocolate Factory),"Sapporo, Hokkaido",Hokkaido,Hokkaido,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Jozankei Onsen,"Jozankei (Sapporo), Hokkaido",Hokkaido,Hokkaido,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+Hakodate Morning Market,"Hakodate, Hokkaido",Hokkaido,Hokkaido,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Mount Hakodate Ropeway,"Hakodate, Hokkaido",Hokkaido,Hokkaido,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Onuma Quasi-National Park,"Onuma (Nanae), Hokkaido",Hokkaido,Hokkaido,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Oirase Gorge,"Towada, Aomori",Tohoku,Aomori,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Lake Towada Shore / Boat,"Lake Towada, Aomori/Akita",Tohoku,Aomori/Akita,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Hirosaki Castle Park,"Hirosaki, Aomori",Tohoku,Aomori,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Nebuta Warasse (festival museum),"Aomori City, Aomori",Tohoku,Aomori,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Hakkoda Ropeway,"Aomori City, Aomori",Tohoku,Aomori,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Geibikei Gorge Boat,"Ichinoseki, Iwate",Tohoku,Iwate,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Ryusendo Cave,"Iwaizumi, Iwate",Tohoku,Iwate,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Jodogahama Beach,"Miyako, Iwate",Tohoku,Iwate,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Matsushima Bay Viewpoints,"Matsushima, Miyagi",Tohoku,Miyagi,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Sendai Uminomori Aquarium,"Sendai, Miyagi",Tohoku,Miyagi,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Zao Ropeway (summer),"Zao, Yamagata",Tohoku,Yamagata,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Ginzan Onsen Town Walk,"Obanazawa, Yamagata",Tohoku,Yamagata,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+Kamo Aquarium (Jellyfish),"Tsuruoka, Yamagata",Tohoku,Yamagata,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Yamadera (Risshakuji),"Yamagata City, Yamagata",Tohoku,Yamagata,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Lake Tazawa,"Senboku, Akita",Tohoku,Akita,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Kakunodate Samurai District,"Senboku, Akita",Tohoku,Akita,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Nyuto Onsen Area,"Nyuto, Akita",Tohoku,Akita,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+Goshikinuma (Five Colored Ponds),"Urabandai, Fukushima",Tohoku,Fukushima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Ouchi-juku Post Town,"Shimogo, Fukushima",Tohoku,Fukushima,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Tsuruga Castle,"Aizuwakamatsu, Fukushima",Tohoku,Fukushima,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Ghibli Museum,"Mitaka, Tokyo",Kanto,Tokyo,See,anime,with_kids,standard,ready,True,False,backlog_import,Anime/Ghibli
+Inokashira Park & Zoo,"Mitaka, Tokyo",Kanto,Tokyo,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Ueno Zoo,"Taito, Tokyo",Kanto,Tokyo,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+National Museum of Nature and Science,"Taito, Tokyo",Kanto,Tokyo,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Edo-Tokyo Open Air Architectural Museum,"Koganei, Tokyo",Kanto,Tokyo,See,culture_history,rainy_day,standard,ready,True,False,backlog_import,Culture & History
+teamLab Planets TOKYO,"Toyosu, Tokyo",Kanto,Tokyo,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Tokyo Sea Life Park (Kasai Rinkai),"Edogawa, Tokyo",Kanto,Tokyo,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Miraikan (National Museum of Emerging Science),"Odaiba, Tokyo",Kanto,Tokyo,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Shibuya Sky Observatory,"Shibuya, Tokyo",Kanto,Tokyo,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Tsukiji Outer Market,"Chuo, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Cup Noodles Museum Yokohama,"Yokohama, Kanagawa",Kanto,Kanagawa,Do,workshops_crafts,,standard,ready,True,False,backlog_import,Crafts & Making
+Shin-Yokohama Ramen Museum,"Yokohama, Kanagawa",Kanto,Kanagawa,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Sankeien Garden,"Yokohama, Kanagawa",Kanto,Kanagawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Kamakura Great Buddha (Kotoku-in),"Kamakura, Kanagawa",Kanto,Kanagawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Enoshima Island Day,"Enoshima (Fujisawa), Kanagawa",Kanto,Kanagawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Hakone Open-Air Museum,"Hakone, Kanagawa",Kanto,Kanagawa,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Hakone Ropeway & Owakudani,"Hakone, Kanagawa",Kanto,Kanagawa,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+The Railway Museum,"Saitama (Omiya), Saitama",Kanto,Saitama,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Nikko Toshogu Shrine,"Nikko, Tochigi",Kanto,Tochigi,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Hitachi Seaside Park,"Hitachinaka, Ibaraki",Kanto,Ibaraki,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Kenrokuen Garden,"Kanazawa, Ishikawa",Chubu,Ishikawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Omicho Market,"Kanazawa, Ishikawa",Chubu,Ishikawa,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Kanazawa Gold Leaf Workshop,"Kanazawa, Ishikawa",Chubu,Ishikawa,Do,workshops_crafts,,standard,ready,True,False,backlog_import,Crafts & Making
+Chirihama Nagisa Driveway,"Hakui, Ishikawa",Chubu,Ishikawa,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Wajima Morning Market,"Wajima, Ishikawa",Chubu,Ishikawa,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Shiroyone Senmaida Rice Terraces,"Shiroyone (Wajima), Ishikawa",Chubu,Ishikawa,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Tateyama Kurobe Alpine Route,"Tateyama/Kurobe, Toyama/Nagano",Chubu,Toyama/Nagano,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Kurobe Gorge Railway,"Unazuki, Toyama",Chubu,Toyama,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Toyama Glass Art Museum,"Toyama City, Toyama",Chubu,Toyama,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Takayama Old Town & Markets,"Takayama, Gifu",Chubu,Gifu,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Hida Folk Village (Hida no Sato),"Takayama, Gifu",Chubu,Gifu,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Shirakawa-go Gassho Village,"Shirakawa, Gifu",Chubu,Gifu,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Shinhotaka Ropeway,"Okuhida, Gifu",Chubu,Gifu,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Kamikochi Valley Walk,"Kamikochi (Matsumoto), Nagano",Chubu,Nagano,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Matsumoto Castle,"Matsumoto, Nagano",Chubu,Nagano,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Daio Wasabi Farm,"Azumino, Nagano",Chubu,Nagano,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Nakasendo: Magome ↔ Tsumago (short hike),"Magome/Tsumago, Gifu/Nagano",Chubu,Gifu/Nagano,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Fuji Five Lakes (Kawaguchiko),"Kawaguchiko, Yamanashi",Chubu,Yamanashi,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Oshino Hakkai Springs,"Oshino, Yamanashi",Chubu,Yamanashi,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+SCMaglev and Railway Park,"Nagoya, Aichi",Chubu,Aichi,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Arashiyama Bamboo Grove,"Arashiyama (Kyoto), Kyoto",Kansai,Kyoto,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Sagano Romantic Train,"Arashiyama (Kyoto), Kyoto",Kansai,Kyoto,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Kyoto Railway Museum,"Kyoto, Kyoto",Kansai,Kyoto,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Kyoto Aquarium,"Kyoto, Kyoto",Kansai,Kyoto,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Nishiki Market Snack Crawl,"Kyoto, Kyoto",Kansai,Kyoto,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Fushimi Inari Taisha (short loop),"Fushimi (Kyoto), Kyoto",Kansai,Kyoto,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Kiyomizu-dera + Sannenzaka,"Higashiyama (Kyoto), Kyoto",Kansai,Kyoto,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Gion Evening Stroll (early dinner),"Kyoto, Kyoto",Kansai,Kyoto,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Nara Park Deer,"Nara, Nara",Kansai,Nara,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Todaiji Temple,"Nara, Nara",Kansai,Nara,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Osaka Aquarium Kaiyukan,"Osaka, Osaka",Kansai,Osaka,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Cup Noodles Museum Osaka Ikeda,"Ikeda, Osaka",Kansai,Osaka,Do,workshops_crafts,,standard,ready,True,False,backlog_import,Crafts & Making
+Osaka Science Museum,"Osaka, Osaka",Kansai,Osaka,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Himeji Castle,"Himeji, Hyogo",Kansai,Hyogo,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Kinosaki Onsen,"Toyooka, Hyogo",Kansai,Hyogo,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+Kobe Animal Kingdom,"Kobe, Hyogo",Kansai,Hyogo,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Nunobiki Ropeway & Herb Gardens,"Kobe, Hyogo",Kansai,Hyogo,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Trains & Scenic Transport
+Lake Biwa Lakeside Day,"Otsu (Lake Biwa), Shiga",Kansai,Shiga,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Shigaraki Pottery Village,"Shigaraki, Shiga",Kansai,Shiga,Do,workshops_crafts,,standard,ready,True,False,backlog_import,Crafts & Making
+Nachi Falls,"Nachi-Katsuura, Wakayama",Kansai,Wakayama,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Miyajima Island,"Miyajima (Hatsukaichi), Hiroshima",Chugoku,Hiroshima,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Hiroshima Peace Memorial Park (parent-led),"Hiroshima City, Hiroshima",Chugoku,Hiroshima,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Shukkeien Garden,"Hiroshima City, Hiroshima",Chugoku,Hiroshima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Okunoshima Rabbit Island,"Okunoshima (Takehara), Hiroshima",Chugoku,Hiroshima,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Sandankyo Gorge,"Akiota, Hiroshima",Chugoku,Hiroshima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Asa Zoological Park,"Hiroshima City, Hiroshima",Chugoku,Hiroshima,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Senkoji Park & Ropeway (Onomichi),"Onomichi, Hiroshima",Chugoku,Hiroshima,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Shimanami Kaido (family cycling),"Onomichi/Imabari, Hiroshima/Ehime",Chugoku,Hiroshima/Ehime,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Kurashiki Bikan Historical Quarter,"Kurashiki, Okayama",Chugoku,Okayama,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Okayama Korakuen Garden,"Okayama City, Okayama",Chugoku,Okayama,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Kibi Plains Cycling,"Okayama, Okayama",Chugoku,Okayama,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Tottori Sand Dunes,"Tottori City, Tottori",Chugoku,Tottori,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Tottori Sand Museum,"Tottori City, Tottori",Chugoku,Tottori,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Uradome Coast,"Iwami, Tottori",Chugoku,Tottori,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Izumo Taisha,"Izumo, Shimane",Chugoku,Shimane,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Shimane Aquarium Aquas,"Hamada, Shimane",Chugoku,Shimane,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Tsuwano (small castle town),"Tsuwano, Shimane",Chugoku,Shimane,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Akiyoshido Cave,"Mine, Yamaguchi",Chugoku,Yamaguchi,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Kintaikyo Bridge,"Iwakuni, Yamaguchi",Chugoku,Yamaguchi,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Tsunoshima Bridge Viewpoint,"Shimonoseki, Yamaguchi",Chugoku,Yamaguchi,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Shimanami Kaido (2-day easy pace),"Shimanami, Ehime/Hiroshima",Shikoku,Ehime/Hiroshima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Dogo Onsen,"Matsuyama, Ehime",Shikoku,Ehime,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+Matsuyama Castle (ropeway option),"Matsuyama, Ehime",Shikoku,Ehime,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Uchiko Old Town,"Uchiko, Ehime",Shikoku,Ehime,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Ritsurin Garden,"Takamatsu, Kagawa",Shikoku,Kagawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Udon Making Experience (Kagawa),"Takamatsu/Kotohira, Kagawa",Shikoku,Kagawa,Do,workshops_crafts,,standard,ready,True,False,backlog_import,Crafts & Making
+Shodoshima Olive Park,"Shodoshima, Kagawa",Shikoku,Kagawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Angel Road (tide path),"Shodoshima, Kagawa",Shikoku,Kagawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Naoshima Art Island (selected stops),"Naoshima, Kagawa",Shikoku,Kagawa,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Naruto Whirlpools (viewpoint or cruise),"Naruto, Tokushima",Shikoku,Tokushima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Iya Valley Vine Bridge (Kazurabashi),"Miyoshi, Tokushima",Shikoku,Tokushima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Oboke Gorge Boat,"Miyoshi, Tokushima",Shikoku,Tokushima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Udatsu Townscape (Wakimachi),"Mima, Tokushima",Shikoku,Tokushima,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Awa Odori Kaikan,"Tokushima City, Tokushima",Shikoku,Tokushima,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Shimanto River Day,"Shimanto, Kochi",Shikoku,Kochi,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Katsurahama Beach,"Kochi City, Kochi",Shikoku,Kochi,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Kochi Castle,"Kochi City, Kochi",Shikoku,Kochi,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Hirome Market (food hall),"Kochi City, Kochi",Shikoku,Kochi,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Cape Ashizuri,"Tosashimizu, Kochi",Shikoku,Kochi,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Muroto Geopark Coastline,"Muroto, Kochi",Shikoku,Kochi,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Ohori Park,"Fukuoka City, Fukuoka",Kyushu,Fukuoka,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Dazaifu Tenmangu (short visit),"Dazaifu, Fukuoka",Kyushu,Fukuoka,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Yanagawa Canal Boat Ride,"Yanagawa, Fukuoka",Kyushu,Fukuoka,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Nagasaki Penguin Aquarium,"Nagasaki City, Nagasaki",Kyushu,Nagasaki,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Glover Garden,"Nagasaki City, Nagasaki",Kyushu,Nagasaki,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Kujukushima Aquarium Umikirara,"Sasebo, Nagasaki",Kyushu,Nagasaki,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Kumamoto Castle (select areas),"Kumamoto City, Kumamoto",Kyushu,Kumamoto,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Mt. Aso / Kusasenri,"Aso, Kumamoto",Kyushu,Kumamoto,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Aso Farm/Farm Experience (kid-friendly),"Aso, Kumamoto",Kyushu,Kumamoto,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Takachiho Gorge (viewpoints),"Takachiho, Miyazaki",Kyushu,Miyazaki,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Udo Jingu (cave shrine by the sea),"Nichinan, Miyazaki",Kyushu,Miyazaki,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Beppu “Hells” + Onsen Town,"Beppu, Oita",Kyushu,Oita,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+Yufuin Onsen Town,"Yufuin, Oita",Kyushu,Oita,Stay,onsen_ryokan,,standard,ready,True,False,backlog_import,Onsen & Ryokan Towns
+African Safari (Oita),"Usa, Oita",Kyushu,Oita,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Takasakiyama Monkey Park,"Oita City, Oita",Kyushu,Oita,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Sakurajima Volcano Views (ferry optional),"Kagoshima City, Kagoshima",Kyushu,Kagoshima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Sengan-en Garden,"Kagoshima City, Kagoshima",Kyushu,Kagoshima,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Yakushima: Shiratani Unsuikyo (short trails),"Yakushima, Kagoshima",Kyushu,Kagoshima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+"Yakushima: Nagata Inakahama (sea turtles, seasonal)","Yakushima, Kagoshima",Kyushu,Kagoshima,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Arita Pottery Town (porcelain making/painting),"Arita, Saga",Kyushu,Saga,Do,workshops_crafts,,standard,ready,True,False,backlog_import,Crafts & Making
+Okinawa Churaumi Aquarium,"Motobu, Okinawa",Okinawa,Okinawa,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Emerald Beach,"Motobu, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Bise Fukugi Tree Road,"Motobu, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Tropical Dream Center (plants),"Motobu, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Cape Manzamo,"Onna, Okinawa",Okinawa,Okinawa,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+"Blue Cave Snorkel (guided, optional)","Onna, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+DMM Kariyushi Aquarium,"Tomigusuku, Okinawa",Okinawa,Okinawa,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Makishi Public Market,"Naha, Okinawa",Okinawa,Okinawa,Eat,food_markets,,standard,ready,True,False,backlog_import,Food & Markets
+Shuri Castle Park,"Naha, Okinawa",Okinawa,Okinawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Okinawa World & Gyokusendo Cave,"Nanjo, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Sefa-Utaki,"Nanjo, Okinawa",Okinawa,Okinawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Valley of Gangala (guided nature walk),"Nanjo, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Gesashi Bay Mangrove Kayak,"Higashi, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Kerama Islands Day Trip (snorkel beaches),"Kerama Islands, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Zamami: Furuzamami Beach,"Zamami, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Tokashiki: Aharen Beach,"Tokashiki, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Kabira Bay (Ishigaki),"Ishigaki, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Taketomi Island Village Cycling,"Taketomi, Okinawa",Okinawa,Okinawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Iriomote Mangrove Cruise,"Iriomote, Okinawa",Okinawa,Okinawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+"Peace Memorial Park (optional, parent-led)","Itoman, Okinawa",Okinawa,Okinawa,See,culture_history,,standard,ready,True,False,backlog_import,Culture & History
+Tokyo Disneyland,"1-1 Maihama, Urayasu, Chiba 279-0031",Kanto,Chiba,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Tokyo DisneySea,"1-13 Maihama, Urayasu, Chiba 279-8511",Kanto,Chiba,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Pokémon Center MEGA TOKYO,"Sunshine City alpa 2F, 3-1-2 Higashi-Ikebukuro, Toshima City, Tokyo 170-6002",Kanto,Tokyo,See,anime,with_kids,standard,ready,True,False,backlog_import,Anime/Ghibli
+Warner Bros. Studio Tour Tokyo – The Making of Harry Potter,"1-1-7 Kasugacho, Nerima City, Tokyo 179-0074",Kanto,Tokyo,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+KidZania Tokyo,"Urban Dock LaLaport Toyosu, 2-4-9 Toyosu, Koto City, Tokyo 135-8614",Kanto,Tokyo,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Sunshine Aquarium,"Sunshine City World Import Mart Bldg, 3-1 Higashi-Ikebukuro, Toshima City, Tokyo 170-8630",Kanto,Tokyo,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Sanrio Puroland,"1-31 Ochiai, Tama, Tokyo 206-8588",Kanto,Tokyo,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Hakone Sightseeing Cruise (Lake Ashi ‘Pirate Ship’),"Lake Ashi area, Hakone, Kanagawa (multiple piers)",Kanto,Kanagawa,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Universal Studios Japan (USJ) & Super Nintendo World,"2-1-33 Sakurajima, Konohana Ward, Osaka 554-0031",Kansai,Osaka,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Toei Kyoto Studio Park,"10 Uzumasa Higashihachiokacho, Ukyo Ward, Kyoto 616-8586",Kansai,Kyoto,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Arashiyama Monkey Park Iwatayama,"8 Arashiyama Genrokuzancho, Nishikyo Ward, Kyoto 616-0007",Kansai,Kyoto,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Samurai & Ninja Museum with Experience (Kyoto),Kyoto (Nakagyo Ward area),Kansai,Kyoto,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Kids Plaza Osaka,"2-1-7 Ogimachi, Kita Ward, Osaka 530-0025",Kansai,Osaka,Do,quirky_museums,rainy_day;with_kids,standard,ready,True,False,backlog_import,Quirky & Interactive Museums
+Ghibli Park,"Aichi Earth Expo Memorial Park, Nagakute, Aichi",Chubu,Aichi,See,anime,with_kids,standard,ready,True,False,backlog_import,Anime/Ghibli
+LEGOLAND Japan,"2-2-1 Kinjo-futo, Minato Ward, Nagoya, Aichi 455-8605",Chubu,Aichi,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Jigokudani Monkey Park (Snow Monkeys),"6845 Hirao, Yamanouchi, Shimotakai District, Nagano 381-0401",Chubu,Nagano,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Fuji-Q Highland,"5-6-1 Shinnishihara, Fujiyoshida, Yamanashi 403-0017",Chubu,Yamanashi,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Rusutsu Resort (Summer & Winter),"13 Izumikawa, Rusutsu, Abuta District, Hokkaido 048-1711",Hokkaido,Hokkaido,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Nago Pineapple Park,"1195 Biimata, Nago, Okinawa 905-0005",Okinawa,Okinawa,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+American Village (Mihama) + Sunset Beach,"Mihama, Chatan, Nakagami District, Okinawa 904-0115",Okinawa,Okinawa,See,photo_spots,,standard,ready,True,False,backlog_import,Views & Sunsets
+Huis Ten Bosch,"1-1 Huis Ten Bosch Machi, Sasebo, Nagasaki 859-3292",Kyushu,Nagasaki,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Beppu ‘Hells’ (Jigoku Meguri),"Beppu, Oita Prefecture (multiple sites)",Kyushu,Oita,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Edo Wonderland Nikko Edomura,"470-2 Karakura, Nikko, Tochigi 321-2524",Kanto,Tochigi,Do,theme_parks,with_kids,standard,ready,True,False,backlog_import,Theme Parks & Big Attractions
+Nijigen no Mori (Awaji Island Anime Park),"2425-2 Kusumoto, Awaji, Hyogo 656-2301",Kansai,Hyogo,See,anime,with_kids,standard,ready,True,False,backlog_import,Anime/Ghibli
+Numazu (Port town base),"Numazu, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Shuzenji (Onsen town base),"Izu City, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Izu-Nagaoka (Onsen area base),"Izunokuni, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Izu Kogen (Coastal plateau base),"Ito, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Ito (Beach + onsen town base),"Ito, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Shimoda (Beach town base),"Shimoda, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Minami-Izu (South Izu base),"Minamiizu, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Nishi-Izu (West Izu base),"Nishiizu, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Dogashima (Coast/caves base),"Nishiizu, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Atami (Onsen + beach town base),"Atami, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Kannami (Quiet countryside base),"Kannami, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Kawazu (Waterfalls + river base),"Kawazu, Shizuoka",Chubu,Shizuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Lalalala Sun Beach (らららサンビーチ),"517-4 Nishiura Hirasawa, Numazu, Shizuoka 410-0234",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Beaches & Tidepooling
+Kujupama Beach (九十浜海水浴場),"Suzaki, Shimoda, Shizuoka 415-0014",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Beaches & Tidepooling
+Yumigahama Beach (弓ヶ浜),"Minamiizu, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Beaches & Tidepooling
+Nabetahama Beach (鍋田浜),"Shimoda, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Beaches & Tidepooling
+Arari Beach (安良里海水浴場),"Nishiizu, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Beaches & Tidepooling
+Nagahama Kaihin Park (長浜海浜公園),"Atami, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Beaches & Tidepooling
+Dogashima Marine Cave Cruise (堂ヶ島遊覧船),"Nishiizu, Shizuoka",Chubu,Shizuoka,See,nature_water,,standard,ready,True,False,backlog_import,Sea Caves & Coastal Features
+Tensodo Cave / Skylight Cave (天窓洞),"Nishiizu, Shizuoka",Chubu,Shizuoka,See,nature_water,,standard,ready,True,False,backlog_import,Sea Caves & Coastal Features
+Sanshiro Island Tombolo (三四郎島トンボロ),"Nishina Dogashima, Nishiizu, Shizuoka 410-3514",Chubu,Shizuoka,See,nature_water,,standard,ready,True,False,backlog_import,Sea Caves & Coastal Features
+Ryugu Cave (龍宮窟),"Tōji, Shimoda, Shizuoka 415-0029",Chubu,Shizuoka,See,nature_water,,standard,ready,True,False,backlog_import,Sea Caves & Coastal Features
+Jogasaki Coast (城ヶ崎海岸),"Ito, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Nature Walks & Views
+Kadowaki Suspension Bridge (門脇つり橋),"Ito, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Nature Walks & Views
+Kawazu Seven Waterfalls (河津七滝),"Kawazu, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Nature Walks & Views
+Mount Omuro / Omuroyama (大室山),"Ito, Shizuoka",Chubu,Shizuoka,Do,nature_water,,standard,ready,True,False,backlog_import,Nature Walks & Views
+Izu Shaboten Zoo (伊豆シャボテン動物公園),"Ito, Shizuoka",Chubu,Shizuoka,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Izu Animal Kingdom (伊豆アニマルキングダム),"Higashiizu, Shizuoka",Chubu,Shizuoka,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Shimoda Floating Aquarium (下田海中水族館),"Shimoda, Shizuoka",Chubu,Shizuoka,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Shimoda Dolphin Beach (ドルフィンビーチ),"Shimoda, Shizuoka",Chubu,Shizuoka,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Numazu Deep Sea Aquarium (沼津港深海水族館),"Numazu, Shizuoka",Chubu,Shizuoka,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Atagawa Tropical & Alligator Garden (熱川バナナワニ園),"Higashiizu, Shizuoka",Chubu,Shizuoka,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Odawara Wanpaku Land (小田原わんぱくらんど),"Odawara, Kanagawa",Kanto,Kanagawa,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Izu Granpal Park (伊豆ぐらんぱる公園),"Ito, Shizuoka",Chubu,Shizuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Ito Marine Town (道の駅 伊東マリンタウン),"Ito, Shizuoka",Chubu,Shizuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Shiosai Hiroba (伊東市しおさい広場),"湯川571-3, Ito, Shizuoka",Chubu,Shizuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Komuroyama Park – Dinosaur Playground (小室山公園 恐竜広場),"Ito, Shizuoka",Chubu,Shizuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Cycle Sports Center (サイクルスポーツセンター),"1826 Ōno, Izu, Shizuoka 410-2402",Chubu,Shizuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Saphir Odoriko Limited Express (サフィール踊り子),Tokyo / Shizuoka line,Kanto,Tokyo,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Scenic Train / Transit
+Onomichi (尾道) – waterfront town base,"Onomichi, Hiroshima",Chugoku,Hiroshima,Stay,,,base,ready,True,False,backlog_import,Base Town
+Fukuyama (福山) – city base,"Fukuyama, Hiroshima",Chugoku,Hiroshima,Stay,,,base,ready,True,False,backlog_import,Base Town
+Imabari (今治) – Shimanami base,"Imabari, Ehime",Shikoku,Ehime,Stay,,,base,ready,True,False,backlog_import,Base Town
+Ikuchijima (生口島) – island base,"Ikuchijima, Hiroshima",Chugoku,Hiroshima,Stay,,,base,ready,True,False,backlog_import,Base Town
+Akiyoshidai area base,"Akiyoshidai, Yamaguchi",Chugoku,Yamaguchi,Stay,,,base,ready,True,False,backlog_import,Base Town
+Fukuoka (福岡) – city base,"Fukuoka, Fukuoka",Kyushu,Fukuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Itoshima (糸島) – beach day trips,"Itoshima, Fukuoka",Kyushu,Fukuoka,Stay,,,base,ready,True,False,backlog_import,Base Town
+Beppu (別府) – onsen base,"Beppu, Oita",Kyushu,Oita,Stay,,,base,ready,True,False,backlog_import,Base Town
+Yufuin (湯布院) – onsen village base,"Yufuin, Oita",Kyushu,Oita,Stay,,,base,ready,True,False,backlog_import,Base Town
+Takachiho (高千穂) – gorge base,"Takachiho, Miyazaki",Kyushu,Miyazaki,Stay,,,base,ready,True,False,backlog_import,Base Town
+Tatara Bridge (多々羅大橋),"Shimanami Kaido, Hiroshima/Ehime",Chugoku,Hiroshima,Do,nature_water,,standard,ready,True,False,backlog_import,Cycling & Bridges
+Kurushima-Kaikyo Bridge (来島海峡大橋),"Imabari, Ehime",Shikoku,Ehime,Do,nature_water,,standard,ready,True,False,backlog_import,Cycling & Bridges
+Michi-no-Eki Tatara Shimanami Park (道の駅 多々羅しまなみ公園),Near Tatara Bridge,Chugoku,Hiroshima,Do,nature_water,,standard,ready,True,False,backlog_import,Cycling & Bridges
+Setoda Sunset Beach (瀬戸田サンセットビーチ),"Onomichi, Hiroshima",Chugoku,Hiroshima,See,nature_water,,standard,ready,True,False,backlog_import,Beaches & Islands
+Yawatahama–Beppu Ferry,Yawatahama (Ehime) / Beppu (Oita),Shikoku,Ehime,Do,scenic_transport,,standard,ready,True,False,backlog_import,Ferries / Transit
+Uwajima Unyu Ferry (宇和島運輸フェリー),Uwajima (Ehime) ports,Shikoku,Ehime,Do,scenic_transport,,standard,ready,True,False,backlog_import,Ferries / Transit
+Akiyoshidai Karst Plateau (秋吉台),"Mine, Yamaguchi",Chugoku,Yamaguchi,See,nature_water,,standard,ready,True,False,backlog_import,Caves & Karst
+Akiyoshidai Safari Land (秋吉台サファリランド),"Mine, Yamaguchi",Chugoku,Yamaguchi,Do,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Safari
+Uminonakamichi Seaside Park (海の中道海浜公園),"Fukuoka, Fukuoka",Kyushu,Fukuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Marine World Uminonakamichi (マリンワールド海の中道),"Fukuoka, Fukuoka",Kyushu,Fukuoka,See,animals,with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Island City Central Park (アイランドシティ中央公園),"Higashi Ward, Fukuoka",Kyushu,Fukuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Imazu Sports Park (今津運動公園),"Nishi Ward, Fukuoka",Kyushu,Fukuoka,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Playgrounds
+Umitamago Aquarium (うみたまご),"Oita, Oita",Kyushu,Oita,See,animals,rainy_day;with_kids,standard,ready,True,False,backlog_import,Animals & Aquariums
+Asobeach at Umitamago (あそびーち),"Oita, Oita",Kyushu,Oita,Do,animals,with_kids,standard,ready,True,False,backlog_import,Beaches & Animal Encounters
+Kijima Kogen Park (城島高原パーク),"Beppu, Oita",Kyushu,Oita,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Water Play
+Chapucha Water Play Area (ちゃぷちゃ) – Kijima Kogen,"Beppu, Oita",Kyushu,Oita,Do,with_kids,with_kids,standard,ready,True,False,backlog_import,Parks & Water Play
+Takachiho Gorge Boat Rental (高千穂峡 貸しボート),"Takachiho, Miyazaki",Kyushu,Miyazaki,See,nature_water,,standard,ready,True,False,backlog_import,Nature & Water
+Takachiho Kagura (高千穂夜神楽),"Takachiho, Miyazaki",Kyushu,Miyazaki,See,culture_history,,standard,ready,True,False,backlog_import,Culture & Night Show
+Amaterasu Railway (あまてらす鉄道),"Takachiho, Miyazaki",Kyushu,Miyazaki,Do,scenic_transport,by_train,standard,ready,True,False,backlog_import,Scenic Train / Transit
+Sapporo Nijo Market (二条市場),"Sapporo, Hokkaido",Hokkaido,Hokkaido,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Sapporo Curb Market (Jogai) (札幌場外市場),"Sapporo, Hokkaido",Hokkaido,Hokkaido,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Kushiro Washo Market (釧路和商市場),"Kushiro, Hokkaido",Hokkaido,Hokkaido,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Otaru Sankaku Market (小樽三角市場),"Otaru, Hokkaido",Hokkaido,Hokkaido,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Ganso Sapporo Ramen Yokocho (元祖札幌ラーメン横丁),"Sapporo, Hokkaido",Hokkaido,Hokkaido,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Aomori Furukawa Fish Market (青森魚菜センター),"Aomori, Aomori",Tohoku,Aomori,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Hachinohe Morning Market (八戸館鼻岸壁朝市),"Hachinohe, Aomori",Tohoku,Aomori,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Hachinohe Miroku Yokocho (みろく横丁),"Hachinohe, Aomori",Tohoku,Aomori,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Sendai Asaichi Morning Market (仙台朝市),"Sendai, Miyagi",Tohoku,Miyagi,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Iroha Yokocho (壱弐参横丁),"Sendai, Miyagi",Tohoku,Miyagi,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Bunka Yokocho (文化横丁),"Sendai, Miyagi",Tohoku,Miyagi,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Akita Citizen's Market (秋田市民市場),"Akita, Akita",Tohoku,Akita,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Omoide Yokocho (思い出横丁),"Shinjuku, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Shibuya Nonbei Yokocho (渋谷のんべい横丁),"Shibuya, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Harmonica Yokocho (ハモニカ横丁),"Kichijoji, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Shibuya Yokocho (渋谷横丁),"Shibuya, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Tokyo Ramen Street (東京ラーメンストリート),"Tokyo, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Toyosu Senkyaku Banrai (豊洲 千客万来),"Koto, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Isetan Shinjuku (Depachika) (伊勢丹新宿店),"Shinjuku, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Takashimaya Nihonbashi (Depachika) (高島屋日本橋店),"Tokyo, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Shibuya Tokyu Foodshow (渋谷 東急フードショー),"Shibuya, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Daimaru Tokyo (Depachika) (大丸東京店),"Tokyo, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Kappabashi Kitchen Town (合羽橋道具街),"Taito, Tokyo",Kanto,Tokyo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Takashimaya Yokohama (Depachika) (横浜タカシマヤ),"Yokohama, Kanagawa",Kanto,Kanagawa,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Yokohama Chinatown (横浜中華街),"Yokohama, Kanagawa",Kanto,Kanagawa,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Takayama Miyagawa Morning Market (宮川朝市),"Takayama, Gifu",Chubu,Gifu,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Takayama Jinya-mae Morning Market (高山陣屋前朝市),"Takayama, Gifu",Chubu,Gifu,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+JR Nagoya Takashimaya (Depachika) (ジェイアール名古屋タカシマヤ),"Nagoya, Aichi",Chubu,Aichi,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Yanagibashi Central Market (Nagoya) (柳橋中央市場),"Nagoya, Aichi",Chubu,Aichi,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Pier Bandai (ピアBandai),"Niigata, Niigata",Chubu,Niigata,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Hozenji Yokocho (法善寺横丁),"Osaka, Osaka",Kansai,Osaka,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Shinsekai Janjan Yokocho (新世界ジャンジャン横丁),"Osaka, Osaka",Kansai,Osaka,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Hankyu Umeda (Depachika) (阪急うめだ本店),"Osaka, Osaka",Kansai,Osaka,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Shinsaibashi-Suji Shopping Street (心斎橋筋商店街),"Osaka, Osaka",Kansai,Osaka,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Takashimaya Kyoto (Depachika) (京都タカシマヤ),"Kyoto, Kyoto",Kansai,Kyoto,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Isetan Kyoto (Depachika) (ジェイアール京都伊勢丹),"Kyoto, Kyoto",Kansai,Kyoto,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Kobe Nankinmachi (Chinatown) (神戸南京町),"Kobe, Hyogo",Kansai,Hyogo,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Karato Market (唐戸市場),"Shimonoseki, Yamaguchi",Chugoku,Yamaguchi,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Okonomimura (お好み村),"Hiroshima, Hiroshima",Chugoku,Hiroshima,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Karoichi Tottori Port Seafood Market (かろいち),"Tottori, Tottori",Chugoku,Tottori,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Okayama Wholesale Market Fuku Fuku Dori (市場ふくふく通り),"Okayama, Okayama",Chugoku,Okayama,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Kure Taisho Town Market (久礼大正町市場),"Nakatosa, Kochi",Shikoku,Kochi,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Gintengai Shopping Arcade (銀天街商店街),"Matsuyama, Ehime",Shikoku,Ehime,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Iyotetsu Takashimaya (Depachika) (いよてつ髙島屋),"Matsuyama, Ehime",Shikoku,Ehime,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Yanagibashi Rengo Market (柳橋連合市場),"Fukuoka, Fukuoka",Kyushu,Fukuoka,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Tanga Market (旦過市場),"Kitakyushu, Fukuoka",Kyushu,Fukuoka,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Yobuko Morning Market (呼子朝市),"Karatsu, Saga",Kyushu,Saga,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Sakuranobaba Josaien (桜の馬場 城彩苑),"Kumamoto, Kumamoto",Kyushu,Kumamoto,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Kagoshima Furusato Yataimura (かごっまふるさと屋台村),"Kagoshima, Kagoshima",Kyushu,Kagoshima,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Nagasaki Shinchi Chinatown (長崎新地中華街),"Nagasaki, Nagasaki",Kyushu,Nagasaki,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets
+Sakaemachi Market (栄町市場),"Naha, Okinawa",Okinawa,Okinawa,Eat,food_markets,,standard,ready,True,False,food_research_v1,Food & Markets

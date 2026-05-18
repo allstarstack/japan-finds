@@ -1,0 +1,12 @@
+name: "Tatara Bridge (多々羅大橋)"
+address_or_area: "Shimanami Kaido, Hiroshima/Ehime"
+region: "Chugoku"
+prefecture: "Hiroshima"
+primary_category: "Do"
+public_label: "nature_water"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Cycling & Bridges"

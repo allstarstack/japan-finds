@@ -1,0 +1,13 @@
+name: "Arashiyama Monkey Park Iwatayama"
+address_or_area: "8 Arashiyama Genrokuzancho, Nishikyo Ward, Kyoto 616-0007"
+region: "Kansai"
+prefecture: "Kyoto"
+primary_category: "See"
+public_label: "animals"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Animals & Aquariums"

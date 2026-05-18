@@ -1,0 +1,13 @@
+name: "Island City Central Park (アイランドシティ中央公園)"
+address_or_area: "Higashi Ward, Fukuoka"
+region: "Kyushu"
+prefecture: "Fukuoka"
+primary_category: "Do"
+public_label: "parks"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Parks & Playgrounds"

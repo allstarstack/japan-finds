@@ -1,0 +1,13 @@
+name: "Kujukushima Aquarium Umikirara"
+address_or_area: "Sasebo, Nagasaki"
+region: "Kyushu"
+prefecture: "Nagasaki"
+primary_category: "See"
+public_label: "animals"
+planning_flags: "rainy_day;with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Animals & Aquariums"

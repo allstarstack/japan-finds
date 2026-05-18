@@ -3,10 +3,11 @@
    Mobile: wordmark + hamburger (opens a full-screen menu).
    Desktop: wordmark + centered links + red CTA. */
 import SavePin from "./SavePin.astro";
+import { JAPAN_MAP_URL } from "../data/site.js";
 
 /* Root-relative anchors so the nav works from any page, not just home. */
 const navLinks = [
-  { label: "Map", href: "/#map" },
+  { label: "Where", href: "/places" },
   { label: "Finds", href: "/products" },
   { label: "Cheat Sheets", href: "/#cheat-sheets" },
   { label: "Shop Waitlist", href: "/#shop" },
@@ -30,7 +31,12 @@ const navLinks = [
       </ul>
     </nav>
 
-    <a class="btn btn--primary btn--sm hdr__cta" href="/#map">Get the Japan Map&nbsp;→</a>
+    <a
+      class="btn btn--primary btn--sm hdr__cta"
+      href={JAPAN_MAP_URL}
+      target="_blank"
+      rel="noopener"
+    >Get the Japan Map&nbsp;→</a>
 
     <button
       class="hamburger"
@@ -54,7 +60,12 @@ const navLinks = [
         {navLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
       </ul>
     </nav>
-    <a class="btn btn--primary btn--lg m-menu__cta" href="/#map">Get the Japan Map&nbsp;→</a>
+    <a
+      class="btn btn--primary btn--lg m-menu__cta"
+      href={JAPAN_MAP_URL}
+      target="_blank"
+      rel="noopener"
+    >Get the Japan Map&nbsp;→</a>
   </div>
 </header>
 

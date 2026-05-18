@@ -97,33 +97,51 @@ export const productSchema = z.object({
   sub_chip: z.string().optional(),
 });
 
+/* Phase B-2 places schema (Decision #1B revision).
+   Supersedes the Phase A inspection schema — the old `category` /
+   `name_en` / `area` shape is gone. The /places ("Where") page keys off
+   `primary_category` (card colour) and `public_label` (the experience
+   chip), and derives the planning/audience sub-filters from
+   `planning_flags`. 12 primary chips: the spec's 11 plus `parks` — the
+   11 backlog rows that arrived tagged `with_kids` as a *label* are all
+   parks/playgrounds, so they get their own chip (Steven's call).
+   Base-tier rows ("stay bases") carry `public_label: ""` — no chip.
+   `slug` is dropped: the glob loader derives the entry id from the
+   filename, so the file IS the slug. */
 export const placeSchema = z.object({
-  slug,
-  name_en: z.string(),
-  area: z.string(),
-  category: z.enum([
-    "konbini-hauls",
-    "donki-drugstore-missions",
-    "100-yen-finds",
-    "hobby-pilgrimages",
-    "rain-proof",
-    "family-ready",
-    "local-food-streets",
-    "transit-anchors",
-    "quiet-japan-towns",
-  ]),
-  status: statusEnum,
-  name_jp: z.string().optional(),
-  address: z.string().optional(),
-  google_maps_url: z.string().optional(),
-  why_it_belongs: z.string().max(200).optional(),
-  hours: z.string().optional(),
-  tax_free: z.enum(["yes", "no", "partial", "unverified"]).optional(),
-  cash_only: z.boolean().optional(),
-  related_products: strings.optional(),
-  related_stores: strings.optional(),
-  verification_notes: z.string().optional(),
-  source_links: strings.optional(),
+  // required
+  name: z.string(),
+  address_or_area: z.string(),
+  region: z.string(),
+  prefecture: z.string(),
+  primary_category: z.enum(["See", "Do", "Eat", "Stay"]),
+  // optional
+  public_label: z
+    .enum([
+      "nature_water",
+      "culture_history",
+      "animals",
+      "photo_spots",
+      "quirky_museums",
+      "theme_parks",
+      "onsen_ryokan",
+      "workshops_crafts",
+      "anime",
+      "scenic_transport",
+      "food_markets",
+      "parks",
+      "", // base-tier rows: no experience chip
+    ])
+    .optional(),
+  // semicolon-separated subset of: rainy_day, with_kids, by_train
+  // (day_trips is in the taxonomy but unused — no rows carry it)
+  planning_flags: z.string().optional(),
+  launch_tier: z.enum(["standard", "base"]).default("standard"),
+  status: z.enum(["ready", "draft"]).default("ready"),
+  public_render: z.boolean().default(true),
+  address_verified: z.boolean().default(false),
+  source_type: z.string().optional(),
+  original_category: z.string().optional(),
 });
 
 export const storeSchema = z.object({

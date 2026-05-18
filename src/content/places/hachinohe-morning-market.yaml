@@ -1,0 +1,12 @@
+name: "Hachinohe Morning Market (八戸館鼻岸壁朝市)"
+address_or_area: "Hachinohe, Aomori"
+region: "Tohoku"
+prefecture: "Aomori"
+primary_category: "Eat"
+public_label: "food_markets"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "food_research_v1"
+original_category: "Food & Markets"

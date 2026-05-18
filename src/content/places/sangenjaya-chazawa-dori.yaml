@@ -1,7 +1,11 @@
-slug: "sangenjaya-chazawa-dori"
-name_en: "Sangenjaya / Chazawa-dori"
-area: "Setagaya, Tokyo"
-category: "quiet-japan-towns"
-status: "needs_verification"
-why_it_belongs: "Residential authenticity and local izakaya interest."
-verification_notes: "Access notes, etiquette, specific places, language friction — Sensitive; avoid overexposure."
+name: "Sangenjaya & Chazawa-dori"
+address_or_area: "Setagaya, Tokyo"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "photo_spots"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "v1_curated"

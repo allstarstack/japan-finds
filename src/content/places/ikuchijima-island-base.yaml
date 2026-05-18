@@ -1,0 +1,12 @@
+name: "Ikuchijima (生口島) – island base"
+address_or_area: "Ikuchijima, Hiroshima"
+region: "Chugoku"
+prefecture: "Hiroshima"
+primary_category: "Stay"
+public_label: ""
+launch_tier: "base"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Base Town"

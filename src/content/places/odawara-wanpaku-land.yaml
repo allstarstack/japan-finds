@@ -1,0 +1,13 @@
+name: "Odawara Wanpaku Land (小田原わんぱくらんど)"
+address_or_area: "Odawara, Kanagawa"
+region: "Kanto"
+prefecture: "Kanagawa"
+primary_category: "Do"
+public_label: "parks"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "backlog_import"
+original_category: "Parks & Playgrounds"
