@@ -1,23 +1,38 @@
 # Japan Finds — Project State
 
-**Last updated:** 2026-05-17
+**Last updated:** 2026-05-17 (late evening)
 **Purpose:** Orientation doc for any new Claude/Claude Code session. Read this first before making changes.
 
 ---
 
 ## Live state
 
-- **japan.allstarsteven.com** — V1 landing page shipped (Lighthouse 100/96/100/100), V2 Phase A data layer shipped (commit `7b16b19`). 521 entries seeded across products/places/stores/routes/cheat-sheets, all `status === "ready"` gated.
+- **japan.allstarsteven.com** — V1 landing page shipped (Lighthouse 100/96/100/100). **Phase B-1 catalog launch built but not yet live.** PR #1 (`phase-b1-catalog-launch` branch) is open and Vercel preview is green. Awaiting Steven's pre-merge review, then merge → auto-deploy.
 - **allstarsteven.com** — hub page deploying (separate repo: `allstarstack/allstarsteven-hub`, separate Vercel project).
 - **shop.allstarsteven.com** — Shopify launching ~30 days from this update.
-- **Kit form** — working, tested, list ID committed
-- **DNS** — Porkbun-managed. CNAME `japan` → `cname.vercel-dns.com` verified. Apex A record will be set during hub deployment.
+- **Kit form** — working, tested, list ID committed.
+- **DNS** — Porkbun-managed. CNAME `japan` → `cname.vercel-dns.com` verified. Apex A record set during hub deployment.
+
+---
+
+## Phase B-1 outcomes (built 2026-05-17, awaiting merge)
+
+- **384 launch products** (originally proposed 385; 1 dedupe caught mid-build: JF-0373 + JF-0446 = same Bioré sunscreen, kept JF-0373).
+- **239 V (verified-fill) + 145 CF (creator-fill).** V rows render full info; CF rows render English name + generic where-to-buy only (Yawataya hallucination guard).
+- **13 chips** with shopping-intent labels on the four store chips:
+  - Konbini Run (47) · Drugstore Haul (41) · 100-Yen Stop (36) · Donki Trip (31)
+  - Plus: Skincare, Regional Food, Snacks, Stationery, Travel Gear, Customization, Kids & Family, Kitchen, Gift
+- **Sub-chips** on Konbini Run (Food / Drink / Sweet) and Drugstore Haul (Skincare / Comfort / Meds — Beauty is empty by design).
+- **Filter rules:** primary single-select, sub multi-select, URL-shareable via `?chip=&sub=`, client-side, instant.
+- **Fonts:** Google CDN swapped to self-hosted woff2. Latin subsets for Space Grotesk 700, Inter 400, IBM Plex Mono 500. (PROJECT_STATE previously claimed fonts were self-hosted — that was wrong; it's true now.)
+- **Lighthouse:** all routes clear ≥95/95/100/95. `/products` 99/96/100/100 mobile, 100/96/100/100 desktop. `/products?chip=konbini` 99/96/100/100.
+- **21 items deferred to v2 wave** (the original "skip" chip concept dropped — items need Steven's per-item review for product card / cheat-sheet / cut classification).
 
 ---
 
 ## Stack (locked)
 
-Astro 6 + vanilla CSS + Vercel + Kit + GitHub. **No Tailwind, React, or TypeScript anywhere.** Mobile-first. Self-hosted fonts (Space Grotesk, Inter, IBM Plex Mono).
+Astro 6 + vanilla CSS + Vercel + Kit + GitHub. **No Tailwind, React, or TypeScript anywhere.** Mobile-first. Self-hosted fonts (Space Grotesk, Inter, IBM Plex Mono) — actually self-hosted as of PR #1.
 
 ## URL architecture (Pattern B, locked)
 
@@ -25,7 +40,7 @@ Astro 6 + vanilla CSS + Vercel + Kit + GitHub. **No Tailwind, React, or TypeScri
 - `japan.allstarsteven.com` → Japan Finds
 - `shop.allstarsteven.com` → Shopify (future)
 
-## Brand spec (locked)
+## Brand spec (locked, with one drift to reconcile)
 
 **Direction:** B v2 · Konbini Field Guide (refined)
 
@@ -39,100 +54,89 @@ Astro 6 + vanilla CSS + Vercel + Kit + GitHub. **No Tailwind, React, or TypeScri
 
 **Banned imagery:** Mt. Fuji, torii, cherry blossoms, Shibuya neon, shrines, luxury travel mag style, AI-generated Japan photography.
 
+**⚠ Brand.md drift to reconcile:** brand.md currently says "Flags render on product cards as a small callout." Phase B-1 launch strips safety flags entirely (transplant flags are personal-use notes for Steven, not audience-facing). brand.md should be updated to reflect the launch behavior — flags are curation aid only, never render on public cards.
+
 ---
 
-## Phase B prep — locked decisions
+## Decisions locked
 
 ### Decision #1: Product category enum (14 values)
-
-```
-konbini (~50)          hundred_yen (~46)     drugstore (~39)
-donki (~31)            skincare_beauty (~47) regional_food (~48)
-snacks (~26)           stationery (~21)      kitchen (~18)
-kids_family (~24)      customization (~40)   travel_gear (~21)
-gift (~8)              other (~0)
-```
-
-Covers ~94% of the 460-product catalog. Solves the 151/460→other problem from Phase A.
+Documented in prior PROJECT_STATE. Now implemented in product schema as `launch_category` (13 of 14 enum values used in launch — "other" / catch-all not used; 14th was provisional "skip" which got dropped).
 
 ### Decision #1B: Places schema + 17 public chips
+Documented in prior PROJECT_STATE. Not yet implemented — pending Places Backlog Import build.
 
-**`primary_category` enum (5 values):** See | Do | Eat | Shop | Stay
+### Decision #2: Launch list (LOCKED 2026-05-17)
+- 384 products selected from 461-item catalog
+- Methodology: catalog-scope launch with conservative-display safeguard on CF rows
+- Strategy: all V-eligible + iconic CF in zero-V categories
+- 21 items deferred for per-item review (former "skip" concept)
+- File: `docs/decision_2_v4.csv` (committed to repo)
+- 3 harm-exclusions: JF-0067 vape, JF-0069 strong laxatives, JF-0070 unverified contacts
+- 8 dupes resolved (7 in CSV, 1 caught mid-build)
 
-**Tiebreaker:** See for landmarks, Do for hands-on, Stay for overnight bases. "Kids" rejected as primary (audience, not place-type) — lives in public_labels.
-
-**17 public_labels (chips):**
-- STORE (4): Konbini Hauls · Donki Finds · Drugstore Finds · 100-Yen Finds
-- FOOD (2): Food Markets · Food Alleys
-- EXPERIENCE (5): Onsen & Ryokan · Nature & Water · Workshops · Anime · Quirky
-- POI (2): Photo Spots · Scenic Trains
-- PLANNING (3): Day Trips · By Train · Rainy Day
-- AUDIENCE (1): With Kids
-- DISCOVERY (1): Local Favorites
-
-**Schema fields for all places (V1 + 272-row backlog):**
-- Required: name, address_or_area, region, prefecture, original_category, primary_category, public_labels, planning_flags, source_type, status, launch_tier, public_render (default false), address_verified (default false)
-- Optional on promotion: url, hours, ticket_rules, lat, lng
-- Deferred: search_aliases (until search ships)
-
-**Enums:**
-- `launch_tier`: v1 | v2_candidate | backlog | reject
-- `source_type`: v1_curated | regional_seed_backlog
-
-**Dedupe required** for V1 35 places ↔ backlog 272 by name + prefecture. Conflicts → `places-import-conflicts.md`.
+### Decision #3: Filter UX (LOCKED 2026-05-17)
+- 13 primary chips, 4 with shopping-intent labels (Konbini Run / Drugstore Haul / 100-Yen Stop / Donki Trip)
+- Sub-chips on Konbini Run and Drugstore Haul only
+- Primary single-select, sub multi-select
+- Sort: V-first → CF, then alphabetical
+- URL-shareable filter state via `?chip=&sub=`
+- Mobile-first horizontal-scroll chip rail, sticky on scroll
 
 ### Decision #4 (workflow): Two-tier quick-add product capture
-
-**Stub state** (minimal schema, captures fast at video time, lives in `/just-added/` feed, doesn't touch main chips).
-**Ready state** (full schema, lives in main catalog, populates chips, promoted from stub on weekly review).
-
-Phase 0 (manual stub YAML editing via mobile, ~15min build) → Phase 1 (GitHub Issue Form + Action, ~1-2h) → Phase 2 (optional iOS Shortcut/Telegram).
-
-Spec: `QUICK_ADD_WORKFLOW_SPEC.md`.
+Documented in prior PROJECT_STATE. Spec: `QUICK_ADD_WORKFLOW_SPEC.md`. Phase 0 not yet built.
 
 ---
 
-## In-flight at last update
+## In-flight (Steven's plate)
 
-- **Hub page build** — Claude Code session active. Astro scaffolded. Fonts self-hosted. Components and CSS in progress. Expected halts: Kit embed paste, DNS apex change.
-- **Targeted verification gap-fill** — 90-row run (drugstore safety meds + kitchen + gift + design + konbini heroes + 2 Donki uniques). First attempt via ChatGPT agent failed; rerunning via Claude in Chrome.
-- **Verification state:** 241/461 rows verified and saved to `verification_results_v1.csv`. Grade distribution: A:80, B:155, C:5, D:1.
+**Pre-merge review of PR #1** (3 items):
+1. Visit Vercel preview URL, tap through chips on mobile + desktop, eyeball anything wrong.
+2. Spot-check `docs/phase-b1-populate-report.md` — Claude Code hand-classified 88 konbini/drugstore items into sub-chips. Flag any obvious mis-classifications.
+3. Reconcile brand.md safety flags section (see drift note above).
+
+After merge, Vercel auto-deploys to japan.allstarsteven.com.
 
 ---
 
-## Pending decisions (priority order)
+## Pending decisions / queued work (priority order)
 
-1. **Phase B Decision #2** — finalize 80-product launch list from A-grade pool. Claude proposes, Steven edits.
-2. **Phase B Decision #3** — filter UX scope: chip layout, simultaneous filter rules, primary vs secondary chip hierarchy.
-3. **Phase B BUILD_SPEC.md** — written after Decisions #2 + #3 lock.
-4. **Places Backlog Import BUILD_SPEC** — 272-row regional places import with V1 dedupe.
-5. **Phase B build session** — Claude Code, ~4 hours, Shopping Lists feature.
-6. **Quick-add Phase 0 build** — ~15 minutes, after Phase B build session.
+1. **Pre-merge tasks above** — must clear before merge.
+2. **Enrichment LLM pass on 145 CF rows** — run `japan-finds-creator-fill-enrichment v1.0` prompt (drafted in chat 2026-05-17) against CF rows. Upgrades them from English-only display to full-info. Runs post-launch.
+3. **21 v2-deferred items review** — Steven decides per-item: regular product card, behavioral tip → cheat-sheets, or cut.
+4. **Places Backlog Import BUILD_SPEC** — 272-row regional places import with V1 dedupe. Needs Claude proposal + Steven review. Parallel prep Steven can do tonight/tomorrow: locate the 272-row source file, audit address quality, decide on Google My Maps integration pattern (recommended: option 2 — master Google My Map with "Get the Japan Map" CTA).
+5. **Phase B-2 Shopping Lists feature BUILD_SPEC** — original Phase B headline feature, deferred. ~3-4 hr Claude Code build.
+6. **Quick-Add Phase 0** — 15 min, can run in parallel after Phase B-1 merges.
+7. **Quick-Add Phase 1** — GitHub Issue Form + Action, ~1-2 hr build.
+8. **Cheat sheets content synthesis** — Phase C content lift.
 
 ---
 
 ## Background queue (no rush)
 
 - Spot-check the 80 A-grade verifications (2-4 hrs of Steven's time)
-- Product card copy writing (8-20 hrs — largest remaining lift on Phase B)
-- Cheat sheets content synthesis from research DOCX (Phase C blocker)
+- Product card copy writing in brand voice (30-60 hrs across the 384 launch cards; polish high-traffic ones first)
 - Real image swap from stock to creator-shot stills
-- Color contrast fix on red/green chips (current ~3.5-4:1, target AA 4.5:1)
+- Color contrast fix on red/green chips (current Lighthouse a11y 96 — known background-queue item, identical to live homepage score)
 - Google My Maps real URL needed for "Get the Japan Map" CTAs
 - Sponsor outreach to Klook, MIMARU, @cosme, JNTO, Matsumoto Kiyoshi (top 5 from sponsor leads XLSX)
 
 ---
 
-## Steven's transplant safety flags (apply always to product content)
+## Steven's transplant safety flags (PERSONAL — curation aid only, NEVER render on public cards)
 
-- **Alcohol** (JF-0082 sake brewery tours, JF-0083 distillery tours, JF-0170 sake mini gift, JF-0220 highball, JF-0226 Strong Zero, JF-0282 Strong Zero Double Lemon): clear with transplant team
-- **NSAIDs** (Loxonin JF-0134, Eve JF-0130): liver concern, hard avoid pending clearance
-- **Multi-active cold meds** (Pabron JF-0139, JF-0158): transplant team clearance
-- **Aspirin-related** (Salonpas JF-0143, JF-0162): clearance
-- **Citrus/grapefruit family** (Yuzu kosho JF-0214, Muji yuzu oil/incense JF-0287, Strong Zero grapefruit variant JF-0226): ingestion content needs clearance; **grapefruit Strong Zero is HARD AVOID entirely**
-- **Voltage** (Zojirushi JF-0215, Tepra JF-0438, tax-free electronics JF-0460): Japan 100V vs US 120V — note new Zojirushi NW-YQH 220V tourist model launched Dec 11, 2025
+Per Decision #2: the launch site is for the audience, not Steven personally. Transplant flags are kept as private metadata for Steven's curation work but never surface on product cards. Audience-facing copy treats flagged products as regular recommendations.
 
-## Key pricing/product intel surfaced by verification (apply to product cards)
+- **Alcohol** (sake, beer, highball variants — including JF-0220, JF-0282; grapefruit Strong Zero JF-0226 was dropped as harm-exclude during dedupe)
+- **NSAIDs** (Loxonin S JF-0134, Eve A JF-0130)
+- **Multi-active cold meds** (Pabron JF-0139, JF-0158)
+- **Aspirin-related** (Salonpas JF-0143, JF-0162)
+- **Citrus/grapefruit family** (Yuzu kosho JF-0214, Muji yuzu oil/incense JF-0287)
+- **Voltage** (Zojirushi JF-0215, Tepra JF-0438) — Japan 100V vs US 120V. Note Zojirushi NW-YQH 220V tourist model launched Dec 11, 2025.
+
+---
+
+## Key pricing/product intel surfaced by verification (apply to product cards when copy gets written)
 
 - **Brand correction:** Yawataya shichimi is 八幡屋礒五郎 (Isogoro), NOT Isobei — fix source XLSX
 - **Corporate:** Bathclin merged into Earth Corp Jan 1, 2026
@@ -141,11 +145,22 @@ Spec: `QUICK_ADD_WORKFLOW_SPEC.md`.
 
 ---
 
-## Reference docs (in `/mnt/user-data/outputs/` from chat sessions)
+## Reference docs
 
-- `verification_results_v1.csv` — 241 verified rows
+**In repo at `docs/`:**
+- `PHASE_B1_CATALOG_LAUNCH_BUILD_SPEC.md` — executed
+- `decision_2_v4.csv` — 384-product launch list, locked
+- `phase-b1-populate-report.md` — Claude Code's sub-chip classification report (needs Steven spot-check)
+- `brand.md` — brand spec (one section needs reconcile, see drift note above)
+
+**In `/mnt/user-data/outputs/` from chat sessions:**
+- `verification_results_v1.csv` — 241 verified rows from prior verification work
 - `verification_intel_notes.md` — pricing and corporate-change intel for unverified rows
 - `ALLSTARSTEVEN_HUB_BUILD_SPEC.md` — hub page build spec
 - `QUICK_ADD_WORKFLOW_SPEC.md` — two-tier product capture workflow
 - `JF_VERIFICATION_GAP_RUN.txt` — original 260-row gap-fill prompt
-- `SESSION_HANDOFF_2026-05-17.md` — session handoff for new chats
+
+**Pending creation:**
+- `PLACES_BACKLOG_IMPORT_BUILD_SPEC.md` — next major spec to write
+- `PHASE_B2_SHOPPING_LISTS_BUILD_SPEC.md` — after Places import
+- Session handoff for next major work session (generate when next session approaches)
