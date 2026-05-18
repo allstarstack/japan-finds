@@ -5,13 +5,14 @@ category: "stationery"
 intent:
   - "make_it_yours"
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "御朱印帳"
 brand: "Various temples and stationers"
 where_found:
-  - "Temples"
-  - "shrines"
-  - "specialty shops"
+  - "Shrine and temple gift shops"
+  - "Loft"
+  - "Tokyu Hands"
+  - "Amazon JP"
 price_yen: "1500-3500 book, 300-500 per stamp"
 what_it_is: "Book that gets calligraphy-stamped at each temple/shrine you visit."
 why_travelers_care: "Top-tier proof-of-visit object, accumulates through trip."
@@ -22,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 10
 suitcase_score: 9
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

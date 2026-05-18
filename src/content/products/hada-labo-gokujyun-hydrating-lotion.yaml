@@ -4,12 +4,13 @@ name_en: "Hada Labo Gokujyun Hydrating Lotion"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "肌ラボ 極潤ヒアルロン液"
 brand: "Rohto"
 where_found:
   - "Drugstores"
   - "Donki"
+  - "Rohto online"
 price_yen: "~¥700–¥1,200"
 what_it_is: "Hydrating toner/lotion with hyaluronic acid focus."
 why_travelers_care: "Japan drugstore staple; often cheaper locally."
@@ -24,3 +25,7 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 7
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"
+featured: true

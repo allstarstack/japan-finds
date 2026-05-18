@@ -4,11 +4,11 @@ name_en: "Giant Rainbow Cotton Candy"
 category: "other"
 intent:
   - "content_only"
-status: "content_only"
+status: "ready"
 name_jp: "巨大わたあめ"
 brand: "Totti Candy Factory"
 where_found:
-  - "Harajuku"
+  - "Totti Candy Factory Harajuku"
 price_yen: "~¥900"
 what_it_is: "Oversized rainbow cotton candy."
 why_travelers_care: "Visual-only tourist bait; not a useful recommendation."
@@ -20,3 +20,6 @@ source_links:
   - "User-pasted response"
 confidence: "high"
 trip_score: 2
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

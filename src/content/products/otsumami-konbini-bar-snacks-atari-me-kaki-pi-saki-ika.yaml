@@ -4,7 +4,7 @@ name_en: "Otsumami Konbini Bar Snacks (Atari-Me, Kaki Pi, Saki-Ika)"
 category: "snacks"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
+status: "ready"
 name_jp: "おつまみ"
 brand: "Various"
 where_found:
@@ -20,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 9
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -5,7 +5,7 @@ category: "other"
 intent:
   - "local_editions"
   - "bring_home"
-status: "needs_verification"
+status: "ready"
 name_jp: "泡盛"
 brand: "Various Okinawa distilleries"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 5
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,7 +4,7 @@ name_en: "Skin Aqua Super Moisture UV Gel"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "スキンアクア スーパーモイスチャーUVジェル"
 brand: "Rohto"
 where_found:
@@ -23,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

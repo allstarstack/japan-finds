@@ -4,11 +4,12 @@ name_en: "Unlabeled miracle whitening creams"
 category: "skincare"
 intent:
   - "content_only"
-status: "content_only"
+status: "ready"
 name_jp: "美白クリーム類"
 brand: "Various unknown brands"
 where_found:
-  - "Tourist-heavy discount shops / online resellers"
+  - "Tourist-heavy discount shops"
+  - "online resellers"
 price_yen: "varies"
 what_it_is: "Aggressively marketed brightening/whitening skincare."
 why_travelers_care: "Useful as a warning/content angle, not a recommended buy."
@@ -23,3 +24,6 @@ source_links:
 confidence: "low"
 trip_score: 3
 suitcase_score: 2
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

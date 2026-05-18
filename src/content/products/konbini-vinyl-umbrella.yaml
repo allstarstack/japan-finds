@@ -4,11 +4,13 @@ name_en: "Konbini Vinyl Umbrella"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ビニール傘"
 brand: "All konbini"
 where_found:
-  - "Konbini umbrella stand"
+  - "7-Eleven"
+  - "Lawson"
+  - "FamilyMart konbini chains"
 price_yen: "500-700"
 what_it_is: "Cheap clear vinyl umbrella, the universal Japan rainy-day fix."
 why_travelers_care: "Mandatory rainy-day pickup."
@@ -19,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 0
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

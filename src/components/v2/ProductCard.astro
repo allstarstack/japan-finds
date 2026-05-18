@@ -1,8 +1,21 @@
 ---
-/* V2 ProductCard — Phase A scaffold.
-   Unstyled inspection markup; Phase B replaces it with the comp design.
-   Public render gate: renders nothing unless status === "ready". */
+/* Phase B-1 launch product card.
+   Mobile-first, text-forward (no product photography exists yet — see
+   brand.md; placeholder imagery is deliberately omitted rather than faked).
+
+   Conservative display (Decision #2 / Yawataya-bug guard):
+     display_strategy: show_all                      -> name_en, name_jp, brand
+     display_strategy: hide_jp_and_brand_until_enriched -> name_en only
+   Creator-fill YAMLs already have name_jp/brand stripped, so this gate is
+   defence-in-depth.
+
+   Renders nothing unless status === "ready". Does NOT render risk_flags,
+   what_it_is or why_travelers_care — risk flags are personal notes
+   (Decision #2) and card copy is a separate background task.
+
+   data-* attributes drive the client-side filter in FilterRail. */
 import type { CollectionEntry } from "astro:content";
+import { CHIP_LABEL, CHIP_COLOR } from "../../data/launch-chips.js";
 
 interface Props {
   entry: CollectionEntry<"products">;
@@ -10,68 +23,110 @@ interface Props {
 
 const { entry } = Astro.props;
 const d = entry.data;
-const visible = d.status === "ready";
+const visible = d.status === "ready" && !!d.launch_category;
 
-const rows: [string, string | undefined][] = [
-  ["category", d.category],
-  ["intent", d.intent.join(", ")],
-  ["where to buy", d.where_found?.join(", ")],
-  ["what it is", d.what_it_is],
-  ["why travelers care", d.why_travelers_care],
-  ["risk flags", d.risk_flags?.join(" · ")],
-];
-const shown = rows.filter(([, v]) => v);
+const showAll = d.display_strategy === "show_all";
+const meta = showAll
+  ? [d.name_jp, d.brand].filter(Boolean).join(" · ")
+  : "";
+const where = d.where_found?.join(" · ") ?? "";
+const cat = d.launch_category;
+const label = cat ? CHIP_LABEL[cat] : "";
+const color = cat ? CHIP_COLOR[cat] : "white";
 ---
 
 {
   visible && (
-    <article class="v2-card">
-      <h3>
-        {d.name_en}
-        {d.name_jp && <span class="v2-sub"> · {d.name_jp}</span>}
-      </h3>
-      <dl>
-        {shown.map(([k, v]) => (
-          <>
-            <dt>{k}</dt>
-            <dd>{v}</dd>
-          </>
-        ))}
-      </dl>
+    <article
+      class="pc"
+      data-category={cat}
+      data-sub={d.sub_chip ?? ""}
+      data-fill={d.fill_type}
+    >
+      <span class:list={["chip", `chip--${color}`]}>{label}</span>
+      <h3 class="pc-name">{d.name_en}</h3>
+      {meta && <p class="pc-meta">{meta}</p>}
+      {where && (
+        <p class="pc-where">
+          <span class="pc-where-label">Where to buy</span>
+          <span class="pc-where-val">{where}</span>
+        </p>
+      )}
     </article>
   )
 }
 
 <style>
-  .v2-card {
-    border: 1px solid var(--color-ink-black);
-    padding: 12px 16px;
-    margin-bottom: 8px;
-    font-family: var(--font-body);
-    font-size: 14px;
+  /* Standard launch-card treatment (BUILD_SPEC §Step 3):
+     Rice White surface, Ink Black text, Concrete Gray border. */
+  .pc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    padding: 14px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-card);
   }
-  .v2-card h3 {
-    margin: 0 0 8px;
+  /* The filter rail hides non-matching cards via the `hidden` attribute.
+     An author `display` declaration outranks the UA `[hidden]` rule, so
+     this must restore `display: none` explicitly or hidden cards stay
+     visible (the chip state would update but the grid would not). */
+  .pc[hidden] {
+    display: none;
+  }
+
+  .pc .chip {
+    align-self: flex-start;
+  }
+
+  .pc-name {
+    margin: 0;
     font-family: var(--font-head);
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
   }
-  .v2-sub {
-    font-weight: 400;
+
+  .pc-meta {
+    margin: -2px 0 0;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
     color: var(--color-ink-60);
   }
-  dl {
-    margin: 0;
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 2px 12px;
+
+  /* where-to-buy pinned to the card bottom so wrapped names stay aligned */
+  .pc-where {
+    margin: auto 0 0;
+    padding-top: 10px;
+    border-top: var(--border-row);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
-  dt {
+  .pc-where-label {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--color-ink-60);
   }
-  dd {
-    margin: 0;
+  .pc-where-val {
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 1024px) {
+    .pc {
+      padding: 16px;
+    }
+    .pc-name {
+      font-size: 16px;
+    }
   }
 </style>

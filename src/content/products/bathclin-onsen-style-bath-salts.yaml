@@ -5,9 +5,7 @@ category: "donki-drugstore"
 intent:
   - "stock_up"
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "バスクリン"
-brand: "Bathclin"
+status: "ready"
 where_found:
   - "All drugstores"
 price_yen: "500-1500"
@@ -20,3 +18,7 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 9
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

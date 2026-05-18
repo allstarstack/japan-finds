@@ -4,12 +4,12 @@ name_en: "Egg timer for ramen/boiled eggs"
 category: "100-yen"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "エッグタイマー"
 brand: "Daiso / kitchen stores"
 where_found:
-  - "100-yen shops"
-  - "Hands"
+  - "Daiso"
+  - "Tokyu Hands"
 price_yen: "~¥110–¥500"
 what_it_is: "Color-changing timer placed in boiling water."
 why_travelers_care: "Weirdly useful kitchen gadget with visual payoff."
@@ -24,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

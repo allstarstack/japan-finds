@@ -5,12 +5,9 @@ category: "other"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
-name_jp: "とらや 羊羹"
-brand: "Toraya"
+status: "ready"
 where_found:
-  - "Toraya stores"
-  - "dept stores"
+  - "Toraya stores, dept stores"
 price_yen: "1000-5000"
 what_it_is: "Premium red bean jellied confection from a 500-year-old wagashi house."
 why_travelers_care: "Heritage gift with long shelf life."
@@ -21,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "gift"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

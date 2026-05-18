@@ -4,7 +4,7 @@ name_en: "Japanese curry roux blocks"
 category: "snacks"
 intent:
   - "stock_up"
-status: "v1_candidate"
+status: "ready"
 name_jp: "カレールウ"
 brand: "House / S&B / Glico"
 where_found:
@@ -23,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

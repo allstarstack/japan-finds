@@ -5,11 +5,13 @@ category: "other"
 intent:
   - "stock_up"
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "着圧ソックス"
 brand: "Medilex, others"
 where_found:
-  - "Drugstores"
+  - "Medilex"
+  - "drugstores"
+  - "Donki"
 price_yen: "1000-3000"
 what_it_is: "Graduated compression for travel days."
 why_travelers_care: "Long-flight + walking-heavy trip aid."
@@ -18,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

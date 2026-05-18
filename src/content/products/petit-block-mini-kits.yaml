@@ -4,7 +4,7 @@ name_en: "Petit Block mini kits"
 category: "100-yen"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "プチブロック"
 brand: "Daiso"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

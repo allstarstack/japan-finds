@@ -5,7 +5,7 @@ category: "snacks"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ハイチュウ"
 brand: "Morinaga"
 where_found:
@@ -23,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

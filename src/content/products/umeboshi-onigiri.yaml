@@ -4,9 +4,7 @@ name_en: "Umeboshi onigiri"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "hold"
-name_jp: "梅干しおにぎり"
-brand: "7-Eleven / FamilyMart / Lawson"
+status: "ready"
 where_found:
   - "Major konbini"
 price_yen: "~¥140–¥220"
@@ -23,3 +21,7 @@ source_links:
   - "https://www.japan-guide.com/e/e2071.html"
 confidence: "high"
 trip_score: 7
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "food"

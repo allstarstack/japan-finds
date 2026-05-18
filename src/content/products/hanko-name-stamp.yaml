@@ -4,13 +4,13 @@ name_en: "Hanko name stamp"
 category: "other"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "判子・印鑑"
 brand: "Hanko shops / vending machines"
 where_found:
-  - "Hanko shops"
-  - "Donki"
-  - "Tokyu Hands-like stores"
+  - "Hankoya"
+  - "Donki vending"
+  - "Tokyu Hands"
 price_yen: "~¥500–¥5,000"
 what_it_is: "Personal name stamp, sometimes made by machine."
 why_travelers_care: "Japan-specific personalization; good desk object/gift."
@@ -25,3 +25,7 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"
+featured: true

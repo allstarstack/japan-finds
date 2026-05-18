@@ -5,12 +5,13 @@ category: "stationery"
 intent:
   - "stock_up"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ジェットストリーム"
 brand: "Mitsubishi Pencil"
 where_found:
-  - "Stationery stores"
-  - "konbini"
+  - "Mitsubishi Pencil official"
+  - "Amazon JP"
+  - "Yodobashi"
 price_yen: "150-1500"
 what_it_is: "Smooth low-viscosity ink, the everyday ballpoint reference."
 why_travelers_care: "Internationally recommended, multiple form factors including multi-pen."
@@ -19,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

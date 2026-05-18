@@ -4,12 +4,14 @@ name_en: "Tirol-Choco Individual Chocolates"
 category: "snacks"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "チロルチョコ"
 brand: "Tirol-Choco Co."
 where_found:
-  - "Konbini"
-  - "supermarkets"
+  - "Tirol official shop"
+  - "PR Times"
+  - "LAWSON"
+  - "konbini chain"
 price_yen: "30-100"
 what_it_is: "Tiny individually wrapped chocolates, dozens of flavors."
 why_travelers_care: "Easy mass omiyage."
@@ -20,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

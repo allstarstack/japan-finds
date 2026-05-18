@@ -5,9 +5,7 @@ category: "konbini"
 intent:
   - "try_in_japan"
   - "stock_up"
-status: "v1_candidate"
-name_jp: "雪見だいふく"
-brand: "Lotte"
+status: "ready"
 where_found:
   - "All konbini freezer + supermarkets"
 price_yen: "150-180"
@@ -21,3 +19,7 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 3
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "sweet"

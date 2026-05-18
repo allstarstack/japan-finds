@@ -4,11 +4,13 @@ name_en: "Snow Peak Titanium Spork"
 category: "other"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "チタンスポーク"
 brand: "Snow Peak"
 where_found:
-  - "Snow Peak / outdoor shops"
+  - "Snow Peak official"
+  - "outdoor shops"
+  - "Amazon JP"
 price_yen: "~¥1,200"
 what_it_is: "Lightweight titanium eating utensil."
 why_travelers_care: "Useful outdoor/travel object; not uniquely Japan-only but brand-relevant."
@@ -18,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

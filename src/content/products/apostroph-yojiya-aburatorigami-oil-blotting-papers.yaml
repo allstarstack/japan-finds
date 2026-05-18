@@ -5,7 +5,7 @@ category: "skincare"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "あぶらとり紙"
 brand: "Yojiya / various"
 where_found:
@@ -19,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

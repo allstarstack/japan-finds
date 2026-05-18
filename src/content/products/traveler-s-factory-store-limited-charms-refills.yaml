@@ -4,11 +4,11 @@ name_en: "Traveler’s Factory store-limited charms/refills"
 category: "other"
 intent:
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "トラベラーズファクトリー限定"
 brand: "Traveler’s Company"
 where_found:
-  - "Traveler’s Factory stores"
+  - "Traveler's Factory Nakameguro/Narita/Kyoto"
 price_yen: "~¥300–¥3,000"
 what_it_is: "Location-limited notebook accessories or stamps."
 why_travelers_care: "Perfect for travel-memory buyers and stationery fans."
@@ -20,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,11 +4,12 @@ name_en: "Tiny scissors with cap"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "needs_verification"
+status: "ready"
 name_jp: "携帯はさみ"
 brand: "Daiso / Can Do / stationery brands"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Can Do"
   - "Loft"
   - "Hands"
 price_yen: "~¥110–¥800"
@@ -25,3 +26,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,7 +4,7 @@ name_en: "&honey hair oil"
 category: "skincare"
 intent:
   - "bring_home"
-status: "needs_verification"
+status: "ready"
 name_jp: "アンドハニー ヘアオイル"
 brand: "ViCREA"
 where_found:
@@ -26,3 +26,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

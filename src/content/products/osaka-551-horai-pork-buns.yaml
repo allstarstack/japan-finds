@@ -4,11 +4,12 @@ name_en: "Osaka 551 Horai Pork Buns"
 category: "other"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
+status: "ready"
 name_jp: "551蓬莱 豚まん"
 brand: "551 Horai"
 where_found:
-  - "Osaka shops + Shin-Osaka station"
+  - "Osaka shops"
+  - "Shin-Osaka station"
 price_yen: "190 each / ~1200 6-pack"
 what_it_is: "Hot pork buns, line snakes around Osaka stations."
 why_travelers_care: "Eat-on-platform classic."
@@ -20,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 1
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

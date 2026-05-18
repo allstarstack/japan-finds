@@ -5,14 +5,15 @@ category: "stationery"
 intent:
   - "stock_up"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "フリクション"
 brand: "Pilot"
 where_found:
-  - "Loft"
-  - "Tokyu Hands"
-  - "Itoya"
-  - "drugstores"
+  - "Pilot webcatalog"
+  - "Tanomail"
+  - "Amazon JP"
+  - "Yodobashi"
+  - "konbini"
 price_yen: "180-400"
 what_it_is: "Friction-erasable gel pen — erases with rubber tip via friction heat."
 why_travelers_care: "International cult pen, multiple sub-formats (Ball, Slim, Point)."
@@ -24,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

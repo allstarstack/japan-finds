@@ -4,7 +4,7 @@ name_en: "Zebra Sarasa Clip"
 category: "100-yen"
 intent:
   - "stock_up"
-status: "v1_candidate"
+status: "ready"
 name_jp: "サラサクリップ"
 brand: "Zebra"
 where_found:
@@ -26,3 +26,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

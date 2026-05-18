@@ -5,14 +5,9 @@ category: "donki-drugstore"
 intent:
   - "stock_up"
   - "gift_easy"
-status: "needs_verification"
-name_jp: "めぐりズム蒸気でホットアイマスク"
-brand: "Kao"
+status: "ready"
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Sundrug"
-  - "Welcia"
-  - "konbini"
+  - "Matsumoto Kiyoshi, Sundrug, Welcia, konbini"
 price_yen: "550-1200 per box"
 what_it_is: "Disposable eye masks that warm to ~40C for 20 minutes using air-activated heating element."
 why_travelers_care: "Cult favorite, works on planes, sells in scented variants (lavender, yuzu, chamomile, rose, unscented)."
@@ -24,3 +19,8 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+featured: true
+sub_chip: "skincare"

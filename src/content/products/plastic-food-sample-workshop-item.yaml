@@ -4,13 +4,13 @@ name_en: "Plastic food sample workshop item"
 category: "other"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "食品サンプル体験"
 brand: "Sample food makers"
 where_found:
-  - "Kappabashi"
-  - "workshops"
-  - "tourist areas"
+  - "Kappabashi sample workshops"
+  - "Maizuru"
+  - "Ganso"
 price_yen: "~¥1,500–¥5,000+"
 what_it_is: "Fake food sample made in workshop or bought as keychain/magnet."
 why_travelers_care: "Very Japan-core, visual, and personal proof-of-experience."
@@ -24,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 9
 suitcase_score: 7
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

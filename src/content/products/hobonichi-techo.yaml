@@ -4,11 +4,11 @@ name_en: "Hobonichi Techo"
 category: "100-yen"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ほぼ日手帳"
 brand: "Hobonichi"
 where_found:
-  - "Tobichi"
+  - "Hobonichi store"
   - "Loft"
   - "stationery stores"
 price_yen: "~¥2,000–¥8,000+"
@@ -24,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 7
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

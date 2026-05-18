@@ -4,9 +4,7 @@ name_en: "Beauty Mega-Bargain Bin"
 category: "donki-drugstore"
 intent:
   - "stock_up"
-status: "needs_verification"
-name_jp: "コスメ激安"
-brand: "Various"
+status: "ready"
 where_found:
   - "Donki cosmetics"
 price_yen: "Variable"
@@ -20,3 +18,6 @@ source_links:
 confidence: "medium"
 trip_score: 5
 suitcase_score: 7
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -4,9 +4,7 @@ name_en: "Häagen-Dazs Japan Exclusive Flavors"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "ハーゲンダッツ"
-brand: "Häagen-Dazs Japan"
+status: "ready"
 where_found:
   - "Konbini freezer"
 price_yen: "320-380"
@@ -19,3 +17,7 @@ source_links:
   - "haagen-dazs.co.jp"
 confidence: "high"
 trip_score: 8
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "sweet"

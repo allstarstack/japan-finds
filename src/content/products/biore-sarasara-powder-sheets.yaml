@@ -4,13 +4,9 @@ name_en: "Bioré SaraSara powder sheets"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "needs_verification"
-name_jp: "ビオレ さらさらパウダーシート"
-brand: "Kao"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "Donki"
-  - "konbini"
+  - "Drugstores, Donki, konbini"
 price_yen: "~¥300–¥600"
 what_it_is: "Body wipes that leave powdery dry finish."
 why_travelers_care: "Excellent summer subway survival item."
@@ -25,3 +21,7 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 7
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

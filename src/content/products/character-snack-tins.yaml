@@ -4,13 +4,9 @@ name_en: "Character snack tins"
 category: "donki-drugstore"
 intent:
   - "gift_easy"
-status: "hold"
-name_jp: "キャラクター缶菓子"
-brand: "Various licensed brands"
+status: "ready"
 where_found:
-  - "Donki"
-  - "airports"
-  - "character shops"
+  - "Donki, airports, character shops"
 price_yen: "~¥800–¥2,000"
 what_it_is: "Cookies or candies sold in reusable character tins."
 why_travelers_care: "Gift survives flight and package becomes souvenir."
@@ -25,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 7
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

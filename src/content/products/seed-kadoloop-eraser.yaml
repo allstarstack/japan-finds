@@ -4,11 +4,14 @@ name_en: "Seed Kadoloop Eraser"
 category: "other"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "シード カドループ"
 brand: "Seed"
 where_found:
-  - "Loft / Hands"
+  - "Seed official"
+  - "Loft"
+  - "Hands"
+  - "Amazon JP"
 price_yen: "~¥300"
 what_it_is: "Self-reshaping sharp-corner eraser."
 why_travelers_care: "Novelty + functional stationery; likely strong video object."
@@ -18,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 3
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

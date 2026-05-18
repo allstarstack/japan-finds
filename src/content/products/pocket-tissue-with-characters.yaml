@@ -4,13 +4,9 @@ name_en: "Pocket tissue with characters"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "キャラクターポケットティッシュ"
-brand: "Various"
+status: "ready"
 where_found:
-  - "100-yen shops"
-  - "drugstores"
-  - "character shops"
+  - "100-yen shops, drugstores, character shops"
 price_yen: "~¥110–¥500"
 what_it_is: "Small tissue packs with cute wrappers."
 why_travelers_care: "Very useful in Japan and cute enough for kids."
@@ -23,3 +19,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 10
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

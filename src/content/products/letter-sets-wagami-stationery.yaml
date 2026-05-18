@@ -5,13 +5,14 @@ category: "stationery"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "和紙レターセット"
 brand: "Various"
 where_found:
   - "Loft"
+  - "Tokyu Hands"
   - "Itoya"
-  - "specialty paper shops"
+  - "Marunouchi stationers"
 price_yen: "500-3000"
 what_it_is: "Washi-paper letter sets with envelopes."
 why_travelers_care: "Hand-written letter back home is a content moment."
@@ -20,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

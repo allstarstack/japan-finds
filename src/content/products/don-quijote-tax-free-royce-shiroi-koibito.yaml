@@ -5,9 +5,7 @@ category: "donki-drugstore"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "ロイズ / 白い恋人"
-brand: "Royce' / Ishiya"
+status: "ready"
 where_found:
   - "Donki tax-free counter"
 price_yen: "800-2500"
@@ -22,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

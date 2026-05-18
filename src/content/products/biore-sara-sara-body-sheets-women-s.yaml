@@ -5,12 +5,14 @@ category: "other"
 intent:
   - "day_one_fixes"
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "ビオレさらさら"
 brand: "Kao"
 where_found:
-  - "Konbini"
-  - "drugstores"
+  - "Kao official"
+  - "Matsukiyo"
+  - "Amazon JP"
+  - "konbini"
 price_yen: "300-500"
 what_it_is: "Cooling body wipes, milder than Gatsby."
 why_travelers_care: "Summer essential."
@@ -21,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

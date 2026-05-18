@@ -4,7 +4,7 @@ name_en: "Baked Cheese Tart (BAKE)"
 category: "snacks"
 intent:
   - "try_in_japan"
-status: "hold"
+status: "ready"
 name_jp: "ベイク チーズタルト"
 brand: "BAKE Inc."
 where_found:
@@ -19,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 2
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

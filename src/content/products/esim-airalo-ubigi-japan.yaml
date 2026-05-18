@@ -4,11 +4,15 @@ name_en: "eSIM (Airalo / Ubigi Japan)"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "eSIM"
 brand: "Various"
 where_found:
-  - "App download pre-trip"
+  - "Sakura Mobile"
+  - "Mobal"
+  - "Ubigi"
+  - "Airalo"
+  - "Saily"
 price_yen: "1000-3000"
 what_it_is: "Digital SIM activated before landing, often cheaper than pocket WiFi for solo travelers."
 why_travelers_care: "Better solo option than WiFi rental in 2026."
@@ -19,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 0
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

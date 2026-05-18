@@ -4,12 +4,12 @@ name_en: "Matcha powder"
 category: "snacks"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "抹茶"
 brand: "Ippodo / Marukyu Koyamaen / various"
 where_found:
   - "Tea shops"
-  - "department stores"
+  - "dept stores"
   - "Kyoto/Uji"
 price_yen: "~¥800–¥5,000+"
 what_it_is: "Powdered green tea for drinking or baking."
@@ -23,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 9
 suitcase_score: 9
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,7 +4,7 @@ name_en: "Premium canned coffee variety"
 category: "snacks"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
+status: "ready"
 name_jp: "缶コーヒー"
 brand: "Boss / Georgia / Wonda / UCC"
 where_found:
@@ -23,3 +23,6 @@ source_links:
   - "https://www.donki.com/en/"
 confidence: "high"
 trip_score: 8
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

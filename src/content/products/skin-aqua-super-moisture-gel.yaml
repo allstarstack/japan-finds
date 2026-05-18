@@ -4,11 +4,13 @@ name_en: "Skin Aqua Super Moisture Gel"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "スキンアクア"
 brand: "Rohto Mentholatum"
 where_found:
-  - "Drugstores"
+  - "Rohto Mentholatum official"
+  - "Amazon JP"
+  - "Matsukiyo"
 price_yen: "700-900"
 what_it_is: "Gel-textured SPF 50+, cheaper than Anessa/Biore."
 why_travelers_care: "Budget pick for daily reapplication."
@@ -19,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

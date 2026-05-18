@@ -4,13 +4,9 @@ name_en: "Senbei rice cracker variety pack"
 category: "donki-drugstore"
 intent:
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "せんべい詰め合わせ"
-brand: "Various"
+status: "ready"
 where_found:
-  - "Donki"
-  - "supermarkets"
-  - "souvenir shops"
+  - "Donki, supermarkets, souvenir shops"
 price_yen: "~¥300–¥1,200"
 what_it_is: "Assorted savory rice crackers."
 why_travelers_care: "Durable gift that shows Japanese snack texture/flavors."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -1,0 +1,269 @@
+---
+/* Phase B-1 filter rail (Decision #3).
+   - 13 primary chips, single-select, horizontal-scroll, sticky-on-scroll.
+   - Sub-chips for the two dense chips (Konbini Run / Drugstore Haul),
+     multi-select, revealed only while their parent chip is active.
+   - Filtering is client-side and in place (no navigation). The chip state
+     is mirrored to the URL (?chip=&sub=) for shareable links.
+
+   Counts and the empty state live on the /products page; this component's
+   script drives them by data-attribute so the two stay decoupled. */
+import { CHIPS, SUB_CHIPS } from "../../data/launch-chips.js";
+
+interface Props {
+  counts: Record<string, number>; // launch_category -> item count
+  subAvail: Record<string, string[]>; // category -> sub_chip values present
+}
+const { counts, subAvail } = Astro.props;
+---
+
+<div class="rail" data-filter-rail>
+  <div class="rail-inner">
+    <div class="rail-track" role="group" aria-label="Filter by category">
+      {
+        CHIPS.map((c) => (
+          <button
+            type="button"
+            class="fchip"
+            data-chip={c.value}
+            data-color={c.color}
+            aria-pressed="false"
+          >
+            {c.label}
+            <span class="fchip-n">{counts[c.value] ?? 0}</span>
+          </button>
+        ))
+      }
+    </div>
+
+    {
+      Object.entries(SUB_CHIPS).map(([cat, subs]) => {
+        const avail = subs.filter((s) => (subAvail[cat] ?? []).includes(s.value));
+        return (
+          avail.length > 0 && (
+            <div
+              class="subrail"
+              data-subrail={cat}
+              role="group"
+              aria-label={`Narrow ${CHIPS.find((c) => c.value === cat)?.label}`}
+              hidden
+            >
+              {avail.map((s) => (
+                <button
+                  type="button"
+                  class="subchip"
+                  data-sub={s.value}
+                  aria-pressed="false"
+                >
+                  {s.label}
+                </button>
+              ))}
+            </div>
+          )
+        );
+      })
+    }
+  </div>
+</div>
+
+<style>
+  .rail {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-white);
+    border-bottom: var(--border-ink);
+  }
+  .rail-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  /* Primary chips — horizontal-scroll on mobile, no visible scrollbar */
+  .rail-track {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 12px var(--gutter-mobile);
+    scroll-padding-inline: var(--gutter-mobile);
+  }
+  .rail-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .fchip {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 38px;
+    padding: 8px 14px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  .fchip[data-color="red"] {
+    --c: var(--color-tokyo-red);
+  }
+  .fchip[data-color="blue"] {
+    --c: var(--color-konbini-blue);
+  }
+  .fchip[data-color="green"] {
+    --c: var(--color-matcha-green);
+  }
+  .fchip[data-color="yellow"] {
+    --c: var(--color-egg-yellow);
+  }
+  /* Count inherits the chip's text colour — no opacity, so it keeps a
+     full-contrast ink value on the inactive (white) chip. */
+  .fchip-n {
+    font-weight: 700;
+  }
+  .fchip.is-active {
+    background: var(--c);
+    border-color: var(--c);
+    color: #fff;
+  }
+  .fchip[data-color="yellow"].is-active {
+    color: var(--color-ink-black);
+  }
+
+  /* Sub-chips — revealed beneath the rail only while the parent is active */
+  .subrail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 var(--gutter-mobile) 12px;
+  }
+  .subrail[hidden] {
+    display: none;
+  }
+  .subchip {
+    min-height: 32px;
+    padding: 6px 12px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-30);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  .subchip.is-active {
+    background: var(--color-ink-black);
+    border-color: var(--color-ink-black);
+    color: #fff;
+  }
+
+  @media (min-width: 1024px) {
+    /* Desktop: all 13 chips visible, wrap instead of scroll */
+    .rail-track {
+      flex-wrap: wrap;
+      overflow-x: visible;
+      padding: 16px var(--gutter-desktop);
+    }
+    .subrail {
+      padding: 0 var(--gutter-desktop) 16px;
+    }
+  }
+</style>
+
+<script>
+  const rail = document.querySelector("[data-filter-rail]");
+  if (rail) {
+    const chips = [...rail.querySelectorAll(".fchip")];
+    const subrails = [...rail.querySelectorAll("[data-subrail]")];
+    const subchips = [...rail.querySelectorAll(".subchip")];
+    const cards = [...document.querySelectorAll("[data-grid] .pc")];
+    const grid = document.querySelector("[data-grid]");
+    const countEl = document.querySelector("[data-count]");
+    const emptyEl = document.querySelector("[data-empty]");
+    const DENSE = ["konbini", "drugstore"];
+
+    let activeChip = null;
+    const activeSubs = new Set();
+
+    const syncURL = () => {
+      const p = new URLSearchParams();
+      if (activeChip) p.set("chip", activeChip);
+      if (activeSubs.size) p.set("sub", [...activeSubs].join(","));
+      const qs = p.toString();
+      history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+    };
+
+    const apply = () => {
+      let n = 0;
+      for (const card of cards) {
+        const okCat = !activeChip || card.dataset.category === activeChip;
+        const okSub =
+          activeSubs.size === 0 || activeSubs.has(card.dataset.sub);
+        const show = okCat && okSub;
+        card.hidden = !show;
+        if (show) n++;
+      }
+      for (const chip of chips) {
+        const on = chip.dataset.chip === activeChip;
+        chip.setAttribute("aria-pressed", String(on));
+        chip.classList.toggle("is-active", on);
+      }
+      for (const sr of subrails) {
+        sr.hidden = sr.dataset.subrail !== activeChip;
+      }
+      for (const sb of subchips) {
+        const on = activeSubs.has(sb.dataset.sub);
+        sb.setAttribute("aria-pressed", String(on));
+        sb.classList.toggle("is-active", on);
+      }
+      if (countEl) countEl.textContent = n + (n === 1 ? " find" : " finds");
+      if (emptyEl) emptyEl.hidden = n !== 0;
+      if (grid) grid.hidden = n === 0;
+    };
+
+    chips.forEach((c) =>
+      c.addEventListener("click", () => {
+        activeChip = activeChip === c.dataset.chip ? null : c.dataset.chip;
+        activeSubs.clear();
+        apply();
+        syncURL();
+        c.scrollIntoView({ inline: "center", block: "nearest" });
+      }),
+    );
+    subchips.forEach((s) =>
+      s.addEventListener("click", () => {
+        const v = s.dataset.sub;
+        activeSubs.has(v) ? activeSubs.delete(v) : activeSubs.add(v);
+        apply();
+        syncURL();
+      }),
+    );
+
+    // Initial state from the URL — supports shareable /products?chip=…
+    const params = new URLSearchParams(location.search);
+    const chip0 = params.get("chip");
+    if (chip0 && chips.some((c) => c.dataset.chip === chip0)) {
+      activeChip = chip0;
+      if (DENSE.includes(chip0)) {
+        const valid = new Set(
+          [...rail.querySelectorAll(`[data-subrail="${chip0}"] .subchip`)].map(
+            (s) => s.dataset.sub,
+          ),
+        );
+        for (const s of (params.get("sub") || "").split(","))
+          if (valid.has(s)) activeSubs.add(s);
+      }
+    }
+    apply();
+  }
+</script>

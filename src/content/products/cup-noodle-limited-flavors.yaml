@@ -4,9 +4,7 @@ name_en: "Cup Noodle limited flavors"
 category: "konbini"
 intent:
   - "bring_home"
-status: "hold"
-name_jp: "カップヌードル 限定味"
-brand: "Nissin"
+status: "ready"
 where_found:
   - "Konbini / supermarkets / Donki"
 price_yen: "~¥170–¥350"
@@ -24,3 +22,7 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "food"

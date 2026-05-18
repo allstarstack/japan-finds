@@ -4,9 +4,7 @@ name_en: "Fruit sandwich"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "フルーツサンド"
-brand: "Konbini / fruit parlors"
+status: "ready"
 where_found:
   - "7-Eleven / FamilyMart / Lawson / specialty shops"
 price_yen: "~¥350–¥700"
@@ -24,3 +22,7 @@ source_links:
   - "https://www.japan-guide.com/e/e2071.html"
 confidence: "medium"
 trip_score: 8
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "sweet"

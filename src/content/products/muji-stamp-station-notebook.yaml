@@ -4,11 +4,11 @@ name_en: "MUJI stamp-station notebook"
 category: "other"
 intent:
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "無印良品 スタンプ"
 brand: "MUJI"
 where_found:
-  - "Select MUJI stores"
+  - "Select MUJI stores with stamp stations"
 price_yen: "~¥100–¥1,500+"
 what_it_is: "Notebook/card customized with in-store stamps where available."
 why_travelers_care: "Cheap personal proof-of-visit with Japan design vibe."
@@ -21,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
+launch_category: "customization"
+fill_type: "verified"
+display_strategy: "show_all"

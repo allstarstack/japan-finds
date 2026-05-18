@@ -5,7 +5,7 @@ category: "skincare"
 intent:
   - "stock_up"
   - "bring_home"
-status: "needs_verification"
+status: "ready"
 name_jp: "キャンメイク"
 brand: "Ida Laboratories"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

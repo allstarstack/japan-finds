@@ -4,11 +4,15 @@ name_en: "Mobile Battery / Power Bank (Konbini)"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "モバイルバッテリー"
 brand: "All konbini"
 where_found:
-  - "Konbini and Bic/Yodobashi"
+  - "Anker JP"
+  - "Yodobashi"
+  - "Bic"
+  - "Don Quijote"
+  - "Amazon JP"
 price_yen: "1500-4000"
 what_it_is: "Emergency power bank if you forgot or lost yours."
 why_travelers_care: "Day-1 fix; konbini stock decent options."
@@ -18,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

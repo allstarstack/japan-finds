@@ -4,13 +4,9 @@ name_en: "Yuzu kosho tube or jar"
 category: "donki-drugstore"
 intent:
   - "bring_home"
-status: "v1_candidate"
-name_jp: "柚子胡椒"
-brand: "Various"
+status: "ready"
 where_found:
-  - "Donki"
-  - "supermarkets"
-  - "regional shops"
+  - "Donki, supermarkets, regional shops"
 price_yen: "~¥300–¥800"
 what_it_is: "Fermented yuzu-chili seasoning."
 why_travelers_care: "Small, high-flavor, actually useful after the trip."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -4,11 +4,14 @@ name_en: "Pocket WiFi Rental (Ninja WiFi, Sakura Mobile)"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "hold"
+status: "ready"
 name_jp: "ポケットWiFi"
 brand: "Various"
 where_found:
-  - "Airport counters or pre-order pickup"
+  - "Ninja WiFi"
+  - "Japan Wireless"
+  - "Sakura Mobile"
+  - "airport counters"
 price_yen: "500-1000/day"
 what_it_is: "Pocket hotspot for the trip, return at airport."
 why_travelers_care: "Avoids roaming charges."
@@ -19,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 0
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,13 +4,9 @@ name_en: "Heat patches / kairo multipacks"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "needs_verification"
-name_jp: "使い捨てカイロ"
-brand: "Kobayashi / Kiribai / private label"
+status: "ready"
 where_found:
-  - "Donki"
-  - "drugstores"
-  - "konbini"
+  - "Donki, drugstores, konbini"
 price_yen: "~¥300–¥900"
 what_it_is: "Disposable warming packs for pockets, feet, or body."
 why_travelers_care: "Cold-weather lifesaver and useful trip fix."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 6
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

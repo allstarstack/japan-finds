@@ -4,7 +4,7 @@ name_en: "Saborino morning masks"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "サボリーノ 目ざまシート"
 brand: "BCL"
 where_found:
@@ -26,3 +26,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 7
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

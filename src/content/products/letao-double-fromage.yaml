@@ -4,13 +4,13 @@ name_en: "LeTAO Double Fromage"
 category: "snacks"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ドゥーブルフロマージュ"
 brand: "LeTAO"
 where_found:
   - "Hokkaido/Otaru"
   - "airports"
-  - "online delivery"
+  - "online"
 price_yen: "~¥2,000+"
 what_it_is: "Frozen/fresh cheesecake dessert."
 why_travelers_care: "Excellent on-site/regional treat, poor casual suitcase item."
@@ -25,3 +25,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 3
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

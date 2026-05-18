@@ -4,11 +4,13 @@ name_en: "Rice ball mold"
 category: "100-yen"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "おにぎり型"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
   - "kitchen stores"
 price_yen: "~¥110–¥330"
 what_it_is: "Plastic mold for making onigiri at home."
@@ -23,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 9
+launch_category: "kitchen"
+fill_type: "verified"
+display_strategy: "show_all"

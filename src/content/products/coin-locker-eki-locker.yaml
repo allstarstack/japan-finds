@@ -4,11 +4,11 @@ name_en: "Coin Locker (Eki-Locker)"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "コインロッカー"
 brand: "Various"
 where_found:
-  - "Most JR and metro stations"
+  - "JR East/Tokyo Metro/major stations"
 price_yen: "300-700"
 what_it_is: "Station luggage lockers, sizes from carry-on to large."
 why_travelers_care: "Drop bags + walk all-day routine."
@@ -18,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 0
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

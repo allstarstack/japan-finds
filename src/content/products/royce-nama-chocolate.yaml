@@ -5,13 +5,14 @@ category: "snacks"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ロイズ 生チョコレート"
 brand: "Royce'"
 where_found:
   - "Royce' stores"
   - "airports"
   - "Donki"
+  - "Amazon JP"
 price_yen: "850-1200 per box"
 what_it_is: "Soft ganache cubes dusted in cocoa, refrigerated."
 why_travelers_care: "Premium chocolate omiyage."
@@ -23,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 5
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

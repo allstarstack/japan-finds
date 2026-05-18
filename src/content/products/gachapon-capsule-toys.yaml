@@ -6,13 +6,9 @@ intent:
   - "make_it_yours"
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "ガチャポン"
-brand: "Bandai et al."
+status: "ready"
 where_found:
-  - "Gachapon Halls"
-  - "Donki"
-  - "malls"
+  - "Gachapon Halls, Donki, malls"
 price_yen: "300-500 per pull"
 what_it_is: "Capsule machine toys, every theme imaginable."
 why_travelers_care: "Cheap thrill, kids love, content gold."
@@ -26,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

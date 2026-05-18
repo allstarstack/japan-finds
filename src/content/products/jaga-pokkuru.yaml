@@ -4,7 +4,7 @@ name_en: "Jaga Pokkuru"
 category: "snacks"
 intent:
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "じゃがポックル"
 brand: "Calbee Potato Farm"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

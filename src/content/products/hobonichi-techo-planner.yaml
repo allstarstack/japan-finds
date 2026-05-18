@@ -5,13 +5,13 @@ category: "stationery"
 intent:
   - "bring_home"
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ほぼ日手帳"
 brand: "Hobonichi"
 where_found:
-  - "Loft"
-  - "dept stores"
-  - "Hobonichi pop-ups"
+  - "Hobonichi store"
+  - "Loft (selected)"
+  - "Tokyu Hands"
 price_yen: "2500-5000"
 what_it_is: "Daily planner with Tomoe River paper, designed by Shigesato Itoi (Mother/EarthBound)."
 why_travelers_care: "Cult planner, ships only Sept-Feb new year edition."
@@ -21,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

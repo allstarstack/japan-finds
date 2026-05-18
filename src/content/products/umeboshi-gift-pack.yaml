@@ -4,12 +4,12 @@ name_en: "Umeboshi gift pack"
 category: "snacks"
 intent:
   - "bring_home"
-status: "hold"
+status: "ready"
 name_jp: "梅干し"
 brand: "Various Wakayama brands"
 where_found:
   - "Supermarkets"
-  - "department stores"
+  - "dept stores"
   - "regional shops"
 price_yen: "~¥500–¥3,000"
 what_it_is: "Pickled plums in packs or gift boxes."
@@ -24,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 7
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

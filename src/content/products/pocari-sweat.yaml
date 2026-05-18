@@ -5,13 +5,9 @@ category: "konbini"
 intent:
   - "try_in_japan"
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "ポカリスエット"
-brand: "Otsuka Pharmaceutical"
+status: "ready"
 where_found:
-  - "Konbini"
-  - "vending machines"
-  - "drugstores"
+  - "Konbini, vending machines, drugstores"
 price_yen: "120-150"
 what_it_is: "Electrolyte sports drink, lighter and less sweet than Gatorade."
 why_travelers_care: "Hangover and heat-stroke staple, the name alone is content."
@@ -22,3 +18,7 @@ source_links:
   - "otsuka.co.jp/en/health-and-illness/pocari-sweat"
 confidence: "high"
 trip_score: 9
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "drink"

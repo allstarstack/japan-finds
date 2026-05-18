@@ -4,11 +4,13 @@ name_en: "Kokuyo Campus Portable Book Clip"
 category: "other"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "コクヨ キャンパス ポータブルブッククリップ"
 brand: "Kokuyo"
 where_found:
-  - "Loft / Hands"
+  - "Kokuyo official"
+  - "Loft"
+  - "Hands"
 price_yen: "~¥600"
 what_it_is: "Foldable book clip."
 why_travelers_care: "Small functional stationery object with clear design payoff."
@@ -18,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 4
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

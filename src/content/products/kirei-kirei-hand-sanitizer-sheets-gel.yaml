@@ -4,13 +4,9 @@ name_en: "Kirei Kirei hand sanitizer sheets/gel"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "hold"
-name_jp: "キレイキレイ"
-brand: "Lion"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "konbini"
-  - "Donki"
+  - "Drugstores, konbini, Donki"
 price_yen: "~¥200–¥600"
 what_it_is: "Hand cleaning gel, wipes, or soap products."
 why_travelers_care: "Practical first-day purchase for food-heavy trip."
@@ -24,3 +20,7 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 6
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

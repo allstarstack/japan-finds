@@ -4,11 +4,13 @@ name_en: "Sunkiller Perfect Strong Plus"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "サンキラー"
 brand: "Isehan"
 where_found:
-  - "Drugstores"
+  - "Isehan official"
+  - "Amazon JP"
+  - "Matsukiyo"
 price_yen: "1200-1800"
 what_it_is: "Mid-tier SPF 50+ PA++++, often discounted at Donki."
 why_travelers_care: "Solid mid-tier value pick."
@@ -19,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

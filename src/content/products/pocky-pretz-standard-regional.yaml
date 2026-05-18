@@ -6,7 +6,7 @@ intent:
   - "bring_home"
   - "gift_easy"
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ポッキー / プリッツ"
 brand: "Glico"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

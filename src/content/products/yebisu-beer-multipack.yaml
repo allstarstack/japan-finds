@@ -4,13 +4,9 @@ name_en: "Yebisu Beer Multipack"
 category: "donki-drugstore"
 intent:
   - "try_in_japan"
-status: "needs_verification"
-name_jp: "ヱビス"
-brand: "Sapporo Breweries"
+status: "ready"
 where_found:
-  - "Donki"
-  - "supermarkets"
-  - "konbini"
+  - "Donki, supermarkets, konbini"
 price_yen: "250 single / ~1500 6-pack"
 what_it_is: "Sapporo's premium all-malt lager."
 why_travelers_care: "Better than Asahi/Kirin baseline if drinking domestic."
@@ -21,3 +17,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 3
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

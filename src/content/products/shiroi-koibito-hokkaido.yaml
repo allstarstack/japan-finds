@@ -6,13 +6,14 @@ intent:
   - "gift_easy"
   - "bring_home"
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "白い恋人"
 brand: "Ishiya"
 where_found:
-  - "Hokkaido"
-  - "airports"
-  - "Donki"
+  - "Ishiya official"
+  - "Amazon JP"
+  - "Rakuten"
+  - "New Chitose Airport"
 price_yen: "750-2000"
 what_it_is: "Langue de chat cookies sandwich with white chocolate. Hokkaido's flagship omiyage."
 why_travelers_care: "Recognizable, durable, gift-grade."
@@ -24,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

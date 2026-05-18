@@ -4,7 +4,7 @@ name_en: "Rikuro Ojisan cheesecake"
 category: "snacks"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
+status: "ready"
 name_jp: "りくろーおじさんのチーズケーキ"
 brand: "Rikuro Ojisan"
 where_found:
@@ -22,3 +22,6 @@ source_links:
 confidence: "medium"
 trip_score: 9
 suitcase_score: 3
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

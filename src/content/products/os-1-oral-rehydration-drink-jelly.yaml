@@ -4,12 +4,9 @@ name_en: "OS-1 oral rehydration drink/jelly"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "needs_verification"
-name_jp: "オーエスワン"
-brand: "Otsuka"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "some konbini"
+  - "Drugstores, some konbini"
 price_yen: "~¥200–¥300"
 what_it_is: "Oral rehydration solution or jelly marketed for dehydration care."
 why_travelers_care: "Could help during extreme heat, but not a casual drink."
@@ -22,3 +19,7 @@ source_links:
   - "https://www.matsukiyococokara-online.com/"
 confidence: "medium"
 trip_score: 6
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

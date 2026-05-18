@@ -4,9 +4,7 @@ name_en: "Convenience Wear socks"
 category: "konbini"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "コンビニエンスウェア 靴下"
-brand: "FamilyMart / Hiromichi Ochiai collaboration"
+status: "ready"
 where_found:
   - "FamilyMart"
 price_yen: "~¥400–¥600"
@@ -20,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 7
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -4,12 +4,9 @@ name_en: "Interdental brushes"
 category: "donki-drugstore"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "歯間ブラシ"
-brand: "GUM / Kobayashi / Lion"
+status: "ready"
 where_found:
-  - "Drugstores"
-  - "konbini"
+  - "Drugstores, konbini"
 price_yen: "~¥200–¥600"
 what_it_is: "Small dental cleaning tools in travel sizes."
 why_travelers_care: "Useful if you forgot travel dental gear."
@@ -21,3 +18,7 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
+launch_category: "drugstore"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "comfort"

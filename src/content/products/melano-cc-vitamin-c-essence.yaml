@@ -4,7 +4,7 @@ name_en: "Melano CC Vitamin C Essence"
 category: "skincare"
 intent:
   - "stock_up"
-status: "needs_verification"
+status: "ready"
 name_jp: "メラノCC 薬用しみ集中対策美容液"
 brand: "Rohto"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

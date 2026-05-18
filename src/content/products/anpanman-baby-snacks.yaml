@@ -5,12 +5,9 @@ category: "other"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "アンパンマン"
-brand: "Various"
+status: "ready"
 where_found:
-  - "Supermarkets"
-  - "baby stores"
+  - "Supermarkets, baby stores"
 price_yen: "150-300"
 what_it_is: "Anpanman-branded baby crackers, biscuits."
 why_travelers_care: "Cute, safe, kid-recognizable."
@@ -21,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

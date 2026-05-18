@@ -4,7 +4,7 @@ name_en: "Fresh mochi / daifuku"
 category: "snacks"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
+status: "ready"
 name_jp: "大福・餅菓子"
 brand: "Various"
 where_found:
@@ -24,3 +24,6 @@ source_links:
   - "https://www.japan-guide.com/e/e2071.html"
 confidence: "high"
 trip_score: 8
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

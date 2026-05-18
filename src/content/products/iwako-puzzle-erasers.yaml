@@ -5,12 +5,14 @@ category: "stationery"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "イワコー消しゴム"
 brand: "Iwako"
 where_found:
-  - "Stationery"
-  - "gift shops"
+  - "Iwako official"
+  - "Amazon JP"
+  - "Tokyu Hands"
+  - "Daiso (some)"
 price_yen: "100-300 each"
 what_it_is: "Tiny puzzle erasers shaped like sushi, animals, food, etc."
 why_travelers_care: "Adorable, cheap, kid-friendly gift."
@@ -19,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

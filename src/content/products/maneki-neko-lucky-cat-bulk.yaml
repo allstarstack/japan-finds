@@ -4,9 +4,7 @@ name_en: "Maneki Neko / Lucky Cat Bulk"
 category: "donki-drugstore"
 intent:
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "招き猫"
-brand: "Various"
+status: "ready"
 where_found:
   - "Donki and Asakusa"
 price_yen: "300-3000"
@@ -19,3 +17,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -4,9 +4,7 @@ name_en: "Famima Frappé"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "ファミマフラッペ"
-brand: "FamilyMart"
+status: "ready"
 where_found:
   - "FamilyMart freezer + coffee machine"
 price_yen: "~¥300–¥400"
@@ -21,3 +19,7 @@ source_links:
   - "https://www.family.co.jp/for_tourist/en.html"
 confidence: "high"
 trip_score: 8
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "drink"

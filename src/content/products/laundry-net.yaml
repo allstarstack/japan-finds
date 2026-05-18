@@ -4,11 +4,13 @@ name_en: "Laundry net"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "洗濯ネット"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
   - "drugstores"
 price_yen: "~¥110–¥330"
 what_it_is: "Mesh bag for laundry machines or organizing clothes."
@@ -22,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

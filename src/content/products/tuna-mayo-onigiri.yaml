@@ -4,9 +4,7 @@ name_en: "Tuna Mayo Onigiri"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "ツナマヨおにぎり"
-brand: "7-Eleven / Lawson / FamilyMart"
+status: "ready"
 where_found:
   - "All major konbini"
 price_yen: "150-180"
@@ -21,3 +19,7 @@ source_links:
   - "family.co.jp"
 confidence: "high"
 trip_score: 10
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "food"

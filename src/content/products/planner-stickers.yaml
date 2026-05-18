@@ -4,11 +4,12 @@ name_en: "Planner stickers"
 category: "100-yen"
 intent:
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "手帳シール"
 brand: "Daiso / Seria / Mind Wave / BGM"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
   - "Loft"
   - "Itoya"
 price_yen: "~¥110–¥500"
@@ -24,3 +25,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

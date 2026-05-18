@@ -4,11 +4,13 @@ name_en: "Phone stand"
 category: "100-yen"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "スマホスタンド"
 brand: "Daiso / Seria / Can Do"
 where_found:
-  - "100-yen shops"
+  - "Daiso"
+  - "Seria"
+  - "Can Do"
   - "electronics stores"
 price_yen: "~¥110–¥550"
 what_it_is: "Foldable stand for phone on planes, hotels, restaurants."
@@ -22,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 8
+launch_category: "hundred_yen"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,10 +4,11 @@ name_en: "Muji Travel Neck Pillow"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "hold"
+status: "ready"
 name_jp: "無印良品 ネックピロー"
 brand: "Muji"
 where_found:
+  - "Muji official"
   - "Muji stores"
 price_yen: "1490-2990"
 what_it_is: "Bead-fill neck pillows in multiple shapes."
@@ -19,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 5
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

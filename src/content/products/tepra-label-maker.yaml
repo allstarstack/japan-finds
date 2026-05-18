@@ -4,12 +4,14 @@ name_en: "Tepra Label Maker"
 category: "stationery"
 intent:
   - "bring_home"
-status: "hold"
+status: "ready"
 name_jp: "テプラ"
 brand: "King Jim"
 where_found:
-  - "Bic Camera"
+  - "King Jim official"
   - "Yodobashi"
+  - "Bic"
+  - "Amazon JP"
 price_yen: "5000-15000"
 what_it_is: "Cult Japanese label maker."
 why_travelers_care: "Organizer's dream."
@@ -20,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 7
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

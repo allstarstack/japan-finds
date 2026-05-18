@@ -5,9 +5,7 @@ category: "donki-drugstore"
 intent:
   - "stock_up"
   - "gift_easy"
-status: "needs_verification"
-name_jp: "シートマスク"
-brand: "Sun Smile, others"
+status: "ready"
 where_found:
   - "Donki cosmetics floor"
 price_yen: "100-500 per pack"
@@ -20,3 +18,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 9
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -4,11 +4,15 @@ name_en: "Pentel Energel"
 category: "stationery"
 intent:
   - "stock_up"
-status: "v1_candidate"
+status: "ready"
 name_jp: "エナージェル"
 brand: "Pentel"
 where_found:
-  - "Stationery stores"
+  - "Pentel official"
+  - "Amazon JP"
+  - "Yodobashi"
+  - "Loft"
+  - "conbini"
 price_yen: "180-500"
 what_it_is: "Liquid gel pen, fast-drying."
 why_travelers_care: "Reliable smooth writer."
@@ -17,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

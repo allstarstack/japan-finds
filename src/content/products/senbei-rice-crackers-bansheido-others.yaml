@@ -5,12 +5,15 @@ category: "snacks"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "せんべい"
 brand: "Various"
 where_found:
-  - "Supermarkets"
-  - "specialty stores"
+  - "Kameda"
+  - "Chuoken"
+  - "Ogurasansou"
+  - "Akomeya"
+  - "AEON"
 price_yen: "400-1500"
 what_it_is: "Soy-glazed or salted rice crackers, individually wrapped."
 why_travelers_care: "Savory option in a sweets-heavy gift category."
@@ -21,3 +24,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

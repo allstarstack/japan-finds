@@ -4,11 +4,14 @@ name_en: "Yodobashi/Bic Camera Tax-Free Electronics"
 category: "other"
 intent:
   - "bring_home"
-status: "hold"
+status: "ready"
 name_jp: "ヨドバシ / ビックカメラ"
 brand: "Various"
 where_found:
-  - "Yodobashi/Bic flagship stores"
+  - "Yodobashi Akiba"
+  - "Bic Yurakucho"
+  - "Bic Shinjuku"
+  - "Yodobashi Umeda"
 price_yen: "Variable"
 what_it_is: "One-stop tax-free electronics, cameras, appliances."
 why_travelers_care: "Tax-free 10% saving on big-ticket items."
@@ -20,3 +23,6 @@ source_links:
   - "biccamera.com"
 confidence: "high"
 trip_score: 7
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

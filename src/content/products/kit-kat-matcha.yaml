@@ -5,13 +5,14 @@ category: "snacks"
 intent:
   - "bring_home"
   - "gift_easy"
-status: "v1_candidate"
+status: "ready"
 name_jp: "キットカット 抹茶"
 brand: "Nestle Japan"
 where_found:
   - "Konbini"
   - "supermarkets"
   - "airports"
+  - "Yodobashi"
 price_yen: "180-400"
 what_it_is: "Matcha-flavored Kit Kat, available year-round."
 why_travelers_care: "Default Kit Kat purchase."
@@ -22,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "snacks"
+fill_type: "verified"
+display_strategy: "show_all"

@@ -4,12 +4,9 @@ name_en: "Oden (Hot Case, Winter)"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "おでん"
-brand: "Lawson / FamilyMart / 7-Eleven"
+status: "ready"
 where_found:
-  - "Hot case"
-  - "Oct-Mar"
+  - "Hot case, Oct-Mar"
 price_yen: "80-150 per item"
 what_it_is: "Dashi-simmered ingredients: daikon, egg, konnyaku, hanpen, etc., assembled by piece."
 why_travelers_care: "Communal hot-case ritual, pick-your-own assembly is content-friendly."
@@ -20,3 +17,7 @@ source_links:
   - "konbini sites"
 confidence: "high"
 trip_score: 9
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "food"

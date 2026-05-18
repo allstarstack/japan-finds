@@ -4,9 +4,7 @@ name_en: "SPAM musubi rice ball"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "hold"
-name_jp: "SPAMむすび"
-brand: "FamilyMart / Hormel collaboration variants"
+status: "ready"
 where_found:
   - "FamilyMart / selected konbini / Major konbini"
 price_yen: "~¥250–¥350"
@@ -21,3 +19,7 @@ source_links:
   - "https://www.family.co.jp/for_tourist/en.html"
 confidence: "high"
 trip_score: 7
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "food"

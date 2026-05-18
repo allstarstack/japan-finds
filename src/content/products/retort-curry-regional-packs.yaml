@@ -4,13 +4,9 @@ name_en: "Retort curry regional packs"
 category: "donki-drugstore"
 intent:
   - "local_editions"
-status: "v1_candidate"
-name_jp: "ご当地レトルトカレー"
-brand: "Various regional makers"
+status: "ready"
 where_found:
-  - "Donki"
-  - "supermarkets"
-  - "souvenir shops"
+  - "Donki, supermarkets, souvenir shops"
 price_yen: "~¥300–¥800 each"
 what_it_is: "Shelf-stable curry pouches tied to regions or local meats/brands."
 why_travelers_care: "Great local edition item; very searchable and useful at home."
@@ -25,3 +21,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

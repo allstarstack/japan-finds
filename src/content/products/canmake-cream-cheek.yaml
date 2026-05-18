@@ -4,7 +4,7 @@ name_en: "Canmake Cream Cheek"
 category: "skincare"
 intent:
   - "bring_home"
-status: "needs_verification"
+status: "ready"
 name_jp: "キャンメイク クリームチーク"
 brand: "Canmake"
 where_found:
@@ -24,3 +24,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 9
+launch_category: "skincare_beauty"
+fill_type: "verified"
+display_strategy: "show_all"

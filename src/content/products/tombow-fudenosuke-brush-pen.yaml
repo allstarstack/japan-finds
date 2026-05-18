@@ -4,11 +4,14 @@ name_en: "Tombow Fudenosuke Brush Pen"
 category: "stationery"
 intent:
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "筆之助"
 brand: "Tombow"
 where_found:
-  - "Stationery stores"
+  - "Tombow official"
+  - "Amazon JP"
+  - "Yodobashi"
+  - "Loft"
 price_yen: "300-500"
 what_it_is: "Hard-tip brush pen for hand-lettering."
 why_travelers_care: "Calligraphy beginner go-to."
@@ -17,3 +20,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

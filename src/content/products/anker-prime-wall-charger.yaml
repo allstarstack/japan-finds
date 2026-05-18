@@ -4,11 +4,14 @@ name_en: "Anker Prime Wall Charger"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "Anker 充電器"
 brand: "Anker"
 where_found:
-  - "Yodobashi / Bic Camera"
+  - "Anker Japan official"
+  - "Yodobashi"
+  - "Bic Camera"
+  - "Amazon JP"
 price_yen: "~¥8,000"
 what_it_is: "High-wattage GaN charger with Japan plug."
 why_travelers_care: "Useful if a traveler forgot charger/adapter; not Japan-specific enough for core list unless framed as fix."
@@ -20,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 9
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

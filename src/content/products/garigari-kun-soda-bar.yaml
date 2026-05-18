@@ -4,9 +4,7 @@ name_en: "Garigari-kun Soda Bar"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "v1_candidate"
-name_jp: "ガリガリ君"
-brand: "Akagi Nyugyo"
+status: "ready"
 where_found:
   - "Konbini freezer"
 price_yen: "70-100"
@@ -19,3 +17,7 @@ source_links:
   - "akagi.com"
 confidence: "high"
 trip_score: 8
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "sweet"

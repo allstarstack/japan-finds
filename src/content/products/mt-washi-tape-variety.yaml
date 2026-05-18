@@ -6,14 +6,15 @@ intent:
   - "bring_home"
   - "gift_easy"
   - "stock_up"
-status: "v1_candidate"
+status: "ready"
 name_jp: "mtマスキングテープ"
 brand: "Kamoi Kakoshi"
 where_found:
-  - "Loft"
-  - "Tokyu Hands"
-  - "Itoya"
-  - "mt Tokyo"
+  - "mt official shop"
+  - "Kamoi Kakoshi"
+  - "Hands"
+  - "Amazon JP"
+  - "Rakuten"
 price_yen: "150-1000"
 what_it_is: "Decorative washi tape, hundreds of designs, store-exclusives."
 why_travelers_care: "Endless variety, weighs nothing, multiple specialty stores have store-only designs."
@@ -22,3 +23,6 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

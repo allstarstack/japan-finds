@@ -4,13 +4,9 @@ name_en: "Black Thunder chocolate bars"
 category: "donki-drugstore"
 intent:
   - "gift_easy"
-status: "v1_candidate"
-name_jp: "ブラックサンダー"
-brand: "Yuraku Confectionery"
+status: "ready"
 where_found:
-  - "Donki"
-  - "konbini"
-  - "supermarkets"
+  - "Donki, konbini, supermarkets"
 price_yen: "~¥40–¥500"
 what_it_is: "Crunchy chocolate bar often sold singly or in multipacks."
 why_travelers_care: "Cheap, readable, and fun for snack comparison content."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
+launch_category: "donki"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -4,13 +4,9 @@ name_en: "Iyemon / Oi Ocha Bottled Green Tea"
 category: "konbini"
 intent:
   - "try_in_japan"
-status: "hold"
-name_jp: "伊右衛門 / お~いお茶"
-brand: "Suntory / Ito En"
+status: "ready"
 where_found:
-  - "Konbini"
-  - "vending"
-  - "everywhere"
+  - "Konbini, vending, everywhere"
 price_yen: "120-160"
 what_it_is: "Cold bottled unsweetened green tea, ubiquitous."
 why_travelers_care: "Hydration baseline, replaces water for most travelers after day 2."
@@ -21,3 +17,7 @@ source_links:
   - "suntory.co.jp/water/iyemon"
 confidence: "high"
 trip_score: 7
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "drink"

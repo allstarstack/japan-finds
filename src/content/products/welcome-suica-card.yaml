@@ -4,11 +4,12 @@ name_en: "Welcome Suica Card"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "Welcome Suica"
 brand: "JR East"
 where_found:
-  - "Narita / Haneda airport JR counters"
+  - "JR East airport stations"
+  - "major JR EAST stations"
 price_yen: "0 (loadable)"
 what_it_is: "Tourist-only IC card, no deposit, no refund, expires after 28 days."
 why_travelers_care: "Day-1 must-have given Suica/Pasmo shortage; works on Tokyo trains, buses, konbini, vending machines."
@@ -18,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 10
 suitcase_score: 5
+launch_category: "travel_gear"
+fill_type: "verified"
+display_strategy: "show_all"

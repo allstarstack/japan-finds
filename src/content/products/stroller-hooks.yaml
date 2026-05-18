@@ -4,13 +4,9 @@ name_en: "Stroller hooks"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "ベビーカーフック"
-brand: "Daiso / baby brands"
+status: "ready"
 where_found:
-  - "100-yen shops"
-  - "baby stores"
-  - "drugstores"
+  - "100-yen shops, baby stores, drugstores"
 price_yen: "~¥110–¥800"
 what_it_is: "Hooks for hanging bags from a stroller."
 why_travelers_care: "Immediate family travel utility."
@@ -24,3 +20,6 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 8
+launch_category: "kids_family"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"

@@ -4,13 +4,13 @@ name_en: "Uji matcha sweets"
 category: "snacks"
 intent:
   - "local_editions"
-status: "v1_candidate"
+status: "ready"
 name_jp: "宇治抹茶菓子"
 brand: "Tsujiri / Itohkyuemon / various"
 where_found:
   - "Kyoto"
   - "Uji"
-  - "department stores"
+  - "dept stores"
 price_yen: "~¥500–¥3,000"
 what_it_is: "Matcha cookies, chocolate, baumkuchen, or cakes."
 why_travelers_care: "Global matcha demand + region-specific credibility."
@@ -23,3 +23,6 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 7
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"

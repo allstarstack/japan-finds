@@ -5,12 +5,14 @@ category: "stationery"
 intent:
   - "bring_home"
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ミドリ トラベラーズノート"
 brand: "Designphil / Midori"
 where_found:
+  - "Travelers Company official"
+  - "Loft"
+  - "Tokyu Hands"
   - "Itoya"
-  - "dept stores"
 price_yen: "5000-9000 + refills"
 what_it_is: "Leather pass-through notebook, refill-based system, infinite customization."
 why_travelers_care: "Cult product, stamp + sticker collection moment, customization base."
@@ -20,3 +22,6 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

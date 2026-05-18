@@ -5,13 +5,14 @@ category: "stationery"
 intent:
   - "gift_easy"
   - "bring_home"
-status: "v1_candidate"
+status: "ready"
 name_jp: "折り紙"
 brand: "Various"
 where_found:
-  - "Stationery"
+  - "Toyo origami official"
   - "Daiso"
-  - "dept stores"
+  - "Loft"
+  - "Yodobashi"
 price_yen: "110-1500"
 what_it_is: "Square folding paper in dozens of patterns."
 why_travelers_care: "Educational gift, easy."
@@ -20,3 +21,6 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+launch_category: "stationery"
+fill_type: "verified"
+display_strategy: "show_all"

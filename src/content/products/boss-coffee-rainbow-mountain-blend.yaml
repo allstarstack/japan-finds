@@ -4,11 +4,13 @@ name_en: "Boss Coffee Rainbow Mountain Blend"
 category: "other"
 intent:
   - "day_one_fixes"
-status: "v1_candidate"
+status: "ready"
 name_jp: "ボス レインボーマウンテンブレンド"
 brand: "Suntory"
 where_found:
-  - "Konbini / vending machines"
+  - "Suntory official"
+  - "konbini"
+  - "vending machines"
 price_yen: "~¥130"
 what_it_is: "Canned coffee, hot or cold depending machine."
 why_travelers_care: "Jetlag caffeine fix and classic vending-machine Japan signal."
@@ -21,3 +23,7 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 3
+launch_category: "konbini"
+fill_type: "verified"
+display_strategy: "show_all"
+sub_chip: "drink"

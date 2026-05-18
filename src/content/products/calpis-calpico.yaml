@@ -5,13 +5,9 @@ category: "konbini"
 intent:
   - "try_in_japan"
   - "stock_up"
-status: "v1_candidate"
-name_jp: "カルピス"
-brand: "Asahi"
+status: "ready"
 where_found:
-  - "Konbini"
-  - "vending"
-  - "supermarkets"
+  - "Konbini, vending, supermarkets"
 price_yen: "150-200 single, ~500 concentrate"
 what_it_is: "Fermented milk soft drink, tangy-sweet. Sold as ready-to-drink or concentrate to dilute."
 why_travelers_care: "Polarizing flavor, concentrate bottle works as a bring-home."
@@ -23,3 +19,7 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 6
+launch_category: "konbini"
+fill_type: "creator_fill"
+display_strategy: "hide_jp_and_brand_until_enriched"
+sub_chip: "drink"

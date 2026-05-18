@@ -5,7 +5,7 @@ category: "other"
 intent:
   - "local_editions"
   - "make_it_yours"
-status: "v1_candidate"
+status: "ready"
 name_jp: "宇治抹茶"
 brand: "Ippodo, Marukyu Koyamaen, Itohkyuemon"
 where_found:
@@ -19,3 +19,6 @@ source_links:
 confidence: "high"
 trip_score: 10
 suitcase_score: 10
+launch_category: "regional_food"
+fill_type: "verified"
+display_strategy: "show_all"
