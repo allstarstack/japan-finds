@@ -1,0 +1,195 @@
+---
+/* /cheat-sheets/[slug] — Phase B-3 individual sheet.
+   The markdown body renders as-is — its H1/H2 hierarchy carries the page
+   structure (BUILD_SPEC_cheat_sheets.md §4). <title> and meta description
+   come from frontmatter and the extracted lede. The trailing "Last
+   verified:" line is stripped from the body by remarkStripVerifiedFooter
+   (astro.config.mjs) and re-rendered here from frontmatter. The donki sheet
+   (medical_caution: true) gets the caution callout above the H1. */
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Header from "../../components/Header.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import { extractLede, fmtDate } from "../../data/cheat-sheets.js";
+
+export async function getStaticPaths() {
+  const sheets = await getCollection("cheat-sheets");
+  return sheets.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const lede = extractLede(entry.body);
+---
+
+<Base title={`${entry.data.title} — Japan Finds`} description={lede}>
+  <Header />
+  <main id="main" class="sheet-page">
+    <article class="sheet">
+      <a class="sheet__back" href="/cheat-sheets">← All cheat sheets</a>
+
+      {
+        entry.data.medical_caution && (
+          <aside class="med-caution">
+            <span class="med-caution__label">Heads up</span>
+            <span class="med-caution__msg">
+              Some content covers medications and import rules. Not medical
+              advice — official sources linked inline.
+            </span>
+          </aside>
+        )
+      }
+
+      <div class="sheet__body">
+        <Content />
+      </div>
+
+      <footer class="sheet__footer">
+        Last verified: {fmtDate(entry.data.last_verified)}
+      </footer>
+    </article>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .sheet-page {
+    padding: 28px var(--gutter-mobile) 56px;
+  }
+  .sheet {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .sheet__back {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+    text-decoration: none;
+  }
+  .sheet__back:hover {
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* Medical-caution callout — donki sheet only (BUILD_SPEC §4).
+     Calm by design: concrete-gray hairline, no red, no icon. */
+  .med-caution {
+    margin-top: 16px;
+    padding: 12px 14px;
+    border: 1px solid var(--color-concrete-gray);
+    border-radius: var(--radius-md);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .med-caution__label {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    color: var(--color-ink-black);
+    margin-right: 8px;
+  }
+  .med-caution__msg {
+    color: var(--color-ink-60);
+  }
+
+  /* ── Rendered markdown ─────────────────────────────────────────────
+     <Content /> output is not scoped to this component, so its elements
+     are targeted with :global(). Brand type tokens; the H1/H2 hierarchy
+     from the source file carries the structure. */
+  .sheet__body {
+    margin-top: 22px;
+  }
+  .sheet__body :global(h1) {
+    font-size: 36px;
+    line-height: 1.03;
+    letter-spacing: -0.03em;
+  }
+  /* The frame line — first paragraph after the H1. */
+  .sheet__body :global(h1 + p) {
+    margin-top: 14px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-ink-60);
+  }
+  .sheet__body :global(h2) {
+    margin-top: 36px;
+    font-size: 22px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+  }
+  .sheet__body :global(h3) {
+    margin-top: 24px;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .sheet__body :global(p) {
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+  .sheet__body :global(ul),
+  .sheet__body :global(ol) {
+    margin-top: 13px;
+    padding-left: 22px;
+  }
+  .sheet__body :global(ul) {
+    list-style: disc;
+  }
+  .sheet__body :global(ol) {
+    list-style: decimal;
+  }
+  .sheet__body :global(li) {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .sheet__body :global(li::marker) {
+    color: var(--color-ink-60);
+  }
+  .sheet__body :global(a) {
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .sheet__body :global(strong) {
+    font-weight: 700;
+  }
+  .sheet__body :global(hr) {
+    margin: 28px 0;
+    border: 0;
+    border-top: var(--border-hair);
+  }
+
+  .sheet__footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: var(--border-hair);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+
+  @media (min-width: 1024px) {
+    .sheet-page {
+      padding: 48px var(--gutter-mobile) 88px;
+    }
+    .sheet__body :global(h1) {
+      font-size: 52px;
+    }
+    .sheet__body :global(h1 + p) {
+      font-size: 20px;
+    }
+    .sheet__body :global(h2) {
+      margin-top: 44px;
+      font-size: 26px;
+    }
+  }
+</style>

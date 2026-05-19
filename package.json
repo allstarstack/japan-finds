@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "convert": "node scripts/convert-source.mjs"
+    "convert": "node scripts/convert-source.mjs",
+    "verify-status": "node scripts/verify-status.mjs"
   },
   "dependencies": {
     "astro": "^6.3.3"
