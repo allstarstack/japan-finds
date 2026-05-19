@@ -11,3 +11,30 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Quirky & Interactive Museums"
+place_id: ChIJrVid0PbmAGARVvoeAwYmgg4
+lat: 34.691227999999995
+lng: 135.4915442
+hours:
+  monday: []
+  tuesday:
+    -   - 09:30
+        - 17:00
+  wednesday:
+    -   - 09:30
+        - 17:00
+  thursday:
+    -   - 09:30
+        - 17:00
+  friday:
+    -   - 09:30
+        - 17:00
+  saturday:
+    -   - 09:30
+        - 17:00
+  sunday:
+    -   - 09:30
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/osaka-science-museum.webp
+hero_attribution: Photo via Google
+time_sensitive: true

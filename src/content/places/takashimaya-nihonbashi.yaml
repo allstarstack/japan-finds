@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJ__8Lhf2LGGARYj6XJNBik14
+lat: 35.6808238
+lng: 139.77343489999998
+hours:
+  monday:
+    -   - 10:30
+        - 19:30
+  tuesday:
+    -   - 10:30
+        - 19:30
+  wednesday:
+    -   - 10:30
+        - 19:30
+  thursday:
+    -   - 10:30
+        - 19:30
+  friday:
+    -   - 10:30
+        - 19:30
+  saturday:
+    -   - 10:30
+        - 19:30
+  sunday:
+    -   - 10:30
+        - 19:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/takashimaya-nihonbashi.webp
+hero_attribution: Photo via Google
+time_sensitive: true

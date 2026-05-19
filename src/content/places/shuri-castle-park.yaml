@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
+place_id: ChIJZ9v0bP5r5TQRi0-esrqficA
+lat: 26.217044899999998
+lng: 127.71948330000001
+hours:
+  monday:
+    -   - 08:30
+        - 18:30
+  tuesday:
+    -   - 08:30
+        - 18:30
+  wednesday:
+    -   - 08:30
+        - 18:30
+  thursday:
+    -   - 08:30
+        - 18:30
+  friday:
+    -   - 08:30
+        - 18:30
+  saturday:
+    -   - 08:30
+        - 18:30
+  sunday:
+    -   - 08:30
+        - 18:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/shuri-castle-park.webp
+hero_attribution: Photo via Google
+time_sensitive: true

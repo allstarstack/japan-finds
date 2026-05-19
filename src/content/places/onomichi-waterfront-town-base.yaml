@@ -10,3 +10,28 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Base Town"
+place_id: ChIJOywXJcEBUTUREa0jZ0SgbZU
+lat: 34.4053651
+lng: 133.1956935
+hours:
+  monday:
+    -   - 09:00
+        - 18:00
+  tuesday: []
+  wednesday: []
+  thursday:
+    -   - 09:00
+        - 18:00
+  friday:
+    -   - 09:00
+        - 18:00
+  saturday:
+    -   - 09:00
+        - 18:00
+  sunday:
+    -   - 09:00
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/onomichi-waterfront-town-base.webp
+hero_attribution: Photo via Google
+time_sensitive: false

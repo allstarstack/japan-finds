@@ -11,3 +11,11 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Trains & Scenic Transport"
+place_id: EkxIYWtvbmUgUm9wZXdheSwgU2VuZ29rdWhhcmEsIEhha29uZSwgQXNoaWdhcmFzaGltbyBEaXN0cmljdCwgS2FuYWdhd2EsIEphcGFuIi4qLAoUChIJY2br3DCfGWARMDFegqz4huQSFAoSCWXijBY3nxlgEdjA_i9fR0aE
+lat: 35.2443674
+lng: 139.0190448
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/hakone-ropeway-owakudani.webp
+hero_attribution: Photo via Google
+time_sensitive: true

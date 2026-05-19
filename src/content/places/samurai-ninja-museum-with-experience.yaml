@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Quirky & Interactive Museums"
+place_id: ChIJlw9RTjUJAWARdy4b2T6Zt-M
+lat: 35.0072167
+lng: 135.7635673
+hours:
+  monday:
+    -   - 09:30
+        - 19:30
+  tuesday:
+    -   - 09:30
+        - 19:30
+  wednesday:
+    -   - 09:30
+        - 19:30
+  thursday:
+    -   - 09:30
+        - 19:30
+  friday:
+    -   - 09:30
+        - 19:30
+  saturday:
+    -   - 09:30
+        - 19:30
+  sunday:
+    -   - 09:30
+        - 19:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/samurai-ninja-museum-with-experience.webp
+hero_attribution: Photo via Google
+time_sensitive: true

@@ -28,3 +28,13 @@ data/source/
 
 # Conversion artifacts
 .convert-log
+.env.local
+
+# Phase D D1 — Places API enrichment artifacts (local-only, not for git):
+# the My Maps re-import CSVs, the run's verification log + miss list, and
+# the restaurants.json pre-enrichment backup.
+places_mymaps_v2.csv
+restaurants_mymaps_v5.csv
+enrichment_verifications.csv
+enrichment_misses.json
+src/data/restaurants.json.bak

@@ -10,3 +10,11 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJK4SZn4VmGWARcZ-vsGukOhY
+lat: 35.4600675
+lng: 138.8324741
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/oshino-hakkai-springs.webp
+hero_attribution: Photo via Google
+time_sensitive: false

@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJZfm-3x_K9F8RCjzBytLjCC0
+lat: 37.923339399999996
+lng: 139.061446
+hours:
+  monday:
+    -   - 09:00
+        - 21:00
+  tuesday:
+    -   - 09:00
+        - 21:00
+  wednesday:
+    -   - 09:00
+        - 21:00
+  thursday:
+    -   - 09:00
+        - 21:00
+  friday:
+    -   - 09:00
+        - 21:00
+  saturday:
+    -   - 09:00
+        - 21:00
+  sunday:
+    -   - 09:00
+        - 21:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/pier-bandai.webp
+hero_attribution: Photo via Google
+time_sensitive: true

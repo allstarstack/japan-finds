@@ -10,3 +10,32 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJQ5Sa1PqJGGARUSaNKKOrMVg
+lat: 35.6620689
+lng: 139.7432671
+hours:
+  monday:
+    -   - 08:30
+        - 21:00
+  tuesday:
+    -   - 08:30
+        - 21:00
+  wednesday:
+    -   - 08:30
+        - 21:00
+  thursday:
+    -   - 08:30
+        - 21:00
+  friday:
+    -   - 08:30
+        - 21:00
+  saturday:
+    -   - 08:30
+        - 21:00
+  sunday:
+    -   - 08:30
+        - 21:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/teamlab-borderless-azabudai-hills.webp
+hero_attribution: Photo via Google
+time_sensitive: true

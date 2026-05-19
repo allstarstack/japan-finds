@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Trains & Scenic Transport"
+place_id: ChIJ9dVANwtLil8RLCyvTtj8TAU
+lat: 38.161600899999996
+lng: 140.3952205
+hours:
+  monday:
+    -   - 08:30
+        - 17:00
+  tuesday:
+    -   - 08:30
+        - 17:00
+  wednesday:
+    -   - 08:30
+        - 17:00
+  thursday:
+    -   - 08:30
+        - 17:00
+  friday:
+    -   - 08:30
+        - 17:00
+  saturday:
+    -   - 08:30
+        - 17:00
+  sunday:
+    -   - 08:30
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/zao-ropeway.webp
+hero_attribution: Photo via Google
+time_sensitive: true

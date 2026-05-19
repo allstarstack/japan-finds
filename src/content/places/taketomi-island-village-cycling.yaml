@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
+place_id: ChIJpQilQ3l1YDQRXgi0srb83dU
+lat: 24.3293981
+lng: 124.08833319999998
+hours:
+  monday:
+    -   - 07:30
+        - 17:00
+  tuesday:
+    -   - 07:30
+        - 17:00
+  wednesday:
+    -   - 07:30
+        - 17:00
+  thursday:
+    -   - 07:30
+        - 17:00
+  friday:
+    -   - 07:30
+        - 17:00
+  saturday:
+    -   - 07:30
+        - 17:00
+  sunday:
+    -   - 07:30
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/taketomi-island-village-cycling.webp
+hero_attribution: Photo via Google
+time_sensitive: true

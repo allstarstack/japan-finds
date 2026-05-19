@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
+place_id: ChIJUc4SILrrUzURFEFMQod9v7g
+lat: 34.3299036
+lng: 134.0457696
+hours:
+  monday:
+    -   - 05:30
+        - 18:30
+  tuesday:
+    -   - 05:30
+        - 18:30
+  wednesday:
+    -   - 05:30
+        - 18:30
+  thursday:
+    -   - 05:30
+        - 18:30
+  friday:
+    -   - 05:30
+        - 18:30
+  saturday:
+    -   - 05:30
+        - 18:30
+  sunday:
+    -   - 05:30
+        - 18:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/ritsurin-garden.webp
+hero_attribution: Photo via Google
+time_sensitive: true

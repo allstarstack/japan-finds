@@ -10,3 +10,9 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Base Town"
+place_id: ChIJrwQEdQDrGWARBVcGUbZ4e3o
+lat: 34.9648372
+lng: 138.97210270000002
+hours:
+hours_cache_date: '2026-05-19'
+time_sensitive: false

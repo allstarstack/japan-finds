@@ -10,3 +10,32 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJtxODuv6LGGARA0RL4wD9Ggg
+lat: 35.6811546
+lng: 139.7667831
+hours:
+  monday:
+    -   - 05:30
+        - 22:00
+  tuesday:
+    -   - 05:30
+        - 22:00
+  wednesday:
+    -   - 05:30
+        - 22:00
+  thursday:
+    -   - 05:30
+        - 22:00
+  friday:
+    -   - 05:30
+        - 22:00
+  saturday:
+    -   - 05:30
+        - 22:00
+  sunday:
+    -   - 05:30
+        - 22:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/tokyo-station-ekibenya-matsuri.webp
+hero_attribution: Photo via Google
+time_sensitive: true

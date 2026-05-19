@@ -9,3 +9,11 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJ-R4jJ5n0GGAR5j_HSqAxKcw
+lat: 35.641253899999995
+lng: 139.667531
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/sangenjaya-chazawa-dori.webp
+hero_attribution: Photo via Google
+time_sensitive: false

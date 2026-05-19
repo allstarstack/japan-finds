@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
+place_id: ChIJBVmy-YMz-F8R5PID8D17Cpc
+lat: 36.5621278
+lng: 136.66265149999998
+hours:
+  monday:
+    -   - 07:00
+        - 18:00
+  tuesday:
+    -   - 07:00
+        - 18:00
+  wednesday:
+    -   - 07:00
+        - 18:00
+  thursday:
+    -   - 07:00
+        - 18:00
+  friday:
+    -   - 07:00
+        - 18:00
+  saturday:
+    -   - 07:00
+        - 18:00
+  sunday:
+    -   - 07:00
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/kenrokuen-garden.webp
+hero_attribution: Photo via Google
+time_sensitive: true

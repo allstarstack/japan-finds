@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Animals & Aquariums"
+place_id: ChIJx5aUc7Rp5TQRd7FStKxoa24
+lat: 26.1563877
+lng: 127.65067819999997
+hours:
+  monday:
+    -   - 09:00
+        - 19:00
+  tuesday:
+    -   - 09:00
+        - 19:00
+  wednesday:
+    -   - 09:00
+        - 19:00
+  thursday:
+    -   - 09:00
+        - 19:00
+  friday:
+    -   - 09:00
+        - 19:00
+  saturday:
+    -   - 09:00
+        - 19:00
+  sunday:
+    -   - 09:00
+        - 19:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/dmm-kariyushi-aquarium.webp
+hero_attribution: Photo via Google
+time_sensitive: true

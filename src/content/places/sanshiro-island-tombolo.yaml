@@ -10,3 +10,11 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Sea Caves & Coastal Features"
+place_id: ChIJzdf-ZaD3GWARDquQVaGp0Hk
+lat: 34.784706
+lng: 138.761806
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/sanshiro-island-tombolo.webp
+hero_attribution: Photo via Google
+time_sensitive: false

@@ -10,3 +10,11 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Beaches & Tidepooling"
+place_id: ChIJ8QUyQi1YF2ARMAxvQwQixUQ
+lat: 34.6343362
+lng: 138.8905379
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/yumigahama-beach.webp
+hero_attribution: Photo via Google
+time_sensitive: false

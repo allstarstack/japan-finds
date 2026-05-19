@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJXelw6aF8YDQRZSsQKk58ztU
+lat: 24.271752300000003
+lng: 123.88291579999999
+hours:
+  monday:
+    -   - 09:00
+        - 17:15
+  tuesday:
+    -   - 09:00
+        - 17:15
+  wednesday:
+    -   - 09:00
+        - 17:15
+  thursday:
+    -   - 09:00
+        - 17:15
+  friday:
+    -   - 09:00
+        - 17:15
+  saturday:
+    -   - 09:00
+        - 17:15
+  sunday:
+    -   - 09:00
+        - 17:15
+hours_cache_date: '2026-05-19'
+hero_image: /places/iriomote-mangrove-cruise.webp
+hero_attribution: Photo via Google
+time_sensitive: false

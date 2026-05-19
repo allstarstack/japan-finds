@@ -10,3 +10,30 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJU1rBPe3Cj18RJNUNL1YYW84
+lat: 39.714787099999995
+lng: 140.1257678
+hours:
+  monday:
+    -   - 05:00
+        - 18:00
+  tuesday:
+    -   - 05:00
+        - 18:00
+  wednesday:
+    -   - 05:00
+        - 18:00
+  thursday:
+    -   - 05:00
+        - 18:00
+  friday:
+    -   - 05:00
+        - 18:00
+  saturday:
+    -   - 05:00
+        - 18:00
+  sunday: []
+hours_cache_date: '2026-05-19'
+hero_image: /places/akita-citizen-s-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

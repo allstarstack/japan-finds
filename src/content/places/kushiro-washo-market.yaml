@@ -10,3 +10,30 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJSeSoNmM9cl8REDYZ-wvPmhE
+lat: 42.9892463
+lng: 144.3799285
+hours:
+  monday:
+    -   - 08:00
+        - 17:00
+  tuesday:
+    -   - 08:00
+        - 17:00
+  wednesday:
+    -   - 08:00
+        - 17:00
+  thursday:
+    -   - 08:00
+        - 17:00
+  friday:
+    -   - 08:00
+        - 17:00
+  saturday:
+    -   - 08:00
+        - 17:00
+  sunday: []
+hours_cache_date: '2026-05-19'
+hero_image: /places/kushiro-washo-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

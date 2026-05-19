@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJK3MfoRVTFTURFhFVj6JIlxE
+lat: 32.741458699999995
+lng: 129.8752789
+hours:
+  monday:
+    -   - 10:00
+        - 21:00
+  tuesday:
+    -   - 10:00
+        - 21:00
+  wednesday:
+    -   - 10:00
+        - 21:00
+  thursday:
+    -   - 10:00
+        - 21:00
+  friday:
+    -   - 10:00
+        - 21:00
+  saturday:
+    -   - 10:00
+        - 21:00
+  sunday:
+    -   - 10:00
+        - 21:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/nagasaki-shinchi-chinatown.webp
+hero_attribution: Photo via Google
+time_sensitive: true

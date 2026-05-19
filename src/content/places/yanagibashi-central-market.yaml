@@ -10,3 +10,28 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJO7D5qt52A2ARssqBgiIQo8E
+lat: 35.1699909
+lng: 136.8880404
+hours:
+  monday:
+    -   - 04:00
+        - 10:00
+  tuesday:
+    -   - 04:00
+        - 10:00
+  wednesday: []
+  thursday:
+    -   - 04:00
+        - 10:00
+  friday:
+    -   - 04:00
+        - 10:00
+  saturday:
+    -   - 04:00
+        - 10:00
+  sunday: []
+hours_cache_date: '2026-05-19'
+hero_image: /places/yanagibashi-central-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

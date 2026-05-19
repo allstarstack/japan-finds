@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJtc_GvRhhUzURD5YWECaI2dw
+lat: 34.2367554
+lng: 134.6479661
+hours:
+  monday:
+    -   - 00:00
+        - 23:59
+  tuesday:
+    -   - 00:00
+        - 23:59
+  wednesday:
+    -   - 00:00
+        - 23:59
+  thursday:
+    -   - 00:00
+        - 23:59
+  friday:
+    -   - 00:00
+        - 23:59
+  saturday:
+    -   - 00:00
+        - 23:59
+  sunday:
+    -   - 00:00
+        - 23:59
+hours_cache_date: '2026-05-19'
+hero_image: /places/naruto-whirlpools.webp
+hero_attribution: Photo via Google
+time_sensitive: false

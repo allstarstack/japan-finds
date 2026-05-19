@@ -10,3 +10,11 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
+place_id: ChIJ5yW_trBx-F8R-AVYnbtRxcw
+lat: 36.2577967
+lng: 136.9061975
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/shirakawa-go-gassho-village.webp
+hero_attribution: Photo via Google
+time_sensitive: true

@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Quirky & Interactive Museums"
+place_id: ChIJgaL-zx-fm18RQjx7oW_kNcY
+lat: 40.829495
+lng: 140.7356284
+hours:
+  monday:
+    -   - 09:00
+        - 19:00
+  tuesday:
+    -   - 09:00
+        - 19:00
+  wednesday:
+    -   - 09:00
+        - 19:00
+  thursday:
+    -   - 09:00
+        - 19:00
+  friday:
+    -   - 09:00
+        - 19:00
+  saturday:
+    -   - 09:00
+        - 19:00
+  sunday:
+    -   - 09:00
+        - 19:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/nebuta-warasse.webp
+hero_attribution: Photo via Google
+time_sensitive: true

@@ -9,3 +9,11 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJPYwFnNGNGGARYEeXwiYQPe8
+lat: 35.7276934
+lng: 139.7657232
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/yanaka-ginza.webp
+hero_attribution: Photo via Google
+time_sensitive: true

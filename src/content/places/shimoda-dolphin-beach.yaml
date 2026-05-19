@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Animals & Aquariums"
+place_id: ChIJdSRGmsRYF2ARZVllSzEwziw
+lat: 34.6647631
+lng: 138.9464169
+hours:
+  monday:
+    -   - 09:00
+        - 16:30
+  tuesday:
+    -   - 09:00
+        - 16:30
+  wednesday:
+    -   - 09:00
+        - 16:30
+  thursday:
+    -   - 09:00
+        - 16:30
+  friday:
+    -   - 09:00
+        - 16:30
+  saturday:
+    -   - 09:00
+        - 16:30
+  sunday:
+    -   - 09:00
+        - 16:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/shimoda-dolphin-beach.webp
+hero_attribution: Photo via Google
+time_sensitive: true

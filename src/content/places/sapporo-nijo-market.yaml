@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJCb2qW4IpC18R93EsGNFraJI
+lat: 43.058299
+lng: 141.358446
+hours:
+  monday:
+    -   - 07:00
+        - 17:00
+  tuesday:
+    -   - 07:00
+        - 17:00
+  wednesday:
+    -   - 07:00
+        - 17:00
+  thursday:
+    -   - 07:00
+        - 17:00
+  friday:
+    -   - 07:00
+        - 17:00
+  saturday:
+    -   - 07:00
+        - 17:00
+  sunday:
+    -   - 07:00
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/sapporo-nijo-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

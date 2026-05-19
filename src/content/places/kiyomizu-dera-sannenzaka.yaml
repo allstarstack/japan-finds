@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
+place_id: ChIJB_vchdMIAWARujTEUIZlr2I
+lat: 34.9946662
+lng: 135.784661
+hours:
+  monday:
+    -   - 06:00
+        - 18:00
+  tuesday:
+    -   - 06:00
+        - 18:00
+  wednesday:
+    -   - 06:00
+        - 18:00
+  thursday:
+    -   - 06:00
+        - 18:00
+  friday:
+    -   - 06:00
+        - 18:00
+  saturday:
+    -   - 06:00
+        - 18:00
+  sunday:
+    -   - 06:00
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/kiyomizu-dera-sannenzaka.webp
+hero_attribution: Photo via Google
+time_sensitive: true

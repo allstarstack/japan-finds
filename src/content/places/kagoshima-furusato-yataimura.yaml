@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJ-_amYkxnPjURjhK_0LsQdJk
+lat: 31.583589499999995
+lng: 130.5442134
+hours:
+  monday:
+    -   - 11:30
+        - 23:30
+  tuesday:
+    -   - 11:30
+        - 23:30
+  wednesday:
+    -   - 11:30
+        - 23:30
+  thursday:
+    -   - 11:30
+        - 23:30
+  friday:
+    -   - 11:30
+        - 23:30
+  saturday:
+    -   - 11:30
+        - 23:30
+  sunday:
+    -   - 11:30
+        - 23:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/kagoshima-furusato-yataimura.webp
+hero_attribution: Photo via Google
+time_sensitive: true

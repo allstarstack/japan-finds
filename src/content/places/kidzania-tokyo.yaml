@@ -10,3 +10,46 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJReWVrZiJGGARpByTvPg66LU
+lat: 35.6551508
+lng: 139.79300830000003
+hours:
+  monday:
+    -   - 09:00
+        - 15:00
+    -   - 16:00
+        - 21:00
+  tuesday:
+    -   - 09:00
+        - 15:00
+    -   - 16:00
+        - 21:00
+  wednesday:
+    -   - 09:00
+        - 15:00
+    -   - 16:00
+        - 21:00
+  thursday:
+    -   - 09:00
+        - 15:00
+    -   - 16:00
+        - 21:00
+  friday:
+    -   - 09:00
+        - 15:00
+    -   - 16:00
+        - 21:00
+  saturday:
+    -   - 09:00
+        - 15:00
+    -   - 16:00
+        - 21:00
+  sunday:
+    -   - 09:00
+        - 15:00
+    -   - 16:00
+        - 21:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/kidzania-tokyo.webp
+hero_attribution: Photo via Google
+time_sensitive: true

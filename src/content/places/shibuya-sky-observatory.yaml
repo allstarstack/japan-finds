@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Views & Sunsets"
+place_id: ChIJ4Rr2JWiLGGARcyRSHuZ-9G8
+lat: 35.6586719
+lng: 139.7019848
+hours:
+  monday:
+    -   - 10:00
+        - 22:30
+  tuesday:
+    -   - 10:00
+        - 22:30
+  wednesday:
+    -   - 10:00
+        - 22:30
+  thursday:
+    -   - 10:00
+        - 22:30
+  friday:
+    -   - 10:00
+        - 22:30
+  saturday:
+    -   - 10:00
+        - 22:30
+  sunday:
+    -   - 10:00
+        - 22:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/shibuya-sky-observatory.webp
+hero_attribution: Photo via Google
+time_sensitive: false

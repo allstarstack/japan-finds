@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Animals & Aquariums"
+place_id: ChIJw3KzazihRjUR_yWyzPUlg_o
+lat: 33.2582855
+lng: 131.5328036
+hours:
+  monday:
+    -   - 09:00
+        - 17:00
+  tuesday:
+    -   - 09:00
+        - 17:00
+  wednesday:
+    -   - 09:00
+        - 17:00
+  thursday:
+    -   - 09:00
+        - 17:00
+  friday:
+    -   - 09:00
+        - 17:00
+  saturday:
+    -   - 09:00
+        - 17:00
+  sunday:
+    -   - 09:00
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/takasakiyama-monkey-park.webp
+hero_attribution: Photo via Google
+time_sensitive: true
