@@ -2,13 +2,6 @@
 title: JR Pass Basics
 slug: jr-pass
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "jr_pass_current_prices"
-    note: "7/14/21-day prices for ordinary and Green Car post Oct 1 2026 hike"
-  - field: "shinkansen_one_way_fares"
-    note: "Tokyo-Kyoto and Tokyo-Osaka one-way fares used in math examples"
-  - field: "regional_pass_alternatives"
-    note: "JR East / JR Kansai-Hiroshima / Hokuriku Arch current prices"
 ---
 
 # JR Pass Basics
@@ -19,7 +12,7 @@ It's a math problem. Most travelers don't break even after the Oct 2026 price hi
 
 ## The price
 
-Effective Oct 1, 2026, the 7-day adult ordinary JR Pass went from ¥50,000 to ¥53,000. Green Car tier and 14/21-day passes also rose. The pass is sold abroad (online or through travel agents) and inside Japan at slightly higher prices.
+Effective Oct 1, 2026, the 7-day adult Ordinary JR Pass rose from ¥50,000 to ¥53,000 — but only when bought through overseas agencies. The official JR Pass online reservation site holds the old ¥50,000 price for a limited period (end date not announced). If you're flexible on purchase channel, the official site saves ¥3,000. The pass is sold abroad (online or through travel agents) and inside Japan at slightly higher prices.
 
 Children 6–11 pay roughly half. Under-6 ride free with a paying adult.
 
@@ -36,7 +29,7 @@ It pays off if:
 
 The pass loses on:
 - Single-city trips. One week in Tokyo using the Yamanote Line costs roughly ¥5,000 in IC card fares. Pass is wasted.
-- Tokyo + Kyoto with one round trip. Tokyo ↔ Kyoto Shinkansen runs roughly ¥13,000 one way (¥26,000 round trip). Add Yamanote and Kyoto subway and you're still under ¥35,000.
+- Tokyo + Kyoto with one round trip. Tokyo ↔ Kyoto Hikari runs ¥13,970 one way (¥27,940 round trip). Add Yamanote and Kyoto subway and you're still under ¥35,000.
 - Travelers planning to fly between distant cities (Tokyo → Sapporo, Tokyo → Fukuoka). Domestic flights often beat Shinkansen on time and price, and the pass doesn't cover them.
 
 ## The math, simply

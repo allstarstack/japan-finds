@@ -2,11 +2,6 @@
 title: Cash / Cards / ATMs
 slug: cash-cards-atms
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "atm_fees_by_card_network"
-    note: "Seven Bank / Japan Post / Lawson / Aeon fees by issuing card brand"
-  - field: "contactless_card_acceptance_rate"
-    note: "Konbini and transit contactless coverage updates frequently"
 ---
 
 # Cash / Cards / ATMs

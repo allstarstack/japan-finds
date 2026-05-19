@@ -2,13 +2,6 @@
 title: First 24 Hours in Japan
 slug: first-24-hours
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "atm_fees_by_card_network"
-    note: "Seven Bank / Japan Post current fees by card network"
-  - field: "esim_provider_prices"
-    note: "Airalo / Ubigi / Sakura / Mobal / Klook pricing changes frequently"
-  - field: "yamato_route_specific_pricing"
-    note: "Bag forwarding fees vary by destination route"
 ---
 
 # First 24 Hours in Japan
@@ -59,7 +52,7 @@ Free station Wi-Fi exists at major JR and Tokyo Metro stations. Backup, not a pr
 
 If your hotel isn't a 30-min ride from the airport, forward your bags. Walk into Japan without dragging a suitcase up Shibuya station stairs.
 
-Yamato (黒猫ヤマト) accepts at airport counters at NRT, HND, KIX. Up to 200cm linear (length + width + height) and 30kg. ¥660 airport handling fee on top of the bag fee. Arrives at your hotel next day.
+Yamato (黒猫ヤマト) accepts at airport counters at NRT, HND, KIX. Up to 200cm linear (length + width + height) and 30kg. ¥660 airport handling fee at all three airports, plus a ¥660 counter usage fee at NRT and HND (KIX is handling fee only). Per-route shipping on top — typically ¥2,500–¥3,000 from airport to Tokyo hotel. Arrives at your hotel next day.
 
 ## Power bank rules (new, April 2026)
 

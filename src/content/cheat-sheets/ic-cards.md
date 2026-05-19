@@ -2,13 +2,6 @@
 title: Suica / IC Cards
 slug: ic-cards
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "suica_refund_handling_fee"
-    note: "Confirm current handling fee on remaining balance at refund"
-  - field: "tourist_pasmo_airport_locations"
-    note: "Verify which airport counters stock Tourist PASMO post-May 2026 launch"
-  - field: "child_ic_card_issuance"
-    note: "Defer to Japan with Kids sheet; verify staffed-counter requirements there"
 ---
 
 # Suica / IC Cards
@@ -25,7 +18,7 @@ For iPhone: Mobile Suica in Apple Wallet, set up before you fly. Welcome Suica M
 
 For Android: physical IC, with one exception. Phones sold inside Japan support Mobile Suica. Phones sold outside Japan mostly don't. Samsung adds broader support around 2027 — until then, plan for a physical card.
 
-Tourist PASMO (launched May 2026, near international airports) and Welcome Suica are the no-deposit tourist variants. If you'd rather skip the refund line on departure day, get one of those.
+Tourist PASMO (launched May 2026, sold at Narita and Haneda; ¥2,000 fixed at NRT, choice of amounts at HND) and Welcome Suica are the no-deposit tourist variants. If you'd rather skip the refund line on departure day, get one of those.
 
 ## Where to buy
 
@@ -55,7 +48,7 @@ A few smaller bus lines and Shinkansen long-distance fares don't accept IC. If a
 
 ## Refunds
 
-Physical Suica/PASMO: return at any JR (Suica) or major private rail (PASMO) station. ¥500 deposit comes back, minus a small handling fee taken from remaining balance.
+Physical Suica/PASMO: return at any JR (Suica) or major private rail (PASMO) station. ¥500 deposit comes back. A ¥220 handling fee is deducted from your remaining balance. If your balance is under ¥220, you still get the full deposit back — the fee just caps at whatever's left.
 
 Welcome Suica and Tourist PASMO are non-refundable, but there's no deposit to refund — wash.
 

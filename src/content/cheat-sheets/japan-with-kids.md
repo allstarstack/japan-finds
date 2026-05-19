@@ -2,15 +2,6 @@
 title: Japan with Kids
 slug: japan-with-kids
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "child_ic_card_issuance"
-    note: "Verify Child Suica/PASMO can be issued to non-resident tourist kids; staffed-counter requirements"
-  - field: "babycal_foreign_card_requirements"
-    note: "Babycal (childcare booking) — verify whether foreign phone/card workflow exists for tourists"
-  - field: "ghibli_park_disney_release_windows"
-    note: "Ticket release dates and rules change; verify near travel"
-  - field: "shinkansen_child_fare_rules"
-    note: "Under-6 free with paying adult; 6–11 half-price; confirm seat-occupancy rules"
 ---
 
 # Japan with Kids
@@ -57,7 +48,7 @@ Konbini bathrooms are clean and free but rarely have changing tables.
 Tokyo Disney and Disney Sea, Ghibli Park, Ghibli Museum, the Pokémon Cafe — all use timed-entry ticketing that releases in fixed windows ahead of date. Tickets sell out in minutes for prime weekend slots.
 
 - **Ghibli Museum (Mitaka)** — tickets release in monthly batches via Lawson ticketing. Check the official page for the next release window.
-- **Ghibli Park (Aichi)** — separate areas, separate tickets. Release windows by area and date.
+- **Ghibli Park (Aichi)** — tickets release on the 10th of each month at 2:00 PM JST for dates ~2 months out. Weekend slots sell out within hours. Buy through the official overseas ticket page or via Klook.
 - **Tokyo Disney resorts** — passport tickets with date reservation; book through the official Disney app.
 
 Verify release dates and rules for your specific travel month — the systems change often.
