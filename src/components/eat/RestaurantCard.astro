@@ -1,0 +1,224 @@
+---
+/* /eat restaurant card (BUILD_SPEC §5).
+   Mobile-first, text-forward. No restaurant photos ship in v1, so the card
+   leads with a solid colour-block placeholder keyed to cuisine_chip — same
+   pattern as the /places PlaceCard block, not faked or AI imagery (brand.md).
+
+   The price tier + list badges sit absolutely over the top-right of the
+   block. data-cuisine / data-flags drive the client-side filter in
+   ChipRow; they are precomputed here so the filter ships no taxonomy. */
+import { CUISINE_COLOR, cuisineSlug, restaurantFlags } from "../../data/eat-chips.js";
+
+interface Props {
+  restaurant: Record<string, any>;
+}
+
+const { restaurant: r } = Astro.props;
+
+const color = CUISINE_COLOR[r.cuisine_chip] ?? "gray";
+const cuisine = cuisineSlug(r.cuisine_chip);
+const flags = restaurantFlags(r);
+
+/* Shokudo picks come from the Shokudo Hyakumeiten, a separate list — the
+   badge says so (BUILD_SPEC §5). */
+const listBadge = `${r.is_shokudo ? "Shokudo Hyakumeiten" : "Hyakumeiten"} ${r.list_year}`;
+const meta = `${r.genre} · #${r.rank_in_city} in ${r.city} · ${r.neighborhood}`;
+const resLine = `${r.reservation_required} · ${r.notes}`;
+---
+
+<article class="rc" data-cuisine={cuisine} data-flags={flags.join(" ")}>
+  <div class:list={["rc-block", `rc-block--${color}`]} aria-hidden="true"></div>
+  <div class="rc-badges">
+    <span class="rc-price">{r.price_tier}</span>
+    <span class="rc-list">{listBadge}</span>
+  </div>
+
+  <div class="rc-body">
+    <h3 class="rc-name">{r.name_en}</h3>
+    <p class="rc-jp">{r.name_jp}</p>
+    <p class="rc-meta">{meta}</p>
+    <p class="rc-res">{resLine}</p>
+    <div class="rc-links">
+      <a
+        class="rc-link"
+        href={r.maps_search}
+        target="_blank"
+        rel="noopener"
+        aria-label={`${r.name_en} — Google Maps`}
+      >Google Maps&nbsp;→</a>
+      <a
+        class="rc-link"
+        href={r.list_url}
+        target="_blank"
+        rel="noopener"
+        aria-label={`${r.name_en} — Tabelog list`}
+      >Tabelog list&nbsp;→</a>
+    </div>
+  </div>
+</article>
+
+{/* TODO(cross-link, deferred — BUILD_SPEC "Cross-linking to /places"):
+    add a "Places near here" link → /places?neighborhood={r.neighborhood};
+    /places gets the reciprocal link back to /eat. Skipped in this build. */}
+
+<style>
+  .rc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    transition: border-color 120ms ease-out;
+  }
+  /* ChipRow toggles cards via the `hidden` attribute; an author `display`
+     declaration outranks the UA [hidden] rule, so restore it. */
+  .rc[hidden] {
+    display: none;
+  }
+  /* Hover: border emphasis only — no shadow gimmicks, matches PlaceCard. */
+  .rc:hover,
+  .rc:focus-within {
+    border-color: var(--color-ink-black);
+  }
+
+  /* Colour-block placeholder — keyed to cuisine_chip (BUILD_SPEC §5). */
+  .rc-block {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+  .rc-block--red {
+    background: var(--color-tokyo-red);
+  }
+  /* Tokyo Signal Red darkened ~30% toward ink so Sukiyaki reads distinct
+     from the Ramen/Sushi red (BUILD_SPEC §5 "darker tint at 0.7"). */
+  .rc-block--red-deep {
+    background: #b93028;
+  }
+  .rc-block--yellow {
+    background: var(--color-egg-yellow);
+  }
+  .rc-block--ink {
+    background: var(--color-ink-black);
+  }
+  .rc-block--blue {
+    background: var(--color-konbini-blue);
+  }
+  .rc-block--green {
+    background: var(--color-matcha-green);
+  }
+  .rc-block--gray {
+    background: var(--color-concrete-gray);
+  }
+
+  /* Price + list badges — white label chips over the top-right of the
+     block. The backing surface is required, not decorative: bare text on
+     the green Izakaya/Shokudo block clears AA in neither ink (4.47:1) nor
+     white (4.08:1). Ink-on-white is ~17:1 on every block colour. */
+  .rc-badges {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+    text-align: right;
+    pointer-events: none;
+  }
+  .rc-price,
+  .rc-list {
+    background: #fff;
+    color: var(--color-ink-black);
+    font-family: var(--font-mono);
+    font-weight: 500;
+    border: 1px solid var(--color-hair);
+    border-radius: var(--radius-sm);
+  }
+  .rc-price {
+    padding: 1px 6px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+  }
+  .rc-list {
+    padding: 1px 5px;
+    font-size: 9px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .rc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    padding: 12px;
+  }
+  .rc-name {
+    margin: 0;
+    font-family: var(--font-head);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+  }
+  .rc-jp {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+  }
+  .rc-meta {
+    margin: 2px 0 0;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+  }
+  .rc-res {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+    color: var(--color-ink-60);
+  }
+
+  /* Links pinned to the card bottom so wrapped names stay aligned. */
+  .rc-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin: auto 0 0;
+    padding-top: 8px;
+  }
+  /* inline-flex + min-height keeps each link a ≥24px tap target
+     (Lighthouse target-size / WCAG 2.2). */
+  .rc-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+    text-decoration: none;
+  }
+  .rc-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  @media (min-width: 1024px) {
+    .rc-body {
+      padding: 14px;
+    }
+    .rc-name {
+      font-size: 16px;
+    }
+  }
+</style>

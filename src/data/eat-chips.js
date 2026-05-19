@@ -1,0 +1,79 @@
+/* /eat taxonomy — single source of truth for the 13 cuisine chips, the 4
+   planning flags, and the per-cuisine card colour. Imported by ChipRow,
+   RestaurantCard and /eat so chip order, grid sort and colours never drift
+   between them. Mirrors place-chips.js. */
+
+/* Cuisine chips — order is meaningful (BUILD_SPEC §3): meals people travel
+   for first, everyday meals last. This array drives the chip row AND the
+   grid sort, so it stays in the spec's exact left-to-right order — not
+   alphabetised, not sorted by count.
+
+   `slug`  — lowercase URL-param token (?cuisine=ramen,sushi).
+   `value` — matches restaurants.json `cuisine_chip` verbatim. */
+export const CUISINE_CHIPS = [
+  { slug: "sushi", value: "Sushi", label: "Sushi" },
+  { slug: "tempura", value: "Tempura", label: "Tempura" },
+  { slug: "unagi", value: "Unagi", label: "Unagi" },
+  { slug: "sukiyaki", value: "Sukiyaki & Shabu-shabu", label: "Sukiyaki & Shabu-shabu" },
+  { slug: "yakiniku", value: "Yakiniku", label: "Yakiniku" },
+  { slug: "yakitori", value: "Yakitori", label: "Yakitori" },
+  { slug: "tonkatsu", value: "Tonkatsu", label: "Tonkatsu" },
+  { slug: "ramen", value: "Ramen", label: "Ramen" },
+  { slug: "soba", value: "Soba", label: "Soba" },
+  { slug: "udon", value: "Udon", label: "Udon" },
+  { slug: "izakaya", value: "Izakaya", label: "Izakaya" },
+  { slug: "okonomiyaki", value: "Okonomiyaki", label: "Okonomiyaki" },
+  { slug: "shokudo", value: "Shokudo", label: "Shokudo" },
+];
+
+/* Planning flags — two single-select dimensions. Within a dimension the
+   chips are mutually exclusive (a restaurant is either walk-in or
+   reservation-only; either ¥ or ¥¥¥¥), so picking one unpicks its sibling —
+   AND-ing two flags from the same dimension would always yield 0 results.
+   The two dimensions combine: Walk-in OK + Casual is a valid pairing.
+   "recommended" reservations carry no flag — too ambiguous to filter on
+   (BUILD_SPEC §3). */
+export const FLAG_CHIPS = [
+  { slug: "walk-in", label: "Walk-in OK", dim: "reservation" },
+  { slug: "reservation", label: "Reservation needed", dim: "reservation" },
+  { slug: "casual", label: "Casual (¥)", dim: "price" },
+  { slug: "splurge", label: "Splurge (¥¥¥¥)", dim: "price" },
+];
+
+/* cuisine_chip -> colour-block token (BUILD_SPEC §5). Drives the card's
+   placeholder block. `red-deep` is Tokyo Signal Red darkened ~30% so the
+   Sukiyaki block reads distinct from the Ramen/Sushi red. */
+export const CUISINE_COLOR = {
+  "Sushi": "red",
+  "Tempura": "yellow",
+  "Unagi": "ink",
+  "Sukiyaki & Shabu-shabu": "red-deep",
+  "Yakiniku": "ink",
+  "Yakitori": "blue",
+  "Tonkatsu": "yellow",
+  "Ramen": "red",
+  "Soba": "gray",
+  "Udon": "gray",
+  "Izakaya": "green",
+  "Okonomiyaki": "yellow",
+  "Shokudo": "green",
+};
+
+const SLUG_BY_VALUE = new Map(CUISINE_CHIPS.map((c) => [c.value, c.slug]));
+
+/* cuisine_chip value -> URL slug. */
+export function cuisineSlug(value) {
+  return SLUG_BY_VALUE.get(value) ?? "";
+}
+
+/* Planning-flag slugs that apply to one restaurant record. Precomputed at
+   build time and stamped onto the card as `data-flags` so the client
+   filter never needs to ship this logic. */
+export function restaurantFlags(r) {
+  const out = [];
+  if (r.reservation_required === "walk-in OK") out.push("walk-in");
+  if (r.reservation_required === "yes") out.push("reservation");
+  if (r.price_tier === "¥") out.push("casual");
+  if (r.price_tier === "¥¥¥¥") out.push("splurge");
+  return out;
+}
