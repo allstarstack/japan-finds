@@ -122,12 +122,16 @@ ul {
   transition: background-color 120ms ease-out, color 120ms ease-out,
     transform 80ms ease-out;
 }
+/* Primary CTA. Per brand.md, Tokyo Signal Red is alerts / accents /
+   colour-blocks only — Ink Black is the primary button colour. White on
+   Tokyo Signal Red was 3.54:1, below the 4.5:1 AA floor for button labels;
+   white on Ink Black is ~16:1. */
 .btn--primary {
-  background: var(--color-tokyo-red);
+  background: var(--color-ink-black);
   color: #fff;
 }
 .btn--primary:hover {
-  background: var(--color-tokyo-red-dark);
+  background: #000;
 }
 .btn--ink {
   background: var(--color-ink-black);
