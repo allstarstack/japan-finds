@@ -4,7 +4,7 @@
    Desktop: 2-col — text/CTA left, map card right. */
 import Eyebrow from "./Eyebrow.astro";
 import MapPreview from "./MapPreview.astro";
-import { JAPAN_MAP_URL } from "../data/site.js";
+import { PLACES_MAP_URL } from "../data/site.js";
 ---
 
 <section id="map" class="map-sec" aria-labelledby="map-h2">
@@ -22,7 +22,7 @@ import { JAPAN_MAP_URL } from "../data/site.js";
       <div class="map-sec__cta-block">
         <a
           class="btn btn--primary btn--lg btn--responsive"
-          href={JAPAN_MAP_URL}
+          href={PLACES_MAP_URL}
           target="_blank"
           rel="noopener"
         >

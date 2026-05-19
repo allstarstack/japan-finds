@@ -9,7 +9,7 @@ import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import PlaceCard from "../components/v2/PlaceCard.astro";
 import PlaceFilterRail from "../components/v2/PlaceFilterRail.astro";
-import { JAPAN_MAP_URL } from "../data/site.js";
+import { PLACES_MAP_URL } from "../data/site.js";
 
 const places = (await getCollection("places")).filter(
   (p) => p.data.status === "ready" && p.data.public_render !== false,
@@ -95,7 +95,7 @@ for (const chip of FEATURED_CHIPS) {
           </div>
           <a
             class="btn btn--primary btn--lg"
-            href={JAPAN_MAP_URL}
+            href={PLACES_MAP_URL}
             target="_blank"
             rel="noopener"
           >

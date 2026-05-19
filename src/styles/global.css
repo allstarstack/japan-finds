@@ -122,12 +122,16 @@ ul {
   transition: background-color 120ms ease-out, color 120ms ease-out,
     transform 80ms ease-out;
 }
+/* Primary CTA. Per brand.md, Tokyo Signal Red is alerts / accents /
+   colour-blocks only — Ink Black is the primary button colour. White on
+   Tokyo Signal Red was 3.54:1, below the 4.5:1 AA floor for button labels;
+   white on Ink Black is ~16:1. */
 .btn--primary {
-  background: var(--color-tokyo-red);
+  background: var(--color-ink-black);
   color: #fff;
 }
 .btn--primary:hover {
-  background: var(--color-tokyo-red-dark);
+  background: #000;
 }
 .btn--ink {
   background: var(--color-ink-black);
@@ -177,7 +181,10 @@ ul {
 }
 
 /* ── Chips ───────────────────────────────────────────────────────────
-   Category / tag labels. Yellow uses ink text for contrast (HANDOFF D6). */
+   Category / tag labels. Text colour is contrast-driven: red and yellow
+   take ink text; blue, green and ink take white. The green chip uses a
+   darkened background — white on Matcha Green #4d8b57 fails AA, and so
+   does ink (HANDOFF D6 / brand.md). */
 .chip {
   display: inline-flex;
   align-items: center;
@@ -194,14 +201,17 @@ ul {
 }
 .chip--red {
   background: var(--color-tokyo-red);
-  color: #fff;
+  color: var(--color-ink-black);
 }
 .chip--blue {
   background: var(--color-konbini-blue);
   color: #fff;
 }
 .chip--green {
-  background: var(--color-matcha-green);
+  /* Darkened Matcha Green — the #4d8b57 token carries 10px text in
+     neither white (4.09:1) nor ink (4.47:1). White on this shade is
+     ~5.4:1. Chip-scoped; --color-matcha-green is unchanged elsewhere. */
+  background: #3f7548;
   color: #fff;
 }
 .chip--yellow {

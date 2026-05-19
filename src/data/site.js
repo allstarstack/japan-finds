@@ -1,12 +1,13 @@
 /* Site-wide constants.
 
-   JAPAN_MAP_URL — the public "Japan Map" Google My Map. Used by the
-   header CTA, the homepage map section, and the /places hero CTA.
-   NOTE: the `mid` is taken verbatim from the Phase B-2 BUILD_SPEC. If
-   the CTA 404s, this is the value to confirm with Steven — PROJECT_STATE
-   flagged the real My Map URL as still-pending in its background queue. */
-export const JAPAN_MAP_URL =
-  "https://www.google.com/maps/d/viewer?mid=138XXBg77uO1oGJS1rCGaqZbrfjBfb7s&ll=34.79062184947372%2C134.48174290000003&z=5";
+   PLACES_MAP_URL — the public "Japan Map" Google My Map. Used by the
+   header CTA, the homepage hero + map section, and the /places hero CTA.
+   Set the PLACES_MAP_URL env var on Vercel to the map's public viewer URL
+   (default view — no &ll/&z params, so visitors land on the whole map,
+   not zoomed in over Hyogo). Until then the CTA falls back to a TODO
+   anchor, same pattern as RESTAURANTS_MAP_URL. */
+export const PLACES_MAP_URL =
+  process.env.PLACES_MAP_URL || "#TODO-places-map-url";
 
 /* RESTAURANTS_MAP_URL — the separate "Restaurants" Google My Map for /eat.
    Steven creates the map post-import (from restaurants_google_mymaps_import.csv)
