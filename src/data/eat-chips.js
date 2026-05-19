@@ -26,14 +26,18 @@ export const CUISINE_CHIPS = [
   { slug: "shokudo", value: "Shokudo", label: "Shokudo" },
 ];
 
-/* Planning flags — multi-select, AND logic (every active flag must match,
-   same as the /places planning chips). "recommended" reservations carry no
-   flag — too ambiguous to filter on (BUILD_SPEC §3). */
+/* Planning flags — two single-select dimensions. Within a dimension the
+   chips are mutually exclusive (a restaurant is either walk-in or
+   reservation-only; either ¥ or ¥¥¥¥), so picking one unpicks its sibling —
+   AND-ing two flags from the same dimension would always yield 0 results.
+   The two dimensions combine: Walk-in OK + Casual is a valid pairing.
+   "recommended" reservations carry no flag — too ambiguous to filter on
+   (BUILD_SPEC §3). */
 export const FLAG_CHIPS = [
-  { slug: "walk-in", label: "Walk-in OK" },
-  { slug: "reservation", label: "Reservation needed" },
-  { slug: "casual", label: "Casual (¥)" },
-  { slug: "splurge", label: "Splurge (¥¥¥¥)" },
+  { slug: "walk-in", label: "Walk-in OK", dim: "reservation" },
+  { slug: "reservation", label: "Reservation needed", dim: "reservation" },
+  { slug: "casual", label: "Casual (¥)", dim: "price" },
+  { slug: "splurge", label: "Splurge (¥¥¥¥)", dim: "price" },
 ];
 
 /* cuisine_chip -> colour-block token (BUILD_SPEC §5). Drives the card's

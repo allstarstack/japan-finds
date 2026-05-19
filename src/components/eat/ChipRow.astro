@@ -2,13 +2,18 @@
 /* /eat filter rail (BUILD_SPEC §3-4). Two tiers, mirroring PlaceFilterRail:
    - 13 cuisine chips — multi-select, OR logic across chips. Horizontal
      scroll with an edge fade on mobile; wrap on desktop.
-   - 4 planning-flag chips — multi-select, AND logic, combine with the
-     cuisine filter. A hairline divider separates the two tiers.
+   - 4 planning-flag chips in two single-select dimensions (reservation
+     status, price). Within a dimension the two chips are radio-style and
+     mutually exclusive — picking one unpicks the other, since AND-ing
+     e.g. Walk-in OK + Reservation needed could never match. The
+     dimensions combine with each other and with the cuisine filter. A
+     hairline divider separates the two tiers.
 
    Filtering is client-side and in place. Chip state mirrors to the URL
-   (?cuisine=&flag=) for shareable links. The "Showing N of 282" count,
-   the empty state and the "Clear filters" control live on /eat; this
-   component's script drives them by data-attribute. */
+   (?cuisine=&flag=) for shareable links; ?flag= holds at most one value
+   per dimension. The "Showing N of 282" count, the empty state and the
+   "Clear filters" control live on /eat; this component's script drives
+   them by data-attribute. */
 import { CUISINE_CHIPS, FLAG_CHIPS, CUISINE_COLOR } from "../../data/eat-chips.js";
 
 interface Props {
@@ -16,6 +21,12 @@ interface Props {
   flagCounts: Record<string, number>; // flag slug -> count
 }
 const { cuisineCounts, flagCounts } = Astro.props;
+
+/* The two flag dimensions, each rendered as its own radio group. */
+const FLAG_DIMS = [
+  { id: "reservation", aria: "Filter by reservation status" },
+  { id: "price", aria: "Filter by price" },
+];
 ---
 
 <div class="ec-rail" data-eat-rail>
@@ -37,18 +48,23 @@ const { cuisineCounts, flagCounts } = Astro.props;
       }
     </div>
 
-    <div class="ec-flags" role="group" aria-label="Filter by planning need">
+    <div class="ec-flags">
       {
-        FLAG_CHIPS.map((f) => (
-          <button
-            type="button"
-            class="ec-flag"
-            data-flag-chip={f.slug}
-            aria-pressed="false"
-          >
-            {f.label}
-            <span class="ec-n">{flagCounts[f.slug] ?? 0}</span>
-          </button>
+        FLAG_DIMS.map((d) => (
+          <div class="ec-flag-group" role="group" aria-label={d.aria}>
+            {FLAG_CHIPS.filter((f) => f.dim === d.id).map((f) => (
+              <button
+                type="button"
+                class="ec-flag"
+                data-flag-chip={f.slug}
+                data-flag-dim={f.dim}
+                aria-pressed="false"
+              >
+                {f.label}
+                <span class="ec-n">{flagCounts[f.slug] ?? 0}</span>
+              </button>
+            ))}
+          </div>
         ))
       }
     </div>
@@ -153,9 +169,16 @@ const { cuisineCounts, flagCounts } = Astro.props;
   .ec-flags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    /* Wider column gap between the two dimension groups than between the
+       chips inside a group — signals the radio-style grouping. */
+    gap: 8px 20px;
     padding: 10px var(--gutter-mobile) 12px;
     border-top: 1px solid var(--color-ink-15);
+  }
+  .ec-flag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
   }
   .ec-flag {
     display: inline-flex;
@@ -275,7 +298,17 @@ const { cuisineCounts, flagCounts } = Astro.props;
     flagBtns.forEach((b) =>
       b.addEventListener("click", () => {
         const v = b.dataset.flagChip || "";
-        activeFlags.has(v) ? activeFlags.delete(v) : activeFlags.add(v);
+        const dim = b.dataset.flagDim || "";
+        if (activeFlags.has(v)) {
+          activeFlags.delete(v); // re-click clears the dimension
+        } else {
+          // Single-select within a dimension — unpick the sibling first so
+          // two mutually exclusive flags can never both be active.
+          for (const sib of flagBtns)
+            if (sib.dataset.flagDim === dim)
+              activeFlags.delete(sib.dataset.flagChip || "");
+          activeFlags.add(v);
+        }
         apply();
         syncURL();
       }),
@@ -295,9 +328,18 @@ const { cuisineCounts, flagCounts } = Astro.props;
     );
     for (const c of (params.get("cuisine") || "").split(",").filter(Boolean))
       if (validCuisines.has(c)) activeCuisines.add(c);
-    const validFlags = new Set(flagBtns.map((b) => b.dataset.flagChip));
-    for (const f of (params.get("flag") || "").split(",").filter(Boolean))
-      if (validFlags.has(f)) activeFlags.add(f);
+    const flagDim = new Map(
+      flagBtns.map((b) => [b.dataset.flagChip, b.dataset.flagDim]),
+    );
+    const usedDims = new Set<string>();
+    for (const f of (params.get("flag") || "").split(",").filter(Boolean)) {
+      const dim = flagDim.get(f);
+      // Skip unknown slugs and any second value from a dimension already
+      // filled — keeps the URL state radio-compatible.
+      if (!dim || usedDims.has(dim)) continue;
+      usedDims.add(dim);
+      activeFlags.add(f);
+    }
     apply();
   }
 </script>
