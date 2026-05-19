@@ -110,11 +110,14 @@ const mapsUrl = r.place_id
   }
 
   /* Hero media — a 3:2 Google photo, or the colour-block fallback.
-     position: relative anchors the attribution overlay. */
+     position: relative anchors the attribution overlay. overflow: hidden
+     locks the box to 3:2 regardless of the source photo's dimensions —
+     without it a tall/wide image's intrinsic size expands the box. */
   .rc-media {
     position: relative;
     aspect-ratio: 3 / 2;
     width: 100%;
+    overflow: hidden;
   }
   .rc-img {
     display: block;
