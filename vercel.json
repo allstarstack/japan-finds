@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/cheat-sheets/rainy-day-saves",
+      "destination": "/places?flags=rainy_day",
+      "statusCode": 301
+    }
+  ]
+}

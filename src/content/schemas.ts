@@ -187,29 +187,20 @@ export const routeSchema = z.object({
   source_links: strings.optional(),
 });
 
+/* Phase B-3 cheat-sheets schema (BUILD_SPEC_cheat_sheets.md §3).
+   Supersedes the Phase A inspection shape — the 9 hand-written .md sheets
+   carry a deliberately small frontmatter: title, slug, last_verified, the
+   dev-only verify_before_publish queue (surfaced by scripts/verify-status.mjs)
+   and the medical_caution flag (donki sheet only). The markdown body carries
+   everything else; nothing in it is structured data. */
 export const cheatSheetSchema = z.object({
-  slug,
   title: z.string(),
-  summary: z.string().max(200),
-  topic: z.enum([
-    "arrival",
-    "ic_cards",
-    "esim_phone",
-    "cash_atm",
-    "luggage",
-    "jr_pass",
-    "drugstore_taxfree",
-    "konbini",
-    "rainy_day",
-    "family",
-  ]),
-  status: statusEnum,
+  slug,
   last_verified: z.coerce.date(),
-  related_products: strings.optional(),
-  related_places: strings.optional(),
-  related_stores: strings.optional(),
-  recheck_recommended_by: z.coerce.date().optional(),
-  source_links: strings.optional(),
+  verify_before_publish: z
+    .array(z.object({ field: z.string(), note: z.string() }))
+    .optional(),
+  medical_caution: z.boolean().optional(),
 });
 
 export const schemas = {

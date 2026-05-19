@@ -1,0 +1,170 @@
+---
+/* /cheat-sheets — Phase B-3 index ("Cheat Sheets" in the nav).
+   Nine sheets in a fixed editorial order (BUILD_SPEC_cheat_sheets.md §5):
+   the order is editorial, not data, so it is a hardcoded slug array. Each
+   row links to the full sheet; the lede is the brand one-liner pulled from
+   the markdown body. No hero, no decoration — matches /products · /places. */
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Header from "../../components/Header.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import { extractLede, fmtDate } from "../../data/cheat-sheets.js";
+
+const SHEET_ORDER = [
+  "first-24-hours",
+  "ic-cards",
+  "phone-setup",
+  "cash-cards-atms",
+  "luggage-forwarding",
+  "jr-pass",
+  "donki-drugstore-taxfree",
+  "konbini",
+  "japan-with-kids",
+];
+
+const byId = new Map(
+  (await getCollection("cheat-sheets")).map((e) => [e.id, e]),
+);
+const sheets = SHEET_ORDER.map((id) => {
+  const entry = byId.get(id);
+  if (!entry) throw new Error(`/cheat-sheets: no source file for "${id}.md"`);
+  return entry;
+});
+---
+
+<Base
+  title="Cheat sheets — Japan Finds"
+  description="Nine no-fluff Japan travel cheat sheets — arrival, IC cards, eSIM, cash, luggage forwarding, the JR Pass, tax-free shopping, konbini and travelling with kids."
+>
+  <Header />
+  <main id="main" class="cs-index">
+    <div class="wrap">
+      <header class="cs-head">
+        <p class="eyebrow">JAPAN FINDS · HOW</p>
+        <h1>Cheat sheets</h1>
+        <p class="cs-sub">
+          The stuff people actually DM about. Practical first, witty second.
+          Verified before publish.
+        </p>
+      </header>
+
+      <ul class="cs-list">
+        {
+          sheets.map((entry) => (
+            <li>
+              <a class="cs-row" href={`/cheat-sheets/${entry.id}`}>
+                <h2 class="cs-row__title">{entry.data.title}</h2>
+                <p class="cs-row__lede">{extractLede(entry.body)}</p>
+                <p class="cs-row__meta">
+                  Last verified: {fmtDate(entry.data.last_verified)}
+                </p>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px var(--gutter-mobile) 56px;
+  }
+
+  /* Mono eyebrow — shared idiom with /products. */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+    margin-bottom: 12px;
+  }
+  .cs-head h1 {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .cs-sub {
+    margin-top: 14px;
+    max-width: 48ch;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--color-ink-60);
+  }
+
+  .cs-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  /* Whole card is the link (BUILD_SPEC §5). */
+  .cs-row {
+    display: block;
+    padding: 18px;
+    background: var(--color-white);
+    border: var(--border-ink);
+    border-radius: var(--radius-card);
+    text-decoration: none;
+    color: inherit;
+    transition:
+      box-shadow 120ms ease-out,
+      transform 80ms ease-out;
+  }
+  .cs-row:hover,
+  .cs-row:focus-visible {
+    box-shadow: var(--shadow-md);
+    transform: translate(-2px, -2px);
+  }
+  .cs-row__title {
+    font-size: 21px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+  }
+  .cs-row__lede {
+    margin-top: 7px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-ink-60);
+  }
+  /* "Last verified" — muted microcopy. The brand names this Concrete Gray,
+     but #E6E1D8 as text on Rice White is invisible (~1.1:1); --color-ink-60
+     is the codebase's de-emphasised text token and clears AA. */
+  .cs-row__meta {
+    margin-top: 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding: 72px var(--gutter-mobile) 88px;
+    }
+    .cs-head h1 {
+      font-size: 56px;
+    }
+    .cs-sub {
+      font-size: 18px;
+    }
+    .cs-list {
+      margin-top: 40px;
+    }
+    .cs-row {
+      padding: 22px 24px;
+    }
+    .cs-row__title {
+      font-size: 24px;
+    }
+    .cs-row__lede {
+      font-size: 16px;
+    }
+  }
+</style>
