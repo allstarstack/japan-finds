@@ -65,7 +65,7 @@ for (const r of sorted)
     <section class="emap">
       <div class="wrap">
         <a
-          class="btn btn--primary btn--lg btn--responsive"
+          class="btn btn--ink btn--lg btn--responsive"
           href={RESTAURANTS_MAP_URL}
           target="_blank"
           rel="noopener"
@@ -80,7 +80,7 @@ for (const r of sorted)
     <section class="eresults">
       <div class="wrap">
         <div class="eresults-bar">
-          <p class="eresults-count" data-count>Showing {total} of {total}</p>
+          <h2 class="eresults-count" data-count>Showing {total} of {total}</h2>
           <button type="button" class="eclear" data-clear hidden>
             Clear filters
           </button>
@@ -144,7 +144,10 @@ for (const r of sorted)
     gap: 6px 14px;
     margin-bottom: 14px;
   }
+  /* h2 for document outline (h1 hero -> h2 count -> h3 card names);
+     the class overrides the heading defaults so it reads as a label. */
   .eresults-count {
+    margin: 0;
     font-family: var(--font-mono);
     font-size: 12px;
     font-weight: 600;
@@ -153,6 +156,9 @@ for (const r of sorted)
     color: var(--color-ink-60);
   }
   .eclear {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
     padding: 0;
     background: none;
     border: 0;

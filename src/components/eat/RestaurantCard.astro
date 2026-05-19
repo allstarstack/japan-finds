@@ -7,7 +7,7 @@
    The price tier + list badges sit absolutely over the top-right of the
    block. data-cuisine / data-flags drive the client-side filter in
    ChipRow; they are precomputed here so the filter ships no taxonomy. */
-import { CUISINE_COLOR, DARK_BLOCKS, cuisineSlug, restaurantFlags } from "../../data/eat-chips.js";
+import { CUISINE_COLOR, cuisineSlug, restaurantFlags } from "../../data/eat-chips.js";
 
 interface Props {
   restaurant: Record<string, any>;
@@ -28,7 +28,7 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
 
 <article class="rc" data-cuisine={cuisine} data-flags={flags.join(" ")}>
   <div class:list={["rc-block", `rc-block--${color}`]} aria-hidden="true"></div>
-  <div class:list={["rc-badges", DARK_BLOCKS.has(color) && "rc-badges--invert"]}>
+  <div class="rc-badges">
     <span class="rc-price">{r.price_tier}</span>
     <span class="rc-list">{listBadge}</span>
   </div>
@@ -113,8 +113,10 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
     background: var(--color-concrete-gray);
   }
 
-  /* Price + list badges — stacked over the top-right of the block. Ink
-     text by default; white on the dark blocks (BUILD_SPEC §5). */
+  /* Price + list badges — white label chips over the top-right of the
+     block. The backing surface is required, not decorative: bare text on
+     the green Izakaya/Shokudo block clears AA in neither ink (4.47:1) nor
+     white (4.08:1). Ink-on-white is ~17:1 on every block colour. */
   .rc-badges {
     position: absolute;
     top: 8px;
@@ -122,25 +124,28 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 2px;
+    gap: 3px;
     text-align: right;
-    color: var(--color-ink-black);
     pointer-events: none;
   }
-  .rc-badges--invert {
-    color: #fff;
+  .rc-price,
+  .rc-list {
+    background: #fff;
+    color: var(--color-ink-black);
+    font-family: var(--font-mono);
+    font-weight: 500;
+    border: 1px solid var(--color-hair);
+    border-radius: var(--radius-sm);
   }
   .rc-price {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    padding: 1px 6px;
+    font-size: 12px;
+    letter-spacing: 0.01em;
   }
   .rc-list {
-    font-family: var(--font-mono);
+    padding: 1px 5px;
     font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
 
@@ -186,11 +191,16 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
   .rc-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px 14px;
+    gap: 6px 14px;
     margin: auto 0 0;
-    padding-top: 10px;
+    padding-top: 8px;
   }
+  /* inline-flex + min-height keeps each link a ≥24px tap target
+     (Lighthouse target-size / WCAG 2.2). */
   .rc-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
     font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 500;

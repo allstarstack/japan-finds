@@ -59,12 +59,6 @@ export const CUISINE_COLOR = {
   "Shokudo": "green",
 };
 
-/* Blocks dark enough that the overlaid price / list badges need white text
-   for AA contrast. BUILD_SPEC §5 annotates "(white text)" on the two Ink
-   Black blocks; the darkened-red Sukiyaki block needs it too (white ≈ 6:1,
-   ink ≈ 3.5:1) — noted in the PR. */
-export const DARK_BLOCKS = new Set(["ink", "red-deep"]);
-
 const SLUG_BY_VALUE = new Map(CUISINE_CHIPS.map((c) => [c.value, c.slug]));
 
 /* cuisine_chip value -> URL slug. */
