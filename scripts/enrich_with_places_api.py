@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 enrich_with_places_api.py — Phase D D1 enrichment
+VERSION: 2026-05-19-v6 — pin description format + address cleanup + flag separator fix
 
 Enriches /places and /eat YAML frontmatter with:
   Step 1: place_id            (via Places API Text Search)
@@ -76,6 +77,23 @@ TIME_SENSITIVE_LABELS = {
     "scenic_transport",
     "theme_parks",
     "workshops_crafts",
+}
+
+# Human-readable display labels for /places `public_label` values.
+# Used in map pin descriptions when `original_category` isn't populated.
+PUBLIC_LABEL_DISPLAY = {
+    "animals": "Animals",
+    "anime": "Anime",
+    "culture_history": "Culture & history",
+    "food_markets": "Food markets",
+    "nature_water": "Nature",
+    "onsen_ryokan": "Onsen & ryokan",
+    "parks": "Parks",
+    "photo_spots": "Scenic",
+    "quirky_museums": "Quirky museums",
+    "scenic_transport": "Scenic transport",
+    "theme_parks": "Theme parks",
+    "workshops_crafts": "Workshops & crafts",
 }
 
 # ruamel YAML config — round-trips comments + key ordering so existing
@@ -487,15 +505,23 @@ def generate_mymaps_csv(records, kind, out_path):
             log.warning(f"  [csv-skip] {slug} — missing lat/lng")
             continue
         place_id = d.get("place_id")
-        # /eat uses map_cluster (10-cluster restaurants taxonomy); /places uses public_label
-        cluster = d.get("map_cluster") or d.get("cluster") or d.get("public_label") or d.get("category", "")
-        oneliner = d.get("notes") or d.get("description") or d.get("blurb") or ""
+        # /eat uses map_cluster (already human-readable: 'Ramen', 'Sushi' etc.)
+        # /places uses public_label slug (e.g. 'culture_history') — humanize it for the legend
+        if kind == "eat":
+            cluster = d.get("map_cluster") or d.get("cluster") or ""
+        else:
+            cluster = labelize_public_label(d.get("public_label") or d.get("cluster") or "")
         if place_id:
             url = f"https://www.google.com/maps/place/?q=place_id:{place_id}"
         else:
             from urllib.parse import quote
             url = f"https://www.google.com/maps/search/?api=1&query={quote(name + ' ' + (d.get('city') or ''))}"
-        description = f"{oneliner}\n\nOpen in Google Maps: {url}".strip()
+
+        if kind == "eat":
+            description = build_eat_pin_description(d, url)
+        else:
+            description = build_places_pin_description(d, url)
+
         rows.append({
             "Name": name,
             "Description": description,
@@ -508,6 +534,122 @@ def generate_mymaps_csv(records, kind, out_path):
         w.writeheader()
         w.writerows(rows)
     log.info(f"  wrote {len(rows)} rows → {out_path}")
+
+
+def labelize_public_label(label):
+    """Convert a /places public_label slug to human-readable text for pin descriptions."""
+    if not label:
+        return ""
+    clean = str(label).strip().strip('"').strip("'")
+    return PUBLIC_LABEL_DISPLAY.get(clean, clean.replace("_", " ").capitalize())
+
+
+def build_eat_pin_description(d, url):
+    """Two-line pin for /eat: cuisine·price·loc / list provenance + reservation."""
+    # Line 1: structural
+    parts_l1 = []
+    genre = d.get("genre") or d.get("cuisine_chip")
+    if genre:
+        if d.get("is_shokudo") and "shokudo" not in str(genre).lower():
+            genre = f"{genre} (shokudo)"
+        parts_l1.append(str(genre))
+    price = d.get("price_tier")
+    if price:
+        parts_l1.append(str(price))
+    locality = ", ".join([s for s in [d.get("neighborhood"), d.get("city")] if s])
+    if locality:
+        parts_l1.append(locality)
+    line1 = " · ".join(parts_l1)
+
+    # Line 2: list provenance + practical
+    line2_parts = []
+    list_year = d.get("list_year")
+    if list_year:
+        line2_parts.append(f"{list_year} Tabelog Hyakumeiten")
+
+    reservation_raw = (d.get("reservation_required") or "").strip()
+    notes_lower = (d.get("notes") or "").lower()
+    has_queues = "queue" in notes_lower
+
+    res_text = ""
+    if reservation_raw:
+        rlow = reservation_raw.lower().strip()
+        # Known values in restaurants.json: 'walk-in OK', 'recommended', 'yes'
+        if rlow in ("walk-in ok", "walk in ok", "walk-in"):
+            res_text = "Walk-in OK"
+        elif rlow == "recommended":
+            res_text = "Reservations recommended"
+        elif rlow in ("yes", "required", "reservation required", "reservations required"):
+            res_text = "Reservation required"
+        elif rlow in ("no",):
+            res_text = "Walk-in only"
+        else:
+            # Unknown future value — capitalize first letter, don't drop it silently
+            res_text = reservation_raw[0].upper() + reservation_raw[1:]
+    if res_text and has_queues:
+        res_text += "; expect queues"
+    elif not res_text and has_queues:
+        res_text = "Expect queues"
+    if res_text:
+        line2_parts.append(res_text)
+
+    line2 = ". ".join(line2_parts)
+    if line2 and not line2.endswith("."):
+        line2 += "."
+
+    body = line1
+    if line2:
+        body += f"\n{line2}"
+    return f"{body}\n\nOpen in Google Maps: {url}"
+
+
+def _looks_like_street_address(s):
+    """True if the string looks like a full Japanese street address (has postal code or street number)."""
+    if not s:
+        return False
+    import re
+    # Japanese postal code: 3 digits + dash + 4 digits, possibly preceded by 〒
+    if re.search(r"\b\d{3}-\d{4}\b", s):
+        return True
+    # Leading street number like "1-13 Maihama" or "5-6-1 Shinnishihara"
+    if re.match(r"^\d+(-\d+)+\s+\S", s):
+        return True
+    return False
+
+
+def build_places_pin_description(d, url):
+    """One-line pin for /places: category · location · planning_flag."""
+    parts = []
+    category = (str(d.get("original_category") or "")).strip().strip('"').strip("'")
+    if not category:
+        category = labelize_public_label(d.get("public_label"))
+    if category:
+        parts.append(category)
+
+    locality = (str(d.get("address_or_area") or "")).strip().strip('"').strip("'")
+    # If address_or_area is a full street address (with postal code or leading street number),
+    # fall back to prefecture-level location — pins shouldn't display GPS-precise addresses.
+    if _looks_like_street_address(locality):
+        prefecture = (str(d.get("prefecture") or "")).strip().strip('"').strip("'")
+        region = (str(d.get("region") or "")).strip().strip('"').strip("'")
+        locality = prefecture or region or ""
+    elif not locality:
+        prefecture = (str(d.get("prefecture") or "")).strip().strip('"').strip("'")
+        region = (str(d.get("region") or "")).strip().strip('"').strip("'")
+        locality = ", ".join([s for s in [prefecture, region] if s])
+    if locality:
+        parts.append(locality)
+
+    planning = (str(d.get("planning_flags") or "")).strip().strip('"').strip("'")
+    if planning:
+        # planning_flags may use ',' or ';' as separator depending on the row
+        import re
+        flags = [f.strip().replace("_", " ") for f in re.split(r"[,;]", planning) if f.strip()]
+        if flags:
+            parts.append(" · ".join(flags))
+
+    line1 = " · ".join(parts)
+    return f"{line1}\n\nOpen in Google Maps: {url}"
 
 
 # -------------------------------------------------------------------- Main
