@@ -1,47 +1,25 @@
 ---
-/* §04 Travel Cheat Sheets — six sticker cards.
-   Mobile: text, then 2-col grid, then CTA.
-   Desktop: 2-col — text/CTA left, 3-col grid right. */
+/* §04 Travel Cheat Sheets — homepage teaser.
+   Headline + body + a single CTA to /cheat-sheets. The nine sheets
+   themselves live on the /cheat-sheets index; the homepage does not
+   replicate that list. */
 import Eyebrow from "./Eyebrow.astro";
-
-const sheets = [
-  "Haneda arrival, step by step",
-  "Suica vs PASMO, simply",
-  "eSIMs that actually work",
-  "Luggage forwarding (yamato)",
-  "JR Pass basics",
-  "Tipping (don't)",
-];
 ---
 
 <section id="cheat-sheets" class="cs" aria-labelledby="cs-h2">
   <div class="cs__inner">
-    <div class="cs__text">
-      <Eyebrow n={4} title="TRAVEL CHEAT SHEETS" />
-      <h2 id="cs-h2" class="cs__h2">
-        Japan logistics, <span class="hl">made less cursed.</span>
-      </h2>
-      <p class="cs__body">
-        Arrival, Suica, eSIMs, luggage forwarding, JR Pass basics, and the tiny
-        details that can ruin your day if nobody explains them.
-      </p>
-      <div class="cs__cta">
-        <a class="btn btn--secondary btn--lg btn--responsive" href="/cheat-sheets">
-          Open all cheat sheets&nbsp;→
-        </a>
-      </div>
-    </div>
-
-    <div class="cs__grid">
-      {
-        sheets.map((title, i) => (
-          <article class="sheet">
-            <p class="sheet__label">SHEET · 0{i + 1}</p>
-            <h3 class="sheet__title">{title}</h3>
-            <span class="sheet__open">OPEN →</span>
-          </article>
-        ))
-      }
+    <Eyebrow n={4} title="TRAVEL CHEAT SHEETS" />
+    <h2 id="cs-h2" class="cs__h2">
+      Japan logistics, <span class="hl">made less cursed.</span>
+    </h2>
+    <p class="cs__body">
+      Arrival, Suica, eSIMs, luggage forwarding, JR Pass basics, and the tiny
+      details that can ruin your day if nobody explains them.
+    </p>
+    <div class="cs__cta">
+      <a class="btn btn--secondary btn--lg btn--responsive" href="/cheat-sheets">
+        Open all cheat sheets&nbsp;→
+      </a>
     </div>
   </div>
 </section>
@@ -55,12 +33,7 @@ const sheets = [
     border-top: var(--border-ink);
   }
   .cs__inner {
-    display: flex;
-    flex-direction: column;
     padding: 0 var(--gutter-mobile);
-  }
-  .cs__text {
-    display: contents;
   }
 
   .cs__h2 {
@@ -81,41 +54,7 @@ const sheets = [
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.55;
-  }
-  .cs__cta {
-    order: 1;
-    margin-top: 20px;
-  }
-
-  .cs__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-  .sheet {
-    background: #fff;
-    border: var(--border-ink);
-    border-radius: var(--radius-card);
-    box-shadow: var(--shadow-md);
-    padding: 14px;
-  }
-  .sheet__label {
-    margin-bottom: 8px;
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    opacity: 0.7;
-  }
-  .sheet__title {
-    font-size: 16px;
-    line-height: 1.15;
-  }
-  .sheet__open {
-    display: block;
-    margin-top: 12px;
-    font-family: var(--font-head);
-    font-size: 12px;
-    font-weight: 700;
+    max-width: 520px;
   }
 
   @media (min-width: 1024px) {
@@ -123,16 +62,9 @@ const sheets = [
       padding: 72px 0;
     }
     .cs__inner {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 64px;
-      align-items: start;
       max-width: var(--content-max);
       margin: 0 auto;
       padding: 0 var(--gutter-desktop);
-    }
-    .cs__text {
-      display: block;
     }
     .cs__h2 {
       margin-bottom: 18px;
@@ -148,23 +80,6 @@ const sheets = [
       margin-bottom: 24px;
       font-size: 16px;
       line-height: 1.6;
-      max-width: 520px;
-    }
-    .cs__cta {
-      margin-top: 0;
-    }
-    .cs__grid {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 14px;
-    }
-    .sheet {
-      padding: 16px;
-    }
-    .sheet__label {
-      font-size: 10px;
-    }
-    .sheet__open {
-      margin-top: 14px;
     }
   }
 </style>
