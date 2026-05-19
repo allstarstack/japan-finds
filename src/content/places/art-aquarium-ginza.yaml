@@ -10,3 +10,32 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJ6UVSHl2JGGARDurMrMPwvdk
+lat: 35.6713698
+lng: 139.7657375
+hours:
+  monday:
+    -   - 10:00
+        - 19:00
+  tuesday:
+    -   - 10:00
+        - 19:00
+  wednesday:
+    -   - 10:00
+        - 19:00
+  thursday:
+    -   - 10:00
+        - 19:00
+  friday:
+    -   - 10:00
+        - 19:00
+  saturday:
+    -   - 10:00
+        - 19:00
+  sunday:
+    -   - 10:00
+        - 19:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/art-aquarium-ginza.webp
+hero_attribution: Photo via Google
+time_sensitive: true

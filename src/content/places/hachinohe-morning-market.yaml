@@ -10,3 +10,20 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJfSB2nM1Tm18R291Tudad54c
+lat: 40.5278596
+lng: 141.5294053
+hours:
+  monday: []
+  tuesday: []
+  wednesday: []
+  thursday: []
+  friday: []
+  saturday: []
+  sunday:
+    -   - 04:30
+        - 09:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/hachinohe-morning-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

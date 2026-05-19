@@ -10,3 +10,32 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJzakNjPToAGARzCwIriDFg28
+lat: 34.6545182
+lng: 135.4289645
+hours:
+  monday:
+    -   - 10:30
+        - 20:00
+  tuesday:
+    -   - 10:30
+        - 20:00
+  wednesday:
+    -   - 10:30
+        - 20:00
+  thursday:
+    -   - 10:30
+        - 20:00
+  friday:
+    -   - 10:30
+        - 20:00
+  saturday:
+    -   - 09:30
+        - 20:00
+  sunday:
+    -   - 09:30
+        - 20:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/osaka-aquarium-kaiyukan.webp
+hero_attribution: Photo via Google
+time_sensitive: true

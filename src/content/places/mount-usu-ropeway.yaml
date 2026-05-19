@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Trains & Scenic Transport"
+place_id: ChIJ2RnxURPin18R0KiGTOyTWE4
+lat: 42.538891299999996
+lng: 140.8602757
+hours:
+  monday:
+    -   - 08:15
+        - 17:45
+  tuesday:
+    -   - 08:15
+        - 17:45
+  wednesday:
+    -   - 08:15
+        - 17:45
+  thursday:
+    -   - 08:15
+        - 17:45
+  friday:
+    -   - 08:15
+        - 17:45
+  saturday:
+    -   - 08:15
+        - 17:45
+  sunday:
+    -   - 08:15
+        - 17:45
+hours_cache_date: '2026-05-19'
+hero_image: /places/mount-usu-ropeway.webp
+hero_attribution: Photo via Google
+time_sensitive: true

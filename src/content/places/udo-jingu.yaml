@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
+place_id: ChIJsZ9DS1naODURG8yz8QHnFYc
+lat: 31.6504477
+lng: 131.4666915
+hours:
+  monday:
+    -   - 06:00
+        - 18:00
+  tuesday:
+    -   - 06:00
+        - 18:00
+  wednesday:
+    -   - 06:00
+        - 18:00
+  thursday:
+    -   - 06:00
+        - 18:00
+  friday:
+    -   - 06:00
+        - 18:00
+  saturday:
+    -   - 06:00
+        - 18:00
+  sunday:
+    -   - 06:00
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/udo-jingu.webp
+hero_attribution: Photo via Google
+time_sensitive: true

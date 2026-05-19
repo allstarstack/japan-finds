@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Trains & Scenic Transport"
+place_id: ChIJPeNd9BWx918RumJrFmdmwgQ
+lat: 36.8150304
+lng: 137.58601
+hours:
+  monday:
+    -   - 07:30
+        - 16:00
+  tuesday:
+    -   - 07:30
+        - 16:00
+  wednesday:
+    -   - 07:30
+        - 16:00
+  thursday:
+    -   - 07:30
+        - 16:00
+  friday:
+    -   - 07:30
+        - 16:00
+  saturday:
+    -   - 07:30
+        - 16:00
+  sunday:
+    -   - 07:30
+        - 16:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/kurobe-gorge-railway.webp
+hero_attribution: Photo via Google
+time_sensitive: true

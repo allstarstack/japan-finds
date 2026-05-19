@@ -10,3 +10,30 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJLYwD5TTuGGARBZKEP5BV4U0
+lat: 35.696238
+lng: 139.5704317
+hours:
+  monday:
+    -   - 10:00
+        - 18:00
+  tuesday: []
+  wednesday:
+    -   - 10:00
+        - 18:00
+  thursday:
+    -   - 10:00
+        - 18:00
+  friday:
+    -   - 10:00
+        - 18:00
+  saturday:
+    -   - 10:00
+        - 18:00
+  sunday:
+    -   - 10:00
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/ghibli-museum.webp
+hero_attribution: Photo via Google
+time_sensitive: true

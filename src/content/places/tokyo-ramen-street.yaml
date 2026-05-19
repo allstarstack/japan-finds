@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJGeYlX_mLGGARwsJahMe-XZg
+lat: 35.6802935
+lng: 139.7679568
+hours:
+  monday:
+    -   - 07:30
+        - 23:00
+  tuesday:
+    -   - 07:30
+        - 23:00
+  wednesday:
+    -   - 07:30
+        - 23:00
+  thursday:
+    -   - 07:30
+        - 23:00
+  friday:
+    -   - 07:30
+        - 23:00
+  saturday:
+    -   - 07:30
+        - 23:00
+  sunday:
+    -   - 07:30
+        - 23:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/tokyo-ramen-street.webp
+hero_attribution: Photo via Google
+time_sensitive: true

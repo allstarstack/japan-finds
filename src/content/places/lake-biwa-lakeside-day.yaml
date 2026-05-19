@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJDQIi8Q12AWAR8Z7zuF49p_E
+lat: 35.1399763
+lng: 135.9954278
+hours:
+  monday:
+    -   - 09:00
+        - 17:00
+  tuesday:
+    -   - 09:00
+        - 17:00
+  wednesday:
+    -   - 09:00
+        - 17:00
+  thursday:
+    -   - 09:00
+        - 17:00
+  friday:
+    -   - 09:00
+        - 17:00
+  saturday:
+    -   - 09:00
+        - 17:00
+  sunday:
+    -   - 09:00
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/lake-biwa-lakeside-day.webp
+hero_attribution: Photo via Google
+time_sensitive: false

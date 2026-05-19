@@ -9,3 +9,11 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJVf818KvzGGARw4xSoCT1ehc
+lat: 35.6475857
+lng: 139.6691456
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/gorilla-building.webp
+hero_attribution: Photo via Google
+time_sensitive: false

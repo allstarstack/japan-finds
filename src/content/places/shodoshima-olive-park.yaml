@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJC-KIFXR4VDURasxl3L0o26M
+lat: 34.4728411
+lng: 134.2736368
+hours:
+  monday:
+    -   - 08:30
+        - 17:00
+  tuesday:
+    -   - 08:30
+        - 17:00
+  wednesday:
+    -   - 08:30
+        - 17:00
+  thursday:
+    -   - 08:30
+        - 17:00
+  friday:
+    -   - 08:30
+        - 17:00
+  saturday:
+    -   - 08:30
+        - 17:00
+  sunday:
+    -   - 08:30
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/shodoshima-olive-park.webp
+hero_attribution: Photo via Google
+time_sensitive: false

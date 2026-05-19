@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJ__-Le-9cGGARNY-CTSHwq5A
+lat: 35.4430883
+lng: 139.64410010000003
+hours:
+  monday:
+    -   - 00:00
+        - 23:59
+  tuesday:
+    -   - 00:00
+        - 23:59
+  wednesday:
+    -   - 00:00
+        - 23:59
+  thursday:
+    -   - 00:00
+        - 23:59
+  friday:
+    -   - 00:00
+        - 23:59
+  saturday:
+    -   - 00:00
+        - 23:59
+  sunday:
+    -   - 00:00
+        - 23:59
+hours_cache_date: '2026-05-19'
+hero_image: /places/yokohama-chinatown.webp
+hero_attribution: Photo via Google
+time_sensitive: true

@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Food & Markets"
+place_id: ChIJ9Th38KHznl8RlR8a2ny1fuQ
+lat: 41.7724585
+lng: 140.7256912
+hours:
+  monday:
+    -   - 06:00
+        - 14:00
+  tuesday:
+    -   - 06:00
+        - 14:00
+  wednesday:
+    -   - 06:00
+        - 14:00
+  thursday:
+    -   - 06:00
+        - 14:00
+  friday:
+    -   - 06:00
+        - 14:00
+  saturday:
+    -   - 06:00
+        - 14:00
+  sunday:
+    -   - 06:00
+        - 14:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/hakodate-morning-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJnWLdoqqNGGARaPeXEXZtEHw
+lat: 35.6606075
+lng: 139.7017845
+hours:
+  monday:
+    -   - 11:00
+        - 23:59
+  tuesday:
+    -   - 11:00
+        - 23:59
+  wednesday:
+    -   - 11:00
+        - 23:59
+  thursday:
+    -   - 11:00
+        - 23:59
+  friday:
+    -   - 11:00
+        - 23:59
+  saturday:
+    -   - 11:00
+        - 23:59
+  sunday:
+    -   - 11:00
+        - 23:59
+hours_cache_date: '2026-05-19'
+hero_image: /places/shibuya-yokocho.webp
+hero_attribution: Photo via Google
+time_sensitive: true

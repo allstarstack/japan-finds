@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJM_oXceNThF8Rfx5x6SSn9vc
+lat: 39.8601009
+lng: 141.7969943
+hours:
+  monday:
+    -   - 08:30
+        - 18:00
+  tuesday:
+    -   - 08:30
+        - 18:00
+  wednesday:
+    -   - 08:30
+        - 18:00
+  thursday:
+    -   - 08:30
+        - 18:00
+  friday:
+    -   - 08:30
+        - 18:00
+  saturday:
+    -   - 08:30
+        - 18:00
+  sunday:
+    -   - 08:30
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/ryusendo-cave.webp
+hero_attribution: Photo via Google
+time_sensitive: false

@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJ67mcWJLmAGARrUf0FlFtm7w
+lat: 34.7028186
+lng: 135.4985323
+hours:
+  monday:
+    -   - 10:00
+        - 20:00
+  tuesday:
+    -   - 10:00
+        - 20:00
+  wednesday:
+    -   - 10:00
+        - 20:00
+  thursday:
+    -   - 10:00
+        - 20:00
+  friday:
+    -   - 10:00
+        - 20:00
+  saturday:
+    -   - 10:00
+        - 20:00
+  sunday:
+    -   - 10:00
+        - 20:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/hankyu-umeda.webp
+hero_attribution: Photo via Google
+time_sensitive: true

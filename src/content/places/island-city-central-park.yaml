@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Parks & Playgrounds"
+place_id: ChIJMYaeoMKOQTURA2-QTJHpJs4
+lat: 33.6634538
+lng: 130.42105089999998
+hours:
+  monday:
+    -   - 00:00
+        - 23:59
+  tuesday:
+    -   - 00:00
+        - 23:59
+  wednesday:
+    -   - 00:00
+        - 23:59
+  thursday:
+    -   - 00:00
+        - 23:59
+  friday:
+    -   - 00:00
+        - 23:59
+  saturday:
+    -   - 00:00
+        - 23:59
+  sunday:
+    -   - 00:00
+        - 23:59
+hours_cache_date: '2026-05-19'
+hero_image: /places/island-city-central-park.webp
+hero_attribution: Photo via Google
+time_sensitive: false

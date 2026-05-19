@@ -11,3 +11,30 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Trains & Scenic Transport"
+place_id: ChIJ9W5bFM94A2ARkrOUnGq06Ew
+lat: 35.0491384
+lng: 136.8509152
+hours:
+  monday:
+    -   - 10:00
+        - 17:30
+  tuesday: []
+  wednesday:
+    -   - 10:00
+        - 17:30
+  thursday:
+    -   - 10:00
+        - 17:30
+  friday:
+    -   - 10:00
+        - 17:30
+  saturday:
+    -   - 10:00
+        - 17:30
+  sunday:
+    -   - 10:00
+        - 17:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/scmaglev-and-railway-park.webp
+hero_attribution: Photo via Google
+time_sensitive: true

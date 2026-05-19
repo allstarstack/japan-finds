@@ -10,3 +10,32 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJhT_wQW-NGGARyeOCR2L-W-I
+lat: 35.7289254
+lng: 139.72015729999998
+hours:
+  monday:
+    -   - 10:00
+        - 19:00
+  tuesday:
+    -   - 10:00
+        - 19:00
+  wednesday:
+    -   - 10:00
+        - 19:00
+  thursday:
+    -   - 10:00
+        - 19:00
+  friday:
+    -   - 10:00
+        - 19:00
+  saturday:
+    -   - 09:30
+        - 20:00
+  sunday:
+    -   - 09:30
+        - 20:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/sunshine-aquarium-poke-mon-center-mega-tokyo.webp
+hero_attribution: Photo via Google
+time_sensitive: true

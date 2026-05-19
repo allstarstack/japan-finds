@@ -10,3 +10,9 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJ92lO50fuGGARTB6NNcy_abk
+lat: 35.7036787
+lng: 139.5792734
+hours:
+hours_cache_date: '2026-05-19'
+time_sensitive: true

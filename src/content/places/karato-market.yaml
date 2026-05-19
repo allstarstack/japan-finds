@@ -10,3 +10,30 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJNVeCCJ29QzURQrmJDMCxImw
+lat: 33.9566087
+lng: 130.945824
+hours:
+  monday:
+    -   - 05:00
+        - 15:00
+  tuesday:
+    -   - 05:00
+        - 15:00
+  wednesday: []
+  thursday:
+    -   - 05:00
+        - 15:00
+  friday:
+    -   - 05:00
+        - 15:00
+  saturday:
+    -   - 05:00
+        - 15:00
+  sunday:
+    -   - 08:00
+        - 15:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/karato-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

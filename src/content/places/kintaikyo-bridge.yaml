@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Views & Sunsets"
+place_id: ChIJHWZuaz40RTURCJfwPHOzVGY
+lat: 34.167595899999995
+lng: 132.17841049999998
+hours:
+  monday:
+    -   - 00:00
+        - 23:59
+  tuesday:
+    -   - 00:00
+        - 23:59
+  wednesday:
+    -   - 00:00
+        - 23:59
+  thursday:
+    -   - 00:00
+        - 23:59
+  friday:
+    -   - 00:00
+        - 23:59
+  saturday:
+    -   - 00:00
+        - 23:59
+  sunday:
+    -   - 00:00
+        - 23:59
+hours_cache_date: '2026-05-19'
+hero_image: /places/kintaikyo-bridge.webp
+hero_attribution: Photo via Google
+time_sensitive: false

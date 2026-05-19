@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJJ1XphGeJGGARK0BhX9lYd7Y
+lat: 35.6457275
+lng: 139.7836383
+hours:
+  monday:
+    -   - 09:00
+        - 22:00
+  tuesday:
+    -   - 09:00
+        - 22:00
+  wednesday:
+    -   - 09:00
+        - 22:00
+  thursday:
+    -   - 09:00
+        - 22:00
+  friday:
+    -   - 09:00
+        - 22:00
+  saturday:
+    -   - 09:00
+        - 22:00
+  sunday:
+    -   - 09:00
+        - 22:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/toyosu-senkyaku-banrai.webp
+hero_attribution: Photo via Google
+time_sensitive: true

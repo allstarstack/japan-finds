@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Animals & Safari"
+place_id: ChIJ-ak6k2KfRDURJwSX77xNgkE
+lat: 34.284681899999995
+lng: 131.3317588
+hours:
+  monday:
+    -   - 09:30
+        - 15:30
+  tuesday:
+    -   - 09:30
+        - 15:30
+  wednesday:
+    -   - 09:30
+        - 15:30
+  thursday:
+    -   - 09:30
+        - 15:30
+  friday:
+    -   - 09:30
+        - 15:30
+  saturday:
+    -   - 09:30
+        - 15:30
+  sunday:
+    -   - 09:30
+        - 15:30
+hours_cache_date: '2026-05-19'
+hero_image: /places/akiyoshidai-safari-land.webp
+hero_attribution: Photo via Google
+time_sensitive: true

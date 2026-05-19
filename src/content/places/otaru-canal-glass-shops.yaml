@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Crafts & Making"
+place_id: ChIJX-RJpWDhCl8RFx-z5lpGIOg
+lat: 43.1961528
+lng: 141.0029009
+hours:
+  monday:
+    -   - 09:15
+        - 18:00
+  tuesday:
+    -   - 09:15
+        - 18:00
+  wednesday:
+    -   - 09:15
+        - 18:00
+  thursday:
+    -   - 09:15
+        - 18:00
+  friday:
+    -   - 09:15
+        - 18:00
+  saturday:
+    -   - 09:15
+        - 18:00
+  sunday:
+    -   - 09:15
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/otaru-canal-glass-shops.webp
+hero_attribution: Photo via Google
+time_sensitive: true

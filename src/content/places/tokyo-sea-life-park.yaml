@@ -11,3 +11,30 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Animals & Aquariums"
+place_id: ChIJ65T4s099GGARKhT05Ix6YuI
+lat: 35.6398972
+lng: 139.8621737
+hours:
+  monday:
+    -   - 09:30
+        - 17:00
+  tuesday:
+    -   - 09:30
+        - 17:00
+  wednesday: []
+  thursday:
+    -   - 09:30
+        - 17:00
+  friday:
+    -   - 09:30
+        - 17:00
+  saturday:
+    -   - 09:30
+        - 17:00
+  sunday:
+    -   - 09:30
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/tokyo-sea-life-park.webp
+hero_attribution: Photo via Google
+time_sensitive: true

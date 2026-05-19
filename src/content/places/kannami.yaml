@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Base Town"
+place_id: ChIJnQNuqA6RGWAR9W4qxAlywSU
+lat: 35.075829999999996
+lng: 138.9256452
+hours:
+  monday:
+    -   - 09:00
+        - 18:00
+  tuesday:
+    -   - 09:00
+        - 18:00
+  wednesday:
+    -   - 09:00
+        - 18:00
+  thursday:
+    -   - 09:00
+        - 18:00
+  friday:
+    -   - 09:00
+        - 18:00
+  saturday:
+    -   - 09:00
+        - 18:00
+  sunday:
+    -   - 09:00
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/kannami.webp
+hero_attribution: Photo via Google
+time_sensitive: false

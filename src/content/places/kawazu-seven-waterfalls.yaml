@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature Walks & Views"
+place_id: ChIJA2PRs03kGWARI-J-uK8mCjQ
+lat: 34.7957781
+lng: 138.933771
+hours:
+  monday:
+    -   - 00:00
+        - 23:59
+  tuesday:
+    -   - 00:00
+        - 23:59
+  wednesday:
+    -   - 00:00
+        - 23:59
+  thursday:
+    -   - 00:00
+        - 23:59
+  friday:
+    -   - 00:00
+        - 23:59
+  saturday:
+    -   - 00:00
+        - 23:59
+  sunday:
+    -   - 00:00
+        - 23:59
+hours_cache_date: '2026-05-19'
+hero_image: /places/kawazu-seven-waterfalls.webp
+hero_attribution: Photo via Google
+time_sensitive: false

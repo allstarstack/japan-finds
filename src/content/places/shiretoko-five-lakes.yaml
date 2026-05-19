@@ -10,3 +10,11 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJTVxpoUDHbF8Rh0ickOUF4Uw
+lat: 44.1239681
+lng: 145.08285809999998
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/shiretoko-five-lakes.webp
+hero_attribution: Photo via Google
+time_sensitive: false

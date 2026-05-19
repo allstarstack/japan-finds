@@ -10,3 +10,11 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Onsen & Ryokan Towns"
+place_id: ChIJwwpUB9BdiV8RkkV8C3gQ2S4
+lat: 38.571984
+lng: 140.528755
+hours:
+hours_cache_date: '2026-05-19'
+hero_image: /places/ginzan-onsen-town-walk.webp
+hero_attribution: Photo via Google
+time_sensitive: true

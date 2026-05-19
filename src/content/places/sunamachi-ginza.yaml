@@ -9,3 +9,9 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJ21-KO_GIGGARe_2HJ62lBDE
+lat: 35.6797033
+lng: 139.8313365
+hours:
+hours_cache_date: '2026-05-19'
+time_sensitive: true

@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJNaAFxLEpC18R9zvo9EuU_K0
+lat: 43.0707242
+lng: 141.32077089999999
+hours:
+  monday:
+    -   - 06:00
+        - 15:00
+  tuesday:
+    -   - 06:00
+        - 15:00
+  wednesday:
+    -   - 06:00
+        - 15:00
+  thursday:
+    -   - 06:00
+        - 15:00
+  friday:
+    -   - 06:00
+        - 15:00
+  saturday:
+    -   - 06:00
+        - 15:00
+  sunday:
+    -   - 06:00
+        - 15:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/sapporo-curb-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true

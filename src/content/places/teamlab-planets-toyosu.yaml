@@ -10,3 +10,32 @@ status: "ready"
 public_render: true
 address_verified: false
 source_type: "v1_curated"
+place_id: ChIJSeco5wiJGGARItbTS8lQ5G0
+lat: 35.6491207
+lng: 139.7897739
+hours:
+  monday:
+    -   - 08:30
+        - 22:00
+  tuesday:
+    -   - 08:30
+        - 22:00
+  wednesday:
+    -   - 08:30
+        - 22:00
+  thursday:
+    -   - 08:30
+        - 22:00
+  friday:
+    -   - 08:30
+        - 22:00
+  saturday:
+    -   - 08:30
+        - 22:00
+  sunday:
+    -   - 08:30
+        - 22:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/teamlab-planets-toyosu.webp
+hero_attribution: Photo via Google
+time_sensitive: true

@@ -11,3 +11,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Quirky & Interactive Museums"
+place_id: ChIJSU90xaaC918RX-cV13mPXwc
+lat: 36.688415899999995
+lng: 137.2151858
+hours:
+  monday:
+    -   - 09:30
+        - 18:00
+  tuesday:
+    -   - 09:30
+        - 18:00
+  wednesday:
+    -   - 09:30
+        - 18:00
+  thursday:
+    -   - 09:30
+        - 18:00
+  friday:
+    -   - 09:30
+        - 18:00
+  saturday:
+    -   - 09:30
+        - 18:00
+  sunday:
+    -   - 09:30
+        - 18:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/toyama-glass-art-museum.webp
+hero_attribution: Photo via Google
+time_sensitive: true

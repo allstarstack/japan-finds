@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
+place_id: ChIJQURehB2LIWAR4fDmA-odfnY
+lat: 36.405864
+lng: 140.59648679999998
+hours:
+  monday:
+    -   - 09:30
+        - 17:00
+  tuesday:
+    -   - 09:30
+        - 17:00
+  wednesday:
+    -   - 09:30
+        - 17:00
+  thursday:
+    -   - 09:30
+        - 17:00
+  friday:
+    -   - 09:30
+        - 17:00
+  saturday:
+    -   - 09:30
+        - 17:00
+  sunday:
+    -   - 09:30
+        - 17:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/hitachi-seaside-park.webp
+hero_attribution: Photo via Google
+time_sensitive: false

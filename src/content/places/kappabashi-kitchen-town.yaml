@@ -10,3 +10,30 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJXYV-6JWOGGAR85vIZbM1RCE
+lat: 35.7105797
+lng: 139.7879645
+hours:
+  monday:
+    -   - 10:00
+        - 17:00
+  tuesday:
+    -   - 10:00
+        - 17:00
+  wednesday:
+    -   - 10:00
+        - 17:00
+  thursday:
+    -   - 10:00
+        - 17:00
+  friday:
+    -   - 10:00
+        - 17:00
+  saturday:
+    -   - 10:00
+        - 17:00
+  sunday: []
+hours_cache_date: '2026-05-19'
+hero_image: /places/kappabashi-kitchen-town.webp
+hero_attribution: Photo via Google
+time_sensitive: true

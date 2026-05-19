@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "backlog_import"
 original_category: "Views & Sunsets"
+place_id: ChIJzZoVCAUT5TQRzIueHYt83hs
+lat: 26.3158799
+lng: 127.75400769999999
+hours:
+  monday:
+    -   - 10:00
+        - 22:00
+  tuesday:
+    -   - 10:00
+        - 22:00
+  wednesday:
+    -   - 10:00
+        - 22:00
+  thursday:
+    -   - 10:00
+        - 22:00
+  friday:
+    -   - 10:00
+        - 22:00
+  saturday:
+    -   - 10:00
+        - 22:00
+  sunday:
+    -   - 10:00
+        - 22:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/american-village-sunset-beach.webp
+hero_attribution: Photo via Google
+time_sensitive: false

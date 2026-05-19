@@ -10,3 +10,32 @@ public_render: true
 address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
+place_id: ChIJj29EXtm6AmARNsKdHGWF8I0
+lat: 36.1396447
+lng: 137.2582195
+hours:
+  monday:
+    -   - 06:00
+        - 12:00
+  tuesday:
+    -   - 06:00
+        - 12:00
+  wednesday:
+    -   - 06:00
+        - 12:00
+  thursday:
+    -   - 06:00
+        - 12:00
+  friday:
+    -   - 06:00
+        - 12:00
+  saturday:
+    -   - 06:00
+        - 12:00
+  sunday:
+    -   - 06:00
+        - 12:00
+hours_cache_date: '2026-05-19'
+hero_image: /places/takayama-jinya-mae-morning-market.webp
+hero_attribution: Photo via Google
+time_sensitive: true
