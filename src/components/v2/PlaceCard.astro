@@ -1,19 +1,21 @@
 ---
-/* Phase B-2 place card.
-   Mobile-first, text-forward. No creator photos exist for ~95% of places
-   at launch (BUILD_SPEC photo strategy), so the card leads with a solid
+/* Phase B-2 place card (Phase D D1 photos + open-now).
+   Mobile-first, text-forward. The card leads with a Google hero photo
+   (Phase D D1); the 4 rows with no photo fall back to a solid
    colour-block placeholder keyed to primary_category — not faked or
-   AI imagery (brand.md). Photo swap is a background task.
+   AI imagery (brand.md).
 
    Renders nothing unless status === "ready" && public_render.
    Does NOT render planning_flags or any internal field — those are
-   filter-only (BUILD_SPEC Step 5).
+   filter-only (BUILD_SPEC Step 5). The open-now badge shows only on
+   time_sensitive rows (D1): a karst plateau has no hours worth posting.
 
    data-* attributes drive the client-side filter in PlaceFilterRail.
    Base-tier cards render with `hidden` — they are excluded from the
    default browse and revealed only by the "Stay bases" toggle. */
 import type { CollectionEntry } from "astro:content";
 import { CAT_COLOR } from "../../data/place-chips.js";
+import OpenNowBadge from "../OpenNowBadge.astro";
 
 interface Props {
   entry: CollectionEntry<"places">;
@@ -50,11 +52,13 @@ const isBase = d.launch_tier === "base";
    badge reads "Food Markets". Other categories show the verb as-is. */
 const catLabel = cat === "Eat" ? "Food Markets" : cat;
 
-/* Area-level addresses by design (BUILD_SPEC) — the search-by-name link
-   lets Google's geocoder find the right pin. */
-const mapsUrl =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent(`${en}, ${d.prefecture}`);
+/* Phase D D1 — link straight to the matched place via place_id. The
+   old name-search URL (which let Google's geocoder find an area-level
+   pin) is the fallback for the one row that matched no Google Place. */
+const mapsUrl = d.place_id
+  ? `https://www.google.com/maps/place/?q=place_id:${d.place_id}`
+  : "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent(`${en}, ${d.prefecture}`);
 ---
 
 {
@@ -66,12 +70,27 @@ const mapsUrl =
       data-tier={d.launch_tier}
       hidden={isBase}
     >
-      <div class:list={["plc-block", `plc-block--${color}`]} aria-hidden="true" />
+      <div class="plc-media">
+        {d.hero_image ? (
+          <img
+            class="plc-img"
+            src={d.hero_image}
+            alt=""
+            loading="lazy"
+            width="900"
+            height="600"
+          />
+        ) : (
+          <div class:list={["plc-block", `plc-block--${color}`]} aria-hidden="true" />
+        )}
+        {d.hero_attribution && <span class="plc-attr">{d.hero_attribution}</span>}
+      </div>
       <div class="plc-body">
         <span class:list={["chip", `chip--${color}`]}>{catLabel}</span>
         <h3 class="plc-name">{en}</h3>
         {jp && <p class="plc-jp">{jp}</p>}
         <p class="plc-area">{d.address_or_area}</p>
+        {d.time_sensitive && <OpenNowBadge hours={d.hours} />}
         <a class="plc-map" href={mapsUrl} target="_blank" rel="noopener">
           View on Google Maps&nbsp;→
         </a>
@@ -102,10 +121,40 @@ const mapsUrl =
     border-color: var(--color-ink-black);
   }
 
-  /* Colour-block placeholder — keyed to primary_category. */
-  .plc-block {
-    aspect-ratio: 16 / 9;
+  /* Hero media — a 3:2 Google photo, or the colour-block fallback.
+     position: relative anchors the attribution overlay. */
+  .plc-media {
+    position: relative;
+    aspect-ratio: 3 / 2;
     width: 100%;
+  }
+  .plc-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Photo credit — overlaid bottom-right on a near-white chip so the
+     ink-60 caption clears against any photo (Phase D D1). */
+  .plc-attr {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    padding: 1px 5px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 11px;
+    line-height: 1.3;
+    color: var(--color-ink-60);
+    pointer-events: none;
+  }
+
+  /* Colour-block placeholder — keyed to primary_category. Fills the
+     3:2 media box when no hero photo exists. */
+  .plc-block {
+    width: 100%;
+    height: 100%;
   }
   .plc-block--green {
     background: var(--color-matcha-green);

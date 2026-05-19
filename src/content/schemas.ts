@@ -21,6 +21,23 @@ const slug = z
 const score = z.number().min(0).max(10);
 const strings = z.array(z.string());
 
+/* Phase D D1 — opening hours from the Google Places API (BUILD_SPEC_d1).
+   A 7-day map; each day is a list of [open, close] pairs and an empty
+   list means closed that day. The YAML carries bare HH:MM scalars, which
+   js-yaml reads as strings — the number branch is defensive only. */
+const hoursDay = z.array(z.array(z.union([z.string(), z.number()])));
+const placesHours = z
+  .object({
+    monday: hoursDay,
+    tuesday: hoursDay,
+    wednesday: hoursDay,
+    thursday: hoursDay,
+    friday: hoursDay,
+    saturday: hoursDay,
+    sunday: hoursDay,
+  })
+  .partial();
+
 export const productSchema = z.object({
   // required
   id: z.string().regex(/^JF-\d{4}$/, "must match JF-####"),
@@ -142,6 +159,20 @@ export const placeSchema = z.object({
   address_verified: z.boolean().default(false),
   source_type: z.string().optional(),
   original_category: z.string().optional(),
+  // Phase D D1 — Places API enrichment (BUILD_SPEC_d1_places_api.md).
+  // All optional: saphir-odoriko-limited-express matched no Google Place
+  // (it's a train) and carries none of these. `time_sensitive` gates the
+  // OpenNowBadge on the place card. See `placesHours` above for `hours`.
+  place_id: z.string().optional(),
+  lat: z.number().optional(),
+  lng: z.number().optional(),
+  // 62 rows (beaches, capes, viewpoints) carry an empty `hours:` key,
+  // which YAML reads as null — accept it alongside the 7-day map.
+  hours: placesHours.nullish(),
+  hours_cache_date: z.string().optional(),
+  hero_image: z.string().optional(),
+  hero_attribution: z.string().optional(),
+  time_sensitive: z.boolean().optional(),
 });
 
 export const storeSchema = z.object({

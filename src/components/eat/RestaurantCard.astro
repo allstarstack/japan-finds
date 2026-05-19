@@ -1,13 +1,15 @@
 ---
-/* /eat restaurant card (BUILD_SPEC §5).
-   Mobile-first, text-forward. No restaurant photos ship in v1, so the card
-   leads with a solid colour-block placeholder keyed to cuisine_chip — same
-   pattern as the /places PlaceCard block, not faked or AI imagery (brand.md).
+/* /eat restaurant card (BUILD_SPEC §5; Phase D D1 photos + open-now).
+   Mobile-first, text-forward. The card leads with a Google hero photo
+   (Phase D D1); the ~1 row with no photo falls back to a solid
+   colour-block placeholder keyed to cuisine_chip — not faked or AI
+   imagery (brand.md).
 
    The price tier + list badges sit absolutely over the top-right of the
-   block. data-cuisine / data-flags drive the client-side filter in
+   media. data-cuisine / data-flags drive the client-side filter in
    ChipRow; they are precomputed here so the filter ships no taxonomy. */
 import { CUISINE_COLOR, cuisineSlug, restaurantFlags } from "../../data/eat-chips.js";
+import OpenNowBadge from "../OpenNowBadge.astro";
 
 interface Props {
   restaurant: Record<string, any>;
@@ -24,10 +26,32 @@ const flags = restaurantFlags(r);
 const listBadge = `${r.is_shokudo ? "Shokudo Hyakumeiten" : "Hyakumeiten"} ${r.list_year}`;
 const meta = `${r.genre} · #${r.rank_in_city} in ${r.city} · ${r.neighborhood}`;
 const resLine = `${r.reservation_required} · ${r.notes}`;
+
+/* Phase D D1 — link straight to the matched business via place_id; the
+   old name-search URL is the fallback for any row that matched nothing. */
+const mapsUrl = r.place_id
+  ? `https://www.google.com/maps/place/?q=place_id:${r.place_id}`
+  : r.maps_search;
 ---
 
 <article class="rc" data-cuisine={cuisine} data-flags={flags.join(" ")}>
-  <div class:list={["rc-block", `rc-block--${color}`]} aria-hidden="true"></div>
+  <div class="rc-media">
+    {
+      r.hero_image ? (
+        <img
+          class="rc-img"
+          src={r.hero_image}
+          alt=""
+          loading="lazy"
+          width="900"
+          height="600"
+        />
+      ) : (
+        <div class:list={["rc-block", `rc-block--${color}`]} aria-hidden="true" />
+      )
+    }
+    {r.hero_attribution && <span class="rc-attr">{r.hero_attribution}</span>}
+  </div>
   <div class="rc-badges">
     <span class="rc-price">{r.price_tier}</span>
     <span class="rc-list">{listBadge}</span>
@@ -38,10 +62,11 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
     <p class="rc-jp">{r.name_jp}</p>
     <p class="rc-meta">{meta}</p>
     <p class="rc-res">{resLine}</p>
+    <OpenNowBadge hours={r.hours} />
     <div class="rc-links">
       <a
         class="rc-link"
-        href={r.maps_search}
+        href={mapsUrl}
         target="_blank"
         rel="noopener"
         aria-label={`${r.name_en} — Google Maps`}
@@ -84,10 +109,40 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
     border-color: var(--color-ink-black);
   }
 
-  /* Colour-block placeholder — keyed to cuisine_chip (BUILD_SPEC §5). */
-  .rc-block {
-    aspect-ratio: 16 / 9;
+  /* Hero media — a 3:2 Google photo, or the colour-block fallback.
+     position: relative anchors the attribution overlay. */
+  .rc-media {
+    position: relative;
+    aspect-ratio: 3 / 2;
     width: 100%;
+  }
+  .rc-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Photo credit — overlaid bottom-right on a near-white chip so the
+     ink-60 caption clears against any photo (Phase D D1). */
+  .rc-attr {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    padding: 1px 5px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 11px;
+    line-height: 1.3;
+    color: var(--color-ink-60);
+    pointer-events: none;
+  }
+
+  /* Colour-block placeholder — keyed to cuisine_chip (BUILD_SPEC §5).
+     Fills the 3:2 media box when no hero photo exists. */
+  .rc-block {
+    width: 100%;
+    height: 100%;
   }
   .rc-block--red {
     background: var(--color-tokyo-red);
