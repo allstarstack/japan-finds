@@ -2,13 +2,6 @@
 title: eSIM / Wi-Fi / Phone Setup
 slug: phone-setup
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "esim_provider_pricing"
-    note: "Airalo / Ubigi / Sakura / Mobal / Klook plan prices and promo codes change frequently"
-  - field: "free_wifi_station_count"
-    note: "Tokyo Metro 61-station figure should be re-checked near publish"
-  - field: "physical_sim_airport_availability"
-    note: "Confirm Bic Camera / Yodobashi airport branches still sell tourist SIMs"
 ---
 
 # eSIM / Wi-Fi / Phone Setup

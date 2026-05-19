@@ -2,13 +2,6 @@
 title: Luggage Forwarding / Hands-Free Travel
 slug: luggage-forwarding
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "yamato_route_pricing"
-    note: "Per-route bag forwarding fees vary; verify near publish"
-  - field: "shinkansen_oversized_fee"
-    note: "¥1,000 unreserved oversized fee on Tokaido/Sanyo/Kyushu — confirm current"
-  - field: "station_locker_pricing"
-    note: "Small/medium/large coin locker pricing tiers"
 ---
 
 # Luggage Forwarding / Hands-Free Travel
@@ -32,7 +25,7 @@ Yamato Transport (黒猫ヤマト) — TA-Q-BIN service. The standard option.
 
 Counters at NRT, HND, KIX accept bags up to 200cm linear (length + width + height) and 30kg. Insured to ¥300,000. Arrives at your hotel the next day in most cases.
 
-¥660 airport handling fee on top of the per-bag forwarding price. Additional counter usage fees apply at Narita and Haneda. Per-route pricing varies by distance and bag size.
+¥660 airport handling fee at NRT/HND/KIX, plus a ¥660 counter usage fee at NRT (since June 2025) and HND (since July 2025). KIX is handling fee only. Per-route shipping on top — typically ¥2,500–¥3,000 from airport to Tokyo hotel; ~¥2,630 Tokyo-to-Kansai for a 160cm bag.
 
 ## How to send
 
@@ -52,11 +45,11 @@ For oversized or multi-bag storage, look for staffed "Cloak" counters at major s
 
 ## Shinkansen oversized luggage
 
-If you're carrying a bag with combined length + width + height over 160cm onto the Tokaido, Sanyo, or Kyushu Shinkansen, reserve oversized baggage space when booking the ticket. Reservation is free.
+If you're carrying a bag with combined length + width + height over 160cm onto the Tokaido, Sanyo, Kyushu, or Nishi-Kyushu Shinkansen, reserve oversized baggage space when booking the ticket. Reservation is free.
 
 Bringing oversized luggage onto these lines without reservation costs ¥1,000 and a forced relocation if the space is taken.
 
-Other Shinkansen lines (Tohoku, Hokuriku, Joetsu) don't enforce this yet — but the policy is spreading.
+Other Shinkansen lines (Tohoku, Hokuriku, Joetsu) don't enforce reservations yet, though storage space is still limited.
 
 If your bag is over 160cm, the simpler answer: forward it with Yamato, travel hands-free.
 

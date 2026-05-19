@@ -2,11 +2,6 @@
 title: Konbini Basics
 slug: konbini
 last_verified: 2026-05-18
-verify_before_publish:
-  - field: "konbini_tax_free_participation"
-    note: "Tax-free participation varies by location; do not assume universal"
-  - field: "food_pricing_examples"
-    note: "Avoid listing exact prices for onigiri / sandwiches unless verified near publish"
 ---
 
 # Konbini Basics
