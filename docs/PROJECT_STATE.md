@@ -1,6 +1,6 @@
 # Japan Finds — Project State
 
-**Last updated:** 2026-05-19 late evening (D5 first LLM enrichment run complete; 455/455 products enriched, 47% image rate, CC processing queued)
+**Last updated:** 2026-05-20 (D5b complete — 455 YAMLs enriched, 193/215 images converted, 362-slug D5c review queue written; 3 commits ready to push on phase-d-d5b-yaml-write)
 
 ## What this is
 The traveling state doc. Drop this at the top of any new Claude chat to give it full context in ~500 tokens instead of replaying conversation history. Update after major milestones — and AFTER any decision reversal, immediately.
@@ -21,10 +21,15 @@ The traveling state doc. Drop this at the top of any new Claude chat to give it 
 - **Cleanup PR #5:** PLACES_MAP_URL to env var. btn--primary repainted Ink Black. Chip a11y fixes.
 - **Phase B-3 cheat sheets — fully shipped via PRs #6, #7, #8:** /cheat-sheets live with 9 sheets, schema, verify-status CLI, 301 redirect. 12 text changes across 6 sheets via verify-pass. Homepage cleanup retargeted §03 card and §04 tile grid. Final Lighthouse Desktop 100/100/100/100, Mobile 99/100/100/100.
 - **Phase D D1 (PR #9 — MERGED 2026-05-19):** Places API integration end-to-end. Enrichment script resolved 609/615 place_ids, 537 hours, 605 cached photos (49MB, ~$41 cost). Site UI renders open-now badges (Asia/Tokyo, recomputed 60s), 3:2 hero photos with overflow-hidden, "Photo via Google" attribution, direct Maps URLs. Both Google My Maps re-imported with brand-voice two-line pin descriptions across 13 clusters. Prebuild hook runs in Vercel with 90-day staleness revalidation.
+- **Phase D D2 (PR #10 — MERGED 2026-05-19):** Japan Events 2026 cheat sheet. 10th cheat sheet live at /cheat-sheets/japan-events-2026 — evergreen marquee events (Gion Matsuri, Sumida Fireworks, hanami, sumo basho, Sapporo Snow Festival, Awa Odori, etc.), dates updated annually. Pure content workstream.
 - **Phase D D5a — LLM product enrichment run (2026-05-19 evening):** All 455 products in product_list.txt enriched via ChatGPT regular chat (winning tool from 4-tool bake-off). Output: `products_enriched_master.json` with description, english/japanese names, category, subcategory, price range, where_to_buy, image_url, image_source, safety_flags, source_url, confidence, notes for each product. Results: 215/455 image hit rate (47%), 139/455 safety_flag coverage, confidence split 23% high / 41% medium / 36% low. Total run: 19 batches of ~25, 5-parallel browser-tab workflow, ~3 hours including pilot, tool selection, and prompt iteration.
+- **Phase D D5b — YAML write + image processing (2026-05-20):** 3 commits on `phase-d-d5b-yaml-write` ready to push.
+  - `c4f8c9b` Wrote LLM enrichment to 455 YAMLs (additive — NEW field names only, zero existing field touched). New fields: `description`, `english_name`, `japanese_name`, `subcategory`, `price_range_jpy`, `where_to_buy`, `safety_flags`, `enrichment_confidence`, `enrichment_source_url`, `enrichment_date`, `image`. Slug match 455/455 (453 NFKD-slugify + 2 manual override for Häagen-Dazs / Sanrio-Pokémon). Round-trip parse check confirmed on dry-run; re-run guard verified.
+  - `c29b7a0` Downloaded 193/215 product images (89.8% hit rate), webp-converted via Pillow. Per-host throttle 1 req/sec, Chrome UA, magic-byte format validation. 22 failures captured in `docs/d5/d5_images_failed.txt`: 8 HTTP 403 (Nestle KitKat CDN), 7 AVIF (no Pillow plugin), 4 MUJI network errors, 2 HTTP 404, 1 error page disguised as image. All 22 handed off to D3 manual override.
+  - `d2f1bc5` Wrote 362-slug D5c editorial review queue at `docs/d5/d5_review_queue.txt`: LOW 164 + MEDIUM 188 + HIGH-with-notes 10. HIGH-with-notes group is mostly POSSIBLE_DUPLICATE_OF pairs (alfort, muhi, tuna-mayo, yuzu-kosho) — actionable consolidation candidates for D5c.
 
 ## What's in flight
-- **D5b — CC processing pending.** Separate Claude Code session needs to: parse `products_enriched_master.json`, download each `image_url` and convert to .webp under `/public/products/{slug}.webp`, write enriched fields to each product's YAML, flag rows with `confidence: medium|low` or non-null `notes` for Steven's editorial review.
+- _(none — D5b complete 2026-05-20; D2.5 is the next workstream per locked sequencing)_
 
 ## What's ready to do (small)
 - **Local cleanup post-D1-merge:** `git checkout main && git pull origin main && git branch -D phase-d-d1-places-api`
@@ -35,13 +40,9 @@ The traveling state doc. Drop this at the top of any new Claude chat to give it 
 
 ### Phase D continued (per PHASE_D_PRIORITIZATION.md v2 on Desktop)
 
-- **D2: Japan Events 2026 cheat sheet (~3 hr content).** 10th cheat sheet at /cheat-sheets/japan-events-2026. Evergreen marquee events (Gion Matsuri, Sumida Fireworks, hanami, sumo basho, Sapporo Snow Festival, Awa Odori, etc.), ~25-30 events, dates updated annually. Pure content workstream, no CC.
-
 - **D3: Steven photo override on top-N cards (manual pace, ongoing).** D1 shipped site-wide Google-sourced hero photos. D3 = Steven's IG/Reels photos override on highest-leverage cards. Top 20-30 paced 5-10/week. **Now even higher leverage given D5's 47% image rate** — D3 fills the gap on the 240 products without enrichment image URLs. Begin after D2 ships.
 
-- **D5b — CC processing (now in flight, see above).** Once CC session completes, D5 closes.
-
-- **D5c — Editorial review of low/medium confidence rows.** Manual pass through the 164 low-confidence + 188 medium-confidence enriched products to: confirm or correct the brand-voice description, verify or remove safety_flags, validate `[CATEGORY_INPUT]` / `[VENUE_CATEGORY]` / `[POSSIBLE_DUPLICATE_OF]` / `[AMBIGUOUS]` flagged rows. Estimated 4-6 hours spread across multiple sessions.
+- **D5c — Editorial review of low/medium confidence rows.** Manual pass through the 164 low-confidence + 188 medium-confidence enriched products to: confirm or correct the brand-voice description, verify or remove safety_flags, validate `[CATEGORY_INPUT]` / `[VENUE_CATEGORY]` / `[POSSIBLE_DUPLICATE_OF]` / `[AMBIGUOUS]` flagged rows. Estimated 4-6 hours spread across multiple sessions. Input file: `docs/d5/d5_review_queue.txt` (362 slugs, grouped LOW / MEDIUM / HIGH-with-notes).
 
 - **D6: Location filter for /eat and /places — queued.** Closes real UX gap from D1 spot-check: traveler planning Kyoto trip has no way to filter /eat or /places to local results without leaving the site for Google My Maps. /fp brief below. Start by running the data-distribution diagnostic before designing the chip set.
 
@@ -186,7 +187,7 @@ After D2 ships and before Shop launches. Structured 3–5 hour task:
 
 ## Files at repo root (japan-finds/)
 - `product_list.txt` — 455 product names from /products YAMLs (input to D5)
-- `products_enriched_master.json` — D5 output, 455 enriched product records (input to D5b CC session)
+- `docs/d5/products_enriched_master.json` — D5 output, 455 enriched product records (input to D5b CC session)
 - `generate_batches.py` — splits product_list.txt into batch_NN.txt files
 - `strip_markdown.py` — strips markdown link wrapping from URL fields in batch JSON outputs
 - `merge_batches.py` — merges per-batch JSON outputs into master file with stats
