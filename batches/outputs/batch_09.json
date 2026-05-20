@@ -1,0 +1,553 @@
+[
+  {
+    "input_name": "Kid toilet seat / foldable seat",
+    "english_name": "OXO Tot 2-in-1 Go Potty",
+    "japanese_name": "OXO Tot 2-in-1 Go Potty",
+    "description": "OXO Tot 2-in-1 Go Potty. Foldable travel potty seat that sits on toilets or stands alone with bags. For Japan days with tiny bladders and zero patience.",
+    "category": "household",
+    "subcategory": "kids travel toilet seat",
+    "price_range_jpy": "3000-5000",
+    "where_to_buy": [
+      "Amazon Japan",
+      "Toys R Us Japan",
+      "baby goods stores"
+    ],
+    "image_url": "https://www.oxo.com/media/catalog/product/cache/b2f1ce2dfe10d3d31bf2056bf6e0d10f/t/o/tot_63116100_1.jpg",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.oxo.com/oxo-tot-2-in-1-go-potty.html?srsltid=AfmBOor7HFB8oSNvX59RfzUScnImdvmAwfbf6lMHd2YLIzinjgUZYtgC",
+    "confidence": "low",
+    "notes": "[CATEGORY_INPUT: OXO Tot 2-in-1 Go Potty, Richell potty seat, foldable toilet seat, disposable travel potty]"
+  },
+  {
+    "input_name": "Kids training chopsticks",
+    "english_name": "EDIMOTTO Step-Up Chopsticks",
+    "japanese_name": "エジモット ステップアップお箸",
+    "description": "EDIMOTTO Step-Up Chopsticks. Ring-guided chopsticks that teach finger placement without turning lunch into hand combat. Kid-table chaos, lightly supervised.",
+    "category": "household",
+    "subcategory": "kids tableware",
+    "price_range_jpy": "700-1500",
+    "where_to_buy": [
+      "Akachan Honpo",
+      "Toys R Us Japan",
+      "Amazon Japan",
+      "baby goods stores"
+    ],
+    "image_url": "https://global.edisonmama.com/wp-content/uploads/2021/04/400%C3%97400_hopsticks_pi.jpg",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://global.edisonmama.com/news/use-chopsticks-like-a-little-pro-2/",
+    "confidence": "medium",
+    "notes": null
+  },
+  {
+    "input_name": "Kimono/yukata fabric pouch",
+    "english_name": "Pagong Silk Pouch Set",
+    "japanese_name": "Pagong シルクポーチセット",
+    "description": "Pagong silk pouch set. Small Kyoto textile pouches for coins, lip balm, receipts, and the shrine charms you swore were enough.",
+    "category": "household",
+    "subcategory": "fabric pouch",
+    "price_range_jpy": "3000-9000",
+    "where_to_buy": [
+      "Pagong Kyoto stores",
+      "Kyoto souvenir shops",
+      "department stores"
+    ],
+    "image_url": "https://images.squarespace-cdn.com/content/v1/59ec22a6268b9699fe3aa4e1/11ef9aa0-698b-4a9f-a408-edef15a1d997/B63171BB-6391-4649-A67B-DA70F9AC65F8_L0_001.jpg",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.pagongkyoto.com/others/p/a99061702aa-00-gk97y",
+    "confidence": "low",
+    "notes": "[CATEGORY_INPUT: silk pouch, gamaguchi pouch, chirimen pouch, yukata fabric drawstring pouch]"
+  },
+  {
+    "input_name": "Kinkan Anti-Itch Liquid",
+    "english_name": "KINKAN 120 mL",
+    "japanese_name": "キンカン 120mL",
+    "description": "Kinkan. Topical bite-and-itch liquid with that sharp cooling slap. Summer mosquito legs, meet your yellow-bottle boss.",
+    "category": "drugstore",
+    "subcategory": "anti-itch liquid",
+    "price_range_jpy": "700-1200",
+    "where_to_buy": [
+      "Matsumoto Kiyoshi",
+      "Welcia",
+      "Sundrug",
+      "any major drugstore"
+    ],
+    "image_url": "https://www.kinkan.co.jp/sys/wp-content/uploads/2024/02/thum_kinkan120.jpg",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.kinkan.co.jp/en/products/kinkan120/",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "input_name": "Kinoki Foot Detox Pads",
+    "english_name": "Kinoki Foot Pads",
+    "japanese_name": "キノキ足裏樹液シート",
+    "description": "Kinoki foot pads. Overnight foot stickers with big claims and bigger side-eye. Buy for the chaos, not because your feet run a toxin export business.",
+    "category": "drugstore",
+    "subcategory": "foot pad",
+    "price_range_jpy": "800-2000",
+    "where_to_buy": [
+      "Amazon Japan",
+      "Donki",
+      "variety stores"
+    ],
+    "image_url": null,
+    "image_source": "none",
+    "safety_flags": [],
+    "source_url": "https://www.amazon.com/Kinoki-Your-Health-Premium-Natural-Patches/dp/B07PGQTD1J",
+    "confidence": "low",
+    "notes": "No reliable image source found. Product claims need extra caution."
+  },
+  {
+    "input_name": "Kinoko no Yama / Takenoko no Sato",
+    "english_name": "Kinoko no Yama / Takenoko no Sato",
+    "japanese_name": "きのこの山 / たけのこの里",
+    "description": "Kinoko no Yama versus Takenoko no Sato. Chocolate mushroom biscuits against chocolate bamboo-shoot cookies. Japan's snack civil war, boxed and tiny.",
+    "category": "snack",
+    "subcategory": "chocolate biscuit",
+    "price_range_jpy": "150-300",
+    "where_to_buy": [
+      "7-Eleven",
+      "Lawson",
+      "FamilyMart",
+      "supermarkets",
+      "Donki"
+    ],
+    "image_url": "https://www.meiji.co.jp/products/brand/global/choco/en/kinotake/assets/images/img_kv_kinoko.png",
+    "image_source": "manufacturer",
+    "safety_flags": [
+      "contains_gluten",
+      "contains_dairy"
+    ],
+    "source_url": "https://www.meiji.co.jp/products/brand/global/choco/en/kinotake/",
+    "confidence": "medium",
+    "notes": "[AMBIGUOUS: Kinoko no Yama, Takenoko no Sato]"
+  },
+  {
+    "input_name": "Kirei Kirei hand sanitizer sheets/gel",
+    "english_name": "KireiKirei Medicated Hand Sanitizing Gel Plus",
+    "japanese_name": "キレイキレイ 薬用手指の消毒ジェルプラス",
+    "description": "KireiKirei hand gel. Pocket sanitizer for train snacks, playground railings, and the pre-konbini chicken wipe-down.",
+    "category": "drugstore",
+    "subcategory": "hand sanitizer",
+    "price_range_jpy": "300-700",
+    "where_to_buy": [
+      "Matsumoto Kiyoshi",
+      "Welcia",
+      "Sundrug",
+      "Donki",
+      "supermarkets"
+    ],
+    "image_url": "https://doc.lion.co.jp/uploads/grn/product/normal_image/322/KireiKireiMedicatedHandGelPlus.png",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.lion.co.jp/en/products/category/body/18",
+    "confidence": "low",
+    "notes": "[AMBIGUOUS: KireiKirei Medicated Hand Sanitizing Gel Plus, KireiKirei 99.99% Sanitizing Wet Sheets, KireiKirei Antibacterial Wet Sheets]"
+  },
+  {
+    "input_name": "Kit Kat Chocolatory Custom Kit Kat",
+    "english_name": "Chocollabo Kit Kat",
+    "japanese_name": "チョコラボ キットカット",
+    "description": "Chocollabo Kit Kat. Custom photo Kit Kat box. Cute gift, mildly dangerous when your face becomes someone's snack.",
+    "category": "sweet",
+    "subcategory": "custom chocolate",
+    "price_range_jpy": "1000-3000",
+    "where_to_buy": [
+      "Chocollabo online",
+      "KitKat gift service"
+    ],
+    "image_url": "https://kitkat.nestle.jp/sites/default/files/styles/webp/public/2025-05/1920x660.jpg.webp?itok=KrwCetjG",
+    "image_source": "manufacturer",
+    "safety_flags": [
+      "contains_gluten",
+      "contains_dairy"
+    ],
+    "source_url": "https://kitkat.nestle.jp/gift",
+    "confidence": "low",
+    "notes": "[VENUE_CATEGORY: Kit Kat Chocolatory/custom; Chocollabo Kit Kat, My KitKat, Chocolatory Sublime]"
+  },
+  {
+    "input_name": "Kit Kat Matcha",
+    "english_name": "Kit Kat Koi Matcha",
+    "japanese_name": "キットカット 濃い抹茶",
+    "description": "Kit Kat Koi Matcha. Green tea bitterness under the sweet shell. The airport box everyone grabs after pretending gifts are for other people.",
+    "category": "sweet",
+    "subcategory": "chocolate wafer",
+    "price_range_jpy": "350-900",
+    "where_to_buy": [
+      "Donki",
+      "airport souvenir shops",
+      "supermarkets",
+      "drugstores"
+    ],
+    "image_url": "https://kitkat.nestle.jp/sites/default/files/styles/media_library/public/2026-03/2026SS_Koi%20matcha.PNG?itok=ttRG3oO9",
+    "image_source": "manufacturer",
+    "safety_flags": [
+      "contains_gluten",
+      "contains_dairy"
+    ],
+    "source_url": "https://kitkat.nestle.jp/test-products",
+    "confidence": "medium",
+    "notes": "[AMBIGUOUS: Kit Kat Koi Matcha, Kit Kat Uji Matcha, Kit Kat Otona no Amasa Matcha]"
+  },
+  {
+    "input_name": "Kit Kat Sake / Hojicha / Daigaku Imo / Regional Flavors",
+    "english_name": "Kit Kat Japan Sake",
+    "japanese_name": "キットカット 日本酒",
+    "description": "Kit Kat Japan Sake. Regional souvenir-box candy with sake flavor. A very Japan answer to the question, 'what if my chocolate had nightlife energy?'",
+    "category": "sweet",
+    "subcategory": "regional chocolate wafer",
+    "price_range_jpy": "800-1300",
+    "where_to_buy": [
+      "airport souvenir shops",
+      "Donki",
+      "major train station gift shops",
+      "tourist souvenir shops"
+    ],
+    "image_url": "https://kitkat.nestle.jp/sites/default/files/styles/thumbnail_300x300/public/2025-11/20251120_%E3%81%94%E5%BD%93%E5%9C%B0%E3%82%AD%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88_%E6%97%A5%E6%9C%AC%E9%85%92.png?itok=zDEYJusO",
+    "image_source": "manufacturer",
+    "safety_flags": [
+      "alcohol",
+      "contains_gluten",
+      "contains_dairy"
+    ],
+    "source_url": "https://kitkat.nestle.jp/gift",
+    "confidence": "low",
+    "notes": "[CATEGORY_INPUT: Kit Kat Japan Sake, Kit Kat Uji Hojicha, Kit Kat Daigaku Imo, Kit Kat regional flavors]"
+  },
+  {
+    "input_name": "Kit Kat Wasabi",
+    "english_name": "Kit Kat Wasabi",
+    "japanese_name": "キットカット わさび",
+    "description": "Kit Kat Wasabi. Sweet white-chocolate wafer with a Shizuoka wasabi kick. The prank gift that still tastes suspiciously good.",
+    "category": "sweet",
+    "subcategory": "regional chocolate wafer",
+    "price_range_jpy": "800-1200",
+    "where_to_buy": [
+      "airport souvenir shops",
+      "Donki",
+      "Shizuoka souvenir shops",
+      "major train station gift shops"
+    ],
+    "image_url": "https://kitkat.nestle.jp/sites/default/files/styles/thumbnail_300x300/public/2024-11/KitKat4-1%20%285%29.JPG?itok=oqqW1Jr1",
+    "image_source": "manufacturer",
+    "safety_flags": [
+      "contains_gluten",
+      "contains_dairy"
+    ],
+    "source_url": "https://nestle.jp/home/products/type/confectionary/kitkat/souvenir/009418170",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "input_name": "Kokuyo Campus Notebooks",
+    "english_name": "Kokuyo Campus Notebook Set of 5",
+    "japanese_name": "コクヨ キャンパスノート 5冊パック",
+    "description": "Kokuyo Campus notebook set. Japan's student notebook default in a five-pack. Buy it and briefly become the person who color-codes subjects.",
+    "category": "household",
+    "subcategory": "notebook",
+    "price_range_jpy": "500-900",
+    "where_to_buy": [
+      "Loft",
+      "Tokyu Hands",
+      "Itoya",
+      "stationery shops",
+      "Amazon Japan"
+    ],
+    "image_url": "https://www.kokuyostore.com/dw/image/v2/BFGX_PRD/on/demandware.static/-/Sites-storefront-catalog-kokuyo_jp/default/dwdfb9890d/images/NO-3CBTNX5.JPG?sw=720",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.kokuyostore.com/en_US/stationery/stationery-notebooks/campus-notebook-set-of-5-color-6mm-dot-line-b5/NO-3CBTNX5.html?srsltid=AfmBOoplDsH1uZ3Pv8TGnDe8t8lpUjDGqmaoBrjcNuwh88oazxxrh7iB",
+    "confidence": "medium",
+    "notes": "[POSSIBLE_DUPLICATE_OF: Kokuyo Campus notebook]"
+  },
+  {
+    "input_name": "Kokuyo Campus Portable Book Clip",
+    "english_name": "Kokuyo Campus Compact Portable Book Clip",
+    "japanese_name": "コクヨ キャンパス コンパクトに持ち運べるブッククリップ",
+    "description": "Kokuyo Campus portable book clip. Tiny rotating clip that holds pages open. For hands-free ramen manuals, textbooks, and travel planning spirals.",
+    "category": "household",
+    "subcategory": "stationery accessory",
+    "price_range_jpy": "600-900",
+    "where_to_buy": [
+      "Loft",
+      "Tokyu Hands",
+      "Itoya",
+      "stationery shops",
+      "Amazon Japan"
+    ],
+    "image_url": "https://www.kokuyostore.com/dw/image/v2/BFGX_PRD/on/demandware.static/-/Sites-storefront-catalog-kokuyo_jp/default/dwbd21b531/images/BC-H01G01S.JPG?sw=360",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.kokuyostore.com/en_US/campus/campus-others/campus-compact-portable-book-clip-green/BC-H01G.html?srsltid=AfmBOopSQ2peI0uPFuVfMGSj3EYnjo0q4363az7TbChd0lyqKdfuHcy0",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "input_name": "Kokuyo Campus notebook",
+    "english_name": "Kokuyo Campus Notebook",
+    "japanese_name": "コクヨ キャンパスノート",
+    "description": "Kokuyo Campus notebook. Smooth Japanese school notebook with neat ruling and no drama. The stationery aisle version of getting your life together for ¥200.",
+    "category": "household",
+    "subcategory": "notebook",
+    "price_range_jpy": "150-300",
+    "where_to_buy": [
+      "Loft",
+      "Tokyu Hands",
+      "Itoya",
+      "stationery shops",
+      "Amazon Japan"
+    ],
+    "image_url": "https://www.kokuyostore.com/dw/image/v2/BFGX_PRD/on/demandware.static/-/Sites-storefront-catalog-kokuyo_jp/default/dwe03bf123/images/NO-103BN.JPG?sw=720",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.kokuyostore.com/en_US/stationery/stationery-notebooks/campus-notebook/NO-103BN.html?srsltid=AfmBOooE1ZYt_UXCpU8g4-NaXd9e7QOW5Qbepxo3dwwuPXaBuf4JaaiC",
+    "confidence": "medium",
+    "notes": "[POSSIBLE_DUPLICATE_OF: Kokuyo Campus Notebooks]"
+  },
+  {
+    "input_name": "Konbini Drip Coffee (Seven Cafe / Machi Cafe)",
+    "english_name": "Seven Cafe / Machi Cafe Drip Coffee",
+    "japanese_name": "セブンカフェ / マチカフェ ドリップコーヒー",
+    "description": "Konbini drip coffee. Push-button fresh coffee from Seven Cafe or Machi Cafe. Cheap, hot, reliable, and better than the hotel lobby machine.",
+    "category": "konbini-drink",
+    "subcategory": "coffee",
+    "price_range_jpy": "110-250",
+    "where_to_buy": [
+      "7-Eleven",
+      "Lawson",
+      "FamilyMart"
+    ],
+    "image_url": null,
+    "image_source": "none",
+    "safety_flags": [],
+    "source_url": "https://www.lawson.jp/en/product_service/product/",
+    "confidence": "low",
+    "notes": "[VENUE_CATEGORY: konbini coffee; Seven Cafe hot coffee, Seven Cafe iced coffee, Lawson Machi Cafe hot coffee, Lawson Machi Cafe iced coffee] No reliable image source found."
+  },
+  {
+    "input_name": "Konbini Hot Food Brought Home",
+    "english_name": "7-Eleven Nanachiki",
+    "japanese_name": "ななチキ",
+    "description": "Nanachiki. Hot-case fried chicken packed to go. Eat it now, or take it back to the room like a responsible gremlin.",
+    "category": "konbini-food",
+    "subcategory": "hot fried chicken",
+    "price_range_jpy": "200-300",
+    "where_to_buy": [
+      "7-Eleven",
+      "Lawson",
+      "FamilyMart"
+    ],
+    "image_url": null,
+    "image_source": "none",
+    "safety_flags": [
+      "contains_gluten",
+      "contains_egg"
+    ],
+    "source_url": "https://www.sej.co.jp/in/en.html",
+    "confidence": "low",
+    "notes": "[VENUE_CATEGORY: konbini hot food; Nanachiki, Famichiki, Lawson Karaage-kun, croquette] No reliable image source found."
+  },
+  {
+    "input_name": "Konbini Vinyl Umbrella",
+    "english_name": "Konbini Vinyl Umbrella",
+    "japanese_name": "ビニール傘",
+    "description": "Konbini vinyl umbrella. Clear plastic umbrella sold when the sky betrays everyone. Buy one once, lose it twice, join Japan.",
+    "category": "household",
+    "subcategory": "umbrella",
+    "price_range_jpy": "500-900",
+    "where_to_buy": [
+      "7-Eleven",
+      "Lawson",
+      "FamilyMart",
+      "Donki"
+    ],
+    "image_url": null,
+    "image_source": "none",
+    "safety_flags": [],
+    "source_url": null,
+    "confidence": "low",
+    "notes": "[CATEGORY_INPUT: 7-Eleven umbrella, Lawson umbrella, FamilyMart umbrella, Donki vinyl umbrella] Source not verified. No reliable image source found."
+  },
+  {
+    "input_name": "Konbini bento box",
+    "english_name": "7-Eleven Bento Box",
+    "japanese_name": "コンビニ弁当",
+    "description": "Konbini bento box. Ready-to-eat rice meal that staff can heat at the register. The no-reservation dinner plan for jet lagged humans.",
+    "category": "konbini-food",
+    "subcategory": "bento",
+    "price_range_jpy": "500-800",
+    "where_to_buy": [
+      "7-Eleven",
+      "Lawson",
+      "FamilyMart"
+    ],
+    "image_url": null,
+    "image_source": "none",
+    "safety_flags": [],
+    "source_url": "https://www.sej.co.jp/products/a/bento/",
+    "confidence": "low",
+    "notes": "[VENUE_CATEGORY: konbini bento; makunouchi bento, chicken bento, hamburg bento, curry rice bento] No reliable image source found."
+  },
+  {
+    "input_name": "Kose Softymo Speedy Cleansing Oil",
+    "english_name": "Softymo Speedy Cleansing Oil",
+    "japanese_name": "ソフティモ スピーディ クレンジングオイル",
+    "description": "Softymo Speedy Cleansing Oil. Pink-bottle cleansing oil that melts sunscreen and makeup fast. Drugstore shelf hero for people who wore SPF like a responsible adult.",
+    "category": "beauty",
+    "subcategory": "cleansing oil",
+    "price_range_jpy": "600-900",
+    "where_to_buy": [
+      "Matsumoto Kiyoshi",
+      "Welcia",
+      "Sundrug",
+      "Donki",
+      "supermarkets"
+    ],
+    "image_url": "https://www.kose-softymo.com/cleansingoil/top/img/lineup_product01.png",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.kose-softymo.com/cleansingoil/",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "input_name": "Laundry net",
+    "english_name": "MUJI Polyester Reversible Laundry Net",
+    "japanese_name": "無印良品 ポリエステル両面使える洗濯ネット",
+    "description": "MUJI laundry net. Mesh wash bag for delicates and tiny socks. The cheap Japan life upgrade hotel washing machines never warn you about.",
+    "category": "household",
+    "subcategory": "laundry bag",
+    "price_range_jpy": "200-500",
+    "where_to_buy": [
+      "MUJI",
+      "Daiso",
+      "Can Do",
+      "Seria",
+      "Donki"
+    ],
+    "image_url": "https://www.muji.us/cdn/shop/files/4550583932374_org_700x.jpg?v=1762456280",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.muji.us/products/polyester-reversible-laundry-net-flat-small-mah50a4s?srsltid=AfmBOoq1FN4QwYpXjAKarrcC207al0nLwF-s25ofjwiuG1MjWgmKsXuj",
+    "confidence": "medium",
+    "notes": null
+  },
+  {
+    "input_name": "LeTAO Double Fromage",
+    "english_name": "LeTAO Double Fromage",
+    "japanese_name": "ルタオ ドゥーブルフロマージュ",
+    "description": "LeTAO Double Fromage. Hokkaido-style double-layer cheesecake. Buy frozen, thaw slowly, then watch people get weirdly quiet after one bite.",
+    "category": "sweet",
+    "subcategory": "cheesecake",
+    "price_range_jpy": "2000-3000",
+    "where_to_buy": [
+      "LeTAO shops",
+      "New Chitose Airport",
+      "department store food halls",
+      "LeTAO online"
+    ],
+    "image_url": "https://letaousa.com/cdn/shop/files/1_4.jpg?crop=center&height=1000&v=1741240113&width=1000",
+    "image_source": "manufacturer",
+    "safety_flags": [
+      "contains_gluten",
+      "contains_dairy",
+      "contains_egg"
+    ],
+    "source_url": "https://letaousa.com/products/fromage-double",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "input_name": "Letter Sets / Wagami Stationery",
+    "english_name": "MIDORI Letter Writing Set",
+    "japanese_name": "ミドリ 便箋・封筒セット",
+    "description": "MIDORI letter set. Washi-style paper and envelopes that make normal handwriting look intentional. Stationery shops sell this to people who still believe in nice paper.",
+    "category": "household",
+    "subcategory": "stationery",
+    "price_range_jpy": "400-900",
+    "where_to_buy": [
+      "Loft",
+      "Tokyu Hands",
+      "Itoya",
+      "stationery shops",
+      "department stores"
+    ],
+    "image_url": "https://www.midori-japan.co.jp/english/wp-content/uploads/sites/2/2025/04/main_letter2.jpg",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.midori-japan.co.jp/english/products/letter-writing-set/",
+    "confidence": "low",
+    "notes": "[CATEGORY_INPUT: MIDORI letter set, washi letter paper, wagami envelopes, Japanese stationery sets]"
+  },
+  {
+    "input_name": "Lip Bambi Sleeping Pack / Laneige-style overnight balm",
+    "english_name": "LANEIGE Lip Sleeping Mask",
+    "japanese_name": "ラネージュ リップスリーピングマスク",
+    "description": "LANEIGE Lip Sleeping Mask. Overnight lip balm in the little jar everyone copies. Dry-lip emergency deluxe.",
+    "category": "beauty",
+    "subcategory": "lip mask",
+    "price_range_jpy": "1500-3000",
+    "where_to_buy": [
+      "@cosme Store",
+      "Loft",
+      "Rakuten",
+      "Amazon Japan",
+      "beauty shops"
+    ],
+    "image_url": null,
+    "image_source": "none",
+    "safety_flags": [],
+    "source_url": "https://www.sephora.com/brand/laneige",
+    "confidence": "low",
+    "notes": "[AMBIGUOUS: Lip Bambi Sleeping Pack, LANEIGE Lip Sleeping Mask, other overnight lip masks] No reliable image source found."
+  },
+  {
+    "input_name": "Live Wagashi (Fresh Mochi, Daifuku)",
+    "english_name": "Toraya Kobo Daifuku",
+    "japanese_name": "とらや工房 大福",
+    "description": "Toraya Kobo daifuku. Fresh mochi wagashi with bean paste, made to be eaten quickly. Pick it up from a sweets counter and do not save it for later like a fool.",
+    "category": "sweet",
+    "subcategory": "fresh wagashi",
+    "price_range_jpy": "300-800",
+    "where_to_buy": [
+      "Toraya",
+      "department store food halls",
+      "wagashi shops",
+      "station sweets counters"
+    ],
+    "image_url": "https://www.toraya-kobo.jp/wp-content/uploads/2016/05/menu001b.jpg",
+    "image_source": "manufacturer",
+    "safety_flags": [],
+    "source_url": "https://www.toraya-kobo.jp/en/menu/",
+    "confidence": "low",
+    "notes": "[CATEGORY_INPUT: fresh mochi, daifuku, seasonal namagashi, mame daifuku]"
+  },
+  {
+    "input_name": "Local Sake (Junmai Daiginjo from Niigata, Hyogo, Akita)",
+    "english_name": "Hakkaisan Junmai Daiginjo",
+    "japanese_name": "八海山 純米大吟醸",
+    "description": "Hakkaisan Junmai Daiginjo. Clean Niigata sake with proper gift-box energy. Chill it, pour small, and let the label do half the work.",
+    "category": "drink",
+    "subcategory": "sake",
+    "price_range_jpy": "2000-6000",
+    "where_to_buy": [
+      "department store liquor floors",
+      "sake shops",
+      "airport duty-free shops",
+      "Donki"
+    ],
+    "image_url": "https://images.squarespace-cdn.com/content/v1/6081b408d8f87c5708ef4418/1621370897340-ROZERY24F7CYGLWU7WDM/Junmai%2BDaiginjo%2B720ml.png",
+    "image_source": "manufacturer",
+    "safety_flags": [
+      "alcohol"
+    ],
+    "source_url": "https://www.hakkaisanusa.com/shop/p/junmai-daiginjo",
+    "confidence": "low",
+    "notes": "[CATEGORY_INPUT: Niigata Junmai Daiginjo, Hyogo Junmai Daiginjo, Akita Junmai Daiginjo, local sake gifts]"
+  }
+]

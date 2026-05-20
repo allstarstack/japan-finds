@@ -1,0 +1,548 @@
+[
+{
+"input_name": "&honey hair oil",
+"english_name": "&honey Deep Moist Hair Oil 3.0",
+"japanese_name": "&honey ディープモイスト ヘアオイル 3.0",
+"description": "&honey hair oil. Glossy, sweet-smelling damage control in the gold bottle. Grab it at a drugstore when hotel shampoo leaves your hair emotionally unavailable.",
+"category": "beauty",
+"subcategory": "hair oil",
+"price_range_jpy": "1400-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"LOFT",
+"Amazon Japan"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/P-1-AHNY-DPMOIL-180-ViCREA_honey_Deep_Moist_Hair_Oil_3.jpg?v=1743420225&width=600",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/vicrea-honey-deep-moist-hair-oil-3-0-hair-conditioner-100ml",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "10-Yen Cheese Coin Pancake",
+"english_name": "10 Yen Cheese Coin Pancake",
+"japanese_name": "10円パン",
+"description": "10 Yen Cheese Coin Pancake. Giant coin-shaped pancake with stretchy cheese inside. It is the snack version of pulling a cartoon money glitch in Dotonbori.",
+"category": "sweet",
+"subcategory": "street snack",
+"price_range_jpy": "500-700",
+"where_to_buy": [
+"Daiou Cheese 10 Yen Pan",
+"Shin-Okubo snack stands",
+"Dotonbori snack stands",
+"festival food stalls"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://tabelog.com/en/osaka/A2701/A270202/27134070/",
+"confidence": "low",
+"notes": "[AMBIGUOUS: Daiou Cheese 10 Yen Pan, Shin-Okubo 10 Yen Pan stalls, Dotonbori 10 Yen Pan stalls]; No reliable image source found"
+},
+{
+"input_name": "551 Horai pork buns",
+"english_name": "551 Horai Pork Buns",
+"japanese_name": "551蓬莱 豚まん",
+"description": "551 Horai pork buns. Osaka's warm pork bun flex, fluffy outside and juicy inside. People buy boxes at the station like edible luggage.",
+"category": "food",
+"subcategory": "pork bun",
+"price_range_jpy": "240-500",
+"where_to_buy": [
+"551 Horai stores",
+"Shin-Osaka Station",
+"Osaka Namba",
+"Kansai airports"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.551horai.co.jp/menu/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "7-Eleven in-store smoothie",
+"english_name": "7-Eleven Green Smoothie",
+"japanese_name": "セブンカフェ グリーンスムージー",
+"description": "7-Eleven Green Smoothie. Frozen cup, machine-blended in the store, somehow more serious than my breakfast routine. Get it when konbini coffee feels too adult.",
+"category": "konbini-drink",
+"subcategory": "smoothie",
+"price_range_jpy": "278-390",
+"where_to_buy": [
+"7-Eleven Japan smoothie machine stores"
+],
+"image_url": "https://www.sej.co.jp/library/contents/products/smoothie/2504/green.gif",
+"image_source": "retailer_official",
+"safety_flags": [
+"contains_dairy",
+"citrus_ingestion"
+],
+"source_url": "https://www.sej.co.jp/products/smoothie/",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: 7-Eleven Japan; Green Smoothie, Strawberry & Banana Soy Smoothie, Berries & Yogurt Smoothie, Acai Banana Smoothie]"
+},
+{
+"input_name": "Adult novelty aisle items",
+"english_name": "TENGA Original Vacuum Cup",
+"japanese_name": "TENGA オリジナルバキュームカップ",
+"description": "TENGA Original Vacuum Cup. Donki's most awkwardly visible red-and-white souvenir. Adults buy it when bringing home snacks is not deranged enough.",
+"category": "donki",
+"subcategory": "adult novelty",
+"price_range_jpy": "700-1000",
+"where_to_buy": [
+"Donki",
+"TENGA Store",
+"adult goods shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.tenga.co/products/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: TENGA Original Vacuum Cup, TENGA Egg, TENGA Spinner, iroha mini]; No reliable image source found"
+},
+{
+"input_name": "Akafuku mochi",
+"english_name": "Akafuku Mochi",
+"japanese_name": "赤福餅",
+"description": "Akafuku mochi. Soft rice cake under smooth red bean paste, straight from the Ise souvenir canon. Buy it early because the shelf life is aggressively short.",
+"category": "sweet",
+"subcategory": "mochi",
+"price_range_jpy": "900-1300",
+"where_to_buy": [
+"Akafuku stores",
+"Ise",
+"Nagoya Station",
+"Kintetsu station kiosks"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.akafuku.co.jp/en/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Alcohol mini bottles / sake gifts",
+"english_name": "Hakutsuru Draft Sake 180ml",
+"japanese_name": "白鶴 生貯蔵酒 180ml",
+"description": "Hakutsuru Draft Sake 180ml. Tiny chilled sake bottle, clean and easy to pack. Airport gift shops sell this when your suitcase has exactly one awkward corner left.",
+"category": "drink",
+"subcategory": "sake",
+"price_range_jpy": "250-500",
+"where_to_buy": [
+"airport gift shops",
+"Donki",
+"department store food halls",
+"liquor sections"
+],
+"image_url": "https://www.hakutsuru-sake.com/global/eu/product/product_file/file/img_eu_draftjunmai_180.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://www.hakutsuru-sake.com/global/eu/product/draftjunmai_g/draftjunmai_180.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Hakutsuru Draft Sake 180ml, One Cup Ozeki, local jizake mini bottles, airport sake tasting sets]"
+},
+{
+"input_name": "Alfort",
+"english_name": "Alfort Mini Chocolate Biscuits",
+"japanese_name": "アルフォートミニチョコレート",
+"description": "Alfort. Tiny chocolate biscuits with a little ship on top, because apparently snacks need maritime branding. Grab a box at any konbini for emergency train carbs.",
+"category": "snack",
+"subcategory": "chocolate biscuit",
+"price_range_jpy": "120-350",
+"where_to_buy": [
+"any konbini",
+"supermarkets",
+"Donki",
+"drugstores"
+],
+"image_url": "https://www.bourbon.co.jp/images/product/en/brand_alfortmini_l.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://www.bourbon.co.jp/global_en/brand/alfortmini.html",
+"confidence": "high",
+"notes": "[POSSIBLE_DUPLICATE_OF: Alfort mini chocolate biscuits]"
+},
+{
+"input_name": "Alfort mini chocolate biscuits",
+"english_name": "Alfort Mini Chocolate Biscuits",
+"japanese_name": "アルフォートミニチョコレート",
+"description": "Alfort mini chocolate biscuits. Biscuit on the bottom, chocolate on top, little boat stamped like it has somewhere to be. The konbini desk snack that disappears too fast.",
+"category": "snack",
+"subcategory": "chocolate biscuit",
+"price_range_jpy": "120-180",
+"where_to_buy": [
+"any konbini",
+"supermarkets",
+"Donki",
+"drugstores"
+],
+"image_url": "https://www.bourbon.co.jp/images/product/en/brand_alfortmini_l.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://www.bourbon.co.jp/global_en/brand/alfortmini.html",
+"confidence": "high",
+"notes": "[POSSIBLE_DUPLICATE_OF: Alfort]"
+},
+{
+"input_name": "Allie Chrono Beauty Gel UV",
+"english_name": "Allie Chrono Beauty Gel UV EX",
+"japanese_name": "アリィー クロノビューティ ジェルUV EX",
+"description": "Allie Chrono Beauty Gel UV EX. SPF50+ PA++++ gel sunscreen that dries down cleaner than most beach-bag chaos. Reach for it when Japan humidity tries to turn your face into miso soup.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "1155-2310",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"LOFT"
+],
+"image_url": "https://www.ratzillacosme.com/wp-content/uploads/ALLIE-Chrono-Beauty-Gel-UV-EX-2024-version.webp",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.allie-global.net/en/product/item/item01/",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Anessa Perfect UV Skincare Milk",
+"english_name": "Anessa Perfect UV Sunscreen Skincare Milk",
+"japanese_name": "アネッサ パーフェクトUV スキンケアミルク NA",
+"description": "Anessa Perfect UV Skincare Milk. SPF50+ PA++++ gold-bottle sunscreen with serious sweat resistance. This is the drugstore flex for summer days that feel personally targeted.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "1200-3000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"airport duty-free shops"
+],
+"image_url": "https://www.ratzillacosme.com/wp-content/uploads/ANESSA-Perfect-UV-Sunscreen-Skincare-Milk-2024-Formula.webp",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.ratzillacosme.com/sun/anessa-perfect-uv-sunscreen-skincare-milk-2024/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Anessa Perfect UV Sunscreen Milk]"
+},
+{
+"input_name": "Anessa Perfect UV Sunscreen Milk",
+"english_name": "Anessa Perfect UV Sunscreen Skincare Milk",
+"japanese_name": "アネッサ パーフェクトUV スキンケアミルク NA",
+"description": "Anessa Perfect UV Sunscreen Milk. Gold-bottle SPF50+ PA++++ protection with a thin, milky finish. Buy it before a Japan summer walk turns into a sidewalk hostage situation.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "1200-3000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"airport duty-free shops"
+],
+"image_url": "https://www.ratzillacosme.com/wp-content/uploads/ANESSA-Perfect-UV-Sunscreen-Skincare-Milk-2024-Formula.webp",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.ratzillacosme.com/sun/anessa-perfect-uv-sunscreen-skincare-milk-2024/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Anessa Perfect UV Skincare Milk]"
+},
+{
+"input_name": "Animal chair socks",
+"english_name": "Animal Chair Leg Covers",
+"japanese_name": "イス脚カバー（アニマル）",
+"description": "Animal chair socks. Tiny fabric covers for chair legs so your floor stops screaming. Japan looked at furniture feet and gave them outfits.",
+"category": "household",
+"subcategory": "chair leg covers",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Watts"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4549892506604",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Anker Prime Wall Charger",
+"english_name": "Anker Prime Wall Charger 100W",
+"japanese_name": "Anker Prime Wall Charger (100W, 3 ports, GaN)",
+"description": "Anker Prime Wall Charger. 100W, three ports, and small enough to make your old brick look unemployed. The clean travel charger for phones, laptops, and panic charging.",
+"category": "electronics",
+"subcategory": "wall charger",
+"price_range_jpy": "8990-9990",
+"where_to_buy": [
+"Anker Store",
+"Amazon Japan",
+"Yodobashi Camera",
+"Bic Camera"
+],
+"image_url": "https://www.ankerjapan.com/cdn/shop/files/A2343-Sp-ankerprime-1.jpg?v=1729574494&width=20",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.ankerjapan.com/products/a2343",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Anpanman Baby Snacks",
+"english_name": "Anpanman Baby Senbei",
+"japanese_name": "27gアンパンマンのベビーせんべい",
+"description": "Anpanman Baby Snacks. Soft baby rice crackers with Japan's bread-headed hero on the bag. Parents buy these when tiny humans require emergency silence.",
+"category": "snack",
+"subcategory": "baby snack",
+"price_range_jpy": "120-220",
+"where_to_buy": [
+"Akachan Honpo",
+"drugstores",
+"supermarkets",
+"Donki"
+],
+"image_url": "https://www.befco.jp/hp/wp-content/uploads/2022/10/e5a41cd7980cc099edef688fdd43b11e.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.befco.jp/products/anpanman/14%E6%9E%9A%E3%82%A2%E3%83%B3%E3%83%91%E3%83%B3%E3%83%9E%E3%83%B3%E3%81%AE%E3%83%99%E3%83%93%E3%83%BC%E3%81%9B%E3%82%93%E3%81%B9%E3%81%84/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Anpanman gummies",
+"english_name": "Fujiya Anpanman Gummies",
+"japanese_name": "不二家 アンパンマングミ",
+"description": "Anpanman gummies. Fruit gummies shaped like the characters, because Japan refuses to let candy be boring. Kids grab them; adults pretend they are buying them for kids.",
+"category": "snack",
+"subcategory": "gummy candy",
+"price_range_jpy": "100-180",
+"where_to_buy": [
+"any konbini",
+"supermarkets",
+"drugstores",
+"Donki"
+],
+"image_url": "https://japacle.com/cdn/shop/products/ay3ulyjpp6_0.jpg?v=1686586293&width=1080",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japacle.com/en/products/ay3ulyjpp6",
+"confidence": "medium",
+"notes": "Package warns the facility also handles egg, milk, and wheat"
+},
+{
+"input_name": "Aomori Apple Products (Juice, Pie, Apple Senbei)",
+"english_name": "JA Aoren Aomori Apple Juice",
+"japanese_name": "JAアオレン 青森りんごジュース",
+"description": "JA Aoren Aomori apple juice. Straightforward apple juice from Japan's apple capital, no mascot required. Buy it at Aomori shops when you want the fruit without hauling fruit.",
+"category": "drink",
+"subcategory": "apple juice",
+"price_range_jpy": "400-700",
+"where_to_buy": [
+"Aomori souvenir shops",
+"airport gift shops",
+"supermarkets",
+"antenna shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://shop.marukai.com/store/marukai-market/products/28870405-ja-aoren-aomori-apple-juice-33-81-fl-oz",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: JA Aoren apple juice, Aomori apple pie, apple senbei, dried apple snacks]; No reliable image source found"
+},
+{
+"input_name": "Apagard Premio Toothpaste",
+"english_name": "Apagard Premio Toothpaste",
+"japanese_name": "アパガード プレミオ",
+"description": "Apagard Premio Toothpaste. Nano-hydroxyapatite toothpaste, fluoride-free, and very Japanese-drugstore coded. People buy it when regular toothpaste feels too basic.",
+"category": "drugstore",
+"subcategory": "toothpaste",
+"price_range_jpy": "900-1500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"Amazon Japan"
+],
+"image_url": "https://www.sangi-co.com/vc-files/new_premio105g.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.sangi-co.com/en/products/apagard_premio/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Apostroph / Yojiya Aburatorigami (Oil Blotting Papers)",
+"english_name": "Yojiya Aburatorigami Oil Blotting Papers",
+"japanese_name": "よーじや あぶらとり紙",
+"description": "Yojiya aburatorigami. Kyoto oil-blotting papers that pull shine off your face without wrecking makeup. Keep them in your bag for humid temples, trains, and forehead crimes.",
+"category": "beauty",
+"subcategory": "oil blotting paper",
+"price_range_jpy": "430-800",
+"where_to_buy": [
+"Yojiya stores",
+"Kyoto Station",
+"Yojiya online shop",
+"airport gift shops"
+],
+"image_url": "https://www.yojiya.co.jp/assets/images/oil-blotting-paper//img_brand_img.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.yojiya.co.jp/en/oil-blotting-paper/",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Apostroph oil blotting paper, Yojiya aburatorigami]"
+},
+{
+"input_name": "Aquarius",
+"english_name": "Aquarius",
+"japanese_name": "アクエリアス",
+"description": "Aquarius. Japan's other default sports drink, lighter and sweeter than Pocari. Vending machines have it ready for post-onsen dehydration and questionable summer decisions.",
+"category": "drink",
+"subcategory": "sports drink",
+"price_range_jpy": "120-180",
+"where_to_buy": [
+"any konbini",
+"vending machines",
+"supermarkets",
+"drugstores"
+],
+"image_url": "https://www.coca-cola.com/content/dam/onexp/jp/ja/brands/aquarius/products/aquarius_product_500ml_1210.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.coca-cola.com/jp/ja/brands/aquarius/products",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Assorted regional KitKat packs",
+"english_name": "Japan Limited Regional KitKat Packs",
+"japanese_name": "ご当地キットカット",
+"description": "Regional KitKat packs. Japan turns every area into a chocolate wafer flavor and somehow keeps getting away with it. Airport shops are where suitcase space goes to die.",
+"category": "sweet",
+"subcategory": "regional chocolate",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"airport gift shops",
+"JR station kiosks",
+"Donki",
+"souvenir shops"
+],
+"image_url": "https://kitkat.nestle.jp/sites/default/files/styles/webp/public/2025-08/kv_gotouchi1_pc_1_1.png.webp?itok=NDEDucm3",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://kitkat.nestle.jp/gotouchi-en",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Hokkaido Azuki & Strawberry, Tokyo Shima Lemon, Kyoto Uji Matcha, Osaka Castle Sakura]"
+},
+{
+"input_name": "Awamori (Okinawan Distilled Spirit)",
+"english_name": "Zanpa White Awamori",
+"japanese_name": "残波 ホワイト 泡盛",
+"description": "Zanpa White Awamori. Okinawan distilled spirit with a cleaner bite than sake. Buy it when your souvenir plan says beach uncle, not tiny cookie box.",
+"category": "drink",
+"subcategory": "awamori",
+"price_range_jpy": "1000-1800",
+"where_to_buy": [
+"Okinawa liquor shops",
+"airport gift shops",
+"Donki",
+"department store liquor sections"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://www.awamorispirits.com/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Zanpa White, Ryukyu 1429, Kumesen, Zuisen]; No reliable image source found"
+},
+{
+"input_name": "BOS odor-proof diaper bags",
+"english_name": "BOS Odor-Proof Diaper Bags",
+"japanese_name": "おむつが臭わない袋 BOS ベビー用",
+"description": "BOS odor-proof diaper bags. Tiny bags that lock in diaper smell like they signed an NDA. Parents buy these before long train rides and public trash-bin anxiety.",
+"category": "household",
+"subcategory": "odor-proof bags",
+"price_range_jpy": "300-2000",
+"where_to_buy": [
+"Akachan Honpo",
+"drugstores",
+"Amazon Japan",
+"Rakuten"
+],
+"image_url": "https://bos-bos.com/wp-content/uploads/2017/12/baby-s-90-1.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://bos-bos.com/product/bos/baby/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "BOSS Canned Coffee",
+"english_name": "BOSS Rainbow Mountain Blend",
+"japanese_name": "サントリー BOSS レインボーマウンテンブレンド",
+"description": "BOSS canned coffee. Sweet milk coffee in a tiny can, built for vending machines and salaryman pacing. Drink it when jet lag starts managing your itinerary.",
+"category": "drink",
+"subcategory": "canned coffee",
+"price_range_jpy": "120-150",
+"where_to_buy": [
+"vending machines",
+"any konbini",
+"supermarkets",
+"Donki"
+],
+"image_url": "https://suntorybosscoffee.com/cdn/shop/files/BOSS_179mL_RMB_SHAD_SPRITZ_RGB_298x_39440860-2811-466e-9d88-de42a45ea12b_20x14.webp?v=1733167932",
+"image_source": "manufacturer",
+"safety_flags": [
+"caffeine_high",
+"contains_dairy"
+],
+"source_url": "https://suntorybosscoffee.com/products/rainbow-mountain-blend",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Baby Foot Peel Mask",
+"english_name": "Baby Foot Exfoliation Foot Peel",
+"japanese_name": "ベビーフット イージーパック",
+"description": "Baby Foot Peel Mask. Plastic booties that make your feet shed like a molting lizard. Use it after walking 30,000 steps across Tokyo and questioning your life choices.",
+"category": "drugstore",
+"subcategory": "foot peel mask",
+"price_range_jpy": "1400-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"LOFT",
+"Amazon Japan"
+],
+"image_url": "https://babyfoot.com/cdn/shop/collections/1.jpg?v=1746155213&width=1500",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://babyfoot.com/",
+"confidence": "medium",
+"notes": null
+}
+]

@@ -1,0 +1,532 @@
+[
+{
+"input_name": "Disney Tokyo / Disney Sea Limited Merch",
+"english_name": "Tokyo Disney Resort Limited Merchandise",
+"japanese_name": "東京ディズニーリゾート限定グッズ",
+"description": "Tokyo Disney Resort limited merch. Park-only shirts, plush badges, and seasonal chaos bait for suitcase space.",
+"category": "other",
+"subcategory": "theme park merchandise",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Tokyo Disneyland",
+"Tokyo DisneySea",
+"Bon Voyage",
+"Tokyo Disney Resort App"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.tokyodisneyresort.jp/treasure/overseasgoods/en/goods/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: plush badges; apparel; stationery; seasonal snack tins]; No reliable image source found"
+},
+{
+"input_name": "Display Katana / Souvenir Samurai Sword",
+"english_name": "Replica Display Samurai Sword",
+"japanese_name": "模造刀",
+"description": "Replica display katana. Looks serious on a wall, becomes a paperwork problem at airports fast.",
+"category": "other",
+"subcategory": "souvenir sword",
+"price_range_jpy": "3000-30000",
+"where_to_buy": [
+"Asakusa souvenir shops",
+"samurai museum shops",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://samuraistore.com/collections/replica-display-sword",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: replica display katana; wooden practice sword; zinc alloy sword]; Confirm airline and customs rules before buying; No reliable image source found"
+},
+{
+"input_name": "Disposable bibs",
+"english_name": "Clovis Baby Disposable Meal Bibs",
+"japanese_name": "クロビスベビー 使い捨てお食事エプロン",
+"description": "Disposable meal bibs. Tiny travel insurance for ramen, curry, and children with sauce-based agendas.",
+"category": "household",
+"subcategory": "travel bib",
+"price_range_jpy": "300-700",
+"where_to_buy": [
+"Akachan Honpo",
+"Nishimatsuya",
+"baby goods sections",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://clovisbaby.jp/product/clovisbaby-bib/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Dolly Wink eyeliner",
+"english_name": "Dolly Wink 5-Way Liquid Liner",
+"japanese_name": "ドーリーウインク 5WAYリキッドライナー",
+"description": "Dolly Wink liquid eyeliner. Ultra-thin brush, strong color, made for humidity days when your face has plans.",
+"category": "beauty",
+"subcategory": "eyeliner",
+"price_range_jpy": "1500-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Loft",
+"Donki",
+"@cosme stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://prtimes.jp/main/html/rd/p/000000055.000041854.html",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Don Quijote Tax-Free Royce' / Shiroi Koibito",
+"english_name": "ROYCE' Potatochip Chocolate Original",
+"japanese_name": "ロイズ ポテトチップチョコレート オリジナル",
+"description": "ROYCE' potatochip chocolate. Salted chips wearing milk chocolate, the Hokkaido airport-box flex Donki tourists grab tax-free.",
+"category": "sweet",
+"subcategory": "chocolate snack",
+"price_range_jpy": "800-1200",
+"where_to_buy": [
+"Donki tax-free counters",
+"airport duty-free shops",
+"Hokkaido souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy"
+],
+"source_url": "https://roycechocolate.com/products/potatochip-chocolate-original",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: ROYCE' Potatochip Chocolate; ROYCE' Nama Chocolate; Shiroi Koibito cookies]; No reliable image source found"
+},
+{
+"input_name": "Donabe Rice Pot (Iga-yaki)",
+"english_name": "Nagatani-en Kamado-san Donabe Rice Pot",
+"japanese_name": "長谷園 かまどさん",
+"description": "Kamado-san donabe rice pot. Heavy Iga-yaki clay, double lid, rice cooker energy without the outlet.",
+"category": "household",
+"subcategory": "rice pot",
+"price_range_jpy": "10000-18000",
+"where_to_buy": [
+"Nagatani-en official store",
+"Kappabashi kitchenware shops",
+"department stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://store.igamono.jp/?pid=85075826",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Donki Pheromone Perfumes",
+"english_name": "LC Love Cosmetic Libido Berry Rose",
+"japanese_name": "リビドー ベリーロゼ",
+"description": "Libido Berry Rose perfume. The packaging says bedroom energy; Donki shoppers buy it half as a joke, half not.",
+"category": "beauty",
+"subcategory": "perfume",
+"price_range_jpy": "4000-5500",
+"where_to_buy": [
+"Donki",
+"LC Love Cosmetic online",
+"Rakuten"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://shop.lovecosmetic.jp/view/item/000000006487",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Libido Berry Rose; pheromone-style perfume; adult novelty fragrance]; No reliable image source found"
+},
+{
+"input_name": "Drain net / sink strainer bags",
+"english_name": "Daiso Stocking-Type Drain Nets",
+"japanese_name": "ダイソー 水切りネット ストッキングタイプ",
+"description": "Daiso drain nets. Tiny sink socks that catch rice grains before your Airbnb drain stages a revolt.",
+"category": "household",
+"subcategory": "kitchen cleanup",
+"price_range_jpy": "100-200",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"drugstore household aisle"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480642918",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "EVE Quick pain reliever",
+"english_name": "EVE Quick DX Headache Medicine",
+"japanese_name": "イブクイック頭痛薬DX",
+"description": "EVE Quick DX. Ibuprofen painkiller built for headaches, the drugstore pick when regular pain meds feel underpowered.",
+"category": "drugstore",
+"subcategory": "painkiller",
+"price_range_jpy": "800-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"NSAID"
+],
+"source_url": "https://www.kegg.jp/medicus-bin/japic_otc?japic_code=K1512000011",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Egg Salad Sandwich (Tamago Sando)",
+"english_name": "7-Eleven Egg Salad Sandwich",
+"japanese_name": "セブン-イレブン たまごサンド",
+"description": "Egg salad sandwich. Soft bread, creamy egg filling, the konbini breakfast that makes tourists weirdly emotional.",
+"category": "konbini-food",
+"subcategory": "sandwich",
+"price_range_jpy": "250-400",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.sej.co.jp/products/a/sandwich/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Egg timer for ramen/boiled eggs",
+"english_name": "Daiso Egg Timer",
+"japanese_name": "ダイソー エッグタイマー",
+"description": "Daiso egg timer. Boil it with the egg and the color tells you soft, medium, or hard before ramen gets dramatic.",
+"category": "household",
+"subcategory": "kitchen gadget",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Daiso",
+"Can Do",
+"kitchenware aisles"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480224954",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Eki stamp notebook",
+"english_name": "JR East Eki Stamp Notebook",
+"japanese_name": "駅スタンプ帳",
+"description": "Eki stamp notebook. Plain little book, big collector brain fuel at stations with free stamps.",
+"category": "other",
+"subcategory": "stationery",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"JAPAN RAIL CAFE",
+"JR East Travel Service Centers",
+"NewDays",
+"station shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://media.jreast.co.jp/articles/3515",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Engraved chopsticks",
+"english_name": "Name-Engraved Japanese Chopsticks",
+"japanese_name": "名入れ箸",
+"description": "Engraved chopsticks. Personal name on real-use tableware, the souvenir that survives past the snack pile.",
+"category": "household",
+"subcategory": "chopsticks",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Kappabashi Mikura",
+"Ginza Natsuno",
+"department store tableware floors"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://kappabashi-mikura.com/en",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Eve A Pain Reliever",
+"english_name": "EVE A Tablets",
+"japanese_name": "イブA錠",
+"description": "EVE A tablets. Ibuprofen painkiller, easy to find when cramps or headaches interrupt sightseeing.",
+"category": "drugstore",
+"subcategory": "painkiller",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"NSAID"
+],
+"source_url": "https://www.ssp.co.jp/product/detail/evea/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Famichiki",
+"english_name": "Famichiki",
+"japanese_name": "ファミチキ",
+"description": "Famichiki. Boneless fried chicken from the FamilyMart hot case, best eaten standing outside like a gremlin with receipts.",
+"category": "konbini-food",
+"subcategory": "fried chicken",
+"price_range_jpy": "230-260",
+"where_to_buy": [
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.family.co.jp/goods/friedfoods/0253116.html",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Famima Frappé",
+"english_name": "FamilyMart Frappé",
+"japanese_name": "ファミマフラッペ",
+"description": "Famima Frappé. Frozen cup plus hot milk from the machine, basically dessert wearing a convenience-store badge.",
+"category": "konbini-drink",
+"subcategory": "frozen drink",
+"price_range_jpy": "300-400",
+"where_to_buy": [
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy"
+],
+"source_url": "https://www.family.co.jp/campaign/spot/famimacafe_make.html",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Fino Premium Touch Hair Mask",
+"english_name": "Fino Premium Touch Hair Mask",
+"japanese_name": "フィーノ プレミアムタッチ ヘアマスク",
+"description": "Fino hair mask. Thick tub treatment for dry hair, the drugstore beauty aisle pick with suitcase-stuffer energy.",
+"category": "beauty",
+"subcategory": "hair mask",
+"price_range_jpy": "800-1500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"@cosme stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/fino-hair-mask-premium-touch-intensive-repair-treatment-230g",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Food divider sheets / baran",
+"english_name": "Daiso Baran Food Divider Sheets",
+"japanese_name": "バラン",
+"description": "Baran food dividers. Plastic sushi grass, absurdly useful for bento boxes and snack organization.",
+"category": "household",
+"subcategory": "bento accessory",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"bento supply stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://daisoca.com/products/4984343262867",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Fragile ceramics without proper packing",
+"english_name": "Iga-yaki Ceramic Tableware",
+"japanese_name": "伊賀焼の陶器",
+"description": "Iga-yaki ceramics. Beautiful clayware, terrible backpack roommate unless wrapped like evidence.",
+"category": "household",
+"subcategory": "ceramics",
+"price_range_jpy": "1000-10000",
+"where_to_buy": [
+"Kappabashi kitchenware shops",
+"Nagatani-en stores",
+"department store tableware floors"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://igamono.co.jp/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: bowls; mugs; plates; donabe]; No reliable image source found"
+},
+{
+"input_name": "Fresh cream cakes as souvenirs",
+"english_name": "Lawson Premium Roll Cake",
+"japanese_name": "ローソン プレミアムロールケーキ",
+"description": "Lawson Premium Roll Cake. Fresh cream, soft sponge, great tonight and a bad idea for a flight home.",
+"category": "sweet",
+"subcategory": "chilled cake",
+"price_range_jpy": "200-300",
+"where_to_buy": [
+"Lawson"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy",
+"contains_egg",
+"contains_gluten"
+],
+"source_url": "https://www.lawson.co.jp/sp/recommend/original/detail/1508380_2168.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: roll cake; shortcake; cream sandwich cakes]; Chilled item; No reliable image source found"
+},
+{
+"input_name": "Fresh mochi / daifuku",
+"english_name": "7-Eleven Salted Bean Daifuku",
+"japanese_name": "セブン-イレブン 塩豆大福",
+"description": "Salted bean daifuku. Chewy mochi, azuki filling, good same-day snack and not a suitcase heirloom.",
+"category": "sweet",
+"subcategory": "mochi",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"department-store wagashi counters"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.sej.co.jp/products/a/item/114856/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Fresh seafood / raw fish packs",
+"english_name": "Supermarket Sashimi Pack",
+"japanese_name": "刺身パック",
+"description": "Supermarket sashimi pack. Cheap, clean, and very much a hotel-room-right-now food, not a souvenir.",
+"category": "food",
+"subcategory": "raw seafood",
+"price_range_jpy": "400-1500",
+"where_to_buy": [
+"Japanese supermarkets",
+"department-store food halls",
+"fish markets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"raw_or_fermented"
+],
+"source_url": "https://www.tabeyoyo.com/publications/rawfish",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: sashimi packs; raw fish trays; seafood market packs]; No reliable image source found"
+},
+{
+"input_name": "Frozen mikan",
+"english_name": "7 Premium Marude Unshu Mikan Ice Bar",
+"japanese_name": "セブンプレミアム まるで完熟みかん",
+"description": "Frozen mikan ice bar. Mandarin nostalgia in freezer form, the konbini cool-down move after too many train stairs.",
+"category": "sweet",
+"subcategory": "frozen dessert",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"7-Eleven",
+"Ito-Yokado",
+"7&i stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.sej.co.jp/products/a/item/450352/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Fruit sandwich",
+"english_name": "7-Eleven Three-Fruit Sandwich",
+"japanese_name": "セブン-イレブン 3種フルーツサンド",
+"description": "Fruit sandwich. Whipped cream, soft bread, and fruit pretending this is lunch instead of dessert.",
+"category": "konbini-food",
+"subcategory": "sandwich",
+"price_range_jpy": "350-500",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.sej.co.jp/products/a/item/053702/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Furikake Variety Pack",
+"english_name": "Marumiya Noritama and Variety Furikake Pack",
+"japanese_name": "丸美屋 のりたま&バラエティー",
+"description": "Marumiya furikake variety pack. Tiny rice seasoning packets, the easiest way to make convenience-store rice less sad.",
+"category": "food",
+"subcategory": "rice seasoning",
+"price_range_jpy": "200-400",
+"where_to_buy": [
+"supermarkets",
+"Donki",
+"drugstores",
+"konbini rice aisle"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_egg"
+],
+"source_url": "https://prtimes.jp/main/html/rd/p/000000696.000010538.html",
+"confidence": "medium",
+"notes": "No reliable image source found"
+}
+]

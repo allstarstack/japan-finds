@@ -1,0 +1,544 @@
+[
+{
+"input_name": "Sakura Pigma Micron Drawing Pens",
+"english_name": "Sakura Pigma Micron Drawing Pens",
+"japanese_name": "サクラクレパス ピグマ ミクロン",
+"description": "Pigma Micron pens. Tiny, clean lines that do not smear once dry; the Japan stationery aisle's safe bet for sketchbooks, journals, and overplanned itineraries.",
+"category": "other",
+"subcategory": "drawing pens",
+"price_range_jpy": "150-1500",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"stationery stores",
+"Amazon Japan"
+],
+"image_url": "https://www.sakuraofamerica.com/wp-content/uploads/2020/07/Pigma_micron4.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.sakuraofamerica.com/product/pigma-micron/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Sakura tea / salted sakura packets",
+"english_name": "CHINRIU Salt Pickled Sakura Cherry Blossoms",
+"japanese_name": "桜花漬",
+"description": "Salted sakura blossoms. Salty-pink little flowers for tea, sweets, and the moment your dessert decides it studied abroad in Kyoto.",
+"category": "food",
+"subcategory": "tea garnish",
+"price_range_jpy": "500-900",
+"where_to_buy": [
+"department-store food halls",
+"Japanese grocery stores",
+"souvenir shops",
+"online Japanese specialty stores"
+],
+"image_url": "https://cfrouting.zoeysite.com/cdn-cgi/image/format%3Dauto%2Cquality%3D85%2Cfit%3Dscale-down/https%3A//s3.amazonaws.com/zcom-media/sites/a0iE000000B0UU8IAN/media/catalog/product/4/9/4982175600314-1147-2.jpg",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://anything-from-japan.com/pickled-sakura-cherry-blossoms-30g",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: salted sakura blossoms; sakura tea packets; sakura powder]"
+},
+{
+"input_name": "Salmon Onigiri",
+"english_name": "Lawson Hand-Rolled Grilled Salmon Onigiri",
+"japanese_name": "手巻おにぎり 炙り熟成紅鮭",
+"description": "Salmon onigiri. Rice, nori, grilled salmon, zero drama; the konbini lunch that knows exactly what it is.",
+"category": "konbini-food",
+"subcategory": "onigiri",
+"price_range_jpy": "200-250",
+"where_to_buy": [
+"Lawson",
+"7-Eleven",
+"FamilyMart",
+"any major konbini"
+],
+"image_url": "https://www.lawson.co.jp/recommend/original/detail/img/l787520.jpg",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://www.lawson.co.jp/recommend/original/rice/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Salonpas Pain Patches",
+"english_name": "Salonpas Pain Relieving Patch",
+"japanese_name": "サロンパス",
+"description": "Salonpas patches. Stick one on a sore shoulder and continue cosplaying as a functional traveler.",
+"category": "drugstore",
+"subcategory": "pain patch",
+"price_range_jpy": "500-1000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"any major drugstore",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"aspirin"
+],
+"source_url": "https://us.hisamitsu/product/salonpas-pain-relieving-patch",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Sanrio / Pokémon mini goods",
+"english_name": "Hello Kitty and Friends Graduation Plush Mascot Keychain",
+"japanese_name": "ハローキティ＆フレンズ マスコットキーホルダー",
+"description": "Sanrio and Pokemon mini goods. Tiny charms, pouches, and blind-box bait; the checkout-line trap for people who said they were only buying gum.",
+"category": "other",
+"subcategory": "character goods",
+"price_range_jpy": "300-2000",
+"where_to_buy": [
+"Sanrio stores",
+"Pokemon Center",
+"Donki",
+"Kiddy Land",
+"capsule toy shops"
+],
+"image_url": "https://www.sanrio.com/cdn/shop/files/HKT1238_Hello-Kitty-4-Plush-Keychains_OPF_5000x.jpg?v=1773685802",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.sanrio.com/products/hello-kitty-and-friends-graduation-plush-mascot-keychain",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Pokemon Center mini plush keychains; Sanrio plush mascot keychains; capsule toy charms; blind-box mini figures]"
+},
+{
+"input_name": "Sanrio Character Goods (Hello Kitty, Cinnamoroll, Pochacco)",
+"english_name": "Hello Kitty Mini Mirror and Comb Keychain",
+"japanese_name": "ハローキティ ミニミラー＆コームキーホルダー",
+"description": "Sanrio character goods. Hello Kitty, Cinnamoroll, Pochacco; Japan turns cute into an infrastructure project.",
+"category": "other",
+"subcategory": "character goods",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"Sanrio stores",
+"Kiddy Land",
+"Donki",
+"Loft",
+"airport souvenir shops"
+],
+"image_url": "https://www.sanrio.com/cdn/shop/files/imgi_10_zz-2512386421_KT_--1_300x.jpg?v=1767395934",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.sanrio.com/collections/hello-kitty/products/hello-kitty-mini-mirror-comb-keychain-sanrio-forever-series",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Hello Kitty keychains; Cinnamoroll stationery; Pochacco pouches; Sanrio mini mirrors]"
+},
+{
+"input_name": "Sante FX eye drops",
+"english_name": "Sante FX Neo Eye Drops",
+"japanese_name": "サンテFXネオ",
+"description": "Sante FX Neo eye drops. Cooling eye drops that feel like your eyeballs opened a window; a drugstore classic for screen eyes and red-eye flights.",
+"category": "drugstore",
+"subcategory": "eye drops",
+"price_range_jpy": "800-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"Donki",
+"airport drugstores"
+],
+"image_url": "https://search.jsm-db.info/sp_en/Picture/14987084ZZ000000000004G13.jpg",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://search.jsm-db.info/sp_en/detail.php?txtID=4987084000004",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Sapporo Soup Curry Mix",
+"english_name": "Bell Foods Soup Curry Recipe 180g",
+"japanese_name": "ベル食品 スープカレーの作り方",
+"description": "Bell Foods soup curry base. Sapporo soup curry without negotiating with a spice drawer; add chicken, vegetables, and main-character broth.",
+"category": "food",
+"subcategory": "curry base",
+"price_range_jpy": "400-700",
+"where_to_buy": [
+"Hokkaido souvenir shops",
+"Japanese supermarkets",
+"Donki",
+"online Japanese grocery stores"
+],
+"image_url": "https://foodcomecome.com/cdn/shop/files/FC00001006400108.jpg?v=1756707882&width=1946",
+"image_source": "other",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://foodcomecome.com/products/fc00001006400108",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Sea Urchin / Uni in Tube",
+"english_name": "Uni Tube Paste",
+"japanese_name": "うにチューブ",
+"description": "Uni tube. Briny sea urchin paste for rice, pasta, and people who think butter is too emotionally stable.",
+"category": "food",
+"subcategory": "seafood paste",
+"price_range_jpy": "500-1500",
+"where_to_buy": [
+"Donki",
+"Japanese supermarkets",
+"seafood souvenir shops",
+"airport souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"raw_or_fermented"
+],
+"source_url": null,
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: uni paste tubes; neri uni; uni mayo; sea urchin sauce]. Source not verified. No reliable image source found"
+},
+{
+"input_name": "Seed Kadoloop Eraser",
+"english_name": "Seed Kadoloop Eraser",
+"japanese_name": "カドループ",
+"description": "Kadoloop eraser. Warm it up and reshape the corners; an eraser with a tiny midlife reset button.",
+"category": "other",
+"subcategory": "eraser",
+"price_range_jpy": "250-300",
+"where_to_buy": [
+"Loft",
+"Hands",
+"stationery stores",
+"Bic Camera",
+"Amazon Japan"
+],
+"image_url": "https://www.seedr.co.jp/wp-content/uploads/kado-loop01.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.seedr.co.jp/products/9882/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Seirogan",
+"english_name": "Seirogan",
+"japanese_name": "正露丸",
+"description": "Seirogan. Old-school stomach medicine with a smell that announces itself first; the travel-pharmacy backup for angry intestines.",
+"category": "drugstore",
+"subcategory": "stomach medicine",
+"price_range_jpy": "700-1300",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://www.seirogan.co.jp/asset/images/product/product_seirogan_l.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.seirogan.co.jp/en/products/seirogan/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Senbei Rice Crackers (Bansheido, others)",
+"english_name": "Kameda Happy Turn Senbei Rice Crackers",
+"japanese_name": "亀田製菓 ハッピーターン",
+"description": "Senbei rice crackers. Crunchy, salty-sweet rice snacks; convenience-store chips look deeply underqualified next to these.",
+"category": "snack",
+"subcategory": "rice crackers",
+"price_range_jpy": "150-400",
+"where_to_buy": [
+"konbini",
+"Japanese supermarkets",
+"Donki",
+"drugstores",
+"souvenir shops"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/P-1-KMDA-HAPTRN-1_3-Kameda_Happy_Turn_Senbei_Rice_Crackers_96g_Pack_of_3_Bags.jpg?v=1746602187&width=600",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/kameda-happy-turn-senbei-rice-crackers-pack-of-3-bags",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Bansheido senbei; Kameda Happy Turn; soy senbei; nori senbei]"
+},
+{
+"input_name": "Senbei rice cracker variety pack",
+"english_name": "Kameda Seika Assorted Rice Crackers Set",
+"japanese_name": "亀田製菓 おためしセット",
+"description": "Senbei variety pack. A sampler bag of crunchy rice crackers; good for trains, hotel desks, and pretending you bought snacks for everyone.",
+"category": "snack",
+"subcategory": "rice cracker assortment",
+"price_range_jpy": "300-1200",
+"where_to_buy": [
+"Japanese supermarkets",
+"Donki",
+"department-store food halls",
+"souvenir shops"
+],
+"image_url": "https://static.wixstatic.com/media/7d20de_53be8eedcd87415599b1a86340e3d314~mv2.jpg/v1/fill/w_500%2Ch_499%2Cal_c%2Cq_80%2Cenc_avif%2Cquality_auto/7d20de_53be8eedcd87415599b1a86340e3d314~mv2.jpg",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.japanshopfuji.com/product-page/kameda-seika-assorted-rice-crackers-set-osenbe-5-varieties-30-individual-packs",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Kameda variety packs; arare mixes; nori senbei; soy senbei]"
+},
+{
+"input_name": "Senka Perfect Whip",
+"english_name": "Senka Perfect Whip Cleansing Foam",
+"japanese_name": "専科 パーフェクトホイップ",
+"description": "Senka Perfect Whip. Dense foam cleanser that became a drugstore default; a tiny pea of it turns into a suspicious amount of bubbles.",
+"category": "beauty",
+"subcategory": "face cleanser",
+"price_range_jpy": "400-700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"Donki",
+"Japanese supermarkets",
+"airport drugstores"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/Senka-Perfect-Whip-Cleansing-Foam-120g-1-2025-08-25T00_18_50.384Z.jpg?v=1756081192&width=600",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/senka-perfect-whip-cleansing-foam-120g",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Senka Perfect Whip Cleanser]"
+},
+{
+"input_name": "Senka Perfect Whip Cleanser",
+"english_name": "Senka Perfect Whip Cleansing Foam",
+"japanese_name": "専科 パーフェクトホイップ",
+"description": "Senka Perfect Whip cleanser. Foamy face wash, cheap and everywhere; the blue tube people grab when they want Japan drugstore skincare without reading essays.",
+"category": "beauty",
+"subcategory": "face cleanser",
+"price_range_jpy": "400-700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"Donki",
+"Japanese supermarkets",
+"airport drugstores"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/Senka-Perfect-Whip-Cleansing-Foam-120g-1-2025-08-25T00_18_50.384Z.jpg?v=1756081192&width=600",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/senka-perfect-whip-cleansing-foam-120g",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Senka Perfect Whip]"
+},
+{
+"input_name": "Sensu (Folding Fan)",
+"english_name": "Sensu Folding Fan",
+"japanese_name": "扇子",
+"description": "Sensu folding fan. Pocket-sized airflow with old-school Kyoto energy; lifesaver for summer stations and overheated festival crowds.",
+"category": "other",
+"subcategory": "folding fan",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Hakuchikudo",
+"Kyoto souvenir shops",
+"department stores",
+"airport souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.hakuchikudo.co.jp/en",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Hakuchikudo folding fans; souvenir sensu; silk fans; paper fans]. No reliable image source found"
+},
+{
+"input_name": "Sento Bathhouse Kerorin Bucket",
+"english_name": "Kerorin Bathhouse Bucket",
+"japanese_name": "ケロリン桶",
+"description": "Kerorin bath bucket. The yellow sento bucket you have seen in every bathhouse fever dream; loud, sturdy, and weirdly iconic.",
+"category": "household",
+"subcategory": "bath bucket",
+"price_range_jpy": "1300-2500",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Kerorin official shop",
+"Toyama Station shops"
+],
+"image_url": "https://www.kerorin.com/fanclub/images/keroein-oke-2024.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kerorin.com/fanclub/goods.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Seria Stationery",
+"english_name": "Seria Stationery",
+"japanese_name": "セリア文房具",
+"description": "Seria stationery. Stickers, washi tape, tiny notebooks; 100-yen restraint leaves the chat immediately.",
+"category": "other",
+"subcategory": "100-yen stationery",
+"price_range_jpy": "110-330",
+"where_to_buy": [
+"Seria"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://japantravel.navitime.com/en/area/jp/guide/NTJjtg2510074-en/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: washi tape; stickers; notebooks; pens]. No reliable image source found"
+},
+{
+"input_name": "Shichimi togarashi",
+"english_name": "Yawataya Isogoro Shichimi Togarashi",
+"japanese_name": "八幡屋礒五郎 七味唐辛子",
+"description": "Yawataya Isogoro shichimi. Seven-spice chili in the classic red tin; shake it on soba, udon, yakitori, and bland decisions.",
+"category": "food",
+"subcategory": "spice",
+"price_range_jpy": "400-600",
+"where_to_buy": [
+"Yawataya Isogoro shops",
+"Nagano souvenir shops",
+"department-store food halls",
+"Japanese supermarkets"
+],
+"image_url": "https://image.raku-uru.jp/01/22113/230/waku_shichimi_can_1655434452757_1200.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://shop.yawataya.co.jp/item-detail/1155961",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Shiroi Koibito (Hokkaido)",
+"english_name": "Ishiya Shiroi Koibito White Chocolate Cookies",
+"japanese_name": "白い恋人",
+"description": "Shiroi Koibito. Hokkaido langue-de-chat cookies with white chocolate; the airport souvenir that shows up in office break rooms like rent.",
+"category": "sweet",
+"subcategory": "sandwich cookie",
+"price_range_jpy": "900-4500",
+"where_to_buy": [
+"New Chitose Airport",
+"Hokkaido souvenir shops",
+"Shiroi Koibito Park",
+"department-store food halls"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/P-5-ISHY-SHKOIB-WH24-Ishiya_Shiroi_Koibito_Cookies_White_Chocolate_24_Biscuits.jpg?v=1746159240&width=600",
+"image_source": "other",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://japanesetaste.com/products/ishiya-shiroi-koibito-cookies-white-chocolate-sandwich-cookies-24-pcs",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Shiseido eyelash curler",
+"english_name": "Shiseido Eyelash Curler",
+"japanese_name": "資生堂 アイラッシュカーラー",
+"description": "Shiseido eyelash curler. The Japanese drugstore curler people keep rebuying; simple metal, serious lash architecture.",
+"category": "beauty",
+"subcategory": "beauty tool",
+"price_range_jpy": "1300-2000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"department-store beauty floors",
+"Donki",
+"airport drugstores"
+],
+"image_url": "https://imagecdn.shiseido.co.jp/c%21/a%3D0%2Cf%3Dwebp%3Ajpg/resources/sw/products/img/20240625/SHOHIN_PL_C1_H36001.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.shiseido.co.jp/sw/onlinestore/products/H36001.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Shizuoka Green Tea",
+"english_name": "Shizuoka Green Tea",
+"japanese_name": "静岡茶",
+"description": "Shizuoka green tea. Clean, grassy green tea from Japan's big tea country; the hotel-room upgrade over whatever sad packet came free.",
+"category": "drink",
+"subcategory": "green tea",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Shizuoka tea shops",
+"Japanese supermarkets",
+"department-store food halls",
+"airport souvenir shops"
+],
+"image_url": "https://www.japanesegreenteashops.com/cdn/shop/files/ShizuokaPowderedGreenTea_100grams_a3d5618a-80cb-4703-899d-7296374c98b2.jpg?v=1776741414&width=300",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.japanesegreenteashops.com/products/shizuoka-powdered-green-tea-100-grams",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: powdered green tea; sencha; shincha; tea bags]"
+},
+{
+"input_name": "Shoe bag",
+"english_name": "Travel Shoe Bag",
+"japanese_name": "シューズケース",
+"description": "Shoe bag. A travel pouch for shoes, because Japan is very good at reminding your sneakers they are the problem.",
+"category": "household",
+"subcategory": "travel pouch",
+"price_range_jpy": "100-1500",
+"where_to_buy": [
+"Muji",
+"Daiso",
+"Seria",
+"Donki",
+"travel goods shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": null,
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Muji foldable shoe case; 100-yen shoe bag; travel shoe pouch; laundry shoe pouch]. Source not verified. No reliable image source found"
+},
+{
+"input_name": "Shun Classic Chef's Knife",
+"english_name": "Shun Classic 8-Inch Chef's Knife",
+"japanese_name": "旬 Classic シェフズナイフ",
+"description": "Shun Classic chef's knife. Damascus steel, Pakkawood handle, made in Japan; a real kitchen souvenir, not another magnet.",
+"category": "household",
+"subcategory": "chef knife",
+"price_range_jpy": "28000-40000",
+"where_to_buy": [
+"KAI Housewares",
+"department-store kitchen floors",
+"kitchenware shops",
+"Amazon Japan"
+],
+"image_url": "https://shun.kaiusa.com/media/catalog/product/cache/e4c7ccc25632d8c58690fe1977c1bc7c/d/m/dm0706_1_1.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://shun.kaiusa.com/classic-chef-s-8.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Skin Aqua Super Moisture Gel",
+"english_name": "Rohto Skin Aqua Super Moisture Gel SPF50+ PA++++",
+"japanese_name": "スキンアクア スーパーモイスチャージェル",
+"description": "Skin Aqua Super Moisture Gel. Lightweight SPF50+ sunscreen gel with no white-cast drama; the summer drugstore bottle that empties fast.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "700-1100",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sugi Drug",
+"Donki",
+"Japanese supermarkets",
+"airport drugstores"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/Rohto-Skin-Aqua-Super-Moisture-Gel-SPF50_-PA_-110g-1-2024-04-10T00_17_48.676Z.jpg?v=1746685966&width=600",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/rohto-skin-aqua-super-moisture-gel-spf50-110g",
+"confidence": "medium",
+"notes": null
+}
+]

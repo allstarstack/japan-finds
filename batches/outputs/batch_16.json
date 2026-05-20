@@ -1,0 +1,535 @@
+[
+{
+"input_name": "Skin Aqua Super Moisture UV Gel",
+"english_name": "Skin Aqua Super Moisture UV Gel",
+"japanese_name": "スキンアクア スーパーモイスチャーUVジェル",
+"description": "Skin Aqua UV gel. Lightweight SPF50+ sunscreen that disappears fast; the konbini-to-theme-park face shield for humid Japan days.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "700-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"Amazon Japan"
+],
+"image_url": "https://www.shop.rohto.co.jp/on/demandware.static/-/Sites-all-master-catalog/default/dwc366f0a4/images/product/46_skin-aqua/190850_1.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.shop.rohto.co.jp/category/skincare/skin-aqua/super-moisture/190850.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Snow Peak Titanium Spork",
+"english_name": "Snow Peak Titanium Spork",
+"japanese_name": "スノーピーク チタン先割れスプーン",
+"description": "Snow Peak titanium spork. Featherlight camping spoon-fork from Niigata outdoor nerd heaven. The tiny souvenir that makes airplane meals feel slightly less tragic.",
+"category": "household",
+"subcategory": "travel utensil",
+"price_range_jpy": "1000-1500",
+"where_to_buy": [
+"Snow Peak",
+"Yodobashi Camera",
+"outdoor shops"
+],
+"image_url": "https://www.snowpeak.com/cdn/shop/products/titanium_spork_sct-004_alt_04.jpg?v=1587541577&width=800",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.snowpeak.com/products/titanium-spork",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Soft Santear contact lens drops",
+"english_name": "Soft Santear Contact Lens Drops",
+"japanese_name": "ソフトサンティア",
+"description": "Soft Santear contact lens drops. Artificial tears for dry contacts after trains, screens, and hotel aircon. Small bottle, big relief energy.",
+"category": "drugstore",
+"subcategory": "eye drops",
+"price_range_jpy": "800-1000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"any major drugstore"
+],
+"image_url": "https://search.jsm-db.info/sp_en/Picture/14987084ZZ000000000034G13.jpg",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://search.jsm-db.info/sp_en/detail.php?txtID=4987084000034",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Soufflé pudding",
+"english_name": "FamilyMart Souffle Pudding",
+"japanese_name": "スフレ・プリン",
+"description": "FamilyMart souffle pudding. Custard pudding with a soft cheese souffle hat. Konbini dessert engineering for people who cannot choose one texture.",
+"category": "konbini-food",
+"subcategory": "pudding",
+"price_range_jpy": "300-400",
+"where_to_buy": [
+"FamilyMart"
+],
+"image_url": "https://www.family.co.jp/content/dam/family/goods/1941463.jpg",
+"image_source": "retailer_official",
+"safety_flags": [
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.family.co.jp/goods/dessert/1941463.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Sponge holder with suction cup",
+"english_name": "Daiso Suction Sponge Holder",
+"japanese_name": "吸盤スポンジホルダー",
+"description": "Daiso suction sponge holder. Sticks to the sink wall and gets the sad wet sponge off the counter. Tiny kitchen upgrade, very 100-yen-core.",
+"category": "household",
+"subcategory": "kitchen storage",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Daiso",
+"Can Do",
+"Seria"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4582147277300",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Stain Remover Pen (Drycare)",
+"english_name": "Aimedia Portable Clothing Stain Remover Pen",
+"japanese_name": "衣類のシミ取りペン 携帯用",
+"description": "Stain remover pen. Emergency spot-cleaning for ramen splash damage. Keep one in your bag before white shirts meet convenience-store curry.",
+"category": "household",
+"subcategory": "stain remover",
+"price_range_jpy": "300-800",
+"where_to_buy": [
+"Donki",
+"Tokyu Hands",
+"Rakuten",
+"Amazon Japan"
+],
+"image_url": "https://www.aimedia.co.jp/wp-content/uploads/1008666.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.aimedia.co.jp/%E5%95%86%E5%93%81%E7%B4%B9%E4%BB%8B/%E3%82%B5%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%EF%BC%86%E3%83%8F%E3%82%A6%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%97/%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%EF%BC%86%E3%81%8A%E7%9B%B4%E3%81%97/%E3%80%90%E4%BB%AE%E3%80%91%E8%A1%A3%E9%A1%9E%E3%81%AE%E3%82%B7%E3%83%9F%E5%8F%96%E3%82%8A%E3%83%9A%E3%83%B3-%E6%90%BA%E5%B8%AF%E7%94%A8/",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Drycare stain remover pen, Aimedia portable clothing stain remover pen, Shimitori clothing stain remover pen]"
+},
+{
+"input_name": "Stalogy Editor's Series 365",
+"english_name": "Stalogy Editor's Series 365 Days Notebook",
+"japanese_name": "スタロジー エディターズシリーズ 365デイズノート",
+"description": "Stalogy 365 Days Notebook. Thin-grid notebook with 368 pages and zero planner drama. Good for travel logs, content shot lists, and pretending life has structure.",
+"category": "other",
+"subcategory": "notebook",
+"price_range_jpy": "2200-4000",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"stationery stores"
+],
+"image_url": "https://www.jennibick.com/cdn/shop/products/Stalogy-Editors-Series-365-Days-Notebook-Black-12.jpg?v=1776487028&width=160",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.jennibick.com/products/stalogy-editors-series-365-days-notebook",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Standing rice paddle",
+"english_name": "Marna Standing Rice Paddle",
+"japanese_name": "立つしゃもじ",
+"description": "Standing rice paddle. It stands upright instead of getting rice glue all over the counter. Small Japanese kitchen logic, major why-didn't-I-own-this energy.",
+"category": "household",
+"subcategory": "rice paddle",
+"price_range_jpy": "900-1200",
+"where_to_buy": [
+"Loft",
+"Hands",
+"kitchenware stores"
+],
+"image_url": "https://gds.tokyo/cdn/shop/products/K555CL_1024x1024.jpg?v=1751202334",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://gds.tokyo/en/products/marna-stand-syamoji",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Steam Neck Pillow (Megrhythm Kata-yo)",
+"english_name": "MegRhythm Neck Steam Patch",
+"japanese_name": "めぐりズム 蒸気でグッドナイト 首もとあったかシート",
+"description": "MegRhythm neck steam patch. Warm, disposable neck comfort for airplane stiffness and hotel-pillow betrayal. Japan really saw shoulder tension and made it cute.",
+"category": "drugstore",
+"subcategory": "heat patch",
+"price_range_jpy": "500-1000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"major drugstores"
+],
+"image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/sg/en/products/megrhythm/main_visual.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kao.com/sg/products/megrhythm/",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: MegRhythm Good-Night Steam Patch, MegRhythm steam neck sheet, discontinued shoulder/neck heat patch]"
+},
+{
+"input_name": "Strawberry Fruit Sando",
+"english_name": "FamilyMart Strawberry and Whipped Cream Sandwich",
+"japanese_name": "いちご＆ホイップサンド",
+"description": "Strawberry fruit sando. Whipped cream and strawberries in soft white bread, sold like dessert pretending to be lunch. Konbini picnic food with main-character behavior.",
+"category": "konbini-food",
+"subcategory": "fruit sandwich",
+"price_range_jpy": "350-500",
+"where_to_buy": [
+"FamilyMart",
+"Lawson",
+"7-Eleven Japan"
+],
+"image_url": "https://www.family.co.jp/content/dam/family/company/news_releases/2025/2501_ichigogori_ichigowhip.jpg",
+"image_source": "retailer_official",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://www.family.co.jp/company/news_releases/2025/20250106_02.html",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: FamilyMart strawberry and whipped cream sandwich, Lawson strawberry fruit sandwich, 7-Eleven strawberry sandwich]"
+},
+{
+"input_name": "Stroller hooks",
+"english_name": "Daiso Stroller Hooks",
+"japanese_name": "ベビーカーフック",
+"description": "Daiso stroller hooks. Clip-on bag hangers for strollers, tiny but clutch when the diaper bag starts winning. Parenting convenience, ¥100 edition.",
+"category": "household",
+"subcategory": "stroller accessory",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Daiso",
+"Akachan Honpo",
+"Nishimatsuya",
+"baby aisles"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4549131954463",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Strong Zero",
+"english_name": "Suntory -196 Strong Zero",
+"japanese_name": "サントリー -196 ストロングゼロ",
+"description": "Strong Zero chu-hi. 9% ABV, cheap, fizzy, and famously disrespectful to your evening plans. Lemon and grapefruit are the konbini classics.",
+"category": "konbini-drink",
+"subcategory": "chu-hi",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"7-Eleven Japan",
+"Lawson",
+"FamilyMart",
+"Donki",
+"supermarkets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"alcohol",
+"citrus_ingestion"
+],
+"source_url": "https://products.suntory.co.jp/b/0000000059/%EF%BC%8D196",
+"confidence": "medium",
+"notes": "Official Suntory page fetched in search results, but direct page rendering failed; no reliable image source found"
+},
+{
+"input_name": "Strong Zero / hangover cure aisle items",
+"english_name": "House Ukon no Chikara Turmeric Drink",
+"japanese_name": "ハウス ウコンの力",
+"description": "Ukon no Chikara. Tiny turmeric drink parked near the alcohol-regret shelf. Konbini pregame logic in a 100 ml bottle.",
+"category": "drink",
+"subcategory": "turmeric drink",
+"price_range_jpy": "200-300",
+"where_to_buy": [
+"7-Eleven Japan",
+"Lawson",
+"FamilyMart",
+"Donki",
+"major drugstores"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/P-2-HOUS-UKNDRK-6-House_Ukon_no_Chikara_Turmeric_Supplement_Drink_6_Bottles.jpg?v=1746157580&width=600",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/house-ukon-no-chikara-turmeric-supplement-drink-6-bottles",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Strong Zero, Ukon no Chikara, Hepalyse W, liver-support drinks]"
+},
+{
+"input_name": "Strong Zero Double Lemon",
+"english_name": "Suntory -196 Strong Zero Double Lemon",
+"japanese_name": "サントリー -196 ストロングゼロ ダブルレモン",
+"description": "Strong Zero Double Lemon. 9% lemon chu-hi that tastes friendly until it files paperwork against your plans. The classic cheap can after a long konbini run.",
+"category": "konbini-drink",
+"subcategory": "chu-hi",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"7-Eleven Japan",
+"Lawson",
+"FamilyMart",
+"Donki",
+"supermarkets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://products.suntory.co.jp/d/4901777192607/",
+"confidence": "medium",
+"notes": "Official Suntory page fetched in search results, but direct page rendering failed; no reliable image source found"
+},
+{
+"input_name": "Strong laxatives / digestive medicines",
+"english_name": "Kokando Beauluck A",
+"japanese_name": "皇漢堂 ビューラックA",
+"description": "Beauluck A. Strong bisacodyl laxative for serious constipation, not casual snack-tourism tummy drama. Drugstore shelf with real consequences.",
+"category": "drugstore",
+"subcategory": "laxative",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Tsuruha",
+"Welcia",
+"Donki"
+],
+"image_url": "https://www.kokando.co.jp/wp/wp-content/uploads/2026/02/beauluck-A.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kokando.co.jp/genuine_product_certificationethical/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Beauluck A, Dulcolax, Kenei Magnesium Oxide E]"
+},
+{
+"input_name": "Studio Ghibli Donguri Republic",
+"english_name": "Donguri Republic Totoro Plush",
+"japanese_name": "どんぐり共和国 となりのトトロ ぬいぐるみ 大トトロ M",
+"description": "Donguri Republic Totoro plush. Official Ghibli merch that turns adults into plush-hoarding goblins. The safe bet when you cannot fit a whole Catbus in luggage.",
+"category": "other",
+"subcategory": "character goods",
+"price_range_jpy": "3000-5000",
+"where_to_buy": [
+"Donguri Republic",
+"Donguri Sora online",
+"Ghibli shops"
+],
+"image_url": "https://www.donguri-sora.com/client_info/DONGURI_SORA/itemimage/21502414/21502414_1.jpg",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://www.donguri-sora.com/category/PLUSHDOLL/21502414.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Totoro plush, Jiji goods, Calcifer keychain, Ghibli stationery]"
+},
+{
+"input_name": "Sunkiller Perfect Strong Plus",
+"english_name": "Sunkiller Perfect Strong Plus",
+"japanese_name": "サンキラー パーフェクトストロングプラス",
+"description": "Sunkiller Perfect Strong Plus. Japanese waterproof sunscreen built for sweaty sightseeing and beach-day denial. Grab the newer Strong-Z if this label is gone.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "800-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Amazon Japan",
+"Rakuten"
+],
+"image_url": "https://asiabeautymall.com/cdn/shop/products/2_000000000239_d7467994-10da-43b7-a9dc-b27282a776ab.jpg?v=1679200146&width=1500",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.ratzillacosme.com/sun/sunkiller-perfect-strong-z/",
+"confidence": "medium",
+"notes": "[REBRANDED to: SUNKILLER Perfect Strong-Z]"
+},
+{
+"input_name": "Suntory Yamazaki / Hakushu Distillery Tour",
+"english_name": "Suntory Yamazaki / Hakushu Distillery Tour",
+"japanese_name": "サントリー 山崎蒸溜所 / 白州蒸溜所 見学ツアー",
+"description": "Suntory distillery tour. Whisky pilgrimage with tastings, stills, and reservation anxiety. Book early or enjoy staring at the website like it owes you money.",
+"category": "other",
+"subcategory": "experience",
+"price_range_jpy": "0-3000",
+"where_to_buy": [
+"Suntory Yamazaki Distillery",
+"Suntory Hakushu Distillery",
+"Suntory official reservation site"
+],
+"image_url": "https://www.suntory.com/factory/hakushu/assets/img/top/poster_pc.webp",
+"image_source": "manufacturer",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://www.suntory.com/factory/hakushu/",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: Suntory distillery tours; Yamazaki Distillery, Hakushu Distillery, tasting lounge]"
+},
+{
+"input_name": "Suribachi Mortar",
+"english_name": "Japanese Suribachi Mortar and Pestle Set",
+"japanese_name": "すり鉢とすりこぎ",
+"description": "Suribachi mortar. Ridged Japanese mortar that turns sesame into goma-ae sauce without pulverizing your spirit. Kitchen souvenir for people with luggage optimism.",
+"category": "household",
+"subcategory": "mortar and pestle",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Kappabashi",
+"Loft",
+"Hands",
+"kitchenware shops"
+],
+"image_url": "https://irasshai.store/cdn/shop/files/Suribachi-Sansho-Wood-Pestle.jpg?v=1771381236&width=3840",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://irasshai.store/products/handmade-japanese-suribachi-mortar-pestle-set",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Sushi Making Class (Tsukiji / Tokyo)",
+"english_name": "Tsukiji Sushi Making Class",
+"japanese_name": "築地 寿司作り体験",
+"description": "Tsukiji sushi making class. You make nigiri, realize chefs are not overpaid, then eat the evidence. Good rainy-day Tokyo plan with actual payoff.",
+"category": "other",
+"subcategory": "cooking class",
+"price_range_jpy": "8000-15000",
+"where_to_buy": [
+"Tsukiji Cooking",
+"Japan Wonder Travel",
+"byFood",
+"Tokyo cooking schools"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"raw_or_fermented"
+],
+"source_url": "https://tsukiji-cooking.com/",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: Tsukiji/Tokyo; Tsukiji Cooking, Japan Wonder Travel sushi workshop, byFood Tsukiji sushi class] No reliable image source found"
+},
+{
+"input_name": "Suzukake / Tsuruya Yoshinobu Wagashi",
+"english_name": "Tsuruya Yoshinobu Seasonal Namagashi",
+"japanese_name": "鶴屋吉信 季節の生菓子",
+"description": "Tsuruya Yoshinobu wagashi. Elegant Japanese sweets for people who want dessert to look like it has a trust fund. Buy same-day; these do not travel like KitKats.",
+"category": "sweet",
+"subcategory": "wagashi",
+"price_range_jpy": "500-1500",
+"where_to_buy": [
+"Tsuruya Yoshinobu",
+"Suzukake",
+"department store wagashi counters"
+],
+"image_url": "https://cdn.tsuruyayoshinobu.jp/i/namagashi-202605.webp",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.tsuruyayoshinobu.jp/product/namagashi",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Suzukake wagashi, Tsuruya Yoshinobu Yu-mochi, seasonal namagashi]"
+},
+{
+"input_name": "TOTO Washlet (Look Only)",
+"english_name": "TOTO Washlet",
+"japanese_name": "TOTO ウォシュレット",
+"description": "TOTO Washlet. Heated seat, bidet wand, button panel from the future. Admire it in hotels; do not casually stuff one into a suitcase.",
+"category": "electronics",
+"subcategory": "bidet toilet seat",
+"price_range_jpy": "50000-200000",
+"where_to_buy": [
+"TOTO showroom",
+"Bic Camera",
+"Yodobashi Camera",
+"home centers"
+],
+"image_url": "https://eu.toto.com/fileadmin/*processed*/c/2/csm_Reference3047_e124b8046e.png",
+"image_source": "manufacturer",
+"safety_flags": [
+"voltage_100v"
+],
+"source_url": "https://eu.toto.com/en/washlet-shower-toilet",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Tabi Socks (Standalone Outside Daiso)",
+"english_name": "SOU SOU Tabi Socks",
+"japanese_name": "足袋下",
+"description": "Tabi socks. Split-toe socks that make sandals, geta, and your toes feel weirdly organized. Buy the nice ones outside Daiso; your feet know.",
+"category": "other",
+"subcategory": "socks",
+"price_range_jpy": "700-1500",
+"where_to_buy": [
+"Tabio",
+"SOU SOU",
+"department stores",
+"souvenir shops"
+],
+"image_url": "https://www.sousou.co.jp/cdn/shop/files/180982105.jpg?v=1754981972&width=2000",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://www.sousou.co.jp/en-us/products/2200133",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Tamiya Plastic Models",
+"english_name": "Tamiya Plastic Model Kits",
+"japanese_name": "タミヤ プラモデル",
+"description": "Tamiya plastic model kit. Tiny cars, tanks, and planes for people who say 'quick hobby stop' and leave two hours later. Akihabara danger aisle.",
+"category": "other",
+"subcategory": "model kit",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Yodobashi Camera",
+"Bic Camera",
+"Tamiya Plamodel Factory",
+"hobby shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.tamiya.com/english/products/24210/index.html",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: Tamiya Mini 4WD, 1/24 Nissan Skyline GT-R V-spec R34, scale aircraft kits] No reliable image source found"
+},
+{
+"input_name": "Tea Ceremony Sweets (Namagashi)",
+"english_name": "Tea Ceremony Namagashi",
+"japanese_name": "茶席の生菓子",
+"description": "Tea ceremony namagashi. Seasonal wagashi served with matcha, soft enough to feel expensive and fragile. Eat it same day; the shelf life is basically a sneeze.",
+"category": "sweet",
+"subcategory": "namagashi",
+"price_range_jpy": "500-700",
+"where_to_buy": [
+"Tsuruya Yoshinobu",
+"department store wagashi counters",
+"tea ceremony cafes"
+],
+"image_url": "https://cdn.tsuruyayoshinobu.jp/i/namagashi-202605.webp",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.tsuruyayoshinobu.jp/product/namagashi",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: seasonal namagashi, nerikiri, kinton, yomogi mochi]"
+}
+]

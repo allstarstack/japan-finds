@@ -1,0 +1,508 @@
+[
+{
+"input_name": "Compression travel bags",
+"english_name": "Compression Travel Bag",
+"japanese_name": "圧縮バッグ",
+"description": "Compression travel bags. Zip it once, zip it again, suddenly your suitcase stops screaming.",
+"category": "household",
+"subcategory": "travel-storage",
+"price_range_jpy": "300-550",
+"where_to_buy": [
+"Daiso",
+"Donki",
+"travel-goods aisles"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4549131909074?srsltid=AfmBOoqxeAWt7rWtQ6gfCyDOEoVhsKfi_kfJWkNvLqH2obd_YXBtumFy",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Convenience Wear socks",
+"english_name": "Convenience Wear Line Socks",
+"japanese_name": "ラインソックス コンビニホワイト",
+"description": "Convenience Wear socks. FamilyMart turned emergency socks into streetwear; white with the green-blue stripe is the flex.",
+"category": "other",
+"subcategory": "socks",
+"price_range_jpy": "390-429",
+"where_to_buy": [
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.family.co.jp/goods/cw/7410895.html",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Cooling body wipes",
+"english_name": "Biore Cooling Body Wipes",
+"japanese_name": "ビオレ 冷シート 無香性",
+"description": "Biore cooling body wipes. One sheet turns Tokyo summer from swamp mode to survivable.",
+"category": "drugstore",
+"subcategory": "body-wipes",
+"price_range_jpy": "300-600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"konbini seasonal aisle"
+],
+"image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/biorehiyasheet/25434501/GG01.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kao-kirei.com/ja/item/khg/biorehiyasheet/4901301348418/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Coolish pouch ice cream",
+"english_name": "Coolish Vanilla Pouch Ice Cream",
+"japanese_name": "クーリッシュ バニラ",
+"description": "Coolish vanilla. Soft-serve in a pouch, no spoon, no dignity required.",
+"category": "sweet",
+"subcategory": "ice-cream",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets"
+],
+"image_url": "https://www.lotte.co.jp/products/catalogue/ice/07/product_file_lotte/product_file/SD_2204070001.jpg?_size=4",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.lotte.co.jp/products/catalogue/ice/07/detail01.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Costume / Cosplay Floor Finds",
+"english_name": "Donki Costume Floor Finds",
+"japanese_name": "ドン・キホーテ コスプレ衣装",
+"description": "Donki costume floor finds. Kigurumi, maid outfits, party hats, and chaos stacked like a dare.",
+"category": "donki",
+"subcategory": "costumes",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.donki.com/season/autumn/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: kigurumi costumes, maid costumes, character hats, party glasses] No reliable image source found"
+},
+{
+"input_name": "Country Ma'am",
+"english_name": "Country Ma'am Cookies",
+"japanese_name": "カントリーマアム",
+"description": "Country Ma'am cookies. Soft little chocolate-chip cookies that taste like grandma got sponsored by a konbini.",
+"category": "sweet",
+"subcategory": "cookies",
+"price_range_jpy": "120-400",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.fujiya-peko.co.jp/countrymaam/products/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Cup Noodle limited flavors",
+"english_name": "Cup Noodle Limited Flavors",
+"japanese_name": "カップヌードル 限定フレーバー",
+"description": "Cup Noodle limited flavors. Nissin keeps releasing cups that sound like side quests.",
+"category": "konbini-food",
+"subcategory": "instant-noodles",
+"price_range_jpy": "180-300",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.cupnoodle.jp/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Cup Noodle Curry, Cup Noodle Seafood, seasonal limited flavors] No reliable image source found"
+},
+{
+"input_name": "Curel Intensive Moisture Lotion",
+"english_name": "Curél Intensive Moisture Care Moisture Lotion III",
+"japanese_name": "キュレル 潤浸保湿 化粧水 III とてもしっとり",
+"description": "Curél Intensive Moisture Lotion. Light Japanese toner-style lotion for dry sensitive skin.",
+"category": "beauty",
+"subcategory": "face-lotion",
+"price_range_jpy": "1500-2200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.kao-kirei.com/ja/item/kbb/curel/4901301236180/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Custom Hanko Name Stamp Carving",
+"english_name": "Custom Hanko Name Stamp Carving",
+"japanese_name": "オリジナルはんこ 名入れ彫刻",
+"description": "Custom hanko name stamp. Your name gets carved into a tiny seal, often in kanji.",
+"category": "other",
+"subcategory": "custom-souvenir",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"hanko specialty shops",
+"tourist souvenir workshops",
+"Tokyo station area shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://tokyohanko.jp/e-top.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Hanko Land Tokyo, Tokyo hanko shops, custom kanji stamp, tourist name seal] No reliable image source found"
+},
+{
+"input_name": "Custom embroidered towel/handkerchief",
+"english_name": "Custom Embroidered Towel Handkerchief",
+"japanese_name": "名入れ刺繍タオルハンカチ",
+"description": "Custom embroidered towel. A handkerchief with your name on it, because Japan makes even sweat management personal.",
+"category": "other",
+"subcategory": "custom-souvenir",
+"price_range_jpy": "700-1500",
+"where_to_buy": [
+"souvenir shops",
+"department stores",
+"FamilyMart",
+"custom embroidery kiosks"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.family.co.jp/goods/cw.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: custom embroidery kiosk, Imabari towel handkerchief, souvenir towel] No reliable image source found"
+},
+{
+"input_name": "Custom photo sticker / purikura print",
+"english_name": "Purikura Photo Sticker Print",
+"japanese_name": "プリクラ",
+"description": "Purikura print. Photo booth stickers with beauty filters turned up to anime HR department levels.",
+"category": "other",
+"subcategory": "photo-booth",
+"price_range_jpy": "400-600",
+"where_to_buy": [
+"game centers",
+"arcades",
+"shopping malls"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://web-japan.org/trends/11_culture/pop120216.html",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: purikura booths; FuRyu machines, arcade machines, shopping-center booths] No reliable image source found"
+},
+{
+"input_name": "DHC Deep Cleansing Oil",
+"english_name": "DHC Deep Cleansing Oil",
+"japanese_name": "DHC 薬用ディープクレンジングオイル",
+"description": "DHC Deep Cleansing Oil. Olive-oil cleanser that melts sunscreen and makeup without a wrestling match.",
+"category": "beauty",
+"subcategory": "cleansing-oil",
+"price_range_jpy": "2500-3500",
+"where_to_buy": [
+"DHC stores",
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://www.dhccare.com/cdn/shop/files/300_Asset_1.jpg?v=1772572510",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.dhccare.com/products/deep-cleansing-oil?srsltid=AfmBOopydBm7FcLmJ7zgjVWfxKbKpiMuI5t-ZHbqV4mWOaVLlwhBSIw-",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Daiso Anti-Fog Wipes (for glasses)",
+"english_name": "Daiso Anti-Fog Glasses Cloth",
+"japanese_name": "メガネ拭きクロス（くもり止め）",
+"description": "Daiso anti-fog glasses cloth. Wipe once and your lenses stop doing the hot-ramen ghost scene.",
+"category": "household",
+"subcategory": "glasses-care",
+"price_range_jpy": "100-110",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480913995?srsltid=AfmBOoqFx6I5o4yglmdK5h6GTaUWrZoj7Dt7R-x3IUTXoWGNuqi40YM0",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Daiso Bento Dividers / Onigiri Molds",
+"english_name": "Daiso Triangle Onigiri Mold Set",
+"japanese_name": "おにぎり器三角大小セット",
+"description": "Daiso onigiri molds. Cheap plastic rice-shaping tools for anyone who wants lunch to look emotionally organized.",
+"category": "household",
+"subcategory": "bento-tools",
+"price_range_jpy": "100-110",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4973430400015?srsltid=AfmBOoq1GRD7Wh0ijTCRXXUhC5dHbgyH8COi-o01T6w602VT6JqYLauT",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: onigiri mold, rice ball shaker, bento dividers, food cups] No reliable image source found"
+},
+{
+"input_name": "Daiso Ceramic Knife Sharpener",
+"english_name": "Daiso Compact Ceramic Knife Sharpener",
+"japanese_name": "コンパクト包丁研ぎ（吸盤付）",
+"description": "Daiso ceramic knife sharpener. Tiny suction-base sharpener for standard double-edged kitchen knives.",
+"category": "household",
+"subcategory": "kitchen-tool",
+"price_range_jpy": "100-110",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480359137?srsltid=AfmBOopT_2PWjCHGbSH-_QTmpU9WJum1DTDPZNqKESw5Kf4sTG4653nX",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Daiso Chopstick Rests",
+"english_name": "Daiso Mt. Fuji Glass Chopstick Rest",
+"japanese_name": "ガラス箸置き 富士山",
+"description": "Daiso Mt. Fuji chopstick rest. Tiny glass Fuji for your table, because even chopsticks need a parking spot.",
+"category": "household",
+"subcategory": "tableware",
+"price_range_jpy": "100-110",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4977794092206?srsltid=AfmBOopH5EEgphRvzd6JAW_oBx9Fpj_q5RhkgpUDicGYueK_x_kDKEPr",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Daiso Compression Bags",
+"english_name": "Daiso Travel Compression Bag",
+"japanese_name": "トラベル用圧縮袋",
+"description": "Daiso travel compression bag. Roll the air out and your sweaters stop hoarding suitcase space.",
+"category": "household",
+"subcategory": "travel-storage",
+"price_range_jpy": "100-110",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480909974?srsltid=AfmBOorxtSXAImvcCws4_STt0XgolIEKZynrFkBJdMxBqknIVXbVUd8Y",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Compression travel bags] No reliable image source found"
+},
+{
+"input_name": "Daiso Furoshiki Wrapping Cloth",
+"english_name": "Daiso Furoshiki Wrapping Cloth",
+"japanese_name": "風呂敷（二巾）",
+"description": "Daiso furoshiki cloth. Wraps gifts, lunch, bottles, and random purchases with one square of fabric.",
+"category": "household",
+"subcategory": "wrapping-cloth",
+"price_range_jpy": "100-110",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480976907?srsltid=AfmBOoqQsYh8J-mfV8qYdXBzWV5ArQ6eV-2BvowYcTHVO00zDKAOSJKE",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Daiso Phone Stands and Cable Organizers",
+"english_name": "Daiso Folding Smartphone Stand",
+"japanese_name": "折りたたみ式スマホスタンド",
+"description": "Daiso phone stand. Foldable plastic stand that turns a hotel desk into a tiny command center.",
+"category": "electronics",
+"subcategory": "phone-accessory",
+"price_range_jpy": "100-330",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4549131874198?srsltid=AfmBOor13NwdN7P3SOqb1hhprqmkX2qtyfBncuGdIpH8m1B8roSYavPS",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: folding smartphone stand, cable organizer, cable box, cable ties] No reliable image source found"
+},
+{
+"input_name": "Daiso Silicone Egg Cooker",
+"english_name": "Daiso Silicone Egg Cooker",
+"japanese_name": "シリコーンたまご調理器",
+"description": "Daiso silicone egg cooker. Microwave egg gadget for hotel-room snack scientists.",
+"category": "household",
+"subcategory": "kitchen-tool",
+"price_range_jpy": "100-330",
+"where_to_buy": [
+"Daiso"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_egg"
+],
+"source_url": null,
+"confidence": "low",
+"notes": "No reliable source found for a current Daiso silicone egg cooker SKU"
+},
+{
+"input_name": "Daiso Tabi Socks (Toe-Split)",
+"english_name": "Daiso Tabi Socks",
+"japanese_name": "足袋ソックス",
+"description": "Daiso tabi socks. Toe-split socks for geta, sandals, or maximum foot confusion.",
+"category": "other",
+"subcategory": "socks",
+"price_range_jpy": "100-330",
+"where_to_buy": [
+"Daiso"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": null,
+"confidence": "low",
+"notes": "No reliable source found for a current Daiso tabi sock SKU"
+},
+{
+"input_name": "Daiso Travel Bottles",
+"english_name": "Daiso Travel Refill Bottle Set B",
+"japanese_name": "トラベル詰め替えボトルセット（B）",
+"description": "Daiso travel bottles. Tiny refill bottles for shampoo, lotion, and mystery hotel liquids.",
+"category": "household",
+"subcategory": "travel-bottles",
+"price_range_jpy": "100-330",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480598772?srsltid=AfmBOoqAXqz9Ka1NF63gzmbpQSBg6kUrUiijIEiYgXFSNd5IdW-KiRql",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Daiso Washi Tape",
+"english_name": "Daiso Washi Masking Tape",
+"japanese_name": "マスキングテープ（鉛筆でも書けるテープ、ホワイト）",
+"description": "Daiso washi tape. Paper masking tape for labels, gift wrap, and tiny stationery chaos.",
+"category": "household",
+"subcategory": "stationery",
+"price_range_jpy": "100-110",
+"where_to_buy": [
+"Daiso",
+"Daiso online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480517995?srsltid=AfmBOorcNiAmPE7bRi8-wYc6b1v2rmWi2ecLYpVnGo11WCMNZyGrLXRp",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Dashi Packets (Kayanoya / Kubara / Ninben)",
+"english_name": "Kayanoya Original Dashi Stock Powder",
+"japanese_name": "茅乃舎だし",
+"description": "Kayanoya dashi packets. Drop one bag in hot water and dinner suddenly has backbone.",
+"category": "food",
+"subcategory": "dashi-packets",
+"price_range_jpy": "700-2500",
+"where_to_buy": [
+"Kayanoya shops",
+"department-store food floors",
+"some supermarkets",
+"online"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.kayanoya.com/en/dashi/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Kayanoya Original Dashi, Kubara Ago Dashi, Ninben dashi packs] No reliable image source found"
+},
+{
+"input_name": "Diet pills / slimming teas",
+"english_name": "Diet Pills and Slimming Teas",
+"japanese_name": "ダイエットサプリ・スリミングティー",
+"description": "Diet pills and slimming teas. The shelf promises skinny; the fine print brings stimulant roulette.",
+"category": "drugstore",
+"subcategory": "weight-loss-supplements",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"drugstores",
+"Donki",
+"online marketplaces"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.fda.gov/drugs/medication-health-fraud-notifications/weight-loss-product-notifications",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: diet pills, fat-burning teas, slimming supplements, laxative teas] Safety concern; not recommended"
+}
+]

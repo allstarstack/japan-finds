@@ -1,0 +1,538 @@
+[
+{
+"input_name": "Iyemon / Oi Ocha Bottled Green Tea",
+"english_name": "Oi Ocha Unsweetened Green Tea PET 600ml",
+"japanese_name": "お～いお茶 緑茶 PET 600ml",
+"description": "Oi Ocha bottled green tea. Unsweetened, zero-calorie, vending-machine reliable; the default bottle when water feels too boring.",
+"category": "konbini-drink",
+"subcategory": "bottled green tea",
+"price_range_jpy": "150-230",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"vending machines",
+"supermarkets"
+],
+"image_url": "https://www.itoen.jp/uploads/2023/05/600.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.itoen.jp/products/45534/",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Iyemon Green Tea, Oi Ocha Green Tea]"
+},
+{
+"input_name": "JR Eki Stamp Rally",
+"english_name": "JR East Stamp Rally",
+"japanese_name": "JR東日本 スタンプラリー",
+"description": "JR Eki Stamp Rally. Free station-stamp scavenger hunt; grab the card, ride the route, collect tiny ink trophies like a train nerd with purpose.",
+"category": "other",
+"subcategory": "train activity",
+"price_range_jpy": "0-2000",
+"where_to_buy": [
+"JR East stations",
+"participating station counters",
+"tourist information counters"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.jreast.co.jp/tokyo/jreconan/file/en.pdf",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: JR East Pokemon Stamp Rally, Detective Conan Stamp Rally, Legend Train Stamp Rally, seasonal station stamp events]"
+},
+{
+"input_name": "JR Eki Stamps (Station Stamps)",
+"english_name": "JR Eki Stamps",
+"japanese_name": "JR 駅スタンプ",
+"description": "JR Eki stamps. Rubber stamps tucked near ticket gates and station offices; bring a notebook and accept your new tiny obsession.",
+"category": "other",
+"subcategory": "train station souvenir",
+"price_range_jpy": "0",
+"where_to_buy": [
+"JR stations",
+"private railway stations",
+"station offices"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.japanhousela.com/articles/station-to-station-japans-iconic-eki-stamps-train-stamp-book-passport-goshuin-goshuincho/",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Jaga Pokkuru",
+"english_name": "Jaga Pokkuru",
+"japanese_name": "じゃがポックル",
+"description": "Jaga Pokkuru. Hokkaido potato sticks with Okhotsk salt; airport snack logic says buy one box, regret not buying three.",
+"category": "snack",
+"subcategory": "potato snack",
+"price_range_jpy": "1000-1300",
+"where_to_buy": [
+"Hokkaido souvenir shops",
+"New Chitose Airport",
+"Calbee+",
+"Calbee official online shop"
+],
+"image_url": "https://www.calbee.co.jp/jagapokkuru/assets/img/products_jagapokkuru-pkg.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.calbee.co.jp/jagapokkuru/products/jagapokkuru/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Japanese baby wipes travel packs",
+"english_name": "Pigeon Oshiri Nap Travel Baby Wipes 30 Sheets 2-Pack",
+"japanese_name": "ピジョン おしりナップ やわらか厚手仕上げ 純水99％ おでかけ30枚 2個パック",
+"description": "Pigeon travel baby wipes. Small enough for a day bag, useful for kids, sticky hands, and the public-bench incident nobody planned for.",
+"category": "drugstore",
+"subcategory": "baby wipes",
+"price_range_jpy": "250-500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Akachan Honpo",
+"any major drugstore",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://products.pigeon.co.jp/item/index-2675.html",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Japanese curry roux blocks",
+"english_name": "House Vermont Curry Roux",
+"japanese_name": "ハウス バーモントカレー",
+"description": "House Vermont Curry roux blocks. Apple-honey Japanese curry cubes; the fastest route from tired hotel kitchen to actual dinner.",
+"category": "food",
+"subcategory": "curry roux",
+"price_range_jpy": "200-500",
+"where_to_buy": [
+"supermarkets",
+"Donki",
+"any major drugstore",
+"Amazon Japan"
+],
+"image_url": "https://www.housefoods.com/japanese-curry/en/products/vermont_curry/img/product-01.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://www.housefoods.com/japanese-curry/en/products/vermont_curry/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Japanese custard pudding",
+"english_name": "Glico Chokotto Pucchin Pudding Custard",
+"japanese_name": "ちょこっとプッチンプリン カスタード",
+"description": "Glico Pucchin Pudding. Tiny custard pudding cups that pop out cleanly; konbini dessert engineering, somehow.",
+"category": "sweet",
+"subcategory": "custard pudding",
+"price_range_jpy": "150-300",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets",
+"Donki"
+],
+"image_url": "https://www.glico.com/global/100th_history_contents/highlight/assets/img/product/009/img12.png",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.glico.com/global/100th_history_contents/highlight/product/009.html",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Japanese face mask multipacks",
+"english_name": "LuLuLun Precious Green Sheet Mask Multipack",
+"japanese_name": "ルルルンプレシャス GREEN",
+"description": "LuLuLun sheet mask multipacks. Big resealable packs for hotel-night skincare; cheaper than panic-buying single masks one by one.",
+"category": "beauty",
+"subcategory": "sheet mask multipack",
+"price_range_jpy": "1500-2000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"PLAZA",
+"@cosme Store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://lululunusa.com/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: LuLuLun Precious Green, LuLuLun Hydrating Daily Mask, Quality 1st Derma Laser, Keana Nadeshiko Rice Mask]"
+},
+{
+"input_name": "Japanese school-style lunch bag",
+"english_name": "Kinchaku Bento Lunch Bag",
+"japanese_name": "巾着 弁当袋",
+"description": "Kinchaku bento bag. Drawstring lunch pouch, cute enough to make your convenience-store haul look like it has a homeroom teacher.",
+"category": "household",
+"subcategory": "lunch bag",
+"price_range_jpy": "300-1500",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Loft",
+"Hands"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://kirikomade.com/products/vintage-bag-kinchaku-26",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: kinchaku bento bag, drawstring lunch pouch, insulated lunch tote, character bento bag]"
+},
+{
+"input_name": "Japanese surgical masks",
+"english_name": "Unicharm Cho-Kaiteki Mask",
+"japanese_name": "ユニ・チャーム 超快適マスク",
+"description": "Unicharm Cho-Kaiteki masks. Soft ear loops, clean drugstore fit; the mask locals grab when cheap scratchy ones start bullying their face.",
+"category": "drugstore",
+"subcategory": "face mask",
+"price_range_jpy": "300-800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"konbini"
+],
+"image_url": "https://jp.unicharm-mask.com/content/dam/sites/jp_unicharm-mask_com/home/home_main_kv_pc.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://jp.unicharm-mask.com/ja/home.html",
+"confidence": "medium",
+"notes": "Image shows brand mask lineup, not a single SKU pack"
+},
+{
+"input_name": "Jonetsu Kakaku PB Snacks",
+"english_name": "Jonetsu Kakaku Blue Tongue Potato Chips",
+"japanese_name": "情熱価格 舌が青くなるポテトチップス",
+"description": "Jonetsu Kakaku blue-tongue potato chips. Donki turns a salt chip into a party trick; eat them when you want snacks and evidence.",
+"category": "donki",
+"subcategory": "snack",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Don Quijote",
+"MEGA Don Quijote"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy"
+],
+"source_url": "https://www.donki.com/j-kakaku/product/detail.php?item=5284",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: blue-tongue potato chips, sweet potato chips, pecan nut chocolate, mango gummies]"
+},
+{
+"input_name": "KATE Eyebrow Powder",
+"english_name": "KATE Designing Eyebrow 3D",
+"japanese_name": "ケイト デザイニングアイブロウ3D",
+"description": "KATE Designing Eyebrow 3D. Three-pan brow powder that also fakes a nose shadow; drugstore makeup people quietly know.",
+"category": "beauty",
+"subcategory": "eyebrow powder",
+"price_range_jpy": "1100-1600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"@cosme Store",
+"Donki",
+"Loft"
+],
+"image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kanebo/www-kate-global-net/asean/all_products/eye_brow/eyebrow_closet-thumb-m-250709.png?fmt=png8-alpha&hide=1",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kate-global.net/my/all_products/eye_brow/",
+"confidence": "medium",
+"notes": "Image shows the official eyebrow product lineup, not only one shade"
+},
+{
+"input_name": "Kai Seki Magoroku 10000CL Petty Knife",
+"english_name": "Kai Seki Magoroku 10000CL Petty Knife",
+"japanese_name": "貝印 関孫六 10000CL ペティナイフ",
+"description": "Kai Seki Magoroku 10000CL petty knife. Clean Japanese utility knife with a white handle; small enough for fruit, sharp enough to embarrass your Airbnb knife.",
+"category": "household",
+"subcategory": "kitchen knife",
+"price_range_jpy": "8800-9900",
+"where_to_buy": [
+"Kappabashi knife shops",
+"Hands",
+"Global Kitchen Japan",
+"Amazon Japan"
+],
+"image_url": "https://www.globalkitchenjapan.com/cdn/shop/products/SekiMagoroku10000CLStainlessSteelPettyKnifeAE5250_1.webp?v=1756272345&width=375",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://www.globalkitchenjapan.com/products/seki-magoroku-10000cl-stainless-steel-petty-knife-ae5250",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Kairo Hand Warmers (Winter)",
+"english_name": "Kiribai Kairo Disposable Hand Warmers",
+"japanese_name": "桐灰カイロ",
+"description": "Kairo hand warmers. Air-activated heat packs for coat pockets; Japan's winter asks questions and these answer.",
+"category": "drugstore",
+"subcategory": "hand warmer",
+"price_range_jpy": "300-1000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"konbini in winter"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://matcha-jp.com/en/5325",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Kiribai Kairo, Hakkin Kairo, stick-on kairo, pocket kairo]"
+},
+{
+"input_name": "Kaminari Okoshi",
+"english_name": "Tokiwa-do Kaminari Okoshi",
+"japanese_name": "常盤堂 雷おこし",
+"description": "Kaminari okoshi. Asakusa's crunchy rice candy; the souvenir your teeth hear before your brain catches up.",
+"category": "sweet",
+"subcategory": "rice candy",
+"price_range_jpy": "500-1500",
+"where_to_buy": [
+"Asakusa Nakamise",
+"Tokiwa-do shops",
+"Tokyo Station souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://tokiwado.tokyo/products/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Kanazawa Gold Leaf Items (Kinpaku)",
+"english_name": "Hakuichi Kanazawa Gold Leaf Items",
+"japanese_name": "箔一 金沢金箔",
+"description": "Kanazawa kinpaku items. Edible gold, cosmetics, tiny shiny souvenirs; Kanazawa puts luxury on soft serve like it is normal.",
+"category": "other",
+"subcategory": "gold leaf souvenir",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"Hakuichi Kanazawa shops",
+"Kanazawa souvenir shops",
+"Kenrokuen area shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://hakuichi.com/aboutus",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: edible gold leaf, gold leaf cosmetics, gold leaf crafts, gold leaf soft serve]"
+},
+{
+"input_name": "Kao Bath Tabs (Babu)",
+"english_name": "Kao Bub Bath Tablets",
+"japanese_name": "花王 バブ",
+"description": "Kao Bub bath tablets. Fizzy bath tabs for turning a business-hotel tub into a tiny onsen coping mechanism.",
+"category": "drugstore",
+"subcategory": "bath tablet",
+"price_range_jpy": "400-800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"supermarkets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.kao.co.jp/bub/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Kao Merit Day+ dry shampoo sheets",
+"english_name": "Merit Day+ Dry Shampoo Sheets",
+"japanese_name": "メリットデイプラス ドライシャンプーシート",
+"description": "Merit Day+ dry shampoo sheets. Wipe your scalp and bangs after sweat or trains; emergency hair reset in a flat packet.",
+"category": "beauty",
+"subcategory": "dry shampoo sheet",
+"price_range_jpy": "300-500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"any major drugstore"
+],
+"image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-co-jp/merit/renewal-202403/product/dayplus/dry_pkg01.png?fmt=png8-alpha&hide=1",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kao.co.jp/merit/products/dayplus/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Kappabashi engraved kitchen knife",
+"english_name": "Kamata Hakensha Engraved Kitchen Knife",
+"japanese_name": "かまた刃研社 名入れ包丁",
+"description": "Kappabashi engraved kitchen knife. Buy the blade, get your name carved on it; the souvenir that politely threatens your luggage allowance.",
+"category": "household",
+"subcategory": "engraved kitchen knife",
+"price_range_jpy": "5000-30000",
+"where_to_buy": [
+"Kamata Hakensha",
+"Kappabashi Dougu Street",
+"Kappabashi knife shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.kappabashi.or.jp/en/shops/93/",
+"confidence": "medium",
+"notes": "[VENUE_CATEGORY: Kappabashi; Kamata Hakensha, Kama-Asa, Tsubaya, Seisuke Knife]"
+},
+{
+"input_name": "Karaage-kun",
+"english_name": "Lawson Karaage-kun",
+"japanese_name": "ローソン からあげクン",
+"description": "Karaage-kun. Five-piece Lawson fried chicken box; hot case bird nugget royalty with regular, red, cheese, and whatever chaos is seasonal.",
+"category": "konbini-food",
+"subcategory": "fried chicken",
+"price_range_jpy": "230-260",
+"where_to_buy": [
+"Lawson"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_egg",
+"contains_dairy"
+],
+"source_url": "https://www.lawson.co.jp/service/others/in/lang/en.html",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Katsu Sando",
+"english_name": "Lawson Thick Pork Cutlet Sandwich",
+"japanese_name": "ローソン 厚切りロースカツサンド",
+"description": "Katsu sando. Pork cutlet, soft bread, sauce. The konbini sandwich that looks simple until it starts making decisions for you.",
+"category": "konbini-food",
+"subcategory": "sandwich",
+"price_range_jpy": "350-500",
+"where_to_buy": [
+"Lawson stores with Machikado Chubo",
+"7-Eleven",
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_egg"
+],
+"source_url": "https://www.lawson.co.jp/service/others/in/lang/en.html",
+"confidence": "low",
+"notes": "[POSSIBLE_DUPLICATE_OF: Katsu sandwich]"
+},
+{
+"input_name": "Katsu sandwich",
+"english_name": "Lawson Thick Pork Cutlet Sandwich",
+"japanese_name": "ローソン 厚切りロースカツサンド",
+"description": "Katsu sandwich. Same basic pork-cutlet-and-soft-bread idea; Lawson's in-store kitchen version goes harder at lunch.",
+"category": "konbini-food",
+"subcategory": "sandwich",
+"price_range_jpy": "350-500",
+"where_to_buy": [
+"Lawson stores with Machikado Chubo",
+"7-Eleven",
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_egg"
+],
+"source_url": "https://www.lawson.co.jp/service/others/in/lang/en.html",
+"confidence": "low",
+"notes": "[POSSIBLE_DUPLICATE_OF: Katsu Sando]"
+},
+{
+"input_name": "Kayanoya dashi packets",
+"english_name": "Kayanoya Original Dashi Packets",
+"japanese_name": "茅乃舎だし",
+"description": "Kayanoya dashi packets. Drop one bag in water and suddenly dinner speaks Japanese; locals gift these because they actually get used.",
+"category": "food",
+"subcategory": "dashi packet",
+"price_range_jpy": "500-2300",
+"where_to_buy": [
+"Kayanoya shops",
+"department store food halls",
+"Kayanoya official online shop"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.kubara.jp/kayanoya/dashi/kayanoyadashi/570000/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Keana Nadeshiko Rice Mask",
+"english_name": "Keana Nadeshiko Rice Mask",
+"japanese_name": "毛穴撫子 お米のマスク",
+"description": "Keana Nadeshiko Rice Mask. Ten-sheet rice mask pack, cheap and famous; drugstore tourists buy it like their pores filed a complaint.",
+"category": "beauty",
+"subcategory": "sheet mask",
+"price_range_jpy": "700-800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Hands",
+"PLAZA"
+],
+"image_url": "https://www.ishizawa-lab.co.jp/keananadeshiko/product/keana_skincare/images/mask-anniv/product.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.ishizawa-lab.co.jp/keananadeshiko/product/keana_skincare/mask.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Kibi dango",
+"english_name": "Koeido Kibi Dango",
+"japanese_name": "廣榮堂 元祖きびだんご",
+"description": "Kibi dango. Okayama's soft millet dumpling souvenir; Momotaro branding does most of the emotional labor.",
+"category": "sweet",
+"subcategory": "dango souvenir",
+"price_range_jpy": "400-1200",
+"where_to_buy": [
+"Okayama Station",
+"Koeido shops",
+"Okayama souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://koeido.co.jp/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+}
+]

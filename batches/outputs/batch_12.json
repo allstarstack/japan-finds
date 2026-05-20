@@ -1,0 +1,529 @@
+[
+{
+"input_name": "Nose pore strips",
+"english_name": "Bioré Pore Strips Black Type",
+"japanese_name": "ビオレ 毛穴すっきりパック 鼻用 黒色タイプ",
+"description": "Bioré nose pore strips. Pulls the drama out of your pores in one satisfying rip, best grabbed at a drugstore before mirror time gets personal.",
+"category": "beauty",
+"subcategory": "pore strips",
+"price_range_jpy": "400-700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/biore/25423467/GG01.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kao-kirei.com/jp/en/item/khg/biore/4901301210494/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "OS-1 oral rehydration drink/jelly",
+"english_name": "OS-1 Oral Rehydration Solution Drink and Jelly",
+"japanese_name": "オーエスワン 経口補水液 / オーエスワンゼリー",
+"description": "OS-1 drink and jelly. Salty-sweet rehydration for real dehydration, not casual sipping. Drugstore pick for heat, fever, or the post-onsen flop.",
+"category": "drink",
+"subcategory": "oral rehydration",
+"price_range_jpy": "180-300",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"some convenience stores"
+],
+"image_url": "https://www.os-1.jp/shared_gl/images/top/os1_img_pc_02.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.os-1.jp/en/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Oden (Hot Case, Winter)",
+"english_name": "7-Eleven Oden",
+"japanese_name": "セブン-イレブン おでん",
+"description": "Konbini oden. Hot daikon, egg, tofu, and fishcake sitting in broth like winter has a staffing department. Grab it from the counter when Japan gets cold and dramatic.",
+"category": "konbini-food",
+"subcategory": "hot case",
+"price_range_jpy": "120-800",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_egg"
+],
+"source_url": "https://www.sej.co.jp/products/a/oden/",
+"confidence": "medium",
+"notes": "[VENUE_CATEGORY: 7-Eleven hot case; daikon; egg; shirataki; chikuwa]"
+},
+{
+"input_name": "Ohta's Isan Stomach Powder",
+"english_name": "Ohta's Isan Sachet",
+"japanese_name": "太田胃散 分包",
+"description": "Ohta's Isan stomach powder. Herbal, chalky, and very much not candy. Locals reach for it after ramen, booze, or the bold decision to eat everything.",
+"category": "drugstore",
+"subcategory": "stomach medicine",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://global.ohta-isan.co.jp/en/product/ohtaisanb/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Okinawa chinsuko cookies",
+"english_name": "Nanpudo Chinsuko Okinawan Shortbread Cookies",
+"japanese_name": "南風堂 ちんすこう",
+"description": "Chinsuko cookies. Okinawan shortbread with a sandy little crumble that tastes better than that description sounds. Easy suitcase snack, dangerously easy to finish.",
+"category": "sweet",
+"subcategory": "Okinawa souvenir cookie",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Naha Airport",
+"Okinawa souvenir shops",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://japanesetaste.com/products/nanpudo-chinsuko-okinawan-shortbread-cookies-assortment-24-pieces",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Okinawan Chinsuko Cookies]"
+},
+{
+"input_name": "Okinawan Beni-Imo Tart",
+"english_name": "Okashigoten Original Beni-Imo Tart",
+"japanese_name": "御菓子御殿 元祖紅いもタルト",
+"description": "Beni-imo tart. Purple sweet potato in a tiny pastry shell, because Okinawa looked at dessert and chose elegance with carbs. Airport souvenir classic.",
+"category": "sweet",
+"subcategory": "Okinawa souvenir tart",
+"price_range_jpy": "800-2000",
+"where_to_buy": [
+"Okashigoten",
+"Naha Airport",
+"Okinawa souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.okashigoten.co.jp/en/lets-go/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Okinawan Chinsuko Cookies",
+"english_name": "Nanpudo Chinsuko Okinawan Shortbread Cookies",
+"japanese_name": "南風堂 ちんすこう",
+"description": "Okinawan chinsuko cookies. Buttery little shortbread bricks for people who say they are buying souvenirs, then eat one bag at the hotel.",
+"category": "sweet",
+"subcategory": "Okinawa souvenir cookie",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Naha Airport",
+"Okinawa souvenir shops",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://japanesetaste.com/products/nanpudo-chinsuko-okinawan-shortbread-cookies-assortment-24-pieces",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Okinawa chinsuko cookies]"
+},
+{
+"input_name": "Omamori charm",
+"english_name": "Meiji Jingu Omamori Charm",
+"japanese_name": "明治神宮 お守り",
+"description": "Omamori charm. A small shrine amulet for wishes like safe travel, good health, or emotional damage control. Buy one at the shrine, keep it respectfully.",
+"category": "other",
+"subcategory": "shrine charm",
+"price_range_jpy": "500-1500",
+"where_to_buy": [
+"Meiji Jingu",
+"major shrines",
+"temples with charm counters"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.meijijingu.or.jp/en/feelshinto/5.php",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Omikuji + Ema Wishes at Shrines",
+"english_name": "Meiji Jingu Omikuji and Ema",
+"japanese_name": "明治神宮 おみくじ・絵馬",
+"description": "Omikuji and ema. Pull a fortune, write a wish, and let a shrine tree hold your emotional paperwork. Cheap, meaningful, and very Japan-coded.",
+"category": "other",
+"subcategory": "shrine experience",
+"price_range_jpy": "100-1000",
+"where_to_buy": [
+"Meiji Jingu",
+"major shrines",
+"temples with fortune counters"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.meijijingu.or.jp/en/feelshinto/4.php",
+"confidence": "medium",
+"notes": "[VENUE_CATEGORY: Meiji Jingu; omikuji; ema; goshuin]"
+},
+{
+"input_name": "Onigiri Brought Home",
+"english_name": "7-Eleven Tuna Mayonnaise Onigiri",
+"japanese_name": "セブン-イレブン ツナマヨネーズおにぎり",
+"description": "Tuna mayo onigiri. Rice ball, crisp seaweed, creamy tuna center. The konbini meal that somehow fixes 2 a.m. and train-platform hunger.",
+"category": "konbini-food",
+"subcategory": "onigiri",
+"price_range_jpy": "120-220",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_egg"
+],
+"source_url": "https://www.sej.co.jp/in/en.html",
+"confidence": "medium",
+"notes": "[VENUE_CATEGORY: 7-Eleven; tuna mayonnaise onigiri; salmon onigiri; kombu onigiri]"
+},
+{
+"input_name": "Opera Lip Tint",
+"english_name": "Opera Lip Tint N",
+"japanese_name": "オペラ リップティントN",
+"description": "Opera Lip Tint. Glossy color that survives better than most travel plans. Loft and Plaza staple for a quick drugstore beauty grab.",
+"category": "beauty",
+"subcategory": "lip tint",
+"price_range_jpy": "1500-3000",
+"where_to_buy": [
+"Loft",
+"Plaza",
+"@cosme Store",
+"Donki"
+],
+"image_url": "https://ichibanm.com/cdn/shop/files/Opera_Lip_Tint_N_05_01.jpg?v=1770940899&width=800",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://ichibanm.com/products/opera-lip-tint-n",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Ora2 breath care products",
+"english_name": "Ora2 me Mouth Spray",
+"japanese_name": "オーラツーミー マウススプレー",
+"description": "Ora2 mouth spray. Tiny breath reset for trains, dates, and garlic situations with consequences. Lives near the toothpaste at Japanese drugstores.",
+"category": "drugstore",
+"subcategory": "breath spray",
+"price_range_jpy": "300-600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.ora2.com/me/me_mouth_spray/",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: Ora2 me Mouth Spray; Ora2 me Mouthwash; Ora2 me Travel Set]"
+},
+{
+"input_name": "Origami Paper Sets",
+"english_name": "Daiso Japanese-Pattern Chiyogami Paper Set",
+"japanese_name": "ダイソー 和風ちよがみ",
+"description": "Daiso chiyogami paper. Tiny patterned paper squares that make your luggage look cultured for ¥110. Easy gift, zero suitcase drama.",
+"category": "other",
+"subcategory": "stationery",
+"price_range_jpy": "110-330",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Loft"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480285214",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Osaka 551 Horai Pork Buns",
+"english_name": "551 Horai Butaman Pork Buns",
+"japanese_name": "551蓬莱 豚まん",
+"description": "551 Horai pork buns. Osaka's steamed pork bun with a cult-level train-station smell. Buy hot, eat fast, regret nothing.",
+"category": "food",
+"subcategory": "pork buns",
+"price_range_jpy": "460-2300",
+"where_to_buy": [
+"551 Horai stores",
+"Osaka stations",
+"Kansai Airport"
+],
+"image_url": "https://www.551horai.co.jp/wp/wp-content/uploads/2019/06/butaman_pc-1.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.551horai.co.jp/menu/butaman/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Otsumami Konbini Bar Snacks (Atari-Me, Kaki Pi, Saki-Ika)",
+"english_name": "Kameda Kaki no Tane 6-Pack",
+"japanese_name": "亀田の柿の種 6袋詰",
+"description": "Kaki no Tane. Crunchy rice crackers and peanuts that make konbini drinking feel suddenly organized. The default beer snack when dinner is snacks in a bag.",
+"category": "snack",
+"subcategory": "otsumami bar snack",
+"price_range_jpy": "180-400",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"any supermarket"
+],
+"image_url": "https://www.kamedaseika.co.jp/wp-content/uploads/2022/04/205167_610_610-1.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_egg"
+],
+"source_url": "https://www.kamedaseika.co.jp/product/1025/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: atari-me; kaki pi; saki-ika; mixed nuts]"
+},
+{
+"input_name": "Oversized novelty snack packs",
+"english_name": "Donki Oversized Snack Packs",
+"japanese_name": "ドンキ 大容量お菓子パック",
+"description": "Oversized snack packs. Japan looks at normal snack size and says, 'coward.' Donki stacks these big souvenir bags for people buying candy like they owe apologies.",
+"category": "donki",
+"subcategory": "oversized snacks",
+"price_range_jpy": "500-2000",
+"where_to_buy": [
+"Donki",
+"MEGA Donki",
+"airport souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://mpglobal.donki.com/ec-web/desktop/product-category-detail?gpId=10000-i_b_food&lan=en&meId=10000-i_b_food01",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: big KitKat bags; giant Pocky; regional Pretz; assorted senbei packs]"
+},
+{
+"input_name": "Pabron Gold A Cold Medicine",
+"english_name": "Pabron Gold A",
+"japanese_name": "パブロンゴールドA",
+"description": "Pabron Gold A. Multi-symptom cold medicine for the 'my nose is filing taxes without me' phase. Ask the pharmacist first, especially if you take other meds.",
+"category": "drugstore",
+"subcategory": "cold medicine",
+"price_range_jpy": "1000-2200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"multi_active_cold_med"
+],
+"source_url": "https://www.taisho.co.jp/en/company/news/20250918004642/",
+"confidence": "low",
+"notes": "[SOURCE_LIMITED: official product page not found; verified via Taisho notice and retailer listings]"
+},
+{
+"input_name": "Pabron cold medicine",
+"english_name": "Pabron S Gold W Tablets",
+"japanese_name": "パブロンSゴールドW錠",
+"description": "Pabron S Gold W. Multi-symptom cold tablets for cough, sore throat, runny nose, and full-body 'I'm done.' Drugstore counter pick when tissues become your personality.",
+"category": "drugstore",
+"subcategory": "cold medicine",
+"price_range_jpy": "1200-2500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"multi_active_cold_med"
+],
+"source_url": "https://brand.taisho.co.jp/pabron/sg/",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Pabron S Gold W; Pabron Gold A; Pabron Ace Pro-X]"
+},
+{
+"input_name": "Panshiron Cure",
+"english_name": "Panshiron Cure SP Tablets",
+"japanese_name": "パンシロンキュアSP錠",
+"description": "Panshiron Cure. Stomach tablets for heartburn, acid reflux, and the ramen bowl that fought back. Drugstore rescue after rich food goes rogue.",
+"category": "drugstore",
+"subcategory": "stomach medicine",
+"price_range_jpy": "1000-2400",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/pansiron/cure-s/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Pasmo Passport",
+"english_name": "PASMO PASSPORT",
+"japanese_name": "PASMO PASSPORT",
+"description": "PASMO PASSPORT. Tourist IC card for trains and small payments, now retired like a limited-edition transit ghost. Look for TOURIST PASMO instead.",
+"category": "other",
+"subcategory": "transit IC card",
+"price_range_jpy": "2000",
+"where_to_buy": [
+"Narita Airport train stations",
+"Haneda Airport train stations",
+"select Tokyo Metro stations"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.pasmo.co.jp/visitors/en/news/",
+"confidence": "low",
+"notes": "[DISCONTINUED; REBRANDED to: TOURIST PASMO]"
+},
+{
+"input_name": "Pentel Energel",
+"english_name": "Pentel EnerGel",
+"japanese_name": "ぺんてる エナージェル",
+"description": "Pentel EnerGel. Smooth gel pen that makes hotel-note chaos look intentional. Stationery people buy one, then accidentally become pen people.",
+"category": "other",
+"subcategory": "stationery pen",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Loft",
+"Tokyu Hands",
+"Itoya",
+"major stationery stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.pentel.co.jp/products/ballpointpen/energel/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Petit Block mini kits",
+"english_name": "Daiso Petit Block Adult Penguin",
+"japanese_name": "ダイソー プチブロック 大人ペンギン",
+"description": "Daiso Petit Block. Tiny block kits for ¥110 that somehow demand focus and emotional investment. Great hotel-night project when your feet quit.",
+"category": "other",
+"subcategory": "mini block kit",
+"price_range_jpy": "110-330",
+"where_to_buy": [
+"Daiso"
+],
+"image_url": "https://jp.daisonet.com/cdn/shop/products/4549131622188_10_566ebe54-1dfc-4e9e-9d89-1da72edb45aa_800x.jpg?v=1755737324",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4549131622188",
+"confidence": "low",
+"notes": "[AMBIGUOUS: Adult Penguin; Shiba Inu; Giant Panda; Tyrannosaurus]"
+},
+{
+"input_name": "Phone stand",
+"english_name": "Daiso Foldable Smartphone Stand",
+"japanese_name": "ダイソー 折りたたみ式スマホスタンド",
+"description": "Daiso folding phone stand. ¥110 plastic that saves your neck from hotel-bed doomscroll posture. Buy one before watching maps, menus, and regret for hours.",
+"category": "electronics",
+"subcategory": "phone accessory",
+"price_range_jpy": "110-330",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4549131874198",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Pigeon Baby Wipes / Diaper Cream",
+"english_name": "Pigeon Oshiri Nap Premium Thick Baby Wipes",
+"japanese_name": "ピジョン おしりナップ プレミアム極上厚手",
+"description": "Pigeon baby wipes. Soft, thick wipes for diaper changes, sticky hands, and travel messes with main-character timing. Parenting aisle staple in Japan.",
+"category": "household",
+"subcategory": "baby wipes",
+"price_range_jpy": "500-900",
+"where_to_buy": [
+"Akachan Honpo",
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://shop.pigeon.co.jp/cdn/shop/files/1039245__0_d90973ee-3c1c-4e91-87ff-53691e9cceba_1800x1800.jpg?v=1730271438",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://products.pigeon.co.jp/item/index-2169.html",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Pigeon Oshiri Nap wipes; Pigeon Baby Cream 50g; Pigeon Baby Powder]"
+},
+{
+"input_name": "Pilot Frixion Erasable Pen",
+"english_name": "Pilot FriXion Ball Knock Erasable Pen",
+"japanese_name": "パイロット フリクションボールノック",
+"description": "Pilot FriXion pen. Writes like a normal gel pen, erases with friction, and quietly fixes your mistakes. Stationery-shop classic for planners and overthinkers.",
+"category": "other",
+"subcategory": "stationery pen",
+"price_range_jpy": "200-800",
+"where_to_buy": [
+"Loft",
+"Tokyu Hands",
+"Itoya",
+"major stationery stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.pilot.co.jp/promotion/frixion/info/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+}
+]
