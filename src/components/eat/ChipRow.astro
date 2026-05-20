@@ -47,6 +47,7 @@ const FLAG_DIMS = [
         ))
       }
     </div>
+    <p class="ec-rail-hint" aria-hidden="true">{CUISINE_CHIPS.length} cuisines · scroll →</p>
 
     <div class="ec-flags">
       {
@@ -108,6 +109,18 @@ const FLAG_DIMS = [
   }
   .ec-cuisine::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Mobile-only overflow hint — sits beneath the scrolling cuisine row so
+     users see how many chips exist off-screen. Hidden on desktop, where all
+     chips wrap into view. */
+  .ec-rail-hint {
+    margin: 0;
+    padding: 0 var(--gutter-mobile) 8px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
   }
 
   .ec-chip {
@@ -214,6 +227,9 @@ const FLAG_DIMS = [
       padding: 16px var(--gutter-desktop) 10px;
       -webkit-mask-image: none;
       mask-image: none;
+    }
+    .ec-rail-hint {
+      display: none;
     }
     .ec-flags {
       flex-direction: row;

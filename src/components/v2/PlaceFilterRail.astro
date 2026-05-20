@@ -37,6 +37,7 @@ const { counts, flagCounts, baseCount } = Astro.props;
         ))
       }
     </div>
+    <p class="prail-hint" aria-hidden="true">{PRIMARY_CHIPS.length} categories · scroll →</p>
 
     <div class="psec" role="group" aria-label="Filter by planning need">
       {
@@ -91,6 +92,18 @@ const { counts, flagCounts, baseCount } = Astro.props;
   }
   .prail-track::-webkit-scrollbar {
     display: none;
+  }
+
+  /* Mobile-only overflow hint — sits beneath the scrolling primary chip
+     row so users see how many categories exist off-screen. Hidden on
+     desktop, where all chips wrap into view. */
+  .prail-hint {
+    margin: 0;
+    padding: 0 var(--gutter-mobile) 8px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
   }
 
   .pchip {
@@ -180,6 +193,9 @@ const { counts, flagCounts, baseCount } = Astro.props;
       flex-wrap: wrap;
       overflow-x: visible;
       padding: 16px var(--gutter-desktop) 10px;
+    }
+    .prail-hint {
+      display: none;
     }
     .psec {
       padding: 0 var(--gutter-desktop) 16px;
