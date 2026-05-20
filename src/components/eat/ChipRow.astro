@@ -1,7 +1,7 @@
 ---
 /* /eat filter rail (BUILD_SPEC §3-4). Two tiers, mirroring PlaceFilterRail:
-   - 13 cuisine chips — multi-select, OR logic across chips. Horizontal
-     scroll with an edge fade on mobile; wrap on desktop.
+   - 13 cuisine chips — single-select. Horizontal scroll with an
+     edge fade on mobile; wrap on desktop.
    - 4 planning-flag chips in two single-select dimensions (reservation
      status, price). Within a dimension the two chips are radio-style and
      mutually exclusive — picking one unpicks the other, since AND-ing
@@ -166,10 +166,11 @@ const FLAG_DIMS = [
      row by a hairline. Uniform ink fill when active. */
   .ec-flags {
     display: flex;
-    flex-wrap: wrap;
-    /* Wider column gap between the two dimension groups than between the
-       chips inside a group — signals the radio-style grouping. */
-    gap: 8px 20px;
+    flex-direction: column;
+    /* Stack the two flag dimensions on their own rows so the radio-style
+       grouping reads visually (mobile). Desktop overrides to row layout
+       below with a wider column gap. */
+    gap: 10px;
     padding: 10px var(--gutter-mobile) 12px;
     border-top: 1px solid var(--color-ink-15);
   }
@@ -215,6 +216,9 @@ const FLAG_DIMS = [
       mask-image: none;
     }
     .ec-flags {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px 20px;
       padding: 12px var(--gutter-desktop) 16px;
     }
   }
@@ -282,8 +286,8 @@ const FLAG_DIMS = [
     const apply = () => {
       let n = 0;
       for (const card of cards) {
-        // Location, cuisine, flags all AND together. Cuisine still ORs
-        // across chips within itself; flags still AND within themselves.
+        // Location, cuisine, flags all AND together. Cuisine and location
+        // are single-select; flags AND within themselves (radio per dim).
         const okLocation =
           !activeLocation || card.dataset.city === activeLocation;
         const okCuisine =
@@ -331,8 +335,9 @@ const FLAG_DIMS = [
       const params = new URLSearchParams(location.search);
       const where = params.get("where");
       if (where && validLocations.has(where)) activeLocation = where;
-      for (const c of (params.get("cuisine") || "").split(",").filter(Boolean))
-        if (validCuisines.has(c)) activeCuisines.add(c);
+      for (const c of (params.get("cuisine") || "").split(",").filter(Boolean)) {
+        if (validCuisines.has(c)) { activeCuisines.add(c); break; } // single-select
+      }
       const usedDims = new Set<string>();
       for (const f of (params.get("flag") || "").split(",").filter(Boolean)) {
         const dim = flagDim.get(f);
@@ -358,9 +363,12 @@ const FLAG_DIMS = [
     cuisineBtns.forEach((b) =>
       b.addEventListener("click", () => {
         const v = b.dataset.cuisineChip || "";
-        activeCuisines.has(v)
-          ? activeCuisines.delete(v)
-          : activeCuisines.add(v);
+        if (activeCuisines.has(v)) {
+          activeCuisines.delete(v); // re-click clears
+        } else {
+          activeCuisines.clear(); // single-select — replace any existing pick
+          activeCuisines.add(v);
+        }
         apply();
         syncURL();
         b.scrollIntoView({ inline: "center", block: "nearest" });
