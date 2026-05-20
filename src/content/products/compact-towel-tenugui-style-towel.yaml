@@ -1,34 +1,34 @@
-id: "JF-0019"
-slug: "compact-towel-tenugui-style-towel"
-name_en: "Compact towel / tenugui-style towel"
-category: "100-yen"
+id: JF-0019
+slug: compact-towel-tenugui-style-towel
+name_en: Compact towel / tenugui-style towel
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "手ぬぐい・タオル"
-brand: "Daiso / souvenir shops / MUJI"
+- day_one_fixes
+status: ready
+name_jp: 手ぬぐい・タオル
+brand: Daiso / souvenir shops / MUJI
 where_found:
-  - "Daiso"
-  - "MUJI"
-  - "Souvenir shops"
-price_yen: "~¥110–¥1,000"
-what_it_is: "Small towel for sweat, handwashing, onsen, or gifts."
-why_travelers_care: "Japan restrooms may not always have dryers; useful daily."
+- Daiso
+- MUJI
+- Souvenir shops
+price_yen: ~¥110–¥1,000
+what_it_is: Small towel for sweat, handwashing, onsen, or gifts.
+why_travelers_care: Japan restrooms may not always have dryers; useful daily.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Material and absorbency vary."
+- easy to buy outside Japan
+verification_notes: Material and absorbency vary.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-  - "https://www.muji.com/jp/ja/store"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+- https://www.muji.com/jp/ja/store
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tenugui-style compact towel. Thin cotton towel that dries fast and folds flat. Carry it for temples, summer sweat, and bathrooms with no paper towels.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Tenugui-style compact towel. Thin cotton towel that dries fast and folds
+  flat. Carry it for temples, summer sweat, and bathrooms with no paper towels.
 english_name: Tenugui-Style Compact Towel
 japanese_name: 手ぬぐい
 subcategory: travel towel
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.japan.travel/en/japan-magazine/2007_tenugui/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

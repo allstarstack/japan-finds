@@ -1,33 +1,33 @@
-id: "JF-0338"
-slug: "nagasaki-castella"
-name_en: "Nagasaki Castella"
-category: "snacks"
+id: JF-0338
+slug: nagasaki-castella
+name_en: Nagasaki Castella
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "長崎カステラ"
-brand: "Fukusaya / Bunmeido / various"
+- local_editions
+status: ready
+name_jp: 長崎カステラ
+brand: Fukusaya / Bunmeido / various
 where_found:
-  - "Nagasaki"
-  - "dept stores"
-  - "airports"
-price_yen: "~¥1,000–¥3,000"
-what_it_is: "Japanese sponge cake with Portuguese influence."
-why_travelers_care: "Historic food story + giftable box."
+- Nagasaki
+- dept stores
+- airports
+price_yen: ~¥1,000–¥3,000
+what_it_is: Japanese sponge cake with Portuguese influence.
+why_travelers_care: Historic food story + giftable box.
 risk_flags:
-  - "allergen"
-  - "fragile"
-verification_notes: "Check shelf life and brand."
+- allergen
+- fragile
+verification_notes: Check shelf life and brand.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 7
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Nagasaki castella. Sponge cake with a sugar-crunch bottom. Airport sweet box behavior, but with actual tea-time authority.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Nagasaki castella. Sponge cake with a sugar-crunch bottom. Airport sweet
+  box behavior, but with actual tea-time authority.
 english_name: Fukusaya Castella
 japanese_name: 福砂屋 カステラ
 subcategory: regional souvenir cake
@@ -43,3 +43,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.fukusaya.co.jp/item_price/castella.html
 enrichment_date: '2026-05-19'
+image: null

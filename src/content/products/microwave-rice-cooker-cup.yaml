@@ -1,35 +1,35 @@
-id: "JF-0028"
-slug: "microwave-rice-cooker-cup"
-name_en: "Microwave rice cooker cup"
-category: "100-yen"
+id: JF-0028
+slug: microwave-rice-cooker-cup
+name_en: Microwave rice cooker cup
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "電子レンジ炊飯器"
-brand: "Daiso / Seria / Can Do"
+- bring_home
+status: ready
+name_jp: 電子レンジ炊飯器
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥330–¥1,100"
-what_it_is: "Small microwave tool for cooking rice."
-why_travelers_care: "Japan-core kitchen practicality; good content test."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥330–¥1,100
+what_it_is: Small microwave tool for cooking rice.
+why_travelers_care: Japan-core kitchen practicality; good content test.
 risk_flags:
-  - "bulky"
-  - "plastic"
-  - "heat use"
-verification_notes: "Verify instructions and rice capacity."
+- bulky
+- plastic
+- heat use
+verification_notes: Verify instructions and rice capacity.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: medium
 trip_score: 7
 suitcase_score: 5
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Microwave rice cooker cup. One-cup rice maker for people who refuse full appliance commitment. Tiny kitchen law and order for solo meals.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Microwave rice cooker cup. One-cup rice maker for people who refuse full
+  appliance commitment. Tiny kitchen law and order for solo meals.
 english_name: Skater Microwave Rice Maker
 japanese_name: スケーター レンジでご飯メーカー
 subcategory: microwave rice cooker
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.skater-onlineshop.com/view/category/ct4070
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

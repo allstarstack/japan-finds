@@ -1,25 +1,25 @@
-id: "JF-0205"
-slug: "hojicha-roasted-green-tea"
-name_en: "Hojicha (Roasted Green Tea)"
-category: "kitchen"
+id: JF-0205
+slug: hojicha-roasted-green-tea
+name_en: Hojicha (Roasted Green Tea)
+category: kitchen
 intent:
-  - "bring_home"
-status: "v1_candidate"
-name_jp: "ほうじ茶"
-brand: "Various"
+- bring_home
+status: v1_candidate
+name_jp: ほうじ茶
+brand: Various
 where_found:
-  - "Specialty tea shops"
-  - "supermarkets"
-price_yen: "500-2000"
-what_it_is: "Roasted green tea, lower caffeine, nutty profile."
-why_travelers_care: "Underdog tea, gentle for evening drinking."
+- Specialty tea shops
+- supermarkets
+price_yen: 500-2000
+what_it_is: Roasted green tea, lower caffeine, nutty profile.
+why_travelers_care: Underdog tea, gentle for evening drinking.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 10
-
-description: Oi Ocha Hojicha. Roasted green tea, unsweetened and toasty. The bottle to grab when matcha feels too loud.
+description: Oi Ocha Hojicha. Roasted green tea, unsweetened and toasty. The bottle
+  to grab when matcha feels too loud.
 english_name: Oi Ocha Hojicha Roasted Green Tea
 japanese_name: お〜いお茶 ほうじ茶
 subcategory: bottled tea
@@ -33,3 +33,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://itoen.com/products/oi-ocha-hojicha
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,29 +1,29 @@
-id: "JF-0198"
-slug: "benriner-vegetable-slicer"
-name_en: "Benriner Vegetable Slicer"
-category: "kitchen"
+id: JF-0198
+slug: benriner-vegetable-slicer
+name_en: Benriner Vegetable Slicer
+category: kitchen
 intent:
-  - "bring_home"
-status: "hold"
-name_jp: "ベンリナー"
-brand: "Benriner"
+- bring_home
+status: hold
+name_jp: ベンリナー
+brand: Benriner
 where_found:
-  - "Kappabashi"
-  - "dept stores"
-  - "Amazon JP"
-price_yen: "3000-5000"
-what_it_is: "Japanese mandoline, prized by chefs internationally."
-why_travelers_care: "Pro-grade tool at consumer price."
+- Kappabashi
+- dept stores
+- Amazon JP
+price_yen: 3000-5000
+what_it_is: Japanese mandoline, prized by chefs internationally.
+why_travelers_care: Pro-grade tool at consumer price.
 risk_flags:
-  - "sharp"
-verification_notes: "Sold abroad but Japan price is the value"
+- sharp
+verification_notes: Sold abroad but Japan price is the value
 source_links:
-  - "benriner.com"
-confidence: "high"
+- benriner.com
+confidence: high
 trip_score: 7
 suitcase_score: 7
-
-description: Benriner slicer. Razor-sharp Japanese mandoline for perfect shreds and immediate respect for your fingertips.
+description: Benriner slicer. Razor-sharp Japanese mandoline for perfect shreds and
+  immediate respect for your fingertips.
 english_name: Benriner Vegetable Slicer
 japanese_name: ベンリナー 野菜スライサー
 subcategory: kitchen tool
@@ -36,3 +36,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://thebenriner.com/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

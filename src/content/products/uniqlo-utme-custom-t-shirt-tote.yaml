@@ -1,32 +1,33 @@
-id: "JF-0306"
-slug: "uniqlo-utme-custom-t-shirt-tote"
-name_en: "UNIQLO UTme! custom T-shirt/tote"
-category: "other"
+id: JF-0306
+slug: uniqlo-utme-custom-t-shirt-tote
+name_en: UNIQLO UTme! custom T-shirt/tote
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "UTme!"
-brand: "UNIQLO"
+- make_it_yours
+status: ready
+name_jp: UTme!
+brand: UNIQLO
 where_found:
-  - "Select UNIQLO stores with UTme service"
-price_yen: "~¥1,500–¥3,000+"
-what_it_is: "Custom printed shirt or tote using app/store tools."
-why_travelers_care: "Personalized proof-of-trip product; useful wearable souvenir."
+- Select UNIQLO stores with UTme service
+price_yen: ~¥1,500–¥3,000+
+what_it_is: Custom printed shirt or tote using app/store tools.
+why_travelers_care: Personalized proof-of-trip product; useful wearable souvenir.
 risk_flags:
-  - "size"
-  - "store availability"
-  - "copyright restrictions"
-verification_notes: "Confirm participating stores and design rules."
+- size
+- store availability
+- copyright restrictions
+verification_notes: Confirm participating stores and design rules.
 source_links:
-  - "https://utme.uniqlo.com/"
-confidence: "high"
+- https://utme.uniqlo.com/
+confidence: high
 trip_score: 8
 suitcase_score: 7
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: UNIQLO UTme! custom T-shirt or tote. Pick a blank, add art or text, and leave with souvenir merch you accidentally designed. Best used for jokes, inside bits, and bad decisions in good cotton.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: UNIQLO UTme! custom T-shirt or tote. Pick a blank, add art or text, and
+  leave with souvenir merch you accidentally designed. Best used for jokes, inside
+  bits, and bad decisions in good cotton.
 english_name: UNIQLO UTme! Custom T-Shirt or Tote
 japanese_name: ユニクロ UTme! カスタムTシャツ・トート
 subcategory: custom apparel
@@ -40,3 +41,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.uniqlo.com/us/en/spl/ut-me
 enrichment_date: '2026-05-19'
 image: /products/uniqlo-utme-custom-t-shirt-tote.webp
+safety_flags: []

@@ -1,38 +1,38 @@
-id: "JF-0251"
-slug: "frozen-mikan"
-name_en: "Frozen mikan"
-category: "konbini"
+id: JF-0251
+slug: frozen-mikan
+name_en: Frozen mikan
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Aeon"
-price_yen: "~¥180–¥350"
-what_it_is: "Frozen mandarin oranges sold as a cold snack."
-why_travelers_care: "Wholesome, visually simple, and perfect summer Japan moment."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Aeon
+price_yen: ~¥180–¥350
+what_it_is: Frozen mandarin oranges sold as a cold snack.
+why_travelers_care: Wholesome, visually simple, and perfect summer Japan moment.
 risk_flags:
-  - "perishable"
-  - "frozen"
-  - "citrus_ingestible"
-verification_notes: "Seasonal availability varies."
+- perishable
+- frozen
+- citrus_ingestible
+verification_notes: Seasonal availability varies.
 source_links:
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.sej.co.jp/products/a/frozen/"
-  - "https://www.aeonretail.jp/list/food-frozen/"
-confidence: "medium"
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.sej.co.jp/products/a/frozen/
+- https://www.aeonretail.jp/list/food-frozen/
+confidence: medium
 trip_score: 7
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "冷凍みかん"
-agent_notes: "Category row brand varies"
-
-description: Frozen mikan ice bar. Mandarin nostalgia in freezer form, the konbini cool-down move after too many train stairs.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: 冷凍みかん
+agent_notes: Category row brand varies
+description: Frozen mikan ice bar. Mandarin nostalgia in freezer form, the konbini
+  cool-down move after too many train stairs.
 english_name: 7 Premium Marude Unshu Mikan Ice Bar
 japanese_name: セブンプレミアム まるで完熟みかん
 subcategory: frozen dessert
@@ -47,3 +47,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.sej.co.jp/products/a/item/450352/
 enrichment_date: '2026-05-19'
+image: null

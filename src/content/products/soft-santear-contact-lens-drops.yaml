@@ -1,37 +1,37 @@
-id: "JF-0164"
-slug: "soft-santear-contact-lens-drops"
-name_en: "Soft Santear contact lens drops"
-category: "donki-drugstore"
+id: JF-0164
+slug: soft-santear-contact-lens-drops
+name_en: Soft Santear contact lens drops
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "~¥500–¥1,000"
-what_it_is: "Eye drops often used for contact lens dryness."
-why_travelers_care: "Practical for travelers with dry eyes/contacts."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: ~¥500–¥1,000
+what_it_is: Eye drops often used for contact lens dryness.
+why_travelers_care: Practical for travelers with dry eyes/contacts.
 risk_flags:
-  - "medicine/regulated"
-  - "liquid"
-  - "eye safety"
-verification_notes: "Confirm contact compatibility and active ingredients."
+- medicine/regulated
+- liquid
+- eye safety
+verification_notes: Confirm contact compatibility and active ingredients.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.santen.com/jp/healthcare/eye/products/otc/soft_santear"
-  - "https://www.santen.com/jp/healthcare/eye/products"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.santen.com/jp/healthcare/eye/products/otc/soft_santear
+- https://www.santen.com/jp/healthcare/eye/products
+confidence: medium
 trip_score: 7
 suitcase_score: 6
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "ソフトサンティア"
-
-description: Soft Santear contact lens drops. Artificial tears for dry contacts after trains, screens, and hotel aircon. Small bottle, big relief energy.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: ソフトサンティア
+description: Soft Santear contact lens drops. Artificial tears for dry contacts after
+  trains, screens, and hotel aircon. Small bottle, big relief energy.
 english_name: Soft Santear Contact Lens Drops
 japanese_name: ソフトサンティア
 subcategory: eye drops
@@ -44,3 +44,4 @@ enrichment_confidence: high
 enrichment_source_url: https://search.jsm-db.info/sp_en/detail.php?txtID=4987084000034
 enrichment_date: '2026-05-19'
 image: /products/soft-santear-contact-lens-drops.webp
+safety_flags: []

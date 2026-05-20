@@ -1,33 +1,33 @@
-id: "JF-0217"
-slug: "boss-canned-coffee"
-name_en: "BOSS Canned Coffee"
-category: "konbini"
+id: JF-0217
+slug: boss-canned-coffee
+name_en: BOSS Canned Coffee
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "120-150"
-what_it_is: "Cold/hot canned coffee, the Tommy Lee Jones ads are legendary."
-why_travelers_care: "Vending machine ritual, hot can in winter is a sensory moment."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: 120-150
+what_it_is: Cold/hot canned coffee, the Tommy Lee Jones ads are legendary.
+why_travelers_care: Vending machine ritual, hot can in winter is a sensory moment.
 risk_flags:
-  - "liquid, allergen-dairy"
-verification_notes: "Many varieties; Rainbow Mountain Blend is the standard"
+- liquid, allergen-dairy
+verification_notes: Many varieties; Rainbow Mountain Blend is the standard
 source_links:
-  - "suntory.co.jp/softdrink/boss"
-  - "https://www.suntory.co.jp/softdrink/boss/"
-  - "https://products.suntory.co.jp/b/0000000001/ボス"
-confidence: "high"
+- suntory.co.jp/softdrink/boss
+- https://www.suntory.co.jp/softdrink/boss/
+- https://products.suntory.co.jp/b/0000000001/ボス
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "drink"
-name_jp: "ボス"
-
-description: BOSS canned coffee. Sweet milk coffee in a tiny can, built for vending machines and salaryman pacing. Drink it when jet lag starts managing your itinerary.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: drink
+name_jp: ボス
+description: BOSS canned coffee. Sweet milk coffee in a tiny can, built for vending
+  machines and salaryman pacing. Drink it when jet lag starts managing your itinerary.
 english_name: BOSS Rainbow Mountain Blend
 japanese_name: サントリー BOSS レインボーマウンテンブレンド
 subcategory: canned coffee

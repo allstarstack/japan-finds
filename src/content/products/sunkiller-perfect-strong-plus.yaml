@@ -1,31 +1,32 @@
-id: "JF-0448"
-slug: "sunkiller-perfect-strong-plus"
-name_en: "Sunkiller Perfect Strong Plus"
-category: "skincare"
+id: JF-0448
+slug: sunkiller-perfect-strong-plus
+name_en: Sunkiller Perfect Strong Plus
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "サンキラー"
-brand: "Isehan"
+- stock_up
+status: ready
+name_jp: サンキラー
+brand: Isehan
 where_found:
-  - "Isehan official"
-  - "Amazon JP"
-  - "Matsukiyo"
-price_yen: "1200-1800"
-what_it_is: "Mid-tier SPF 50+ PA++++, often discounted at Donki."
-why_travelers_care: "Solid mid-tier value pick."
+- Isehan official
+- Amazon JP
+- Matsukiyo
+price_yen: 1200-1800
+what_it_is: Mid-tier SPF 50+ PA++++, often discounted at Donki.
+why_travelers_care: Solid mid-tier value pick.
 risk_flags:
-  - "liquid, skincare/cosmetic claim"
+- liquid, skincare/cosmetic claim
 source_links:
-  - "kissme-isehan.com"
-confidence: "high"
+- kissme-isehan.com
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Sunkiller Perfect Strong Plus. Japanese waterproof sunscreen built for sweaty sightseeing and beach-day denial. Grab the newer Strong-Z if this label is gone.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Sunkiller Perfect Strong Plus. Japanese waterproof sunscreen built for
+  sweaty sightseeing and beach-day denial. Grab the newer Strong-Z if this label is
+  gone.
 english_name: Sunkiller Perfect Strong Plus
 japanese_name: サンキラー パーフェクトストロングプラス
 subcategory: sunscreen
@@ -39,3 +40,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.ratzillacosme.com/sun/sunkiller-perfect-strong-z/
 enrichment_date: '2026-05-19'
 image: /products/sunkiller-perfect-strong-plus.webp
+safety_flags: []

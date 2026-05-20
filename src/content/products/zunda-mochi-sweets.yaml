@@ -1,32 +1,32 @@
-id: "JF-0354"
-slug: "zunda-mochi-sweets"
-name_en: "Zunda mochi sweets"
-category: "snacks"
+id: JF-0354
+slug: zunda-mochi-sweets
+name_en: Zunda mochi sweets
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "ずんだ餅"
-brand: "Various Sendai makers"
+- local_editions
+status: ready
+name_jp: ずんだ餅
+brand: Various Sendai makers
 where_found:
-  - "Sendai/Miyagi stations"
-  - "souvenir shops"
-price_yen: "~¥500–¥1,500"
-what_it_is: "Sweet edamame paste over mochi or in packaged sweets."
-why_travelers_care: "Regional flavor that surprises travelers."
+- Sendai/Miyagi stations
+- souvenir shops
+price_yen: ~¥500–¥1,500
+what_it_is: Sweet edamame paste over mochi or in packaged sweets.
+why_travelers_care: Regional flavor that surprises travelers.
 risk_flags:
-  - "perishable for fresh"
-  - "allergen"
-verification_notes: "Choose shelf-stable versions for suitcase."
+- perishable for fresh
+- allergen
+verification_notes: Choose shelf-stable versions for suitcase.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 5
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Zunda mochi. Sweet edamame paste over chewy mochi — Sendai's green dessert that looks suspicious, then wins.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Zunda mochi. Sweet edamame paste over chewy mochi — Sendai's green dessert
+  that looks suspicious, then wins.
 english_name: Zunda Saryo Zunda Mochi
 japanese_name: ずんだ茶寮 ずんだ餅
 subcategory: mochi
@@ -40,3 +40,4 @@ enrichment_confidence: low
 enrichment_source_url: https://zundasaryo.com/
 enrichment_date: '2026-05-19'
 image: /products/zunda-mochi-sweets.webp
+safety_flags: []

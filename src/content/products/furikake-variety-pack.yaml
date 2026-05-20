@@ -1,28 +1,28 @@
-id: "JF-0202"
-slug: "furikake-variety-pack"
-name_en: "Furikake Variety Pack"
-category: "kitchen"
+id: JF-0202
+slug: furikake-variety-pack
+name_en: Furikake Variety Pack
+category: kitchen
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "v1_candidate"
-name_jp: "ふりかけ"
-brand: "Marumiya, Mishima, Nagatanien"
+- stock_up
+- bring_home
+status: v1_candidate
+name_jp: ふりかけ
+brand: Marumiya, Mishima, Nagatanien
 where_found:
-  - "Supermarkets"
-  - "konbini"
-price_yen: "300-800"
-what_it_is: "Rice topping mixes; shake on rice."
-why_travelers_care: "Pantry staple, cheap, variety."
+- Supermarkets
+- konbini
+price_yen: 300-800
+what_it_is: Rice topping mixes; shake on rice.
+why_travelers_care: Pantry staple, cheap, variety.
 risk_flags:
-  - "allergen-fish-soy-egg"
+- allergen-fish-soy-egg
 source_links:
-  - "marumiya.co.jp"
-confidence: "high"
+- marumiya.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-
-description: Marumiya furikake variety pack. Tiny rice seasoning packets, the easiest way to make convenience-store rice less sad.
+description: Marumiya furikake variety pack. Tiny rice seasoning packets, the easiest
+  way to make convenience-store rice less sad.
 english_name: Marumiya Noritama and Variety Furikake Pack
 japanese_name: 丸美屋 のりたま&バラエティー
 subcategory: rice seasoning
@@ -37,3 +37,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://prtimes.jp/main/html/rd/p/000000696.000010538.html
 enrichment_date: '2026-05-19'
+image: null

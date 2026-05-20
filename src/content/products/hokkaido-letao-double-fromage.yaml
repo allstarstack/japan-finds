@@ -1,32 +1,32 @@
-id: "JF-0405"
-slug: "hokkaido-letao-double-fromage"
-name_en: "Hokkaido Letao Double Fromage"
-category: "snacks"
+id: JF-0405
+slug: hokkaido-letao-double-fromage
+name_en: Hokkaido Letao Double Fromage
+category: snacks
 intent:
-  - "try_in_japan"
-  - "local_editions"
-status: "ready"
-name_jp: "ルタオ ドゥーブルフロマージュ"
-brand: "LeTAO"
+- try_in_japan
+- local_editions
+status: ready
+name_jp: ルタオ ドゥーブルフロマージュ
+brand: LeTAO
 where_found:
-  - "LeTAO Hokkaido"
-  - "airport"
-  - "online"
-price_yen: "1800-2200"
-what_it_is: "Two-layer cheesecake, soft + baked. Hokkaido specialty."
-why_travelers_care: "Premium dessert souvenir, ships frozen domestically."
+- LeTAO Hokkaido
+- airport
+- online
+price_yen: 1800-2200
+what_it_is: Two-layer cheesecake, soft + baked. Hokkaido specialty.
+why_travelers_care: Premium dessert souvenir, ships frozen domestically.
 risk_flags:
-  - "perishable, allergen-dairy"
+- perishable, allergen-dairy
 source_links:
-  - "letao.jp"
-confidence: "high"
+- letao.jp
+confidence: high
 trip_score: 9
 suitcase_score: 3
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: LeTAO Double Fromage. Two-layer Hokkaido cheesecake, half baked, half mousse. Buy cold, carry carefully, eat like plans never existed.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: LeTAO Double Fromage. Two-layer Hokkaido cheesecake, half baked, half
+  mousse. Buy cold, carry carefully, eat like plans never existed.
 english_name: LeTAO Double Fromage
 japanese_name: ルタオ ドゥーブルフロマージュ
 subcategory: cheesecake

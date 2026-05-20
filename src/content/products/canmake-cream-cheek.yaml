@@ -1,34 +1,34 @@
-id: "JF-0374"
-slug: "canmake-cream-cheek"
-name_en: "Canmake Cream Cheek"
-category: "skincare"
+id: JF-0374
+slug: canmake-cream-cheek
+name_en: Canmake Cream Cheek
+category: skincare
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "キャンメイク クリームチーク"
-brand: "Canmake"
+- bring_home
+status: ready
+name_jp: キャンメイク クリームチーク
+brand: Canmake
 where_found:
-  - "Drugstores"
-  - "Loft"
-  - "@cosme"
-price_yen: "~¥600–¥800"
-what_it_is: "Affordable cream blush compact."
-why_travelers_care: "Tiny, cute, and strong value beauty souvenir."
+- Drugstores
+- Loft
+- '@cosme'
+price_yen: ~¥600–¥800
+what_it_is: Affordable cream blush compact.
+why_travelers_care: Tiny, cute, and strong value beauty souvenir.
 risk_flags:
-  - "skincare/cosmetic claim"
-verification_notes: "Confirm shade availability."
+- skincare/cosmetic claim
+verification_notes: Confirm shade availability.
 source_links:
-  - "https://www.loft.co.jp/store/"
-  - "https://www.cosme.net/"
-  - "https://www.matsukiyococokara-online.com/"
-confidence: "medium"
+- https://www.loft.co.jp/store/
+- https://www.cosme.net/
+- https://www.matsukiyococokara-online.com/
+confidence: medium
 trip_score: 7
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Canmake Cream Cheek. Tiny drugstore blush with real color payoff. The budget J-beauty pick for a pouch that already has 400 lip products.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Canmake Cream Cheek. Tiny drugstore blush with real color payoff. The
+  budget J-beauty pick for a pouch that already has 400 lip products.
 english_name: Canmake Cream Cheek
 japanese_name: キャンメイク クリームチーク
 subcategory: blush
@@ -43,3 +43,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.canmake.com/en/item/detail/cream-cheek/
 enrichment_date: '2026-05-19'
 image: /products/canmake-cream-cheek.webp
+safety_flags: []

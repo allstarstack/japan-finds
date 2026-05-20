@@ -1,33 +1,33 @@
-id: "JF-0018"
-slug: "coin-purse"
-name_en: "Coin purse"
-category: "100-yen"
+id: JF-0018
+slug: coin-purse
+name_en: Coin purse
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "小銭入れ"
-brand: "Daiso / Seria / Can Do / souvenir shops"
+- day_one_fixes
+status: ready
+name_jp: 小銭入れ
+brand: Daiso / Seria / Can Do / souvenir shops
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110–¥1,000"
-what_it_is: "Small pouch for coins."
-why_travelers_care: "Still useful for gachapon, temples, lockers, and vending machines."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110–¥1,000
+what_it_is: Small pouch for coins.
+why_travelers_care: Still useful for gachapon, temples, lockers, and vending machines.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Check clasp quality."
+- easy to buy outside Japan
+verification_notes: Check clasp quality.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Gamaguchi coin purse. Tiny clasp pouch for the yen avalanche. Buy one before the 1-yen coins start reproducing.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Gamaguchi coin purse. Tiny clasp pouch for the yen avalanche. Buy one
+  before the 1-yen coins start reproducing.
 english_name: Gamaguchi Coin Purse
 japanese_name: がま口小銭入れ
 subcategory: wallet
@@ -39,3 +39,6 @@ where_to_buy:
 - souvenir shops
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []
+enrichment_source_url: null

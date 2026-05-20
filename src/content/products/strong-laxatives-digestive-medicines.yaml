@@ -1,27 +1,27 @@
-id: "JF-0069"
-slug: "strong-laxatives-digestive-medicines"
-name_en: "Strong laxatives / digestive medicines"
-category: "other"
+id: JF-0069
+slug: strong-laxatives-digestive-medicines
+name_en: Strong laxatives / digestive medicines
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "便秘薬・胃腸薬"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: 便秘薬・胃腸薬
+brand: Various
 where_found:
-  - "Drugstores"
-price_yen: "varies"
-what_it_is: "OTC digestive or laxative medicines."
-why_travelers_care: "Travelers ask about them, but medical risk is high."
+- Drugstores
+price_yen: varies
+what_it_is: OTC digestive or laxative medicines.
+why_travelers_care: Travelers ask about them, but medical risk is high.
 risk_flags:
-  - "medicine/regulated"
-  - "health claim"
-verification_notes: "Require pharmacist/doctor guidance; check import rules."
+- medicine/regulated
+- health claim
+verification_notes: Require pharmacist/doctor guidance; check import rules.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-confidence: "low"
+- https://www.matsukiyococokara-online.com/
+confidence: low
 trip_score: 3
-
-description: Beauluck A. Strong bisacodyl laxative for serious constipation, not casual snack-tourism tummy drama. Drugstore shelf with real consequences.
+description: Beauluck A. Strong bisacodyl laxative for serious constipation, not casual
+  snack-tourism tummy drama. Drugstore shelf with real consequences.
 english_name: Kokando Beauluck A
 japanese_name: 皇漢堂 ビューラックA
 subcategory: laxative
@@ -35,3 +35,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.kokando.co.jp/genuine_product_certificationethical/
 enrichment_date: '2026-05-19'
 image: /products/strong-laxatives-digestive-medicines.webp
+safety_flags: []

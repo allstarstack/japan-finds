@@ -1,35 +1,36 @@
-id: "JF-0221"
-slug: "iyemon-oi-ocha-bottled-green-tea"
-name_en: "Iyemon / Oi Ocha Bottled Green Tea"
-category: "konbini"
+id: JF-0221
+slug: iyemon-oi-ocha-bottled-green-tea
+name_en: Iyemon / Oi Ocha Bottled Green Tea
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Aeon"
-price_yen: "120-160"
-what_it_is: "Cold bottled unsweetened green tea, ubiquitous."
-why_travelers_care: "Hydration baseline, replaces water for most travelers after day 2."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Aeon
+price_yen: 120-160
+what_it_is: Cold bottled unsweetened green tea, ubiquitous.
+why_travelers_care: Hydration baseline, replaces water for most travelers after day
+  2.
 risk_flags:
-  - "liquid"
+- liquid
 source_links:
-  - "itoen.co.jp"
-  - "suntory.co.jp/water/iyemon"
-  - "https://products.suntory.co.jp/d/4901777449657/"
-  - "https://www.itoen.jp/oiocha/"
-confidence: "high"
+- itoen.co.jp
+- suntory.co.jp/water/iyemon
+- https://products.suntory.co.jp/d/4901777449657/
+- https://www.itoen.jp/oiocha/
+confidence: high
 trip_score: 7
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "drink"
-name_jp: "伊右衛門 / お～いお茶"
-agent_notes: "Row combines two separate green-tea brands"
-
-description: Oi Ocha bottled green tea. Unsweetened, zero-calorie, vending-machine reliable; the default bottle when water feels too boring.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: drink
+name_jp: 伊右衛門 / お～いお茶
+agent_notes: Row combines two separate green-tea brands
+description: Oi Ocha bottled green tea. Unsweetened, zero-calorie, vending-machine
+  reliable; the default bottle when water feels too boring.
 english_name: Oi Ocha Unsweetened Green Tea PET 600ml
 japanese_name: お～いお茶 緑茶 PET 600ml
 subcategory: bottled green tea
@@ -44,3 +45,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.itoen.jp/products/45534/
 enrichment_date: '2026-05-19'
 image: /products/iyemon-oi-ocha-bottled-green-tea.webp
+safety_flags: []

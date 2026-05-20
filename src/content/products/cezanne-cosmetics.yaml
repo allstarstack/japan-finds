@@ -1,30 +1,30 @@
-id: "JF-0358"
-slug: "cezanne-cosmetics"
-name_en: "Cezanne Cosmetics"
-category: "skincare"
+id: JF-0358
+slug: cezanne-cosmetics
+name_en: Cezanne Cosmetics
+category: skincare
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "セザンヌ"
-brand: "Cezanne Keshohin"
+- stock_up
+- bring_home
+status: ready
+name_jp: セザンヌ
+brand: Cezanne Keshohin
 where_found:
-  - "All drugstores"
-price_yen: "500-1200"
-what_it_is: "Ultra-cheap base makeup, often dupes for high-end products."
-why_travelers_care: "Bargain beauty haul staple."
+- All drugstores
+price_yen: 500-1200
+what_it_is: Ultra-cheap base makeup, often dupes for high-end products.
+why_travelers_care: Bargain beauty haul staple.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "cezanne.co.jp"
-confidence: "high"
+- cezanne.co.jp
+confidence: high
 trip_score: 9
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: CEZANNE cosmetics. Drugstore makeup with tiny prices and shockingly calm packaging. Lip Color Shield is the safe first grab.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: CEZANNE cosmetics. Drugstore makeup with tiny prices and shockingly calm
+  packaging. Lip Color Shield is the safe first grab.
 english_name: CEZANNE Lip Color Shield
 japanese_name: セザンヌ リップカラーシールド
 subcategory: drugstore makeup
@@ -39,3 +39,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.cezanne.co.jp/lineup/4939553042709/
 enrichment_date: '2026-05-19'
 image: /products/cezanne-cosmetics.webp
+safety_flags: []

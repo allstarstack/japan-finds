@@ -1,33 +1,33 @@
-id: "JF-0460"
-slug: "yodobashi-bic-camera-tax-free-electronics"
-name_en: "Yodobashi/Bic Camera Tax-Free Electronics"
-category: "other"
+id: JF-0460
+slug: yodobashi-bic-camera-tax-free-electronics
+name_en: Yodobashi/Bic Camera Tax-Free Electronics
+category: other
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "ヨドバシ / ビックカメラ"
-brand: "Various"
+- bring_home
+status: ready
+name_jp: ヨドバシ / ビックカメラ
+brand: Various
 where_found:
-  - "Yodobashi Akiba"
-  - "Bic Yurakucho"
-  - "Bic Shinjuku"
-  - "Yodobashi Umeda"
-price_yen: "Variable"
-what_it_is: "One-stop tax-free electronics, cameras, appliances."
-why_travelers_care: "Tax-free 10% saving on big-ticket items."
+- Yodobashi Akiba
+- Bic Yurakucho
+- Bic Shinjuku
+- Yodobashi Umeda
+price_yen: Variable
+what_it_is: One-stop tax-free electronics, cameras, appliances.
+why_travelers_care: Tax-free 10% saving on big-ticket items.
 risk_flags:
-  - "voltage mismatch"
-verification_notes: "Verify dual-voltage on every appliance"
+- voltage mismatch
+verification_notes: Verify dual-voltage on every appliance
 source_links:
-  - "yodobashi.com"
-  - "biccamera.com"
-confidence: "high"
+- yodobashi.com
+- biccamera.com
+confidence: high
 trip_score: 7
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: 'Tax-free electronics. Big-camera-store treasure hunting with one catch: Japan is 100V, so check voltage before adopting a rice cooker.'
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: 'Tax-free electronics. Big-camera-store treasure hunting with one catch:
+  Japan is 100V, so check voltage before adopting a rice cooker.'
 english_name: Bic Camera Tax-Free Electronics
 japanese_name: ビックカメラ 免税家電
 subcategory: tax-free electronics
@@ -42,3 +42,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.biccamera.co.jp/language/forec/english.html
 enrichment_date: '2026-05-19'
+image: null

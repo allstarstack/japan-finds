@@ -1,33 +1,33 @@
-id: "JF-0039"
-slug: "sponge-holder-with-suction-cup"
-name_en: "Sponge holder with suction cup"
-category: "100-yen"
+id: JF-0039
+slug: sponge-holder-with-suction-cup
+name_en: Sponge holder with suction cup
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "スポンジホルダー"
-brand: "Daiso / Seria / Can Do"
+- bring_home
+status: ready
+name_jp: スポンジホルダー
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110–¥330"
-what_it_is: "Small sink accessory for sponge storage."
-why_travelers_care: "Japanese micro-organization angle."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110–¥330
+what_it_is: Small sink accessory for sponge storage.
+why_travelers_care: Japanese micro-organization angle.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Check suction quality."
+- easy to buy outside Japan
+verification_notes: Check suction quality.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: medium
 trip_score: 6
 suitcase_score: 7
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso suction sponge holder. Sticks to the sink wall and gets the sad wet sponge off the counter. Tiny kitchen upgrade, very 100-yen-core.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso suction sponge holder. Sticks to the sink wall and gets the sad
+  wet sponge off the counter. Tiny kitchen upgrade, very 100-yen-core.
 english_name: Daiso Suction Sponge Holder
 japanese_name: 吸盤スポンジホルダー
 subcategory: kitchen storage
@@ -39,3 +39,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4582147277300
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

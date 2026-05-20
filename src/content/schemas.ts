@@ -112,6 +112,18 @@ export const productSchema = z.object({
   featured: z.boolean().optional().default(false),
   // konbini → food|drink|sweet · drugstore → skincare|comfort|beauty|meds
   sub_chip: z.string().optional(),
+  // D5b enrichment fields (added in D5b.5)
+  description: z.string().nullable().optional(),
+  english_name: z.string().nullable().optional(),
+  japanese_name: z.string().nullable().optional(),
+  subcategory: z.string().nullable().optional(),
+  price_range_jpy: z.string().nullable().optional(),
+  where_to_buy: strings.optional(),
+  image: z.string().nullable().optional(),
+  safety_flags: strings.optional(),
+  enrichment_confidence: z.enum(["high", "medium", "low"]).optional(),
+  enrichment_source_url: z.string().nullable().optional(),
+  enrichment_date: z.string().nullable().optional(),
 });
 
 /* Phase B-2 places schema (Decision #1B revision).

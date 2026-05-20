@@ -1,36 +1,37 @@
-id: "JF-0196"
-slug: "pocket-tissue-with-characters"
-name_en: "Pocket tissue with characters"
-category: "other"
+id: JF-0196
+slug: pocket-tissue-with-characters
+name_en: Pocket tissue with characters
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Daiso"
-  - "Sanrio"
-  - "Pokemon Center"
-  - "Aeon"
-price_yen: "~¥110–¥500"
-what_it_is: "Small tissue packs with cute wrappers."
-why_travelers_care: "Very useful in Japan and cute enough for kids."
+- Daiso
+- Sanrio
+- Pokemon Center
+- Aeon
+price_yen: ~¥110–¥500
+what_it_is: Small tissue packs with cute wrappers.
+why_travelers_care: Very useful in Japan and cute enough for kids.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Verify licensing if character-branded."
+- easy to buy outside Japan
+verification_notes: Verify licensing if character-branded.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://shop.sanrio.co.jp/"
-  - "https://jp.daisonet.com/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.matsukiyococokara-online.com/
+- https://shop.sanrio.co.jp/
+- https://jp.daisonet.com/
+confidence: medium
 trip_score: 7
 suitcase_score: 10
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "キャラクターポケットティッシュ"
-agent_notes: "Category row character varies"
-
-description: Sanrio pocket tissues. Tiny character tissue packs for bags, kids, and sudden shrine-side sneezes. Cheap, cute, and somehow more emotionally prepared than you.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: キャラクターポケットティッシュ
+agent_notes: Category row character varies
+description: Sanrio pocket tissues. Tiny character tissue packs for bags, kids, and
+  sudden shrine-side sneezes. Cheap, cute, and somehow more emotionally prepared than
+  you.
 english_name: Sanrio Cinnamoroll Pocket Tissue Set
 japanese_name: サンリオ ポケットティッシュ
 subcategory: pocket tissue
@@ -44,3 +45,4 @@ enrichment_confidence: low
 enrichment_source_url: https://jyw-kawaii.com/products/sanrio-pocket-tissue-6pcs-set-cinnamoroll-hayashi-japan
 enrichment_date: '2026-05-19'
 image: /products/pocket-tissue-with-characters.webp
+safety_flags: []

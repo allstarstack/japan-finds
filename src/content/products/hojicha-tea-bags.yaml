@@ -1,34 +1,34 @@
-id: "JF-0328"
-slug: "hojicha-tea-bags"
-name_en: "Hojicha tea bags"
-category: "snacks"
+id: JF-0328
+slug: hojicha-tea-bags
+name_en: Hojicha tea bags
+category: snacks
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "ほうじ茶ティーバッグ"
-brand: "Various tea makers"
+- stock_up
+status: ready
+name_jp: ほうじ茶ティーバッグ
+brand: Various tea makers
 where_found:
-  - "Tea shops"
-  - "supermarkets"
-  - "Muji"
-price_yen: "~¥300–¥1,500"
-what_it_is: "Roasted green tea bags."
-why_travelers_care: "Low-caffeine-feeling, useful, packable gift."
+- Tea shops
+- supermarkets
+- Muji
+price_yen: ~¥300–¥1,500
+what_it_is: Roasted green tea bags.
+why_travelers_care: Low-caffeine-feeling, useful, packable gift.
 risk_flags:
-  - "food import rules"
-  - "caffeine"
-verification_notes: "Verify tea type and origin."
+- food import rules
+- caffeine
+verification_notes: Verify tea type and origin.
 source_links:
-  - "https://www.muji.com/jp/ja/store"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.muji.com/jp/ja/store
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 9
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Oi Ocha Hojicha Tea Bags. Roasted green tea at home without the cafe markup. Toasty, low-drama, good after dinner.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Oi Ocha Hojicha Tea Bags. Roasted green tea at home without the cafe
+  markup. Toasty, low-drama, good after dinner.
 english_name: Oi Ocha Hojicha Tea Bags
 japanese_name: お〜いお茶 ほうじ茶 ティーバッグ
 subcategory: tea bags
@@ -42,3 +42,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.itoen-global.com/products/oi_ocha.html
 enrichment_date: '2026-05-19'
 image: /products/hojicha-tea-bags.webp
+safety_flags: []

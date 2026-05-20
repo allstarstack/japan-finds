@@ -1,36 +1,36 @@
-id: "JF-0186"
-slug: "bento-cutters-nori-punches"
-name_en: "Bento cutters / nori punches"
-category: "other"
+id: JF-0186
+slug: bento-cutters-nori-punches
+name_en: Bento cutters / nori punches
+category: other
 intent:
-  - "gift_easy"
-status: "ready"
+- gift_easy
+status: ready
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110–¥800"
-what_it_is: "Tools for cutting seaweed/cheese/ham into shapes."
-why_travelers_care: "Tiny, cute, very Japan bento-core gift."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110–¥800
+what_it_is: Tools for cutting seaweed/cheese/ham into shapes.
+why_travelers_care: Tiny, cute, very Japan bento-core gift.
 risk_flags:
-  - "small parts"
-  - "sharp edges possible"
-verification_notes: "Check age warning and cleaning instructions."
+- small parts
+- sharp edges possible
+verification_notes: Check age warning and cleaning instructions.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-  - "https://jp.daisonet.com/products/4550480470641"
-  - "https://jp.daisonet.com/products/4549131591262"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+- https://jp.daisonet.com/products/4550480470641
+- https://jp.daisonet.com/products/4549131591262
+confidence: medium
 trip_score: 7
 suitcase_score: 9
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "海苔パンチ・抜き型"
-agent_notes: "Daiso confirms nori punch cutters vary"
-
-description: Nori punch. Turns seaweed into tiny faces so lunch looks emotionally more prepared than you are.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 海苔パンチ・抜き型
+agent_notes: Daiso confirms nori punch cutters vary
+description: Nori punch. Turns seaweed into tiny faces so lunch looks emotionally
+  more prepared than you are.
 english_name: Kai Chuboos Nori Punch
 japanese_name: 貝印 ちゅーぼーず のりパンチ
 subcategory: bento tool
@@ -44,3 +44,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.japanbargain.com/kai-chuboos-nori-seaweed-punch-for-bento-fg5103/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

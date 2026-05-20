@@ -1,34 +1,34 @@
-id: "JF-0382"
-slug: "kao-merit-day-dry-shampoo-sheets"
-name_en: "Kao Merit Day+ dry shampoo sheets"
-category: "skincare"
+id: JF-0382
+slug: kao-merit-day-dry-shampoo-sheets
+name_en: Kao Merit Day+ dry shampoo sheets
+category: skincare
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "メリット ドライシャンプーシート"
-brand: "Kao"
+- day_one_fixes
+status: ready
+name_jp: メリット ドライシャンプーシート
+brand: Kao
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥300–¥600"
-what_it_is: "Hair/scalp refresh sheets."
-why_travelers_care: "Excellent for summer travel and long walking days."
+- Drugstores
+- Donki
+price_yen: ~¥300–¥600
+what_it_is: Hair/scalp refresh sheets.
+why_travelers_care: Excellent for summer travel and long walking days.
 risk_flags:
-  - "liquid"
-  - "cosmetic claim"
-  - "fragrance"
-verification_notes: "Check scent and scalp sensitivity."
+- liquid
+- cosmetic claim
+- fragrance
+verification_notes: Check scent and scalp sensitivity.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+confidence: medium
 trip_score: 8
 suitcase_score: 8
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Merit Day+ dry shampoo sheets. Wipe your scalp and bangs after sweat or trains; emergency hair reset in a flat packet.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Merit Day+ dry shampoo sheets. Wipe your scalp and bangs after sweat
+  or trains; emergency hair reset in a flat packet.
 english_name: Merit Day+ Dry Shampoo Sheets
 japanese_name: メリットデイプラス ドライシャンプーシート
 subcategory: dry shampoo sheet
@@ -42,3 +42,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.kao.co.jp/merit/products/dayplus/
 enrichment_date: '2026-05-19'
 image: /products/kao-merit-day-dry-shampoo-sheets.webp
+safety_flags: []

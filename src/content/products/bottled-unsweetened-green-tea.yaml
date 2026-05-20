@@ -1,37 +1,37 @@
-id: "JF-0245"
-slug: "bottled-unsweetened-green-tea"
-name_en: "Bottled unsweetened green tea"
-category: "konbini"
+id: JF-0245
+slug: bottled-unsweetened-green-tea
+name_en: Bottled unsweetened green tea
+category: konbini
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Aeon"
-price_yen: "~¥120–¥180"
-what_it_is: "Ready-to-drink unsweetened tea."
-why_travelers_care: "Solves jetlag dehydration without sugar; feels very Japan-normal."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Aeon
+price_yen: ~¥120–¥180
+what_it_is: Ready-to-drink unsweetened tea.
+why_travelers_care: Solves jetlag dehydration without sugar; feels very Japan-normal.
 risk_flags:
-  - "liquid"
-verification_notes: "Brand taste varies; not suitcase-relevant."
+- liquid
+verification_notes: Brand taste varies; not suitcase-relevant.
 source_links:
-  - "https://www.japan-guide.com/e/e2071.html"
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.itoen.jp/oiocha/"
-  - "https://products.suntory.co.jp/b/0000000003/"
-confidence: "high"
+- https://www.japan-guide.com/e/e2071.html
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.itoen.jp/oiocha/
+- https://products.suntory.co.jp/b/0000000003/
+confidence: high
 trip_score: 9
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "drink"
-name_jp: "緑茶 ペットボトル"
-agent_notes: "Category row brands vary"
-
-description: Unsweetened bottled green tea. The default no-sugar drink in Japan when water feels too responsible.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: drink
+name_jp: 緑茶 ペットボトル
+agent_notes: Category row brands vary
+description: Unsweetened bottled green tea. The default no-sugar drink in Japan when
+  water feels too responsible.
 english_name: Ito En Oi Ocha Unsweetened Green Tea
 japanese_name: 伊藤園 お～いお茶 緑茶
 subcategory: green tea
@@ -44,3 +44,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.itoen-global.com/products/oi_ocha.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

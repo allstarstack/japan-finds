@@ -1,32 +1,33 @@
-id: "JF-0167"
-slug: "mizuhiki-decorative-cord-crafts"
-name_en: "Mizuhiki Decorative Cord Crafts"
-category: "other"
+id: JF-0167
+slug: mizuhiki-decorative-cord-crafts
+name_en: Mizuhiki Decorative Cord Crafts
+category: other
 intent:
-  - "gift_easy"
-  - "local_editions"
-status: "ready"
+- gift_easy
+- local_editions
+status: ready
 where_found:
-  - "Iida Mizuhiki shops"
-  - "Loft"
-  - "Hands"
-price_yen: "300-3000"
-what_it_is: "Decorative paper-cord ornaments, traditionally used on gift envelopes."
-why_travelers_care: "Beautiful, tiny, photogenic."
+- Iida Mizuhiki shops
+- Loft
+- Hands
+price_yen: 300-3000
+what_it_is: Decorative paper-cord ornaments, traditionally used on gift envelopes.
+why_travelers_care: Beautiful, tiny, photogenic.
 source_links:
-  - "general"
-  - "https://www.iida-mizuhiki.jp/"
-  - "unknown"
-confidence: "high"
+- general
+- https://www.iida-mizuhiki.jp/
+- unknown
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "gift"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "水引"
-agent_notes: "Craft category maker varies"
-
-description: Mizuhiki cord crafts. Twisted paper cords tied into knots, charms, and gift decorations. Small souvenir energy for people who like craft shops more than malls.
+launch_category: gift
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 水引
+agent_notes: Craft category maker varies
+description: Mizuhiki cord crafts. Twisted paper cords tied into knots, charms, and
+  gift decorations. Small souvenir energy for people who like craft shops more than
+  malls.
 english_name: Mizuhiki Decorative Cord Crafts
 japanese_name: 水引 飾り紐
 subcategory: craft
@@ -39,3 +40,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://travelerscompanyusa.com/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,35 +1,35 @@
-id: "JF-0137"
-slug: "netsusama-cooling-sheets"
-name_en: "Netsusama Cooling Sheets"
-category: "donki-drugstore"
+id: JF-0137
+slug: netsusama-cooling-sheets
+name_en: Netsusama Cooling Sheets
+category: donki-drugstore
 intent:
-  - "stock_up"
-  - "day_one_fixes"
-status: "ready"
+- stock_up
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "400-700"
-what_it_is: "Gel cooling forehead patches for fever or summer heat."
-why_travelers_care: "Summer heat-stroke aid + jet-lag fever pickup."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: 400-700
+what_it_is: Gel cooling forehead patches for fever or summer heat.
+why_travelers_care: Summer heat-stroke aid + jet-lag fever pickup.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "kobayashi.co.jp/seihin/np"
-  - "https://www.kobayashi.co.jp/seihin/ns/"
-  - "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987072087725"
-confidence: "high"
+- kobayashi.co.jp/seihin/np
+- https://www.kobayashi.co.jp/seihin/ns/
+- https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4987072087725
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "熱さまシート"
-
-description: Netsusama Cooling Sheets. Stick-on gel sheets for fever foreheads and summer survival. Not medicine, just the cold little rectangle everyone knows.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: 熱さまシート
+description: Netsusama Cooling Sheets. Stick-on gel sheets for fever foreheads and
+  summer survival. Not medicine, just the cold little rectangle everyone knows.
 english_name: Netsusama Cooling Sheets
 japanese_name: 熱さまシート
 subcategory: cooling sheet
@@ -43,3 +43,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.kobayashi.co.jp/seihin/nss/
 enrichment_date: '2026-05-19'
 image: /products/netsusama-cooling-sheets.webp
+safety_flags: []

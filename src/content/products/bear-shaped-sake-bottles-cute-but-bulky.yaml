@@ -1,27 +1,27 @@
-id: "JF-0047"
-slug: "bear-shaped-sake-bottles-cute-but-bulky"
-name_en: "Bear-Shaped Sake Bottles (Cute But Bulky)"
-category: "other"
+id: JF-0047
+slug: bear-shaped-sake-bottles-cute-but-bulky
+name_en: Bear-Shaped Sake Bottles (Cute But Bulky)
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "クマ瓶酒"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: クマ瓶酒
+brand: Various
 where_found:
-  - "Souvenir shops"
-  - "airports"
-price_yen: "2000-5000"
-what_it_is: "Cute novelty sake bottles. Heavy + fragile + expensive shipping."
-why_travelers_care: "Cute but shipping cost rarely justifies."
+- Souvenir shops
+- airports
+price_yen: 2000-5000
+what_it_is: Cute novelty sake bottles. Heavy + fragile + expensive shipping.
+why_travelers_care: Cute but shipping cost rarely justifies.
 risk_flags:
-  - "liquid, fragile, alcohol, bulky"
+- liquid, fragile, alcohol, bulky
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 4
 suitcase_score: 2
-
-description: Bear-shaped sake bottle. Cute, ceramic, and absolutely committed to stealing suitcase space.
+description: Bear-shaped sake bottle. Cute, ceramic, and absolutely committed to stealing
+  suitcase space.
 english_name: Pon Eper Bear-Shaped Sake Bottle
 japanese_name: ぽんエペレ 子ぐまボトル
 subcategory: sake
@@ -35,3 +35,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://dailyportalz.jp/kiji/koguma-nihonsyu
 enrichment_date: '2026-05-19'
+image: null

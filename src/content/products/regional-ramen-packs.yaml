@@ -1,36 +1,36 @@
-id: "JF-0343"
-slug: "regional-ramen-packs"
-name_en: "Regional ramen packs"
-category: "snacks"
+id: JF-0343
+slug: regional-ramen-packs
+name_en: Regional ramen packs
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "ご当地ラーメン"
-brand: "Various"
+- local_editions
+status: ready
+name_jp: ご当地ラーメン
+brand: Various
 where_found:
-  - "Donki"
-  - "supermarkets"
-  - "stations"
-  - "airports"
-price_yen: "~¥300–¥1,500"
-what_it_is: "Shelf-stable ramen tied to Sapporo, Hakata, Kitakata, etc."
-why_travelers_care: "Easy way to bring regional flavor home."
+- Donki
+- supermarkets
+- stations
+- airports
+price_yen: ~¥300–¥1,500
+what_it_is: Shelf-stable ramen tied to Sapporo, Hakata, Kitakata, etc.
+why_travelers_care: Easy way to bring regional flavor home.
 risk_flags:
-  - "bulky"
-  - "allergen"
-  - "meat/seafood possible"
-verification_notes: "Check customs rules and ingredients."
+- bulky
+- allergen
+- meat/seafood possible
+verification_notes: Check customs rules and ingredients.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 7
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Regional ramen packs. Take-home ramen boxes from famous shops and prefectures, aka luggage-friendly noodle bragging rights.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Regional ramen packs. Take-home ramen boxes from famous shops and prefectures,
+  aka luggage-friendly noodle bragging rights.
 english_name: Ichiran Hakata Thin Noodle Gift Set
 japanese_name: 一蘭 博多細麺 替玉付き セット
 subcategory: souvenir ramen

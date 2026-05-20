@@ -1,34 +1,34 @@
-id: "JF-0110"
-slug: "cheap-costume-animal-hat-aisle"
-name_en: "Cheap costume / animal hat aisle"
-category: "donki-drugstore"
+id: JF-0110
+slug: cheap-costume-animal-hat-aisle
+name_en: Cheap costume / animal hat aisle
+category: donki-drugstore
 intent:
-  - "content_only"
-status: "ready"
+- content_only
+status: ready
 where_found:
-  - "Don Quijote"
-price_yen: "~¥500–¥3,000"
-what_it_is: "Novelty costume pieces, animal hats, party props."
-why_travelers_care: "Good chaos footage, not a serious shopping-list item."
+- Don Quijote
+price_yen: ~¥500–¥3,000
+what_it_is: Novelty costume pieces, animal hats, party props.
+why_travelers_care: Good chaos footage, not a serious shopping-list item.
 risk_flags:
-  - "bulky"
-  - "low utility"
-verification_notes: "Check store photo/filming policy before content use."
+- bulky
+- low utility
+verification_notes: Check store photo/filming policy before content use.
 source_links:
-  - "https://www.donki.com/en/tax_free/"
-  - "https://www.donki.com/en/"
-  - "https://www.donki.com/"
-  - "unknown"
-confidence: "medium"
+- https://www.donki.com/en/tax_free/
+- https://www.donki.com/en/
+- https://www.donki.com/
+- unknown
+confidence: medium
 trip_score: 5
 suitcase_score: 2
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "コスプレ・動物帽子"
-agent_notes: "Category-level only exact novelty items vary"
-
-description: Donki animal hat aisle. Instant costume, low dignity, high photo yield. Grab one when the night needs a penguin head for no reason.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: コスプレ・動物帽子
+agent_notes: Category-level only exact novelty items vary
+description: Donki animal hat aisle. Instant costume, low dignity, high photo yield.
+  Grab one when the night needs a penguin head for no reason.
 english_name: Donki Animal Hat Aisle
 japanese_name: かぶりもの / コスチューム
 subcategory: costume accessories
@@ -40,3 +40,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.donki.com/season/autumn/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,37 +1,37 @@
-id: "JF-0152"
-slug: "kirei-kirei-hand-sanitizer-sheets-gel"
-name_en: "Kirei Kirei hand sanitizer sheets/gel"
-category: "donki-drugstore"
+id: JF-0152
+slug: kirei-kirei-hand-sanitizer-sheets-gel
+name_en: Kirei Kirei hand sanitizer sheets/gel
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "~¥200–¥600"
-what_it_is: "Hand cleaning gel, wipes, or soap products."
-why_travelers_care: "Practical first-day purchase for food-heavy trip."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: ~¥200–¥600
+what_it_is: Hand cleaning gel, wipes, or soap products.
+why_travelers_care: Practical first-day purchase for food-heavy trip.
 risk_flags:
-  - "liquid"
-  - "cosmetic/biocide claim"
-verification_notes: "Check alcohol content and baggage rules."
+- liquid
+- cosmetic/biocide claim
+verification_notes: Check alcohol content and baggage rules.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://kireikirei.lion.co.jp/"
-  - "https://www.lion.co.jp/ja/products/category/hand/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://kireikirei.lion.co.jp/
+- https://www.lion.co.jp/ja/products/category/hand/
+confidence: medium
 trip_score: 7
 suitcase_score: 6
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "キレイキレイ 薬用手指の消毒ジェル"
-
-description: KireiKirei hand gel. Pocket sanitizer for train snacks, playground railings, and the pre-konbini chicken wipe-down.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: キレイキレイ 薬用手指の消毒ジェル
+description: KireiKirei hand gel. Pocket sanitizer for train snacks, playground railings,
+  and the pre-konbini chicken wipe-down.
 english_name: KireiKirei Medicated Hand Sanitizing Gel Plus
 japanese_name: キレイキレイ 薬用手指の消毒ジェルプラス
 subcategory: hand sanitizer
@@ -46,3 +46,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.lion.co.jp/en/products/category/body/18
 enrichment_date: '2026-05-19'
 image: /products/kirei-kirei-hand-sanitizer-sheets-gel.webp
+safety_flags: []

@@ -1,31 +1,31 @@
-id: "JF-0234"
-slug: "salmon-onigiri"
-name_en: "Salmon Onigiri"
-category: "konbini"
+id: JF-0234
+slug: salmon-onigiri
+name_en: Salmon Onigiri
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-price_yen: "150-200"
-what_it_is: "Onigiri with grilled salmon flake center."
-why_travelers_care: "Less polarizing than tuna mayo, often the daily breakfast pick."
+- 7-Eleven
+price_yen: 150-200
+what_it_is: Onigiri with grilled salmon flake center.
+why_travelers_care: Less polarizing than tuna mayo, often the daily breakfast pick.
 risk_flags:
-  - "perishable"
-verification_notes: "Check specific filling and allergy label."
+- perishable
+verification_notes: Check specific filling and allergy label.
 source_links:
-  - "konbini sites"
-  - "https://www.sej.co.jp/products/a/item/041908/"
-  - "https://www.sej.co.jp/products/a/onigiri/"
-confidence: "high"
+- konbini sites
+- https://www.sej.co.jp/products/a/item/041908/
+- https://www.sej.co.jp/products/a/onigiri/
+confidence: high
 trip_score: 9
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "手巻おにぎり 炭火焼熟成紅しゃけ"
-
-description: Salmon onigiri. Rice, nori, grilled salmon, zero drama; the konbini lunch that knows exactly what it is.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: 手巻おにぎり 炭火焼熟成紅しゃけ
+description: Salmon onigiri. Rice, nori, grilled salmon, zero drama; the konbini lunch
+  that knows exactly what it is.
 english_name: Lawson Hand-Rolled Grilled Salmon Onigiri
 japanese_name: 手巻おにぎり 炙り熟成紅鮭
 subcategory: onigiri
@@ -39,3 +39,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.lawson.co.jp/recommend/original/rice/
 enrichment_date: '2026-05-19'
 image: /products/salmon-onigiri.webp
+safety_flags: []

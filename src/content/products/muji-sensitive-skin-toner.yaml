@@ -1,31 +1,31 @@
-id: "JF-0387"
-slug: "muji-sensitive-skin-toner"
-name_en: "Muji Sensitive Skin Toner"
-category: "skincare"
+id: JF-0387
+slug: muji-sensitive-skin-toner
+name_en: Muji Sensitive Skin Toner
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "敏感肌用化粧水"
-brand: "MUJI"
+- stock_up
+status: ready
+name_jp: 敏感肌用化粧水
+brand: MUJI
 where_found:
-  - "MUJI stores"
-price_yen: "~¥390–¥1,200"
-what_it_is: "Simple toner/lotion in multiple sizes."
-why_travelers_care: "Good travel-size range and minimalist packaging."
+- MUJI stores
+price_yen: ~¥390–¥1,200
+what_it_is: Simple toner/lotion in multiple sizes.
+why_travelers_care: Good travel-size range and minimalist packaging.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-verification_notes: "Check exact size/formula."
+- liquid
+- skincare/cosmetic claim
+verification_notes: Check exact size/formula.
 source_links:
-  - "https://www.muji.com/jp/ja/store"
-confidence: "high"
+- https://www.muji.com/jp/ja/store
+confidence: high
 trip_score: 7
 suitcase_score: 7
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: MUJI Sensitive Skin Toner. Plain, gentle-feeling lotion with the MUJI beige-label calm. Drugstore-glow people use it when their face wants less drama.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: MUJI Sensitive Skin Toner. Plain, gentle-feeling lotion with the MUJI
+  beige-label calm. Drugstore-glow people use it when their face wants less drama.
 english_name: MUJI Sensitive Skin Toner High Moisture
 japanese_name: 無印良品 敏感肌用化粧水 高保湿
 subcategory: toner
@@ -36,4 +36,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.muji.com/jp/ja/store/cmdty/detail/4550583434991
 enrichment_date: '2026-05-19'
-image: /products/muji-sensitive-skin-toner.webp
+image: null
+safety_flags: []

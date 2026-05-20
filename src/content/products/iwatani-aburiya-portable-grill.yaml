@@ -1,36 +1,37 @@
-id: "JF-0274"
-slug: "iwatani-aburiya-portable-grill"
-name_en: "Iwatani Aburiya Portable Grill"
-category: "other"
+id: JF-0274
+slug: iwatani-aburiya-portable-grill
+name_en: Iwatani Aburiya Portable Grill
+category: other
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "炉ばた焼器 炙りや"
-brand: "Iwatani"
+- bring_home
+status: ready
+name_jp: 炉ばた焼器 炙りや
+brand: Iwatani
 where_found:
-  - "Iwatani official"
-  - "Donki"
-  - "Yodobashi"
-  - "Bic Camera"
-  - "Rakuten"
-price_yen: "~¥6,000"
-what_it_is: "Cassette-gas tabletop grill."
-why_travelers_care: "Interesting but bulky; gas canisters cannot fly."
+- Iwatani official
+- Donki
+- Yodobashi
+- Bic Camera
+- Rakuten
+price_yen: ~¥6,000
+what_it_is: Cassette-gas tabletop grill.
+why_travelers_care: Interesting but bulky; gas canisters cannot fly.
 risk_flags:
-  - "bulky"
-  - "gas-related"
-  - "travel restriction"
-verification_notes: "Verify airline rules and model availability; never include gas canisters."
+- bulky
+- gas-related
+- travel restriction
+verification_notes: Verify airline rules and model availability; never include gas
+  canisters.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 1
 suitcase_score: 4
-launch_category: "kitchen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Iwatani Aburiya II. Tabletop butane grill for yakitori and yakiniku. Apartment BBQ energy without committing to charcoal.
+launch_category: kitchen
+fill_type: verified
+display_strategy: show_all
+description: Iwatani Aburiya II. Tabletop butane grill for yakitori and yakiniku.
+  Apartment BBQ energy without committing to charcoal.
 english_name: Iwatani Aburiya II Portable Gas Grill
 japanese_name: イワタニ 炉ばた焼器 炙りやII
 subcategory: portable gas grill
@@ -44,3 +45,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.iwatani.com.my/products/cassette-stove/aburiya.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

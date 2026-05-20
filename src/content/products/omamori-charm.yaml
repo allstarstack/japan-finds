@@ -1,31 +1,31 @@
-id: "JF-0303"
-slug: "omamori-charm"
-name_en: "Omamori charm"
-category: "other"
+id: JF-0303
+slug: omamori-charm
+name_en: Omamori charm
+category: other
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "お守り"
-brand: "Shrines/temples"
+- local_editions
+status: ready
+name_jp: お守り
+brand: Shrines/temples
 where_found:
-  - "Shrines and temples nationwide"
-price_yen: "~¥500–¥1,500"
-what_it_is: "Protective charm for luck, travel, health, study, etc."
-why_travelers_care: "Small, meaningful, location-specific souvenir."
+- Shrines and temples nationwide
+price_yen: ~¥500–¥1,500
+what_it_is: Protective charm for luck, travel, health, study, etc.
+why_travelers_care: Small, meaningful, location-specific souvenir.
 risk_flags:
-  - "religious/cultural etiquette"
-verification_notes: "Explain respectful handling; do not treat as fashion-only prop."
+- religious/cultural etiquette
+verification_notes: Explain respectful handling; do not treat as fashion-only prop.
 source_links:
-  - "https://www.japan.travel/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan.travel/en/
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 10
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Omamori charm. A small shrine amulet for wishes like safe travel, good health, or emotional damage control. Buy one at the shrine, keep it respectfully.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Omamori charm. A small shrine amulet for wishes like safe travel, good
+  health, or emotional damage control. Buy one at the shrine, keep it respectfully.
 english_name: Meiji Jingu Omamori Charm
 japanese_name: 明治神宮 お守り
 subcategory: shrine charm
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.meijijingu.or.jp/en/feelshinto/5.php
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

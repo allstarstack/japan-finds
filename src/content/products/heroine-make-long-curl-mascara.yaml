@@ -1,34 +1,34 @@
-id: "JF-0381"
-slug: "heroine-make-long-curl-mascara"
-name_en: "Heroine Make Long & Curl Mascara"
-category: "skincare"
+id: JF-0381
+slug: heroine-make-long-curl-mascara
+name_en: Heroine Make Long & Curl Mascara
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "ヒロインメイク ロング＆カールマスカラ"
-brand: "Kiss Me / Isehan"
+- stock_up
+status: ready
+name_jp: ヒロインメイク ロング＆カールマスカラ
+brand: Kiss Me / Isehan
 where_found:
-  - "Drugstores"
-  - "Loft"
-  - "@cosme"
-price_yen: "~¥1,200–¥1,500"
-what_it_is: "Japanese waterproof mascara."
-why_travelers_care: "Cult reputation for staying power; tiny and suitcase-efficient."
+- Drugstores
+- Loft
+- '@cosme'
+price_yen: ~¥1,200–¥1,500
+what_it_is: Japanese waterproof mascara.
+why_travelers_care: Cult reputation for staying power; tiny and suitcase-efficient.
 risk_flags:
-  - "skincare/cosmetic claim"
-verification_notes: "Confirm waterproof remover needs and sensitivity."
+- skincare/cosmetic claim
+verification_notes: Confirm waterproof remover needs and sensitivity.
 source_links:
-  - "https://www.loft.co.jp/store/"
-  - "https://www.cosme.net/"
-  - "https://www.matsukiyococokara-online.com/"
-confidence: "high"
+- https://www.loft.co.jp/store/
+- https://www.cosme.net/
+- https://www.matsukiyococokara-online.com/
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Heroine Make Long & Curl Mascara. Japan's drama-proof mascara for curled lashes that hold through humidity, tears, and 2 a.m. bad decisions.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Heroine Make Long & Curl Mascara. Japan's drama-proof mascara for curled
+  lashes that hold through humidity, tears, and 2 a.m. bad decisions.
 english_name: Heroine Make Long & Curl Mascara Advanced Film
 japanese_name: ヒロインメイク ロング＆カールマスカラ アドバンストフィルム
 subcategory: mascara
@@ -42,3 +42,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.isehan.co.jp/heroine/product/mascara/longcurlmascaraadvancedfilm/
 enrichment_date: '2026-05-19'
 image: /products/heroine-make-long-curl-mascara.webp
+safety_flags: []

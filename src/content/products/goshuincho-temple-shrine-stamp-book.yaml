@@ -1,34 +1,35 @@
-id: "JF-0296"
-slug: "goshuincho-temple-shrine-stamp-book"
-name_en: "Goshuincho temple/shrine stamp book"
-category: "other"
+id: JF-0296
+slug: goshuincho-temple-shrine-stamp-book
+name_en: Goshuincho temple/shrine stamp book
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "御朱印帳"
-brand: "Temples/shrines / stationery makers"
+- make_it_yours
+status: ready
+name_jp: 御朱印帳
+brand: Temples/shrines / stationery makers
 where_found:
-  - "Shrines"
-  - "temples"
-  - "Loft"
-  - "bookstores"
-price_yen: "~¥1,000–¥3,000"
-what_it_is: "Accordion book for collecting shrine/temple calligraphy stamps."
-why_travelers_care: "Meaningful, beautiful, and location-specific."
+- Shrines
+- temples
+- Loft
+- bookstores
+price_yen: ~¥1,000–¥3,000
+what_it_is: Accordion book for collecting shrine/temple calligraphy stamps.
+why_travelers_care: Meaningful, beautiful, and location-specific.
 risk_flags:
-  - "religious/cultural etiquette"
-verification_notes: "Needs etiquette guidance and cash for stamps."
+- religious/cultural etiquette
+verification_notes: Needs etiquette guidance and cash for stamps.
 source_links:
-  - "https://www.japan.travel/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan.travel/en/
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 9
 suitcase_score: 9
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Goshuincho temple and shrine book. The dedicated stamp notebook, not your random travel journal. Buy it before the first shrine starts bullying your planning skills.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Goshuincho temple and shrine book. The dedicated stamp notebook, not
+  your random travel journal. Buy it before the first shrine starts bullying your
+  planning skills.
 english_name: Goshuincho Temple and Shrine Stamp Book
 japanese_name: 御朱印帳
 subcategory: stamp book
@@ -42,3 +43,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.machiya-inn-japan.com/blog/goshuincho-guide/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

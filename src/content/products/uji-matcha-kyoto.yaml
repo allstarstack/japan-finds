@@ -1,29 +1,29 @@
-id: "JF-0321"
-slug: "uji-matcha-kyoto"
-name_en: "Uji Matcha (Kyoto)"
-category: "other"
+id: JF-0321
+slug: uji-matcha-kyoto
+name_en: Uji Matcha (Kyoto)
+category: other
 intent:
-  - "local_editions"
-  - "make_it_yours"
-status: "ready"
-name_jp: "宇治抹茶"
-brand: "Ippodo, Marukyu Koyamaen, Itohkyuemon"
+- local_editions
+- make_it_yours
+status: ready
+name_jp: 宇治抹茶
+brand: Ippodo, Marukyu Koyamaen, Itohkyuemon
 where_found:
-  - "Kyoto Uji district"
-price_yen: "1500-5000"
-what_it_is: "Most respected matcha origin; can do tea-grinding experiences in Uji."
-why_travelers_care: "Pilgrimage-quality matcha source."
-verification_notes: "Grinding experience adds personalization angle"
+- Kyoto Uji district
+price_yen: 1500-5000
+what_it_is: Most respected matcha origin; can do tea-grinding experiences in Uji.
+why_travelers_care: Pilgrimage-quality matcha source.
+verification_notes: Grinding experience adds personalization angle
 source_links:
-  - "itohkyuemon.co.jp"
-confidence: "high"
+- itohkyuemon.co.jp
+confidence: high
 trip_score: 10
 suitcase_score: 10
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Uji matcha. Kyoto matcha powder for whisking, lattes, or pretending your kitchen is calmer than it is. Buy sealed tins, not random green dust.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Uji matcha. Kyoto matcha powder for whisking, lattes, or pretending your
+  kitchen is calmer than it is. Buy sealed tins, not random green dust.
 english_name: Uji Matcha
 japanese_name: 宇治抹茶
 subcategory: matcha powder
@@ -35,3 +35,6 @@ where_to_buy:
 - airport gift shops
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []
+enrichment_source_url: null

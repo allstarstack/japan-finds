@@ -1,34 +1,34 @@
-id: "JF-0416"
-slug: "senbei-rice-crackers-bansheido-others"
-name_en: "Senbei Rice Crackers (Bansheido, others)"
-category: "snacks"
+id: JF-0416
+slug: senbei-rice-crackers-bansheido-others
+name_en: Senbei Rice Crackers (Bansheido, others)
+category: snacks
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
-name_jp: "せんべい"
-brand: "Various"
+- bring_home
+- gift_easy
+status: ready
+name_jp: せんべい
+brand: Various
 where_found:
-  - "Kameda"
-  - "Chuoken"
-  - "Ogurasansou"
-  - "Akomeya"
-  - "AEON"
-price_yen: "400-1500"
-what_it_is: "Soy-glazed or salted rice crackers, individually wrapped."
-why_travelers_care: "Savory option in a sweets-heavy gift category."
+- Kameda
+- Chuoken
+- Ogurasansou
+- Akomeya
+- AEON
+price_yen: 400-1500
+what_it_is: Soy-glazed or salted rice crackers, individually wrapped.
+why_travelers_care: Savory option in a sweets-heavy gift category.
 risk_flags:
-  - "allergen-soy-wheat"
+- allergen-soy-wheat
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Senbei rice crackers. Crunchy, salty-sweet rice snacks; convenience-store chips look deeply underqualified next to these.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Senbei rice crackers. Crunchy, salty-sweet rice snacks; convenience-store
+  chips look deeply underqualified next to these.
 english_name: Kameda Happy Turn Senbei Rice Crackers
 japanese_name: 亀田製菓 ハッピーターン
 subcategory: rice crackers
@@ -43,3 +43,4 @@ enrichment_confidence: low
 enrichment_source_url: https://japanesetaste.com/products/kameda-happy-turn-senbei-rice-crackers-pack-of-3-bags
 enrichment_date: '2026-05-19'
 image: /products/senbei-rice-crackers-bansheido-others.webp
+safety_flags: []

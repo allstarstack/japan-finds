@@ -1,33 +1,33 @@
-id: "JF-0017"
-slug: "cable-ties-cord-clips"
-name_en: "Cable ties / cord clips"
-category: "100-yen"
+id: JF-0017
+slug: cable-ties-cord-clips
+name_en: Cable ties / cord clips
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "ケーブルタイ"
-brand: "Daiso / Seria / Can Do"
+- day_one_fixes
+status: ready
+name_jp: ケーブルタイ
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110–¥330"
-what_it_is: "Small organizers for charging cables."
-why_travelers_care: "Cheap fix for tech chaos while traveling."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110–¥330
+what_it_is: Small organizers for charging cables.
+why_travelers_care: Cheap fix for tech chaos while traveling.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Check adhesive/clip quality."
+- easy to buy outside Japan
+verification_notes: Check adhesive/clip quality.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Cable clips. Tiny ¥100 desk-control pieces for chargers, hotel cables, and the octopus living in your bag.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Cable clips. Tiny ¥100 desk-control pieces for chargers, hotel cables,
+  and the octopus living in your bag.
 english_name: Daiso Cable Clips
 japanese_name: ダイソー ケーブルクリップ
 subcategory: cable organizer
@@ -40,3 +40,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://daisous.com/products/ec-4902993172251
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

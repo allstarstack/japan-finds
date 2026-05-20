@@ -1,38 +1,38 @@
-id: "JF-0157"
-slug: "ora2-breath-care-products"
-name_en: "Ora2 breath care products"
-category: "donki-drugstore"
+id: JF-0157
+slug: ora2-breath-care-products
+name_en: Ora2 breath care products
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "~¥300–¥700"
-what_it_is: "Breath spray, toothpaste, or oral-care accessories."
-why_travelers_care: "Useful small travel fix; Japanese flavors/designs can be fun."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: ~¥300–¥700
+what_it_is: Breath spray, toothpaste, or oral-care accessories.
+why_travelers_care: Useful small travel fix; Japanese flavors/designs can be fun.
 risk_flags:
-  - "liquid"
-  - "cosmetic claim"
-  - "easy to buy outside Japan"
-verification_notes: "Verify flavor and baggage limits."
+- liquid
+- cosmetic claim
+- easy to buy outside Japan
+verification_notes: Verify flavor and baggage limits.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://jp.ora2.com/"
-  - "https://www.sunstar.com/jp/oral-care/products/ora2/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://jp.ora2.com/
+- https://www.sunstar.com/jp/oral-care/products/ora2/
+confidence: medium
 trip_score: 7
 suitcase_score: 8
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "オーラツー"
-
-description: Ora2 mouth spray. Tiny breath reset for trains, dates, and garlic situations with consequences. Lives near the toothpaste at Japanese drugstores.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: オーラツー
+description: Ora2 mouth spray. Tiny breath reset for trains, dates, and garlic situations
+  with consequences. Lives near the toothpaste at Japanese drugstores.
 english_name: Ora2 me Mouth Spray
 japanese_name: オーラツーミー マウススプレー
 subcategory: breath spray
@@ -44,3 +44,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.ora2.com/me/me_mouth_spray/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

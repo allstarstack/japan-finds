@@ -1,30 +1,30 @@
-id: "JF-0411"
-slug: "otsumami-konbini-bar-snacks-atari-me-kaki-pi-saki-ika"
-name_en: "Otsumami Konbini Bar Snacks (Atari-Me, Kaki Pi, Saki-Ika)"
-category: "snacks"
+id: JF-0411
+slug: otsumami-konbini-bar-snacks-atari-me-kaki-pi-saki-ika
+name_en: Otsumami Konbini Bar Snacks (Atari-Me, Kaki Pi, Saki-Ika)
+category: snacks
 intent:
-  - "try_in_japan"
-status: "ready"
-name_jp: "おつまみ"
-brand: "Various"
+- try_in_japan
+status: ready
+name_jp: おつまみ
+brand: Various
 where_found:
-  - "Konbini"
-  - "supermarkets"
-price_yen: "200-500"
-what_it_is: "Dried squid, peanut/rice cracker mixes, beer snacks."
-why_travelers_care: "Authentic izakaya-at-home content."
+- Konbini
+- supermarkets
+price_yen: 200-500
+what_it_is: Dried squid, peanut/rice cracker mixes, beer snacks.
+why_travelers_care: Authentic izakaya-at-home content.
 risk_flags:
-  - "allergen-seafood-soy-peanut"
+- allergen-seafood-soy-peanut
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kaki no Tane. Crunchy rice crackers and peanuts that make konbini drinking feel suddenly organized. The default beer snack when dinner is snacks in a bag.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Kaki no Tane. Crunchy rice crackers and peanuts that make konbini drinking
+  feel suddenly organized. The default beer snack when dinner is snacks in a bag.
 english_name: Kameda Kaki no Tane 6-Pack
 japanese_name: 亀田の柿の種 6袋詰
 subcategory: otsumami bar snack

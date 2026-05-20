@@ -1,29 +1,29 @@
-id: "JF-0091"
-slug: "sensu-folding-fan"
-name_en: "Sensu (Folding Fan)"
-category: "other"
+id: JF-0091
+slug: sensu-folding-fan
+name_en: Sensu (Folding Fan)
+category: other
 intent:
-  - "bring_home"
-  - "gift_easy"
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "扇子"
-brand: "Various"
+- bring_home
+- gift_easy
+- make_it_yours
+status: v1_candidate
+name_jp: 扇子
+brand: Various
 where_found:
-  - "Dept stores"
-  - "specialty fan shops in Kyoto"
-price_yen: "1000-10000"
-what_it_is: "Folding paper fan, can be customized."
-why_travelers_care: "Photogenic, summer-functional."
+- Dept stores
+- specialty fan shops in Kyoto
+price_yen: 1000-10000
+what_it_is: Folding paper fan, can be customized.
+why_travelers_care: Photogenic, summer-functional.
 risk_flags:
-  - "fragile"
+- fragile
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 10
-
-description: Sensu folding fan. Pocket-sized airflow with old-school Kyoto energy; lifesaver for summer stations and overheated festival crowds.
+description: Sensu folding fan. Pocket-sized airflow with old-school Kyoto energy;
+  lifesaver for summer stations and overheated festival crowds.
 english_name: Sensu Folding Fan
 japanese_name: 扇子
 subcategory: folding fan
@@ -36,3 +36,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.hakuchikudo.co.jp/en
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,31 +1,31 @@
-id: "JF-0005"
-slug: "daiso-chopstick-rests"
-name_en: "Daiso Chopstick Rests"
-category: "100-yen"
+id: JF-0005
+slug: daiso-chopstick-rests
+name_en: Daiso Chopstick Rests
+category: 100-yen
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "箸置き"
-brand: "Daiso"
+- gift_easy
+status: ready
+name_jp: 箸置き
+brand: Daiso
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "110"
-what_it_is: "Cute ceramic chopstick rests."
-why_travelers_care: "Tiny gift, easy."
+- Daiso
+- Seria
+- Can Do
+price_yen: '110'
+what_it_is: Cute ceramic chopstick rests.
+why_travelers_care: Tiny gift, easy.
 risk_flags:
-  - "fragile"
+- fragile
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso Mt. Fuji chopstick rest. Tiny glass Fuji for your table, because even chopsticks need a parking spot.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso Mt. Fuji chopstick rest. Tiny glass Fuji for your table, because
+  even chopsticks need a parking spot.
 english_name: Daiso Mt. Fuji Glass Chopstick Rest
 japanese_name: ガラス箸置き 富士山
 subcategory: tableware
@@ -36,3 +36,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4977794092206?srsltid=AfmBOopH5EEgphRvzd6JAW_oBx9Fpj_q5RhkgpUDicGYueK_x_kDKEPr
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,27 +1,27 @@
-id: "JF-0089"
-slug: "hanko-personal-name-stamp"
-name_en: "Hanko Personal Name Stamp"
-category: "other"
+id: JF-0089
+slug: hanko-personal-name-stamp
+name_en: Hanko Personal Name Stamp
+category: other
 intent:
-  - "make_it_yours"
-  - "bring_home"
-status: "v1_candidate"
-name_jp: "判子"
-brand: "Various stamp shops"
+- make_it_yours
+- bring_home
+status: v1_candidate
+name_jp: 判子
+brand: Various stamp shops
 where_found:
-  - "Stamp shops"
-  - "dept stores"
-  - "online before trip"
-price_yen: "3000-30000"
-what_it_is: "Personal name stamp carved in kanji or katakana, used legally in Japan."
-why_travelers_care: "Personalization moment; collectors love."
+- Stamp shops
+- dept stores
+- online before trip
+price_yen: 3000-30000
+what_it_is: Personal name stamp carved in kanji or katakana, used legally in Japan.
+why_travelers_care: Personalization moment; collectors love.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 8
 suitcase_score: 10
-
-description: Hanko personal name stamp. Your name, but stamped with bureaucratic confidence. Donki machines and hanko shops turn travelers into fake office workers.
+description: Hanko personal name stamp. Your name, but stamped with bureaucratic confidence.
+  Donki machines and hanko shops turn travelers into fake office workers.
 english_name: Shachihata Name 9 Personal Name Stamp
 japanese_name: シャチハタ ネーム9
 subcategory: name stamp
@@ -34,3 +34,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.shachihata.jp/products/detail.php?product_id=2962
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

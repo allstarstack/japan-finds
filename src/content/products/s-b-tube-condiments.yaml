@@ -1,34 +1,34 @@
-id: "JF-0345"
-slug: "s-b-tube-condiments"
-name_en: "S&B tube condiments"
-category: "snacks"
+id: JF-0345
+slug: s-b-tube-condiments
+name_en: S&B tube condiments
+category: snacks
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "チューブ調味料"
-brand: "S&B Foods"
+- stock_up
+status: ready
+name_jp: チューブ調味料
+brand: S&B Foods
 where_found:
-  - "Supermarkets"
-  - "Donki"
-  - "drugstores"
-price_yen: "~¥150–¥400"
-what_it_is: "Tubes of wasabi, yuzu, ginger, garlic, shiso, etc."
-why_travelers_care: "Tiny, cheap, actually useful kitchen stock-up."
+- Supermarkets
+- Donki
+- drugstores
+price_yen: ~¥150–¥400
+what_it_is: Tubes of wasabi, yuzu, ginger, garlic, shiso, etc.
+why_travelers_care: Tiny, cheap, actually useful kitchen stock-up.
 risk_flags:
-  - "liquid/paste"
-  - "food import rules"
-verification_notes: "Check ingredients and customs rules."
+- liquid/paste
+- food import rules
+verification_notes: Check ingredients and customs rules.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 9
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: S&B tube wasabi. Squeeze-tube wasabi for sushi, soba, steak, and bad hotel-room snack decisions.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: S&B tube wasabi. Squeeze-tube wasabi for sushi, soba, steak, and bad
+  hotel-room snack decisions.
 english_name: S&B Prepared Wasabi in Tube
 japanese_name: S&B おろしわさび
 subcategory: tube condiment
@@ -42,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.sbfoods-worldwide.com/products/search/001.html
 enrichment_date: '2026-05-19'
 image: /products/s-b-tube-condiments.webp
+safety_flags: []

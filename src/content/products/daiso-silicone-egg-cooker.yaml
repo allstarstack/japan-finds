@@ -1,27 +1,27 @@
-id: "JF-0009"
-slug: "daiso-silicone-egg-cooker"
-name_en: "Daiso Silicone Egg Cooker"
-category: "100-yen"
+id: JF-0009
+slug: daiso-silicone-egg-cooker
+name_en: Daiso Silicone Egg Cooker
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "シリコンエッグクッカー"
-brand: "Daiso"
+- bring_home
+status: ready
+name_jp: シリコンエッグクッカー
+brand: Daiso
 where_found:
-  - "Daiso (in-store likely)"
-price_yen: "110"
-what_it_is: "Microwave egg poacher. Sold for $5+ abroad."
-why_travelers_care: "Random useful, cheap kitchen find."
+- Daiso (in-store likely)
+price_yen: '110'
+what_it_is: Microwave egg poacher. Sold for $5+ abroad.
+why_travelers_care: Random useful, cheap kitchen find.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso silicone egg cooker. Microwave egg gadget for hotel-room snack scientists.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso silicone egg cooker. Microwave egg gadget for hotel-room snack
+  scientists.
 english_name: Daiso Silicone Egg Cooker
 japanese_name: シリコーンたまご調理器
 subcategory: kitchen-tool
@@ -32,3 +32,5 @@ safety_flags:
 - contains_egg
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+enrichment_source_url: null

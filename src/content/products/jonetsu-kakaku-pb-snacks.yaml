@@ -1,33 +1,33 @@
-id: "JF-0101"
-slug: "jonetsu-kakaku-pb-snacks"
-name_en: "Jonetsu Kakaku PB Snacks"
-category: "donki-drugstore"
+id: JF-0101
+slug: jonetsu-kakaku-pb-snacks
+name_en: Jonetsu Kakaku PB Snacks
+category: donki-drugstore
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
+- stock_up
+- bring_home
+status: ready
 where_found:
-  - "Don Quijote"
-price_yen: "100-500"
-what_it_is: "Don Quijote private brand snacks, often oversized formats."
-why_travelers_care: "Cheap, bulky, weirdly specific products (giant gummy, mega chips)."
+- Don Quijote
+price_yen: 100-500
+what_it_is: Don Quijote private brand snacks, often oversized formats.
+why_travelers_care: Cheap, bulky, weirdly specific products (giant gummy, mega chips).
 risk_flags:
-  - "allergen-varies, bulky"
-verification_notes: "Verify PB product range monthly"
+- allergen-varies, bulky
+verification_notes: Verify PB product range monthly
 source_links:
-  - "donki.com/pb"
-  - "https://www.donki.com/j-kakaku/product/list.php?cid=12"
-  - "https://www.donki.com/j-kakaku/"
-confidence: "medium"
+- donki.com/pb
+- https://www.donki.com/j-kakaku/product/list.php?cid=12
+- https://www.donki.com/j-kakaku/
+confidence: medium
 trip_score: 6
 suitcase_score: 5
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "情熱価格 お菓子"
-agent_notes: "Donki private-brand snack category"
-
-description: Jonetsu Kakaku blue-tongue potato chips. Donki turns a salt chip into a party trick; eat them when you want snacks and evidence.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 情熱価格 お菓子
+agent_notes: Donki private-brand snack category
+description: Jonetsu Kakaku blue-tongue potato chips. Donki turns a salt chip into
+  a party trick; eat them when you want snacks and evidence.
 english_name: Jonetsu Kakaku Blue Tongue Potato Chips
 japanese_name: 情熱価格 舌が青くなるポテトチップス
 subcategory: snack
@@ -40,3 +40,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.donki.com/j-kakaku/product/detail.php?item=5284
 enrichment_date: '2026-05-19'
+image: null

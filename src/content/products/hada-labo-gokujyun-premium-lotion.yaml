@@ -1,34 +1,34 @@
-id: "JF-0380"
-slug: "hada-labo-gokujyun-premium-lotion"
-name_en: "Hada Labo Gokujyun Premium Lotion"
-category: "skincare"
+id: JF-0380
+slug: hada-labo-gokujyun-premium-lotion
+name_en: Hada Labo Gokujyun Premium Lotion
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "肌ラボ 極潤プレミアム"
-brand: "Rohto"
+- stock_up
+status: ready
+name_jp: 肌ラボ 極潤プレミアム
+brand: Rohto
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥900–¥1,500"
-what_it_is: "Richer hydrating lotion in gold packaging."
-why_travelers_care: "Very popular with dry-skin/J-beauty audiences."
+- Drugstores
+- Donki
+price_yen: ~¥900–¥1,500
+what_it_is: Richer hydrating lotion in gold packaging.
+why_travelers_care: Very popular with dry-skin/J-beauty audiences.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-verification_notes: "Check formula and skin compatibility."
+- liquid
+- skincare/cosmetic claim
+verification_notes: Check formula and skin compatibility.
 source_links:
-  - "https://jp.rohto.com/hadalabo/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://jp.rohto.com/hadalabo/
+- https://www.matsukiyococokara-online.com/
+- https://www.cosme.net/
+confidence: high
 trip_score: 8
 suitcase_score: 7
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hada Labo Gokujyun Premium Lotion. Thicker gold-bottle version with heavier hydration. Nighttime face bounce in drugstore form.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Hada Labo Gokujyun Premium Lotion. Thicker gold-bottle version with heavier
+  hydration. Nighttime face bounce in drugstore form.
 english_name: Hada Labo Gokujyun Premium Lotion
 japanese_name: 肌ラボ 極潤プレミアム ヒアルロン液
 subcategory: hydrating lotion
@@ -41,3 +41,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.rohto.com/hadalabo/gokujun-premium-lotion/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

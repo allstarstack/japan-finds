@@ -1,30 +1,31 @@
-id: "JF-0064"
-slug: "huge-claw-machine-plush"
-name_en: "Huge claw-machine plush"
-category: "other"
+id: JF-0064
+slug: huge-claw-machine-plush
+name_en: Huge claw-machine plush
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "巨大ぬいぐるみ"
-brand: "Licensed / arcade prizes"
+- content_only
+status: content_only
+name_jp: 巨大ぬいぐるみ
+brand: Licensed / arcade prizes
 where_found:
-  - "Arcades"
-  - "claw machines"
-price_yen: "~¥100–¥500 per play"
-what_it_is: "Oversized plush prize from crane games."
-why_travelers_care: "Great content moment, terrible suitcase math."
+- Arcades
+- claw machines
+price_yen: ~¥100–¥500 per play
+what_it_is: Oversized plush prize from crane games.
+why_travelers_care: Great content moment, terrible suitcase math.
 risk_flags:
-  - "bulky"
-  - "low utility"
-  - "licensed goods"
-verification_notes: "Check if shipping available; avoid buying just for suitcase."
+- bulky
+- low utility
+- licensed goods
+verification_notes: Check if shipping available; avoid buying just for suitcase.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 6
 suitcase_score: 1
-
-description: Large claw-machine plush. Jumbo arcade prize plush, usually cute and financially rude. The real price is whatever the machine decides your confidence is worth.
+description: Large claw-machine plush. Jumbo arcade prize plush, usually cute and
+  financially rude. The real price is whatever the machine decides your confidence
+  is worth.
 english_name: Large Claw-Machine Plush
 japanese_name: 大型クレーンゲームぬいぐるみ
 subcategory: arcade prize
@@ -37,3 +38,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://otakumode.com/sp/gigo-cranegame
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

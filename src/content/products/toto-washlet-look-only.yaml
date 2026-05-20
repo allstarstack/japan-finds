@@ -1,29 +1,30 @@
-id: "JF-0093"
-slug: "toto-washlet-look-only"
-name_en: "TOTO Washlet (Look Only)"
-category: "other"
+id: JF-0093
+slug: toto-washlet-look-only
+name_en: TOTO Washlet (Look Only)
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "TOTOウォシュレット"
-brand: "TOTO"
+- content_only
+status: content_only
+name_jp: TOTOウォシュレット
+brand: TOTO
 where_found:
-  - "Bic Camera"
-  - "Yodobashi"
-  - "TOTO showrooms"
-price_yen: "30000-150000"
-what_it_is: "Heated electronic toilet seats. Look but generally don't buy unless you can install + electrical work."
-why_travelers_care: "Iconic but not actually a souvenir-tier purchase for most."
+- Bic Camera
+- Yodobashi
+- TOTO showrooms
+price_yen: 30000-150000
+what_it_is: Heated electronic toilet seats. Look but generally don't buy unless you
+  can install + electrical work.
+why_travelers_care: Iconic but not actually a souvenir-tier purchase for most.
 risk_flags:
-  - "bulky, voltage, plumbing"
-verification_notes: "100V / requires GFCI outlet / requires bidet plumbing"
+- bulky, voltage, plumbing
+verification_notes: 100V / requires GFCI outlet / requires bidet plumbing
 source_links:
-  - "toto.com"
-confidence: "high"
+- toto.com
+confidence: high
 trip_score: 4
 suitcase_score: 1
-
-description: TOTO Washlet. Heated seat, bidet wand, button panel from the future. Admire it in hotels; do not casually stuff one into a suitcase.
+description: TOTO Washlet. Heated seat, bidet wand, button panel from the future.
+  Admire it in hotels; do not casually stuff one into a suitcase.
 english_name: TOTO Washlet
 japanese_name: TOTO ウォシュレット
 subcategory: bidet toilet seat
@@ -38,4 +39,4 @@ safety_flags:
 enrichment_confidence: high
 enrichment_source_url: https://eu.toto.com/en/washlet-shower-toilet
 enrichment_date: '2026-05-19'
-image: /products/toto-washlet-look-only.webp
+image: null

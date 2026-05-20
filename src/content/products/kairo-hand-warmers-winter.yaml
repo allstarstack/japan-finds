@@ -1,30 +1,30 @@
-id: "JF-0453"
-slug: "kairo-hand-warmers-winter"
-name_en: "Kairo Hand Warmers (Winter)"
-category: "other"
+id: JF-0453
+slug: kairo-hand-warmers-winter
+name_en: Kairo Hand Warmers (Winter)
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "カイロ"
-brand: "Kao Pokka, etc."
+- day_one_fixes
+status: ready
+name_jp: カイロ
+brand: Kao Pokka, etc.
 where_found:
-  - "Kobayashi/Irohas/Hakugen official"
-  - "Matsukiyo"
-  - "konbini-winter"
-price_yen: "100-300"
-what_it_is: "Disposable iron-oxide hand warmers, 8-24h heat."
-why_travelers_care: "Winter essential, sold absolutely everywhere."
-verification_notes: "Limit 4 in carry-on for some airlines; check policy"
+- Kobayashi/Irohas/Hakugen official
+- Matsukiyo
+- konbini-winter
+price_yen: 100-300
+what_it_is: Disposable iron-oxide hand warmers, 8-24h heat.
+why_travelers_care: Winter essential, sold absolutely everywhere.
+verification_notes: Limit 4 in carry-on for some airlines; check policy
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kairo hand warmers. Air-activated heat packs for coat pockets; Japan's winter asks questions and these answer.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Kairo hand warmers. Air-activated heat packs for coat pockets; Japan's
+  winter asks questions and these answer.
 english_name: Kiribai Kairo Disposable Hand Warmers
 japanese_name: 桐灰カイロ
 subcategory: hand warmer
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://matcha-jp.com/en/5325
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

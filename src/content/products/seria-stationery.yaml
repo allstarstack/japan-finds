@@ -1,27 +1,27 @@
-id: "JF-0013"
-slug: "seria-stationery"
-name_en: "Seria Stationery"
-category: "100-yen"
+id: JF-0013
+slug: seria-stationery
+name_en: Seria Stationery
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "セリア文房具"
-brand: "Seria"
+- bring_home
+status: ready
+name_jp: セリア文房具
+brand: Seria
 where_found:
-  - "Seria"
-price_yen: "110"
-what_it_is: "Better-designed than Daiso in many categories; folders, pen cases, journals."
-why_travelers_care: "Higher design ceiling at the same 100-yen price."
+- Seria
+price_yen: '110'
+what_it_is: Better-designed than Daiso in many categories; folders, pen cases, journals.
+why_travelers_care: Higher design ceiling at the same 100-yen price.
 source_links:
-  - "seria-group.com"
-confidence: "high"
+- seria-group.com
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Seria stationery. Stickers, washi tape, tiny notebooks; 100-yen restraint leaves the chat immediately.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Seria stationery. Stickers, washi tape, tiny notebooks; 100-yen restraint
+  leaves the chat immediately.
 english_name: Seria Stationery
 japanese_name: セリア文房具
 subcategory: 100-yen stationery
@@ -31,3 +31,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://japantravel.navitime.com/en/area/jp/guide/NTJjtg2510074-en/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

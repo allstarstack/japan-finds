@@ -1,33 +1,33 @@
-id: "JF-0138"
-slug: "ohta-s-isan-stomach-powder"
-name_en: "Ohta's Isan Stomach Powder"
-category: "donki-drugstore"
+id: JF-0138
+slug: ohta-s-isan-stomach-powder
+name_en: Ohta's Isan Stomach Powder
+category: donki-drugstore
 intent:
-  - "stock_up"
-status: "ready"
+- stock_up
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "1000-2200"
-what_it_is: "Herbal-mineral antacid powder, refreshing herbal taste."
-why_travelers_care: "Long-running 'Japan stomach reset' product, ritual-feel."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: 1000-2200
+what_it_is: Herbal-mineral antacid powder, refreshing herbal taste.
+why_travelers_care: Long-running 'Japan stomach reset' product, ritual-feel.
 risk_flags:
-  - "medicine/regulated"
+- medicine/regulated
 source_links:
-  - "ohta-isan.co.jp"
-  - "https://ohta-isan.co.jp/product/ohtaisan/"
-  - "https://ohta-isan.co.jp/"
-confidence: "high"
+- ohta-isan.co.jp
+- https://ohta-isan.co.jp/product/ohtaisan/
+- https://ohta-isan.co.jp/
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "太田胃散"
-
-description: Ohta's Isan stomach powder. Herbal, chalky, and very much not candy. Locals reach for it after ramen, booze, or the bold decision to eat everything.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: 太田胃散
+description: Ohta's Isan stomach powder. Herbal, chalky, and very much not candy.
+  Locals reach for it after ramen, booze, or the bold decision to eat everything.
 english_name: Ohta's Isan Sachet
 japanese_name: 太田胃散 分包
 subcategory: stomach medicine
@@ -39,3 +39,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://global.ohta-isan.co.jp/en/product/ohtaisanb/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

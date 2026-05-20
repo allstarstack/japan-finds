@@ -1,31 +1,31 @@
-id: "JF-0369"
-slug: "opera-lip-tint"
-name_en: "Opera Lip Tint"
-category: "skincare"
+id: JF-0369
+slug: opera-lip-tint
+name_en: Opera Lip Tint
+category: skincare
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "オペラ"
-brand: "Imju"
+- stock_up
+- bring_home
+status: ready
+name_jp: オペラ
+brand: Imju
 where_found:
-  - "Drugstores"
-  - "Plaza"
-price_yen: "1700-1800"
-what_it_is: "Glossy lip tint, #5 Coral Pink is the famous SKU."
-why_travelers_care: "Beauty-press most-awarded lip product in Japan."
+- Drugstores
+- Plaza
+price_yen: 1700-1800
+what_it_is: 'Glossy lip tint, #5 Coral Pink is the famous SKU.'
+why_travelers_care: Beauty-press most-awarded lip product in Japan.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "operabeauty.jp"
-confidence: "high"
+- operabeauty.jp
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Opera Lip Tint. Glossy color that survives better than most travel plans. Loft and Plaza staple for a quick drugstore beauty grab.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Opera Lip Tint. Glossy color that survives better than most travel plans.
+  Loft and Plaza staple for a quick drugstore beauty grab.
 english_name: Opera Lip Tint N
 japanese_name: オペラ リップティントN
 subcategory: lip tint
@@ -39,3 +39,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://ichibanm.com/products/opera-lip-tint-n
 enrichment_date: '2026-05-19'
 image: /products/opera-lip-tint.webp
+safety_flags: []

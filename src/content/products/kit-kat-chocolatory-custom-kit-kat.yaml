@@ -1,32 +1,32 @@
-id: "JF-0407"
-slug: "kit-kat-chocolatory-custom-kit-kat"
-name_en: "Kit Kat Chocolatory Custom Kit Kat"
-category: "snacks"
+id: JF-0407
+slug: kit-kat-chocolatory-custom-kit-kat
+name_en: Kit Kat Chocolatory Custom Kit Kat
+category: snacks
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "キットカット ショコラトリー"
-brand: "Nestle Japan"
+- make_it_yours
+status: ready
+name_jp: キットカット ショコラトリー
+brand: Nestle Japan
 where_found:
-  - "Ginza"
-  - "Tokyo Solamachi"
-  - "Osaka"
-price_yen: "300-3000+"
-what_it_is: "Limited and custom-designed Kit Kats, in-store-only flavors and packaging."
-why_travelers_care: "Customization experience + premium souvenir."
+- Ginza
+- Tokyo Solamachi
+- Osaka
+price_yen: 300-3000+
+what_it_is: Limited and custom-designed Kit Kats, in-store-only flavors and packaging.
+why_travelers_care: Customization experience + premium souvenir.
 risk_flags:
-  - "allergen-dairy-soy-wheat, perishable (premium fresh-cream variants)"
-verification_notes: "Some variants must be eaten within 24-48h"
+- allergen-dairy-soy-wheat, perishable (premium fresh-cream variants)
+verification_notes: Some variants must be eaten within 24-48h
 source_links:
-  - "nestle.jp/brand/kit/chocolatory"
-confidence: "high"
+- nestle.jp/brand/kit/chocolatory
+confidence: high
 trip_score: 9
 suitcase_score: 9
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Chocollabo Kit Kat. Custom photo Kit Kat box. Cute gift, mildly dangerous when your face becomes someone's snack.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Chocollabo Kit Kat. Custom photo Kit Kat box. Cute gift, mildly dangerous
+  when your face becomes someone's snack.
 english_name: Chocollabo Kit Kat
 japanese_name: チョコラボ キットカット
 subcategory: custom chocolate
@@ -40,4 +40,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://kitkat.nestle.jp/gift
 enrichment_date: '2026-05-19'
-image: /products/kit-kat-chocolatory-custom-kit-kat.webp
+image: null

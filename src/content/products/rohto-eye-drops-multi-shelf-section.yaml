@@ -1,38 +1,38 @@
-id: "JF-0120"
-slug: "rohto-eye-drops-multi-shelf-section"
-name_en: "Rohto eye drops multi-shelf section"
-category: "donki-drugstore"
+id: JF-0120
+slug: rohto-eye-drops-multi-shelf-section
+name_en: Rohto eye drops multi-shelf section
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Don Quijote"
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "~¥400–¥1,500"
-what_it_is: "Cooling, dry-eye, or contact-lens eye drops."
-why_travelers_care: "Immediate fix for dry hotel air, screens, contacts, or pollen."
+- Don Quijote
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: ~¥400–¥1,500
+what_it_is: Cooling, dry-eye, or contact-lens eye drops.
+why_travelers_care: Immediate fix for dry hotel air, screens, contacts, or pollen.
 risk_flags:
-  - "medicine/regulated"
-  - "liquid"
-verification_notes: "Confirm active ingredients and destination rules."
+- medicine/regulated
+- liquid
+verification_notes: Confirm active ingredients and destination rules.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://jp.rohto.com/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://jp.rohto.com/eyecare/"
-  - "https://www.santen.com/jp/healthcare/eye/products"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://jp.rohto.com/
+- https://www.matsukiyococokara-online.com/
+- https://jp.rohto.com/eyecare/
+- https://www.santen.com/jp/healthcare/eye/products
+confidence: medium
 trip_score: 8
 suitcase_score: 6
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "目薬"
-agent_notes: "Category row active ingredients vary"
-
-description: Rohto eye drops shelf. A whole wall of tiny bottles ranked by eye problem and pain tolerance; start mild unless you enjoy spicy eyeballs.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 目薬
+agent_notes: Category row active ingredients vary
+description: Rohto eye drops shelf. A whole wall of tiny bottles ranked by eye problem
+  and pain tolerance; start mild unless you enjoy spicy eyeballs.
 english_name: Rohto Eye Drops Section
 japanese_name: ロート目薬売り場
 subcategory: eye drops aisle
@@ -44,3 +44,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://jp.rohto.com/product/eyecare/category/eye-drops
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

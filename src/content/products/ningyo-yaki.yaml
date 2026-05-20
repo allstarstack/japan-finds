@@ -1,33 +1,33 @@
-id: "JF-0340"
-slug: "ningyo-yaki"
-name_en: "Ningyo-yaki"
-category: "snacks"
+id: JF-0340
+slug: ningyo-yaki
+name_en: Ningyo-yaki
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "人形焼"
-brand: "Various"
+- local_editions
+status: ready
+name_jp: 人形焼
+brand: Various
 where_found:
-  - "Asakusa"
-  - "Ningyocho"
-  - "Tokyo souvenir"
-price_yen: "~¥500–¥1,500"
-what_it_is: "Small molded cakes often filled with red bean paste."
-why_travelers_care: "Cute shape, local story, good on-site snack or short-life gift."
+- Asakusa
+- Ningyocho
+- Tokyo souvenir
+price_yen: ~¥500–¥1,500
+what_it_is: Small molded cakes often filled with red bean paste.
+why_travelers_care: Cute shape, local story, good on-site snack or short-life gift.
 risk_flags:
-  - "perishable"
-  - "allergen"
-verification_notes: "Check shelf life; best bought near departure."
+- perishable
+- allergen
+verification_notes: Check shelf life; best bought near departure.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 5
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Ningyo-yaki. Little Tokyo cakes shaped like sights and stuffed with anko or cream. Asakusa snack path behavior, in box form.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Ningyo-yaki. Little Tokyo cakes shaped like sights and stuffed with anko
+  or cream. Asakusa snack path behavior, in box form.
 english_name: Ningyo-yaki
 japanese_name: 人形焼
 subcategory: Tokyo souvenir cake
@@ -42,3 +42,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://tokiwado.tokyo/products/ningyouyaki/
 enrichment_date: '2026-05-19'
+image: null

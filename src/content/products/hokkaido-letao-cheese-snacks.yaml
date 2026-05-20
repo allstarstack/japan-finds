@@ -1,31 +1,31 @@
-id: "JF-0312"
-slug: "hokkaido-letao-cheese-snacks"
-name_en: "Hokkaido Letao Cheese Snacks"
-category: "other"
+id: JF-0312
+slug: hokkaido-letao-cheese-snacks
+name_en: Hokkaido Letao Cheese Snacks
+category: other
 intent:
-  - "local_editions"
-  - "bring_home"
-status: "ready"
-name_jp: "ルタオ"
-brand: "LeTAO"
+- local_editions
+- bring_home
+status: ready
+name_jp: ルタオ
+brand: LeTAO
 where_found:
-  - "Hokkaido"
-  - "dept stores"
-price_yen: "1000-2500"
-what_it_is: "Hokkaido dairy snacks from LeTAO line."
-why_travelers_care: "Hokkaido dairy story."
+- Hokkaido
+- dept stores
+price_yen: 1000-2500
+what_it_is: Hokkaido dairy snacks from LeTAO line.
+why_travelers_care: Hokkaido dairy story.
 risk_flags:
-  - "allergen-dairy"
+- allergen-dairy
 source_links:
-  - "letao.jp"
-confidence: "high"
+- letao.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: LeTAO Otaru Rue Ironai Fromage Milk. Crispy cheese cookie with mascarpone cream energy. The suitcase snack that feels too fragile for your self-control.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: LeTAO Otaru Rue Ironai Fromage Milk. Crispy cheese cookie with mascarpone
+  cream energy. The suitcase snack that feels too fragile for your self-control.
 english_name: LeTAO Otaru Rue Ironai Fromage Milk
 japanese_name: 小樽色内通りフロマージュ ミルク
 subcategory: cheese cookie

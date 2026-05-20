@@ -1,37 +1,37 @@
-id: "JF-0155"
-slug: "nose-pore-strips"
-name_en: "Nose pore strips"
-category: "donki-drugstore"
+id: JF-0155
+slug: nose-pore-strips
+name_en: Nose pore strips
+category: donki-drugstore
 intent:
-  - "content_only"
-status: "ready"
+- content_only
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "~¥400–¥800"
-what_it_is: "Adhesive strip for removing pore plugs."
-why_travelers_care: "Visually recognizable but not essential or universally skin-friendly."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: ~¥400–¥800
+what_it_is: Adhesive strip for removing pore plugs.
+why_travelers_care: Visually recognizable but not essential or universally skin-friendly.
 risk_flags:
-  - "skincare/cosmetic claim"
-  - "irritation risk"
-verification_notes: "Dermatology suitability and ingredients need checking."
+- skincare/cosmetic claim
+- irritation risk
+verification_notes: Dermatology suitability and ingredients need checking.
 source_links:
-  - "https://www.kao.com/jp/products/bioreuv/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.kao.co.jp/biore/lineup/keana/"
-  - "https://www.kao-kirei.com/ja/brand/khg/biore/"
-confidence: "medium"
+- https://www.kao.com/jp/products/bioreuv/
+- https://www.matsukiyococokara-online.com/
+- https://www.kao.co.jp/biore/lineup/keana/
+- https://www.kao-kirei.com/ja/brand/khg/biore/
+confidence: medium
 trip_score: 5
 suitcase_score: 5
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "skincare"
-name_jp: "ビオレ 毛穴すっきりパック"
-
-description: Bioré nose pore strips. Pulls the drama out of your pores in one satisfying rip, best grabbed at a drugstore before mirror time gets personal.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: skincare
+name_jp: ビオレ 毛穴すっきりパック
+description: Bioré nose pore strips. Pulls the drama out of your pores in one satisfying
+  rip, best grabbed at a drugstore before mirror time gets personal.
 english_name: Bioré Pore Strips Black Type
 japanese_name: ビオレ 毛穴すっきりパック 鼻用 黒色タイプ
 subcategory: pore strips
@@ -44,3 +44,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.kao-kirei.com/jp/en/item/khg/biore/4901301210494/
 enrichment_date: '2026-05-19'
 image: /products/nose-pore-strips.webp
+safety_flags: []

@@ -1,38 +1,38 @@
-id: "JF-0257"
-slug: "mentaiko-tarako-onigiri"
-name_en: "Mentaiko / tarako onigiri"
-category: "konbini"
+id: JF-0257
+slug: mentaiko-tarako-onigiri
+name_en: Mentaiko / tarako onigiri
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "~¥170–¥260"
-what_it_is: "Rice ball filled with spicy cod roe or salted pollock roe."
-why_travelers_care: "Japan-specific flavor contrast; good for adventurous travelers."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: ~¥170–¥260
+what_it_is: Rice ball filled with spicy cod roe or salted pollock roe.
+why_travelers_care: Japan-specific flavor contrast; good for adventurous travelers.
 risk_flags:
-  - "perishable"
-  - "seafood"
-  - "allergen"
-verification_notes: "Confirm spice level, roe type, and current store rotation."
+- perishable
+- seafood
+- allergen
+verification_notes: Confirm spice level, roe type, and current store rotation.
 source_links:
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.japan-guide.com/e/e2071.html"
-  - "https://www.sej.co.jp/products/a/onigiri/"
-  - "https://www.family.co.jp/goods/omusubi.html"
-confidence: "medium"
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.japan-guide.com/e/e2071.html
+- https://www.sej.co.jp/products/a/onigiri/
+- https://www.family.co.jp/goods/omusubi.html
+confidence: medium
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "明太子・たらこおにぎり"
-agent_notes: "Specific SKU varies by chain"
-
-description: Mentaiko onigiri. Rice triangle filled with salty cod roe and a little Fukuoka attitude. Grab it cold from the konbini case when tuna mayo feels too safe.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: 明太子・たらこおにぎり
+agent_notes: Specific SKU varies by chain
+description: Mentaiko onigiri. Rice triangle filled with salty cod roe and a little
+  Fukuoka attitude. Grab it cold from the konbini case when tuna mayo feels too safe.
 english_name: Mentaiko / Tarako Onigiri
 japanese_name: 明太子・たらこおにぎり
 subcategory: onigiri
@@ -46,3 +46,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.family.co.jp/for_tourist/en.html
 enrichment_date: '2026-05-19'
+image: null

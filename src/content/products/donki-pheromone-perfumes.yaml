@@ -1,26 +1,26 @@
-id: "JF-0048"
-slug: "donki-pheromone-perfumes"
-name_en: "Donki Pheromone Perfumes"
-category: "other"
+id: JF-0048
+slug: donki-pheromone-perfumes
+name_en: Donki Pheromone Perfumes
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "フェロモン香水"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: フェロモン香水
+brand: Various
 where_found:
-  - "Donki cosmetics"
-price_yen: "1000-3000"
-what_it_is: "Pheromone claim perfumes."
-why_travelers_care: "Pseudoscience, novelty content only."
+- Donki cosmetics
+price_yen: 1000-3000
+what_it_is: Pheromone claim perfumes.
+why_travelers_care: Pseudoscience, novelty content only.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 2
 suitcase_score: 8
-
-description: Libido Berry Rose perfume. The packaging says bedroom energy; Donki shoppers buy it half as a joke, half not.
+description: Libido Berry Rose perfume. The packaging says bedroom energy; Donki shoppers
+  buy it half as a joke, half not.
 english_name: LC Love Cosmetic Libido Berry Rose
 japanese_name: リビドー ベリーロゼ
 subcategory: perfume
@@ -32,3 +32,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://shop.lovecosmetic.jp/view/item/000000006487
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,34 +1,35 @@
-id: "JF-0304"
-slug: "plastic-food-sample-workshop-item"
-name_en: "Plastic food sample workshop item"
-category: "other"
+id: JF-0304
+slug: plastic-food-sample-workshop-item
+name_en: Plastic food sample workshop item
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "食品サンプル体験"
-brand: "Sample food makers"
+- make_it_yours
+status: ready
+name_jp: 食品サンプル体験
+brand: Sample food makers
 where_found:
-  - "Kappabashi sample workshops"
-  - "Maizuru"
-  - "Ganso"
-price_yen: "~¥1,500–¥5,000+"
-what_it_is: "Fake food sample made in workshop or bought as keychain/magnet."
-why_travelers_care: "Very Japan-core, visual, and personal proof-of-experience."
+- Kappabashi sample workshops
+- Maizuru
+- Ganso
+price_yen: ~¥1,500–¥5,000+
+what_it_is: Fake food sample made in workshop or bought as keychain/magnet.
+why_travelers_care: Very Japan-core, visual, and personal proof-of-experience.
 risk_flags:
-  - "fragile"
-  - "bulky depending item"
-verification_notes: "Verify booking, age rules, and dry/cure time."
+- fragile
+- bulky depending item
+verification_notes: Verify booking, age rules, and dry/cure time.
 source_links:
-  - "https://www.kappabashi.or.jp/en/"
-  - "https://www.japan.travel/en/"
-confidence: "medium"
+- https://www.kappabashi.or.jp/en/
+- https://www.japan.travel/en/
+confidence: medium
 trip_score: 9
 suitcase_score: 7
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Sample'n Cooking food sample kit. DIY plastic food replica kit from Ganso Shokuhin Sample-ya. Buy it when staring at restaurant window displays turns into a personality.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Sample'n Cooking food sample kit. DIY plastic food replica kit from Ganso
+  Shokuhin Sample-ya. Buy it when staring at restaurant window displays turns into
+  a personality.
 english_name: Ganso Shokuhin Sample-ya Sample'n Cooking Kit
 japanese_name: さんぷるん
 subcategory: craft kit
@@ -41,3 +42,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.ganso-sample.com/en/products/samplekit/
 enrichment_date: '2026-05-19'
 image: /products/plastic-food-sample-workshop-item.webp
+safety_flags: []

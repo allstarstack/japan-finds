@@ -1,30 +1,30 @@
-id: "JF-0285"
-slug: "compression-socks"
-name_en: "Compression Socks"
-category: "other"
+id: JF-0285
+slug: compression-socks
+name_en: Compression Socks
+category: other
 intent:
-  - "stock_up"
-  - "day_one_fixes"
-status: "ready"
-name_jp: "着圧ソックス"
-brand: "Medilex, others"
+- stock_up
+- day_one_fixes
+status: ready
+name_jp: 着圧ソックス
+brand: Medilex, others
 where_found:
-  - "Medilex"
-  - "drugstores"
-  - "Donki"
-price_yen: "1000-3000"
-what_it_is: "Graduated compression for travel days."
-why_travelers_care: "Long-flight + walking-heavy trip aid."
+- Medilex
+- drugstores
+- Donki
+price_yen: 1000-3000
+what_it_is: Graduated compression for travel days.
+why_travelers_care: Long-flight + walking-heavy trip aid.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: MediQtto compression socks. Drugstore leg squeeze for flights and all-day walking. Put them on before your calves file a complaint.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: MediQtto compression socks. Drugstore leg squeeze for flights and all-day
+  walking. Put them on before your calves file a complaint.
 english_name: MediQtto Compression Socks
 japanese_name: メディキュット
 subcategory: compression socks
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.mediqtto.jp/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

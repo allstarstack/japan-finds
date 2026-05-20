@@ -1,33 +1,33 @@
-id: "JF-0309"
-slug: "hakata-mentaiko"
-name_en: "Hakata Mentaiko"
-category: "other"
+id: JF-0309
+slug: hakata-mentaiko
+name_en: Hakata Mentaiko
+category: other
 intent:
-  - "local_editions"
-  - "bring_home"
-status: "ready"
-name_jp: "博多明太子"
-brand: "Fukuya / Yamaya"
+- local_editions
+- bring_home
+status: ready
+name_jp: 博多明太子
+brand: Fukuya / Yamaya
 where_found:
-  - "Fukuoka airport"
-  - "dept store food halls"
-price_yen: "1500-5000"
-what_it_is: "Spicy salted pollock roe, Hakata/Fukuoka specialty."
-why_travelers_care: "Top Kyushu omiyage."
+- Fukuoka airport
+- dept store food halls
+price_yen: 1500-5000
+what_it_is: Spicy salted pollock roe, Hakata/Fukuoka specialty.
+why_travelers_care: Top Kyushu omiyage.
 risk_flags:
-  - "perishable, frozen needed for export, allergen-fish"
-verification_notes: "Refrigeration; some countries restrict roe imports"
+- perishable, frozen needed for export, allergen-fish
+verification_notes: Refrigeration; some countries restrict roe imports
 source_links:
-  - "fukuya.com"
-  - "yamaya.com"
-confidence: "high"
+- fukuya.com
+- yamaya.com
+confidence: high
 trip_score: 9
 suitcase_score: 3
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hakata mentaiko. Spicy cod roe with serious rice powers. Buy chilled in Fukuoka, then protect it like edible luggage.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Hakata mentaiko. Spicy cod roe with serious rice powers. Buy chilled
+  in Fukuoka, then protect it like edible luggage.
 english_name: Hakata Mentaiko
 japanese_name: 博多明太子
 subcategory: spicy cod roe
@@ -42,3 +42,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.fukuya.com/en/
 enrichment_date: '2026-05-19'
+image: null

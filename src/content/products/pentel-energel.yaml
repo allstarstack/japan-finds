@@ -1,31 +1,31 @@
-id: "JF-0432"
-slug: "pentel-energel"
-name_en: "Pentel Energel"
-category: "stationery"
+id: JF-0432
+slug: pentel-energel
+name_en: Pentel Energel
+category: stationery
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "エナージェル"
-brand: "Pentel"
+- stock_up
+status: ready
+name_jp: エナージェル
+brand: Pentel
 where_found:
-  - "Pentel official"
-  - "Amazon JP"
-  - "Yodobashi"
-  - "Loft"
-  - "conbini"
-price_yen: "180-500"
-what_it_is: "Liquid gel pen, fast-drying."
-why_travelers_care: "Reliable smooth writer."
+- Pentel official
+- Amazon JP
+- Yodobashi
+- Loft
+- conbini
+price_yen: 180-500
+what_it_is: Liquid gel pen, fast-drying.
+why_travelers_care: Reliable smooth writer.
 source_links:
-  - "pentel.co.jp"
-confidence: "high"
+- pentel.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Pentel EnerGel. Smooth gel pen that makes hotel-note chaos look intentional. Stationery people buy one, then accidentally become pen people.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Pentel EnerGel. Smooth gel pen that makes hotel-note chaos look intentional.
+  Stationery people buy one, then accidentally become pen people.
 english_name: Pentel EnerGel
 japanese_name: ぺんてる エナージェル
 subcategory: stationery pen
@@ -38,3 +38,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.pentel.co.jp/products/ballpointpen/energel/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

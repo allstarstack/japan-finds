@@ -1,31 +1,31 @@
-id: "JF-0454"
-slug: "konbini-vinyl-umbrella"
-name_en: "Konbini Vinyl Umbrella"
-category: "other"
+id: JF-0454
+slug: konbini-vinyl-umbrella
+name_en: Konbini Vinyl Umbrella
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "ビニール傘"
-brand: "All konbini"
+- day_one_fixes
+status: ready
+name_jp: ビニール傘
+brand: All konbini
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart konbini chains"
-price_yen: "500-700"
-what_it_is: "Cheap clear vinyl umbrella, the universal Japan rainy-day fix."
-why_travelers_care: "Mandatory rainy-day pickup."
+- 7-Eleven
+- Lawson
+- FamilyMart konbini chains
+price_yen: 500-700
+what_it_is: Cheap clear vinyl umbrella, the universal Japan rainy-day fix.
+why_travelers_care: Mandatory rainy-day pickup.
 risk_flags:
-  - "bulky"
+- bulky
 source_links:
-  - "konbini sites"
-confidence: "high"
+- konbini sites
+confidence: high
 trip_score: 9
 suitcase_score: 0
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Konbini vinyl umbrella. Clear plastic umbrella sold when the sky betrays everyone. Buy one once, lose it twice, join Japan.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Konbini vinyl umbrella. Clear plastic umbrella sold when the sky betrays
+  everyone. Buy one once, lose it twice, join Japan.
 english_name: Konbini Vinyl Umbrella
 japanese_name: ビニール傘
 subcategory: umbrella
@@ -37,3 +37,6 @@ where_to_buy:
 - Donki
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []
+enrichment_source_url: null

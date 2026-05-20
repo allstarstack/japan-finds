@@ -1,32 +1,33 @@
-id: "JF-0457"
-slug: "pocket-wifi-rental-ninja-wifi-sakura-mobile"
-name_en: "Pocket WiFi Rental (Ninja WiFi, Sakura Mobile)"
-category: "other"
+id: JF-0457
+slug: pocket-wifi-rental-ninja-wifi-sakura-mobile
+name_en: Pocket WiFi Rental (Ninja WiFi, Sakura Mobile)
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "ポケットWiFi"
-brand: "Various"
+- day_one_fixes
+status: ready
+name_jp: ポケットWiFi
+brand: Various
 where_found:
-  - "Ninja WiFi"
-  - "Japan Wireless"
-  - "Sakura Mobile"
-  - "airport counters"
-price_yen: "500-1000/day"
-what_it_is: "Pocket hotspot for the trip, return at airport."
-why_travelers_care: "Avoids roaming charges."
-verification_notes: "Many travelers now use eSIM (Airalo, Ubigi) instead; pocket WiFi less essential than pre-2023"
+- Ninja WiFi
+- Japan Wireless
+- Sakura Mobile
+- airport counters
+price_yen: 500-1000/day
+what_it_is: Pocket hotspot for the trip, return at airport.
+why_travelers_care: Avoids roaming charges.
+verification_notes: Many travelers now use eSIM (Airalo, Ubigi) instead; pocket WiFi
+  less essential than pre-2023
 source_links:
-  - "ninjawifi.com"
-  - "sakuramobile.jp"
-confidence: "high"
+- ninjawifi.com
+- sakuramobile.jp
+confidence: high
 trip_score: 7
 suitcase_score: 0
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Ninja WiFi pocket router. Rental WiFi box for group trips. Pick it up at the airport, share it with everyone, then panic less about roaming.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Ninja WiFi pocket router. Rental WiFi box for group trips. Pick it up
+  at the airport, share it with everyone, then panic less about roaming.
 english_name: Ninja WiFi Pocket Router Rental
 japanese_name: 忍者WiFi
 subcategory: pocket wifi rental
@@ -40,3 +41,4 @@ enrichment_confidence: low
 enrichment_source_url: https://ninjawifi.com/en
 enrichment_date: '2026-05-19'
 image: /products/pocket-wifi-rental-ninja-wifi-sakura-mobile.webp
+safety_flags: []

@@ -1,38 +1,39 @@
-id: "JF-0372"
-slug: "anessa-perfect-uv-skincare-milk"
-name_en: "Anessa Perfect UV Skincare Milk"
-category: "skincare"
+id: JF-0372
+slug: anessa-perfect-uv-skincare-milk
+name_en: Anessa Perfect UV Skincare Milk
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "アネッサ パーフェクトUV スキンケアミルク"
-brand: "Shiseido"
+- stock_up
+status: ready
+name_jp: アネッサ パーフェクトUV スキンケアミルク
+brand: Shiseido
 where_found:
-  - "Drugstores"
-  - "Donki"
-  - "@cosme"
-  - "dept stores"
-  - "Amazon JP"
-  - "Yodobashi"
-price_yen: "~¥2,500–¥3,500"
-what_it_is: "Premium Japanese sunscreen milk SPF50+ PA++++."
-why_travelers_care: "High-performance reputation; useful for hot/humid travel."
+- Drugstores
+- Donki
+- '@cosme'
+- dept stores
+- Amazon JP
+- Yodobashi
+price_yen: ~¥2,500–¥3,500
+what_it_is: Premium Japanese sunscreen milk SPF50+ PA++++.
+why_travelers_care: High-performance reputation; useful for hot/humid travel.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-verification_notes: "Confirm formula year and skin suitability."
+- liquid
+- skincare/cosmetic claim
+verification_notes: Confirm formula year and skin suitability.
 source_links:
-  - "https://www.shiseido.co.jp/anessa/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.shiseido.co.jp/anessa/
+- https://www.matsukiyococokara-online.com/
+- https://www.cosme.net/
+confidence: high
 trip_score: 9
 suitcase_score: 8
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Anessa Perfect UV Skincare Milk. SPF50+ PA++++ gold-bottle sunscreen with serious sweat resistance. This is the drugstore flex for summer days that feel personally targeted.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Anessa Perfect UV Skincare Milk. SPF50+ PA++++ gold-bottle sunscreen
+  with serious sweat resistance. This is the drugstore flex for summer days that feel
+  personally targeted.
 english_name: Anessa Perfect UV Sunscreen Skincare Milk
 japanese_name: アネッサ パーフェクトUV スキンケアミルク NA
 subcategory: sunscreen
@@ -46,3 +47,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.ratzillacosme.com/sun/anessa-perfect-uv-sunscreen-skincare-milk-2024/
 enrichment_date: '2026-05-19'
 image: /products/anessa-perfect-uv-skincare-milk.webp
+safety_flags: []

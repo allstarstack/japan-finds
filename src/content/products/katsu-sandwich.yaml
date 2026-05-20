@@ -1,32 +1,32 @@
-id: "JF-0254"
-slug: "katsu-sandwich"
-name_en: "Katsu sandwich"
-category: "konbini"
+id: JF-0254
+slug: katsu-sandwich
+name_en: Katsu sandwich
+category: konbini
 intent:
-  - "try_in_japan"
-status: "v1_candidate"
-name_jp: "カツサンド"
-brand: "7-Eleven / FamilyMart / Lawson / Maisen-style vendors"
+- try_in_japan
+status: v1_candidate
+name_jp: カツサンド
+brand: 7-Eleven / FamilyMart / Lawson / Maisen-style vendors
 where_found:
-  - "Major konbini / station shops / Konbini"
-  - "stations"
-  - "department food halls"
-price_yen: "~¥350–¥900"
-what_it_is: "Breaded pork cutlet sandwich with sauce."
-why_travelers_care: "Feels premium for a convenience food; strong visual cross-section."
+- Major konbini / station shops / Konbini
+- stations
+- department food halls
+price_yen: ~¥350–¥900
+what_it_is: Breaded pork cutlet sandwich with sauce.
+why_travelers_care: Feels premium for a convenience food; strong visual cross-section.
 risk_flags:
-  - "perishable"
-  - "meat"
-  - "allergen"
-verification_notes: "Check pork/beef type and exact seller."
+- perishable
+- meat
+- allergen
+verification_notes: Check pork/beef type and exact seller.
 source_links:
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.japan-guide.com/e/e2071.html"
-confidence: "medium"
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.japan-guide.com/e/e2071.html
+confidence: medium
 trip_score: 8
-
-description: Katsu sandwich. Same basic pork-cutlet-and-soft-bread idea; Lawson's in-store kitchen version goes harder at lunch.
+description: Katsu sandwich. Same basic pork-cutlet-and-soft-bread idea; Lawson's
+  in-store kitchen version goes harder at lunch.
 english_name: Lawson Thick Pork Cutlet Sandwich
 japanese_name: ローソン 厚切りロースカツサンド
 subcategory: sandwich
@@ -41,3 +41,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.lawson.co.jp/service/others/in/lang/en.html
 enrichment_date: '2026-05-19'
+image: null

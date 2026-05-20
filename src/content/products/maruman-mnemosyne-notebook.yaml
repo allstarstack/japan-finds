@@ -1,30 +1,30 @@
-id: "JF-0429"
-slug: "maruman-mnemosyne-notebook"
-name_en: "Maruman Mnemosyne Notebook"
-category: "stationery"
+id: JF-0429
+slug: maruman-mnemosyne-notebook
+name_en: Maruman Mnemosyne Notebook
+category: stationery
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "ニーモシネ"
-brand: "Maruman"
+- bring_home
+status: ready
+name_jp: ニーモシネ
+brand: Maruman
 where_found:
-  - "Maruman official"
-  - "Amazon JP"
-  - "Yodobashi"
-  - "Loft"
-price_yen: "500-1500"
-what_it_is: "Professional black-cover notebook, perforated pages."
-why_travelers_care: "Pro-grade alternative to Moleskine."
+- Maruman official
+- Amazon JP
+- Yodobashi
+- Loft
+price_yen: 500-1500
+what_it_is: Professional black-cover notebook, perforated pages.
+why_travelers_care: Pro-grade alternative to Moleskine.
 source_links:
-  - "e-maruman.co.jp/mnemosyne"
-confidence: "high"
+- e-maruman.co.jp/mnemosyne
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Maruman Mnemosyne notebook. Smooth paper, black cover, serious meeting cosplay. Great for creators who need ideas to look billable.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Maruman Mnemosyne notebook. Smooth paper, black cover, serious meeting
+  cosplay. Great for creators who need ideas to look billable.
 english_name: Maruman Mnemosyne Notebook
 japanese_name: マルマン ニーモシネ ノート
 subcategory: notebook
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://marumans.com/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

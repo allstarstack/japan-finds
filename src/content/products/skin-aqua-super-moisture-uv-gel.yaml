@@ -1,33 +1,33 @@
-id: "JF-0393"
-slug: "skin-aqua-super-moisture-uv-gel"
-name_en: "Skin Aqua Super Moisture UV Gel"
-category: "skincare"
+id: JF-0393
+slug: skin-aqua-super-moisture-uv-gel
+name_en: Skin Aqua Super Moisture UV Gel
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "スキンアクア スーパーモイスチャーUVジェル"
-brand: "Rohto"
+- stock_up
+status: ready
+name_jp: スキンアクア スーパーモイスチャーUVジェル
+brand: Rohto
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥800–¥1,300"
-what_it_is: "Large-format lightweight sunscreen gel."
-why_travelers_care: "Good value; easy body sunscreen for travel and home."
+- Drugstores
+- Donki
+price_yen: ~¥800–¥1,300
+what_it_is: Large-format lightweight sunscreen gel.
+why_travelers_care: Good value; easy body sunscreen for travel and home.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-verification_notes: "Confirm SPF/PA and size."
+- liquid
+- skincare/cosmetic claim
+verification_notes: Confirm SPF/PA and size.
 source_links:
-  - "https://jp.rohto.com/"
-  - "https://www.matsukiyococokara-online.com/"
-confidence: "high"
+- https://jp.rohto.com/
+- https://www.matsukiyococokara-online.com/
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Skin Aqua UV gel. Lightweight SPF50+ sunscreen that disappears fast; the konbini-to-theme-park face shield for humid Japan days.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Skin Aqua UV gel. Lightweight SPF50+ sunscreen that disappears fast;
+  the konbini-to-theme-park face shield for humid Japan days.
 english_name: Skin Aqua Super Moisture UV Gel
 japanese_name: スキンアクア スーパーモイスチャーUVジェル
 subcategory: sunscreen
@@ -41,3 +41,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.shop.rohto.co.jp/category/skincare/skin-aqua/super-moisture/190850.html
 enrichment_date: '2026-05-19'
 image: /products/skin-aqua-super-moisture-uv-gel.webp
+safety_flags: []

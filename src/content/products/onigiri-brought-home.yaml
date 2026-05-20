@@ -1,26 +1,26 @@
-id: "JF-0052"
-slug: "onigiri-brought-home"
-name_en: "Onigiri Brought Home"
-category: "other"
+id: JF-0052
+slug: onigiri-brought-home
+name_en: Onigiri Brought Home
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "おにぎりお持ち帰り"
-brand: "Konbini"
+- content_only
+status: content_only
+name_jp: おにぎりお持ち帰り
+brand: Konbini
 where_found:
-  - "Konbini"
-price_yen: "Varies"
-what_it_is: "Konbini onigiri 12-24h shelf life; not exportable."
-why_travelers_care: "Eat in country only."
+- Konbini
+price_yen: Varies
+what_it_is: Konbini onigiri 12-24h shelf life; not exportable.
+why_travelers_care: Eat in country only.
 risk_flags:
-  - "perishable"
+- perishable
 source_links:
-  - "konbini sites"
-confidence: "high"
+- konbini sites
+confidence: high
 trip_score: 0
 suitcase_score: 0
-
-description: Tuna mayo onigiri. Rice ball, crisp seaweed, creamy tuna center. The konbini meal that somehow fixes 2 a.m. and train-platform hunger.
+description: Tuna mayo onigiri. Rice ball, crisp seaweed, creamy tuna center. The
+  konbini meal that somehow fixes 2 a.m. and train-platform hunger.
 english_name: 7-Eleven Tuna Mayonnaise Onigiri
 japanese_name: セブン-イレブン ツナマヨネーズおにぎり
 subcategory: onigiri
@@ -34,3 +34,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.sej.co.jp/in/en.html
 enrichment_date: '2026-05-19'
+image: null

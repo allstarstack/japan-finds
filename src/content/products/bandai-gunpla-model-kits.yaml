@@ -1,34 +1,34 @@
-id: "JF-0175"
-slug: "bandai-gunpla-model-kits"
-name_en: "Bandai Gunpla Model Kits"
-category: "other"
+id: JF-0175
+slug: bandai-gunpla-model-kits
+name_en: Bandai Gunpla Model Kits
+category: other
 intent:
-  - "bring_home"
-  - "make_it_yours"
-  - "local_editions"
-status: "ready"
+- bring_home
+- make_it_yours
+- local_editions
+status: ready
 where_found:
-  - "Gundam Base"
-  - "Yodobashi Camera"
-  - "Bic Camera"
-  - "Joshin"
-price_yen: "1000-15000"
-what_it_is: "Gundam plastic model kits, hobby-grade."
-why_travelers_care: "Cult hobby, much cheaper in Japan than abroad."
-verification_notes: "Gundam Base Tokyo has exclusive kits"
+- Gundam Base
+- Yodobashi Camera
+- Bic Camera
+- Joshin
+price_yen: 1000-15000
+what_it_is: Gundam plastic model kits, hobby-grade.
+why_travelers_care: Cult hobby, much cheaper in Japan than abroad.
+verification_notes: Gundam Base Tokyo has exclusive kits
 source_links:
-  - "bandai-hobby.net"
-  - "https://bandai-hobby.net/gunpla/"
-  - "https://bandai-hobby.net/schedule/"
-confidence: "high"
+- bandai-hobby.net
+- https://bandai-hobby.net/gunpla/
+- https://bandai-hobby.net/schedule/
+confidence: high
 trip_score: 9
 suitcase_score: 9
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ガンプラ"
-
-description: Gunpla model kits. Tiny plastic engineering therapy for Gundam fans with luggage-space delusion.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ガンプラ
+description: Gunpla model kits. Tiny plastic engineering therapy for Gundam fans with
+  luggage-space delusion.
 english_name: Bandai Gunpla Model Kits
 japanese_name: バンダイ ガンプラ
 subcategory: model kit
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://global.bandai-hobby.net/en-us/gunpla/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

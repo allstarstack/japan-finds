@@ -1,38 +1,38 @@
-id: "JF-0161"
-slug: "roihi-tsuboko-patches"
-name_en: "Roihi-Tsuboko patches"
-category: "donki-drugstore"
+id: JF-0161
+slug: roihi-tsuboko-patches
+name_en: Roihi-Tsuboko patches
+category: donki-drugstore
 intent:
-  - "content_only"
-status: "ready"
+- content_only
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "~¥700–¥1,500"
-what_it_is: "Small circular medicated pain patches."
-why_travelers_care: "Popular haul item, but should be treated carefully as medicine."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: ~¥700–¥1,500
+what_it_is: Small circular medicated pain patches.
+why_travelers_care: Popular haul item, but should be treated carefully as medicine.
 risk_flags:
-  - "medicine/regulated"
-  - "skin irritation"
-  - "NSAID"
-verification_notes: "Medical suitability and active ingredients must be verified."
+- medicine/regulated
+- skin irritation
+- NSAID
+verification_notes: Medical suitability and active ingredients must be verified.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.nichiban.co.jp/general/health/product_name/brand_series/roihi/"
-  - "https://www.nichiban.co.jp/medical/product/health/catego4.htm"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.nichiban.co.jp/general/health/product_name/brand_series/roihi/
+- https://www.nichiban.co.jp/medical/product/health/catego4.htm
+confidence: medium
 trip_score: 6
 suitcase_score: 5
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "ロイヒつぼ膏"
-agent_notes: "Topical pain-relief patch category"
-
-description: Roihi-Tsuboko patches. Tiny heat patches for stiff shoulders and backs; grandma-core packaging, serious post-walk relief energy.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: ロイヒつぼ膏
+agent_notes: Topical pain-relief patch category
+description: Roihi-Tsuboko patches. Tiny heat patches for stiff shoulders and backs;
+  grandma-core packaging, serious post-walk relief energy.
 english_name: Roihi-Tsuboko Patches
 japanese_name: ロイヒつぼ膏
 subcategory: pain relief patch
@@ -45,3 +45,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.roihi.com/en/tubokou.html
 enrichment_date: '2026-05-19'
 image: /products/roihi-tsuboko-patches.webp
+safety_flags: []

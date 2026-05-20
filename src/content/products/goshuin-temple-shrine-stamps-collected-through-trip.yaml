@@ -1,25 +1,25 @@
-id: "JF-0075"
-slug: "goshuin-temple-shrine-stamps-collected-through-trip"
-name_en: "Goshuin Temple/Shrine Stamps (Collected Through Trip)"
-category: "other"
+id: JF-0075
+slug: goshuin-temple-shrine-stamps-collected-through-trip
+name_en: Goshuin Temple/Shrine Stamps (Collected Through Trip)
+category: other
 intent:
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "御朱印"
-brand: "Temples and shrines"
+- make_it_yours
+status: v1_candidate
+name_jp: 御朱印
+brand: Temples and shrines
 where_found:
-  - "Almost any temple or shrine"
-price_yen: "300-500 per stamp"
-what_it_is: "Calligraphy stamp in goshuin-cho, accumulated through pilgrimage."
-why_travelers_care: "Trip-spanning collectible."
-verification_notes: "Some temples no longer offer goshuin; check before"
+- Almost any temple or shrine
+price_yen: 300-500 per stamp
+what_it_is: Calligraphy stamp in goshuin-cho, accumulated through pilgrimage.
+why_travelers_care: Trip-spanning collectible.
+verification_notes: Some temples no longer offer goshuin; check before
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 10
 suitcase_score: 10
-
-description: Goshuin shrine and temple stamps. Handwritten red-seal proof you showed up respectfully. Bring cash and the book, not main-character chaos.
+description: Goshuin shrine and temple stamps. Handwritten red-seal proof you showed
+  up respectfully. Bring cash and the book, not main-character chaos.
 english_name: Goshuin Temple and Shrine Stamps
 japanese_name: 御朱印
 subcategory: temple stamp
@@ -31,3 +31,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.japan.travel/en/blog/collecting-goshuin-shrine-and-temple-stamps/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

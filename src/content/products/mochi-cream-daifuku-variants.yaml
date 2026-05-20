@@ -1,33 +1,34 @@
-id: "JF-0240"
-slug: "mochi-cream-daifuku-variants"
-name_en: "Mochi Cream / Daifuku Variants"
-category: "konbini"
+id: JF-0240
+slug: mochi-cream-daifuku-variants
+name_en: Mochi Cream / Daifuku Variants
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "180-250"
-what_it_is: "Soft mochi exterior, cream or fruit interior, rotating seasonal flavors."
-why_travelers_care: "Texture moment, hyper-seasonal flavor drops."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: 180-250
+what_it_is: Soft mochi exterior, cream or fruit interior, rotating seasonal flavors.
+why_travelers_care: Texture moment, hyper-seasonal flavor drops.
 risk_flags:
-  - "perishable, allergen-dairy"
+- perishable, allergen-dairy
 source_links:
-  - "konbini sites"
-  - "https://www.sej.co.jp/products/a/sweets/"
-  - "https://www.lawson.co.jp/recommend/original/dessert/"
-confidence: "high"
+- konbini sites
+- https://www.sej.co.jp/products/a/sweets/
+- https://www.lawson.co.jp/recommend/original/dessert/
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "大福 / 餅クリーム"
-agent_notes: "Category varies by chain and season"
-
-description: Mochi Cream daifuku. Soft mochi, cream fillings, fruit versions for people who treat the station fridge like a dessert museum. Easy omiyage when cake feels too serious.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: 大福 / 餅クリーム
+agent_notes: Category varies by chain and season
+description: Mochi Cream daifuku. Soft mochi, cream fillings, fruit versions for people
+  who treat the station fridge like a dessert museum. Easy omiyage when cake feels
+  too serious.
 english_name: Mochi Cream Daifuku
 japanese_name: モチクリーム大福
 subcategory: daifuku

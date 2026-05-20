@@ -1,31 +1,31 @@
-id: "JF-0333"
-slug: "kibi-dango"
-name_en: "Kibi dango"
-category: "snacks"
+id: JF-0333
+slug: kibi-dango
+name_en: Kibi dango
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "きびだんご"
-brand: "Various Okayama makers"
+- local_editions
+status: ready
+name_jp: きびだんご
+brand: Various Okayama makers
 where_found:
-  - "Okayama stations/souvenir shops"
-price_yen: "~¥500–¥1,200"
-what_it_is: "Soft millet dumpling sweet tied to Momotaro folklore."
-why_travelers_care: "Regional story makes it giftable."
+- Okayama stations/souvenir shops
+price_yen: ~¥500–¥1,200
+what_it_is: Soft millet dumpling sweet tied to Momotaro folklore.
+why_travelers_care: Regional story makes it giftable.
 risk_flags:
-  - "allergen"
-  - "soft/perishable-ish"
-verification_notes: "Check shelf life and packaging."
+- allergen
+- soft/perishable-ish
+verification_notes: Check shelf life and packaging.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 7
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kibi dango. Okayama's soft millet dumpling souvenir; Momotaro branding does most of the emotional labor.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Kibi dango. Okayama's soft millet dumpling souvenir; Momotaro branding
+  does most of the emotional labor.
 english_name: Koeido Kibi Dango
 japanese_name: 廣榮堂 元祖きびだんご
 subcategory: dango souvenir
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://koeido.co.jp/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

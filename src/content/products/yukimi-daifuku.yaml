@@ -1,27 +1,27 @@
-id: "JF-0283"
-slug: "yukimi-daifuku"
-name_en: "Yukimi Daifuku"
-category: "other"
+id: JF-0283
+slug: yukimi-daifuku
+name_en: Yukimi Daifuku
+category: other
 intent:
-  - "try_in_japan"
-status: "v1_candidate"
-name_jp: "雪見だいふく"
-brand: "Lotte"
+- try_in_japan
+status: v1_candidate
+name_jp: 雪見だいふく
+brand: Lotte
 where_found:
-  - "Konbini / supermarkets"
-price_yen: "~¥150"
-what_it_is: "Mochi-wrapped ice cream."
-why_travelers_care: "Texture contrast; seasonal flavors make it saveable."
+- Konbini / supermarkets
+price_yen: ~¥150
+what_it_is: Mochi-wrapped ice cream.
+why_travelers_care: Texture contrast; seasonal flavors make it saveable.
 risk_flags:
-  - "perishable"
-  - "dairy"
-verification_notes: "Verify current seasonal flavors."
+- perishable
+- dairy
+verification_notes: Verify current seasonal flavors.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 8
-
-description: Yukimi Daifuku. Mochi-wrapped vanilla ice cream; the freezer-section snack that makes winter branding feel legally binding.
+description: Yukimi Daifuku. Mochi-wrapped vanilla ice cream; the freezer-section
+  snack that makes winter branding feel legally binding.
 english_name: Yukimi Daifuku
 japanese_name: 雪見だいふく
 subcategory: ice cream

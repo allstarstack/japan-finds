@@ -1,31 +1,31 @@
-id: "JF-0440"
-slug: "tombow-mono-eraser"
-name_en: "Tombow Mono Eraser"
-category: "stationery"
+id: JF-0440
+slug: tombow-mono-eraser
+name_en: Tombow Mono Eraser
+category: stationery
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "MONO消しゴム"
-brand: "Tombow"
+- stock_up
+- bring_home
+status: ready
+name_jp: MONO消しゴム
+brand: Tombow
 where_found:
-  - "Tombow official"
-  - "Amazon JP"
-  - "Yodobashi"
-  - "konbini"
-price_yen: "100-300"
-what_it_is: "The blue-white-black striped eraser."
-why_travelers_care: "Iconic design + actually clean erase."
+- Tombow official
+- Amazon JP
+- Yodobashi
+- konbini
+price_yen: 100-300
+what_it_is: The blue-white-black striped eraser.
+why_travelers_care: Iconic design + actually clean erase.
 source_links:
-  - "tombow.com/sp/mono"
-confidence: "high"
+- tombow.com/sp/mono
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tombow Mono Eraser. The blue-white-black eraser every Japanese desk seems to own. Small, clean, and weirdly satisfying for stationery people.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Tombow Mono Eraser. The blue-white-black eraser every Japanese desk seems
+  to own. Small, clean, and weirdly satisfying for stationery people.
 english_name: Tombow Mono Eraser
 japanese_name: トンボ鉛筆 MONO消しゴム
 subcategory: eraser
@@ -40,3 +40,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.tombow.com/en/products/mono/
 enrichment_date: '2026-05-19'
 image: /products/tombow-mono-eraser.webp
+safety_flags: []

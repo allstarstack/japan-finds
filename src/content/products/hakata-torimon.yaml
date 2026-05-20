@@ -1,32 +1,32 @@
-id: "JF-0327"
-slug: "hakata-torimon"
-name_en: "Hakata Torimon"
-category: "snacks"
+id: JF-0327
+slug: hakata-torimon
+name_en: Hakata Torimon
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "博多通りもん"
-brand: "Meigetsudo"
+- local_editions
+status: ready
+name_jp: 博多通りもん
+brand: Meigetsudo
 where_found:
-  - "Fukuoka/Hakata"
-  - "airports/stations"
-price_yen: "~¥700–¥2,000"
-what_it_is: "Soft manju-style sweet with milky white bean filling."
-why_travelers_care: "Very beloved regional omiyage with strong giftability."
+- Fukuoka/Hakata
+- airports/stations
+price_yen: ~¥700–¥2,000
+what_it_is: Soft manju-style sweet with milky white bean filling.
+why_travelers_care: Very beloved regional omiyage with strong giftability.
 risk_flags:
-  - "allergen"
-verification_notes: "Verify availability outside Kyushu."
+- allergen
+verification_notes: Verify availability outside Kyushu.
 source_links:
-  - "https://www.meigetsudo.co.jp/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "high"
+- https://www.meigetsudo.co.jp/
+- https://www.japan-guide.com/e/e2450.html
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hakata Torimon. Buttery white-bean manju that eats more like a soft milk cookie. Fukuoka airport souvenir math starts here.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Hakata Torimon. Buttery white-bean manju that eats more like a soft milk
+  cookie. Fukuoka airport souvenir math starts here.
 english_name: Hakata Torimon
 japanese_name: 博多通りもん
 subcategory: manju
@@ -43,3 +43,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.meigetsudo.co.jp/ic/torimon
 enrichment_date: '2026-05-19'
+image: null

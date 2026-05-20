@@ -1,30 +1,30 @@
-id: "JF-0261"
-slug: "pocari-sweat-aquarius"
-name_en: "Pocari Sweat / Aquarius"
-category: "konbini"
+id: JF-0261
+slug: pocari-sweat-aquarius
+name_en: Pocari Sweat / Aquarius
+category: konbini
 intent:
-  - "day_one_fixes"
-status: "v1_candidate"
-name_jp: "ポカリスエット・アクエリアス"
-brand: "Otsuka / Coca-Cola Japan"
+- day_one_fixes
+status: v1_candidate
+name_jp: ポカリスエット・アクエリアス
+brand: Otsuka / Coca-Cola Japan
 where_found:
-  - "Konbini"
-  - "vending machines"
-  - "drugstores"
-price_yen: "~¥130–¥180"
-what_it_is: "Japanese sports/electrolyte drink."
-why_travelers_care: "Useful for summer, walking days, and first-day travel fatigue."
+- Konbini
+- vending machines
+- drugstores
+price_yen: ~¥130–¥180
+what_it_is: Japanese sports/electrolyte drink.
+why_travelers_care: Useful for summer, walking days, and first-day travel fatigue.
 risk_flags:
-  - "liquid"
-  - "sugar"
-verification_notes: "Check sugar/caffeine and health constraints."
+- liquid
+- sugar
+verification_notes: Check sugar/caffeine and health constraints.
 source_links:
-  - "https://www.japan-guide.com/e/e2071.html"
-  - "https://www.matsukiyococokara-online.com/"
-confidence: "high"
+- https://www.japan-guide.com/e/e2071.html
+- https://www.matsukiyococokara-online.com/
+confidence: high
 trip_score: 9
-
-description: Pocari Sweat versus Aquarius. Japan's blue-bottle sports drink rivalry. Pocari feels softer; Aquarius tastes sharper, both live in every konbini fridge.
+description: Pocari Sweat versus Aquarius. Japan's blue-bottle sports drink rivalry.
+  Pocari feels softer; Aquarius tastes sharper, both live in every konbini fridge.
 english_name: Aquarius
 japanese_name: アクエリアス
 subcategory: sports drink
@@ -39,3 +39,4 @@ enrichment_confidence: low
 enrichment_source_url: https://j.cocacola.co.jp/qrt/027/aquarius.htm
 enrichment_date: '2026-05-19'
 image: /products/pocari-sweat-aquarius.webp
+safety_flags: []

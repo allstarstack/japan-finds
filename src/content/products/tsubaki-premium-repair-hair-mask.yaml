@@ -1,34 +1,34 @@
-id: "JF-0394"
-slug: "tsubaki-premium-repair-hair-mask"
-name_en: "Tsubaki Premium Repair Hair Mask"
-category: "skincare"
+id: JF-0394
+slug: tsubaki-premium-repair-hair-mask
+name_en: Tsubaki Premium Repair Hair Mask
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "ツバキ プレミアムリペアマスク"
-brand: "Shiseido / Fine Today"
+- stock_up
+status: ready
+name_jp: ツバキ プレミアムリペアマスク
+brand: Shiseido / Fine Today
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥900–¥1,400"
-what_it_is: "Hair repair mask tub."
-why_travelers_care: "Good value and easy drugstore find."
+- Drugstores
+- Donki
+price_yen: ~¥900–¥1,400
+what_it_is: Hair repair mask tub.
+why_travelers_care: Good value and easy drugstore find.
 risk_flags:
-  - "liquid/cream"
-  - "bulky"
-  - "cosmetic claim"
-verification_notes: "Verify current formula and size."
+- liquid/cream
+- bulky
+- cosmetic claim
+verification_notes: Verify current formula and size.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.cosme.net/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.cosme.net/
+confidence: medium
 trip_score: 7
 suitcase_score: 5
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tsubaki Premium Repair Hair Mask. Drugstore hair mask in the gold tub. The quick rinse-off move after Japan humidity turns your hair into a legal dispute.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Tsubaki Premium Repair Hair Mask. Drugstore hair mask in the gold tub.
+  The quick rinse-off move after Japan humidity turns your hair into a legal dispute.
 english_name: Tsubaki Premium Repair Hair Mask
 japanese_name: TSUBAKI プレミアムリペアマスク
 subcategory: hair mask
@@ -42,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://brand.finetoday.com/jp/tsubaki/mask/
 enrichment_date: '2026-05-19'
 image: /products/tsubaki-premium-repair-hair-mask.webp
+safety_flags: []

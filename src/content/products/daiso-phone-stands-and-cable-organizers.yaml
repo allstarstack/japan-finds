@@ -1,27 +1,27 @@
-id: "JF-0008"
-slug: "daiso-phone-stands-and-cable-organizers"
-name_en: "Daiso Phone Stands and Cable Organizers"
-category: "100-yen"
+id: JF-0008
+slug: daiso-phone-stands-and-cable-organizers
+name_en: Daiso Phone Stands and Cable Organizers
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "スマホスタンド"
-brand: "Daiso"
+- day_one_fixes
+status: ready
+name_jp: スマホスタンド
+brand: Daiso
 where_found:
-  - "Daiso"
-price_yen: "110"
-what_it_is: "Foldable phone stands, cable wrappers, cord clips."
-why_travelers_care: "Hotel-room desk fix."
+- Daiso
+price_yen: '110'
+what_it_is: Foldable phone stands, cable wrappers, cord clips.
+why_travelers_care: Hotel-room desk fix.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 5
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso phone stand. Foldable plastic stand that turns a hotel desk into a tiny command center.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso phone stand. Foldable plastic stand that turns a hotel desk into
+  a tiny command center.
 english_name: Daiso Folding Smartphone Stand
 japanese_name: 折りたたみ式スマホスタンド
 subcategory: phone-accessory
@@ -32,3 +32,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://jp.daisonet.com/products/4549131874198?srsltid=AfmBOor13NwdN7P3SOqb1hhprqmkX2qtyfBncuGdIpH8m1B8roSYavPS
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

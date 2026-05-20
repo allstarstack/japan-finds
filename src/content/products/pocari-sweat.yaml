@@ -1,35 +1,37 @@
-id: "JF-0223"
-slug: "pocari-sweat"
-name_en: "Pocari Sweat"
-category: "konbini"
+id: JF-0223
+slug: pocari-sweat
+name_en: Pocari Sweat
+category: konbini
 intent:
-  - "try_in_japan"
-  - "day_one_fixes"
-status: "ready"
+- try_in_japan
+- day_one_fixes
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Matsumoto Kiyoshi"
-price_yen: "120-150"
-what_it_is: "Electrolyte sports drink, lighter and less sweet than Gatorade."
-why_travelers_care: "Hangover and heat-stroke staple, the name alone is content."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Matsumoto Kiyoshi
+price_yen: 120-150
+what_it_is: Electrolyte sports drink, lighter and less sweet than Gatorade.
+why_travelers_care: Hangover and heat-stroke staple, the name alone is content.
 risk_flags:
-  - "liquid"
-verification_notes: "Available some Asian groceries abroad but Japan version is standard reference"
+- liquid
+verification_notes: Available some Asian groceries abroad but Japan version is standard
+  reference
 source_links:
-  - "otsuka.co.jp/en/health-and-illness/pocari-sweat"
-  - "https://pocarisweat.jp/"
-  - "https://www.otsuka-plus1.com/shop/c/c1010/"
-confidence: "high"
+- otsuka.co.jp/en/health-and-illness/pocari-sweat
+- https://pocarisweat.jp/
+- https://www.otsuka-plus1.com/shop/c/c1010/
+confidence: high
 trip_score: 9
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "drink"
-name_jp: "ポカリスエット"
-
-description: Pocari Sweat. Ion drink, mild grapefruit-ish flavor, Japan's default 'I am dehydrated' button. Konbini fridge staple after temples, trains, or questionable life choices.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: drink
+name_jp: ポカリスエット
+description: Pocari Sweat. Ion drink, mild grapefruit-ish flavor, Japan's default
+  'I am dehydrated' button. Konbini fridge staple after temples, trains, or questionable
+  life choices.
 english_name: Pocari Sweat
 japanese_name: ポカリスエット
 subcategory: sports drink
@@ -44,3 +46,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.otsuka.co.jp/en/nutraceutical/products/pocarisweat/
 enrichment_date: '2026-05-19'
 image: /products/pocari-sweat.webp
+safety_flags: []

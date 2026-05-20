@@ -1,34 +1,34 @@
-id: "JF-0409"
-slug: "kit-kat-sake-hojicha-daigaku-imo-regional-flavors"
-name_en: "Kit Kat Sake / Hojicha / Daigaku Imo / Regional Flavors"
-category: "snacks"
+id: JF-0409
+slug: kit-kat-sake-hojicha-daigaku-imo-regional-flavors
+name_en: Kit Kat Sake / Hojicha / Daigaku Imo / Regional Flavors
+category: snacks
 intent:
-  - "bring_home"
-  - "gift_easy"
-  - "local_editions"
-status: "ready"
-name_jp: "ご当地キットカット"
-brand: "Nestle Japan"
+- bring_home
+- gift_easy
+- local_editions
+status: ready
+name_jp: ご当地キットカット
+brand: Nestle Japan
 where_found:
-  - "Airports"
-  - "regional shops"
-  - "Donki"
-price_yen: "400-1000"
-what_it_is: "Regional/seasonal Kit Kat variants, 30+ active SKUs."
-why_travelers_care: "Best souvenir-tier item: light, durable, social."
+- Airports
+- regional shops
+- Donki
+price_yen: 400-1000
+what_it_is: Regional/seasonal Kit Kat variants, 30+ active SKUs.
+why_travelers_care: 'Best souvenir-tier item: light, durable, social.'
 risk_flags:
-  - "allergen-dairy-soy-wheat, contains alcohol (sake variant)"
-verification_notes: "Variants rotate; check current lineup"
+- allergen-dairy-soy-wheat, contains alcohol (sake variant)
+verification_notes: Variants rotate; check current lineup
 source_links:
-  - "nestle.co.jp/brands/kitkat"
-confidence: "high"
+- nestle.co.jp/brands/kitkat
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kit Kat Japan Sake. Regional souvenir-box candy with sake flavor. A very Japan answer to the question, 'what if my chocolate had nightlife energy?'
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Kit Kat Japan Sake. Regional souvenir-box candy with sake flavor. A very
+  Japan answer to the question, 'what if my chocolate had nightlife energy?'
 english_name: Kit Kat Japan Sake
 japanese_name: キットカット 日本酒
 subcategory: regional chocolate wafer
@@ -45,4 +45,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://kitkat.nestle.jp/gift
 enrichment_date: '2026-05-19'
-image: /products/kit-kat-sake-hojicha-daigaku-imo-regional-flavors.webp
+image: null

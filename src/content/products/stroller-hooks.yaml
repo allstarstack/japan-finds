@@ -1,35 +1,35 @@
-id: "JF-0197"
-slug: "stroller-hooks"
-name_en: "Stroller hooks"
-category: "other"
+id: JF-0197
+slug: stroller-hooks
+name_en: Stroller hooks
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Daiso"
-  - "Akachan Honpo"
-  - "Nishimatsuya"
-price_yen: "~¥110–¥800"
-what_it_is: "Hooks for hanging bags from a stroller."
-why_travelers_care: "Immediate family travel utility."
+- Daiso
+- Akachan Honpo
+- Nishimatsuya
+price_yen: ~¥110–¥800
+what_it_is: Hooks for hanging bags from a stroller.
+why_travelers_care: Immediate family travel utility.
 risk_flags:
-  - "safety/tipping risk"
-  - "easy to buy outside Japan"
-verification_notes: "Warn against overloading stroller."
+- safety/tipping risk
+- easy to buy outside Japan
+verification_notes: Warn against overloading stroller.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://jp.daisonet.com/products/4549131954456"
-  - "https://jpbulk.daisonet.com/products/4549131954456"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.matsukiyococokara-online.com/
+- https://jp.daisonet.com/products/4549131954456
+- https://jpbulk.daisonet.com/products/4549131954456
+confidence: medium
 trip_score: 7
 suitcase_score: 8
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ベビーカーフック"
-
-description: Daiso stroller hooks. Clip-on bag hangers for strollers, tiny but clutch when the diaper bag starts winning. Parenting convenience, ¥100 edition.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ベビーカーフック
+description: Daiso stroller hooks. Clip-on bag hangers for strollers, tiny but clutch
+  when the diaper bag starts winning. Parenting convenience, ¥100 edition.
 english_name: Daiso Stroller Hooks
 japanese_name: ベビーカーフック
 subcategory: stroller accessory
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4549131954463
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,35 +1,36 @@
-id: "JF-0239"
-slug: "ha-agen-dazs-japan-exclusive-flavors"
-name_en: "Häagen-Dazs Japan Exclusive Flavors"
-category: "konbini"
+id: JF-0239
+slug: ha-agen-dazs-japan-exclusive-flavors
+name_en: Häagen-Dazs Japan Exclusive Flavors
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Aeon"
-price_yen: "320-380"
-what_it_is: "Japan-only flavors: hojicha, sakura, kinako kuromitsu, etc."
-why_travelers_care: "Familiar brand, unfamiliar Japan-only flavor drops."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Aeon
+price_yen: 320-380
+what_it_is: 'Japan-only flavors: hojicha, sakura, kinako kuromitsu, etc.'
+why_travelers_care: Familiar brand, unfamiliar Japan-only flavor drops.
 risk_flags:
-  - "perishable, allergen-dairy"
-verification_notes: "Flavor lineup rotates seasonally"
+- perishable, allergen-dairy
+verification_notes: Flavor lineup rotates seasonally
 source_links:
-  - "haagen-dazs.co.jp"
-  - "https://www.haagen-dazs.co.jp/products/minicup/"
-  - "https://www.haagen-dazs.co.jp/news/"
-confidence: "high"
+- haagen-dazs.co.jp
+- https://www.haagen-dazs.co.jp/products/minicup/
+- https://www.haagen-dazs.co.jp/news/
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "ハーゲンダッツ ミニカップ"
-agent_notes: "Japan-exclusive flavors rotate"
-
-description: Häagen-Dazs Japan limited cups. Rotating freezer bait with flavors like tea, milk, and seasonal dessert chaos. The konbini ice cream case gets dramatic here.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: ハーゲンダッツ ミニカップ
+agent_notes: Japan-exclusive flavors rotate
+description: Häagen-Dazs Japan limited cups. Rotating freezer bait with flavors like
+  tea, milk, and seasonal dessert chaos. The konbini ice cream case gets dramatic
+  here.
 english_name: Häagen-Dazs Japan Limited Mini Cup
 japanese_name: ハーゲンダッツ 期間限定ミニカップ
 subcategory: ice cream
@@ -43,5 +44,6 @@ safety_flags:
 - contains_dairy
 - contains_egg
 enrichment_confidence: low
-enrichment_source_url: https://www.icecream.com/us/en/brands/haagen-dazs/products/green-tea-ice-cream
+enrichment_source_url: https://www.icecream.com/us/en/brands/haagen-dazs/products/green-tea-ice-cream.
 enrichment_date: '2026-05-19'
+image: null
