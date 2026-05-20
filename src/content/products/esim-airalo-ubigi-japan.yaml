@@ -1,33 +1,34 @@
-id: "JF-0461"
-slug: "esim-airalo-ubigi-japan"
-name_en: "eSIM (Airalo / Ubigi Japan)"
-category: "other"
+id: JF-0461
+slug: esim-airalo-ubigi-japan
+name_en: eSIM (Airalo / Ubigi Japan)
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "eSIM"
-brand: "Various"
+- day_one_fixes
+status: ready
+name_jp: eSIM
+brand: Various
 where_found:
-  - "Sakura Mobile"
-  - "Mobal"
-  - "Ubigi"
-  - "Airalo"
-  - "Saily"
-price_yen: "1000-3000"
-what_it_is: "Digital SIM activated before landing, often cheaper than pocket WiFi for solo travelers."
-why_travelers_care: "Better solo option than WiFi rental in 2026."
-verification_notes: "Phone must be eSIM compatible and carrier-unlocked"
+- Sakura Mobile
+- Mobal
+- Ubigi
+- Airalo
+- Saily
+price_yen: 1000-3000
+what_it_is: Digital SIM activated before landing, often cheaper than pocket WiFi for
+  solo travelers.
+why_travelers_care: Better solo option than WiFi rental in 2026.
+verification_notes: Phone must be eSIM compatible and carrier-unlocked
 source_links:
-  - "airalo.com"
-  - "ubigi.com"
-confidence: "high"
+- airalo.com
+- ubigi.com
+confidence: high
 trip_score: 9
 suitcase_score: 0
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Ubigi Japan eSIM. Data before baggage claim drama — install before the flight, land, and act like you have your life together.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Ubigi Japan eSIM. Data before baggage claim drama — install before the
+  flight, land, and act like you have your life together.
 english_name: Ubigi Japan 25GB eSIM
 japanese_name: Ubigi 日本向けeSIM 25GB 30日
 subcategory: travel eSIM
@@ -41,3 +42,4 @@ enrichment_confidence: low
 enrichment_source_url: https://cellulardata.ubigi.com/rates-and-coverage/japan-data-plans/japan-25gb-30-days/
 enrichment_date: '2026-05-19'
 image: /products/esim-airalo-ubigi-japan.webp
+safety_flags: []

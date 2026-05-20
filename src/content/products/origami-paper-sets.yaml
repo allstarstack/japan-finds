@@ -1,31 +1,31 @@
-id: "JF-0431"
-slug: "origami-paper-sets"
-name_en: "Origami Paper Sets"
-category: "stationery"
+id: JF-0431
+slug: origami-paper-sets
+name_en: Origami Paper Sets
+category: stationery
 intent:
-  - "gift_easy"
-  - "bring_home"
-status: "ready"
-name_jp: "折り紙"
-brand: "Various"
+- gift_easy
+- bring_home
+status: ready
+name_jp: 折り紙
+brand: Various
 where_found:
-  - "Toyo origami official"
-  - "Daiso"
-  - "Loft"
-  - "Yodobashi"
-price_yen: "110-1500"
-what_it_is: "Square folding paper in dozens of patterns."
-why_travelers_care: "Educational gift, easy."
+- Toyo origami official
+- Daiso
+- Loft
+- Yodobashi
+price_yen: 110-1500
+what_it_is: Square folding paper in dozens of patterns.
+why_travelers_care: Educational gift, easy.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso chiyogami paper. Tiny patterned paper squares that make your luggage look cultured for ¥110. Easy gift, zero suitcase drama.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Daiso chiyogami paper. Tiny patterned paper squares that make your luggage
+  look cultured for ¥110. Easy gift, zero suitcase drama.
 english_name: Daiso Japanese-Pattern Chiyogami Paper Set
 japanese_name: ダイソー 和風ちよがみ
 subcategory: stationery
@@ -38,3 +38,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4550480285214
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

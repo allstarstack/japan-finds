@@ -1,34 +1,34 @@
-id: "JF-0293"
-slug: "custom-photo-sticker-purikura-print"
-name_en: "Custom photo sticker / purikura print"
-category: "other"
+id: JF-0293
+slug: custom-photo-sticker-purikura-print
+name_en: Custom photo sticker / purikura print
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "プリクラ"
-brand: "Purikura machine makers"
+- make_it_yours
+status: ready
+name_jp: プリクラ
+brand: Purikura machine makers
 where_found:
-  - "Arcades"
-  - "malls"
-  - "Taito Station"
-  - "Gigo"
-price_yen: "~¥400–¥600 per session"
-what_it_is: "Japanese photo booth print with filters/decorations."
-why_travelers_care: "Low-cost proof-of-trip and very visual experience."
+- Arcades
+- malls
+- Taito Station
+- Gigo
+price_yen: ~¥400–¥600 per session
+what_it_is: Japanese photo booth print with filters/decorations.
+why_travelers_care: Low-cost proof-of-trip and very visual experience.
 risk_flags:
-  - "privacy"
-  - "image rights"
-verification_notes: "Check machine rules and storage/QR options."
+- privacy
+- image rights
+verification_notes: Check machine rules and storage/QR options.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 10
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Purikura print. Photo booth stickers with beauty filters turned up to anime HR department levels.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Purikura print. Photo booth stickers with beauty filters turned up to
+  anime HR department levels.
 english_name: Purikura Photo Sticker Print
 japanese_name: プリクラ
 subcategory: photo-booth
@@ -40,3 +40,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://web-japan.org/trends/11_culture/pop120216.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

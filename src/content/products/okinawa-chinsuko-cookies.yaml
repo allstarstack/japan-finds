@@ -1,33 +1,34 @@
-id: "JF-0341"
-slug: "okinawa-chinsuko-cookies"
-name_en: "Okinawa chinsuko cookies"
-category: "snacks"
+id: JF-0341
+slug: okinawa-chinsuko-cookies
+name_en: Okinawa chinsuko cookies
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "ちんすこう"
-brand: "Various"
+- local_editions
+status: ready
+name_jp: ちんすこう
+brand: Various
 where_found:
-  - "Okinawa"
-  - "airports"
-  - "souvenir shops"
-price_yen: "~¥300–¥1,500"
-what_it_is: "Okinawan shortbread-like cookies."
-why_travelers_care: "Durable, regional, easy group gift."
+- Okinawa
+- airports
+- souvenir shops
+price_yen: ~¥300–¥1,500
+what_it_is: Okinawan shortbread-like cookies.
+why_travelers_care: Durable, regional, easy group gift.
 risk_flags:
-  - "allergen"
-  - "fragile"
-verification_notes: "Verify flavor and packaging."
+- allergen
+- fragile
+verification_notes: Verify flavor and packaging.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 8
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Chinsuko cookies. Okinawan shortbread with a sandy little crumble that tastes better than that description sounds. Easy suitcase snack, dangerously easy to finish.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Chinsuko cookies. Okinawan shortbread with a sandy little crumble that
+  tastes better than that description sounds. Easy suitcase snack, dangerously easy
+  to finish.
 english_name: Nanpudo Chinsuko Okinawan Shortbread Cookies
 japanese_name: 南風堂 ちんすこう
 subcategory: Okinawa souvenir cookie
@@ -41,3 +42,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://japanesetaste.com/products/nanpudo-chinsuko-okinawan-shortbread-cookies-assortment-24-pieces
 enrichment_date: '2026-05-19'
+image: null

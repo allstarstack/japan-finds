@@ -1,28 +1,28 @@
-id: "JF-0266"
-slug: "10-yen-cheese-coin-pancake"
-name_en: "10-Yen Cheese Coin Pancake"
-category: "other"
+id: JF-0266
+slug: 10-yen-cheese-coin-pancake
+name_en: 10-Yen Cheese Coin Pancake
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "10円パン"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: 10円パン
+brand: Various
 where_found:
-  - "Dotonbori / Harajuku"
-price_yen: "~¥500"
-what_it_is: "Coin-shaped pancake with cheese pull."
-why_travelers_care: "Camera bait more than quality food; useful as content-only caution."
+- Dotonbori / Harajuku
+price_yen: ~¥500
+what_it_is: Coin-shaped pancake with cheese pull.
+why_travelers_care: Camera bait more than quality food; useful as content-only caution.
 risk_flags:
-  - "perishable"
-  - "dairy"
-  - "gluten"
-verification_notes: "Verify location/vendor if used."
+- perishable
+- dairy
+- gluten
+verification_notes: Verify location/vendor if used.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 3
-
-description: 10 Yen Cheese Coin Pancake. Giant coin-shaped pancake with stretchy cheese inside. It is the snack version of pulling a cartoon money glitch in Dotonbori.
+description: 10 Yen Cheese Coin Pancake. Giant coin-shaped pancake with stretchy cheese
+  inside. It is the snack version of pulling a cartoon money glitch in Dotonbori.
 english_name: 10 Yen Cheese Coin Pancake
 japanese_name: 10円パン
 subcategory: street snack
@@ -39,3 +39,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://tabelog.com/en/osaka/A2701/A270202/27134070/
 enrichment_date: '2026-05-19'
+image: null

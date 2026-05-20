@@ -1,33 +1,36 @@
-id: "JF-0236"
-slug: "tuna-mayo-onigiri"
-name_en: "Tuna Mayo Onigiri"
-category: "konbini"
+id: JF-0236
+slug: tuna-mayo-onigiri
+name_en: Tuna Mayo Onigiri
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-price_yen: "150-180"
-what_it_is: "Triangular rice ball with tuna mayo filling, seaweed kept separate via clever wrapper."
-why_travelers_care: "Gateway konbini food, cheap, the wrapper design alone is a content moment."
+- 7-Eleven
+price_yen: 150-180
+what_it_is: Triangular rice ball with tuna mayo filling, seaweed kept separate via
+  clever wrapper.
+why_travelers_care: Gateway konbini food, cheap, the wrapper design alone is a content
+  moment.
 risk_flags:
-  - "perishable"
-verification_notes: "Verify wrapper unfold technique still standard across all three chains"
+- perishable
+verification_notes: Verify wrapper unfold technique still standard across all three
+  chains
 source_links:
-  - "7-eleven.co.jp"
-  - "lawson.co.jp"
-  - "family.co.jp"
-  - "https://www.sej.co.jp/products/a/item/041909/"
-  - "https://www.sej.co.jp/products/a/onigiri/"
-confidence: "high"
+- 7-eleven.co.jp
+- lawson.co.jp
+- family.co.jp
+- https://www.sej.co.jp/products/a/item/041909/
+- https://www.sej.co.jp/products/a/onigiri/
+confidence: high
 trip_score: 10
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "手巻おにぎり ツナマヨネーズ"
-
-description: Tuna mayo onigiri. Lawson's version is soft rice, tuna-mayo filling, and the commuter breakfast that costs less than a train delay.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: 手巻おにぎり ツナマヨネーズ
+description: Tuna mayo onigiri. Lawson's version is soft rice, tuna-mayo filling,
+  and the commuter breakfast that costs less than a train delay.
 english_name: Lawson Tuna Mayo Onigiri
 japanese_name: ローソン シーチキンマヨネーズおにぎり
 subcategory: onigiri

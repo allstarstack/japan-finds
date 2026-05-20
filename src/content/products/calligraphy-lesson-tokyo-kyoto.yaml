@@ -1,24 +1,24 @@
-id: "JF-0071"
-slug: "calligraphy-lesson-tokyo-kyoto"
-name_en: "Calligraphy Lesson (Tokyo / Kyoto)"
-category: "other"
+id: JF-0071
+slug: calligraphy-lesson-tokyo-kyoto
+name_en: Calligraphy Lesson (Tokyo / Kyoto)
+category: other
 intent:
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "書道体験"
-brand: "Various studios"
+- make_it_yours
+status: v1_candidate
+name_jp: 書道体験
+brand: Various studios
 where_found:
-  - "Tokyo and Kyoto studios"
-price_yen: "3000-10000"
-what_it_is: "1-2hr shodo lesson, take home your scroll."
-why_travelers_care: "Cultural experience + takeaway."
+- Tokyo and Kyoto studios
+price_yen: 3000-10000
+what_it_is: 1-2hr shodo lesson, take home your scroll.
+why_travelers_care: Cultural experience + takeaway.
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 7
 suitcase_score: 10
-
-description: Calligraphy lesson. Brush, ink, and one kanji that humbles everyone immediately. Tokyo and Kyoto studios make it an easy rainy-day win.
+description: Calligraphy lesson. Brush, ink, and one kanji that humbles everyone immediately.
+  Tokyo and Kyoto studios make it an easy rainy-day win.
 english_name: Japanese Calligraphy Lesson
 japanese_name: 書道体験
 subcategory: cultural experience
@@ -30,3 +30,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://mai-ko.com/culture/calligraphy/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

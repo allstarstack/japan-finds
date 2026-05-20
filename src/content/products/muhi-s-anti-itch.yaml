@@ -1,34 +1,35 @@
-id: "JF-0136"
-slug: "muhi-s-anti-itch"
-name_en: "Muhi S Anti-Itch"
-category: "donki-drugstore"
+id: JF-0136
+slug: muhi-s-anti-itch
+name_en: Muhi S Anti-Itch
+category: donki-drugstore
 intent:
-  - "stock_up"
-  - "day_one_fixes"
-status: "ready"
+- stock_up
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "500-800"
-what_it_is: "Topical anti-itch for bug bites and rashes; the diphenhydramine + camphor classic."
-why_travelers_care: "Summer essential; mosquitoes hit hard in humid months."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: 500-800
+what_it_is: Topical anti-itch for bug bites and rashes; the diphenhydramine + camphor
+  classic.
+why_travelers_care: Summer essential; mosquitoes hit hard in humid months.
 risk_flags:
-  - "medicine/regulated, liquid"
+- medicine/regulated, liquid
 source_links:
-  - "muhi.com"
-  - "https://www.ikedamohando.co.jp/products/muhi_s.html"
-  - "https://www.ikedamohando.co.jp/products/"
-confidence: "high"
+- muhi.com
+- https://www.ikedamohando.co.jp/products/muhi_s.html
+- https://www.ikedamohando.co.jp/products/
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "ムヒS"
-
-description: Muhi S. Anti-itch cream for mosquito bites and mystery skin rage. Summer in Japan keeps one in the bag for a reason.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: ムヒS
+description: Muhi S. Anti-itch cream for mosquito bites and mystery skin rage. Summer
+  in Japan keeps one in the bag for a reason.
 english_name: Muhi S
 japanese_name: ムヒS
 subcategory: anti-itch cream
@@ -42,3 +43,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.ikedamohando.co.jp/products/muhi-s.html
 enrichment_date: '2026-05-19'
 image: /products/muhi-s-anti-itch.webp
+safety_flags: []

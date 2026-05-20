@@ -1,26 +1,26 @@
-id: "JF-0087"
-slug: "gamaguchi-coin-purse"
-name_en: "Gamaguchi Coin Purse"
-category: "other"
+id: JF-0087
+slug: gamaguchi-coin-purse
+name_en: Gamaguchi Coin Purse
+category: other
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "v1_candidate"
-name_jp: "がま口"
-brand: "Various"
+- bring_home
+- gift_easy
+status: v1_candidate
+name_jp: がま口
+brand: Various
 where_found:
-  - "Dept stores"
-  - "specialty leather/textile shops"
-price_yen: "1500-8000"
-what_it_is: "Snap-clasp coin purse, often kimono fabric or leather."
-why_travelers_care: "Distinctive, useful gift."
+- Dept stores
+- specialty leather/textile shops
+price_yen: 1500-8000
+what_it_is: Snap-clasp coin purse, often kimono fabric or leather.
+why_travelers_care: Distinctive, useful gift.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 10
-
-description: Gamaguchi coin purse. Snap-clasp wallet with old-school Kyoto energy. Perfect for the coins Japan still refuses to stop giving you.
+description: Gamaguchi coin purse. Snap-clasp wallet with old-school Kyoto energy.
+  Perfect for the coins Japan still refuses to stop giving you.
 english_name: Gamaguchi Coin Purse
 japanese_name: がま口コインケース
 subcategory: coin purse
@@ -33,3 +33,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://ayanokoji.jp/c/item/wallet/coin
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,29 +1,29 @@
-id: "JF-0366"
-slug: "mentholatum-lipfondue"
-name_en: "Mentholatum Lipfondue"
-category: "skincare"
+id: JF-0366
+slug: mentholatum-lipfondue
+name_en: Mentholatum Lipfondue
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "リップフォンデュ"
-brand: "Rohto Mentholatum"
+- stock_up
+status: ready
+name_jp: リップフォンデュ
+brand: Rohto Mentholatum
 where_found:
-  - "Drugstores"
-price_yen: "700-900"
-what_it_is: "Tinted lip balm in cute case."
-why_travelers_care: "Cute and cheap."
+- Drugstores
+price_yen: 700-900
+what_it_is: Tinted lip balm in cute case.
+why_travelers_care: Cute and cheap.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "rohto.co.jp"
-confidence: "high"
+- rohto.co.jp
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Mentholatum Lip Fondue. Glossy tinted lip balm with a soft plump look. Drugstore lip section pick when your face needs one small victory.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Mentholatum Lip Fondue. Glossy tinted lip balm with a soft plump look.
+  Drugstore lip section pick when your face needs one small victory.
 english_name: Mentholatum Lip Fondue
 japanese_name: メンソレータム リップフォンデュ
 subcategory: lip balm
@@ -37,3 +37,4 @@ enrichment_confidence: high
 enrichment_source_url: https://jp.rohto.com/lipfondue/
 enrichment_date: '2026-05-19'
 image: /products/mentholatum-lipfondue.webp
+safety_flags: []

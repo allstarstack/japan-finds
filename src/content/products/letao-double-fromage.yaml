@@ -1,35 +1,35 @@
-id: "JF-0334"
-slug: "letao-double-fromage"
-name_en: "LeTAO Double Fromage"
-category: "snacks"
+id: JF-0334
+slug: letao-double-fromage
+name_en: LeTAO Double Fromage
+category: snacks
 intent:
-  - "try_in_japan"
-status: "ready"
-name_jp: "ドゥーブルフロマージュ"
-brand: "LeTAO"
+- try_in_japan
+status: ready
+name_jp: ドゥーブルフロマージュ
+brand: LeTAO
 where_found:
-  - "Hokkaido/Otaru"
-  - "airports"
-  - "online"
-price_yen: "~¥2,000+"
-what_it_is: "Frozen/fresh cheesecake dessert."
-why_travelers_care: "Excellent on-site/regional treat, poor casual suitcase item."
+- Hokkaido/Otaru
+- airports
+- online
+price_yen: ~¥2,000+
+what_it_is: Frozen/fresh cheesecake dessert.
+why_travelers_care: Excellent on-site/regional treat, poor casual suitcase item.
 risk_flags:
-  - "perishable"
-  - "dairy"
-  - "frozen"
-  - "fragile"
-verification_notes: "Check delivery/refrigeration options."
+- perishable
+- dairy
+- frozen
+- fragile
+verification_notes: Check delivery/refrigeration options.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 3
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: LeTAO Double Fromage. Hokkaido-style double-layer cheesecake. Buy frozen, thaw slowly, then watch people get weirdly quiet after one bite.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: LeTAO Double Fromage. Hokkaido-style double-layer cheesecake. Buy frozen,
+  thaw slowly, then watch people get weirdly quiet after one bite.
 english_name: LeTAO Double Fromage
 japanese_name: ルタオ ドゥーブルフロマージュ
 subcategory: cheesecake

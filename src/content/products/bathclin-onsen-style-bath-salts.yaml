@@ -1,36 +1,36 @@
-id: "JF-0128"
-slug: "bathclin-onsen-style-bath-salts"
-name_en: "Bathclin Onsen-Style Bath Salts"
-category: "donki-drugstore"
+id: JF-0128
+slug: bathclin-onsen-style-bath-salts
+name_en: Bathclin Onsen-Style Bath Salts
+category: donki-drugstore
 intent:
-  - "stock_up"
-  - "gift_easy"
-status: "ready"
+- stock_up
+- gift_easy
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "500-1500"
-what_it_is: "Powdered bath salts mimicking famous Japanese onsen (Kusatsu, Beppu, etc.)."
-why_travelers_care: "Onsen omiyage in powder form."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: 500-1500
+what_it_is: Powdered bath salts mimicking famous Japanese onsen (Kusatsu, Beppu, etc.).
+why_travelers_care: Onsen omiyage in powder form.
 risk_flags:
-  - "allergen-fragrance"
+- allergen-fragrance
 source_links:
-  - "bathclin.co.jp"
-  - "https://www.bathclin.co.jp/products/bathclin/"
-  - "https://www.bathclin.co.jp/news/"
-confidence: "high"
+- bathclin.co.jp
+- https://www.bathclin.co.jp/products/bathclin/
+- https://www.bathclin.co.jp/news/
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "バスクリン"
-agent_notes: "Bathclin merged into Earth Corp Jan 2026"
-
-description: Onsen-style bath salts. Fake hot spring cosplay for your hotel tub, minus the mountain air and social anxiety.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: バスクリン
+agent_notes: Bathclin merged into Earth Corp Jan 2026
+description: Onsen-style bath salts. Fake hot spring cosplay for your hotel tub, minus
+  the mountain air and social anxiety.
 english_name: Bathclin Nihon no Meito Bath Salts
 japanese_name: バスクリン 日本の名湯
 subcategory: bath salts
@@ -43,3 +43,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://shop.nijiya.com/products/bathclin-nihon-no-meito-bath-salt-nigoriyu-no-daigomi
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

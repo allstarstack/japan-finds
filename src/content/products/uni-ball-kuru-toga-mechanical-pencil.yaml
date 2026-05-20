@@ -1,30 +1,30 @@
-id: "JF-0442"
-slug: "uni-ball-kuru-toga-mechanical-pencil"
-name_en: "Uni-ball Kuru Toga Mechanical Pencil"
-category: "stationery"
+id: JF-0442
+slug: uni-ball-kuru-toga-mechanical-pencil
+name_en: Uni-ball Kuru Toga Mechanical Pencil
+category: stationery
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "クルトガ"
-brand: "Mitsubishi Pencil"
+- stock_up
+- bring_home
+status: ready
+name_jp: クルトガ
+brand: Mitsubishi Pencil
 where_found:
-  - "Mitsubishi Pencil official"
-  - "Amazon JP"
-  - "Yodobashi"
-price_yen: "550-2000"
-what_it_is: "Rotating mechanical pencil that keeps tip sharp."
-why_travelers_care: "Cult pencil, engineering-design moment."
+- Mitsubishi Pencil official
+- Amazon JP
+- Yodobashi
+price_yen: 550-2000
+what_it_is: Rotating mechanical pencil that keeps tip sharp.
+why_travelers_care: Cult pencil, engineering-design moment.
 source_links:
-  - "mpuni.co.jp/products/pencil/kurutoga"
-confidence: "high"
+- mpuni.co.jp/products/pencil/kurutoga
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kuru Toga mechanical pencil. The lead rotates as you write, because Japan looked at pencil tips and chose engineering violence.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Kuru Toga mechanical pencil. The lead rotates as you write, because Japan
+  looked at pencil tips and chose engineering violence.
 english_name: Uni-ball Kuru Toga Mechanical Pencil
 japanese_name: クルトガ シャープペンシル
 subcategory: stationery
@@ -39,3 +39,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.mpuni.co.jp/products/mechanical_pencils/sharp_pen/kurutoga/standard/m5_650.html
 enrichment_date: '2026-05-19'
 image: /products/uni-ball-kuru-toga-mechanical-pencil.webp
+safety_flags: []

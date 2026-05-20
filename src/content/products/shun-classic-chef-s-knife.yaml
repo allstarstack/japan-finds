@@ -1,27 +1,27 @@
-id: "JF-0211"
-slug: "shun-classic-chef-s-knife"
-name_en: "Shun Classic Chef's Knife"
-category: "kitchen"
+id: JF-0211
+slug: shun-classic-chef-s-knife
+name_en: Shun Classic Chef's Knife
+category: kitchen
 intent:
-  - "bring_home"
-status: "hold"
-name_jp: "旬"
-brand: "Kai Group"
+- bring_home
+status: hold
+name_jp: 旬
+brand: Kai Group
 where_found:
-  - "Kappabashi"
-  - "dept stores"
-price_yen: "20000-40000"
-what_it_is: "Higher-tier VG-MAX layered stainless, walnut handle."
-why_travelers_care: "Beautiful, more serious gift-tier."
+- Kappabashi
+- dept stores
+price_yen: 20000-40000
+what_it_is: Higher-tier VG-MAX layered stainless, walnut handle.
+why_travelers_care: Beautiful, more serious gift-tier.
 risk_flags:
-  - "fragile, sharp"
+- fragile, sharp
 source_links:
-  - "kai-group.com/products/global/shun"
-confidence: "high"
+- kai-group.com/products/global/shun
+confidence: high
 trip_score: 7
 suitcase_score: 5
-
-description: Shun Classic chef's knife. Damascus steel, Pakkawood handle, made in Japan; a real kitchen souvenir, not another magnet.
+description: Shun Classic chef's knife. Damascus steel, Pakkawood handle, made in
+  Japan; a real kitchen souvenir, not another magnet.
 english_name: Shun Classic 8-Inch Chef's Knife
 japanese_name: 旬 Classic シェフズナイフ
 subcategory: chef knife
@@ -35,3 +35,4 @@ enrichment_confidence: high
 enrichment_source_url: https://shun.kaiusa.com/classic-chef-s-8.html
 enrichment_date: '2026-05-19'
 image: /products/shun-classic-chef-s-knife.webp
+safety_flags: []

@@ -1,37 +1,37 @@
-id: "JF-0193"
-slug: "kids-training-chopsticks"
-name_en: "Kids training chopsticks"
-category: "other"
+id: JF-0193
+slug: kids-training-chopsticks
+name_en: Kids training chopsticks
+category: other
 intent:
-  - "gift_easy"
-status: "ready"
+- gift_easy
+status: ready
 where_found:
-  - "Daiso"
-  - "Akachan Honpo"
-  - "Nishimatsuya"
-  - "Edison Mama"
-price_yen: "~¥110–¥1,200"
-what_it_is: "Training chopsticks with finger guides or character designs."
-why_travelers_care: "Useful, cute, and culturally tied to Japan meals."
+- Daiso
+- Akachan Honpo
+- Nishimatsuya
+- Edison Mama
+price_yen: ~¥110–¥1,200
+what_it_is: Training chopsticks with finger guides or character designs.
+why_travelers_care: Useful, cute, and culturally tied to Japan meals.
 risk_flags:
-  - "small parts"
-  - "age suitability"
-verification_notes: "Check handedness and child age."
+- small parts
+- age suitability
+verification_notes: Check handedness and child age.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-  - "https://www.edisonmama.com/item/chopsticks/"
-  - "https://jp.daisonet.com/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+- https://www.edisonmama.com/item/chopsticks/
+- https://jp.daisonet.com/
+confidence: medium
 trip_score: 8
 suitcase_score: 8
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "子ども用練習箸"
-agent_notes: "Character designs vary"
-
-description: EDIMOTTO Step-Up Chopsticks. Ring-guided chopsticks that teach finger placement without turning lunch into hand combat. Kid-table chaos, lightly supervised.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 子ども用練習箸
+agent_notes: Character designs vary
+description: EDIMOTTO Step-Up Chopsticks. Ring-guided chopsticks that teach finger
+  placement without turning lunch into hand combat. Kid-table chaos, lightly supervised.
 english_name: EDIMOTTO Step-Up Chopsticks
 japanese_name: エジモット ステップアップお箸
 subcategory: kids tableware
@@ -45,3 +45,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://global.edisonmama.com/news/use-chopsticks-like-a-little-pro-2/
 enrichment_date: '2026-05-19'
 image: /products/kids-training-chopsticks.webp
+safety_flags: []

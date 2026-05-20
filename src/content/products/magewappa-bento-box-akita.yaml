@@ -1,29 +1,29 @@
-id: "JF-0207"
-slug: "magewappa-bento-box-akita"
-name_en: "Magewappa Bento Box (Akita)"
-category: "kitchen"
+id: JF-0207
+slug: magewappa-bento-box-akita
+name_en: Magewappa Bento Box (Akita)
+category: kitchen
 intent:
-  - "bring_home"
-  - "local_editions"
-  - "gift_easy"
-status: "v1_candidate"
-name_jp: "曲げわっぱ"
-brand: "Various Akita makers"
+- bring_home
+- local_editions
+- gift_easy
+status: v1_candidate
+name_jp: 曲げわっぱ
+brand: Various Akita makers
 where_found:
-  - "Akita region"
-  - "dept stores"
-price_yen: "3000-15000"
-what_it_is: "Bent cedar bento box, traditional Akita craft."
-why_travelers_care: "Heritage gift, photogenic, functional."
+- Akita region
+- dept stores
+price_yen: 3000-15000
+what_it_is: Bent cedar bento box, traditional Akita craft.
+why_travelers_care: Heritage gift, photogenic, functional.
 risk_flags:
-  - "fragile (avoid crushing)"
+- fragile (avoid crushing)
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 8
 suitcase_score: 8
-
-description: Magewappa bento box. Akita cedar lunch box, light and way prettier than your meal prep deserves. The grown-up souvenir for people who own rice paddles emotionally.
+description: Magewappa bento box. Akita cedar lunch box, light and way prettier than
+  your meal prep deserves. The grown-up souvenir for people who own rice paddles emotionally.
 english_name: Odate Magewappa Bento Box
 japanese_name: 大館曲げわっぱ 弁当箱
 subcategory: bento box
@@ -35,3 +35,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://magewappa.co.jp/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

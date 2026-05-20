@@ -1,36 +1,36 @@
-id: "JF-0385"
-slug: "lululun-sheet-masks"
-name_en: "LuLuLun sheet masks"
-category: "skincare"
+id: JF-0385
+slug: lululun-sheet-masks
+name_en: LuLuLun sheet masks
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "ルルルン フェイスマスク"
-brand: "LuLuLun"
+- stock_up
+status: ready
+name_jp: ルルルン フェイスマスク
+brand: LuLuLun
 where_found:
-  - "Drugstores"
-  - "Donki"
-  - "Loft"
-  - "regional shops"
-price_yen: "~¥400–¥2,000"
-what_it_is: "Sheet mask packs, including regional limited editions."
-why_travelers_care: "Beauty stock-up plus local-edition angle."
+- Drugstores
+- Donki
+- Loft
+- regional shops
+price_yen: ~¥400–¥2,000
+what_it_is: Sheet mask packs, including regional limited editions.
+why_travelers_care: Beauty stock-up plus local-edition angle.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-verification_notes: "Confirm regional/seasonal editions."
+- liquid
+- skincare/cosmetic claim
+verification_notes: Confirm regional/seasonal editions.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.donki.com/en/
+- https://www.matsukiyococokara-online.com/
+- https://www.cosme.net/
+confidence: high
 trip_score: 8
 suitcase_score: 7
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: LuLuLun sheet masks. Cheap enough for daily use, cute enough to feel like you have a skincare plan. Drugstore shelf MVP after dry hotel air.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: LuLuLun sheet masks. Cheap enough for daily use, cute enough to feel
+  like you have a skincare plan. Drugstore shelf MVP after dry hotel air.
 english_name: LuLuLun Precious Sheet Masks
 japanese_name: ルルルンプレシャス フェイスマスク
 subcategory: sheet mask
@@ -43,4 +43,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://lululunusa.com/products/precious-sheet-mask-clear-white
 enrichment_date: '2026-05-19'
-image: /products/lululun-sheet-masks.webp
+image: null
+safety_flags: []

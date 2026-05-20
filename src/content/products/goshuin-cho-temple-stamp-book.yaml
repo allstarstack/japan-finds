@@ -1,33 +1,33 @@
-id: "JF-0423"
-slug: "goshuin-cho-temple-stamp-book"
-name_en: "Goshuin-cho Temple Stamp Book"
-category: "stationery"
+id: JF-0423
+slug: goshuin-cho-temple-stamp-book
+name_en: Goshuin-cho Temple Stamp Book
+category: stationery
 intent:
-  - "make_it_yours"
-  - "local_editions"
-status: "ready"
-name_jp: "御朱印帳"
-brand: "Various temples and stationers"
+- make_it_yours
+- local_editions
+status: ready
+name_jp: 御朱印帳
+brand: Various temples and stationers
 where_found:
-  - "Shrine and temple gift shops"
-  - "Loft"
-  - "Tokyu Hands"
-  - "Amazon JP"
-price_yen: "1500-3500 book, 300-500 per stamp"
-what_it_is: "Book that gets calligraphy-stamped at each temple/shrine you visit."
-why_travelers_care: "Top-tier proof-of-visit object, accumulates through trip."
+- Shrine and temple gift shops
+- Loft
+- Tokyu Hands
+- Amazon JP
+price_yen: 1500-3500 book, 300-500 per stamp
+what_it_is: Book that gets calligraphy-stamped at each temple/shrine you visit.
+why_travelers_care: Top-tier proof-of-visit object, accumulates through trip.
 risk_flags:
-  - "fragile (the book)"
+- fragile (the book)
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 10
 suitcase_score: 9
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Goshuincho stamp book. Accordion notebook for shrine and temple seals. Start it on day one or regret every shrine after.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Goshuincho stamp book. Accordion notebook for shrine and temple seals.
+  Start it on day one or regret every shrine after.
 english_name: Goshuincho Temple Stamp Book
 japanese_name: 御朱印帳
 subcategory: stamp book
@@ -41,3 +41,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://komorebistationery.com/collections/goshuincho-stamp-books
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

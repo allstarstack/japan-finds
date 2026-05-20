@@ -1,28 +1,28 @@
-id: "JF-0011"
-slug: "daiso-travel-bottles"
-name_en: "Daiso Travel Bottles"
-category: "100-yen"
+id: JF-0011
+slug: daiso-travel-bottles
+name_en: Daiso Travel Bottles
+category: 100-yen
 intent:
-  - "day_one_fixes"
-  - "bring_home"
-status: "ready"
-name_jp: "ダイソートラベルボトル"
-brand: "Daiso"
+- day_one_fixes
+- bring_home
+status: ready
+name_jp: ダイソートラベルボトル
+brand: Daiso
 where_found:
-  - "Daiso"
-price_yen: "110"
-what_it_is: "Tiny bottles, jars, vials for decanting toiletries."
-why_travelers_care: "Solves the airport rush every traveler hits."
+- Daiso
+price_yen: '110'
+what_it_is: Tiny bottles, jars, vials for decanting toiletries.
+why_travelers_care: Solves the airport rush every traveler hits.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso travel bottles. Tiny refill bottles for shampoo, lotion, and mystery hotel liquids.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso travel bottles. Tiny refill bottles for shampoo, lotion, and mystery
+  hotel liquids.
 english_name: Daiso Travel Refill Bottle Set B
 japanese_name: トラベル詰め替えボトルセット（B）
 subcategory: travel-bottles
@@ -33,3 +33,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4550480598772?srsltid=AfmBOoqAXqz9Ka1NF63gzmbpQSBg6kUrUiijIEiYgXFSNd5IdW-KiRql
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,33 +1,33 @@
-id: "JF-0449"
-slug: "biore-sara-sara-body-sheets-women-s"
-name_en: "Biore Sara Sara Body Sheets (Women's)"
-category: "other"
+id: JF-0449
+slug: biore-sara-sara-body-sheets-women-s
+name_en: Biore Sara Sara Body Sheets (Women's)
+category: other
 intent:
-  - "day_one_fixes"
-  - "stock_up"
-status: "ready"
-name_jp: "ビオレさらさら"
-brand: "Kao"
+- day_one_fixes
+- stock_up
+status: ready
+name_jp: ビオレさらさら
+brand: Kao
 where_found:
-  - "Kao official"
-  - "Matsukiyo"
-  - "Amazon JP"
-  - "konbini"
-price_yen: "300-500"
-what_it_is: "Cooling body wipes, milder than Gatsby."
-why_travelers_care: "Summer essential."
+- Kao official
+- Matsukiyo
+- Amazon JP
+- konbini
+price_yen: 300-500
+what_it_is: Cooling body wipes, milder than Gatsby.
+why_travelers_care: Summer essential.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "biore.jp"
-confidence: "high"
+- biore.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Bioré powder body sheets. Sweat wipe, deodorant-ish refresh, and summer survival item in one crinkly pack.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Bioré powder body sheets. Sweat wipe, deodorant-ish refresh, and summer
+  survival item in one crinkly pack.
 english_name: Biore Sara Sara Powder Sheets Floral
 japanese_name: ビオレ さらさらパウダーシート フローラル
 subcategory: body sheets
@@ -40,3 +40,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.kao.com/sg/products/biore/bio_powdersheet_floral_00/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

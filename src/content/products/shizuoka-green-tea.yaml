@@ -1,29 +1,29 @@
-id: "JF-0320"
-slug: "shizuoka-green-tea"
-name_en: "Shizuoka Green Tea"
-category: "other"
+id: JF-0320
+slug: shizuoka-green-tea
+name_en: Shizuoka Green Tea
+category: other
 intent:
-  - "local_editions"
-  - "bring_home"
-status: "ready"
-name_jp: "静岡茶"
-brand: "Various Shizuoka producers"
+- local_editions
+- bring_home
+status: ready
+name_jp: 静岡茶
+brand: Various Shizuoka producers
 where_found:
-  - "Shizuoka"
-  - "dept stores"
-price_yen: "500-3000"
-what_it_is: "Most of Japan's tea production. Direct producer purchases possible."
-why_travelers_care: "Authentic, gift-grade."
+- Shizuoka
+- dept stores
+price_yen: 500-3000
+what_it_is: Most of Japan's tea production. Direct producer purchases possible.
+why_travelers_care: Authentic, gift-grade.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Shizuoka green tea. Clean, grassy green tea from Japan's big tea country; the hotel-room upgrade over whatever sad packet came free.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Shizuoka green tea. Clean, grassy green tea from Japan's big tea country;
+  the hotel-room upgrade over whatever sad packet came free.
 english_name: Shizuoka Green Tea
 japanese_name: 静岡茶
 subcategory: green tea
@@ -36,4 +36,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.japanesegreenteashops.com/products/shizuoka-powdered-green-tea-100-grams
 enrichment_date: '2026-05-19'
-image: /products/shizuoka-green-tea.webp
+image: null
+safety_flags: []

@@ -1,34 +1,34 @@
-id: "JF-0097"
-slug: "bulk-kit-kat-assortment-bags"
-name_en: "Bulk Kit Kat Assortment Bags"
-category: "donki-drugstore"
+id: JF-0097
+slug: bulk-kit-kat-assortment-bags
+name_en: Bulk Kit Kat Assortment Bags
+category: donki-drugstore
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
+- bring_home
+- gift_easy
+status: ready
 where_found:
-  - "Don Quijote"
-  - "Narita Airport"
-  - "Haneda Airport"
-price_yen: "1000-2500"
-what_it_is: "Large mixed bags of regional and seasonal Kit Kats, tax-free at Donki."
-why_travelers_care: "One-stop for the Kit Kat tour without traveling regions."
+- Don Quijote
+- Narita Airport
+- Haneda Airport
+price_yen: 1000-2500
+what_it_is: Large mixed bags of regional and seasonal Kit Kats, tax-free at Donki.
+why_travelers_care: One-stop for the Kit Kat tour without traveling regions.
 risk_flags:
-  - "allergen-dairy-soy-wheat"
+- allergen-dairy-soy-wheat
 source_links:
-  - "nestle.co.jp/brands/kitkat"
-  - "https://nestle.jp/kitkat/products"
-  - "https://nestle.jp/kitkat/gift"
-confidence: "high"
+- nestle.co.jp/brands/kitkat
+- https://nestle.jp/kitkat/products
+- https://nestle.jp/kitkat/gift
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "キットカット ミニ 詰め合わせ"
-agent_notes: "Assortment contents vary"
-
-description: KitKat assortment bag. Mini Japanese flavors in bulk, aka souvenir math pretending to be snack research.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: キットカット ミニ 詰め合わせ
+agent_notes: Assortment contents vary
+description: KitKat assortment bag. Mini Japanese flavors in bulk, aka souvenir math
+  pretending to be snack research.
 english_name: Nestle Japan KitKat Mini Assortment Bag
 japanese_name: ネスレ キットカット ミニ アソート
 subcategory: chocolate assortment
@@ -44,3 +44,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://nestle.jp/home/
 enrichment_date: '2026-05-19'
+image: null

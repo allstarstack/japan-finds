@@ -1,35 +1,35 @@
-id: "JF-0046"
-slug: "zip-storage-bags"
-name_en: "Zip storage bags"
-category: "100-yen"
+id: JF-0046
+slug: zip-storage-bags
+name_en: Zip storage bags
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "ジッパーバッグ"
-brand: "Daiso / Seria / Can Do"
+- day_one_fixes
+status: ready
+name_jp: ジッパーバッグ
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-  - "supermarkets"
-price_yen: "~¥110–¥330"
-what_it_is: "Cute or practical resealable bags."
-why_travelers_care: "Useful for snacks, wet items, receipts, and gifts."
+- Daiso
+- Seria
+- Can Do
+- supermarkets
+price_yen: ~¥110–¥330
+what_it_is: Cute or practical resealable bags.
+why_travelers_care: Useful for snacks, wet items, receipts, and gifts.
 risk_flags:
-  - "plastic"
-  - "easy to buy outside Japan"
-verification_notes: "Check food-safe labeling."
+- plastic
+- easy to buy outside Japan
+verification_notes: Check food-safe labeling.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Ziploc freezer bags. Not glamorous, weirdly useful — separate snacks, wet towels, receipts, and the mystery liquids your suitcase absolutely cannot handle.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Ziploc freezer bags. Not glamorous, weirdly useful — separate snacks,
+  wet towels, receipts, and the mystery liquids your suitcase absolutely cannot handle.
 english_name: Ziploc Freezer Bag M
 japanese_name: ジップロック フリーザーバッグ M
 subcategory: storage bags
@@ -43,3 +43,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.asahi-kasei.co.jp/saran/products/ziploc/freezer.html
 enrichment_date: '2026-05-19'
 image: /products/zip-storage-bags.webp
+safety_flags: []

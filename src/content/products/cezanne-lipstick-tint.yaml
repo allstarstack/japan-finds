@@ -1,34 +1,34 @@
-id: "JF-0376"
-slug: "cezanne-lipstick-tint"
-name_en: "Cezanne lipstick/tint"
-category: "skincare"
+id: JF-0376
+slug: cezanne-lipstick-tint
+name_en: Cezanne lipstick/tint
+category: skincare
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "セザンヌ リップカラー"
-brand: "Cezanne"
+- gift_easy
+status: ready
+name_jp: セザンヌ リップカラー
+brand: Cezanne
 where_found:
-  - "Drugstores"
-  - "Loft"
-  - "@cosme"
-price_yen: "~¥500–¥800"
-what_it_is: "Affordable Japanese lip color."
-why_travelers_care: "Small, cheap, good beauty gift filler."
+- Drugstores
+- Loft
+- '@cosme'
+price_yen: ~¥500–¥800
+what_it_is: Affordable Japanese lip color.
+why_travelers_care: Small, cheap, good beauty gift filler.
 risk_flags:
-  - "skincare/cosmetic claim"
-verification_notes: "Shade and formula verification needed."
+- skincare/cosmetic claim
+verification_notes: Shade and formula verification needed.
 source_links:
-  - "https://www.loft.co.jp/store/"
-  - "https://www.cosme.net/"
-  - "https://www.matsukiyococokara-online.com/"
-confidence: "medium"
+- https://www.loft.co.jp/store/
+- https://www.cosme.net/
+- https://www.matsukiyococokara-online.com/
+confidence: medium
 trip_score: 7
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: CEZANNE Lip Color Shield. A ¥660 gel-film lip tint that looks more expensive than its life choices. Easy drugstore pickup, zero drama.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: CEZANNE Lip Color Shield. A ¥660 gel-film lip tint that looks more expensive
+  than its life choices. Easy drugstore pickup, zero drama.
 english_name: CEZANNE Lip Color Shield
 japanese_name: セザンヌ リップカラーシールド
 subcategory: lip tint
@@ -43,3 +43,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.cezanne.co.jp/lineup/4939553042709/
 enrichment_date: '2026-05-19'
 image: /products/cezanne-lipstick-tint.webp
+safety_flags: []

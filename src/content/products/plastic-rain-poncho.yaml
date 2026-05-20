@@ -1,35 +1,35 @@
-id: "JF-0034"
-slug: "plastic-rain-poncho"
-name_en: "Plastic rain poncho"
-category: "100-yen"
+id: JF-0034
+slug: plastic-rain-poncho
+name_en: Plastic rain poncho
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "レインポンチョ"
-brand: "Daiso / Seria / Can Do"
+- day_one_fixes
+status: ready
+name_jp: レインポンチョ
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-  - "konbini"
-price_yen: "~¥110–¥330"
-what_it_is: "Disposable or reusable rain poncho."
-why_travelers_care: "Cheap rain save during sudden showers."
+- Daiso
+- Seria
+- Can Do
+- konbini
+price_yen: ~¥110–¥330
+what_it_is: Disposable or reusable rain poncho.
+why_travelers_care: Cheap rain save during sudden showers.
 risk_flags:
-  - "plastic"
-  - "easy to buy outside Japan"
-verification_notes: "Check durability."
+- plastic
+- easy to buy outside Japan
+verification_notes: Check durability.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 8
 suitcase_score: 6
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso rain poncho. Cheap emergency plastic poncho. The no-style, all-survival move when Tokyo weather changes its mind.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso rain poncho. Cheap emergency plastic poncho. The no-style, all-survival
+  move when Tokyo weather changes its mind.
 english_name: Daiso Rain Poncho
 japanese_name: レインポンチョ
 subcategory: rainwear
@@ -43,3 +43,4 @@ enrichment_confidence: low
 enrichment_source_url: https://jp.daisonet.com/products/4550480062693
 enrichment_date: '2026-05-19'
 image: /products/plastic-rain-poncho.webp
+safety_flags: []

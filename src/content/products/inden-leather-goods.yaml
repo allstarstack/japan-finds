@@ -1,26 +1,26 @@
-id: "JF-0090"
-slug: "inden-leather-goods"
-name_en: "Inden Leather Goods"
-category: "other"
+id: JF-0090
+slug: inden-leather-goods
+name_en: Inden Leather Goods
+category: other
 intent:
-  - "bring_home"
-  - "local_editions"
-status: "v1_candidate"
-name_jp: "印傳"
-brand: "Inden-ya"
+- bring_home
+- local_editions
+status: v1_candidate
+name_jp: 印傳
+brand: Inden-ya
 where_found:
-  - "Yamanashi flagship"
-  - "dept stores"
-price_yen: "5000-50000+"
-what_it_is: "Lacquered deerskin leather, Yamanashi craft."
-why_travelers_care: "Heritage craft at gift-tier and serious-tier price points."
+- Yamanashi flagship
+- dept stores
+price_yen: 5000-50000+
+what_it_is: Lacquered deerskin leather, Yamanashi craft.
+why_travelers_care: Heritage craft at gift-tier and serious-tier price points.
 source_links:
-  - "inden-ya.co.jp"
-confidence: "high"
+- inden-ya.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-
-description: Inden leather goods. Lacquered deerskin wallets and pouches from Yamanashi. Traditional craft that does not scream souvenir.
+description: Inden leather goods. Lacquered deerskin wallets and pouches from Yamanashi.
+  Traditional craft that does not scream souvenir.
 english_name: Inden-ya Leather Goods
 japanese_name: 印傳屋 革小物
 subcategory: leather goods
@@ -33,3 +33,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://inden-ya.co.jp/global/eng/products/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

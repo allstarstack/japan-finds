@@ -1,29 +1,29 @@
-id: "JF-0359"
-slug: "curel-intensive-moisture-lotion"
-name_en: "Curel Intensive Moisture Lotion"
-category: "skincare"
+id: JF-0359
+slug: curel-intensive-moisture-lotion
+name_en: Curel Intensive Moisture Lotion
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "キュレル"
-brand: "Kao"
+- stock_up
+status: ready
+name_jp: キュレル
+brand: Kao
 where_found:
-  - "All drugstores"
-price_yen: "1500-2500"
-what_it_is: "Ceramide-focused sensitive skin line."
-why_travelers_care: "Dermatologist favorite for sensitive/dry travelers."
+- All drugstores
+price_yen: 1500-2500
+what_it_is: Ceramide-focused sensitive skin line.
+why_travelers_care: Dermatologist favorite for sensitive/dry travelers.
 risk_flags:
-  - "liquid, skincare/cosmetic claim"
+- liquid, skincare/cosmetic claim
 source_links:
-  - "curel.jp"
-confidence: "high"
+- curel.jp
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Curél Intensive Moisture Lotion. Light Japanese toner-style lotion for dry sensitive skin.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Curél Intensive Moisture Lotion. Light Japanese toner-style lotion for
+  dry sensitive skin.
 english_name: Curél Intensive Moisture Care Moisture Lotion III
 japanese_name: キュレル 潤浸保湿 化粧水 III とてもしっとり
 subcategory: face-lotion
@@ -36,3 +36,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.kao-kirei.com/ja/item/kbb/curel/4901301236180/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

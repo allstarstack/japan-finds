@@ -1,26 +1,26 @@
-id: "JF-0054"
-slug: "tea-ceremony-sweets-namagashi"
-name_en: "Tea Ceremony Sweets (Namagashi)"
-category: "other"
+id: JF-0054
+slug: tea-ceremony-sweets-namagashi
+name_en: Tea Ceremony Sweets (Namagashi)
+category: other
 intent:
-  - "try_in_japan"
-status: "hold"
-name_jp: "生菓子（茶道用）"
-brand: "Various"
+- try_in_japan
+status: hold
+name_jp: 生菓子（茶道用）
+brand: Various
 where_found:
-  - "Wagashi shops"
-price_yen: "300-1500"
-what_it_is: "Same-day wagashi made for tea ceremony."
-why_travelers_care: "Eat during the experience."
+- Wagashi shops
+price_yen: 300-1500
+what_it_is: Same-day wagashi made for tea ceremony.
+why_travelers_care: Eat during the experience.
 risk_flags:
-  - "perishable"
+- perishable
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 0
-
-description: Tea ceremony namagashi. Seasonal wagashi served with matcha, soft enough to feel expensive and fragile. Eat it same day; the shelf life is basically a sneeze.
+description: Tea ceremony namagashi. Seasonal wagashi served with matcha, soft enough
+  to feel expensive and fragile. Eat it same day; the shelf life is basically a sneeze.
 english_name: Tea Ceremony Namagashi
 japanese_name: 茶席の生菓子
 subcategory: namagashi
@@ -33,3 +33,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.tsuruyayoshinobu.jp/product/namagashi
 enrichment_date: '2026-05-19'
 image: /products/tea-ceremony-sweets-namagashi.webp
+safety_flags: []

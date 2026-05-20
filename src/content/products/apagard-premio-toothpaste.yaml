@@ -1,34 +1,35 @@
-id: "JF-0268"
-slug: "apagard-premio-toothpaste"
-name_en: "Apagard Premio Toothpaste"
-category: "other"
+id: JF-0268
+slug: apagard-premio-toothpaste
+name_en: Apagard Premio Toothpaste
+category: other
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "アパガード プレミオ"
-brand: "Sangi"
+- stock_up
+status: ready
+name_jp: アパガード プレミオ
+brand: Sangi
 where_found:
-  - "Sangi official"
-  - "Tsuruha"
-  - "Amazon JP"
-  - "drugstores"
-price_yen: "~¥1,500"
-what_it_is: "Nano-hydroxyapatite toothpaste."
-why_travelers_care: "High-intent oral-care stock-up item; avoid medical overclaims."
+- Sangi official
+- Tsuruha
+- Amazon JP
+- drugstores
+price_yen: ~¥1,500
+what_it_is: Nano-hydroxyapatite toothpaste.
+why_travelers_care: High-intent oral-care stock-up item; avoid medical overclaims.
 risk_flags:
-  - "cosmetic/health claim"
-verification_notes: "Verify formulation and claim language."
+- cosmetic/health claim
+verification_notes: Verify formulation and claim language.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 4
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "verified"
-display_strategy: "show_all"
-sub_chip: "comfort"
-
-description: Apagard Premio Toothpaste. Nano-hydroxyapatite toothpaste, fluoride-free, and very Japanese-drugstore coded. People buy it when regular toothpaste feels too basic.
+launch_category: drugstore
+fill_type: verified
+display_strategy: show_all
+sub_chip: comfort
+description: Apagard Premio Toothpaste. Nano-hydroxyapatite toothpaste, fluoride-free,
+  and very Japanese-drugstore coded. People buy it when regular toothpaste feels too
+  basic.
 english_name: Apagard Premio Toothpaste
 japanese_name: アパガード プレミオ
 subcategory: toothpaste
@@ -42,3 +43,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.sangi-co.com/en/products/apagard_premio/
 enrichment_date: '2026-05-19'
 image: /products/apagard-premio-toothpaste.webp
+safety_flags: []

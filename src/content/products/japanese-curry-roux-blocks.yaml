@@ -1,33 +1,33 @@
-id: "JF-0330"
-slug: "japanese-curry-roux-blocks"
-name_en: "Japanese curry roux blocks"
-category: "snacks"
+id: JF-0330
+slug: japanese-curry-roux-blocks
+name_en: Japanese curry roux blocks
+category: snacks
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "カレールウ"
-brand: "House / S&B / Glico"
+- stock_up
+status: ready
+name_jp: カレールウ
+brand: House / S&B / Glico
 where_found:
-  - "Supermarkets"
-  - "Donki"
-price_yen: "~¥250–¥500"
-what_it_is: "Shelf-stable curry roux blocks."
-why_travelers_care: "Useful, cheap, and easy to cook at home."
+- Supermarkets
+- Donki
+price_yen: ~¥250–¥500
+what_it_is: Shelf-stable curry roux blocks.
+why_travelers_care: Useful, cheap, and easy to cook at home.
 risk_flags:
-  - "food import rules"
-  - "allergen"
-verification_notes: "Check ingredients and customs rules."
+- food import rules
+- allergen
+verification_notes: Check ingredients and customs rules.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "high"
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: House Vermont Curry roux blocks. Apple-honey Japanese curry cubes; the fastest route from tired hotel kitchen to actual dinner.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: House Vermont Curry roux blocks. Apple-honey Japanese curry cubes; the
+  fastest route from tired hotel kitchen to actual dinner.
 english_name: House Vermont Curry Roux
 japanese_name: ハウス バーモントカレー
 subcategory: curry roux

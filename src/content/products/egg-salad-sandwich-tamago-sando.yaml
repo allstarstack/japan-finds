@@ -1,32 +1,35 @@
-id: "JF-0227"
-slug: "egg-salad-sandwich-tamago-sando"
-name_en: "Egg Salad Sandwich (Tamago Sando)"
-category: "konbini"
+id: JF-0227
+slug: egg-salad-sandwich-tamago-sando
+name_en: Egg Salad Sandwich (Tamago Sando)
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-price_yen: "270-320"
-what_it_is: "Pillowy white shokupan with kewpie-style egg salad. The 7-Eleven version is the famous one."
-why_travelers_care: "Anthony Bourdain made this internationally famous; viral content staple."
+- 7-Eleven
+price_yen: 270-320
+what_it_is: Pillowy white shokupan with kewpie-style egg salad. The 7-Eleven version
+  is the famous one.
+why_travelers_care: Anthony Bourdain made this internationally famous; viral content
+  staple.
 risk_flags:
-  - "perishable, allergen-egg-dairy"
-verification_notes: "Confirm 7-Eleven still leads vs Lawson/FamilyMart variants in 2026"
+- perishable, allergen-egg-dairy
+verification_notes: Confirm 7-Eleven still leads vs Lawson/FamilyMart variants in
+  2026
 source_links:
-  - "7-eleven.co.jp"
-  - "https://www.sej.co.jp/company/news_release/news/2026/202605071000.html"
-  - "https://www.sej.co.jp/products/a/sandwich/"
-confidence: "high"
+- 7-eleven.co.jp
+- https://www.sej.co.jp/company/news_release/news/2026/202605071000.html
+- https://www.sej.co.jp/products/a/sandwich/
+confidence: high
 trip_score: 10
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "こだわりTHEたまごサンド"
-agent_notes: "2026 50% volume increase campaign confirms national 7-Eleven item"
-
-description: Egg salad sandwich. Soft bread, creamy egg filling, the konbini breakfast that makes tourists weirdly emotional.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: こだわりTHEたまごサンド
+agent_notes: 2026 50% volume increase campaign confirms national 7-Eleven item
+description: Egg salad sandwich. Soft bread, creamy egg filling, the konbini breakfast
+  that makes tourists weirdly emotional.
 english_name: 7-Eleven Egg Salad Sandwich
 japanese_name: セブン-イレブン たまごサンド
 subcategory: sandwich
@@ -42,3 +45,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.sej.co.jp/products/a/sandwich/
 enrichment_date: '2026-05-19'
+image: null

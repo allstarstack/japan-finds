@@ -1,32 +1,32 @@
-id: "JF-0298"
-slug: "itoya-custom-notebook-paper-goods"
-name_en: "Itoya custom notebook / paper goods"
-category: "other"
+id: JF-0298
+slug: itoya-custom-notebook-paper-goods
+name_en: Itoya custom notebook / paper goods
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "カスタムノート"
-brand: "Itoya"
+- make_it_yours
+status: ready
+name_jp: カスタムノート
+brand: Itoya
 where_found:
-  - "Itoya Ginza flagship"
-  - "select stationery shops"
-price_yen: "~¥1,000–¥5,000+"
-what_it_is: "Custom assembled notebook or stationery experience."
-why_travelers_care: "Premium stationery pilgrimage item."
+- Itoya Ginza flagship
+- select stationery shops
+price_yen: ~¥1,000–¥5,000+
+what_it_is: Custom assembled notebook or stationery experience.
+why_travelers_care: Premium stationery pilgrimage item.
 risk_flags:
-  - "availability"
-  - "appointment/wait possible"
-verification_notes: "Verify current service and lead time."
+- availability
+- appointment/wait possible
+verification_notes: Verify current service and lead time.
 source_links:
-  - "https://www.ito-ya.co.jp/"
-confidence: "medium"
+- https://www.ito-ya.co.jp/
+confidence: medium
 trip_score: 8
 suitcase_score: 7
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Itoya Note Couture notebook. Custom notebook from Tokyo stationery heaven. Choose paper, cover, binding, then pretend this was a practical purchase.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Itoya Note Couture notebook. Custom notebook from Tokyo stationery heaven.
+  Choose paper, cover, binding, then pretend this was a practical purchase.
 english_name: Itoya Note Couture Custom Notebook
 japanese_name: 伊東屋 Note Couture カスタムノート
 subcategory: stationery
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://digjapan.travel/en/blog/id%3D12331
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

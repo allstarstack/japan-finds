@@ -1,31 +1,32 @@
-id: "JF-0319"
-slug: "sapporo-soup-curry-mix"
-name_en: "Sapporo Soup Curry Mix"
-category: "other"
+id: JF-0319
+slug: sapporo-soup-curry-mix
+name_en: Sapporo Soup Curry Mix
+category: other
 intent:
-  - "local_editions"
-  - "bring_home"
-status: "ready"
-name_jp: "スープカレー"
-brand: "Various Sapporo makers"
+- local_editions
+- bring_home
+status: ready
+name_jp: スープカレー
+brand: Various Sapporo makers
 where_found:
-  - "Hokkaido"
-  - "supermarkets"
-price_yen: "300-800"
-what_it_is: "Soup curry packets, Hokkaido specialty (different from regular Japanese curry)."
-why_travelers_care: "Easy bring-home gift with regional story."
+- Hokkaido
+- supermarkets
+price_yen: 300-800
+what_it_is: Soup curry packets, Hokkaido specialty (different from regular Japanese
+  curry).
+why_travelers_care: Easy bring-home gift with regional story.
 risk_flags:
-  - "allergen-varies"
+- allergen-varies
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 7
 suitcase_score: 10
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Bell Foods soup curry base. Sapporo soup curry without negotiating with a spice drawer; add chicken, vegetables, and main-character broth.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Bell Foods soup curry base. Sapporo soup curry without negotiating with
+  a spice drawer; add chicken, vegetables, and main-character broth.
 english_name: Bell Foods Soup Curry Recipe 180g
 japanese_name: ベル食品 スープカレーの作り方
 subcategory: curry base

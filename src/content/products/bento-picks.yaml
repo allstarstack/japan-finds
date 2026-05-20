@@ -1,34 +1,34 @@
-id: "JF-0015"
-slug: "bento-picks"
-name_en: "Bento picks"
-category: "100-yen"
+id: JF-0015
+slug: bento-picks
+name_en: Bento picks
+category: 100-yen
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "お弁当ピック"
-brand: "Daiso / Seria / Can Do"
+- gift_easy
+status: ready
+name_jp: お弁当ピック
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110"
-what_it_is: "Cute picks for lunch boxes."
-why_travelers_care: "Tiny, cheap, family-friendly gift."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110
+what_it_is: Cute picks for lunch boxes.
+why_travelers_care: Tiny, cheap, family-friendly gift.
 risk_flags:
-  - "small parts"
-  - "kids choking risk"
-verification_notes: "Check age warning and material."
+- small parts
+- kids choking risk
+verification_notes: Check age warning and material.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "kitchen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Bento picks. Tiny food spears that make leftovers look like they have a production budget.
+launch_category: kitchen
+fill_type: verified
+display_strategy: show_all
+description: Bento picks. Tiny food spears that make leftovers look like they have
+  a production budget.
 english_name: Torune Bento Picks
 japanese_name: トルネ お弁当ピック
 subcategory: bento accessory
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://en.bentoandco.com/collections/torune
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

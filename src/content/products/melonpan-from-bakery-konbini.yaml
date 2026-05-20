@@ -1,33 +1,33 @@
-id: "JF-0336"
-slug: "melonpan-from-bakery-konbini"
-name_en: "Melonpan from bakery/konbini"
-category: "snacks"
+id: JF-0336
+slug: melonpan-from-bakery-konbini
+name_en: Melonpan from bakery/konbini
+category: snacks
 intent:
-  - "try_in_japan"
-status: "ready"
-name_jp: "メロンパン"
-brand: "Konbini / bakeries"
+- try_in_japan
+status: ready
+name_jp: メロンパン
+brand: Konbini / bakeries
 where_found:
-  - "Konbini"
-  - "bakeries"
-price_yen: "~¥150–¥350"
-what_it_is: "Sweet bun with cookie-like top."
-why_travelers_care: "Simple classic snack; good konbini-vs-bakery comparison."
+- Konbini
+- bakeries
+price_yen: ~¥150–¥350
+what_it_is: Sweet bun with cookie-like top.
+why_travelers_care: Simple classic snack; good konbini-vs-bakery comparison.
 risk_flags:
-  - "perishable"
-  - "allergen"
-verification_notes: "Eat fresh; not a bring-home item."
+- perishable
+- allergen
+verification_notes: Eat fresh; not a bring-home item.
 source_links:
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.japan-guide.com/e/e2071.html"
-confidence: "high"
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.japan-guide.com/e/e2071.html
+confidence: high
 trip_score: 7
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Melonpan. Sweet bun with a crunchy cookie shell and zero melon obligations. Konbini breakfast when you want dessert wearing bread pants.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Melonpan. Sweet bun with a crunchy cookie shell and zero melon obligations.
+  Konbini breakfast when you want dessert wearing bread pants.
 english_name: Melonpan
 japanese_name: メロンパン
 subcategory: sweet bread
@@ -44,3 +44,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.sej.co.jp/in/en.html
 enrichment_date: '2026-05-19'
+image: null

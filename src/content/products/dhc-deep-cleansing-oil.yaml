@@ -1,31 +1,31 @@
-id: "JF-0360"
-slug: "dhc-deep-cleansing-oil"
-name_en: "DHC Deep Cleansing Oil"
-category: "skincare"
+id: JF-0360
+slug: dhc-deep-cleansing-oil
+name_en: DHC Deep Cleansing Oil
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "DHC ディープクレンジングオイル"
-brand: "DHC"
+- stock_up
+status: ready
+name_jp: DHC ディープクレンジングオイル
+brand: DHC
 where_found:
-  - "DHC stores"
-  - "drugstores"
-price_yen: "1800-2700"
-what_it_is: "Olive-oil based makeup remover, OG of the Japanese cleansing oil category."
-why_travelers_care: "Reliable category leader, decades of cult status."
+- DHC stores
+- drugstores
+price_yen: 1800-2700
+what_it_is: Olive-oil based makeup remover, OG of the Japanese cleansing oil category.
+why_travelers_care: Reliable category leader, decades of cult status.
 risk_flags:
-  - "liquid, skincare/cosmetic claim"
-verification_notes: "Sold abroad but ~30% more expensive"
+- liquid, skincare/cosmetic claim
+verification_notes: Sold abroad but ~30% more expensive
 source_links:
-  - "dhccare.com"
-confidence: "high"
+- dhccare.com
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: DHC Deep Cleansing Oil. Olive-oil cleanser that melts sunscreen and makeup without a wrestling match.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: DHC Deep Cleansing Oil. Olive-oil cleanser that melts sunscreen and makeup
+  without a wrestling match.
 english_name: DHC Deep Cleansing Oil
 japanese_name: DHC 薬用ディープクレンジングオイル
 subcategory: cleansing-oil
@@ -39,3 +39,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.dhccare.com/products/deep-cleansing-oil?srsltid=AfmBOopydBm7FcLmJ7zgjVWfxKbKpiMuI5t-ZHbqV4mWOaVLlwhBSIw-
 enrichment_date: '2026-05-19'
 image: /products/dhc-deep-cleansing-oil.webp
+safety_flags: []

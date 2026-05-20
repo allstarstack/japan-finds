@@ -1,39 +1,40 @@
-id: "JF-0107"
-slug: "assorted-regional-kitkat-packs"
-name_en: "Assorted regional KitKat packs"
-category: "donki-drugstore"
+id: JF-0107
+slug: assorted-regional-kitkat-packs
+name_en: Assorted regional KitKat packs
+category: donki-drugstore
 intent:
-  - "gift_easy"
-status: "ready"
+- gift_easy
+status: ready
 where_found:
-  - "Don Quijote"
-  - "Narita Airport"
-  - "Haneda Airport"
-  - "souvenir shops"
-price_yen: "~¥500–¥1,500"
-what_it_is: "Japan-only or regional KitKat flavors in shareable packaging."
-why_travelers_care: "Obvious but still works as readable, low-effort gift."
+- Don Quijote
+- Narita Airport
+- Haneda Airport
+- souvenir shops
+price_yen: ~¥500–¥1,500
+what_it_is: Japan-only or regional KitKat flavors in shareable packaging.
+why_travelers_care: Obvious but still works as readable, low-effort gift.
 risk_flags:
-  - "allergen"
-  - "easy to buy outside Japan for some flavors"
-  - "citrus_ingestible"
-verification_notes: "Verify current flavors and import rules."
+- allergen
+- easy to buy outside Japan for some flavors
+- citrus_ingestible
+verification_notes: Verify current flavors and import rules.
 source_links:
-  - "https://nestle.jp/brand/kit/"
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-  - "https://nestle.jp/kitkat/gotouchi"
-  - "https://nestle.jp/home/products/type/confectionary/kitkat/souvenir/009418169"
-confidence: "high"
+- https://nestle.jp/brand/kit/
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+- https://nestle.jp/kitkat/gotouchi
+- https://nestle.jp/home/products/type/confectionary/kitkat/souvenir/009418169
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ご当地キットカット"
-agent_notes: "Flag applies to citrus regional SKUs such as lemon"
-
-description: Regional KitKat packs. Japan turns every area into a chocolate wafer flavor and somehow keeps getting away with it. Airport shops are where suitcase space goes to die.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ご当地キットカット
+agent_notes: Flag applies to citrus regional SKUs such as lemon
+description: Regional KitKat packs. Japan turns every area into a chocolate wafer
+  flavor and somehow keeps getting away with it. Airport shops are where suitcase
+  space goes to die.
 english_name: Japan Limited Regional KitKat Packs
 japanese_name: ご当地キットカット
 subcategory: regional chocolate
@@ -49,4 +50,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://kitkat.nestle.jp/gotouchi-en
 enrichment_date: '2026-05-19'
-image: /products/assorted-regional-kitkat-packs.webp
+image: null

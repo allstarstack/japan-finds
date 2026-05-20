@@ -1,27 +1,28 @@
-id: "JF-0204"
-slug: "hinoki-cutting-board"
-name_en: "Hinoki Cutting Board"
-category: "kitchen"
+id: JF-0204
+slug: hinoki-cutting-board
+name_en: Hinoki Cutting Board
+category: kitchen
 intent:
-  - "bring_home"
-status: "hold"
-name_jp: "桧まな板"
-brand: "Various"
+- bring_home
+status: hold
+name_jp: 桧まな板
+brand: Various
 where_found:
-  - "Kappabashi"
-  - "dept stores"
-price_yen: "2000-8000"
-what_it_is: "Aromatic cypress cutting board, anti-bacterial wood."
-why_travelers_care: "Smells incredible, lifetime tool."
+- Kappabashi
+- dept stores
+price_yen: 2000-8000
+what_it_is: Aromatic cypress cutting board, anti-bacterial wood.
+why_travelers_care: Smells incredible, lifetime tool.
 risk_flags:
-  - "bulky"
+- bulky
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 6
 suitcase_score: 3
-
-description: Hinoki cutting board. Soft Japanese cypress that is gentle on knives and smells faintly fancy when wet. A kitchen souvenir for people who own one good knife.
+description: Hinoki cutting board. Soft Japanese cypress that is gentle on knives
+  and smells faintly fancy when wet. A kitchen souvenir for people who own one good
+  knife.
 english_name: Hinoki Cutting Board
 japanese_name: ひのきまな板
 subcategory: kitchenware
@@ -34,3 +35,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://shun.kaiusa.com/hinoki-boards.html?srsltid=AfmBOoq3tBL0Fqd4h6LzQ0Y9CWZJUTaEHZuLCVe9qfLEBBXmLpJte7L7
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,28 +1,29 @@
-id: "JF-0056"
-slug: "adult-novelty-aisle-items"
-name_en: "Adult novelty aisle items"
-category: "other"
+id: JF-0056
+slug: adult-novelty-aisle-items
+name_en: Adult novelty aisle items
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "大人向けグッズ"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: 大人向けグッズ
+brand: Various
 where_found:
-  - "Donki/adult shops"
-price_yen: "varies"
-what_it_is: "Adult novelty goods sometimes visible in Donki-style shopping."
-why_travelers_care: "Can be mentioned only as culture shock/context, not shopping database recommendation."
+- Donki/adult shops
+price_yen: varies
+what_it_is: Adult novelty goods sometimes visible in Donki-style shopping.
+why_travelers_care: Can be mentioned only as culture shock/context, not shopping database
+  recommendation.
 risk_flags:
-  - "adult"
-  - "regulated"
-  - "age-restricted"
-verification_notes: "Avoid including in public shopping guides unless clearly editorial/context-only."
+- adult
+- regulated
+- age-restricted
+verification_notes: Avoid including in public shopping guides unless clearly editorial/context-only.
 source_links:
-  - "https://www.donki.com/en/"
-confidence: "low"
+- https://www.donki.com/en/
+confidence: low
 trip_score: 2
-
-description: TENGA Original Vacuum Cup. Donki's most awkwardly visible red-and-white souvenir. Adults buy it when bringing home snacks is not deranged enough.
+description: TENGA Original Vacuum Cup. Donki's most awkwardly visible red-and-white
+  souvenir. Adults buy it when bringing home snacks is not deranged enough.
 english_name: TENGA Original Vacuum Cup
 japanese_name: TENGA オリジナルバキュームカップ
 subcategory: adult novelty
@@ -34,3 +35,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.tenga.co/products/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

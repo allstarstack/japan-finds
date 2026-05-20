@@ -1,34 +1,35 @@
-id: "JF-0231"
-slug: "nikuman-pork-bun-hot-case"
-name_en: "Nikuman / Pork Bun (Hot Case)"
-category: "konbini"
+id: JF-0231
+slug: nikuman-pork-bun-hot-case
+name_en: Nikuman / Pork Bun (Hot Case)
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "130-180"
-what_it_is: "Steamed white bun filled with seasoned pork."
-why_travelers_care: "Winter ritual, cheap, warming, transports easily within a single afternoon."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: 130-180
+what_it_is: Steamed white bun filled with seasoned pork.
+why_travelers_care: Winter ritual, cheap, warming, transports easily within a single
+  afternoon.
 risk_flags:
-  - "perishable, hot food, allergen-wheat"
-verification_notes: "Best Oct-Mar, limited in summer"
+- perishable, hot food, allergen-wheat
+verification_notes: Best Oct-Mar, limited in summer
 source_links:
-  - "konbini sites"
-  - "https://www.sej.co.jp/products/a/chukaman/"
-  - "https://www.family.co.jp/goods/chukaman.html"
-confidence: "high"
+- konbini sites
+- https://www.sej.co.jp/products/a/chukaman/
+- https://www.family.co.jp/goods/chukaman.html
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "肉まん"
-agent_notes: "Seasonal hot-case item"
-
-description: FamilyMart nikuman. Hot-case pork bun with soft dough and juicy filling. Best eaten outside while pretending this counts as lunch.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: 肉まん
+agent_notes: Seasonal hot-case item
+description: FamilyMart nikuman. Hot-case pork bun with soft dough and juicy filling.
+  Best eaten outside while pretending this counts as lunch.
 english_name: FamilyMart Pork Bun
 japanese_name: じゅわっとジューシー本格肉まん
 subcategory: steamed bun

@@ -1,37 +1,37 @@
-id: "JF-0187"
-slug: "character-toothbrushes"
-name_en: "Character toothbrushes"
-category: "other"
+id: JF-0187
+slug: character-toothbrushes
+name_en: Character toothbrushes
+category: other
 intent:
-  - "gift_easy"
-status: "ready"
+- gift_easy
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Akachan Honpo"
-  - "Aeon"
-  - "Sanrio"
-price_yen: "~¥100–¥500"
-what_it_is: "Kids toothbrushes with characters."
-why_travelers_care: "Small practical gift/fix if forgotten."
+- Matsumoto Kiyoshi
+- Akachan Honpo
+- Aeon
+- Sanrio
+price_yen: ~¥100–¥500
+what_it_is: Kids toothbrushes with characters.
+why_travelers_care: Small practical gift/fix if forgotten.
 risk_flags:
-  - "small parts"
-  - "hygiene"
-verification_notes: "Check age size and bristle softness."
+- small parts
+- hygiene
+verification_notes: Check age size and bristle softness.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.lion.co.jp/ja/products/category/oral/"
-  - "https://jp.ora2.com/kids/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.lion.co.jp/ja/products/category/oral/
+- https://jp.ora2.com/kids/
+confidence: medium
 trip_score: 7
 suitcase_score: 9
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "キャラクター歯ブラシ"
-agent_notes: "Licensed character varies"
-
-description: Character toothbrushes. Tiny travel toothbrushes wearing Sanrio, Pokemon, or Anpanman branding. Useful, cute, and somehow cheaper than coffee.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: キャラクター歯ブラシ
+agent_notes: Licensed character varies
+description: Character toothbrushes. Tiny travel toothbrushes wearing Sanrio, Pokemon,
+  or Anpanman branding. Useful, cute, and somehow cheaper than coffee.
 english_name: Character Toothbrushes
 japanese_name: キャラクター歯ブラシ
 subcategory: toothbrush
@@ -43,3 +43,6 @@ where_to_buy:
 - character stores
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []
+enrichment_source_url: null

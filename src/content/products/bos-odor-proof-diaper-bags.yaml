@@ -1,36 +1,37 @@
-id: "JF-0184"
-slug: "bos-odor-proof-diaper-bags"
-name_en: "BOS odor-proof diaper bags"
-category: "other"
+id: JF-0184
+slug: bos-odor-proof-diaper-bags
+name_en: BOS odor-proof diaper bags
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Akachan Honpo"
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Amazon Japan"
-price_yen: "~¥300–¥1,500"
-what_it_is: "Odor-control bags for diapers, trash, or travel messes."
-why_travelers_care: "Parent travel lifesaver; genuinely useful in hotel rooms."
+- Akachan Honpo
+- Matsumoto Kiyoshi
+- Welcia
+- Amazon Japan
+price_yen: ~¥300–¥1,500
+what_it_is: Odor-control bags for diapers, trash, or travel messes.
+why_travelers_care: Parent travel lifesaver; genuinely useful in hotel rooms.
 risk_flags:
-  - "plastic"
-  - "easy to buy outside Japan"
-verification_notes: "Confirm size and pack count."
+- plastic
+- easy to buy outside Japan
+verification_notes: Confirm size and pack count.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://bos-bos.com/products/diaper/"
-  - "https://bos-bos.com/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://bos-bos.com/products/diaper/
+- https://bos-bos.com/
+confidence: medium
 trip_score: 9
 suitcase_score: 8
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "BOS おむつが臭わない袋"
-
-description: BOS odor-proof diaper bags. Tiny bags that lock in diaper smell like they signed an NDA. Parents buy these before long train rides and public trash-bin anxiety.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: BOS おむつが臭わない袋
+description: BOS odor-proof diaper bags. Tiny bags that lock in diaper smell like
+  they signed an NDA. Parents buy these before long train rides and public trash-bin
+  anxiety.
 english_name: BOS Odor-Proof Diaper Bags
 japanese_name: おむつが臭わない袋 BOS ベビー用
 subcategory: odor-proof bags
@@ -44,3 +45,4 @@ enrichment_confidence: high
 enrichment_source_url: https://bos-bos.com/product/bos/baby/
 enrichment_date: '2026-05-19'
 image: /products/bos-odor-proof-diaper-bags.webp
+safety_flags: []

@@ -1,34 +1,34 @@
-id: "JF-0244"
-slug: "7-eleven-in-store-smoothie"
-name_en: "7-Eleven in-store smoothie"
-category: "konbini"
+id: JF-0244
+slug: 7-eleven-in-store-smoothie
+name_en: 7-Eleven in-store smoothie
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-price_yen: "~¥300–¥400"
-what_it_is: "Frozen fruit/veg cup blended in-store using a machine."
-why_travelers_care: "Fun on-site process and photogenic machine interaction."
+- 7-Eleven
+price_yen: ~¥300–¥400
+what_it_is: Frozen fruit/veg cup blended in-store using a machine.
+why_travelers_care: Fun on-site process and photogenic machine interaction.
 risk_flags:
-  - "perishable"
-  - "liquid"
-  - "fresh food"
-verification_notes: "Machine availability differs by store."
+- perishable
+- liquid
+- fresh food
+verification_notes: Machine availability differs by store.
 source_links:
-  - "https://www.sej.co.jp/in/en.html"
-  - "https://www.sej.co.jp/products/smoothie/"
-  - "https://www.sej.co.jp/products/a/smoothie/"
-confidence: "high"
+- https://www.sej.co.jp/in/en.html
+- https://www.sej.co.jp/products/smoothie/
+- https://www.sej.co.jp/products/a/smoothie/
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "drink"
-name_jp: "セブンカフェ スムージー"
-agent_notes: "Machine-prepared frozen cup line"
-
-description: 7-Eleven Green Smoothie. Frozen cup, machine-blended in the store, somehow more serious than my breakfast routine. Get it when konbini coffee feels too adult.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: drink
+name_jp: セブンカフェ スムージー
+agent_notes: Machine-prepared frozen cup line
+description: 7-Eleven Green Smoothie. Frozen cup, machine-blended in the store, somehow
+  more serious than my breakfast routine. Get it when konbini coffee feels too adult.
 english_name: 7-Eleven Green Smoothie
 japanese_name: セブンカフェ グリーンスムージー
 subcategory: smoothie

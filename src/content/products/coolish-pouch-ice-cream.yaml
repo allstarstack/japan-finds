@@ -1,37 +1,36 @@
-id: "JF-0248"
-slug: "coolish-pouch-ice-cream"
-name_en: "Coolish pouch ice cream"
-category: "konbini"
+id: JF-0248
+slug: coolish-pouch-ice-cream
+name_en: Coolish pouch ice cream
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Aeon"
-price_yen: "~¥170–¥220"
-what_it_is: "Drinkable ice cream pouch, usually vanilla or seasonal flavors."
-why_travelers_care: "Novel format; easy summer walking snack."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Aeon
+price_yen: ~¥170–¥220
+what_it_is: Drinkable ice cream pouch, usually vanilla or seasonal flavors.
+why_travelers_care: Novel format; easy summer walking snack.
 risk_flags:
-  - "perishable"
-  - "frozen"
-  - "dairy"
-verification_notes: "Seasonal flavors rotate; cannot bring home frozen."
+- perishable
+- frozen
+- dairy
+verification_notes: Seasonal flavors rotate; cannot bring home frozen.
 source_links:
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.lawson.co.jp/recommend/original/"
-  - "https://www.lotte.co.jp/products/brand/coolish/"
-  - "https://www.lotte.co.jp/products/catalogue/ice/"
-confidence: "medium"
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.lawson.co.jp/recommend/original/
+- https://www.lotte.co.jp/products/brand/coolish/
+- https://www.lotte.co.jp/products/catalogue/ice/
+confidence: medium
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "クーリッシュ"
-
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: クーリッシュ
 description: Coolish vanilla. Soft-serve in a pouch, no spoon, no dignity required.
 english_name: Coolish Vanilla Pouch Ice Cream
 japanese_name: クーリッシュ バニラ

@@ -1,26 +1,26 @@
-id: "JF-0086"
-slug: "furoshiki-wrapping-cloth"
-name_en: "Furoshiki Wrapping Cloth"
-category: "other"
+id: JF-0086
+slug: furoshiki-wrapping-cloth
+name_en: Furoshiki Wrapping Cloth
+category: other
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "v1_candidate"
-name_jp: "風呂敷"
-brand: "Various"
+- bring_home
+- gift_easy
+status: v1_candidate
+name_jp: 風呂敷
+brand: Various
 where_found:
-  - "Dept stores"
-  - "specialty shops"
-price_yen: "500-5000"
-what_it_is: "Square reusable wrapping cloth."
-why_travelers_care: "Cultural object that's also a functional gift wrap and bag."
+- Dept stores
+- specialty shops
+price_yen: 500-5000
+what_it_is: Square reusable wrapping cloth.
+why_travelers_care: Cultural object that's also a functional gift wrap and bag.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 8
 suitcase_score: 10
-
-description: Furoshiki wrapping cloth. Gift wrap, tote bag, bento carrier; Japan's square of fabric does unpaid overtime.
+description: Furoshiki wrapping cloth. Gift wrap, tote bag, bento carrier; Japan's
+  square of fabric does unpaid overtime.
 english_name: Furoshiki Wrapping Cloth
 japanese_name: 風呂敷
 subcategory: wrapping cloth
@@ -33,3 +33,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.musubi-furoshiki.com/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

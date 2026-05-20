@@ -1,31 +1,31 @@
-id: "JF-0318"
-slug: "osaka-551-horai-pork-buns"
-name_en: "Osaka 551 Horai Pork Buns"
-category: "other"
+id: JF-0318
+slug: osaka-551-horai-pork-buns
+name_en: Osaka 551 Horai Pork Buns
+category: other
 intent:
-  - "try_in_japan"
-status: "ready"
-name_jp: "551蓬莱 豚まん"
-brand: "551 Horai"
+- try_in_japan
+status: ready
+name_jp: 551蓬莱 豚まん
+brand: 551 Horai
 where_found:
-  - "Osaka shops"
-  - "Shin-Osaka station"
-price_yen: "190 each / ~1200 6-pack"
-what_it_is: "Hot pork buns, line snakes around Osaka stations."
-why_travelers_care: "Eat-on-platform classic."
+- Osaka shops
+- Shin-Osaka station
+price_yen: 190 each / ~1200 6-pack
+what_it_is: Hot pork buns, line snakes around Osaka stations.
+why_travelers_care: Eat-on-platform classic.
 risk_flags:
-  - "perishable, hot food, allergen-wheat"
-verification_notes: "Travel only on day-of within Japan; not exportable"
+- perishable, hot food, allergen-wheat
+verification_notes: Travel only on day-of within Japan; not exportable
 source_links:
-  - "551horai.co.jp"
-confidence: "high"
+- 551horai.co.jp
+confidence: high
 trip_score: 9
 suitcase_score: 1
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: 551 Horai pork buns. Osaka's steamed pork bun with a cult-level train-station smell. Buy hot, eat fast, regret nothing.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: 551 Horai pork buns. Osaka's steamed pork bun with a cult-level train-station
+  smell. Buy hot, eat fast, regret nothing.
 english_name: 551 Horai Butaman Pork Buns
 japanese_name: 551蓬莱 豚まん
 subcategory: pork buns

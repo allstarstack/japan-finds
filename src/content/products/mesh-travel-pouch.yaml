@@ -1,33 +1,33 @@
-id: "JF-0026"
-slug: "mesh-travel-pouch"
-name_en: "Mesh travel pouch"
-category: "100-yen"
+id: JF-0026
+slug: mesh-travel-pouch
+name_en: Mesh travel pouch
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "メッシュポーチ"
-brand: "Daiso / Seria / Can Do"
+- day_one_fixes
+status: ready
+name_jp: メッシュポーチ
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110–¥330"
-what_it_is: "Small mesh pouch for cables, toiletries, or receipts."
-why_travelers_care: "Cheap organization upgrade during trip."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110–¥330
+what_it_is: Small mesh pouch for cables, toiletries, or receipts.
+why_travelers_care: Cheap organization upgrade during trip.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Verify zipper quality."
+- easy to buy outside Japan
+verification_notes: Verify zipper quality.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: MUJI mesh travel pouch. See-through little organizer for chargers, coins, meds, and receipt confetti. The bag-inside-bag move Japan practically demands.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: MUJI mesh travel pouch. See-through little organizer for chargers, coins,
+  meds, and receipt confetti. The bag-inside-bag move Japan practically demands.
 english_name: MUJI Passport Case with Mesh Pouch
 japanese_name: 無印良品 パスポートケース メッシュポーチ付
 subcategory: travel pouch
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.muji.com/jp/ja/shop/045341/articles/muji-staff/654456
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,38 +1,38 @@
-id: "JF-0163"
-slug: "sante-fx-eye-drops"
-name_en: "Sante FX eye drops"
-category: "donki-drugstore"
+id: JF-0163
+slug: sante-fx-eye-drops
+name_en: Sante FX eye drops
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "~¥400–¥900"
-what_it_is: "Cooling eye drops in silver/blue packaging."
-why_travelers_care: "Famous Japanese eye-drop experience, but medicinal."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: ~¥400–¥900
+what_it_is: Cooling eye drops in silver/blue packaging.
+why_travelers_care: Famous Japanese eye-drop experience, but medicinal.
 risk_flags:
-  - "medicine/regulated"
-  - "liquid"
-  - "eye safety"
-verification_notes: "Verify suitability for contacts and active ingredients."
+- medicine/regulated
+- liquid
+- eye safety
+verification_notes: Verify suitability for contacts and active ingredients.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.santen.com/jp/healthcare/eye/products/brand/sante_fx"
-  - "https://www.santen.com/jp/healthcare/eye/products"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.santen.com/jp/healthcare/eye/products/brand/sante_fx
+- https://www.santen.com/jp/healthcare/eye/products
+confidence: medium
 trip_score: 7
 suitcase_score: 5
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "サンテFX"
-
-description: Sante FX Neo eye drops. Cooling eye drops that feel like your eyeballs opened a window; a drugstore classic for screen eyes and red-eye flights.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: サンテFX
+description: Sante FX Neo eye drops. Cooling eye drops that feel like your eyeballs
+  opened a window; a drugstore classic for screen eyes and red-eye flights.
 english_name: Sante FX Neo Eye Drops
 japanese_name: サンテFXネオ
 subcategory: eye drops
@@ -46,3 +46,4 @@ enrichment_confidence: high
 enrichment_source_url: https://search.jsm-db.info/sp_en/detail.php?txtID=4987084000004
 enrichment_date: '2026-05-19'
 image: /products/sante-fx-eye-drops.webp
+safety_flags: []

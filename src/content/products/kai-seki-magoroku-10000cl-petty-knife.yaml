@@ -1,27 +1,27 @@
-id: "JF-0206"
-slug: "kai-seki-magoroku-10000cl-petty-knife"
-name_en: "Kai Seki Magoroku 10000CL Petty Knife"
-category: "kitchen"
+id: JF-0206
+slug: kai-seki-magoroku-10000cl-petty-knife
+name_en: Kai Seki Magoroku 10000CL Petty Knife
+category: kitchen
 intent:
-  - "bring_home"
-status: "v1_candidate"
-name_jp: "関孫六"
-brand: "Kai Group"
+- bring_home
+status: v1_candidate
+name_jp: 関孫六
+brand: Kai Group
 where_found:
-  - "Kai stores"
-  - "Bic Camera"
-price_yen: "5000-12000"
-what_it_is: "Mid-tier Seki-forged petty/utility knife, great value."
-why_travelers_care: "Best ratio of quality-to-price for a one-knife buy."
+- Kai stores
+- Bic Camera
+price_yen: 5000-12000
+what_it_is: Mid-tier Seki-forged petty/utility knife, great value.
+why_travelers_care: Best ratio of quality-to-price for a one-knife buy.
 risk_flags:
-  - "fragile, sharp"
+- fragile, sharp
 source_links:
-  - "kai-group.com"
-confidence: "high"
+- kai-group.com
+confidence: high
 trip_score: 8
 suitcase_score: 7
-
-description: Kai Seki Magoroku 10000CL petty knife. Clean Japanese utility knife with a white handle; small enough for fruit, sharp enough to embarrass your Airbnb knife.
+description: Kai Seki Magoroku 10000CL petty knife. Clean Japanese utility knife with
+  a white handle; small enough for fruit, sharp enough to embarrass your Airbnb knife.
 english_name: Kai Seki Magoroku 10000CL Petty Knife
 japanese_name: 貝印 関孫六 10000CL ペティナイフ
 subcategory: kitchen knife
@@ -35,3 +35,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.globalkitchenjapan.com/products/seki-magoroku-10000cl-stainless-steel-petty-knife-ae5250
 enrichment_date: '2026-05-19'
 image: /products/kai-seki-magoroku-10000cl-petty-knife.webp
+safety_flags: []

@@ -1,36 +1,36 @@
-id: "JF-0154"
-slug: "muhi-insect-bite-cream"
-name_en: "Muhi insect bite cream"
-category: "donki-drugstore"
+id: JF-0154
+slug: muhi-insect-bite-cream
+name_en: Muhi insect bite cream
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "~¥500–¥1,200"
-what_it_is: "Topical itch relief for mosquito/insect bites."
-why_travelers_care: "Useful in humid seasons and countryside trips."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: ~¥500–¥1,200
+what_it_is: Topical itch relief for mosquito/insect bites.
+why_travelers_care: Useful in humid seasons and countryside trips.
 risk_flags:
-  - "medicine/regulated"
-  - "skincare/cosmetic claim"
-verification_notes: "Check active ingredients and personal medical restrictions."
+- medicine/regulated
+- skincare/cosmetic claim
+verification_notes: Check active ingredients and personal medical restrictions.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.ikedamohando.co.jp/products/muhi_alpha_ex.html"
-  - "https://www.ikedamohando.co.jp/products/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.ikedamohando.co.jp/products/muhi_alpha_ex.html
+- https://www.ikedamohando.co.jp/products/
+confidence: medium
 trip_score: 8
 suitcase_score: 6
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "ムヒアルファEX"
-
-description: Muhi S insect bite cream. Same red-and-white tube, same cold tingle, same mosquito apology tour. Drugstore shelf, beach bag, festival bag.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: ムヒアルファEX
+description: Muhi S insect bite cream. Same red-and-white tube, same cold tingle,
+  same mosquito apology tour. Drugstore shelf, beach bag, festival bag.
 english_name: Muhi S
 japanese_name: ムヒS
 subcategory: insect bite cream
@@ -44,3 +44,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.ikedamohando.co.jp/products/muhi-s.html
 enrichment_date: '2026-05-19'
 image: /products/muhi-insect-bite-cream.webp
+safety_flags: []

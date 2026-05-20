@@ -1,33 +1,33 @@
-id: "JF-0237"
-slug: "ume-pickled-plum-onigiri"
-name_en: "Ume (Pickled Plum) Onigiri"
-category: "konbini"
+id: JF-0237
+slug: ume-pickled-plum-onigiri
+name_en: Ume (Pickled Plum) Onigiri
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "140-160"
-what_it_is: "Rice ball with single salted plum center."
-why_travelers_care: "Most traditional flavor, surprising tartness for first-timers."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: 140-160
+what_it_is: Rice ball with single salted plum center.
+why_travelers_care: Most traditional flavor, surprising tartness for first-timers.
 risk_flags:
-  - "perishable, allergen-low"
+- perishable, allergen-low
 source_links:
-  - "konbini sites"
-  - "https://www.sej.co.jp/products/a/onigiri/"
-  - "https://www.family.co.jp/goods/omusubi.html"
-confidence: "high"
+- konbini sites
+- https://www.sej.co.jp/products/a/onigiri/
+- https://www.family.co.jp/goods/omusubi.html
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "梅おにぎり"
-agent_notes: "Specific SKU varies by chain"
-
-description: Ume onigiri. Pickled plum rice ball, sharp and salty in the best way. The konbini choice for people who want breakfast to slap them awake.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: 梅おにぎり
+agent_notes: Specific SKU varies by chain
+description: Ume onigiri. Pickled plum rice ball, sharp and salty in the best way.
+  The konbini choice for people who want breakfast to slap them awake.
 english_name: Lawson Ume Onigiri
 japanese_name: ローソン 紀州南高梅おにぎり
 subcategory: onigiri

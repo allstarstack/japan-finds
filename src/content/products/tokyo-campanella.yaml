@@ -1,32 +1,32 @@
-id: "JF-0347"
-slug: "tokyo-campanella"
-name_en: "Tokyo Campanella"
-category: "snacks"
+id: JF-0347
+slug: tokyo-campanella
+name_en: Tokyo Campanella
+category: snacks
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "東京カンパネラ"
-brand: "Tokyo Campanella"
+- gift_easy
+status: ready
+name_jp: 東京カンパネラ
+brand: Tokyo Campanella
 where_found:
-  - "Tokyo stations"
-  - "airports"
-price_yen: "~¥1,000–¥2,000"
-what_it_is: "Layered langue de chat-style chocolate cookie."
-why_travelers_care: "Elegant Tokyo gift alternative to Tokyo Banana."
+- Tokyo stations
+- airports
+price_yen: ~¥1,000–¥2,000
+what_it_is: Layered langue de chat-style chocolate cookie.
+why_travelers_care: Elegant Tokyo gift alternative to Tokyo Banana.
 risk_flags:
-  - "allergen"
-  - "fragile"
-verification_notes: "Verify current package/flavors."
+- allergen
+- fragile
+verification_notes: Verify current package/flavors.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 8
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tokyo Campanella. Three-layer langue de chat cookies with a delicate crunch. Tokyo Station gift energy, but less loud than the banana sponge cake aisle.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Tokyo Campanella. Three-layer langue de chat cookies with a delicate
+  crunch. Tokyo Station gift energy, but less loud than the banana sponge cake aisle.
 english_name: Tokyo Campanella Chocolat
 japanese_name: 東京カンパネラ ショコラ
 subcategory: langue de chat cookie
@@ -43,3 +43,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://tokyo-campanella.com/en/products/chocolat.html
 enrichment_date: '2026-05-19'
+image: null

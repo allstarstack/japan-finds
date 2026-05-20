@@ -1,34 +1,36 @@
-id: "JF-0232"
-slug: "oden-hot-case-winter"
-name_en: "Oden (Hot Case, Winter)"
-category: "konbini"
+id: JF-0232
+slug: oden-hot-case-winter
+name_en: Oden (Hot Case, Winter)
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "80-150 per item"
-what_it_is: "Dashi-simmered ingredients: daikon, egg, konnyaku, hanpen, etc., assembled by piece."
-why_travelers_care: "Communal hot-case ritual, pick-your-own assembly is content-friendly."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: 80-150 per item
+what_it_is: 'Dashi-simmered ingredients: daikon, egg, konnyaku, hanpen, etc., assembled
+  by piece.'
+why_travelers_care: Communal hot-case ritual, pick-your-own assembly is content-friendly.
 risk_flags:
-  - "perishable, hot food, allergen-fish-dairy-soy"
-verification_notes: "Stocking varies by region; Kansai vs Kanto dashi differs"
+- perishable, hot food, allergen-fish-dairy-soy
+verification_notes: Stocking varies by region; Kansai vs Kanto dashi differs
 source_links:
-  - "konbini sites"
-  - "https://www.sej.co.jp/products/a/oden/"
-  - "https://www.lawson.co.jp/recommend/original/oden/"
-confidence: "high"
+- konbini sites
+- https://www.sej.co.jp/products/a/oden/
+- https://www.lawson.co.jp/recommend/original/oden/
+confidence: high
 trip_score: 9
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "おでん"
-agent_notes: "Seasonal and store-dependent"
-
-description: Konbini oden. Hot daikon, egg, tofu, and fishcake sitting in broth like winter has a staffing department. Grab it from the counter when Japan gets cold and dramatic.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: おでん
+agent_notes: Seasonal and store-dependent
+description: Konbini oden. Hot daikon, egg, tofu, and fishcake sitting in broth like
+  winter has a staffing department. Grab it from the counter when Japan gets cold
+  and dramatic.
 english_name: 7-Eleven Oden
 japanese_name: セブン-イレブン おでん
 subcategory: hot case
@@ -43,3 +45,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.sej.co.jp/products/a/oden/
 enrichment_date: '2026-05-19'
+image: null

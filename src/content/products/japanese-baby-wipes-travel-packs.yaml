@@ -1,37 +1,37 @@
-id: "JF-0190"
-slug: "japanese-baby-wipes-travel-packs"
-name_en: "Japanese baby wipes travel packs"
-category: "other"
+id: JF-0190
+slug: japanese-baby-wipes-travel-packs
+name_en: Japanese baby wipes travel packs
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Akachan Honpo"
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Aeon"
-price_yen: "~¥100–¥500"
-what_it_is: "Small wet-wipe packs for babies/kids."
-why_travelers_care: "Immediate family travel fix."
+- Akachan Honpo
+- Matsumoto Kiyoshi
+- Welcia
+- Aeon
+price_yen: ~¥100–¥500
+what_it_is: Small wet-wipe packs for babies/kids.
+why_travelers_care: Immediate family travel fix.
 risk_flags:
-  - "liquid"
-  - "bulky if bulk"
-verification_notes: "Check ingredients and sensitivity."
+- liquid
+- bulky if bulk
+verification_notes: Check ingredients and sensitivity.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.pigeon.co.jp/products/category/babycare/wipe/"
-  - "https://www.akachan.jp/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.pigeon.co.jp/products/category/babycare/wipe/
+- https://www.akachan.jp/
+confidence: high
 trip_score: 8
 suitcase_score: 5
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "赤ちゃん用おしりふき"
-agent_notes: "Category row brand varies"
-
-description: Pigeon travel baby wipes. Small enough for a day bag, useful for kids, sticky hands, and the public-bench incident nobody planned for.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 赤ちゃん用おしりふき
+agent_notes: Category row brand varies
+description: Pigeon travel baby wipes. Small enough for a day bag, useful for kids,
+  sticky hands, and the public-bench incident nobody planned for.
 english_name: Pigeon Oshiri Nap Travel Baby Wipes 30 Sheets 2-Pack
 japanese_name: ピジョン おしりナップ やわらか厚手仕上げ 純水99％ おでかけ30枚 2個パック
 subcategory: baby wipes
@@ -44,3 +44,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://products.pigeon.co.jp/item/index-2675.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

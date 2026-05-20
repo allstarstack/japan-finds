@@ -1,31 +1,32 @@
-id: "JF-0098"
-slug: "cheap-hard-shell-suitcase"
-name_en: "Cheap Hard-Shell Suitcase"
-category: "donki-drugstore"
+id: JF-0098
+slug: cheap-hard-shell-suitcase
+name_en: Cheap Hard-Shell Suitcase
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Don Quijote"
-price_yen: "5000-15000"
-what_it_is: "Cheap hard-shell luggage to cover overflow shopping on the way home."
-why_travelers_care: "Common day-3 panic purchase when shopping outpaces packing."
+- Don Quijote
+price_yen: 5000-15000
+what_it_is: Cheap hard-shell luggage to cover overflow shopping on the way home.
+why_travelers_care: Common day-3 panic purchase when shopping outpaces packing.
 risk_flags:
-  - "bulky"
-verification_notes: "Quality varies wildly; expect single-trip durability at the low end"
+- bulky
+verification_notes: Quality varies wildly; expect single-trip durability at the low
+  end
 source_links:
-  - "donki.com"
-  - "https://www.donki.com/j-kakaku/carrycase/"
-  - "https://ppih.co.jp/news/pdf/news_241129_kakucho-carry.pdf"
-confidence: "high"
+- donki.com
+- https://www.donki.com/j-kakaku/carrycase/
+- https://ppih.co.jp/news/pdf/news_241129_kakucho-carry.pdf
+confidence: high
 trip_score: 7
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "スーツケース"
-agent_notes: "Donki PB carrycase line updated in 2024"
-
-description: Cheap hard-shell suitcase. Extra luggage for the final boss called 'I bought too much.' Buy it near the end, not day two.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: スーツケース
+agent_notes: Donki PB carrycase line updated in 2024
+description: Cheap hard-shell suitcase. Extra luggage for the final boss called 'I
+  bought too much.' Buy it near the end, not day two.
 english_name: Cheap Hard-Shell Suitcase
 japanese_name: 格安ハードスーツケース
 subcategory: luggage
@@ -36,3 +37,6 @@ where_to_buy:
 - home centers
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []
+enrichment_source_url: null

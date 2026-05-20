@@ -1,31 +1,31 @@
-id: "JF-0427"
-slug: "kokuyo-campus-notebooks"
-name_en: "Kokuyo Campus Notebooks"
-category: "stationery"
+id: JF-0427
+slug: kokuyo-campus-notebooks
+name_en: Kokuyo Campus Notebooks
+category: stationery
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "キャンパスノート"
-brand: "Kokuyo"
+- stock_up
+- bring_home
+status: ready
+name_jp: キャンパスノート
+brand: Kokuyo
 where_found:
-  - "Kokuyo official"
-  - "Amazon JP"
-  - "Yodobashi"
-  - "Loft"
-price_yen: "150-400"
-what_it_is: "Standard student notebook, Japan's default."
-why_travelers_care: "Cheap, recognizable, multiple grids/dot variants."
+- Kokuyo official
+- Amazon JP
+- Yodobashi
+- Loft
+price_yen: 150-400
+what_it_is: Standard student notebook, Japan's default.
+why_travelers_care: Cheap, recognizable, multiple grids/dot variants.
 source_links:
-  - "kokuyo.co.jp/stationery/campus"
-confidence: "high"
+- kokuyo.co.jp/stationery/campus
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kokuyo Campus notebook set. Japan's student notebook default in a five-pack. Buy it and briefly become the person who color-codes subjects.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Kokuyo Campus notebook set. Japan's student notebook default in a five-pack.
+  Buy it and briefly become the person who color-codes subjects.
 english_name: Kokuyo Campus Notebook Set of 5
 japanese_name: コクヨ キャンパスノート 5冊パック
 subcategory: notebook
@@ -40,3 +40,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.kokuyostore.com/en_US/stationery/stationery-notebooks/campus-notebook-set-of-5-color-6mm-dot-line-b5/NO-3CBTNX5.html?srsltid=AfmBOoplDsH1uZ3Pv8TGnDe8t8lpUjDGqmaoBrjcNuwh88oazxxrh7iB
 enrichment_date: '2026-05-19'
 image: /products/kokuyo-campus-notebooks.webp
+safety_flags: []

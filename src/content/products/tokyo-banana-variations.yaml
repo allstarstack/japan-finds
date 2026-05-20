@@ -1,35 +1,36 @@
-id: "JF-0104"
-slug: "tokyo-banana-variations"
-name_en: "Tokyo Banana Variations"
-category: "donki-drugstore"
+id: JF-0104
+slug: tokyo-banana-variations
+name_en: Tokyo Banana Variations
+category: donki-drugstore
 intent:
-  - "gift_easy"
-  - "bring_home"
-status: "ready"
+- gift_easy
+- bring_home
+status: ready
 where_found:
-  - "Tokyo Station"
-  - "Haneda Airport"
-  - "Narita Airport"
-price_yen: "1100-2000"
-what_it_is: "Sponge cake filled with banana custard. Now sells dozens of variants."
-why_travelers_care: "Default Tokyo omiyage; safe gift for coworkers."
+- Tokyo Station
+- Haneda Airport
+- Narita Airport
+price_yen: 1100-2000
+what_it_is: Sponge cake filled with banana custard. Now sells dozens of variants.
+why_travelers_care: Default Tokyo omiyage; safe gift for coworkers.
 risk_flags:
-  - "perishable (~7 day shelf), allergen-egg-wheat-dairy"
-verification_notes: "Shelf life shorter than most omiyage; check date on box"
+- perishable (~7 day shelf), allergen-egg-wheat-dairy
+verification_notes: Shelf life shorter than most omiyage; check date on box
 source_links:
-  - "tokyobanana.jp"
-  - "https://www.tokyobanana.jp/products/"
-  - "https://www.tokyobanana.jp/"
-confidence: "high"
+- tokyobanana.jp
+- https://www.tokyobanana.jp/products/
+- https://www.tokyobanana.jp/
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "東京ばな奈"
-agent_notes: "Not all variants sold at Donki"
-
-description: Tokyo Banana variations. Same soft cake idea, louder outfits and limited flavors. Pikachu, Doraemon, and seasonal boxes turn snack shopping into character roulette.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 東京ばな奈
+agent_notes: Not all variants sold at Donki
+description: Tokyo Banana variations. Same soft cake idea, louder outfits and limited
+  flavors. Pikachu, Doraemon, and seasonal boxes turn snack shopping into character
+  roulette.
 english_name: Tokyo Banana Pikachu Banana Yogurt Flavor
 japanese_name: ピカチュウ東京ばな奈 バナナヨーグルト味
 subcategory: souvenir cake

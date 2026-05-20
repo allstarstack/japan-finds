@@ -1,29 +1,31 @@
-id: "JF-0080"
-slug: "pottery-class-mashiko-tokoname-kyoto"
-name_en: "Pottery Class (Mashiko / Tokoname / Kyoto)"
-category: "other"
+id: JF-0080
+slug: pottery-class-mashiko-tokoname-kyoto
+name_en: Pottery Class (Mashiko / Tokoname / Kyoto)
+category: other
 intent:
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "陶芸体験"
-brand: "Various studios"
+- make_it_yours
+status: v1_candidate
+name_jp: 陶芸体験
+brand: Various studios
 where_found:
-  - "Mashiko"
-  - "Tokoname"
-  - "Kyoto Kiyomizu area"
-price_yen: "3000-15000"
-what_it_is: "Throw a tea bowl or sake cup; fired and shipped or hand-carried weeks later."
-why_travelers_care: "Real craft experience, takeaway object."
+- Mashiko
+- Tokoname
+- Kyoto Kiyomizu area
+price_yen: 3000-15000
+what_it_is: Throw a tea bowl or sake cup; fired and shipped or hand-carried weeks
+  later.
+why_travelers_care: Real craft experience, takeaway object.
 risk_flags:
-  - "fragile, ship-only"
-verification_notes: "Most studios ship; pickup not always possible day-of"
+- fragile, ship-only
+verification_notes: Most studios ship; pickup not always possible day-of
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 9
 suitcase_score: 5
-
-description: Zuikougama Kyoto pottery class. Spin clay near Yasaka Pagoda, then wait for firing and shipping like a patient adult. A calmer souvenir than another tote bag.
+description: Zuikougama Kyoto pottery class. Spin clay near Yasaka Pagoda, then wait
+  for firing and shipping like a patient adult. A calmer souvenir than another tote
+  bag.
 english_name: Zuikougama Kyoto Pottery Class
 japanese_name: 瑞光窯 陶芸体験
 subcategory: craft experience
@@ -36,3 +38,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.taiken-kiyomizu.com/en/
 enrichment_date: '2026-05-19'
 image: /products/pottery-class-mashiko-tokoname-kyoto.webp
+safety_flags: []

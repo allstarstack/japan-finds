@@ -1,26 +1,26 @@
-id: "JF-0085"
-slug: "washi-paper-making-mino-echizen"
-name_en: "Washi Paper Making (Mino / Echizen)"
-category: "other"
+id: JF-0085
+slug: washi-paper-making-mino-echizen
+name_en: Washi Paper Making (Mino / Echizen)
+category: other
 intent:
-  - "make_it_yours"
-  - "local_editions"
-status: "v1_candidate"
-name_jp: "和紙作り"
-brand: "Various studios"
+- make_it_yours
+- local_editions
+status: v1_candidate
+name_jp: 和紙作り
+brand: Various studios
 where_found:
-  - "Mino (Gifu)"
-  - "Echizen (Fukui)"
-price_yen: "1500-5000"
-what_it_is: "Hand-pulled washi paper sheet."
-why_travelers_care: "Quiet, hands-on, tiny takeaway."
+- Mino (Gifu)
+- Echizen (Fukui)
+price_yen: 1500-5000
+what_it_is: Hand-pulled washi paper sheet.
+why_travelers_care: Quiet, hands-on, tiny takeaway.
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 7
 suitcase_score: 10
-
-description: Washi paper making. You scoop pulp, make your own sheet, and leave with proof you briefly became a craft goblin.
+description: Washi paper making. You scoop pulp, make your own sheet, and leave with
+  proof you briefly became a craft goblin.
 english_name: Echizen Washi Paper-Making Experience
 japanese_name: 越前和紙 紙すき体験
 subcategory: craft experience
@@ -32,3 +32,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.echizenwashi.jp/english/information/workshop.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

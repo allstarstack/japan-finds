@@ -1,35 +1,36 @@
-id: "JF-0127"
-slug: "baby-foot-peel-mask"
-name_en: "Baby Foot Peel Mask"
-category: "donki-drugstore"
+id: JF-0127
+slug: baby-foot-peel-mask
+name_en: Baby Foot Peel Mask
+category: donki-drugstore
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
+- stock_up
+- bring_home
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Don Quijote"
-price_yen: "1200-1800 per pair"
-what_it_is: "Booties with chemical exfoliant, peels foot skin over 5-7 days."
-why_travelers_care: "Viral cult product, originally Japan-only."
+- Matsumoto Kiyoshi
+- Welcia
+- Don Quijote
+price_yen: 1200-1800 per pair
+what_it_is: Booties with chemical exfoliant, peels foot skin over 5-7 days.
+why_travelers_care: Viral cult product, originally Japan-only.
 risk_flags:
-  - "skincare/cosmetic claim, liquid (gel)"
-verification_notes: "Sold abroad but typically 2-3x the price"
+- skincare/cosmetic claim, liquid (gel)
+verification_notes: Sold abroad but typically 2-3x the price
 source_links:
-  - "babyfoot.jp"
-  - "https://babyfoot.co.jp/"
-  - "https://www.liberta.net/product/babyfoot/"
-confidence: "high"
+- babyfoot.jp
+- https://babyfoot.co.jp/
+- https://www.liberta.net/product/babyfoot/
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "skincare"
-name_jp: "ベビーフット"
-
-description: Baby Foot Peel Mask. Plastic booties that make your feet shed like a molting lizard. Use it after walking 30,000 steps across Tokyo and questioning your life choices.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: skincare
+name_jp: ベビーフット
+description: Baby Foot Peel Mask. Plastic booties that make your feet shed like a
+  molting lizard. Use it after walking 30,000 steps across Tokyo and questioning your
+  life choices.
 english_name: Baby Foot Exfoliation Foot Peel
 japanese_name: ベビーフット イージーパック
 subcategory: foot peel mask
@@ -43,3 +44,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://babyfoot.com/
 enrichment_date: '2026-05-19'
 image: /products/baby-foot-peel-mask.webp
+safety_flags: []

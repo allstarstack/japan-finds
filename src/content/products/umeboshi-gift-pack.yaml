@@ -1,34 +1,34 @@
-id: "JF-0350"
-slug: "umeboshi-gift-pack"
-name_en: "Umeboshi gift pack"
-category: "snacks"
+id: JF-0350
+slug: umeboshi-gift-pack
+name_en: Umeboshi gift pack
+category: snacks
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "梅干し"
-brand: "Various Wakayama brands"
+- bring_home
+status: ready
+name_jp: 梅干し
+brand: Various Wakayama brands
 where_found:
-  - "Supermarkets"
-  - "dept stores"
-  - "regional shops"
-price_yen: "~¥500–¥3,000"
-what_it_is: "Pickled plums in packs or gift boxes."
-why_travelers_care: "Polarizing but deeply Japanese food souvenir."
+- Supermarkets
+- dept stores
+- regional shops
+price_yen: ~¥500–¥3,000
+what_it_is: Pickled plums in packs or gift boxes.
+why_travelers_care: Polarizing but deeply Japanese food souvenir.
 risk_flags:
-  - "food import rules"
-  - "liquid/brine"
-  - "salty"
-verification_notes: "Check destination food rules and packaging seal."
+- food import rules
+- liquid/brine
+- salty
+verification_notes: Check destination food rules and packaging seal.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 7
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Umeboshi gift pack. Pickled plums boxed like serious business. Salty, sour, and built for rice, tea, or relatives who do not want candy.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Umeboshi gift pack. Pickled plums boxed like serious business. Salty,
+  sour, and built for rice, tea, or relatives who do not want candy.
 english_name: Umeboshi Gift Pack
 japanese_name: 梅干しギフトパック
 subcategory: pickled plum gift
@@ -42,3 +42,5 @@ safety_flags:
 - raw_or_fermented
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+enrichment_source_url: null

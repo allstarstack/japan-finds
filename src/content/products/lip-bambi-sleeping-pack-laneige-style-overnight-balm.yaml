@@ -1,29 +1,29 @@
-id: "JF-0364"
-slug: "lip-bambi-sleeping-pack-laneige-style-overnight-balm"
-name_en: "Lip Bambi Sleeping Pack / Laneige-style overnight balm"
-category: "skincare"
+id: JF-0364
+slug: lip-bambi-sleeping-pack-laneige-style-overnight-balm
+name_en: Lip Bambi Sleeping Pack / Laneige-style overnight balm
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "リップ寝マスク"
-brand: "Various"
+- stock_up
+status: ready
+name_jp: リップ寝マスク
+brand: Various
 where_found:
-  - "Drugstores"
-price_yen: "700-1500"
-what_it_is: "Overnight lip masks, dupe market for Laneige."
-why_travelers_care: "Hotel-pillow lip care."
+- Drugstores
+price_yen: 700-1500
+what_it_is: Overnight lip masks, dupe market for Laneige.
+why_travelers_care: Hotel-pillow lip care.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 6
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: LANEIGE Lip Sleeping Mask. Overnight lip balm in the little jar everyone copies. Dry-lip emergency deluxe.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: LANEIGE Lip Sleeping Mask. Overnight lip balm in the little jar everyone
+  copies. Dry-lip emergency deluxe.
 english_name: LANEIGE Lip Sleeping Mask
 japanese_name: ラネージュ リップスリーピングマスク
 subcategory: lip mask
@@ -37,3 +37,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.sephora.com/brand/laneige
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

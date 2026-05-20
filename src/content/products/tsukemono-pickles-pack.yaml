@@ -1,33 +1,33 @@
-id: "JF-0348"
-slug: "tsukemono-pickles-pack"
-name_en: "Tsukemono pickles pack"
-category: "snacks"
+id: JF-0348
+slug: tsukemono-pickles-pack
+name_en: Tsukemono pickles pack
+category: snacks
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "漬物"
-brand: "Various"
+- bring_home
+status: ready
+name_jp: 漬物
+brand: Various
 where_found:
-  - "Kyoto/Nara/dept food halls"
-  - "supermarkets"
-price_yen: "~¥300–¥1,500"
-what_it_is: "Japanese pickled vegetables in sealed packs."
-why_travelers_care: "Great food-person souvenir, but liquid/odor risks."
+- Kyoto/Nara/dept food halls
+- supermarkets
+price_yen: ~¥300–¥1,500
+what_it_is: Japanese pickled vegetables in sealed packs.
+why_travelers_care: Great food-person souvenir, but liquid/odor risks.
 risk_flags:
-  - "liquid/brine"
-  - "odor"
-  - "food import rules"
-verification_notes: "Verify customs and leakage risk."
+- liquid/brine
+- odor
+- food import rules
+verification_notes: Verify customs and leakage risk.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 5
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tsukemono pickles pack. Crunchy salted pickles for rice, bentos, and late-night fridge grazing. Small pack, big salty personality.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Tsukemono pickles pack. Crunchy salted pickles for rice, bentos, and
+  late-night fridge grazing. Small pack, big salty personality.
 english_name: Tsukemono Pickles Pack
 japanese_name: 漬物パック
 subcategory: pickles
@@ -41,3 +41,5 @@ safety_flags:
 - raw_or_fermented
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+enrichment_source_url: null

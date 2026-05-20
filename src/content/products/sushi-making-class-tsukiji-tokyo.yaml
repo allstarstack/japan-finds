@@ -1,24 +1,24 @@
-id: "JF-0084"
-slug: "sushi-making-class-tsukiji-tokyo"
-name_en: "Sushi Making Class (Tsukiji / Tokyo)"
-category: "other"
+id: JF-0084
+slug: sushi-making-class-tsukiji-tokyo
+name_en: Sushi Making Class (Tsukiji / Tokyo)
+category: other
 intent:
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "寿司体験"
-brand: "Various studios"
+- make_it_yours
+status: v1_candidate
+name_jp: 寿司体験
+brand: Various studios
 where_found:
-  - "Tokyo schools"
-price_yen: "5000-15000"
-what_it_is: "Hands-on sushi class, often Tsukiji-adjacent."
-why_travelers_care: "Recurring top-of-list class."
+- Tokyo schools
+price_yen: 5000-15000
+what_it_is: Hands-on sushi class, often Tsukiji-adjacent.
+why_travelers_care: Recurring top-of-list class.
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 9
 suitcase_score: 0
-
-description: Tsukiji sushi making class. You make nigiri, realize chefs are not overpaid, then eat the evidence. Good rainy-day Tokyo plan with actual payoff.
+description: Tsukiji sushi making class. You make nigiri, realize chefs are not overpaid,
+  then eat the evidence. Good rainy-day Tokyo plan with actual payoff.
 english_name: Tsukiji Sushi Making Class
 japanese_name: 築地 寿司作り体験
 subcategory: cooking class
@@ -33,3 +33,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://tsukiji-cooking.com/
 enrichment_date: '2026-05-19'
+image: null

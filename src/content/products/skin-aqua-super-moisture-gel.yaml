@@ -1,31 +1,31 @@
-id: "JF-0447"
-slug: "skin-aqua-super-moisture-gel"
-name_en: "Skin Aqua Super Moisture Gel"
-category: "skincare"
+id: JF-0447
+slug: skin-aqua-super-moisture-gel
+name_en: Skin Aqua Super Moisture Gel
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "スキンアクア"
-brand: "Rohto Mentholatum"
+- stock_up
+status: ready
+name_jp: スキンアクア
+brand: Rohto Mentholatum
 where_found:
-  - "Rohto Mentholatum official"
-  - "Amazon JP"
-  - "Matsukiyo"
-price_yen: "700-900"
-what_it_is: "Gel-textured SPF 50+, cheaper than Anessa/Biore."
-why_travelers_care: "Budget pick for daily reapplication."
+- Rohto Mentholatum official
+- Amazon JP
+- Matsukiyo
+price_yen: 700-900
+what_it_is: Gel-textured SPF 50+, cheaper than Anessa/Biore.
+why_travelers_care: Budget pick for daily reapplication.
 risk_flags:
-  - "liquid, skincare/cosmetic claim"
+- liquid, skincare/cosmetic claim
 source_links:
-  - "skinaqua.jp"
-confidence: "high"
+- skinaqua.jp
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Skin Aqua Super Moisture Gel. Lightweight SPF50+ sunscreen gel with no white-cast drama; the summer drugstore bottle that empties fast.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Skin Aqua Super Moisture Gel. Lightweight SPF50+ sunscreen gel with no
+  white-cast drama; the summer drugstore bottle that empties fast.
 english_name: Rohto Skin Aqua Super Moisture Gel SPF50+ PA++++
 japanese_name: スキンアクア スーパーモイスチャージェル
 subcategory: sunscreen
@@ -40,3 +40,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://japanesetaste.com/products/rohto-skin-aqua-super-moisture-gel-spf50-110g
 enrichment_date: '2026-05-19'
 image: /products/skin-aqua-super-moisture-gel.webp
+safety_flags: []

@@ -1,29 +1,29 @@
-id: "JF-0007"
-slug: "daiso-furoshiki-wrapping-cloth"
-name_en: "Daiso Furoshiki Wrapping Cloth"
-category: "100-yen"
+id: JF-0007
+slug: daiso-furoshiki-wrapping-cloth
+name_en: Daiso Furoshiki Wrapping Cloth
+category: 100-yen
 intent:
-  - "gift_easy"
-  - "bring_home"
-status: "ready"
-name_jp: "風呂敷"
-brand: "Daiso"
+- gift_easy
+- bring_home
+status: ready
+name_jp: 風呂敷
+brand: Daiso
 where_found:
-  - "Daiso"
-  - "Seria"
-price_yen: "110-330"
-what_it_is: "Square wrapping cloth, Japanese patterns."
-why_travelers_care: "Cheap, beautiful, packs flat, real cultural object."
+- Daiso
+- Seria
+price_yen: 110-330
+what_it_is: Square wrapping cloth, Japanese patterns.
+why_travelers_care: Cheap, beautiful, packs flat, real cultural object.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso furoshiki cloth. Wraps gifts, lunch, bottles, and random purchases with one square of fabric.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso furoshiki cloth. Wraps gifts, lunch, bottles, and random purchases
+  with one square of fabric.
 english_name: Daiso Furoshiki Wrapping Cloth
 japanese_name: 風呂敷（二巾）
 subcategory: wrapping-cloth
@@ -34,3 +34,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4550480976907?srsltid=AfmBOoqQsYh8J-mfV8qYdXBzWV5ArQ6eV-2BvowYcTHVO00zDKAOSJKE
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

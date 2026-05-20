@@ -1,38 +1,38 @@
-id: "JF-0126"
-slug: "yuzu-kosho-tube-or-jar"
-name_en: "Yuzu kosho tube or jar"
-category: "donki-drugstore"
+id: JF-0126
+slug: yuzu-kosho-tube-or-jar
+name_en: Yuzu kosho tube or jar
+category: donki-drugstore
 intent:
-  - "bring_home"
-status: "ready"
+- bring_home
+status: ready
 where_found:
-  - "Aeon"
-  - "Ito-Yokado"
-  - "Don Quijote"
-  - "Kuze Fuku"
-price_yen: "~¥300–¥800"
-what_it_is: "Fermented yuzu-chili seasoning."
-why_travelers_care: "Small, high-flavor, actually useful after the trip."
+- Aeon
+- Ito-Yokado
+- Don Quijote
+- Kuze Fuku
+price_yen: ~¥300–¥800
+what_it_is: Fermented yuzu-chili seasoning.
+why_travelers_care: Small, high-flavor, actually useful after the trip.
 risk_flags:
-  - "liquid/paste"
-  - "food import rules"
-  - "citrus_ingestible"
-verification_notes: "Check size and customs rules."
+- liquid/paste
+- food import rules
+- citrus_ingestible
+verification_notes: Check size and customs rules.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-  - "https://www.kuzefuku.com/"
-  - "https://www.sbfoods.co.jp/products/catalog/products_detail/16478.html"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+- https://www.kuzefuku.com/
+- https://www.sbfoods.co.jp/products/catalog/products_detail/16478.html
+confidence: medium
 trip_score: 8
 suitcase_score: 8
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "柚子胡椒"
-agent_notes: "Contains yuzu citrus"
-
-description: Yuzu kosho tube. Squeeze-on citrus chili salt; the lazy upgrade button for noodles, grilled meat, and convenience-store chicken.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 柚子胡椒
+agent_notes: Contains yuzu citrus
+description: Yuzu kosho tube. Squeeze-on citrus chili salt; the lazy upgrade button
+  for noodles, grilled meat, and convenience-store chicken.
 english_name: S&B Yuzu Kosho Tube
 japanese_name: エスビー 柚子こしょうチューブ
 subcategory: condiment

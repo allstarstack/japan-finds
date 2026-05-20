@@ -1,33 +1,33 @@
-id: "JF-0314"
-slug: "local-sake-junmai-daiginjo-from-niigata-hyogo-akita"
-name_en: "Local Sake (Junmai Daiginjo from Niigata, Hyogo, Akita)"
-category: "other"
+id: JF-0314
+slug: local-sake-junmai-daiginjo-from-niigata-hyogo-akita
+name_en: Local Sake (Junmai Daiginjo from Niigata, Hyogo, Akita)
+category: other
 intent:
-  - "bring_home"
-  - "local_editions"
-status: "ready"
-name_jp: "日本酒"
-brand: "Various breweries"
+- bring_home
+- local_editions
+status: ready
+name_jp: 日本酒
+brand: Various breweries
 where_found:
-  - "Liquor stores"
-  - "breweries"
-  - "dept stores"
-price_yen: "1500-15000+"
-what_it_is: "Regional sake; brewery direct purchases give content angle."
-why_travelers_care: "Premium gift, conversation-starter at home."
+- Liquor stores
+- breweries
+- dept stores
+price_yen: 1500-15000+
+what_it_is: Regional sake; brewery direct purchases give content angle.
+why_travelers_care: Premium gift, conversation-starter at home.
 risk_flags:
-  - "liquid, alcohol, fragile"
-verification_notes: "Customs limits; check destination"
+- liquid, alcohol, fragile
+verification_notes: Customs limits; check destination
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 8
 suitcase_score: 4
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hakkaisan Junmai Daiginjo. Clean Niigata sake with proper gift-box energy. Chill it, pour small, and let the label do half the work.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Hakkaisan Junmai Daiginjo. Clean Niigata sake with proper gift-box energy.
+  Chill it, pour small, and let the label do half the work.
 english_name: Hakkaisan Junmai Daiginjo
 japanese_name: 八海山 純米大吟醸
 subcategory: sake

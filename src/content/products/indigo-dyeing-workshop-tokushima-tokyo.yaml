@@ -1,25 +1,25 @@
-id: "JF-0076"
-slug: "indigo-dyeing-workshop-tokushima-tokyo"
-name_en: "Indigo Dyeing Workshop (Tokushima / Tokyo)"
-category: "other"
+id: JF-0076
+slug: indigo-dyeing-workshop-tokushima-tokyo
+name_en: Indigo Dyeing Workshop (Tokushima / Tokyo)
+category: other
 intent:
-  - "make_it_yours"
-  - "local_editions"
-status: "v1_candidate"
-name_jp: "藍染め体験"
-brand: "Buaisou (Tokyo/Tokushima)"
+- make_it_yours
+- local_editions
+status: v1_candidate
+name_jp: 藍染め体験
+brand: Buaisou (Tokyo/Tokushima)
 where_found:
-  - "Tokyo Tokushima studios"
-price_yen: "5000-15000"
-what_it_is: "Dye your own tenugui or tote in real indigo."
-why_travelers_care: "Tangible takeaway, photogenic craft."
+- Tokyo Tokushima studios
+price_yen: 5000-15000
+what_it_is: Dye your own tenugui or tote in real indigo.
+why_travelers_care: Tangible takeaway, photogenic craft.
 source_links:
-  - "buaisou-i.com"
-confidence: "high"
+- buaisou-i.com
+confidence: high
 trip_score: 9
 suitcase_score: 10
-
-description: Aizome indigo dyeing workshop. Dye a handkerchief, scarf, or tote in deep Japanese blue. Hands blue, souvenir earned.
+description: Aizome indigo dyeing workshop. Dye a handkerchief, scarf, or tote in
+  deep Japanese blue. Hands blue, souvenir earned.
 english_name: Aizome Indigo Dyeing Workshop
 japanese_name: 藍染め体験
 subcategory: craft workshop
@@ -32,3 +32,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://nishi-awa.jp/english/reserve/2009/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

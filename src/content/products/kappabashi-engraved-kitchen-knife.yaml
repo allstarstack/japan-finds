@@ -1,34 +1,34 @@
-id: "JF-0299"
-slug: "kappabashi-engraved-kitchen-knife"
-name_en: "Kappabashi engraved kitchen knife"
-category: "other"
+id: JF-0299
+slug: kappabashi-engraved-kitchen-knife
+name_en: Kappabashi engraved kitchen knife
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "名入れ包丁"
-brand: "Various knife makers"
+- make_it_yours
+status: ready
+name_jp: 名入れ包丁
+brand: Various knife makers
 where_found:
-  - "Kappabashi knife shops"
-  - "Tsubaya"
-  - "Tower Knives"
-price_yen: "~¥5,000–¥30,000+"
-what_it_is: "Japanese kitchen knife with optional engraving."
-why_travelers_care: "High-value functional souvenir for cooks."
+- Kappabashi knife shops
+- Tsubaya
+- Tower Knives
+price_yen: ~¥5,000–¥30,000+
+what_it_is: Japanese kitchen knife with optional engraving.
+why_travelers_care: High-value functional souvenir for cooks.
 risk_flags:
-  - "regulated blade"
-  - "expensive"
-  - "airport/security rules"
-verification_notes: "Must check export/import, airline, and local knife laws."
+- regulated blade
+- expensive
+- airport/security rules
+verification_notes: Must check export/import, airline, and local knife laws.
 source_links:
-  - "https://www.kappabashi.or.jp/en/"
-confidence: "medium"
+- https://www.kappabashi.or.jp/en/
+confidence: medium
 trip_score: 8
 suitcase_score: 4
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kappabashi engraved kitchen knife. Buy the blade, get your name carved on it; the souvenir that politely threatens your luggage allowance.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Kappabashi engraved kitchen knife. Buy the blade, get your name carved
+  on it; the souvenir that politely threatens your luggage allowance.
 english_name: Kamata Hakensha Engraved Kitchen Knife
 japanese_name: かまた刃研社 名入れ包丁
 subcategory: engraved kitchen knife
@@ -40,3 +40,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.kappabashi.or.jp/en/shops/93/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,28 +1,28 @@
-id: "JF-0001"
-slug: "can-do-random-finds"
-name_en: "Can Do Random Finds"
-category: "100-yen"
+id: JF-0001
+slug: can-do-random-finds
+name_en: Can Do Random Finds
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "キャンドゥ"
-brand: "Can Do"
+- bring_home
+status: ready
+name_jp: キャンドゥ
+brand: Can Do
 where_found:
-  - "Can Do"
-  - "Rakuten"
-price_yen: "110"
-what_it_is: "Third major 100-yen chain, more random/quirky inventory."
-why_travelers_care: "Treasure-hunt format."
+- Can Do
+- Rakuten
+price_yen: '110'
+what_it_is: Third major 100-yen chain, more random/quirky inventory.
+why_travelers_care: Treasure-hunt format.
 source_links:
-  - "cando-web.co.jp"
-confidence: "high"
+- cando-web.co.jp
+confidence: high
 trip_score: 5
 suitcase_score: 9
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Can Do 100-yen finds. Tiny organizers, stickers, and kitchen things that solve problems you invented in the aisle. Cheap enough to become a personality trait.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Can Do 100-yen finds. Tiny organizers, stickers, and kitchen things that
+  solve problems you invented in the aisle. Cheap enough to become a personality trait.
 english_name: Can Do 100-Yen Random Finds
 japanese_name: キャンドゥ 100円雑貨
 subcategory: 100-yen shop goods
@@ -32,3 +32,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.cando-web.co.jp/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

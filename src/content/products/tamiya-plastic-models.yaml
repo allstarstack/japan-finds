@@ -1,32 +1,32 @@
-id: "JF-0182"
-slug: "tamiya-plastic-models"
-name_en: "Tamiya Plastic Models"
-category: "other"
+id: JF-0182
+slug: tamiya-plastic-models
+name_en: Tamiya Plastic Models
+category: other
 intent:
-  - "bring_home"
-status: "ready"
+- bring_home
+status: ready
 where_found:
-  - "Tamiya Plamodel Factory"
-  - "Yodobashi Camera"
-  - "Bic Camera"
-  - "Joshin"
-price_yen: "1500-10000"
-what_it_is: "Plastic car/airplane/military model kits."
-why_travelers_care: "Hobby grail, Japan-priced."
+- Tamiya Plamodel Factory
+- Yodobashi Camera
+- Bic Camera
+- Joshin
+price_yen: 1500-10000
+what_it_is: Plastic car/airplane/military model kits.
+why_travelers_care: Hobby grail, Japan-priced.
 source_links:
-  - "tamiya.com"
-  - "https://tamiya.com/japan/newitems_month/list.html"
-  - "https://www.tamiya.com/japan/newstopics/2026/64shs_newitem/index.html"
-confidence: "high"
+- tamiya.com
+- https://tamiya.com/japan/newitems_month/list.html
+- https://www.tamiya.com/japan/newstopics/2026/64shs_newitem/index.html
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "タミヤ プラモデル"
-agent_notes: "New-kit schedule rotates monthly"
-
-description: Tamiya plastic model kit. Tiny cars, tanks, and planes for people who say 'quick hobby stop' and leave two hours later. Akihabara danger aisle.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: タミヤ プラモデル
+agent_notes: New-kit schedule rotates monthly
+description: Tamiya plastic model kit. Tiny cars, tanks, and planes for people who
+  say 'quick hobby stop' and leave two hours later. Akihabara danger aisle.
 english_name: Tamiya Plastic Model Kits
 japanese_name: タミヤ プラモデル
 subcategory: model kit
@@ -39,3 +39,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.tamiya.com/english/products/24210/index.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,34 +1,35 @@
-id: "JF-0238"
-slug: "garigari-kun-soda-bar"
-name_en: "Garigari-kun Soda Bar"
-category: "konbini"
+id: JF-0238
+slug: garigari-kun-soda-bar
+name_en: Garigari-kun Soda Bar
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Aeon"
-price_yen: "70-100"
-what_it_is: "Cheap soda-flavored ice bar with shaved ice center. Mascot is iconic. Occasional weird flavors (corn potage, napolitan)."
-why_travelers_care: "Cheap thrill, weird flavor drops are content moments."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Aeon
+price_yen: 70-100
+what_it_is: Cheap soda-flavored ice bar with shaved ice center. Mascot is iconic.
+  Occasional weird flavors (corn potage, napolitan).
+why_travelers_care: Cheap thrill, weird flavor drops are content moments.
 risk_flags:
-  - "perishable"
-verification_notes: "Flavor of the season changes frequently"
+- perishable
+verification_notes: Flavor of the season changes frequently
 source_links:
-  - "akagi.com"
-  - "https://www.akagi.com/products/garigari/soda.html"
-  - "https://www.akagi.com/brand/garigarikun/"
-confidence: "high"
+- akagi.com
+- https://www.akagi.com/products/garigari/soda.html
+- https://www.akagi.com/brand/garigarikun/
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "ガリガリ君ソーダ"
-
-description: Garigari-kun Soda. Cheap blue ice bar, crunchy inside, childhood-coded. Summer konbini freezer staple.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: ガリガリ君ソーダ
+description: Garigari-kun Soda. Cheap blue ice bar, crunchy inside, childhood-coded.
+  Summer konbini freezer staple.
 english_name: Garigari-kun Soda Bar
 japanese_name: ガリガリ君 ソーダ
 subcategory: ice pop
@@ -41,3 +42,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://akagiice-global.com/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

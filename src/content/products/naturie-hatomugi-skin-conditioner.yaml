@@ -1,34 +1,34 @@
-id: "JF-0388"
-slug: "naturie-hatomugi-skin-conditioner"
-name_en: "Naturie Hatomugi Skin Conditioner"
-category: "skincare"
+id: JF-0388
+slug: naturie-hatomugi-skin-conditioner
+name_en: Naturie Hatomugi Skin Conditioner
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "ナチュリエ ハトムギ化粧水"
-brand: "Imju"
+- stock_up
+status: ready
+name_jp: ナチュリエ ハトムギ化粧水
+brand: Imju
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥600–¥900"
-what_it_is: "Large bottle lightweight moisturizing lotion."
-why_travelers_care: "Huge bottle, low price, high value; not suitcase-perfect but popular."
+- Drugstores
+- Donki
+price_yen: ~¥600–¥900
+what_it_is: Large bottle lightweight moisturizing lotion.
+why_travelers_care: Huge bottle, low price, high value; not suitcase-perfect but popular.
 risk_flags:
-  - "liquid"
-  - "bulky"
-  - "skincare/cosmetic claim"
-verification_notes: "Check baggage liquid limits and skin sensitivity."
+- liquid
+- bulky
+- skincare/cosmetic claim
+verification_notes: Check baggage liquid limits and skin sensitivity.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.cosme.net/
+confidence: high
 trip_score: 7
 suitcase_score: 5
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Naturie Hatomugi Skin Conditioner. Big 500ml watery lotion, light and unfussy. The drugstore bottle people buy when one face toner feels too small.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Naturie Hatomugi Skin Conditioner. Big 500ml watery lotion, light and
+  unfussy. The drugstore bottle people buy when one face toner feels too small.
 english_name: Naturie Hatomugi Skin Conditioner
 japanese_name: ナチュリエ ハトムギ化粧水
 subcategory: toner
@@ -41,3 +41,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.naturie-net.jp/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

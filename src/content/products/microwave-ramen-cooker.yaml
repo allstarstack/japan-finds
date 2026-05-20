@@ -1,35 +1,35 @@
-id: "JF-0027"
-slug: "microwave-ramen-cooker"
-name_en: "Microwave ramen cooker"
-category: "100-yen"
+id: JF-0027
+slug: microwave-ramen-cooker
+name_en: Microwave ramen cooker
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "電子レンジラーメン調理器"
-brand: "Daiso / Seria / Can Do"
+- bring_home
+status: ready
+name_jp: 電子レンジラーメン調理器
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110–¥550"
-what_it_is: "Plastic microwave container for instant noodles."
-why_travelers_care: "Functional, visually clear, and cheap."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110–¥550
+what_it_is: Plastic microwave container for instant noodles.
+why_travelers_care: Functional, visually clear, and cheap.
 risk_flags:
-  - "bulky"
-  - "plastic"
-  - "heat use"
-verification_notes: "Check microwave safety and suitcase space."
+- bulky
+- plastic
+- heat use
+verification_notes: Check microwave safety and suitcase space.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: medium
 trip_score: 7
 suitcase_score: 6
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Microwave ramen cooker. Makes instant noodles without a stove, then becomes the bowl. Dorm room, hotel room, lazy-night engineering.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Microwave ramen cooker. Makes instant noodles without a stove, then becomes
+  the bowl. Dorm room, hotel room, lazy-night engineering.
 english_name: Skater Microwave Ramen Maker UDR1N
 japanese_name: スケーター 即席ラーメンメーカー UDR1N
 subcategory: microwave cooker
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.skater-onlineshop.com/view/item/000000015866
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,38 +1,38 @@
-id: "JF-0246"
-slug: "cold-soba-tray"
-name_en: "Cold soba tray"
-category: "konbini"
+id: JF-0246
+slug: cold-soba-tray
+name_en: Cold soba tray
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "~¥400–¥650"
-what_it_is: "Ready-to-eat chilled soba with dipping sauce and toppings."
-why_travelers_care: "Shows how far Japan takes convenience meals."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: ~¥400–¥650
+what_it_is: Ready-to-eat chilled soba with dipping sauce and toppings.
+why_travelers_care: Shows how far Japan takes convenience meals.
 risk_flags:
-  - "perishable"
-  - "allergen"
-  - "fresh food"
-verification_notes: "Check buckwheat allergy and sauce packet ingredients."
+- perishable
+- allergen
+- fresh food
+verification_notes: Check buckwheat allergy and sauce packet ingredients.
 source_links:
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.japan-guide.com/e/e2071.html"
-  - "https://www.sej.co.jp/products/a/noodle/"
-  - "https://www.lawson.co.jp/recommend/original/noodle/"
-confidence: "medium"
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.japan-guide.com/e/e2071.html
+- https://www.sej.co.jp/products/a/noodle/
+- https://www.lawson.co.jp/recommend/original/noodle/
+confidence: medium
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "冷しそば"
-agent_notes: "Chilled noodle SKUs rotate seasonally"
-
-description: 7-Eleven zaru soba tray. Cold noodles, dipping sauce, tiny wasabi packet, tiny chaos. The summer konbini lunch for people trying to feel functional.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: 冷しそば
+agent_notes: Chilled noodle SKUs rotate seasonally
+description: 7-Eleven zaru soba tray. Cold noodles, dipping sauce, tiny wasabi packet,
+  tiny chaos. The summer konbini lunch for people trying to feel functional.
 english_name: 7-Eleven Zaru Soba Tray
 japanese_name: ざるそば
 subcategory: cold noodles

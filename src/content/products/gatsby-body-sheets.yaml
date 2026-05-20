@@ -1,33 +1,33 @@
-id: "JF-0451"
-slug: "gatsby-body-sheets"
-name_en: "Gatsby Body Sheets"
-category: "other"
+id: JF-0451
+slug: gatsby-body-sheets
+name_en: Gatsby Body Sheets
+category: other
 intent:
-  - "day_one_fixes"
-  - "stock_up"
-status: "ready"
-name_jp: "ギャツビー"
-brand: "Mandom"
+- day_one_fixes
+- stock_up
+status: ready
+name_jp: ギャツビー
+brand: Mandom
 where_found:
-  - "Mandom official"
-  - "Amazon JP"
-  - "Matsukiyo"
-  - "konbini"
-price_yen: "300-500"
-what_it_is: "Mentholated body wipes, summer humidity essential."
-why_travelers_care: "Summer hot-day reset."
+- Mandom official
+- Amazon JP
+- Matsukiyo
+- konbini
+price_yen: 300-500
+what_it_is: Mentholated body wipes, summer humidity essential.
+why_travelers_care: Summer hot-day reset.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "mandom.co.jp/gatsby"
-confidence: "high"
+- mandom.co.jp/gatsby
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Gatsby body sheets. Cold, menthol-ish wipes for sweat emergencies. Salarymen, students, and melting tourists all understand the assignment.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Gatsby body sheets. Cold, menthol-ish wipes for sweat emergencies. Salarymen,
+  students, and melting tourists all understand the assignment.
 english_name: Gatsby Ice-Type Deodorant Body Wipes
 japanese_name: ギャツビー アイスデオドラント ボディペーパー
 subcategory: body wipes
@@ -40,3 +40,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.mandom.co.jp/en/products/brand.html?brandId=1005
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

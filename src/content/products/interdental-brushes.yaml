@@ -1,35 +1,35 @@
-id: "JF-0150"
-slug: "interdental-brushes"
-name_en: "Interdental brushes"
-category: "donki-drugstore"
+id: JF-0150
+slug: interdental-brushes
+name_en: Interdental brushes
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "~¥200–¥600"
-what_it_is: "Small dental cleaning tools in travel sizes."
-why_travelers_care: "Useful if you forgot travel dental gear."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: ~¥200–¥600
+what_it_is: Small dental cleaning tools in travel sizes.
+why_travelers_care: Useful if you forgot travel dental gear.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Check size and material."
+- easy to buy outside Japan
+verification_notes: Check size and material.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.lion.co.jp/ja/products/category/oral/42"
-  - "https://jp.sunstargum.com/products/interdental/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.lion.co.jp/ja/products/category/oral/42
+- https://jp.sunstargum.com/products/interdental/
+confidence: high
 trip_score: 7
 suitcase_score: 8
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "歯間ブラシ"
-agent_notes: "Category row brand varies"
-
-description: Systema interdental brushes. Tiny tooth-gap cleaners in sizes that get very personal. Drugstore buy after Japan convinces you oral care is an Olympic sport.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: 歯間ブラシ
+agent_notes: Category row brand varies
+description: Systema interdental brushes. Tiny tooth-gap cleaners in sizes that get
+  very personal. Drugstore buy after Japan convinces you oral care is an Olympic sport.
 english_name: Systema Interdental Brushes
 japanese_name: システマ 歯間用ブラシ
 subcategory: oral care
@@ -44,3 +44,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.lion.co.jp/en/products/category/oral/11
 enrichment_date: '2026-05-19'
 image: /products/interdental-brushes.webp
+safety_flags: []

@@ -1,35 +1,35 @@
-id: "JF-0383"
-slug: "keana-nadeshiko-rice-mask"
-name_en: "Keana Nadeshiko Rice Mask"
-category: "skincare"
+id: JF-0383
+slug: keana-nadeshiko-rice-mask
+name_en: Keana Nadeshiko Rice Mask
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "毛穴撫子 お米のマスク"
-brand: "Ishizawa Laboratories"
+- stock_up
+status: ready
+name_jp: 毛穴撫子 お米のマスク
+brand: Ishizawa Laboratories
 where_found:
-  - "Drugstores"
-  - "Donki"
-  - "Loft"
-price_yen: "~¥700–¥1,000"
-what_it_is: "Rice-themed sheet mask pack."
-why_travelers_care: "Memorable packaging, high tourist visibility."
+- Drugstores
+- Donki
+- Loft
+price_yen: ~¥700–¥1,000
+what_it_is: Rice-themed sheet mask pack.
+why_travelers_care: Memorable packaging, high tourist visibility.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-verification_notes: "Confirm skin suitability and current pack size."
+- liquid
+- skincare/cosmetic claim
+verification_notes: Confirm skin suitability and current pack size.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.loft.co.jp/store/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.loft.co.jp/store/
+- https://www.cosme.net/
+confidence: high
 trip_score: 8
 suitcase_score: 7
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Keana Nadeshiko Rice Mask. Ten-sheet rice mask pack, cheap and famous; drugstore tourists buy it like their pores filed a complaint.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Keana Nadeshiko Rice Mask. Ten-sheet rice mask pack, cheap and famous;
+  drugstore tourists buy it like their pores filed a complaint.
 english_name: Keana Nadeshiko Rice Mask
 japanese_name: 毛穴撫子 お米のマスク
 subcategory: sheet mask
@@ -44,3 +44,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.ishizawa-lab.co.jp/keananadeshiko/product/keana_skincare/mask.html
 enrichment_date: '2026-05-19'
 image: /products/keana-nadeshiko-rice-mask.webp
+safety_flags: []

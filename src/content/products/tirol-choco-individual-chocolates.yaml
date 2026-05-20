@@ -1,32 +1,32 @@
-id: "JF-0418"
-slug: "tirol-choco-individual-chocolates"
-name_en: "Tirol-Choco Individual Chocolates"
-category: "snacks"
+id: JF-0418
+slug: tirol-choco-individual-chocolates
+name_en: Tirol-Choco Individual Chocolates
+category: snacks
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "チロルチョコ"
-brand: "Tirol-Choco Co."
+- gift_easy
+status: ready
+name_jp: チロルチョコ
+brand: Tirol-Choco Co.
 where_found:
-  - "Tirol official shop"
-  - "PR Times"
-  - "LAWSON"
-  - "konbini chain"
-price_yen: "30-100"
-what_it_is: "Tiny individually wrapped chocolates, dozens of flavors."
-why_travelers_care: "Easy mass omiyage."
+- Tirol official shop
+- PR Times
+- LAWSON
+- konbini chain
+price_yen: 30-100
+what_it_is: Tiny individually wrapped chocolates, dozens of flavors.
+why_travelers_care: Easy mass omiyage.
 risk_flags:
-  - "allergen-dairy-wheat-soy"
+- allergen-dairy-wheat-soy
 source_links:
-  - "tirol-choco.com"
-confidence: "high"
+- tirol-choco.com
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tirol-Choco variety pack. Tiny cube chocolates with a suspiciously large flavor lineup. Buy a bag, pass them around, then watch everyone pick a personality.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Tirol-Choco variety pack. Tiny cube chocolates with a suspiciously large
+  flavor lineup. Buy a bag, pass them around, then watch everyone pick a personality.
 english_name: Tirol-Choco Variety Pack
 japanese_name: チロルチョコ バラエティパック
 subcategory: chocolate
@@ -42,3 +42,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://shop.tirol-choco.com/products/2509_asrt_varapack
 enrichment_date: '2026-05-19'
+image: null

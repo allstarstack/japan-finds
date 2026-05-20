@@ -1,37 +1,37 @@
-id: "JF-0151"
-slug: "japanese-surgical-masks"
-name_en: "Japanese surgical masks"
-category: "donki-drugstore"
+id: JF-0151
+slug: japanese-surgical-masks
+name_en: Japanese surgical masks
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "~¥300–¥1,000"
-what_it_is: "Disposable masks in multiple sizes/colors."
-why_travelers_care: "Immediate fix for pollen, crowds, illness etiquette, or cold weather."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: ~¥300–¥1,000
+what_it_is: Disposable masks in multiple sizes/colors.
+why_travelers_care: Immediate fix for pollen, crowds, illness etiquette, or cold weather.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Check fit, size, and material."
+- easy to buy outside Japan
+verification_notes: Check fit, size, and material.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.unicharm.co.jp/ja/products/mask.html"
-  - "https://www.irisohyama.co.jp/products/mask/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.unicharm.co.jp/ja/products/mask.html
+- https://www.irisohyama.co.jp/products/mask/
+confidence: high
 trip_score: 8
 suitcase_score: 6
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "不織布マスク"
-agent_notes: "Category row maker varies"
-
-description: Unicharm Cho-Kaiteki masks. Soft ear loops, clean drugstore fit; the mask locals grab when cheap scratchy ones start bullying their face.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: 不織布マスク
+agent_notes: Category row maker varies
+description: Unicharm Cho-Kaiteki masks. Soft ear loops, clean drugstore fit; the
+  mask locals grab when cheap scratchy ones start bullying their face.
 english_name: Unicharm Cho-Kaiteki Mask
 japanese_name: ユニ・チャーム 超快適マスク
 subcategory: face mask
@@ -45,3 +45,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://jp.unicharm-mask.com/ja/home.html
 enrichment_date: '2026-05-19'
 image: /products/japanese-surgical-masks.webp
+safety_flags: []

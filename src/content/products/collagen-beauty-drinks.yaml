@@ -1,31 +1,31 @@
-id: "JF-0059"
-slug: "collagen-beauty-drinks"
-name_en: "Collagen beauty drinks"
-category: "other"
+id: JF-0059
+slug: collagen-beauty-drinks
+name_en: Collagen beauty drinks
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "コラーゲンドリンク"
-brand: "Shiseido / Fancl / DHC / various"
+- content_only
+status: content_only
+name_jp: コラーゲンドリンク
+brand: Shiseido / Fancl / DHC / various
 where_found:
-  - "Drugstores"
-  - "konbini"
-  - "Donki"
-price_yen: "~¥200–¥500 each"
-what_it_is: "Drink marketed for beauty/wellness."
-why_travelers_care: "Strong shelf curiosity but health claims make it risky to recommend."
+- Drugstores
+- konbini
+- Donki
+price_yen: ~¥200–¥500 each
+what_it_is: Drink marketed for beauty/wellness.
+why_travelers_care: Strong shelf curiosity but health claims make it risky to recommend.
 risk_flags:
-  - "supplement/regulated"
-  - "health claim"
-  - "liquid"
-verification_notes: "Do not make efficacy claims; verify ingredients and suitability."
+- supplement/regulated
+- health claim
+- liquid
+verification_notes: Do not make efficacy claims; verify ingredients and suitability.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+confidence: medium
 trip_score: 5
-
-description: Shiseido The Collagen Drink. Beauty drink in a tiny bottle with drugstore-auntie energy. People grab it before flights, baths, and optimistic skincare routines.
+description: Shiseido The Collagen Drink. Beauty drink in a tiny bottle with drugstore-auntie
+  energy. People grab it before flights, baths, and optimistic skincare routines.
 english_name: Shiseido The Collagen Drink
 japanese_name: 資生堂 ザ・コラーゲン ドリンク
 subcategory: beauty drink
@@ -38,3 +38,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.shiseido.co.jp/collagen/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

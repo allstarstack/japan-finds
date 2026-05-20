@@ -1,28 +1,28 @@
-id: "JF-0049"
-slug: "kinoki-foot-detox-pads"
-name_en: "Kinoki Foot Detox Pads"
-category: "other"
+id: JF-0049
+slug: kinoki-foot-detox-pads
+name_en: Kinoki Foot Detox Pads
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "樹液シート"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: 樹液シート
+brand: Various
 where_found:
-  - "Donki"
-  - "drugstores"
-price_yen: "500-2000"
-what_it_is: "Black-staining 'detox' foot pads. Color is from oxidation, not toxins."
-why_travelers_care: "Pseudoscience; pure content angle only."
+- Donki
+- drugstores
+price_yen: 500-2000
+what_it_is: Black-staining 'detox' foot pads. Color is from oxidation, not toxins.
+why_travelers_care: Pseudoscience; pure content angle only.
 risk_flags:
-  - "skincare/cosmetic claim, pseudoscience"
-verification_notes: "No clinical evidence of detox effect"
+- skincare/cosmetic claim, pseudoscience
+verification_notes: No clinical evidence of detox effect
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 3
 suitcase_score: 10
-
-description: Kinoki foot pads. Overnight foot stickers with big claims and bigger side-eye. Buy for the chaos, not because your feet run a toxin export business.
+description: Kinoki foot pads. Overnight foot stickers with big claims and bigger
+  side-eye. Buy for the chaos, not because your feet run a toxin export business.
 english_name: Kinoki Foot Pads
 japanese_name: キノキ足裏樹液シート
 subcategory: foot pad
@@ -34,3 +34,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.amazon.com/Kinoki-Your-Health-Premium-Natural-Patches/dp/B07PGQTD1J
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

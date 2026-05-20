@@ -1,28 +1,28 @@
-id: "JF-0053"
-slug: "sea-urchin-uni-in-tube"
-name_en: "Sea Urchin / Uni in Tube"
-category: "other"
+id: JF-0053
+slug: sea-urchin-uni-in-tube
+name_en: Sea Urchin / Uni in Tube
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "うにペースト"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: うにペースト
+brand: Various
 where_found:
-  - "Supermarkets"
-  - "depachika"
-price_yen: "800-3000"
-what_it_is: "Tubed sea urchin paste."
-why_travelers_care: "Polarizing taste + perishable + may have customs issues."
+- Supermarkets
+- depachika
+price_yen: 800-3000
+what_it_is: Tubed sea urchin paste.
+why_travelers_care: Polarizing taste + perishable + may have customs issues.
 risk_flags:
-  - "perishable, fragile, allergen-seafood, customs"
-verification_notes: "Many countries restrict seafood imports"
+- perishable, fragile, allergen-seafood, customs
+verification_notes: Many countries restrict seafood imports
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 3
 suitcase_score: 3
-
-description: Uni tube. Briny sea urchin paste for rice, pasta, and people who think butter is too emotionally stable.
+description: Uni tube. Briny sea urchin paste for rice, pasta, and people who think
+  butter is too emotionally stable.
 english_name: Uni Tube Paste
 japanese_name: うにチューブ
 subcategory: seafood paste
@@ -36,3 +36,5 @@ safety_flags:
 - raw_or_fermented
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+enrichment_source_url: null

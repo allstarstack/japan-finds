@@ -1,32 +1,32 @@
-id: "JF-0357"
-slug: "canmake-cosmetics"
-name_en: "Canmake Cosmetics"
-category: "skincare"
+id: JF-0357
+slug: canmake-cosmetics
+name_en: Canmake Cosmetics
+category: skincare
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "キャンメイク"
-brand: "Ida Laboratories"
+- stock_up
+- bring_home
+status: ready
+name_jp: キャンメイク
+brand: Ida Laboratories
 where_found:
-  - "All drugstores"
-  - "Plaza"
-  - "Tokyu Hands"
-price_yen: "500-1500"
-what_it_is: "Cute drugstore makeup, cream blush + tinted lips are signature."
-why_travelers_care: "Beauty TikTok darling, cute packaging, cheap."
+- All drugstores
+- Plaza
+- Tokyu Hands
+price_yen: 500-1500
+what_it_is: Cute drugstore makeup, cream blush + tinted lips are signature.
+why_travelers_care: Beauty TikTok darling, cute packaging, cheap.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "canmake.com"
-confidence: "high"
+- canmake.com
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Canmake cosmetics. Cheap drugstore makeup that looks way less cheap than the receipt. Cream Cheek is the easy starter item.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Canmake cosmetics. Cheap drugstore makeup that looks way less cheap than
+  the receipt. Cream Cheek is the easy starter item.
 english_name: Canmake Cream Cheek
 japanese_name: キャンメイク クリームチーク
 subcategory: drugstore makeup
@@ -41,3 +41,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.canmake.com/en/item/
 enrichment_date: '2026-05-19'
 image: /products/canmake-cosmetics.webp
+safety_flags: []
