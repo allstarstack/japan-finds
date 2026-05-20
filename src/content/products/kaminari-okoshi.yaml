@@ -26,3 +26,16 @@ suitcase_score: 8
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kaminari okoshi. Asakusa's crunchy rice candy; the souvenir your teeth hear before your brain catches up.
+english_name: Tokiwa-do Kaminari Okoshi
+japanese_name: 常盤堂 雷おこし
+subcategory: rice candy
+price_range_jpy: 500-1500
+where_to_buy:
+- Asakusa Nakamise
+- Tokiwa-do shops
+- Tokyo Station souvenir shops
+enrichment_confidence: medium
+enrichment_source_url: https://tokiwado.tokyo/products/
+enrichment_date: '2026-05-19'

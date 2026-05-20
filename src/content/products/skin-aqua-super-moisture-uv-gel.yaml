@@ -26,3 +26,18 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Skin Aqua UV gel. Lightweight SPF50+ sunscreen that disappears fast; the konbini-to-theme-park face shield for humid Japan days.
+english_name: Skin Aqua Super Moisture UV Gel
+japanese_name: スキンアクア スーパーモイスチャーUVジェル
+subcategory: sunscreen
+price_range_jpy: 700-1200
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- Amazon Japan
+enrichment_confidence: high
+enrichment_source_url: https://www.shop.rohto.co.jp/category/skincare/skin-aqua/super-moisture/190850.html
+enrichment_date: '2026-05-19'
+image: /products/skin-aqua-super-moisture-uv-gel.webp

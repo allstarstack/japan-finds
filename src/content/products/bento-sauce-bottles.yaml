@@ -27,3 +27,18 @@ suitcase_score: 8
 launch_category: "kitchen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Mini sauce bottles. Little condiment animals for soy sauce, dressing, and pretending your lunch is organized.
+english_name: Mini Animal Sauce Bottles
+japanese_name: ミニアニマル ソースボトル
+subcategory: bento accessory
+price_range_jpy: 100-500
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Loft
+- bento shops
+enrichment_confidence: medium
+enrichment_source_url: https://en.bentoandco.com/products/mini-animal-sauce-bottles
+enrichment_date: '2026-05-19'

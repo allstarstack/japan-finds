@@ -30,3 +30,16 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "キャラクター歯ブラシ"
 agent_notes: "Licensed character varies"
+
+description: Character toothbrushes. Tiny travel toothbrushes wearing Sanrio, Pokemon, or Anpanman branding. Useful, cute, and somehow cheaper than coffee.
+english_name: Character Toothbrushes
+japanese_name: キャラクター歯ブラシ
+subcategory: toothbrush
+price_range_jpy: 110-500
+where_to_buy:
+- Daiso
+- Can Do
+- drugstores
+- character stores
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

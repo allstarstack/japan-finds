@@ -20,3 +20,18 @@ source_links:
   - "https://www.matsukiyococokara-online.com/"
 confidence: "low"
 trip_score: 3
+
+description: Beauluck A. Strong bisacodyl laxative for serious constipation, not casual snack-tourism tummy drama. Drugstore shelf with real consequences.
+english_name: Kokando Beauluck A
+japanese_name: 皇漢堂 ビューラックA
+subcategory: laxative
+price_range_jpy: 500-1200
+where_to_buy:
+- Matsumoto Kiyoshi
+- Tsuruha
+- Welcia
+- Donki
+enrichment_confidence: low
+enrichment_source_url: https://www.kokando.co.jp/genuine_product_certificationethical/
+enrichment_date: '2026-05-19'
+image: /products/strong-laxatives-digestive-medicines.webp

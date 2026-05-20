@@ -24,3 +24,16 @@ suitcase_score: 0
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Konbini vinyl umbrella. Clear plastic umbrella sold when the sky betrays everyone. Buy one once, lose it twice, join Japan.
+english_name: Konbini Vinyl Umbrella
+japanese_name: ビニール傘
+subcategory: umbrella
+price_range_jpy: 500-900
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Donki
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

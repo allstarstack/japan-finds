@@ -22,3 +22,20 @@ suitcase_score: 2
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: BAKE cheese tart. Crisp shell, fluffy cheese filling, dangerously easy to eat before your train comes.
+english_name: BAKE Cheese Tart
+japanese_name: BAKE CHEESE TART
+subcategory: cheese tart
+price_range_jpy: 250-400
+where_to_buy:
+- BAKE Cheese Tart stores
+- major station dessert floors
+- shopping malls
+safety_flags:
+- contains_dairy
+- contains_egg
+- contains_gluten
+enrichment_confidence: medium
+enrichment_source_url: https://cheesetart.com/en
+enrichment_date: '2026-05-19'

@@ -18,3 +18,16 @@ source_links:
 confidence: "high"
 trip_score: 10
 suitcase_score: 10
+
+description: Goshuin shrine and temple stamps. Handwritten red-seal proof you showed up respectfully. Bring cash and the book, not main-character chaos.
+english_name: Goshuin Temple and Shrine Stamps
+japanese_name: 御朱印
+subcategory: temple stamp
+price_range_jpy: 300-500
+where_to_buy:
+- temple offices
+- shrine offices
+- major shrine souvenir counters
+enrichment_confidence: low
+enrichment_source_url: https://www.japan.travel/en/blog/collecting-goshuin-shrine-and-temple-stamps/
+enrichment_date: '2026-05-19'

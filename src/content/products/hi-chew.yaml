@@ -26,3 +26,18 @@ suitcase_score: 10
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hi-Chew. Fruity chewy candy with a weirdly serious cult following. The konbini checkout add-on that becomes five sticks gone.
+english_name: Hi-Chew
+japanese_name: ハイチュウ
+subcategory: chewy candy
+price_range_jpy: 100-200
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Donki
+- supermarkets
+enrichment_confidence: medium
+enrichment_source_url: https://www.countries.hi-chew.com/
+enrichment_date: '2026-05-19'

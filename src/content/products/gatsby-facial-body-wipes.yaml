@@ -31,3 +31,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "ギャツビー フェイシャルペーパー"
+
+description: Gatsby facial and body wipes. Pocketable sweat-control sheets for face, neck, arms, and the crisis zone. Donki summer aisle behavior.
+english_name: Gatsby Facial and Body Wipes
+japanese_name: ギャツビー フェイシャルペーパー / ボディペーパー
+subcategory: face and body wipes
+price_range_jpy: 300-600
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- any major drugstore
+- convenience stores
+enrichment_confidence: medium
+enrichment_source_url: https://www.gatsby.sg/product/bodycare/body-paper/
+enrichment_date: '2026-05-19'

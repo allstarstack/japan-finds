@@ -22,3 +22,18 @@ source_links:
 confidence: "high"
 trip_score: 10
 suitcase_score: 10
+
+description: Ippodo Ummon matcha. Rich Kyoto matcha tin for serious tea people. Buy it when the shelves have not been raided by matcha TikTok.
+english_name: Ippodo Ummon Matcha 40g Can
+japanese_name: 一保堂 雲門 40g缶
+subcategory: matcha
+price_range_jpy: 6000-12000
+where_to_buy:
+- Ippodo Tea Kyoto
+- Ippodo Tea Tokyo Marunouchi
+- department stores
+- official online store
+enrichment_confidence: low
+enrichment_source_url: https://ippodotea.com/products/ummon-no-mukashi-40g
+enrichment_date: '2026-05-19'
+image: /products/premium-matcha-ippodo-marukyu-koyamaen.webp

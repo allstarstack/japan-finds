@@ -18,3 +18,16 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 10
+
+description: JR Eki Stamp Rally. Free station-stamp scavenger hunt; grab the card, ride the route, collect tiny ink trophies like a train nerd with purpose.
+english_name: JR East Stamp Rally
+japanese_name: JR東日本 スタンプラリー
+subcategory: train activity
+price_range_jpy: 0-2000
+where_to_buy:
+- JR East stations
+- participating station counters
+- tourist information counters
+enrichment_confidence: low
+enrichment_source_url: https://www.jreast.co.jp/tokyo/jreconan/file/en.pdf
+enrichment_date: '2026-05-19'

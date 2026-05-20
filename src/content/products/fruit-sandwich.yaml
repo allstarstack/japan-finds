@@ -32,3 +32,20 @@ display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "フルーツサンド"
 agent_notes: "Fruit and cream fillings rotate"
+
+description: Fruit sandwich. Whipped cream, soft bread, and fruit pretending this is lunch instead of dessert.
+english_name: 7-Eleven Three-Fruit Sandwich
+japanese_name: セブン-イレブン 3種フルーツサンド
+subcategory: sandwich
+price_range_jpy: 350-500
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.sej.co.jp/products/a/item/053702/
+enrichment_date: '2026-05-19'

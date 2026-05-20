@@ -25,3 +25,17 @@ suitcase_score: 8
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: ChargeSPOT power bank rental. The konbini save button for a dying phone. Grab one at the kiosk, return it somewhere else, keep Google Maps alive.
+english_name: ChargeSPOT Power Bank Rental
+japanese_name: ChargeSPOT モバイルバッテリーレンタル
+subcategory: power bank rental
+price_range_jpy: 165-660
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- ChargeSPOT kiosks
+enrichment_confidence: low
+enrichment_source_url: https://chargespot.jp/
+enrichment_date: '2026-05-19'

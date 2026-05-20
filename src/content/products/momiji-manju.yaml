@@ -26,3 +26,20 @@ suitcase_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Momiji manju. Maple-leaf cake with anko inside. Hiroshima's souvenir energy, shaped like fall and boxed for train-station gifting.
+english_name: Momiji Manju
+japanese_name: もみじ饅頭
+subcategory: regional souvenir sweet
+price_range_jpy: 120-1500
+where_to_buy:
+- Hiroshima Station
+- Nishikido shops
+- department store food halls
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: high
+enrichment_source_url: https://www.nisikido.co.jp/kasi/momiji/momiji.html
+enrichment_date: '2026-05-19'
+image: /products/momiji-manju.webp

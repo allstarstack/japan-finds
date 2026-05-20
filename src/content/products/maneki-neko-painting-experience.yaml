@@ -26,3 +26,16 @@ suitcase_score: 6
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Maneki-neko painting experience. You paint the luck cat yourself, which makes the souvenir legally your problem. Easy win for families, dates, and people who panic-buy keychains.
+english_name: Maneki-neko Painting Experience
+japanese_name: 招き猫絵付け体験
+subcategory: craft experience
+price_range_jpy: 1500-3000
+where_to_buy:
+- Seto ceramics studios
+- Yanaka craft cafes
+- Okayama Maneki Neko Museum
+enrichment_confidence: low
+enrichment_source_url: https://shoryudo.go-centraljapan.jp/en/aichi_40/
+enrichment_date: '2026-05-19'

@@ -21,3 +21,19 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 5
+
+description: Suntory distillery tour. Whisky pilgrimage with tastings, stills, and reservation anxiety. Book early or enjoy staring at the website like it owes you money.
+english_name: Suntory Yamazaki / Hakushu Distillery Tour
+japanese_name: サントリー 山崎蒸溜所 / 白州蒸溜所 見学ツアー
+subcategory: experience
+price_range_jpy: 0-3000
+where_to_buy:
+- Suntory Yamazaki Distillery
+- Suntory Hakushu Distillery
+- Suntory official reservation site
+safety_flags:
+- alcohol
+enrichment_confidence: low
+enrichment_source_url: https://www.suntory.com/factory/hakushu/
+enrichment_date: '2026-05-19'
+image: /products/suntory-yamazaki-hakushu-distillery-tour.webp

@@ -23,3 +23,19 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+
+description: Travel Lululun sheet masks. Regional Japan face masks for the traveler who buys skincare like souvenir stamps.
+english_name: Travel Lululun Sheet Mask TOKYO KOJI
+japanese_name: 旅するルルルン 東京 糀
+subcategory: sheet mask
+price_range_jpy: 500-3500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- Hands
+- airport shops
+enrichment_confidence: low
+enrichment_source_url: https://lululunusa.com/collections/travel-lululun/products/travel-lululun-sheet-mask-tokyo-7-pcs
+enrichment_date: '2026-05-19'
+image: /products/pure-smile-lululun-saborino-sheet-masks.webp

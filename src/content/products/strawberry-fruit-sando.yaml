@@ -27,3 +27,20 @@ display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "いちごサンド"
 agent_notes: "Seasonal fruit-sando availability varies"
+
+description: Strawberry fruit sando. Whipped cream and strawberries in soft white bread, sold like dessert pretending to be lunch. Konbini picnic food with main-character behavior.
+english_name: FamilyMart Strawberry and Whipped Cream Sandwich
+japanese_name: いちご＆ホイップサンド
+subcategory: fruit sandwich
+price_range_jpy: 350-500
+where_to_buy:
+- FamilyMart
+- Lawson
+- 7-Eleven Japan
+safety_flags:
+- contains_gluten
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://www.family.co.jp/company/news_releases/2025/20250106_02.html
+enrichment_date: '2026-05-19'
+image: /products/strawberry-fruit-sando.webp

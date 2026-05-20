@@ -24,3 +24,22 @@ suitcase_score: 10
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: LeTAO Otaru Rue Ironai Fromage Milk. Crispy cheese cookie with mascarpone cream energy. The suitcase snack that feels too fragile for your self-control.
+english_name: LeTAO Otaru Rue Ironai Fromage Milk
+japanese_name: 小樽色内通りフロマージュ ミルク
+subcategory: cheese cookie
+price_range_jpy: 1000-1800
+where_to_buy:
+- LeTAO stores
+- Hokkaido souvenir shops
+- airport souvenir shops
+- department store food halls
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: high
+enrichment_source_url: https://letaousa.com/products/otaru-rue-ironai-fromage-milk-cookie
+enrichment_date: '2026-05-19'
+image: /products/hokkaido-letao-cheese-snacks.webp

@@ -29,3 +29,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ラゲッジスケール"
 agent_notes: "Exact model varies"
+
+description: Luggage scale. Tiny digital scale for the suitcase panic moment. Buy it before Donki turns your carry-on into a physics problem.
+english_name: Digital Luggage Scale
+japanese_name: デジタルラゲッジスケール
+subcategory: luggage scale
+price_range_jpy: 1000-2500
+where_to_buy:
+- Bic Camera
+- Yodobashi Camera
+- Donki
+- Tokyu Hands
+enrichment_confidence: low
+enrichment_source_url: https://www.dretec.co.jp/
+enrichment_date: '2026-05-19'

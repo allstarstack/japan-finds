@@ -29,3 +29,19 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "ロキソニンS"
 agent_notes: "Contains loxoprofen"
+
+description: Loxonin S. NSAID painkiller, fast and no drowsy ingredient. Drugstore counter energy for headaches, cramps, and the trip-ending toothache.
+english_name: Loxonin S
+japanese_name: ロキソニンS
+subcategory: painkiller
+price_range_jpy: 700-900
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Sugi Drug
+- Donki
+safety_flags:
+- NSAID
+enrichment_confidence: medium
+enrichment_source_url: https://www.daiichisankyo-hc.co.jp/en/products/details/loxonin-s/
+enrichment_date: '2026-05-19'

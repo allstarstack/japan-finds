@@ -21,3 +21,16 @@ suitcase_score: 0
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Eki-locker. Station lockers that save you from suitcase drag. Use them before temples, shopping streets, and every stair-heavy bad decision.
+english_name: Eki-Locker / Multi-Ecube Station Locker
+japanese_name: 駅ロッカー / マルチエキューブ
+subcategory: luggage storage
+price_range_jpy: 400-1000
+where_to_buy:
+- JR stations
+- major train stations
+- Multi-Ecube app
+enrichment_confidence: medium
+enrichment_source_url: https://multiecube.com/en/
+enrichment_date: '2026-05-19'

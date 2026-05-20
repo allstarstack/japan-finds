@@ -29,3 +29,18 @@ display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "オーエスワン"
 agent_notes: "Medical-use rehydration drink"
+
+description: OS-1 drink and jelly. Salty-sweet rehydration for real dehydration, not casual sipping. Drugstore pick for heat, fever, or the post-onsen flop.
+english_name: OS-1 Oral Rehydration Solution Drink and Jelly
+japanese_name: オーエスワン 経口補水液 / オーエスワンゼリー
+subcategory: oral rehydration
+price_range_jpy: 180-300
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- some convenience stores
+enrichment_confidence: high
+enrichment_source_url: https://www.os-1.jp/en/
+enrichment_date: '2026-05-19'
+image: /products/os-1-oral-rehydration-drink-jelly.webp

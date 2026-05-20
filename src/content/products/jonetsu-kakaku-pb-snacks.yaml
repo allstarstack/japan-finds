@@ -26,3 +26,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "情熱価格 お菓子"
 agent_notes: "Donki private-brand snack category"
+
+description: Jonetsu Kakaku blue-tongue potato chips. Donki turns a salt chip into a party trick; eat them when you want snacks and evidence.
+english_name: Jonetsu Kakaku Blue Tongue Potato Chips
+japanese_name: 情熱価格 舌が青くなるポテトチップス
+subcategory: snack
+price_range_jpy: 100-300
+where_to_buy:
+- Don Quijote
+- MEGA Don Quijote
+safety_flags:
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://www.donki.com/j-kakaku/product/detail.php?item=5284
+enrichment_date: '2026-05-19'

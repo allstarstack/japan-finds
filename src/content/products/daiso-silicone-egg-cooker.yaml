@@ -20,3 +20,15 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso silicone egg cooker. Microwave egg gadget for hotel-room snack scientists.
+english_name: Daiso Silicone Egg Cooker
+japanese_name: シリコーンたまご調理器
+subcategory: kitchen-tool
+price_range_jpy: 100-330
+where_to_buy:
+- Daiso
+safety_flags:
+- contains_egg
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

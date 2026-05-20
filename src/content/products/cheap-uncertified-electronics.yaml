@@ -25,3 +25,17 @@ source_links:
 confidence: "low"
 trip_score: 4
 suitcase_score: 3
+
+description: Cheap no-name electronics. The price looks brave; the charger looks like a lawsuit. Stick to known brands for adapters and heat tools.
+english_name: Cheap No-Name Electronics
+japanese_name: 格安ノーブランド電化製品
+subcategory: travel electronics
+price_range_jpy: 300-2000
+where_to_buy:
+- Donki
+- 100-yen shops
+- discount electronics aisles
+safety_flags:
+- voltage_100v
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

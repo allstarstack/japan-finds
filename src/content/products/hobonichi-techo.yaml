@@ -27,3 +27,17 @@ suitcase_score: 7
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hobonichi Techo. Daily planner with cult stationery energy. For people who say 'I just need one notebook' and leave Loft with a lifestyle.
+english_name: Hobonichi Techo
+japanese_name: ほぼ日手帳
+subcategory: planner
+price_range_jpy: 3000-6000
+where_to_buy:
+- Loft
+- Hobonichi official store
+- Tobichi Tokyo
+- stationery shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.1101.com/store/techo/en/about/?srsltid=AfmBOop7HpiNBrdRf0du5V8FauigioXpQMn6PIeVUut2tODqtV3YeErx
+enrichment_date: '2026-05-19'

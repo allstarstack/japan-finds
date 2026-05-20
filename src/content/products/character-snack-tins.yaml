@@ -31,3 +31,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "キャラクター缶菓子"
 agent_notes: "Licensed character and maker vary"
+
+description: Character snack tins. Cookies or candy in a tin people keep forever and call storage. Good for kids, coworkers, and your inner raccoon.
+english_name: Character Snack Tins
+japanese_name: キャラクター菓子缶
+subcategory: character sweets
+price_range_jpy: 500-1800
+where_to_buy:
+- Tokyo Station character shops
+- airport souvenir shops
+- Donki
+- character stores
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

@@ -31,3 +31,18 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Anessa Perfect UV Skincare Milk. SPF50+ PA++++ gold-bottle sunscreen with serious sweat resistance. This is the drugstore flex for summer days that feel personally targeted.
+english_name: Anessa Perfect UV Sunscreen Skincare Milk
+japanese_name: アネッサ パーフェクトUV スキンケアミルク NA
+subcategory: sunscreen
+price_range_jpy: 1200-3000
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- airport duty-free shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.ratzillacosme.com/sun/anessa-perfect-uv-sunscreen-skincare-milk-2024/
+enrichment_date: '2026-05-19'
+image: /products/anessa-perfect-uv-skincare-milk.webp

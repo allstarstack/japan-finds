@@ -25,3 +25,19 @@ suitcase_score: 9
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Chocollabo Kit Kat. Custom photo Kit Kat box. Cute gift, mildly dangerous when your face becomes someone's snack.
+english_name: Chocollabo Kit Kat
+japanese_name: チョコラボ キットカット
+subcategory: custom chocolate
+price_range_jpy: 1000-3000
+where_to_buy:
+- Chocollabo online
+- KitKat gift service
+safety_flags:
+- contains_gluten
+- contains_dairy
+enrichment_confidence: low
+enrichment_source_url: https://kitkat.nestle.jp/gift
+enrichment_date: '2026-05-19'
+image: /products/kit-kat-chocolatory-custom-kit-kat.webp

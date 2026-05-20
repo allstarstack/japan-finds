@@ -30,3 +30,18 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "イブクイック頭痛薬"
 agent_notes: "Contains ibuprofen"
+
+description: EVE Quick DX. Ibuprofen painkiller built for headaches, the drugstore pick when regular pain meds feel underpowered.
+english_name: EVE Quick DX Headache Medicine
+japanese_name: イブクイック頭痛薬DX
+subcategory: painkiller
+price_range_jpy: 800-1800
+where_to_buy:
+- Matsumoto Kiyoshi
+- Sugi Drug
+- any major drugstore
+safety_flags:
+- NSAID
+enrichment_confidence: medium
+enrichment_source_url: https://www.kegg.jp/medicus-bin/japic_otc?japic_code=K1512000011
+enrichment_date: '2026-05-19'

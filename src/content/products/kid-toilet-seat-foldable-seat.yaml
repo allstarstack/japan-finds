@@ -30,3 +30,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "子ども用便座"
 agent_notes: "Current exact SKU not confirmed"
+
+description: OXO Tot 2-in-1 Go Potty. Foldable travel potty seat that sits on toilets or stands alone with bags. For Japan days with tiny bladders and zero patience.
+english_name: OXO Tot 2-in-1 Go Potty
+japanese_name: OXO Tot 2-in-1 Go Potty
+subcategory: kids travel toilet seat
+price_range_jpy: 3000-5000
+where_to_buy:
+- Amazon Japan
+- Toys R Us Japan
+- baby goods stores
+enrichment_confidence: low
+enrichment_source_url: https://www.oxo.com/oxo-tot-2-in-1-go-potty.html?srsltid=AfmBOor7HFB8oSNvX59RfzUScnImdvmAwfbf6lMHd2YLIzinjgUZYtgC
+enrichment_date: '2026-05-19'
+image: /products/kid-toilet-seat-foldable-seat.webp

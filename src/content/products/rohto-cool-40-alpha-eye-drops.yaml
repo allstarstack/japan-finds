@@ -28,3 +28,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "ロートクール40α"
+
+description: Rohto Cool 40 Alpha. Cooling vitamin eye drops for tired travel eyes after too many stations, screens, and fluorescent lights.
+english_name: Rohto Cool 40 Alpha Eye Drops
+japanese_name: ロート クール40α
+subcategory: eye drops
+price_range_jpy: 400-600
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://jp.rohto.com/cool40/eyedrop/
+enrichment_date: '2026-05-19'
+image: /products/rohto-cool-40-alpha-eye-drops.webp

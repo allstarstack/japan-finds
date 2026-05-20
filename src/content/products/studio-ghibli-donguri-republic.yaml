@@ -25,3 +25,17 @@ launch_category: "kids_family"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "どんぐり共和国 ジブリグッズ"
+
+description: Donguri Republic Totoro plush. Official Ghibli merch that turns adults into plush-hoarding goblins. The safe bet when you cannot fit a whole Catbus in luggage.
+english_name: Donguri Republic Totoro Plush
+japanese_name: どんぐり共和国 となりのトトロ ぬいぐるみ 大トトロ M
+subcategory: character goods
+price_range_jpy: 3000-5000
+where_to_buy:
+- Donguri Republic
+- Donguri Sora online
+- Ghibli shops
+enrichment_confidence: low
+enrichment_source_url: https://www.donguri-sora.com/category/PLUSHDOLL/21502414.html
+enrichment_date: '2026-05-19'
+image: /products/studio-ghibli-donguri-republic.webp

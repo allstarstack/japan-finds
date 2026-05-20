@@ -24,3 +24,18 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: DHC Deep Cleansing Oil. Olive-oil cleanser that melts sunscreen and makeup without a wrestling match.
+english_name: DHC Deep Cleansing Oil
+japanese_name: DHC 薬用ディープクレンジングオイル
+subcategory: cleansing-oil
+price_range_jpy: 2500-3500
+where_to_buy:
+- DHC stores
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://www.dhccare.com/products/deep-cleansing-oil?srsltid=AfmBOopydBm7FcLmJ7zgjVWfxKbKpiMuI5t-ZHbqV4mWOaVLlwhBSIw-
+enrichment_date: '2026-05-19'
+image: /products/dhc-deep-cleansing-oil.webp

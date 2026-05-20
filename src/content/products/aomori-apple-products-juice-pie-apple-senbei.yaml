@@ -24,3 +24,17 @@ suitcase_score: 9
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: JA Aoren Aomori apple juice. Straightforward apple juice from Japan's apple capital, no mascot required. Buy it at Aomori shops when you want the fruit without hauling fruit.
+english_name: JA Aoren Aomori Apple Juice
+japanese_name: JAアオレン 青森りんごジュース
+subcategory: apple juice
+price_range_jpy: 400-700
+where_to_buy:
+- Aomori souvenir shops
+- airport gift shops
+- supermarkets
+- antenna shops
+enrichment_confidence: low
+enrichment_source_url: https://shop.marukai.com/store/marukai-market/products/28870405-ja-aoren-aomori-apple-juice-33-81-fl-oz
+enrichment_date: '2026-05-19'

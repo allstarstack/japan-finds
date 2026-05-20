@@ -23,3 +23,16 @@ source_links:
 confidence: "medium"
 trip_score: 6
 suitcase_score: 3
+
+description: Iga-yaki ceramics. Beautiful clayware, terrible backpack roommate unless wrapped like evidence.
+english_name: Iga-yaki Ceramic Tableware
+japanese_name: 伊賀焼の陶器
+subcategory: ceramics
+price_range_jpy: 1000-10000
+where_to_buy:
+- Kappabashi kitchenware shops
+- Nagatani-en stores
+- department store tableware floors
+enrichment_confidence: low
+enrichment_source_url: https://igamono.co.jp/
+enrichment_date: '2026-05-19'

@@ -27,3 +27,19 @@ suitcase_score: 3
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: 551 Horai pork buns. Osaka's warm pork bun flex, fluffy outside and juicy inside. People buy boxes at the station like edible luggage.
+english_name: 551 Horai Pork Buns
+japanese_name: 551蓬莱 豚まん
+subcategory: pork bun
+price_range_jpy: 240-500
+where_to_buy:
+- 551 Horai stores
+- Shin-Osaka Station
+- Osaka Namba
+- Kansai airports
+safety_flags:
+- contains_gluten
+enrichment_confidence: medium
+enrichment_source_url: https://www.551horai.co.jp/menu/
+enrichment_date: '2026-05-19'

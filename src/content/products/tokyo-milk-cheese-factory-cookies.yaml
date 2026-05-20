@@ -25,3 +25,20 @@ suitcase_score: 10
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tokyo Milk Cheese Factory cookies. Thin cheese-and-milk sandwich cookies with that sweet-salty thing Japan does too well. Buy them when the souvenir needs to look expensive without behaving like luggage.
+english_name: Tokyo Milk Cheese Factory Salt and Camembert Cookies
+japanese_name: 東京ミルクチーズ工場 ソルト&カマンベールクッキー
+subcategory: cheese cookie
+price_range_jpy: 1200-3000
+where_to_buy:
+- Tokyo Station
+- Haneda Airport
+- Narita Airport
+- department-store food halls
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

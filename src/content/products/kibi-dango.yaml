@@ -24,3 +24,16 @@ suitcase_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kibi dango. Okayama's soft millet dumpling souvenir; Momotaro branding does most of the emotional labor.
+english_name: Koeido Kibi Dango
+japanese_name: 廣榮堂 元祖きびだんご
+subcategory: dango souvenir
+price_range_jpy: 400-1200
+where_to_buy:
+- Okayama Station
+- Koeido shops
+- Okayama souvenir shops
+enrichment_confidence: medium
+enrichment_source_url: https://koeido.co.jp/
+enrichment_date: '2026-05-19'

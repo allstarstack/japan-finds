@@ -20,3 +20,18 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 5
+
+description: Shun Classic chef's knife. Damascus steel, Pakkawood handle, made in Japan; a real kitchen souvenir, not another magnet.
+english_name: Shun Classic 8-Inch Chef's Knife
+japanese_name: 旬 Classic シェフズナイフ
+subcategory: chef knife
+price_range_jpy: 28000-40000
+where_to_buy:
+- KAI Housewares
+- department-store kitchen floors
+- kitchenware shops
+- Amazon Japan
+enrichment_confidence: high
+enrichment_source_url: https://shun.kaiusa.com/classic-chef-s-8.html
+enrichment_date: '2026-05-19'
+image: /products/shun-classic-chef-s-knife.webp

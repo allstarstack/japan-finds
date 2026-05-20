@@ -28,3 +28,18 @@ suitcase_score: 6
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso rain poncho. Cheap emergency plastic poncho. The no-style, all-survival move when Tokyo weather changes its mind.
+english_name: Daiso Rain Poncho
+japanese_name: レインポンチョ
+subcategory: rainwear
+price_range_jpy: 300-330
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Donki
+enrichment_confidence: low
+enrichment_source_url: https://jp.daisonet.com/products/4550480062693
+enrichment_date: '2026-05-19'
+image: /products/plastic-rain-poncho.webp

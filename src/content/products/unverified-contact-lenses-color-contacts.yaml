@@ -25,3 +25,16 @@ source_links:
 confidence: "low"
 trip_score: 4
 suitcase_score: 4
+
+description: Unverified color contacts. Cute until your cornea files a complaint; buy approved lenses from legit optical shops.
+english_name: Unverified Color Contacts
+japanese_name: 未確認カラーコンタクト
+subcategory: color contacts
+price_range_jpy: unknown
+where_to_buy:
+- do not buy unverified lenses
+- licensed optical shops
+- approved contact lens retailers
+enrichment_confidence: low
+enrichment_source_url: https://www.fda.gov/medical-devices/contact-lenses/decorative-contact-lenses-halloween-and-more
+enrichment_date: '2026-05-19'

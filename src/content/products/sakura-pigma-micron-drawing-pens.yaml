@@ -24,3 +24,19 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Pigma Micron pens. Tiny, clean lines that do not smear once dry; the Japan stationery aisle's safe bet for sketchbooks, journals, and overplanned itineraries.
+english_name: Sakura Pigma Micron Drawing Pens
+japanese_name: サクラクレパス ピグマ ミクロン
+subcategory: drawing pens
+price_range_jpy: 150-1500
+where_to_buy:
+- Loft
+- Hands
+- Itoya
+- stationery stores
+- Amazon Japan
+enrichment_confidence: high
+enrichment_source_url: https://www.sakuraofamerica.com/product/pigma-micron/
+enrichment_date: '2026-05-19'
+image: /products/sakura-pigma-micron-drawing-pens.webp

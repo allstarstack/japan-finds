@@ -31,3 +31,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "ロートジー！"
+
+description: Rohto Z! eye drops. Extremely cool eye drops; the sensation is less refreshing and more my eyeballs have entered winter.
+english_name: Rohto Z! b Eye Drops
+japanese_name: ロートジーb
+subcategory: eye drops
+price_range_jpy: 600-700
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://jp.rohto.com/zi/eyedrop-b/
+enrichment_date: '2026-05-19'
+image: /products/rohto-z-eye-drops.webp

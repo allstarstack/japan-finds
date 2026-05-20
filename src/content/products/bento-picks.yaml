@@ -27,3 +27,18 @@ suitcase_score: 10
 launch_category: "kitchen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Bento picks. Tiny food spears that make leftovers look like they have a production budget.
+english_name: Torune Bento Picks
+japanese_name: トルネ お弁当ピック
+subcategory: bento accessory
+price_range_jpy: 100-500
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Loft
+- bento shops
+enrichment_confidence: low
+enrichment_source_url: https://en.bentoandco.com/collections/torune
+enrichment_date: '2026-05-19'

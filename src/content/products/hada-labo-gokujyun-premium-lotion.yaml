@@ -27,3 +27,17 @@ suitcase_score: 7
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hada Labo Gokujyun Premium Lotion. Thicker gold-bottle version with heavier hydration. Nighttime face bounce in drugstore form.
+english_name: Hada Labo Gokujyun Premium Lotion
+japanese_name: 肌ラボ 極潤プレミアム ヒアルロン液
+subcategory: hydrating lotion
+price_range_jpy: 900-1400
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- any major drugstore
+enrichment_confidence: medium
+enrichment_source_url: https://jp.rohto.com/hadalabo/gokujun-premium-lotion/
+enrichment_date: '2026-05-19'

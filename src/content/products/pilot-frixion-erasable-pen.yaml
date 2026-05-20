@@ -28,3 +28,17 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Pilot FriXion pen. Writes like a normal gel pen, erases with friction, and quietly fixes your mistakes. Stationery-shop classic for planners and overthinkers.
+english_name: Pilot FriXion Ball Knock Erasable Pen
+japanese_name: パイロット フリクションボールノック
+subcategory: stationery pen
+price_range_jpy: 200-800
+where_to_buy:
+- Loft
+- Tokyu Hands
+- Itoya
+- major stationery stores
+enrichment_confidence: medium
+enrichment_source_url: https://www.pilot.co.jp/promotion/frixion/info/
+enrichment_date: '2026-05-19'

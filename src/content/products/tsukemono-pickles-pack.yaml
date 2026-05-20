@@ -26,3 +26,18 @@ suitcase_score: 5
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tsukemono pickles pack. Crunchy salted pickles for rice, bentos, and late-night fridge grazing. Small pack, big salty personality.
+english_name: Tsukemono Pickles Pack
+japanese_name: 漬物パック
+subcategory: pickles
+price_range_jpy: 150-500
+where_to_buy:
+- supermarkets
+- konbini
+- department-store food halls
+- Donki
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

@@ -25,3 +25,14 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "コンビニエンスウェア ラインソックス"
 agent_notes: "FamilyMart x Hiroshi Ochiai line"
+
+description: Convenience Wear socks. FamilyMart turned emergency socks into streetwear; white with the green-blue stripe is the flex.
+english_name: Convenience Wear Line Socks
+japanese_name: ラインソックス コンビニホワイト
+subcategory: socks
+price_range_jpy: 390-429
+where_to_buy:
+- FamilyMart
+enrichment_confidence: medium
+enrichment_source_url: https://www.family.co.jp/goods/cw/7410895.html
+enrichment_date: '2026-05-19'

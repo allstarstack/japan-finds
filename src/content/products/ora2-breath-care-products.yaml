@@ -31,3 +31,16 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "オーラツー"
+
+description: Ora2 mouth spray. Tiny breath reset for trains, dates, and garlic situations with consequences. Lives near the toothpaste at Japanese drugstores.
+english_name: Ora2 me Mouth Spray
+japanese_name: オーラツーミー マウススプレー
+subcategory: breath spray
+price_range_jpy: 300-600
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: medium
+enrichment_source_url: https://jp.ora2.com/me/me_mouth_spray/
+enrichment_date: '2026-05-19'

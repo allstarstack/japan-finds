@@ -19,3 +19,18 @@ source_links:
 confidence: "high"
 trip_score: 0
 suitcase_score: 0
+
+description: Tuna mayo onigiri. Rice ball, crisp seaweed, creamy tuna center. The konbini meal that somehow fixes 2 a.m. and train-platform hunger.
+english_name: 7-Eleven Tuna Mayonnaise Onigiri
+japanese_name: セブン-イレブン ツナマヨネーズおにぎり
+subcategory: onigiri
+price_range_jpy: 120-220
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+safety_flags:
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.sej.co.jp/in/en.html
+enrichment_date: '2026-05-19'

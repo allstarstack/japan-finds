@@ -30,3 +30,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "赤ちゃん用おしりふき"
 agent_notes: "Category row brand varies"
+
+description: Pigeon travel baby wipes. Small enough for a day bag, useful for kids, sticky hands, and the public-bench incident nobody planned for.
+english_name: Pigeon Oshiri Nap Travel Baby Wipes 30 Sheets 2-Pack
+japanese_name: ピジョン おしりナップ やわらか厚手仕上げ 純水99％ おでかけ30枚 2個パック
+subcategory: baby wipes
+price_range_jpy: 250-500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Akachan Honpo
+- any major drugstore
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://products.pigeon.co.jp/item/index-2675.html
+enrichment_date: '2026-05-19'

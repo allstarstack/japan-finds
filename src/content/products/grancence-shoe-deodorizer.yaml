@@ -24,3 +24,17 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Gran's Remedy shoe deodorizer. White powder for shoes that have seen too many station stairs. Sprinkle it in, let the shame leave quietly.
+english_name: Gran's Remedy Shoe Deodorizer Powder
+japanese_name: グランズレメディ
+subcategory: shoe deodorizer
+price_range_jpy: 1700-4000
+where_to_buy:
+- Amazon Japan
+- Rakuten
+- Mr. Minit
+- shoe repair shops
+enrichment_confidence: low
+enrichment_source_url: https://gransremedy.com/
+enrichment_date: '2026-05-19'

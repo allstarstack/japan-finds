@@ -25,3 +25,17 @@ suitcase_score: 5
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Animal chair socks. Tiny fabric covers for chair legs so your floor stops screaming. Japan looked at furniture feet and gave them outfits.
+english_name: Animal Chair Leg Covers
+japanese_name: イス脚カバー（アニマル）
+subcategory: chair leg covers
+price_range_jpy: 100-300
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Watts
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4549892506604
+enrichment_date: '2026-05-19'

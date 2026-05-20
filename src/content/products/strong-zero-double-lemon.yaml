@@ -27,3 +27,20 @@ launch_category: "konbini"
 fill_type: "verified"
 display_strategy: "show_all"
 sub_chip: "drink"
+
+description: Strong Zero Double Lemon. 9% lemon chu-hi that tastes friendly until it files paperwork against your plans. The classic cheap can after a long konbini run.
+english_name: Suntory -196 Strong Zero Double Lemon
+japanese_name: サントリー -196 ストロングゼロ ダブルレモン
+subcategory: chu-hi
+price_range_jpy: 150-250
+where_to_buy:
+- 7-Eleven Japan
+- Lawson
+- FamilyMart
+- Donki
+- supermarkets
+safety_flags:
+- alcohol
+enrichment_confidence: medium
+enrichment_source_url: https://products.suntory.co.jp/d/4901777192607/
+enrichment_date: '2026-05-19'

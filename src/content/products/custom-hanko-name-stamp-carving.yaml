@@ -20,3 +20,16 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+
+description: Custom hanko name stamp. Your name gets carved into a tiny seal, often in kanji.
+english_name: Custom Hanko Name Stamp Carving
+japanese_name: オリジナルはんこ 名入れ彫刻
+subcategory: custom-souvenir
+price_range_jpy: 1000-5000
+where_to_buy:
+- hanko specialty shops
+- tourist souvenir workshops
+- Tokyo station area shops
+enrichment_confidence: low
+enrichment_source_url: https://tokyohanko.jp/e-top.html
+enrichment_date: '2026-05-19'

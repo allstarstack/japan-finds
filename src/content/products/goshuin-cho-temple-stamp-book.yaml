@@ -26,3 +26,18 @@ suitcase_score: 9
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Goshuincho stamp book. Accordion notebook for shrine and temple seals. Start it on day one or regret every shrine after.
+english_name: Goshuincho Temple Stamp Book
+japanese_name: 御朱印帳
+subcategory: stamp book
+price_range_jpy: 1000-3000
+where_to_buy:
+- temple offices
+- shrine offices
+- Loft
+- Hands
+- stationery shops
+enrichment_confidence: medium
+enrichment_source_url: https://komorebistationery.com/collections/goshuincho-stamp-books
+enrichment_date: '2026-05-19'

@@ -26,3 +26,19 @@ suitcase_score: 3
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hakata mentaiko. Spicy cod roe with serious rice powers. Buy chilled in Fukuoka, then protect it like edible luggage.
+english_name: Hakata Mentaiko
+japanese_name: 博多明太子
+subcategory: spicy cod roe
+price_range_jpy: 1200-3500
+where_to_buy:
+- Fukuya
+- Hakata Station
+- Fukuoka Airport
+- department store food halls
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: medium
+enrichment_source_url: https://www.fukuya.com/en/
+enrichment_date: '2026-05-19'

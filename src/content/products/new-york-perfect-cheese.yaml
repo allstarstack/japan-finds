@@ -28,3 +28,21 @@ suitcase_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: New York Perfect Cheese. Gouda langue de chat wrapped around cream and cheese chocolate. Tokyo Station snack hype in a very slim box.
+english_name: New York Perfect Cheese
+japanese_name: ニューヨークパーフェクトチーズ
+subcategory: cheese cookie
+price_range_jpy: 850-2000
+where_to_buy:
+- Tokyo Station
+- Haneda Airport
+- Narita Airport
+- airport duty-free
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://newyork-perfect-cheese.com/en
+enrichment_date: '2026-05-19'

@@ -29,3 +29,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "キャラクターポケットティッシュ"
 agent_notes: "Category row character varies"
+
+description: Sanrio pocket tissues. Tiny character tissue packs for bags, kids, and sudden shrine-side sneezes. Cheap, cute, and somehow more emotionally prepared than you.
+english_name: Sanrio Cinnamoroll Pocket Tissue Set
+japanese_name: サンリオ ポケットティッシュ
+subcategory: pocket tissue
+price_range_jpy: 100-300
+where_to_buy:
+- Daiso
+- Donki
+- Sanrio shops
+- drugstores
+enrichment_confidence: low
+enrichment_source_url: https://jyw-kawaii.com/products/sanrio-pocket-tissue-6pcs-set-cinnamoroll-hayashi-japan
+enrichment_date: '2026-05-19'
+image: /products/pocket-tissue-with-characters.webp

@@ -23,3 +23,19 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+
+description: Kayanoya dashi packets. Drop one bag in hot water and dinner suddenly has backbone.
+english_name: Kayanoya Original Dashi Stock Powder
+japanese_name: 茅乃舎だし
+subcategory: dashi-packets
+price_range_jpy: 700-2500
+where_to_buy:
+- Kayanoya shops
+- department-store food floors
+- some supermarkets
+- online
+safety_flags:
+- contains_gluten
+enrichment_confidence: low
+enrichment_source_url: https://www.kayanoya.com/en/dashi/
+enrichment_date: '2026-05-19'

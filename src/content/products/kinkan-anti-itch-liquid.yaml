@@ -26,3 +26,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "キンカン"
+
+description: Kinkan. Topical bite-and-itch liquid with that sharp cooling slap. Summer mosquito legs, meet your yellow-bottle boss.
+english_name: KINKAN 120 mL
+japanese_name: キンカン 120mL
+subcategory: anti-itch liquid
+price_range_jpy: 700-1200
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- any major drugstore
+enrichment_confidence: high
+enrichment_source_url: https://www.kinkan.co.jp/en/products/kinkan120/
+enrichment_date: '2026-05-19'
+image: /products/kinkan-anti-itch-liquid.webp

@@ -27,3 +27,22 @@ suitcase_score: 8
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Yoku Moku Cigare. Buttery rolled cookies in the blue tin; department-store gift math that always works.
+english_name: Yoku Moku Cigare
+japanese_name: ヨックモック シガール
+subcategory: cookies
+price_range_jpy: 1000-4500
+where_to_buy:
+- Yoku Moku shops
+- department store food halls
+- airport souvenir shops
+- online official shop
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: high
+enrichment_source_url: https://yokumoku.co.jp/products/1010011201030
+enrichment_date: '2026-05-19'
+image: /products/yoku-moku-cigare.webp

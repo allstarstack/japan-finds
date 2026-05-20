@@ -25,3 +25,14 @@ display_strategy: "show_all"
 featured: true
 name_jp: "コスプレ"
 agent_notes: "Category-level only exact items vary by store"
+
+description: Donki costume floor finds. Kigurumi, maid outfits, party hats, and chaos stacked like a dare.
+english_name: Donki Costume Floor Finds
+japanese_name: ドン・キホーテ コスプレ衣装
+subcategory: costumes
+price_range_jpy: 500-3000
+where_to_buy:
+- Donki
+enrichment_confidence: low
+enrichment_source_url: https://www.donki.com/season/autumn/
+enrichment_date: '2026-05-19'

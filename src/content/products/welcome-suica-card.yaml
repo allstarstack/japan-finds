@@ -22,3 +22,18 @@ suitcase_score: 5
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Welcome Suica card. Tourist IC card for trains, buses, lockers, vending machines, and konbini panic-buying.
+english_name: Welcome Suica Card
+japanese_name: ウェルカムスイカ
+subcategory: transit card
+price_range_jpy: 1000-20000
+where_to_buy:
+- JR East travel service counters
+- Welcome Suica machines
+- Haneda Airport
+- Narita Airport
+enrichment_confidence: medium
+enrichment_source_url: https://www.jreast.co.jp/en/multi/welcomesuica/welcomesuica.html
+enrichment_date: '2026-05-19'
+image: /products/welcome-suica-card.webp

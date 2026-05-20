@@ -25,3 +25,21 @@ suitcase_score: 7
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tepra label maker. King Jim's tiny label printer for people who want every drawer to confess its contents. Great for renters, planners, and suitcase organization goblins.
+english_name: King Jim Tepra PRO MARK SR-MK1
+japanese_name: キングジム テプラ PRO MARK SR-MK1
+subcategory: label maker
+price_range_jpy: 15000-20000
+where_to_buy:
+- Yodobashi Camera
+- Bic Camera
+- Loft
+- Tokyu Hands
+- Amazon Japan
+safety_flags:
+- voltage_100v
+enrichment_confidence: high
+enrichment_source_url: https://www.kingjim.co.jp/news/detail/556.html
+enrichment_date: '2026-05-19'
+image: /products/tepra-label-maker.webp

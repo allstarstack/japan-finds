@@ -25,3 +25,16 @@ suitcase_score: 0
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Replica display katana. Looks serious on a wall, becomes a paperwork problem at airports fast.
+english_name: Replica Display Samurai Sword
+japanese_name: 模造刀
+subcategory: souvenir sword
+price_range_jpy: 3000-30000
+where_to_buy:
+- Asakusa souvenir shops
+- samurai museum shops
+- Donki
+enrichment_confidence: low
+enrichment_source_url: https://samuraistore.com/collections/replica-display-sword
+enrichment_date: '2026-05-19'

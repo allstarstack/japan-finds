@@ -18,3 +18,17 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+
+description: Aizome indigo dyeing workshop. Dye a handkerchief, scarf, or tote in deep Japanese blue. Hands blue, souvenir earned.
+english_name: Aizome Indigo Dyeing Workshop
+japanese_name: 藍染め体験
+subcategory: craft workshop
+price_range_jpy: 3000-8000
+where_to_buy:
+- Tokushima craft workshops
+- Tokyo craft studios
+- Rakuten Travel Experiences
+- local tourism offices
+enrichment_confidence: low
+enrichment_source_url: https://nishi-awa.jp/english/reserve/2009/
+enrichment_date: '2026-05-19'

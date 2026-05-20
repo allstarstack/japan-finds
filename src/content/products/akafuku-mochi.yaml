@@ -29,3 +29,17 @@ suitcase_score: 4
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Akafuku mochi. Soft rice cake under smooth red bean paste, straight from the Ise souvenir canon. Buy it early because the shelf life is aggressively short.
+english_name: Akafuku Mochi
+japanese_name: 赤福餅
+subcategory: mochi
+price_range_jpy: 900-1300
+where_to_buy:
+- Akafuku stores
+- Ise
+- Nagoya Station
+- Kintetsu station kiosks
+enrichment_confidence: medium
+enrichment_source_url: https://www.akafuku.co.jp/en/
+enrichment_date: '2026-05-19'

@@ -31,3 +31,18 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "明太子・たらこおにぎり"
 agent_notes: "Specific SKU varies by chain"
+
+description: Mentaiko onigiri. Rice triangle filled with salty cod roe and a little Fukuoka attitude. Grab it cold from the konbini case when tuna mayo feels too safe.
+english_name: Mentaiko / Tarako Onigiri
+japanese_name: 明太子・たらこおにぎり
+subcategory: onigiri
+price_range_jpy: 150-250
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: low
+enrichment_source_url: https://www.family.co.jp/for_tourist/en.html
+enrichment_date: '2026-05-19'

@@ -24,3 +24,15 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "スーツケース"
 agent_notes: "Donki PB carrycase line updated in 2024"
+
+description: Cheap hard-shell suitcase. Extra luggage for the final boss called 'I bought too much.' Buy it near the end, not day two.
+english_name: Cheap Hard-Shell Suitcase
+japanese_name: 格安ハードスーツケース
+subcategory: luggage
+price_range_jpy: 3000-8000
+where_to_buy:
+- Donki
+- discount luggage shops
+- home centers
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

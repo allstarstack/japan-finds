@@ -21,3 +21,20 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+
+description: Yuzu kosho. Salty yuzu-and-green-chili paste; tiny tube, aggressive opinions, excellent on yakitori and ramen.
+english_name: S&B Yuzu Kosho Spicy Citrus Paste
+japanese_name: エスビー 柚子こしょう
+subcategory: condiment
+price_range_jpy: 150-400
+where_to_buy:
+- supermarkets
+- Donki
+- department store food halls
+- airport souvenir shops
+safety_flags:
+- citrus_ingestion
+enrichment_confidence: high
+enrichment_source_url: https://www.sbfoods-worldwide.com/products/search/026.html
+enrichment_date: '2026-05-19'
+image: /products/yuzu-kosho.webp

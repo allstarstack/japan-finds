@@ -28,3 +28,16 @@ launch_category: "drugstore"
 fill_type: "verified"
 display_strategy: "show_all"
 sub_chip: "meds"
+
+description: Panshiron Cure. Stomach tablets for heartburn, acid reflux, and the ramen bowl that fought back. Drugstore rescue after rich food goes rogue.
+english_name: Panshiron Cure SP Tablets
+japanese_name: パンシロンキュアSP錠
+subcategory: stomach medicine
+price_range_jpy: 1000-2400
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: medium
+enrichment_source_url: https://jp.rohto.com/pansiron/cure-s/
+enrichment_date: '2026-05-19'

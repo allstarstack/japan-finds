@@ -24,3 +24,19 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kokuyo Campus notebook set. Japan's student notebook default in a five-pack. Buy it and briefly become the person who color-codes subjects.
+english_name: Kokuyo Campus Notebook Set of 5
+japanese_name: コクヨ キャンパスノート 5冊パック
+subcategory: notebook
+price_range_jpy: 500-900
+where_to_buy:
+- Loft
+- Tokyu Hands
+- Itoya
+- stationery shops
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://www.kokuyostore.com/en_US/stationery/stationery-notebooks/campus-notebook-set-of-5-color-6mm-dot-line-b5/NO-3CBTNX5.html?srsltid=AfmBOoplDsH1uZ3Pv8TGnDe8t8lpUjDGqmaoBrjcNuwh88oazxxrh7iB
+enrichment_date: '2026-05-19'
+image: /products/kokuyo-campus-notebooks.webp

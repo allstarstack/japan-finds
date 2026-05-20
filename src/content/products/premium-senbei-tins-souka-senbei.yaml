@@ -27,3 +27,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "草加せんべい"
 agent_notes: "Regional maker varies"
+
+description: Soka senbei. Crisp soy-sauce rice crackers from Saitama. Old-school edible souvenir that survives suitcase abuse better than most snacks.
+english_name: Soka Senbei
+japanese_name: 草加せんべい
+subcategory: rice crackers
+price_range_jpy: 1000-3000
+where_to_buy:
+- Soka senbei shops
+- Saitama souvenir shops
+- department store food halls
+- Tokyo Station souvenir shops
+safety_flags:
+- contains_gluten
+enrichment_confidence: low
+enrichment_source_url: https://saitama-supportdesk.com/features/post-3911/
+enrichment_date: '2026-05-19'
+image: /products/premium-senbei-tins-souka-senbei.webp

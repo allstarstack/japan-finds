@@ -23,3 +23,17 @@ suitcase_score: 10
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Majolica Majorca Lash Expander. Mascara with dramatic length and zero chill packaging. Drugstore makeup aisle pick for lashes that came for plot development.
+english_name: Majolica Majorca Lash Expander Long Long Long EX Mascara
+japanese_name: マジョリカ マジョルカ ラッシュエキスパンダー ロングロングロング EX
+subcategory: mascara
+price_range_jpy: 1200-1800
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Ainz & Tulpe
+- Loft
+enrichment_confidence: medium
+enrichment_source_url: https://www.yesstyle.com/en/shiseido-majolica-majorca-lash-expander-long-long-long-ex-mascara/info.html/pid.1130587589
+enrichment_date: '2026-05-19'

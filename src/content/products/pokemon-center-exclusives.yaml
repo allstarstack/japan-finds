@@ -26,3 +26,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ポケモンセンター オリジナルグッズ"
 agent_notes: "Exclusive goods rotate"
+
+description: Pokémon Center original merch. Plush walls, local designs, and Japan-only chaos that triggers instant suitcase math. Budget room before entering.
+english_name: Pokémon Center Original Merchandise
+japanese_name: ポケモンセンター オリジナルグッズ
+subcategory: character merchandise
+price_range_jpy: 1000-6000
+where_to_buy:
+- Pokémon Center Shibuya
+- Pokémon Center Tokyo DX
+- Pokémon Center Osaka
+- Pokémon Center Kyoto
+enrichment_confidence: low
+enrichment_source_url: https://corporate.pokemon.co.jp/en/business/shops/
+enrichment_date: '2026-05-19'
+image: /products/pokemon-center-exclusives.webp

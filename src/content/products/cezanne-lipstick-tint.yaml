@@ -27,3 +27,19 @@ suitcase_score: 9
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: CEZANNE Lip Color Shield. A ¥660 gel-film lip tint that looks more expensive than its life choices. Easy drugstore pickup, zero drama.
+english_name: CEZANNE Lip Color Shield
+japanese_name: セザンヌ リップカラーシールド
+subcategory: lip tint
+price_range_jpy: 660-800
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- Plaza
+- any major drugstore
+enrichment_confidence: high
+enrichment_source_url: https://www.cezanne.co.jp/lineup/4939553042709/
+enrichment_date: '2026-05-19'
+image: /products/cezanne-lipstick-tint.webp

@@ -25,3 +25,15 @@ suitcase_score: 9
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso Petit Block. Tiny block kits for ¥110 that somehow demand focus and emotional investment. Great hotel-night project when your feet quit.
+english_name: Daiso Petit Block Adult Penguin
+japanese_name: ダイソー プチブロック 大人ペンギン
+subcategory: mini block kit
+price_range_jpy: 110-330
+where_to_buy:
+- Daiso
+enrichment_confidence: low
+enrichment_source_url: https://jp.daisonet.com/products/4549131622188
+enrichment_date: '2026-05-19'
+image: /products/petit-block-mini-kits.webp

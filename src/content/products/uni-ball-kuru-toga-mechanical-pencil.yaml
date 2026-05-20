@@ -23,3 +23,19 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kuru Toga mechanical pencil. The lead rotates as you write, because Japan looked at pencil tips and chose engineering violence.
+english_name: Uni-ball Kuru Toga Mechanical Pencil
+japanese_name: クルトガ シャープペンシル
+subcategory: stationery
+price_range_jpy: 450-800
+where_to_buy:
+- Loft
+- Hands
+- Itoya
+- Yodobashi Camera
+- Bic Camera
+enrichment_confidence: high
+enrichment_source_url: https://www.mpuni.co.jp/products/mechanical_pencils/sharp_pen/kurutoga/standard/m5_650.html
+enrichment_date: '2026-05-19'
+image: /products/uni-ball-kuru-toga-mechanical-pencil.webp

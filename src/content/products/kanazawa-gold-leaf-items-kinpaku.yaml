@@ -23,3 +23,16 @@ suitcase_score: 10
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kanazawa kinpaku items. Edible gold, cosmetics, tiny shiny souvenirs; Kanazawa puts luxury on soft serve like it is normal.
+english_name: Hakuichi Kanazawa Gold Leaf Items
+japanese_name: 箔一 金沢金箔
+subcategory: gold leaf souvenir
+price_range_jpy: 500-3000
+where_to_buy:
+- Hakuichi Kanazawa shops
+- Kanazawa souvenir shops
+- Kenrokuen area shops
+enrichment_confidence: low
+enrichment_source_url: https://hakuichi.com/aboutus
+enrichment_date: '2026-05-19'

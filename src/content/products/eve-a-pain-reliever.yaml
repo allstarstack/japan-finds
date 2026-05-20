@@ -29,3 +29,18 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "イブA錠"
 agent_notes: "Contains ibuprofen"
+
+description: EVE A tablets. Ibuprofen painkiller, easy to find when cramps or headaches interrupt sightseeing.
+english_name: EVE A Tablets
+japanese_name: イブA錠
+subcategory: painkiller
+price_range_jpy: 500-1200
+where_to_buy:
+- Matsumoto Kiyoshi
+- Sugi Drug
+- any major drugstore
+safety_flags:
+- NSAID
+enrichment_confidence: medium
+enrichment_source_url: https://www.ssp.co.jp/product/detail/evea/
+enrichment_date: '2026-05-19'

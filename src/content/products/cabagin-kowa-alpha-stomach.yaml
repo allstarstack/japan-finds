@@ -27,3 +27,17 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "キャベジンコーワαプラス"
 agent_notes: "Alpha line ended alphaplus launched 2026"
+
+description: Cabagin Kowa Alpha. Japanese stomach tablets for post-ramen regret and aggressive travel snacking.
+english_name: Cabagin Kowa Alpha
+japanese_name: キャベジンコーワα
+subcategory: stomach medicine
+price_range_jpy: 600-1800
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://search.jsm-db.info/sp_en/detail.php?txtID=4987067000184
+enrichment_date: '2026-05-19'

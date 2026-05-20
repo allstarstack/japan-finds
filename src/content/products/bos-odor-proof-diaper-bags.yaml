@@ -29,3 +29,18 @@ launch_category: "kids_family"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "BOS おむつが臭わない袋"
+
+description: BOS odor-proof diaper bags. Tiny bags that lock in diaper smell like they signed an NDA. Parents buy these before long train rides and public trash-bin anxiety.
+english_name: BOS Odor-Proof Diaper Bags
+japanese_name: おむつが臭わない袋 BOS ベビー用
+subcategory: odor-proof bags
+price_range_jpy: 300-2000
+where_to_buy:
+- Akachan Honpo
+- drugstores
+- Amazon Japan
+- Rakuten
+enrichment_confidence: high
+enrichment_source_url: https://bos-bos.com/product/bos/baby/
+enrichment_date: '2026-05-19'
+image: /products/bos-odor-proof-diaper-bags.webp

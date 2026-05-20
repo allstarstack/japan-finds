@@ -27,3 +27,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "箸置きセット"
 agent_notes: "No single product confirmed from input"
+
+description: Hashioki chopstick rests. Tiny tableware that makes dinner look ten times more intentional. Easy gift, impossible to explain why you bought six.
+english_name: Hashioki Chopstick Rest Gift Set
+japanese_name: 箸置きギフトセット
+subcategory: chopstick rest
+price_range_jpy: 1000-5000
+where_to_buy:
+- Kappabashi
+- department store tableware floors
+- souvenir shops
+- online tableware shops
+enrichment_confidence: low
+enrichment_source_url: https://tsukushi-japan.com/products/hashioki-chopstick-rest-black-set-of-5
+enrichment_date: '2026-05-19'

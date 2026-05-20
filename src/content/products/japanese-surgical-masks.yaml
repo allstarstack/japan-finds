@@ -30,3 +30,18 @@ display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "不織布マスク"
 agent_notes: "Category row maker varies"
+
+description: Unicharm Cho-Kaiteki masks. Soft ear loops, clean drugstore fit; the mask locals grab when cheap scratchy ones start bullying their face.
+english_name: Unicharm Cho-Kaiteki Mask
+japanese_name: ユニ・チャーム 超快適マスク
+subcategory: face mask
+price_range_jpy: 300-800
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- konbini
+enrichment_confidence: medium
+enrichment_source_url: https://jp.unicharm-mask.com/ja/home.html
+enrichment_date: '2026-05-19'
+image: /products/japanese-surgical-masks.webp

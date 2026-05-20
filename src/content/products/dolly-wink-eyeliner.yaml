@@ -27,3 +27,17 @@ suitcase_score: 9
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Dolly Wink liquid eyeliner. Ultra-thin brush, strong color, made for humidity days when your face has plans.
+english_name: Dolly Wink 5-Way Liquid Liner
+japanese_name: ドーリーウインク 5WAYリキッドライナー
+subcategory: eyeliner
+price_range_jpy: 1500-1800
+where_to_buy:
+- Matsumoto Kiyoshi
+- Loft
+- Donki
+- '@cosme stores'
+enrichment_confidence: medium
+enrichment_source_url: https://prtimes.jp/main/html/rd/p/000000055.000041854.html
+enrichment_date: '2026-05-19'

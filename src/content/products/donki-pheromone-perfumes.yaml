@@ -19,3 +19,16 @@ source_links:
 confidence: "medium"
 trip_score: 2
 suitcase_score: 8
+
+description: Libido Berry Rose perfume. The packaging says bedroom energy; Donki shoppers buy it half as a joke, half not.
+english_name: LC Love Cosmetic Libido Berry Rose
+japanese_name: リビドー ベリーロゼ
+subcategory: perfume
+price_range_jpy: 4000-5500
+where_to_buy:
+- Donki
+- LC Love Cosmetic online
+- Rakuten
+enrichment_confidence: low
+enrichment_source_url: https://shop.lovecosmetic.jp/view/item/000000006487
+enrichment_date: '2026-05-19'

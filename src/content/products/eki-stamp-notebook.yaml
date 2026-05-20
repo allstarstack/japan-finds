@@ -27,3 +27,17 @@ suitcase_score: 9
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Eki stamp notebook. Plain little book, big collector brain fuel at stations with free stamps.
+english_name: JR East Eki Stamp Notebook
+japanese_name: 駅スタンプ帳
+subcategory: stationery
+price_range_jpy: 500-1200
+where_to_buy:
+- JAPAN RAIL CAFE
+- JR East Travel Service Centers
+- NewDays
+- station shops
+enrichment_confidence: medium
+enrichment_source_url: https://media.jreast.co.jp/articles/3515
+enrichment_date: '2026-05-19'

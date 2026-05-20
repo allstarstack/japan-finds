@@ -21,3 +21,17 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 8
+
+description: Uchiwa hand fan. Flat summer fan, no folding drama. Festival heat, train-platform sweat, instant main-character breeze.
+english_name: Uchiwa Hand Fan
+japanese_name: 団扇
+subcategory: hand fan
+price_range_jpy: 500-3000
+where_to_buy:
+- Marugame Uchiwa shops
+- festival stalls
+- souvenir shops
+- craft stores
+enrichment_confidence: low
+enrichment_source_url: https://marugameuchiwa.com/
+enrichment_date: '2026-05-19'

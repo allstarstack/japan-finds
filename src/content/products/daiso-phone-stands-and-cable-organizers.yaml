@@ -20,3 +20,15 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso phone stand. Foldable plastic stand that turns a hotel desk into a tiny command center.
+english_name: Daiso Folding Smartphone Stand
+japanese_name: 折りたたみ式スマホスタンド
+subcategory: phone-accessory
+price_range_jpy: 100-330
+where_to_buy:
+- Daiso
+- Daiso online store
+enrichment_confidence: low
+enrichment_source_url: https://jp.daisonet.com/products/4549131874198?srsltid=AfmBOor13NwdN7P3SOqb1hhprqmkX2qtyfBncuGdIpH8m1B8roSYavPS
+enrichment_date: '2026-05-19'

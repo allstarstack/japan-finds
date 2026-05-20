@@ -27,3 +27,18 @@ suitcase_score: 9
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Goshuincho temple and shrine book. The dedicated stamp notebook, not your random travel journal. Buy it before the first shrine starts bullying your planning skills.
+english_name: Goshuincho Temple and Shrine Stamp Book
+japanese_name: 御朱印帳
+subcategory: stamp book
+price_range_jpy: 1000-3000
+where_to_buy:
+- temple offices
+- shrine offices
+- Loft
+- Hands
+- stationery shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.machiya-inn-japan.com/blog/goshuincho-guide/
+enrichment_date: '2026-05-19'

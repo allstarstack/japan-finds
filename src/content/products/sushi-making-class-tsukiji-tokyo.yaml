@@ -17,3 +17,19 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 0
+
+description: Tsukiji sushi making class. You make nigiri, realize chefs are not overpaid, then eat the evidence. Good rainy-day Tokyo plan with actual payoff.
+english_name: Tsukiji Sushi Making Class
+japanese_name: 築地 寿司作り体験
+subcategory: cooking class
+price_range_jpy: 8000-15000
+where_to_buy:
+- Tsukiji Cooking
+- Japan Wonder Travel
+- byFood
+- Tokyo cooking schools
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: low
+enrichment_source_url: https://tsukiji-cooking.com/
+enrichment_date: '2026-05-19'

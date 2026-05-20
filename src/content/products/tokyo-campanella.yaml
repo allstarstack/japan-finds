@@ -25,3 +25,21 @@ suitcase_score: 8
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tokyo Campanella. Three-layer langue de chat cookies with a delicate crunch. Tokyo Station gift energy, but less loud than the banana sponge cake aisle.
+english_name: Tokyo Campanella Chocolat
+japanese_name: 東京カンパネラ ショコラ
+subcategory: langue de chat cookie
+price_range_jpy: 650-3000
+where_to_buy:
+- Tokyo Station
+- Haneda Airport
+- Narita Airport
+- department-store food halls
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://tokyo-campanella.com/en/products/chocolat.html
+enrichment_date: '2026-05-19'

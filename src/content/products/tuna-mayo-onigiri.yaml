@@ -26,3 +26,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "手巻おにぎり ツナマヨネーズ"
+
+description: Tuna mayo onigiri. Lawson's version is soft rice, tuna-mayo filling, and the commuter breakfast that costs less than a train delay.
+english_name: Lawson Tuna Mayo Onigiri
+japanese_name: ローソン シーチキンマヨネーズおにぎり
+subcategory: onigiri
+price_range_jpy: 150-220
+where_to_buy:
+- Lawson
+- 7-Eleven
+- FamilyMart
+- konbini
+safety_flags:
+- contains_egg
+enrichment_confidence: high
+enrichment_source_url: https://www.lawson.co.jp/sp/recommend/original/detail/1507601_2168.html
+enrichment_date: '2026-05-19'
+image: /products/tuna-mayo-onigiri.webp

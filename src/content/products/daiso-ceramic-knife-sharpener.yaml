@@ -20,3 +20,15 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso ceramic knife sharpener. Tiny suction-base sharpener for standard double-edged kitchen knives.
+english_name: Daiso Compact Ceramic Knife Sharpener
+japanese_name: コンパクト包丁研ぎ（吸盤付）
+subcategory: kitchen-tool
+price_range_jpy: 100-110
+where_to_buy:
+- Daiso
+- Daiso online store
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4550480359137?srsltid=AfmBOopT_2PWjCHGbSH-_QTmpU9WJum1DTDPZNqKESw5Kf4sTG4653nX
+enrichment_date: '2026-05-19'

@@ -19,3 +19,17 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+
+description: Inden leather goods. Lacquered deerskin wallets and pouches from Yamanashi. Traditional craft that does not scream souvenir.
+english_name: Inden-ya Leather Goods
+japanese_name: 印傳屋 革小物
+subcategory: leather goods
+price_range_jpy: 3000-30000
+where_to_buy:
+- Inden-ya stores
+- department stores
+- craft shops
+- souvenir shops
+enrichment_confidence: medium
+enrichment_source_url: https://inden-ya.co.jp/global/eng/products/
+enrichment_date: '2026-05-19'

@@ -27,3 +27,21 @@ launch_category: "konbini"
 fill_type: "verified"
 display_strategy: "show_all"
 sub_chip: "drink"
+
+description: Boss Rainbow Mountain. Canned coffee with milk and sugar, the vending-machine salaryman handshake.
+english_name: Suntory Boss Coffee Rainbow Mountain Blend
+japanese_name: サントリー ボス レインボーマウンテンブレンド
+subcategory: canned coffee
+price_range_jpy: 120-170
+where_to_buy:
+- vending machines
+- konbini
+- supermarkets
+- drugstores
+safety_flags:
+- caffeine_high
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://suntorybosscoffee.com/products/rainbow-mountain-blend
+enrichment_date: '2026-05-19'
+image: /products/boss-coffee-rainbow-mountain-blend.webp

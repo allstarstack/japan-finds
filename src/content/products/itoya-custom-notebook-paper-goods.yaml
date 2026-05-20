@@ -25,3 +25,15 @@ suitcase_score: 7
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Itoya Note Couture notebook. Custom notebook from Tokyo stationery heaven. Choose paper, cover, binding, then pretend this was a practical purchase.
+english_name: Itoya Note Couture Custom Notebook
+japanese_name: 伊東屋 Note Couture カスタムノート
+subcategory: stationery
+price_range_jpy: 1000-4000
+where_to_buy:
+- G.Itoya Ginza
+- Itoya stores
+enrichment_confidence: medium
+enrichment_source_url: https://digjapan.travel/en/blog/id%3D12331
+enrichment_date: '2026-05-19'

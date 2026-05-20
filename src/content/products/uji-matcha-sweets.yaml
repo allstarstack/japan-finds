@@ -26,3 +26,21 @@ suitcase_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Uji matcha sweets. Matcha cookies, cakes, and chocolate with Kyoto tea doing the heavy lifting. The flavor is earthy, bitter-sweet, and very good at pretending to be a grown-up gift.
+english_name: Uji Matcha Sweets
+japanese_name: 宇治抹茶スイーツ
+subcategory: matcha sweets
+price_range_jpy: 800-3000
+where_to_buy:
+- Kyoto souvenir shops
+- Tokyo Station
+- department-store food halls
+- airport gift shops
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://tokyo-campanella.com/en/products/matcha.html
+enrichment_date: '2026-05-19'

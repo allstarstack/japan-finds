@@ -32,3 +32,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ガシャポン"
 agent_notes: "Capsule lineup changes monthly"
+
+description: Gachapon capsule toys. ¥300ish for a tiny plastic decision you cannot fully control. Train stations, malls, arcades; the machines hunt in packs.
+english_name: Bandai Gashapon Capsule Toy
+japanese_name: ガシャポン
+subcategory: capsule toy
+price_range_jpy: 300-500
+where_to_buy:
+- Gashapon Bandai Official Shop
+- Gashapon no Depato
+- arcades
+- shopping malls
+enrichment_confidence: low
+enrichment_source_url: https://www.gashapon.jp/
+enrichment_date: '2026-05-19'

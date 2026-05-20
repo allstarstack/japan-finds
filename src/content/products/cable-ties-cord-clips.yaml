@@ -26,3 +26,17 @@ suitcase_score: 9
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Cable clips. Tiny ¥100 desk-control pieces for chargers, hotel cables, and the octopus living in your bag.
+english_name: Daiso Cable Clips
+japanese_name: ダイソー ケーブルクリップ
+subcategory: cable organizer
+price_range_jpy: 100-300
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Donki
+enrichment_confidence: low
+enrichment_source_url: https://daisous.com/products/ec-4902993172251
+enrichment_date: '2026-05-19'

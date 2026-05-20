@@ -22,3 +22,17 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 7
+
+description: Benriner slicer. Razor-sharp Japanese mandoline for perfect shreds and immediate respect for your fingertips.
+english_name: Benriner Vegetable Slicer
+japanese_name: ベンリナー 野菜スライサー
+subcategory: kitchen tool
+price_range_jpy: 2500-4500
+where_to_buy:
+- Tokyu Hands
+- Kappabashi kitchenware shops
+- Amazon Japan
+- Rakuten
+enrichment_confidence: medium
+enrichment_source_url: https://thebenriner.com/
+enrichment_date: '2026-05-19'

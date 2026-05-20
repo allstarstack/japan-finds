@@ -27,3 +27,17 @@ suitcase_score: 5
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Fino hair mask. Thick tub treatment for dry hair, the drugstore beauty aisle pick with suitcase-stuffer energy.
+english_name: Fino Premium Touch Hair Mask
+japanese_name: フィーノ プレミアムタッチ ヘアマスク
+subcategory: hair mask
+price_range_jpy: 800-1500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- '@cosme stores'
+enrichment_confidence: medium
+enrichment_source_url: https://japanesetaste.com/products/fino-hair-mask-premium-touch-intensive-repair-treatment-230g
+enrichment_date: '2026-05-19'

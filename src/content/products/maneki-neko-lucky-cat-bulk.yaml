@@ -26,3 +26,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "招き猫"
 agent_notes: "Souvenir category maker varies"
+
+description: Maneki-neko lucky cat set. Tiny ceramic chaos for desks, shops, and suitcase corners. Bulk-buy it when one cat feels like rookie numbers.
+english_name: Maneki-neko Lucky Cat Set
+japanese_name: 招き猫セット
+subcategory: souvenir figurine
+price_range_jpy: 1000-33000
+where_to_buy:
+- Donki
+- Nakamise-dori souvenir shops
+- Rakuten
+enrichment_confidence: low
+enrichment_source_url: https://search.rakuten.co.jp/search/mall/%E6%8B%9B%E3%81%8D%E7%8C%AB%2B%E3%82%BB%E3%83%83%E3%83%88/
+enrichment_date: '2026-05-19'
+image: /products/maneki-neko-lucky-cat-bulk.webp

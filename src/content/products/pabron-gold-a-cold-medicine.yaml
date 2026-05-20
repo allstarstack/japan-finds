@@ -29,3 +29,18 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "パブロンゴールドA"
 agent_notes: "Multi-active cold medicine"
+
+description: Pabron Gold A. Multi-symptom cold medicine for the 'my nose is filing taxes without me' phase. Ask the pharmacist first, especially if you take other meds.
+english_name: Pabron Gold A
+japanese_name: パブロンゴールドA
+subcategory: cold medicine
+price_range_jpy: 1000-2200
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+safety_flags:
+- multi_active_cold_med
+enrichment_confidence: low
+enrichment_source_url: https://www.taisho.co.jp/en/company/news/20250918004642/
+enrichment_date: '2026-05-19'

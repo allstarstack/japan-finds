@@ -21,3 +21,18 @@ source_links:
 confidence: "high"
 trip_score: 0
 suitcase_score: 0
+
+description: Toraya Kobo daifuku. Fresh mochi wagashi with bean paste, made to be eaten quickly. Pick it up from a sweets counter and do not save it for later like a fool.
+english_name: Toraya Kobo Daifuku
+japanese_name: とらや工房 大福
+subcategory: fresh wagashi
+price_range_jpy: 300-800
+where_to_buy:
+- Toraya
+- department store food halls
+- wagashi shops
+- station sweets counters
+enrichment_confidence: low
+enrichment_source_url: https://www.toraya-kobo.jp/en/menu/
+enrichment_date: '2026-05-19'
+image: /products/live-wagashi-fresh-mochi-daifuku.webp

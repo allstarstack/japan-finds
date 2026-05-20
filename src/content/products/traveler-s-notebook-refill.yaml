@@ -28,3 +28,16 @@ suitcase_score: 9
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Traveler's Notebook refill. Slim paper refill for the leather notebook system. The blank one is the safer buy when your travel plans already have enough structure.
+english_name: Traveler's Notebook Refill
+japanese_name: トラベラーズノート リフィル
+subcategory: notebook refill
+price_range_jpy: 300-800
+where_to_buy:
+- Traveler's Factory
+- Loft
+- Tokyu Hands
+- stationery stores
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

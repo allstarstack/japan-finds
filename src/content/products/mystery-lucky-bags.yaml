@@ -27,3 +27,17 @@ source_links:
 confidence: "medium"
 trip_score: 6
 suitcase_score: 4
+
+description: Fukubukuro lucky bags. New Year mystery bundles with either a bargain or a personal attack inside. Department stores, food brands, and Donki all get involved.
+english_name: Fukubukuro Lucky Bags
+japanese_name: 福袋
+subcategory: lucky bag
+price_range_jpy: 1000-20000
+where_to_buy:
+- Donki
+- department stores
+- brand shops
+- shopping malls
+enrichment_confidence: low
+enrichment_source_url: https://www.tokyoweekender.com/japan-life/japanese-lucky-bag-fukubukuro-shopping-guide-2026/
+enrichment_date: '2026-05-19'

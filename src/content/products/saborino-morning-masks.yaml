@@ -29,3 +29,17 @@ suitcase_score: 7
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Saborino morning masks. One-minute morning sheet masks for people who want skincare but not a personality arc.
+english_name: Saborino Botanical Morning Mask
+japanese_name: サボリーノ ボタニカルタイプ 朝用マスク
+subcategory: morning sheet mask
+price_range_jpy: 1000-1800
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- Hands
+enrichment_confidence: medium
+enrichment_source_url: https://saborino.sg/products/botanical-morning-mask/
+enrichment_date: '2026-05-19'

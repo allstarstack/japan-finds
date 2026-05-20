@@ -26,3 +26,19 @@ trip_score: 7
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: 'Tax-free electronics. Big-camera-store treasure hunting with one catch: Japan is 100V, so check voltage before adopting a rice cooker.'
+english_name: Bic Camera Tax-Free Electronics
+japanese_name: ビックカメラ 免税家電
+subcategory: tax-free electronics
+price_range_jpy: 5000-200000
+where_to_buy:
+- Bic Camera
+- Yodobashi Camera
+- Kojima
+- Sofmap
+safety_flags:
+- voltage_100v
+enrichment_confidence: low
+enrichment_source_url: https://www.biccamera.co.jp/language/forec/english.html
+enrichment_date: '2026-05-19'

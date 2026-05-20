@@ -25,3 +25,17 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: TRAVELER'S Notebook. Leather cover plus refill system for tickets, sketches, stamps, and mild stationery obsession. The notebook that makes receipts feel important.
+english_name: TRAVELER'S Notebook
+japanese_name: トラベラーズノート
+subcategory: notebook
+price_range_jpy: 4000-8000
+where_to_buy:
+- Traveler's Factory
+- Loft
+- Tokyu Hands
+- Itoya
+enrichment_confidence: medium
+enrichment_source_url: https://travelerscompanyusa.com/
+enrichment_date: '2026-05-19'

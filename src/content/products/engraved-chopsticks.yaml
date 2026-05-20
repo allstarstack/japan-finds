@@ -26,3 +26,16 @@ suitcase_score: 10
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Engraved chopsticks. Personal name on real-use tableware, the souvenir that survives past the snack pile.
+english_name: Name-Engraved Japanese Chopsticks
+japanese_name: 名入れ箸
+subcategory: chopsticks
+price_range_jpy: 1000-5000
+where_to_buy:
+- Kappabashi Mikura
+- Ginza Natsuno
+- department store tableware floors
+enrichment_confidence: medium
+enrichment_source_url: https://kappabashi-mikura.com/en
+enrichment_date: '2026-05-19'

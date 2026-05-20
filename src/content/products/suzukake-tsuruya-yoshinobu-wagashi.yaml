@@ -29,3 +29,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "鈴懸 和菓子 / 鶴屋吉信 和菓子"
 agent_notes: "Row combines two wagashi makers"
+
+description: Tsuruya Yoshinobu wagashi. Elegant Japanese sweets for people who want dessert to look like it has a trust fund. Buy same-day; these do not travel like KitKats.
+english_name: Tsuruya Yoshinobu Seasonal Namagashi
+japanese_name: 鶴屋吉信 季節の生菓子
+subcategory: wagashi
+price_range_jpy: 500-1500
+where_to_buy:
+- Tsuruya Yoshinobu
+- Suzukake
+- department store wagashi counters
+enrichment_confidence: low
+enrichment_source_url: https://www.tsuruyayoshinobu.jp/product/namagashi
+enrichment_date: '2026-05-19'
+image: /products/suzukake-tsuruya-yoshinobu-wagashi.webp

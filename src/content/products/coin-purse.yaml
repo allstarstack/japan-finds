@@ -26,3 +26,16 @@ suitcase_score: 9
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Gamaguchi coin purse. Tiny clasp pouch for the yen avalanche. Buy one before the 1-yen coins start reproducing.
+english_name: Gamaguchi Coin Purse
+japanese_name: がま口小銭入れ
+subcategory: wallet
+price_range_jpy: 330-2000
+where_to_buy:
+- Daiso
+- Loft
+- Hands
+- souvenir shops
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

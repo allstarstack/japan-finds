@@ -24,3 +24,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "手巻おにぎり 炭火焼熟成紅しゃけ"
+
+description: Salmon onigiri. Rice, nori, grilled salmon, zero drama; the konbini lunch that knows exactly what it is.
+english_name: Lawson Hand-Rolled Grilled Salmon Onigiri
+japanese_name: 手巻おにぎり 炙り熟成紅鮭
+subcategory: onigiri
+price_range_jpy: 200-250
+where_to_buy:
+- Lawson
+- 7-Eleven
+- FamilyMart
+- any major konbini
+enrichment_confidence: high
+enrichment_source_url: https://www.lawson.co.jp/recommend/original/rice/
+enrichment_date: '2026-05-19'
+image: /products/salmon-onigiri.webp

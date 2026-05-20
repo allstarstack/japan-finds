@@ -30,3 +30,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "冷感ボディシート"
 agent_notes: "Brand varies by shelf"
+
+description: Biore cooling body wipes. One sheet turns Tokyo summer from swamp mode to survivable.
+english_name: Biore Cooling Body Wipes
+japanese_name: ビオレ 冷シート 無香性
+subcategory: body-wipes
+price_range_jpy: 300-600
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- konbini seasonal aisle
+enrichment_confidence: high
+enrichment_source_url: https://www.kao-kirei.com/ja/item/khg/biorehiyasheet/4901301348418/
+enrichment_date: '2026-05-19'
+image: /products/cooling-body-wipes.webp

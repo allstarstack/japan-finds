@@ -21,3 +21,15 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso anti-fog glasses cloth. Wipe once and your lenses stop doing the hot-ramen ghost scene.
+english_name: Daiso Anti-Fog Glasses Cloth
+japanese_name: メガネ拭きクロス（くもり止め）
+subcategory: glasses-care
+price_range_jpy: 100-110
+where_to_buy:
+- Daiso
+- Daiso online store
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4550480913995?srsltid=AfmBOoqFx6I5o4yglmdK5h6GTaUWrZoj7Dt7R-x3IUTXoWGNuqi40YM0
+enrichment_date: '2026-05-19'

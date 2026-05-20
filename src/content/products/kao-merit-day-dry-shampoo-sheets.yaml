@@ -27,3 +27,18 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Merit Day+ dry shampoo sheets. Wipe your scalp and bangs after sweat or trains; emergency hair reset in a flat packet.
+english_name: Merit Day+ Dry Shampoo Sheets
+japanese_name: メリットデイプラス ドライシャンプーシート
+subcategory: dry shampoo sheet
+price_range_jpy: 300-500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- any major drugstore
+enrichment_confidence: high
+enrichment_source_url: https://www.kao.co.jp/merit/products/dayplus/
+enrichment_date: '2026-05-19'
+image: /products/kao-merit-day-dry-shampoo-sheets.webp

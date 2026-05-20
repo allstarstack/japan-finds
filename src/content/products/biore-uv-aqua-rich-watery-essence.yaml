@@ -29,3 +29,18 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Bioré UV Aqua Rich. Lightweight Japanese sunscreen that disappears fast and makes reapplying feel less like a chore.
+english_name: Biore UV Aqua Rich Watery Essence
+japanese_name: ビオレUV アクアリッチ ウォータリーエッセンス
+subcategory: sunscreen
+price_range_jpy: 700-1200
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- any major drugstore
+enrichment_confidence: medium
+enrichment_source_url: https://www.kao.com/sg/products/biore/bio_aquarich_essence_00/
+enrichment_date: '2026-05-19'
+image: /products/biore-uv-aqua-rich-watery-essence.webp

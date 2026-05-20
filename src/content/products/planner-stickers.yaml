@@ -28,3 +28,18 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Midori planner stickers. Tiny Japan-made stickers for diaries and bullet journals. Loft and Hands bait for anyone who thinks one more sticker sheet will fix time management.
+english_name: Midori Planner Stickers
+japanese_name: ミドリ 手帳シール
+subcategory: stationery stickers
+price_range_jpy: 250-500
+where_to_buy:
+- Loft
+- Hands
+- Itoya
+- major stationery stores
+enrichment_confidence: low
+enrichment_source_url: https://www.midori-japan.co.jp/english/products/sticker/
+enrichment_date: '2026-05-19'
+image: /products/planner-stickers.webp

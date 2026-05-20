@@ -27,3 +27,18 @@ launch_category: "drugstore"
 fill_type: "verified"
 display_strategy: "show_all"
 sub_chip: "comfort"
+
+description: Apagard Premio Toothpaste. Nano-hydroxyapatite toothpaste, fluoride-free, and very Japanese-drugstore coded. People buy it when regular toothpaste feels too basic.
+english_name: Apagard Premio Toothpaste
+japanese_name: アパガード プレミオ
+subcategory: toothpaste
+price_range_jpy: 900-1500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- Amazon Japan
+enrichment_confidence: high
+enrichment_source_url: https://www.sangi-co.com/en/products/apagard_premio/
+enrichment_date: '2026-05-19'
+image: /products/apagard-premio-toothpaste.webp

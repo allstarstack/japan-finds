@@ -30,3 +30,19 @@ launch_category: "donki"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "うまい棒"
+
+description: Umaibo multipack. A bag of crunchy puff sticks for kids, offices, or snack goblins with no portion control. Cheap, light, and suitcase-friendly.
+english_name: Umaibo Corn Potage Multipack
+japanese_name: うまい棒 コーンポタージュ味 まとめ買い
+subcategory: corn puff multipack
+price_range_jpy: 300-600
+where_to_buy:
+- Donki
+- supermarkets
+- dagashi shops
+- Amazon Japan
+safety_flags:
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://japanesetaste.com/products/yaokin-umaibo-corn-potage-corn-puff-snack-pack-of-30-pieces
+enrichment_date: '2026-05-19'

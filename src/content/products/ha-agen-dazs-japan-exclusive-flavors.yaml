@@ -28,3 +28,20 @@ display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "ハーゲンダッツ ミニカップ"
 agent_notes: "Japan-exclusive flavors rotate"
+
+description: Häagen-Dazs Japan limited cups. Rotating freezer bait with flavors like tea, milk, and seasonal dessert chaos. The konbini ice cream case gets dramatic here.
+english_name: Häagen-Dazs Japan Limited Mini Cup
+japanese_name: ハーゲンダッツ 期間限定ミニカップ
+subcategory: ice cream
+price_range_jpy: 300-450
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- supermarkets
+safety_flags:
+- contains_dairy
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://www.icecream.com/us/en/brands/haagen-dazs/products/green-tea-ice-cream
+enrichment_date: '2026-05-19'

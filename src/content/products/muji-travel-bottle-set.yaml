@@ -21,3 +21,15 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MUJI travel bottle set. Tiny refill bottles for shampoo, toner, and whatever liquid wants to leak in your pouch. Boring, useful, very airport-security coded.
+english_name: MUJI PET Travel Bottle
+japanese_name: 無印良品 PET小分けボトル
+subcategory: travel bottle
+price_range_jpy: 150-600
+where_to_buy:
+- MUJI
+- MUJI online store
+enrichment_confidence: low
+enrichment_source_url: https://www.muji.com/jp/ja/store/cmdty/section/S0003803
+enrichment_date: '2026-05-19'

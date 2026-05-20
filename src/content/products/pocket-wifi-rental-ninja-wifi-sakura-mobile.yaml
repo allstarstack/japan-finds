@@ -25,3 +25,18 @@ suitcase_score: 0
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Ninja WiFi pocket router. Rental WiFi box for group trips. Pick it up at the airport, share it with everyone, then panic less about roaming.
+english_name: Ninja WiFi Pocket Router Rental
+japanese_name: 忍者WiFi
+subcategory: pocket wifi rental
+price_range_jpy: 440-1000
+where_to_buy:
+- Ninja WiFi
+- Sakura Mobile
+- airport pickup counters
+- online rental sites
+enrichment_confidence: low
+enrichment_source_url: https://ninjawifi.com/en
+enrichment_date: '2026-05-19'
+image: /products/pocket-wifi-rental-ninja-wifi-sakura-mobile.webp

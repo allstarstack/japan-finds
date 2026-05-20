@@ -20,3 +20,14 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Seria stationery. Stickers, washi tape, tiny notebooks; 100-yen restraint leaves the chat immediately.
+english_name: Seria Stationery
+japanese_name: セリア文房具
+subcategory: 100-yen stationery
+price_range_jpy: 110-330
+where_to_buy:
+- Seria
+enrichment_confidence: low
+enrichment_source_url: https://japantravel.navitime.com/en/area/jp/guide/NTJjtg2510074-en/
+enrichment_date: '2026-05-19'

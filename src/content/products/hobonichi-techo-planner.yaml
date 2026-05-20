@@ -24,3 +24,17 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hobonichi Techo Planner. The English-layout Hobonichi daily planner. Tiny grid, quotes, paper nerd happiness.
+english_name: Hobonichi Techo Planner
+japanese_name: ほぼ日手帳 Planner
+subcategory: planner
+price_range_jpy: 3000-6000
+where_to_buy:
+- Loft
+- Hobonichi official store
+- Tobichi Tokyo
+- stationery shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.1101.com/store/techo/en/?srsltid=AfmBOoogbqjJKnh9wvbzuptwnv8J3prnGIJtxanJeAREV7_w2zjW4tfI
+enrichment_date: '2026-05-19'

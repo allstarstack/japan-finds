@@ -26,3 +26,16 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "ファミマフラッペ"
+
+description: Famima Frappé. Frozen cup plus hot milk from the machine, basically dessert wearing a convenience-store badge.
+english_name: FamilyMart Frappé
+japanese_name: ファミマフラッペ
+subcategory: frozen drink
+price_range_jpy: 300-400
+where_to_buy:
+- FamilyMart
+safety_flags:
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://www.family.co.jp/campaign/spot/famimacafe_make.html
+enrichment_date: '2026-05-19'

@@ -26,3 +26,17 @@ suitcase_score: 9
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Matcha powder. Fine green tea powder for whisking, lattes, and pretending your hotel cup is a tea room. Kyoto brands like Ippodo are the safe flex.
+english_name: Ippodo Matcha Powder
+japanese_name: 一保堂 抹茶
+subcategory: tea powder
+price_range_jpy: 1000-3000
+where_to_buy:
+- Ippodo Tea
+- department store food halls
+- specialty tea shops
+enrichment_confidence: medium
+enrichment_source_url: https://ippodotea.com/collections/matcha
+enrichment_date: '2026-05-19'
+image: /products/matcha-powder.webp

@@ -31,3 +31,19 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "即席みそ汁"
 agent_notes: "Category row maker varies"
+
+description: Amano Foods instant miso soup variety pack. Freeze-dried miso soup that wakes up with hot water. Hotel-room dinner upgrade when FamilyMart has defeated you.
+english_name: Amano Foods Freeze-Dried Miso Soup Variety Pack
+japanese_name: アマノフーズ フリーズドライ味噌汁 バラエティセット
+subcategory: instant soup
+price_range_jpy: 600-1500
+where_to_buy:
+- supermarkets
+- Donki
+- drugstores
+- airport souvenir shops
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: medium
+enrichment_source_url: https://japanesetaste.com/products/amano-foods-freeze-dried-japanese-miso-soup-set-ii-10-servings
+enrichment_date: '2026-05-19'

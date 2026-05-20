@@ -31,3 +31,17 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "ロイヒつぼ膏"
 agent_notes: "Topical pain-relief patch category"
+
+description: Roihi-Tsuboko patches. Tiny heat patches for stiff shoulders and backs; grandma-core packaging, serious post-walk relief energy.
+english_name: Roihi-Tsuboko Patches
+japanese_name: ロイヒつぼ膏
+subcategory: pain relief patch
+price_range_jpy: 1000-1400
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://www.roihi.com/en/tubokou.html
+enrichment_date: '2026-05-19'
+image: /products/roihi-tsuboko-patches.webp

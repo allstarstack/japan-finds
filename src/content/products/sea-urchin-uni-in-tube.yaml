@@ -21,3 +21,18 @@ source_links:
 confidence: "medium"
 trip_score: 3
 suitcase_score: 3
+
+description: Uni tube. Briny sea urchin paste for rice, pasta, and people who think butter is too emotionally stable.
+english_name: Uni Tube Paste
+japanese_name: うにチューブ
+subcategory: seafood paste
+price_range_jpy: 500-1500
+where_to_buy:
+- Donki
+- Japanese supermarkets
+- seafood souvenir shops
+- airport souvenir shops
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

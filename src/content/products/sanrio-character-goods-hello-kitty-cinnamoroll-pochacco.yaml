@@ -27,3 +27,19 @@ launch_category: "kids_family"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "サンリオキャラクターグッズ"
+
+description: Sanrio character goods. Hello Kitty, Cinnamoroll, Pochacco; Japan turns cute into an infrastructure project.
+english_name: Hello Kitty Mini Mirror and Comb Keychain
+japanese_name: ハローキティ ミニミラー＆コームキーホルダー
+subcategory: character goods
+price_range_jpy: 500-3000
+where_to_buy:
+- Sanrio stores
+- Kiddy Land
+- Donki
+- Loft
+- airport souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://www.sanrio.com/collections/hello-kitty/products/hello-kitty-mini-mirror-comb-keychain-sanrio-forever-series
+enrichment_date: '2026-05-19'
+image: /products/sanrio-character-goods-hello-kitty-cinnamoroll-pochacco.webp

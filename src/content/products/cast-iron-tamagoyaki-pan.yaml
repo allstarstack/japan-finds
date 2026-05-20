@@ -20,3 +20,17 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 4
+
+description: Oigen kokotama iron tamagoyaki pan. Heavy little rectangle for serious omelet energy. Buy it when breakfast needs main-character treatment.
+english_name: Oigen Kokotama Iron Tamagoyaki Pan
+japanese_name: 鉄のたまご焼き kokotama
+subcategory: kitchenware
+price_range_jpy: 8000-9000
+where_to_buy:
+- Oigen
+- specialty cookware shops
+- department stores
+enrichment_confidence: high
+enrichment_source_url: https://oigen.jp/products/kokotama
+enrichment_date: '2026-05-19'
+image: /products/cast-iron-tamagoyaki-pan.webp

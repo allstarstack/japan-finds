@@ -24,3 +24,16 @@ suitcase_score: 10
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Omamori charm. A small shrine amulet for wishes like safe travel, good health, or emotional damage control. Buy one at the shrine, keep it respectfully.
+english_name: Meiji Jingu Omamori Charm
+japanese_name: 明治神宮 お守り
+subcategory: shrine charm
+price_range_jpy: 500-1500
+where_to_buy:
+- Meiji Jingu
+- major shrines
+- temples with charm counters
+enrichment_confidence: medium
+enrichment_source_url: https://www.meijijingu.or.jp/en/feelshinto/5.php
+enrichment_date: '2026-05-19'

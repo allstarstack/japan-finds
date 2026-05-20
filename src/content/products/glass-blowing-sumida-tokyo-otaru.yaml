@@ -21,3 +21,17 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 6
+
+description: Glass blowing experience. You shape a cup while trying not to look terrified near molten glass. Sumida and Otaru turn craft time into luggage with emotional value.
+english_name: Glass Blowing Experience
+japanese_name: 吹きガラス体験
+subcategory: craft experience
+price_range_jpy: 4400-4500
+where_to_buy:
+- Asoview
+- Sumida glass studios
+- Otaru glass workshops
+- Klook
+enrichment_confidence: low
+enrichment_source_url: https://otaru-ilponte.com/english/
+enrichment_date: '2026-05-19'

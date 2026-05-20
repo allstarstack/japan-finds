@@ -27,3 +27,18 @@ suitcase_score: 8
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Salted sakura blossoms. Salty-pink little flowers for tea, sweets, and the moment your dessert decides it studied abroad in Kyoto.
+english_name: CHINRIU Salt Pickled Sakura Cherry Blossoms
+japanese_name: 桜花漬
+subcategory: tea garnish
+price_range_jpy: 500-900
+where_to_buy:
+- department-store food halls
+- Japanese grocery stores
+- souvenir shops
+- online Japanese specialty stores
+enrichment_confidence: medium
+enrichment_source_url: https://anything-from-japan.com/pickled-sakura-cherry-blossoms-30g
+enrichment_date: '2026-05-19'
+image: /products/sakura-tea-salted-sakura-packets.webp

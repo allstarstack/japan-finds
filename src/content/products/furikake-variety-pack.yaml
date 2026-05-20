@@ -21,3 +21,19 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+
+description: Marumiya furikake variety pack. Tiny rice seasoning packets, the easiest way to make convenience-store rice less sad.
+english_name: Marumiya Noritama and Variety Furikake Pack
+japanese_name: 丸美屋 のりたま&バラエティー
+subcategory: rice seasoning
+price_range_jpy: 200-400
+where_to_buy:
+- supermarkets
+- Donki
+- drugstores
+- konbini rice aisle
+safety_flags:
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://prtimes.jp/main/html/rd/p/000000696.000010538.html
+enrichment_date: '2026-05-19'

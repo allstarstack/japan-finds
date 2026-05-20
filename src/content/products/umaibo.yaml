@@ -27,3 +27,19 @@ suitcase_score: 10
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Umaibo. A cheap corn puff stick with cartoon chaos on the wrapper. Corn potage is the classic gateway flavor.
+english_name: Umaibo Corn Potage
+japanese_name: うまい棒 コーンポタージュ味
+subcategory: corn puff
+price_range_jpy: 10-20
+where_to_buy:
+- konbini
+- supermarkets
+- Donki
+- dagashi shops
+safety_flags:
+- contains_dairy
+enrichment_confidence: low
+enrichment_source_url: https://japanesetaste.com/products/yaokin-umaibo-corn-potage-corn-puff-snack-pack-of-30-pieces
+enrichment_date: '2026-05-19'

@@ -29,3 +29,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ヱビスビール"
 agent_notes: "2026 limited collaboration cans confirmed"
+
+description: Yebisu Beer multipack. Richer, maltier Japanese beer; the konbini flex when you refuse to drink like a college exchange student.
+english_name: Yebisu Beer Multipack
+japanese_name: ヱビスビール パック
+subcategory: beer
+price_range_jpy: 1200-1800
+where_to_buy:
+- konbini
+- supermarkets
+- Donki
+- liquor shops
+safety_flags:
+- alcohol
+enrichment_confidence: high
+enrichment_source_url: https://www.sapporobeer.jp/yebisu/product/yebisubeer/
+enrichment_date: '2026-05-19'
+image: /products/yebisu-beer-multipack.webp

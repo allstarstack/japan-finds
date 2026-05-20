@@ -18,3 +18,18 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 10
+
+description: Tabi socks. Split-toe socks that make sandals, geta, and your toes feel weirdly organized. Buy the nice ones outside Daiso; your feet know.
+english_name: SOU SOU Tabi Socks
+japanese_name: 足袋下
+subcategory: socks
+price_range_jpy: 700-1500
+where_to_buy:
+- Tabio
+- SOU SOU
+- department stores
+- souvenir shops
+enrichment_confidence: high
+enrichment_source_url: https://www.sousou.co.jp/en-us/products/2200133
+enrichment_date: '2026-05-19'
+image: /products/tabi-socks-standalone-outside-daiso.webp

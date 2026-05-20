@@ -28,3 +28,22 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "東京ばな奈"
 agent_notes: "Not all variants sold at Donki"
+
+description: Tokyo Banana variations. Same soft cake idea, louder outfits and limited flavors. Pikachu, Doraemon, and seasonal boxes turn snack shopping into character roulette.
+english_name: Tokyo Banana Pikachu Banana Yogurt Flavor
+japanese_name: ピカチュウ東京ばな奈 バナナヨーグルト味
+subcategory: souvenir cake
+price_range_jpy: 840-2200
+where_to_buy:
+- Tokyo Station
+- Haneda Airport
+- Narita Airport
+- major Tokyo souvenir shops
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://www.tokyobanana.jp/language/en/products/73.html
+enrichment_date: '2026-05-19'
+image: /products/tokyo-banana-variations.webp

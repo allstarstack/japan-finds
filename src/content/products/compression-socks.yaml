@@ -23,3 +23,17 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MediQtto compression socks. Drugstore leg squeeze for flights and all-day walking. Put them on before your calves file a complaint.
+english_name: MediQtto Compression Socks
+japanese_name: メディキュット
+subcategory: compression socks
+price_range_jpy: 1000-3000
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- any major drugstore
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://www.mediqtto.jp/
+enrichment_date: '2026-05-19'

@@ -28,3 +28,17 @@ display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "ハンドジェル"
 agent_notes: "Category row brand varies"
+
+description: Tepika Gel. Pocket hand sanitizer, high-alcohol, drugstore-standard. Train strap touched, hands handled.
+english_name: Tepika Gel
+japanese_name: 手ピカジェル
+subcategory: hand sanitizer
+price_range_jpy: 400-900
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Sugi Drug
+- any major drugstore
+enrichment_confidence: low
+enrichment_source_url: https://www.kenei-pharm.com/tepika/
+enrichment_date: '2026-05-19'

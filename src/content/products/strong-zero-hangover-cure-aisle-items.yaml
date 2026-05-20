@@ -32,3 +32,19 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "ストロングゼロ / 二日酔い対策商品"
 agent_notes: "Mixed row alcohol flag applies to Strong Zero"
+
+description: Ukon no Chikara. Tiny turmeric drink parked near the alcohol-regret shelf. Konbini pregame logic in a 100 ml bottle.
+english_name: House Ukon no Chikara Turmeric Drink
+japanese_name: ハウス ウコンの力
+subcategory: turmeric drink
+price_range_jpy: 200-300
+where_to_buy:
+- 7-Eleven Japan
+- Lawson
+- FamilyMart
+- Donki
+- major drugstores
+enrichment_confidence: low
+enrichment_source_url: https://japanesetaste.com/products/house-ukon-no-chikara-turmeric-supplement-drink-6-bottles
+enrichment_date: '2026-05-19'
+image: /products/strong-zero-hangover-cure-aisle-items.webp

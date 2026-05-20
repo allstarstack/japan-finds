@@ -23,3 +23,18 @@ source_links:
   - "https://www.japan-guide.com/e/e2450.html"
 confidence: "medium"
 trip_score: 8
+
+description: Supermarket sashimi pack. Cheap, clean, and very much a hotel-room-right-now food, not a souvenir.
+english_name: Supermarket Sashimi Pack
+japanese_name: 刺身パック
+subcategory: raw seafood
+price_range_jpy: 400-1500
+where_to_buy:
+- Japanese supermarkets
+- department-store food halls
+- fish markets
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: low
+enrichment_source_url: https://www.tabeyoyo.com/publications/rawfish
+enrichment_date: '2026-05-19'

@@ -28,3 +28,19 @@ suitcase_score: 7
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Milk frother. Battery wand that turns konbini milk into cafe-ish foam in 20 seconds. Hotel-room latte theater, low budget edition.
+english_name: Handheld Milk Frother
+japanese_name: ハンディミルクフォーマー
+subcategory: milk frother
+price_range_jpy: 1000-2500
+where_to_buy:
+- Bic Camera
+- Yodobashi Camera
+- Donki
+- housewares shops
+safety_flags:
+- voltage_100v
+enrichment_confidence: low
+enrichment_source_url: https://www.muji.com/jp/ja/shop/045718/articles/muji-staff/536146
+enrichment_date: '2026-05-19'

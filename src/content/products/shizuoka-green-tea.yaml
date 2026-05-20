@@ -22,3 +22,18 @@ suitcase_score: 10
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Shizuoka green tea. Clean, grassy green tea from Japan's big tea country; the hotel-room upgrade over whatever sad packet came free.
+english_name: Shizuoka Green Tea
+japanese_name: 静岡茶
+subcategory: green tea
+price_range_jpy: 500-1200
+where_to_buy:
+- Shizuoka tea shops
+- Japanese supermarkets
+- department-store food halls
+- airport souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://www.japanesegreenteashops.com/products/shizuoka-powdered-green-tea-100-grams
+enrichment_date: '2026-05-19'
+image: /products/shizuoka-green-tea.webp

@@ -26,3 +26,20 @@ suitcase_score: 4
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hakkaisan Junmai Daiginjo. Clean Niigata sake with proper gift-box energy. Chill it, pour small, and let the label do half the work.
+english_name: Hakkaisan Junmai Daiginjo
+japanese_name: 八海山 純米大吟醸
+subcategory: sake
+price_range_jpy: 2000-6000
+where_to_buy:
+- department store liquor floors
+- sake shops
+- airport duty-free shops
+- Donki
+safety_flags:
+- alcohol
+enrichment_confidence: low
+enrichment_source_url: https://www.hakkaisanusa.com/shop/p/junmai-daiginjo
+enrichment_date: '2026-05-19'
+image: /products/local-sake-junmai-daiginjo-from-niigata-hyogo-akita.webp

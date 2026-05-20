@@ -26,3 +26,18 @@ suitcase_score: 0
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Ubigi Japan eSIM. Data before baggage claim drama — install before the flight, land, and act like you have your life together.
+english_name: Ubigi Japan 25GB eSIM
+japanese_name: Ubigi 日本向けeSIM 25GB 30日
+subcategory: travel eSIM
+price_range_jpy: 4500-5500
+where_to_buy:
+- Ubigi website
+- Ubigi app
+- Airalo website
+- Airalo app
+enrichment_confidence: low
+enrichment_source_url: https://cellulardata.ubigi.com/rates-and-coverage/japan-data-plans/japan-25gb-30-days/
+enrichment_date: '2026-05-19'
+image: /products/esim-airalo-ubigi-japan.webp

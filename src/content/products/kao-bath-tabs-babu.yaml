@@ -28,3 +28,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "バブ"
+
+description: Kao Bub bath tablets. Fizzy bath tabs for turning a business-hotel tub into a tiny onsen coping mechanism.
+english_name: Kao Bub Bath Tablets
+japanese_name: 花王 バブ
+subcategory: bath tablet
+price_range_jpy: 400-800
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- supermarkets
+enrichment_confidence: medium
+enrichment_source_url: https://www.kao.co.jp/bub/
+enrichment_date: '2026-05-19'

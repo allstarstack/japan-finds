@@ -22,3 +22,20 @@ source_links:
 confidence: "high"
 trip_score: 4
 suitcase_score: 1
+
+description: TOTO Washlet. Heated seat, bidet wand, button panel from the future. Admire it in hotels; do not casually stuff one into a suitcase.
+english_name: TOTO Washlet
+japanese_name: TOTO ウォシュレット
+subcategory: bidet toilet seat
+price_range_jpy: 50000-200000
+where_to_buy:
+- TOTO showroom
+- Bic Camera
+- Yodobashi Camera
+- home centers
+safety_flags:
+- voltage_100v
+enrichment_confidence: high
+enrichment_source_url: https://eu.toto.com/en/washlet-shower-toilet
+enrichment_date: '2026-05-19'
+image: /products/toto-washlet-look-only.webp

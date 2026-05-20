@@ -33,3 +33,20 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "カップヌードル"
 agent_notes: "Limited flavors rotate"
+
+description: Cup Noodle limited flavors. Nissin keeps releasing cups that sound like side quests.
+english_name: Cup Noodle Limited Flavors
+japanese_name: カップヌードル 限定フレーバー
+subcategory: instant-noodles
+price_range_jpy: 180-300
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- supermarkets
+- Donki
+safety_flags:
+- contains_gluten
+enrichment_confidence: low
+enrichment_source_url: https://www.cupnoodle.jp/
+enrichment_date: '2026-05-19'

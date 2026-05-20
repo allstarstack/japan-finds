@@ -25,3 +25,20 @@ suitcase_score: 10
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tirol-Choco variety pack. Tiny cube chocolates with a suspiciously large flavor lineup. Buy a bag, pass them around, then watch everyone pick a personality.
+english_name: Tirol-Choco Variety Pack
+japanese_name: チロルチョコ バラエティパック
+subcategory: chocolate
+price_range_jpy: 300-400
+where_to_buy:
+- konbini
+- supermarkets
+- Donki
+- drugstores
+safety_flags:
+- contains_gluten
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://shop.tirol-choco.com/products/2509_asrt_varapack
+enrichment_date: '2026-05-19'

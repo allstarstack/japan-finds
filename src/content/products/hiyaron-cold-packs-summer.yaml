@@ -23,3 +23,18 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hiyaron cold pack. Squeeze-to-chill emergency ice pack. Summer Japan turns into soup; this is pocket air-conditioning for bruises and heat.
+english_name: Hiyaron Cold Pack
+japanese_name: ヒヤロン
+subcategory: instant cold pack
+price_range_jpy: 150-300
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- convenience stores
+- supermarkets
+enrichment_confidence: high
+enrichment_source_url: https://www.lotte.co.jp/products/brand/hiyaron/
+enrichment_date: '2026-05-19'
+image: /products/hiyaron-cold-packs-summer.webp
