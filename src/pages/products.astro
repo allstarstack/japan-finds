@@ -186,7 +186,9 @@ const featured = FEATURED_ORDER.map((id) =>
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* minmax(0, 1fr) strips the auto-minimum that otherwise lets each card's
+       intrinsic min-content push the column wider than the viewport. */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
   /* Native lazy-render: the browser skips layout/paint for off-screen
