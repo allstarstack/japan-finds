@@ -107,6 +107,7 @@ const cityChips = CITY_CHIPS
             Clear filters
           </button>
         </div>
+        <p class="xlink">Looking for places to go? <a href="/places">See → /places</a></p>
         <div class="grid" data-grid>
           {sorted.map((r) => <RestaurantCard restaurant={r} />)}
         </div>
@@ -177,6 +178,21 @@ const cityChips = CITY_CHIPS
     align-items: baseline;
     gap: 6px 14px;
     margin-bottom: 14px;
+  }
+  /* Wayfinding aside — sits between the results bar and the grid as a
+     low-key cross-link to /places. Sub-CTA weight, mono to read as
+     inline copy rather than a button. */
+  .xlink {
+    margin: -4px 0 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+  .xlink a {
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   /* h2 for document outline (h1 hero -> h2 count -> h3 card names);
      the class overrides the heading defaults so it reads as a label. */

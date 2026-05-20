@@ -147,6 +147,7 @@ for (const chip of FEATURED_CHIPS) {
     <section class="presults">
       <div class="wrap">
         <h2 class="results-count" data-count>{total} places</h2>
+        <p class="xlink">Looking for restaurants? <a href="/eat">See → /eat</a></p>
         <div class="grid" data-grid>
           {places.map((p) => <PlaceCard entry={p} />)}
         </div>
@@ -282,6 +283,21 @@ for (const chip of FEATURED_CHIPS) {
     text-transform: uppercase;
     color: var(--color-ink-60);
     margin-bottom: 14px;
+  }
+  /* Wayfinding aside — sits between the results count and the grid as a
+     low-key cross-link to /eat. Sub-CTA weight, mono to read as inline
+     copy rather than a button. */
+  .xlink {
+    margin: -4px 0 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+  .xlink a {
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
   .grid {
     display: grid;
