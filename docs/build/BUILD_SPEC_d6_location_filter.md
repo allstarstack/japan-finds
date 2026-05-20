@@ -36,11 +36,11 @@ Closes the real UX gap identified in D1 spot-check: currently the only way to fi
 Five city chips + default, ordered count-descending:
 
 ```
-All Japan · Tokyo (148) · Osaka (70) · Kyoto (45) · Fukuoka (3) · Elsewhere (17)
+All Japan · Tokyo (148) · Osaka (70) · Kyoto (45) · Fukuoka (3) · Elsewhere (16)
 ```
 
 - **Filter logic:** Match `restaurants[].city` against selected chip.
-- **"Elsewhere"** matches any row whose `city` is not in `{Tokyo, Osaka, Kyoto, Fukuoka}`. Currently 17 one-off cities (Yonezawa, Izumo, Toba, Kashiwa, Futtsu, Saga, Ise, Kitakata, Saitama, Ishigaki, Niigata, Choshi, Nobeoka, Kurashiki, Koriyama, Himi, and one more).
+- **"Elsewhere"** matches any row whose `city` is not in `{Tokyo, Osaka, Kyoto, Fukuoka}`. Currently 16 one-off cities (Yonezawa, Izumo, Toba, Kashiwa, Futtsu, Saga, Ise, Kitakata, Saitama, Ishigaki, Niigata, Choshi, Nobeoka, Kurashiki, Koriyama, Himi). Total /eat row count: 282.
 - **"All Japan"** = no filter applied (default).
 - **URL param:** `?where={slug}` where slug ∈ `{tokyo, osaka, kyoto, fukuoka, elsewhere}`. Absence of param = "All Japan".
 

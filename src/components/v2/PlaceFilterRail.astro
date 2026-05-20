@@ -70,12 +70,10 @@ const { counts, flagCounts, baseCount } = Astro.props;
 </div>
 
 <style>
+  /* Phase D D6: sticky + bottom ink border moved up to the .rail-sticky
+     wrapper in /places so the location row and this row stick as a unit. */
   .prail {
-    position: sticky;
-    top: 0;
-    z-index: 20;
     background: var(--color-white);
-    border-bottom: var(--border-ink);
   }
   .prail-inner {
     max-width: var(--content-max);
@@ -195,6 +193,15 @@ const { counts, flagCounts, baseCount } = Astro.props;
     const chips = [...rail.querySelectorAll(".pchip")];
     const flags = [...rail.querySelectorAll(".pflag[data-flag]")];
     const baseBtn = rail.querySelector("[data-base-toggle]");
+    /* Phase D D6 — location chips live in a sibling LocationChipRow inside
+       the shared .rail-sticky wrapper, not in [data-place-rail], so we
+       query at document level. The data-location-chip="" button is the
+       "All Japan" default; selecting it clears the location filter. */
+    const locationBtns = [
+      ...document.querySelectorAll(
+        "[data-location-row] [data-location-chip]",
+      ),
+    ];
     const cards = [...document.querySelectorAll("[data-grid] .plc")];
     const grid = document.querySelector("[data-grid]");
     const countEl = document.querySelector("[data-count]");
@@ -203,6 +210,11 @@ const { counts, flagCounts, baseCount } = Astro.props;
     // page unambiguously reflects the filter (the strip never filters).
     const featuredEl = document.querySelector("[data-featured]");
 
+    const validLocations = new Set(
+      locationBtns.map((b) => b.dataset.locationChip || "").filter(Boolean),
+    );
+
+    let activeLocation = null;
     let activeChip = null;
     const activeFlags = new Set();
     let showBase = false;
@@ -213,8 +225,13 @@ const { counts, flagCounts, baseCount } = Astro.props;
         .map((s) => s.trim())
         .filter(Boolean);
 
+    /* replaceState (not pushState) matches the rest of this rail's
+       convention — selecting filter chips updates the URL in place rather
+       than spawning history entries the user has to back through. The
+       shareable-URL criterion still holds (read on init + popstate). */
     const syncURL = () => {
       const p = new URLSearchParams();
+      if (activeLocation) p.set("region", activeLocation);
       if (activeChip) p.set("chip", activeChip);
       if (activeFlags.size) p.set("flags", [...activeFlags].join(","));
       if (showBase) p.set("base", "1");
@@ -228,13 +245,27 @@ const { counts, flagCounts, baseCount } = Astro.props;
         const isBase = card.dataset.tier === "base";
         const fl = cardFlags(card);
         const okFlags = [...activeFlags].every((f) => fl.includes(f));
+        // Location is the same AND-filter for both tiers — every card has
+        // a data-region derived from its prefecture, so base cards in
+        // (say) Kanto stay visible when the Kanto chip is active and the
+        // bases toggle is on.
+        const okLocation =
+          !activeLocation || card.dataset.region === activeLocation;
         // Base places carry no experience chip — they show only via the
         // toggle, and never alongside a primary chip.
         const show = isBase
-          ? showBase && !activeChip && okFlags
-          : (!activeChip || card.dataset.chip === activeChip) && okFlags;
+          ? showBase && !activeChip && okFlags && okLocation
+          : (!activeChip || card.dataset.chip === activeChip) &&
+            okFlags &&
+            okLocation;
         card.hidden = !show;
         if (show) n++;
+      }
+      for (const b of locationBtns) {
+        const v = b.dataset.locationChip || "";
+        const on = v === (activeLocation ?? "");
+        b.setAttribute("aria-pressed", String(on));
+        b.classList.toggle("is-active", on);
       }
       for (const chip of chips) {
         const on = chip.dataset.chip === activeChip;
@@ -253,10 +284,41 @@ const { counts, flagCounts, baseCount } = Astro.props;
       if (countEl) countEl.textContent = n + (n === 1 ? " place" : " places");
       if (emptyEl) emptyEl.hidden = n !== 0;
       if (grid) grid.hidden = n === 0;
-      const filtering = !!activeChip || activeFlags.size > 0 || showBase;
+      const filtering =
+        !!activeLocation || !!activeChip || activeFlags.size > 0 || showBase;
       if (featuredEl) featuredEl.hidden = filtering;
     };
 
+    /* Sync filter state from the URL. Called on initial load and on
+       popstate (browser back/forward) so URL changes from any source
+       re-apply. Unknown slugs are silently ignored — no console warning. */
+    const readURL = () => {
+      activeLocation = null;
+      activeChip = null;
+      activeFlags.clear();
+      showBase = false;
+      const params = new URLSearchParams(location.search);
+      const region = params.get("region");
+      if (region && validLocations.has(region)) activeLocation = region;
+      const chip0 = params.get("chip");
+      if (chip0 && chips.some((c) => c.dataset.chip === chip0))
+        activeChip = chip0;
+      for (const f of (params.get("flags") || "").split(",").filter(Boolean))
+        if (flags.some((x) => x.dataset.flag === f)) activeFlags.add(f);
+      if (params.get("base") === "1" && !activeChip) showBase = true;
+    };
+
+    locationBtns.forEach((b) =>
+      b.addEventListener("click", () => {
+        const v = b.dataset.locationChip || "";
+        // Single-select. Re-tapping the active chip clears it; tapping
+        // the All Japan chip (slug "") explicitly does the same.
+        activeLocation = v && v !== activeLocation ? v : null;
+        apply();
+        syncURL();
+        b.scrollIntoView({ inline: "center", block: "nearest" });
+      }),
+    );
     chips.forEach((c) =>
       c.addEventListener("click", () => {
         activeChip = activeChip === c.dataset.chip ? null : c.dataset.chip;
@@ -282,13 +344,14 @@ const { counts, flagCounts, baseCount } = Astro.props;
         syncURL();
       });
 
-    // Initial state from the URL — supports shareable /places?chip=…
-    const params = new URLSearchParams(location.search);
-    const chip0 = params.get("chip");
-    if (chip0 && chips.some((c) => c.dataset.chip === chip0)) activeChip = chip0;
-    for (const f of (params.get("flags") || "").split(",").filter(Boolean))
-      if (flags.some((x) => x.dataset.flag === f)) activeFlags.add(f);
-    if (params.get("base") === "1" && !activeChip) showBase = true;
+    /* Re-apply filter state when the URL changes via browser navigation
+       (back/forward) — keeps the rail and the URL coherent. */
+    window.addEventListener("popstate", () => {
+      readURL();
+      apply();
+    });
+
+    readURL();
     apply();
   }
 </script>

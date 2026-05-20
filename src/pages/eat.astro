@@ -11,13 +11,16 @@ import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import ChipRow from "../components/eat/ChipRow.astro";
+import LocationChipRow from "../components/v2/LocationChipRow.astro";
 import RestaurantCard from "../components/eat/RestaurantCard.astro";
 import MethodologyFooter from "../components/eat/MethodologyFooter.astro";
 import { RESTAURANTS_MAP_URL } from "../data/site.js";
 import {
+  CITY_CHIPS,
   CUISINE_CHIPS,
   FLAG_CHIPS,
   cuisineSlug,
+  restaurantCity,
   restaurantFlags,
 } from "../data/eat-chips.js";
 
@@ -42,6 +45,22 @@ const flagCounts: Record<string, number> = {};
 for (const f of FLAG_CHIPS) flagCounts[f.slug] = 0;
 for (const r of sorted)
   for (const f of restaurantFlags(r)) flagCounts[f]++;
+
+/* Phase D D6 — per-city counts for the LocationChipRow. Same convention as
+   cuisineCounts: count every visible row. Chips with a zero count drop out
+   (defensive — all 5 buckets currently have rows). */
+const cityCounts: Record<string, number> = {};
+for (const c of CITY_CHIPS) cityCounts[c.slug] = 0;
+for (const r of sorted) cityCounts[restaurantCity(r)]++;
+
+const cityChips = CITY_CHIPS
+  .map((c) => ({
+    slug: c.slug,
+    label: c.label,
+    count: cityCounts[c.slug],
+    isRollup: c.isRollup,
+  }))
+  .filter((c) => c.count > 0);
 ---
 
 <Base
@@ -75,7 +94,10 @@ for (const r of sorted)
       </div>
     </section>
 
-    <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
+    <div class="rail-sticky">
+      <LocationChipRow chips={cityChips} />
+      <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
+    </div>
 
     <section class="eresults">
       <div class="wrap">
@@ -104,6 +126,18 @@ for (const r of sorted)
     max-width: var(--content-max);
     margin: 0 auto;
     padding: 0 var(--gutter-mobile);
+  }
+
+  /* Phase D D6 — sticky wrapper that holds the location row and the
+     cuisine/flag rail as a single unit. The inner rails are no longer
+     sticky themselves; this wrapper owns the sticky and the ink border
+     under the whole chip block. */
+  .rail-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-white);
+    border-bottom: var(--border-ink);
   }
 
   /* Hero — text on the body background, no image (BUILD_SPEC §1). */
