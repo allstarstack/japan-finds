@@ -30,3 +30,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "skincare"
 name_jp: "ビオレ 毛穴すっきりパック"
+
+description: Bioré nose pore strips. Pulls the drama out of your pores in one satisfying rip, best grabbed at a drugstore before mirror time gets personal.
+english_name: Bioré Pore Strips Black Type
+japanese_name: ビオレ 毛穴すっきりパック 鼻用 黒色タイプ
+subcategory: pore strips
+price_range_jpy: 400-700
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://www.kao-kirei.com/jp/en/item/khg/biore/4901301210494/
+enrichment_date: '2026-05-19'
+image: /products/nose-pore-strips.webp

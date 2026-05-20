@@ -24,3 +24,17 @@ source_links:
   - "https://www.donki.com/en/"
 confidence: "medium"
 trip_score: 5
+
+description: Shiseido The Collagen Drink. Beauty drink in a tiny bottle with drugstore-auntie energy. People grab it before flights, baths, and optimistic skincare routines.
+english_name: Shiseido The Collagen Drink
+japanese_name: 資生堂 ザ・コラーゲン ドリンク
+subcategory: beauty drink
+price_range_jpy: 250-400
+where_to_buy:
+- Matsumoto Kiyoshi
+- supermarkets
+- Donki
+- any major drugstore
+enrichment_confidence: medium
+enrichment_source_url: https://www.shiseido.co.jp/collagen/
+enrichment_date: '2026-05-19'

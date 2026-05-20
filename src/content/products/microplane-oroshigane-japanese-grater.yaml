@@ -21,3 +21,17 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 6
+
+description: Oroshigane grater. Japanese grater for daikon, ginger, wasabi, and garlic. Tiny kitchen flex that makes supermarket tube ginger look nervous.
+english_name: Oroshigane Japanese Grater
+japanese_name: おろし金
+subcategory: grater
+price_range_jpy: 700-8000
+where_to_buy:
+- Kappabashi shops
+- Loft
+- Tokyu Hands
+- department store kitchen floors
+enrichment_confidence: low
+enrichment_source_url: https://www.kurashi-no-hotorisya.jp/maker/ooyaseisakusho_all.html
+enrichment_date: '2026-05-19'

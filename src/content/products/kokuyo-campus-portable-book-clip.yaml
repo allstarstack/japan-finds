@@ -23,3 +23,19 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kokuyo Campus portable book clip. Tiny rotating clip that holds pages open. For hands-free ramen manuals, textbooks, and travel planning spirals.
+english_name: Kokuyo Campus Compact Portable Book Clip
+japanese_name: コクヨ キャンパス コンパクトに持ち運べるブッククリップ
+subcategory: stationery accessory
+price_range_jpy: 600-900
+where_to_buy:
+- Loft
+- Tokyu Hands
+- Itoya
+- stationery shops
+- Amazon Japan
+enrichment_confidence: high
+enrichment_source_url: https://www.kokuyostore.com/en_US/campus/campus-others/campus-compact-portable-book-clip-green/BC-H01G.html?srsltid=AfmBOopSQ2peI0uPFuVfMGSj3EYnjo0q4363az7TbChd0lyqKdfuHcy0
+enrichment_date: '2026-05-19'
+image: /products/kokuyo-campus-portable-book-clip.webp

@@ -27,3 +27,19 @@ suitcase_score: 8
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MUJI laundry net. Mesh wash bag for delicates and tiny socks. The cheap Japan life upgrade hotel washing machines never warn you about.
+english_name: MUJI Polyester Reversible Laundry Net
+japanese_name: 無印良品 ポリエステル両面使える洗濯ネット
+subcategory: laundry bag
+price_range_jpy: 200-500
+where_to_buy:
+- MUJI
+- Daiso
+- Can Do
+- Seria
+- Donki
+enrichment_confidence: medium
+enrichment_source_url: https://www.muji.us/products/polyester-reversible-laundry-net-flat-small-mah50a4s?srsltid=AfmBOoq1FN4QwYpXjAKarrcC207al0nLwF-s25ofjwiuG1MjWgmKsXuj
+enrichment_date: '2026-05-19'
+image: /products/laundry-net.webp

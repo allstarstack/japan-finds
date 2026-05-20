@@ -22,3 +22,15 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso furoshiki cloth. Wraps gifts, lunch, bottles, and random purchases with one square of fabric.
+english_name: Daiso Furoshiki Wrapping Cloth
+japanese_name: 風呂敷（二巾）
+subcategory: wrapping-cloth
+price_range_jpy: 100-110
+where_to_buy:
+- Daiso
+- Daiso online store
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4550480976907?srsltid=AfmBOoqQsYh8J-mfV8qYdXBzWV5ArQ6eV-2BvowYcTHVO00zDKAOSJKE
+enrichment_date: '2026-05-19'

@@ -30,3 +30,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "使い捨てカイロ"
 agent_notes: "Seasonal winter product"
+
+description: Kairo heat patches. Stick-on warmers for coats, backs, and winter survival. Drugstore shelves become tactical gear in January.
+english_name: Kiribai Kairo Adhesive Heat Patches
+japanese_name: 桐灰カイロ はる
+subcategory: heat patches
+price_range_jpy: 700-2600
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- convenience stores
+enrichment_confidence: medium
+enrichment_source_url: https://www.kobayashi.co.jp/seihin/kk_h/
+enrichment_date: '2026-05-19'

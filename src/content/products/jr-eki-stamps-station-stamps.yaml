@@ -21,3 +21,16 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: JR Eki stamps. Rubber stamps tucked near ticket gates and station offices; bring a notebook and accept your new tiny obsession.
+english_name: JR Eki Stamps
+japanese_name: JR 駅スタンプ
+subcategory: train station souvenir
+price_range_jpy: '0'
+where_to_buy:
+- JR stations
+- private railway stations
+- station offices
+enrichment_confidence: medium
+enrichment_source_url: https://www.japanhousela.com/articles/station-to-station-japans-iconic-eki-stamps-train-stamp-book-passport-goshuin-goshuincho/
+enrichment_date: '2026-05-19'

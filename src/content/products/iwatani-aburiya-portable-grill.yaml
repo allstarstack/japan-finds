@@ -29,3 +29,18 @@ suitcase_score: 4
 launch_category: "kitchen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Iwatani Aburiya II. Tabletop butane grill for yakitori and yakiniku. Apartment BBQ energy without committing to charcoal.
+english_name: Iwatani Aburiya II Portable Gas Grill
+japanese_name: イワタニ 炉ばた焼器 炙りやII
+subcategory: portable gas grill
+price_range_jpy: 7000-12000
+where_to_buy:
+- Bic Camera
+- Yodobashi Camera
+- Donki
+- home centers
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://www.iwatani.com.my/products/cassette-stove/aburiya.html
+enrichment_date: '2026-05-19'

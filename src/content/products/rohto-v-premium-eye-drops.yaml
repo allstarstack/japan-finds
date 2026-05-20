@@ -29,3 +29,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "Vロートプレミアム"
+
+description: V Rohto Premium. The fancy blue Rohto bottle for fried eyes; locals grab it when regular drops feel unserious.
+english_name: V Rohto Premium Eye Drops
+japanese_name: Vロートプレミアム
+subcategory: eye drops
+price_range_jpy: 1500-1700
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://jp.rohto.com/vrohto-premium-series/eyedrop/
+enrichment_date: '2026-05-19'
+image: /products/rohto-v-premium-eye-drops.webp

@@ -25,3 +25,20 @@ source_links:
   - "https://www.lawson.co.jp/recommend/original/"
 confidence: "medium"
 trip_score: 8
+
+description: FamilyMart pizza-man. Yellow steamed bun with tomato sauce and stretchy cheese. Konbini winter food for people who wanted pizza but met the bun machine first.
+english_name: FamilyMart Pizza-Man
+japanese_name: のびーるチーズのコク旨ピザまん
+subcategory: steamed bun
+price_range_jpy: 160-230
+where_to_buy:
+- FamilyMart
+- 7-Eleven
+- Lawson
+safety_flags:
+- contains_gluten
+- contains_dairy
+enrichment_confidence: high
+enrichment_source_url: https://www.family.co.jp/goods/chukaman/0240086.html
+enrichment_date: '2026-05-19'
+image: /products/nikuman-pizza-man-steamed-bun.webp

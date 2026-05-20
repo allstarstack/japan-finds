@@ -28,3 +28,19 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "カツサンド"
 agent_notes: "Specific SKU varies by chain"
+
+description: Katsu sando. Pork cutlet, soft bread, sauce. The konbini sandwich that looks simple until it starts making decisions for you.
+english_name: Lawson Thick Pork Cutlet Sandwich
+japanese_name: ローソン 厚切りロースカツサンド
+subcategory: sandwich
+price_range_jpy: 350-500
+where_to_buy:
+- Lawson stores with Machikado Chubo
+- 7-Eleven
+- FamilyMart
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://www.lawson.co.jp/service/others/in/lang/en.html
+enrichment_date: '2026-05-19'

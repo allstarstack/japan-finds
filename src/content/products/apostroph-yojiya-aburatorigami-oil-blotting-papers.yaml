@@ -22,3 +22,18 @@ suitcase_score: 10
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Yojiya aburatorigami. Kyoto oil-blotting papers that pull shine off your face without wrecking makeup. Keep them in your bag for humid temples, trains, and forehead crimes.
+english_name: Yojiya Aburatorigami Oil Blotting Papers
+japanese_name: よーじや あぶらとり紙
+subcategory: oil blotting paper
+price_range_jpy: 430-800
+where_to_buy:
+- Yojiya stores
+- Kyoto Station
+- Yojiya online shop
+- airport gift shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.yojiya.co.jp/en/oil-blotting-paper/
+enrichment_date: '2026-05-19'
+image: /products/apostroph-yojiya-aburatorigami-oil-blotting-papers.webp

@@ -32,3 +32,22 @@ display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "プリン"
 agent_notes: "Category row maker varies"
+
+description: Glico Pucchin Pudding. Tiny custard pudding cups that pop out cleanly; konbini dessert engineering, somehow.
+english_name: Glico Chokotto Pucchin Pudding Custard
+japanese_name: ちょこっとプッチンプリン カスタード
+subcategory: custard pudding
+price_range_jpy: 150-300
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- supermarkets
+- Donki
+safety_flags:
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.glico.com/global/100th_history_contents/highlight/product/009.html
+enrichment_date: '2026-05-19'
+image: /products/japanese-custard-pudding.webp

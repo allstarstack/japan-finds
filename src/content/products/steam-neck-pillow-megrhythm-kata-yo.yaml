@@ -27,3 +27,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "めぐりズム 蒸気の温熱シート"
+
+description: MegRhythm neck steam patch. Warm, disposable neck comfort for airplane stiffness and hotel-pillow betrayal. Japan really saw shoulder tension and made it cute.
+english_name: MegRhythm Neck Steam Patch
+japanese_name: めぐりズム 蒸気でグッドナイト 首もとあったかシート
+subcategory: heat patch
+price_range_jpy: 500-1000
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- major drugstores
+enrichment_confidence: medium
+enrichment_source_url: https://www.kao.com/sg/products/megrhythm/
+enrichment_date: '2026-05-19'
+image: /products/steam-neck-pillow-megrhythm-kata-yo.webp

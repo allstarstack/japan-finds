@@ -26,3 +26,18 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Plus PICO FRIENDS box cutter. Animal-shaped cardboard cutter with a ceramic blade. Cute enough for a desk, sharp enough to end the delivery-box struggle.
+english_name: Plus PICO FRIENDS Box Cutter
+japanese_name: ピコフレンズ
+subcategory: box cutter
+price_range_jpy: 1500-1600
+where_to_buy:
+- Loft
+- Hands
+- Itoya
+- major stationery stores
+enrichment_confidence: high
+enrichment_source_url: https://itemplus.plus.co.jp/catalog/DispDetail.do?itemID=t000100040771&volumeName=00016
+enrichment_date: '2026-05-19'
+image: /products/plus-picofriends-box-cutter.webp

@@ -27,3 +27,17 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Melano CC Vitamin C Essence. Tiny metal tube, cult-status brightening serum. Drugstore basket filler for acne marks and sun-damage dread.
+english_name: Melano CC Medicated Stain Intensive Essence
+japanese_name: メラノCC 薬用 しみ 集中対策 美容液
+subcategory: vitamin C essence
+price_range_jpy: 900-1500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Sugi Drug
+- Welcia
+enrichment_confidence: medium
+enrichment_source_url: https://jp.rohto.com/melanocc/essence
+enrichment_date: '2026-05-19'

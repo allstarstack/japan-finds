@@ -26,3 +26,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "午後の紅茶 ロイヤルミルクティー"
+
+description: Kocha Kaden Royal Milk Tea. Bottled milk tea, sweet and creamy, the vending-machine comfort drink when coffee has betrayed you.
+english_name: Kocha Kaden Royal Milk Tea
+japanese_name: 紅茶花伝 ロイヤルミルクティー
+subcategory: bottled milk tea
+price_range_jpy: 150-180
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- vending machines
+- supermarkets
+safety_flags:
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://shop.donquijotehawaii.com/store/don-quijote/products/23757001-kochakaden-royal-milk-tea-14-87-fl-oz
+enrichment_date: '2026-05-19'

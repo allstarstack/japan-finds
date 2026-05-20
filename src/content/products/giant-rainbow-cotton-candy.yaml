@@ -23,3 +23,15 @@ trip_score: 2
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Giant rainbow cotton candy. Harajuku sugar cloud the size of a small weather event. Buy it when the phone eats first.
+english_name: Giant Rainbow Cotton Candy
+japanese_name: レインボーわたあめ
+subcategory: cotton candy
+price_range_jpy: 900-1200
+where_to_buy:
+- Harajuku Takeshita Street
+- Totti Candy Factory-style sweets shops
+enrichment_confidence: low
+enrichment_source_url: https://www.japan.travel/en/spot/2174/
+enrichment_date: '2026-05-19'

@@ -29,3 +29,17 @@ display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "バスクリン"
 agent_notes: "Bathclin merged into Earth Corp Jan 2026"
+
+description: Onsen-style bath salts. Fake hot spring cosplay for your hotel tub, minus the mountain air and social anxiety.
+english_name: Bathclin Nihon no Meito Bath Salts
+japanese_name: バスクリン 日本の名湯
+subcategory: bath salts
+price_range_jpy: 400-900
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- supermarkets
+enrichment_confidence: medium
+enrichment_source_url: https://shop.nijiya.com/products/bathclin-nihon-no-meito-bath-salt-nigoriyu-no-daigomi
+enrichment_date: '2026-05-19'

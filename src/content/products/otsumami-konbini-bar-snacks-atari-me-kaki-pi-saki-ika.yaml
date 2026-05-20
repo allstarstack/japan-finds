@@ -23,3 +23,21 @@ suitcase_score: 9
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kaki no Tane. Crunchy rice crackers and peanuts that make konbini drinking feel suddenly organized. The default beer snack when dinner is snacks in a bag.
+english_name: Kameda Kaki no Tane 6-Pack
+japanese_name: 亀田の柿の種 6袋詰
+subcategory: otsumami bar snack
+price_range_jpy: 180-400
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- any supermarket
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://www.kamedaseika.co.jp/product/1025/
+enrichment_date: '2026-05-19'
+image: /products/otsumami-konbini-bar-snacks-atari-me-kaki-pi-saki-ika.webp

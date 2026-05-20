@@ -26,3 +26,16 @@ suitcase_score: 7
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso suction sponge holder. Sticks to the sink wall and gets the sad wet sponge off the counter. Tiny kitchen upgrade, very 100-yen-core.
+english_name: Daiso Suction Sponge Holder
+japanese_name: 吸盤スポンジホルダー
+subcategory: kitchen storage
+price_range_jpy: 100-300
+where_to_buy:
+- Daiso
+- Can Do
+- Seria
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4582147277300
+enrichment_date: '2026-05-19'

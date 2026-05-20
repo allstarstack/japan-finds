@@ -19,3 +19,17 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+
+description: Gamaguchi coin purse. Snap-clasp wallet with old-school Kyoto energy. Perfect for the coins Japan still refuses to stop giving you.
+english_name: Gamaguchi Coin Purse
+japanese_name: がま口コインケース
+subcategory: coin purse
+price_range_jpy: 1800-3500
+where_to_buy:
+- AYANOKOJI
+- Kyoto souvenir shops
+- department stores
+- online boutiques
+enrichment_confidence: medium
+enrichment_source_url: https://ayanokoji.jp/c/item/wallet/coin
+enrichment_date: '2026-05-19'

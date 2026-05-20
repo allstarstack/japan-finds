@@ -28,3 +28,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "ピノ"
+
+description: Pino. Six bite-sized vanilla ice creams wrapped in chocolate. Konbini freezer classic, eaten with the tiny pick like you have table manners.
+english_name: Pino
+japanese_name: ピノ
+subcategory: ice cream
+price_range_jpy: 150-250
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- supermarkets
+safety_flags:
+- contains_dairy
+enrichment_confidence: high
+enrichment_source_url: https://www.pinoice.com/lineup/
+enrichment_date: '2026-05-19'
+image: /products/pino-bite-sized-ice-cream.webp

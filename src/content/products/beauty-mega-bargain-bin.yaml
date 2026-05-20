@@ -25,3 +25,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "コスメ激安"
 agent_notes: "Category-level only exact products vary by store"
+
+description: Rice sheet masks. Cheap drugstore skincare that tourists grab in stacks like face-shaped Pokémon cards.
+english_name: Keana Nadeshiko Rice Mask
+japanese_name: 毛穴撫子 お米のマスク
+subcategory: sheet mask
+price_range_jpy: 700-900
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- Tokyu Hands
+- drugstores
+enrichment_confidence: low
+enrichment_source_url: https://www.ishizawa-lab.co.jp/keananadeshiko/en/product/keana_skincare/mask.html
+enrichment_date: '2026-05-19'

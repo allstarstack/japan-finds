@@ -28,3 +28,18 @@ suitcase_score: 9
 launch_category: "kitchen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Onigiri mold. Rice triangle insurance for anyone who turns Japanese rice into a sticky crime scene.
+english_name: Hinoki Onigiri Mold
+japanese_name: ひのき おにぎり型
+subcategory: kitchen tool
+price_range_jpy: 300-3000
+where_to_buy:
+- Daiso
+- Seria
+- Hands
+- kitchenware shops
+enrichment_confidence: low
+enrichment_source_url: https://en.bentoandco.com/products/onigiri-mold
+enrichment_date: '2026-05-19'
+image: /products/rice-ball-mold.webp

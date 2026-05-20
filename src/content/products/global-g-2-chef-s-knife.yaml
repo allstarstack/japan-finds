@@ -22,3 +22,17 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 6
+
+description: GLOBAL G-2 chef's knife. Stainless, light, sharp, very serious apartment-kitchen energy. Kappabashi shoppers know the silhouette.
+english_name: GLOBAL G-2 Chef's Knife
+japanese_name: GLOBAL G-2 牛刀 20cm
+subcategory: chef knife
+price_range_jpy: 12000-18000
+where_to_buy:
+- GLOBAL official retailers
+- department store kitchen floors
+- Kappabashi kitchen shops
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://www.globalcutleryusa.com/classic-g-2
+enrichment_date: '2026-05-19'

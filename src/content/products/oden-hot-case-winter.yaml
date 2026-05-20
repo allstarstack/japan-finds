@@ -27,3 +27,19 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "おでん"
 agent_notes: "Seasonal and store-dependent"
+
+description: Konbini oden. Hot daikon, egg, tofu, and fishcake sitting in broth like winter has a staffing department. Grab it from the counter when Japan gets cold and dramatic.
+english_name: 7-Eleven Oden
+japanese_name: セブン-イレブン おでん
+subcategory: hot case
+price_range_jpy: 120-800
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.sej.co.jp/products/a/oden/
+enrichment_date: '2026-05-19'

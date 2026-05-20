@@ -23,3 +23,16 @@ source_links:
   - "https://www.donki.com/en/"
 confidence: "low"
 trip_score: 2
+
+description: Diet pills and slimming teas. The shelf promises skinny; the fine print brings stimulant roulette.
+english_name: Diet Pills and Slimming Teas
+japanese_name: ダイエットサプリ・スリミングティー
+subcategory: weight-loss-supplements
+price_range_jpy: 500-3000
+where_to_buy:
+- drugstores
+- Donki
+- online marketplaces
+enrichment_confidence: low
+enrichment_source_url: https://www.fda.gov/drugs/medication-health-fraud-notifications/weight-loss-product-notifications
+enrichment_date: '2026-05-19'

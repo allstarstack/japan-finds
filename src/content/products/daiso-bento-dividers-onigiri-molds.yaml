@@ -21,3 +21,15 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso onigiri molds. Cheap plastic rice-shaping tools for anyone who wants lunch to look emotionally organized.
+english_name: Daiso Triangle Onigiri Mold Set
+japanese_name: おにぎり器三角大小セット
+subcategory: bento-tools
+price_range_jpy: 100-110
+where_to_buy:
+- Daiso
+- Daiso online store
+enrichment_confidence: low
+enrichment_source_url: https://jp.daisonet.com/products/4973430400015?srsltid=AfmBOoq1GRD7Wh0ijTCRXXUhC5dHbgyH8COi-o01T6w602VT6JqYLauT
+enrichment_date: '2026-05-19'

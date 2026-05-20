@@ -27,3 +27,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "ガリガリ君ソーダ"
+
+description: Garigari-kun Soda. Cheap blue ice bar, crunchy inside, childhood-coded. Summer konbini freezer staple.
+english_name: Garigari-kun Soda Bar
+japanese_name: ガリガリ君 ソーダ
+subcategory: ice pop
+price_range_jpy: 80-150
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- supermarkets
+enrichment_confidence: medium
+enrichment_source_url: https://akagiice-global.com/
+enrichment_date: '2026-05-19'

@@ -29,3 +29,14 @@ launch_category: "kids_family"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "おなまえシール"
+
+description: Daiso name label stickers. Waterproof-ish school-label sheets for bags, bottles, and cables. Also perfect for adults pretending their life has systems.
+english_name: Daiso Name Label Stickers
+japanese_name: ダイソー おなまえシール
+subcategory: labels
+price_range_jpy: 110-220
+where_to_buy:
+- Daiso
+enrichment_confidence: medium
+enrichment_source_url: https://www.daiso-sangyo.co.jp/item/45621
+enrichment_date: '2026-05-19'

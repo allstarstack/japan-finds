@@ -26,3 +26,17 @@ suitcase_score: 8
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Shoe bag. A travel pouch for shoes, because Japan is very good at reminding your sneakers they are the problem.
+english_name: Travel Shoe Bag
+japanese_name: シューズケース
+subcategory: travel pouch
+price_range_jpy: 100-1500
+where_to_buy:
+- Muji
+- Daiso
+- Seria
+- Donki
+- travel goods shops
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

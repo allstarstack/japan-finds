@@ -26,3 +26,21 @@ trip_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Melonpan. Sweet bun with a crunchy cookie shell and zero melon obligations. Konbini breakfast when you want dessert wearing bread pants.
+english_name: Melonpan
+japanese_name: メロンパン
+subcategory: sweet bread
+price_range_jpy: 120-250
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- bakery
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://www.sej.co.jp/in/en.html
+enrichment_date: '2026-05-19'

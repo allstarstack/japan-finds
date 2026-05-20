@@ -24,3 +24,19 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tombow Mono Eraser. The blue-white-black eraser every Japanese desk seems to own. Small, clean, and weirdly satisfying for stationery people.
+english_name: Tombow Mono Eraser
+japanese_name: トンボ鉛筆 MONO消しゴム
+subcategory: eraser
+price_range_jpy: 70-400
+where_to_buy:
+- Loft
+- Tokyu Hands
+- Itoya
+- konbini stationery section
+- stationery stores
+enrichment_confidence: high
+enrichment_source_url: https://www.tombow.com/en/products/mono/
+enrichment_date: '2026-05-19'
+image: /products/tombow-mono-eraser.webp

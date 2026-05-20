@@ -30,3 +30,19 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "サロンパス"
 agent_notes: "Contains methyl salicylate"
+
+description: Salonpas patches. Stick one on a sore shoulder and continue cosplaying as a functional traveler.
+english_name: Salonpas Pain Relieving Patch
+japanese_name: サロンパス
+subcategory: pain patch
+price_range_jpy: 500-1000
+where_to_buy:
+- Matsumoto Kiyoshi
+- Sugi Drug
+- any major drugstore
+- Donki
+safety_flags:
+- aspirin
+enrichment_confidence: medium
+enrichment_source_url: https://us.hisamitsu/product/salonpas-pain-relieving-patch
+enrichment_date: '2026-05-19'

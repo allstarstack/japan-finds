@@ -19,3 +19,17 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+
+description: Furoshiki wrapping cloth. Gift wrap, tote bag, bento carrier; Japan's square of fabric does unpaid overtime.
+english_name: Furoshiki Wrapping Cloth
+japanese_name: 風呂敷
+subcategory: wrapping cloth
+price_range_jpy: 800-3500
+where_to_buy:
+- Musubi
+- department store gift floors
+- Kyoto textile shops
+- souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://www.musubi-furoshiki.com/
+enrichment_date: '2026-05-19'

@@ -21,3 +21,21 @@ source_links:
   - "User-pasted response"
 confidence: "high"
 trip_score: 3
+
+description: 10 Yen Cheese Coin Pancake. Giant coin-shaped pancake with stretchy cheese inside. It is the snack version of pulling a cartoon money glitch in Dotonbori.
+english_name: 10 Yen Cheese Coin Pancake
+japanese_name: 10円パン
+subcategory: street snack
+price_range_jpy: 500-700
+where_to_buy:
+- Daiou Cheese 10 Yen Pan
+- Shin-Okubo snack stands
+- Dotonbori snack stands
+- festival food stalls
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://tabelog.com/en/osaka/A2701/A270202/27134070/
+enrichment_date: '2026-05-19'

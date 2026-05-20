@@ -22,3 +22,16 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 2
+
+description: Kamado-san donabe rice pot. Heavy Iga-yaki clay, double lid, rice cooker energy without the outlet.
+english_name: Nagatani-en Kamado-san Donabe Rice Pot
+japanese_name: 長谷園 かまどさん
+subcategory: rice pot
+price_range_jpy: 10000-18000
+where_to_buy:
+- Nagatani-en official store
+- Kappabashi kitchenware shops
+- department stores
+enrichment_confidence: medium
+enrichment_source_url: https://store.igamono.jp/?pid=85075826
+enrichment_date: '2026-05-19'

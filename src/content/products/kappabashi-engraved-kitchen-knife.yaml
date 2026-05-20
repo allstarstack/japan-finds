@@ -27,3 +27,16 @@ suitcase_score: 4
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kappabashi engraved kitchen knife. Buy the blade, get your name carved on it; the souvenir that politely threatens your luggage allowance.
+english_name: Kamata Hakensha Engraved Kitchen Knife
+japanese_name: かまた刃研社 名入れ包丁
+subcategory: engraved kitchen knife
+price_range_jpy: 5000-30000
+where_to_buy:
+- Kamata Hakensha
+- Kappabashi Dougu Street
+- Kappabashi knife shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.kappabashi.or.jp/en/shops/93/
+enrichment_date: '2026-05-19'

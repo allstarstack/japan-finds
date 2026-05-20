@@ -29,3 +29,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "マルチクリップ"
 agent_notes: "Exact clip type varies"
+
+description: Sanrio multiuse towel clip. Clips towels, straps, and kid gear before it hits a train floor. Parents buy one; everyone else buys three because Kuromi.
+english_name: Sanrio Multiuse Towel Clip
+japanese_name: マルチタオルクリップ
+subcategory: baby travel accessory
+price_range_jpy: 110-500
+where_to_buy:
+- Daiso
+- Can Do
+- baby goods sections
+- character stores
+enrichment_confidence: low
+enrichment_source_url: https://shop.daisosingapore.com.sg/products/4582364521101
+enrichment_date: '2026-05-19'

@@ -21,3 +21,21 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 5
+
+description: Strong Zero chu-hi. 9% ABV, cheap, fizzy, and famously disrespectful to your evening plans. Lemon and grapefruit are the konbini classics.
+english_name: Suntory -196 Strong Zero
+japanese_name: サントリー -196 ストロングゼロ
+subcategory: chu-hi
+price_range_jpy: 150-250
+where_to_buy:
+- 7-Eleven Japan
+- Lawson
+- FamilyMart
+- Donki
+- supermarkets
+safety_flags:
+- alcohol
+- citrus_ingestion
+enrichment_confidence: medium
+enrichment_source_url: https://products.suntory.co.jp/b/0000000059/%EF%BC%8D196
+enrichment_date: '2026-05-19'

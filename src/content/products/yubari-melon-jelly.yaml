@@ -26,3 +26,20 @@ suitcase_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Yubari melon jelly. Hokkaido melon flavor in wobbly souvenir form; chill it first unless you enjoy warm luxury pudding chaos.
+english_name: HORI Yubari Melon Pure Jelly
+japanese_name: ホリ 夕張メロンピュアゼリー
+subcategory: fruit jelly
+price_range_jpy: 600-6300
+where_to_buy:
+- Hokkaido souvenir shops
+- New Chitose Airport
+- department store food halls
+- online official shop
+safety_flags:
+- contains_dairy
+enrichment_confidence: high
+enrichment_source_url: https://www.e-hori.com/category/YUBARI_001/0301001.html
+enrichment_date: '2026-05-19'
+image: /products/yubari-melon-jelly.webp

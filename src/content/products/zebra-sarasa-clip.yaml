@@ -29,3 +29,19 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Zebra Sarasa Clip. Gel pen with bright ink and a binder clip; the cheap stationery gateway drug.
+english_name: Zebra Sarasa Clip
+japanese_name: ゼブラ サラサクリップ
+subcategory: stationery
+price_range_jpy: 110-150
+where_to_buy:
+- Loft
+- Hands
+- Itoya
+- Yodobashi Camera
+- Bic Camera
+enrichment_confidence: high
+enrichment_source_url: https://www.zebra.co.jp/pro/detail/sarasa-clip/
+enrichment_date: '2026-05-19'
+image: /products/zebra-sarasa-clip.webp

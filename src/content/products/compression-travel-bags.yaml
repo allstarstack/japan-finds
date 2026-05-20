@@ -29,3 +29,16 @@ launch_category: "donki"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "圧縮袋"
+
+description: Compression travel bags. Zip it once, zip it again, suddenly your suitcase stops screaming.
+english_name: Compression Travel Bag
+japanese_name: 圧縮バッグ
+subcategory: travel-storage
+price_range_jpy: 300-550
+where_to_buy:
+- Daiso
+- Donki
+- travel-goods aisles
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4549131909074?srsltid=AfmBOoqxeAWt7rWtQ6gfCyDOEoVhsKfi_kfJWkNvLqH2obd_YXBtumFy
+enrichment_date: '2026-05-19'

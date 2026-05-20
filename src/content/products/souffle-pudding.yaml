@@ -27,3 +27,18 @@ display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "スフレ・プリン"
 agent_notes: "Current SKU not confirmed on listing"
+
+description: FamilyMart souffle pudding. Custard pudding with a soft cheese souffle hat. Konbini dessert engineering for people who cannot choose one texture.
+english_name: FamilyMart Souffle Pudding
+japanese_name: スフレ・プリン
+subcategory: pudding
+price_range_jpy: 300-400
+where_to_buy:
+- FamilyMart
+safety_flags:
+- contains_dairy
+- contains_egg
+enrichment_confidence: high
+enrichment_source_url: https://www.family.co.jp/goods/dessert/1941463.html
+enrichment_date: '2026-05-19'
+image: /products/souffle-pudding.webp

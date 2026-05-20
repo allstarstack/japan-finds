@@ -27,3 +27,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "キットカット ミニ 詰め合わせ"
 agent_notes: "Assortment contents vary"
+
+description: KitKat assortment bag. Mini Japanese flavors in bulk, aka souvenir math pretending to be snack research.
+english_name: Nestle Japan KitKat Mini Assortment Bag
+japanese_name: ネスレ キットカット ミニ アソート
+subcategory: chocolate assortment
+price_range_jpy: 800-1800
+where_to_buy:
+- Donki
+- supermarkets
+- airport shops
+- souvenir shops
+safety_flags:
+- contains_dairy
+- contains_gluten
+enrichment_confidence: low
+enrichment_source_url: https://nestle.jp/home/
+enrichment_date: '2026-05-19'

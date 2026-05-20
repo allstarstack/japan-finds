@@ -27,3 +27,19 @@ suitcase_score: 9
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Canmake Cream Cheek. Tiny drugstore blush with real color payoff. The budget J-beauty pick for a pouch that already has 400 lip products.
+english_name: Canmake Cream Cheek
+japanese_name: キャンメイク クリームチーク
+subcategory: blush
+price_range_jpy: 638-700
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- Plaza
+- any major drugstore
+enrichment_confidence: high
+enrichment_source_url: https://www.canmake.com/en/item/detail/cream-cheek/
+enrichment_date: '2026-05-19'
+image: /products/canmake-cream-cheek.webp

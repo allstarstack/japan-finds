@@ -24,3 +24,18 @@ suitcase_score: 10
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Opera Lip Tint. Glossy color that survives better than most travel plans. Loft and Plaza staple for a quick drugstore beauty grab.
+english_name: Opera Lip Tint N
+japanese_name: オペラ リップティントN
+subcategory: lip tint
+price_range_jpy: 1500-3000
+where_to_buy:
+- Loft
+- Plaza
+- '@cosme Store'
+- Donki
+enrichment_confidence: medium
+enrichment_source_url: https://ichibanm.com/products/opera-lip-tint-n
+enrichment_date: '2026-05-19'
+image: /products/opera-lip-tint.webp

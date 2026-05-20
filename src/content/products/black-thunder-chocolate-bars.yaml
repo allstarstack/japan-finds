@@ -30,3 +30,21 @@ launch_category: "donki"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ブラックサンダー"
+
+description: Black Thunder chocolate bars. Pocket-size chocolate crunch for when you need dessert but only emotionally committed ¥50.
+english_name: Black Thunder Chocolate Bar
+japanese_name: ブラックサンダー
+subcategory: chocolate bar
+price_range_jpy: 40-80
+where_to_buy:
+- konbini
+- supermarkets
+- Donki
+- drugstores
+safety_flags:
+- contains_dairy
+- contains_gluten
+enrichment_confidence: medium
+enrichment_source_url: https://www.yurakuseika.co.jp/product/265/
+enrichment_date: '2026-05-19'
+image: /products/black-thunder-chocolate-bars.webp

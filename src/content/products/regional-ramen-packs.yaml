@@ -29,3 +29,20 @@ suitcase_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Regional ramen packs. Take-home ramen boxes from famous shops and prefectures, aka luggage-friendly noodle bragging rights.
+english_name: Ichiran Hakata Thin Noodle Gift Set
+japanese_name: 一蘭 博多細麺 替玉付き セット
+subcategory: souvenir ramen
+price_range_jpy: 1000-3500
+where_to_buy:
+- airport shops
+- regional gift shops
+- Donki
+- ramen shop gift counters
+safety_flags:
+- contains_gluten
+enrichment_confidence: low
+enrichment_source_url: https://www.ichiranstore.com/shop/g/g9699986/
+enrichment_date: '2026-05-19'
+image: /products/regional-ramen-packs.webp

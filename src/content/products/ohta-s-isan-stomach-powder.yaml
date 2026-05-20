@@ -26,3 +26,16 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "太田胃散"
+
+description: Ohta's Isan stomach powder. Herbal, chalky, and very much not candy. Locals reach for it after ramen, booze, or the bold decision to eat everything.
+english_name: Ohta's Isan Sachet
+japanese_name: 太田胃散 分包
+subcategory: stomach medicine
+price_range_jpy: 500-1200
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: medium
+enrichment_source_url: https://global.ohta-isan.co.jp/en/product/ohtaisanb/
+enrichment_date: '2026-05-19'

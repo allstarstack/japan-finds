@@ -31,3 +31,16 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "目薬"
 agent_notes: "Category row active ingredients vary"
+
+description: Rohto eye drops shelf. A whole wall of tiny bottles ranked by eye problem and pain tolerance; start mild unless you enjoy spicy eyeballs.
+english_name: Rohto Eye Drops Section
+japanese_name: ロート目薬売り場
+subcategory: eye drops aisle
+price_range_jpy: 300-1700
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+enrichment_confidence: low
+enrichment_source_url: https://jp.rohto.com/product/eyecare/category/eye-drops
+enrichment_date: '2026-05-19'

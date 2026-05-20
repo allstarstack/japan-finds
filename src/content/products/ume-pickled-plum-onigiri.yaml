@@ -26,3 +26,20 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "梅おにぎり"
 agent_notes: "Specific SKU varies by chain"
+
+description: Ume onigiri. Pickled plum rice ball, sharp and salty in the best way. The konbini choice for people who want breakfast to slap them awake.
+english_name: Lawson Ume Onigiri
+japanese_name: ローソン 紀州南高梅おにぎり
+subcategory: onigiri
+price_range_jpy: 170-220
+where_to_buy:
+- Lawson
+- 7-Eleven
+- FamilyMart
+- konbini
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: high
+enrichment_source_url: https://www.lawson.co.jp/sp/recommend/original/detail/1527628_2168.html
+enrichment_date: '2026-05-19'
+image: /products/ume-pickled-plum-onigiri.webp

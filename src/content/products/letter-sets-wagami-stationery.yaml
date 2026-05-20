@@ -24,3 +24,19 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MIDORI letter set. Washi-style paper and envelopes that make normal handwriting look intentional. Stationery shops sell this to people who still believe in nice paper.
+english_name: MIDORI Letter Writing Set
+japanese_name: ミドリ 便箋・封筒セット
+subcategory: stationery
+price_range_jpy: 400-900
+where_to_buy:
+- Loft
+- Tokyu Hands
+- Itoya
+- stationery shops
+- department stores
+enrichment_confidence: low
+enrichment_source_url: https://www.midori-japan.co.jp/english/products/letter-writing-set/
+enrichment_date: '2026-05-19'
+image: /products/letter-sets-wagami-stationery.webp

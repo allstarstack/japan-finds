@@ -21,3 +21,16 @@ source_links:
   - "https://www.donki.com/en/"
 confidence: "low"
 trip_score: 2
+
+description: TENGA Original Vacuum Cup. Donki's most awkwardly visible red-and-white souvenir. Adults buy it when bringing home snacks is not deranged enough.
+english_name: TENGA Original Vacuum Cup
+japanese_name: TENGA オリジナルバキュームカップ
+subcategory: adult novelty
+price_range_jpy: 700-1000
+where_to_buy:
+- Donki
+- TENGA Store
+- adult goods shops
+enrichment_confidence: low
+enrichment_source_url: https://www.tenga.co/products/
+enrichment_date: '2026-05-19'

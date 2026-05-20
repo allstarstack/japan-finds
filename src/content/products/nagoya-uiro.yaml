@@ -25,3 +25,16 @@ suitcase_score: 9
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: 'Nagoya uiro. Chewy steamed rice sweet in tidy blocks. Nagoya souvenir math: simple, soft, oddly addictive.'
+english_name: Aoyagi Uiro
+japanese_name: 青柳ういろう
+subcategory: regional rice sweet
+price_range_jpy: 500-1500
+where_to_buy:
+- Aoyagi Sohonke shops
+- Nagoya Station
+- department store food halls
+enrichment_confidence: medium
+enrichment_source_url: https://www.aoyagiuirou.co.jp/products/uirou_youkan/
+enrichment_date: '2026-05-19'

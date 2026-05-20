@@ -26,3 +26,16 @@ display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "セブンカフェ / マチカフェ"
 agent_notes: "Chain-specific in-store coffee lines"
+
+description: Konbini drip coffee. Push-button fresh coffee from Seven Cafe or Machi Cafe. Cheap, hot, reliable, and better than the hotel lobby machine.
+english_name: Seven Cafe / Machi Cafe Drip Coffee
+japanese_name: セブンカフェ / マチカフェ ドリップコーヒー
+subcategory: coffee
+price_range_jpy: 110-250
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+enrichment_confidence: low
+enrichment_source_url: https://www.lawson.jp/en/product_service/product/
+enrichment_date: '2026-05-19'

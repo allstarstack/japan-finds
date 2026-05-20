@@ -30,3 +30,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ご当地レトルトカレー"
 agent_notes: "Regional packs vary"
+
+description: Yokosuka Navy Curry retort pack. Regional boil-in-bag curry, shelf-stable and built for the suitcase snack goblin.
+english_name: Yachiyo Yokosuka Navy Curry Retort Pack
+japanese_name: ヤチヨ よこすか海軍カレー レトルト
+subcategory: retort curry
+price_range_jpy: 400-900
+where_to_buy:
+- supermarkets
+- airport shops
+- regional gift shops
+- Donki
+safety_flags:
+- contains_gluten
+- contains_dairy
+enrichment_confidence: low
+enrichment_source_url: https://market-tokyo.com/products/Yachiyo-Yokosuka-Navy-Curry-Retort-Packed-Beef-Curry-Medium-Hot-p692312573
+enrichment_date: '2026-05-19'

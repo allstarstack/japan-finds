@@ -29,3 +29,17 @@ suitcase_score: 6
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tiny scissors with cap. Pocket scissors with a blade cover, made for tags, packaging, and emergency hangnail diplomacy. The kind of cheap shop item that saves a whole day.
+english_name: Tiny Scissors With Cap
+japanese_name: キャップ付き携帯はさみ
+subcategory: portable scissors
+price_range_jpy: 300-800
+where_to_buy:
+- Loft
+- Tokyu Hands
+- Daiso
+- Donki
+- stationery stores
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

@@ -29,3 +29,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "海苔パンチ・抜き型"
 agent_notes: "Daiso confirms nori punch cutters vary"
+
+description: Nori punch. Turns seaweed into tiny faces so lunch looks emotionally more prepared than you are.
+english_name: Kai Chuboos Nori Punch
+japanese_name: 貝印 ちゅーぼーず のりパンチ
+subcategory: bento tool
+price_range_jpy: 400-1000
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Tokyu Hands
+- bento shops
+enrichment_confidence: low
+enrichment_source_url: https://www.japanbargain.com/kai-chuboos-nori-seaweed-punch-for-bento-fg5103/
+enrichment_date: '2026-05-19'

@@ -19,3 +19,18 @@ source_links:
 confidence: "high"
 trip_score: 2
 suitcase_score: 0
+
+description: Basashi horse sashimi. Thin-sliced raw horse meat with ginger, garlic, and sweet soy sauce; Kumamoto's most eyebrow-raising dinner order.
+english_name: Basashi Horse Sashimi
+japanese_name: 馬刺し
+subcategory: regional raw meat
+price_range_jpy: 1000-5000
+where_to_buy:
+- Kumamoto restaurants
+- regional izakaya
+- specialty horse-meat restaurants
+safety_flags:
+- raw_or_fermented
+enrichment_confidence: low
+enrichment_source_url: https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/4013/index.html
+enrichment_date: '2026-05-19'

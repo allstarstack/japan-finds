@@ -26,3 +26,21 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "ボス"
+
+description: BOSS canned coffee. Sweet milk coffee in a tiny can, built for vending machines and salaryman pacing. Drink it when jet lag starts managing your itinerary.
+english_name: BOSS Rainbow Mountain Blend
+japanese_name: サントリー BOSS レインボーマウンテンブレンド
+subcategory: canned coffee
+price_range_jpy: 120-150
+where_to_buy:
+- vending machines
+- any konbini
+- supermarkets
+- Donki
+safety_flags:
+- caffeine_high
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://suntorybosscoffee.com/products/rainbow-mountain-blend
+enrichment_date: '2026-05-19'
+image: /products/boss-canned-coffee.webp

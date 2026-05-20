@@ -24,3 +24,17 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso chiyogami paper. Tiny patterned paper squares that make your luggage look cultured for ¥110. Easy gift, zero suitcase drama.
+english_name: Daiso Japanese-Pattern Chiyogami Paper Set
+japanese_name: ダイソー 和風ちよがみ
+subcategory: stationery
+price_range_jpy: 110-330
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Loft
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4550480285214
+enrichment_date: '2026-05-19'

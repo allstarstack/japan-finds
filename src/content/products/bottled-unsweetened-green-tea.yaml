@@ -30,3 +30,17 @@ display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "緑茶 ペットボトル"
 agent_notes: "Category row brands vary"
+
+description: Unsweetened bottled green tea. The default no-sugar drink in Japan when water feels too responsible.
+english_name: Ito En Oi Ocha Unsweetened Green Tea
+japanese_name: 伊藤園 お～いお茶 緑茶
+subcategory: green tea
+price_range_jpy: 120-170
+where_to_buy:
+- konbini
+- vending machines
+- supermarkets
+- drugstores
+enrichment_confidence: medium
+enrichment_source_url: https://www.itoen-global.com/products/oi_ocha.html
+enrichment_date: '2026-05-19'

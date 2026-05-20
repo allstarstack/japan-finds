@@ -22,3 +22,16 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 8
+
+description: Magewappa bento box. Akita cedar lunch box, light and way prettier than your meal prep deserves. The grown-up souvenir for people who own rice paddles emotionally.
+english_name: Odate Magewappa Bento Box
+japanese_name: 大館曲げわっぱ 弁当箱
+subcategory: bento box
+price_range_jpy: 9000-18000
+where_to_buy:
+- Odate Kogeisha
+- craft shops
+- department stores
+enrichment_confidence: medium
+enrichment_source_url: https://magewappa.co.jp/
+enrichment_date: '2026-05-19'

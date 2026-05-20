@@ -17,3 +17,18 @@ source_links:
 confidence: "medium"
 trip_score: 8
 suitcase_score: 0
+
+description: Ramen-making class. You make noodles, broth, toppings, then understand why a bowl of ramen is not just soup.
+english_name: Ramen Masterclass in Tokyo
+japanese_name: ラーメン作り体験
+subcategory: cooking class
+price_range_jpy: 15000-17000
+where_to_buy:
+- Klook
+- Airbnb Experiences
+- local cooking schools
+safety_flags:
+- contains_gluten
+enrichment_confidence: low
+enrichment_source_url: https://www.klook.com/en-US/activity/109329-3-hour-join-tokyo-cooking-class-ramen-masterclass/
+enrichment_date: '2026-05-19'

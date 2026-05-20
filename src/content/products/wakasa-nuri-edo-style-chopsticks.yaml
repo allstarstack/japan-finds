@@ -22,3 +22,17 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+
+description: Wakasa-nuri chopsticks. Lacquered, durable, and way too pretty for instant noodles, which is exactly why travelers buy them.
+english_name: Wakasa-nuri Lacquer Chopsticks
+japanese_name: 若狭塗箸
+subcategory: chopsticks
+price_range_jpy: 1000-5000
+where_to_buy:
+- Kappabashi
+- department stores
+- regional craft shops
+- souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://kogeijapan.com/locale/en_US/wakasanuri/
+enrichment_date: '2026-05-19'

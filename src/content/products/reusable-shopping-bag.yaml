@@ -27,3 +27,17 @@ suitcase_score: 9
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Shupatto reusable shopping bag. Pull-flat, roll-up eco bag; Japan's smooth answer to needing one more bag after Donki damage.
+english_name: Shupatto Minimal Bag 12L
+japanese_name: シュパット ミニマルバッグ 12L
+subcategory: reusable shopping bag
+price_range_jpy: 1000-2500
+where_to_buy:
+- Loft
+- Hands
+- Donki
+- department stores
+enrichment_confidence: low
+enrichment_source_url: https://www.shupatto.com/en/product/minimalbag-drop-12l/
+enrichment_date: '2026-05-19'

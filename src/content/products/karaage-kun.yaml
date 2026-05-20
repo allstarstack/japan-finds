@@ -25,3 +25,18 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "からあげクン"
 agent_notes: "40th anniversary campaign in 2026"
+
+description: Karaage-kun. Five-piece Lawson fried chicken box; hot case bird nugget royalty with regular, red, cheese, and whatever chaos is seasonal.
+english_name: Lawson Karaage-kun
+japanese_name: ローソン からあげクン
+subcategory: fried chicken
+price_range_jpy: 230-260
+where_to_buy:
+- Lawson
+safety_flags:
+- contains_gluten
+- contains_egg
+- contains_dairy
+enrichment_confidence: medium
+enrichment_source_url: https://www.lawson.co.jp/service/others/in/lang/en.html
+enrichment_date: '2026-05-19'

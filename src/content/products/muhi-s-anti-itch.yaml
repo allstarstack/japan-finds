@@ -27,3 +27,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "ムヒS"
+
+description: Muhi S. Anti-itch cream for mosquito bites and mystery skin rage. Summer in Japan keeps one in the bag for a reason.
+english_name: Muhi S
+japanese_name: ムヒS
+subcategory: anti-itch cream
+price_range_jpy: 500-800
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://www.ikedamohando.co.jp/products/muhi-s.html
+enrichment_date: '2026-05-19'
+image: /products/muhi-s-anti-itch.webp

@@ -27,3 +27,17 @@ display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "C.C.レモン"
 agent_notes: "citrus-family beverage"
+
+description: C.C. Lemon. Fizzy lemon soda with vitamin-C branding, for when Sprite feels underemployed.
+english_name: Suntory C.C. Lemon
+japanese_name: サントリー C.C.レモン
+subcategory: carbonated soft drink
+price_range_jpy: 120-170
+where_to_buy:
+- konbini
+- vending machines
+- supermarkets
+- drugstores
+enrichment_confidence: low
+enrichment_source_url: https://www.amazon.com/Product-Japan-Suntory-Lemon-Vitamin/dp/B07ZDM5V8D
+enrichment_date: '2026-05-19'

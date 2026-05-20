@@ -31,3 +31,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "フェイスマスク"
 agent_notes: "Brand varies by retailer"
+
+description: LuLuLun sheet mask multipacks. Big resealable packs for hotel-night skincare; cheaper than panic-buying single masks one by one.
+english_name: LuLuLun Precious Green Sheet Mask Multipack
+japanese_name: ルルルンプレシャス GREEN
+subcategory: sheet mask multipack
+price_range_jpy: 1500-2000
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- PLAZA
+- '@cosme Store'
+enrichment_confidence: low
+enrichment_source_url: https://lululunusa.com/
+enrichment_date: '2026-05-19'

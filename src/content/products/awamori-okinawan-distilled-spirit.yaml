@@ -25,3 +25,19 @@ suitcase_score: 5
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Zanpa White Awamori. Okinawan distilled spirit with a cleaner bite than sake. Buy it when your souvenir plan says beach uncle, not tiny cookie box.
+english_name: Zanpa White Awamori
+japanese_name: 残波 ホワイト 泡盛
+subcategory: awamori
+price_range_jpy: 1000-1800
+where_to_buy:
+- Okinawa liquor shops
+- airport gift shops
+- Donki
+- department store liquor sections
+safety_flags:
+- alcohol
+enrichment_confidence: low
+enrichment_source_url: https://www.awamorispirits.com/
+enrichment_date: '2026-05-19'

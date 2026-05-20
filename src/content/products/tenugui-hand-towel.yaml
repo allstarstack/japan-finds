@@ -20,3 +20,18 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 10
+
+description: Tenugui hand towel. Thin cotton cloth that works as a towel, wrap, headband, or tiny wall art. The souvenir that becomes useful five minutes after buying it.
+english_name: Tenugui Hand Towel
+japanese_name: 手ぬぐい
+subcategory: hand towel
+price_range_jpy: 800-2500
+where_to_buy:
+- Kamawanu
+- Loft
+- Tokyu Hands
+- souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://kamawanu.com/en-us/products/06111394
+enrichment_date: '2026-05-19'
+image: /products/tenugui-hand-towel.webp

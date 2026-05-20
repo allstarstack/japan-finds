@@ -29,3 +29,17 @@ launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
 featured: true
+
+description: Hada Labo Gokujyun Hydrating Lotion. Same blue-bottle hydration boss in tourist-friendly wording. Good first Japanese skincare buy.
+english_name: Hada Labo Gokujyun Hydrating Lotion
+japanese_name: 肌ラボ 極潤ヒアルロン液
+subcategory: hydrating lotion
+price_range_jpy: 700-1100
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- any major drugstore
+enrichment_confidence: medium
+enrichment_source_url: https://jp.rohto.com/hadalabo/gokujun-lotion/
+enrichment_date: '2026-05-19'

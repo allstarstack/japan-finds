@@ -30,3 +30,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "子ども用ミニタオル"
 agent_notes: "Category row character and maker vary"
+
+description: Mini hand towel for kids. Small looped towel for school bags, bathrooms, and tiny wet hands. Japan treats hand towels like infrastructure.
+english_name: MUJI Waffle Hand Towel with Loop
+japanese_name: 無印良品 ワッフルハンドタオル ループ付き
+subcategory: hand towel
+price_range_jpy: 300-800
+where_to_buy:
+- MUJI
+- Akachan Honpo
+- Nishimatsuya
+- 100-yen shops
+enrichment_confidence: low
+enrichment_source_url: https://www.muji.us/products/waffle-hand-towel-with-loop-jjal6a5a
+enrichment_date: '2026-05-19'

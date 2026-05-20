@@ -31,3 +31,19 @@ display_strategy: "show_all"
 sub_chip: "sweet"
 name_jp: "冷凍みかん"
 agent_notes: "Category row brand varies"
+
+description: Frozen mikan ice bar. Mandarin nostalgia in freezer form, the konbini cool-down move after too many train stairs.
+english_name: 7 Premium Marude Unshu Mikan Ice Bar
+japanese_name: セブンプレミアム まるで完熟みかん
+subcategory: frozen dessert
+price_range_jpy: 150-250
+where_to_buy:
+- 7-Eleven
+- Ito-Yokado
+- 7&i stores
+safety_flags:
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.sej.co.jp/products/a/item/450352/
+enrichment_date: '2026-05-19'

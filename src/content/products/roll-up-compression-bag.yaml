@@ -28,3 +28,18 @@ suitcase_score: 8
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MUJI roll-up compression bags. No-vacuum packing bags that squeeze clothes down; lifesaver when souvenirs colonize the suitcase.
+english_name: MUJI Compression Bag for Clothing 2 Pack
+japanese_name: 無印良品 衣類用圧縮袋 2枚組
+subcategory: travel compression bag
+price_range_jpy: 500-1000
+where_to_buy:
+- MUJI
+- Hands
+- Donki
+- travel goods shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.muji.us/products/compression-bag-for-clothing-2-pack-45x60cm-ohh76a5s
+enrichment_date: '2026-05-19'
+image: /products/roll-up-compression-bag.webp

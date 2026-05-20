@@ -24,3 +24,20 @@ suitcase_score: 10
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Beni-imo tart. Purple sweet potato in a tiny pastry shell, because Okinawa looked at dessert and chose elegance with carbs. Airport souvenir classic.
+english_name: Okashigoten Original Beni-Imo Tart
+japanese_name: 御菓子御殿 元祖紅いもタルト
+subcategory: Okinawa souvenir tart
+price_range_jpy: 800-2000
+where_to_buy:
+- Okashigoten
+- Naha Airport
+- Okinawa souvenir shops
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.okashigoten.co.jp/en/lets-go/
+enrichment_date: '2026-05-19'

@@ -22,3 +22,16 @@ suitcase_score: 10
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Uji matcha. Kyoto matcha powder for whisking, lattes, or pretending your kitchen is calmer than it is. Buy sealed tins, not random green dust.
+english_name: Uji Matcha
+japanese_name: 宇治抹茶
+subcategory: matcha powder
+price_range_jpy: 1000-3000
+where_to_buy:
+- Kyoto tea shops
+- department-store food halls
+- Ippodo Tea
+- airport gift shops
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

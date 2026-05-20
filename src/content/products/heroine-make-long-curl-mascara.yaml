@@ -27,3 +27,18 @@ suitcase_score: 9
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Heroine Make Long & Curl Mascara. Japan's drama-proof mascara for curled lashes that hold through humidity, tears, and 2 a.m. bad decisions.
+english_name: Heroine Make Long & Curl Mascara Advanced Film
+japanese_name: ヒロインメイク ロング＆カールマスカラ アドバンストフィルム
+subcategory: mascara
+price_range_jpy: 1100-1500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- any major drugstore
+enrichment_confidence: high
+enrichment_source_url: https://www.isehan.co.jp/heroine/product/mascara/longcurlmascaraadvancedfilm/
+enrichment_date: '2026-05-19'
+image: /products/heroine-make-long-curl-mascara.webp

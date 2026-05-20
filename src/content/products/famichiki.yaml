@@ -27,3 +27,16 @@ display_strategy: "show_all"
 featured: true
 sub_chip: "food"
 name_jp: "ファミチキ（骨なし）"
+
+description: Famichiki. Boneless fried chicken from the FamilyMart hot case, best eaten standing outside like a gremlin with receipts.
+english_name: Famichiki
+japanese_name: ファミチキ
+subcategory: fried chicken
+price_range_jpy: 230-260
+where_to_buy:
+- FamilyMart
+safety_flags:
+- contains_gluten
+enrichment_confidence: medium
+enrichment_source_url: https://www.family.co.jp/goods/friedfoods/0253116.html
+enrichment_date: '2026-05-19'

@@ -27,3 +27,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "東京ディズニーリゾート グッズ"
 agent_notes: "Park-limited and season-limited items rotate"
+
+description: Tokyo Disney Resort limited merch. Park-only shirts, plush badges, and seasonal chaos bait for suitcase space.
+english_name: Tokyo Disney Resort Limited Merchandise
+japanese_name: 東京ディズニーリゾート限定グッズ
+subcategory: theme park merchandise
+price_range_jpy: 1000-5000
+where_to_buy:
+- Tokyo Disneyland
+- Tokyo DisneySea
+- Bon Voyage
+- Tokyo Disney Resort App
+enrichment_confidence: low
+enrichment_source_url: https://www.tokyodisneyresort.jp/treasure/overseasgoods/en/goods/
+enrichment_date: '2026-05-19'

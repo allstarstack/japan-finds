@@ -26,3 +26,19 @@ suitcase_score: 5
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Ningyo-yaki. Little Tokyo cakes shaped like sights and stuffed with anko or cream. Asakusa snack path behavior, in box form.
+english_name: Ningyo-yaki
+japanese_name: 人形焼
+subcategory: Tokyo souvenir cake
+price_range_jpy: 800-1500
+where_to_buy:
+- Asakusa shops
+- Tokiwado Kaminariokoshi Honpo
+- Tokyo gift shops
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://tokiwado.tokyo/products/ningyouyaki/
+enrichment_date: '2026-05-19'

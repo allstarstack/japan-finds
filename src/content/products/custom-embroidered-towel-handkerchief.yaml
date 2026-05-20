@@ -25,3 +25,17 @@ suitcase_score: 8
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Custom embroidered towel. A handkerchief with your name on it, because Japan makes even sweat management personal.
+english_name: Custom Embroidered Towel Handkerchief
+japanese_name: 名入れ刺繍タオルハンカチ
+subcategory: custom-souvenir
+price_range_jpy: 700-1500
+where_to_buy:
+- souvenir shops
+- department stores
+- FamilyMart
+- custom embroidery kiosks
+enrichment_confidence: low
+enrichment_source_url: https://www.family.co.jp/goods/cw.html
+enrichment_date: '2026-05-19'

@@ -22,3 +22,17 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+
+description: Sensu folding fan. Pocket-sized airflow with old-school Kyoto energy; lifesaver for summer stations and overheated festival crowds.
+english_name: Sensu Folding Fan
+japanese_name: 扇子
+subcategory: folding fan
+price_range_jpy: 1000-5000
+where_to_buy:
+- Hakuchikudo
+- Kyoto souvenir shops
+- department stores
+- airport souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://www.hakuchikudo.co.jp/en
+enrichment_date: '2026-05-19'

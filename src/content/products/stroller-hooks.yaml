@@ -28,3 +28,17 @@ launch_category: "kids_family"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ベビーカーフック"
+
+description: Daiso stroller hooks. Clip-on bag hangers for strollers, tiny but clutch when the diaper bag starts winning. Parenting convenience, ¥100 edition.
+english_name: Daiso Stroller Hooks
+japanese_name: ベビーカーフック
+subcategory: stroller accessory
+price_range_jpy: 100-300
+where_to_buy:
+- Daiso
+- Akachan Honpo
+- Nishimatsuya
+- baby aisles
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4549131954463
+enrichment_date: '2026-05-19'

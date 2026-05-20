@@ -24,3 +24,20 @@ suitcase_score: 10
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Bell Foods soup curry base. Sapporo soup curry without negotiating with a spice drawer; add chicken, vegetables, and main-character broth.
+english_name: Bell Foods Soup Curry Recipe 180g
+japanese_name: ベル食品 スープカレーの作り方
+subcategory: curry base
+price_range_jpy: 400-700
+where_to_buy:
+- Hokkaido souvenir shops
+- Japanese supermarkets
+- Donki
+- online Japanese grocery stores
+safety_flags:
+- contains_gluten
+enrichment_confidence: medium
+enrichment_source_url: https://foodcomecome.com/products/fc00001006400108
+enrichment_date: '2026-05-19'
+image: /products/sapporo-soup-curry-mix.webp

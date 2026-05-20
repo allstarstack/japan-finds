@@ -22,3 +22,16 @@ suitcase_score: 5
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: PASMO PASSPORT. Tourist IC card for trains and small payments, now retired like a limited-edition transit ghost. Look for TOURIST PASMO instead.
+english_name: PASMO PASSPORT
+japanese_name: PASMO PASSPORT
+subcategory: transit IC card
+price_range_jpy: '2000'
+where_to_buy:
+- Narita Airport train stations
+- Haneda Airport train stations
+- select Tokyo Metro stations
+enrichment_confidence: low
+enrichment_source_url: https://www.pasmo.co.jp/visitors/en/news/
+enrichment_date: '2026-05-19'

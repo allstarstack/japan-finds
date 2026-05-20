@@ -29,3 +29,17 @@ launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
 featured: true
+
+description: Hanko name stamp. Tiny seal for names, notebooks, and souvenir chaos. Shachihata-style ones click fast with built-in ink.
+english_name: Hanko Name Stamp
+japanese_name: 判子
+subcategory: name stamp
+price_range_jpy: 500-3000
+where_to_buy:
+- hanko shops
+- Donki
+- Shachihata official shop
+- Hands
+enrichment_confidence: medium
+enrichment_source_url: https://www.shachihata.jp/products/detail.php?product_id=2961
+enrichment_date: '2026-05-19'

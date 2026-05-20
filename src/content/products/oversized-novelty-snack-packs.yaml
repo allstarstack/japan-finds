@@ -27,3 +27,16 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "巨大お菓子"
 agent_notes: "Novelty assortment varies by store"
+
+description: Oversized snack packs. Japan looks at normal snack size and says, 'coward.' Donki stacks these big souvenir bags for people buying candy like they owe apologies.
+english_name: Donki Oversized Snack Packs
+japanese_name: ドンキ 大容量お菓子パック
+subcategory: oversized snacks
+price_range_jpy: 500-2000
+where_to_buy:
+- Donki
+- MEGA Donki
+- airport souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://mpglobal.donki.com/ec-web/desktop/product-category-detail?gpId=10000-i_b_food&lan=en&meId=10000-i_b_food01
+enrichment_date: '2026-05-19'

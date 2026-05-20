@@ -26,3 +26,18 @@ source_links:
 confidence: "medium"
 trip_score: 6
 suitcase_score: 3
+
+description: Ichiban Kuji large figure prize. Lottery-only anime figure prize, usually the letter you actually want. Buy tickets, pray to Bandai, accept merch chaos.
+english_name: Ichiban Kuji Large Figure Prize
+japanese_name: 一番くじ 大型フィギュア賞
+subcategory: lottery figure prize
+price_range_jpy: 700-900
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- bookstores
+- anime goods shops
+enrichment_confidence: low
+enrichment_source_url: https://sf.1kuji.com/1kuji_onepiece/all_star/index_en.html
+enrichment_date: '2026-05-19'

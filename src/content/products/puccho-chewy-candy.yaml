@@ -24,3 +24,19 @@ suitcase_score: 10
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Puccho chewy candy. Soft candy with gummy bits inside, basically Hi-Chew's louder cousin from the konbini candy wall.
+english_name: Puccho Chewy Candy
+japanese_name: ぷっちょ
+subcategory: chewy candy
+price_range_jpy: 120-250
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Donki
+- supermarkets
+enrichment_confidence: high
+enrichment_source_url: https://puchao.us/
+enrichment_date: '2026-05-19'
+image: /products/puccho-chewy-candy.webp

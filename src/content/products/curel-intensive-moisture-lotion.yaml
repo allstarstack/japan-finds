@@ -22,3 +22,17 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Curél Intensive Moisture Lotion. Light Japanese toner-style lotion for dry sensitive skin.
+english_name: Curél Intensive Moisture Care Moisture Lotion III
+japanese_name: キュレル 潤浸保湿 化粧水 III とてもしっとり
+subcategory: face-lotion
+price_range_jpy: 1500-2200
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://www.kao-kirei.com/ja/item/kbb/curel/4901301236180/
+enrichment_date: '2026-05-19'

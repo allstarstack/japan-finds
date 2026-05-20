@@ -25,3 +25,20 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "こだわりTHEたまごサンド"
 agent_notes: "2026 50% volume increase campaign confirms national 7-Eleven item"
+
+description: Egg salad sandwich. Soft bread, creamy egg filling, the konbini breakfast that makes tourists weirdly emotional.
+english_name: 7-Eleven Egg Salad Sandwich
+japanese_name: セブン-イレブン たまごサンド
+subcategory: sandwich
+price_range_jpy: 250-400
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.sej.co.jp/products/a/sandwich/
+enrichment_date: '2026-05-19'

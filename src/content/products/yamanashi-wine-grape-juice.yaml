@@ -23,3 +23,19 @@ suitcase_score: 3
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Yamanashi Koshu wine. Crisp white wine from Japan's grape country; the civilized souvenir after too many konbini lemon sours.
+english_name: Yamanashi Koshu Wine
+japanese_name: 山梨甲州ワイン
+subcategory: wine
+price_range_jpy: 1500-4000
+where_to_buy:
+- Yamanashi wineries
+- department store liquor floors
+- airport liquor shops
+- supermarkets in Yamanashi
+safety_flags:
+- alcohol
+enrichment_confidence: low
+enrichment_source_url: https://www.koshuvalley.com/
+enrichment_date: '2026-05-19'

@@ -22,3 +22,16 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MUJI Compression Packing Case. Packing cube with a zipper that bullies clothes flatter. Suitcase chaos loses a round.
+english_name: MUJI Compression Packing Case
+japanese_name: 無印良品 ポリエステル仕分けケース圧縮タイプ
+subcategory: travel organizer
+price_range_jpy: 990-1990
+where_to_buy:
+- MUJI
+- MUJI online store
+enrichment_confidence: high
+enrichment_source_url: https://www.muji.com/jp/ja/store/cmdty/detail/4550584434709
+enrichment_date: '2026-05-19'
+image: /products/muji-packing-cubes.webp

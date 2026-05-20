@@ -22,3 +22,13 @@ launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
 featured: true
+
+description: Daiso tabi socks. Toe-split socks for geta, sandals, or maximum foot confusion.
+english_name: Daiso Tabi Socks
+japanese_name: 足袋ソックス
+subcategory: socks
+price_range_jpy: 100-330
+where_to_buy:
+- Daiso
+enrichment_confidence: low
+enrichment_date: '2026-05-19'

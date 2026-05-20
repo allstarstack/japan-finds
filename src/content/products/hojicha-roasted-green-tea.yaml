@@ -18,3 +18,18 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 10
+
+description: Oi Ocha Hojicha. Roasted green tea, unsweetened and toasty. The bottle to grab when matcha feels too loud.
+english_name: Oi Ocha Hojicha Roasted Green Tea
+japanese_name: お〜いお茶 ほうじ茶
+subcategory: bottled tea
+price_range_jpy: 120-220
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- vending machines
+- supermarkets
+enrichment_confidence: medium
+enrichment_source_url: https://itoen.com/products/oi-ocha-hojicha
+enrichment_date: '2026-05-19'

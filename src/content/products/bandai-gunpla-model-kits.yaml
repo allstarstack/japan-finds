@@ -27,3 +27,18 @@ launch_category: "kids_family"
 fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ガンプラ"
+
+description: Gunpla model kits. Tiny plastic engineering therapy for Gundam fans with luggage-space delusion.
+english_name: Bandai Gunpla Model Kits
+japanese_name: バンダイ ガンプラ
+subcategory: model kit
+price_range_jpy: 800-5000
+where_to_buy:
+- Gundam Base
+- Yodobashi Camera
+- Bic Camera
+- Donki
+- hobby shops
+enrichment_confidence: medium
+enrichment_source_url: https://global.bandai-hobby.net/en-us/gunpla/
+enrichment_date: '2026-05-19'

@@ -25,3 +25,21 @@ suitcase_score: 9
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: PRESS BUTTER SAND. Crisp pressed butter cookie with buttercream and caramel inside. Tokyo Station gift-box energy, minus the fragile cake drama.
+english_name: PRESS BUTTER SAND
+japanese_name: プレスバターサンド
+subcategory: butter sandwich cookie
+price_range_jpy: 1200-2200
+where_to_buy:
+- PRESS BUTTER SAND stores
+- Tokyo Station
+- Narita Airport
+- department store food halls
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.narita-airport.jp/en/shop/shop-search/t2_press_butter_sand/
+enrichment_date: '2026-05-19'

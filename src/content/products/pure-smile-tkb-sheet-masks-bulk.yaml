@@ -27,3 +27,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "シートマスク"
 agent_notes: "Brand and pack count vary"
+
+description: Pure Smile bulk sheet masks. Cheap daily masks in a tub, the drugstore option for treating jet-lag face like a public enemy.
+english_name: Pure Smile Japan Face Mask 30 Sheets Refreshing Menthol
+japanese_name: ピュアスマイル ジャパンフェイスマスク 爽快メンソール 30枚
+subcategory: bulk sheet mask
+price_range_jpy: 1000-2000
+where_to_buy:
+- Donki
+- Matsumoto Kiyoshi
+- drugstores
+- variety shops
+enrichment_confidence: low
+enrichment_source_url: https://japanwithlovestore.com/en-ca/products/pure-smile-japan-face-mask-30-sheets-refreshing-menthol-3s02-x-1
+enrichment_date: '2026-05-19'
+image: /products/pure-smile-tkb-sheet-masks-bulk.webp

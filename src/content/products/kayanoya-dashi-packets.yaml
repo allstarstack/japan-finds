@@ -27,3 +27,18 @@ suitcase_score: 9
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kayanoya dashi packets. Drop one bag in water and suddenly dinner speaks Japanese; locals gift these because they actually get used.
+english_name: Kayanoya Original Dashi Packets
+japanese_name: 茅乃舎だし
+subcategory: dashi packet
+price_range_jpy: 500-2300
+where_to_buy:
+- Kayanoya shops
+- department store food halls
+- Kayanoya official online shop
+safety_flags:
+- contains_gluten
+enrichment_confidence: medium
+enrichment_source_url: https://www.kubara.jp/kayanoya/dashi/kayanoyadashi/570000/
+enrichment_date: '2026-05-19'

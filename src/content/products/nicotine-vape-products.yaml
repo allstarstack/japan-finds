@@ -22,3 +22,16 @@ source_links:
   - "https://www.japan-guide.com/e/e2450.html"
 confidence: "low"
 trip_score: 1
+
+description: IQOS ILUMA i ONE. Heated tobacco device, not a cute tech souvenir. Adult-only counter item, with Japan rules tourists should read first.
+english_name: IQOS ILUMA i ONE
+japanese_name: アイコス イルマ i ワン
+subcategory: heated tobacco device
+price_range_jpy: 3500-10000
+where_to_buy:
+- IQOS Store
+- airport duty-free
+- tobacco counters
+enrichment_confidence: low
+enrichment_source_url: https://www.pmi.com/investor-relations/press-releases-and-events/press-releases-overview/press-release-details?newsId=27436
+enrichment_date: '2026-05-19'

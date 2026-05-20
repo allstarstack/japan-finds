@@ -31,3 +31,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "七味唐辛子"
 agent_notes: "Traditional blends commonly include citrus peel"
+
+description: Yawataya Isogoro shichimi. Seven-spice chili in the classic red tin; shake it on soba, udon, yakitori, and bland decisions.
+english_name: Yawataya Isogoro Shichimi Togarashi
+japanese_name: 八幡屋礒五郎 七味唐辛子
+subcategory: spice
+price_range_jpy: 400-600
+where_to_buy:
+- Yawataya Isogoro shops
+- Nagano souvenir shops
+- department-store food halls
+- Japanese supermarkets
+enrichment_confidence: high
+enrichment_source_url: https://shop.yawataya.co.jp/item-detail/1155961
+enrichment_date: '2026-05-19'
+image: /products/shichimi-togarashi.webp

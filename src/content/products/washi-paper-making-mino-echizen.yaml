@@ -19,3 +19,16 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 10
+
+description: Washi paper making. You scoop pulp, make your own sheet, and leave with proof you briefly became a craft goblin.
+english_name: Echizen Washi Paper-Making Experience
+japanese_name: 越前和紙 紙すき体験
+subcategory: craft experience
+price_range_jpy: 1500-20000
+where_to_buy:
+- Echizen Washi Village
+- Udatsu Paper and Craft Museum
+- Mino Washi craft workshops
+enrichment_confidence: low
+enrichment_source_url: https://www.echizenwashi.jp/english/information/workshop.html
+enrichment_date: '2026-05-19'

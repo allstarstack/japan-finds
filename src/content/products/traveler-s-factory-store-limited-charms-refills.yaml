@@ -23,3 +23,16 @@ suitcase_score: 9
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Traveler's Factory limited charms and refills. Store-only notebook bits for people who treat paper like a lifestyle. Tiny, collectible, and dangerously easy to justify.
+english_name: Traveler's Factory Store-Limited Charms and Refills
+japanese_name: トラベラーズファクトリー 店舗限定チャーム・リフィル
+subcategory: stationery accessory
+price_range_jpy: 300-2000
+where_to_buy:
+- Traveler's Factory Nakameguro
+- Traveler's Factory Tokyo Station
+- Traveler's Factory Airport
+enrichment_confidence: low
+enrichment_source_url: https://www.travelers-factory.com/sitemap/
+enrichment_date: '2026-05-19'

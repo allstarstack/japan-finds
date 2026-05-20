@@ -24,3 +24,14 @@ suitcase_score: 9
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MUJI plain notebook. Cheap, blank pages that let station stamps breathe. Toss one in your day bag before the stamp table ambushes you.
+english_name: MUJI Plain Notebook
+japanese_name: 無印良品 ノート・無地
+subcategory: notebook
+price_range_jpy: 100-300
+where_to_buy:
+- MUJI
+enrichment_confidence: low
+enrichment_source_url: https://www.muji.com/jp/ja/store/cmdty/detail/4550182109108
+enrichment_date: '2026-05-19'

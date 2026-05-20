@@ -22,3 +22,18 @@ source_links:
   - "https://www.japan-guide.com/e/e2450.html"
 confidence: "medium"
 trip_score: 7
+
+description: Lawson Premium Roll Cake. Fresh cream, soft sponge, great tonight and a bad idea for a flight home.
+english_name: Lawson Premium Roll Cake
+japanese_name: ローソン プレミアムロールケーキ
+subcategory: chilled cake
+price_range_jpy: 200-300
+where_to_buy:
+- Lawson
+safety_flags:
+- contains_dairy
+- contains_egg
+- contains_gluten
+enrichment_confidence: low
+enrichment_source_url: https://www.lawson.co.jp/sp/recommend/original/detail/1508380_2168.html
+enrichment_date: '2026-05-19'

@@ -27,3 +27,17 @@ suitcase_score: 5
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Naturie Hatomugi Skin Conditioner. Big 500ml watery lotion, light and unfussy. The drugstore bottle people buy when one face toner feels too small.
+english_name: Naturie Hatomugi Skin Conditioner
+japanese_name: ナチュリエ ハトムギ化粧水
+subcategory: toner
+price_range_jpy: 650-900
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- any major drugstore
+- Donki
+enrichment_confidence: medium
+enrichment_source_url: https://www.naturie-net.jp/
+enrichment_date: '2026-05-19'

@@ -25,3 +25,16 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Baran food dividers. Plastic sushi grass, absurdly useful for bento boxes and snack organization.
+english_name: Daiso Baran Food Divider Sheets
+japanese_name: バラン
+subcategory: bento accessory
+price_range_jpy: 100-300
+where_to_buy:
+- Daiso
+- Seria
+- bento supply stores
+enrichment_confidence: medium
+enrichment_source_url: https://daisoca.com/products/4984343262867
+enrichment_date: '2026-05-19'

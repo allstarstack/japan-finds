@@ -28,3 +28,17 @@ suitcase_score: 8
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Midori MD Notebook. Cream paper, no loud cover, extremely stationery-person coded. Buy it when your travel notes deserve better handwriting than you own.
+english_name: Midori MD Notebook
+japanese_name: ミドリ MDノート
+subcategory: notebook
+price_range_jpy: 800-1500
+where_to_buy:
+- Loft
+- Tokyu Hands
+- Itoya
+- Midori online store
+enrichment_confidence: medium
+enrichment_source_url: https://md-product.com/en
+enrichment_date: '2026-05-19'

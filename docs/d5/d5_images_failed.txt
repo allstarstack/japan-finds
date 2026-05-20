@@ -1,0 +1,22 @@
+assorted-regional-kitkat-packs	https://kitkat.nestle.jp/sites/default/files/styles/webp/public/2025-08/kv_gotouchi1_pc_1_1.png.webp?itok=NDEDucm3	HTTP 403
+kate-eyebrow-powder	https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kanebo/www-kate-global-net/asean/all_products/eye_brow/eyebrow_closet-thumb-m-250709.png?fmt=png8-alpha&hide=1	too small (153 bytes)
+kit-kat-chocolatory-custom-kit-kat	https://kitkat.nestle.jp/sites/default/files/styles/webp/public/2025-05/1920x660.jpg.webp?itok=KrwCetjG	HTTP 403
+kit-kat-matcha	https://kitkat.nestle.jp/sites/default/files/styles/media_library/public/2026-03/2026SS_Koi%20matcha.PNG?itok=ttRG3oO9	HTTP 403
+kit-kat-sake-hojicha-daigaku-imo-regional-flavors	https://kitkat.nestle.jp/sites/default/files/styles/thumbnail_300x300/public/2025-11/20251120_%E3%81%94%E5%BD%93%E5%9C%B0%E3%82%AD%E3%83%83%E3%83%88%E3%82%AB%E3%83%83%E3%83%88_%E6%97%A5%E6%9C%AC%E9%85%92.png?itok=zDEYJusO	HTTP 403
+kit-kat-wasabi	https://kitkat.nestle.jp/sites/default/files/styles/thumbnail_300x300/public/2024-11/KitKat4-1%20%285%29.JPG?itok=oqqW1Jr1	HTTP 403
+lululun-sheet-masks	https://lululunusa.com/cdn/shop/files/imgi_125_2_icon_white.png?v=1778880474&width=200	unknown magic bytes (CT=image/avif)
+muji-aroma-stones-aroma-diffuser	https://www.muji.com/public/media/img/item/4550002868284_org.jpg?im=Resize%2Ctype%3Ddownsize%2Cwidth%3D3840	network: ReadTimeout: HTTPSConnectionPool(host='www.muji.com', port=443): Read timed out. (read timeout=30)
+muji-packing-cubes	https://www.muji.com/public/media/img/item/4550584434709_org.jpg?im=Resize%2Ctype%3Ddownsize%2Cwidth%3D3840	network: ReadTimeout: HTTPSConnectionPool(host='www.muji.com', port=443): Read timed out. (read timeout=30)
+muji-sensitive-skin-toner	https://www.muji.com/public/media/img/item/4550583434991_org.jpg?im=Resize%2Ctype%3Ddownsize%2Cwidth%3D3840	network: ReadTimeout: HTTPSConnectionPool(host='www.muji.com', port=443): Read timed out. (read timeout=30)
+muji-travel-neck-pillow	https://www.muji.com/public/media/img/item/4550584475498_org.jpg?im=Resize%2Ctype%3Ddownsize%2Cwidth%3D3840	network: ReadTimeout: HTTPSConnectionPool(host='www.muji.com', port=443): Read timed out. (read timeout=30)
+pure-smile-lululun-saborino-sheet-masks	https://lululunusa.com/cdn/shop/files/PremiumTokyobox.jpg?v=1723593860&width=200	unknown magic bytes (CT=image/avif)
+sakura-pigma-micron-drawing-pens	https://www.sakuraofamerica.com/wp-content/uploads/2020/07/Pigma_micron4.jpg	HTTP 403
+sakura-tea-salted-sakura-packets	https://cfrouting.zoeysite.com/cdn-cgi/image/format%3Dauto%2Cquality%3D85%2Cfit%3Dscale-down/https%3A//s3.amazonaws.com/zcom-media/sites/a0iE000000B0UU8IAN/media/catalog/product/4/9/4982175600314-1147-2.jpg	unknown magic bytes (CT=image/avif)
+sanrio-character-goods-hello-kitty-cinnamoroll-pochacco	https://www.sanrio.com/cdn/shop/files/imgi_10_zz-2512386421_KT_--1_300x.jpg?v=1767395934	unknown magic bytes (CT=image/avif)
+senbei-rice-cracker-variety-pack	https://static.wixstatic.com/media/7d20de_53be8eedcd87415599b1a86340e3d314~mv2.jpg/v1/fill/w_500%2Ch_499%2Cal_c%2Cq_80%2Cenc_avif%2Cquality_auto/7d20de_53be8eedcd87415599b1a86340e3d314~mv2.jpg	unknown magic bytes (CT=image/avif)
+shiseido-eyelash-curler	https://imagecdn.shiseido.co.jp/c%21/a%3D0%2Cf%3Dwebp%3Ajpg/resources/sw/products/img/20240625/SHOHIN_PL_C1_H36001.jpg	HTTP 404
+shizuoka-green-tea	https://www.japanesegreenteashops.com/cdn/shop/files/ShizuokaPowderedGreenTea_100grams_a3d5618a-80cb-4703-899d-7296374c98b2.jpg?v=1776741414&width=300	unknown magic bytes (CT=image/avif)
+stalogy-editor-s-series-365	https://www.jennibick.com/cdn/shop/products/Stalogy-Editors-Series-365-Days-Notebook-Black-12.jpg?v=1776487028&width=160	unknown magic bytes (CT=image/avif)
+suntory-yamazaki-hakushu-distillery-tour	https://www.suntory.com/factory/hakushu/assets/img/top/poster_pc.webp	HTTP 403
+toto-washlet-look-only	https://eu.toto.com/fileadmin/*processed*/c/2/csm_Reference3047_e124b8046e.png	HTTP 404
+welcome-suica-card	https://www.jreast.co.jp/multi/welcomesuica/img/welcomesuica/img_welcomesuica.png	HTTP 403

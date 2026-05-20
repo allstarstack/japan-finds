@@ -24,3 +24,19 @@ suitcase_score: 10
 launch_category: "stationery"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kadoloop eraser. Warm it up and reshape the corners; an eraser with a tiny midlife reset button.
+english_name: Seed Kadoloop Eraser
+japanese_name: カドループ
+subcategory: eraser
+price_range_jpy: 250-300
+where_to_buy:
+- Loft
+- Hands
+- stationery stores
+- Bic Camera
+- Amazon Japan
+enrichment_confidence: high
+enrichment_source_url: https://www.seedr.co.jp/products/9882/
+enrichment_date: '2026-05-19'
+image: /products/seed-kadoloop-eraser.webp

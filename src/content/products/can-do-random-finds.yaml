@@ -21,3 +21,14 @@ suitcase_score: 9
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Can Do 100-yen finds. Tiny organizers, stickers, and kitchen things that solve problems you invented in the aisle. Cheap enough to become a personality trait.
+english_name: Can Do 100-Yen Random Finds
+japanese_name: キャンドゥ 100円雑貨
+subcategory: 100-yen shop goods
+price_range_jpy: 110-330
+where_to_buy:
+- Can Do
+enrichment_confidence: low
+enrichment_source_url: https://www.cando-web.co.jp/
+enrichment_date: '2026-05-19'

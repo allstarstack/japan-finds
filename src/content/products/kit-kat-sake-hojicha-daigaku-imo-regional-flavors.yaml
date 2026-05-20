@@ -27,3 +27,22 @@ suitcase_score: 10
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kit Kat Japan Sake. Regional souvenir-box candy with sake flavor. A very Japan answer to the question, 'what if my chocolate had nightlife energy?'
+english_name: Kit Kat Japan Sake
+japanese_name: キットカット 日本酒
+subcategory: regional chocolate wafer
+price_range_jpy: 800-1300
+where_to_buy:
+- airport souvenir shops
+- Donki
+- major train station gift shops
+- tourist souvenir shops
+safety_flags:
+- alcohol
+- contains_gluten
+- contains_dairy
+enrichment_confidence: low
+enrichment_source_url: https://kitkat.nestle.jp/gift
+enrichment_date: '2026-05-19'
+image: /products/kit-kat-sake-hojicha-daigaku-imo-regional-flavors.webp

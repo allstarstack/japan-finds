@@ -31,3 +31,18 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "冷しそば"
 agent_notes: "Chilled noodle SKUs rotate seasonally"
+
+description: 7-Eleven zaru soba tray. Cold noodles, dipping sauce, tiny wasabi packet, tiny chaos. The summer konbini lunch for people trying to feel functional.
+english_name: 7-Eleven Zaru Soba Tray
+japanese_name: ざるそば
+subcategory: cold noodles
+price_range_jpy: 400-500
+where_to_buy:
+- 7-Eleven Japan
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: high
+enrichment_source_url: https://www.sej.co.jp/products/a/item/090415/
+enrichment_date: '2026-05-19'
+image: /products/cold-soba-tray.webp

@@ -22,3 +22,18 @@ source_links:
 confidence: "high"
 trip_score: 8
 suitcase_score: 5
+
+description: Sake brewery tour and tasting. A guided tasting that turns sake from one word into several dangerously useful opinions.
+english_name: Fushimi Sake Brewery Tour and Tasting
+japanese_name: 伏見 酒蔵見学と試飲体験
+subcategory: sake tour
+price_range_jpy: 10000-14000
+where_to_buy:
+- Klook
+- local tour operators
+- brewery visitor centers
+safety_flags:
+- alcohol
+enrichment_confidence: low
+enrichment_source_url: https://www.klook.com/en-US/activity/95652-sake-brewery-tour-tasting-kyoto/
+enrichment_date: '2026-05-19'

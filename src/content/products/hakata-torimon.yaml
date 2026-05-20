@@ -25,3 +25,21 @@ suitcase_score: 8
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Hakata Torimon. Buttery white-bean manju that eats more like a soft milk cookie. Fukuoka airport souvenir math starts here.
+english_name: Hakata Torimon
+japanese_name: 博多通りもん
+subcategory: manju
+price_range_jpy: 620-3000
+where_to_buy:
+- Meigetsudo stores
+- Hakata Station
+- Fukuoka Airport
+- Fukuoka souvenir shops
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.meigetsudo.co.jp/ic/torimon
+enrichment_date: '2026-05-19'

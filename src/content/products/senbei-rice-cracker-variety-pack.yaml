@@ -30,3 +30,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "せんべい詰め合わせ"
 agent_notes: "Category row maker varies"
+
+description: Senbei variety pack. A sampler bag of crunchy rice crackers; good for trains, hotel desks, and pretending you bought snacks for everyone.
+english_name: Kameda Seika Assorted Rice Crackers Set
+japanese_name: 亀田製菓 おためしセット
+subcategory: rice cracker assortment
+price_range_jpy: 300-1200
+where_to_buy:
+- Japanese supermarkets
+- Donki
+- department-store food halls
+- souvenir shops
+enrichment_confidence: low
+enrichment_source_url: https://www.japanshopfuji.com/product-page/kameda-seika-assorted-rice-crackers-set-osenbe-5-varieties-30-individual-packs
+enrichment_date: '2026-05-19'
+image: /products/senbei-rice-cracker-variety-pack.webp

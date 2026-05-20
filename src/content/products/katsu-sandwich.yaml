@@ -25,3 +25,19 @@ source_links:
   - "https://www.japan-guide.com/e/e2071.html"
 confidence: "medium"
 trip_score: 8
+
+description: Katsu sandwich. Same basic pork-cutlet-and-soft-bread idea; Lawson's in-store kitchen version goes harder at lunch.
+english_name: Lawson Thick Pork Cutlet Sandwich
+japanese_name: ローソン 厚切りロースカツサンド
+subcategory: sandwich
+price_range_jpy: 350-500
+where_to_buy:
+- Lawson stores with Machikado Chubo
+- 7-Eleven
+- FamilyMart
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: low
+enrichment_source_url: https://www.lawson.co.jp/service/others/in/lang/en.html
+enrichment_date: '2026-05-19'

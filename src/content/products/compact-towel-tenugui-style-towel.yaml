@@ -27,3 +27,18 @@ suitcase_score: 9
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Tenugui-style compact towel. Thin cotton towel that dries fast and folds flat. Carry it for temples, summer sweat, and bathrooms with no paper towels.
+english_name: Tenugui-Style Compact Towel
+japanese_name: 手ぬぐい
+subcategory: travel towel
+price_range_jpy: 500-1500
+where_to_buy:
+- souvenir shops
+- Loft
+- Hands
+- Kamawanu
+- department-store craft floors
+enrichment_confidence: medium
+enrichment_source_url: https://www.japan.travel/en/japan-magazine/2007_tenugui/
+enrichment_date: '2026-05-19'

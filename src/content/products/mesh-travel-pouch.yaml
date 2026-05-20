@@ -26,3 +26,14 @@ suitcase_score: 9
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: MUJI mesh travel pouch. See-through little organizer for chargers, coins, meds, and receipt confetti. The bag-inside-bag move Japan practically demands.
+english_name: MUJI Passport Case with Mesh Pouch
+japanese_name: 無印良品 パスポートケース メッシュポーチ付
+subcategory: travel pouch
+price_range_jpy: 1000-2500
+where_to_buy:
+- MUJI
+enrichment_confidence: low
+enrichment_source_url: https://www.muji.com/jp/ja/shop/045341/articles/muji-staff/654456
+enrichment_date: '2026-05-19'

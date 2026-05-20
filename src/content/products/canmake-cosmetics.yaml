@@ -25,3 +25,19 @@ suitcase_score: 10
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Canmake cosmetics. Cheap drugstore makeup that looks way less cheap than the receipt. Cream Cheek is the easy starter item.
+english_name: Canmake Cream Cheek
+japanese_name: キャンメイク クリームチーク
+subcategory: drugstore makeup
+price_range_jpy: 600-1200
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- Plaza
+- any major drugstore
+enrichment_confidence: low
+enrichment_source_url: https://www.canmake.com/en/item/
+enrichment_date: '2026-05-19'
+image: /products/canmake-cosmetics.webp

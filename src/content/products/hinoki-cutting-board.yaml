@@ -20,3 +20,17 @@ source_links:
 confidence: "high"
 trip_score: 6
 suitcase_score: 3
+
+description: Hinoki cutting board. Soft Japanese cypress that is gentle on knives and smells faintly fancy when wet. A kitchen souvenir for people who own one good knife.
+english_name: Hinoki Cutting Board
+japanese_name: ひのきまな板
+subcategory: kitchenware
+price_range_jpy: 1500-5000
+where_to_buy:
+- Tokyu Hands
+- Loft
+- department stores
+- kitchenware shops
+enrichment_confidence: medium
+enrichment_source_url: https://shun.kaiusa.com/hinoki-boards.html?srsltid=AfmBOoq3tBL0Fqd4h6LzQ0Y9CWZJUTaEHZuLCVe9qfLEBBXmLpJte7L7
+enrichment_date: '2026-05-19'

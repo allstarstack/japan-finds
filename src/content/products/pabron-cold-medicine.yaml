@@ -30,3 +30,18 @@ display_strategy: "show_all"
 sub_chip: "meds"
 name_jp: "パブロン"
 agent_notes: "Cold medicine line active ingredients vary"
+
+description: Pabron S Gold W. Multi-symptom cold tablets for cough, sore throat, runny nose, and full-body 'I'm done.' Drugstore counter pick when tissues become your personality.
+english_name: Pabron S Gold W Tablets
+japanese_name: パブロンSゴールドW錠
+subcategory: cold medicine
+price_range_jpy: 1200-2500
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+safety_flags:
+- multi_active_cold_med
+enrichment_confidence: medium
+enrichment_source_url: https://brand.taisho.co.jp/pabron/sg/
+enrichment_date: '2026-05-19'

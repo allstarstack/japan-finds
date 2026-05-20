@@ -27,3 +27,16 @@ trip_score: 8
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Salted bean daifuku. Chewy mochi, azuki filling, good same-day snack and not a suitcase heirloom.
+english_name: 7-Eleven Salted Bean Daifuku
+japanese_name: セブン-イレブン 塩豆大福
+subcategory: mochi
+price_range_jpy: 150-250
+where_to_buy:
+- 7-Eleven
+- Lawson
+- department-store wagashi counters
+enrichment_confidence: medium
+enrichment_source_url: https://www.sej.co.jp/products/a/item/114856/
+enrichment_date: '2026-05-19'

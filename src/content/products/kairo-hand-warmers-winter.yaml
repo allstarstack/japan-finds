@@ -23,3 +23,17 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Kairo hand warmers. Air-activated heat packs for coat pockets; Japan's winter asks questions and these answer.
+english_name: Kiribai Kairo Disposable Hand Warmers
+japanese_name: 桐灰カイロ
+subcategory: hand warmer
+price_range_jpy: 300-1000
+where_to_buy:
+- Matsumoto Kiyoshi
+- any major drugstore
+- Donki
+- konbini in winter
+enrichment_confidence: low
+enrichment_source_url: https://matcha-jp.com/en/5325
+enrichment_date: '2026-05-19'

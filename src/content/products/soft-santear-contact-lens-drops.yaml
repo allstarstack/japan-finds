@@ -30,3 +30,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "ソフトサンティア"
+
+description: Soft Santear contact lens drops. Artificial tears for dry contacts after trains, screens, and hotel aircon. Small bottle, big relief energy.
+english_name: Soft Santear Contact Lens Drops
+japanese_name: ソフトサンティア
+subcategory: eye drops
+price_range_jpy: 800-1000
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- any major drugstore
+enrichment_confidence: high
+enrichment_source_url: https://search.jsm-db.info/sp_en/detail.php?txtID=4987084000034
+enrichment_date: '2026-05-19'
+image: /products/soft-santear-contact-lens-drops.webp

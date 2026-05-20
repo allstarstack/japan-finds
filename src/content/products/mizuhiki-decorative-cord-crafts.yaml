@@ -25,3 +25,17 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "水引"
 agent_notes: "Craft category maker varies"
+
+description: Mizuhiki cord crafts. Twisted paper cords tied into knots, charms, and gift decorations. Small souvenir energy for people who like craft shops more than malls.
+english_name: Mizuhiki Decorative Cord Crafts
+japanese_name: 水引 飾り紐
+subcategory: craft
+price_range_jpy: 300-1500
+where_to_buy:
+- Loft
+- Tokyu Hands
+- craft shops
+- Traveler's Factory
+enrichment_confidence: low
+enrichment_source_url: https://travelerscompanyusa.com/
+enrichment_date: '2026-05-19'

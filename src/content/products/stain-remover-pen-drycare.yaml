@@ -23,3 +23,18 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Stain remover pen. Emergency spot-cleaning for ramen splash damage. Keep one in your bag before white shirts meet convenience-store curry.
+english_name: Aimedia Portable Clothing Stain Remover Pen
+japanese_name: 衣類のシミ取りペン 携帯用
+subcategory: stain remover
+price_range_jpy: 300-800
+where_to_buy:
+- Donki
+- Tokyu Hands
+- Rakuten
+- Amazon Japan
+enrichment_confidence: medium
+enrichment_source_url: https://www.aimedia.co.jp/%E5%95%86%E5%93%81%E7%B4%B9%E4%BB%8B/%E3%82%B5%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%EF%BC%86%E3%83%8F%E3%82%A6%E3%82%B9%E3%82%AD%E3%83%BC%E3%83%97/%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%EF%BC%86%E3%81%8A%E7%9B%B4%E3%81%97/%E3%80%90%E4%BB%AE%E3%80%91%E8%A1%A3%E9%A1%9E%E3%81%AE%E3%82%B7%E3%83%9F%E5%8F%96%E3%82%8A%E3%83%9A%E3%83%B3-%E6%90%BA%E5%B8%AF%E7%94%A8/
+enrichment_date: '2026-05-19'
+image: /products/stain-remover-pen-drycare.webp

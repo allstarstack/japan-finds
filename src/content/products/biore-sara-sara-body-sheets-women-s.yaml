@@ -26,3 +26,17 @@ suitcase_score: 10
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Bioré powder body sheets. Sweat wipe, deodorant-ish refresh, and summer survival item in one crinkly pack.
+english_name: Biore Sara Sara Powder Sheets Floral
+japanese_name: ビオレ さらさらパウダーシート フローラル
+subcategory: body sheets
+price_range_jpy: 300-600
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- konbini
+- any major drugstore
+enrichment_confidence: medium
+enrichment_source_url: https://www.kao.com/sg/products/biore/bio_powdersheet_floral_00/
+enrichment_date: '2026-05-19'

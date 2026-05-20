@@ -26,3 +26,18 @@ suitcase_score: 7
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Nama yatsuhashi. Soft mochi-like Kyoto triangles with sweet bean filling; the chewy souvenir that disappears before the train leaves.
+english_name: Nishio Annama Nama Yatsuhashi
+japanese_name: 本家西尾八ッ橋 あんなま
+subcategory: Kyoto wagashi
+price_range_jpy: 500-1200
+where_to_buy:
+- Kyoto Station
+- Nishio Yatsuhashi shops
+- Kyoto souvenir shops
+- airport souvenir shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.8284.co.jp/products/group/2
+enrichment_date: '2026-05-19'
+image: /products/yatsuhashi-nama-yatsuhashi.webp

@@ -19,3 +19,17 @@ source_links:
 confidence: "high"
 trip_score: 7
 suitcase_score: 0
+
+description: Tea ceremony namagashi. Seasonal wagashi served with matcha, soft enough to feel expensive and fragile. Eat it same day; the shelf life is basically a sneeze.
+english_name: Tea Ceremony Namagashi
+japanese_name: 茶席の生菓子
+subcategory: namagashi
+price_range_jpy: 500-700
+where_to_buy:
+- Tsuruya Yoshinobu
+- department store wagashi counters
+- tea ceremony cafes
+enrichment_confidence: medium
+enrichment_source_url: https://www.tsuruyayoshinobu.jp/product/namagashi
+enrichment_date: '2026-05-19'
+image: /products/tea-ceremony-sweets-namagashi.webp

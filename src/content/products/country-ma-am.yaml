@@ -24,3 +24,22 @@ suitcase_score: 10
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Country Ma'am cookies. Soft little chocolate-chip cookies that taste like grandma got sponsored by a konbini.
+english_name: Country Ma'am Cookies
+japanese_name: カントリーマアム
+subcategory: cookies
+price_range_jpy: 120-400
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- supermarkets
+- Donki
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.fujiya-peko.co.jp/countrymaam/products/
+enrichment_date: '2026-05-19'

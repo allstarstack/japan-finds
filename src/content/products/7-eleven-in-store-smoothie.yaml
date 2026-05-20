@@ -27,3 +27,18 @@ display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "セブンカフェ スムージー"
 agent_notes: "Machine-prepared frozen cup line"
+
+description: 7-Eleven Green Smoothie. Frozen cup, machine-blended in the store, somehow more serious than my breakfast routine. Get it when konbini coffee feels too adult.
+english_name: 7-Eleven Green Smoothie
+japanese_name: セブンカフェ グリーンスムージー
+subcategory: smoothie
+price_range_jpy: 278-390
+where_to_buy:
+- 7-Eleven Japan smoothie machine stores
+safety_flags:
+- contains_dairy
+- citrus_ingestion
+enrichment_confidence: low
+enrichment_source_url: https://www.sej.co.jp/products/smoothie/
+enrichment_date: '2026-05-19'
+image: /products/7-eleven-in-store-smoothie.webp

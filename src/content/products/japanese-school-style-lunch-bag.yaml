@@ -30,3 +30,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ランチ巾着"
 agent_notes: "Character designs vary"
+
+description: Kinchaku bento bag. Drawstring lunch pouch, cute enough to make your convenience-store haul look like it has a homeroom teacher.
+english_name: Kinchaku Bento Lunch Bag
+japanese_name: 巾着 弁当袋
+subcategory: lunch bag
+price_range_jpy: 300-1500
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+- Loft
+- Hands
+enrichment_confidence: low
+enrichment_source_url: https://kirikomade.com/products/vintage-bag-kinchaku-26
+enrichment_date: '2026-05-19'

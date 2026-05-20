@@ -22,3 +22,17 @@ suitcase_score: 8
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Minon Amino Moist line. Sensitive-skin skincare with cleanser, lotion, milk, and masks. The drugstore aisle answer to angry travel skin.
+english_name: Minon Amino Moist Line
+japanese_name: ミノン アミノモイスト
+subcategory: sensitive skincare
+price_range_jpy: 1000-2500
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- Donki
+- Sugi Drug
+enrichment_confidence: medium
+enrichment_source_url: https://www.daiichisankyo-hc.co.jp/site_minon-aminomoist/
+enrichment_date: '2026-05-19'

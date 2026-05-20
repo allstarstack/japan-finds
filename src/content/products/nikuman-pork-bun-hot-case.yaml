@@ -27,3 +27,19 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "肉まん"
 agent_notes: "Seasonal hot-case item"
+
+description: FamilyMart nikuman. Hot-case pork bun with soft dough and juicy filling. Best eaten outside while pretending this counts as lunch.
+english_name: FamilyMart Pork Bun
+japanese_name: じゅわっとジューシー本格肉まん
+subcategory: steamed bun
+price_range_jpy: 160-230
+where_to_buy:
+- FamilyMart
+- 7-Eleven
+- Lawson
+safety_flags:
+- contains_gluten
+enrichment_confidence: medium
+enrichment_source_url: https://www.family.co.jp/goods/chukaman/0240109.html
+enrichment_date: '2026-05-19'
+image: /products/nikuman-pork-bun-hot-case.webp

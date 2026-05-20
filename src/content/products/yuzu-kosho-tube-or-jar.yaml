@@ -31,3 +31,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "柚子胡椒"
 agent_notes: "Contains yuzu citrus"
+
+description: Yuzu kosho tube. Squeeze-on citrus chili salt; the lazy upgrade button for noodles, grilled meat, and convenience-store chicken.
+english_name: S&B Yuzu Kosho Tube
+japanese_name: エスビー 柚子こしょうチューブ
+subcategory: condiment
+price_range_jpy: 150-400
+where_to_buy:
+- supermarkets
+- Donki
+- department store food halls
+- airport souvenir shops
+safety_flags:
+- citrus_ingestion
+enrichment_confidence: high
+enrichment_source_url: https://www.sbfoods-worldwide.com/products/search/026.html
+enrichment_date: '2026-05-19'
+image: /products/yuzu-kosho-tube-or-jar.webp

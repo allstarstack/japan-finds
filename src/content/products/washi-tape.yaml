@@ -30,3 +30,19 @@ suitcase_score: 10
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Washi tape. Tiny decorative tape that turns notebooks, gifts, and random envelopes into stationery-person behavior.
+english_name: mt Washi Masking Tape
+japanese_name: mt マスキングテープ
+subcategory: stationery tape
+price_range_jpy: 110-1500
+where_to_buy:
+- Loft
+- Hands
+- Itoya
+- mt lab
+- stationery shops
+enrichment_confidence: medium
+enrichment_source_url: https://www.masking-tape.jp/news/2023/06/15/%E5%A4%8F%E3%82%92%E5%BD%A9%E3%82%8B%E6%96%B0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%82mt-masking-tape-2023summer%E6%96%B0%E5%95%86%E5%93%81%E3%81%8C6%E6%9C%8815%E6%97%A5%E3%81%8B/
+enrichment_date: '2026-05-19'
+image: /products/washi-tape.webp

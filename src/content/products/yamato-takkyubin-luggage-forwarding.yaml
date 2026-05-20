@@ -21,3 +21,18 @@ suitcase_score: 0
 launch_category: "travel_gear"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Yamato luggage forwarding. Send your suitcase to the hotel or airport and stop cosplay-wrestling stairs in public.
+english_name: Yamato TA-Q-BIN Luggage Forwarding
+japanese_name: ヤマト宅急便 手荷物配送
+subcategory: luggage forwarding
+price_range_jpy: 2000-6000
+where_to_buy:
+- Yamato Transport counters
+- hotel front desks
+- major airports
+- convenience stores for eligible parcels
+enrichment_confidence: high
+enrichment_source_url: https://www.kuronekoyamato.co.jp/ytc/en/send/services/same-day-delivery/
+enrichment_date: '2026-05-19'
+image: /products/yamato-takkyubin-luggage-forwarding.webp

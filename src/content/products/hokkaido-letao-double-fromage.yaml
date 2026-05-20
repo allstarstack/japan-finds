@@ -25,3 +25,22 @@ suitcase_score: 3
 launch_category: "snacks"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: LeTAO Double Fromage. Two-layer Hokkaido cheesecake, half baked, half mousse. Buy cold, carry carefully, eat like plans never existed.
+english_name: LeTAO Double Fromage
+japanese_name: ルタオ ドゥーブルフロマージュ
+subcategory: cheesecake
+price_range_jpy: 1800-2500
+where_to_buy:
+- LeTAO stores
+- Hokkaido souvenir shops
+- airport souvenir shops
+- department store food halls
+safety_flags:
+- contains_gluten
+- contains_dairy
+- contains_egg
+enrichment_confidence: high
+enrichment_source_url: https://letaousa.com/products/fromage-double
+enrichment_date: '2026-05-19'
+image: /products/hokkaido-letao-double-fromage.webp

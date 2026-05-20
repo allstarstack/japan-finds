@@ -23,3 +23,19 @@ source_links:
   - "https://www.matsukiyococokara-online.com/"
 confidence: "high"
 trip_score: 9
+
+description: Pocari Sweat versus Aquarius. Japan's blue-bottle sports drink rivalry. Pocari feels softer; Aquarius tastes sharper, both live in every konbini fridge.
+english_name: Aquarius
+japanese_name: アクエリアス
+subcategory: sports drink
+price_range_jpy: 130-180
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+- vending machines
+- supermarkets
+enrichment_confidence: low
+enrichment_source_url: https://j.cocacola.co.jp/qrt/027/aquarius.htm
+enrichment_date: '2026-05-19'
+image: /products/pocari-sweat-aquarius.webp

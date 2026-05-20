@@ -17,3 +17,16 @@ source_links:
 confidence: "medium"
 trip_score: 7
 suitcase_score: 10
+
+description: Calligraphy lesson. Brush, ink, and one kanji that humbles everyone immediately. Tokyo and Kyoto studios make it an easy rainy-day win.
+english_name: Japanese Calligraphy Lesson
+japanese_name: 書道体験
+subcategory: cultural experience
+price_range_jpy: 3000-9000
+where_to_buy:
+- Maikoya Tokyo
+- Maikoya Kyoto
+- Klook
+enrichment_confidence: medium
+enrichment_source_url: https://mai-ko.com/culture/calligraphy/
+enrichment_date: '2026-05-19'

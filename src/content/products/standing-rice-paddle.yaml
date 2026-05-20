@@ -28,3 +28,17 @@ suitcase_score: 8
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Standing rice paddle. It stands upright instead of getting rice glue all over the counter. Small Japanese kitchen logic, major why-didn't-I-own-this energy.
+english_name: Marna Standing Rice Paddle
+japanese_name: 立つしゃもじ
+subcategory: rice paddle
+price_range_jpy: 900-1200
+where_to_buy:
+- Loft
+- Hands
+- kitchenware stores
+enrichment_confidence: high
+enrichment_source_url: https://gds.tokyo/en/products/marna-stand-syamoji
+enrichment_date: '2026-05-19'
+image: /products/standing-rice-paddle.webp

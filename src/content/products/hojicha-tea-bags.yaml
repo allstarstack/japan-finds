@@ -27,3 +27,18 @@ suitcase_score: 9
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Oi Ocha Hojicha Tea Bags. Roasted green tea at home without the cafe markup. Toasty, low-drama, good after dinner.
+english_name: Oi Ocha Hojicha Tea Bags
+japanese_name: お〜いお茶 ほうじ茶 ティーバッグ
+subcategory: tea bags
+price_range_jpy: 400-800
+where_to_buy:
+- supermarkets
+- Ito Yokado
+- Donki
+- drugstores
+enrichment_confidence: high
+enrichment_source_url: https://www.itoen-global.com/products/oi_ocha.html
+enrichment_date: '2026-05-19'
+image: /products/hojicha-tea-bags.webp

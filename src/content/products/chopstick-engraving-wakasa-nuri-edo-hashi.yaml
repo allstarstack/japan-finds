@@ -20,3 +20,17 @@ source_links:
 confidence: "high"
 trip_score: 9
 suitcase_score: 10
+
+description: Engraved chopsticks. A compact souvenir that does not scream airport panic. Wakasa-nuri and Edo Hashi shops turn names into an actually useful gift.
+english_name: Engraved Japanese Chopsticks
+japanese_name: 名入れ箸 / 若狭塗箸 / 江戸箸
+subcategory: personalized souvenir
+price_range_jpy: 1000-5000
+where_to_buy:
+- Ginza Natsuno
+- Wakasa-nuri shops
+- Edo Hashi shops
+- department-store craft floors
+enrichment_confidence: low
+enrichment_source_url: https://ginzanatsuno.com/
+enrichment_date: '2026-05-19'

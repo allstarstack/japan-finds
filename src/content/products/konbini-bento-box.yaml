@@ -31,3 +31,16 @@ display_strategy: "show_all"
 sub_chip: "food"
 name_jp: "コンビニ弁当"
 agent_notes: "Category row SKUs rotate weekly"
+
+description: Konbini bento box. Ready-to-eat rice meal that staff can heat at the register. The no-reservation dinner plan for jet lagged humans.
+english_name: 7-Eleven Bento Box
+japanese_name: コンビニ弁当
+subcategory: bento
+price_range_jpy: 500-800
+where_to_buy:
+- 7-Eleven
+- Lawson
+- FamilyMart
+enrichment_confidence: low
+enrichment_source_url: https://www.sej.co.jp/products/a/bento/
+enrichment_date: '2026-05-19'

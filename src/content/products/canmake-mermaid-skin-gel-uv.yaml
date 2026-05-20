@@ -28,3 +28,19 @@ suitcase_score: 7
 launch_category: "skincare_beauty"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Canmake Mermaid Skin Gel UV. SPF50+ sunscreen gel that feels light, not chalky. Drugstore sunscreen for people who hate sunscreen.
+english_name: Canmake Mermaid Skin Gel UV
+japanese_name: キャンメイク マーメイドスキンジェルUV
+subcategory: sunscreen
+price_range_jpy: 770-900
+where_to_buy:
+- Matsumoto Kiyoshi
+- Donki
+- Loft
+- Plaza
+- any major drugstore
+enrichment_confidence: high
+enrichment_source_url: https://www.canmake.com/en/item/detail/mermaid-skin-gel-uv/
+enrichment_date: '2026-05-19'
+image: /products/canmake-mermaid-skin-gel-uv.webp

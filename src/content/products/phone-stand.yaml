@@ -27,3 +27,16 @@ suitcase_score: 8
 launch_category: "hundred_yen"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Daiso folding phone stand. ¥110 plastic that saves your neck from hotel-bed doomscroll posture. Buy one before watching maps, menus, and regret for hours.
+english_name: Daiso Foldable Smartphone Stand
+japanese_name: ダイソー 折りたたみ式スマホスタンド
+subcategory: phone accessory
+price_range_jpy: 110-330
+where_to_buy:
+- Daiso
+- Seria
+- Can Do
+enrichment_confidence: medium
+enrichment_source_url: https://jp.daisonet.com/products/4549131874198
+enrichment_date: '2026-05-19'

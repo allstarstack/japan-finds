@@ -28,3 +28,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ロイズ / 白い恋人"
 agent_notes: "Tax-free stock varies by branch"
+
+description: ROYCE' potatochip chocolate. Salted chips wearing milk chocolate, the Hokkaido airport-box flex Donki tourists grab tax-free.
+english_name: ROYCE' Potatochip Chocolate Original
+japanese_name: ロイズ ポテトチップチョコレート オリジナル
+subcategory: chocolate snack
+price_range_jpy: 800-1200
+where_to_buy:
+- Donki tax-free counters
+- airport duty-free shops
+- Hokkaido souvenir shops
+safety_flags:
+- contains_dairy
+enrichment_confidence: low
+enrichment_source_url: https://roycechocolate.com/products/potatochip-chocolate-original
+enrichment_date: '2026-05-19'

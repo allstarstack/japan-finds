@@ -30,3 +30,20 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 name_jp: "ふりかけパック"
 agent_notes: "Category row maker varies"
+
+description: Furikake multi-pack. Tiny rice-seasoning packets that turn plain konbini rice into dinner; the variety pack is hotel-room meal insurance.
+english_name: Furikake Multi-Pack
+japanese_name: ふりかけミニパック
+subcategory: rice seasoning
+price_range_jpy: 250-500
+where_to_buy:
+- any major supermarket
+- Donki
+- drugstores with food aisles
+- Amazon Japan
+safety_flags:
+- contains_gluten
+- contains_egg
+enrichment_confidence: medium
+enrichment_source_url: https://www.marumiya.co.jp/product/series/furikake/mini/
+enrichment_date: '2026-05-19'

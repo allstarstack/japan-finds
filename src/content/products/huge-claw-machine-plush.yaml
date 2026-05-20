@@ -23,3 +23,17 @@ source_links:
 confidence: "medium"
 trip_score: 6
 suitcase_score: 1
+
+description: Large claw-machine plush. Jumbo arcade prize plush, usually cute and financially rude. The real price is whatever the machine decides your confidence is worth.
+english_name: Large Claw-Machine Plush
+japanese_name: 大型クレーンゲームぬいぐるみ
+subcategory: arcade prize
+price_range_jpy: 500-5000
+where_to_buy:
+- GiGO
+- Taito Station
+- Round1
+- Namco arcades
+enrichment_confidence: low
+enrichment_source_url: https://otakumode.com/sp/gigo-cranegame
+enrichment_date: '2026-05-19'

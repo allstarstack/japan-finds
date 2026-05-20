@@ -27,3 +27,16 @@ suitcase_score: 10
 launch_category: "customization"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Purikura print. Photo booth stickers with beauty filters turned up to anime HR department levels.
+english_name: Purikura Photo Sticker Print
+japanese_name: プリクラ
+subcategory: photo-booth
+price_range_jpy: 400-600
+where_to_buy:
+- game centers
+- arcades
+- shopping malls
+enrichment_confidence: low
+enrichment_source_url: https://web-japan.org/trends/11_culture/pop120216.html
+enrichment_date: '2026-05-19'

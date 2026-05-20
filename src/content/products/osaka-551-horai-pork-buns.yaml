@@ -24,3 +24,19 @@ suitcase_score: 1
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: 551 Horai pork buns. Osaka's steamed pork bun with a cult-level train-station smell. Buy hot, eat fast, regret nothing.
+english_name: 551 Horai Butaman Pork Buns
+japanese_name: 551蓬莱 豚まん
+subcategory: pork buns
+price_range_jpy: 460-2300
+where_to_buy:
+- 551 Horai stores
+- Osaka stations
+- Kansai Airport
+safety_flags:
+- contains_gluten
+enrichment_confidence: high
+enrichment_source_url: https://www.551horai.co.jp/menu/butaman/
+enrichment_date: '2026-05-19'
+image: /products/osaka-551-horai-pork-buns.webp

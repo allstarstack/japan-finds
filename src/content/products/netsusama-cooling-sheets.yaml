@@ -28,3 +28,18 @@ fill_type: "creator_fill"
 display_strategy: "show_all"
 sub_chip: "comfort"
 name_jp: "熱さまシート"
+
+description: Netsusama Cooling Sheets. Stick-on gel sheets for fever foreheads and summer survival. Not medicine, just the cold little rectangle everyone knows.
+english_name: Netsusama Cooling Sheets
+japanese_name: 熱さまシート
+subcategory: cooling sheet
+price_range_jpy: 500-900
+where_to_buy:
+- Matsumoto Kiyoshi
+- Welcia
+- any major drugstore
+- Donki
+enrichment_confidence: high
+enrichment_source_url: https://www.kobayashi.co.jp/seihin/nss/
+enrichment_date: '2026-05-19'
+image: /products/netsusama-cooling-sheets.webp

@@ -27,3 +27,17 @@ display_strategy: "show_all"
 sub_chip: "drink"
 name_jp: "ラムネ"
 agent_notes: "Brand varies widely"
+
+description: Ramune. Marble-sealed soda with the cap ritual built in; kids love it, adults still fight the bottle.
+english_name: Hata Kosen Glass Bottle Ramune
+japanese_name: ハタ鉱泉 瓶ラムネ
+subcategory: soda
+price_range_jpy: 100-200
+where_to_buy:
+- konbini
+- supermarkets
+- Donki
+- festival stalls
+enrichment_confidence: medium
+enrichment_source_url: https://www.hata-kosen.co.jp/en/pages/9/detail%3D1/b_id%3D150/r_id%3D1/
+enrichment_date: '2026-05-19'

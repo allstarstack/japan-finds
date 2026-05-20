@@ -25,3 +25,18 @@ suitcase_score: 5
 launch_category: "regional_food"
 fill_type: "verified"
 display_strategy: "show_all"
+
+description: Zunda mochi. Sweet edamame paste over chewy mochi — Sendai's green dessert that looks suspicious, then wins.
+english_name: Zunda Saryo Zunda Mochi
+japanese_name: ずんだ茶寮 ずんだ餅
+subcategory: mochi
+price_range_jpy: 960-1500
+where_to_buy:
+- Zunda Saryo stores
+- Sendai Station
+- Haneda Airport
+- Zunda Saryo online shop
+enrichment_confidence: low
+enrichment_source_url: https://zundasaryo.com/
+enrichment_date: '2026-05-19'
+image: /products/zunda-mochi-sweets.webp
