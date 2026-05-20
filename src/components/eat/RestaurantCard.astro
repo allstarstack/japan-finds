@@ -8,7 +8,12 @@
    The price tier + list badges sit absolutely over the top-right of the
    media. data-cuisine / data-flags drive the client-side filter in
    ChipRow; they are precomputed here so the filter ships no taxonomy. */
-import { CUISINE_COLOR, cuisineSlug, restaurantFlags } from "../../data/eat-chips.js";
+import {
+  CUISINE_COLOR,
+  cuisineSlug,
+  restaurantCity,
+  restaurantFlags,
+} from "../../data/eat-chips.js";
 import OpenNowBadge from "../OpenNowBadge.astro";
 
 interface Props {
@@ -19,6 +24,7 @@ const { restaurant: r } = Astro.props;
 
 const color = CUISINE_COLOR[r.cuisine_chip] ?? "gray";
 const cuisine = cuisineSlug(r.cuisine_chip);
+const city = restaurantCity(r);
 const flags = restaurantFlags(r);
 
 /* Shokudo picks come from the Shokudo Hyakumeiten, a separate list — the
@@ -34,7 +40,7 @@ const mapsUrl = r.place_id
   : r.maps_search;
 ---
 
-<article class="rc" data-cuisine={cuisine} data-flags={flags.join(" ")}>
+<article class="rc" data-cuisine={cuisine} data-city={city} data-flags={flags.join(" ")}>
   <div class="rc-media">
     {
       r.hero_image ? (

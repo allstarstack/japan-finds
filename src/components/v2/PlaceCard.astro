@@ -15,6 +15,7 @@
    default browse and revealed only by the "Stay bases" toggle. */
 import type { CollectionEntry } from "astro:content";
 import { CAT_COLOR } from "../../data/place-chips.js";
+import { prefectureToRegion } from "../../data/regions.js";
 import OpenNowBadge from "../OpenNowBadge.astro";
 
 interface Props {
@@ -47,6 +48,12 @@ const cat = d.primary_category;
 const color = CAT_COLOR[cat];
 const isBase = d.launch_tier === "base";
 
+/* Phase D D6 — region derived at build time from prefecture via the JNTO
+   lookup. Stamped as data-region for the LocationChipRow filter; an empty
+   string means no mapping was found, and the orphan check in pre-launch
+   hygiene guarantees that never happens on a `ready` row. */
+const regionSlug = prefectureToRegion(d.prefecture) ?? "";
+
 /* Badge label. The data field stays primary_category: "Eat", but these
    are food markets / yokocho / depachika — not restaurants — so the
    badge reads "Food Markets". Other categories show the verb as-is. */
@@ -67,6 +74,7 @@ const mapsUrl = d.place_id
       class="plc"
       data-chip={d.public_label ?? ""}
       data-flags={d.planning_flags ?? ""}
+      data-region={regionSlug}
       data-tier={d.launch_tier}
       hidden={isBase}
     >

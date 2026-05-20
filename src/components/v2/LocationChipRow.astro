@@ -1,0 +1,148 @@
+---
+/* Phase D D6 — location chip row, used by /eat (city) and /places (region).
+   Render-only: this component emits the chip markup and the per-page
+   stylesheet. The click/URL/filter behaviour is folded into the existing
+   page rails (ChipRow on /eat, PlaceFilterRail on /places) so there is one
+   `apply()` loop per page — that guarantees the chip label count and the
+   visible-row count never drift apart, since both derive from the same set
+   of cards under the same combined filter.
+
+   Chip order is count-descending, computed at build time from `chips`.
+   The "All Japan" default chip leads the row, slug "" (absence of param).
+
+   Props:
+   - `chips` — array of `{ slug, label, count }` for the data-driven chips.
+     Slug becomes the URL token; label is the display text.
+   - `defaultLabel` — leading chip text. Defaults to "All Japan".
+*/
+interface Chip {
+  slug: string;
+  label: string;
+  count: number;
+  /* Rollups ("Elsewhere", and any future catch-all) are pinned to the
+     end of the row regardless of count: they read as "everything not
+     listed" and only make sense visually after the named buckets they
+     contrast with. Sort puts isRollup:true after non-rollups, then by
+     count desc within each tier. */
+  isRollup?: boolean;
+}
+interface Props {
+  chips: Chip[];
+  defaultLabel?: string;
+}
+const { chips, defaultLabel = "All Japan" } = Astro.props;
+
+/* Sort: non-rollups first, then rollups (each tier count-desc, with
+   alphabetical tie-break for build determinism when two chips share a
+   count). The default "All Japan" chip is rendered separately and always
+   leads the row regardless of this sort. */
+const sorted = [...chips].sort((a, b) => {
+  const r = (a.isRollup ? 1 : 0) - (b.isRollup ? 1 : 0);
+  if (r !== 0) return r;
+  return b.count - a.count || a.label.localeCompare(b.label);
+});
+
+/* Total across all chips — the "All Japan" badge count. */
+const total = sorted.reduce((s, c) => s + c.count, 0);
+---
+
+<div class="lc-row" data-location-row role="group" aria-label="Filter by location">
+  <button
+    type="button"
+    class="lc-chip is-active"
+    data-location-chip=""
+    aria-pressed="true"
+  >
+    {defaultLabel}
+    <span class="lc-n">{total}</span>
+  </button>
+  {
+    sorted.map((c) => (
+      <button
+        type="button"
+        class="lc-chip"
+        data-location-chip={c.slug}
+        aria-pressed="false"
+      >
+        {c.label}
+        <span class="lc-n">{c.count}</span>
+      </button>
+    ))
+  }
+</div>
+
+<style>
+  /* Mirrors the cuisine/primary chip strip: horizontal-scroll on mobile,
+     no visible scrollbar, edge fade so a clipped chip reads as "more this
+     way". Wraps to a full row on desktop. The container is intentionally
+     non-sticky — the page wraps this row + the existing rail in a single
+     sticky wrapper (step 4) so the two rows stick as a unit. */
+  .lc-row {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 12px var(--gutter-mobile) 10px;
+    scroll-padding-inline: var(--gutter-mobile);
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-ink-15);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 16px,
+      #000 calc(100% - 16px),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 16px,
+      #000 calc(100% - 16px),
+      transparent
+    );
+  }
+  .lc-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Visual treatment mirrors .ec-chip / .pchip: 38px min-height, mono 11px
+     uppercase, ink border, pill radius. Active fills ink (no semantic
+     colour for location, unlike cuisine which fills with its card colour). */
+  .lc-chip {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 38px;
+    padding: 8px 14px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  .lc-chip.is-active {
+    background: var(--color-ink-black);
+    border-color: var(--color-ink-black);
+    color: #fff;
+  }
+  .lc-n {
+    font-weight: 700;
+  }
+
+  @media (min-width: 1024px) {
+    .lc-row {
+      flex-wrap: wrap;
+      overflow-x: visible;
+      padding: 14px var(--gutter-desktop) 10px;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+  }
+</style>

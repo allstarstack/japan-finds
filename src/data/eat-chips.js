@@ -26,6 +26,29 @@ export const CUISINE_CHIPS = [
   { slug: "shokudo", value: "Shokudo", label: "Shokudo" },
 ];
 
+/* City chips (Phase D D6). City-level granularity matches the user's
+   mental model when picking a place to eat — and mirrors byFood / Tabelog
+   convention. The 4 named buckets are a design decision; everything else
+   rolls into "Elsewhere" (currently 16 one-off cities). Counts regenerate
+   at build time in /eat — never hardcoded here. */
+export const CITY_CHIPS = [
+  { slug: "tokyo", value: "Tokyo", label: "Tokyo" },
+  { slug: "osaka", value: "Osaka", label: "Osaka" },
+  { slug: "kyoto", value: "Kyoto", label: "Kyoto" },
+  { slug: "fukuoka", value: "Fukuoka", label: "Fukuoka" },
+  { slug: "elsewhere", value: null, label: "Elsewhere", isRollup: true },
+];
+
+const NAMED_CITIES = new Set(
+  CITY_CHIPS.map((c) => c.value).filter(Boolean),
+);
+
+/* Bucket a restaurant's `city` into one of the 5 chip slugs. Unknown
+   cities (anything outside the 4 named buckets) fold into "elsewhere". */
+export function restaurantCity(r) {
+  return NAMED_CITIES.has(r.city) ? r.city.toLowerCase() : "elsewhere";
+}
+
 /* Planning flags — two single-select dimensions. Within a dimension the
    chips are mutually exclusive (a restaurant is either walk-in or
    reservation-only; either ¥ or ¥¥¥¥), so picking one unpicks its sibling —
