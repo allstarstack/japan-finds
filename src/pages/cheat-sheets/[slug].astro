@@ -167,6 +167,34 @@ const lede = extractLede(entry.body);
     border-top: var(--border-hair);
   }
 
+  /* Inline event photos (Phase D D2 — japan-events-2026 sheet).
+     Raw <figure class="event-photo"> blocks live in the markdown body, one
+     under each photographed event H2. 3:2 box matches the source photos
+     (mostly 3000x2000); object-fit cover absorbs the one 16:10 outlier
+     (sanja-matsuri). Caption is the brand mono label, ink-60 — low-emphasis
+     attribution that sits under the image rather than overlaid on it
+     (the editorial flow placement differs from D1's card-hero overlay). */
+  .sheet__body :global(figure.event-photo) {
+    margin: 18px 0 0;
+  }
+  .sheet__body :global(figure.event-photo img) {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+  }
+  .sheet__body :global(figure.event-photo figcaption) {
+    margin-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+  }
+
   .sheet__footer {
     margin-top: 36px;
     padding-top: 16px;

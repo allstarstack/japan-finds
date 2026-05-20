@@ -30,6 +30,7 @@ const ORDER = [
   "donki-drugstore-taxfree",
   "konbini",
   "japan-with-kids",
+  "japan-events-2026",
 ];
 const rank = (file) => {
   const i = ORDER.indexOf(file.replace(/\.md$/, ""));
