@@ -1,0 +1,197 @@
+You are enriching a Japan travel creator's product catalog (japan.allstarsteven.com/products). Each row is a product Steven has flagged as worth recommending to travelers — konbini snacks, drugstore items, donki finds, branded goods, electronics, sweets, drinks. For each product, return structured data so Steven's site can display the product with image + brand-voice description + safety info.
+
+## BRAND VOICE (READ THIS FIRST — VOICE IS THE HIGHEST-STAKES OUTPUT)
+
+PASS — one-line voice patterns (study the structure, not the topic):
+
+- "Onigiri tuna mayo. Lawson does it best — fluffier rice, more filling than the other chains."
+- "Strong Zero chu-hi. 9% ABV, hits fast, ¥200ish at any konbini. Lemon and grapefruit are the classics."
+- "Pocari Sweat. Sports drink, mild grapefruit flavor. The default 'I'm dehydrated' choice in Japan."
+- "Loxonin S Plus. NSAID painkiller. Strong, fast, what locals reach for when ibuprofen isn't enough."
+
+Structure: [WHAT IT IS]. [WHY IT'S NOTABLE]. [REAL-WORLD CONTEXT — when, where, who reaches for it].
+
+FAIL — Wikipedia voice (DO NOT WRITE LIKE THIS, EVEN IF FACTUALLY CORRECT):
+
+- "A popular Japanese alcoholic beverage manufactured by Suntory, Strong Zero is a chu-hi that combines distilled liquor with carbonated water and various fruit flavors. Known for its high alcohol content of 9%..."
+- "Pocari Sweat is a Japanese sports drink produced and distributed by Otsuka Pharmaceutical Co. The beverage is marketed as an ion supply drink and contains a balanced concentration of electrolytes..."
+- "A nourishing hair oil from the Japanese brand &honey, derived from organic honey extracts. The formulation is designed to provide deep moisturizing benefits to dry and damaged hair..."
+
+Wikipedia voice = encyclopedic complete-sentence paragraphs, manufacturer attribution, marketing claims, third-person "is a [product type] produced by [company]" opening. Refuse this pattern even when the facts are right. The voice IS the brand.
+
+**ABSOLUTE LENGTH RULE:** 1-2 short sentences MAX per description. Tight beats complete.
+
+**NEVER use these words anywhere in output:** ultimate, hidden gem, hidden gems, magical, wanderlust, authentic, unforgettable, discover, explore, must-see, curated, uncover, delve, comprehensive, local secrets, journey, embark.
+
+**NEVER hedge:** no "might", "could", "perhaps", "may want to try", "you'll find that".
+
+**Present tense. Natural spoken English. Witty when tone allows.**
+
+**American English spelling:** "flavor" not "flavour", "moisturizer" not "moisturiser", "color" not "colour", "program" not "programme", "fiber" not "fibre".
+
+## OUTPUT FORMAT
+
+Return ONE JSON array. One object per input product. No preamble, no closing remarks, no markdown code fences around it. Parseable as a single valid JSON array.
+
+Object shape:
+
+{
+  "input_name": "Loxonin S Plus",
+  "english_name": "Loxonin S Plus",
+  "japanese_name": "ロキソニンSプラス",
+  "description": "Loxonin S Plus. NSAID painkiller. Strong, fast, what locals reach for when ibuprofen isn't enough.",
+  "category": "drugstore",
+  "subcategory": "painkiller",
+  "price_range_jpy": "300-500",
+  "where_to_buy": ["Matsumoto Kiyoshi", "any major drugstore", "Donki"],
+  "image_url": "https://example.com/product.jpg",
+  "image_source": "manufacturer",
+  "safety_flags": ["NSAID"],
+  "source_url": "https://example.com/product-page",
+  "confidence": "high",
+  "notes": null
+}
+
+## HARD JSON RULES (NON-NEGOTIABLE — VIOLATIONS REJECT THE WHOLE OUTPUT)
+
+1. **Straight ASCII quotes only.** Use " and '. Never typographic curls: " " ' '. If your model defaults to smart quotes, override it for this output.
+
+2. **Array fields are JSON arrays, never comma-separated strings.** `where_to_buy` and `safety_flags` MUST be arrays even with one value. `safety_flags` is `[]` (empty array) when nothing applies, never `null`, never `""`, never `"none"`.
+
+3. **Enum fields use exactly one of the listed literal values.** No variations, no synonyms, no free text. `image_source: "manufacturer"` not `image_source: "Manufacturer's official site"`.
+
+4. **`null` is the only null.** Not `"null"` (string), not `"None"`, not `"N/A"`, not empty string.
+
+5. **Numeric ranges stay as strings.** `price_range_jpy: "300-500"` not `[300, 500]` or `300`.
+
+6. **URL fields are raw URL strings only.** Do NOT wrap URLs in markdown link syntax. The model interface may auto-format URLs as clickable links — override this for the output. Both `image_url` and `source_url` must be raw strings.
+   - CORRECT: `"image_url": "https://www.shiseido.co.jp/anessa/products/img/product.png"`
+   - INCORRECT: `"image_url": "[https://www.shiseido.co.jp/anessa/products/img/product.png](https://www.shiseido.co.jp/anessa/products/img/product.png)"`
+   - INCORRECT: `"image_url": "<https://www.shiseido.co.jp/anessa/products/img/product.png>"`
+
+## FIELD CONSTRAINTS
+
+`category` — exactly one of: konbini-food, konbini-drink, drugstore, donki, electronics, snack, beauty, sweet, drink, food, household, other
+
+`image_source` — exactly one of: manufacturer, rakuten, amazon_jp, retailer_official, other, none
+
+`confidence` — exactly one of: high, medium, low
+
+`safety_flags` array elements — only from this controlled vocabulary:
+
+- "NSAID" — Loxonin, Eve, ibuprofen-based painkillers, similar anti-inflammatories
+- "alcohol" — any alcoholic drink
+- "multi_active_cold_med" — Pabron, Lulu A Gold, multi-ingredient cold formulations
+- "aspirin" — products containing aspirin (Salonpas patches, etc.)
+- "citrus_ingestion" — anything containing grapefruit, pomelo, similar (drug interaction risk)
+- "voltage_100v" — Japanese-spec electronics (100V), needs voltage note for 120V/220V markets
+- "caffeine_high" — energy drinks, caffeine pills, items with notable caffeine
+- "raw_or_fermented" — raw fish, fermented soybean (pregnancy / immunocompromised concern)
+- "contains_gluten" / "contains_dairy" / "contains_egg" — when allergen-relevant and not obvious from category
+
+## IMAGE URL RULES
+
+`image_url` must be a DIRECT image file URL — ending in `.jpg`, `.jpeg`, `.png`, or `.webp`, or otherwise returning Content-Type `image/*`. NOT a webpage that contains an image.
+
+Source priority order:
+
+1. Manufacturer's official site
+2. Rakuten Ichiba product page image
+3. Amazon Japan product page image
+4. Official retailer (7-Eleven JP, Lawson, FamilyMart, Donki, drugstore chain sites)
+5. Other reputable Japanese retailer
+
+NEVER use: Google Image search URLs, Pinterest, social media, blog post images, Wikipedia images, AI-generated images.
+
+If you cannot find a reliable direct image file URL:
+
+- `image_url: null`
+- `image_source: "none"`
+- `confidence: "low"` (or "medium" if everything else is solid)
+- `notes: "No reliable image source found"`
+
+## SOURCE URL RULES (READ CAREFULLY — A MADE-UP URL IS WORSE THAN NULL)
+
+`source_url` must be a real URL you actually retrieved information from in this session. NOT a plausible-sounding URL. NOT example.com. NOT a fabrication based on a likely pattern. NOT an Amazon ASIN you didn't verify (no `B0XXXX` placeholders).
+
+If you did not actually visit a real URL for this product:
+
+- `source_url: null`
+- `confidence: "low"`
+- `notes` should mention source could not be verified
+
+Fabricating URLs Steven cannot check is a hard fail. Null is honest; invention is not.
+
+## AMBIGUOUS-INPUT HANDLING
+
+Some inputs in the list will not be clean single products. Handle each pattern explicitly:
+
+**Category or aisle input** ("Adult novelty aisle items", "Alcohol mini bottles / sake gifts"):
+
+- Pick the most travel-recognizable single product in that category
+- `confidence: "low"`
+- `notes: "[CATEGORY_INPUT: <list 2-4 specific products this could refer to>]"`
+
+**Venue + category input** ("7-Eleven in-store smoothie"):
+
+- Pick the most common / current SKU at that venue
+- `confidence: "low"`
+- `notes: "[VENUE_CATEGORY: <venue name>; <list 2-4 specific SKUs>]"`
+
+**Likely duplicate within the input list** ("Alfort" and "Alfort mini chocolate biscuits", "Anessa Perfect UV Skincare Milk" and "Anessa Perfect UV Sunscreen Milk"):
+
+- Produce a record for EACH input (do not silently merge)
+- `notes: "[POSSIBLE_DUPLICATE_OF: <other input_name>]"`
+- Keep `confidence` honest about the ambiguity
+
+**Genuinely ambiguous single-product input** (multiple real products match the same name):
+
+- Pick the most likely traveler-recognizable one
+- `notes: "[AMBIGUOUS: <list candidates>]"`
+
+## DISCONTINUED / REBRANDED
+
+- Discontinued: `notes: "[DISCONTINUED]"` — still fill what you can
+- Rebranded: `notes: "[REBRANDED to: <new name>]"` — still fill what you can
+
+## CONFIDENCE LEVELS
+
+- **high** — clear product match, real source URL fetched, working direct image URL, voice and schema clean
+- **medium** — product identified but some gap (price estimated, image from secondary source, source URL less authoritative)
+- **low** — partial identification, significant gaps, OR category-level input, OR no verifiable source URL, OR no usable image
+
+## OUTPUT INSTRUCTION
+
+Process the full product list below. Return exactly ONE valid JSON array containing all enriched objects.
+
+If output token limits force truncation, end cleanly at the last completed object and close the array (`]`) — do not start a second array.
+
+No text before the array. No text after. Just the array.
+
+## PRODUCT LIST
+
+Calbee Pizza Potato Chips
+Calligraphy Lesson (Tokyo / Kyoto)
+Calpis / Calpico
+Can Do Random Finds
+Canmake Cosmetics
+Canmake Cream Cheek
+Canmake Mermaid Skin Gel UV
+Cast Iron Tamagoyaki Pan
+Cezanne Cosmetics
+Cezanne lipstick/tint
+Character snack tins
+Character toothbrushes
+Cheap Hard-Shell Suitcase
+Cheap costume / animal hat aisle
+Cheap uncertified electronics
+Chopstick Engraving (Wakasa-nuri / Edo Hashi)
+Clip-on towel / pacifier strap
+Coin Laundry Detergent Sheets
+Coin Locker (Eki-Locker)
+Coin Sorting Wallet
+Coin purse
+Cold soba tray
+Collagen beauty drinks
+Compact towel / tenugui-style towel
+Compression Socks

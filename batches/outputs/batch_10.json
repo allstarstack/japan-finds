@@ -1,0 +1,526 @@
+[
+{
+"input_name": "Loxonin S",
+"english_name": "Loxonin S",
+"japanese_name": "ロキソニンS",
+"description": "Loxonin S. NSAID painkiller, fast and no drowsy ingredient. Drugstore counter energy for headaches, cramps, and the trip-ending toothache.",
+"category": "drugstore",
+"subcategory": "painkiller",
+"price_range_jpy": "700-900",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Sugi Drug",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"NSAID"
+],
+"source_url": "https://www.daiichisankyo-hc.co.jp/en/products/details/loxonin-s/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "LuLuLun sheet masks",
+"english_name": "LuLuLun Precious Sheet Masks",
+"japanese_name": "ルルルンプレシャス フェイスマスク",
+"description": "LuLuLun sheet masks. Cheap enough for daily use, cute enough to feel like you have a skincare plan. Drugstore shelf MVP after dry hotel air.",
+"category": "beauty",
+"subcategory": "sheet mask",
+"price_range_jpy": "500-2500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Loft",
+"Donki",
+"Ainz & Tulpe"
+],
+"image_url": "https://lululunusa.com/cdn/shop/files/imgi_125_2_icon_white.png?v=1778880474&width=200",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://lululunusa.com/products/precious-sheet-mask-clear-white",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Precious Clear, Precious Moist, Hydra V, Pure]"
+},
+{
+"input_name": "Luggage scale",
+"english_name": "Digital Luggage Scale",
+"japanese_name": "デジタルラゲッジスケール",
+"description": "Luggage scale. Tiny digital scale for the suitcase panic moment. Buy it before Donki turns your carry-on into a physics problem.",
+"category": "electronics",
+"subcategory": "luggage scale",
+"price_range_jpy": "1000-2500",
+"where_to_buy": [
+"Bic Camera",
+"Yodobashi Camera",
+"Donki",
+"Tokyu Hands"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.dretec.co.jp/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: dretec luggage scale, HAPPT luggage scale, Yodobashi travel scale]; No reliable image source found"
+},
+{
+"input_name": "MUJI stamp-station notebook",
+"english_name": "MUJI Plain Notebook",
+"japanese_name": "無印良品 ノート・無地",
+"description": "MUJI plain notebook. Cheap, blank pages that let station stamps breathe. Toss one in your day bag before the stamp table ambushes you.",
+"category": "other",
+"subcategory": "notebook",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"MUJI"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.muji.com/jp/ja/store/cmdty/detail/4550182109108",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: A6 plain notebook, A5 plain notebook, bunkobon notebook]; No reliable image source found"
+},
+{
+"input_name": "Magewappa Bento Box (Akita)",
+"english_name": "Odate Magewappa Bento Box",
+"japanese_name": "大館曲げわっぱ 弁当箱",
+"description": "Magewappa bento box. Akita cedar lunch box, light and way prettier than your meal prep deserves. The grown-up souvenir for people who own rice paddles emotionally.",
+"category": "household",
+"subcategory": "bento box",
+"price_range_jpy": "9000-18000",
+"where_to_buy": [
+"Odate Kogeisha",
+"craft shops",
+"department stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://magewappa.co.jp/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Majolica Majorca Lash Expander",
+"english_name": "Majolica Majorca Lash Expander Long Long Long EX Mascara",
+"japanese_name": "マジョリカ マジョルカ ラッシュエキスパンダー ロングロングロング EX",
+"description": "Majolica Majorca Lash Expander. Mascara with dramatic length and zero chill packaging. Drugstore makeup aisle pick for lashes that came for plot development.",
+"category": "beauty",
+"subcategory": "mascara",
+"price_range_jpy": "1200-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Ainz & Tulpe",
+"Loft"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.yesstyle.com/en/shiseido-majolica-majorca-lash-expander-long-long-long-ex-mascara/info.html/pid.1130587589",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Maneki Neko / Lucky Cat Bulk",
+"english_name": "Maneki-neko Lucky Cat Set",
+"japanese_name": "招き猫セット",
+"description": "Maneki-neko lucky cat set. Tiny ceramic chaos for desks, shops, and suitcase corners. Bulk-buy it when one cat feels like rookie numbers.",
+"category": "other",
+"subcategory": "souvenir figurine",
+"price_range_jpy": "1000-33000",
+"where_to_buy": [
+"Donki",
+"Nakamise-dori souvenir shops",
+"Rakuten"
+],
+"image_url": "https://tshop.r10s.jp/roccostyle/cabinet/s/neko/item-set-3.jpg?fitin=275%3A275",
+"image_source": "rakuten",
+"safety_flags": [],
+"source_url": "https://search.rakuten.co.jp/search/mall/%E6%8B%9B%E3%81%8D%E7%8C%AB%2B%E3%82%BB%E3%83%83%E3%83%88/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: ceramic lucky cat set, waving battery lucky cat, mini lucky cat bulk]"
+},
+{
+"input_name": "Maneki-neko painting experience",
+"english_name": "Maneki-neko Painting Experience",
+"japanese_name": "招き猫絵付け体験",
+"description": "Maneki-neko painting experience. You paint the luck cat yourself, which makes the souvenir legally your problem. Easy win for families, dates, and people who panic-buy keychains.",
+"category": "other",
+"subcategory": "craft experience",
+"price_range_jpy": "1500-3000",
+"where_to_buy": [
+"Seto ceramics studios",
+"Yanaka craft cafes",
+"Okayama Maneki Neko Museum"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://shoryudo.go-centraljapan.jp/en/aichi_40/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Seto painting workshop, Yanaka Nekoemon, Maneki Neko Museum painting]; No reliable image source found"
+},
+{
+"input_name": "Maruman Mnemosyne Notebook",
+"english_name": "Maruman Mnemosyne Notebook",
+"japanese_name": "マルマン ニーモシネ ノート",
+"description": "Maruman Mnemosyne notebook. Smooth paper, black cover, serious meeting cosplay. Great for creators who need ideas to look billable.",
+"category": "other",
+"subcategory": "notebook",
+"price_range_jpy": "500-1500",
+"where_to_buy": [
+"Loft",
+"Tokyu Hands",
+"Itoya",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://marumans.com/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Matcha powder",
+"english_name": "Ippodo Matcha Powder",
+"japanese_name": "一保堂 抹茶",
+"description": "Matcha powder. Fine green tea powder for whisking, lattes, and pretending your hotel cup is a tea room. Kyoto brands like Ippodo are the safe flex.",
+"category": "drink",
+"subcategory": "tea powder",
+"price_range_jpy": "1000-3000",
+"where_to_buy": [
+"Ippodo Tea",
+"department store food halls",
+"specialty tea shops"
+],
+"image_url": "https://images.ippodotea.com/images/collection-hero-matcha_x2.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://ippodotea.com/collections/matcha",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: Ippodo matcha, Marukyu Koyamaen matcha, supermarket matcha]"
+},
+{
+"input_name": "Megrhythm Steam Eye Mask",
+"english_name": "MegRhythm Steam Eye Mask",
+"japanese_name": "めぐりズム 蒸気めぐるアイマスク",
+"description": "MegRhythm Steam Eye Mask. Self-heating eye mask that turns train naps into a spa-level surrender. Buy the lavender one when jet lag starts filing paperwork.",
+"category": "drugstore",
+"subcategory": "steam eye mask",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"konbini",
+"supermarkets"
+],
+"image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-co-jp/megrhythm/lineup_202603/img_product-eye01_lg.png?fmt=png-alpha",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kao.co.jp/megrhythm/lineup/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Melano CC Vitamin C Essence",
+"english_name": "Melano CC Medicated Stain Intensive Essence",
+"japanese_name": "メラノCC 薬用 しみ 集中対策 美容液",
+"description": "Melano CC Vitamin C Essence. Tiny metal tube, cult-status brightening serum. Drugstore basket filler for acne marks and sun-damage dread.",
+"category": "beauty",
+"subcategory": "vitamin C essence",
+"price_range_jpy": "900-1500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Sugi Drug",
+"Welcia"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/melanocc/essence",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Melonpan from bakery/konbini",
+"english_name": "Melonpan",
+"japanese_name": "メロンパン",
+"description": "Melonpan. Sweet bun with a crunchy cookie shell and zero melon obligations. Konbini breakfast when you want dessert wearing bread pants.",
+"category": "konbini-food",
+"subcategory": "sweet bread",
+"price_range_jpy": "120-250",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"bakery"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.sej.co.jp/in/en.html",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: bakery/konbini; 7-Eleven melonpan, Lawson melonpan, FamilyMart melonpan]; No reliable image source found"
+},
+{
+"input_name": "Mentaiko / tarako onigiri",
+"english_name": "Mentaiko / Tarako Onigiri",
+"japanese_name": "明太子・たらこおにぎり",
+"description": "Mentaiko onigiri. Rice triangle filled with salty cod roe and a little Fukuoka attitude. Grab it cold from the konbini case when tuna mayo feels too safe.",
+"category": "konbini-food",
+"subcategory": "onigiri",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"raw_or_fermented"
+],
+"source_url": "https://www.family.co.jp/for_tourist/en.html",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: konbini onigiri; mentaiko, tarako, mentaiko mayo]; No reliable image source found"
+},
+{
+"input_name": "Mentholatum Lipfondue",
+"english_name": "Mentholatum Lip Fondue",
+"japanese_name": "メンソレータム リップフォンデュ",
+"description": "Mentholatum Lip Fondue. Glossy tinted lip balm with a soft plump look. Drugstore lip section pick when your face needs one small victory.",
+"category": "beauty",
+"subcategory": "lip balm",
+"price_range_jpy": "500-800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Welcia",
+"Sugi Drug"
+],
+"image_url": "https://jp.rohto.com/-/Media/com/lipfondue/20250618/obj_01.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/lipfondue/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Mesh travel pouch",
+"english_name": "MUJI Passport Case with Mesh Pouch",
+"japanese_name": "無印良品 パスポートケース メッシュポーチ付",
+"description": "MUJI mesh travel pouch. See-through little organizer for chargers, coins, meds, and receipt confetti. The bag-inside-bag move Japan practically demands.",
+"category": "household",
+"subcategory": "travel pouch",
+"price_range_jpy": "1000-2500",
+"where_to_buy": [
+"MUJI"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.muji.com/jp/ja/shop/045341/articles/muji-staff/654456",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: passport case with mesh pouch, mesh pouch refill, travel organizer]; No reliable image source found"
+},
+{
+"input_name": "Microplane / Oroshigane (Japanese Grater)",
+"english_name": "Oroshigane Japanese Grater",
+"japanese_name": "おろし金",
+"description": "Oroshigane grater. Japanese grater for daikon, ginger, wasabi, and garlic. Tiny kitchen flex that makes supermarket tube ginger look nervous.",
+"category": "household",
+"subcategory": "grater",
+"price_range_jpy": "700-8000",
+"where_to_buy": [
+"Kappabashi shops",
+"Loft",
+"Tokyu Hands",
+"department store kitchen floors"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.kurashi-no-hotorisya.jp/maker/ooyaseisakusho_all.html",
+"confidence": "low",
+"notes": "[AMBIGUOUS: copper oroshigane, stainless oroshigane, Microplane zester]; No reliable image source found"
+},
+{
+"input_name": "Microwave ramen cooker",
+"english_name": "Skater Microwave Ramen Maker UDR1N",
+"japanese_name": "スケーター 即席ラーメンメーカー UDR1N",
+"description": "Microwave ramen cooker. Makes instant noodles without a stove, then becomes the bowl. Dorm room, hotel room, lazy-night engineering.",
+"category": "household",
+"subcategory": "microwave cooker",
+"price_range_jpy": "1000-1800",
+"where_to_buy": [
+"Donki",
+"Skater Online Shop",
+"Tokyu Hands",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.skater-onlineshop.com/view/item/000000015866",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Microwave rice cooker cup",
+"english_name": "Skater Microwave Rice Maker",
+"japanese_name": "スケーター レンジでご飯メーカー",
+"description": "Microwave rice cooker cup. One-cup rice maker for people who refuse full appliance commitment. Tiny kitchen law and order for solo meals.",
+"category": "household",
+"subcategory": "microwave rice cooker",
+"price_range_jpy": "1200-2000",
+"where_to_buy": [
+"Donki",
+"Skater Online Shop",
+"Tokyu Hands",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.skater-onlineshop.com/view/category/ct4070",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: 1-cup rice maker, microwave rice mug, low-carb rice maker]; No reliable image source found"
+},
+{
+"input_name": "Midori MD Notebook",
+"english_name": "Midori MD Notebook",
+"japanese_name": "ミドリ MDノート",
+"description": "Midori MD Notebook. Cream paper, no loud cover, extremely stationery-person coded. Buy it when your travel notes deserve better handwriting than you own.",
+"category": "other",
+"subcategory": "notebook",
+"price_range_jpy": "800-1500",
+"where_to_buy": [
+"Loft",
+"Tokyu Hands",
+"Itoya",
+"Midori online store"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://md-product.com/en",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Midori Traveler's Notebook",
+"english_name": "TRAVELER'S Notebook",
+"japanese_name": "トラベラーズノート",
+"description": "TRAVELER'S Notebook. Leather cover plus refill system for tickets, sketches, stamps, and mild stationery obsession. The notebook that makes receipts feel important.",
+"category": "other",
+"subcategory": "notebook",
+"price_range_jpy": "4000-8000",
+"where_to_buy": [
+"Traveler's Factory",
+"Loft",
+"Tokyu Hands",
+"Itoya"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://travelerscompanyusa.com/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Milk frother",
+"english_name": "Handheld Milk Frother",
+"japanese_name": "ハンディミルクフォーマー",
+"description": "Milk frother. Battery wand that turns konbini milk into cafe-ish foam in 20 seconds. Hotel-room latte theater, low budget edition.",
+"category": "electronics",
+"subcategory": "milk frother",
+"price_range_jpy": "1000-2500",
+"where_to_buy": [
+"Bic Camera",
+"Yodobashi Camera",
+"Donki",
+"housewares shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"voltage_100v"
+],
+"source_url": "https://www.muji.com/jp/ja/shop/045718/articles/muji-staff/536146",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Hario Creamer Z, generic 100-yen milk frother, handheld milk frother]; No reliable image source found; source is category-level, not exact SKU"
+},
+{
+"input_name": "Mini hand towel for kids",
+"english_name": "MUJI Waffle Hand Towel with Loop",
+"japanese_name": "無印良品 ワッフルハンドタオル ループ付き",
+"description": "Mini hand towel for kids. Small looped towel for school bags, bathrooms, and tiny wet hands. Japan treats hand towels like infrastructure.",
+"category": "household",
+"subcategory": "hand towel",
+"price_range_jpy": "300-800",
+"where_to_buy": [
+"MUJI",
+"Akachan Honpo",
+"Nishimatsuya",
+"100-yen shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.muji.us/products/waffle-hand-towel-with-loop-jjal6a5a",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: loop hand towel, mini hand towel set, character towel]; No reliable image source found"
+},
+{
+"input_name": "Minon Amino Moist Line",
+"english_name": "Minon Amino Moist Line",
+"japanese_name": "ミノン アミノモイスト",
+"description": "Minon Amino Moist line. Sensitive-skin skincare with cleanser, lotion, milk, and masks. The drugstore aisle answer to angry travel skin.",
+"category": "beauty",
+"subcategory": "sensitive skincare",
+"price_range_jpy": "1000-2500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"Sugi Drug"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.daiichisankyo-hc.co.jp/site_minon-aminomoist/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Mizuhiki Decorative Cord Crafts",
+"english_name": "Mizuhiki Decorative Cord Crafts",
+"japanese_name": "水引 飾り紐",
+"description": "Mizuhiki cord crafts. Twisted paper cords tied into knots, charms, and gift decorations. Small souvenir energy for people who like craft shops more than malls.",
+"category": "other",
+"subcategory": "craft",
+"price_range_jpy": "300-1500",
+"where_to_buy": [
+"Loft",
+"Tokyu Hands",
+"craft shops",
+"Traveler's Factory"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://travelerscompanyusa.com/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: mizuhiki cords, mizuhiki charms, mizuhiki gift envelopes]; No reliable image source found"
+}
+]

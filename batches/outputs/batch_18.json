@@ -1,0 +1,548 @@
+[
+{
+"input_name": "Umeboshi onigiri",
+"english_name": "Umeboshi Onigiri",
+"japanese_name": "梅干しおにぎり",
+"description": "Umeboshi onigiri. Sour salted plum in rice and nori; the konbini option for when tuna mayo feels too friendly.",
+"category": "konbini-food",
+"subcategory": "onigiri",
+"price_range_jpy": "180-220",
+"where_to_buy": [
+"Lawson",
+"7-Eleven",
+"FamilyMart"
+],
+"image_url": "https://www.lawson.co.jp/recommend/original/detail/img/l810862.png",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://www.lawson.co.jp/sp/recommend/original/detail/1527628_2168.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Uni Jetstream Ballpoint",
+"english_name": "Uni Jetstream Ballpoint",
+"japanese_name": "ジェットストリーム ボールペン",
+"description": "Uni Jetstream ballpoint. Smooth, quick-drying ink in a cheap body; the pen people accidentally become weirdly loyal to.",
+"category": "other",
+"subcategory": "stationery",
+"price_range_jpy": "150-300",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"Yodobashi Camera",
+"Bic Camera"
+],
+"image_url": "https://www.unibrands.co/cdn/shop/files/uni-jetstream-rt-ballpoint-1.0mm-black_f67c4fd7-eec0-4c11-b7a4-f43c1dbff335.jpg?v=1767635968&width=1000",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.mpuni.co.jp/products/ballpoint_pens/jetstream/jetstream/standard/sxn_150.html",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Uni Jetstream pen",
+"english_name": "Uni Jetstream Pen",
+"japanese_name": "ジェットストリーム ペン",
+"description": "Uni Jetstream pen. Low-friction ink, fast dry, dangerously good for something that costs less than a coffee.",
+"category": "other",
+"subcategory": "stationery",
+"price_range_jpy": "150-300",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"Yodobashi Camera",
+"Bic Camera"
+],
+"image_url": "https://www.unibrands.co/cdn/shop/files/uni-jetstream-rt-ballpoint-1.0mm-black_f67c4fd7-eec0-4c11-b7a4-f43c1dbff335.jpg?v=1767635968&width=1000",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.mpuni.co.jp/products/ballpoint_pens/jetstream/jetstream/standard/sxn_150.html",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Uni Jetstream Ballpoint]"
+},
+{
+"input_name": "Uni-ball Kuru Toga Mechanical Pencil",
+"english_name": "Uni-ball Kuru Toga Mechanical Pencil",
+"japanese_name": "クルトガ シャープペンシル",
+"description": "Kuru Toga mechanical pencil. The lead rotates as you write, because Japan looked at pencil tips and chose engineering violence.",
+"category": "other",
+"subcategory": "stationery",
+"price_range_jpy": "450-800",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"Yodobashi Camera",
+"Bic Camera"
+],
+"image_url": "https://www.mpuni.co.jp/products/app_product_images/028175000.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.mpuni.co.jp/products/mechanical_pencils/sharp_pen/kurutoga/standard/m5_650.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Universal travel adapter",
+"english_name": "Universal Travel Adapter",
+"japanese_name": "海外用変換プラグ",
+"description": "Universal travel adapter. Plug-shape problem solver, not a voltage converter; check your charger before making sparks abroad.",
+"category": "electronics",
+"subcategory": "travel adapter",
+"price_range_jpy": "1000-3000",
+"where_to_buy": [
+"Yodobashi Camera",
+"Bic Camera",
+"Donki",
+"airport electronics shops"
+],
+"image_url": "https://www.kashimura.com/wp-content/uploads/2025/11/wp113m_1.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"voltage_100v"
+],
+"source_url": "https://www.kashimura.com/goods/kaigai/plug/wp113m.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Kashimura WP-113M; Kashimura WP-81M; Kashimura WP-109M; travel adapters do not convert voltage]"
+},
+{
+"input_name": "Unlabeled miracle whitening creams",
+"english_name": "Unlabeled Whitening Cream",
+"japanese_name": "無表示の美白クリーム",
+"description": "Unlabeled whitening cream. Cheap beauty-aisle roulette with mercury and hydroquinone risk; skip it and buy labeled skincare from a real drugstore.",
+"category": "beauty",
+"subcategory": "unsafe skin-lightening cream",
+"price_range_jpy": "unknown",
+"where_to_buy": [
+"do not buy",
+"licensed drugstores for labeled alternatives"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.fda.gov/consumers/health-fraud-scams/skin-products-containing-mercury-andor-hydroquinone",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: unlabeled whitening creams; imported skin-lightening creams; handmade creams; no-label creams]"
+},
+{
+"input_name": "Unverified contact lenses / color contacts",
+"english_name": "Unverified Color Contacts",
+"japanese_name": "未確認カラーコンタクト",
+"description": "Unverified color contacts. Cute until your cornea files a complaint; buy approved lenses from legit optical shops.",
+"category": "beauty",
+"subcategory": "color contacts",
+"price_range_jpy": "unknown",
+"where_to_buy": [
+"do not buy unverified lenses",
+"licensed optical shops",
+"approved contact lens retailers"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.fda.gov/medical-devices/contact-lenses/decorative-contact-lenses-halloween-and-more",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: color contacts; decorative lenses; circle lenses; cosplay lenses]"
+},
+{
+"input_name": "Utena Matomage hair styling stick",
+"english_name": "Utena Matomage Hair Styling Stick Regular",
+"japanese_name": "マトメージュ まとめ髪スティック レギュラー",
+"description": "Matomage hair styling stick. Swipe-on wax for flyaways and bangs; drugstore armor for when humidity starts freelancing.",
+"category": "beauty",
+"subcategory": "hair styling",
+"price_range_jpy": "600-900",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"any major drugstore",
+"Loft"
+],
+"image_url": "https://www.utena.co.jp/matomage/_astro/img_right.DYsoKgL-_1jdb2Q.webp",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.utena.co.jp/products/brand/matomage/matomage-stick-r.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Wakasa-nuri / Edo-style Chopsticks",
+"english_name": "Wakasa-nuri Lacquer Chopsticks",
+"japanese_name": "若狭塗箸",
+"description": "Wakasa-nuri chopsticks. Lacquered, durable, and way too pretty for instant noodles, which is exactly why travelers buy them.",
+"category": "household",
+"subcategory": "chopsticks",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Kappabashi",
+"department stores",
+"regional craft shops",
+"souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://kogeijapan.com/locale/en_US/wakasanuri/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Wakasa-nuri chopsticks; Edo Kibashi chopsticks; lacquer chopsticks; handmade wooden chopsticks]"
+},
+{
+"input_name": "Washi Paper Making (Mino / Echizen)",
+"english_name": "Echizen Washi Paper-Making Experience",
+"japanese_name": "越前和紙 紙すき体験",
+"description": "Washi paper making. You scoop pulp, make your own sheet, and leave with proof you briefly became a craft goblin.",
+"category": "other",
+"subcategory": "craft experience",
+"price_range_jpy": "1500-20000",
+"where_to_buy": [
+"Echizen Washi Village",
+"Udatsu Paper and Craft Museum",
+"Mino Washi craft workshops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.echizenwashi.jp/english/information/workshop.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Mino washi experience; Echizen washi experience; paper-making workshop; washi craft kit]"
+},
+{
+"input_name": "Washi tape",
+"english_name": "mt Washi Masking Tape",
+"japanese_name": "mt マスキングテープ",
+"description": "Washi tape. Tiny decorative tape that turns notebooks, gifts, and random envelopes into stationery-person behavior.",
+"category": "household",
+"subcategory": "stationery tape",
+"price_range_jpy": "110-1500",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"mt lab",
+"stationery shops"
+],
+"image_url": "https://prcdn.freetls.fastly.net/release_image/114607/5/114607-5-a578a4c4bcf11300d46fc1036b45f50d-1327x701.jpg?auto=webp&fit=bounds&format=jpeg&height=1350&quality=85%2C65&width=1950",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.masking-tape.jp/news/2023/06/15/%E5%A4%8F%E3%82%92%E5%BD%A9%E3%82%8B%E6%96%B0%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%82mt-masking-tape-2023summer%E6%96%B0%E5%95%86%E5%93%81%E3%81%8C6%E6%9C%8815%E6%97%A5%E3%81%8B/",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: mt masking tape; generic washi tape; patterned craft tape]"
+},
+{
+"input_name": "Welcome Suica Card",
+"english_name": "Welcome Suica Card",
+"japanese_name": "ウェルカムスイカ",
+"description": "Welcome Suica card. Tourist IC card for trains, buses, lockers, vending machines, and konbini panic-buying.",
+"category": "other",
+"subcategory": "transit card",
+"price_range_jpy": "1000-20000",
+"where_to_buy": [
+"JR East travel service counters",
+"Welcome Suica machines",
+"Haneda Airport",
+"Narita Airport"
+],
+"image_url": "https://www.jreast.co.jp/multi/welcomesuica/img/welcomesuica/img_welcomesuica.png",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.jreast.co.jp/en/multi/welcomesuica/welcomesuica.html",
+"confidence": "medium",
+"notes": "Physical card availability is JR East stock-dependent; check current purchase locations before relying on the card."
+},
+{
+"input_name": "Whale Meat / Horse Sashimi",
+"english_name": "Basashi Horse Sashimi",
+"japanese_name": "馬刺し",
+"description": "Basashi horse sashimi. Thin-sliced raw horse meat with ginger, garlic, and sweet soy sauce; Kumamoto's most eyebrow-raising dinner order.",
+"category": "food",
+"subcategory": "regional raw meat",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Kumamoto restaurants",
+"regional izakaya",
+"specialty horse-meat restaurants"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"raw_or_fermented"
+],
+"source_url": "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/4013/index.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: whale sashimi; canned whale meat; basashi horse sashimi; horse meat specialty restaurants]"
+},
+{
+"input_name": "Yamanashi Wine / Grape Juice",
+"english_name": "Yamanashi Koshu Wine",
+"japanese_name": "山梨甲州ワイン",
+"description": "Yamanashi Koshu wine. Crisp white wine from Japan's grape country; the civilized souvenir after too many konbini lemon sours.",
+"category": "drink",
+"subcategory": "wine",
+"price_range_jpy": "1500-4000",
+"where_to_buy": [
+"Yamanashi wineries",
+"department store liquor floors",
+"airport liquor shops",
+"supermarkets in Yamanashi"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://www.koshuvalley.com/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Yamanashi Koshu wine; Yamanashi grape juice; Katsunuma wine; Shine Muscat juice]"
+},
+{
+"input_name": "Yamato Takkyubin Luggage Forwarding",
+"english_name": "Yamato TA-Q-BIN Luggage Forwarding",
+"japanese_name": "ヤマト宅急便 手荷物配送",
+"description": "Yamato luggage forwarding. Send your suitcase to the hotel or airport and stop cosplay-wrestling stairs in public.",
+"category": "other",
+"subcategory": "luggage forwarding",
+"price_range_jpy": "2000-6000",
+"where_to_buy": [
+"Yamato Transport counters",
+"hotel front desks",
+"major airports",
+"convenience stores for eligible parcels"
+],
+"image_url": "https://www.kuronekoyamato.co.jp/ytc/en/send/services/same-day-delivery/img/index_h01.png",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.kuronekoyamato.co.jp/ytc/en/send/services/same-day-delivery/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Yatsuhashi (Kyoto)",
+"english_name": "Shogoin Yatsuhashi",
+"japanese_name": "聖護院八ッ橋",
+"description": "Yatsuhashi. Kyoto cinnamon rice crackers shaped like little koto bridges; the old-school souvenir your suitcase smells like later.",
+"category": "sweet",
+"subcategory": "Kyoto wagashi",
+"price_range_jpy": "500-1300",
+"where_to_buy": [
+"Kyoto Station",
+"Kyoto souvenir shops",
+"department store food halls",
+"airport souvenir shops"
+],
+"image_url": "https://pict1.ec-sites.jp/img/1905/152776/200/20180223142704.jpg",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://shop.shogoin.co.jp/p/item-detail/detail/i10.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Yatsuhashi / Nama Yatsuhashi",
+"english_name": "Nishio Annama Nama Yatsuhashi",
+"japanese_name": "本家西尾八ッ橋 あんなま",
+"description": "Nama yatsuhashi. Soft mochi-like Kyoto triangles with sweet bean filling; the chewy souvenir that disappears before the train leaves.",
+"category": "sweet",
+"subcategory": "Kyoto wagashi",
+"price_range_jpy": "500-1200",
+"where_to_buy": [
+"Kyoto Station",
+"Nishio Yatsuhashi shops",
+"Kyoto souvenir shops",
+"airport souvenir shops"
+],
+"image_url": "https://www.8284.co.jp/imgex.cgi?f=30000387_1.jpeg&p=4&t=1779238782",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.8284.co.jp/products/group/2",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Yatsuhashi (Kyoto)]"
+},
+{
+"input_name": "Yebisu Beer Multipack",
+"english_name": "Yebisu Beer Multipack",
+"japanese_name": "ヱビスビール パック",
+"description": "Yebisu Beer multipack. Richer, maltier Japanese beer; the konbini flex when you refuse to drink like a college exchange student.",
+"category": "drink",
+"subcategory": "beer",
+"price_range_jpy": "1200-1800",
+"where_to_buy": [
+"konbini",
+"supermarkets",
+"Donki",
+"liquor shops"
+],
+"image_url": "https://www.sapporobeer.jp/yebisu/product/yebisubeer/images/products_img01.webp",
+"image_source": "manufacturer",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://www.sapporobeer.jp/yebisu/product/yebisubeer/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Yodobashi/Bic Camera Tax-Free Electronics",
+"english_name": "Bic Camera Tax-Free Electronics",
+"japanese_name": "ビックカメラ 免税家電",
+"description": "Tax-free electronics. Big-camera-store treasure hunting with one catch: Japan is 100V, so check voltage before adopting a rice cooker.",
+"category": "electronics",
+"subcategory": "tax-free electronics",
+"price_range_jpy": "5000-200000",
+"where_to_buy": [
+"Bic Camera",
+"Yodobashi Camera",
+"Kojima",
+"Sofmap"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"voltage_100v"
+],
+"source_url": "https://www.biccamera.co.jp/language/forec/english.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Bic Camera tax-free electronics; Yodobashi Camera electronics; Japan-only appliances; 100V devices]"
+},
+{
+"input_name": "Yoku Moku Cigare",
+"english_name": "Yoku Moku Cigare",
+"japanese_name": "ヨックモック シガール",
+"description": "Yoku Moku Cigare. Buttery rolled cookies in the blue tin; department-store gift math that always works.",
+"category": "sweet",
+"subcategory": "cookies",
+"price_range_jpy": "1000-4500",
+"where_to_buy": [
+"Yoku Moku shops",
+"department store food halls",
+"airport souvenir shops",
+"online official shop"
+],
+"image_url": "https://yokumoku.co.jp/cdn/shop/files/9a6b3f8f-306a-44ff-a115-7d3d9f3e6dc3-9ed7c64efd.jpg?v=1773768961",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://yokumoku.co.jp/products/1010011201030",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Yubari melon jelly",
+"english_name": "HORI Yubari Melon Pure Jelly",
+"japanese_name": "ホリ 夕張メロンピュアゼリー",
+"description": "Yubari melon jelly. Hokkaido melon flavor in wobbly souvenir form; chill it first unless you enjoy warm luxury pudding chaos.",
+"category": "sweet",
+"subcategory": "fruit jelly",
+"price_range_jpy": "600-6300",
+"where_to_buy": [
+"Hokkaido souvenir shops",
+"New Chitose Airport",
+"department store food halls",
+"online official shop"
+],
+"image_url": "https://www.e-hori.com/client_info/HORI/itemimage/prejelly_category2022.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_dairy"
+],
+"source_url": "https://www.e-hori.com/category/YUBARI_001/0301001.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Yukimi Daifuku",
+"english_name": "Yukimi Daifuku",
+"japanese_name": "雪見だいふく",
+"description": "Yukimi Daifuku. Mochi-wrapped vanilla ice cream; the freezer-section snack that makes winter branding feel legally binding.",
+"category": "sweet",
+"subcategory": "ice cream",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"konbini",
+"supermarkets",
+"Donki"
+],
+"image_url": "https://www.lotte.co.jp/products/catalogue/ice/03/product_file_lotte/product_file/SD_2410210001.jpg?_size=4",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.lotte.co.jp/products/catalogue/ice/03/detail01.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Yuzu Kosho",
+"english_name": "S&B Yuzu Kosho Spicy Citrus Paste",
+"japanese_name": "エスビー 柚子こしょう",
+"description": "Yuzu kosho. Salty yuzu-and-green-chili paste; tiny tube, aggressive opinions, excellent on yakitori and ramen.",
+"category": "food",
+"subcategory": "condiment",
+"price_range_jpy": "150-400",
+"where_to_buy": [
+"supermarkets",
+"Donki",
+"department store food halls",
+"airport souvenir shops"
+],
+"image_url": "https://www.sbfoods-worldwide.com/products/search/on2e440000004kuy-img/17961_yuzu43g_500500.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"citrus_ingestion"
+],
+"source_url": "https://www.sbfoods-worldwide.com/products/search/026.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Yuzu kosho tube or jar",
+"english_name": "S&B Yuzu Kosho Tube",
+"japanese_name": "エスビー 柚子こしょうチューブ",
+"description": "Yuzu kosho tube. Squeeze-on citrus chili salt; the lazy upgrade button for noodles, grilled meat, and convenience-store chicken.",
+"category": "food",
+"subcategory": "condiment",
+"price_range_jpy": "150-400",
+"where_to_buy": [
+"supermarkets",
+"Donki",
+"department store food halls",
+"airport souvenir shops"
+],
+"image_url": "https://www.sbfoods-worldwide.com/products/search/on2e440000004xt7-img/17961_yuzu43g_500500.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"citrus_ingestion"
+],
+"source_url": "https://www.sbfoods-worldwide.com/products/search/026.html",
+"confidence": "high",
+"notes": "[POSSIBLE_DUPLICATE_OF: Yuzu Kosho]"
+},
+{
+"input_name": "Zebra Sarasa Clip",
+"english_name": "Zebra Sarasa Clip",
+"japanese_name": "ゼブラ サラサクリップ",
+"description": "Zebra Sarasa Clip. Gel pen with bright ink and a binder clip; the cheap stationery gateway drug.",
+"category": "other",
+"subcategory": "stationery",
+"price_range_jpy": "110-150",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"Yodobashi Camera",
+"Bic Camera"
+],
+"image_url": "https://www.zebra.co.jp/pro/images/JJH15-BK.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.zebra.co.jp/pro/detail/sarasa-clip/",
+"confidence": "high",
+"notes": null
+}
+]

@@ -1,0 +1,540 @@
+[
+{
+"input_name": "Puccho Chewy Candy",
+"english_name": "Puccho Chewy Candy",
+"japanese_name": "ぷっちょ",
+"description": "Puccho chewy candy. Soft candy with gummy bits inside, basically Hi-Chew's louder cousin from the konbini candy wall.",
+"category": "snack",
+"subcategory": "chewy candy",
+"price_range_jpy": "120-250",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"Donki",
+"supermarkets"
+],
+"image_url": "https://puchao.us/wp-content/uploads/2020/08/packge-bag05fruitssoda-432x600.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://puchao.us/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Pure Smile / Lululun / Saborino Sheet Masks",
+"english_name": "Travel Lululun Sheet Mask TOKYO KOJI",
+"japanese_name": "旅するルルルン 東京 糀",
+"description": "Travel Lululun sheet masks. Regional Japan face masks for the traveler who buys skincare like souvenir stamps.",
+"category": "beauty",
+"subcategory": "sheet mask",
+"price_range_jpy": "500-3500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Hands",
+"airport shops"
+],
+"image_url": "https://lululunusa.com/cdn/shop/files/PremiumTokyobox.jpg?v=1723593860&width=200",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://lululunusa.com/collections/travel-lululun/products/travel-lululun-sheet-mask-tokyo-7-pcs",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Lululun Travel TOKYO KOJI, Saborino Morning Mask, Pure Smile Essence Face Mask]"
+},
+{
+"input_name": "Pure Smile / TKB Sheet Masks Bulk",
+"english_name": "Pure Smile Japan Face Mask 30 Sheets Refreshing Menthol",
+"japanese_name": "ピュアスマイル ジャパンフェイスマスク 爽快メンソール 30枚",
+"description": "Pure Smile bulk sheet masks. Cheap daily masks in a tub, the drugstore option for treating jet-lag face like a public enemy.",
+"category": "beauty",
+"subcategory": "bulk sheet mask",
+"price_range_jpy": "1000-2000",
+"where_to_buy": [
+"Donki",
+"Matsumoto Kiyoshi",
+"drugstores",
+"variety shops"
+],
+"image_url": "https://japanwithlovestore.com/cdn/shop/products/Pure-Smile-Puresmile-Face-Pack-Essence-Mask-30-Sheets-Refreshing-Menthol-3S02-Face-Mask-30-Sheets-X-1-Japan-Figure-4526371058601-0.jpg?v=1690884155&width=1001",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanwithlovestore.com/en-ca/products/pure-smile-japan-face-mask-30-sheets-refreshing-menthol-3s02-x-1",
+"confidence": "low",
+"notes": "[AMBIGUOUS: Pure Smile 30-sheet bulk masks, TKB bulk sheet masks, Pure Smile Essence 8-sheet masks]"
+},
+{
+"input_name": "Ramen-Making Class (Tokyo / Osaka)",
+"english_name": "Ramen Masterclass in Tokyo",
+"japanese_name": "ラーメン作り体験",
+"description": "Ramen-making class. You make noodles, broth, toppings, then understand why a bowl of ramen is not just soup.",
+"category": "other",
+"subcategory": "cooking class",
+"price_range_jpy": "15000-17000",
+"where_to_buy": [
+"Klook",
+"Airbnb Experiences",
+"local cooking schools"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.klook.com/en-US/activity/109329-3-hour-join-tokyo-cooking-class-ramen-masterclass/",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: Tokyo / Osaka; Ramen Masterclass in Tokyo, Osaka ramen cooking classes]"
+},
+{
+"input_name": "Ramune",
+"english_name": "Hata Kosen Glass Bottle Ramune",
+"japanese_name": "ハタ鉱泉 瓶ラムネ",
+"description": "Ramune. Marble-sealed soda with the cap ritual built in; kids love it, adults still fight the bottle.",
+"category": "konbini-drink",
+"subcategory": "soda",
+"price_range_jpy": "100-200",
+"where_to_buy": [
+"konbini",
+"supermarkets",
+"Donki",
+"festival stalls"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.hata-kosen.co.jp/en/pages/9/detail%3D1/b_id%3D150/r_id%3D1/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Regional ramen packs",
+"english_name": "Ichiran Hakata Thin Noodle Gift Set",
+"japanese_name": "一蘭 博多細麺 替玉付き セット",
+"description": "Regional ramen packs. Take-home ramen boxes from famous shops and prefectures, aka luggage-friendly noodle bragging rights.",
+"category": "food",
+"subcategory": "souvenir ramen",
+"price_range_jpy": "1000-3500",
+"where_to_buy": [
+"airport shops",
+"regional gift shops",
+"Donki",
+"ramen shop gift counters"
+],
+"image_url": "https://www.ichiranstore.com/img/goods/S/9699986_877d2fabd7014a6aa6124d71cb972284.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://www.ichiranstore.com/shop/g/g9699986/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Ichiran ramen gift set, Sapporo ramen packs, Hakata ramen packs, regional ramen boxes]"
+},
+{
+"input_name": "Retort curry regional packs",
+"english_name": "Yachiyo Yokosuka Navy Curry Retort Pack",
+"japanese_name": "ヤチヨ よこすか海軍カレー レトルト",
+"description": "Yokosuka Navy Curry retort pack. Regional boil-in-bag curry, shelf-stable and built for the suitcase snack goblin.",
+"category": "food",
+"subcategory": "retort curry",
+"price_range_jpy": "400-900",
+"where_to_buy": [
+"supermarkets",
+"airport shops",
+"regional gift shops",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://market-tokyo.com/products/Yachiyo-Yokosuka-Navy-Curry-Retort-Packed-Beef-Curry-Medium-Hot-p692312573",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Yokosuka Navy Curry, Hokkaido curry packs, Kobe beef curry packs, regional retort curry boxes]; No reliable direct image source found"
+},
+{
+"input_name": "Reusable shopping bag",
+"english_name": "Shupatto Minimal Bag 12L",
+"japanese_name": "シュパット ミニマルバッグ 12L",
+"description": "Shupatto reusable shopping bag. Pull-flat, roll-up eco bag; Japan's smooth answer to needing one more bag after Donki damage.",
+"category": "household",
+"subcategory": "reusable shopping bag",
+"price_range_jpy": "1000-2500",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Donki",
+"department stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.shupatto.com/en/product/minimalbag-drop-12l/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Shupatto Minimal Bag 12L, Shupatto Compact Bag, generic reusable shopping bags]; No reliable direct image source found"
+},
+{
+"input_name": "Rice ball mold",
+"english_name": "Hinoki Onigiri Mold",
+"japanese_name": "ひのき おにぎり型",
+"description": "Onigiri mold. Rice triangle insurance for anyone who turns Japanese rice into a sticky crime scene.",
+"category": "household",
+"subcategory": "kitchen tool",
+"price_range_jpy": "300-3000",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Hands",
+"kitchenware shops"
+],
+"image_url": "https://en.bentoandco.com/cdn/shop/products/2_d26a9c07-da04-4bf9-a4b5-03f2eebf60f0.png?v=1637733508&width=1946",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://en.bentoandco.com/products/onigiri-mold",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: plastic onigiri mold, hinoki onigiri mold, triangle rice ball mold]"
+},
+{
+"input_name": "Rikuro Ojisan cheesecake",
+"english_name": "Rikuro Ojisan Freshly Baked Cheesecake",
+"japanese_name": "りくろーおじさんの焼きたてチーズケーキ",
+"description": "Rikuro Ojisan cheesecake. Osaka's jiggly soufflé cheesecake; eat it fresh while the crowd films the wobble.",
+"category": "sweet",
+"subcategory": "cheesecake",
+"price_range_jpy": "965-965",
+"where_to_buy": [
+"Rikuro Ojisan Namba Main Store",
+"Shin-Osaka Station store",
+"Tennoji Station store"
+],
+"image_url": "https://www.rikuro.co.jp/img/en/img_main.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.rikuro.co.jp/en/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Rohto Cool 40 Alpha Eye Drops",
+"english_name": "Rohto Cool 40 Alpha Eye Drops",
+"japanese_name": "ロート クール40α",
+"description": "Rohto Cool 40 Alpha. Cooling vitamin eye drops for tired travel eyes after too many stations, screens, and fluorescent lights.",
+"category": "drugstore",
+"subcategory": "eye drops",
+"price_range_jpy": "400-600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://jp.rohto.com/-/media/com/cool40/eyedrop/img_100538_01.jpg?sc_lang=ja-jp",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/cool40/eyedrop/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Rohto V Premium Eye Drops",
+"english_name": "V Rohto Premium Eye Drops",
+"japanese_name": "Vロートプレミアム",
+"description": "V Rohto Premium. The fancy blue Rohto bottle for fried eyes; locals grab it when regular drops feel unserious.",
+"category": "drugstore",
+"subcategory": "eye drops",
+"price_range_jpy": "1500-1700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://jp.rohto.com/-/media/com/vrohto-premium-series/eyedrop/img_174454_01.jpg?sc_lang=ja-jp",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/vrohto-premium-series/eyedrop/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Rohto V5a",
+"english_name": "Rohto V5a",
+"japanese_name": "ロートV5a",
+"description": "Rohto V5a. Lutein and zeaxanthin eye supplement; one-a-day drugstore pouch for people who stare at screens for sport.",
+"category": "drugstore",
+"subcategory": "eye supplement",
+"price_range_jpy": "1900-2000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://jp.rohto.com/-/media/com/v5/supplement/img_188604_01.jpg?sc_lang=ja-jp",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/v5/supplement/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Rohto Z! eye drops",
+"english_name": "Rohto Z! b Eye Drops",
+"japanese_name": "ロートジーb",
+"description": "Rohto Z! eye drops. Extremely cool eye drops; the sensation is less refreshing and more my eyeballs have entered winter.",
+"category": "drugstore",
+"subcategory": "eye drops",
+"price_range_jpy": "600-700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://jp.rohto.com/-/media/com/zi/eyedrop-b/img_150175_01.jpg?sc_lang=ja-jp",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/zi/eyedrop-b/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Rohto eye drops multi-shelf section",
+"english_name": "Rohto Eye Drops Section",
+"japanese_name": "ロート目薬売り場",
+"description": "Rohto eye drops shelf. A whole wall of tiny bottles ranked by eye problem and pain tolerance; start mild unless you enjoy spicy eyeballs.",
+"category": "drugstore",
+"subcategory": "eye drops aisle",
+"price_range_jpy": "300-1700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/product/eyecare/category/eye-drops",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Rohto Cool 40 Alpha, V Rohto Premium, Rohto Z! b, Rohto Z! Contact b]; No reliable direct image source found"
+},
+{
+"input_name": "Roihi-Tsuboko patches",
+"english_name": "Roihi-Tsuboko Patches",
+"japanese_name": "ロイヒつぼ膏",
+"description": "Roihi-Tsuboko patches. Tiny heat patches for stiff shoulders and backs; grandma-core packaging, serious post-walk relief energy.",
+"category": "drugstore",
+"subcategory": "pain relief patch",
+"price_range_jpy": "1000-1400",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://www.roihi.com/en/image/tubokou/lead_img_001.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.roihi.com/en/tubokou.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Roll-up compression bag",
+"english_name": "MUJI Compression Bag for Clothing 2 Pack",
+"japanese_name": "無印良品 衣類用圧縮袋 2枚組",
+"description": "MUJI roll-up compression bags. No-vacuum packing bags that squeeze clothes down; lifesaver when souvenirs colonize the suitcase.",
+"category": "household",
+"subcategory": "travel compression bag",
+"price_range_jpy": "500-1000",
+"where_to_buy": [
+"MUJI",
+"Hands",
+"Donki",
+"travel goods shops"
+],
+"image_url": "https://www.muji.us/cdn/shop/files/4550584731761_org_700x.jpg?v=1760480400",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://www.muji.us/products/compression-bag-for-clothing-2-pack-45x60cm-ohh76a5s",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Royal Milk Tea (Bottle)",
+"english_name": "Kocha Kaden Royal Milk Tea",
+"japanese_name": "紅茶花伝 ロイヤルミルクティー",
+"description": "Kocha Kaden Royal Milk Tea. Bottled milk tea, sweet and creamy, the vending-machine comfort drink when coffee has betrayed you.",
+"category": "konbini-drink",
+"subcategory": "bottled milk tea",
+"price_range_jpy": "150-180",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"vending machines",
+"supermarkets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy"
+],
+"source_url": "https://shop.donquijotehawaii.com/store/don-quijote/products/23757001-kochakaden-royal-milk-tea-14-87-fl-oz",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Royce' Nama Chocolate",
+"english_name": "ROYCE' Nama Chocolate Au Lait",
+"japanese_name": "ロイズ 生チョコレート オーレ",
+"description": "ROYCE' Nama Chocolate. Soft chilled chocolate squares from Hokkaido; buy it cold, guard it like luggage contraband.",
+"category": "sweet",
+"subcategory": "chocolate",
+"price_range_jpy": "900-1200",
+"where_to_buy": [
+"ROYCE' shops",
+"New Chitose Airport",
+"department stores",
+"airport shops"
+],
+"image_url": "https://roycechocolate.com/cdn/shop/files/Nama_Chocolate_Au_Lait_1.jpg?v=1773418400&width=1080",
+"image_source": "manufacturer",
+"safety_flags": [
+"alcohol",
+"contains_dairy"
+],
+"source_url": "https://roycechocolate.com/products/nama-chocolate-au-lait",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "S&B Shichimi Togarashi (Yawataya Isogoro premium)",
+"english_name": "Yawataya Isogoro Shichimi Togarashi Can 14g",
+"japanese_name": "八幡屋礒五郎 七味唐からし 缶 14g",
+"description": "Yawataya Isogoro shichimi. Nagano's iconic red can of seven-spice chili; tiny souvenir, big noodle upgrade.",
+"category": "food",
+"subcategory": "spice blend",
+"price_range_jpy": "475-540",
+"where_to_buy": [
+"Yawataya Isogoro shops",
+"department stores",
+"airport shops",
+"regional gift shops"
+],
+"image_url": "https://image.raku-uru.jp/01/22113/230/waku_shichimi_can_1655434452757_1200.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://shop.yawataya.co.jp/item-detail/1155961",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: S&B Nanami Togarashi, Yawataya Isogoro Shichimi Togarashi]"
+},
+{
+"input_name": "S&B tube condiments",
+"english_name": "S&B Prepared Wasabi in Tube",
+"japanese_name": "S&B おろしわさび",
+"description": "S&B tube wasabi. Squeeze-tube wasabi for sushi, soba, steak, and bad hotel-room snack decisions.",
+"category": "food",
+"subcategory": "tube condiment",
+"price_range_jpy": "120-250",
+"where_to_buy": [
+"supermarkets",
+"Donki",
+"Matsumoto Kiyoshi",
+"airport shops"
+],
+"image_url": "https://www.sbfoods-worldwide.com/products/search/q78eit0000000sl1-img/17958_wasabi43g_500500.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.sbfoods-worldwide.com/products/search/001.html",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: S&B wasabi tube, S&B ginger tube, S&B garlic tube, S&B yuzu kosho tube]"
+},
+{
+"input_name": "SPAM musubi rice ball",
+"english_name": "FamilyMart SPAM Musubi Tuna Mayonnaise Rice Ball",
+"japanese_name": "SPAMむすび ツナマヨネーズ",
+"description": "FamilyMart SPAM musubi rice ball. SPAM, tuna mayo, rice, and nori; Okinawa energy hiding in a konbini wrapper.",
+"category": "konbini-food",
+"subcategory": "rice ball",
+"price_range_jpy": "180-250",
+"where_to_buy": [
+"FamilyMart"
+],
+"image_url": "https://www.family.co.jp/content/dam/family/for_tourist/img/0411486_02.jpg",
+"image_source": "retailer_official",
+"safety_flags": [
+"contains_egg"
+],
+"source_url": "https://www.family.co.jp/for_tourist/en.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Saborino morning masks",
+"english_name": "Saborino Botanical Morning Mask",
+"japanese_name": "サボリーノ ボタニカルタイプ 朝用マスク",
+"description": "Saborino morning masks. One-minute morning sheet masks for people who want skincare but not a personality arc.",
+"category": "beauty",
+"subcategory": "morning sheet mask",
+"price_range_jpy": "1000-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Hands"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://saborino.sg/products/botanical-morning-mask/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Sake Brewery Tour and Tasting",
+"english_name": "Fushimi Sake Brewery Tour and Tasting",
+"japanese_name": "伏見 酒蔵見学と試飲体験",
+"description": "Sake brewery tour and tasting. A guided tasting that turns sake from one word into several dangerously useful opinions.",
+"category": "other",
+"subcategory": "sake tour",
+"price_range_jpy": "10000-14000",
+"where_to_buy": [
+"Klook",
+"local tour operators",
+"brewery visitor centers"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://www.klook.com/en-US/activity/95652-sake-brewery-tour-tasting-kyoto/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Fushimi sake brewery walk, Kyoto sake tasting, Nada sake brewery tour]; No reliable direct image source found"
+},
+{
+"input_name": "Sake Mini Bottle Gift Set",
+"english_name": "Hakutsuru Premium Sake Selection Gift Set",
+"japanese_name": "白鶴 プレミアム酒セレクション",
+"description": "Sake mini bottle gift set. Tiny-ish bottles for sampling without committing to one big bottle; airport-gift logic at its best.",
+"category": "drink",
+"subcategory": "sake gift set",
+"price_range_jpy": "3000-5000",
+"where_to_buy": [
+"airport shops",
+"department stores",
+"liquor shops",
+"souvenir shops"
+],
+"image_url": "https://www.hakutsuru-sake.com/global/us/product/product_file/file/img_us_Premium%20Sake%20Set.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://www.hakutsuru-sake.com/global/us/product/premium_g/premiumsakeset_300x3.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Hakutsuru Premium Sake Selection, Dassai mini bottle set, Mio mini bottle set, assorted sake minis]"
+}
+]

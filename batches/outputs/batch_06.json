@@ -1,0 +1,538 @@
+[
+{
+"input_name": "Furikake multi-pack",
+"english_name": "Furikake Multi-Pack",
+"japanese_name": "ふりかけミニパック",
+"description": "Furikake multi-pack. Tiny rice-seasoning packets that turn plain konbini rice into dinner; the variety pack is hotel-room meal insurance.",
+"category": "food",
+"subcategory": "rice seasoning",
+"price_range_jpy": "250-500",
+"where_to_buy": [
+"any major supermarket",
+"Donki",
+"drugstores with food aisles",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_egg"
+],
+"source_url": "https://www.marumiya.co.jp/product/series/furikake/mini/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Furoshiki Wrapping Cloth",
+"english_name": "Furoshiki Wrapping Cloth",
+"japanese_name": "風呂敷",
+"description": "Furoshiki wrapping cloth. Gift wrap, tote bag, bento carrier; Japan's square of fabric does unpaid overtime.",
+"category": "other",
+"subcategory": "wrapping cloth",
+"price_range_jpy": "800-3500",
+"where_to_buy": [
+"Musubi",
+"department store gift floors",
+"Kyoto textile shops",
+"souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.musubi-furoshiki.com/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Musubi furoshiki, Kyoto textile shop furoshiki, department-store gift wrap cloths] No reliable image source found"
+},
+{
+"input_name": "Gachapon Capsule Toys",
+"english_name": "Bandai Gashapon Capsule Toy",
+"japanese_name": "ガシャポン",
+"description": "Gachapon capsule toys. ¥300ish for a tiny plastic decision you cannot fully control. Train stations, malls, arcades; the machines hunt in packs.",
+"category": "other",
+"subcategory": "capsule toy",
+"price_range_jpy": "300-500",
+"where_to_buy": [
+"Gashapon Bandai Official Shop",
+"Gashapon no Depato",
+"arcades",
+"shopping malls"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.gashapon.jp/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Bandai Gashapon, character capsule toys, capsule miniatures, blind-box machines] No reliable image source found"
+},
+{
+"input_name": "Gamaguchi Coin Purse",
+"english_name": "Gamaguchi Coin Purse",
+"japanese_name": "がま口コインケース",
+"description": "Gamaguchi coin purse. Snap-clasp wallet with old-school Kyoto energy. Perfect for the coins Japan still refuses to stop giving you.",
+"category": "other",
+"subcategory": "coin purse",
+"price_range_jpy": "1800-3500",
+"where_to_buy": [
+"AYANOKOJI",
+"Kyoto souvenir shops",
+"department stores",
+"online boutiques"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://ayanokoji.jp/c/item/wallet/coin",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Garigari-kun Soda Bar",
+"english_name": "Garigari-kun Soda Bar",
+"japanese_name": "ガリガリ君 ソーダ",
+"description": "Garigari-kun Soda. Cheap blue ice bar, crunchy inside, childhood-coded. Summer konbini freezer staple.",
+"category": "sweet",
+"subcategory": "ice pop",
+"price_range_jpy": "80-150",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://akagiice-global.com/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Gatsby Body Sheets",
+"english_name": "Gatsby Ice-Type Deodorant Body Wipes",
+"japanese_name": "ギャツビー アイスデオドラント ボディペーパー",
+"description": "Gatsby body sheets. Cold, menthol-ish wipes for sweat emergencies. Salarymen, students, and melting tourists all understand the assignment.",
+"category": "drugstore",
+"subcategory": "body wipes",
+"price_range_jpy": "300-600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"any major drugstore",
+"convenience stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.mandom.co.jp/en/products/brand.html?brandId=1005",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Gatsby facial/body wipes] No reliable image source found"
+},
+{
+"input_name": "Gatsby facial/body wipes",
+"english_name": "Gatsby Facial and Body Wipes",
+"japanese_name": "ギャツビー フェイシャルペーパー / ボディペーパー",
+"description": "Gatsby facial and body wipes. Pocketable sweat-control sheets for face, neck, arms, and the crisis zone. Donki summer aisle behavior.",
+"category": "drugstore",
+"subcategory": "face and body wipes",
+"price_range_jpy": "300-600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"any major drugstore",
+"convenience stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.gatsby.sg/product/bodycare/body-paper/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Gatsby Body Sheets] No reliable image source found"
+},
+{
+"input_name": "Giant Rainbow Cotton Candy",
+"english_name": "Giant Rainbow Cotton Candy",
+"japanese_name": "レインボーわたあめ",
+"description": "Giant rainbow cotton candy. Harajuku sugar cloud the size of a small weather event. Buy it when the phone eats first.",
+"category": "sweet",
+"subcategory": "cotton candy",
+"price_range_jpy": "900-1200",
+"where_to_buy": [
+"Harajuku Takeshita Street",
+"Totti Candy Factory-style sweets shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.japan.travel/en/spot/2174/",
+"confidence": "low",
+"notes": "[VENUE_CATEGORY: Harajuku; Totti Candy Factory rainbow cotton candy, Takeshita Street cotton candy, rainbow sweets] No reliable image source found"
+},
+{
+"input_name": "Glass Blowing (Sumida / Tokyo / Otaru)",
+"english_name": "Glass Blowing Experience",
+"japanese_name": "吹きガラス体験",
+"description": "Glass blowing experience. You shape a cup while trying not to look terrified near molten glass. Sumida and Otaru turn craft time into luggage with emotional value.",
+"category": "other",
+"subcategory": "craft experience",
+"price_range_jpy": "4400-4500",
+"where_to_buy": [
+"Asoview",
+"Sumida glass studios",
+"Otaru glass workshops",
+"Klook"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://otaru-ilponte.com/english/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Sumida glass blowing, Tokyo glass cutting, Otaru glass blowing, Otaru glass bead workshops] No reliable image source found"
+},
+{
+"input_name": "Global G-2 Chef's Knife",
+"english_name": "GLOBAL G-2 Chef's Knife",
+"japanese_name": "GLOBAL G-2 牛刀 20cm",
+"description": "GLOBAL G-2 chef's knife. Stainless, light, sharp, very serious apartment-kitchen energy. Kappabashi shoppers know the silhouette.",
+"category": "household",
+"subcategory": "chef knife",
+"price_range_jpy": "12000-18000",
+"where_to_buy": [
+"GLOBAL official retailers",
+"department store kitchen floors",
+"Kappabashi kitchen shops",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.globalcutleryusa.com/classic-g-2",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Goshuin Temple/Shrine Stamps (Collected Through Trip)",
+"english_name": "Goshuin Temple and Shrine Stamps",
+"japanese_name": "御朱印",
+"description": "Goshuin shrine and temple stamps. Handwritten red-seal proof you showed up respectfully. Bring cash and the book, not main-character chaos.",
+"category": "other",
+"subcategory": "temple stamp",
+"price_range_jpy": "300-500",
+"where_to_buy": [
+"temple offices",
+"shrine offices",
+"major shrine souvenir counters"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.japan.travel/en/blog/collecting-goshuin-shrine-and-temple-stamps/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: shrine goshuin, temple goshuin, seasonal goshuin, special-event goshuin] No reliable image source found"
+},
+{
+"input_name": "Goshuin-cho Temple Stamp Book",
+"english_name": "Goshuincho Temple Stamp Book",
+"japanese_name": "御朱印帳",
+"description": "Goshuincho stamp book. Accordion notebook for shrine and temple seals. Start it on day one or regret every shrine after.",
+"category": "other",
+"subcategory": "stamp book",
+"price_range_jpy": "1000-3000",
+"where_to_buy": [
+"temple offices",
+"shrine offices",
+"Loft",
+"Hands",
+"stationery shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://komorebistationery.com/collections/goshuincho-stamp-books",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Goshuincho temple/shrine stamp book] No reliable image source found"
+},
+{
+"input_name": "Goshuincho temple/shrine stamp book",
+"english_name": "Goshuincho Temple and Shrine Stamp Book",
+"japanese_name": "御朱印帳",
+"description": "Goshuincho temple and shrine book. The dedicated stamp notebook, not your random travel journal. Buy it before the first shrine starts bullying your planning skills.",
+"category": "other",
+"subcategory": "stamp book",
+"price_range_jpy": "1000-3000",
+"where_to_buy": [
+"temple offices",
+"shrine offices",
+"Loft",
+"Hands",
+"stationery shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.machiya-inn-japan.com/blog/goshuincho-guide/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Goshuin-cho Temple Stamp Book] No reliable image source found"
+},
+{
+"input_name": "Grancence Shoe Deodorizer",
+"english_name": "Gran's Remedy Shoe Deodorizer Powder",
+"japanese_name": "グランズレメディ",
+"description": "Gran's Remedy shoe deodorizer. White powder for shoes that have seen too many station stairs. Sprinkle it in, let the shame leave quietly.",
+"category": "drugstore",
+"subcategory": "shoe deodorizer",
+"price_range_jpy": "1700-4000",
+"where_to_buy": [
+"Amazon Japan",
+"Rakuten",
+"Mr. Minit",
+"shoe repair shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://gransremedy.com/",
+"confidence": "low",
+"notes": "[AMBIGUOUS: Grancence fragrance products, Gran's Remedy shoe deodorizer, GNCE Ag+ shoe spray] No reliable image source found"
+},
+{
+"input_name": "Häagen-Dazs Japan Exclusive Flavors",
+"english_name": "Häagen-Dazs Japan Limited Mini Cup",
+"japanese_name": "ハーゲンダッツ 期間限定ミニカップ",
+"description": "Häagen-Dazs Japan limited cups. Rotating freezer bait with flavors like tea, milk, and seasonal dessert chaos. The konbini ice cream case gets dramatic here.",
+"category": "sweet",
+"subcategory": "ice cream",
+"price_range_jpy": "300-450",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.icecream.com/us/en/brands/haagen-dazs/products/green-tea-ice-cream.",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: The Milk Mini Cup, green tea mini cup, seasonal Japan mini cups, Crispy Sandwich flavors] No reliable image source found"
+},
+{
+"input_name": "Hada Labo Gokujyun Hyaluronic Lotion",
+"english_name": "Hada Labo Gokujyun Hyaluronic Lotion",
+"japanese_name": "肌ラボ 極潤ヒアルロン液",
+"description": "Hada Labo Gokujyun Hyaluronic Lotion. Watery Japanese toner-lotion with hyaluronic acid. Drugstore shelf staple for dry airplane skin.",
+"category": "beauty",
+"subcategory": "hydrating lotion",
+"price_range_jpy": "700-1100",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/hadalabo/gokujun-lotion/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Hada Labo Gokujyun Hydrating Lotion] No reliable image source found"
+},
+{
+"input_name": "Hada Labo Gokujyun Hydrating Lotion",
+"english_name": "Hada Labo Gokujyun Hydrating Lotion",
+"japanese_name": "肌ラボ 極潤ヒアルロン液",
+"description": "Hada Labo Gokujyun Hydrating Lotion. Same blue-bottle hydration boss in tourist-friendly wording. Good first Japanese skincare buy.",
+"category": "beauty",
+"subcategory": "hydrating lotion",
+"price_range_jpy": "700-1100",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/hadalabo/gokujun-lotion/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Hada Labo Gokujyun Hyaluronic Lotion] No reliable image source found"
+},
+{
+"input_name": "Hada Labo Gokujyun Premium Lotion",
+"english_name": "Hada Labo Gokujyun Premium Lotion",
+"japanese_name": "肌ラボ 極潤プレミアム ヒアルロン液",
+"description": "Hada Labo Gokujyun Premium Lotion. Thicker gold-bottle version with heavier hydration. Nighttime face bounce in drugstore form.",
+"category": "beauty",
+"subcategory": "hydrating lotion",
+"price_range_jpy": "900-1400",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://jp.rohto.com/hadalabo/gokujun-premium-lotion/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Hakata Mentaiko",
+"english_name": "Hakata Mentaiko",
+"japanese_name": "博多明太子",
+"description": "Hakata mentaiko. Spicy cod roe with serious rice powers. Buy chilled in Fukuoka, then protect it like edible luggage.",
+"category": "food",
+"subcategory": "spicy cod roe",
+"price_range_jpy": "1200-3500",
+"where_to_buy": [
+"Fukuya",
+"Hakata Station",
+"Fukuoka Airport",
+"department store food halls"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"raw_or_fermented"
+],
+"source_url": "https://www.fukuya.com/en/",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Hakata Torimon",
+"english_name": "Hakata Torimon",
+"japanese_name": "博多通りもん",
+"description": "Hakata Torimon. Buttery white-bean manju that eats more like a soft milk cookie. Fukuoka airport souvenir math starts here.",
+"category": "sweet",
+"subcategory": "manju",
+"price_range_jpy": "620-3000",
+"where_to_buy": [
+"Meigetsudo stores",
+"Hakata Station",
+"Fukuoka Airport",
+"Fukuoka souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.meigetsudo.co.jp/ic/torimon",
+"confidence": "medium",
+"notes": "No reliable image source found"
+},
+{
+"input_name": "Hand Fan Uchiwa",
+"english_name": "Uchiwa Hand Fan",
+"japanese_name": "団扇",
+"description": "Uchiwa hand fan. Flat summer fan, no folding drama. Festival heat, train-platform sweat, instant main-character breeze.",
+"category": "other",
+"subcategory": "hand fan",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"Marugame Uchiwa shops",
+"festival stalls",
+"souvenir shops",
+"craft stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://marugameuchiwa.com/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Marugame uchiwa, festival uchiwa, bamboo uchiwa, character uchiwa] No reliable image source found"
+},
+{
+"input_name": "Hanko Personal Name Stamp",
+"english_name": "Shachihata Name 9 Personal Name Stamp",
+"japanese_name": "シャチハタ ネーム9",
+"description": "Hanko personal name stamp. Your name, but stamped with bureaucratic confidence. Donki machines and hanko shops turn travelers into fake office workers.",
+"category": "other",
+"subcategory": "name stamp",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"hanko shops",
+"Donki",
+"Shachihata official shop",
+"Hands"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.shachihata.jp/products/detail.php?product_id=2962",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Hanko name stamp] No reliable image source found"
+},
+{
+"input_name": "Hanko name stamp",
+"english_name": "Hanko Name Stamp",
+"japanese_name": "判子",
+"description": "Hanko name stamp. Tiny seal for names, notebooks, and souvenir chaos. Shachihata-style ones click fast with built-in ink.",
+"category": "other",
+"subcategory": "name stamp",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"hanko shops",
+"Donki",
+"Shachihata official shop",
+"Hands"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.shachihata.jp/products/detail.php?product_id=2961",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Hanko Personal Name Stamp] No reliable image source found"
+},
+{
+"input_name": "Hashioki (Chopstick Rests) Gift Sets",
+"english_name": "Hashioki Chopstick Rest Gift Set",
+"japanese_name": "箸置きギフトセット",
+"description": "Hashioki chopstick rests. Tiny tableware that makes dinner look ten times more intentional. Easy gift, impossible to explain why you bought six.",
+"category": "household",
+"subcategory": "chopstick rest",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Kappabashi",
+"department store tableware floors",
+"souvenir shops",
+"online tableware shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://tsukushi-japan.com/products/hashioki-chopstick-rest-black-set-of-5",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: ceramic hashioki sets, glass chopstick rests, animal chopstick rests, traditional pattern gift sets] No reliable image source found"
+},
+{
+"input_name": "Heat patches / kairo multipacks",
+"english_name": "Kiribai Kairo Adhesive Heat Patches",
+"japanese_name": "桐灰カイロ はる",
+"description": "Kairo heat patches. Stick-on warmers for coats, backs, and winter survival. Drugstore shelves become tactical gear in January.",
+"category": "drugstore",
+"subcategory": "heat patches",
+"price_range_jpy": "700-2600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"Donki",
+"convenience stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.kobayashi.co.jp/seihin/kk_h/",
+"confidence": "medium",
+"notes": "No reliable image source found; do not apply directly to skin because low-temperature burns are possible with prolonged use"
+}
+]

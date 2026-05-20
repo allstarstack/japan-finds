@@ -1,0 +1,552 @@
+[
+{
+"input_name": "Baby rice crackers",
+"english_name": "Kameda Haihain Baby Rice Crackers",
+"japanese_name": "亀田製菓 ハイハイン",
+"description": "Baby rice crackers. Light, melty, toddler-approved crunch for the konbini stroller era.",
+"category": "snack",
+"subcategory": "baby snack",
+"price_range_jpy": "150-300",
+"where_to_buy": [
+"drugstores",
+"supermarkets",
+"Amazon Japan",
+"baby goods stores"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/Hai-Hain-Vegetable-Rice-Crackers-for-Babies-40g--3-Bags-1-2026-02-19T06_09_06.704Z.webp?v=1771481881",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/kameda-hai-hain-vegetable-rice-crackers-for-babies-3-bags",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Kameda Haihain plain; Kameda Haihain vegetable]"
+},
+{
+"input_name": "Baked Cheese Tart (BAKE)",
+"english_name": "BAKE Cheese Tart",
+"japanese_name": "BAKE CHEESE TART",
+"description": "BAKE cheese tart. Crisp shell, fluffy cheese filling, dangerously easy to eat before your train comes.",
+"category": "sweet",
+"subcategory": "cheese tart",
+"price_range_jpy": "250-400",
+"where_to_buy": [
+"BAKE Cheese Tart stores",
+"major station dessert floors",
+"shopping malls"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy",
+"contains_egg",
+"contains_gluten"
+],
+"source_url": "https://cheesetart.com/en",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Bandai Gunpla Model Kits",
+"english_name": "Bandai Gunpla Model Kits",
+"japanese_name": "バンダイ ガンプラ",
+"description": "Gunpla model kits. Tiny plastic engineering therapy for Gundam fans with luggage-space delusion.",
+"category": "other",
+"subcategory": "model kit",
+"price_range_jpy": "800-5000",
+"where_to_buy": [
+"Gundam Base",
+"Yodobashi Camera",
+"Bic Camera",
+"Donki",
+"hobby shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://global.bandai-hobby.net/en-us/gunpla/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Bathclin Onsen-Style Bath Salts",
+"english_name": "Bathclin Nihon no Meito Bath Salts",
+"japanese_name": "バスクリン 日本の名湯",
+"description": "Onsen-style bath salts. Fake hot spring cosplay for your hotel tub, minus the mountain air and social anxiety.",
+"category": "drugstore",
+"subcategory": "bath salts",
+"price_range_jpy": "400-900",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"supermarkets"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://shop.nijiya.com/products/bathclin-nihon-no-meito-bath-salt-nigoriyu-no-daigomi",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Bear-Shaped Sake Bottles (Cute But Bulky)",
+"english_name": "Pon Eper Bear-Shaped Sake Bottle",
+"japanese_name": "ぽんエペレ 子ぐまボトル",
+"description": "Bear-shaped sake bottle. Cute, ceramic, and absolutely committed to stealing suitcase space.",
+"category": "drink",
+"subcategory": "sake",
+"price_range_jpy": "1500-2500",
+"where_to_buy": [
+"Hokkaido souvenir shops",
+"sake shops",
+"regional antenna shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"alcohol"
+],
+"source_url": "https://dailyportalz.jp/kiji/koguma-nihonsyu",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Pon Eper bear sake bottle; bear-shaped ceramic sake; animal-shaped sake souvenir]. No reliable direct image source found"
+},
+{
+"input_name": "Beauty Mega-Bargain Bin",
+"english_name": "Keana Nadeshiko Rice Mask",
+"japanese_name": "毛穴撫子 お米のマスク",
+"description": "Rice sheet masks. Cheap drugstore skincare that tourists grab in stacks like face-shaped Pokémon cards.",
+"category": "beauty",
+"subcategory": "sheet mask",
+"price_range_jpy": "700-900",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Tokyu Hands",
+"drugstores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.ishizawa-lab.co.jp/keananadeshiko/en/product/keana_skincare/mask.html",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Keana Nadeshiko Rice Mask; LuLuLun masks; Hada Labo refills; random clearance cosmetics]. No reliable direct image source found"
+},
+{
+"input_name": "Beni imo tart",
+"english_name": "Okashigoten Beni Imo Tart",
+"japanese_name": "御菓子御殿 元祖紅いもタルト",
+"description": "Beni imo tart. Purple sweet potato in a little tart shell, basically Okinawa saying hello through carbs.",
+"category": "sweet",
+"subcategory": "regional souvenir sweet",
+"price_range_jpy": "1200-2200",
+"where_to_buy": [
+"Okinawa souvenir shops",
+"airport gift shops",
+"department store food halls",
+"regional fairs"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://okashigoten.com/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Benriner Vegetable Slicer",
+"english_name": "Benriner Vegetable Slicer",
+"japanese_name": "ベンリナー 野菜スライサー",
+"description": "Benriner slicer. Razor-sharp Japanese mandoline for perfect shreds and immediate respect for your fingertips.",
+"category": "household",
+"subcategory": "kitchen tool",
+"price_range_jpy": "2500-4500",
+"where_to_buy": [
+"Tokyu Hands",
+"Kappabashi kitchenware shops",
+"Amazon Japan",
+"Rakuten"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://thebenriner.com/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Bento cutters / nori punches",
+"english_name": "Kai Chuboos Nori Punch",
+"japanese_name": "貝印 ちゅーぼーず のりパンチ",
+"description": "Nori punch. Turns seaweed into tiny faces so lunch looks emotionally more prepared than you are.",
+"category": "household",
+"subcategory": "bento tool",
+"price_range_jpy": "400-1000",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Tokyu Hands",
+"bento shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.japanbargain.com/kai-chuboos-nori-seaweed-punch-for-bento-fg5103/",
+"confidence": "low",
+"notes": "[AMBIGUOUS: nori punch; character food cutter; vegetable cutter]. No reliable direct image source found"
+},
+{
+"input_name": "Bento picks",
+"english_name": "Torune Bento Picks",
+"japanese_name": "トルネ お弁当ピック",
+"description": "Bento picks. Tiny food spears that make leftovers look like they have a production budget.",
+"category": "household",
+"subcategory": "bento accessory",
+"price_range_jpy": "100-500",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Loft",
+"bento shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://en.bentoandco.com/collections/torune",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: animal picks; flag picks; character picks; Torune bento picks]. No reliable direct image source found"
+},
+{
+"input_name": "Bento sauce bottles",
+"english_name": "Mini Animal Sauce Bottles",
+"japanese_name": "ミニアニマル ソースボトル",
+"description": "Mini sauce bottles. Little condiment animals for soy sauce, dressing, and pretending your lunch is organized.",
+"category": "household",
+"subcategory": "bento accessory",
+"price_range_jpy": "100-500",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Loft",
+"bento shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://en.bentoandco.com/products/mini-animal-sauce-bottles",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Bifesta Micellar Cleansing Wipes",
+"english_name": "Bifesta Micellar Cleansing Sheets Moist",
+"japanese_name": "ビフェスタ ミセラークレンジングシート モイスト",
+"description": "Bifesta cleansing wipes. Makeup-off sheets for hotel sinks, red-eyes, and nights when skincare ambition leaves the chat.",
+"category": "beauty",
+"subcategory": "cleansing wipes",
+"price_range_jpy": "400-700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"any major drugstore",
+"supermarkets"
+],
+"image_url": "https://int.japanesetaste.com/cdn/shop/files/Mandom-Bifesta-Makeup-Cleansing-Sheets-Moist-46-Wipes-1-2024-09-19T03_34_32.736Z.jpg?v=1743424288",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/mandom-bifesta-makeup-cleansing-sheets-moist-46pcs",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Bifesta Micellar Water (Sebamed-like)",
+"english_name": "Bifesta Bright Up Micellar Cleansing Water",
+"japanese_name": "ビフェスタ ミセラークレンジングウォーター ブライトアップ",
+"description": "Bifesta micellar water. Gentle makeup remover bottle for people who packed three shoes but forgot cleanser.",
+"category": "beauty",
+"subcategory": "micellar cleanser",
+"price_range_jpy": "700-1100",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"any major drugstore",
+"Amazon Japan"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/P-1-HDLB-GOPMIC-330-Mandom_Bifesta_Bright_Up_Micellar_Cleansing_Water_400ml.jpg?v=1746157366",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://japanesetaste.com/products/mandom-bifesta-bright-up-micellar-cleansing-water-400ml",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: Bright Up; Moist; Sensitive; Sebamed-like comparison is not an official SKU]"
+},
+{
+"input_name": "Biore Sara Sara Body Sheets (Women's)",
+"english_name": "Biore Sara Sara Powder Sheets Floral",
+"japanese_name": "ビオレ さらさらパウダーシート フローラル",
+"description": "Bioré powder body sheets. Sweat wipe, deodorant-ish refresh, and summer survival item in one crinkly pack.",
+"category": "drugstore",
+"subcategory": "body sheets",
+"price_range_jpy": "300-600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"konbini",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.kao.com/sg/products/biore/bio_powdersheet_floral_00/",
+"confidence": "medium",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Bioré SaraSara powder sheets",
+"english_name": "Biore Sara Sara Powder Sheets Floral",
+"japanese_name": "ビオレ さらさらパウダーシート フローラル",
+"description": "Bioré SaraSara sheets. The hot-weather wipe people buy when the humidity starts personally attacking them.",
+"category": "drugstore",
+"subcategory": "body sheets",
+"price_range_jpy": "300-600",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"konbini",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.kao.com/sg/products/biore/bio_powdersheet_floral_00/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Biore Sara Sara Body Sheets (Women's)]. No reliable direct image source found"
+},
+{
+"input_name": "Bioré UV Aqua Rich Watery Essence",
+"english_name": "Biore UV Aqua Rich Watery Essence",
+"japanese_name": "ビオレUV アクアリッチ ウォータリーエッセンス",
+"description": "Bioré UV Aqua Rich. Lightweight Japanese sunscreen that disappears fast and makes reapplying feel less like a chore.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "700-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"any major drugstore"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/Kao-Biore-UV-Aqua-Rich-Watery-Essence-SPF50_-PA_-70g-1-2025-02-09T23_11_57.725Z.jpg?v=1746493291",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.kao.com/sg/products/biore/bio_aquarich_essence_00/",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Black Thunder",
+"english_name": "Black Thunder Chocolate Bar",
+"japanese_name": "ブラックサンダー",
+"description": "Black Thunder. Crunchy chocolate bar, cheap, chaotic, and the classic impulse grab at the register.",
+"category": "snack",
+"subcategory": "chocolate bar",
+"price_range_jpy": "40-80",
+"where_to_buy": [
+"konbini",
+"supermarkets",
+"Donki",
+"drugstores"
+],
+"image_url": "https://japanesetaste.in/cdn/shop/files/P-1-YRK-THUBAR-20-Yuraku_Black_Thunder_Chocolate_Bar_Box_of_20_Bars_-2023-10-12T01_52_52.png?v=1743418790",
+"image_source": "other",
+"safety_flags": [
+"contains_dairy",
+"contains_gluten"
+],
+"source_url": "https://www.yurakuseika.co.jp/product/265/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Black Thunder chocolate bars]"
+},
+{
+"input_name": "Black Thunder chocolate bars",
+"english_name": "Black Thunder Chocolate Bar",
+"japanese_name": "ブラックサンダー",
+"description": "Black Thunder chocolate bars. Pocket-size chocolate crunch for when you need dessert but only emotionally committed ¥50.",
+"category": "snack",
+"subcategory": "chocolate bar",
+"price_range_jpy": "40-80",
+"where_to_buy": [
+"konbini",
+"supermarkets",
+"Donki",
+"drugstores"
+],
+"image_url": "https://japanesetaste.in/cdn/shop/files/P-1-YRK-THUBAR-20-Yuraku_Black_Thunder_Chocolate_Bar_Box_of_20_Bars_-2023-10-12T01_52_52.png?v=1743418790",
+"image_source": "other",
+"safety_flags": [
+"contains_dairy",
+"contains_gluten"
+],
+"source_url": "https://www.yurakuseika.co.jp/product/265/",
+"confidence": "medium",
+"notes": "[POSSIBLE_DUPLICATE_OF: Black Thunder]"
+},
+{
+"input_name": "Boss Coffee Rainbow Mountain Blend",
+"english_name": "Suntory Boss Coffee Rainbow Mountain Blend",
+"japanese_name": "サントリー ボス レインボーマウンテンブレンド",
+"description": "Boss Rainbow Mountain. Canned coffee with milk and sugar, the vending-machine salaryman handshake.",
+"category": "konbini-drink",
+"subcategory": "canned coffee",
+"price_range_jpy": "120-170",
+"where_to_buy": [
+"vending machines",
+"konbini",
+"supermarkets",
+"drugstores"
+],
+"image_url": "https://japanesetaste.nl/cdn/shop/files/Boss-Coffee-Rainbow-Mountain-Blend-Canned-Coffee-Box-of-30-Cans-1-2026-05-14T23_44_30.481Z.jpg?v=1778802366",
+"image_source": "other",
+"safety_flags": [
+"caffeine_high",
+"contains_dairy"
+],
+"source_url": "https://suntorybosscoffee.com/products/rainbow-mountain-blend",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Bottled unsweetened green tea",
+"english_name": "Ito En Oi Ocha Unsweetened Green Tea",
+"japanese_name": "伊藤園 お～いお茶 緑茶",
+"description": "Unsweetened bottled green tea. The default no-sugar drink in Japan when water feels too responsible.",
+"category": "konbini-drink",
+"subcategory": "green tea",
+"price_range_jpy": "120-170",
+"where_to_buy": [
+"konbini",
+"vending machines",
+"supermarkets",
+"drugstores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.itoen-global.com/products/oi_ocha.html",
+"confidence": "medium",
+"notes": "[CATEGORY_INPUT: Ito En Oi Ocha; Ayataka; Namacha; Iyemon]. No reliable direct image source found"
+},
+{
+"input_name": "Bulk Kit Kat Assortment Bags",
+"english_name": "Nestle Japan KitKat Mini Assortment Bag",
+"japanese_name": "ネスレ キットカット ミニ アソート",
+"description": "KitKat assortment bag. Mini Japanese flavors in bulk, aka souvenir math pretending to be snack research.",
+"category": "sweet",
+"subcategory": "chocolate assortment",
+"price_range_jpy": "800-1800",
+"where_to_buy": [
+"Donki",
+"supermarkets",
+"airport shops",
+"souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy",
+"contains_gluten"
+],
+"source_url": "https://nestle.jp/home/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: KitKat mini assortment; regional flavor bag; party pack; souvenir variety bag]. No reliable direct image source found"
+},
+{
+"input_name": "C.C. Lemon",
+"english_name": "Suntory C.C. Lemon",
+"japanese_name": "サントリー C.C.レモン",
+"description": "C.C. Lemon. Fizzy lemon soda with vitamin-C branding, for when Sprite feels underemployed.",
+"category": "konbini-drink",
+"subcategory": "carbonated soft drink",
+"price_range_jpy": "120-170",
+"where_to_buy": [
+"konbini",
+"vending machines",
+"supermarkets",
+"drugstores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.amazon.com/Product-Japan-Suntory-Lemon-Vitamin/dp/B07ZDM5V8D",
+"confidence": "low",
+"notes": "No reliable direct image source found"
+},
+{
+"input_name": "Cabagin Kowa Alpha (Stomach)",
+"english_name": "Cabagin Kowa Alpha",
+"japanese_name": "キャベジンコーワα",
+"description": "Cabagin Kowa Alpha. Japanese stomach tablets for post-ramen regret and aggressive travel snacking.",
+"category": "drugstore",
+"subcategory": "stomach medicine",
+"price_range_jpy": "600-1800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"any major drugstore",
+"Donki",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://search.jsm-db.info/sp_en/detail.php?txtID=4987067000184",
+"confidence": "medium",
+"notes": "Medication; check active ingredients and contraindications before use. No reliable direct image source found"
+},
+{
+"input_name": "Cable ties / cord clips",
+"english_name": "Daiso Cable Clips",
+"japanese_name": "ダイソー ケーブルクリップ",
+"description": "Cable clips. Tiny ¥100 desk-control pieces for chargers, hotel cables, and the octopus living in your bag.",
+"category": "household",
+"subcategory": "cable organizer",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://daisous.com/products/ec-4902993172251",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: cable ties; cord clips; adhesive cable holders; reusable cable bands]. No reliable direct image source found"
+},
+{
+"input_name": "Calbee Jagariko / Jagabee",
+"english_name": "Calbee Jagariko Salad",
+"japanese_name": "カルビー じゃがりこ サラダ",
+"description": "Jagariko. Crunchy potato sticks in a cup, the snack that sounds like furniture being assembled in your mouth.",
+"category": "snack",
+"subcategory": "potato snack",
+"price_range_jpy": "120-200",
+"where_to_buy": [
+"konbini",
+"supermarkets",
+"Donki",
+"drugstores"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/Calbee-Jagarico-Salad-Potato-Sticks-Pack-of-6-Cups-1-2026-02-18T04_43_12.396Z.jpg?v=1771390144",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://www.calbee.co.jp/en/products/",
+"confidence": "low",
+"notes": "[AMBIGUOUS: Calbee Jagariko; Calbee Jagabee]"
+}
+]

@@ -1,0 +1,534 @@
+[
+{
+"input_name": "Calbee Pizza Potato Chips",
+"english_name": "Calbee Pizza Potato Chips",
+"japanese_name": "カルビー ピザポテト",
+"description": "Calbee Pizza Potato. Cheese-dusted potato chips with little melty topping bits. The konbini bag for people who want pizza energy without the social contract of pizza.",
+"category": "snack",
+"subcategory": "potato chips",
+"price_range_jpy": "130-250",
+"where_to_buy": [
+"any major konbini",
+"supermarkets",
+"Donki"
+],
+"image_url": "https://www.calbee.co.jp/pizza/assets/img/products__item-02.png",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://www.calbee.co.jp/pizza/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Calligraphy Lesson (Tokyo / Kyoto)",
+"english_name": "Japanese Calligraphy Lesson",
+"japanese_name": "書道体験",
+"description": "Calligraphy lesson. Brush, ink, and one kanji that humbles everyone immediately. Tokyo and Kyoto studios make it an easy rainy-day win.",
+"category": "other",
+"subcategory": "cultural experience",
+"price_range_jpy": "3000-9000",
+"where_to_buy": [
+"Maikoya Tokyo",
+"Maikoya Kyoto",
+"Klook"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://mai-ko.com/culture/calligraphy/",
+"confidence": "medium",
+"notes": "No reliable direct image found"
+},
+{
+"input_name": "Calpis / Calpico",
+"english_name": "Calpis Water / Calpico",
+"japanese_name": "カルピス / カルピコ",
+"description": "Calpis. Sweet milky soda-adjacent drink with a light tang. The vending-machine pick when water feels too responsible.",
+"category": "konbini-drink",
+"subcategory": "soft drink",
+"price_range_jpy": "120-180",
+"where_to_buy": [
+"any major konbini",
+"vending machines",
+"supermarkets",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_dairy"
+],
+"source_url": "https://www.asahiinryo.co.jp/products/calpis/",
+"confidence": "medium",
+"notes": "No reliable direct image found"
+},
+{
+"input_name": "Can Do Random Finds",
+"english_name": "Can Do 100-Yen Random Finds",
+"japanese_name": "キャンドゥ 100円雑貨",
+"description": "Can Do 100-yen finds. Tiny organizers, stickers, and kitchen things that solve problems you invented in the aisle. Cheap enough to become a personality trait.",
+"category": "household",
+"subcategory": "100-yen shop goods",
+"price_range_jpy": "110-330",
+"where_to_buy": [
+"Can Do"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.cando-web.co.jp/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: pouches, stickers, kitchen clips, tiny organizers]; No reliable direct image found"
+},
+{
+"input_name": "Canmake Cosmetics",
+"english_name": "Canmake Cream Cheek",
+"japanese_name": "キャンメイク クリームチーク",
+"description": "Canmake cosmetics. Cheap drugstore makeup that looks way less cheap than the receipt. Cream Cheek is the easy starter item.",
+"category": "beauty",
+"subcategory": "drugstore makeup",
+"price_range_jpy": "600-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Plaza",
+"any major drugstore"
+],
+"image_url": "https://www.canmake.com/wp-content/uploads/2025/10/B00_69_col05_img_00.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.canmake.com/en/item/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Cream Cheek, Mermaid Skin Gel UV, Marshmallow Finish Powder, Muchi Puru Tint]"
+},
+{
+"input_name": "Canmake Cream Cheek",
+"english_name": "Canmake Cream Cheek",
+"japanese_name": "キャンメイク クリームチーク",
+"description": "Canmake Cream Cheek. Tiny drugstore blush with real color payoff. The budget J-beauty pick for a pouch that already has 400 lip products.",
+"category": "beauty",
+"subcategory": "blush",
+"price_range_jpy": "638-700",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Plaza",
+"any major drugstore"
+],
+"image_url": "https://www.canmake.com/wp-content/uploads/2025/10/B00_69_col05_img_00.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.canmake.com/en/item/detail/cream-cheek/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Canmake Mermaid Skin Gel UV",
+"english_name": "Canmake Mermaid Skin Gel UV",
+"japanese_name": "キャンメイク マーメイドスキンジェルUV",
+"description": "Canmake Mermaid Skin Gel UV. SPF50+ sunscreen gel that feels light, not chalky. Drugstore sunscreen for people who hate sunscreen.",
+"category": "beauty",
+"subcategory": "sunscreen",
+"price_range_jpy": "770-900",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Plaza",
+"any major drugstore"
+],
+"image_url": "https://www.canmake.com/wp-content/uploads/2025/08/A06_67_col01_img_00-2.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.canmake.com/en/item/detail/mermaid-skin-gel-uv/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Cast Iron Tamagoyaki Pan",
+"english_name": "Oigen Kokotama Iron Tamagoyaki Pan",
+"japanese_name": "鉄のたまご焼き kokotama",
+"description": "Oigen kokotama iron tamagoyaki pan. Heavy little rectangle for serious omelet energy. Buy it when breakfast needs main-character treatment.",
+"category": "household",
+"subcategory": "kitchenware",
+"price_range_jpy": "8000-9000",
+"where_to_buy": [
+"Oigen",
+"specialty cookware shops",
+"department stores"
+],
+"image_url": "https://oigen.jp/cdn/shop/files/kokotama_base5.jpg?v=1731021412&width=3000",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://oigen.jp/products/kokotama",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Cezanne Cosmetics",
+"english_name": "CEZANNE Lip Color Shield",
+"japanese_name": "セザンヌ リップカラーシールド",
+"description": "CEZANNE cosmetics. Drugstore makeup with tiny prices and shockingly calm packaging. Lip Color Shield is the safe first grab.",
+"category": "beauty",
+"subcategory": "drugstore makeup",
+"price_range_jpy": "400-900",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Plaza",
+"any major drugstore"
+],
+"image_url": "https://www.cezanne.co.jp/uploads/lineup/4939553042709/img1_01.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.cezanne.co.jp/lineup/4939553042709/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Lip Color Shield, Make Keep Base, Natural Cheek N, UV Tone Up Base]"
+},
+{
+"input_name": "Cezanne lipstick/tint",
+"english_name": "CEZANNE Lip Color Shield",
+"japanese_name": "セザンヌ リップカラーシールド",
+"description": "CEZANNE Lip Color Shield. A ¥660 gel-film lip tint that looks more expensive than its life choices. Easy drugstore pickup, zero drama.",
+"category": "beauty",
+"subcategory": "lip tint",
+"price_range_jpy": "660-800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"Loft",
+"Plaza",
+"any major drugstore"
+],
+"image_url": "https://www.cezanne.co.jp/uploads/lineup/4939553042709/img1_01.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.cezanne.co.jp/lineup/4939553042709/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Character snack tins",
+"english_name": "Character Snack Tins",
+"japanese_name": "キャラクター菓子缶",
+"description": "Character snack tins. Cookies or candy in a tin people keep forever and call storage. Good for kids, coworkers, and your inner raccoon.",
+"category": "sweet",
+"subcategory": "character sweets",
+"price_range_jpy": "500-1800",
+"where_to_buy": [
+"Tokyo Station character shops",
+"airport souvenir shops",
+"Donki",
+"character stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": null,
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Sanrio cookie tins, Pokemon snack tins, Disney tins, Ghibli tins]; No verified source or image"
+},
+{
+"input_name": "Character toothbrushes",
+"english_name": "Character Toothbrushes",
+"japanese_name": "キャラクター歯ブラシ",
+"description": "Character toothbrushes. Tiny travel toothbrushes wearing Sanrio, Pokemon, or Anpanman branding. Useful, cute, and somehow cheaper than coffee.",
+"category": "household",
+"subcategory": "toothbrush",
+"price_range_jpy": "110-500",
+"where_to_buy": [
+"Daiso",
+"Can Do",
+"drugstores",
+"character stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": null,
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Sanrio toothbrushes, Pokemon toothbrushes, Anpanman toothbrushes, Skater toothbrush sets]; No verified source or image"
+},
+{
+"input_name": "Cheap Hard-Shell Suitcase",
+"english_name": "Cheap Hard-Shell Suitcase",
+"japanese_name": "格安ハードスーツケース",
+"description": "Cheap hard-shell suitcase. Extra luggage for the final boss called 'I bought too much.' Buy it near the end, not day two.",
+"category": "donki",
+"subcategory": "luggage",
+"price_range_jpy": "3000-8000",
+"where_to_buy": [
+"Donki",
+"discount luggage shops",
+"home centers"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": null,
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Donki hardshell suitcase, expansion zipper carry case, lightweight zipper carry case, front-door carry case]; No verified source or image"
+},
+{
+"input_name": "Cheap costume / animal hat aisle",
+"english_name": "Donki Animal Hat Aisle",
+"japanese_name": "かぶりもの / コスチューム",
+"description": "Donki animal hat aisle. Instant costume, low dignity, high photo yield. Grab one when the night needs a penguin head for no reason.",
+"category": "donki",
+"subcategory": "costume accessories",
+"price_range_jpy": "500-3000",
+"where_to_buy": [
+"Donki",
+"party goods shops",
+"100-yen shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.donki.com/season/autumn/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: animal hats, Halloween headwear, kigurumi, party masks]; No reliable direct image found"
+},
+{
+"input_name": "Cheap uncertified electronics",
+"english_name": "Cheap No-Name Electronics",
+"japanese_name": "格安ノーブランド電化製品",
+"description": "Cheap no-name electronics. The price looks brave; the charger looks like a lawsuit. Stick to known brands for adapters and heat tools.",
+"category": "electronics",
+"subcategory": "travel electronics",
+"price_range_jpy": "300-2000",
+"where_to_buy": [
+"Donki",
+"100-yen shops",
+"discount electronics aisles"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"voltage_100v"
+],
+"source_url": null,
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: USB chargers, plug adapters, extension cords, travel hair tools]; No verified single SKU"
+},
+{
+"input_name": "Chopstick Engraving (Wakasa-nuri / Edo Hashi)",
+"english_name": "Engraved Japanese Chopsticks",
+"japanese_name": "名入れ箸 / 若狭塗箸 / 江戸箸",
+"description": "Engraved chopsticks. A compact souvenir that does not scream airport panic. Wakasa-nuri and Edo Hashi shops turn names into an actually useful gift.",
+"category": "household",
+"subcategory": "personalized souvenir",
+"price_range_jpy": "1000-5000",
+"where_to_buy": [
+"Ginza Natsuno",
+"Wakasa-nuri shops",
+"Edo Hashi shops",
+"department-store craft floors"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://ginzanatsuno.com/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Wakasa-nuri name engraving, Edo Hashi name engraving, personalized chopsticks]; No reliable direct image found"
+},
+{
+"input_name": "Clip-on towel / pacifier strap",
+"english_name": "Sanrio Multiuse Towel Clip",
+"japanese_name": "マルチタオルクリップ",
+"description": "Sanrio multiuse towel clip. Clips towels, straps, and kid gear before it hits a train floor. Parents buy one; everyone else buys three because Kuromi.",
+"category": "household",
+"subcategory": "baby travel accessory",
+"price_range_jpy": "110-500",
+"where_to_buy": [
+"Daiso",
+"Can Do",
+"baby goods sections",
+"character stores"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://shop.daisosingapore.com.sg/products/4582364521101",
+"confidence": "low",
+"notes": "[AMBIGUOUS: towel clip, pacifier strap, bag strap clip]; Product source from Daiso Singapore; No reliable direct image found"
+},
+{
+"input_name": "Coin Laundry Detergent Sheets",
+"english_name": "Attack ZERO Perfect Stick",
+"japanese_name": "アタックZERO パーフェクトスティック",
+"description": "Attack ZERO Perfect Stick. Pre-measured laundry detergent sticks, not a bottle of hotel-room chaos. Toss one in when coin laundry becomes your whole personality.",
+"category": "household",
+"subcategory": "laundry detergent",
+"price_range_jpy": "1000-1200",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"supermarkets",
+"Donki",
+"any major drugstore"
+],
+"image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/khg/attack/25327963/GG01.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.kao-kirei.com/ja/item/khg/attack/4901301451484/",
+"confidence": "medium",
+"notes": "[AMBIGUOUS: laundry detergent sheets, detergent pods, Attack ZERO Perfect Stick]"
+},
+{
+"input_name": "Coin Locker (Eki-Locker)",
+"english_name": "Eki-Locker / Multi-Ecube Station Locker",
+"japanese_name": "駅ロッカー / マルチエキューブ",
+"description": "Eki-locker. Station lockers that save you from suitcase drag. Use them before temples, shopping streets, and every stair-heavy bad decision.",
+"category": "other",
+"subcategory": "luggage storage",
+"price_range_jpy": "400-1000",
+"where_to_buy": [
+"JR stations",
+"major train stations",
+"Multi-Ecube app"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://multiecube.com/en/",
+"confidence": "medium",
+"notes": "No reliable direct image found"
+},
+{
+"input_name": "Coin Sorting Wallet",
+"english_name": "COIN HOME MG-03 Coin Holder",
+"japanese_name": "コインホーム MG-03",
+"description": "COIN HOME MG-03. Yen coins snap into their own little lanes. This is how you stop handing cashiers a tragic fistful of metal.",
+"category": "household",
+"subcategory": "coin organizer",
+"price_range_jpy": "1000-3000",
+"where_to_buy": [
+"Amazon Japan",
+"Rakuten",
+"Yahoo Shopping",
+"travel goods shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://store.shopping.yahoo.co.jp/fuwabon-shop/mg-03.html",
+"confidence": "medium",
+"notes": "No reliable direct image found"
+},
+{
+"input_name": "Coin purse",
+"english_name": "Gamaguchi Coin Purse",
+"japanese_name": "がま口小銭入れ",
+"description": "Gamaguchi coin purse. Tiny clasp pouch for the yen avalanche. Buy one before the 1-yen coins start reproducing.",
+"category": "household",
+"subcategory": "wallet",
+"price_range_jpy": "330-2000",
+"where_to_buy": [
+"Daiso",
+"Loft",
+"Hands",
+"souvenir shops"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": null,
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: gamaguchi coin purse, zipper coin pouch, travel coin case]; No verified source or image"
+},
+{
+"input_name": "Cold soba tray",
+"english_name": "7-Eleven Zaru Soba Tray",
+"japanese_name": "ざるそば",
+"description": "7-Eleven zaru soba tray. Cold noodles, dipping sauce, tiny wasabi packet, tiny chaos. The summer konbini lunch for people trying to feel functional.",
+"category": "konbini-food",
+"subcategory": "cold noodles",
+"price_range_jpy": "400-500",
+"where_to_buy": [
+"7-Eleven Japan"
+],
+"image_url": "https://img-afd.7api-01.dp1.sej.co.jp/item-image/090415/D0AD05DB085E1215B3ACFBC37C814DA0.jpg",
+"image_source": "retailer_official",
+"safety_flags": [
+"contains_gluten",
+"contains_egg"
+],
+"source_url": "https://www.sej.co.jp/products/a/item/090415/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Collagen beauty drinks",
+"english_name": "Shiseido The Collagen Drink",
+"japanese_name": "資生堂 ザ・コラーゲン ドリンク",
+"description": "Shiseido The Collagen Drink. Beauty drink in a tiny bottle with drugstore-auntie energy. People grab it before flights, baths, and optimistic skincare routines.",
+"category": "beauty",
+"subcategory": "beauty drink",
+"price_range_jpy": "250-400",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"supermarkets",
+"Donki",
+"any major drugstore"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.shiseido.co.jp/collagen/",
+"confidence": "medium",
+"notes": "No reliable direct image found"
+},
+{
+"input_name": "Compact towel / tenugui-style towel",
+"english_name": "Tenugui-Style Compact Towel",
+"japanese_name": "手ぬぐい",
+"description": "Tenugui-style compact towel. Thin cotton towel that dries fast and folds flat. Carry it for temples, summer sweat, and bathrooms with no paper towels.",
+"category": "household",
+"subcategory": "travel towel",
+"price_range_jpy": "500-1500",
+"where_to_buy": [
+"souvenir shops",
+"Loft",
+"Hands",
+"Kamawanu",
+"department-store craft floors"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.japan.travel/en/japan-magazine/2007_tenugui/",
+"confidence": "medium",
+"notes": "No reliable direct image found"
+},
+{
+"input_name": "Compression Socks",
+"english_name": "MediQtto Compression Socks",
+"japanese_name": "メディキュット",
+"description": "MediQtto compression socks. Drugstore leg squeeze for flights and all-day walking. Put them on before your calves file a complaint.",
+"category": "drugstore",
+"subcategory": "compression socks",
+"price_range_jpy": "1000-3000",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Donki",
+"any major drugstore",
+"Amazon Japan"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://www.mediqtto.jp/",
+"confidence": "medium",
+"notes": "No reliable direct image found"
+}
+]

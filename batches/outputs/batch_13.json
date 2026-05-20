@@ -1,0 +1,547 @@
+[
+{
+"input_name": "Pilot Hi-Tec-C",
+"english_name": "Pilot Hi-Tec-C",
+"japanese_name": "ハイテックC",
+"description": "Pilot Hi-Tec-C. Tiny needle-tip gel pen, clean lines. The person buying one at Loft is either journaling beautifully or color-coding their entire nervous system.",
+"category": "other",
+"subcategory": "gel pen",
+"price_range_jpy": "200-250",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"major stationery stores"
+],
+"image_url": "https://webcatalog.pilot.co.jp/products/fileDownload?fileID=t010000009586&type=icon&volumeName=00004",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://webcatalog.pilot.co.jp/products/DispDetail.do?itemID=t000100000889&volumeName=00004",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Pilot Juice+ Gel Pen",
+"english_name": "Pilot Juice+ Gel Pen",
+"japanese_name": "ジュースプラス",
+"description": "Pilot Juice+. 0.4mm gel pen with a smooth Synergy Tip and soft white body. Good for notes, planners, and pretending your life has margins.",
+"category": "other",
+"subcategory": "gel pen",
+"price_range_jpy": "150-200",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"major stationery stores"
+],
+"image_url": "https://www.pilot.co.jp/press_release/juice%2B.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.pilot.co.jp/press_release/2025/11/18/content_18.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Pino Bite-Sized Ice Cream",
+"english_name": "Pino",
+"japanese_name": "ピノ",
+"description": "Pino. Six bite-sized vanilla ice creams wrapped in chocolate. Konbini freezer classic, eaten with the tiny pick like you have table manners.",
+"category": "sweet",
+"subcategory": "ice cream",
+"price_range_jpy": "150-250",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets"
+],
+"image_url": "https://www.pinoice.com/imgs/page/lineup/vanilla/kv_pc.png",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_dairy"
+],
+"source_url": "https://www.pinoice.com/lineup/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Pitta Mask",
+"english_name": "PITTA MASK",
+"japanese_name": "ピッタ・マスク",
+"description": "PITTA MASK. Soft polyurethane mask, washable, and oddly stylish for something sold beside eye drops. Drugstore grab when pollen season starts bullying everyone.",
+"category": "drugstore",
+"subcategory": "mask",
+"price_range_jpy": "400-800",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Welcia",
+"any major drugstore",
+"Donki"
+],
+"image_url": "https://www.arax.co.jp/pittamask/en/images/product/product_img_r_02.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.arax.co.jp/pittamask/en/product/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Pizzaman",
+"english_name": "FamilyMart Pizza Bun",
+"japanese_name": "ピザまん",
+"description": "Pizzaman. Steamed pizza bun with tomato sauce and stretchy cheese. Winter konbini counter food, best eaten immediately while walking like a gremlin.",
+"category": "konbini-food",
+"subcategory": "steamed bun",
+"price_range_jpy": "150-200",
+"where_to_buy": [
+"FamilyMart",
+"7-Eleven",
+"Lawson",
+"konbini hot-snack counters"
+],
+"image_url": "https://www.family.co.jp/content/dam/family/goods/0240086.jpg",
+"image_source": "retailer_official",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.family.co.jp/goods/chukaman/0240086.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Placenta supplements/drinks",
+"english_name": "DHC Placenta",
+"japanese_name": "DHC プラセンタ",
+"description": "DHC Placenta. Beauty supplement aisle item, usually tablets rather than glam drink fantasy. Drugstores sell it; labels matter because supplements are not candy.",
+"category": "drugstore",
+"subcategory": "beauty supplement",
+"price_range_jpy": "1000-1500",
+"where_to_buy": [
+"Matsumoto Kiyoshi",
+"Sundrug",
+"Welcia",
+"Donki"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [],
+"source_url": "https://sundrug-online.com/en/products/4511413406717",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: DHC Placenta, collagen drinks, placenta jelly, beauty supplement packs]; No reliable image source found"
+},
+{
+"input_name": "Planner stickers",
+"english_name": "Midori Planner Stickers",
+"japanese_name": "ミドリ 手帳シール",
+"description": "Midori planner stickers. Tiny Japan-made stickers for diaries and bullet journals. Loft and Hands bait for anyone who thinks one more sticker sheet will fix time management.",
+"category": "other",
+"subcategory": "stationery stickers",
+"price_range_jpy": "250-500",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"major stationery stores"
+],
+"image_url": "https://www.midori-japan.co.jp/english/wp-content/uploads/sites/2/2023/06/Stickers_cate02-1.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.midori-japan.co.jp/english/products/sticker/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Midori diary stickers, schedule stickers, planner tabs, decorative sticker sheets]"
+},
+{
+"input_name": "Plastic food sample workshop item",
+"english_name": "Ganso Shokuhin Sample-ya Sample'n Cooking Kit",
+"japanese_name": "さんぷるん",
+"description": "Sample'n Cooking food sample kit. DIY plastic food replica kit from Ganso Shokuhin Sample-ya. Buy it when staring at restaurant window displays turns into a personality.",
+"category": "other",
+"subcategory": "craft kit",
+"price_range_jpy": "2200-3300",
+"where_to_buy": [
+"Ganso Shokuhin Sample-ya",
+"Kappabashi",
+"tourist craft shops"
+],
+"image_url": "https://www.ganso-sample.com/wp-content/uploads/2018/07/KIT001.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.ganso-sample.com/en/products/samplekit/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Sample'n Cooking kit, fake ice cream workshop piece, plastic tempura sample, food sample magnet]"
+},
+{
+"input_name": "Plastic rain poncho",
+"english_name": "Daiso Rain Poncho",
+"japanese_name": "レインポンチョ",
+"description": "Daiso rain poncho. Cheap emergency plastic poncho. The no-style, all-survival move when Tokyo weather changes its mind.",
+"category": "household",
+"subcategory": "rainwear",
+"price_range_jpy": "300-330",
+"where_to_buy": [
+"Daiso",
+"Seria",
+"Can Do",
+"Donki"
+],
+"image_url": "https://jp.daisonet.com/cdn/shop/products/1HGl2IIOE_SJhSkfASlv1Mn8GN-0Xmucw_800x.jpg?v=1755655157",
+"image_source": "retailer_official",
+"safety_flags": [],
+"source_url": "https://jp.daisonet.com/products/4550480062693",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Daiso rain poncho, adult rain poncho, disposable poncho, compact raincoat]"
+},
+{
+"input_name": "Plus Air-In Eraser",
+"english_name": "Plus Air-In Mt. Fuji Eraser",
+"japanese_name": "エアイン 富士山消しゴム",
+"description": "Plus Air-In Mt. Fuji Eraser. Eraser that turns into Mt. Fuji as you use it. Stationery souvenir for people who want their mistakes to become geography.",
+"category": "other",
+"subcategory": "eraser",
+"price_range_jpy": "200-250",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"major stationery stores"
+],
+"image_url": "https://bungu.plus.co.jp/special/st/fujisan/common/images/feature/slide01.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://bungu.plus.co.jp/special/st/fujisan/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Plus Picofriends Box Cutter",
+"english_name": "Plus PICO FRIENDS Box Cutter",
+"japanese_name": "ピコフレンズ",
+"description": "Plus PICO FRIENDS box cutter. Animal-shaped cardboard cutter with a ceramic blade. Cute enough for a desk, sharp enough to end the delivery-box struggle.",
+"category": "household",
+"subcategory": "box cutter",
+"price_range_jpy": "1500-1600",
+"where_to_buy": [
+"Loft",
+"Hands",
+"Itoya",
+"major stationery stores"
+],
+"image_url": "https://itemplus.plus.co.jp/catalog/fileDownload?fileID=t010000775671&volumeName=00016",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://itemplus.plus.co.jp/catalog/DispDetail.do?itemID=t000100040771&volumeName=00016",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Pocari Sweat",
+"english_name": "Pocari Sweat",
+"japanese_name": "ポカリスエット",
+"description": "Pocari Sweat. Ion drink, mild grapefruit-ish flavor, Japan's default 'I am dehydrated' button. Konbini fridge staple after temples, trains, or questionable life choices.",
+"category": "konbini-drink",
+"subcategory": "sports drink",
+"price_range_jpy": "130-180",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"vending machines",
+"supermarkets"
+],
+"image_url": "https://www.otsuka.co.jp/en/nutraceutical/products/pocarisweat/img/index_im01.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.otsuka.co.jp/en/nutraceutical/products/pocarisweat/",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Pocari Sweat / Aquarius",
+"english_name": "Aquarius",
+"japanese_name": "アクエリアス",
+"description": "Pocari Sweat versus Aquarius. Japan's blue-bottle sports drink rivalry. Pocari feels softer; Aquarius tastes sharper, both live in every konbini fridge.",
+"category": "konbini-drink",
+"subcategory": "sports drink",
+"price_range_jpy": "130-180",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"vending machines",
+"supermarkets"
+],
+"image_url": "https://j.cocacola.co.jp/qrt/images/027/pr_01_img.png",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://j.cocacola.co.jp/qrt/027/aquarius.htm",
+"confidence": "low",
+"notes": "[POSSIBLE_DUPLICATE_OF: Pocari Sweat; AMBIGUOUS: Pocari Sweat, Aquarius]"
+},
+{
+"input_name": "Pocket WiFi Rental (Ninja WiFi, Sakura Mobile)",
+"english_name": "Ninja WiFi Pocket Router Rental",
+"japanese_name": "忍者WiFi",
+"description": "Ninja WiFi pocket router. Rental WiFi box for group trips. Pick it up at the airport, share it with everyone, then panic less about roaming.",
+"category": "electronics",
+"subcategory": "pocket wifi rental",
+"price_range_jpy": "440-1000",
+"where_to_buy": [
+"Ninja WiFi",
+"Sakura Mobile",
+"airport pickup counters",
+"online rental sites"
+],
+"image_url": "https://ninjawifi.com/common/images/mv_wifi.png?date=20240725",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://ninjawifi.com/en",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Ninja WiFi pocket router, Sakura Mobile pocket WiFi, Japan Wireless pocket WiFi, Global Advanced Communications pocket WiFi]"
+},
+{
+"input_name": "Pocket tissue with characters",
+"english_name": "Sanrio Cinnamoroll Pocket Tissue Set",
+"japanese_name": "サンリオ ポケットティッシュ",
+"description": "Sanrio pocket tissues. Tiny character tissue packs for bags, kids, and sudden shrine-side sneezes. Cheap, cute, and somehow more emotionally prepared than you.",
+"category": "household",
+"subcategory": "pocket tissue",
+"price_range_jpy": "100-300",
+"where_to_buy": [
+"Daiso",
+"Donki",
+"Sanrio shops",
+"drugstores"
+],
+"image_url": "https://jyw-kawaii.com/cdn/shop/files/111-2024-02-05T165607.631_1800x1800.jpg?v=1707119836",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://jyw-kawaii.com/products/sanrio-pocket-tissue-6pcs-set-cinnamoroll-hayashi-japan",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Sanrio tissues, Pokémon tissues, character pocket tissue packs, kids tissue multipacks]"
+},
+{
+"input_name": "Pocky / Pretz (Standard + Regional)",
+"english_name": "Pocky / Pretz",
+"japanese_name": "ポッキー / プリッツ",
+"description": "Pocky is chocolate sticks; Pretz is the savory cousin. Standard boxes are everywhere, regional flavors are suitcase bait.",
+"category": "snack",
+"subcategory": "biscuit sticks",
+"price_range_jpy": "150-350",
+"where_to_buy": [
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets",
+"Donki"
+],
+"image_url": "https://www.glico.com/assets/images/large/03_GlobalProducts_d01_%E5%95%86%E5%93%81%E3%82%B5%E3%83%96%E7%94%BB%E5%83%8F.jpg",
+"image_source": "manufacturer",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy"
+],
+"source_url": "https://www.glico.com/global/products/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Pocky Chocolate, Pocky regional flavors, Pretz Salad, Pretz regional flavors]"
+},
+{
+"input_name": "Pokemon Center Custom Print Stations",
+"english_name": "Pokémon Design Lab Custom T-Shirt",
+"japanese_name": "ポケモンデザインラボ カスタムTシャツ",
+"description": "Pokémon Design Lab custom T-shirt. Touchscreen station where you build a Pokémon tee and pick it up later. Shibuya Pokémon Center turns indecision into merch.",
+"category": "other",
+"subcategory": "custom merchandise",
+"price_range_jpy": "3300-4400",
+"where_to_buy": [
+"Pokémon Center Shibuya"
+],
+"image_url": "https://media.pocketmonsters.net/news/5431/pc1.jpg/t/700.png",
+"image_source": "other",
+"safety_flags": [],
+"source_url": "https://corporate.pokemon.co.jp/en/business/shops/",
+"confidence": "medium",
+"notes": null
+},
+{
+"input_name": "Pokemon Center Exclusives",
+"english_name": "Pokémon Center Original Merchandise",
+"japanese_name": "ポケモンセンター オリジナルグッズ",
+"description": "Pokémon Center original merch. Plush walls, local designs, and Japan-only chaos that triggers instant suitcase math. Budget room before entering.",
+"category": "other",
+"subcategory": "character merchandise",
+"price_range_jpy": "1000-6000",
+"where_to_buy": [
+"Pokémon Center Shibuya",
+"Pokémon Center Tokyo DX",
+"Pokémon Center Osaka",
+"Pokémon Center Kyoto"
+],
+"image_url": "https://corporate.pokemon.co.jp/_next/image/?q=90&url=https%3A%2F%2Ffiles.corporate.pokemon.co.jp%2Fv%3D1772369139%2Ffiles%2Ftopics%2F28_ext_6_en_1.jpg&w=1200",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://corporate.pokemon.co.jp/en/business/shops/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: regional plush, Pokémon Center original stationery, exclusive apparel, local-design merchandise]"
+},
+{
+"input_name": "Pottery Class (Mashiko / Tokoname / Kyoto)",
+"english_name": "Zuikougama Kyoto Pottery Class",
+"japanese_name": "瑞光窯 陶芸体験",
+"description": "Zuikougama Kyoto pottery class. Spin clay near Yasaka Pagoda, then wait for firing and shipping like a patient adult. A calmer souvenir than another tote bag.",
+"category": "other",
+"subcategory": "craft experience",
+"price_range_jpy": "2900-6900",
+"where_to_buy": [
+"Zuikougama Kyoto",
+"Mashiko pottery studios",
+"Tokoname pottery workshops"
+],
+"image_url": "https://www.taiken-kiyomizu.com/wp-content/uploads/2018/07/plan09-1.jpg",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://www.taiken-kiyomizu.com/en/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Zuikougama Kyoto class, Mashiko pottery experience, Tokoname Yamatane workshop, Shoraku Kiln Raku bowl class]"
+},
+{
+"input_name": "Premium Matcha (Ippodo / Marukyu Koyamaen)",
+"english_name": "Ippodo Ummon Matcha 40g Can",
+"japanese_name": "一保堂 雲門 40g缶",
+"description": "Ippodo Ummon matcha. Rich Kyoto matcha tin for serious tea people. Buy it when the shelves have not been raided by matcha TikTok.",
+"category": "drink",
+"subcategory": "matcha",
+"price_range_jpy": "6000-12000",
+"where_to_buy": [
+"Ippodo Tea Kyoto",
+"Ippodo Tea Tokyo Marunouchi",
+"department stores",
+"official online store"
+],
+"image_url": "https://ippodotea.com/cdn/shop/files/ippodo-tea-ummon-40-can-matcha.png?crop=center&height=600&v=1769096918&width=600",
+"image_source": "manufacturer",
+"safety_flags": [],
+"source_url": "https://ippodotea.com/products/ummon-no-mukashi-40g",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Ippodo Ummon, Ippodo Sayaka, Marukyu Koyamaen Isuzu, Marukyu Koyamaen Wako]"
+},
+{
+"input_name": "Premium Roll Cake (Uchi Cafe)",
+"english_name": "Lawson Uchi Café Premium Roll Cake",
+"japanese_name": "プレミアムロールケーキ",
+"description": "Lawson Uchi Café Premium Roll Cake. Sponge ring with a huge cream center. Lawson's dessert fridge flex, eaten with a tiny spoon in your hotel room.",
+"category": "konbini-food",
+"subcategory": "dessert",
+"price_range_jpy": "200-250",
+"where_to_buy": [
+"Lawson"
+],
+"image_url": "https://www.lawson.co.jp/recommend/original/detail/img/l788180.png",
+"image_source": "retailer_official",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.lawson.co.jp/sp/recommend/original/detail/1508380_2168.html",
+"confidence": "high",
+"notes": null
+},
+{
+"input_name": "Premium Senbei Tins (Souka Senbei)",
+"english_name": "Soka Senbei",
+"japanese_name": "草加せんべい",
+"description": "Soka senbei. Crisp soy-sauce rice crackers from Saitama. Old-school edible souvenir that survives suitcase abuse better than most snacks.",
+"category": "snack",
+"subcategory": "rice crackers",
+"price_range_jpy": "1000-3000",
+"where_to_buy": [
+"Soka senbei shops",
+"Saitama souvenir shops",
+"department store food halls",
+"Tokyo Station souvenir shops"
+],
+"image_url": "https://saitama-supportdesk.com/wp-content/uploads/2024/09/71_han_top.jpg",
+"image_source": "other",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://saitama-supportdesk.com/features/post-3911/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Soka senbei tin, Komiya Senbei gift box, assorted rice cracker tin, soy-sauce senbei assortment]"
+},
+{
+"input_name": "Premium Soy Sauce (Yuasa, Kishibori, Kamebishi)",
+"english_name": "Kishibori Shoyu",
+"japanese_name": "生搾醤油",
+"description": "Kishibori soy sauce. Barrel-aged shoyu with a deep, clean salt hit. Bring it home when supermarket soy sauce starts feeling too basic.",
+"category": "food",
+"subcategory": "soy sauce",
+"price_range_jpy": "1000-2500",
+"where_to_buy": [
+"department store food halls",
+"specialty food shops",
+"Japanese Taste",
+"Amazon Japan"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/P-1-TKS-KSOYSA-360-Takesan_Kishibori_Shoyu_Premium_Japanese_Soy_Sauce_360ml.jpg?v=1743426410",
+"image_source": "other",
+"safety_flags": [
+"contains_gluten"
+],
+"source_url": "https://takesan.co.jp/kishibori_shoyu/",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Yuasa soy sauce, Kishibori Shoyu, Kamebishi soy sauce, premium barrel-aged shoyu]"
+},
+{
+"input_name": "Premium canned coffee variety",
+"english_name": "Boss Rainbow Mountain Blend",
+"japanese_name": "ボス レインボーマウンテンブレンド",
+"description": "Boss Rainbow Mountain Blend. Canned coffee with milk, sugar, and serious vending-machine legacy. Grab it hot or cold when the train platform becomes breakfast.",
+"category": "konbini-drink",
+"subcategory": "canned coffee",
+"price_range_jpy": "120-180",
+"where_to_buy": [
+"vending machines",
+"7-Eleven",
+"Lawson",
+"FamilyMart",
+"supermarkets"
+],
+"image_url": "https://japanesetaste.com/cdn/shop/files/Boss-Coffee-Rainbow-Mountain-Blend-Canned-Coffee-Box-of-30-Cans-1-2026-05-14T23_44_30.481Z.jpg?v=1778802376",
+"image_source": "other",
+"safety_flags": [
+"contains_dairy",
+"caffeine_high"
+],
+"source_url": "https://japanesetaste.com/products/suntory-boss-rainbow-mountain-blend-coffee-box-of-30-cans",
+"confidence": "low",
+"notes": "[CATEGORY_INPUT: Boss Rainbow Mountain Blend, Georgia Emerald Mountain Blend, UCC Black, Fire canned coffee]"
+},
+{
+"input_name": "Press Butter Sand",
+"english_name": "PRESS BUTTER SAND",
+"japanese_name": "プレスバターサンド",
+"description": "PRESS BUTTER SAND. Crisp pressed butter cookie with buttercream and caramel inside. Tokyo Station gift-box energy, minus the fragile cake drama.",
+"category": "sweet",
+"subcategory": "butter sandwich cookie",
+"price_range_jpy": "1200-2200",
+"where_to_buy": [
+"PRESS BUTTER SAND stores",
+"Tokyo Station",
+"Narita Airport",
+"department store food halls"
+],
+"image_url": null,
+"image_source": "none",
+"safety_flags": [
+"contains_gluten",
+"contains_dairy",
+"contains_egg"
+],
+"source_url": "https://www.narita-airport.jp/en/shop/shop-search/t2_press_butter_sand/",
+"confidence": "medium",
+"notes": "No reliable product image source found"
+}
+]
