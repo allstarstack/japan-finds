@@ -166,6 +166,16 @@ const lede = extractLede(entry.body);
     border: 0;
     border-top: var(--border-hair);
   }
+  /* Markdown tables: each becomes its own scroll container so a wide
+     row (e.g. the sumo schedule's venue + ticket-release columns)
+     scrolls inside the content column instead of overflowing the
+     viewport at iPhone-SE widths. */
+  .sheet__body :global(table) {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+  }
 
   /* Inline event photos (Phase D D2 — japan-events-2026 sheet).
      Raw <figure class="event-photo"> blocks live in the markdown body, one
