@@ -1,0 +1,40 @@
+id: JF-0463
+slug: daiso-wash-bag
+name_en: Daiso Wash Bag
+category: 100-yen
+intent:
+- bring_home
+status: ready
+name_jp: ウォッシュバッグ
+brand: Daiso
+where_found:
+- Daiso stores
+- Daiso Net Store (online)
+price_yen: '¥770'
+what_it_is: Foldable 7L nylon bag for hand-washing laundry. Add clothes, water, a
+  little detergent, roll the top shut, and shake.
+why_travelers_care: Viral Daiso buy that turns a hotel sink into a washing machine
+  for long trips, camping, or laundry-day emergencies.
+source_links:
+- https://jp.daisonet.com/products/4967574599865
+confidence: high
+trip_score: 6
+suitcase_score: 9
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso Wash Bag. A foldable 7L pouch that doubles as a washing machine
+  — drop in two T-shirts and three liters of water, roll the top shut, and shake.
+  The textured interior scrubs harder than your hotel sink ever will.
+english_name: Wash Bag
+japanese_name: ウォッシュバッグ
+subcategory: portable wash bag
+price_range_jpy: '770'
+where_to_buy:
+- Daiso stores
+- Daiso Net Store (online)
+image: /products/daiso-wash-bag.webp
+safety_flags: []
+enrichment_confidence: high
+enrichment_source_url: https://jp.daisonet.com/products/4967574599865
+enrichment_date: '2026-05-21'
