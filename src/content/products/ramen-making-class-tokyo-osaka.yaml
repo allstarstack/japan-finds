@@ -1,24 +1,24 @@
-id: "JF-0081"
-slug: "ramen-making-class-tokyo-osaka"
-name_en: "Ramen-Making Class (Tokyo / Osaka)"
-category: "other"
+id: JF-0081
+slug: ramen-making-class-tokyo-osaka
+name_en: Ramen-Making Class (Tokyo / Osaka)
+category: other
 intent:
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "ラーメン作り体験"
-brand: "Various"
+- make_it_yours
+status: v1_candidate
+name_jp: ラーメン作り体験
+brand: Various
 where_found:
-  - "Tokyo and Osaka schools"
-price_yen: "4000-10000"
-what_it_is: "Make ramen broth and noodles, eat the result."
-why_travelers_care: "Newer popular class, less saturated than sushi."
+- Tokyo and Osaka schools
+price_yen: 4000-10000
+what_it_is: Make ramen broth and noodles, eat the result.
+why_travelers_care: Newer popular class, less saturated than sushi.
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 8
 suitcase_score: 0
-
-description: Ramen-making class. You make noodles, broth, toppings, then understand why a bowl of ramen is not just soup.
+description: Ramen-making class. You make noodles, broth, toppings, then understand
+  why a bowl of ramen is not just soup.
 english_name: Ramen Masterclass in Tokyo
 japanese_name: ラーメン作り体験
 subcategory: cooking class
@@ -32,3 +32,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.klook.com/en-US/activity/109329-3-hour-join-tokyo-cooking-class-ramen-masterclass/
 enrichment_date: '2026-05-19'
+image: null

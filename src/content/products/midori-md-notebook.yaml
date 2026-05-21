@@ -1,35 +1,35 @@
-id: "JF-0029"
-slug: "midori-md-notebook"
-name_en: "Midori MD Notebook"
-category: "100-yen"
+id: JF-0029
+slug: midori-md-notebook
+name_en: Midori MD Notebook
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "MDノート"
-brand: "Designphil / Midori"
+- bring_home
+status: ready
+name_jp: MDノート
+brand: Designphil / Midori
 where_found:
-  - "Loft"
-  - "Hands"
-  - "Itoya"
-  - "Midori store"
-price_yen: "~¥800–¥2,000"
-what_it_is: "Minimal high-quality Japanese notebook."
-why_travelers_care: "Great for design-minded travelers; practical and giftable."
+- Loft
+- Hands
+- Itoya
+- Midori store
+price_yen: ~¥800–¥2,000
+what_it_is: Minimal high-quality Japanese notebook.
+why_travelers_care: Great for design-minded travelers; practical and giftable.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Confirm paper size and line format."
+- easy to buy outside Japan
+verification_notes: Confirm paper size and line format.
 source_links:
-  - "https://www.loft.co.jp/store/"
-  - "https://info.hands.net/en/"
-  - "https://www.ito-ya.co.jp/"
-confidence: "medium"
+- https://www.loft.co.jp/store/
+- https://info.hands.net/en/
+- https://www.ito-ya.co.jp/
+confidence: medium
 trip_score: 8
 suitcase_score: 8
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Midori MD Notebook. Cream paper, no loud cover, extremely stationery-person coded. Buy it when your travel notes deserve better handwriting than you own.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Midori MD Notebook. Cream paper, no loud cover, extremely stationery-person
+  coded. Buy it when your travel notes deserve better handwriting than you own.
 english_name: Midori MD Notebook
 japanese_name: ミドリ MDノート
 subcategory: notebook
@@ -43,3 +43,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://md-product.com/en
 enrichment_date: '2026-05-19'
 image: /products/midori-md-notebook.webp
+safety_flags: []

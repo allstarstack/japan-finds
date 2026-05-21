@@ -1,32 +1,32 @@
-id: "JF-0272"
-slug: "display-katana-souvenir-samurai-sword"
-name_en: "Display Katana / Souvenir Samurai Sword"
-category: "other"
+id: JF-0272
+slug: display-katana-souvenir-samurai-sword
+name_en: Display Katana / Souvenir Samurai Sword
+category: other
 intent:
-  - "content_only"
-status: "ready"
-name_jp: "模造刀"
-brand: "Generic"
+- content_only
+status: ready
+name_jp: 模造刀
+brand: Generic
 where_found:
-  - "Tourist shops"
-  - "specialty katana shops"
-price_yen: "¥5,000+"
-what_it_is: "Decorative sword replica."
-why_travelers_care: "Avoid as recommendation due travel/security friction."
+- Tourist shops
+- specialty katana shops
+price_yen: ¥5,000+
+what_it_is: Decorative sword replica.
+why_travelers_care: Avoid as recommendation due travel/security friction.
 risk_flags:
-  - "weapon lookalike"
-  - "bulky"
-verification_notes: "Verify local laws/travel restrictions if discussed."
+- weapon lookalike
+- bulky
+verification_notes: Verify local laws/travel restrictions if discussed.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 1
 suitcase_score: 0
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Replica display katana. Looks serious on a wall, becomes a paperwork problem at airports fast.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Replica display katana. Looks serious on a wall, becomes a paperwork
+  problem at airports fast.
 english_name: Replica Display Samurai Sword
 japanese_name: 模造刀
 subcategory: souvenir sword
@@ -38,3 +38,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://samuraistore.com/collections/replica-display-sword
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

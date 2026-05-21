@@ -1,31 +1,31 @@
-id: "JF-0402"
-slug: "country-ma-am"
-name_en: "Country Ma'am"
-category: "snacks"
+id: JF-0402
+slug: country-ma-am
+name_en: Country Ma'am
+category: snacks
 intent:
-  - "stock_up"
-  - "gift_easy"
-status: "ready"
-name_jp: "カントリーマアム"
-brand: "Fujiya"
+- stock_up
+- gift_easy
+status: ready
+name_jp: カントリーマアム
+brand: Fujiya
 where_found:
-  - "Supermarkets"
-  - "Donki"
-price_yen: "350-600"
-what_it_is: "Soft-baked chocolate chip cookies, individually wrapped."
-why_travelers_care: "Bulk-gift staple, durable."
+- Supermarkets
+- Donki
+price_yen: 350-600
+what_it_is: Soft-baked chocolate chip cookies, individually wrapped.
+why_travelers_care: Bulk-gift staple, durable.
 risk_flags:
-  - "allergen-dairy-wheat-egg-soy"
+- allergen-dairy-wheat-egg-soy
 source_links:
-  - "fujiya-peko.co.jp"
-confidence: "high"
+- fujiya-peko.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Country Ma'am cookies. Soft little chocolate-chip cookies that taste like grandma got sponsored by a konbini.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Country Ma'am cookies. Soft little chocolate-chip cookies that taste
+  like grandma got sponsored by a konbini.
 english_name: Country Ma'am Cookies
 japanese_name: カントリーマアム
 subcategory: cookies

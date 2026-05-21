@@ -1,31 +1,32 @@
-id: "JF-0307"
-slug: "aomori-apple-products-juice-pie-apple-senbei"
-name_en: "Aomori Apple Products (Juice, Pie, Apple Senbei)"
-category: "other"
+id: JF-0307
+slug: aomori-apple-products-juice-pie-apple-senbei
+name_en: Aomori Apple Products (Juice, Pie, Apple Senbei)
+category: other
 intent:
-  - "local_editions"
-  - "bring_home"
-status: "ready"
-name_jp: "青森りんご"
-brand: "Various"
+- local_editions
+- bring_home
+status: ready
+name_jp: 青森りんご
+brand: Various
 where_found:
-  - "Aomori"
-  - "dept stores"
-price_yen: "500-3000"
-what_it_is: "Apple juices, dried snacks, apple pies."
-why_travelers_care: "Aomori is the apple region."
+- Aomori
+- dept stores
+price_yen: 500-3000
+what_it_is: Apple juices, dried snacks, apple pies.
+why_travelers_care: Aomori is the apple region.
 risk_flags:
-  - "allergen-varies"
+- allergen-varies
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: JA Aoren Aomori apple juice. Straightforward apple juice from Japan's apple capital, no mascot required. Buy it at Aomori shops when you want the fruit without hauling fruit.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: JA Aoren Aomori apple juice. Straightforward apple juice from Japan's
+  apple capital, no mascot required. Buy it at Aomori shops when you want the fruit
+  without hauling fruit.
 english_name: JA Aoren Aomori Apple Juice
 japanese_name: JAアオレン 青森りんごジュース
 subcategory: apple juice
@@ -38,3 +39,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://shop.marukai.com/store/marukai-market/products/28870405-ja-aoren-aomori-apple-juice-33-81-fl-oz
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

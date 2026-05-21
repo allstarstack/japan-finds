@@ -1,38 +1,38 @@
-id: "JF-0149"
-slug: "gatsby-facial-body-wipes"
-name_en: "Gatsby facial/body wipes"
-category: "donki-drugstore"
+id: JF-0149
+slug: gatsby-facial-body-wipes
+name_en: Gatsby facial/body wipes
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Don Quijote"
-  - "7-Eleven"
-price_yen: "~¥300–¥600"
-what_it_is: "Cooling face/body wipes marketed often to men."
-why_travelers_care: "Immediate hot-weather fix; very visible in konbini/drugstore aisles."
+- Matsumoto Kiyoshi
+- Welcia
+- Don Quijote
+- 7-Eleven
+price_yen: ~¥300–¥600
+what_it_is: Cooling face/body wipes marketed often to men.
+why_travelers_care: Immediate hot-weather fix; very visible in konbini/drugstore aisles.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-  - "menthol"
-verification_notes: "Check menthol strength and skin sensitivity."
+- liquid
+- skincare/cosmetic claim
+- menthol
+verification_notes: Check menthol strength and skin sensitivity.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.gatsby.jp/product/facecare/facial-paper/"
-  - "https://www.mandom.co.jp/release/2025012001.html"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.gatsby.jp/product/facecare/facial-paper/
+- https://www.mandom.co.jp/release/2025012001.html
+confidence: high
 trip_score: 8
 suitcase_score: 7
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "ギャツビー フェイシャルペーパー"
-
-description: Gatsby facial and body wipes. Pocketable sweat-control sheets for face, neck, arms, and the crisis zone. Donki summer aisle behavior.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: ギャツビー フェイシャルペーパー
+description: Gatsby facial and body wipes. Pocketable sweat-control sheets for face,
+  neck, arms, and the crisis zone. Donki summer aisle behavior.
 english_name: Gatsby Facial and Body Wipes
 japanese_name: ギャツビー フェイシャルペーパー / ボディペーパー
 subcategory: face and body wipes
@@ -46,3 +46,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.gatsby.sg/product/bodycare/body-paper/
 enrichment_date: '2026-05-19'
 image: /products/gatsby-facial-body-wipes.webp
+safety_flags: []

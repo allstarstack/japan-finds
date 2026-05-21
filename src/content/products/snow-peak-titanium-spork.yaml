@@ -1,30 +1,31 @@
-id: "JF-0281"
-slug: "snow-peak-titanium-spork"
-name_en: "Snow Peak Titanium Spork"
-category: "other"
+id: JF-0281
+slug: snow-peak-titanium-spork
+name_en: Snow Peak Titanium Spork
+category: other
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "チタンスポーク"
-brand: "Snow Peak"
+- bring_home
+status: ready
+name_jp: チタンスポーク
+brand: Snow Peak
 where_found:
-  - "Snow Peak official"
-  - "outdoor shops"
-  - "Amazon JP"
-price_yen: "~¥1,200"
-what_it_is: "Lightweight titanium eating utensil."
-why_travelers_care: "Useful outdoor/travel object; not uniquely Japan-only but brand-relevant."
-verification_notes: "Verify local price and availability."
+- Snow Peak official
+- outdoor shops
+- Amazon JP
+price_yen: ~¥1,200
+what_it_is: Lightweight titanium eating utensil.
+why_travelers_care: Useful outdoor/travel object; not uniquely Japan-only but brand-relevant.
+verification_notes: Verify local price and availability.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Snow Peak titanium spork. Featherlight camping spoon-fork from Niigata outdoor nerd heaven. The tiny souvenir that makes airplane meals feel slightly less tragic.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Snow Peak titanium spork. Featherlight camping spoon-fork from Niigata
+  outdoor nerd heaven. The tiny souvenir that makes airplane meals feel slightly less
+  tragic.
 english_name: Snow Peak Titanium Spork
 japanese_name: スノーピーク チタン先割れスプーン
 subcategory: travel utensil
@@ -37,3 +38,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.snowpeak.com/products/titanium-spork
 enrichment_date: '2026-05-19'
 image: /products/snow-peak-titanium-spork.webp
+safety_flags: []

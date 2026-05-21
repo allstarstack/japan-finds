@@ -1,27 +1,28 @@
-id: "JF-0212"
-slug: "suribachi-mortar"
-name_en: "Suribachi Mortar"
-category: "kitchen"
+id: JF-0212
+slug: suribachi-mortar
+name_en: Suribachi Mortar
+category: kitchen
 intent:
-  - "bring_home"
-status: "hold"
-name_jp: "すり鉢"
-brand: "Various"
+- bring_home
+status: hold
+name_jp: すり鉢
+brand: Various
 where_found:
-  - "Kappabashi"
-  - "kitchen stores"
-price_yen: "1500-4000"
-what_it_is: "Ceramic ridged mortar for grinding sesame, miso, etc."
-why_travelers_care: "Beautiful, durable, ridged interior is the design moment."
+- Kappabashi
+- kitchen stores
+price_yen: 1500-4000
+what_it_is: Ceramic ridged mortar for grinding sesame, miso, etc.
+why_travelers_care: Beautiful, durable, ridged interior is the design moment.
 risk_flags:
-  - "fragile, bulky"
+- fragile, bulky
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 6
 suitcase_score: 5
-
-description: Suribachi mortar. Ridged Japanese mortar that turns sesame into goma-ae sauce without pulverizing your spirit. Kitchen souvenir for people with luggage optimism.
+description: Suribachi mortar. Ridged Japanese mortar that turns sesame into goma-ae
+  sauce without pulverizing your spirit. Kitchen souvenir for people with luggage
+  optimism.
 english_name: Japanese Suribachi Mortar and Pestle Set
 japanese_name: すり鉢とすりこぎ
 subcategory: mortar and pestle
@@ -35,3 +36,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://irasshai.store/products/handmade-japanese-suribachi-mortar-pestle-set
 enrichment_date: '2026-05-19'
 image: /products/suribachi-mortar.webp
+safety_flags: []

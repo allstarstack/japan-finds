@@ -1,26 +1,26 @@
-id: "JF-0078"
-slug: "omikuji-ema-wishes-at-shrines"
-name_en: "Omikuji + Ema Wishes at Shrines"
-category: "other"
+id: JF-0078
+slug: omikuji-ema-wishes-at-shrines
+name_en: Omikuji + Ema Wishes at Shrines
+category: other
 intent:
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "おみくじ / 絵馬"
-brand: "Various shrines"
+- make_it_yours
+status: v1_candidate
+name_jp: おみくじ / 絵馬
+brand: Various shrines
 where_found:
-  - "Most shrines"
-price_yen: "100-500"
-what_it_is: "Draw fortune + write wish on wooden plaque, hang at shrine."
-why_travelers_care: "Tiny ritual moment, free or very cheap."
+- Most shrines
+price_yen: 100-500
+what_it_is: Draw fortune + write wish on wooden plaque, hang at shrine.
+why_travelers_care: Tiny ritual moment, free or very cheap.
 risk_flags:
-  - "fragile (ema if taking home)"
+- fragile (ema if taking home)
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 8
 suitcase_score: 5
-
-description: Omikuji and ema. Pull a fortune, write a wish, and let a shrine tree hold your emotional paperwork. Cheap, meaningful, and very Japan-coded.
+description: Omikuji and ema. Pull a fortune, write a wish, and let a shrine tree
+  hold your emotional paperwork. Cheap, meaningful, and very Japan-coded.
 english_name: Meiji Jingu Omikuji and Ema
 japanese_name: 明治神宮 おみくじ・絵馬
 subcategory: shrine experience
@@ -32,3 +32,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.meijijingu.or.jp/en/feelshinto/4.php
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

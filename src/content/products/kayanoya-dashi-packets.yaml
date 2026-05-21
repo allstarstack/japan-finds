@@ -1,34 +1,34 @@
-id: "JF-0332"
-slug: "kayanoya-dashi-packets"
-name_en: "Kayanoya dashi packets"
-category: "snacks"
+id: JF-0332
+slug: kayanoya-dashi-packets
+name_en: Kayanoya dashi packets
+category: snacks
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "茅乃舎だし"
-brand: "Kayanoya"
+- bring_home
+status: ready
+name_jp: 茅乃舎だし
+brand: Kayanoya
 where_found:
-  - "Kayanoya shops"
-  - "dept stores"
-  - "airports"
-price_yen: "~¥1,000–¥2,500"
-what_it_is: "Dashi soup-stock packets."
-why_travelers_care: "High-utility food souvenir; small and premium-feeling."
+- Kayanoya shops
+- dept stores
+- airports
+price_yen: ~¥1,000–¥2,500
+what_it_is: Dashi soup-stock packets.
+why_travelers_care: High-utility food souvenir; small and premium-feeling.
 risk_flags:
-  - "food import rules"
-  - "seafood possible"
-verification_notes: "Check ingredients and customs rules."
+- food import rules
+- seafood possible
+verification_notes: Check ingredients and customs rules.
 source_links:
-  - "https://www.kayanoya.com/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "high"
+- https://www.kayanoya.com/
+- https://www.japan-guide.com/e/e2450.html
+confidence: high
 trip_score: 9
 suitcase_score: 9
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kayanoya dashi packets. Drop one bag in water and suddenly dinner speaks Japanese; locals gift these because they actually get used.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Kayanoya dashi packets. Drop one bag in water and suddenly dinner speaks
+  Japanese; locals gift these because they actually get used.
 english_name: Kayanoya Original Dashi Packets
 japanese_name: 茅乃舎だし
 subcategory: dashi packet

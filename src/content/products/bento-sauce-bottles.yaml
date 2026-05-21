@@ -1,34 +1,34 @@
-id: "JF-0016"
-slug: "bento-sauce-bottles"
-name_en: "Bento sauce bottles"
-category: "100-yen"
+id: JF-0016
+slug: bento-sauce-bottles
+name_en: Bento sauce bottles
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "たれびん"
-brand: "Daiso / Seria / Can Do"
+- bring_home
+status: ready
+name_jp: たれびん
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-price_yen: "~¥110"
-what_it_is: "Tiny containers for sauces in bento/lunch boxes."
-why_travelers_care: "Cute Japan-specific utility and giftable to food people."
+- Daiso
+- Seria
+- Can Do
+price_yen: ~¥110
+what_it_is: Tiny containers for sauces in bento/lunch boxes.
+why_travelers_care: Cute Japan-specific utility and giftable to food people.
 risk_flags:
-  - "liquid use"
-  - "small parts"
-verification_notes: "Check food-safe label."
+- liquid use
+- small parts
+verification_notes: Check food-safe label.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 7
 suitcase_score: 8
-launch_category: "kitchen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Mini sauce bottles. Little condiment animals for soy sauce, dressing, and pretending your lunch is organized.
+launch_category: kitchen
+fill_type: verified
+display_strategy: show_all
+description: Mini sauce bottles. Little condiment animals for soy sauce, dressing,
+  and pretending your lunch is organized.
 english_name: Mini Animal Sauce Bottles
 japanese_name: ミニアニマル ソースボトル
 subcategory: bento accessory
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://en.bentoandco.com/products/mini-animal-sauce-bottles
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

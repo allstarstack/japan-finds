@@ -1,36 +1,37 @@
-id: "JF-0041"
-slug: "tiny-scissors-with-cap"
-name_en: "Tiny scissors with cap"
-category: "100-yen"
+id: JF-0041
+slug: tiny-scissors-with-cap
+name_en: Tiny scissors with cap
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "携帯はさみ"
-brand: "Daiso / Can Do / stationery brands"
+- day_one_fixes
+status: ready
+name_jp: 携帯はさみ
+brand: Daiso / Can Do / stationery brands
 where_found:
-  - "Daiso"
-  - "Can Do"
-  - "Loft"
-  - "Hands"
-price_yen: "~¥110–¥800"
-what_it_is: "Portable scissors for tags, packaging, receipts."
-why_travelers_care: "Useful travel fix but airline rules matter."
+- Daiso
+- Can Do
+- Loft
+- Hands
+price_yen: ~¥110–¥800
+what_it_is: Portable scissors for tags, packaging, receipts.
+why_travelers_care: Useful travel fix but airline rules matter.
 risk_flags:
-  - "regulated blade"
-  - "airport security risk"
-verification_notes: "Do not carry on; verify blade length rules."
+- regulated blade
+- airport security risk
+verification_notes: Do not carry on; verify blade length rules.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-  - "https://info.hands.net/en/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+- https://info.hands.net/en/
+confidence: medium
 trip_score: 7
 suitcase_score: 6
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tiny scissors with cap. Pocket scissors with a blade cover, made for tags, packaging, and emergency hangnail diplomacy. The kind of cheap shop item that saves a whole day.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Tiny scissors with cap. Pocket scissors with a blade cover, made for
+  tags, packaging, and emergency hangnail diplomacy. The kind of cheap shop item that
+  saves a whole day.
 english_name: Tiny Scissors With Cap
 japanese_name: キャップ付き携帯はさみ
 subcategory: portable scissors
@@ -43,3 +44,6 @@ where_to_buy:
 - stationery stores
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []
+enrichment_source_url: null

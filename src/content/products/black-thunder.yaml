@@ -1,32 +1,32 @@
-id: "JF-0399"
-slug: "black-thunder"
-name_en: "Black Thunder"
-category: "snacks"
+id: JF-0399
+slug: black-thunder
+name_en: Black Thunder
+category: snacks
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
-name_jp: "ブラックサンダー"
-brand: "Yuraku"
+- bring_home
+- gift_easy
+status: ready
+name_jp: ブラックサンダー
+brand: Yuraku
 where_found:
-  - "Konbini"
-  - "supermarkets"
-  - "Donki"
-price_yen: "40-60"
-what_it_is: "Cheap chocolate-cookie bar, internet-famous, $0.30 price point."
-why_travelers_care: "Cult cheap snack, easy bulk gift."
+- Konbini
+- supermarkets
+- Donki
+price_yen: 40-60
+what_it_is: Cheap chocolate-cookie bar, internet-famous, $0.30 price point.
+why_travelers_care: Cult cheap snack, easy bulk gift.
 risk_flags:
-  - "allergen-dairy-wheat-soy"
+- allergen-dairy-wheat-soy
 source_links:
-  - "blackthunder.jp"
-confidence: "high"
+- blackthunder.jp
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Black Thunder. Crunchy chocolate bar, cheap, chaotic, and the classic impulse grab at the register.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Black Thunder. Crunchy chocolate bar, cheap, chaotic, and the classic
+  impulse grab at the register.
 english_name: Black Thunder Chocolate Bar
 japanese_name: ブラックサンダー
 subcategory: chocolate bar

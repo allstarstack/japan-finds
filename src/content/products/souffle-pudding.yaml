@@ -1,34 +1,34 @@
-id: "JF-0263"
-slug: "souffle-pudding"
-name_en: "Soufflé pudding"
-category: "konbini"
+id: JF-0263
+slug: souffle-pudding
+name_en: Soufflé pudding
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "FamilyMart"
-price_yen: "~¥300–¥400"
-what_it_is: "Layered pudding with soufflé cheesecake-style top."
-why_travelers_care: "More dramatic than standard pudding; good visual spoon shot."
+- FamilyMart
+price_yen: ~¥300–¥400
+what_it_is: Layered pudding with soufflé cheesecake-style top.
+why_travelers_care: More dramatic than standard pudding; good visual spoon shot.
 risk_flags:
-  - "perishable"
-  - "dairy"
-  - "allergen"
-verification_notes: "Confirm current version and region."
+- perishable
+- dairy
+- allergen
+verification_notes: Confirm current version and region.
 source_links:
-  - "https://www.family.co.jp/for_tourist/en.html"
-  - "https://www.family.co.jp/goods/dessert.html"
-  - "unknown"
-confidence: "high"
+- https://www.family.co.jp/for_tourist/en.html
+- https://www.family.co.jp/goods/dessert.html
+- unknown
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "スフレ・プリン"
-agent_notes: "Current SKU not confirmed on listing"
-
-description: FamilyMart souffle pudding. Custard pudding with a soft cheese souffle hat. Konbini dessert engineering for people who cannot choose one texture.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: スフレ・プリン
+agent_notes: Current SKU not confirmed on listing
+description: FamilyMart souffle pudding. Custard pudding with a soft cheese souffle
+  hat. Konbini dessert engineering for people who cannot choose one texture.
 english_name: FamilyMart Souffle Pudding
 japanese_name: スフレ・プリン
 subcategory: pudding

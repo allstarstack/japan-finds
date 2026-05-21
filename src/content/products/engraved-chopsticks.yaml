@@ -1,33 +1,33 @@
-id: "JF-0295"
-slug: "engraved-chopsticks"
-name_en: "Engraved chopsticks"
-category: "other"
+id: JF-0295
+slug: engraved-chopsticks
+name_en: Engraved chopsticks
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "名入れ箸"
-brand: "Various"
+- make_it_yours
+status: ready
+name_jp: 名入れ箸
+brand: Various
 where_found:
-  - "Hyozaemon"
-  - "Hashikura Matsukan"
-  - "specialty shops"
-price_yen: "~¥800–¥3,000"
-what_it_is: "Personalized chopsticks with name engraving."
-why_travelers_care: "Small, readable, highly giftable."
+- Hyozaemon
+- Hashikura Matsukan
+- specialty shops
+price_yen: ~¥800–¥3,000
+what_it_is: Personalized chopsticks with name engraving.
+why_travelers_care: Small, readable, highly giftable.
 risk_flags:
-  - "food-contact"
-  - "lead time"
-verification_notes: "Verify name language and turnaround."
+- food-contact
+- lead time
+verification_notes: Verify name language and turnaround.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 10
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Engraved chopsticks. Personal name on real-use tableware, the souvenir that survives past the snack pile.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Engraved chopsticks. Personal name on real-use tableware, the souvenir
+  that survives past the snack pile.
 english_name: Name-Engraved Japanese Chopsticks
 japanese_name: 名入れ箸
 subcategory: chopsticks
@@ -39,3 +39,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://kappabashi-mikura.com/en
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

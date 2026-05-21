@@ -1,37 +1,38 @@
-id: "JF-0158"
-slug: "pabron-cold-medicine"
-name_en: "Pabron cold medicine"
-category: "donki-drugstore"
+id: JF-0158
+slug: pabron-cold-medicine
+name_en: Pabron cold medicine
+category: donki-drugstore
 intent:
-  - "content_only"
-status: "ready"
+- content_only
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "~¥1,000–¥2,000"
-what_it_is: "Japanese OTC cold medicine line."
-why_travelers_care: "Useful topic to warn/educate, not a suitcase recommendation."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: ~¥1,000–¥2,000
+what_it_is: Japanese OTC cold medicine line.
+why_travelers_care: Useful topic to warn/educate, not a suitcase recommendation.
 risk_flags:
-  - "medicine/regulated"
-  - "health claim"
-  - "multi_active_med"
-verification_notes: "Do not recommend without pharmacist/doctor guidance."
+- medicine/regulated
+- health claim
+- multi_active_med
+verification_notes: Do not recommend without pharmacist/doctor guidance.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://brand.taisho.co.jp/pabron/"
-  - "https://www.catalog-taisho.com/category/02/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://brand.taisho.co.jp/pabron/
+- https://www.catalog-taisho.com/category/02/
+confidence: medium
 trip_score: 4
 suitcase_score: 4
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "パブロン"
-agent_notes: "Cold medicine line active ingredients vary"
-
-description: Pabron S Gold W. Multi-symptom cold tablets for cough, sore throat, runny nose, and full-body 'I'm done.' Drugstore counter pick when tissues become your personality.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: パブロン
+agent_notes: Cold medicine line active ingredients vary
+description: Pabron S Gold W. Multi-symptom cold tablets for cough, sore throat, runny
+  nose, and full-body 'I'm done.' Drugstore counter pick when tissues become your
+  personality.
 english_name: Pabron S Gold W Tablets
 japanese_name: パブロンSゴールドW錠
 subcategory: cold medicine
@@ -45,3 +46,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://brand.taisho.co.jp/pabron/sg/
 enrichment_date: '2026-05-19'
+image: null

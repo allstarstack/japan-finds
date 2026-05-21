@@ -1,25 +1,25 @@
-id: "JF-0077"
-slug: "jr-eki-stamp-rally"
-name_en: "JR Eki Stamp Rally"
-category: "other"
+id: JF-0077
+slug: jr-eki-stamp-rally
+name_en: JR Eki Stamp Rally
+category: other
 intent:
-  - "make_it_yours"
-status: "v1_candidate"
-name_jp: "駅スタンプラリー"
-brand: "JR"
+- make_it_yours
+status: v1_candidate
+name_jp: 駅スタンプラリー
+brand: JR
 where_found:
-  - "JR stations + special campaigns"
-price_yen: "0"
-what_it_is: "Free station stamp collection through trip."
-why_travelers_care: "Free, accumulative, near-zero effort."
-verification_notes: "Some campaigns are limited-time"
+- JR stations + special campaigns
+price_yen: '0'
+what_it_is: Free station stamp collection through trip.
+why_travelers_care: Free, accumulative, near-zero effort.
+verification_notes: Some campaigns are limited-time
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 8
 suitcase_score: 10
-
-description: JR Eki Stamp Rally. Free station-stamp scavenger hunt; grab the card, ride the route, collect tiny ink trophies like a train nerd with purpose.
+description: JR Eki Stamp Rally. Free station-stamp scavenger hunt; grab the card,
+  ride the route, collect tiny ink trophies like a train nerd with purpose.
 english_name: JR East Stamp Rally
 japanese_name: JR東日本 スタンプラリー
 subcategory: train activity
@@ -31,3 +31,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.jreast.co.jp/tokyo/jreconan/file/en.pdf
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

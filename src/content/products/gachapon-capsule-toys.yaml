@@ -1,39 +1,39 @@
-id: "JF-0177"
-slug: "gachapon-capsule-toys"
-name_en: "Gachapon Capsule Toys"
-category: "other"
+id: JF-0177
+slug: gachapon-capsule-toys
+name_en: Gachapon Capsule Toys
+category: other
 intent:
-  - "make_it_yours"
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
+- make_it_yours
+- bring_home
+- gift_easy
+status: ready
 where_found:
-  - "Gashapon Bandai Official Shop"
-  - "Yodobashi Camera"
-  - "Bic Camera"
-  - "Aeon Mall"
-price_yen: "300-500 per pull"
-what_it_is: "Capsule machine toys, every theme imaginable."
-why_travelers_care: "Cheap thrill, kids love, content gold."
+- Gashapon Bandai Official Shop
+- Yodobashi Camera
+- Bic Camera
+- Aeon Mall
+price_yen: 300-500 per pull
+what_it_is: Capsule machine toys, every theme imaginable.
+why_travelers_care: Cheap thrill, kids love, content gold.
 risk_flags:
-  - "small parts"
-  - "gambling-like spend"
-  - "choking risk"
-verification_notes: "Gachapon Halls in Akihabara/Ikebukuro are content destinations"
+- small parts
+- gambling-like spend
+- choking risk
+verification_notes: Gachapon Halls in Akihabara/Ikebukuro are content destinations
 source_links:
-  - "general"
-  - "https://www.gashapon.jp/schedule/"
-  - "https://gashapon.jp/schedule/"
-confidence: "high"
+- general
+- https://www.gashapon.jp/schedule/
+- https://gashapon.jp/schedule/
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ガシャポン"
-agent_notes: "Capsule lineup changes monthly"
-
-description: Gachapon capsule toys. ¥300ish for a tiny plastic decision you cannot fully control. Train stations, malls, arcades; the machines hunt in packs.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ガシャポン
+agent_notes: Capsule lineup changes monthly
+description: Gachapon capsule toys. ¥300ish for a tiny plastic decision you cannot
+  fully control. Train stations, malls, arcades; the machines hunt in packs.
 english_name: Bandai Gashapon Capsule Toy
 japanese_name: ガシャポン
 subcategory: capsule toy
@@ -46,3 +46,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.gashapon.jp/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

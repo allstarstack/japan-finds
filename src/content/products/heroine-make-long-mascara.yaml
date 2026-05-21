@@ -1,30 +1,31 @@
-id: "JF-0362"
-slug: "heroine-make-long-mascara"
-name_en: "Heroine Make Long Mascara"
-category: "skincare"
+id: JF-0362
+slug: heroine-make-long-mascara
+name_en: Heroine Make Long Mascara
+category: skincare
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "ヒロインメイク"
-brand: "KissMe / Isehan"
+- stock_up
+- bring_home
+status: ready
+name_jp: ヒロインメイク
+brand: KissMe / Isehan
 where_found:
-  - "All drugstores"
-price_yen: "1300-1800"
-what_it_is: "Manga-eyed waterproof mascara, anime-girl branding."
-why_travelers_care: "Cult mascara, waterproof claims rated highest by Japanese beauty press."
+- All drugstores
+price_yen: 1300-1800
+what_it_is: Manga-eyed waterproof mascara, anime-girl branding.
+why_travelers_care: Cult mascara, waterproof claims rated highest by Japanese beauty
+  press.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "heroine-make.jp"
-confidence: "high"
+- heroine-make.jp
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Heroine Make Long UP Mascara. Fiber-heavy, waterproof, and stubborn in the best way. Buy the remover too or accept your fate.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Heroine Make Long UP Mascara. Fiber-heavy, waterproof, and stubborn in
+  the best way. Buy the remover too or accept your fate.
 english_name: Heroine Make Long UP Mascara Super WP N
 japanese_name: ヒロインメイク ロングUPマスカラ スーパーWP N
 subcategory: mascara
@@ -38,3 +39,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.isehan.co.jp/heroine/product/mascara/longcurlmascarasuperwp/
 enrichment_date: '2026-05-19'
 image: /products/heroine-make-long-mascara.webp
+safety_flags: []

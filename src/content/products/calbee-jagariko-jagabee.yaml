@@ -1,31 +1,31 @@
-id: "JF-0400"
-slug: "calbee-jagariko-jagabee"
-name_en: "Calbee Jagariko / Jagabee"
-category: "snacks"
+id: JF-0400
+slug: calbee-jagariko-jagabee
+name_en: Calbee Jagariko / Jagabee
+category: snacks
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "じゃがりこ / じゃがビー"
-brand: "Calbee"
+- stock_up
+- bring_home
+status: ready
+name_jp: じゃがりこ / じゃがビー
+brand: Calbee
 where_found:
-  - "Konbini"
-  - "supermarkets"
-price_yen: "120-200"
-what_it_is: "Crunchy potato sticks in a cup. Cheese/Salad/Butter flavors are standard."
-why_travelers_care: "Travel-friendly cup format."
+- Konbini
+- supermarkets
+price_yen: 120-200
+what_it_is: Crunchy potato sticks in a cup. Cheese/Salad/Butter flavors are standard.
+why_travelers_care: Travel-friendly cup format.
 risk_flags:
-  - "allergen-dairy-wheat"
+- allergen-dairy-wheat
 source_links:
-  - "calbee.co.jp/jagariko"
-confidence: "high"
+- calbee.co.jp/jagariko
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Jagariko. Crunchy potato sticks in a cup, the snack that sounds like furniture being assembled in your mouth.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Jagariko. Crunchy potato sticks in a cup, the snack that sounds like
+  furniture being assembled in your mouth.
 english_name: Calbee Jagariko Salad
 japanese_name: カルビー じゃがりこ サラダ
 subcategory: potato snack
@@ -39,3 +39,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.calbee.co.jp/en/products/
 enrichment_date: '2026-05-19'
 image: /products/calbee-jagariko-jagabee.webp
+safety_flags: []

@@ -1,27 +1,28 @@
-id: "JF-0095"
-slug: "tenugui-hand-towel"
-name_en: "Tenugui Hand Towel"
-category: "other"
+id: JF-0095
+slug: tenugui-hand-towel
+name_en: Tenugui Hand Towel
+category: other
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "v1_candidate"
-name_jp: "手ぬぐい"
-brand: "Kamawanu, Eirakuya, etc."
+- bring_home
+- gift_easy
+status: v1_candidate
+name_jp: 手ぬぐい
+brand: Kamawanu, Eirakuya, etc.
 where_found:
-  - "Specialty shops"
-  - "dept stores"
-price_yen: "500-2500"
-what_it_is: "Thin cotton hand towel, dyed patterns. Many uses: towel, scarf, wrap, decor."
-why_travelers_care: "Beautiful, versatile, packs flat."
+- Specialty shops
+- dept stores
+price_yen: 500-2500
+what_it_is: 'Thin cotton hand towel, dyed patterns. Many uses: towel, scarf, wrap,
+  decor.'
+why_travelers_care: Beautiful, versatile, packs flat.
 source_links:
-  - "kamawanu.co.jp"
-  - "eirakuya.jp"
-confidence: "high"
+- kamawanu.co.jp
+- eirakuya.jp
+confidence: high
 trip_score: 8
 suitcase_score: 10
-
-description: Tenugui hand towel. Thin cotton cloth that works as a towel, wrap, headband, or tiny wall art. The souvenir that becomes useful five minutes after buying it.
+description: Tenugui hand towel. Thin cotton cloth that works as a towel, wrap, headband,
+  or tiny wall art. The souvenir that becomes useful five minutes after buying it.
 english_name: Tenugui Hand Towel
 japanese_name: 手ぬぐい
 subcategory: hand towel
@@ -35,3 +36,4 @@ enrichment_confidence: low
 enrichment_source_url: https://kamawanu.com/en-us/products/06111394
 enrichment_date: '2026-05-19'
 image: /products/tenugui-hand-towel.webp
+safety_flags: []

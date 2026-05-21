@@ -1,37 +1,37 @@
-id: "JF-0143"
-slug: "salonpas-pain-patches"
-name_en: "Salonpas Pain Patches"
-category: "donki-drugstore"
+id: JF-0143
+slug: salonpas-pain-patches
+name_en: Salonpas Pain Patches
+category: donki-drugstore
 intent:
-  - "stock_up"
-  - "day_one_fixes"
-status: "ready"
+- stock_up
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "500-1200"
-what_it_is: "Methyl salicylate / menthol topical pain patches for muscle aches."
-why_travelers_care: "Travel hack for walking-blown feet and shoulders, well-known import."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: 500-1200
+what_it_is: Methyl salicylate / menthol topical pain patches for muscle aches.
+why_travelers_care: Travel hack for walking-blown feet and shoulders, well-known import.
 risk_flags:
-  - "medicine/regulated, allergen-aspirin-related"
-  - "NSAID"
-verification_notes: "Sold in US but Japan formulation/sizes differ"
+- medicine/regulated, allergen-aspirin-related
+- NSAID
+verification_notes: Sold in US but Japan formulation/sizes differ
 source_links:
-  - "hisamitsu.co.jp"
-  - "https://www.hisamitsu.co.jp/healthcare/products/016.html"
-  - "https://www.salonpas.jp/"
-confidence: "high"
+- hisamitsu.co.jp
+- https://www.hisamitsu.co.jp/healthcare/products/016.html
+- https://www.salonpas.jp/
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "サロンパス"
-agent_notes: "Contains methyl salicylate"
-
-description: Salonpas patches. Stick one on a sore shoulder and continue cosplaying as a functional traveler.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: サロンパス
+agent_notes: Contains methyl salicylate
+description: Salonpas patches. Stick one on a sore shoulder and continue cosplaying
+  as a functional traveler.
 english_name: Salonpas Pain Relieving Patch
 japanese_name: サロンパス
 subcategory: pain patch

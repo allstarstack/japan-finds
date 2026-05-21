@@ -1,36 +1,36 @@
-id: "JF-0188"
-slug: "clip-on-towel-pacifier-strap"
-name_en: "Clip-on towel / pacifier strap"
-category: "other"
+id: JF-0188
+slug: clip-on-towel-pacifier-strap
+name_en: Clip-on towel / pacifier strap
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Daiso"
-  - "Akachan Honpo"
-  - "Pigeon"
-price_yen: "~¥110–¥800"
-what_it_is: "Clips for towels, bibs, hats, or baby items."
-why_travelers_care: "Small, practical travel fix."
+- Daiso
+- Akachan Honpo
+- Pigeon
+price_yen: ~¥110–¥800
+what_it_is: Clips for towels, bibs, hats, or baby items.
+why_travelers_care: Small, practical travel fix.
 risk_flags:
-  - "small parts"
-  - "age safety"
-verification_notes: "Check safety label and clip strength."
+- small parts
+- age safety
+verification_notes: Check safety label and clip strength.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://products.pigeon.co.jp/category/index-115.html"
-  - "https://jp.daisonet.com/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.matsukiyococokara-online.com/
+- https://products.pigeon.co.jp/category/index-115.html
+- https://jp.daisonet.com/
+confidence: medium
 trip_score: 7
 suitcase_score: 8
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "マルチクリップ"
-agent_notes: "Exact clip type varies"
-
-description: Sanrio multiuse towel clip. Clips towels, straps, and kid gear before it hits a train floor. Parents buy one; everyone else buys three because Kuromi.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: マルチクリップ
+agent_notes: Exact clip type varies
+description: Sanrio multiuse towel clip. Clips towels, straps, and kid gear before
+  it hits a train floor. Parents buy one; everyone else buys three because Kuromi.
 english_name: Sanrio Multiuse Towel Clip
 japanese_name: マルチタオルクリップ
 subcategory: baby travel accessory
@@ -43,3 +43,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://shop.daisosingapore.com.sg/products/4582364521101
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

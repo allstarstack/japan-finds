@@ -1,28 +1,28 @@
-id: "JF-0450"
-slug: "coin-locker-eki-locker"
-name_en: "Coin Locker (Eki-Locker)"
-category: "other"
+id: JF-0450
+slug: coin-locker-eki-locker
+name_en: Coin Locker (Eki-Locker)
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "コインロッカー"
-brand: "Various"
+- day_one_fixes
+status: ready
+name_jp: コインロッカー
+brand: Various
 where_found:
-  - "JR East/Tokyo Metro/major stations"
-price_yen: "300-700"
-what_it_is: "Station luggage lockers, sizes from carry-on to large."
-why_travelers_care: "Drop bags + walk all-day routine."
-verification_notes: "Some stations have IC-card lockers vs cash-only"
+- JR East/Tokyo Metro/major stations
+price_yen: 300-700
+what_it_is: Station luggage lockers, sizes from carry-on to large.
+why_travelers_care: Drop bags + walk all-day routine.
+verification_notes: Some stations have IC-card lockers vs cash-only
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 8
 suitcase_score: 0
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Eki-locker. Station lockers that save you from suitcase drag. Use them before temples, shopping streets, and every stair-heavy bad decision.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Eki-locker. Station lockers that save you from suitcase drag. Use them
+  before temples, shopping streets, and every stair-heavy bad decision.
 english_name: Eki-Locker / Multi-Ecube Station Locker
 japanese_name: 駅ロッカー / マルチエキューブ
 subcategory: luggage storage
@@ -34,3 +34,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://multiecube.com/en/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

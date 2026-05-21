@@ -1,34 +1,34 @@
-id: "JF-0178"
-slug: "pigeon-baby-wipes-diaper-cream"
-name_en: "Pigeon Baby Wipes / Diaper Cream"
-category: "other"
+id: JF-0178
+slug: pigeon-baby-wipes-diaper-cream
+name_en: Pigeon Baby Wipes / Diaper Cream
+category: other
 intent:
-  - "stock_up"
-status: "ready"
+- stock_up
+status: ready
 where_found:
-  - "Akachan Honpo"
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Aeon"
-price_yen: "500-2000"
-what_it_is: "Japanese baby brand, gentle formulas."
-why_travelers_care: "Trusted baby brand for traveling parents."
+- Akachan Honpo
+- Matsumoto Kiyoshi
+- Welcia
+- Aeon
+price_yen: 500-2000
+what_it_is: Japanese baby brand, gentle formulas.
+why_travelers_care: Trusted baby brand for traveling parents.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "pigeon.co.jp"
-  - "https://pigeon.info/products/category/babycare/"
-  - "https://pigeon.info/products/category/skincare/"
-confidence: "high"
+- pigeon.co.jp
+- https://pigeon.info/products/category/babycare/
+- https://pigeon.info/products/category/skincare/
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ピジョン おしりナップ / ベビークリーム"
-agent_notes: "Row combines wipes and skincare"
-
-description: Pigeon baby wipes. Soft, thick wipes for diaper changes, sticky hands, and travel messes with main-character timing. Parenting aisle staple in Japan.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ピジョン おしりナップ / ベビークリーム
+agent_notes: Row combines wipes and skincare
+description: Pigeon baby wipes. Soft, thick wipes for diaper changes, sticky hands,
+  and travel messes with main-character timing. Parenting aisle staple in Japan.
 english_name: Pigeon Oshiri Nap Premium Thick Baby Wipes
 japanese_name: ピジョン おしりナップ プレミアム極上厚手
 subcategory: baby wipes
@@ -42,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://products.pigeon.co.jp/item/index-2169.html
 enrichment_date: '2026-05-19'
 image: /products/pigeon-baby-wipes-diaper-cream.webp
+safety_flags: []

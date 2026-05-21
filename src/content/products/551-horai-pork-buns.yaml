@@ -1,34 +1,34 @@
-id: "JF-0323"
-slug: "551-horai-pork-buns"
-name_en: "551 Horai pork buns"
-category: "snacks"
+id: JF-0323
+slug: 551-horai-pork-buns
+name_en: 551 Horai pork buns
+category: snacks
 intent:
-  - "try_in_japan"
-status: "ready"
-name_jp: "551蓬莱 豚まん"
-brand: "551 Horai"
+- try_in_japan
+status: ready
+name_jp: 551蓬莱 豚まん
+brand: 551 Horai
 where_found:
-  - "Osaka/Kansai stations and stores"
-price_yen: "~¥250 each / boxes vary"
-what_it_is: "Steamed pork buns sold fresh or chilled."
-why_travelers_care: "Iconic Kansai food; smell and carry-home debate is content-worthy."
+- Osaka/Kansai stations and stores
+price_yen: ~¥250 each / boxes vary
+what_it_is: Steamed pork buns sold fresh or chilled.
+why_travelers_care: Iconic Kansai food; smell and carry-home debate is content-worthy.
 risk_flags:
-  - "perishable"
-  - "meat"
-  - "odor"
-  - "import rules"
-verification_notes: "Do not assume international carry; check rules."
+- perishable
+- meat
+- odor
+- import rules
+verification_notes: Do not assume international carry; check rules.
 source_links:
-  - "https://www.551horai.co.jp/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "high"
+- https://www.551horai.co.jp/
+- https://www.japan-guide.com/e/e2450.html
+confidence: high
 trip_score: 9
 suitcase_score: 3
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: 551 Horai pork buns. Osaka's warm pork bun flex, fluffy outside and juicy inside. People buy boxes at the station like edible luggage.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: 551 Horai pork buns. Osaka's warm pork bun flex, fluffy outside and juicy
+  inside. People buy boxes at the station like edible luggage.
 english_name: 551 Horai Pork Buns
 japanese_name: 551蓬莱 豚まん
 subcategory: pork bun

@@ -1,31 +1,31 @@
-id: "JF-0271"
-slug: "coin-sorting-wallet"
-name_en: "Coin Sorting Wallet"
-category: "other"
+id: JF-0271
+slug: coin-sorting-wallet
+name_en: Coin Sorting Wallet
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "コインキャッチャー"
-brand: "Various"
+- day_one_fixes
+status: ready
+name_jp: コインキャッチャー
+brand: Various
 where_found:
-  - "Hands"
-  - "Loft"
-  - "Tokyu Hands"
-  - "Amazon JP"
-price_yen: "¥2,000–¥5,000"
-what_it_is: "Wallet/coin holder that sorts Japanese coins."
-why_travelers_care: "Useful for cash-heavy travel, good demo object."
-verification_notes: "Verify specific recommended model/brand."
+- Hands
+- Loft
+- Tokyu Hands
+- Amazon JP
+price_yen: ¥2,000–¥5,000
+what_it_is: Wallet/coin holder that sorts Japanese coins.
+why_travelers_care: Useful for cash-heavy travel, good demo object.
+verification_notes: Verify specific recommended model/brand.
 source_links:
-  - "User-pasted response"
-confidence: "medium"
+- User-pasted response
+confidence: medium
 trip_score: 9
 suitcase_score: 7
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: COIN HOME MG-03. Yen coins snap into their own little lanes. This is how you stop handing cashiers a tragic fistful of metal.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: COIN HOME MG-03. Yen coins snap into their own little lanes. This is
+  how you stop handing cashiers a tragic fistful of metal.
 english_name: COIN HOME MG-03 Coin Holder
 japanese_name: コインホーム MG-03
 subcategory: coin organizer
@@ -38,3 +38,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://store.shopping.yahoo.co.jp/fuwabon-shop/mg-03.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,35 +1,35 @@
-id: "JF-0037"
-slug: "roll-up-compression-bag"
-name_en: "Roll-up compression bag"
-category: "100-yen"
+id: JF-0037
+slug: roll-up-compression-bag
+name_en: Roll-up compression bag
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "衣類圧縮袋"
-brand: "Daiso / Seria / Can Do"
+- day_one_fixes
+status: ready
+name_jp: 衣類圧縮袋
+brand: Daiso / Seria / Can Do
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Can Do"
-  - "Donki"
-price_yen: "~¥110–¥550"
-what_it_is: "Manual compression bag for clothing."
-why_travelers_care: "Solves overpacking and dirty laundry separation."
+- Daiso
+- Seria
+- Can Do
+- Donki
+price_yen: ~¥110–¥550
+what_it_is: Manual compression bag for clothing.
+why_travelers_care: Solves overpacking and dirty laundry separation.
 risk_flags:
-  - "plastic"
-  - "easy to buy outside Japan"
-verification_notes: "Check seal quality and dimensions."
+- plastic
+- easy to buy outside Japan
+verification_notes: Check seal quality and dimensions.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "high"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: MUJI roll-up compression bags. No-vacuum packing bags that squeeze clothes down; lifesaver when souvenirs colonize the suitcase.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: MUJI roll-up compression bags. No-vacuum packing bags that squeeze clothes
+  down; lifesaver when souvenirs colonize the suitcase.
 english_name: MUJI Compression Bag for Clothing 2 Pack
 japanese_name: 無印良品 衣類用圧縮袋 2枚組
 subcategory: travel compression bag
@@ -43,3 +43,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.muji.us/products/compression-bag-for-clothing-2-pack-45x60cm-ohh76a5s
 enrichment_date: '2026-05-19'
 image: /products/roll-up-compression-bag.webp
+safety_flags: []

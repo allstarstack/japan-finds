@@ -1,35 +1,35 @@
-id: "JF-0131"
-slug: "hibiscrub-pharmacy-hand-sanitizers"
-name_en: "Hibiscrub / Pharmacy Hand Sanitizers"
-category: "donki-drugstore"
+id: JF-0131
+slug: hibiscrub-pharmacy-hand-sanitizers
+name_en: Hibiscrub / Pharmacy Hand Sanitizers
+category: donki-drugstore
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "300-700"
-what_it_is: "Pharmacy-grade sanitizers, often with cleaner scents than Western options."
-why_travelers_care: "Quick day-one pickup."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: 300-700
+what_it_is: Pharmacy-grade sanitizers, often with cleaner scents than Western options.
+why_travelers_care: Quick day-one pickup.
 risk_flags:
-  - "liquid, allergen-alcohol"
+- liquid, allergen-alcohol
 source_links:
-  - "general"
-  - "https://www.matsukiyococokara-online.com/store/catalog/category/view/categories/001/16"
-  - "https://kireikirei.lion.co.jp/"
-confidence: "medium"
+- general
+- https://www.matsukiyococokara-online.com/store/catalog/category/view/categories/001/16
+- https://kireikirei.lion.co.jp/
+confidence: medium
 trip_score: 4
 suitcase_score: 8
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "comfort"
-name_jp: "ハンドジェル"
-agent_notes: "Category row brand varies"
-
-description: Tepika Gel. Pocket hand sanitizer, high-alcohol, drugstore-standard. Train strap touched, hands handled.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: comfort
+name_jp: ハンドジェル
+agent_notes: Category row brand varies
+description: Tepika Gel. Pocket hand sanitizer, high-alcohol, drugstore-standard.
+  Train strap touched, hands handled.
 english_name: Tepika Gel
 japanese_name: 手ピカジェル
 subcategory: hand sanitizer
@@ -42,3 +42,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.kenei-pharm.com/tepika/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

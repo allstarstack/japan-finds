@@ -1,35 +1,36 @@
-id: "JF-0033"
-slug: "planner-stickers"
-name_en: "Planner stickers"
-category: "100-yen"
+id: JF-0033
+slug: planner-stickers
+name_en: Planner stickers
+category: 100-yen
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "手帳シール"
-brand: "Daiso / Seria / Mind Wave / BGM"
+- gift_easy
+status: ready
+name_jp: 手帳シール
+brand: Daiso / Seria / Mind Wave / BGM
 where_found:
-  - "Daiso"
-  - "Seria"
-  - "Loft"
-  - "Itoya"
-price_yen: "~¥110–¥500"
-what_it_is: "Small decorative stickers for planners and journaling."
-why_travelers_care: "Cheap, readable gifts for stationery people."
+- Daiso
+- Seria
+- Loft
+- Itoya
+price_yen: ~¥110–¥500
+what_it_is: Small decorative stickers for planners and journaling.
+why_travelers_care: Cheap, readable gifts for stationery people.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Check paper/plastic and design licensing."
+- easy to buy outside Japan
+verification_notes: Check paper/plastic and design licensing.
 source_links:
-  - "https://www.loft.co.jp/store/"
-  - "https://www.ito-ya.co.jp/"
-  - "https://www.gltjp.com/en/article/item/21322/"
-confidence: "high"
+- https://www.loft.co.jp/store/
+- https://www.ito-ya.co.jp/
+- https://www.gltjp.com/en/article/item/21322/
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Midori planner stickers. Tiny Japan-made stickers for diaries and bullet journals. Loft and Hands bait for anyone who thinks one more sticker sheet will fix time management.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Midori planner stickers. Tiny Japan-made stickers for diaries and bullet
+  journals. Loft and Hands bait for anyone who thinks one more sticker sheet will
+  fix time management.
 english_name: Midori Planner Stickers
 japanese_name: ミドリ 手帳シール
 subcategory: stationery stickers
@@ -43,3 +44,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.midori-japan.co.jp/english/products/sticker/
 enrichment_date: '2026-05-19'
 image: /products/planner-stickers.webp
+safety_flags: []

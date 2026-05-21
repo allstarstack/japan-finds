@@ -1,35 +1,35 @@
-id: "JF-0169"
-slug: "premium-soy-sauce-yuasa-kishibori-kamebishi"
-name_en: "Premium Soy Sauce (Yuasa, Kishibori, Kamebishi)"
-category: "other"
+id: JF-0169
+slug: premium-soy-sauce-yuasa-kishibori-kamebishi
+name_en: Premium Soy Sauce (Yuasa, Kishibori, Kamebishi)
+category: other
 intent:
-  - "bring_home"
-  - "local_editions"
-status: "ready"
+- bring_home
+- local_editions
+status: ready
 where_found:
-  - "Yuasa Soy Sauce"
-  - "Kamebishi"
-  - "department-store food halls"
-price_yen: "1500-5000"
-what_it_is: "Aged premium soy sauce from heritage breweries."
-why_travelers_care: "Real upgrade vs supermarket; gift-grade."
+- Yuasa Soy Sauce
+- Kamebishi
+- department-store food halls
+price_yen: 1500-5000
+what_it_is: Aged premium soy sauce from heritage breweries.
+why_travelers_care: Real upgrade vs supermarket; gift-grade.
 risk_flags:
-  - "liquid, allergen-soy-wheat, fragile"
-verification_notes: "Glass bottle requires careful packing"
+- liquid, allergen-soy-wheat, fragile
+verification_notes: Glass bottle requires careful packing
 source_links:
-  - "general"
-  - "https://www.yuasasyouyu.co.jp/"
-  - "https://kamebishi.com/"
-confidence: "high"
+- general
+- https://www.yuasasyouyu.co.jp/
+- https://kamebishi.com/
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "gift"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "湯浅醤油 / かめびし醤油"
-agent_notes: "Row combines multiple premium soy sauce makers"
-
-description: Kishibori soy sauce. Barrel-aged shoyu with a deep, clean salt hit. Bring it home when supermarket soy sauce starts feeling too basic.
+launch_category: gift
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 湯浅醤油 / かめびし醤油
+agent_notes: Row combines multiple premium soy sauce makers
+description: Kishibori soy sauce. Barrel-aged shoyu with a deep, clean salt hit. Bring
+  it home when supermarket soy sauce starts feeling too basic.
 english_name: Kishibori Shoyu
 japanese_name: 生搾醤油
 subcategory: soy sauce

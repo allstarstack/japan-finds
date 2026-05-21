@@ -1,29 +1,29 @@
-id: "JF-0082"
-slug: "sake-brewery-tour-and-tasting"
-name_en: "Sake Brewery Tour and Tasting"
-category: "other"
+id: JF-0082
+slug: sake-brewery-tour-and-tasting
+name_en: Sake Brewery Tour and Tasting
+category: other
 intent:
-  - "make_it_yours"
-  - "local_editions"
-status: "needs_verification"
-name_jp: "酒蔵見学"
-brand: "Hakkaisan, Asahi Shuzo, etc."
+- make_it_yours
+- local_editions
+status: needs_verification
+name_jp: 酒蔵見学
+brand: Hakkaisan, Asahi Shuzo, etc.
 where_found:
-  - "Various breweries (Niigata"
-  - "Yamaguchi"
-  - "etc.)"
-price_yen: "1000-5000"
-what_it_is: "Brewery tour with tasting, often buy direct."
-why_travelers_care: "Source-direct sake + content angle."
+- Various breweries (Niigata
+- Yamaguchi
+- etc.)
+price_yen: 1000-5000
+what_it_is: Brewery tour with tasting, often buy direct.
+why_travelers_care: Source-direct sake + content angle.
 risk_flags:
-  - "alcohol"
+- alcohol
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 8
 suitcase_score: 5
-
-description: Sake brewery tour and tasting. A guided tasting that turns sake from one word into several dangerously useful opinions.
+description: Sake brewery tour and tasting. A guided tasting that turns sake from
+  one word into several dangerously useful opinions.
 english_name: Fushimi Sake Brewery Tour and Tasting
 japanese_name: 伏見 酒蔵見学と試飲体験
 subcategory: sake tour
@@ -37,3 +37,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.klook.com/en-US/activity/95652-sake-brewery-tour-tasting-kyoto/
 enrichment_date: '2026-05-19'
+image: null

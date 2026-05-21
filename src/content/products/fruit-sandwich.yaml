@@ -1,39 +1,39 @@
-id: "JF-0252"
-slug: "fruit-sandwich"
-name_en: "Fruit sandwich"
-category: "konbini"
+id: JF-0252
+slug: fruit-sandwich
+name_en: Fruit sandwich
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "~¥350–¥700"
-what_it_is: "Whipped cream and fresh fruit sandwich on soft bread."
-why_travelers_care: "Photogenic, weird-to-outsiders, and easy to try on-site."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: ~¥350–¥700
+what_it_is: Whipped cream and fresh fruit sandwich on soft bread.
+why_travelers_care: Photogenic, weird-to-outsiders, and easy to try on-site.
 risk_flags:
-  - "perishable"
-  - "dairy"
-  - "allergen"
-  - "fragile"
-verification_notes: "Freshness and fruit variety rotate daily/seasonally."
+- perishable
+- dairy
+- allergen
+- fragile
+verification_notes: Freshness and fruit variety rotate daily/seasonally.
 source_links:
-  - "https://www.sej.co.jp/products/"
-  - "https://www.family.co.jp/goods.html"
-  - "https://www.japan-guide.com/e/e2071.html"
-  - "https://www.sej.co.jp/products/a/sandwich/"
-  - "https://www.family.co.jp/goods/sandwich.html"
-confidence: "medium"
+- https://www.sej.co.jp/products/
+- https://www.family.co.jp/goods.html
+- https://www.japan-guide.com/e/e2071.html
+- https://www.sej.co.jp/products/a/sandwich/
+- https://www.family.co.jp/goods/sandwich.html
+confidence: medium
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "フルーツサンド"
-agent_notes: "Fruit and cream fillings rotate"
-
-description: Fruit sandwich. Whipped cream, soft bread, and fruit pretending this is lunch instead of dessert.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: フルーツサンド
+agent_notes: Fruit and cream fillings rotate
+description: Fruit sandwich. Whipped cream, soft bread, and fruit pretending this
+  is lunch instead of dessert.
 english_name: 7-Eleven Three-Fruit Sandwich
 japanese_name: セブン-イレブン 3種フルーツサンド
 subcategory: sandwich
@@ -49,3 +49,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://www.sej.co.jp/products/a/item/053702/
 enrichment_date: '2026-05-19'
+image: null

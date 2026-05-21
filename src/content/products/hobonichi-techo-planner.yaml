@@ -1,31 +1,32 @@
-id: "JF-0424"
-slug: "hobonichi-techo-planner"
-name_en: "Hobonichi Techo Planner"
-category: "stationery"
+id: JF-0424
+slug: hobonichi-techo-planner
+name_en: Hobonichi Techo Planner
+category: stationery
 intent:
-  - "bring_home"
-  - "local_editions"
-status: "ready"
-name_jp: "ほぼ日手帳"
-brand: "Hobonichi"
+- bring_home
+- local_editions
+status: ready
+name_jp: ほぼ日手帳
+brand: Hobonichi
 where_found:
-  - "Hobonichi store"
-  - "Loft (selected)"
-  - "Tokyu Hands"
-price_yen: "2500-5000"
-what_it_is: "Daily planner with Tomoe River paper, designed by Shigesato Itoi (Mother/EarthBound)."
-why_travelers_care: "Cult planner, ships only Sept-Feb new year edition."
-verification_notes: "Sold internationally but Japan covers and limited editions are wider"
+- Hobonichi store
+- Loft (selected)
+- Tokyu Hands
+price_yen: 2500-5000
+what_it_is: Daily planner with Tomoe River paper, designed by Shigesato Itoi (Mother/EarthBound).
+why_travelers_care: Cult planner, ships only Sept-Feb new year edition.
+verification_notes: Sold internationally but Japan covers and limited editions are
+  wider
 source_links:
-  - "1101.com/store/techo"
-confidence: "high"
+- 1101.com/store/techo
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hobonichi Techo Planner. The English-layout Hobonichi daily planner. Tiny grid, quotes, paper nerd happiness.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Hobonichi Techo Planner. The English-layout Hobonichi daily planner.
+  Tiny grid, quotes, paper nerd happiness.
 english_name: Hobonichi Techo Planner
 japanese_name: ほぼ日手帳 Planner
 subcategory: planner
@@ -39,3 +40,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.1101.com/store/techo/en/?srsltid=AfmBOoogbqjJKnh9wvbzuptwnv8J3prnGIJtxanJeAREV7_w2zjW4tfI
 enrichment_date: '2026-05-19'
 image: /products/hobonichi-techo-planner.webp
+safety_flags: []

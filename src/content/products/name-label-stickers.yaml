@@ -1,36 +1,36 @@
-id: "JF-0195"
-slug: "name-label-stickers"
-name_en: "Name label stickers"
-category: "other"
+id: JF-0195
+slug: name-label-stickers
+name_en: Name label stickers
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
+- make_it_yours
+status: ready
 where_found:
-  - "Daiso"
-  - "Loft"
-  - "Hands"
-price_yen: "~¥110–¥1,000"
-what_it_is: "Labels for kids’ belongings, sometimes customizable."
-why_travelers_care: "Useful if traveling with school/daycare items or souvenirs."
+- Daiso
+- Loft
+- Hands
+price_yen: ~¥110–¥1,000
+what_it_is: Labels for kids’ belongings, sometimes customizable.
+why_travelers_care: Useful if traveling with school/daycare items or souvenirs.
 risk_flags:
-  - "adhesive"
-  - "easy to buy outside Japan"
-verification_notes: "Customization availability varies."
+- adhesive
+- easy to buy outside Japan
+verification_notes: Customization availability varies.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.loft.co.jp/store/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-  - "https://jp.daisonet.com/products/4549131601220"
-  - "https://jp.daisonet.com/collections/stationery0256"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.loft.co.jp/store/
+- https://www.gltjp.com/en/article/item/21292/
+- https://jp.daisonet.com/products/4549131601220
+- https://jp.daisonet.com/collections/stationery0256
+confidence: medium
 trip_score: 6
 suitcase_score: 9
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "おなまえシール"
-
-description: Daiso name label stickers. Waterproof-ish school-label sheets for bags, bottles, and cables. Also perfect for adults pretending their life has systems.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: おなまえシール
+description: Daiso name label stickers. Waterproof-ish school-label sheets for bags,
+  bottles, and cables. Also perfect for adults pretending their life has systems.
 english_name: Daiso Name Label Stickers
 japanese_name: ダイソー おなまえシール
 subcategory: labels
@@ -41,3 +41,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.daiso-sangyo.co.jp/item/45621
 enrichment_date: '2026-05-19'
 image: /products/name-label-stickers.webp
+safety_flags: []

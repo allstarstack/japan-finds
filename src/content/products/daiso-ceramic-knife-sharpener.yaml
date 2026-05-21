@@ -1,27 +1,27 @@
-id: "JF-0004"
-slug: "daiso-ceramic-knife-sharpener"
-name_en: "Daiso Ceramic Knife Sharpener"
-category: "100-yen"
+id: JF-0004
+slug: daiso-ceramic-knife-sharpener
+name_en: Daiso Ceramic Knife Sharpener
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "セラミック包丁研ぎ"
-brand: "Daiso"
+- bring_home
+status: ready
+name_jp: セラミック包丁研ぎ
+brand: Daiso
 where_found:
-  - "Daiso"
-price_yen: "110"
-what_it_is: "Pull-through knife sharpener."
-why_travelers_care: "Punches well above its price point."
+- Daiso
+price_yen: '110'
+what_it_is: Pull-through knife sharpener.
+why_travelers_care: Punches well above its price point.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso ceramic knife sharpener. Tiny suction-base sharpener for standard double-edged kitchen knives.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso ceramic knife sharpener. Tiny suction-base sharpener for standard
+  double-edged kitchen knives.
 english_name: Daiso Compact Ceramic Knife Sharpener
 japanese_name: コンパクト包丁研ぎ（吸盤付）
 subcategory: kitchen-tool
@@ -33,3 +33,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4550480359137?srsltid=AfmBOopT_2PWjCHGbSH-_QTmpU9WJum1DTDPZNqKESw5Kf4sTG4653nX
 enrichment_date: '2026-05-19'
 image: /products/daiso-ceramic-knife-sharpener.webp
+safety_flags: []

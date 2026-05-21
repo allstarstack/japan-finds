@@ -1,35 +1,36 @@
-id: "JF-0230"
-slug: "katsu-sando"
-name_en: "Katsu Sando"
-category: "konbini"
+id: JF-0230
+slug: katsu-sando
+name_en: Katsu Sando
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Maisen"
-price_yen: "400-700"
-what_it_is: "Breaded pork cutlet between white bread with tonkatsu sauce."
-why_travelers_care: "Easy hand-held cultural staple, premium Maisen version is a Tokyo Station pickup."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Maisen
+price_yen: 400-700
+what_it_is: Breaded pork cutlet between white bread with tonkatsu sauce.
+why_travelers_care: Easy hand-held cultural staple, premium Maisen version is a Tokyo
+  Station pickup.
 risk_flags:
-  - "perishable, allergen-wheat"
+- perishable, allergen-wheat
 source_links:
-  - "mai-sen.com"
-  - "konbini sites"
-  - "https://www.sej.co.jp/products/a/sandwich/"
-  - "https://mai-sen.com/shop/"
-confidence: "high"
+- mai-sen.com
+- konbini sites
+- https://www.sej.co.jp/products/a/sandwich/
+- https://mai-sen.com/shop/
+confidence: high
 trip_score: 9
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "food"
-name_jp: "カツサンド"
-agent_notes: "Specific SKU varies by chain"
-
-description: Katsu sando. Pork cutlet, soft bread, sauce. The konbini sandwich that looks simple until it starts making decisions for you.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: food
+name_jp: カツサンド
+agent_notes: Specific SKU varies by chain
+description: Katsu sando. Pork cutlet, soft bread, sauce. The konbini sandwich that
+  looks simple until it starts making decisions for you.
 english_name: Lawson Thick Pork Cutlet Sandwich
 japanese_name: ローソン 厚切りロースカツサンド
 subcategory: sandwich
@@ -44,3 +45,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.lawson.co.jp/service/others/in/lang/en.html
 enrichment_date: '2026-05-19'
+image: null

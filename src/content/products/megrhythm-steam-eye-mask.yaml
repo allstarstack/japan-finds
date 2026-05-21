@@ -1,37 +1,40 @@
-id: "JF-0135"
-slug: "megrhythm-steam-eye-mask"
-name_en: "Megrhythm Steam Eye Mask"
-category: "donki-drugstore"
+id: JF-0135
+slug: megrhythm-steam-eye-mask
+name_en: Megrhythm Steam Eye Mask
+category: donki-drugstore
 intent:
-  - "stock_up"
-  - "gift_easy"
-status: "ready"
+- stock_up
+- gift_easy
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-  - "Don Quijote"
-price_yen: "550-1200 per box"
-what_it_is: "Disposable eye masks that warm to ~40C for 20 minutes using air-activated heating element."
-why_travelers_care: "Cult favorite, works on planes, sells in scented variants (lavender, yuzu, chamomile, rose, unscented)."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+- Don Quijote
+price_yen: 550-1200 per box
+what_it_is: Disposable eye masks that warm to ~40C for 20 minutes using air-activated
+  heating element.
+why_travelers_care: Cult favorite, works on planes, sells in scented variants (lavender,
+  yuzu, chamomile, rose, unscented).
 risk_flags:
-  - "skincare/cosmetic claim"
-verification_notes: "Available some places abroad at higher price; Japan price is the value play"
+- skincare/cosmetic claim
+verification_notes: Available some places abroad at higher price; Japan price is the
+  value play
 source_links:
-  - "kao.com/jp/products/megurism"
-  - "https://www.kao.co.jp/megrhythm/products/eye/"
-  - "https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901301460639"
-confidence: "high"
+- kao.com/jp/products/megurism
+- https://www.kao.co.jp/megrhythm/products/eye/
+- https://www.matsukiyococokara-online.com/store/catalog/product/view/id/4901301460639
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
 featured: true
-sub_chip: "skincare"
-name_jp: "めぐりズム 蒸気でホットアイマスク"
-
-description: MegRhythm Steam Eye Mask. Self-heating eye mask that turns train naps into a spa-level surrender. Buy the lavender one when jet lag starts filing paperwork.
+sub_chip: skincare
+name_jp: めぐりズム 蒸気でホットアイマスク
+description: MegRhythm Steam Eye Mask. Self-heating eye mask that turns train naps
+  into a spa-level surrender. Buy the lavender one when jet lag starts filing paperwork.
 english_name: MegRhythm Steam Eye Mask
 japanese_name: めぐりズム 蒸気めぐるアイマスク
 subcategory: steam eye mask
@@ -45,3 +48,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.kao.co.jp/megrhythm/lineup/
 enrichment_date: '2026-05-19'
 image: /products/megrhythm-steam-eye-mask.webp
+safety_flags: []

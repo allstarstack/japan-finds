@@ -1,38 +1,38 @@
-id: "JF-0109"
-slug: "character-snack-tins"
-name_en: "Character snack tins"
-category: "donki-drugstore"
+id: JF-0109
+slug: character-snack-tins
+name_en: Character snack tins
+category: donki-drugstore
 intent:
-  - "gift_easy"
-status: "ready"
+- gift_easy
+status: ready
 where_found:
-  - "Don Quijote"
-  - "Pokemon Center"
-  - "Sanrio"
-  - "airport souvenir shops"
-price_yen: "~¥800–¥2,000"
-what_it_is: "Cookies or candies sold in reusable character tins."
-why_travelers_care: "Gift survives flight and package becomes souvenir."
+- Don Quijote
+- Pokemon Center
+- Sanrio
+- airport souvenir shops
+price_yen: ~¥800–¥2,000
+what_it_is: Cookies or candies sold in reusable character tins.
+why_travelers_care: Gift survives flight and package becomes souvenir.
 risk_flags:
-  - "allergen"
-  - "fragile"
-  - "easy to overpay"
-verification_notes: "Verify license/character and price."
+- allergen
+- fragile
+- easy to overpay
+verification_notes: Verify license/character and price.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-  - "https://shop.sanrio.co.jp/"
-  - "https://www.pokemoncenter-online.com/"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+- https://shop.sanrio.co.jp/
+- https://www.pokemoncenter-online.com/
+confidence: medium
 trip_score: 7
 suitcase_score: 7
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "キャラクター缶菓子"
-agent_notes: "Licensed character and maker vary"
-
-description: Character snack tins. Cookies or candy in a tin people keep forever and call storage. Good for kids, coworkers, and your inner raccoon.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: キャラクター缶菓子
+agent_notes: Licensed character and maker vary
+description: Character snack tins. Cookies or candy in a tin people keep forever and
+  call storage. Good for kids, coworkers, and your inner raccoon.
 english_name: Character Snack Tins
 japanese_name: キャラクター菓子缶
 subcategory: character sweets
@@ -48,3 +48,5 @@ safety_flags:
 - contains_egg
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+enrichment_source_url: null

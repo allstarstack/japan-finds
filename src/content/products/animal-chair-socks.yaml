@@ -1,32 +1,32 @@
-id: "JF-0014"
-slug: "animal-chair-socks"
-name_en: "Animal chair socks"
-category: "100-yen"
+id: JF-0014
+slug: animal-chair-socks
+name_en: Animal chair socks
+category: 100-yen
 intent:
-  - "content_only"
-status: "ready"
-name_jp: "椅子脚カバー"
-brand: "Daiso"
+- content_only
+status: ready
+name_jp: 椅子脚カバー
+brand: Daiso
 where_found:
-  - "Daiso"
-price_yen: "~¥110–¥330"
-what_it_is: "Cute fabric covers for chair legs."
-why_travelers_care: "Very visual and absurdly specific, but not traveler-essential."
+- Daiso
+price_yen: ~¥110–¥330
+what_it_is: Cute fabric covers for chair legs.
+why_travelers_care: Very visual and absurdly specific, but not traveler-essential.
 risk_flags:
-  - "bulky for value"
-  - "easy to buy outside Japan"
-verification_notes: "Confirm style and size."
+- bulky for value
+- easy to buy outside Japan
+verification_notes: Confirm style and size.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.daiso-sangyo.co.jp/en/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.daiso-sangyo.co.jp/en/
+confidence: medium
 trip_score: 6
 suitcase_score: 5
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Animal chair socks. Tiny fabric covers for chair legs so your floor stops screaming. Japan looked at furniture feet and gave them outfits.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Animal chair socks. Tiny fabric covers for chair legs so your floor stops
+  screaming. Japan looked at furniture feet and gave them outfits.
 english_name: Animal Chair Leg Covers
 japanese_name: イス脚カバー（アニマル）
 subcategory: chair leg covers
@@ -39,3 +39,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4549892506604
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

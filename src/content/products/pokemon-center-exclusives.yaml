@@ -1,33 +1,34 @@
-id: "JF-0179"
-slug: "pokemon-center-exclusives"
-name_en: "Pokemon Center Exclusives"
-category: "other"
+id: JF-0179
+slug: pokemon-center-exclusives
+name_en: Pokemon Center Exclusives
+category: other
 intent:
-  - "bring_home"
-  - "local_editions"
-status: "ready"
+- bring_home
+- local_editions
+status: ready
 where_found:
-  - "Pokemon Center"
-  - "Pokemon Center Online"
-price_yen: "500-15000"
-what_it_is: "Store-exclusive plush, cards, apparel. Different stores have different city-exclusives."
-why_travelers_care: "Kids' top-shelf souvenir, parents end up spending more."
+- Pokemon Center
+- Pokemon Center Online
+price_yen: 500-15000
+what_it_is: Store-exclusive plush, cards, apparel. Different stores have different
+  city-exclusives.
+why_travelers_care: Kids' top-shelf souvenir, parents end up spending more.
 risk_flags:
-  - "fragile (some)"
+- fragile (some)
 source_links:
-  - "pokemoncenter-online.com"
-  - "https://www.pokemoncenter-online.com/"
-  - "https://www.pokemon.co.jp/goods/2026/02/260227_to02.html"
-confidence: "high"
+- pokemoncenter-online.com
+- https://www.pokemoncenter-online.com/
+- https://www.pokemon.co.jp/goods/2026/02/260227_to02.html
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ポケモンセンター オリジナルグッズ"
-agent_notes: "Exclusive goods rotate"
-
-description: Pokémon Center original merch. Plush walls, local designs, and Japan-only chaos that triggers instant suitcase math. Budget room before entering.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ポケモンセンター オリジナルグッズ
+agent_notes: Exclusive goods rotate
+description: Pokémon Center original merch. Plush walls, local designs, and Japan-only
+  chaos that triggers instant suitcase math. Budget room before entering.
 english_name: Pokémon Center Original Merchandise
 japanese_name: ポケモンセンター オリジナルグッズ
 subcategory: character merchandise
@@ -41,3 +42,4 @@ enrichment_confidence: low
 enrichment_source_url: https://corporate.pokemon.co.jp/en/business/shops/
 enrichment_date: '2026-05-19'
 image: /products/pokemon-center-exclusives.webp
+safety_flags: []

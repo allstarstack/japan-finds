@@ -1,33 +1,33 @@
-id: "JF-0403"
-slug: "hi-chew"
-name_en: "Hi-Chew"
-category: "snacks"
+id: JF-0403
+slug: hi-chew
+name_en: Hi-Chew
+category: snacks
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
-name_jp: "ハイチュウ"
-brand: "Morinaga"
+- bring_home
+- gift_easy
+status: ready
+name_jp: ハイチュウ
+brand: Morinaga
 where_found:
-  - "Konbini"
-  - "supermarkets"
-  - "Donki"
-price_yen: "100-250"
-what_it_is: "Chewy fruit candy, dozens of flavors, soft texture."
-why_travelers_care: "Now widely sold abroad but Japan flavor variety is much wider."
+- Konbini
+- supermarkets
+- Donki
+price_yen: 100-250
+what_it_is: Chewy fruit candy, dozens of flavors, soft texture.
+why_travelers_care: Now widely sold abroad but Japan flavor variety is much wider.
 risk_flags:
-  - "allergen-soy"
-verification_notes: "Sold in US/EU but Japan flavor range is broader"
+- allergen-soy
+verification_notes: Sold in US/EU but Japan flavor range is broader
 source_links:
-  - "morinaga.co.jp/hichew"
-confidence: "high"
+- morinaga.co.jp/hichew
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hi-Chew. Fruity chewy candy with a weirdly serious cult following. The konbini checkout add-on that becomes five sticks gone.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Hi-Chew. Fruity chewy candy with a weirdly serious cult following. The
+  konbini checkout add-on that becomes five sticks gone.
 english_name: Hi-Chew
 japanese_name: ハイチュウ
 subcategory: chewy candy
@@ -42,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.countries.hi-chew.com/
 enrichment_date: '2026-05-19'
 image: /products/hi-chew.webp
+safety_flags: []

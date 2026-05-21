@@ -1,36 +1,37 @@
-id: "JF-0220"
-slug: "highball-cans-suntory-kakubin-highball"
-name_en: "Highball Cans (Suntory Kakubin Highball)"
-category: "konbini"
+id: JF-0220
+slug: highball-cans-suntory-kakubin-highball
+name_en: Highball Cans (Suntory Kakubin Highball)
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Aeon"
-price_yen: "180-260"
-what_it_is: "Pre-mixed whisky highball in can, the standard izakaya drink in portable form."
-why_travelers_care: "Authentic and easy intro to Japanese highball culture."
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Aeon
+price_yen: 180-260
+what_it_is: Pre-mixed whisky highball in can, the standard izakaya drink in portable
+  form.
+why_travelers_care: Authentic and easy intro to Japanese highball culture.
 risk_flags:
-  - "liquid, alcohol"
-  - "alcohol"
+- liquid, alcohol
+- alcohol
 source_links:
-  - "suntory.co.jp/rtd/kakuhigh"
-  - "https://www.suntory.co.jp/news/article/2026/15020.html"
-  - "https://products.suntory.co.jp/b/0000001770/角ハイボール缶"
-confidence: "high"
+- suntory.co.jp/rtd/kakuhigh
+- https://www.suntory.co.jp/news/article/2026/15020.html
+- https://products.suntory.co.jp/b/0000001770/角ハイボール缶
+confidence: high
 trip_score: 8
 suitcase_score: 5
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "drink"
-name_jp: "角ハイボール缶"
-agent_notes: "2026 renewal begins late May"
-
-description: Suntory Kakubin Highball can. Whisky soda in a can, crisp and dangerous-in-a-convenient-way. The konbini answer to 'one more before the hotel.'
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: drink
+name_jp: 角ハイボール缶
+agent_notes: 2026 renewal begins late May
+description: Suntory Kakubin Highball can. Whisky soda in a can, crisp and dangerous-in-a-convenient-way.
+  The konbini answer to 'one more before the hotel.'
 english_name: Suntory Kakubin Highball Can
 japanese_name: サントリー 角ハイボール缶
 subcategory: alcoholic highball

@@ -1,28 +1,28 @@
-id: "JF-0006"
-slug: "daiso-compression-bags"
-name_en: "Daiso Compression Bags"
-category: "100-yen"
+id: JF-0006
+slug: daiso-compression-bags
+name_en: Daiso Compression Bags
+category: 100-yen
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "圧縮袋"
-brand: "Daiso"
+- day_one_fixes
+status: ready
+name_jp: 圧縮袋
+brand: Daiso
 where_found:
-  - "Daiso"
-  - "Can Do"
-price_yen: "110-330"
-what_it_is: "Vacuum/roll-style compression bags for clothes."
-why_travelers_care: "Suitcase overflow fix."
+- Daiso
+- Can Do
+price_yen: 110-330
+what_it_is: Vacuum/roll-style compression bags for clothes.
+why_travelers_care: Suitcase overflow fix.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso travel compression bag. Roll the air out and your sweaters stop hoarding suitcase space.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso travel compression bag. Roll the air out and your sweaters stop
+  hoarding suitcase space.
 english_name: Daiso Travel Compression Bag
 japanese_name: トラベル用圧縮袋
 subcategory: travel-storage
@@ -34,3 +34,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4550480909974?srsltid=AfmBOorxtSXAImvcCws4_STt0XgolIEKZynrFkBJdMxBqknIVXbVUd8Y
 enrichment_date: '2026-05-19'
 image: /products/daiso-compression-bags.webp
+safety_flags: []

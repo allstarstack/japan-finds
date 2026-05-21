@@ -1,38 +1,38 @@
-id: "JF-0185"
-slug: "baby-rice-crackers"
-name_en: "Baby rice crackers"
-category: "other"
+id: JF-0185
+slug: baby-rice-crackers
+name_en: Baby rice crackers
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Akachan Honpo"
-  - "Aeon"
-  - "Ito-Yokado"
-  - "Matsumoto Kiyoshi"
-price_yen: "~¥150–¥400"
-what_it_is: "Light rice crackers marketed for babies/toddlers."
-why_travelers_care: "Useful snack for family travel days."
+- Akachan Honpo
+- Aeon
+- Ito-Yokado
+- Matsumoto Kiyoshi
+price_yen: ~¥150–¥400
+what_it_is: Light rice crackers marketed for babies/toddlers.
+why_travelers_care: Useful snack for family travel days.
 risk_flags:
-  - "allergen"
-  - "choking risk"
-  - "food import rules"
-verification_notes: "Check age suitability and ingredients."
+- allergen
+- choking risk
+- food import rules
+verification_notes: Check age suitability and ingredients.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.pigeon.co.jp/products/category/babyfood/"
-  - "https://www.wakodo.co.jp/product/babyfood/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.pigeon.co.jp/products/category/babyfood/
+- https://www.wakodo.co.jp/product/babyfood/
+confidence: medium
 trip_score: 7
 suitcase_score: 7
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ベビーせんべい"
-agent_notes: "Category row maker varies"
-
-description: Baby rice crackers. Light, melty, toddler-approved crunch for the konbini stroller era.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ベビーせんべい
+agent_notes: Category row maker varies
+description: Baby rice crackers. Light, melty, toddler-approved crunch for the konbini
+  stroller era.
 english_name: Kameda Haihain Baby Rice Crackers
 japanese_name: 亀田製菓 ハイハイン
 subcategory: baby snack
@@ -46,3 +46,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://japanesetaste.com/products/kameda-hai-hain-vegetable-rice-crackers-for-babies-3-bags
 enrichment_date: '2026-05-19'
 image: /products/baby-rice-crackers.webp
+safety_flags: []

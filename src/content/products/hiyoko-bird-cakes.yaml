@@ -1,31 +1,31 @@
-id: "JF-0404"
-slug: "hiyoko-bird-cakes"
-name_en: "Hiyoko Bird Cakes"
-category: "snacks"
+id: JF-0404
+slug: hiyoko-bird-cakes
+name_en: Hiyoko Bird Cakes
+category: snacks
 intent:
-  - "gift_easy"
-  - "local_editions"
-status: "ready"
-name_jp: "ひよ子"
-brand: "Hiyoko Honpo"
+- gift_easy
+- local_editions
+status: ready
+name_jp: ひよ子
+brand: Hiyoko Honpo
 where_found:
-  - "Tokyo Station"
-  - "Fukuoka airport"
-price_yen: "1200-1800"
-what_it_is: "Cute chick-shaped bean-paste cake. Hiyoko is the photo moment."
-why_travelers_care: "Iconic shape, well-loved."
+- Tokyo Station
+- Fukuoka airport
+price_yen: 1200-1800
+what_it_is: Cute chick-shaped bean-paste cake. Hiyoko is the photo moment.
+why_travelers_care: Iconic shape, well-loved.
 risk_flags:
-  - "allergen-wheat-soy"
+- allergen-wheat-soy
 source_links:
-  - "hiyoko.co.jp"
-confidence: "high"
+- hiyoko.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hiyoko bird cakes. Chick-shaped manju with sweet bean filling. Cute enough to forgive the suitcase crumbs.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Hiyoko bird cakes. Chick-shaped manju with sweet bean filling. Cute enough
+  to forgive the suitcase crumbs.
 english_name: Hiyoko
 japanese_name: ひよ子
 subcategory: souvenir cake

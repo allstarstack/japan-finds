@@ -1,33 +1,33 @@
-id: "JF-0408"
-slug: "kit-kat-matcha"
-name_en: "Kit Kat Matcha"
-category: "snacks"
+id: JF-0408
+slug: kit-kat-matcha
+name_en: Kit Kat Matcha
+category: snacks
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
-name_jp: "キットカット 抹茶"
-brand: "Nestle Japan"
+- bring_home
+- gift_easy
+status: ready
+name_jp: キットカット 抹茶
+brand: Nestle Japan
 where_found:
-  - "Konbini"
-  - "supermarkets"
-  - "airports"
-  - "Yodobashi"
-price_yen: "180-400"
-what_it_is: "Matcha-flavored Kit Kat, available year-round."
-why_travelers_care: "Default Kit Kat purchase."
+- Konbini
+- supermarkets
+- airports
+- Yodobashi
+price_yen: 180-400
+what_it_is: Matcha-flavored Kit Kat, available year-round.
+why_travelers_care: Default Kit Kat purchase.
 risk_flags:
-  - "allergen-dairy-soy-wheat"
+- allergen-dairy-soy-wheat
 source_links:
-  - "nestle.co.jp/brands/kitkat"
-confidence: "high"
+- nestle.co.jp/brands/kitkat
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Kit Kat Koi Matcha. Green tea bitterness under the sweet shell. The airport box everyone grabs after pretending gifts are for other people.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Kit Kat Koi Matcha. Green tea bitterness under the sweet shell. The airport
+  box everyone grabs after pretending gifts are for other people.
 english_name: Kit Kat Koi Matcha
 japanese_name: キットカット 濃い抹茶
 subcategory: chocolate wafer
@@ -43,4 +43,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://kitkat.nestle.jp/test-products
 enrichment_date: '2026-05-19'
-image: /products/kit-kat-matcha.webp
+image: null

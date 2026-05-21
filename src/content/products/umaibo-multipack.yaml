@@ -1,37 +1,37 @@
-id: "JF-0124"
-slug: "umaibo-multipack"
-name_en: "Umaibo multipack"
-category: "donki-drugstore"
+id: JF-0124
+slug: umaibo-multipack
+name_en: Umaibo multipack
+category: donki-drugstore
 intent:
-  - "gift_easy"
-status: "ready"
+- gift_easy
+status: ready
 where_found:
-  - "Don Quijote"
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-  - "Dagashi shops"
-price_yen: "~¥300–¥800"
-what_it_is: "Cheap puffed corn snack sticks in many flavors."
-why_travelers_care: "Funny, affordable, and easy to distribute as casual gifts."
+- Don Quijote
+- 7-Eleven
+- Lawson
+- FamilyMart
+- Dagashi shops
+price_yen: ~¥300–¥800
+what_it_is: Cheap puffed corn snack sticks in many flavors.
+why_travelers_care: Funny, affordable, and easy to distribute as casual gifts.
 risk_flags:
-  - "allergen"
-  - "bulky if multipack"
-verification_notes: "Verify flavor availability and package size."
+- allergen
+- bulky if multipack
+verification_notes: Verify flavor availability and package size.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-  - "https://www.yaokin.com/products_search/umaibo"
-  - "https://www.yaokin.com/catalog.html"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://www.gltjp.com/en/article/item/21292/
+- https://www.yaokin.com/products_search/umaibo
+- https://www.yaokin.com/catalog.html
+confidence: medium
 trip_score: 7
 suitcase_score: 8
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "うまい棒"
-
-description: Umaibo multipack. A bag of crunchy puff sticks for kids, offices, or snack goblins with no portion control. Cheap, light, and suitcase-friendly.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: うまい棒
+description: Umaibo multipack. A bag of crunchy puff sticks for kids, offices, or
+  snack goblins with no portion control. Cheap, light, and suitcase-friendly.
 english_name: Umaibo Corn Potage Multipack
 japanese_name: うまい棒 コーンポタージュ味 まとめ買い
 subcategory: corn puff multipack

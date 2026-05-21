@@ -1,36 +1,36 @@
-id: "JF-0390"
-slug: "saborino-morning-masks"
-name_en: "Saborino morning masks"
-category: "skincare"
+id: JF-0390
+slug: saborino-morning-masks
+name_en: Saborino morning masks
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "サボリーノ 目ざまシート"
-brand: "BCL"
+- stock_up
+status: ready
+name_jp: サボリーノ 目ざまシート
+brand: BCL
 where_found:
-  - "Drugstores"
-  - "Donki"
-  - "Loft"
-price_yen: "~¥400–¥1,500"
-what_it_is: "Quick morning sheet masks marketed as one-step prep."
-why_travelers_care: "Fun concept and highly recognizable packaging."
+- Drugstores
+- Donki
+- Loft
+price_yen: ~¥400–¥1,500
+what_it_is: Quick morning sheet masks marketed as one-step prep.
+why_travelers_care: Fun concept and highly recognizable packaging.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-  - "fragrance"
-verification_notes: "Check menthol/fragrance sensitivity."
+- liquid
+- skincare/cosmetic claim
+- fragrance
+verification_notes: Check menthol/fragrance sensitivity.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.loft.co.jp/store/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.loft.co.jp/store/
+- https://www.cosme.net/
+confidence: high
 trip_score: 7
 suitcase_score: 7
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Saborino morning masks. One-minute morning sheet masks for people who want skincare but not a personality arc.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Saborino morning masks. One-minute morning sheet masks for people who
+  want skincare but not a personality arc.
 english_name: Saborino Botanical Morning Mask
 japanese_name: サボリーノ ボタニカルタイプ 朝用マスク
 subcategory: morning sheet mask
@@ -44,3 +44,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://saborino.sg/products/botanical-morning-mask/
 enrichment_date: '2026-05-19'
 image: /products/saborino-morning-masks.webp
+safety_flags: []

@@ -1,29 +1,30 @@
-id: "JF-0068"
-slug: "placenta-supplements-drinks"
-name_en: "Placenta supplements/drinks"
-category: "other"
+id: JF-0068
+slug: placenta-supplements-drinks
+name_en: Placenta supplements/drinks
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "プラセンタ"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: プラセンタ
+brand: Various
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "varies"
-what_it_is: "Beauty supplement/drink category."
-why_travelers_care: "Attention-grabbing but not appropriate as general travel buy."
+- Drugstores
+- Donki
+price_yen: varies
+what_it_is: Beauty supplement/drink category.
+why_travelers_care: Attention-grabbing but not appropriate as general travel buy.
 risk_flags:
-  - "supplement/regulated"
-  - "health claim"
-verification_notes: "Avoid recommendation; verify source, legality, and safety."
+- supplement/regulated
+- health claim
+verification_notes: Avoid recommendation; verify source, legality, and safety.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-confidence: "low"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+confidence: low
 trip_score: 3
-
-description: DHC Placenta. Beauty supplement aisle item, usually tablets rather than glam drink fantasy. Drugstores sell it; labels matter because supplements are not candy.
+description: DHC Placenta. Beauty supplement aisle item, usually tablets rather than
+  glam drink fantasy. Drugstores sell it; labels matter because supplements are not
+  candy.
 english_name: DHC Placenta
 japanese_name: DHC プラセンタ
 subcategory: beauty supplement
@@ -36,3 +37,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://sundrug-online.com/en/products/4511413406717
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

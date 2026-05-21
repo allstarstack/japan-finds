@@ -1,31 +1,31 @@
-id: "JF-0397"
-slug: "alfort"
-name_en: "Alfort"
-category: "snacks"
+id: JF-0397
+slug: alfort
+name_en: Alfort
+category: snacks
 intent:
-  - "stock_up"
-  - "gift_easy"
-status: "ready"
-name_jp: "アルフォート"
-brand: "Bourbon"
+- stock_up
+- gift_easy
+status: ready
+name_jp: アルフォート
+brand: Bourbon
 where_found:
-  - "Supermarkets"
-  - "konbini"
-price_yen: "300-500"
-what_it_is: "Cookie with chocolate top, embossed sailing ship motif."
-why_travelers_care: "Cheap reliable gift."
+- Supermarkets
+- konbini
+price_yen: 300-500
+what_it_is: Cookie with chocolate top, embossed sailing ship motif.
+why_travelers_care: Cheap reliable gift.
 risk_flags:
-  - "allergen-dairy-wheat-egg-soy"
+- allergen-dairy-wheat-egg-soy
 source_links:
-  - "bourbon.co.jp"
-confidence: "high"
+- bourbon.co.jp
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Alfort. Tiny chocolate biscuits with a little ship on top, because apparently snacks need maritime branding. Grab a box at any konbini for emergency train carbs.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Alfort. Tiny chocolate biscuits with a little ship on top, because apparently
+  snacks need maritime branding. Grab a box at any konbini for emergency train carbs.
 english_name: Alfort Mini Chocolate Biscuits
 japanese_name: アルフォートミニチョコレート
 subcategory: chocolate biscuit

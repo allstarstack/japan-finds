@@ -1,26 +1,26 @@
-id: "JF-0050"
-slug: "konbini-hot-food-brought-home"
-name_en: "Konbini Hot Food Brought Home"
-category: "other"
+id: JF-0050
+slug: konbini-hot-food-brought-home
+name_en: Konbini Hot Food Brought Home
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "コンビニ温食お持ち帰り"
-brand: "Konbini"
+- content_only
+status: content_only
+name_jp: コンビニ温食お持ち帰り
+brand: Konbini
 where_found:
-  - "Konbini hot case"
-price_yen: "Varies"
-what_it_is: "Famichiki and oden don't survive a flight."
-why_travelers_care: "Eat in Japan, don't even try to bring back."
+- Konbini hot case
+price_yen: Varies
+what_it_is: Famichiki and oden don't survive a flight.
+why_travelers_care: Eat in Japan, don't even try to bring back.
 risk_flags:
-  - "perishable, won't survive"
+- perishable, won't survive
 source_links:
-  - "konbini sites"
-confidence: "high"
+- konbini sites
+confidence: high
 trip_score: 0
 suitcase_score: 0
-
-description: Nanachiki. Hot-case fried chicken packed to go. Eat it now, or take it back to the room like a responsible gremlin.
+description: Nanachiki. Hot-case fried chicken packed to go. Eat it now, or take it
+  back to the room like a responsible gremlin.
 english_name: 7-Eleven Nanachiki
 japanese_name: ななチキ
 subcategory: hot fried chicken
@@ -35,3 +35,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.sej.co.jp/in/en.html
 enrichment_date: '2026-05-19'
+image: null

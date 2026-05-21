@@ -1,34 +1,34 @@
-id: "JF-0021"
-slug: "egg-timer-for-ramen-boiled-eggs"
-name_en: "Egg timer for ramen/boiled eggs"
-category: "100-yen"
+id: JF-0021
+slug: egg-timer-for-ramen-boiled-eggs
+name_en: Egg timer for ramen/boiled eggs
+category: 100-yen
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "エッグタイマー"
-brand: "Daiso / kitchen stores"
+- bring_home
+status: ready
+name_jp: エッグタイマー
+brand: Daiso / kitchen stores
 where_found:
-  - "Daiso"
-  - "Tokyu Hands"
-price_yen: "~¥110–¥500"
-what_it_is: "Color-changing timer placed in boiling water."
-why_travelers_care: "Weirdly useful kitchen gadget with visual payoff."
+- Daiso
+- Tokyu Hands
+price_yen: ~¥110–¥500
+what_it_is: Color-changing timer placed in boiling water.
+why_travelers_care: Weirdly useful kitchen gadget with visual payoff.
 risk_flags:
-  - "heat use"
-  - "food-contact"
-verification_notes: "Check heat rating and instructions."
+- heat use
+- food-contact
+verification_notes: Check heat rating and instructions.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://info.hands.net/en/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://info.hands.net/en/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: medium
 trip_score: 7
 suitcase_score: 8
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso egg timer. Boil it with the egg and the color tells you soft, medium, or hard before ramen gets dramatic.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso egg timer. Boil it with the egg and the color tells you soft, medium,
+  or hard before ramen gets dramatic.
 english_name: Daiso Egg Timer
 japanese_name: ダイソー エッグタイマー
 subcategory: kitchen gadget
@@ -41,3 +41,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4550480224954
 enrichment_date: '2026-05-19'
 image: /products/egg-timer-for-ramen-boiled-eggs.webp
+safety_flags: []

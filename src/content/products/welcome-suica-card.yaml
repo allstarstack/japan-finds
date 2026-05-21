@@ -1,29 +1,30 @@
-id: "JF-0458"
-slug: "welcome-suica-card"
-name_en: "Welcome Suica Card"
-category: "other"
+id: JF-0458
+slug: welcome-suica-card
+name_en: Welcome Suica Card
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "Welcome Suica"
-brand: "JR East"
+- day_one_fixes
+status: ready
+name_jp: Welcome Suica
+brand: JR East
 where_found:
-  - "JR East airport stations"
-  - "major JR EAST stations"
-price_yen: "0 (loadable)"
-what_it_is: "Tourist-only IC card, no deposit, no refund, expires after 28 days."
-why_travelers_care: "Day-1 must-have given Suica/Pasmo shortage; works on Tokyo trains, buses, konbini, vending machines."
-verification_notes: "Verify 2026 availability — shortages and policies have shifted"
+- JR East airport stations
+- major JR EAST stations
+price_yen: 0 (loadable)
+what_it_is: Tourist-only IC card, no deposit, no refund, expires after 28 days.
+why_travelers_care: Day-1 must-have given Suica/Pasmo shortage; works on Tokyo trains,
+  buses, konbini, vending machines.
+verification_notes: Verify 2026 availability — shortages and policies have shifted
 source_links:
-  - "jreast.co.jp/multi/en/welcomesuica"
-confidence: "high"
+- jreast.co.jp/multi/en/welcomesuica
+confidence: high
 trip_score: 10
 suitcase_score: 5
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Welcome Suica card. Tourist IC card for trains, buses, lockers, vending machines, and konbini panic-buying.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Welcome Suica card. Tourist IC card for trains, buses, lockers, vending
+  machines, and konbini panic-buying.
 english_name: Welcome Suica Card
 japanese_name: ウェルカムスイカ
 subcategory: transit card
@@ -36,4 +37,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.jreast.co.jp/en/multi/welcomesuica/welcomesuica.html
 enrichment_date: '2026-05-19'
-image: /products/welcome-suica-card.webp
+image: null
+safety_flags: []

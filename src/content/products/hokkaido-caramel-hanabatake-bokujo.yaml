@@ -1,31 +1,31 @@
-id: "JF-0311"
-slug: "hokkaido-caramel-hanabatake-bokujo"
-name_en: "Hokkaido Caramel (Hanabatake Bokujo)"
-category: "other"
+id: JF-0311
+slug: hokkaido-caramel-hanabatake-bokujo
+name_en: Hokkaido Caramel (Hanabatake Bokujo)
+category: other
 intent:
-  - "local_editions"
-  - "gift_easy"
-status: "ready"
-name_jp: "花畑牧場"
-brand: "Hanabatake Bokujo"
+- local_editions
+- gift_easy
+status: ready
+name_jp: 花畑牧場
+brand: Hanabatake Bokujo
 where_found:
-  - "Hokkaido"
-  - "airports"
-price_yen: "1000-2000"
-what_it_is: "Soft milk caramels from Hokkaido dairy farm."
-why_travelers_care: "Premium milk product."
+- Hokkaido
+- airports
+price_yen: 1000-2000
+what_it_is: Soft milk caramels from Hokkaido dairy farm.
+why_travelers_care: Premium milk product.
 risk_flags:
-  - "allergen-dairy"
+- allergen-dairy
 source_links:
-  - "hanabatakebokujo.com"
-confidence: "high"
+- hanabatakebokujo.com
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Hanabatake Bokujo Fresh Caramel. Hokkaido milk caramel that melts fast. Airport souvenir behavior, but in tiny rich squares.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Hanabatake Bokujo Fresh Caramel. Hokkaido milk caramel that melts fast.
+  Airport souvenir behavior, but in tiny rich squares.
 english_name: Hanabatake Bokujo Fresh Caramel
 japanese_name: 花畑牧場 生キャラメル
 subcategory: caramel

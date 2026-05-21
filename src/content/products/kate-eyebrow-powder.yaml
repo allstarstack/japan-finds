@@ -1,29 +1,29 @@
-id: "JF-0363"
-slug: "kate-eyebrow-powder"
-name_en: "KATE Eyebrow Powder"
-category: "skincare"
+id: JF-0363
+slug: kate-eyebrow-powder
+name_en: KATE Eyebrow Powder
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "KATE"
-brand: "Kanebo"
+- stock_up
+status: ready
+name_jp: KATE
+brand: Kanebo
 where_found:
-  - "Drugstores"
-price_yen: "1000-1300"
-what_it_is: "3-shade brow palette, the dominant Japan drugstore brow product."
-why_travelers_care: "Reliable brow staple, cheaper than Western dupes."
+- Drugstores
+price_yen: 1000-1300
+what_it_is: 3-shade brow palette, the dominant Japan drugstore brow product.
+why_travelers_care: Reliable brow staple, cheaper than Western dupes.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "kanebo-cosmetics.jp/kate"
-confidence: "high"
+- kanebo-cosmetics.jp/kate
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: KATE Designing Eyebrow 3D. Three-pan brow powder that also fakes a nose shadow; drugstore makeup people quietly know.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: KATE Designing Eyebrow 3D. Three-pan brow powder that also fakes a nose
+  shadow; drugstore makeup people quietly know.
 english_name: KATE Designing Eyebrow 3D
 japanese_name: ケイト デザイニングアイブロウ3D
 subcategory: eyebrow powder
@@ -36,4 +36,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.kate-global.net/my/all_products/eye_brow/
 enrichment_date: '2026-05-19'
-image: /products/kate-eyebrow-powder.webp
+image: null
+safety_flags: []

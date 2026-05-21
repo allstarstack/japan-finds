@@ -1,31 +1,31 @@
-id: "JF-0317"
-slug: "okinawan-chinsuko-cookies"
-name_en: "Okinawan Chinsuko Cookies"
-category: "other"
+id: JF-0317
+slug: okinawan-chinsuko-cookies
+name_en: Okinawan Chinsuko Cookies
+category: other
 intent:
-  - "local_editions"
-  - "gift_easy"
-status: "ready"
-name_jp: "ちんすこう"
-brand: "Various"
+- local_editions
+- gift_easy
+status: ready
+name_jp: ちんすこう
+brand: Various
 where_found:
-  - "Okinawa"
-  - "airports"
-price_yen: "300-1500"
-what_it_is: "Pork-fat shortbread cookies, Okinawan specialty."
-why_travelers_care: "Distinctive Okinawa omiyage."
+- Okinawa
+- airports
+price_yen: 300-1500
+what_it_is: Pork-fat shortbread cookies, Okinawan specialty.
+why_travelers_care: Distinctive Okinawa omiyage.
 risk_flags:
-  - "allergen-wheat"
+- allergen-wheat
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Okinawan chinsuko cookies. Buttery little shortbread bricks for people who say they are buying souvenirs, then eat one bag at the hotel.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Okinawan chinsuko cookies. Buttery little shortbread bricks for people
+  who say they are buying souvenirs, then eat one bag at the hotel.
 english_name: Nanpudo Chinsuko Okinawan Shortbread Cookies
 japanese_name: 南風堂 ちんすこう
 subcategory: Okinawa souvenir cookie
@@ -39,3 +39,4 @@ safety_flags:
 enrichment_confidence: medium
 enrichment_source_url: https://japanesetaste.com/products/nanpudo-chinsuko-okinawan-shortbread-cookies-assortment-24-pieces
 enrichment_date: '2026-05-19'
+image: null

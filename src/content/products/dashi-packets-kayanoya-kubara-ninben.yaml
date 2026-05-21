@@ -1,30 +1,30 @@
-id: "JF-0200"
-slug: "dashi-packets-kayanoya-kubara-ninben"
-name_en: "Dashi Packets (Kayanoya / Kubara / Ninben)"
-category: "kitchen"
+id: JF-0200
+slug: dashi-packets-kayanoya-kubara-ninben
+name_en: Dashi Packets (Kayanoya / Kubara / Ninben)
+category: kitchen
 intent:
-  - "bring_home"
-  - "stock_up"
-status: "v1_candidate"
-name_jp: "茅乃舎 / 久原本家 / にんべん"
-brand: "Kayanoya / Kubara Honke / Ninben"
+- bring_home
+- stock_up
+status: v1_candidate
+name_jp: 茅乃舎 / 久原本家 / にんべん
+brand: Kayanoya / Kubara Honke / Ninben
 where_found:
-  - "Dept store food halls"
-  - "specialty shops"
-price_yen: "1200-2500"
-what_it_is: "Premium dashi (bonito + kombu + etc.) in tea-bag-style packets."
-why_travelers_care: "Pro cooking shortcut, the secret weapon of Japanese home cooking."
+- Dept store food halls
+- specialty shops
+price_yen: 1200-2500
+what_it_is: Premium dashi (bonito + kombu + etc.) in tea-bag-style packets.
+why_travelers_care: Pro cooking shortcut, the secret weapon of Japanese home cooking.
 risk_flags:
-  - "allergen-fish-soy"
+- allergen-fish-soy
 source_links:
-  - "kayanoya.com"
-  - "kubara.jp"
-  - "ninben.co.jp"
-confidence: "high"
+- kayanoya.com
+- kubara.jp
+- ninben.co.jp
+confidence: high
 trip_score: 9
 suitcase_score: 10
-
-description: Kayanoya dashi packets. Drop one bag in hot water and dinner suddenly has backbone.
+description: Kayanoya dashi packets. Drop one bag in hot water and dinner suddenly
+  has backbone.
 english_name: Kayanoya Original Dashi Stock Powder
 japanese_name: 茅乃舎だし
 subcategory: dashi-packets
@@ -39,3 +39,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.kayanoya.com/en/dashi/
 enrichment_date: '2026-05-19'
+image: null

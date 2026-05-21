@@ -1,34 +1,37 @@
-id: "JF-0235"
-slug: "strawberry-fruit-sando"
-name_en: "Strawberry Fruit Sando"
-category: "konbini"
+id: JF-0235
+slug: strawberry-fruit-sando
+name_en: Strawberry Fruit Sando
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-  - "FamilyMart"
-price_yen: "350-800"
-what_it_is: "Cream and whole strawberries between sweet bread, cross-section is the photo."
-why_travelers_care: "Cross-section moment is pure content; depachika versions look like jewelry."
+- 7-Eleven
+- Lawson
+- FamilyMart
+price_yen: 350-800
+what_it_is: Cream and whole strawberries between sweet bread, cross-section is the
+  photo.
+why_travelers_care: Cross-section moment is pure content; depachika versions look
+  like jewelry.
 risk_flags:
-  - "perishable, allergen-dairy"
-verification_notes: "Seasonality varies by region; winter/spring is peak"
+- perishable, allergen-dairy
+verification_notes: Seasonality varies by region; winter/spring is peak
 source_links:
-  - "japan-guide.com fruit sando"
-  - "https://www.sej.co.jp/products/a/sandwich/"
-  - "https://www.lawson.co.jp/recommend/original/sandwich/"
-confidence: "high"
+- japan-guide.com fruit sando
+- https://www.sej.co.jp/products/a/sandwich/
+- https://www.lawson.co.jp/recommend/original/sandwich/
+confidence: high
 trip_score: 9
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "いちごサンド"
-agent_notes: "Seasonal fruit-sando availability varies"
-
-description: Strawberry fruit sando. Whipped cream and strawberries in soft white bread, sold like dessert pretending to be lunch. Konbini picnic food with main-character behavior.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: いちごサンド
+agent_notes: Seasonal fruit-sando availability varies
+description: Strawberry fruit sando. Whipped cream and strawberries in soft white
+  bread, sold like dessert pretending to be lunch. Konbini picnic food with main-character
+  behavior.
 english_name: FamilyMart Strawberry and Whipped Cream Sandwich
 japanese_name: いちご＆ホイップサンド
 subcategory: fruit sandwich

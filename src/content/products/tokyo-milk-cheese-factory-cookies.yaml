@@ -1,32 +1,33 @@
-id: "JF-0420"
-slug: "tokyo-milk-cheese-factory-cookies"
-name_en: "Tokyo Milk Cheese Factory Cookies"
-category: "snacks"
+id: JF-0420
+slug: tokyo-milk-cheese-factory-cookies
+name_en: Tokyo Milk Cheese Factory Cookies
+category: snacks
 intent:
-  - "gift_easy"
-  - "bring_home"
-status: "ready"
-name_jp: "東京ミルクチーズ工場"
-brand: "Cheese Garden"
+- gift_easy
+- bring_home
+status: ready
+name_jp: 東京ミルクチーズ工場
+brand: Cheese Garden
 where_found:
-  - "Tokyo Milk Cheese official"
-  - "Tokyo Station"
-  - "airport shops"
-price_yen: "1000-1500"
-what_it_is: "Cheese-cookie sandwich with white chocolate or salted-cheese filling."
-why_travelers_care: "Tokyo Station gift staple."
+- Tokyo Milk Cheese official
+- Tokyo Station
+- airport shops
+price_yen: 1000-1500
+what_it_is: Cheese-cookie sandwich with white chocolate or salted-cheese filling.
+why_travelers_care: Tokyo Station gift staple.
 risk_flags:
-  - "allergen-dairy-wheat-egg"
+- allergen-dairy-wheat-egg
 source_links:
-  - "tokyomilkcheese.jp"
-confidence: "high"
+- tokyomilkcheese.jp
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tokyo Milk Cheese Factory cookies. Thin cheese-and-milk sandwich cookies with that sweet-salty thing Japan does too well. Buy them when the souvenir needs to look expensive without behaving like luggage.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Tokyo Milk Cheese Factory cookies. Thin cheese-and-milk sandwich cookies
+  with that sweet-salty thing Japan does too well. Buy them when the souvenir needs
+  to look expensive without behaving like luggage.
 english_name: Tokyo Milk Cheese Factory Salt and Camembert Cookies
 japanese_name: 東京ミルクチーズ工場 ソルト&カマンベールクッキー
 subcategory: cheese cookie
@@ -43,3 +44,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
 image: /products/tokyo-milk-cheese-factory-cookies.webp
+enrichment_source_url: null

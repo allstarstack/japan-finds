@@ -1,28 +1,29 @@
-id: "JF-0074"
-slug: "glass-blowing-sumida-tokyo-otaru"
-name_en: "Glass Blowing (Sumida / Tokyo / Otaru)"
-category: "other"
+id: JF-0074
+slug: glass-blowing-sumida-tokyo-otaru
+name_en: Glass Blowing (Sumida / Tokyo / Otaru)
+category: other
 intent:
-  - "make_it_yours"
-  - "local_editions"
-status: "v1_candidate"
-name_jp: "ガラス工芸"
-brand: "Various studios"
+- make_it_yours
+- local_editions
+status: v1_candidate
+name_jp: ガラス工芸
+brand: Various studios
 where_found:
-  - "Sumida (Tokyo)"
-  - "Otaru (Hokkaido)"
-price_yen: "3000-10000"
-what_it_is: "Blow a small glass cup or paperweight."
-why_travelers_care: "Photogenic, gift-grade output."
+- Sumida (Tokyo)
+- Otaru (Hokkaido)
+price_yen: 3000-10000
+what_it_is: Blow a small glass cup or paperweight.
+why_travelers_care: Photogenic, gift-grade output.
 risk_flags:
-  - "fragile"
+- fragile
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 8
 suitcase_score: 6
-
-description: Glass blowing experience. You shape a cup while trying not to look terrified near molten glass. Sumida and Otaru turn craft time into luggage with emotional value.
+description: Glass blowing experience. You shape a cup while trying not to look terrified
+  near molten glass. Sumida and Otaru turn craft time into luggage with emotional
+  value.
 english_name: Glass Blowing Experience
 japanese_name: 吹きガラス体験
 subcategory: craft experience
@@ -35,3 +36,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://otaru-ilponte.com/english/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

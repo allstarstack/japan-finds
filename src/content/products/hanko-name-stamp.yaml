@@ -1,36 +1,36 @@
-id: "JF-0297"
-slug: "hanko-name-stamp"
-name_en: "Hanko name stamp"
-category: "other"
+id: JF-0297
+slug: hanko-name-stamp
+name_en: Hanko name stamp
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "判子・印鑑"
-brand: "Hanko shops / vending machines"
+- make_it_yours
+status: ready
+name_jp: 判子・印鑑
+brand: Hanko shops / vending machines
 where_found:
-  - "Hankoya"
-  - "Donki vending"
-  - "Tokyu Hands"
-price_yen: "~¥500–¥5,000"
-what_it_is: "Personal name stamp, sometimes made by machine."
-why_travelers_care: "Japan-specific personalization; good desk object/gift."
+- Hankoya
+- Donki vending
+- Tokyu Hands
+price_yen: ~¥500–¥5,000
+what_it_is: Personal name stamp, sometimes made by machine.
+why_travelers_care: Japan-specific personalization; good desk object/gift.
 risk_flags:
-  - "name translation"
-  - "custom item"
-verification_notes: "Verify katakana/kanji choice and machine availability."
+- name translation
+- custom item
+verification_notes: Verify katakana/kanji choice and machine availability.
 source_links:
-  - "https://info.hands.net/en/"
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://info.hands.net/en/
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 8
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
 featured: true
-
-description: Hanko name stamp. Tiny seal for names, notebooks, and souvenir chaos. Shachihata-style ones click fast with built-in ink.
+description: Hanko name stamp. Tiny seal for names, notebooks, and souvenir chaos.
+  Shachihata-style ones click fast with built-in ink.
 english_name: Hanko Name Stamp
 japanese_name: 判子
 subcategory: name stamp
@@ -43,3 +43,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.shachihata.jp/products/detail.php?product_id=2961
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

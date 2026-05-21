@@ -1,32 +1,32 @@
-id: "JF-0058"
-slug: "cheap-uncertified-electronics"
-name_en: "Cheap uncertified electronics"
-category: "other"
+id: JF-0058
+slug: cheap-uncertified-electronics
+name_en: Cheap uncertified electronics
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "格安電子機器"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: 格安電子機器
+brand: Various
 where_found:
-  - "Discount shops"
-  - "market stalls"
-price_yen: "varies"
-what_it_is: "Low-cost chargers, batteries, adapters, gadgets."
-why_travelers_care: "Useful warning; safety/certification matters."
+- Discount shops
+- market stalls
+price_yen: varies
+what_it_is: Low-cost chargers, batteries, adapters, gadgets.
+why_travelers_care: Useful warning; safety/certification matters.
 risk_flags:
-  - "electronics"
-  - "safety"
-  - "battery"
-  - "easy to buy outside Japan"
-verification_notes: "Verify certification, voltage, and return policy."
+- electronics
+- safety
+- battery
+- easy to buy outside Japan
+verification_notes: Verify certification, voltage, and return policy.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-confidence: "low"
+- https://www.donki.com/en/
+- https://www.gltjp.com/en/article/item/21292/
+confidence: low
 trip_score: 4
 suitcase_score: 3
-
-description: Cheap no-name electronics. The price looks brave; the charger looks like a lawsuit. Stick to known brands for adapters and heat tools.
+description: Cheap no-name electronics. The price looks brave; the charger looks like
+  a lawsuit. Stick to known brands for adapters and heat tools.
 english_name: Cheap No-Name Electronics
 japanese_name: 格安ノーブランド電化製品
 subcategory: travel electronics
@@ -39,3 +39,5 @@ safety_flags:
 - voltage_100v
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
+image: null
+enrichment_source_url: null

@@ -1,34 +1,34 @@
-id: "JF-0378"
-slug: "fino-premium-touch-hair-mask"
-name_en: "Fino Premium Touch Hair Mask"
-category: "skincare"
+id: JF-0378
+slug: fino-premium-touch-hair-mask
+name_en: Fino Premium Touch Hair Mask
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "フィーノ プレミアムタッチ ヘアマスク"
-brand: "Shiseido / Fine Today"
+- stock_up
+status: ready
+name_jp: フィーノ プレミアムタッチ ヘアマスク
+brand: Shiseido / Fine Today
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥800–¥1,200"
-what_it_is: "Rich rinse-off hair treatment tub."
-why_travelers_care: "Major drugstore cult item; strong value in Japan."
+- Drugstores
+- Donki
+price_yen: ~¥800–¥1,200
+what_it_is: Rich rinse-off hair treatment tub.
+why_travelers_care: Major drugstore cult item; strong value in Japan.
 risk_flags:
-  - "liquid/cream"
-  - "bulky"
-  - "cosmetic claim"
-verification_notes: "Check baggage size/weight and hair suitability."
+- liquid/cream
+- bulky
+- cosmetic claim
+verification_notes: Check baggage size/weight and hair suitability.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.cosme.net/
+confidence: high
 trip_score: 8
 suitcase_score: 5
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Fino hair mask. Thick tub treatment for dry hair, the drugstore beauty aisle pick with suitcase-stuffer energy.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Fino hair mask. Thick tub treatment for dry hair, the drugstore beauty
+  aisle pick with suitcase-stuffer energy.
 english_name: Fino Premium Touch Hair Mask
 japanese_name: フィーノ プレミアムタッチ ヘアマスク
 subcategory: hair mask
@@ -42,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://japanesetaste.com/products/fino-hair-mask-premium-touch-intensive-repair-treatment-230g
 enrichment_date: '2026-05-19'
 image: /products/fino-premium-touch-hair-mask.webp
+safety_flags: []

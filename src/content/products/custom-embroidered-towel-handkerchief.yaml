@@ -1,32 +1,32 @@
-id: "JF-0292"
-slug: "custom-embroidered-towel-handkerchief"
-name_en: "Custom embroidered towel/handkerchief"
-category: "other"
+id: JF-0292
+slug: custom-embroidered-towel-handkerchief
+name_en: Custom embroidered towel/handkerchief
+category: other
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "刺繍タオル"
-brand: "Department stores / souvenir shops"
+- make_it_yours
+status: ready
+name_jp: 刺繍タオル
+brand: Department stores / souvenir shops
 where_found:
-  - "Dept stores"
-  - "specialty shops"
-price_yen: "~¥1,000–¥3,000"
-what_it_is: "Small towel with name/initial embroidery."
-why_travelers_care: "Practical, personal, easy gift."
+- Dept stores
+- specialty shops
+price_yen: ~¥1,000–¥3,000
+what_it_is: Small towel with name/initial embroidery.
+why_travelers_care: Practical, personal, easy gift.
 risk_flags:
-  - "lead time"
-  - "language accuracy"
-verification_notes: "Verify same-day service and spelling."
+- lead time
+- language accuracy
+verification_notes: Verify same-day service and spelling.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "low"
+- https://www.japan-guide.com/e/e2450.html
+confidence: low
 trip_score: 7
 suitcase_score: 8
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Custom embroidered towel. A handkerchief with your name on it, because Japan makes even sweat management personal.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Custom embroidered towel. A handkerchief with your name on it, because
+  Japan makes even sweat management personal.
 english_name: Custom Embroidered Towel Handkerchief
 japanese_name: 名入れ刺繍タオルハンカチ
 subcategory: custom-souvenir
@@ -39,3 +39,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.family.co.jp/goods/cw.html
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,33 +1,34 @@
-id: "JF-0445"
-slug: "anessa-perfect-uv-sunscreen-milk"
-name_en: "Anessa Perfect UV Sunscreen Milk"
-category: "skincare"
+id: JF-0445
+slug: anessa-perfect-uv-sunscreen-milk
+name_en: Anessa Perfect UV Sunscreen Milk
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "アネッサ"
-brand: "Shiseido"
+- stock_up
+status: ready
+name_jp: アネッサ
+brand: Shiseido
 where_found:
-  - "Shiseido official"
-  - "Amazon JP"
-  - "Yodobashi"
-  - "cosme"
-price_yen: "2500-3500"
-what_it_is: "SPF 50+ PA++++ sunscreen, gold-bottle classic, sweat/water responsive."
-why_travelers_care: "Beauty-press top-rated, internationally cult."
+- Shiseido official
+- Amazon JP
+- Yodobashi
+- cosme
+price_yen: 2500-3500
+what_it_is: SPF 50+ PA++++ sunscreen, gold-bottle classic, sweat/water responsive.
+why_travelers_care: Beauty-press top-rated, internationally cult.
 risk_flags:
-  - "liquid, skincare/cosmetic claim"
-verification_notes: "Sold abroad at 2x; Japan version is the reference"
+- liquid, skincare/cosmetic claim
+verification_notes: Sold abroad at 2x; Japan version is the reference
 source_links:
-  - "anessa.shiseido.co.jp"
-confidence: "high"
+- anessa.shiseido.co.jp
+confidence: high
 trip_score: 10
 suitcase_score: 10
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Anessa Perfect UV Sunscreen Milk. Gold-bottle SPF50+ PA++++ protection with a thin, milky finish. Buy it before a Japan summer walk turns into a sidewalk hostage situation.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Anessa Perfect UV Sunscreen Milk. Gold-bottle SPF50+ PA++++ protection
+  with a thin, milky finish. Buy it before a Japan summer walk turns into a sidewalk
+  hostage situation.
 english_name: Anessa Perfect UV Sunscreen Skincare Milk
 japanese_name: アネッサ パーフェクトUV スキンケアミルク NA
 subcategory: sunscreen
@@ -41,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.ratzillacosme.com/sun/anessa-perfect-uv-sunscreen-skincare-milk-2024/
 enrichment_date: '2026-05-19'
 image: /products/anessa-perfect-uv-sunscreen-milk.webp
+safety_flags: []

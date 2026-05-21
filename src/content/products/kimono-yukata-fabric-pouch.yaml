@@ -1,33 +1,33 @@
-id: "JF-0300"
-slug: "kimono-yukata-fabric-pouch"
-name_en: "Kimono/yukata fabric pouch"
-category: "other"
+id: JF-0300
+slug: kimono-yukata-fabric-pouch
+name_en: Kimono/yukata fabric pouch
+category: other
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "着物生地ポーチ"
-brand: "Various makers"
+- gift_easy
+status: ready
+name_jp: 着物生地ポーチ
+brand: Various makers
 where_found:
-  - "Souvenir shops"
-  - "craft markets"
-  - "dept stores"
-price_yen: "~¥800–¥3,000"
-what_it_is: "Small pouch made from Japanese-pattern fabric."
-why_travelers_care: "Giftable, light, more durable than food."
+- Souvenir shops
+- craft markets
+- dept stores
+price_yen: ~¥800–¥3,000
+what_it_is: Small pouch made from Japanese-pattern fabric.
+why_travelers_care: Giftable, light, more durable than food.
 risk_flags:
-  - "quality varies"
-  - "easy to overpay"
-verification_notes: "Verify origin/material."
+- quality varies
+- easy to overpay
+verification_notes: Verify origin/material.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 7
 suitcase_score: 9
-launch_category: "customization"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Pagong silk pouch set. Small Kyoto textile pouches for coins, lip balm, receipts, and the shrine charms you swore were enough.
+launch_category: customization
+fill_type: verified
+display_strategy: show_all
+description: Pagong silk pouch set. Small Kyoto textile pouches for coins, lip balm,
+  receipts, and the shrine charms you swore were enough.
 english_name: Pagong Silk Pouch Set
 japanese_name: Pagong シルクポーチセット
 subcategory: fabric pouch
@@ -40,3 +40,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.pagongkyoto.com/others/p/a99061702aa-00-gk97y
 enrichment_date: '2026-05-19'
 image: /products/kimono-yukata-fabric-pouch.webp
+safety_flags: []

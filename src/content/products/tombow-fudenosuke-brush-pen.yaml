@@ -1,30 +1,31 @@
-id: "JF-0439"
-slug: "tombow-fudenosuke-brush-pen"
-name_en: "Tombow Fudenosuke Brush Pen"
-category: "stationery"
+id: JF-0439
+slug: tombow-fudenosuke-brush-pen
+name_en: Tombow Fudenosuke Brush Pen
+category: stationery
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "筆之助"
-brand: "Tombow"
+- bring_home
+status: ready
+name_jp: 筆之助
+brand: Tombow
 where_found:
-  - "Tombow official"
-  - "Amazon JP"
-  - "Yodobashi"
-  - "Loft"
-price_yen: "300-500"
-what_it_is: "Hard-tip brush pen for hand-lettering."
-why_travelers_care: "Calligraphy beginner go-to."
+- Tombow official
+- Amazon JP
+- Yodobashi
+- Loft
+price_yen: 300-500
+what_it_is: Hard-tip brush pen for hand-lettering.
+why_travelers_care: Calligraphy beginner go-to.
 source_links:
-  - "tombow.com"
-confidence: "high"
+- tombow.com
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Tombow Fudenosuke Brush Pen. Flexible-tip brush pen for clean Japanese-style lettering and doodles. Cheap enough to buy twice, nice enough to make handwriting feel judged.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Tombow Fudenosuke Brush Pen. Flexible-tip brush pen for clean Japanese-style
+  lettering and doodles. Cheap enough to buy twice, nice enough to make handwriting
+  feel judged.
 english_name: Tombow Fudenosuke Brush Pen
 japanese_name: トンボ鉛筆 筆之助
 subcategory: brush pen
@@ -39,3 +40,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.tombow.com/en/products/fudenosuke/
 enrichment_date: '2026-05-19'
 image: /products/tombow-fudenosuke-brush-pen.webp
+safety_flags: []

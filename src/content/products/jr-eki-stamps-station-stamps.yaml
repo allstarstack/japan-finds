@@ -1,28 +1,28 @@
-id: "JF-0426"
-slug: "jr-eki-stamps-station-stamps"
-name_en: "JR Eki Stamps (Station Stamps)"
-category: "stationery"
+id: JF-0426
+slug: jr-eki-stamps-station-stamps
+name_en: JR Eki Stamps (Station Stamps)
+category: stationery
 intent:
-  - "make_it_yours"
-status: "ready"
-name_jp: "駅スタンプ"
-brand: "JR / private rail"
+- make_it_yours
+status: ready
+name_jp: 駅スタンプ
+brand: JR / private rail
 where_found:
-  - "JR East/West/Central stations free at staff counters"
-price_yen: "Free"
-what_it_is: "Free station rubber stamps; bring a notebook and collect through trip."
-why_travelers_care: "Free proof-of-visit collectible, completely overlooked by tourists."
-verification_notes: "Stamps located at staffed station areas; ask station office"
+- JR East/West/Central stations free at staff counters
+price_yen: Free
+what_it_is: Free station rubber stamps; bring a notebook and collect through trip.
+why_travelers_care: Free proof-of-visit collectible, completely overlooked by tourists.
+verification_notes: Stamps located at staffed station areas; ask station office
 source_links:
-  - "general"
-confidence: "medium"
+- general
+confidence: medium
 trip_score: 9
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: JR Eki stamps. Rubber stamps tucked near ticket gates and station offices; bring a notebook and accept your new tiny obsession.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: JR Eki stamps. Rubber stamps tucked near ticket gates and station offices;
+  bring a notebook and accept your new tiny obsession.
 english_name: JR Eki Stamps
 japanese_name: JR 駅スタンプ
 subcategory: train station souvenir
@@ -34,3 +34,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.japanhousela.com/articles/station-to-station-japans-iconic-eki-stamps-train-stamp-book-passport-goshuin-goshuincho/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

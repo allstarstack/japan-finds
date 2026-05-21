@@ -1,29 +1,29 @@
-id: "JF-0010"
-slug: "daiso-tabi-socks-toe-split"
-name_en: "Daiso Tabi Socks (Toe-Split)"
-category: "100-yen"
+id: JF-0010
+slug: daiso-tabi-socks-toe-split
+name_en: Daiso Tabi Socks (Toe-Split)
+category: 100-yen
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
-name_jp: "足袋ソックス"
-brand: "Daiso"
+- bring_home
+- gift_easy
+status: ready
+name_jp: 足袋ソックス
+brand: Daiso
 where_found:
-  - "Daiso"
-price_yen: "110-330"
-what_it_is: "Split-toe socks, work with zori sandals."
-why_travelers_care: "Unique, cheap, travel-light."
+- Daiso
+price_yen: 110-330
+what_it_is: Split-toe socks, work with zori sandals.
+why_travelers_care: Unique, cheap, travel-light.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
 featured: true
-
-description: Daiso tabi socks. Toe-split socks for geta, sandals, or maximum foot confusion.
+description: Daiso tabi socks. Toe-split socks for geta, sandals, or maximum foot
+  confusion.
 english_name: Daiso Tabi Socks
 japanese_name: 足袋ソックス
 subcategory: socks
@@ -33,3 +33,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_date: '2026-05-19'
 image: /products/daiso-tabi-socks-toe-split.webp
+safety_flags: []
+enrichment_source_url: null

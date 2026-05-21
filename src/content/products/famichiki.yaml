@@ -1,34 +1,37 @@
-id: "JF-0228"
-slug: "famichiki"
-name_en: "Famichiki"
-category: "konbini"
+id: JF-0228
+slug: famichiki
+name_en: Famichiki
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "FamilyMart"
-price_yen: "200-220 | ¥220"
-what_it_is: "FamilyMart's hot fried chicken, single boneless thigh piece. | Boneless fried chicken served in a tear-away paper pouch."
-why_travelers_care: "Cult favorite, has its own anniversary day in Japan (8/7). | Strong konbini hot-snack staple; should stay as Try in Japan, not suitcase item."
+- FamilyMart
+price_yen: 200-220 | ¥220
+what_it_is: FamilyMart's hot fried chicken, single boneless thigh piece. | Boneless
+  fried chicken served in a tear-away paper pouch.
+why_travelers_care: Cult favorite, has its own anniversary day in Japan (8/7). | Strong
+  konbini hot-snack staple; should stay as Try in Japan, not suitcase item.
 risk_flags:
-  - "perishable, hot food | perishable"
-  - "allergen"
-verification_notes: "Hot case items vary by store stocking schedule | Verify current price and seasonal flavors."
+- perishable, hot food | perishable
+- allergen
+verification_notes: Hot case items vary by store stocking schedule | Verify current
+  price and seasonal flavors.
 source_links:
-  - "family.co.jp/services/famichiki"
-  - "User-pasted response"
-  - "https://www.family.co.jp/goods/friedfoods/0253116.html"
-  - "https://www.family.co.jp/goods/friedfoods.html"
-confidence: "high"
+- family.co.jp/services/famichiki
+- User-pasted response
+- https://www.family.co.jp/goods/friedfoods/0253116.html
+- https://www.family.co.jp/goods/friedfoods.html
+confidence: high
 trip_score: 10
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
 featured: true
-sub_chip: "food"
-name_jp: "ファミチキ（骨なし）"
-
-description: Famichiki. Boneless fried chicken from the FamilyMart hot case, best eaten standing outside like a gremlin with receipts.
+sub_chip: food
+name_jp: ファミチキ（骨なし）
+description: Famichiki. Boneless fried chicken from the FamilyMart hot case, best
+  eaten standing outside like a gremlin with receipts.
 english_name: Famichiki
 japanese_name: ファミチキ
 subcategory: fried chicken

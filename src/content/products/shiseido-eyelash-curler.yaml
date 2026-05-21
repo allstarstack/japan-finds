@@ -1,35 +1,35 @@
-id: "JF-0392"
-slug: "shiseido-eyelash-curler"
-name_en: "Shiseido eyelash curler"
-category: "skincare"
+id: JF-0392
+slug: shiseido-eyelash-curler
+name_en: Shiseido eyelash curler
+category: skincare
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "資生堂 アイラッシュカーラー"
-brand: "Shiseido"
+- bring_home
+status: ready
+name_jp: 資生堂 アイラッシュカーラー
+brand: Shiseido
 where_found:
-  - "Drugstores"
-  - "Donki"
-  - "dept stores"
-price_yen: "~¥900–¥1,500"
-what_it_is: "Metal eyelash curler with refill pads."
-why_travelers_care: "Small, durable, famous beauty tool."
+- Drugstores
+- Donki
+- dept stores
+price_yen: ~¥900–¥1,500
+what_it_is: Metal eyelash curler with refill pads.
+why_travelers_care: Small, durable, famous beauty tool.
 risk_flags:
-  - "cosmetic tool"
-  - "easy to buy outside Japan"
-verification_notes: "Confirm model number and spare pad availability."
+- cosmetic tool
+- easy to buy outside Japan
+verification_notes: Confirm model number and spare pad availability.
 source_links:
-  - "https://www.shiseido.co.jp/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.shiseido.co.jp/
+- https://www.matsukiyococokara-online.com/
+- https://www.cosme.net/
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Shiseido eyelash curler. The Japanese drugstore curler people keep rebuying; simple metal, serious lash architecture.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Shiseido eyelash curler. The Japanese drugstore curler people keep rebuying;
+  simple metal, serious lash architecture.
 english_name: Shiseido Eyelash Curler
 japanese_name: 資生堂 アイラッシュカーラー
 subcategory: beauty tool
@@ -43,4 +43,5 @@ where_to_buy:
 enrichment_confidence: high
 enrichment_source_url: https://www.shiseido.co.jp/sw/onlinestore/products/H36001.html
 enrichment_date: '2026-05-19'
-image: /products/shiseido-eyelash-curler.webp
+image: null
+safety_flags: []

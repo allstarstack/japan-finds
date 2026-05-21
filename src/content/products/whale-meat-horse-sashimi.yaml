@@ -1,26 +1,26 @@
-id: "JF-0055"
-slug: "whale-meat-horse-sashimi"
-name_en: "Whale Meat / Horse Sashimi"
-category: "other"
+id: JF-0055
+slug: whale-meat-horse-sashimi
+name_en: Whale Meat / Horse Sashimi
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "鯨肉 / 馬刺し"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: 鯨肉 / 馬刺し
+brand: Various
 where_found:
-  - "Specialty restaurants and shops"
-price_yen: "Variable"
-what_it_is: "Ethically/legally complicated abroad."
-why_travelers_care: "Content angle only, do not bring home."
+- Specialty restaurants and shops
+price_yen: Variable
+what_it_is: Ethically/legally complicated abroad.
+why_travelers_care: Content angle only, do not bring home.
 risk_flags:
-  - "ethical, legal, perishable"
+- ethical, legal, perishable
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 2
 suitcase_score: 0
-
-description: Basashi horse sashimi. Thin-sliced raw horse meat with ginger, garlic, and sweet soy sauce; Kumamoto's most eyebrow-raising dinner order.
+description: Basashi horse sashimi. Thin-sliced raw horse meat with ginger, garlic,
+  and sweet soy sauce; Kumamoto's most eyebrow-raising dinner order.
 english_name: Basashi Horse Sashimi
 japanese_name: 馬刺し
 subcategory: regional raw meat
@@ -34,3 +34,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/4013/index.html
 enrichment_date: '2026-05-19'
+image: null

@@ -1,34 +1,34 @@
-id: "JF-0352"
-slug: "yoku-moku-cigare"
-name_en: "Yoku Moku Cigare"
-category: "snacks"
+id: JF-0352
+slug: yoku-moku-cigare
+name_en: Yoku Moku Cigare
+category: snacks
 intent:
-  - "gift_easy"
-status: "ready"
-name_jp: "シガール"
-brand: "Yoku Moku"
+- gift_easy
+status: ready
+name_jp: シガール
+brand: Yoku Moku
 where_found:
-  - "Dept stores"
-  - "airports"
-  - "souvenir shops"
-price_yen: "~¥1,000–¥3,000"
-what_it_is: "Rolled butter cookie in tins/boxes."
-why_travelers_care: "Safe premium gift; very office-friendly."
+- Dept stores
+- airports
+- souvenir shops
+price_yen: ~¥1,000–¥3,000
+what_it_is: Rolled butter cookie in tins/boxes.
+why_travelers_care: Safe premium gift; very office-friendly.
 risk_flags:
-  - "allergen"
-  - "fragile"
-verification_notes: "Check tin/box sizes."
+- allergen
+- fragile
+verification_notes: Check tin/box sizes.
 source_links:
-  - "https://www.yokumoku.jp/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "high"
+- https://www.yokumoku.jp/
+- https://www.japan-guide.com/e/e2450.html
+confidence: high
 trip_score: 8
 suitcase_score: 8
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Yoku Moku Cigare. Buttery rolled cookies in the blue tin; department-store gift math that always works.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Yoku Moku Cigare. Buttery rolled cookies in the blue tin; department-store
+  gift math that always works.
 english_name: Yoku Moku Cigare
 japanese_name: ヨックモック シガール
 subcategory: cookies

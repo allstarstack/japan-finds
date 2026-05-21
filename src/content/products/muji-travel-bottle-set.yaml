@@ -1,28 +1,28 @@
-id: "JF-0289"
-slug: "muji-travel-bottle-set"
-name_en: "Muji Travel Bottle Set"
-category: "other"
+id: JF-0289
+slug: muji-travel-bottle-set
+name_en: Muji Travel Bottle Set
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "無印良品 ボトルセット"
-brand: "Muji"
+- day_one_fixes
+status: ready
+name_jp: 無印良品 ボトルセット
+brand: Muji
 where_found:
-  - "Muji official"
-  - "Muji stores"
-price_yen: "490-990"
-what_it_is: "Decanting bottles in cohesive design."
-why_travelers_care: "Better-looking than Daiso's at small premium."
+- Muji official
+- Muji stores
+price_yen: 490-990
+what_it_is: Decanting bottles in cohesive design.
+why_travelers_care: Better-looking than Daiso's at small premium.
 source_links:
-  - "muji.com/jp"
-confidence: "high"
+- muji.com/jp
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "travel_gear"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: MUJI travel bottle set. Tiny refill bottles for shampoo, toner, and whatever liquid wants to leak in your pouch. Boring, useful, very airport-security coded.
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: MUJI travel bottle set. Tiny refill bottles for shampoo, toner, and whatever
+  liquid wants to leak in your pouch. Boring, useful, very airport-security coded.
 english_name: MUJI PET Travel Bottle
 japanese_name: 無印良品 PET小分けボトル
 subcategory: travel bottle
@@ -33,3 +33,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.muji.com/jp/ja/store/cmdty/section/S0003803
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

@@ -1,36 +1,36 @@
-id: "JF-0045"
-slug: "zebra-sarasa-clip"
-name_en: "Zebra Sarasa Clip"
-category: "100-yen"
+id: JF-0045
+slug: zebra-sarasa-clip
+name_en: Zebra Sarasa Clip
+category: 100-yen
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "サラサクリップ"
-brand: "Zebra"
+- stock_up
+status: ready
+name_jp: サラサクリップ
+brand: Zebra
 where_found:
-  - "Loft"
-  - "Hands"
-  - "Itoya"
-  - "stationery stores"
-price_yen: "~¥110–¥300"
-what_it_is: "Smooth gel pen with many colors/limited editions."
-why_travelers_care: "Affordable, collectible stationery with Japan-only colors."
+- Loft
+- Hands
+- Itoya
+- stationery stores
+price_yen: ~¥110–¥300
+what_it_is: Smooth gel pen with many colors/limited editions.
+why_travelers_care: Affordable, collectible stationery with Japan-only colors.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Confirm limited colors and ink size."
+- easy to buy outside Japan
+verification_notes: Confirm limited colors and ink size.
 source_links:
-  - "https://www.zebra.co.jp/"
-  - "https://www.loft.co.jp/store/"
-  - "https://info.hands.net/en/"
-  - "https://www.ito-ya.co.jp/"
-confidence: "high"
+- https://www.zebra.co.jp/
+- https://www.loft.co.jp/store/
+- https://info.hands.net/en/
+- https://www.ito-ya.co.jp/
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Zebra Sarasa Clip. Gel pen with bright ink and a binder clip; the cheap stationery gateway drug.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Zebra Sarasa Clip. Gel pen with bright ink and a binder clip; the cheap
+  stationery gateway drug.
 english_name: Zebra Sarasa Clip
 japanese_name: ゼブラ サラサクリップ
 subcategory: stationery
@@ -45,3 +45,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.zebra.co.jp/pro/detail/sarasa-clip/
 enrichment_date: '2026-05-19'
 image: /products/zebra-sarasa-clip.webp
+safety_flags: []

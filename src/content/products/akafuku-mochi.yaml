@@ -1,36 +1,36 @@
-id: "JF-0324"
-slug: "akafuku-mochi"
-name_en: "Akafuku mochi"
-category: "snacks"
+id: JF-0324
+slug: akafuku-mochi
+name_en: Akafuku mochi
+category: snacks
 intent:
-  - "try_in_japan"
-status: "ready"
-name_jp: "赤福餅"
-brand: "Akafuku"
+- try_in_japan
+status: ready
+name_jp: 赤福餅
+brand: Akafuku
 where_found:
-  - "Ise"
-  - "Nagoya"
-  - "Osaka"
-  - "airports/stations"
-price_yen: "~¥900–¥1,500"
-what_it_is: "Mochi topped with smooth red bean paste."
-why_travelers_care: "Traditional regional classic with short shelf life."
+- Ise
+- Nagoya
+- Osaka
+- airports/stations
+price_yen: ~¥900–¥1,500
+what_it_is: Mochi topped with smooth red bean paste.
+why_travelers_care: Traditional regional classic with short shelf life.
 risk_flags:
-  - "perishable"
-  - "allergen"
-  - "fragile"
-verification_notes: "Check shelf life; best eaten during trip."
+- perishable
+- allergen
+- fragile
+verification_notes: Check shelf life; best eaten during trip.
 source_links:
-  - "https://www.akafuku.co.jp/"
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "high"
+- https://www.akafuku.co.jp/
+- https://www.japan-guide.com/e/e2450.html
+confidence: high
 trip_score: 8
 suitcase_score: 4
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Akafuku mochi. Soft rice cake under smooth red bean paste, straight from the Ise souvenir canon. Buy it early because the shelf life is aggressively short.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Akafuku mochi. Soft rice cake under smooth red bean paste, straight from
+  the Ise souvenir canon. Buy it early because the shelf life is aggressively short.
 english_name: Akafuku Mochi
 japanese_name: 赤福餅
 subcategory: mochi
@@ -44,3 +44,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.akafuku.co.jp/en/
 enrichment_date: '2026-05-19'
 image: /products/akafuku-mochi.webp
+safety_flags: []

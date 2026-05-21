@@ -1,27 +1,27 @@
-id: "JF-0422"
-slug: "yatsuhashi-kyoto"
-name_en: "Yatsuhashi (Kyoto)"
-category: "snacks"
+id: JF-0422
+slug: yatsuhashi-kyoto
+name_en: Yatsuhashi (Kyoto)
+category: snacks
 intent:
-  - "local_editions"
-  - "gift_easy"
-status: "v1_candidate"
-name_jp: "八ツ橋"
-brand: "Shogoin / Otabe / Honke Nishio"
+- local_editions
+- gift_easy
+status: v1_candidate
+name_jp: 八ツ橋
+brand: Shogoin / Otabe / Honke Nishio
 where_found:
-  - "Kyoto stations and shops"
-price_yen: "600-1500"
-what_it_is: "Cinnamon-flavored mochi triangles with sweet bean center."
-why_travelers_care: "Kyoto-specific omiyage."
+- Kyoto stations and shops
+price_yen: 600-1500
+what_it_is: Cinnamon-flavored mochi triangles with sweet bean center.
+why_travelers_care: Kyoto-specific omiyage.
 risk_flags:
-  - "allergen-wheat-soy"
+- allergen-wheat-soy
 source_links:
-  - "shogoin.co.jp"
-confidence: "high"
+- shogoin.co.jp
+confidence: high
 trip_score: 8
 suitcase_score: 9
-
-description: Yatsuhashi. Kyoto cinnamon rice crackers shaped like little koto bridges; the old-school souvenir your suitcase smells like later.
+description: Yatsuhashi. Kyoto cinnamon rice crackers shaped like little koto bridges;
+  the old-school souvenir your suitcase smells like later.
 english_name: Shogoin Yatsuhashi
 japanese_name: 聖護院八ッ橋
 subcategory: Kyoto wagashi
@@ -35,3 +35,4 @@ enrichment_confidence: high
 enrichment_source_url: https://shop.shogoin.co.jp/p/item-detail/detail/i10.html
 enrichment_date: '2026-05-19'
 image: /products/yatsuhashi-kyoto.webp
+safety_flags: []

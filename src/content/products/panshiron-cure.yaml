@@ -1,35 +1,36 @@
-id: "JF-0276"
-slug: "panshiron-cure"
-name_en: "Panshiron Cure"
-category: "other"
+id: JF-0276
+slug: panshiron-cure
+name_en: Panshiron Cure
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "パンシロンキュア"
-brand: "Rohto"
+- day_one_fixes
+status: ready
+name_jp: パンシロンキュア
+brand: Rohto
 where_found:
-  - "Rohto Pharma"
-  - "drugstores"
-  - "Welcia"
-  - "Yodobashi"
-price_yen: "~¥1,000"
-what_it_is: "Stomach medicine."
-why_travelers_care: "Useful travel-stomach candidate but should not be generalized without pharmacist/ingredient caution."
+- Rohto Pharma
+- drugstores
+- Welcia
+- Yodobashi
+price_yen: ~¥1,000
+what_it_is: Stomach medicine.
+why_travelers_care: Useful travel-stomach candidate but should not be generalized
+  without pharmacist/ingredient caution.
 risk_flags:
-  - "medicine"
-  - "regulated"
-verification_notes: "Verify ingredients, legal import, and safety language."
+- medicine
+- regulated
+verification_notes: Verify ingredients, legal import, and safety language.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 9
 suitcase_score: 7
-launch_category: "drugstore"
-fill_type: "verified"
-display_strategy: "show_all"
-sub_chip: "meds"
-
-description: Panshiron Cure. Stomach tablets for heartburn, acid reflux, and the ramen bowl that fought back. Drugstore rescue after rich food goes rogue.
+launch_category: drugstore
+fill_type: verified
+display_strategy: show_all
+sub_chip: meds
+description: Panshiron Cure. Stomach tablets for heartburn, acid reflux, and the ramen
+  bowl that fought back. Drugstore rescue after rich food goes rogue.
 english_name: Panshiron Cure SP Tablets
 japanese_name: パンシロンキュアSP錠
 subcategory: stomach medicine
@@ -42,3 +43,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://jp.rohto.com/pansiron/cure-s/
 enrichment_date: '2026-05-19'
 image: /products/panshiron-cure.webp
+safety_flags: []

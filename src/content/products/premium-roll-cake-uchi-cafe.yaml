@@ -1,31 +1,31 @@
-id: "JF-0243"
-slug: "premium-roll-cake-uchi-cafe"
-name_en: "Premium Roll Cake (Uchi Cafe)"
-category: "konbini"
+id: JF-0243
+slug: premium-roll-cake-uchi-cafe
+name_en: Premium Roll Cake (Uchi Cafe)
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "Lawson"
-price_yen: "180-200"
-what_it_is: "Single-serve roll cake with whipped cream, ate-with-spoon design."
-why_travelers_care: "Convenience store dessert that punches above its weight."
+- Lawson
+price_yen: 180-200
+what_it_is: Single-serve roll cake with whipped cream, ate-with-spoon design.
+why_travelers_care: Convenience store dessert that punches above its weight.
 risk_flags:
-  - "perishable, allergen-dairy-wheat-egg"
+- perishable, allergen-dairy-wheat-egg
 source_links:
-  - "lawson.co.jp/recommend/uchicafe"
-  - "https://www.lawson.co.jp/recommend/original/detail/1473886_1996.html"
-  - "https://www.lawson.co.jp/recommend/original/dessert/"
-confidence: "high"
+- lawson.co.jp/recommend/uchicafe
+- https://www.lawson.co.jp/recommend/original/detail/1473886_1996.html
+- https://www.lawson.co.jp/recommend/original/dessert/
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "sweet"
-name_jp: "プレミアムロールケーキ"
-agent_notes: "Lawson Uchi Café signature item"
-
-description: Lawson Uchi Café Premium Roll Cake. Sponge ring with a huge cream center. Lawson's dessert fridge flex, eaten with a tiny spoon in your hotel room.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: sweet
+name_jp: プレミアムロールケーキ
+agent_notes: Lawson Uchi Café signature item
+description: Lawson Uchi Café Premium Roll Cake. Sponge ring with a huge cream center.
+  Lawson's dessert fridge flex, eaten with a tiny spoon in your hotel room.
 english_name: Lawson Uchi Café Premium Roll Cake
 japanese_name: プレミアムロールケーキ
 subcategory: dessert

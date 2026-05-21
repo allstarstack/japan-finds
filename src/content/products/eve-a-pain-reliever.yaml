@@ -1,36 +1,37 @@
-id: "JF-0130"
-slug: "eve-a-pain-reliever"
-name_en: "Eve A Pain Reliever"
-category: "donki-drugstore"
+id: JF-0130
+slug: eve-a-pain-reliever
+name_en: Eve A Pain Reliever
+category: donki-drugstore
 intent:
-  - "stock_up"
-status: "ready"
+- stock_up
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "600-1200"
-what_it_is: "Ibuprofen-based pain reliever, common headache go-to in Japan."
-why_travelers_care: "Easier-on-stomach formula vs Loxonin for some travelers."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: 600-1200
+what_it_is: Ibuprofen-based pain reliever, common headache go-to in Japan.
+why_travelers_care: Easier-on-stomach formula vs Loxonin for some travelers.
 risk_flags:
-  - "medicine/regulated, allergen-NSAID"
-  - "NSAID"
-verification_notes: "Standard ibuprofen; no special reason to import unless familiar with brand"
+- medicine/regulated, allergen-NSAID
+- NSAID
+verification_notes: Standard ibuprofen; no special reason to import unless familiar
+  with brand
 source_links:
-  - "ssp.co.jp/eve"
-  - "https://www.ssp.co.jp/product/detail/evea/"
-  - "https://www.ssp.co.jp/eve/products/evea/"
-confidence: "high"
+- ssp.co.jp/eve
+- https://www.ssp.co.jp/product/detail/evea/
+- https://www.ssp.co.jp/eve/products/evea/
+confidence: high
 trip_score: 5
 suitcase_score: 9
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "イブA錠"
-agent_notes: "Contains ibuprofen"
-
-description: EVE A tablets. Ibuprofen painkiller, easy to find when cramps or headaches interrupt sightseeing.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: イブA錠
+agent_notes: Contains ibuprofen
+description: EVE A tablets. Ibuprofen painkiller, easy to find when cramps or headaches
+  interrupt sightseeing.
 english_name: EVE A Tablets
 japanese_name: イブA錠
 subcategory: painkiller

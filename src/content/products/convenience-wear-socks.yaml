@@ -1,32 +1,32 @@
-id: "JF-0247"
-slug: "convenience-wear-socks"
-name_en: "Convenience Wear socks"
-category: "konbini"
+id: JF-0247
+slug: convenience-wear-socks
+name_en: Convenience Wear socks
+category: konbini
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "FamilyMart"
-price_yen: "~¥400–¥600"
-what_it_is: "Basic socks and apparel sold at FamilyMart."
-why_travelers_care: "Immediate fix for wet socks, laundry gaps, or packing mistakes."
+- FamilyMart
+price_yen: ~¥400–¥600
+what_it_is: Basic socks and apparel sold at FamilyMart.
+why_travelers_care: Immediate fix for wet socks, laundry gaps, or packing mistakes.
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Confirm sizes and current colors."
+- easy to buy outside Japan
+verification_notes: Confirm sizes and current colors.
 source_links:
-  - "https://www.family.co.jp/for_tourist/en.html"
-  - "https://www.family.co.jp/goods/cw.html"
-  - "https://www.family.co.jp/goods/cw/7410895.html"
-confidence: "high"
+- https://www.family.co.jp/for_tourist/en.html
+- https://www.family.co.jp/goods/cw.html
+- https://www.family.co.jp/goods/cw/7410895.html
+confidence: high
 trip_score: 8
 suitcase_score: 7
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "コンビニエンスウェア ラインソックス"
-agent_notes: "FamilyMart x Hiroshi Ochiai line"
-
-description: Convenience Wear socks. FamilyMart turned emergency socks into streetwear; white with the green-blue stripe is the flex.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: コンビニエンスウェア ラインソックス
+agent_notes: FamilyMart x Hiroshi Ochiai line
+description: Convenience Wear socks. FamilyMart turned emergency socks into streetwear;
+  white with the green-blue stripe is the flex.
 english_name: Convenience Wear Line Socks
 japanese_name: ラインソックス コンビニホワイト
 subcategory: socks
@@ -37,3 +37,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.family.co.jp/goods/cw/7410895.html
 enrichment_date: '2026-05-19'
 image: /products/convenience-wear-socks.webp
+safety_flags: []

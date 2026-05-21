@@ -1,32 +1,32 @@
-id: "JF-0413"
-slug: "press-butter-sand"
-name_en: "Press Butter Sand"
-category: "snacks"
+id: JF-0413
+slug: press-butter-sand
+name_en: Press Butter Sand
+category: snacks
 intent:
-  - "gift_easy"
-  - "bring_home"
-status: "ready"
-name_jp: "プレスバターサンド"
-brand: "BAKE Inc."
+- gift_easy
+- bring_home
+status: ready
+name_jp: プレスバターサンド
+brand: BAKE Inc.
 where_found:
-  - "Tokyo Station"
-  - "Solamachi"
-price_yen: "1300-1700"
-what_it_is: "Butter caramel + butter cream sandwich cookie, signature embossed logo."
-why_travelers_care: "Visual gift, durable."
+- Tokyo Station
+- Solamachi
+price_yen: 1300-1700
+what_it_is: Butter caramel + butter cream sandwich cookie, signature embossed logo.
+why_travelers_care: Visual gift, durable.
 risk_flags:
-  - "allergen-dairy-wheat-egg"
-verification_notes: "Check limited flavors and shelf life."
+- allergen-dairy-wheat-egg
+verification_notes: Check limited flavors and shelf life.
 source_links:
-  - "buttersand.com"
-confidence: "high"
+- buttersand.com
+confidence: high
 trip_score: 9
 suitcase_score: 9
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: PRESS BUTTER SAND. Crisp pressed butter cookie with buttercream and caramel inside. Tokyo Station gift-box energy, minus the fragile cake drama.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: PRESS BUTTER SAND. Crisp pressed butter cookie with buttercream and caramel
+  inside. Tokyo Station gift-box energy, minus the fragile cake drama.
 english_name: PRESS BUTTER SAND
 japanese_name: プレスバターサンド
 subcategory: butter sandwich cookie

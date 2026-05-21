@@ -1,29 +1,29 @@
-id: "JF-0370"
-slug: "senka-perfect-whip-cleanser"
-name_en: "Senka Perfect Whip Cleanser"
-category: "skincare"
+id: JF-0370
+slug: senka-perfect-whip-cleanser
+name_en: Senka Perfect Whip Cleanser
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "専科 パーフェクトホイップ"
-brand: "Shiseido"
+- stock_up
+status: ready
+name_jp: 専科 パーフェクトホイップ
+brand: Shiseido
 where_found:
-  - "All drugstores"
-price_yen: "400-700"
-what_it_is: "Foaming face cleanser, internet-famous for dense foam."
-why_travelers_care: "Cult cleanser, very cheap, content-friendly foam."
+- All drugstores
+price_yen: 400-700
+what_it_is: Foaming face cleanser, internet-famous for dense foam.
+why_travelers_care: Cult cleanser, very cheap, content-friendly foam.
 risk_flags:
-  - "skincare/cosmetic claim"
+- skincare/cosmetic claim
 source_links:
-  - "shiseido.co.jp/senka"
-confidence: "high"
+- shiseido.co.jp/senka
+confidence: high
 trip_score: 9
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Senka Perfect Whip cleanser. Foamy face wash, cheap and everywhere; the blue tube people grab when they want Japan drugstore skincare without reading essays.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Senka Perfect Whip cleanser. Foamy face wash, cheap and everywhere; the
+  blue tube people grab when they want Japan drugstore skincare without reading essays.
 english_name: Senka Perfect Whip Cleansing Foam
 japanese_name: 専科 パーフェクトホイップ
 subcategory: face cleanser
@@ -38,3 +38,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://japanesetaste.com/products/senka-perfect-whip-cleansing-foam-120g
 enrichment_date: '2026-05-19'
 image: /products/senka-perfect-whip-cleanser.webp
+safety_flags: []

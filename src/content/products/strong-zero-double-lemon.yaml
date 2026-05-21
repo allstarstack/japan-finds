@@ -1,34 +1,36 @@
-id: "JF-0282"
-slug: "strong-zero-double-lemon"
-name_en: "Strong Zero Double Lemon"
-category: "other"
+id: JF-0282
+slug: strong-zero-double-lemon
+name_en: Strong Zero Double Lemon
+category: other
 intent:
-  - "content_only"
-status: "ready"
-name_jp: "ストロングゼロ ダブルレモン"
-brand: "Suntory"
+- content_only
+status: ready
+name_jp: ストロングゼロ ダブルレモン
+brand: Suntory
 where_found:
-  - "Suntory official"
-  - "konbini"
-  - "supermarkets"
-price_yen: "~¥160"
-what_it_is: "High-ABV chuhai."
-why_travelers_care: "Meme status but should not be a main recommendation; alcohol risk."
+- Suntory official
+- konbini
+- supermarkets
+price_yen: ~¥160
+what_it_is: High-ABV chuhai.
+why_travelers_care: Meme status but should not be a main recommendation; alcohol risk.
 risk_flags:
-  - "liquid"
-  - "alcohol"
-verification_notes: "Verify current ABV/flavor lineup. Steven should avoid grapefruit variants."
+- liquid
+- alcohol
+verification_notes: Verify current ABV/flavor lineup. Steven should avoid grapefruit
+  variants.
 source_links:
-  - "User-pasted response"
-confidence: "high"
+- User-pasted response
+confidence: high
 trip_score: 7
 suitcase_score: 1
-launch_category: "konbini"
-fill_type: "verified"
-display_strategy: "show_all"
-sub_chip: "drink"
-
-description: Strong Zero Double Lemon. 9% lemon chu-hi that tastes friendly until it files paperwork against your plans. The classic cheap can after a long konbini run.
+launch_category: konbini
+fill_type: verified
+display_strategy: show_all
+sub_chip: drink
+description: Strong Zero Double Lemon. 9% lemon chu-hi that tastes friendly until
+  it files paperwork against your plans. The classic cheap can after a long konbini
+  run.
 english_name: Suntory -196 Strong Zero Double Lemon
 japanese_name: サントリー -196 ストロングゼロ ダブルレモン
 subcategory: chu-hi

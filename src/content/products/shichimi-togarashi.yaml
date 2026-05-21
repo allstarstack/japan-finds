@@ -1,38 +1,38 @@
-id: "JF-0123"
-slug: "shichimi-togarashi"
-name_en: "Shichimi togarashi"
-category: "donki-drugstore"
+id: JF-0123
+slug: shichimi-togarashi
+name_en: Shichimi togarashi
+category: donki-drugstore
 intent:
-  - "bring_home"
-status: "ready"
+- bring_home
+status: ready
 where_found:
-  - "Yawataya Isogoro"
-  - "Aeon"
-  - "Ito-Yokado"
-  - "Don Quijote"
-price_yen: "~¥300–¥900"
-what_it_is: "Japanese seven-spice chili blend."
-why_travelers_care: "Tiny, useful, shelf-stable, good for food-loving travelers."
+- Yawataya Isogoro
+- Aeon
+- Ito-Yokado
+- Don Quijote
+price_yen: ~¥300–¥900
+what_it_is: Japanese seven-spice chili blend.
+why_travelers_care: Tiny, useful, shelf-stable, good for food-loving travelers.
 risk_flags:
-  - "spice"
-  - "allergen possible"
-  - "citrus_ingestible"
-verification_notes: "Verify brand and spice ingredients."
+- spice
+- allergen possible
+- citrus_ingestible
+verification_notes: Verify brand and spice ingredients.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-  - "https://www.yawataya.co.jp/products/"
-  - "https://www.sbfoods.co.jp/products/catalog/products_detail/00434.html"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+- https://www.yawataya.co.jp/products/
+- https://www.sbfoods.co.jp/products/catalog/products_detail/00434.html
+confidence: medium
 trip_score: 8
 suitcase_score: 9
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "七味唐辛子"
-agent_notes: "Traditional blends commonly include citrus peel"
-
-description: Yawataya Isogoro shichimi. Seven-spice chili in the classic red tin; shake it on soba, udon, yakitori, and bland decisions.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 七味唐辛子
+agent_notes: Traditional blends commonly include citrus peel
+description: Yawataya Isogoro shichimi. Seven-spice chili in the classic red tin;
+  shake it on soba, udon, yakitori, and bland decisions.
 english_name: Yawataya Isogoro Shichimi Togarashi
 japanese_name: 八幡屋礒五郎 七味唐辛子
 subcategory: spice
@@ -46,3 +46,4 @@ enrichment_confidence: high
 enrichment_source_url: https://shop.yawataya.co.jp/item-detail/1155961
 enrichment_date: '2026-05-19'
 image: /products/shichimi-togarashi.webp
+safety_flags: []

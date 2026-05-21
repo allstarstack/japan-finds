@@ -1,33 +1,33 @@
-id: "JF-0389"
-slug: "nivea-uv-super-water-gel"
-name_en: "Nivea UV Super Water Gel"
-category: "skincare"
+id: JF-0389
+slug: nivea-uv-super-water-gel
+name_en: Nivea UV Super Water Gel
+category: skincare
 intent:
-  - "stock_up"
-status: "ready"
-name_jp: "ニベアUV スーパーウォータージェル"
-brand: "Kao / Nivea Japan"
+- stock_up
+status: ready
+name_jp: ニベアUV スーパーウォータージェル
+brand: Kao / Nivea Japan
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥800–¥1,200"
-what_it_is: "Large pump or bottle sunscreen gel."
-why_travelers_care: "Practical everyday sunscreen with good value in Japan."
+- Drugstores
+- Donki
+price_yen: ~¥800–¥1,200
+what_it_is: Large pump or bottle sunscreen gel.
+why_travelers_care: Practical everyday sunscreen with good value in Japan.
 risk_flags:
-  - "liquid"
-  - "skincare/cosmetic claim"
-verification_notes: "Confirm Japanese formula and size."
+- liquid
+- skincare/cosmetic claim
+verification_notes: Confirm Japanese formula and size.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-confidence: "medium"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+confidence: medium
 trip_score: 8
 suitcase_score: 7
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Nivea UV Super Water Gel. SPF50 gel sunscreen that feels more lotion than beach armor. Daily city sunscreen, not the waterproof pool-day one.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Nivea UV Super Water Gel. SPF50 gel sunscreen that feels more lotion
+  than beach armor. Daily city sunscreen, not the waterproof pool-day one.
 english_name: Nivea UV Super Water Gel SPF50
 japanese_name: ニベアUV ウォータージェルSPF50
 subcategory: sunscreen
@@ -41,3 +41,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.nivea.co.jp/products/watergel-49013012986900052.html
 enrichment_date: '2026-05-19'
 image: /products/nivea-uv-super-water-gel.webp
+safety_flags: []

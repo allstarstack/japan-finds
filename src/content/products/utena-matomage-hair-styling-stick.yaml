@@ -1,34 +1,34 @@
-id: "JF-0396"
-slug: "utena-matomage-hair-styling-stick"
-name_en: "Utena Matomage hair styling stick"
-category: "skincare"
+id: JF-0396
+slug: utena-matomage-hair-styling-stick
+name_en: Utena Matomage hair styling stick
+category: skincare
 intent:
-  - "day_one_fixes"
-status: "ready"
-name_jp: "マトメージュ"
-brand: "Utena"
+- day_one_fixes
+status: ready
+name_jp: マトメージュ
+brand: Utena
 where_found:
-  - "Drugstores"
-  - "Donki"
-price_yen: "~¥500–¥800"
-what_it_is: "Wax stick for flyaways and hair smoothing."
-why_travelers_care: "Useful humidity fix; small and cheap."
+- Drugstores
+- Donki
+price_yen: ~¥500–¥800
+what_it_is: Wax stick for flyaways and hair smoothing.
+why_travelers_care: Useful humidity fix; small and cheap.
 risk_flags:
-  - "cosmetic claim"
-  - "fragrance"
-verification_notes: "Check formula and hair type."
+- cosmetic claim
+- fragrance
+verification_notes: Check formula and hair type.
 source_links:
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.donki.com/en/"
-  - "https://www.cosme.net/"
-confidence: "high"
+- https://www.matsukiyococokara-online.com/
+- https://www.donki.com/en/
+- https://www.cosme.net/
+confidence: high
 trip_score: 8
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Matomage hair styling stick. Swipe-on wax for flyaways and bangs; drugstore armor for when humidity starts freelancing.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Matomage hair styling stick. Swipe-on wax for flyaways and bangs; drugstore
+  armor for when humidity starts freelancing.
 english_name: Utena Matomage Hair Styling Stick Regular
 japanese_name: マトメージュ まとめ髪スティック レギュラー
 subcategory: hair styling
@@ -42,3 +42,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.utena.co.jp/products/brand/matomage/matomage-stick-r.html
 enrichment_date: '2026-05-19'
 image: /products/utena-matomage-hair-styling-stick.webp
+safety_flags: []

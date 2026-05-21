@@ -1,33 +1,33 @@
-id: "JF-0337"
-slug: "momiji-manju"
-name_en: "Momiji Manju"
-category: "snacks"
+id: JF-0337
+slug: momiji-manju
+name_en: Momiji Manju
+category: snacks
 intent:
-  - "local_editions"
-status: "ready"
-name_jp: "もみじ饅頭"
-brand: "Various Hiroshima makers"
+- local_editions
+status: ready
+name_jp: もみじ饅頭
+brand: Various Hiroshima makers
 where_found:
-  - "Hiroshima"
-  - "Miyajima"
-  - "airports/stations"
-price_yen: "~¥800–¥1,500"
-what_it_is: "Maple-leaf shaped cake with fillings."
-why_travelers_care: "Readable regional gift from Hiroshima/Miyajima."
+- Hiroshima
+- Miyajima
+- airports/stations
+price_yen: ~¥800–¥1,500
+what_it_is: Maple-leaf shaped cake with fillings.
+why_travelers_care: Readable regional gift from Hiroshima/Miyajima.
 risk_flags:
-  - "allergen"
-  - "fragile"
-verification_notes: "Check filling and shelf life."
+- allergen
+- fragile
+verification_notes: Check filling and shelf life.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "medium"
+- https://www.japan-guide.com/e/e2450.html
+confidence: medium
 trip_score: 8
 suitcase_score: 7
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Momiji manju. Maple-leaf cake with anko inside. Hiroshima's souvenir energy, shaped like fall and boxed for train-station gifting.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Momiji manju. Maple-leaf cake with anko inside. Hiroshima's souvenir
+  energy, shaped like fall and boxed for train-station gifting.
 english_name: Momiji Manju
 japanese_name: もみじ饅頭
 subcategory: regional souvenir sweet

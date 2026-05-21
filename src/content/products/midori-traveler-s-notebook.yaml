@@ -1,32 +1,34 @@
-id: "JF-0430"
-slug: "midori-traveler-s-notebook"
-name_en: "Midori Traveler's Notebook"
-category: "stationery"
+id: JF-0430
+slug: midori-traveler-s-notebook
+name_en: Midori Traveler's Notebook
+category: stationery
 intent:
-  - "bring_home"
-  - "make_it_yours"
-status: "ready"
-name_jp: "ミドリ トラベラーズノート"
-brand: "Designphil / Midori"
+- bring_home
+- make_it_yours
+status: ready
+name_jp: ミドリ トラベラーズノート
+brand: Designphil / Midori
 where_found:
-  - "Travelers Company official"
-  - "Loft"
-  - "Tokyu Hands"
-  - "Itoya"
-price_yen: "5000-9000 + refills"
-what_it_is: "Leather pass-through notebook, refill-based system, infinite customization."
-why_travelers_care: "Cult product, stamp + sticker collection moment, customization base."
-verification_notes: "Available abroad but Japan flagship Tokyo Station has limited editions"
+- Travelers Company official
+- Loft
+- Tokyu Hands
+- Itoya
+price_yen: 5000-9000 + refills
+what_it_is: Leather pass-through notebook, refill-based system, infinite customization.
+why_travelers_care: Cult product, stamp + sticker collection moment, customization
+  base.
+verification_notes: Available abroad but Japan flagship Tokyo Station has limited
+  editions
 source_links:
-  - "travelers-company.com"
-confidence: "high"
+- travelers-company.com
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: TRAVELER'S Notebook. Leather cover plus refill system for tickets, sketches, stamps, and mild stationery obsession. The notebook that makes receipts feel important.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: TRAVELER'S Notebook. Leather cover plus refill system for tickets, sketches,
+  stamps, and mild stationery obsession. The notebook that makes receipts feel important.
 english_name: TRAVELER'S Notebook
 japanese_name: トラベラーズノート
 subcategory: notebook
@@ -40,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://travelerscompanyusa.com/
 enrichment_date: '2026-05-19'
 image: /products/midori-traveler-s-notebook.webp
+safety_flags: []

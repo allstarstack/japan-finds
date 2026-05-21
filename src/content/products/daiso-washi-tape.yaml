@@ -1,29 +1,29 @@
-id: "JF-0012"
-slug: "daiso-washi-tape"
-name_en: "Daiso Washi Tape"
-category: "100-yen"
+id: JF-0012
+slug: daiso-washi-tape
+name_en: Daiso Washi Tape
+category: 100-yen
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "和紙テープ"
-brand: "Daiso"
+- stock_up
+- bring_home
+status: ready
+name_jp: 和紙テープ
+brand: Daiso
 where_found:
-  - "Daiso"
-  - "Seria"
-price_yen: "110"
-what_it_is: "Decorative paper tape, hundreds of designs."
-why_travelers_care: "Stationery haul staple, weighs nothing."
+- Daiso
+- Seria
+price_yen: '110'
+what_it_is: Decorative paper tape, hundreds of designs.
+why_travelers_care: Stationery haul staple, weighs nothing.
 source_links:
-  - "daiso-sangyo.co.jp"
-confidence: "high"
+- daiso-sangyo.co.jp
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "hundred_yen"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Daiso washi tape. Paper masking tape for labels, gift wrap, and tiny stationery chaos.
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+description: Daiso washi tape. Paper masking tape for labels, gift wrap, and tiny
+  stationery chaos.
 english_name: Daiso Washi Masking Tape
 japanese_name: マスキングテープ（鉛筆でも書けるテープ、ホワイト）
 subcategory: stationery
@@ -35,3 +35,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://jp.daisonet.com/products/4550480517995?srsltid=AfmBOorcNiAmPE7bRi8-wYc6b1v2rmWi2ecLYpVnGo11WCMNZyGrLXRp
 enrichment_date: '2026-05-19'
 image: /products/daiso-washi-tape.webp
+safety_flags: []

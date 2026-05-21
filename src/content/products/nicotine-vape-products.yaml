@@ -1,29 +1,29 @@
-id: "JF-0067"
-slug: "nicotine-vape-products"
-name_en: "Nicotine/vape products"
-category: "other"
+id: JF-0067
+slug: nicotine-vape-products
+name_en: Nicotine/vape products
+category: other
 intent:
-  - "content_only"
-status: "content_only"
-name_jp: "ニコチン製品・電子タバコ"
-brand: "Various"
+- content_only
+status: content_only
+name_jp: ニコチン製品・電子タバコ
+brand: Various
 where_found:
-  - "Tobacco shops"
-  - "konbini depending item"
-price_yen: "varies"
-what_it_is: "Nicotine or vaping-related products."
-why_travelers_care: "Regulated category; should not be promoted as a find."
+- Tobacco shops
+- konbini depending item
+price_yen: varies
+what_it_is: Nicotine or vaping-related products.
+why_travelers_care: Regulated category; should not be promoted as a find.
 risk_flags:
-  - "nicotine"
-  - "regulated"
-  - "age-restricted"
-verification_notes: "Exclude from shopping recommendations."
+- nicotine
+- regulated
+- age-restricted
+verification_notes: Exclude from shopping recommendations.
 source_links:
-  - "https://www.japan-guide.com/e/e2450.html"
-confidence: "low"
+- https://www.japan-guide.com/e/e2450.html
+confidence: low
 trip_score: 1
-
-description: IQOS ILUMA i ONE. Heated tobacco device, not a cute tech souvenir. Adult-only counter item, with Japan rules tourists should read first.
+description: IQOS ILUMA i ONE. Heated tobacco device, not a cute tech souvenir. Adult-only
+  counter item, with Japan rules tourists should read first.
 english_name: IQOS ILUMA i ONE
 japanese_name: アイコス イルマ i ワン
 subcategory: heated tobacco device
@@ -35,3 +35,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.pmi.com/investor-relations/press-releases-and-events/press-releases-overview/press-release-details?newsId=27436
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

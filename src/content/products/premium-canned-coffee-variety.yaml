@@ -1,33 +1,33 @@
-id: "JF-0342"
-slug: "premium-canned-coffee-variety"
-name_en: "Premium canned coffee variety"
-category: "snacks"
+id: JF-0342
+slug: premium-canned-coffee-variety
+name_en: Premium canned coffee variety
+category: snacks
 intent:
-  - "try_in_japan"
-status: "ready"
-name_jp: "缶コーヒー"
-brand: "Boss / Georgia / Wonda / UCC"
+- try_in_japan
+status: ready
+name_jp: 缶コーヒー
+brand: Boss / Georgia / Wonda / UCC
 where_found:
-  - "Konbini"
-  - "vending machines"
-  - "Donki"
-price_yen: "~¥120–¥180"
-what_it_is: "Canned coffee, hot or cold, from vending machines/konbini."
-why_travelers_care: "Iconic Japan daily-life item; best tried on-site."
+- Konbini
+- vending machines
+- Donki
+price_yen: ~¥120–¥180
+what_it_is: Canned coffee, hot or cold, from vending machines/konbini.
+why_travelers_care: Iconic Japan daily-life item; best tried on-site.
 risk_flags:
-  - "liquid"
-  - "caffeine"
-verification_notes: "Not suitcase-worthy except collectors."
+- liquid
+- caffeine
+verification_notes: Not suitcase-worthy except collectors.
 source_links:
-  - "https://www.japan-guide.com/e/e2071.html"
-  - "https://www.donki.com/en/"
-confidence: "high"
+- https://www.japan-guide.com/e/e2071.html
+- https://www.donki.com/en/
+confidence: high
 trip_score: 8
-launch_category: "regional_food"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Boss Rainbow Mountain Blend. Canned coffee with milk, sugar, and serious vending-machine legacy. Grab it hot or cold when the train platform becomes breakfast.
+launch_category: regional_food
+fill_type: verified
+display_strategy: show_all
+description: Boss Rainbow Mountain Blend. Canned coffee with milk, sugar, and serious
+  vending-machine legacy. Grab it hot or cold when the train platform becomes breakfast.
 english_name: Boss Rainbow Mountain Blend
 japanese_name: ボス レインボーマウンテンブレンド
 subcategory: canned coffee

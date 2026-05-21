@@ -1,34 +1,34 @@
-id: "JF-0421"
-slug: "umaibo"
-name_en: "Umaibo"
-category: "snacks"
+id: JF-0421
+slug: umaibo
+name_en: Umaibo
+category: snacks
 intent:
-  - "bring_home"
-  - "gift_easy"
-status: "ready"
-name_jp: "うまい棒"
-brand: "Yaokin"
+- bring_home
+- gift_easy
+status: ready
+name_jp: うまい棒
+brand: Yaokin
 where_found:
-  - "Yaokin official"
-  - "LOHACO"
-  - "Rakuten"
-  - "Amazon JP"
-  - "dagashi shops"
-price_yen: "10-15"
-what_it_is: "10-yen puffed corn snack sticks, 30+ flavors."
-why_travelers_care: "Cheapest snack on earth, cult-favorite for bulk gifting."
+- Yaokin official
+- LOHACO
+- Rakuten
+- Amazon JP
+- dagashi shops
+price_yen: 10-15
+what_it_is: 10-yen puffed corn snack sticks, 30+ flavors.
+why_travelers_care: Cheapest snack on earth, cult-favorite for bulk gifting.
 risk_flags:
-  - "allergen-varies-by-flavor"
+- allergen-varies-by-flavor
 source_links:
-  - "yaokin.com"
-confidence: "high"
+- yaokin.com
+confidence: high
 trip_score: 8
 suitcase_score: 10
-launch_category: "snacks"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Umaibo. A cheap corn puff stick with cartoon chaos on the wrapper. Corn potage is the classic gateway flavor.
+launch_category: snacks
+fill_type: verified
+display_strategy: show_all
+description: Umaibo. A cheap corn puff stick with cartoon chaos on the wrapper. Corn
+  potage is the classic gateway flavor.
 english_name: Umaibo Corn Potage
 japanese_name: うまい棒 コーンポタージュ味
 subcategory: corn puff

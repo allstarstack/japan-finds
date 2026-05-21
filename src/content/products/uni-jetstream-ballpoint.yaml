@@ -1,30 +1,30 @@
-id: "JF-0441"
-slug: "uni-jetstream-ballpoint"
-name_en: "Uni Jetstream Ballpoint"
-category: "stationery"
+id: JF-0441
+slug: uni-jetstream-ballpoint
+name_en: Uni Jetstream Ballpoint
+category: stationery
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "ジェットストリーム"
-brand: "Mitsubishi Pencil"
+- stock_up
+- bring_home
+status: ready
+name_jp: ジェットストリーム
+brand: Mitsubishi Pencil
 where_found:
-  - "Mitsubishi Pencil official"
-  - "Amazon JP"
-  - "Yodobashi"
-price_yen: "150-1500"
-what_it_is: "Smooth low-viscosity ink, the everyday ballpoint reference."
-why_travelers_care: "Internationally recommended, multiple form factors including multi-pen."
+- Mitsubishi Pencil official
+- Amazon JP
+- Yodobashi
+price_yen: 150-1500
+what_it_is: Smooth low-viscosity ink, the everyday ballpoint reference.
+why_travelers_care: Internationally recommended, multiple form factors including multi-pen.
 source_links:
-  - "mpuni.co.jp"
-confidence: "high"
+- mpuni.co.jp
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Uni Jetstream ballpoint. Smooth, quick-drying ink in a cheap body; the pen people accidentally become weirdly loyal to.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Uni Jetstream ballpoint. Smooth, quick-drying ink in a cheap body; the
+  pen people accidentally become weirdly loyal to.
 english_name: Uni Jetstream Ballpoint
 japanese_name: ジェットストリーム ボールペン
 subcategory: stationery
@@ -39,3 +39,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.mpuni.co.jp/products/ballpoint_pens/jetstream/jetstream/standard/sxn_150.html
 enrichment_date: '2026-05-19'
 image: /products/uni-jetstream-ballpoint.webp
+safety_flags: []

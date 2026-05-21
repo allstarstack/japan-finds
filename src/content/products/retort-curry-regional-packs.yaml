@@ -1,37 +1,37 @@
-id: "JF-0119"
-slug: "retort-curry-regional-packs"
-name_en: "Retort curry regional packs"
-category: "donki-drugstore"
+id: JF-0119
+slug: retort-curry-regional-packs
+name_en: Retort curry regional packs
+category: donki-drugstore
 intent:
-  - "local_editions"
-status: "ready"
+- local_editions
+status: ready
 where_found:
-  - "Don Quijote"
-  - "Aeon"
-  - "airport souvenir shops"
-price_yen: "~¥300–¥800 each"
-what_it_is: "Shelf-stable curry pouches tied to regions or local meats/brands."
-why_travelers_care: "Great local edition item; very searchable and useful at home."
+- Don Quijote
+- Aeon
+- airport souvenir shops
+price_yen: ~¥300–¥800 each
+what_it_is: Shelf-stable curry pouches tied to regions or local meats/brands.
+why_travelers_care: Great local edition item; very searchable and useful at home.
 risk_flags:
-  - "food import rules"
-  - "liquid/gel"
-  - "meat possible"
-verification_notes: "Check customs rules, especially meat ingredients."
+- food import rules
+- liquid/gel
+- meat possible
+verification_notes: Check customs rules, especially meat ingredients.
 source_links:
-  - "https://www.donki.com/en/"
-  - "https://www.japan-guide.com/e/e2450.html"
-  - "https://www.hachi-online.net/"
-  - "https://www.s-bfoods.co.jp/products/retortcurry/"
-confidence: "medium"
+- https://www.donki.com/en/
+- https://www.japan-guide.com/e/e2450.html
+- https://www.hachi-online.net/
+- https://www.s-bfoods.co.jp/products/retortcurry/
+confidence: medium
 trip_score: 8
 suitcase_score: 8
-launch_category: "donki"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "ご当地レトルトカレー"
-agent_notes: "Regional packs vary"
-
-description: Yokosuka Navy Curry retort pack. Regional boil-in-bag curry, shelf-stable and built for the suitcase snack goblin.
+launch_category: donki
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: ご当地レトルトカレー
+agent_notes: Regional packs vary
+description: Yokosuka Navy Curry retort pack. Regional boil-in-bag curry, shelf-stable
+  and built for the suitcase snack goblin.
 english_name: Yachiyo Yokosuka Navy Curry Retort Pack
 japanese_name: ヤチヨ よこすか海軍カレー レトルト
 subcategory: retort curry
@@ -47,3 +47,4 @@ safety_flags:
 enrichment_confidence: low
 enrichment_source_url: https://market-tokyo.com/products/Yachiyo-Yokosuka-Navy-Curry-Retort-Packed-Beef-Curry-Medium-Hot-p692312573
 enrichment_date: '2026-05-19'
+image: null

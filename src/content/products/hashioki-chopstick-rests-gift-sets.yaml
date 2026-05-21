@@ -1,34 +1,34 @@
-id: "JF-0166"
-slug: "hashioki-chopstick-rests-gift-sets"
-name_en: "Hashioki (Chopstick Rests) Gift Sets"
-category: "other"
+id: JF-0166
+slug: hashioki-chopstick-rests-gift-sets
+name_en: Hashioki (Chopstick Rests) Gift Sets
+category: other
 intent:
-  - "gift_easy"
-  - "local_editions"
-status: "ready"
+- gift_easy
+- local_editions
+status: ready
 where_found:
-  - "Kappabashi"
-  - "Loft"
-  - "Hands"
-  - "department-store tableware floors"
-price_yen: "1000-5000"
-what_it_is: "Boxed sets of artisan chopstick rests."
-why_travelers_care: "Tiny, durable, decorative."
+- Kappabashi
+- Loft
+- Hands
+- department-store tableware floors
+price_yen: 1000-5000
+what_it_is: Boxed sets of artisan chopstick rests.
+why_travelers_care: Tiny, durable, decorative.
 risk_flags:
-  - "fragile"
+- fragile
 source_links:
-  - "general"
-  - "unknown"
-confidence: "high"
+- general
+- unknown
+confidence: high
 trip_score: 7
 suitcase_score: 9
-launch_category: "gift"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "箸置きセット"
-agent_notes: "No single product confirmed from input"
-
-description: Hashioki chopstick rests. Tiny tableware that makes dinner look ten times more intentional. Easy gift, impossible to explain why you bought six.
+launch_category: gift
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 箸置きセット
+agent_notes: No single product confirmed from input
+description: Hashioki chopstick rests. Tiny tableware that makes dinner look ten times
+  more intentional. Easy gift, impossible to explain why you bought six.
 english_name: Hashioki Chopstick Rest Gift Set
 japanese_name: 箸置きギフトセット
 subcategory: chopstick rest
@@ -41,3 +41,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://tsukushi-japan.com/products/hashioki-chopstick-rest-black-set-of-5
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

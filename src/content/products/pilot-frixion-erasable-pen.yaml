@@ -1,35 +1,35 @@
-id: "JF-0433"
-slug: "pilot-frixion-erasable-pen"
-name_en: "Pilot Frixion Erasable Pen"
-category: "stationery"
+id: JF-0433
+slug: pilot-frixion-erasable-pen
+name_en: Pilot Frixion Erasable Pen
+category: stationery
 intent:
-  - "stock_up"
-  - "bring_home"
-status: "ready"
-name_jp: "フリクション"
-brand: "Pilot"
+- stock_up
+- bring_home
+status: ready
+name_jp: フリクション
+brand: Pilot
 where_found:
-  - "Pilot webcatalog"
-  - "Tanomail"
-  - "Amazon JP"
-  - "Yodobashi"
-  - "konbini"
-price_yen: "180-400"
-what_it_is: "Friction-erasable gel pen — erases with rubber tip via friction heat."
-why_travelers_care: "International cult pen, multiple sub-formats (Ball, Slim, Point)."
+- Pilot webcatalog
+- Tanomail
+- Amazon JP
+- Yodobashi
+- konbini
+price_yen: 180-400
+what_it_is: Friction-erasable gel pen — erases with rubber tip via friction heat.
+why_travelers_care: International cult pen, multiple sub-formats (Ball, Slim, Point).
 risk_flags:
-  - "easy to buy outside Japan"
-verification_notes: "Available abroad but Japan SKU range much wider"
+- easy to buy outside Japan
+verification_notes: Available abroad but Japan SKU range much wider
 source_links:
-  - "pilot.co.jp/products/pen/erasable"
-confidence: "high"
+- pilot.co.jp/products/pen/erasable
+confidence: high
 trip_score: 9
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Pilot FriXion pen. Writes like a normal gel pen, erases with friction, and quietly fixes your mistakes. Stationery-shop classic for planners and overthinkers.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Pilot FriXion pen. Writes like a normal gel pen, erases with friction,
+  and quietly fixes your mistakes. Stationery-shop classic for planners and overthinkers.
 english_name: Pilot FriXion Ball Knock Erasable Pen
 japanese_name: パイロット フリクションボールノック
 subcategory: stationery pen
@@ -43,3 +43,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://www.pilot.co.jp/promotion/frixion/info/
 enrichment_date: '2026-05-19'
 image: /products/pilot-frixion-erasable-pen.webp
+safety_flags: []

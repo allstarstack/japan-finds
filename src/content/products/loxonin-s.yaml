@@ -1,36 +1,36 @@
-id: "JF-0134"
-slug: "loxonin-s"
-name_en: "Loxonin S"
-category: "donki-drugstore"
+id: JF-0134
+slug: loxonin-s
+name_en: Loxonin S
+category: donki-drugstore
 intent:
-  - "stock_up"
-status: "ready"
+- stock_up
+status: ready
 where_found:
-  - "Matsumoto Kiyoshi"
-  - "Welcia"
-  - "Sundrug"
-price_yen: "600-700"
-what_it_is: "Loxoprofen-based pain reliever, the heavy hitter."
-why_travelers_care: "Significantly stronger pain relief than Eve A; well-known recommendation."
+- Matsumoto Kiyoshi
+- Welcia
+- Sundrug
+price_yen: 600-700
+what_it_is: Loxoprofen-based pain reliever, the heavy hitter.
+why_travelers_care: Significantly stronger pain relief than Eve A; well-known recommendation.
 risk_flags:
-  - "medicine/regulated, allergen-NSAID"
-  - "NSAID"
-verification_notes: "Prescription-only in many countries; declare on customs forms"
+- medicine/regulated, allergen-NSAID
+- NSAID
+verification_notes: Prescription-only in many countries; declare on customs forms
 source_links:
-  - "lulu-lab.jp/loxonin-s"
-  - "https://www.daiichisankyo-hc.co.jp/products/details/loxonin-s/"
-  - "https://www.daiichisankyo-hc.co.jp/site_loxonin-s/naifuku/"
-confidence: "high"
+- lulu-lab.jp/loxonin-s
+- https://www.daiichisankyo-hc.co.jp/products/details/loxonin-s/
+- https://www.daiichisankyo-hc.co.jp/site_loxonin-s/naifuku/
+confidence: high
 trip_score: 7
 suitcase_score: 10
-launch_category: "drugstore"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "meds"
-name_jp: "ロキソニンS"
-agent_notes: "Contains loxoprofen"
-
-description: Loxonin S. NSAID painkiller, fast and no drowsy ingredient. Drugstore counter energy for headaches, cramps, and the trip-ending toothache.
+launch_category: drugstore
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: meds
+name_jp: ロキソニンS
+agent_notes: Contains loxoprofen
+description: Loxonin S. NSAID painkiller, fast and no drowsy ingredient. Drugstore
+  counter energy for headaches, cramps, and the trip-ending toothache.
 english_name: Loxonin S
 japanese_name: ロキソニンS
 subcategory: painkiller

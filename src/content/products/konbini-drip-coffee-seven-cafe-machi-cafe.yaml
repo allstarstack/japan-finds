@@ -1,33 +1,33 @@
-id: "JF-0222"
-slug: "konbini-drip-coffee-seven-cafe-machi-cafe"
-name_en: "Konbini Drip Coffee (Seven Cafe / Machi Cafe)"
-category: "konbini"
+id: JF-0222
+slug: konbini-drip-coffee-seven-cafe-machi-cafe
+name_en: Konbini Drip Coffee (Seven Cafe / Machi Cafe)
+category: konbini
 intent:
-  - "try_in_japan"
-status: "ready"
+- try_in_japan
+status: ready
 where_found:
-  - "7-Eleven"
-  - "Lawson"
-price_yen: "110-180"
-what_it_is: "Fresh-brewed drip coffee from in-store bean grinder."
-why_travelers_care: "Punches above price, the machine UI itself is content."
+- 7-Eleven
+- Lawson
+price_yen: 110-180
+what_it_is: Fresh-brewed drip coffee from in-store bean grinder.
+why_travelers_care: Punches above price, the machine UI itself is content.
 risk_flags:
-  - "perishable hot drink"
+- perishable hot drink
 source_links:
-  - "7-eleven.co.jp"
-  - "lawson.co.jp"
-  - "https://www.sej.co.jp/products/sevencafe/"
-  - "https://www.lawson.co.jp/recommend/original/machicafe/"
-confidence: "high"
+- 7-eleven.co.jp
+- lawson.co.jp
+- https://www.sej.co.jp/products/sevencafe/
+- https://www.lawson.co.jp/recommend/original/machicafe/
+confidence: high
 trip_score: 8
-launch_category: "konbini"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-sub_chip: "drink"
-name_jp: "セブンカフェ / マチカフェ"
-agent_notes: "Chain-specific in-store coffee lines"
-
-description: Konbini drip coffee. Push-button fresh coffee from Seven Cafe or Machi Cafe. Cheap, hot, reliable, and better than the hotel lobby machine.
+launch_category: konbini
+fill_type: creator_fill
+display_strategy: show_all
+sub_chip: drink
+name_jp: セブンカフェ / マチカフェ
+agent_notes: Chain-specific in-store coffee lines
+description: Konbini drip coffee. Push-button fresh coffee from Seven Cafe or Machi
+  Cafe. Cheap, hot, reliable, and better than the hotel lobby machine.
 english_name: Seven Cafe / Machi Cafe Drip Coffee
 japanese_name: セブンカフェ / マチカフェ ドリップコーヒー
 subcategory: coffee
@@ -39,3 +39,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.lawson.jp/en/product_service/product/
 enrichment_date: '2026-05-19'
+image: null
+safety_flags: []

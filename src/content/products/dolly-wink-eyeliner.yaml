@@ -1,34 +1,34 @@
-id: "JF-0377"
-slug: "dolly-wink-eyeliner"
-name_en: "Dolly Wink eyeliner"
-category: "skincare"
+id: JF-0377
+slug: dolly-wink-eyeliner
+name_en: Dolly Wink eyeliner
+category: skincare
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "ドーリーウインク アイライナー"
-brand: "Koji / Dolly Wink"
+- bring_home
+status: ready
+name_jp: ドーリーウインク アイライナー
+brand: Koji / Dolly Wink
 where_found:
-  - "Drugstores"
-  - "Loft"
-  - "@cosme"
-price_yen: "~¥1,300–¥1,700"
-what_it_is: "Liquid eyeliner line associated with Japanese makeup culture."
-why_travelers_care: "Small, readable beauty gift for makeup users."
+- Drugstores
+- Loft
+- '@cosme'
+price_yen: ~¥1,300–¥1,700
+what_it_is: Liquid eyeliner line associated with Japanese makeup culture.
+why_travelers_care: Small, readable beauty gift for makeup users.
 risk_flags:
-  - "skincare/cosmetic claim"
-verification_notes: "Check color and formula."
+- skincare/cosmetic claim
+verification_notes: Check color and formula.
 source_links:
-  - "https://www.loft.co.jp/store/"
-  - "https://www.cosme.net/"
-  - "https://www.matsukiyococokara-online.com/"
-confidence: "medium"
+- https://www.loft.co.jp/store/
+- https://www.cosme.net/
+- https://www.matsukiyococokara-online.com/
+confidence: medium
 trip_score: 7
 suitcase_score: 9
-launch_category: "skincare_beauty"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Dolly Wink liquid eyeliner. Ultra-thin brush, strong color, made for humidity days when your face has plans.
+launch_category: skincare_beauty
+fill_type: verified
+display_strategy: show_all
+description: Dolly Wink liquid eyeliner. Ultra-thin brush, strong color, made for
+  humidity days when your face has plans.
 english_name: Dolly Wink 5-Way Liquid Liner
 japanese_name: ドーリーウインク 5WAYリキッドライナー
 subcategory: eyeliner
@@ -42,3 +42,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://prtimes.jp/main/html/rd/p/000000055.000041854.html
 enrichment_date: '2026-05-19'
 image: /products/dolly-wink-eyeliner.webp
+safety_flags: []

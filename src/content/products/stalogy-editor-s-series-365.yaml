@@ -1,30 +1,31 @@
-id: "JF-0437"
-slug: "stalogy-editor-s-series-365"
-name_en: "Stalogy Editor's Series 365"
-category: "stationery"
+id: JF-0437
+slug: stalogy-editor-s-series-365
+name_en: Stalogy Editor's Series 365
+category: stationery
 intent:
-  - "bring_home"
-status: "ready"
-name_jp: "スタロジー"
-brand: "Nitto"
+- bring_home
+status: ready
+name_jp: スタロジー
+brand: Nitto
 where_found:
-  - "Nitto official"
-  - "Amazon JP"
-  - "Loft"
-  - "Itoya"
-price_yen: "1500-2500"
-what_it_is: "Thin daily notebook, designed by Nikkei Design."
-why_travelers_care: "Designer cult notebook."
+- Nitto official
+- Amazon JP
+- Loft
+- Itoya
+price_yen: 1500-2500
+what_it_is: Thin daily notebook, designed by Nikkei Design.
+why_travelers_care: Designer cult notebook.
 source_links:
-  - "stalogy.com"
-confidence: "high"
+- stalogy.com
+confidence: high
 trip_score: 6
 suitcase_score: 10
-launch_category: "stationery"
-fill_type: "verified"
-display_strategy: "show_all"
-
-description: Stalogy 365 Days Notebook. Thin-grid notebook with 368 pages and zero planner drama. Good for travel logs, content shot lists, and pretending life has structure.
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Stalogy 365 Days Notebook. Thin-grid notebook with 368 pages and zero
+  planner drama. Good for travel logs, content shot lists, and pretending life has
+  structure.
 english_name: Stalogy Editor's Series 365 Days Notebook
 japanese_name: スタロジー エディターズシリーズ 365デイズノート
 subcategory: notebook
@@ -37,4 +38,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.jennibick.com/products/stalogy-editors-series-365-days-notebook
 enrichment_date: '2026-05-19'
-image: /products/stalogy-editor-s-series-365.webp
+image: null
+safety_flags: []

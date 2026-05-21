@@ -1,37 +1,37 @@
-id: "JF-0189"
-slug: "disposable-bibs"
-name_en: "Disposable bibs"
-category: "other"
+id: JF-0189
+slug: disposable-bibs
+name_en: Disposable bibs
+category: other
 intent:
-  - "day_one_fixes"
-status: "ready"
+- day_one_fixes
+status: ready
 where_found:
-  - "Daiso"
-  - "Akachan Honpo"
-  - "Pigeon"
-price_yen: "~¥110–¥500"
-what_it_is: "Paper/plastic bibs for meals."
-why_travelers_care: "Restaurant and train snack mess solver."
+- Daiso
+- Akachan Honpo
+- Pigeon
+price_yen: ~¥110–¥500
+what_it_is: Paper/plastic bibs for meals.
+why_travelers_care: Restaurant and train snack mess solver.
 risk_flags:
-  - "plastic/paper"
-  - "small parts"
-verification_notes: "Check age/fit."
+- plastic/paper
+- small parts
+verification_notes: Check age/fit.
 source_links:
-  - "https://www.gltjp.com/en/article/item/21322/"
-  - "https://www.matsukiyococokara-online.com/"
-  - "https://www.gltjp.com/en/article/item/21292/"
-  - "https://jp.daisonet.com/products/4550480582191"
-  - "https://jp.daisonet.com/products/4550480295091"
-confidence: "medium"
+- https://www.gltjp.com/en/article/item/21322/
+- https://www.matsukiyococokara-online.com/
+- https://www.gltjp.com/en/article/item/21292/
+- https://jp.daisonet.com/products/4550480582191
+- https://jp.daisonet.com/products/4550480295091
+confidence: medium
 trip_score: 8
 suitcase_score: 8
-launch_category: "kids_family"
-fill_type: "creator_fill"
-display_strategy: "show_all"
-name_jp: "乳幼児お食事エプロン"
-agent_notes: "Daiso single-use bib confirmed"
-
-description: Disposable meal bibs. Tiny travel insurance for ramen, curry, and children with sauce-based agendas.
+launch_category: kids_family
+fill_type: creator_fill
+display_strategy: show_all
+name_jp: 乳幼児お食事エプロン
+agent_notes: Daiso single-use bib confirmed
+description: Disposable meal bibs. Tiny travel insurance for ramen, curry, and children
+  with sauce-based agendas.
 english_name: Clovis Baby Disposable Meal Bibs
 japanese_name: クロビスベビー 使い捨てお食事エプロン
 subcategory: travel bib
@@ -45,3 +45,4 @@ enrichment_confidence: medium
 enrichment_source_url: https://clovisbaby.jp/product/clovisbaby-bib/
 enrichment_date: '2026-05-19'
 image: /products/disposable-bibs.webp
+safety_flags: []

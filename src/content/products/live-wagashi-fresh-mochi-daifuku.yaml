@@ -1,28 +1,29 @@
-id: "JF-0051"
-slug: "live-wagashi-fresh-mochi-daifuku"
-name_en: "Live Wagashi (Fresh Mochi, Daifuku)"
-category: "other"
+id: JF-0051
+slug: live-wagashi-fresh-mochi-daifuku
+name_en: Live Wagashi (Fresh Mochi, Daifuku)
+category: other
 intent:
-  - "content_only"
-  - "try_in_japan"
-status: "hold"
-name_jp: "生菓子"
-brand: "Wagashi shops"
+- content_only
+- try_in_japan
+status: hold
+name_jp: 生菓子
+brand: Wagashi shops
 where_found:
-  - "Specialty shops"
-  - "depachika"
-price_yen: "300-2000"
-what_it_is: "Fresh wagashi has 1-3 day shelf life."
-why_travelers_care: "Eat there, don't bring home."
+- Specialty shops
+- depachika
+price_yen: 300-2000
+what_it_is: Fresh wagashi has 1-3 day shelf life.
+why_travelers_care: Eat there, don't bring home.
 risk_flags:
-  - "perishable"
+- perishable
 source_links:
-  - "general"
-confidence: "high"
+- general
+confidence: high
 trip_score: 0
 suitcase_score: 0
-
-description: Toraya Kobo daifuku. Fresh mochi wagashi with bean paste, made to be eaten quickly. Pick it up from a sweets counter and do not save it for later like a fool.
+description: Toraya Kobo daifuku. Fresh mochi wagashi with bean paste, made to be
+  eaten quickly. Pick it up from a sweets counter and do not save it for later like
+  a fool.
 english_name: Toraya Kobo Daifuku
 japanese_name: とらや工房 大福
 subcategory: fresh wagashi
@@ -36,3 +37,4 @@ enrichment_confidence: low
 enrichment_source_url: https://www.toraya-kobo.jp/en/menu/
 enrichment_date: '2026-05-19'
 image: /products/live-wagashi-fresh-mochi-daifuku.webp
+safety_flags: []
