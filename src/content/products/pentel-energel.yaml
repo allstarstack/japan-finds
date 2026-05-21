@@ -38,5 +38,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.pentel.co.jp/products/ballpointpen/energel/
 enrichment_date: '2026-05-19'
-image: null
+image: /products/pentel-energel.webp
 safety_flags: []

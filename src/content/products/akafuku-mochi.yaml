@@ -43,5 +43,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://www.akafuku.co.jp/en/
 enrichment_date: '2026-05-19'
-image: null
+image: /products/akafuku-mochi.webp
 safety_flags: []

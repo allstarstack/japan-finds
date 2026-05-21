@@ -42,5 +42,5 @@ where_to_buy:
 enrichment_confidence: medium
 enrichment_source_url: https://jp.rohto.com/pansiron/cure-s/
 enrichment_date: '2026-05-19'
-image: null
+image: /products/panshiron-cure.webp
 safety_flags: []

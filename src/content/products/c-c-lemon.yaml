@@ -41,5 +41,5 @@ where_to_buy:
 enrichment_confidence: low
 enrichment_source_url: https://www.amazon.com/Product-Japan-Suntory-Lemon-Vitamin/dp/B07ZDM5V8D
 enrichment_date: '2026-05-19'
-image: null
+image: /products/c-c-lemon.webp
 safety_flags: []

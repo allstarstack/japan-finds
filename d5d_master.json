@@ -1,0 +1,1666 @@
+[
+  {
+    "slug": "551-horai-pork-buns",
+    "product_name": "551 Horai pork buns",
+    "image_url": "https://www.551horai.co.jp/wp/wp-content/uploads/2019/06/butaman_pc-1.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "akafuku-mochi",
+    "product_name": "Akafuku mochi",
+    "image_url": "https://www.akafuku.co.jp/wp/wp-content/uploads/2019/03/akafuku_8_cut-min.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "animal-chair-socks",
+    "product_name": "Animal chair socks",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single named SKU; 'animal chair socks' is a generic 100-yen-shop category, so an exact product image would be arbitrary."
+  },
+  {
+    "slug": "aomori-apple-products-juice-pie-apple-senbei",
+    "product_name": "Aomori Apple Products (Juice, Pie, Apple Senbei)",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Input combines multiple broad product types rather than one SKU; exact product image cannot be selected without a named brand/SKU."
+  },
+  {
+    "slug": "assorted-regional-kitkat-packs",
+    "product_name": "Assorted regional KitKat packs",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single SKU; regional KitKat packs vary by flavor, region, and assortment, so choosing one image would be arbitrary."
+  },
+  {
+    "slug": "awamori-okinawan-distilled-spirit",
+    "product_name": "Awamori (Okinawan Distilled Spirit)",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic alcoholic beverage category, not a single named SKU; no exact product image can be selected."
+  },
+  {
+    "slug": "baked-cheese-tart-bake",
+    "product_name": "Baked Cheese Tart (BAKE)",
+    "image_url": "https://cheesetart.com/wp-content/uploads/2025/02/01_tart_1_1-640x640.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official BAKE image URL is exact and direct, but the site returned 403 to the crawler; may still work in a browser/CDN context."
+  },
+  {
+    "slug": "bandai-gunpla-model-kits",
+    "product_name": "Bandai Gunpla Model Kits",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "'Bandai Gunpla Model Kits' is a broad product category/line, not one SKU; exact image would be arbitrary."
+  },
+  {
+    "slug": "bathclin-onsen-style-bath-salts",
+    "product_name": "Bathclin Onsen-Style Bath Salts",
+    "image_url": "https://www.earth.jp/products/meito-nigoriyu/images/0054280T_4548514154865_03.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Mapped broad English name to Bathclin/Earth's official Nihon no Meito 'Nigoriyu no Daigomi' onsen-style bath-salt assortment."
+  },
+  {
+    "slug": "beauty-mega-bargain-bin",
+    "product_name": "Beauty Mega-Bargain Bin",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single product SKU; describes a store bargain-bin concept/display, so direct product image is ineligible."
+  },
+  {
+    "slug": "beni-imo-tart",
+    "product_name": "Beni imo tart",
+    "image_url": "https://japanesetaste.com/cdn/shop/files/Okashi-Goten-Beni-Imo-Okinawa-Purple-Sweet-Potato-Tart-6-Pieces-1-2025-02-18T07_40_14.081Z.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": null
+  },
+  {
+    "slug": "bento-cutters-nori-punches",
+    "product_name": "Bento cutters / nori punches",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single SKU; combines bento cutters and nori punches as a category, so an exact product image would be arbitrary."
+  },
+  {
+    "slug": "bento-picks",
+    "product_name": "Bento picks",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic bento-accessory category, not a named SKU; exact product image cannot be selected."
+  },
+  {
+    "slug": "bento-sauce-bottles",
+    "product_name": "Bento sauce bottles",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic bento-accessory category, not a named SKU; exact product image cannot be selected."
+  },
+  {
+    "slug": "biore-sara-sara-body-sheets-women-s",
+    "product_name": "Biore Sara Sara Body Sheets (Women's)",
+    "image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/jp/ja/products/bioresarasara/25941312/GG01.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Kao image for Biore Sarasara Powder Sheet; input's 'Women's' qualifier is inferred from the standard/non-men's line."
+  },
+  {
+    "slug": "biore-sarasara-powder-sheets",
+    "product_name": "Bioré SaraSara powder sheets",
+    "image_url": "https://d1flfk77wl2xk4.cloudfront.net/Assets/61/679/XXL_p0113967961.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Exact Biore SaraSara Powder Sheet product family shown, but the image contains multiple scent variants rather than one single SKU."
+  },
+  {
+    "slug": "bottled-unsweetened-green-tea",
+    "product_name": "Bottled unsweetened green tea",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category, not a single SKU. Provide a specific product name such as Ito En Oi Ocha if an image is needed."
+  },
+  {
+    "slug": "bulk-kit-kat-assortment-bags",
+    "product_name": "Bulk Kit Kat Assortment Bags",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Not a single SKU. Kit Kat assortment bags vary by retailer, flavor mix, pack size, and region."
+  },
+  {
+    "slug": "c-c-lemon",
+    "product_name": "C.C. Lemon",
+    "image_url": "https://jp.daisonet.com/cdn/shop/products/0eab4afb0b32819e61bedbac96ddd564_800x.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Exact C.C. Lemon bottle from Daiso official store; packaging may differ from the newest Suntory manufacturer image."
+  },
+  {
+    "slug": "cabagin-kowa-alpha-stomach",
+    "product_name": "Cabagin Kowa Alpha (Stomach)",
+    "image_url": "https://hc.kowa.co.jp/wp-content/uploads/2014/11/085032c55f700161bda2da51f51b714c-1.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Official Kowa image for Cabagin Kowa α; Kowa marks this exact product page as discontinued."
+  },
+  {
+    "slug": "cable-ties-cord-clips",
+    "product_name": "Cable ties / cord clips",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category, not a single SKU."
+  },
+  {
+    "slug": "calpis-calpico",
+    "product_name": "Calpis / Calpico",
+    "image_url": "https://calpico-usa.com/wp-content/uploads/2025/02/product__original1_20230324.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Official Calpico USA image; Calpico is the North American branding for Calpis."
+  },
+  {
+    "slug": "can-do-random-finds",
+    "product_name": "Can Do Random Finds",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Random finds is not a single SKU."
+  },
+  {
+    "slug": "character-snack-tins",
+    "product_name": "Character snack tins",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category. Needs a specific character, brand, or product name."
+  },
+  {
+    "slug": "character-toothbrushes",
+    "product_name": "Character toothbrushes",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category. Needs a specific character, brand, or SKU."
+  },
+  {
+    "slug": "cheap-costume-animal-hat-aisle",
+    "product_name": "Cheap costume / animal hat aisle",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Store aisle/category, not a single product SKU."
+  },
+  {
+    "slug": "cheap-hard-shell-suitcase",
+    "product_name": "Cheap Hard-Shell Suitcase",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category. Needs a specific brand, model, size, or retailer SKU."
+  },
+  {
+    "slug": "clip-on-towel-pacifier-strap",
+    "product_name": "Clip-on towel / pacifier strap",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category. Needs a specific brand or product SKU."
+  },
+  {
+    "slug": "coin-locker-eki-locker",
+    "product_name": "Coin Locker (Eki-Locker)",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Service/infrastructure item, not a single retail SKU."
+  },
+  {
+    "slug": "coin-purse",
+    "product_name": "Coin purse",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category. Needs a specific brand, character, material, or SKU."
+  },
+  {
+    "slug": "coin-sorting-wallet",
+    "product_name": "Coin Sorting Wallet",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category, not a single named SKU; selecting a random coin-sorting wallet would violate the exact-product rule."
+  },
+  {
+    "slug": "compact-towel-tenugui-style-towel",
+    "product_name": "Compact towel / tenugui-style towel",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category, not a single named SKU; compact towels and tenugui-style towels vary by brand, design, and size."
+  },
+  {
+    "slug": "compression-socks",
+    "product_name": "Compression Socks",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category, not a single named SKU; selecting one brand would be arbitrary."
+  },
+  {
+    "slug": "compression-travel-bags",
+    "product_name": "Compression travel bags",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic category, not a single named SKU; Don Quijote and other retailers carry many variants."
+  },
+  {
+    "slug": "convenience-wear-socks",
+    "product_name": "Convenience Wear socks",
+    "image_url": "https://www.sugoimart.com/cdn/shop/files/FINAL_0057_familymartsocksclassic_2.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Exact FamilyMart Convenience Wear sock style from Sugoi Mart; not sourced from FamilyMart's own domain."
+  },
+  {
+    "slug": "costume-cosplay-floor-finds",
+    "product_name": "Costume / Cosplay Floor Finds",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Not a single SKU; this describes a Don Quijote floor/category of products rather than one exact product."
+  },
+  {
+    "slug": "country-ma-am",
+    "product_name": "Country Ma'am",
+    "image_url": "https://www.fujiya-peko.co.jp/sweets/17089_0909.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Official Fujiya image for the standard Country Ma'am Vanilla & Cocoa pack; the input is a product family rather than one flavor-specific SKU."
+  },
+  {
+    "slug": "cup-noodle-limited-flavors",
+    "product_name": "Cup Noodle limited flavors",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Plural/rotating category, not a single named SKU; limited flavors change frequently."
+  },
+  {
+    "slug": "curel-intensive-moisture-lotion",
+    "product_name": "Curel Intensive Moisture Lotion",
+    "image_url": "https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-kirei-com/jp/ja/item/kbb/curel/25341900/GG01.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Official Kao image for Curél Moisture Lotion III in the Japanese Intensive Moisture Care line."
+  },
+  {
+    "slug": "custom-embroidered-towel-handkerchief",
+    "product_name": "Custom embroidered towel/handkerchief",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Customization service/category, not a single SKU; final product depends on the chosen towel and embroidery."
+  },
+  {
+    "slug": "custom-photo-sticker-purikura-print",
+    "product_name": "Custom photo sticker / purikura print",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Customization/service output, not a single fixed SKU; a generic purikura image would violate the exact-product rule."
+  },
+  {
+    "slug": "daiso-anti-fog-wipes-for-glasses",
+    "product_name": "Daiso Anti-Fog Wipes (for glasses)",
+    "image_url": "https://jp.daisonet.com/cdn/shop/files/4f2600ad8bafd970229c0652ca658992_800x.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": "Official Daiso Japan image for メガネクリーナー（くもり止め付）, JAN 4550480906850."
+  },
+  {
+    "slug": "daiso-bento-dividers-onigiri-molds",
+    "product_name": "Daiso Bento Dividers / Onigiri Molds",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Combined category covering multiple Daiso SKUs; bento dividers and onigiri molds are separate product types."
+  },
+  {
+    "slug": "daiso-ceramic-knife-sharpener",
+    "product_name": "Daiso Ceramic Knife Sharpener",
+    "image_url": "https://daisous.com/cdn/shop/files/4550480359137_10.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": "Official Daiso image for Compact Knife Sharpener with suction cup, using an alumina ceramic grindstone; SKU 4550480359137."
+  },
+  {
+    "slug": "daiso-chopstick-rests",
+    "product_name": "Daiso Chopstick Rests",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic plural category, not a single SKU; Daiso sells multiple chopstick rest designs."
+  },
+  {
+    "slug": "daiso-compression-bags",
+    "product_name": "Daiso Clothing Compression Bag",
+    "image_url": "https://jp.daisonet.com/cdn/shop/products/d54fabd948429e72dc9982b63f2efc28_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Representative official Daiso clothing compression bag SKU; Daiso carries multiple compression bag variants."
+  },
+  {
+    "slug": "daiso-furoshiki-wrapping-cloth",
+    "product_name": "Daiso Furoshiki Wrapping Cloth",
+    "image_url": "https://jp.daisonet.com/cdn/shop/files/a0aa94a81945397fd2449f4a3ce81171_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "daiso-phone-stands-and-cable-organizers",
+    "product_name": "Daiso Phone Stands and Cable Organizers",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single SKU; combines multiple Daiso product categories including phone stands and cable organizers."
+  },
+  {
+    "slug": "daiso-silicone-egg-cooker",
+    "product_name": "Daiso Microwave Egg Cooker",
+    "image_url": "https://jp.daisonet.com/cdn/shop/products/1O9DUygVpS5d2z46z4a9ybx9PIa7Z07O1_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Daiso egg-cooking SKU; source product is a microwave egg cooker and is not described as silicone."
+  },
+  {
+    "slug": "daiso-tabi-socks-toe-split",
+    "product_name": "Daiso Tabi Socks",
+    "image_url": "https://jp.daisonet.com/cdn/shop/files/75e42742fe3512fe202f3177d5e22b13_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Specific official Daiso men's samurai-pattern tabi socks; patterns may vary by store."
+  },
+  {
+    "slug": "daiso-travel-bottles",
+    "product_name": "Daiso Travel Bottle Set",
+    "image_url": "https://jp.daisonet.com/cdn/shop/files/4550480370224_01_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "daiso-washi-tape",
+    "product_name": "Daiso Washi Masking Tape",
+    "image_url": "https://jp.daisonet.com/cdn/shop/files/6e6a77413fc268273846872c8547b7fa_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Daiso masking tape made with washi; Daiso carries multiple colors and designs."
+  },
+  {
+    "slug": "disney-tokyo-disney-sea-limited-merch",
+    "product_name": "Disney Tokyo / Disney Sea Limited Merch",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single SKU; this is a rotating Tokyo Disney Resort merchandise category."
+  },
+  {
+    "slug": "display-katana-souvenir-samurai-sword",
+    "product_name": "Display Katana / Souvenir Samurai Sword",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single named SKU; generic souvenir weapon/display category rather than a specific product."
+  },
+  {
+    "slug": "disposable-bibs",
+    "product_name": "Disposable Bibs",
+    "image_url": "https://jp.daisonet.com/cdn/shop/products/e5259abbd96698c52b633a3b0c091227_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Representative official Daiso disposable non-woven apron/bib-style SKU; input name is generic."
+  },
+  {
+    "slug": "dolly-wink-eyeliner",
+    "product_name": "Dolly Wink 5WAY Liquid Liner",
+    "image_url": "https://www.dollywink-jp.com/assets/img/5wayliquidliner/img_product_01-03.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "don-quijote-tax-free-royce-shiroi-koibito",
+    "product_name": "Don Quijote Tax-Free Royce' / Shiroi Koibito",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single SKU; combines Don Quijote tax-free shopping with multiple confectionery brands/products."
+  },
+  {
+    "slug": "drain-net-sink-strainer-bags",
+    "product_name": "Drain Net / Sink Strainer Bags",
+    "image_url": "https://jp.daisonet.com/cdn/shop/files/4ecf0e0a3cba80a9095775bc6a8b90ae_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Representative official Daiso drain net SKU; input name is generic."
+  },
+  {
+    "slug": "egg-salad-sandwich-tamago-sando",
+    "product_name": "7-Eleven Tamago Sando",
+    "image_url": "https://img-afd.7api-01.dp1.sej.co.jp/item-image/303818/64AF65D698BEA938A2AA9BDE73412014.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Representative official 7-Eleven tamago sando SKU; input name is generic and availability may vary by region."
+  },
+  {
+    "slug": "egg-timer-for-ramen-boiled-eggs",
+    "product_name": "Daiso Egg Timer",
+    "image_url": "https://jp.daisonet.com/cdn/shop/files/5fbc0fe20030f3e240f690aa2b40b156_800x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "eki-stamp-notebook",
+    "product_name": "Eki stamp notebook",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: not a single SKU. Eki stamp notebooks are a product type with many possible notebooks and rail-company variants."
+  },
+  {
+    "slug": "engraved-chopsticks",
+    "product_name": "Engraved chopsticks",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: customization service/product type, not a single fixed SKU."
+  },
+  {
+    "slug": "eve-a-pain-reliever",
+    "product_name": "Eve A Pain Reliever",
+    "image_url": "https://images.microcms-assets.io/assets/5cd0cfb38d8449fe993f92b8c6c2c085/4e9cc7f5e45a4565a97d1bd1e30e6617/product-evea-img_01.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "eve-quick-pain-reliever",
+    "product_name": "EVE Quick pain reliever",
+    "image_url": "https://images.microcms-assets.io/assets/5cd0cfb38d8449fe993f92b8c6c2c085/59812352109c4cfca7c23a7ff19d0695/product-eveq-img_01.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "famichiki",
+    "product_name": "Famichiki",
+    "image_url": "https://www.family.co.jp/content/dam/family/goods/0253116.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "famima-frappe",
+    "product_name": "Famima Frappé",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: Famima Frappé is a rotating FamilyMart product line/category, not one fixed SKU."
+  },
+  {
+    "slug": "fino-premium-touch-hair-mask",
+    "product_name": "Fino Premium Touch Hair Mask",
+    "image_url": "https://brand.finetoday.com/jp/fino/assets/img/mask/prod3.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "food-divider-sheets-baran",
+    "product_name": "Food divider sheets / baran",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic category, not a single SKU. Many baran/food divider sheet products exist across 100-yen stores and brands."
+  },
+  {
+    "slug": "fresh-mochi-daifuku",
+    "product_name": "Fresh mochi / daifuku",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic food category, not a single SKU."
+  },
+  {
+    "slug": "frozen-mikan",
+    "product_name": "Frozen mikan",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic product type. Multiple frozen mikan products exist, and no exact single SKU was provided."
+  },
+  {
+    "slug": "fruit-sandwich",
+    "product_name": "Fruit sandwich",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic konbini food category, not a single SKU."
+  },
+  {
+    "slug": "furikake-multi-pack",
+    "product_name": "Furikake multi-pack",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic product type. Multiple furikake multi-pack SKUs exist across brands."
+  },
+  {
+    "slug": "gachapon-capsule-toys",
+    "product_name": "Gachapon Capsule Toys",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic category, not a single SKU. Capsule toy designs rotate constantly by series and machine."
+  },
+  {
+    "slug": "garigari-kun-soda-bar",
+    "product_name": "Garigari-kun Soda Bar",
+    "image_url": "https://www.akagi.com/common/img/products/gari/2026/gari_soda_stick_samurai2026_v1.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Official Akagi image for Garigari-kun Soda Stick; current image is the 2026 Samurai Blue limited package."
+  },
+  {
+    "slug": "gatsby-body-sheets",
+    "product_name": "Gatsby Body Sheets",
+    "image_url": "https://www.mandom.co.jp/storage/images/product/1726406112.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Mandom image for a Gatsby body paper/body wipes SKU; Gatsby Body Sheets is a line with multiple scents and variants."
+  },
+  {
+    "slug": "gatsby-facial-body-wipes",
+    "product_name": "Gatsby facial/body wipes",
+    "image_url": "https://www.mandom.co.jp/storage/images/product/1771899182.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Mandom product image for a Gatsby body wipes SKU; input is a broad facial/body wipes line rather than one exact SKU."
+  },
+  {
+    "slug": "giant-rainbow-cotton-candy",
+    "product_name": "Giant Rainbow Cotton Candy",
+    "image_url": "https://www.totticandy.com/wp-totti/wp-content/themes/totti/images/common/img-cotton01.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Official Totti Candy Factory image for 原宿レインボー, the giant rainbow cotton candy."
+  },
+  {
+    "slug": "goshuin-cho-temple-stamp-book",
+    "product_name": "Goshuin-cho Temple Stamp Book",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic product category, not a single SKU. No credible exact product image should be forced."
+  },
+  {
+    "slug": "goshuincho-temple-shrine-stamp-book",
+    "product_name": "Goshuincho temple/shrine stamp book",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic product category, not a single SKU. No credible exact product image should be forced."
+  },
+  {
+    "slug": "grancence-shoe-deodorizer",
+    "product_name": "Grancence Shoe Deodorizer",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: could not verify a credible exact Grancence Shoe Deodorizer SKU/image. Search results mostly show unrelated Grancence fragrance products."
+  },
+  {
+    "slug": "ha-agen-dazs-japan-exclusive-flavors",
+    "product_name": "Häagen-Dazs Japan Exclusive Flavors",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: not a single SKU. Japan-exclusive flavors change frequently, so an assortment image would risk being inaccurate."
+  },
+  {
+    "slug": "hada-labo-gokujyun-hyaluronic-lotion",
+    "product_name": "Hada Labo Gokujyun Hyaluronic Lotion",
+    "image_url": "https://www.shop.rohto.co.jp/on/demandware.static/-/Sites-all-master-catalog/default/dwc7b6e3f3/images/product/43_hadalabo/155712_1.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "hada-labo-gokujyun-hydrating-lotion",
+    "product_name": "Hada Labo Gokujyun Hydrating Lotion",
+    "image_url": "https://www.shop.rohto.co.jp/on/demandware.static/-/Sites-all-master-catalog/default/dwc7b6e3f3/images/product/43_hadalabo/155712_1.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "English alias appears to refer to the same Japanese Gokujyun Hyaluronic Lotion bottle."
+  },
+  {
+    "slug": "hada-labo-gokujyun-premium-lotion",
+    "product_name": "Hada Labo Gokujyun Premium Lotion",
+    "image_url": "https://www.shop.rohto.co.jp/on/demandware.static/-/Sites-all-master-catalog/default/dwca9cdd6a/images/product/43_hadalabo/167012_1.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "hakata-mentaiko",
+    "product_name": "Hakata Mentaiko",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: regional food category, not a single SKU. Needs a specific maker/product such as Fukuya, Fukutaro, or Yamaya to avoid a generic image."
+  },
+  {
+    "slug": "hakata-torimon",
+    "product_name": "Hakata Torimon",
+    "image_url": "https://www.meigetsudo.co.jp/img/category/torimon_img_01.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "hanko-name-stamp",
+    "product_name": "Hanko name stamp",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic/customized item, not a single SKU."
+  },
+  {
+    "slug": "hashioki-chopstick-rests-gift-sets",
+    "product_name": "Hashioki (Chopstick Rests) Gift Sets",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic gift-set category, not a single SKU."
+  },
+  {
+    "slug": "heat-patches-kairo-multipacks",
+    "product_name": "Heat patches / kairo multipacks",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic category. Needs a specific SKU such as a named Kiribai or Hakugen kairo multipack."
+  },
+  {
+    "slug": "hi-chew",
+    "product_name": "Hi-Chew",
+    "image_url": "https://www.morinaga.co.jp/hi-chew/img/products_01_01.webp",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Morinaga image for the core grape Hi-Chew SKU; input is the broader Hi-Chew line rather than one exact flavor."
+  },
+  {
+    "slug": "hibiscrub-pharmacy-hand-sanitizers",
+    "product_name": "Hibiscrub / Pharmacy Hand Sanitizers",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: the input combines a brand/product family with a generic pharmacy hand-sanitizer category and does not identify a single Japan-relevant SKU."
+  },
+  {
+    "slug": "highball-cans-suntory-kakubin-highball",
+    "product_name": "Highball Cans (Suntory Kakubin Highball)",
+    "image_url": "https://prcdn.freetls.fastly.net/release_image/42435/1500/42435-1500-78acf035f9ae3c67967d53dbacbf94f9-1500x2000.jpg",
+    "image_source": "news_blog",
+    "confidence": "medium",
+    "notes": "Exact Suntory Kakubin Highball can image from an official Suntory PR Times release; not hosted on the Suntory brand domain."
+  },
+  {
+    "slug": "hobonichi-techo-planner",
+    "product_name": "Hobonichi Techo Planner",
+    "image_url": "https://www.1101.com/store/techo/2026/images/all_about/planner_aside/img_01.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "hobonichi-techo",
+    "product_name": "Hobonichi Techo",
+    "image_url": "https://www.1101.com/store/techo/2025/images/all_about/original_aside/img_03.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Input does not specify size/year; used the official Hobonichi Techo Original A6 image as the closest single product variant."
+  },
+  {
+    "slug": "hokkaido-caramel-hanabatake-bokujo",
+    "product_name": "Hokkaido Caramel (Hanabatake Bokujo)",
+    "image_url": "https://www.hanabatakebokujo.com/common/images/products/caramel/pic_main.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Hanabatake Bokujo hero image; chosen because the exact isolated plain caramel product-card image appears to be below the 400px-width threshold."
+  },
+  {
+    "slug": "instant-miso-soup-variety-pack",
+    "product_name": "Instant miso soup variety pack",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic product category with no brand, flavor set, pack count, or single SKU specified."
+  },
+  {
+    "slug": "itoya-custom-notebook-paper-goods",
+    "product_name": "Itoya custom notebook / paper goods",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: custom notebook/paper goods is a service or broad category, not a single SKU."
+  },
+  {
+    "slug": "iwatani-aburiya-portable-grill",
+    "product_name": "Iwatani Aburiya Portable Grill",
+    "image_url": "https://www.iwatani.co.jp/jpn/consumer/products/cg/grill/cb-abr-2/images/mv.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "japanese-baby-wipes-travel-packs",
+    "product_name": "Japanese baby wipes travel packs",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic product category with no brand, pack size, or single SKU specified."
+  },
+  {
+    "slug": "japanese-face-mask-multipacks",
+    "product_name": "Japanese face mask multipacks",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic product category with no brand, mask count, size, color, or single SKU specified."
+  },
+  {
+    "slug": "japanese-school-style-lunch-bag",
+    "product_name": "Japanese school-style lunch bag",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: generic category/style rather than a single named product SKU."
+  },
+  {
+    "slug": "jonetsu-kakaku-pb-snacks",
+    "product_name": "Jonetsu Kakaku PB Snacks",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: Jonetsu Kakaku PB Snacks describes a private-label snack category, not one named snack SKU."
+  },
+  {
+    "slug": "jr-eki-stamps-station-stamps",
+    "product_name": "JR Eki Stamps (Station Stamps)",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: station stamps are a travel/station activity or collectible category, not a single product SKU."
+  },
+  {
+    "slug": "kairo-hand-warmers-winter",
+    "product_name": "Kairo Hand Warmers (Winter)",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: kairo hand warmers is a generic winter product category; no brand, count, or single SKU specified."
+  },
+  {
+    "slug": "kaminari-okoshi",
+    "product_name": "Kaminari Okoshi",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Refused: Kaminari okoshi is a regional confection category; official images found show category/assortment or different branded SKUs, not one named SKU."
+  },
+  {
+    "slug": "kanazawa-gold-leaf-items-kinpaku",
+    "product_name": "Kanazawa Gold Leaf Items (Kinpaku)",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Not a single SKU. This describes a broad category of Kanazawa gold leaf products, including sweets, cosmetics, crafts, and souvenirs."
+  },
+  {
+    "slug": "kao-bath-tabs-babu",
+    "product_name": "Kao Bath Tabs (Babu)",
+    "image_url": "https://image.dokodemo.world/catalog-skus/401806/31ca870691567fb9964c3ba39dac5bcf.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": "Exact Babu Yuzu 20-tablet product image from a Japanese retailer; manufacturer image found was only 300px wide."
+  },
+  {
+    "slug": "kappabashi-engraved-kitchen-knife",
+    "product_name": "Kappabashi engraved kitchen knife",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Customization/service-style item, not a single standardized SKU. Image would depend on knife maker, model, and engraving."
+  },
+  {
+    "slug": "karaage-kun",
+    "product_name": "Karaage-kun",
+    "image_url": "https://www.lawson.co.jp/recommend/original/detail/img/l456071_8.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "kate-eyebrow-powder",
+    "product_name": "KATE Eyebrow Powder",
+    "image_url": "https://japanesetaste.co.uk/cdn/shop/files/P-1-KNB-KT3-EX5-Kanebo_Kate_Designing_Eyebrow_3D_EX-5_Brown.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Exact KATE Designing Eyebrow 3D EX-5 image from Japanese Taste; official manufacturer image found was only 300px wide."
+  },
+  {
+    "slug": "katsu-sando",
+    "product_name": "Katsu Sando",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic food category. No single konbini brand or SKU was specified."
+  },
+  {
+    "slug": "kayanoya-dashi-packets",
+    "product_name": "Kayanoya dashi packets",
+    "image_url": "https://japanesetaste.com/cdn/shop/files/P-1-KAY-ORIPOW-830-Kayanoya_Original_Dashi_Stock_Powder_8g_x_30_Packets.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Exact Kayanoya Original Dashi 30-packet product image from Japanese Taste; official Kayanoya image found was only 300px wide."
+  },
+  {
+    "slug": "kibi-dango",
+    "product_name": "Kibi dango",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic regional confection with multiple makers and SKUs. No brand or product version was specified."
+  },
+  {
+    "slug": "kit-kat-chocolatory-custom-kit-kat",
+    "product_name": "Kit Kat Chocolatory Custom Kit Kat",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Customization/made-to-order item, not a single standardized SKU."
+  },
+  {
+    "slug": "kit-kat-matcha",
+    "product_name": "Kit Kat Matcha",
+    "image_url": "https://kitkat.nestle.jp/sites/default/files/styles/webp/public/2026-03/2026SS_Koi%20matcha.PNG.webp",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Exact official Nestlé Japan image for Kit Kat Koi Matcha."
+  },
+  {
+    "slug": "kit-kat-sake-hojicha-daigaku-imo-regional-flavors",
+    "product_name": "Kit Kat Sake / Hojicha / Daigaku Imo / Regional Flavors",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Input combines multiple flavors and regional SKUs. Needs one specific flavor/SKU to select an exact product image."
+  },
+  {
+    "slug": "kit-kat-wasabi",
+    "product_name": "Kit Kat Wasabi",
+    "image_url": "https://cdn.shopify.com/s/files/1/1969/5775/files/009418170_480x480.jpg",
+    "image_source": "news_blog",
+    "confidence": "medium",
+    "notes": "Exact Tamaruya Wasabi Kit Kat image from Japanese Taste blog; no better current official manufacturer image was found."
+  },
+  {
+    "slug": "konbini-bento-box",
+    "product_name": "Konbini bento box",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic convenience-store category. No single brand, retailer, or SKU was specified."
+  },
+  {
+    "slug": "konbini-drip-coffee-seven-cafe-machi-cafe",
+    "product_name": "Konbini Drip Coffee (Seven Cafe / Machi Cafe)",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Input names multiple coffee lines from different convenience stores, not one single SKU."
+  },
+  {
+    "slug": "konbini-vinyl-umbrella",
+    "product_name": "Konbini Vinyl Umbrella",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic retail category. No single convenience-store brand or umbrella SKU was specified."
+  },
+  {
+    "slug": "lip-bambi-sleeping-pack-laneige-style-overnight-balm",
+    "product_name": "Lip Bambi Sleeping Pack / Laneige-style overnight balm",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "No credible exact single-SKU match found for 'Lip Bambi Sleeping Pack'; input appears to describe a Laneige-style/generic overnight lip balm rather than an identifiable product."
+  },
+  {
+    "slug": "loxonin-s",
+    "product_name": "Loxonin S",
+    "image_url": "https://www.daiichisankyo-hc.co.jp/library/content/img_library/image/loxonin-s_CF005_main.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "luggage-scale",
+    "product_name": "Luggage scale",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic product category, not a single named SKU."
+  },
+  {
+    "slug": "lululun-sheet-masks",
+    "product_name": "LuLuLun sheet masks",
+    "image_url": "https://d2w53g1q050m78.cloudfront.net/lululuncom/uploads/product_assets/puev9fb-2310/fv_foot_product.png",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Input is a broad product line/category; selected official LuLuLun Pure Everys sheet mask image as a representative LuLuLun sheet-mask SKU."
+  },
+  {
+    "slug": "majolica-majorca-lash-expander",
+    "product_name": "Majolica Majorca Lash Expander",
+    "image_url": "https://www.shiseido.co.jp/mj/items/mascara/002/img/kv_01_01.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Selected official Majolica Majorca Lash Expander Peacock Long product image."
+  },
+  {
+    "slug": "maneki-neko-painting-experience",
+    "product_name": "Maneki-neko painting experience",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Experience/service, not a single physical SKU."
+  },
+  {
+    "slug": "maruman-mnemosyne-notebook",
+    "product_name": "Maruman Mnemosyne Notebook",
+    "image_url": "https://www.e-maruman.co.jp/product_file/file/N196A.webp",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Input does not specify size/model; selected official Mnemosyne N196A B6 notebook image."
+  },
+  {
+    "slug": "melano-cc-vitamin-c-essence",
+    "product_name": "Melano CC Vitamin C Essence",
+    "image_url": "https://japanesetaste.com/cdn/shop/files/Rohto-Melano-CC-Intensive-Anti-Spot-Essence-20ml-1-2024-04-29T09_06_59.761Z.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Used exact retailer image because the official Rohto manufacturer asset appears below the 400px width requirement."
+  },
+  {
+    "slug": "melonpan-from-bakery-konbini",
+    "product_name": "Melonpan from bakery/konbini",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic food category from unspecified bakery/konbini, not a single SKU."
+  },
+  {
+    "slug": "mentaiko-tarako-onigiri",
+    "product_name": "Mentaiko / tarako onigiri",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic food category with multiple convenience-store SKUs; no single named product specified."
+  },
+  {
+    "slug": "mesh-travel-pouch",
+    "product_name": "Mesh travel pouch",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic travel-gear category, not a single named SKU."
+  },
+  {
+    "slug": "microwave-ramen-cooker",
+    "product_name": "Microwave ramen cooker",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic hundred-yen product category; no single named SKU/brand specified."
+  },
+  {
+    "slug": "microwave-rice-cooker-cup",
+    "product_name": "Microwave rice cooker cup",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic hundred-yen product category; no single named SKU/brand specified."
+  },
+  {
+    "slug": "midori-md-notebook",
+    "product_name": "Midori MD Notebook",
+    "image_url": "https://md-product.com/cdn/shop/files/md-notebook-a5.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Input does not specify size/layout; selected official MD Notebook A5 image."
+  },
+  {
+    "slug": "midori-traveler-s-notebook",
+    "product_name": "Midori Traveler's Notebook",
+    "image_url": "https://www.travelers-company.com/wp-content/themes/traveralers/images/products/trnote/02_regular/brown/img_01.png",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Input uses legacy Midori name and does not specify color/size; selected official TRAVELER'S notebook Brown Regular Size image."
+  },
+  {
+    "slug": "milk-frother",
+    "product_name": "Milk frother",
+    "image_url": "https://jp.daisonet.com/cdn/shop/products/4549131569872_10_36a96b6d-9b88-4e44-b69d-8df4f1ae82bb_800x.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Selected Daiso's official Cappuccino Mixer SKU as the closest single-SKU match for a hundred-yen milk frother."
+  },
+  {
+    "slug": "mini-hand-towel-for-kids",
+    "product_name": "Mini hand towel for kids",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Input is generic/not a single SKU. Japanese retailers list many kids mini towel and loop towel variants, but no exact named product was specified."
+  },
+  {
+    "slug": "minon-amino-moist-line",
+    "product_name": "Minon Amino Moist Line",
+    "image_url": "https://www.daiichisankyo-hc.co.jp/site_minon-aminomoist/assets/images/line/line-detail_kv_dry.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official manufacturer line image. This is a product line image, not a single SKU."
+  },
+  {
+    "slug": "mizuhiki-decorative-cord-crafts",
+    "product_name": "Mizuhiki Decorative Cord Crafts",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Input is generic/not a single SKU. Mizuhiki cords and craft parts vary by maker, knot style, color, and set."
+  },
+  {
+    "slug": "mobile-battery-power-bank-konbini",
+    "product_name": "Mobile Battery / Power Bank (Konbini)",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Input is generic/not a single SKU. Convenience stores carry different disposable, rechargeable, and rental battery products."
+  },
+  {
+    "slug": "muji-aroma-stones-aroma-diffuser",
+    "product_name": "Muji Aroma Stones / Aroma Diffuser",
+    "image_url": "https://www.muji.com/public/media/img/item/4550002868284_org.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": "Exact official MUJI Aroma Stone SKU."
+  },
+  {
+    "slug": "muji-packing-cubes",
+    "product_name": "Muji Packing Cubes",
+    "image_url": "https://www.muji.com/public/media/img/item/4550584769641_org.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Official MUJI packing/sorting case SKU. MUJI packing cubes come in multiple sizes and colors; this selects one official variant."
+  },
+  {
+    "slug": "muji-sensitive-skin-toner",
+    "product_name": "Muji Sensitive Skin Toner",
+    "image_url": "https://www.muji.com/public/media/img/item/4550583434991_org.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": "Exact official MUJI Sensitive Skin Toner high-moisture SKU."
+  },
+  {
+    "slug": "muji-stamp-station-notebook",
+    "product_name": "MUJI stamp-station notebook",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Input combines an in-store stamp station experience with an unspecified notebook. No single official MUJI SKU named 'stamp-station notebook' was found."
+  },
+  {
+    "slug": "muji-travel-bottle-set",
+    "product_name": "Muji Travel Bottle Set",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "No exact official MUJI Travel Bottle Set single SKU found. MUJI lists individual refill bottles and travel containers instead."
+  },
+  {
+    "slug": "muji-travel-neck-pillow",
+    "product_name": "Muji Travel Neck Pillow",
+    "image_url": "https://www.muji.com/public/media/img/item/4550584475504_org.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": "Exact official MUJI inflatable neck cushion SKU."
+  },
+  {
+    "slug": "nagasaki-castella",
+    "product_name": "Nagasaki Castella",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Regional food category, not a single SKU. Multiple credible makers exist, including Fukusaya and Bunmeido, but no exact product/brand was specified."
+  },
+  {
+    "slug": "nagoya-uiro",
+    "product_name": "Nagoya Uiro",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Regional food category, not a single SKU. Multiple makers and flavors exist, but no exact product/brand was specified."
+  },
+  {
+    "slug": "name-label-stickers",
+    "product_name": "Name label stickers",
+    "image_url": "https://jp.daisonet.com/cdn/shop/products/1ocuTC_zJdh779TS4koQk5MpAs0rf3vcm_800x.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Selected Daiso's official おなまえシール SKU as the closest single-SKU match for kids name label stickers."
+  },
+  {
+    "slug": "naturie-hatomugi-skin-conditioner",
+    "product_name": "Naturie Hatomugi Skin Conditioner",
+    "image_url": "https://naturie-us.com/wp-content/uploads/2020/12/product_lotion.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": "Official Naturie product image for the 500ml Hatomugi Skin Conditioner."
+  },
+  {
+    "slug": "new-york-perfect-cheese",
+    "product_name": "New York Perfect Cheese",
+    "image_url": "https://edge.dis.commercecloud.salesforce.com/dw/image/v2/BKBN_PRD/on/demandware.static/-/Sites-catalog_master_sfcc_krs/default/dw4270ba44/images/large/2123600171_1_b.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "ningyo-yaki",
+    "product_name": "Ningyo-yaki",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Ningyo-yaki is a generic regional confection rather than a single SKU; no exact named product was provided."
+  },
+  {
+    "slug": "nivea-cream-japan-blue-tin",
+    "product_name": "Nivea Cream (Japan Blue Tin)",
+    "image_url": "https://img.nivea.com/-/media/miscellaneous/media-center-items/0/d/0/f37703e135e5425b92074488a7c85b52-original.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "nivea-uv-super-water-gel",
+    "product_name": "Nivea UV Super Water Gel",
+    "image_url": "https://img.nivea.com/-/media/miscellaneous/media-center-items/f/1/6/12aa72f0a6a04efab8fb2f8eaf9dca86-original.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "oden-hot-case-winter",
+    "product_name": "Oden (Hot Case, Winter)",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Oden hot case is a prepared-food display/service, not a single SKU."
+  },
+  {
+    "slug": "ohta-s-isan-stomach-powder",
+    "product_name": "Ohta's Isan Stomach Powder",
+    "image_url": "https://ohta-isan.co.jp/document/images/0251-1.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "okinawa-chinsuko-cookies",
+    "product_name": "Okinawa chinsuko cookies",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Chinsuko is a generic Okinawan cookie category; no single brand/SKU was specified."
+  },
+  {
+    "slug": "okinawan-beni-imo-tart",
+    "product_name": "Okinawan Beni-Imo Tart",
+    "image_url": "https://okashigoten.com/html/upload/save_image/0830190217_5d68f429f3c87.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Selected Okashi Goten's original Beni-Imo Tart as the canonical SKU for this generic English product name."
+  },
+  {
+    "slug": "okinawan-chinsuko-cookies",
+    "product_name": "Okinawan Chinsuko Cookies",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Chinsuko is a generic Okinawan cookie category; no single brand/SKU was specified."
+  },
+  {
+    "slug": "omamori-charm",
+    "product_name": "Omamori charm",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Omamori charm is a generic charm/category item, not a single SKU."
+  },
+  {
+    "slug": "ora2-breath-care-products",
+    "product_name": "Ora2 breath care products",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Ora2 breath care products describes a product line/category; no single SKU was specified."
+  },
+  {
+    "slug": "origami-paper-sets",
+    "product_name": "Origami Paper Sets",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Origami paper sets is a generic stationery category; no single brand/SKU was specified."
+  },
+  {
+    "slug": "oversized-novelty-snack-packs",
+    "product_name": "Oversized novelty snack packs",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Oversized novelty snack packs is a generic category/random-find concept, not a single SKU."
+  },
+  {
+    "slug": "pabron-cold-medicine",
+    "product_name": "Pabron cold medicine",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Pabron cold medicine is a product family; use a specific SKU such as Pabron Gold A for an exact image."
+  },
+  {
+    "slug": "pabron-gold-a-cold-medicine",
+    "product_name": "Pabron Gold A Cold Medicine",
+    "image_url": "https://search.jsm-db.info/sp_en/Picture/14987306ZZ000000000478G13.jpg",
+    "image_source": "other",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "panshiron-cure",
+    "product_name": "Panshiron Cure",
+    "image_url": "https://www.shop.rohto.co.jp/on/demandware.static/-/Sites-all-master-catalog/default/dw456070ae/images/product/38_pansiron/139460_1.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "pasmo-passport",
+    "product_name": "Pasmo Passport",
+    "image_url": "https://www.tokyometro.jp/lang_en/news/images_h/7fc68b7c7b9a863a8d0a9e3e0a55fce4_1.jpg",
+    "image_source": "news_blog",
+    "confidence": "medium",
+    "notes": "Exact PASMO PASSPORT card image from Tokyo Metro launch news rather than PASMO's current product page."
+  },
+  {
+    "slug": "pentel-energel",
+    "product_name": "Pentel Energel",
+    "image_url": "https://www.pentel.co.jp/images/products/BLN75Z-A.png",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "phone-stand",
+    "product_name": "Phone stand",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic category, not a single SKU; multiple 100-yen phone stands match."
+  },
+  {
+    "slug": "pilot-frixion-erasable-pen",
+    "product_name": "Pilot Frixion Erasable Pen",
+    "image_url": "https://pilotpen.co.th/wp-content/uploads/2022/09/LFBK-23EF-B.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "press-butter-sand",
+    "product_name": "Press Butter Sand",
+    "image_url": "https://bake-the-online.com/cdn/shop/files/pbs_plain_5p_1080x1080_b0cb8bc3-e77b-467c-a7db-3ed671feb40d.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "ramune",
+    "product_name": "Ramune",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic beverage category, not a single SKU; multiple manufacturers and package designs match."
+  },
+  {
+    "slug": "retort-curry-regional-packs",
+    "product_name": "Retort curry regional packs",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic regional curry assortment/category, not a single named SKU."
+  },
+  {
+    "slug": "reusable-shopping-bag",
+    "product_name": "Reusable shopping bag",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic travel gear category, not a single SKU."
+  },
+  {
+    "slug": "rohto-eye-drops-multi-shelf-section",
+    "product_name": "Rohto eye drops multi-shelf section",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Not a single SKU; requested a multi-shelf section/store display rather than an exact product image."
+  },
+  {
+    "slug": "royal-milk-tea-bottle",
+    "product_name": "Royal Milk Tea (Bottle)",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Ambiguous bottled royal milk tea product; multiple brands/SKUs match and no exact SKU was specified."
+  },
+  {
+    "slug": "saborino-morning-masks",
+    "product_name": "Saborino morning masks",
+    "image_url": "https://www.bcl-brand.jp/img/goods/S/19020.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "sakura-pigma-micron-drawing-pens",
+    "product_name": "Sakura Pigma Micron Drawing Pens",
+    "image_url": "https://www.sakuraofamerica.com/wp-content/uploads/2020/07/Pigma_micron4.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "sakura-tea-salted-sakura-packets",
+    "product_name": "Sakura tea / salted sakura packets",
+    "image_url": null,
+    "image_source": "other",
+    "confidence": "low",
+    "notes": "Generic regional food category, not a single SKU; multiple salted sakura and sakura tea packet products match."
+  },
+  {
+    "slug": "salonpas-pain-patches",
+    "product_name": "Salonpas Pain Patches",
+    "image_url": "https://us.hisamitsu/img/product/pain-relief-patch-20ct-front.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "sanrio-character-goods-hello-kitty-cinnamoroll-pochacco",
+    "product_name": "Sanrio Character Goods (Hello Kitty, Cinnamoroll, Pochacco)",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: not a single SKU. This is a broad character-goods category covering multiple characters and product types."
+  },
+  {
+    "slug": "senbei-rice-cracker-variety-pack",
+    "product_name": "Senbei rice cracker variety pack",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic product category, not a specific named SKU or brand variety pack."
+  },
+  {
+    "slug": "seria-stationery",
+    "product_name": "Seria Stationery",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: store/category-level item, not a single SKU."
+  },
+  {
+    "slug": "shiseido-eyelash-curler",
+    "product_name": "Shiseido eyelash curler",
+    "image_url": "https://www.shiseido.com/dw/image/v2/BBSK_PRD/on/demandware.static/-/Sites-itemmaster_shiseido/default/dwf4389a94/images/Shiseido2024Redesignx2/Makeup/Tools/0729238500969/SHI-SS24_PDP_EyelashCurler_alt-1%402x.jpg",
+    "image_source": "manufacturer",
+    "confidence": "high",
+    "notes": null
+  },
+  {
+    "slug": "shizuoka-green-tea",
+    "product_name": "Shizuoka Green Tea",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: regional food category, not a specific named tea SKU."
+  },
+  {
+    "slug": "shoe-bag",
+    "product_name": "Shoe bag",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic travel item, not a specific named SKU."
+  },
+  {
+    "slug": "sponge-holder-with-suction-cup",
+    "product_name": "Sponge holder with suction cup",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic household item, not a specific named SKU."
+  },
+  {
+    "slug": "stalogy-editor-s-series-365",
+    "product_name": "Stalogy Editor's Series 365",
+    "image_url": "https://stalogy.com/wp-content/themes/stalogy/img-products/018grid-gallery-01.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official STALOGY image for Editor’s Series 365 Days Notebook Grid. Input does not specify size or color, so this uses the official line-level product image."
+  },
+  {
+    "slug": "stroller-hooks",
+    "product_name": "Stroller hooks",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic baby/travel accessory, not a specific named SKU."
+  },
+  {
+    "slug": "strong-zero-double-lemon",
+    "product_name": "Strong Zero Double Lemon",
+    "image_url": "https://www.miraido-onlineshop.com/images/pd-dtl/sun0021new-b.jpg",
+    "image_source": "retailer_official",
+    "confidence": "high",
+    "notes": "Exact Japanese retailer product image for Suntory -196 Strong Zero Double Lemon 350ml."
+  },
+  {
+    "slug": "tamiya-plastic-models",
+    "product_name": "Tamiya Plastic Models",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: broad brand/category, not a single Tamiya model kit SKU."
+  },
+  {
+    "slug": "tiny-scissors-with-cap",
+    "product_name": "Tiny scissors with cap",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: generic stationery/travel item, not a specific named SKU."
+  },
+  {
+    "slug": "tirol-choco-individual-chocolates",
+    "product_name": "Tirol-Choco Individual Chocolates",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Refused: brand/product-family wording, not a specific Tirol-Choco flavor or SKU."
+  },
+  {
+    "slug": "tokyo-campanella",
+    "product_name": "Tokyo Campanella",
+    "image_url": "https://img08.weeecdn.net/item/image/185/930/42A8D4DA9183F711.jpeg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Exact Tokyo Campanella Chocolate Cookie 10pc product image from a retailer. Used because the official Tokyo Campanella image found was under the 400px-wide threshold."
+  },
+  {
+    "slug": "tokyo-milk-cheese-factory-cookies",
+    "product_name": "Tokyo Milk Cheese Factory Cookies",
+    "image_url": "https://tmcfusa.com/cdn/shop/files/TMCF-_Salt_Camebert_Cookie1111.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Tokyo Milk Cheese Factory image for Salt & Camembert Cookies. Input does not specify flavor, so this uses the flagship cookie flavor."
+  },
+  {
+    "slug": "toraya-yokan",
+    "product_name": "Toraya Yokan",
+    "image_url": "https://global.toraya-group.co.jp/cdn/shop/files/10141913042_5ca1ae8d-09ec-4a34-8c11-83423504424e.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Input is broad; image is Toraya's official Gift Box of 7 petite yokan."
+  },
+  {
+    "slug": "traveler-s-factory-store-limited-charms-refills",
+    "product_name": "Traveler’s Factory store-limited charms/refills",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Not a single SKU; this describes multiple store-limited charms and refills."
+  },
+  {
+    "slug": "traveler-s-notebook-refill",
+    "product_name": "Traveler’s Notebook refill",
+    "image_url": "https://www.travelers-company.com/wp-content/uploads/2016/03/refill_p001.jpg",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Input is broad; image is the official TRAVELER'S notebook Passport Size 001 Lined Notebook refill."
+  },
+  {
+    "slug": "tsukemono-pickles-pack",
+    "product_name": "Tsukemono pickles pack",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic food category, not a single identifiable SKU."
+  },
+  {
+    "slug": "uji-matcha-kyoto",
+    "product_name": "Uji Matcha (Kyoto)",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Regional product category, not a single identifiable SKU."
+  },
+  {
+    "slug": "uji-matcha-sweets",
+    "product_name": "Uji matcha sweets",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic sweets category, not a single identifiable SKU."
+  },
+  {
+    "slug": "umaibo-multipack",
+    "product_name": "Umaibo multipack",
+    "image_url": "https://cdn.askul.co.jp/img/product/L1/AH67567_l1.jpg",
+    "image_source": "retailer_official",
+    "confidence": "medium",
+    "notes": "Exact retailer product image for a 30-pack Umaibo Cheese multipack; input does not specify flavor."
+  },
+  {
+    "slug": "umaibo",
+    "product_name": "Umaibo",
+    "image_url": "https://www.yaokin.com/dcms_media/image/27007_01.png",
+    "image_source": "manufacturer",
+    "confidence": "medium",
+    "notes": "Official Yaokin image for Umaibo Mentaiko flavor; input does not specify flavor."
+  },
+  {
+    "slug": "umeboshi-gift-pack",
+    "product_name": "Umeboshi gift pack",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Generic gift-pack category, not a single identifiable SKU."
+  },
+  {
+    "slug": "unlabeled-miracle-whitening-creams",
+    "product_name": "Unlabeled miracle whitening creams",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Not a single identifiable SKU; also describes unlabeled skincare, which is not credible enough for a product image match."
+  },
+  {
+    "slug": "welcome-suica-card",
+    "product_name": "Welcome Suica Card",
+    "image_url": "https://i0.wp.com/nearbytokyo.com/upl/2023/05/nearby-tokyo-my-suica-welcome-suica-card-img-04-768px.jpg",
+    "image_source": "news_blog",
+    "confidence": "medium",
+    "notes": "Official JR East direct card image was below 400px wide; this larger image shows the actual Welcome Suica card."
+  },
+  {
+    "slug": "yamanashi-wine-grape-juice",
+    "product_name": "Yamanashi Wine / Grape Juice",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Mixed category, not a single SKU; includes wine and grape juice rather than one identifiable product."
+  },
+  {
+    "slug": "yodobashi-bic-camera-tax-free-electronics",
+    "product_name": "Yodobashi/Bic Camera Tax-Free Electronics",
+    "image_url": null,
+    "image_source": null,
+    "confidence": "low",
+    "notes": "Service/category listing, not a single physical SKU."
+  }
+]
