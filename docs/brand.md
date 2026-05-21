@@ -76,7 +76,30 @@ What to use, not just what to avoid:
 - Mild imperfection — slight motion blur, real hands in frame, asymmetric crops — feels honest
 - Reference frame: documentary travel zine, not travel magazine
 
-When stock or AI images are temporarily used as placeholders: mark them in code comments. Replace before launch, not after.
+Product cards are an exception (see "Product card imagery" below). For all other contexts — hero shots, lifestyle, places, restaurants, editorial — when stock or AI images are temporarily used as placeholders, mark them in code comments and replace before launch.
+
+---
+
+## Product card imagery
+
+Product cards are functional grid items, not editorial. Retailer and official product images are acceptable as final imagery — not placeholders. E-commerce convention is clean product shots; users expect them, and forcing creator-style photography here creates a permanent bottleneck without a brand payoff.
+
+Acceptable sources:
+- Official manufacturer/brand product photography
+- Retailer product images (Amazon JP, Rakuten, Don Quijote, brand sites)
+- Conbini product shots from the chain's official site
+
+Quality bar:
+- Single product clearly in frame (not a category group shot)
+- Clean background (white or simple — not a busy retailer page crop)
+- No watermarks, price overlays, or retailer branding
+- Resolution sufficient for the card size (no obvious pixelation)
+
+Steven's own creator stills are still preferred when they exist — they're more distinctive and earn more dwell. But they're an upgrade, not a requirement.
+
+This carve-out applies ONLY to product cards in the /products collection. Places, restaurants, cheat sheets, hero imagery, blog posts, social — all still require creator stills or editorial-grade photography per the rules above.
+
+AI-generated product imagery is still banned across the board, including product cards.
 
 ---
 
@@ -112,7 +135,9 @@ Do not generate, source, or recommend:
 - Luxury travel magazine styling
 - AI-generated Japan photography
 
-Use real creator-shot stills from Steven's IG/Reels content where possible. Stock imagery is a placeholder, never a final state.
+For editorial, hero, lifestyle, places, and restaurants: use real creator-shot stills from Steven's IG/Reels content where possible. Stock imagery is a placeholder, never a final state in these contexts.
+
+For product cards specifically: see "Product card imagery" section above.
 
 ---
 
