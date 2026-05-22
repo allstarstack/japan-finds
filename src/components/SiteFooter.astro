@@ -9,6 +9,7 @@ const siteLinks = [
   { label: "Cheat Sheets", href: "/cheat-sheets" },
 ];
 const moreLinks = [
+  { label: "What I use", href: "/tools" },
   { label: "Shop Waitlist", href: "/#shop" },
   { label: "Partner", href: "/#partner" },
   { label: "Accessibility", href: "/accessibility/" },
@@ -50,8 +51,13 @@ const social = [
   </div>
 
   <div class="ftr__signoff">
-    <p class="ftr__copy">© 2026 ALLSTARSTEVEN</p>
-    <p class="ftr__made">Made with egg sando and anxiety.</p>
+    <p class="ftr__disclosure">
+      Some links earn a commission. They don't change what I recommend.
+    </p>
+    <div class="ftr__legal">
+      <p class="ftr__copy">© 2026 ALLSTARSTEVEN</p>
+      <p class="ftr__made">Made with egg sando and anxiety.</p>
+    </div>
   </div>
 </footer>
 
@@ -125,6 +131,14 @@ const social = [
   .ftr__signoff {
     margin-top: 22px;
   }
+  /* Affiliate disclosure — normal footer body text (not the micro-gray
+     sign-off scale), white at AA contrast on Ink Black. */
+  .ftr__disclosure {
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+  }
   .ftr__copy {
     font-family: var(--font-mono);
     font-size: 10px;
@@ -180,12 +194,18 @@ const social = [
       line-height: 2;
     }
     .ftr__signoff {
-      display: flex;
-      justify-content: space-between;
       max-width: var(--content-max);
       margin: 36px auto 0;
       padding: 18px var(--gutter-desktop) 0;
       border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .ftr__disclosure {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .ftr__legal {
+      display: flex;
+      justify-content: space-between;
     }
     .ftr__copy,
     .ftr__made {
