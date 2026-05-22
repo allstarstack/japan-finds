@@ -1,0 +1,221 @@
+---
+/* "Going to Japan?" — pre-trip affiliate module (Affiliates Phase 1).
+   Surfaces the essential pre-trip affiliates as cards. Lives on the
+   homepage (below the hero) and the /cheat-sheets index.
+
+   Every URL is sourced from src/data/affiliates.ts — nothing is hardcoded
+   here. Renders only entries flagged active && module, so a partner is
+   added, removed, or swapped by editing the config (no component change).
+   When Agoda's URL lands, flipping active:true there auto-renders the
+   third card; the grid steps from 2-up to 3-up on its own.
+
+   Card pattern mirrors v2/PlaceCard.astro (.plc): Rice White surface,
+   1.5px Concrete Gray border, --radius-card, border-emphasis on
+   hover/focus. The whole card is a single <a> so it is keyboard-navigable
+   by default. Affiliate links carry rel="noopener nofollow sponsored"
+   (the `sponsored` value is required for paid links per Google guidance).
+
+   Layout follows the project's 1024px breakpoint (tokens.css / global.css),
+   not the spec's 1200px note — flagged as drift. `fluid` drops the section's
+   own gutters/max-width/divider so the module fills a parent container that
+   already constrains width (the /cheat-sheets 720px column). */
+import { affiliates } from "../data/affiliates";
+
+interface Props {
+  /* false (default): self-contained section — content-max width, page
+     gutters, top divider — matching other homepage sections.
+     true: fills the parent's content box, no divider — for use inside an
+     already-constrained column (e.g. the /cheat-sheets index .wrap). */
+  fluid?: boolean;
+}
+
+const { fluid = false } = Astro.props;
+
+const items = affiliates.filter((a) => a.active && a.module);
+---
+
+{
+  items.length > 0 && (
+    <section
+      class:list={["gtj", { "gtj--fluid": fluid }]}
+      aria-labelledby="gtj-h2"
+    >
+      <div class="gtj__inner">
+        <header class="gtj__head">
+          <h2 id="gtj-h2" class="gtj__title">
+            Going to Japan?
+          </h2>
+          <p class="gtj__sub">Sort these before you fly.</p>
+        </header>
+
+        <ul class="gtj__grid">
+          {items.map((a) => (
+            <li class="gtj__item">
+              <a
+                class="gtj__card"
+                href={a.url}
+                target="_blank"
+                rel="noopener nofollow sponsored"
+              >
+                <span class="gtj__partner">{a.partner}</span>
+                <h3 class="gtj__label">{a.label}</h3>
+                <span class="gtj__arrow" aria-hidden="true">
+                  →
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  /* Section rhythm + full-bleed top divider mirror the other homepage
+     sections (StartHere / CheatSheets): padding 32/72, border-top ink. */
+  .gtj {
+    padding: 32px 0;
+    border-top: var(--border-ink);
+  }
+  .gtj__inner {
+    padding: 0 var(--gutter-mobile);
+  }
+
+  /* Fluid: no own width container or divider — the parent column governs
+     width. Vertical margin matches the /cheat-sheets list rhythm. */
+  .gtj--fluid {
+    padding: 0;
+    border-top: 0;
+    margin: 32px 0 0;
+  }
+  .gtj--fluid .gtj__inner {
+    padding: 0;
+  }
+
+  .gtj__head {
+    margin-bottom: 16px;
+  }
+  .gtj__title {
+    font-size: 30px;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+  .gtj__sub {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-ink-60);
+  }
+
+  /* Stacks on mobile. */
+  .gtj__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .gtj__item {
+    display: flex;
+  }
+
+  /* Card — mirrors .plc (v2/PlaceCard.astro): Rice White surface, Concrete
+     Gray border, card radius, flex column. The whole card is the link. */
+  .gtj__card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4px;
+    padding: 14px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-card);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 120ms ease-out;
+  }
+  /* Hover/focus: border emphasis only — no shadow gimmicks (mirrors .plc). */
+  .gtj__card:hover,
+  .gtj__card:focus-visible {
+    border-color: var(--color-ink-black);
+  }
+
+  /* Partner name — small mono label above the headline (IBM Plex Mono 500). */
+  .gtj__partner {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+  /* Headline — Space Grotesk 700, h3-equivalent in the card scale (.plc-name). */
+  .gtj__label {
+    margin: 2px 0 0;
+    font-family: var(--font-head);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    color: var(--color-ink-black);
+  }
+  /* Arrow indicator — pinned to the card bottom so cards align (mirrors
+     .plc-map). Nudges on hover; global.css disables this under
+     prefers-reduced-motion. */
+  .gtj__arrow {
+    margin: auto 0 0;
+    padding-top: 12px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--color-ink-black);
+    transition: transform 120ms ease-out;
+  }
+  .gtj__card:hover .gtj__arrow,
+  .gtj__card:focus-visible .gtj__arrow {
+    transform: translateX(3px);
+  }
+
+  @media (min-width: 1024px) {
+    .gtj {
+      padding: 72px 0;
+    }
+    .gtj__inner {
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 var(--gutter-desktop);
+    }
+    .gtj--fluid {
+      padding: 0;
+      margin: 40px 0 0;
+    }
+    .gtj--fluid .gtj__inner {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+    }
+    .gtj__head {
+      margin-bottom: 24px;
+    }
+    .gtj__title {
+      font-size: 40px;
+      line-height: 1;
+      letter-spacing: -0.025em;
+    }
+    .gtj__sub {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+    /* 2-up for the two active items; auto-fit steps to 3-up when Agoda
+       activates a third card — no markup change needed. */
+    .gtj__grid {
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 16px;
+    }
+    .gtj__card {
+      padding: 16px;
+    }
+    .gtj__label {
+      font-size: 18px;
+    }
+  }
+</style>
