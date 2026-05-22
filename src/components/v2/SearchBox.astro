@@ -1,0 +1,92 @@
+---
+/* SEARCH_AND_SORT Phase B — shared search input for /products and /places.
+   Markup + styles only; the per-page filter rail script (FilterRail /
+   PlaceFilterRail) reads `[data-search-input]` and folds a text predicate
+   into its existing apply(), so search composes with the chip filters and
+   reuses the same count + empty-state. No new dependency, no build step.
+   Each card carries a `data-search` blob (built in ProductCard/PlaceCard)
+   that this input matches against, token-by-token, client-side. */
+interface Props {
+  placeholder: string; // brand-voice + real count, e.g. "Search 380 products"
+  label?: string; // accessible label for the input
+}
+const { placeholder, label = "Search this page" } = Astro.props;
+---
+
+<div class="searchbox">
+  <div class="searchbox-wrap">
+    <label class="sr-only" for="grid-search">{label}</label>
+    <input
+      id="grid-search"
+      class="searchbox-input"
+      type="search"
+      inputmode="search"
+      autocomplete="off"
+      autocapitalize="off"
+      autocorrect="off"
+      spellcheck="false"
+      placeholder={placeholder}
+      data-search-input
+    />
+  </div>
+</div>
+
+<style>
+  .searchbox {
+    padding: 12px var(--gutter-mobile);
+  }
+  .searchbox-wrap {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  /* Full-width on mobile; caps at ~600px on desktop (BUILD_SPEC §B-4). */
+  .searchbox-input {
+    width: 100%;
+    max-width: 600px;
+    min-height: 44px;
+    padding: 11px 16px;
+    background: var(--color-rice-white);
+    color: var(--color-ink-black);
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-pill);
+    /* Typed text is body Inter; 16px keeps iOS from zooming on focus. */
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.3;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  /* Placeholder + count read as mono label copy (brand.md). */
+  .searchbox-input::placeholder {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-60);
+    opacity: 1;
+  }
+  .searchbox-input:focus {
+    outline: none;
+    border-color: var(--color-ink-black);
+  }
+
+  /* Visually-hidden label — kept in the a11y tree for the input. */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .searchbox {
+      padding: 14px var(--gutter-desktop);
+    }
+  }
+</style>

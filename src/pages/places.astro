@@ -10,6 +10,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 import PlaceCard from "../components/v2/PlaceCard.astro";
 import PlaceFilterRail from "../components/v2/PlaceFilterRail.astro";
 import LocationChipRow from "../components/v2/LocationChipRow.astro";
+import SearchBox from "../components/v2/SearchBox.astro";
 import { PLACES_MAP_URL } from "../data/site.js";
 import { prefectureToRegion, REGION_LABELS } from "../data/regions.js";
 
@@ -140,6 +141,7 @@ for (const chip of FEATURED_CHIPS) {
     </section>
 
     <div class="rail-sticky">
+      <SearchBox placeholder="Search 333 places" />
       <LocationChipRow chips={regionChips} hintLabel="regions" />
       <PlaceFilterRail counts={counts} flagCounts={flagCounts} baseCount={baseCount} />
     </div>
@@ -152,7 +154,7 @@ for (const chip of FEATURED_CHIPS) {
           {places.map((p) => <PlaceCard entry={p} />)}
         </div>
         <p class="results-empty" data-empty hidden>
-          Nothing here yet. Back when there is.
+          Nothing matches. Try a place name or region.
         </p>
       </div>
     </section>

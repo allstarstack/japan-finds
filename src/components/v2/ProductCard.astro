@@ -36,6 +36,28 @@ const color = cat ? CHIP_COLOR[cat] : "white";
 
 const imageUrl = d.image || null;
 const description = d.description || d.what_it_is || null;
+
+/* SEARCH_AND_SORT Phase B — searchable text blob the page's filter script
+   matches against. name_jp + brand are indexed ONLY when shown (showAll):
+   creator-fill rows carry unverified jp/brand that the display gate hides
+   (Yawataya-bug guard), so indexing them would surface a card by a value
+   we don't trust enough to print. The rest are always-safe editorial
+   fields. Lowercased once here; the query is lowercased client-side. */
+const searchText = [
+  d.name_en,
+  showAll ? d.name_jp : null,
+  showAll ? d.brand : null,
+  label, // human category label, e.g. "Konbini"
+  cat, // launch_category slug
+  d.category, // base category enum
+  d.subcategory,
+  description,
+  ...(d.where_found ?? []),
+  ...(d.where_to_buy ?? []),
+]
+  .filter(Boolean)
+  .join(" ")
+  .toLowerCase();
 ---
 
 {
@@ -45,6 +67,7 @@ const description = d.description || d.what_it_is || null;
       data-category={cat}
       data-sub={d.sub_chip ?? ""}
       data-fill={d.fill_type}
+      data-search={searchText}
     >
       <span class:list={["chip", `chip--${color}`]}>{label}</span>
       {imageUrl && (

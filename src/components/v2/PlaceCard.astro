@@ -66,6 +66,24 @@ const mapsUrl = d.place_id
   ? `https://www.google.com/maps/place/?q=place_id:${d.place_id}`
   : "https://www.google.com/maps/search/?api=1&query=" +
     encodeURIComponent(`${en}, ${d.prefecture}`);
+
+/* SEARCH_AND_SORT Phase B — searchable text blob the place filter script
+   matches against: name (en + jp), category label, the experience chip,
+   and location (prefecture / region / area) so "onsen", "Oita", "Kyushu"
+   and a place name all resolve. planning_flags stay out — they're
+   filter-only and never rendered. Lowercased once here. */
+const searchText = [
+  en,
+  jp,
+  catLabel,
+  d.public_label,
+  d.prefecture,
+  regionSlug,
+  d.address_or_area,
+]
+  .filter(Boolean)
+  .join(" ")
+  .toLowerCase();
 ---
 
 {
@@ -76,6 +94,7 @@ const mapsUrl = d.place_id
       data-flags={d.planning_flags ?? ""}
       data-region={regionSlug}
       data-tier={d.launch_tier}
+      data-search={searchText}
       hidden={isBase}
     >
       <div class="plc-media">

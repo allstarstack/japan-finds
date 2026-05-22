@@ -10,6 +10,7 @@ import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import ProductCard from "../components/v2/ProductCard.astro";
 import FilterRail from "../components/v2/FilterRail.astro";
+import SearchBox from "../components/v2/SearchBox.astro";
 import { SUB_CHIPS } from "../data/launch-chips.js";
 
 const launch = (await getCollection("products")).filter(
@@ -80,7 +81,10 @@ const featured = FEATURED_ORDER.map((id) =>
       </div>
     </section>
 
-    <FilterRail counts={counts} subAvail={subAvail} />
+    <div class="rail-sticky">
+      <SearchBox placeholder="Search 380 products" />
+      <FilterRail counts={counts} subAvail={subAvail} />
+    </div>
 
     <section class="presults">
       <div class="wrap">
@@ -89,7 +93,7 @@ const featured = FEATURED_ORDER.map((id) =>
           {launch.map((p) => <ProductCard entry={p} />)}
         </div>
         <p class="results-empty" data-empty hidden>
-          Nothing here yet. Back when there is.
+          Nothing matches. Try a brand name or category.
         </p>
       </div>
     </section>
@@ -102,6 +106,17 @@ const featured = FEATURED_ORDER.map((id) =>
     max-width: var(--content-max);
     margin: 0 auto;
     padding: 0 var(--gutter-mobile);
+  }
+
+  /* SEARCH_AND_SORT Phase B — sticky wrapper holding the search box + filter
+     rail as one unit. Owns the sticky and the bottom ink border that the
+     inner rail used to carry (mirrors the /places .rail-sticky). */
+  .rail-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-white);
+    border-bottom: var(--border-ink);
   }
 
   /* Shared mono eyebrow */
