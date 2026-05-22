@@ -1,0 +1,190 @@
+---
+/* /tools — "What I use" (Affiliates Phase 1).
+   Lists every affiliate flagged active && tools from src/data/affiliates.ts
+   in brand voice. No CTA buttons — one descriptive text link per entry.
+   Simpler row layout (dashed dividers) over card grid, since this is a
+   content list, not a browse grid; mirrors the /cheat-sheets index header
+   pattern (eyebrow + h1 + sub in a 720px column).
+
+   Per-entry link text lives here, not in the shared config: the config is
+   locked and reused by the homepage module, and link copy is page-specific.
+   Action-verb + specific-object per brand.md ("Get the JR Pass"). */
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { affiliates } from "../data/affiliates";
+
+const items = affiliates.filter((a) => a.active && a.tools);
+
+/* Descriptive link text per entry — action verb + specific object. */
+const CTA: Record<string, string> = {
+  airalo: "Get the Airalo eSIM",
+  "jrpass-nationwide": "Get the JR Pass",
+  "jrpass-regional": "Get a regional pass",
+};
+const ctaFor = (a: (typeof items)[number]) => CTA[a.id] ?? `Get ${a.partner}`;
+---
+
+<Base
+  title="What I use — Japan Finds"
+  description="The travel tools I actually use in Japan — eSIM and rail passes. Some links earn a commission; they don't change what I recommend."
+>
+  <Header />
+  <main id="main" class="tools">
+    <div class="wrap">
+      <header class="tools-head">
+        <p class="eyebrow">JAPAN FINDS · TOOLS</p>
+        <h1>What I use</h1>
+        <p class="tools-intro">
+          The stuff I actually reach for in Japan. Some of these links earn a
+          commission — they don't change what I recommend.
+        </p>
+      </header>
+
+      <ul class="tools-list">
+        {
+          items.map((a) => (
+            <li class="tools-row">
+              <span class="tools-row__partner">{a.partner}</span>
+              <h2 class="tools-row__label">{a.label}</h2>
+              {a.copy && <p class="tools-row__copy">{a.copy}</p>}
+              <a
+                class="tools-row__link"
+                href={a.url}
+                target="_blank"
+                rel="noopener nofollow sponsored"
+              >
+                {ctaFor(a)}&nbsp;→
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="tools-disclosure">
+        A few of the links here earn a commission when you click through and buy
+        something. That doesn't change what I recommend or what you pay. If
+        something stops being worth it, it gets removed from this page.
+      </p>
+    </div>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px var(--gutter-mobile) 56px;
+  }
+
+  /* Mono eyebrow — shared idiom with /cheat-sheets and /products. */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+    margin-bottom: 12px;
+  }
+  .tools-head h1 {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .tools-intro {
+    margin-top: 14px;
+    max-width: 52ch;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--color-ink-60);
+  }
+
+  /* Simpler row layout — dashed dividers between entries (--border-row),
+     no cards. Each row leads with the partner, then the headline, the
+     brand-voice line, and one descriptive link. */
+  .tools-list {
+    margin-top: 32px;
+    border-top: var(--border-row);
+  }
+  .tools-row {
+    padding: 22px 0;
+    border-bottom: var(--border-row);
+  }
+  .tools-row__partner {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+  .tools-row__label {
+    margin: 4px 0 0;
+    font-size: 21px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+  }
+  .tools-row__copy {
+    margin-top: 8px;
+    max-width: 60ch;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  /* One descriptive text link — no button. Underlines on hover/focus. */
+  .tools-row__link {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    color: var(--color-ink-black);
+    text-decoration: none;
+  }
+  .tools-row__link:hover,
+  .tools-row__link:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  /* Closing disclosure — de-emphasised body text (ink-60 clears AA), set
+     off from the list with extra top space. */
+  .tools-disclosure {
+    margin-top: 28px;
+    max-width: 60ch;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--color-ink-60);
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding: 72px var(--gutter-mobile) 88px;
+    }
+    .tools-head h1 {
+      font-size: 56px;
+    }
+    .tools-intro {
+      font-size: 18px;
+    }
+    .tools-list {
+      margin-top: 40px;
+    }
+    .tools-row {
+      padding: 26px 0;
+    }
+    .tools-row__label {
+      font-size: 24px;
+    }
+    .tools-row__copy {
+      font-size: 16px;
+    }
+    .tools-row__link {
+      font-size: 16px;
+    }
+    .tools-disclosure {
+      margin-top: 36px;
+    }
+  }
+</style>
