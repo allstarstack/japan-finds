@@ -1,0 +1,49 @@
+id: JF-0464
+slug: plus-air-in-mt-fuji-eraser
+name_en: PLUS Air-in Mt. Fuji Eraser
+category: stationery
+intent:
+- bring_home
+- gift_easy
+status: ready
+name_jp: エアイン 富士山消しゴム 青富士 (ER-100AIF)
+brand: PLUS
+where_found:
+- Yodobashi
+- LOFT
+- Tokyu Hands
+- Bic Camera
+- stationery shops
+price_yen: "~¥220"
+what_it_is: Two-layer PVC eraser that erodes into a Mt. Fuji shape as you use it. Air-in
+  ceramic-powder resin for a clean, light erase.
+why_travelers_care: Light, cheap, and distinctive — a stationery souvenir people actually
+  keep and use instead of shoving in a drawer.
+source_links:
+- https://www.yodobashi.com/product/100000001005248757/
+- https://bungu.plus.co.jp/product/correct/eraser/air-in_fujisan/
+- https://tokyopenshop.com/products/plus-air-in-mt-fuji-eraser
+confidence: medium
+trip_score: 6
+suitcase_score: 9
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: PLUS Air-in Mt. Fuji Eraser. A two-layer eraser engineered to wear down
+  into a tiny snow-capped Fuji as you use it — the rare souvenir that does actual work.
+  Light, cheap, and weirdly satisfying.
+english_name: PLUS Air-in Mt. Fuji Eraser (Blue Fuji)
+japanese_name: エアイン 富士山消しゴム 青富士 ER-100AIF
+subcategory: eraser
+price_range_jpy: 220-300
+where_to_buy:
+- Yodobashi Camera
+- LOFT
+- Tokyu Hands
+- Amazon Japan
+- stationery shops
+image: /products/plus-air-in-mt-fuji-eraser.webp
+safety_flags: []
+enrichment_confidence: medium
+enrichment_source_url: https://bungu.plus.co.jp/product/correct/eraser/air-in_fujisan/
+enrichment_date: '2026-05-22'
