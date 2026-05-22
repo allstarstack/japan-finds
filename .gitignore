@@ -38,3 +38,8 @@ restaurants_mymaps_v5.csv
 enrichment_verifications.csv
 enrichment_misses.json
 src/data/restaurants.json.bak
+
+# Local staging for product enrichment (intern processor)
+drafts/photos/
+drafts/_review/
+drafts/links.txt
