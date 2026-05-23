@@ -1,0 +1,43 @@
+id: JF-0465
+slug: daiso-log-stamp
+name_en: Daiso Log Stamp
+category: stationery
+intent:
+- bring_home
+- stock_up
+status: ready
+name_jp: ログスタンプ
+brand: Daiso
+where_found:
+- Daiso
+- Daiso online store
+price_yen: "¥110"
+what_it_is: Rubber planner stamps in weekday, date, and checklist designs. Stamp the
+  days, dates, and to-do boxes into a notebook instead of hand-ruling them every week.
+why_travelers_care: Tiny, ¥110, and actually useful — grab a few designs to log days,
+  dates, and to-dos. The rare souvenir that keeps earning its place after the trip.
+source_links:
+- https://www.thenumber5.co/2025/07/review-daiso-log-stamp-weekly-calendar.html
+- https://jp.daisonet.com/collections/handmade0203
+confidence: high
+trip_score: 6
+suitcase_score: 10
+launch_category: stationery
+fill_type: verified
+display_strategy: show_all
+description: Daiso Log Stamp. Rubber stamps for planner and bullet-journal types —
+  weekday, date, and checklist designs that save you from ruling the same grid every
+  week. ¥110 each, so you end up grabbing the whole set.
+english_name: Daiso Log Stamp
+japanese_name: ログスタンプ
+subcategory: stamp
+price_range_jpy: "110"
+where_to_buy:
+- Daiso (stores)
+- Daiso Japan Online Store
+- Daiso US online store
+image: /products/daiso-log-stamp.webp
+safety_flags: []
+enrichment_confidence: high
+enrichment_source_url: https://www.thenumber5.co/2025/07/review-daiso-log-stamp-weekly-calendar.html
+enrichment_date: '2026-05-23'
