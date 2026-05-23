@@ -99,7 +99,15 @@ Steven's own creator stills are still preferred when they exist — they're more
 
 This carve-out applies ONLY to product cards in the /products collection. Places, restaurants, cheat sheets, hero imagery, blog posts, social — all still require creator stills or editorial-grade photography per the rules above.
 
-AI-generated product imagery is still banned across the board, including product cards.
+**AI-generated vs AI-edited.** The "no AI imagery" rule is about provenance, not detection signals. A real photo of the actual product that's been cleaned up through ChatGPT, Photoshop generative fill, or similar — background removal, lighting/color correction, denoise, distraction removal — is still a real photo. Use it.
+
+What's banned:
+- Images where the product itself was generated from text or concept (no real photographed source)
+- AI tools used to substantively regenerate the product — different angle hallucinated from a single shot, restyled product, features added that weren't in the original
+
+Test: if the product pixels in the final image trace back to a real photo of the actual product, the image is real. If the product itself was generated or regenerated, it's AI-generated and banned.
+
+Note for tooling: AI-cleanup workflows can leave metadata or model artifacts that trip AI-detection signals. Don't auto-reject based on detection signals alone — the rule is about what was photographed, not what software touched the file afterward.
 
 ---
 
@@ -133,7 +141,7 @@ Do not generate, source, or recommend:
 - Shibuya neon at night
 - Shrines/temples as decorative imagery
 - Luxury travel magazine styling
-- AI-generated Japan photography
+- AI-generated Japan photography (cleanup of real photos is fine — see provenance rule under Product card imagery)
 
 For editorial, hero, lifestyle, places, and restaurants: use real creator-shot stills from Steven's IG/Reels content where possible. Stock imagery is a placeholder, never a final state in these contexts.
 
