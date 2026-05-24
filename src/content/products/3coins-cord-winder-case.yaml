@@ -1,0 +1,37 @@
+id: JF-0468
+slug: 3coins-cord-winder-case
+name_en: 3COINS Semi-Auto Cord Winder Case
+category: 100-yen
+intent:
+- bring_home
+- gift_easy
+status: ready
+name_jp: 半自動コード巻取りケース
+brand: 3COINS
+where_found:
+- 3COINS
+- PAL CLOSET (online)
+price_yen: "¥330"
+what_it_is: Palm-sized semi-automatic cable case. Feed in an earphone or charging cord, pull, and it spools and stores up to ~1.5 m. Polypropylene shell, ivory or gray.
+why_travelers_care: Tames the charger-cable spaghetti in your daypack for ¥330. 3COINS does the cheap-but-actually-designed thing well, and it's small enough to forget you're carrying it.
+source_links:
+- https://www.palcloset.jp/display/item/2511-24D3917-00/
+confidence: high
+trip_score: 6
+suitcase_score: 9
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: 3COINS semi-automatic cord winder. Tuck in a charging or earphone cable, give it a pull, and it spools itself away — ¥330 of order for the bag-octopus problem.
+english_name: 3COINS Semi-Automatic Cord Winding Case
+japanese_name: 半自動コード巻取りケース
+subcategory: cable organizer
+price_range_jpy: "297-330"
+where_to_buy:
+- 3COINS
+- PAL CLOSET (online)
+enrichment_confidence: high
+enrichment_source_url: https://www.palcloset.jp/display/item/2511-24D3917-00/
+enrichment_date: '2026-05-24'
+image: /products/3coins-cord-winder-case.webp
+safety_flags: []
