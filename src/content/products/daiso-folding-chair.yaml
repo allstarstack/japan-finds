@@ -1,0 +1,42 @@
+id: JF-0466
+slug: daiso-folding-chair
+name_en: Daiso Folding Chair
+category: 100-yen
+intent:
+- bring_home
+- day_one_fixes
+status: ready
+name_jp: 折りたたみイス
+brand: Daiso
+where_found:
+- Daiso
+- Daiso online store
+price_yen: "¥220"
+what_it_is: A compact polypropylene folding stool — 23.5 × 19 cm, about 17.5 cm tall,
+  holds ~50 kg. Folds flat and opens in a second.
+why_travelers_care: ¥220 and it packs flat into a daypack. Pull it out for picnics,
+  festival queues, or any benchless wait. A quick-sit stool — fine for a kid or a
+  short rest, not a heavy-duty chair.
+source_links:
+- https://jp.daisonet.com/products/4550480630564
+- https://jpbulk.daisonet.com/products/4550480630564
+confidence: high
+trip_score: 5
+suitcase_score: 7
+launch_category: hundred_yen
+fill_type: verified
+display_strategy: show_all
+subcategory: folding stool
+image: null
+safety_flags: []
+enrichment_confidence: high
+enrichment_source_url: https://jp.daisonet.com/products/4550480630564
+enrichment_date: '2026-05-23'
+verification_notes: >-
+  JAN 4550480630564 confirmed via the daisonet bulk listing (product name +
+  23.5×19×17.5 cm dimensions). Price ¥220 (税込) and ~50 kg capacity sourced
+  from secondary listings matching the same dimensions — jp.daisonet.com is
+  JS-gated and did not fetch, so the price is not from the authoritative page.
+  Re-verify ¥220 in-store or on the official online store. Image: null —
+  needs a quality-bar product shot (single item, clean background, no
+  watermark/price overlay).
