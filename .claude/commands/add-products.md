@@ -89,8 +89,9 @@ HIGH → live to src/content/products/. MED or LOW → drafts/_review/.
 - Slug collision unresolvable after 3 attempts → skip, log.
 
 ### Known bot-protected sites
-Known bot-protected sites: amazon.co.jp, yodobashi.com, biccamera.com. For these domains:
+Known bot-protected sites: amazon.co.jp, yodobashi.com, biccamera.com, jp.daisonet.com. For these domains:
 - Make exactly ONE WebFetch attempt with a 20-second timeout.
 - If it fails, immediately offer alternatives to the user (provide product name, paste photo, or skip).
 - Do NOT attempt curl variants, HTTP/1.1 retries, or other fetch methods — they all fail on these sites and waste 3-5 minutes per product.
+- jp.daisonet.com fails SILENTLY, not with a 503/hard block: it serves a cookie-gated account/session shell (JS-rendered) that looks like a normal 200 page but carries no product name, price, or specs. Treat any daisonet fetch that lacks a clear product name AND price as a FAILED fetch — do not extract from it, and do not write a YAML from it. Fall back to product name/photo + web-search, listing Daiso under where_to_buy.
 - If the user already provided a product name and photo in the invocation, skip the WebFetch attempt entirely and go straight to photo-as-image + web-search-for-data path.
