@@ -27,7 +27,7 @@ launch_category: hundred_yen
 fill_type: verified
 display_strategy: show_all
 subcategory: folding stool
-image: null
+image: /products/daiso-folding-chair.webp
 safety_flags: []
 enrichment_confidence: high
 enrichment_source_url: https://jp.daisonet.com/products/4550480630564
@@ -38,5 +38,7 @@ verification_notes: >-
   Price ¥330 (税込, ¥300 + tax) confirmed from the packaging price tag in the
   official daisonet product photo — corrects an earlier ¥220 sourced from a
   secondary listing. jp.daisonet.com is JS-gated and did not fetch. Image:
-  null — needs a quality-bar shot of THIS molded-polypropylene stool (single
-  item, clean background, no price sticker or packaging label).
+  user-supplied retailer photo of the single black unit on a clean white
+  background — but it still shows the ¥330 price sticker and packaging label,
+  a known brand quality-bar exception (brand.md bans price overlays/branding
+  on cards) waived by the user; flag for a cleaner replacement later.
