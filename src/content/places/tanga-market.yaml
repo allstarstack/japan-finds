@@ -33,7 +33,7 @@ hours:
     -   - 10:00
         - 17:00
   sunday: []
-hours_cache_date: '2026-05-19'
+hours_cache_date: '2026-05-25'
 hero_image: /places/tanga-market.webp
 hero_attribution: Photo via Google
 time_sensitive: true
