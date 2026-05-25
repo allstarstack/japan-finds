@@ -1,9 +1,13 @@
 ---
-/* /eat restaurant card (BUILD_SPEC §5; Phase D D1 photos + open-now).
+/* /eat restaurant card (BUILD_SPEC §5; Phase D D1 photos).
    Mobile-first, text-forward. The card leads with a Google hero photo
    (Phase D D1); the ~1 row with no photo falls back to a solid
    colour-block placeholder keyed to cuisine_chip — not faked or AI
    imagery (brand.md).
+
+   Live "open now" status was dropped in the 2026-05-24 cost kill (cached
+   hours go stale); the Google Maps link below carries users to current
+   hours (BUILD_SPEC_cost_kill.md).
 
    The price tier + list badges sit absolutely over the top-right of the
    media. data-cuisine / data-flags drive the client-side filter in
@@ -14,7 +18,6 @@ import {
   restaurantCity,
   restaurantFlags,
 } from "../../data/eat-chips.js";
-import OpenNowBadge from "../OpenNowBadge.astro";
 
 interface Props {
   restaurant: Record<string, any>;
@@ -68,7 +71,6 @@ const mapsUrl = r.place_id
     <p class="rc-jp">{r.name_jp}</p>
     <p class="rc-meta">{meta}</p>
     <p class="rc-res">{resLine}</p>
-    <OpenNowBadge hours={r.hours} />
     <div class="rc-links">
       <a
         class="rc-link"

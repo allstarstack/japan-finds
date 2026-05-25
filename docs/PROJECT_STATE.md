@@ -118,6 +118,10 @@ After D2 ships and before Shop launches. Structured 3–5 hour task:
 
 ## Active decisions log
 
+### Cost kill (2026-05-24)
+- Enrichment script (`enrich_with_places_api.py`) defaults to photos-only as of 2026-05-24. Re-run with `--hours` only when hours actually need refresh — costs ~4x more (Place Details Enterprise SKU vs Essentials).
+- Live "open now" status dropped from BOTH `/places` and `/eat` cards (cached hours go stale; the existing Google Maps link on each card carries users to current hours). The shared `OpenNowBadge.astro` component was deleted as dead code. `time_sensitive`/`hours` schema fields retained (no Zod change).
+
 ### Pre-Phase-C (carried)
 - **Photo strategy reversed 2026-05-19** to Google Places API hero photos with required attribution + brand-coherence outcome gate. Steven's IG/Reels override via D3.
 - **Restaurant curation framing:** "Steven isn't a foodie. Aggregates Tabelog Hyakumeiten. Honest about it."
