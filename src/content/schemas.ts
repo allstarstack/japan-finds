@@ -173,8 +173,10 @@ export const placeSchema = z.object({
   original_category: z.string().optional(),
   // Phase D D1 — Places API enrichment (BUILD_SPEC_d1_places_api.md).
   // All optional: saphir-odoriko-limited-express matched no Google Place
-  // (it's a train) and carries none of these. `time_sensitive` gates the
-  // OpenNowBadge on the place card. See `placesHours` above for `hours`.
+  // (it's a train) and carries none of these. `time_sensitive`/`hours` once
+  // drove the live open-now badge, removed in the 2026-05-24 cost kill
+  // (BUILD_SPEC_cost_kill.md); the fields are retained (no schema change) but
+  // are no longer rendered. See `placesHours` above for `hours`.
   place_id: z.string().optional(),
   lat: z.number().optional(),
   lng: z.number().optional(),

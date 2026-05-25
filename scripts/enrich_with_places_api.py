@@ -3,6 +3,12 @@
 enrich_with_places_api.py — Phase D D1 enrichment
 VERSION: 2026-05-19-v6 — pin description format + address cleanup + flag separator fix
 
+COST WARNING (2026-05-24):
+- Default mode: photos-only. Place Details Essentials ($5/1K) + Place Photos ($7/1K).
+  Approx $4/run for 333 places.
+- With --hours: Place Details Enterprise ($20/1K). Approx $20/run for 333 places.
+  Use sparingly. Hours rarely change.
+
 Enriches /places and /eat YAML frontmatter with:
   Step 1: place_id            (via Places API Text Search)
   Step 2: hours + cache date  (via Place Details, parsing `periods` not `weekdayDescriptions`)
@@ -188,14 +194,29 @@ def text_search(api_key, query, *, bias_lat=None, bias_lng=None):
     }
 
 
-def place_details(api_key, place_id, *, want_photos=True):
-    """GET place details. Returns {regularOpeningHours, photos} or None."""
-    fields = ["regularOpeningHours"]
+def place_details(api_key, place_id, *, want_photos=True, want_hours=False):
+    """GET place details. Returns {regularOpeningHours, photos} or None.
+
+    The field mask is assembled from the flags: `photos` only when want_photos,
+    `regularOpeningHours` only when want_hours. regularOpeningHours forces the
+    Place Details Enterprise SKU ($20/1K vs $5/1K Essentials) — see the COST
+    WARNING in the module docstring, which is why hours are opt-in. With neither
+    flag there is nothing to fetch, so we skip the request entirely.
+    """
+    fields = []
     if want_photos:
         fields.append("photos")
+    if want_hours:
+        fields.append("regularOpeningHours")
+    if not fields:
+        log.info("    place_details skipped — nothing requested "
+                 f"(photos={want_photos}, hours={want_hours})")
+        return None
+    field_mask = ",".join(fields)
+    log.info(f"    place_details field mask: {field_mask}")
     headers = {
         "X-Goog-Api-Key": api_key,
-        "X-Goog-FieldMask": ",".join(fields),
+        "X-Goog-FieldMask": field_mask,
     }
     url = PLACE_DETAILS_URL_TMPL.format(place_id=place_id)
     r = request_with_backoff("GET", url, headers=headers)
@@ -352,11 +373,18 @@ def process_row(data, kind, slug, name_query, name_display, api_key, args, stats
     needs_place_id = (
         not args.hours_only and ("place_id" not in data or args.force)
     )
-    needs_hours = (
+    # Hours are opt-in as of the 2026-05-24 cost kill: regularOpeningHours forces
+    # the Place Details Enterprise SKU, so default runs are photos-only. --hours
+    # re-enables hours (explicit ask → refetch every touched row, or only stale
+    # ones when paired with --refresh-stale); the legacy --hours-only path still
+    # implies hours.
+    want_hours = args.hours or args.hours_only
+    needs_hours = want_hours and (
         args.force
         or args.hours_only
         or "hours" not in data
-        or (args.refresh_stale and is_hours_stale(data))
+        or not args.refresh_stale
+        or is_hours_stale(data)
     )
     needs_photo = (
         args.photos
@@ -439,7 +467,8 @@ def process_row(data, kind, slug, name_query, name_display, api_key, args, stats
 
     # --- Steps 2 + 3: hours + photo (one Place Details call, photos field optional)
     if needs_hours or needs_photo:
-        details = place_details(api_key, place_id, want_photos=needs_photo)
+        details = place_details(api_key, place_id, want_photos=needs_photo,
+                                want_hours=needs_hours)
         if details:
             if needs_hours:
                 hours = normalize_hours(details.get("regularOpeningHours"))
@@ -674,8 +703,13 @@ def main():
                    help="Hit the API but don't write YAML/JSON/photos to disk")
     p.add_argument("--sample", type=int, default=0,
                    help="Limit to N rows per kind (for dry-run testing)")
+    p.add_argument("--hours", action="store_true",
+                   help="Opt in to fetching opening hours (Place Details "
+                        "Enterprise SKU, ~4x cost). Default is photos-only — "
+                        "see COST WARNING in the module docstring.")
     p.add_argument("--hours-only", action="store_true",
-                   help="Skip place_id + photo work; only refresh hours")
+                   help="Skip place_id + photo work; only refresh hours "
+                        "(implies --hours)")
     p.add_argument("--refresh-stale", action="store_true",
                    help="Re-fetch hours where cache > 90 days")
     p.add_argument("--force", action="store_true",
