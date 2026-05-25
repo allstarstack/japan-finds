@@ -37,7 +37,7 @@ const { counts, flagCounts, baseCount } = Astro.props;
         ))
       }
     </div>
-    <p class="prail-hint" aria-hidden="true">{PRIMARY_CHIPS.length} categories · scroll →</p>
+    <p class="prail-hint" data-rail-hint aria-hidden="true">{PRIMARY_CHIPS.length} categories · scroll →</p>
 
     <div class="psec" role="group" aria-label="Filter by planning need">
       {
@@ -140,6 +140,13 @@ const { counts, flagCounts, baseCount } = Astro.props;
   .pchip-n {
     font-weight: 700;
   }
+  /* The script hides zero-count pills via the `hidden` attribute; the
+     base `display` rules above outrank the UA [hidden] rule, so restore
+     it (same pattern as .plc[hidden] in PlaceCard). */
+  .pchip[hidden],
+  .pflag[hidden] {
+    display: none;
+  }
   .pchip.is-active {
     background: var(--c);
     border-color: var(--c);
@@ -209,6 +216,7 @@ const { counts, flagCounts, baseCount } = Astro.props;
     const chips = [...rail.querySelectorAll(".pchip")];
     const flags = [...rail.querySelectorAll(".pflag[data-flag]")];
     const baseBtn = rail.querySelector("[data-base-toggle]");
+    const railHint = rail.querySelector("[data-rail-hint]");
     /* Phase D D6 — location chips live in a sibling LocationChipRow inside
        the shared .rail-sticky wrapper, not in [data-place-rail], so we
        query at document level. The data-location-chip="" button is the
@@ -237,11 +245,35 @@ const { counts, flagCounts, baseCount } = Astro.props;
     let showBase = false;
     let query = "";
 
-    const cardFlags = (card) =>
-      (card.dataset.flags || "")
+    const splitFlags = (s) =>
+      (s || "")
         .split(";")
-        .map((s) => s.trim())
+        .map((x) => x.trim())
         .filter(Boolean);
+
+    /* One descriptor per card so the grid-visibility pass and every
+       per-pill count read the same precomputed fields. */
+    const cardData = cards.map((el) => ({
+      el,
+      isBase: el.dataset.tier === "base",
+      chip: el.dataset.chip || "",
+      region: el.dataset.region || "",
+      flags: splitFlags(el.dataset.flags),
+      search: el.dataset.search || "",
+    }));
+
+    /* Single matching predicate — drives both the visible grid and every
+       facet count, so a pill's number always equals the rows you get after
+       clicking it (no label-vs-result drift). Mirrors the chip / base /
+       flag / location / search rules exactly. */
+    const matches = (c, { location, chip, flagSet, base, tokens }) => {
+      if (!tokens.every((t) => c.search.includes(t))) return false;
+      const okFlags = [...flagSet].every((f) => c.flags.includes(f));
+      const okLocation = !location || c.region === location;
+      if (c.isBase)
+        return (base || tokens.length > 0) && !chip && okFlags && okLocation;
+      return (!chip || c.chip === chip) && okFlags && okLocation;
+    };
 
     /* replaceState (not pushState) matches the rest of this rail's
        convention — selecting filter chips updates the URL in place rather
@@ -263,52 +295,96 @@ const { counts, flagCounts, baseCount } = Astro.props;
       // stay-base by name would silently miss it, and "Search 333 places"
       // would overstate what's findable.
       const tokens = query.split(/\s+/).filter(Boolean);
-      const searching = tokens.length > 0;
+      const state = {
+        location: activeLocation,
+        chip: activeChip,
+        flagSet: activeFlags,
+        base: showBase,
+        tokens,
+      };
+
+      // Grid visibility + result count.
       let n = 0;
-      for (const card of cards) {
-        const isBase = card.dataset.tier === "base";
-        const fl = cardFlags(card);
-        const okFlags = [...activeFlags].every((f) => fl.includes(f));
-        // Location is the same AND-filter for both tiers — every card has
-        // a data-region derived from its prefecture, so base cards in
-        // (say) Kanto stay visible when the Kanto chip is active and the
-        // bases toggle is on.
-        const okLocation =
-          !activeLocation || card.dataset.region === activeLocation;
-        const okSearch = tokens.every((t) =>
-          (card.dataset.search || "").includes(t),
-        );
-        // Base places carry no experience chip — they show only via the
-        // toggle (or an active search), and never alongside a primary chip.
-        const show =
-          (isBase
-            ? (showBase || searching) && !activeChip && okFlags && okLocation
-            : (!activeChip || card.dataset.chip === activeChip) &&
-              okFlags &&
-              okLocation) && okSearch;
-        card.hidden = !show;
+      for (const c of cardData) {
+        const show = matches(c, state);
+        c.el.hidden = !show;
         if (show) n++;
       }
+
+      // Location (region) chips keep their static build-time counts — only
+      // their pressed state updates here.
       for (const b of locationBtns) {
         const v = b.dataset.locationChip || "";
         const on = v === (activeLocation ?? "");
         b.setAttribute("aria-pressed", String(on));
         b.classList.toggle("is-active", on);
       }
+
+      // Category chips — region-scoped counts. Each chip's number is "how
+      // many rows if THIS chip were the active category" under the current
+      // region / flags / search. Single-select, so we swap this chip in
+      // rather than add it. A zero-count chip is hidden so no click can
+      // land on an empty result; the active chip stays visible so it can be
+      // toggled off even at zero.
+      let visibleChips = 0;
       for (const chip of chips) {
-        const on = chip.dataset.chip === activeChip;
+        const v = chip.dataset.chip;
+        const count = cardData.reduce(
+          (a, c) => a + (matches(c, { ...state, chip: v }) ? 1 : 0),
+          0,
+        );
+        const nEl = chip.querySelector(".pchip-n");
+        if (nEl) nEl.textContent = String(count);
+        const on = v === activeChip;
+        const hide = count === 0 && !on;
+        chip.hidden = hide;
+        if (!hide) visibleChips++;
         chip.setAttribute("aria-pressed", String(on));
         chip.classList.toggle("is-active", on);
       }
+      if (railHint)
+        railHint.textContent = visibleChips + " categories · scroll →";
+
+      // Planning flags — multi-select, so a flag's count is "how many rows
+      // if this flag were ALSO on" (union with the active flags) under the
+      // current region / chip / search. Same hide-on-zero rule.
       for (const f of flags) {
-        const on = activeFlags.has(f.dataset.flag);
+        const v = f.dataset.flag;
+        const count = cardData.reduce(
+          (a, c) =>
+            a +
+            (matches(c, { ...state, flagSet: new Set([...activeFlags, v]) })
+              ? 1
+              : 0),
+          0,
+        );
+        const nEl = f.querySelector(".pflag-n");
+        if (nEl) nEl.textContent = String(count);
+        const on = activeFlags.has(v);
+        f.hidden = count === 0 && !on;
         f.setAttribute("aria-pressed", String(on));
         f.classList.toggle("is-active", on);
       }
+
+      // Stay-bases toggle — count is the base-tier rows in the current
+      // region / flags / search. Clicking it clears any active chip, so the
+      // chip is ignored when counting. Hidden at zero unless already on.
       if (baseBtn) {
+        const count = cardData.reduce(
+          (a, c) =>
+            a +
+            (c.isBase && matches(c, { ...state, chip: null, base: true })
+              ? 1
+              : 0),
+          0,
+        );
+        const nEl = baseBtn.querySelector(".pflag-n");
+        if (nEl) nEl.textContent = String(count);
+        baseBtn.hidden = count === 0 && !showBase;
         baseBtn.setAttribute("aria-pressed", String(showBase));
         baseBtn.classList.toggle("is-active", showBase);
       }
+
       if (countEl) countEl.textContent = n + (n === 1 ? " place" : " places");
       if (emptyEl) emptyEl.hidden = n !== 0;
       if (grid) grid.hidden = n === 0;
@@ -317,7 +393,7 @@ const { counts, flagCounts, baseCount } = Astro.props;
         !!activeChip ||
         activeFlags.size > 0 ||
         showBase ||
-        searching;
+        tokens.length > 0;
       if (featuredEl) featuredEl.hidden = filtering;
     };
 
