@@ -1,6 +1,6 @@
 # Japan Finds — Project State
 
-**Last updated:** 2026-05-22 (Search + newest-first sort shipped on `feature/search-and-sort`, pushed to origin, PR pending. Prior: D6 location filter on `phase-d-d6-location-filter`; D5b commits still ready to push on `phase-d-d5b-yaml-write`)
+**Last updated:** 2026-05-25 — PR #21 pill-count fix and PR #22 stamp refresh both shipped.
 
 ## What this is
 The traveling state doc. Drop this at the top of any new Claude chat to give it full context in ~500 tokens instead of replaying conversation history. Update after major milestones — and AFTER any decision reversal, immediately.
