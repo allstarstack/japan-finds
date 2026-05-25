@@ -35,7 +35,7 @@ hours:
   sunday:
     -   - 00:00
         - 23:59
-hours_cache_date: '2026-05-19'
+hours_cache_date: '2026-05-25'
 hero_image: /places/chirihama-nagisa-driveway.webp
 hero_attribution: Photo via Google
 time_sensitive: false

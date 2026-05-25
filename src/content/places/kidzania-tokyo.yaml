@@ -49,7 +49,7 @@ hours:
         - 15:00
     -   - 16:00
         - 21:00
-hours_cache_date: '2026-05-19'
+hours_cache_date: '2026-05-25'
 hero_image: /places/kidzania-tokyo.webp
 hero_attribution: Photo via Google
 time_sensitive: true

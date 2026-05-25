@@ -35,7 +35,7 @@ hours:
   sunday:
     -   - 07:30
         - 18:00
-hours_cache_date: '2026-05-19'
+hours_cache_date: '2026-05-25'
 hero_image: /places/okayama-korakuen-garden.webp
 hero_attribution: Photo via Google
 time_sensitive: true
