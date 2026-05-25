@@ -12,6 +12,7 @@
     "astro": "astro",
     "convert": "node scripts/convert-source.mjs",
     "verify-status": "node scripts/verify-status.mjs",
+    "verify-pills": "node scripts/verify-pills.mjs",
     "enrich:refresh": "python3 scripts/enrich_with_places_api.py --hours-only --refresh-stale",
     "prebuild": "npm run enrich:refresh || true"
   },
