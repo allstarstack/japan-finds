@@ -1,0 +1,19 @@
+name: "Echizen Pottery Village"
+address_or_area: "Echizen, Nyu District"
+region: "Hokuriku Shinetsu"
+prefecture: "Fukui"
+primary_category: "Do"
+public_label: "workshops_crafts"
+planning_flags: "rainy_day"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJd3z-VFWy-F8RXtU_oQ0TzjI
+lat: 35.933875199999996
+lng: 136.0608408
+hero_image: /places/echizen-pottery-village.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
