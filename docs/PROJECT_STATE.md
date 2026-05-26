@@ -1,6 +1,6 @@
 # Japan Finds — Project State
 
-**Last updated:** 2026-05-25 — PR #21 pill-count fix and PR #22 stamp refresh both shipped.
+**Last updated:** 2026-05-26 — D5c Pass 2 fully shipped. PRs #23, #24, #25, #26 merged. Catalog 362 → 356 unique slugs with 114 safety_callouts written and rendering.
 
 ## What this is
 The traveling state doc. Drop this at the top of any new Claude chat to give it full context in ~500 tokens instead of replaying conversation history. Update after major milestones — and AFTER any decision reversal, immediately.
@@ -31,6 +31,7 @@ The traveling state doc. Drop this at the top of any new Claude chat to give it 
 - **Search + newest-first sort (`feature/search-and-sort` — pushed 2026-05-22, PR pending):** Two-phase build from `docs/build/SEARCH_AND_SORT.md` to make /products and /places usable as ManyChat landing pages (recent-video viewers see the new item on top; specific-item seekers search instantly). Two clean commits.
   - **Phase A — newest-first sort (commit `5eaee83`):** /products grid defaults to descending by `id` (JF-#### is zero-padded, so a string compare sorts numerically — newest on top, e.g. JF-0463 Daiso Wash Bag first). /places kept alphabetical: it has no chronological key (bulk backlog import, no `id`/date field — entry id is just the filename slug), so "newest-first" is undefined there (Steven's call). /eat untouched. Verified no dependency on the old sort — filtering is attribute-based, no pagination, no sitemap integration, no related/prev/next widgets.
   - **Phase B — client-side search (commit `0d97a51`):** Sticky search box atop each grid filters the in-page cards as you type. **Chosen over Pagefind** (which the spec named): items have no per-item routes, so Pagefind's page-level results can't return individual cards without generating ~713 pages (see queued item). Reuses the existing rail-filter `apply()` — each card carries a `data-search` blob (name EN/JP, brand, category, subcategory, description, where), token-AND substring match, composes with the chip filters, shares the count + empty-state. Shared `SearchBox.astro` (Rice White / Ink Black / Concrete Gray, Inter body + IBM Plex Mono placeholder, full-width mobile / 600px desktop). `name_jp`/`brand` indexed only when shown (Yawataya display guard). On /places an active query also reveals base-tier cards so "Search 333 places" stays honest. No new dependency, no build step. Lighthouse not run (CLI absent); safe by construction — no new network request or JS bundle (folded into the already-inlined rail scripts), no CLS (input in the already-reserved sticky header), labeled `type=search` input.
+- **D5c Pass 2 — editorial review complete (PRs #23/#24/#25/#26, shipped 2026-05-26):** 114 safety_callouts shipped, render component live (PR #26). Catalog 362 → 356 unique slugs (7 kills, 1 swap: pasmo-passport → tourist-pasmo). PR #23 DO_NOT_RECOMMEND (4 kills, 5 edits incl. 3 callouts). PR #24 HIGH_PRIORITY+LOW_CONFIDENCE (2 kills, 1 swap, 8 callouts, 1 product-identity rewrite on muhi-insect-bite-cream). PR #25 SAFETY_CALLOUT_WRITE_QUEUE (103 callouts, brand-voice ChatGPT pass). PR #26 ProductCard render — Tokyo Red 3px accent strip with IBM Plex Mono "SAFETY" caption, conditional on `safety_callout` presence, 16.5:1 contrast on Rice White (AAA). Schema fix uncovered the Astro 6 content-layer cache landmine at `node_modules/.astro/data-store.json` (not invalidated on schema change).
 
 ## What's in flight
 - _(none — D5b complete 2026-05-20; D2.5 is the next workstream per locked sequencing)_
@@ -115,6 +116,7 @@ After D2 ships and before Shop launches. Structured 3–5 hour task:
 - Cross-linking /eat ↔ /places by neighborhood — **partial overlap with D6; revisit after D6 ships**
 - "Experts agree" overlay for /eat (post-launch curation) — hand-curate top 30 Steven endorses
 - Unused `--color-tokyo-red-dark` token prune in global.css
+- POSSIBLE_MISSING_FLAGS audit (102 slugs) — post-launch flag correctness review including frozen-mikan (wrong dairy/egg flags) and tea-set-gift (gluten flag verification)
 
 ## Active decisions log
 
