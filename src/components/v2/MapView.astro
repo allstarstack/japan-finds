@@ -1,0 +1,763 @@
+---
+/* MapView.astro — shared Mapbox map component used by /places and /eat
+   list-pages when the user toggles to map view. Pure subset of the
+   /map.astro standalone — no category filter buttons (chip rails drive
+   filtering instead, via a custom event broadcast from their apply()).
+
+   Props (data-attrs on root, read by the client script):
+     containerId          unique Mapbox container element id
+     sourceFilter         "places" | "eat" — restrict /places.geojson to
+                          one collection
+     filterEventName      e.g. "places:filter-changed" — listen for
+                          { detail: { visibleSlugs: Set<string> } } and
+                          re-set source data to features whose slug is
+                          in the set
+     height               CSS height value, default "78vh"
+     showLegend           render the bottom-left brand legend
+     legendKind           "places" | "eat" — which palette to render
+
+   Late-attach safety: the rail's first apply() may fire before MapView's
+   listener attaches (URL-driven initial filter state). On init MapView
+   queries [data-grid] [data-slug]:not([hidden]) once and seeds its
+   visible set from the DOM — no event needed for recovery.
+
+   Resize handling: when host page swaps from list to map view, it must
+   dispatch a "mapview:show" CustomEvent so MapView can call map.resize()
+   (Mapbox needs to recompute when its container transitions from 0×0). */
+import "mapbox-gl/dist/mapbox-gl.css";
+
+interface Props {
+  containerId: string;
+  sourceFilter: "places" | "eat";
+  filterEventName?: string;
+  height?: string;
+  showLegend?: boolean;
+  legendKind?: "places" | "eat";
+}
+
+const {
+  containerId,
+  sourceFilter,
+  filterEventName = "",
+  height = "78vh",
+  showLegend = true,
+  legendKind = "places",
+} = Astro.props;
+
+/* /places-map sub-category legend — same 13 colours as /map standalone,
+   plus the Base towns fallback row. No Tabelog row here (this view is
+   source==="places" only; Tabelog is in /eat). */
+const PLACES_LEGEND = [
+  { label: "Nature & Water",     color: "#176BFF" },
+  { label: "Culture & History",  color: "#FF3B30" },
+  { label: "Animals",            color: "#4D8B57" },
+  { label: "Quirky Museums",     color: "#7B3FA0" },
+  { label: "Anime",              color: "#E91E63" },
+  { label: "Onsen & Ryokan",     color: "#9B7EBD" },
+  { label: "Photo Spots",        color: "#FF6B6B" },
+  { label: "Scenic Transport",   color: "#FF9800" },
+  { label: "Theme Parks",        color: "#FFD84D" },
+  { label: "Parks",              color: "#A4C49C" },
+  { label: "Workshops & Crafts", color: "#8B5A2B" },
+  { label: "Food Markets",       color: "#D4A017" },
+  { label: "Cafes",              color: "#D2B48C" },
+  { label: "Base towns",         color: "#999999" },
+];
+
+/* /eat-map cuisine legend — pulls from RestaurantCard.astro's existing
+   .rc-block-- palette. Two adjustments for map visibility:
+     - "ink" (Unagi, Yakiniku) keeps fill #151515 but uses Rice White
+       border so the pin isn't ink-on-ink.
+     - "gray" (Soba, Udon) shifts from #e6e1d8 Concrete Gray (too close
+       to the Rice White map background) to #999999 medium gray. */
+const EAT_LEGEND = [
+  { label: "Sushi",                  color: "#ff3b30" },
+  { label: "Tempura",                color: "#ffd84d" },
+  { label: "Unagi",                  color: "#151515" },
+  { label: "Sukiyaki & Shabu-shabu", color: "#b93028" },
+  { label: "Yakiniku",               color: "#151515" },
+  { label: "Yakitori",               color: "#176bff" },
+  { label: "Tonkatsu",               color: "#ffd84d" },
+  { label: "Ramen",                  color: "#ff3b30" },
+  { label: "Soba",                   color: "#999999" },
+  { label: "Udon",                   color: "#999999" },
+  { label: "Izakaya",                color: "#4d8b57" },
+  { label: "Okonomiyaki",            color: "#ffd84d" },
+  { label: "Shokudo",                color: "#4d8b57" },
+];
+
+const legendRows = legendKind === "eat" ? EAT_LEGEND : PLACES_LEGEND;
+---
+
+<div
+  class="mv-wrap"
+  data-mv-root
+  data-mv-container={containerId}
+  data-mv-source={sourceFilter}
+  data-mv-filter-event={filterEventName}
+>
+  <div
+    id={containerId}
+    class="mv-canvas"
+    style={`height:${height}`}
+    aria-label="Interactive map"
+  >
+  </div>
+
+  <p class="mv-hint" hidden data-mv-hint>Tap the map to enable zoom</p>
+
+  <div class="mv-loading" data-mv-loading>
+    <span class="mv-loading-spinner" aria-hidden="true"></span>
+    <span>Loading map…</span>
+  </div>
+
+  <div class="mv-error" hidden data-mv-error role="alert">
+    <div class="mv-error-card">
+      <p class="mv-error-text">Map unavailable — please refresh.</p>
+      <button type="button" class="mv-error-reload" data-mv-reload>Reload page</button>
+    </div>
+  </div>
+
+  {
+    showLegend && (
+      <div class="mv-legend" data-mv-legend>
+        <button
+          type="button"
+          class="mv-legend-toggle"
+          data-mv-legend-toggle
+          aria-expanded="true"
+          aria-controls={`${containerId}-legend-list`}
+        >
+          <span class="mv-legend-toggle-text">Legend</span>
+          <span class="mv-legend-chev" aria-hidden="true">▾</span>
+        </button>
+        <ul
+          id={`${containerId}-legend-list`}
+          class="mv-legend-list"
+          data-mv-legend-list
+        >
+          {legendRows.map((r) => (
+            <li>
+              <span
+                class="mv-legend-swatch"
+                style={`background:${r.color}`}
+                aria-hidden="true"
+              />
+              <span>{r.label}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
+</div>
+
+<style is:global>
+  /* Popup overrides — Mapbox creates these dynamically, so global. */
+  .mapboxgl-popup-content {
+    padding: 0;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+  .mapboxgl-popup-tip { display: none; }
+  .mapboxgl-popup-close-button {
+    color: var(--color-ink-black);
+    font-size: 18px;
+    padding: 2px 8px;
+    line-height: 1;
+  }
+  .mv-popup {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    min-width: 220px;
+    max-width: 280px;
+  }
+  .mv-popup-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: var(--radius-sm);
+    background: var(--color-concrete-gray);
+  }
+  .mv-popup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    min-width: 0;
+    flex: 1;
+  }
+  .mv-popup-name {
+    margin: 0;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color-ink-black);
+  }
+  .mv-popup-jp {
+    margin-left: 4px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-ink-60);
+  }
+  .mv-popup-area {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--color-ink-60);
+    letter-spacing: 0.02em;
+  }
+  .mv-popup-link {
+    margin-top: 2px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* Mapbox built-in controls — brand-styled. */
+  .mapboxgl-ctrl-group {
+    background: var(--color-rice-white) !important;
+    border: 1.5px solid var(--color-ink-black) !important;
+    border-radius: var(--radius-sm) !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+  .mapboxgl-ctrl-group button {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .mapboxgl-ctrl-group button:not(:disabled):hover {
+    background: var(--color-rice-tint) !important;
+  }
+  .mapboxgl-ctrl-attrib {
+    background: rgba(247, 243, 234, 0.85) !important;
+  }
+</style>
+
+<style>
+  .mv-wrap {
+    position: relative;
+    width: 100%;
+  }
+  .mv-canvas {
+    width: 100%;
+    background: var(--color-concrete-gray);
+  }
+  .mv-hint {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 6px 14px;
+    background: var(--color-ink-black);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: var(--radius-pill);
+    z-index: 11;
+    pointer-events: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .mv-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    z-index: 13;
+  }
+  .mv-loading[hidden] { display: none; }
+  .mv-loading-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--color-concrete-gray);
+    border-top-color: var(--color-ink-black);
+    border-radius: 50%;
+    animation: mv-spin 0.7s linear infinite;
+  }
+  @keyframes mv-spin { to { transform: rotate(360deg); } }
+
+  .mv-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 14;
+  }
+  .mv-error-card {
+    padding: 16px 20px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-tokyo-red);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .mv-error-text {
+    margin: 0;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-ink-black);
+  }
+  .mv-error-reload {
+    padding: 6px 14px;
+    background: var(--color-ink-black);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .mv-legend {
+    position: absolute;
+    bottom: 24px;
+    left: 12px;
+    z-index: 11;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+    max-width: 220px;
+  }
+  .mv-legend-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  .mv-legend-toggle-text { flex: 1; }
+  .mv-legend-chev { transition: transform 120ms ease-out; }
+  .mv-legend-toggle[aria-expanded="false"] .mv-legend-chev {
+    transform: rotate(-90deg);
+  }
+  .mv-legend-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 12px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .mv-legend-list[hidden] { display: none; }
+  .mv-legend-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.3;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .mv-legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-ink-black);
+    flex-shrink: 0;
+  }
+</style>
+
+<script>
+  import mapboxgl from "mapbox-gl";
+
+  /* Pin paint expressions — defined once, selected by sourceFilter. */
+  const PLACES_PAINT = {
+    "circle-color": [
+      "match",
+      ["get", "public_label"],
+      "nature_water", "#176BFF",
+      "culture_history", "#FF3B30",
+      "animals", "#4D8B57",
+      "quirky_museums", "#7B3FA0",
+      "anime", "#E91E63",
+      "onsen_ryokan", "#9B7EBD",
+      "photo_spots", "#FF6B6B",
+      "scenic_transport", "#FF9800",
+      "theme_parks", "#FFD84D",
+      "parks", "#A4C49C",
+      "workshops_crafts", "#8B5A2B",
+      "food_markets", "#D4A017",
+      "cafes", "#D2B48C",
+      /* base-tier / no public_label */ "#999999",
+    ],
+    "circle-radius": 6,
+    "circle-stroke-width": 1.5,
+    "circle-stroke-color": "#151515",
+  };
+
+  /* /eat pins are solid (not ring) on /eat-map — no source differentiation
+     needed when the whole map is /eat. Per-cuisine fill colours from the
+     existing RestaurantCard tokens. Border colour expression flips to Rice
+     White only for the two ink-filled cuisines so the dark pin remains
+     visible. */
+  const EAT_PAINT = {
+    "circle-color": [
+      "match",
+      ["get", "cuisine"],
+      "Sushi", "#ff3b30",
+      "Tempura", "#ffd84d",
+      "Unagi", "#151515",
+      "Sukiyaki & Shabu-shabu", "#b93028",
+      "Yakiniku", "#151515",
+      "Yakitori", "#176bff",
+      "Tonkatsu", "#ffd84d",
+      "Ramen", "#ff3b30",
+      "Soba", "#999999",
+      "Udon", "#999999",
+      "Izakaya", "#4d8b57",
+      "Okonomiyaki", "#ffd84d",
+      "Shokudo", "#4d8b57",
+      "#999999",
+    ],
+    "circle-radius": 6,
+    "circle-stroke-width": 1.5,
+    "circle-stroke-color": [
+      "match",
+      ["get", "cuisine"],
+      "Unagi", "#F7F3EA",
+      "Yakiniku", "#F7F3EA",
+      "#151515",
+    ],
+  };
+
+  /* Initialize each MapView instance on the page. There's typically one,
+     but the script supports multiple in principle. */
+  document.querySelectorAll("[data-mv-root]").forEach(initMapView);
+
+  function initMapView(root) {
+    const containerId = root.dataset.mvContainer;
+    const sourceFilter = root.dataset.mvSource; // "places" | "eat"
+    const filterEventName = root.dataset.mvFilterEvent || null;
+
+    mapboxgl.accessToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
+
+    const map = new mapboxgl.Map({
+      container: containerId,
+      style: "mapbox://styles/mapbox/light-v11",
+      center: [138, 36],
+      zoom: 4.5,
+      minZoom: 4,
+      maxZoom: 18,
+      hash: true,
+    });
+
+    /* State scoped to this MapView instance. */
+    let allFeatures = null;
+    let visibleSlugs = null; // null = no external filter applied yet (show all from sourceFilter)
+    let mapErrored = false;
+
+    /* Loading dismiss — same 3-layer pattern as /map.astro Phase A.7. */
+    function dismissLoading() {
+      const el = root.querySelector("[data-mv-loading]");
+      if (el) el.hidden = true;
+    }
+    setTimeout(dismissLoading, 5000);
+    map.once("idle", dismissLoading);
+
+    function showErrorOverlay() {
+      const el = root.querySelector("[data-mv-error]");
+      if (el) el.hidden = false;
+      dismissLoading();
+    }
+
+    map.on("error", (e) => {
+      if (mapErrored) return;
+      const err = e && e.error ? e.error : {};
+      if (
+        err.status === 401 ||
+        err.status === 403 ||
+        /unauthorized|forbidden|access token/i.test(err.message || "")
+      ) {
+        mapErrored = true;
+        showErrorOverlay();
+      }
+    });
+
+    /* Geolocate control, brand-styled via global CSS. */
+    const geolocate = new mapboxgl.GeolocateControl({
+      positionOptions: { enableHighAccuracy: true, timeout: 6000 },
+      trackUserLocation: false,
+      showAccuracyCircle: false,
+      showUserLocation: true,
+      fitBoundsOptions: { maxZoom: 12 },
+    });
+    map.addControl(geolocate, "bottom-right");
+
+    /* Reload button on error overlay. */
+    const reload = root.querySelector("[data-mv-reload]");
+    if (reload) reload.addEventListener("click", () => window.location.reload());
+
+    /* Legend collapse toggle. Desktop default open; collapse on
+       coarse-pointer (mobile/tablet) so it doesn't eat half the map. */
+    const legendToggle = root.querySelector("[data-mv-legend-toggle]");
+    const legendList = root.querySelector("[data-mv-legend-list]");
+    if (legendToggle && legendList) {
+      if (window.matchMedia("(pointer: coarse)").matches) {
+        legendToggle.setAttribute("aria-expanded", "false");
+        legendList.hidden = true;
+      }
+      legendToggle.addEventListener("click", () => {
+        const expanded = legendToggle.getAttribute("aria-expanded") === "true";
+        legendToggle.setAttribute("aria-expanded", String(!expanded));
+        legendList.hidden = expanded;
+      });
+    }
+
+    /* Mobile scroll-zoom gating — same UX as /map.astro. */
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      map.scrollZoom.disable();
+      map.touchZoomRotate.disable();
+      const hint = root.querySelector("[data-mv-hint]");
+      if (hint) hint.hidden = false;
+      const activate = () => {
+        map.scrollZoom.enable();
+        map.touchZoomRotate.enable();
+        if (hint) hint.hidden = true;
+      };
+      map.once("click", activate);
+    }
+
+    /* Resize listener — host page dispatches "mapview:show" when toggling
+       from list to map view, so Mapbox recomputes its container size. */
+    window.addEventListener("mapview:show", () => {
+      map.resize();
+    });
+
+    /* Compute the filtered feature set for the current state. */
+    function currentFiltered() {
+      if (!allFeatures) return [];
+      return allFeatures.filter((f) => {
+        if (f.properties.source !== sourceFilter) return false;
+        if (visibleSlugs === null) return true;
+        return visibleSlugs.has(f.properties.slug);
+      });
+    }
+
+    function applySource() {
+      if (!map.getSource("places")) return;
+      map.getSource("places").setData({
+        type: "FeatureCollection",
+        features: currentFiltered(),
+      });
+    }
+
+    /* External filter event — chip rail broadcasts a Set of visible
+       slugs after each apply(). Update local state and re-set source. */
+    if (filterEventName) {
+      document.addEventListener(filterEventName, (e) => {
+        const detail = e.detail || {};
+        visibleSlugs = detail.visibleSlugs instanceof Set
+          ? detail.visibleSlugs
+          : new Set(detail.visibleSlugs || []);
+        applySource();
+      });
+    }
+
+    /* Late-attach safety: if the rail already fired its first apply()
+       before this listener attached (URL-driven initial filter), recover
+       by querying the DOM for currently-visible cards. */
+    function seedFromDOM() {
+      if (!filterEventName) return; // /map-style usage doesn't need this
+      const visibleCards = document.querySelectorAll(
+        "[data-grid] [data-slug]:not([hidden])",
+      );
+      if (visibleCards.length === 0) return;
+      const slugs = new Set();
+      for (const card of visibleCards) {
+        const s = card.dataset.slug;
+        if (s) slugs.add(s);
+      }
+      visibleSlugs = slugs;
+    }
+
+    map.on("load", () => {
+      dismissLoading();
+
+      fetch("/places.geojson")
+        .then((r) => {
+          if (!r.ok) throw new Error("geojson fetch failed: " + r.status);
+          return r.json();
+        })
+        .then((data) => {
+          allFeatures = data.features;
+          seedFromDOM();
+          initLayers();
+        })
+        .catch((err) => {
+          console.error("places.geojson load failed", err);
+          showErrorOverlay();
+        });
+    });
+
+    function initLayers() {
+      map.addSource("places", {
+        type: "geojson",
+        data: { type: "FeatureCollection", features: currentFiltered() },
+        cluster: true,
+        clusterMaxZoom: 14,
+        clusterRadius: 50,
+      });
+
+      map.addLayer({
+        id: "clusters",
+        type: "circle",
+        source: "places",
+        filter: ["has", "point_count"],
+        paint: {
+          "circle-color": "#F7F3EA",
+          "circle-stroke-color": "#E6E1D8",
+          "circle-stroke-width": 1.5,
+          "circle-radius": [
+            "step",
+            ["get", "point_count"],
+            20,
+            25, 30,
+            100, 40,
+            250, 50,
+          ],
+        },
+      });
+      map.addLayer({
+        id: "cluster-count",
+        type: "symbol",
+        source: "places",
+        filter: ["has", "point_count"],
+        layout: {
+          "text-field": ["get", "point_count_abbreviated"],
+          "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+          "text-size": 11,
+        },
+        paint: { "text-color": "#151515" },
+      });
+
+      map.addLayer({
+        id: "unclustered",
+        type: "circle",
+        source: "places",
+        filter: ["!", ["has", "point_count"]],
+        paint: sourceFilter === "eat" ? EAT_PAINT : PLACES_PAINT,
+      });
+
+      /* Cluster click → expand. */
+      map.on("click", "clusters", (e) => {
+        const f = map.queryRenderedFeatures(e.point, { layers: ["clusters"] })[0];
+        const id = f.properties.cluster_id;
+        map.getSource("places").getClusterExpansionZoom(id, (err, zoom) => {
+          if (err) return;
+          map.easeTo({ center: f.geometry.coordinates, zoom });
+        });
+      });
+
+      /* Pin click → lazy popup. Branch HTML on source. */
+      map.on("click", "unclustered", (e) => {
+        const f = e.features[0];
+        const coords = f.geometry.coordinates.slice();
+        const p = f.properties;
+        const img = p.hero_image
+          ? `<img src="${p.hero_image}" alt="" loading="lazy" class="mv-popup-img" />`
+          : `<div class="mv-popup-img" aria-hidden="true"></div>`;
+        let html;
+        if (p.source === "eat") {
+          const meta = [];
+          if (p.cuisine) meta.push(p.cuisine);
+          if (p.price_tier) meta.push(p.price_tier);
+          const metaLine = meta.join(" · ");
+          const provenance = p.list_year
+            ? `${p.list_year} Tabelog Hyakumeiten${
+                p.is_shokudo ? " (Shokudo)" : ""
+              }${p.rank_in_city ? ` · #${p.rank_in_city} in ${p.city || ""}` : ""}`
+            : "";
+          const nameHTML = p.name_jp
+            ? `${p.name} <span class="mv-popup-jp">${p.name_jp}</span>`
+            : p.name;
+          html = `
+            <div class="mv-popup">
+              ${img}
+              <div class="mv-popup-text">
+                <h3 class="mv-popup-name">${nameHTML}</h3>
+                ${metaLine ? `<p class="mv-popup-area">${metaLine}</p>` : ""}
+                ${provenance ? `<p class="mv-popup-area">${provenance}</p>` : ""}
+                <a class="mv-popup-link" href="/eat">View on /eat →</a>
+              </div>
+            </div>
+          `;
+        } else {
+          const area = p.address_or_area || "";
+          html = `
+            <div class="mv-popup">
+              ${img}
+              <div class="mv-popup-text">
+                <h3 class="mv-popup-name">${p.name || ""}</h3>
+                ${area ? `<p class="mv-popup-area">${area}</p>` : ""}
+                <a class="mv-popup-link" href="/places">View on /places →</a>
+              </div>
+            </div>
+          `;
+        }
+        new mapboxgl.Popup({ offset: 8 })
+          .setLngLat(coords)
+          .setHTML(html)
+          .addTo(map);
+      });
+
+      for (const layer of ["clusters", "unclustered"]) {
+        map.on("mouseenter", layer, () => {
+          map.getCanvas().style.cursor = "pointer";
+        });
+        map.on("mouseleave", layer, () => {
+          map.getCanvas().style.cursor = "";
+        });
+      }
+    }
+  }
+</script>

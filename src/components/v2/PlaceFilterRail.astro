@@ -353,6 +353,25 @@ const { counts, flagCounts } = Astro.props;
         activeFlags.size > 0 ||
         tokens.length > 0;
       if (featuredEl) featuredEl.hidden = filtering;
+
+      /* Phase B: broadcast which place slugs are currently visible so
+         a sibling MapView component (when the user is in map-view) can
+         re-set its source data to match. The event fires on every filter
+         change AND on initial load (after readURL + first apply), so a
+         late-attaching listener that misses this can recover by querying
+         [data-grid] [data-slug]:not([hidden]) on its own init. */
+      const visibleSlugs = new Set();
+      for (const c of cardData) {
+        if (!c.el.hidden) {
+          const slug = c.el.dataset.slug;
+          if (slug) visibleSlugs.add(slug);
+        }
+      }
+      document.dispatchEvent(
+        new CustomEvent("places:filter-changed", {
+          detail: { visibleSlugs },
+        }),
+      );
     };
 
     /* Sync filter state from the URL. Called on initial load and on

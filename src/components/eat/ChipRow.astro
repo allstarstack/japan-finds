@@ -339,6 +339,23 @@ const FLAG_DIMS = [
           !activeLocation &&
           activeCuisines.size === 0 &&
           activeFlags.size === 0;
+
+      /* Phase B: broadcast visible restaurant slugs for a sibling
+         MapView (when /eat is in map-view). Late-attaching listeners
+         recover by querying [data-grid] [data-slug]:not([hidden]) on
+         their own init. */
+      const visibleSlugs = new Set();
+      for (const card of cards) {
+        if (!card.hidden) {
+          const slug = card.dataset.slug;
+          if (slug) visibleSlugs.add(slug);
+        }
+      }
+      document.dispatchEvent(
+        new CustomEvent("eat:filter-changed", {
+          detail: { visibleSlugs },
+        }),
+      );
     };
 
     /* Sync filter state from the URL. Called on initial load and on

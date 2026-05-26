@@ -43,7 +43,7 @@ const mapsUrl = r.place_id
   : r.maps_search;
 ---
 
-<article class="rc" data-cuisine={cuisine} data-city={city} data-flags={flags.join(" ")}>
+<article class="rc" data-slug={r.id} data-cuisine={cuisine} data-city={city} data-flags={flags.join(" ")}>
   <div class="rc-media">
     {
       r.hero_image ? (

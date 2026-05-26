@@ -12,6 +12,7 @@ import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import ChipRow from "../components/eat/ChipRow.astro";
 import LocationChipRow from "../components/v2/LocationChipRow.astro";
+import MapView from "../components/v2/MapView.astro";
 import RestaurantCard from "../components/eat/RestaurantCard.astro";
 import MethodologyFooter from "../components/eat/MethodologyFooter.astro";
 import { RESTAURANTS_MAP_URL } from "../data/site.js";
@@ -95,11 +96,22 @@ const cityChips = CITY_CHIPS
     </section>
 
     <div class="rail-sticky">
+      <div class="view-toggle-row">
+        <div
+          class="view-toggle"
+          role="group"
+          aria-label="Toggle list or map view"
+          data-view-toggle
+        >
+          <button type="button" data-view-btn="list" aria-pressed="true">List</button>
+          <button type="button" data-view-btn="map" aria-pressed="false">Map</button>
+        </div>
+      </div>
       <LocationChipRow chips={cityChips} hintLabel="cities" />
       <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
     </div>
 
-    <section class="eresults">
+    <section class="eresults" data-list-section>
       <div class="wrap">
         <div class="eresults-bar">
           <h2 class="eresults-count" data-count>Showing {total} of {total}</h2>
@@ -115,6 +127,17 @@ const cityChips = CITY_CHIPS
           Nothing here yet. Back when there is.
         </p>
       </div>
+    </section>
+
+    <section class="eresults-map" data-map-section hidden>
+      <MapView
+        containerId="eat-map"
+        sourceFilter="eat"
+        filterEventName="eat:filter-changed"
+        height="78vh"
+        showLegend={true}
+        legendKind="eat"
+      />
     </section>
 
     <MethodologyFooter />
@@ -277,4 +300,97 @@ const cityChips = CITY_CHIPS
       gap: 16px;
     }
   }
+
+  /* View toggle — mirrors /places. Same segmented control styling. */
+  .view-toggle-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px var(--gutter-mobile);
+  }
+  .view-toggle {
+    display: inline-flex;
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    background: var(--color-rice-white);
+    box-shadow: var(--shadow-sm);
+  }
+  .view-toggle button {
+    padding: 6px 14px;
+    background: transparent;
+    border: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    cursor: pointer;
+  }
+  .view-toggle button[aria-pressed="true"] {
+    background: var(--color-ink-black);
+    color: #fff;
+  }
+  .eresults[hidden],
+  .eresults-map[hidden] { display: none; }
+
+  @media (max-width: 640px) {
+    .view-toggle-row { justify-content: stretch; }
+    .view-toggle { width: 100%; }
+    .view-toggle button { flex: 1; }
+  }
+  @media (min-width: 1024px) {
+    .view-toggle-row { padding: 8px var(--gutter-desktop); }
+  }
 </style>
+
+<script>
+  /* View toggle (Phase B) — same logic as /places.astro. */
+  const toggle = document.querySelector("[data-view-toggle]");
+  const listSec = document.querySelector("[data-list-section]");
+  const mapSec = document.querySelector("[data-map-section]");
+
+  function setView(view, { writeURL = true } = {}) {
+    const isMap = view === "map";
+    if (listSec) listSec.hidden = isMap;
+    if (mapSec) mapSec.hidden = !isMap;
+    if (toggle) {
+      for (const btn of toggle.querySelectorAll("[data-view-btn]")) {
+        btn.setAttribute(
+          "aria-pressed",
+          String(btn.dataset.viewBtn === view),
+        );
+      }
+    }
+    if (writeURL) {
+      const p = new URLSearchParams(window.location.search);
+      if (isMap) p.set("view", "map");
+      else p.delete("view");
+      const qs = p.toString();
+      history.replaceState(
+        null,
+        "",
+        window.location.pathname + (qs ? "?" + qs : "") + window.location.hash,
+      );
+    }
+    if (isMap) {
+      window.dispatchEvent(new CustomEvent("mapview:show"));
+    }
+  }
+
+  const params = new URLSearchParams(window.location.search);
+  setView(params.get("view") === "map" ? "map" : "list", { writeURL: false });
+
+  if (toggle) {
+    for (const btn of toggle.querySelectorAll("[data-view-btn]")) {
+      btn.addEventListener("click", () => {
+        setView(btn.dataset.viewBtn);
+      });
+    }
+  }
+
+  window.addEventListener("popstate", () => {
+    const params = new URLSearchParams(window.location.search);
+    setView(params.get("view") === "map" ? "map" : "list", { writeURL: false });
+  });
+</script>

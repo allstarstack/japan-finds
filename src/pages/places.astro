@@ -11,6 +11,7 @@ import PlaceCard from "../components/v2/PlaceCard.astro";
 import PlaceFilterRail from "../components/v2/PlaceFilterRail.astro";
 import LocationChipRow from "../components/v2/LocationChipRow.astro";
 import SearchBox from "../components/v2/SearchBox.astro";
+import MapView from "../components/v2/MapView.astro";
 import { PLACES_MAP_URL } from "../data/site.js";
 import { prefectureToRegion, REGION_LABELS } from "../data/regions.js";
 
@@ -150,12 +151,23 @@ for (const chip of FEATURED_CHIPS) {
     </section>
 
     <div class="rail-sticky">
+      <div class="view-toggle-row">
+        <div
+          class="view-toggle"
+          role="group"
+          aria-label="Toggle list or map view"
+          data-view-toggle
+        >
+          <button type="button" data-view-btn="list" aria-pressed="true">List</button>
+          <button type="button" data-view-btn="map" aria-pressed="false">Map</button>
+        </div>
+      </div>
       <SearchBox placeholder="Search 333 places" />
       <LocationChipRow chips={regionChips} hintLabel="regions" />
       <PlaceFilterRail counts={counts} flagCounts={flagCounts} />
     </div>
 
-    <section class="presults">
+    <section class="presults" data-list-section>
       <div class="wrap">
         <h2 class="results-count" data-count>{total} places</h2>
         <p class="xlink">Looking for restaurants? <a href="/eat">See → /eat</a></p>
@@ -166,6 +178,17 @@ for (const chip of FEATURED_CHIPS) {
           Nothing matches. Try a place name or region.
         </p>
       </div>
+    </section>
+
+    <section class="presults-map" data-map-section hidden>
+      <MapView
+        containerId="places-map"
+        sourceFilter="places"
+        filterEventName="places:filter-changed"
+        height="78vh"
+        showLegend={true}
+        legendKind="places"
+      />
     </section>
   </main>
   <SiteFooter />
@@ -393,4 +416,112 @@ for (const chip of FEATURED_CHIPS) {
       gap: 16px;
     }
   }
+
+  /* View toggle (list/map segmented control). Lives at the top of the
+     rail-sticky block, right-aligned on desktop, full-width on mobile. */
+  .view-toggle-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px var(--gutter-mobile);
+  }
+  .view-toggle {
+    display: inline-flex;
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    background: var(--color-rice-white);
+    box-shadow: var(--shadow-sm);
+  }
+  .view-toggle button {
+    padding: 6px 14px;
+    background: transparent;
+    border: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    cursor: pointer;
+  }
+  .view-toggle button[aria-pressed="true"] {
+    background: var(--color-ink-black);
+    color: #fff;
+  }
+  .presults[hidden],
+  .presults-map[hidden] { display: none; }
+
+  @media (max-width: 640px) {
+    .view-toggle-row {
+      justify-content: stretch;
+    }
+    .view-toggle {
+      width: 100%;
+    }
+    .view-toggle button {
+      flex: 1;
+    }
+  }
+  @media (min-width: 1024px) {
+    .view-toggle-row {
+      padding: 8px var(--gutter-desktop);
+    }
+  }
 </style>
+
+<script>
+  /* View toggle (Phase B): swap between list grid and map view.
+     URL ?view=map persists state; default is list. When switching to
+     map view, dispatch "mapview:show" so MapView calls map.resize()
+     since its container just gained dimensions. */
+  const toggle = document.querySelector("[data-view-toggle]");
+  const listSec = document.querySelector("[data-list-section]");
+  const mapSec = document.querySelector("[data-map-section]");
+
+  function setView(view, { writeURL = true } = {}) {
+    const isMap = view === "map";
+    if (listSec) listSec.hidden = isMap;
+    if (mapSec) mapSec.hidden = !isMap;
+    if (toggle) {
+      for (const btn of toggle.querySelectorAll("[data-view-btn]")) {
+        btn.setAttribute(
+          "aria-pressed",
+          String(btn.dataset.viewBtn === view),
+        );
+      }
+    }
+    if (writeURL) {
+      const p = new URLSearchParams(window.location.search);
+      if (isMap) p.set("view", "map");
+      else p.delete("view");
+      const qs = p.toString();
+      history.replaceState(
+        null,
+        "",
+        window.location.pathname + (qs ? "?" + qs : "") + window.location.hash,
+      );
+    }
+    if (isMap) {
+      window.dispatchEvent(new CustomEvent("mapview:show"));
+    }
+  }
+
+  /* Initial state from URL. */
+  const params = new URLSearchParams(window.location.search);
+  setView(params.get("view") === "map" ? "map" : "list", { writeURL: false });
+
+  /* Click handlers. */
+  if (toggle) {
+    for (const btn of toggle.querySelectorAll("[data-view-btn]")) {
+      btn.addEventListener("click", () => {
+        setView(btn.dataset.viewBtn);
+      });
+    }
+  }
+
+  /* popstate so browser back/forward keeps the toggle in sync. */
+  window.addEventListener("popstate", () => {
+    const params = new URLSearchParams(window.location.search);
+    setView(params.get("view") === "map" ? "map" : "list", { writeURL: false });
+  });
+</script>
