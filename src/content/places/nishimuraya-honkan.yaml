@@ -1,0 +1,18 @@
+name: "Nishimuraya Honkan"
+address_or_area: "469 Kinosakichō Yushima, Toyooka"
+region: "Kansai"
+prefecture: "Hyogo"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJXSuMMzfI_18RNkmy3ZthqYs
+lat: 35.62535
+lng: 134.8056167
+hero_image: /places/nishimuraya-honkan.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
