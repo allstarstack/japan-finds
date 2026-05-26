@@ -1,0 +1,23 @@
+name: "Pokemon Cafe Nihonbashi"
+address_or_area: "Nihonbashi, Tokyo · in renovation through Jun 17, 2026"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJT5kFjFeJGGARJYhFoKi3lEE
+lat: 35.6806385
+lng: 139.7744332
+hero_image: /places/pokemon-cafe-nihonbashi.webp
+hero_attribution: "Photo via Google"
+viral: true
+viral_signal:
+  source: "Reels coverage"
+  engagement: "100K+ likes range"
+  date: "2024-2025"
