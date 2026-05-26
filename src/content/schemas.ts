@@ -161,12 +161,12 @@ export const placeSchema = z.object({
       "anime",
       "scenic_transport",
       "food_markets",
+      "cafes",
       "parks",
       "", // base-tier rows: no experience chip
     ])
     .optional(),
-  // semicolon-separated subset of: rainy_day, with_kids, by_train
-  // (day_trips is in the taxonomy but unused — no rows carry it)
+  // semicolon-separated subset of: rainy_day, with_kids, day_trips
   planning_flags: z.string().optional(),
   launch_tier: z.enum(["standard", "base"]).default("standard"),
   status: z.enum(["ready", "draft"]).default("ready"),
@@ -190,6 +190,19 @@ export const placeSchema = z.object({
   hero_image: z.string().optional(),
   hero_attribution: z.string().optional(),
   time_sensitive: z.boolean().optional(),
+  // Card badge flags (orthogonal to public_label and planning_flags — a
+  // place can be both local_favorite and viral). viral_signal is intended
+  // to be populated whenever viral=true (source / engagement / date), but
+  // not Zod-enforced — data-quality issue if missing, not render-blocking.
+  local_favorite: z.boolean().optional().default(false),
+  viral: z.boolean().optional().default(false),
+  viral_signal: z
+    .object({
+      source: z.string(),
+      engagement: z.string(),
+      date: z.string(),
+    })
+    .optional(),
 });
 
 export const storeSchema = z.object({

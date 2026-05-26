@@ -4,7 +4,7 @@ region: "Chubu"
 prefecture: "Gifu"
 primary_category: "Do"
 public_label: "scenic_transport"
-planning_flags: "by_train"
+planning_flags: "day_trips"
 launch_tier: "standard"
 status: "ready"
 public_render: true

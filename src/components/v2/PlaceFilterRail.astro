@@ -1,22 +1,21 @@
 ---
 /* Phase B-2 places filter rail (BUILD_SPEC Step 4).
-   - 12 primary chips, single-select, horizontal-scroll, sticky-on-scroll.
-   - 3 planning chips (Rainy Day / With Kids / By Train), multi-select,
-     always visible below the primary rail; they combine with any chip.
-   - "Stay bases" toggle — base-tier places are excluded from the default
-     browse and from every chip; this reveals the 23 stay-base entries.
+   - Primary chips (PRIMARY_CHIPS), single-select, horizontal-scroll,
+     sticky-on-scroll.
+   - Secondary chips (SECONDARY_CHIPS) — mixed planning_flag + badge-flag
+     dimension, multi-select, always visible below the primary rail; they
+     combine with any primary chip.
 
    Filtering is client-side and in place. Chip state mirrors to the URL
-   (?chip=&flags=&base=) for shareable links. Counts and the empty state
-   live on /places; this component drives them by data-attribute. */
+   (?chip=&flags=) for shareable links. Counts and the empty state live
+   on /places; this component drives them by data-attribute. */
 import { PRIMARY_CHIPS, SECONDARY_CHIPS } from "../../data/place-chips.js";
 
 interface Props {
   counts: Record<string, number>; // public_label -> standard-tier count
-  flagCounts: Record<string, number>; // planning flag -> count
-  baseCount: number;
+  flagCounts: Record<string, number>; // planning/badge flag -> count
 }
-const { counts, flagCounts, baseCount } = Astro.props;
+const { counts, flagCounts } = Astro.props;
 ---
 
 <div class="prail" data-place-rail>
@@ -52,19 +51,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
             <span class="pflag-n">{flagCounts[c.value] ?? 0}</span>
           </button>
         ))
-      }
-      {
-        baseCount > 0 && (
-          <button
-            type="button"
-            class="pflag pflag--base"
-            data-base-toggle
-            aria-pressed="false"
-          >
-            Stay bases
-            <span class="pflag-n">{baseCount}</span>
-          </button>
-        )
       }
     </div>
   </div>
@@ -188,13 +174,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
     border-color: var(--color-ink-black);
     color: #fff;
   }
-  /* Base toggle reads as a distinct affordance — dashed until active. */
-  .pflag--base {
-    margin-left: auto;
-    border-style: dashed;
-    border-color: var(--color-ink-black);
-  }
-
   @media (min-width: 1024px) {
     .prail-track {
       flex-wrap: wrap;
@@ -215,7 +194,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
   if (rail) {
     const chips = [...rail.querySelectorAll(".pchip")];
     const flags = [...rail.querySelectorAll(".pflag[data-flag]")];
-    const baseBtn = rail.querySelector("[data-base-toggle]");
     const railHint = rail.querySelector("[data-rail-hint]");
     /* Phase D D6 — location chips live in a sibling LocationChipRow inside
        the shared .rail-sticky wrapper, not in [data-place-rail], so we
@@ -242,7 +220,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
     let activeLocation = null;
     let activeChip = null;
     const activeFlags = new Set();
-    let showBase = false;
     let query = "";
 
     const splitFlags = (s) =>
@@ -264,14 +241,17 @@ const { counts, flagCounts, baseCount } = Astro.props;
 
     /* Single matching predicate — drives both the visible grid and every
        facet count, so a pill's number always equals the rows you get after
-       clicking it (no label-vs-result drift). Mirrors the chip / base /
-       flag / location / search rules exactly. */
-    const matches = (c, { location, chip, flagSet, base, tokens }) => {
+       clicking it (no label-vs-result drift). Mirrors the chip / flag /
+       location / search rules exactly. Base-tier rows have no chip in the
+       UI today (the "Stay bases" toggle was removed); they remain
+       reachable only by a non-empty search query, so a future base-tier
+       row stays findable by name while staying out of the default browse. */
+    const matches = (c, { location, chip, flagSet, tokens }) => {
       if (!tokens.every((t) => c.search.includes(t))) return false;
       const okFlags = [...flagSet].every((f) => c.flags.includes(f));
       const okLocation = !location || c.region === location;
       if (c.isBase)
-        return (base || tokens.length > 0) && !chip && okFlags && okLocation;
+        return tokens.length > 0 && !chip && okFlags && okLocation;
       return (!chip || c.chip === chip) && okFlags && okLocation;
     };
 
@@ -284,7 +264,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
       if (activeLocation) p.set("region", activeLocation);
       if (activeChip) p.set("chip", activeChip);
       if (activeFlags.size) p.set("flags", [...activeFlags].join(","));
-      if (showBase) p.set("base", "1");
       const qs = p.toString();
       history.replaceState(null, "", qs ? "?" + qs : location.pathname);
     };
@@ -299,7 +278,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
         location: activeLocation,
         chip: activeChip,
         flagSet: activeFlags,
-        base: showBase,
         tokens,
       };
 
@@ -366,25 +344,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
         f.classList.toggle("is-active", on);
       }
 
-      // Stay-bases toggle — count is the base-tier rows in the current
-      // region / flags / search. Clicking it clears any active chip, so the
-      // chip is ignored when counting. Hidden at zero unless already on.
-      if (baseBtn) {
-        const count = cardData.reduce(
-          (a, c) =>
-            a +
-            (c.isBase && matches(c, { ...state, chip: null, base: true })
-              ? 1
-              : 0),
-          0,
-        );
-        const nEl = baseBtn.querySelector(".pflag-n");
-        if (nEl) nEl.textContent = String(count);
-        baseBtn.hidden = count === 0 && !showBase;
-        baseBtn.setAttribute("aria-pressed", String(showBase));
-        baseBtn.classList.toggle("is-active", showBase);
-      }
-
       if (countEl) countEl.textContent = n + (n === 1 ? " place" : " places");
       if (emptyEl) emptyEl.hidden = n !== 0;
       if (grid) grid.hidden = n === 0;
@@ -392,7 +351,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
         !!activeLocation ||
         !!activeChip ||
         activeFlags.size > 0 ||
-        showBase ||
         tokens.length > 0;
       if (featuredEl) featuredEl.hidden = filtering;
     };
@@ -404,7 +362,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
       activeLocation = null;
       activeChip = null;
       activeFlags.clear();
-      showBase = false;
       const params = new URLSearchParams(location.search);
       const region = params.get("region");
       if (region && validLocations.has(region)) activeLocation = region;
@@ -413,7 +370,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
         activeChip = chip0;
       for (const f of (params.get("flags") || "").split(",").filter(Boolean))
         if (flags.some((x) => x.dataset.flag === f)) activeFlags.add(f);
-      if (params.get("base") === "1" && !activeChip) showBase = true;
     };
 
     // Search is ephemeral (not mirrored to the URL like the chips) — it
@@ -439,7 +395,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
     chips.forEach((c) =>
       c.addEventListener("click", () => {
         activeChip = activeChip === c.dataset.chip ? null : c.dataset.chip;
-        if (activeChip) showBase = false; // a chip and bases are exclusive
         apply();
         syncURL();
         c.scrollIntoView({ inline: "center", block: "nearest" });
@@ -453,13 +408,6 @@ const { counts, flagCounts, baseCount } = Astro.props;
         syncURL();
       }),
     );
-    if (baseBtn)
-      baseBtn.addEventListener("click", () => {
-        showBase = !showBase;
-        if (showBase) activeChip = null;
-        apply();
-        syncURL();
-      });
 
     /* Re-apply filter state when the URL changes via browser navigation
        (back/forward) — keeps the rail and the URL coherent. */
