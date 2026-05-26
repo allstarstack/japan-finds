@@ -1,0 +1,19 @@
+name: "Mino Washi Paper Museum"
+address_or_area: "1851-3 Warabi, Mino"
+region: "Tokai"
+prefecture: "Gifu"
+primary_category: "Do"
+public_label: "workshops_crafts"
+planning_flags: "rainy_day"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJoZ3oA1v-AmARccn_p1cFTcw
+lat: 35.5833651
+lng: 136.87622679999998
+hero_image: /places/mino-washi-paper-museum.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
