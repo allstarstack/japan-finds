@@ -1,0 +1,19 @@
+name: "Wanariya"
+address_or_area: "Taito City, Senzoku"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "Do"
+public_label: "workshops_crafts"
+planning_flags: "rainy_day;with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ11wUhpSOGGART_oWFFNe23Y
+lat: 35.7184088
+lng: 139.7910169
+hero_image: /places/wanariya.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
