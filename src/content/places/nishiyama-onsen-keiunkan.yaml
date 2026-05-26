@@ -1,0 +1,18 @@
+name: "Nishiyama Onsen Keiunkan"
+address_or_area: "Hayakawa, Minamikoma District"
+region: "Kanto"
+prefecture: "Yamanashi"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJkdjiGHGJG2ARPPkZ6cNlRss
+lat: 35.5543499
+lng: 138.3060726
+hero_image: /places/nishiyama-onsen-keiunkan.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
