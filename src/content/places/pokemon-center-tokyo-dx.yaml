@@ -1,0 +1,24 @@
+name: "Pokemon Center Tokyo DX"
+address_or_area: "Chuo City, Nihonbashi"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJCVAO3leJGGARvCoZ_hJkye4
+lat: 35.6802902
+lng: 139.7742695
+hero_image: /places/pokemon-center-tokyo-dx.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
+viral: true
+viral_signal:
+  source: "Reels coverage"
+  engagement: "100K+ likes range"
+  date: "2024-2025"
