@@ -121,6 +121,9 @@ export const productSchema = z.object({
   where_to_buy: strings.optional(),
   image: z.string().nullable().optional(),
   safety_flags: strings.optional(),
+  // D5c — human-readable safety blurb shown beneath the description on
+  // /products cards. Optional: only a minority of slugs carry one.
+  safety_callout: z.string().nullable().optional(),
   enrichment_confidence: z.enum(["high", "medium", "low"]).optional(),
   enrichment_source_url: z.string().nullable().optional(),
   enrichment_date: z.string().nullable().optional(),
