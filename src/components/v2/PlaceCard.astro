@@ -20,7 +20,7 @@
    with `hidden` — they are excluded from the default browse and are
    reachable only by name search (the "Stay bases" toggle was removed). */
 import type { CollectionEntry } from "astro:content";
-import { CAT_COLOR } from "../../data/place-chips.js";
+import { CAT_COLOR, PRIMARY_CHIPS } from "../../data/place-chips.js";
 import { prefectureToRegion } from "../../data/regions.js";
 
 interface Props {
@@ -70,10 +70,14 @@ const flagString = [
    hygiene guarantees that never happens on a `ready` row. */
 const regionSlug = prefectureToRegion(d.prefecture) ?? "";
 
-/* Badge label. The data field stays primary_category: "Eat", but these
-   are food markets / yokocho / depachika — not restaurants — so the
-   badge reads "Food Markets". Other categories show the verb as-is. */
-const catLabel = cat === "Eat" ? "Food Markets" : cat;
+/* Badge label. Looks up the specific chip label from PRIMARY_CHIPS
+   (single source of truth — same labels the filter rail uses), so a
+   `cafes` place reads "Cafes" and a `food_markets` place reads "Food
+   Markets" rather than both collapsing to a generic "Eat". Falls back
+   to the bare primary_category for base-tier rows where public_label
+   is "" (no chip in PRIMARY_CHIPS). */
+const chipMeta = PRIMARY_CHIPS.find((c) => c.value === d.public_label);
+const catLabel = chipMeta?.label ?? cat;
 
 /* Phase D D1 — link straight to the matched place via place_id. The
    old name-search URL (which let Google's geocoder find an area-level
