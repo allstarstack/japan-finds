@@ -1,0 +1,19 @@
+name: "Animate Ikebukuro"
+address_or_area: "1-chōme-20-7 Higashiikebukuro, Toshima City"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJi0VhQ2-NGGARGsbajebyPVA
+lat: 35.7311443
+lng: 139.7154592
+hero_image: /places/animate-ikebukuro.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
