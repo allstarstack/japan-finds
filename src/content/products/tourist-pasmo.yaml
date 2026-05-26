@@ -1,0 +1,39 @@
+id: JF-0456
+slug: tourist-pasmo
+name_en: Tourist Pasmo IC Card
+category: other
+intent:
+- day_one_fixes
+status: ready
+name_jp: Tourist PASMO
+brand: Pasmo
+where_found:
+- Haneda/Narita ticket counters
+- select Tokyo station counters
+price_yen: '2000'
+what_it_is: 28-day prepaid tourist IC card for trains and small payments. Replaced PASMO PASSPORT in May 2026.
+why_travelers_care: No-deposit transit IC card for visitors; interchangeable with Welcome Suica.
+verification_notes: Launched May 2026; ¥2,000 fixed value, non-refundable balance, 28-day validity.
+source_links:
+- pasmo.co.jp
+confidence: high
+trip_score: 9
+suitcase_score: 5
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Tourist Pasmo. The 28-day prepaid IC card that replaced PASMO PASSPORT in May 2026. Buy at Narita or Haneda — ¥2,000 gets you ¥2,000 of usable credit, no deposit, no refund on unused balance. Welcome Suica works the same way; grab whichever has a shorter line.
+english_name: Tourist Pasmo IC Card
+japanese_name: Tourist PASMO
+subcategory: transit IC card
+price_range_jpy: '2000'
+where_to_buy:
+- Narita Airport
+- Haneda Airport
+- select Tokyo station counters
+enrichment_confidence: low
+enrichment_source_url: https://www.pasmo.co.jp/visitors/en/news/
+enrichment_date: '2026-05-25'
+image: null
+safety_flags: []
+safety_callout: Unused balance is non-refundable. Estimate your trip's transport spend before topping up.

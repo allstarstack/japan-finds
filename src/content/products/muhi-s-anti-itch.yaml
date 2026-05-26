@@ -28,8 +28,7 @@ fill_type: creator_fill
 display_strategy: show_all
 sub_chip: meds
 name_jp: ムヒS
-description: Muhi S. Anti-itch cream for mosquito bites and mystery skin rage. Summer
-  in Japan keeps one in the bag for a reason.
+description: Muhi S. Anti-itch cream for mosquito bites and mystery skin rage. Check the label before using it on sensitive skin.
 english_name: Muhi S
 japanese_name: ムヒS
 subcategory: anti-itch cream
@@ -44,3 +43,4 @@ enrichment_source_url: https://www.ikedamohando.co.jp/products/muhi-s.html
 enrichment_date: '2026-05-19'
 image: /products/muhi-s-anti-itch.webp
 safety_flags: []
+safety_callout: Mild anti-itch cream. Still patch-test on sensitive skin.
