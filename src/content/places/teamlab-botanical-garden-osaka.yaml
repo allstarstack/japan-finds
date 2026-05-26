@@ -1,0 +1,23 @@
+name: "teamLab Botanical Garden Osaka"
+address_or_area: "1-23 Nagaikōen, Higashisumiyoshi Ward"
+region: "Kansai"
+prefecture: "Osaka"
+primary_category: "See"
+public_label: "quirky_museums"
+planning_flags: "with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "cross-validated-meta-gemini-2026-05"
+place_id: ChIJv2BBVszdAGAR-6Cjxyh-sEQ
+lat: 34.6110004
+lng: 135.52042129999998
+hero_image: /places/teamlab-botanical-garden-osaka.webp
+hero_attribution: "Photo via Google"
+viral: true
+viral_signal:
+  source: "Reels coverage"
+  engagement: "100K+ likes range"
+  date: "2024-2025"
