@@ -1,0 +1,23 @@
+name: "Ashikaga Flower Park"
+address_or_area: "607 Hasamachō, Ashikaga"
+region: "Kanto"
+prefecture: "Tochigi"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ0-3eEKkkH2ARQ8C5Jl8PGmM
+lat: 36.3141561
+lng: 139.5200222
+hero_image: /places/ashikaga-flower-park.webp
+hero_attribution: "Photo via Google"
+viral: true
+viral_signal:
+  source: "Reels coverage"
+  engagement: "100K+ likes range"
+  date: "2024-2025"
