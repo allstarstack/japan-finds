@@ -1,0 +1,18 @@
+name: "Capcom Store Shibuya"
+address_or_area: "15-1 Udagawachō, Shibuya"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJt_x0kJONGGAR_dV1qzZpRTU
+lat: 35.661952299999996
+lng: 139.6989013
+hero_image: /places/capcom-store-shibuya.webp
+hero_attribution: "Photo via Google"
