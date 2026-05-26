@@ -21,11 +21,12 @@ places.sort((a, b) =>
   a.data.name.toLowerCase().localeCompare(b.data.name.toLowerCase()),
 );
 
-/* Standard-tier places are the default browse; base-tier ("stay bases")
-   are excluded until the rail's toggle reveals them. */
+/* Standard-tier places are the default browse; base-tier are reachable
+   only by name search (the "Stay bases" toggle was removed). The
+   launch_tier enum keeps "base" so base-tier rows can return without a
+   schema change. */
 const standard = places.filter((p) => p.data.launch_tier !== "base");
 const total = standard.length;
-const baseCount = places.length - total;
 
 /* Per-chip counts (standard tier) for the primary rail. */
 const counts: Record<string, number> = {};
@@ -34,14 +35,22 @@ for (const p of standard) {
   if (c) counts[c] = (counts[c] ?? 0) + 1;
 }
 
-/* Per-flag counts for the planning chips. */
+/* Per-flag counts for the secondary rail. Mixes planning_flags (the
+   semicolon-separated string source) with local_favorite + viral (the
+   boolean badge fields) — both surface as filter chips, so the counts
+   must include both. Mirrors the data-flags synthesis in PlaceCard. */
 const flagCounts: Record<string, number> = {};
-for (const p of standard)
-  for (const f of (p.data.planning_flags ?? "")
-    .split(";")
-    .map((s) => s.trim())
-    .filter(Boolean))
-    flagCounts[f] = (flagCounts[f] ?? 0) + 1;
+for (const p of standard) {
+  const flags = [
+    ...(p.data.planning_flags ?? "")
+      .split(";")
+      .map((s) => s.trim())
+      .filter(Boolean),
+    ...(p.data.local_favorite ? ["local_favorite"] : []),
+    ...(p.data.viral ? ["viral"] : []),
+  ];
+  for (const f of flags) flagCounts[f] = (flagCounts[f] ?? 0) + 1;
+}
 
 /* Phase D D6 — per-region counts for the LocationChipRow. Derived from
    prefecture via the JNTO lookup; multi-prefecture rows credit only the
@@ -143,7 +152,7 @@ for (const chip of FEATURED_CHIPS) {
     <div class="rail-sticky">
       <SearchBox placeholder="Search 333 places" />
       <LocationChipRow chips={regionChips} hintLabel="regions" />
-      <PlaceFilterRail counts={counts} flagCounts={flagCounts} baseCount={baseCount} />
+      <PlaceFilterRail counts={counts} flagCounts={flagCounts} />
     </div>
 
     <section class="presults">

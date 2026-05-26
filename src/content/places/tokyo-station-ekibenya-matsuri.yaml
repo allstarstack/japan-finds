@@ -4,7 +4,7 @@ region: "Kanto"
 prefecture: "Tokyo"
 primary_category: "Eat"
 public_label: "food_markets"
-planning_flags: "rainy_day;by_train"
+planning_flags: "rainy_day;day_trips"
 launch_tier: "standard"
 status: "ready"
 public_render: true

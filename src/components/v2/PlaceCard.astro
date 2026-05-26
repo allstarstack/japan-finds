@@ -7,13 +7,18 @@
 
    Renders nothing unless status === "ready" && public_render.
    Does NOT render planning_flags or any internal field — those are
-   filter-only (BUILD_SPEC Step 5). Live "open now" status was dropped in
-   the 2026-05-24 cost kill — cached hours go stale, and the Maps link
-   below carries users to current hours (BUILD_SPEC_cost_kill.md).
+   filter-only (BUILD_SPEC Step 5). The exceptions are `local_favorite`
+   and `viral`, which surface as small badges overlaying the hero media.
+   Live "open now" status was dropped in the 2026-05-24 cost kill —
+   cached hours go stale, and the Maps link below carries users to
+   current hours (BUILD_SPEC_cost_kill.md).
 
    data-* attributes drive the client-side filter in PlaceFilterRail.
-   Base-tier cards render with `hidden` — they are excluded from the
-   default browse and revealed only by the "Stay bases" toggle. */
+   `data-flags` synthesises planning_flags + local_favorite + viral into
+   one semicolon-separated string so the rail's existing multi-select
+   filter handles all three sources uniformly. Base-tier cards render
+   with `hidden` — they are excluded from the default browse and are
+   reachable only by name search (the "Stay bases" toggle was removed). */
 import type { CollectionEntry } from "astro:content";
 import { CAT_COLOR } from "../../data/place-chips.js";
 import { prefectureToRegion } from "../../data/regions.js";
@@ -47,6 +52,17 @@ const { en, jp } = splitName(d.name);
 const cat = d.primary_category;
 const color = CAT_COLOR[cat];
 const isBase = d.launch_tier === "base";
+
+/* Compose the filterable flag string. Synthesises planning_flags (the
+   semicolon-separated string source) with the boolean badge fields so
+   the rail filters all of them through one mechanism. */
+const flagString = [
+  d.planning_flags ?? "",
+  d.local_favorite ? "local_favorite" : "",
+  d.viral ? "viral" : "",
+]
+  .filter(Boolean)
+  .join(";");
 
 /* Phase D D6 — region derived at build time from prefecture via the JNTO
    lookup. Stamped as data-region for the LocationChipRow filter; an empty
@@ -91,7 +107,7 @@ const searchText = [
     <article
       class="plc"
       data-chip={d.public_label ?? ""}
-      data-flags={d.planning_flags ?? ""}
+      data-flags={flagString}
       data-region={regionSlug}
       data-tier={d.launch_tier}
       data-search={searchText}
@@ -109,6 +125,14 @@ const searchText = [
           />
         ) : (
           <div class:list={["plc-block", `plc-block--${color}`]} aria-hidden="true" />
+        )}
+        {(d.local_favorite || d.viral) && (
+          <div class="plc-badges">
+            {d.local_favorite && (
+              <span class="plc-badge plc-badge--local">Local</span>
+            )}
+            {d.viral && <span class="plc-badge plc-badge--viral">Viral</span>}
+          </div>
         )}
         {d.hero_attribution && <span class="plc-attr">{d.hero_attribution}</span>}
       </div>
@@ -177,6 +201,37 @@ const searchText = [
     line-height: 1.3;
     color: var(--color-ink-60);
     pointer-events: none;
+  }
+
+  /* Local-favorite + Viral badges — overlay top-left of the hero media.
+     Colour treatment mirrors the existing .chip--green / .chip--red
+     pattern in global.css: darkened Matcha Green #3f7548 with white text
+     (5.4:1) and Tokyo Red with ink-black text (5.59:1) — both AA. The
+     raw --color-matcha-green token fails AA with either text colour. */
+  .plc-badges {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    display: flex;
+    gap: 4px;
+    pointer-events: none;
+  }
+  .plc-badge {
+    padding: 2px 6px;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
+  }
+  .plc-badge--local {
+    background: #3f7548;
+    color: #fff;
+  }
+  .plc-badge--viral {
+    background: var(--color-tokyo-red);
+    color: var(--color-ink-black);
   }
 
   /* Colour-block placeholder — keyed to primary_category. Fills the
