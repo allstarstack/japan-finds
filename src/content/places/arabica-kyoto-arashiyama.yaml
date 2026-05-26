@@ -1,0 +1,19 @@
+name: "% Arabica Kyoto Arashiyama"
+address_or_area: "3-47 Sagatenryūji Susukinobabachō, Ukyo Ward"
+region: "Kansai"
+prefecture: "Kyoto"
+primary_category: "Eat"
+public_label: "cafes"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "cross-validated-meta-gemini-2026-05"
+place_id: ChIJCWDv__-pAWARwLeeqs_cVew
+lat: 35.013542199999996
+lng: 135.6764367
+hero_image: /places/arabica-kyoto-arashiyama.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
