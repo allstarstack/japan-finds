@@ -3,6 +3,7 @@
 import "../styles/tokens.css";
 import "../styles/fonts.css";
 import "../styles/global.css";
+import Analytics from "@vercel/analytics/astro";
 
 interface Props {
   title?: string;
@@ -77,5 +78,6 @@ const ogImage = new URL("/og-image.jpg", Astro.site).href;
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <slot />
+    <Analytics />
   </body>
 </html>

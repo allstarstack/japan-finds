@@ -17,6 +17,7 @@
     "prebuild": "rm -rf node_modules/.astro/data-store.json && npm run enrich:refresh || true"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "astro": "^6.3.3"
   },
   "devDependencies": {
