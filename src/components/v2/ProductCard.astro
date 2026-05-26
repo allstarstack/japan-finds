@@ -76,6 +76,12 @@ const searchText = [
       <h3 class="pc-name">{d.name_en}</h3>
       {meta && <p class="pc-meta">{meta}</p>}
       {description && <p class="pc-description">{description}</p>}
+      {d.safety_callout && (
+        <p class="pc-safety">
+          <span class="pc-safety-label">Safety</span>
+          <span class="pc-safety-val">{d.safety_callout}</span>
+        </p>
+      )}
       {where && (
         <p class="pc-where">
           <span class="pc-where-label">Where to buy</span>
@@ -147,6 +153,33 @@ const searchText = [
     color: var(--color-ink-black);
   }
 
+  /* Optional safety_callout: only rendered when populated (a small minority
+     of products carry one). Tokyo Red left accent strip is decorative; the
+     semantic content lives in the text, which sits on the Rice White card
+     background — Ink Black on Rice White is ~16:1 contrast (AAA). */
+  .pc-safety {
+    margin: 0;
+    padding-left: 8px;
+    border-left: 3px solid var(--color-tokyo-red);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .pc-safety-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+  .pc-safety-val {
+    font-family: var(--font-body);
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--color-ink-black);
+  }
+
   /* where-to-buy pinned to the card bottom so wrapped names stay aligned */
   .pc-where {
     margin: auto 0 0;
@@ -182,6 +215,9 @@ const searchText = [
       font-size: 16px;
     }
     .pc-description {
+      font-size: 14px;
+    }
+    .pc-safety-val {
       font-size: 14px;
     }
   }
