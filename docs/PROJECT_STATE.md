@@ -47,6 +47,7 @@ The traveling state doc. Drop this at the top of any new Claude chat to give it 
 
 - **Per-item product/place pages (`/products/<slug>`, `/places/<slug>`).** Today every product and place exists ONLY as a card on the single /products or /places page — there are no detail routes. Needed for: **direct-link strategy** (share/link one specific item), **SEO** (indexable per-item URLs instead of two monolithic pages), and the **future webshop**. Also the prerequisite that would make Pagefind viable for search — the client-side filter shipped in Search Phase B precisely because these routes don't exist (~713 pages: 380 products + 333 places).
 - **ManyChat conditional email capture + /products & /places default flows.** Wire ManyChat email capture (conditional) with default flows for the /products and /places landing pages — the audience those two pages were just optimized for (newest-first + instant search) arrives from ManyChat, so the capture/flow layer is the next link in that funnel.
+- **Refactor /map.astro to use MapView.astro component with sourceFilter='all' + showCategoryFilters prop.** Currently ~70% logic duplication between the two map implementations. Defer until post-Phase-C ship.
 
 ### Phase D continued (per PHASE_D_PRIORITIZATION.md v2 on Desktop)
 
