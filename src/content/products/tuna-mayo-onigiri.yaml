@@ -29,8 +29,7 @@ fill_type: creator_fill
 display_strategy: show_all
 sub_chip: food
 name_jp: 手巻おにぎり ツナマヨネーズ
-description: Tuna mayo onigiri. Lawson's version is soft rice, tuna-mayo filling,
-  and the commuter breakfast that costs less than a train delay.
+description: Tuna mayo onigiri. Lawson's version is soft rice, tuna-mayo filling, and the commuter breakfast that costs less than a train delay. Eat it in Japan.
 english_name: Lawson Tuna Mayo Onigiri
 japanese_name: ローソン シーチキンマヨネーズおにぎり
 subcategory: onigiri
@@ -46,3 +45,4 @@ enrichment_confidence: high
 enrichment_source_url: https://www.lawson.co.jp/sp/recommend/original/detail/1507601_2168.html
 enrichment_date: '2026-05-19'
 image: /products/tuna-mayo-onigiri.webp
+safety_callout: Perishable. Eat within hours. Won't survive luggage.
