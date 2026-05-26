@@ -1,0 +1,18 @@
+name: "Jump Shop Shibuya"
+address_or_area: "Shibuya, Udagawachō"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJV_4GNbONGGARfazAKoc5YY4
+lat: 35.661834299999995
+lng: 139.69877599999998
+hero_image: /places/jump-shop-shibuya.webp
+hero_attribution: "Photo via Google"
