@@ -1,0 +1,18 @@
+name: "Kurokawa Onsen"
+address_or_area: "Minamioguni, Aso District"
+region: "Kyushu"
+prefecture: "Kumamoto"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJzUJBlOowQTURUBGnm484qQQ
+lat: 33.0780191
+lng: 131.14161360000003
+hero_image: /places/kurokawa-onsen.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
