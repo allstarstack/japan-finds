@@ -1,0 +1,19 @@
+name: "Nakano Broadway"
+address_or_area: "5-chōme-52-15 Nakano, Nakano City"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJe68Dxs7zGGARjszCU53Vjyc
+lat: 35.708968899999995
+lng: 139.6657328
+hero_image: /places/nakano-broadway.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
