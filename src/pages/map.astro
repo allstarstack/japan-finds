@@ -31,7 +31,6 @@ import SiteFooter from "../components/SiteFooter.astro";
         <button type="button" class="map-cat map-cat--do" data-cat-btn="Do" aria-pressed="true">Do</button>
         <button type="button" class="map-cat map-cat--eat" data-cat-btn="Eat" aria-pressed="true">Eat</button>
         <button type="button" class="map-cat map-cat--stay" data-cat-btn="Stay" aria-pressed="true">Stay</button>
-        <button type="button" class="map-cat map-cat--tabelog" data-cat-btn="Tabelog" aria-pressed="true">Tabelog</button>
       </div>
       <button type="button" class="map-reset" data-reset hidden>Reset</button>
     </div>
@@ -223,13 +222,13 @@ import SiteFooter from "../components/SiteFooter.astro";
   .map-cat[aria-pressed="false"] {
     opacity: 0.35;
   }
-  .map-cat[aria-pressed="true"].map-cat--see { box-shadow: inset 0 0 0 2px #176bff, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--do { box-shadow: inset 0 0 0 2px #ff3b30, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--eat { box-shadow: inset 0 0 0 2px #ffd84d, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--stay { box-shadow: inset 0 0 0 2px #3f7548, var(--shadow-sm); }
-  /* The Tabelog button matches /eat pin visual treatment (Tokyo Red ring)
-     so the legend↔pin connection is immediate at a glance. */
-  .map-cat[aria-pressed="true"].map-cat--tabelog { box-shadow: inset 0 0 0 2px #ff3b30, var(--shadow-sm); }
+  /* Ring width is 3px (vs 2px) for stronger colour legibility at button
+     size. The Eat ring (Egg Yellow #FFD84D) is light so it benefits the
+     most; the Stay green (#3f7548) also reads more confidently at 3px. */
+  .map-cat[aria-pressed="true"].map-cat--see { box-shadow: inset 0 0 0 3px #176bff, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--do { box-shadow: inset 0 0 0 3px #ff3b30, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--eat { box-shadow: inset 0 0 0 3px #ffd84d, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--stay { box-shadow: inset 0 0 0 3px #3f7548, var(--shadow-sm); }
 
   /* Mobile tap-to-activate hint (revealed by JS on coarse-pointer). */
   .map-hint {
@@ -252,7 +251,12 @@ import SiteFooter from "../components/SiteFooter.astro";
     box-shadow: var(--shadow-sm);
   }
 
-  /* Loading state: visible before Mapbox 'load' event fires. */
+  /* Loading state: visible before Mapbox 'load' event fires. The
+     `[hidden]` override is required because the explicit `display:
+     inline-flex` rule below outranks the UA `[hidden] { display: none }`
+     in CSS specificity — same gotcha as .plc[hidden] / .pchip[hidden]
+     elsewhere in the codebase. Without this, setting loading.hidden=true
+     in JS sets the attribute but the overlay stays visible. */
   .map-loading {
     position: absolute;
     top: 50%;
@@ -274,6 +278,7 @@ import SiteFooter from "../components/SiteFooter.astro";
     color: var(--color-ink-black);
     z-index: 13;
   }
+  .map-loading[hidden] { display: none; }
   .map-loading-spinner {
     width: 14px;
     height: 14px;
@@ -409,12 +414,15 @@ import SiteFooter from "../components/SiteFooter.astro";
   // with the .env placeholder will 401-fail (caught by the error overlay).
   mapboxgl.accessToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
 
-  // Five categories: four /places primary_category groupings + "Tabelog"
-  // which scopes by source === "eat" (Tabelog Hyakumeiten restaurants).
-  // "Eat" here refers to /places primary_category (food markets + cafes);
-  // "Tabelog" refers to the /eat collection. Both are food-related but
-  // serve different curation intents, hence two distinct filter buttons.
-  const ALL_CATS = ["See", "Do", "Eat", "Stay", "Tabelog"];
+  // Four filter chips matching the See/Do/Eat/Stay primary_category
+  // groupings. "Eat" covers BOTH /places primary_category=Eat (food
+  // markets + cafés) AND /eat source items (Tabelog Hyakumeiten). The
+  // Tabelog curation signal stays visible in pin styling (open-ring vs
+  // solid-fill) and popup content (year + rank + Hyakumeiten label) —
+  // it just doesn't get its own filter button. Splitting curation
+  // source from content type in the filter UI confused first-time
+  // users; one Eat chip is cleaner.
+  const ALL_CATS = ["See", "Do", "Eat", "Stay"];
   let activeCats;
   let allFeatures = null; // fetched once; filter rebuilds source.data
   let map;
@@ -430,6 +438,11 @@ import SiteFooter from "../components/SiteFooter.astro";
       .split(",")
       .map((s) => s.trim().toLowerCase())
       .filter(Boolean)
+      // Backward-compat for old links written when the Tabelog chip
+      // was its own filter (Phase A.6). 'tabelog' in the URL maps to
+      // the merged 'Eat' chip, so links written during the brief
+      // 5-chip window keep working.
+      .map((s) => (s === "tabelog" ? "eat" : s))
       .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
       .filter((c) => ALL_CATS.includes(c));
     return new Set(cats);
@@ -468,12 +481,13 @@ import SiteFooter from "../components/SiteFooter.astro";
   }
 
   /* ---------- Map filtering ----------
-     Two filter dimensions in one Set: /places features filter by
-     primary_category (See/Do/Eat/Stay); /eat features pass when
-     "Tabelog" is active. A feature is shown iff its corresponding
-     toggle is active. */
+     Single 4-chip filter. /places features pass when their
+     primary_category chip is active; /eat (Tabelog) features pass
+     when the Eat chip is active. So toggling Eat off hides BOTH
+     /places food markets/cafes AND /eat Tabelog restaurants in one
+     gesture — which matches the cleaner user model. */
   function passesFilter(f) {
-    if (f.properties.source === "eat") return activeCats.has("Tabelog");
+    if (f.properties.source === "eat") return activeCats.has("Eat");
     return activeCats.has(f.properties.primary_category);
   }
   function applyCategoryFilter() {
@@ -577,9 +591,25 @@ import SiteFooter from "../components/SiteFooter.astro";
   map.addControl(geolocate, "bottom-right");
   geolocate.on("error", () => showToast("Location unavailable"));
 
-  map.on("load", () => {
+  /* Loading-overlay dismiss strategy — three layers of safety so the
+     overlay never gets stuck visible:
+       1. Primary: 'load' event (fires when the style + initial tiles
+          are loaded). This is the canonical trigger.
+       2. Backup: 'idle' event (fires whenever the map reaches a stable
+          rendered state). 'idle' fires repeatedly, so even if a late
+          listener attaches after 'load', the first idle dismisses.
+       3. Hard fallback: 5-second timeout. If both events miss for any
+          reason, the overlay self-dismisses. The error overlay (see
+          map.on('error')) still surfaces auth/tile failures separately. */
+  function dismissLoadingOverlay() {
     const loading = document.querySelector("[data-loading]");
     if (loading) loading.hidden = true;
+  }
+  setTimeout(dismissLoadingOverlay, 5000);
+  map.once("idle", dismissLoadingOverlay);
+
+  map.on("load", () => {
+    dismissLoadingOverlay();
 
     fetch("/places.geojson")
       .then((r) => {
