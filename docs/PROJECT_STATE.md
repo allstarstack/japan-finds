@@ -115,6 +115,7 @@ After D2 ships and before Shop launches. Structured 3–5 hour task:
 - "Experts agree" overlay for /eat (post-launch curation) — hand-curate top 30 Steven endorses
 - Unused `--color-tokyo-red-dark` token prune in global.css
 - POSSIBLE_MISSING_FLAGS audit (102 slugs) — post-launch flag correctness review including frozen-mikan (wrong dairy/egg flags) and tea-set-gift (gluten flag verification)
+- Scenic transport as LineString routes on /map. Currently scenic trains (like Saphir Odoriko) are list-only because they have no single lat/lng. Future polish: render them as LineString features along their rail routes. Adds ~30 min editorial work per entry to capture route coordinates.
 
 ## Active decisions log
 
