@@ -27,8 +27,7 @@ suitcase_score: 8
 launch_category: skincare_beauty
 fill_type: verified
 display_strategy: show_all
-description: Melano CC Vitamin C Essence. Tiny metal tube, cult-status brightening
-  serum. Drugstore basket filler for acne marks and sun-damage dread.
+description: Melano CC Vitamin C Essence. Tiny metal tube, cult-status vitamin C serum. Drugstore basket filler for acne marks, dullness, and sunscreen guilt.
 english_name: Melano CC Medicated Stain Intensive Essence
 japanese_name: メラノCC 薬用 しみ 集中対策 美容液
 subcategory: vitamin C essence
@@ -43,3 +42,4 @@ enrichment_source_url: https://jp.rohto.com/melanocc/essence
 enrichment_date: '2026-05-19'
 image: /products/melano-cc-vitamin-c-essence.webp
 safety_flags: []
+safety_callout: Active vitamin C. Patch-test before daily use, especially on sensitive skin.
