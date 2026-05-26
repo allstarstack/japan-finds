@@ -1,17 +1,13 @@
 /* Site-wide constants.
 
-   PLACES_MAP_URL — the public "Japan Map" Google My Map. Used by the
-   header CTA, the homepage hero + map section, and the /places hero CTA.
-   Set the PLACES_MAP_URL env var on Vercel to the map's public viewer URL
-   (default view — no &ll/&z params, so visitors land on the whole map,
-   not zoomed in over Hyogo). Until then the CTA falls back to a TODO
-   anchor, same pattern as RESTAURANTS_MAP_URL. */
-export const PLACES_MAP_URL =
-  process.env.PLACES_MAP_URL || "#TODO-places-map-url";
+   PLACES_MAP_URL — the public map URL. Used by the header CTA, the
+   homepage hero, the MapSection homepage block, and the StartHere
+   section-01 tile. Points to the internal self-hosted Mapbox map at
+   /map (Phase A → C migration, May 2026). The constant is retained
+   (vs inlining the literal "/map") so a single edit moves every CTA
+   if the route ever changes.
 
-/* RESTAURANTS_MAP_URL — the separate "Restaurants" Google My Map for /eat.
-   Steven creates the map post-import (from restaurants_google_mymaps_import.csv)
-   and sets RESTAURANTS_MAP_URL as a Vercel env var to its public viewer URL.
-   Until then the CTA falls back to a TODO anchor (BUILD_SPEC §2). */
-export const RESTAURANTS_MAP_URL =
-  process.env.RESTAURANTS_MAP_URL || "#TODO-restaurants-map-url";
+   RESTAURANTS_MAP_URL — REMOVED in Phase C cleanup. Its only consumer
+   was the /eat .emap CTA section, which was deleted alongside this
+   constant because /eat now has its own list/map toggle (Phase B). */
+export const PLACES_MAP_URL = "/map";

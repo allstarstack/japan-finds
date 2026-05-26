@@ -117,8 +117,12 @@ After D2 ships and before Shop launches. Structured 3–5 hour task:
 - Unused `--color-tokyo-red-dark` token prune in global.css
 - POSSIBLE_MISSING_FLAGS audit (102 slugs) — post-launch flag correctness review including frozen-mikan (wrong dairy/egg flags) and tea-set-gift (gluten flag verification)
 - Scenic transport as LineString routes on /map. Currently scenic trains (like Saphir Odoriko) are list-only because they have no single lat/lng. Future polish: render them as LineString features along their rail routes. Adds ~30 min editorial work per entry to capture route coordinates.
+- Phase A.9 — clickable legend filtering + sub-category reorder + STAY chip handling. In progress, depends on stay research output.
 
 ## Active decisions log
+
+### Map migration (2026-05-26)
+- Public maps migrated to self-hosted Mapbox GL JS, May 2026. Unified `/map` standalone shows /places + /eat content with visual differentiation. /places and /eat list pages have list/map toggles scoped to their collection. CSV generation retained for ad-hoc needs.
 
 ### Cost kill (2026-05-24)
 - Enrichment script (`enrich_with_places_api.py`) defaults to photos-only as of 2026-05-24. Re-run with `--hours` only when hours actually need refresh — costs ~4x more (Place Details Enterprise SKU vs Essentials).

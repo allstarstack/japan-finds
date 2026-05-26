@@ -15,7 +15,6 @@ import LocationChipRow from "../components/v2/LocationChipRow.astro";
 import MapView from "../components/v2/MapView.astro";
 import RestaurantCard from "../components/eat/RestaurantCard.astro";
 import MethodologyFooter from "../components/eat/MethodologyFooter.astro";
-import { RESTAURANTS_MAP_URL } from "../data/site.js";
 import {
   CITY_CHIPS,
   CUISINE_CHIPS,
@@ -79,19 +78,6 @@ const cityChips = CITY_CHIPS
           (ramen, soba, the shokudo lists). Steven isn't a foodie. These are
           the picks because the locals voted, not because he ate there.
         </p>
-      </div>
-    </section>
-
-    <section class="emap">
-      <div class="wrap">
-        <a
-          class="btn btn--ink btn--lg btn--responsive"
-          href={RESTAURANTS_MAP_URL}
-          target="_blank"
-          rel="noopener"
-        >
-          View on the Restaurants Map&nbsp;→
-        </a>
       </div>
     </section>
 

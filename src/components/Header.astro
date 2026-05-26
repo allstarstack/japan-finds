@@ -38,12 +38,9 @@ const onMapPage = Astro.url.pathname === "/map" || Astro.url.pathname === "/map/
     </nav>
 
     {!onMapPage && (
-      <a
-        class="btn btn--primary btn--sm hdr__cta"
-        href={PLACES_MAP_URL}
-        target="_blank"
-        rel="noopener"
-      >Get the Japan Map&nbsp;→</a>
+      <a class="btn btn--primary btn--sm hdr__cta" href={PLACES_MAP_URL}>
+        Get the Japan Map&nbsp;→
+      </a>
     )}
 
     <button
@@ -69,12 +66,9 @@ const onMapPage = Astro.url.pathname === "/map" || Astro.url.pathname === "/map/
       </ul>
     </nav>
     {!onMapPage && (
-      <a
-        class="btn btn--primary btn--lg m-menu__cta"
-        href={PLACES_MAP_URL}
-        target="_blank"
-        rel="noopener"
-      >Get the Japan Map&nbsp;→</a>
+      <a class="btn btn--primary btn--lg m-menu__cta" href={PLACES_MAP_URL}>
+        Get the Japan Map&nbsp;→
+      </a>
     )}
   </div>
 </header>

@@ -12,7 +12,6 @@ import PlaceFilterRail from "../components/v2/PlaceFilterRail.astro";
 import LocationChipRow from "../components/v2/LocationChipRow.astro";
 import SearchBox from "../components/v2/SearchBox.astro";
 import MapView from "../components/v2/MapView.astro";
-import { PLACES_MAP_URL } from "../data/site.js";
 import { prefectureToRegion, REGION_LABELS } from "../data/regions.js";
 
 const places = (await getCollection("places")).filter(
@@ -109,28 +108,6 @@ for (const chip of FEATURED_CHIPS) {
           {total} places, Hokkaido to Okinawa — nature, food markets, museums,
           onsen and more. Filter to what you want to see.
         </p>
-      </div>
-    </section>
-
-    <section class="pmap">
-      <div class="wrap">
-        <div class="pmap-card">
-          <div class="pmap-text">
-            <p class="eyebrow">THE JAPAN MAP</p>
-            <p class="pmap-sub">
-              One Google Map. Every place on this site. Add it to your phone,
-              take it with you.
-            </p>
-          </div>
-          <a
-            class="btn btn--primary btn--lg"
-            href={PLACES_MAP_URL}
-            target="_blank"
-            rel="noopener"
-          >
-            Get the Japan map&nbsp;→
-          </a>
-        </div>
       </div>
     </section>
 
