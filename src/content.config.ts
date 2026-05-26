@@ -13,6 +13,7 @@ import {
   placeSchema,
   storeSchema,
   routeSchema,
+  staySchema,
   cheatSheetSchema,
 } from "./content/schemas";
 
@@ -24,6 +25,7 @@ export const collections = {
   places: defineCollection({ loader: yaml("places"), schema: placeSchema }),
   stores: defineCollection({ loader: yaml("stores"), schema: storeSchema }),
   routes: defineCollection({ loader: yaml("routes"), schema: routeSchema }),
+  stays: defineCollection({ loader: yaml("stays"), schema: staySchema }),
   "cheat-sheets": defineCollection({
     loader: glob({ pattern: "**/*.md", base: "./src/content/cheat-sheets" }),
     schema: cheatSheetSchema,
