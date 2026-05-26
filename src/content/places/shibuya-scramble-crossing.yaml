@@ -1,0 +1,23 @@
+name: "Shibuya Scramble Crossing"
+address_or_area: "21 Udagawacho, Shibuya"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJK9EM68qLGGARacmu4KJj5SA
+lat: 35.659482
+lng: 139.7005596
+hero_image: /places/shibuya-scramble-crossing.webp
+hero_attribution: "Photo via Google"
+viral: true
+viral_signal:
+  source: "Reels coverage"
+  engagement: "100K+ likes range"
+  date: "2024-2025"
