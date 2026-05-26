@@ -1,0 +1,18 @@
+name: "Kirby Cafe Tokyo"
+address_or_area: "Sumida City, Oshiage"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJfTtIRNaOGGARNQmoAIgI-cQ
+lat: 35.7103764
+lng: 139.8119021
+hero_image: /places/kirby-cafe-tokyo.webp
+hero_attribution: "Photo via Google"
