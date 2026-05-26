@@ -52,8 +52,6 @@ The traveling state doc. Drop this at the top of any new Claude chat to give it 
 
 - **D3: Steven photo override on top-N cards (manual pace, ongoing).** D1 shipped site-wide Google-sourced hero photos. D3 = Steven's IG/Reels photos override on highest-leverage cards. Top 20-30 paced 5-10/week. **Now even higher leverage given D5's 47% image rate** — D3 fills the gap on the 240 products without enrichment image URLs. Begin after D2 ships.
 
-- **D5c — Editorial review of low/medium confidence rows.** Manual pass through the 164 low-confidence + 188 medium-confidence enriched products to: confirm or correct the brand-voice description, verify or remove safety_flags, validate `[CATEGORY_INPUT]` / `[VENUE_CATEGORY]` / `[POSSIBLE_DUPLICATE_OF]` / `[AMBIGUOUS]` flagged rows. Estimated 4-6 hours spread across multiple sessions. Input file: `docs/d5/d5_review_queue.txt` (362 slugs, grouped LOW / MEDIUM / HIGH-with-notes).
-
 - **D6: Location filter for /eat and /places — queued.** Closes real UX gap from D1 spot-check: traveler planning Kyoto trip has no way to filter /eat or /places to local results without leaving the site for Google My Maps. /fp brief below. Start by running the data-distribution diagnostic before designing the chip set.
 
 ### D6 — /fp first-principles brief (carried)
