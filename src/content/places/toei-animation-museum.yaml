@@ -1,0 +1,19 @@
+name: "Toei Animation Museum"
+address_or_area: "2-chōme-10-5 Higashiōizumi, Nerima City"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "quirky_museums"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJB4MsVcPvGGARrFHRGp6WX-4
+lat: 35.7524473
+lng: 139.5946133
+hero_image: /places/toei-animation-museum.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
