@@ -28,20 +28,37 @@ Write ONLY fields defined in the live `placeSchema`. Do NOT add synonym duplicat
 ## Per-item loop
 
 ### If input is a GOOGLE MAPS URL:
-1. Extract `place_id` from the URL if directly embedded (`?q=place_id:ChIJ...` or `/place/...!1s0x...:0x...!`). If only a short share URL or name-search URL, capture the resolvable name + area instead and let Text Search fetch the `place_id` in step 3.
-2. Shell out to the Python helper for resolution + enrichment in dry-run first to verify the match:
+1. **Short-URL follow step.** If the URL is `https://maps.app.goo.gl/...` (Google's short share format), follow the HTTP 302 redirect first to get the canonical URL — name and coordinates are embedded in the resolved URL's path (e.g. `/maps/place/<URL-encoded-name>/@<lat>,<lng>,...`). One-shot with `curl -sLI -A "Mozilla/5.0" <url>` and grep the `location:` header. Don't try to parse the short URL itself — it carries no place identifiers.
+2. **Extract `place_id` if directly embedded** in the canonical URL (modern format: `?q=place_id:ChIJ...`; older format with geo IDs like `!1s0x...:0x...` is NOT the modern `place_id` and needs to be resolved via Text Search anyway). If the canonical URL only carries name + coordinates, capture name + area and let Text Search resolve in step 4.
+3. **Collision pre-check (`place_id`-first).** Once you have a candidate `place_id` (either extracted directly or resolved via the next step), search existing YAMLs:
    ```
-   python3 scripts/enrich_with_places_api.py --resolve "<name or place_id>" --dry-run
+   grep -l "place_id: <ChIJ...>" src/content/places/*.yaml
    ```
-   (If the script doesn't expose this exact flag, fall back to invoking it on a single-item temp YAML in `--sample 1 --dry-run` mode, OR call the Places API directly using `GOOGLE_PLACES_API_KEY` from `.env.local`.)
-3. Verify the resolved place name matches the URL's place. A mismatch (wrong store of the same chain, wrong city for a common name) is a HARD STOP — don't write the YAML, log the mismatch, move on.
-4. Extract from the API response: official Japanese name + romanized name, address (trim postal codes + prefecture noise per the existing Python script's address cleanup convention), lat, lng.
-5. Apply the **Type chip cascade** (below) to set `public_label`, then derive `primary_category` from it.
-6. Apply the **Planning flags rules** (below) to set `planning_flags`.
-7. Apply the **Badge field rules** (below) to set `local_favorite` and `viral` (and `viral_signal` when viral=true).
-8. Run the **Routing rule** (below). If it routes to /eat, STOP — don't write to /places.
-9. Set confidence per the **Confidence levels** section.
-10. Hero photo: invoke the Python helper's photo-fetch path for this single place's `place_id` so the .webp lands at `public/places/<slug>.webp`. If no photo available, leave `hero_image` unset and flag for manual override (D3 workstream).
+   A hit means this is a re-import of an already-cataloged place. **STOP** for that item — log it as "duplicate of `<existing-slug>`" in the report, do not write a `-2` file, do not call any further API endpoints (no spend). Skip to the next input. Only proceed to step 4 when the `place_id` is genuinely new.
+4. **Resolve via Places API directly** (don't shell out to the Python script for single-item resolution — it iterates over a directory, not a single name/URL). Use `GOOGLE_PLACES_API_KEY` from `.env.local`:
+   ```
+   # Text Search to get place_id (if not already extracted)
+   curl -s -X POST "https://places.googleapis.com/v1/places:searchText" \
+     -H "Content-Type: application/json" \
+     -H "X-Goog-Api-Key: $GOOGLE_PLACES_API_KEY" \
+     -H "X-Goog-FieldMask: places.id,places.displayName,places.formattedAddress,places.location" \
+     -d '{"textQuery": "<name + area + city>"}'
+
+   # Place Details for everything else (lat/lng/address are already in Text Search response;
+   # this is for the canonical names + address breakdown if needed)
+   curl -s "https://places.googleapis.com/v1/places/<place_id>" \
+     -H "X-Goog-Api-Key: $GOOGLE_PLACES_API_KEY" \
+     -H "X-Goog-FieldMask: id,displayName,formattedAddress,addressComponents,location,types"
+   ```
+   The Python helper (`scripts/enrich_with_places_api.py`) stays in its existing role: batch-enrich an entire directory of YAMLs (and refresh stale hours). It is NOT the right tool for resolving a single new URL — invoking it for that requires writing a temp YAML first, which defeats the purpose.
+5. **Verify the resolved place name matches** the URL's place. A mismatch (wrong store of the same chain, wrong city for a common name) is a HARD STOP — don't write the YAML, log the mismatch, move on.
+6. Extract from the API response: official Japanese name + romanized name, address (trim postal codes + prefecture noise per the existing Python script's address cleanup convention), lat, lng. Use `addressComponents` to pull prefecture cleanly.
+7. Apply the **Type chip cascade** (below) to set `public_label`, then derive `primary_category` from it.
+8. Apply the **Planning flags rules** (below) to set `planning_flags`.
+9. Apply the **Badge field rules** (below) to set `local_favorite` and `viral` (and `viral_signal` when viral=true).
+10. Run the **Routing rule** (below). If it routes to /eat, STOP — don't write to /places.
+11. Set confidence per the **Confidence levels** section.
+12. Hero photo: fetch from Places API directly using the `places/<place_id>/photos/<name>/media` endpoint with the `photos` field from Place Details. Convert to `.webp` (`python3 -c "from PIL import Image; …"` matching the existing Python script's conversion convention), save to `public/places/<slug>.webp`. If no photo available, leave `hero_image` unset and flag for manual override (D3 workstream).
 
 ### If input is the URL QUEUE (`drafts/places/links.txt`):
 1. Read the file. Skip blank lines and `#`-prefixed comment lines.
@@ -62,7 +79,7 @@ Write ONLY fields defined in the live `placeSchema`. Do NOT add synonym duplicat
 
 ### Common to all input types:
 1. **Slug generation:** NFKD-romanize the name, lowercase, hyphens between words, ASCII only, max 60 chars. Drop the Japanese parenthetical (the schema's render layer splits that out at runtime; the slug is romanized-name-only). Example: `teamLab Planets Toyosu (チームラボプラネッツ TOKYO)` → `teamlab-planets-toyosu`.
-2. **Collision check:** `src/content/places/<slug>.yaml` and `drafts/_review/<slug>.yaml`. On collision append `-2`, `-3` etc. Never overwrite.
+2. **Slug-collision check (secondary).** The `place_id`-first collision pre-check (LINK loop step 3) catches re-imports of the same conceptual place. The slug-suffix rule here is only for the case where two genuinely *different* places resolve to the same slug — e.g., two unrelated cafés both named "Onibus" generating `onibus-coffee.yaml`. Check `src/content/places/<slug>.yaml` and `drafts/_review/<slug>.yaml`; on collision append `-2`, `-3` etc. Never overwrite. If you find yourself appending `-2` for what looks like the same place, STOP — the place_id pre-check should have caught it; surface the bug.
 3. **Region derivation:** the schema requires `region` and `prefecture`. Get prefecture from the API response; derive region by importing `prefectureToRegion` from `src/data/regions.js` (don't hardcode — the JNTO mapping is the source of truth).
 4. **Address cleanup:** trim postal codes and full prefecture-prefixed addresses to `<neighborhood>, <city>` form for `address_or_area`. Match the existing convention in `src/content/places/`.
 5. **Hours and time_sensitive:** the Python helper writes these when invoked with hours enabled. Leave them blank on the initial write unless the user explicitly wants them (hours hit a more expensive API tier — see the helper's COST WARNING).
@@ -171,10 +188,12 @@ Identification (correct place resolved) is the gating factor for HIGH, the same 
 - If routing is ambiguous (could be /places or /eat), STOP and ask.
 
 ## Failure handling
+- Short URL doesn't resolve (302 returns no `location:` header, or canonical URL has no name embedded) → log the input, skip the item.
+- Place_id pre-check finds an existing YAML with the same `place_id` → log "duplicate of `<existing-slug>`," skip, no further API calls, no spend.
 - Place_id resolution fails (Text Search returns nothing or all matches are clearly wrong) → log the input, skip the item.
 - Place_id resolves to the wrong place (e.g. wrong city for a common chain name) → log + skip. Don't write a YAML for the wrong location.
 - Photo fetch fails (API photo missing, rate limit, network) → save the YAML without `hero_image`, flag for manual D3 override. Do NOT block the YAML write on photo failure.
-- Slug collision unresolvable after 3 attempts (`<slug>`, `<slug>-2`, `<slug>-3` all taken) → skip, log reason.
+- Slug collision after 3 attempts (`<slug>`, `<slug>-2`, `<slug>-3` all taken by *different* place_ids) → skip, log reason. If the collisions are with the *same* place_id, the pre-check is broken — surface the bug instead of silently skipping.
 - Cascade match has 3+ plausible chips for an item → write to `drafts/_review/` with `_notes` listing the alternatives; don't auto-commit.
 - `GOOGLE_PLACES_API_KEY` missing from `.env.local` → STOP. Tell the user, don't proceed with degraded mode.
 
