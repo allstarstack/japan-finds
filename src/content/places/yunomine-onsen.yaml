@@ -1,0 +1,18 @@
+name: "Yunomine Onsen"
+address_or_area: "Hongucho Yunomine, Tanabe"
+region: "Kansai"
+prefecture: "Wakayama"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ01M0FgRaBmARiIXdso-utbw
+lat: 33.8293126
+lng: 135.7575886
+hero_image: /places/yunomine-onsen.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
