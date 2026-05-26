@@ -1,0 +1,19 @@
+name: "Kutani Kosen Kiln"
+address_or_area: "5-chōme-3-3 Nomachi, Kanazawa"
+region: "Hokuriku Shinetsu"
+prefecture: "Ishikawa"
+primary_category: "Do"
+public_label: "workshops_crafts"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJB9Fwa2M0-F8RKXLue8jYaSc
+lat: 36.5549269
+lng: 136.6450199
+hero_image: /places/kutani-kosen-kiln.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
