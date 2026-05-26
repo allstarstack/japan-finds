@@ -125,21 +125,19 @@ const STAY_LEGEND = [
         <span class="map-legend-toggle-text">Legend</span>
         <span class="map-legend-chev" aria-hidden="true">▾</span>
       </button>
-      {/* Phase A.9 C3 — three grouped sections, each row is a click-toggle
-          filter. data-source identifies the URL param the row belongs to
-          (?places= / ?eat= / ?stay=); data-value is the slug stored in
-          that param. Initial data-active="true" — JS rehydrates from URL
-          on init. Group header buttons (Where/Eat/Stay) toggle all rows
-          in the group at once for symmetry with the rail "Clear" idiom. */}
+      {/* Phase A.9 C4 — three grouped sections.
+          Group headers (Where / Eat / Stay) are non-interactive labels;
+          source-level filtering is the toolbar's job, not the legend's.
+          Rows are click-to-focus, single-select within their source:
+            * default — focusedLegend[src] = null, every row in source visible
+            * click row X — only X visible; others get data-active="false"
+              (dimmed swatch + strikethrough label)
+            * click X again — clear, back to default
+          data-legend-row identifies the source (URL param it writes to);
+          data-value is the slug. */}
       <div id="map-legend-list" class="map-legend-list" data-legend-list>
         <div class="map-legend-section" data-legend-section="places">
-          <button
-            type="button"
-            class="map-legend-section-title"
-            data-legend-group-toggle="places"
-            aria-pressed="true"
-            title="Toggle all Where rows"
-          >Where</button>
+          <span class="map-legend-section-title">Where</span>
           <ul class="map-legend-rows">
             {
               PLACES_LEGEND.map((c) => (
@@ -150,7 +148,7 @@ const STAY_LEGEND = [
                   data-active="true"
                   role="button"
                   tabindex="0"
-                  aria-pressed="true"
+                  aria-pressed="false"
                 >
                   <span
                     class="map-legend-swatch"
@@ -165,13 +163,7 @@ const STAY_LEGEND = [
         </div>
 
         <div class="map-legend-section" data-legend-section="eat">
-          <button
-            type="button"
-            class="map-legend-section-title"
-            data-legend-group-toggle="eat"
-            aria-pressed="true"
-            title="Toggle all Eat rows"
-          >Eat</button>
+          <span class="map-legend-section-title">Eat</span>
           <ul class="map-legend-rows">
             {
               EAT_LEGEND.map((c) => (
@@ -182,7 +174,7 @@ const STAY_LEGEND = [
                   data-active="true"
                   role="button"
                   tabindex="0"
-                  aria-pressed="true"
+                  aria-pressed="false"
                 >
                   <span
                     class="map-legend-swatch map-legend-swatch--ring"
@@ -196,13 +188,7 @@ const STAY_LEGEND = [
         </div>
 
         <div class="map-legend-section" data-legend-section="stay">
-          <button
-            type="button"
-            class="map-legend-section-title"
-            data-legend-group-toggle="stay"
-            aria-pressed="true"
-            title="Toggle all Stay rows"
-          >Stay</button>
+          <span class="map-legend-section-title">Stay</span>
           <ul class="map-legend-rows">
             {
               STAY_LEGEND.map((s) => (
@@ -213,7 +199,7 @@ const STAY_LEGEND = [
                   data-active="true"
                   role="button"
                   tabindex="0"
-                  aria-pressed="true"
+                  aria-pressed="false"
                 >
                   <span
                     class="map-legend-swatch"
@@ -551,10 +537,10 @@ const STAY_LEGEND = [
     border-width: 2.5px;
   }
 
-  /* Phase A.9 C3 — three named legend groups (Where / Eat / Stay), each
-     header is a clickable button that toggles its whole group on/off.
-     Individual rows are click-toggles too — same active/inactive visual
-     contract on both. */
+  /* Phase A.9 C4 — three named legend groups (Where / Eat / Stay).
+     Headers are non-interactive labels — source-level filtering lives
+     in the toolbar chips (See/Do/Eat/Stay). Rows are click-to-focus,
+     single-select within their section. */
   .map-legend-section + .map-legend-section {
     margin-top: 8px;
     padding-top: 8px;
@@ -565,26 +551,20 @@ const STAY_LEGEND = [
     width: 100%;
     margin: 0 0 4px;
     padding: 2px 0;
-    background: transparent;
-    border: none;
     font-family: var(--font-mono);
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-ink-60);
-    text-align: left;
-    cursor: pointer;
-  }
-  .map-legend-section-title:hover { color: var(--color-ink-black); }
-  .map-legend-section-title[aria-pressed="false"] {
-    color: var(--color-ink-30);
   }
 
-  /* Toggle rows — default active is the rendered state.
-     Inactive: swatch dims to 30%, label gains a strikethrough so the
-     state is read at a glance even with reduced colour. The cursor and
-     keyboard role come from the role/tabindex attrs in HTML. */
+  /* Toggle rows. Default state: every row data-active="true" (no dim).
+     Focused state: the chosen row stays data-active="true" while peers
+     flip to data-active="false" (dim swatch + strikethrough label).
+     :has() lets us pick out the focused row in CSS without an extra
+     data-attr — "any row in this section is dimmed" implies the
+     surviving active row is the focused one. */
   .map-legend-row {
     cursor: pointer;
     user-select: none;
@@ -605,6 +585,17 @@ const STAY_LEGEND = [
     text-decoration: line-through;
     text-decoration-thickness: 1px;
     color: var(--color-ink-30);
+  }
+  /* Focus row — only highlighted when its section has at least one
+     dimmed peer (i.e. a focus is set). Light tint + bold label so it
+     reads as "this is the active filter". */
+  .map-legend-section:has(.map-legend-row[data-active="false"])
+    .map-legend-row[data-active="true"] {
+    background: var(--color-rice-tint);
+  }
+  .map-legend-section:has(.map-legend-row[data-active="false"])
+    .map-legend-row[data-active="true"] .map-legend-label {
+    font-weight: 600;
   }
 
   /* Error overlay — auth/network failure. Replaces the silent blank gray. */
@@ -708,24 +699,20 @@ const STAY_LEGEND = [
   // source from content type in the filter UI confused first-time
   // users; one Eat chip is cleaner.
   const ALL_CATS = ["See", "Do", "Eat", "Stay"];
-  let activeCats;
+  let focusedCat = null; // null = no toolbar filter (all four visually active)
   let allFeatures = null; // fetched once; filter rebuilds source.data
   let map;
   let mapErrored = false;
 
-  /* ---------- Phase A.9 C3 — legend toggle state ----------
-     Three independent active-slug sets, one per source. Default state
-     = "all rows active" — stored as null sentinel so we can tell the
-     difference between "user explicitly toggled every row off" (empty
-     Set) and "no filter applied yet" (null). URL params:
-       ?places=<csv of active slugs>  ?eat=<csv>  ?stay=<csv>
-     Default (all active) omits the param; an explicit empty value
-     ("?places=") is the all-off state. The semantic split (active vs
-     inactive lists) follows the spec; verbose URLs on heavy toggling
-     are accepted as the cost of being explicit. The three params are
-     deliberately separate to avoid slug-collision risk between
-     /places "Onsen & Ryokan" cluster (slug onsen_ryokan) and the
-     identically-named /stays primary_cat. */
+  /* ---------- Phase A.9 C4 — legend focus state ----------
+     Each source has at most one focused row at a time:
+       focusedLegend.places  null | <PLACES slug>
+       focusedLegend.eat     null | <EAT slug>
+       focusedLegend.stay    null | <STAY slug>
+     null = no focus = every row visible. URL form is a single slug
+     per source — ?places=animals (not csv); default omits the param.
+     Three separate params avoid slug collision between /places
+     onsen_ryokan (cluster) and /stays onsen_ryokan (primary_cat). */
   const LEGEND_SLUG_SETS = {
     places: new Set(["nature_water", "culture_history", "animals",
       "quirky_museums", "anime", "onsen_ryokan", "photo_spots",
@@ -760,100 +747,71 @@ const STAY_LEGEND = [
     Object.entries(EAT_SLUG_TO_CUISINE).map(([s, c]) => [c, s]),
   );
 
-  // null = "no filter applied for this source" (default all-active).
-  // Set = explicit active list (possibly empty = all-inactive).
-  let activeLegend = { places: null, eat: null, stay: null };
+  let focusedLegend = { places: null, eat: null, stay: null };
 
   function readLegendFromURL() {
     const p = new URLSearchParams(window.location.search);
     for (const source of ["places", "eat", "stay"]) {
       if (!p.has(source)) {
-        activeLegend[source] = null;
+        focusedLegend[source] = null;
         continue;
       }
-      const raw = p.get(source);
-      if (raw === "") {
-        activeLegend[source] = new Set();
-        continue;
-      }
-      const slugs = raw
-        .split(",")
-        .map((s) => s.trim().toLowerCase())
-        .filter((s) => LEGEND_SLUG_SETS[source].has(s));
-      activeLegend[source] = new Set(slugs);
+      // Single-slug form. If a legacy comma-joined value comes in from a
+      // C3-era link, take the first token so the link still resolves to
+      // something sensible.
+      const first = (p.get(source) || "")
+        .split(",")[0]
+        .trim()
+        .toLowerCase();
+      focusedLegend[source] = LEGEND_SLUG_SETS[source].has(first)
+        ? first
+        : null;
     }
   }
 
   function syncLegendToURL() {
     const p = new URLSearchParams(window.location.search);
     for (const source of ["places", "eat", "stay"]) {
-      const active = activeLegend[source];
-      const all = LEGEND_SLUG_SETS[source];
-      if (active === null || (active.size === all.size && [...all].every((s) => active.has(s)))) {
-        // Default state (all active or no filter applied) — clean URL.
-        p.delete(source);
-      } else if (active.size === 0) {
-        // Explicit all-off — keep the param present but empty.
-        p.set(source, "");
-      } else {
-        p.set(source, Array.from(active).join(","));
-      }
+      const slug = focusedLegend[source];
+      if (slug) p.set(source, slug);
+      else p.delete(source);
     }
     const qs = p.toString();
     const newURL = window.location.pathname + (qs ? "?" + qs : "") + window.location.hash;
     history.replaceState(null, "", newURL);
   }
 
+  // Does this slug pass the legend filter for its source? null focus
+  // means "no filter, all rows pass"; non-null means "only matches".
   function isLegendActive(source, slug) {
-    const active = activeLegend[source];
-    if (active === null) return true; // default — every row visible
-    return active.has(slug);
-  }
-
-  function setLegendActive(source, slug, on) {
-    if (activeLegend[source] === null) {
-      // First toggle from default state — initialize to the full set so
-      // we can remove one item from it.
-      activeLegend[source] = new Set(LEGEND_SLUG_SETS[source]);
-    }
-    if (on) activeLegend[source].add(slug);
-    else activeLegend[source].delete(slug);
+    const f = focusedLegend[source];
+    if (f === null) return true;
+    return f === slug;
   }
 
   /* ---------- URL query state for ?categories= (toolbar chips) ----------
-     Phase A.8: click-to-include semantics. Param lists ACTIVE chips
-     only; missing param OR empty value = no chips active = show all.
-     Backward-compat: old links from Phase A.6 (?categories=tabelog)
-     route to Eat; old links from Phase A.7 with the full 4-chip list
-     activate all 4 (which functionally shows all under the new
-     default-show-all semantics — visual chip state differs but pin
-     set is identical). */
+     Phase A.9 C4: single-select-with-clear semantics, matching the
+     legend rows. ?categories=Eat means "only /eat sources visible".
+     Default state (all four chips visually active) = no filter = param
+     omitted. Backward-compat: legacy multi-value Phase A.8 links
+     (?categories=See,Eat) collapse to the first valid token; legacy
+     ?categories=tabelog still routes to Eat. */
   function readCategoriesFromURL() {
     const p = new URLSearchParams(window.location.search);
-    if (!p.has("categories")) return new Set(); // omitted = no filter (show all)
-    const raw = p.get("categories");
-    if (raw === "") return new Set(); // explicit empty = no filter (show all)
-    const cats = raw
-      .split(",")
-      .map((s) => s.trim().toLowerCase())
-      .filter(Boolean)
-      .map((s) => (s === "tabelog" ? "eat" : s))
-      .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-      .filter((c) => ALL_CATS.includes(c));
-    return new Set(cats);
+    if (!p.has("categories")) return null;
+    const raw = (p.get("categories") || "").trim();
+    if (!raw) return null;
+    // Take the first token for legacy A.8 multi-value compatibility.
+    let tok = raw.split(",")[0].trim().toLowerCase();
+    if (tok === "tabelog") tok = "eat";
+    const cap = tok.charAt(0).toUpperCase() + tok.slice(1);
+    return ALL_CATS.includes(cap) ? cap : null;
   }
 
   function syncCategoriesToURL() {
     const p = new URLSearchParams(window.location.search);
-    // No active chips = default state = omit param (cleaner URLs).
-    if (activeCats.size === 0) {
-      p.delete("categories");
-    } else {
-      p.set(
-        "categories",
-        Array.from(activeCats).map((c) => c.toLowerCase()).join(","),
-      );
-    }
+    if (focusedCat === null) p.delete("categories");
+    else p.set("categories", focusedCat);
     const qs = p.toString();
     const newURL =
       window.location.pathname +
@@ -863,49 +821,52 @@ const STAY_LEGEND = [
   }
 
   /* ---------- UI state sync ----------
-     Reset link is visible when ANY chip is active (i.e. not at the
-     default "all inactive = show all" state). Empty-state overlay is
-     gone — under click-to-include semantics, "no chips active" means
-     "show all", which is the desired default, not an empty result. */
+     Default state: focusedCat === null → every chip aria-pressed=true
+     (all sources visible). Focused state: only the focused chip is
+     aria-pressed=true. Reset link surfaces when any filter (toolbar or
+     legend) is non-default. */
   function updateButtonStates() {
     document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
       const c = btn.dataset.catBtn;
-      btn.setAttribute("aria-pressed", String(activeCats.has(c)));
+      const pressed = focusedCat === null || focusedCat === c;
+      btn.setAttribute("aria-pressed", String(pressed));
     });
     const reset = document.querySelector("[data-reset]");
-    if (reset) reset.hidden = activeCats.size === 0;
+    if (reset) {
+      const anyLegend =
+        focusedLegend.places || focusedLegend.eat || focusedLegend.stay;
+      reset.hidden = focusedCat === null && !anyLegend;
+    }
   }
 
   /* ---------- Map filtering ----------
-     Click-to-include: empty active set = no filter = show every pin
-     (default state, matches user intuition). When chips are active,
-     features pass iff their category is in the active set. /eat
-     (Tabelog) features map to the Eat chip — toggling Eat shows
-     both /places food markets/cafés AND /eat Tabelog restaurants. */
+     Two layers, each single-select-with-clear:
+       1. Toolbar (focusedCat): null = all sources visible; "Eat" = only
+          /eat features; "See"/"Do" = /places features with that
+          primary_category; "Stay" = only /stay features.
+       2. Legend (focusedLegend[src]): null = every row visible in that
+          source; "<slug>" = only features whose public_label / cuisine /
+          primary_cat matches that slug.
+     Layers AND together. A feature passes iff both layers admit it. */
   function passesFilter(f) {
-    // Layer 1: toolbar primary-category chips (See/Do/Eat/Stay).
-    // Empty active set = no toolbar filter; non-empty = include-mode.
-    if (activeCats.size !== 0) {
-      if (f.properties.source === "eat") {
-        if (!activeCats.has("Eat")) return false;
-      } else if (f.properties.source === "stay") {
-        if (!activeCats.has("Stay")) return false;
+    const src = f.properties.source;
+    if (focusedCat !== null) {
+      if (src === "eat") {
+        if (focusedCat !== "Eat") return false;
+      } else if (src === "stay") {
+        if (focusedCat !== "Stay") return false;
       } else {
-        if (!activeCats.has(f.properties.primary_category)) return false;
+        // /places — primary_category is "See" or "Do".
+        if (focusedCat !== f.properties.primary_category) return false;
       }
     }
-    // Layer 2: legend row toggles (Phase A.9 C3). Each source has its
-    // own active set; null = unfiltered default = every row visible.
-    const src = f.properties.source;
     if (src === "places") {
       const slug = f.properties.public_label || "_base";
       return isLegendActive("places", slug);
     }
     if (src === "eat") {
       const slug = EAT_CUISINE_TO_SLUG[f.properties.cuisine] || "";
-      // Restaurants with cuisines outside the 13-chip set (none today,
-      // defensive) pass when no filter is applied, fail when one is.
-      if (!slug) return activeLegend.eat === null;
+      if (!slug) return focusedLegend.eat === null;
       return isLegendActive("eat", slug);
     }
     if (src === "stay") {
@@ -924,13 +885,15 @@ const STAY_LEGEND = [
     });
   }
 
-  /* ---------- Button + reset wiring ---------- */
+  /* ---------- Button + reset wiring ----------
+     Single-select-with-clear. Clicking the focused chip again clears
+     back to the all-active default. Reset clears both toolbar and
+     legend focus in one shot. */
   function setupCategoryButtons() {
     document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const c = btn.dataset.catBtn;
-        if (activeCats.has(c)) activeCats.delete(c);
-        else activeCats.add(c);
+        focusedCat = focusedCat === c ? null : c;
         updateButtonStates();
         syncCategoriesToURL();
         applyCategoryFilter();
@@ -939,10 +902,12 @@ const STAY_LEGEND = [
     const reset = document.querySelector("[data-reset]");
     if (reset)
       reset.addEventListener("click", () => {
-        // Reset → default state (no active filters = show all).
-        activeCats = new Set();
+        focusedCat = null;
+        focusedLegend = { places: null, eat: null, stay: null };
         updateButtonStates();
+        paintLegendFromState();
         syncCategoriesToURL();
+        syncLegendToURL();
         applyCategoryFilter();
       });
     const reload = document.querySelector("[data-reload]");
@@ -990,71 +955,49 @@ const STAY_LEGEND = [
     });
   }
 
-  /* ---------- Legend row toggle (Phase A.9 C3) ----------
-     Each row is a button-like <li> (role=button, tabindex=0). Click or
-     keyboard activation flips its data-active, updates the matching
-     active-slug set, syncs URL, and re-applies the map filter. Group
-     header buttons toggle every row in the group at once. */
+  /* ---------- Legend row focus (Phase A.9 C4) ----------
+     Click-to-focus, single-select within source. Click row → focus it.
+     Click focused row → clear focus. Click a different row → swap.
+     Row visual contract: data-active="true" = visible/normal style;
+     data-active="false" = dimmed (used when a peer in the same section
+     IS focused). When no focus is set, every row is data-active="true"
+     (no dim). aria-pressed mirrors "this row is the current focus". */
   function paintLegendFromState() {
     document.querySelectorAll("[data-legend-row]").forEach((row) => {
       const src = row.dataset.legendRow;
       const slug = row.dataset.value;
-      const on = isLegendActive(src, slug);
+      const f = focusedLegend[src];
+      // Default (no focus in section) = all rows active.
+      // Focus set = only the focused row is active.
+      const on = f === null ? true : f === slug;
       row.dataset.active = String(on);
-      row.setAttribute("aria-pressed", String(on));
-    });
-    // Group title aria-pressed reflects "any row active in the group".
-    document.querySelectorAll("[data-legend-group-toggle]").forEach((btn) => {
-      const src = btn.dataset.legendGroupToggle;
-      const rows = document.querySelectorAll(`[data-legend-row="${src}"]`);
-      const anyActive = Array.from(rows).some((r) => r.dataset.active === "true");
-      btn.setAttribute("aria-pressed", String(anyActive));
+      row.setAttribute("aria-pressed", String(f === slug));
     });
   }
 
   function setupLegendRows() {
-    function toggleRow(row) {
+    function activate(row) {
       const src = row.dataset.legendRow;
       const slug = row.dataset.value;
-      const wasOn = isLegendActive(src, slug);
-      setLegendActive(src, slug, !wasOn);
+      focusedLegend[src] = focusedLegend[src] === slug ? null : slug;
       paintLegendFromState();
       syncLegendToURL();
+      updateButtonStates(); // Reset visibility may flip.
       applyCategoryFilter();
     }
     document.querySelectorAll("[data-legend-row]").forEach((row) => {
-      row.addEventListener("click", () => toggleRow(row));
+      row.addEventListener("click", () => activate(row));
       row.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          toggleRow(row);
+          activate(row);
         }
-      });
-    });
-    // Group header → toggle every row in the group. If any are active,
-    // turn them all off; if none are active, turn them all on.
-    document.querySelectorAll("[data-legend-group-toggle]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const src = btn.dataset.legendGroupToggle;
-        const rows = document.querySelectorAll(`[data-legend-row="${src}"]`);
-        const anyOn = Array.from(rows).some(
-          (r) => isLegendActive(src, r.dataset.value),
-        );
-        // anyOn → turn all off; otherwise turn all on (back to default).
-        if (anyOn) {
-          activeLegend[src] = new Set();
-        } else {
-          activeLegend[src] = null; // null = default = all active
-        }
-        paintLegendFromState();
-        syncLegendToURL();
-        applyCategoryFilter();
       });
     });
   }
 
   /* ---------- Init ---------- */
-  activeCats = readCategoriesFromURL();
+  focusedCat = readCategoriesFromURL();
   readLegendFromURL();
   setupCategoryButtons();
   setupLegend();
@@ -1296,6 +1239,9 @@ const STAY_LEGEND = [
         const nameHTML = p.name_jp
           ? `${p.name} <span class="map-popup-jp">${p.name_jp}</span>`
           : p.name;
+        // Anchor-link CTA: /eat#<slug> lands on the matching card, which
+        // self-highlights for 2s via the :target rule in RestaurantCard.
+        const href = p.slug ? `/eat#${p.slug}` : "/eat";
         return `
           <div class="map-popup">
             ${img}
@@ -1303,7 +1249,7 @@ const STAY_LEGEND = [
               <h3 class="map-popup-name">${nameHTML}</h3>
               ${metaLine ? `<p class="map-popup-area">${metaLine}</p>` : ""}
               ${provenance ? `<p class="map-popup-area">${provenance}</p>` : ""}
-              <a class="map-popup-link" href="/eat">View on /eat →</a>
+              <a class="map-popup-link" href="${href}">More about this restaurant →</a>
             </div>
           </div>
         `;
@@ -1348,13 +1294,16 @@ const STAY_LEGEND = [
       }
       // /places branch
       const area = p.address_or_area || "";
+      // Anchor-link CTA: /places#<slug> lands on the matching card,
+      // which self-highlights for 2s via the :target rule in PlaceCard.
+      const href = p.slug ? `/places#${p.slug}` : "/places";
       return `
         <div class="map-popup">
           ${img}
           <div class="map-popup-text">
             <h3 class="map-popup-name">${p.name || ""}</h3>
             ${area ? `<p class="map-popup-area">${area}</p>` : ""}
-            <a class="map-popup-link" href="/places">View on /places →</a>
+            <a class="map-popup-link" href="${href}">More about this place →</a>
           </div>
         </div>
       `;

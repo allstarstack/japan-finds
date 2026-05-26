@@ -43,7 +43,7 @@ const mapsUrl = r.place_id
   : r.maps_search;
 ---
 
-<article class="rc" data-slug={r.id} data-cuisine={cuisine} data-city={city} data-flags={flags.join(" ")}>
+<article id={r.id} class="rc" data-slug={r.id} data-cuisine={cuisine} data-city={city} data-flags={flags.join(" ")}>
   <div class="rc-media">
     {
       r.hero_image ? (
@@ -115,6 +115,27 @@ const mapsUrl = r.place_id
   .rc:hover,
   .rc:focus-within {
     border-color: var(--color-ink-black);
+  }
+  /* Phase A.9 C4 — :target highlight when a /map popup CTA deep-links
+     to this card (href="/eat#<slug>"). 2-second Egg Sando Yellow glow
+     that fades to nothing. Mirrors the PlaceCard :target rule for
+     symmetry across both list pages. */
+  .rc:target {
+    animation: rc-target-highlight 2s ease-out;
+    scroll-margin-top: 80px;
+  }
+  @keyframes rc-target-highlight {
+    0% {
+      box-shadow: 0 0 0 3px var(--color-egg-yellow);
+      border-color: var(--color-egg-yellow);
+    }
+    100% {
+      box-shadow: 0 0 0 0 transparent;
+      border-color: var(--color-concrete-gray);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rc:target { animation: none; }
   }
 
   /* Hero media — a 3:2 Google photo, or the colour-block fallback.
