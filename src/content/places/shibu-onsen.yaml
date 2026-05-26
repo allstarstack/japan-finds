@@ -1,0 +1,18 @@
+name: "Shibu Onsen"
+address_or_area: "Yamanouchi, Shimotakai District"
+region: "Hokuriku Shinetsu"
+prefecture: "Nagano"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJQyBBLIL0HWARtNenAnQzISA
+lat: 36.7337019
+lng: 138.4333586
+hero_image: /places/shibu-onsen.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
