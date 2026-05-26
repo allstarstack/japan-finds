@@ -1,0 +1,18 @@
+name: "Fujiko F. Fujio Museum"
+address_or_area: "Tama Ward, Kawasaki"
+region: "Kanto"
+prefecture: "Kanagawa"
+primary_category: "See"
+public_label: "quirky_museums"
+planning_flags: "rainy_day;with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJCTNbYSvxGGARhT9-j573B_c
+lat: 35.6099229
+lng: 139.5735723
+hero_image: /places/fujiko-f-fujio-museum.webp
+hero_attribution: "Photo via Google"
