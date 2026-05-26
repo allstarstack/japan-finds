@@ -1,0 +1,23 @@
+name: "Ginzan Onsen"
+address_or_area: "Ginzanshinhata, Obanazawa"
+region: "Tohoku"
+prefecture: "Yamagata"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ7SNY19pdiV8RIRfQXnlYhtk
+lat: 38.5706177
+lng: 140.5305457
+hero_image: /places/ginzan-onsen.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
+viral: true
+viral_signal:
+  source: "Reels coverage"
+  engagement: "100K+ likes range"
+  date: "2024-2025"
