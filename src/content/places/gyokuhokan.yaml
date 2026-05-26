@@ -1,0 +1,18 @@
+name: "Gyokuhokan"
+address_or_area: "Kawazu, Kamo District"
+region: "Tokai"
+prefecture: "Shizuoka"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJido4chPhGWARTzjcFXsqGv4
+lat: 34.7569319
+lng: 138.98277149999998
+hero_image: /places/gyokuhokan.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
