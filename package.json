@@ -14,11 +14,13 @@
     "verify-status": "node scripts/verify-status.mjs",
     "verify-pills": "node scripts/verify-pills.mjs",
     "enrich:refresh": "python3 scripts/enrich_with_places_api.py --hours-only --refresh-stale",
-    "prebuild": "rm -rf node_modules/.astro/data-store.json && npm run enrich:refresh || true"
+    "geojson": "node scripts/generate-geojson.mjs",
+    "prebuild": "rm -rf node_modules/.astro/data-store.json && npm run geojson && npm run enrich:refresh || true"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
-    "astro": "^6.3.3"
+    "astro": "^6.3.3",
+    "mapbox-gl": "^3.24.0"
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",

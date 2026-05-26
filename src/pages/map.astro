@@ -1,0 +1,274 @@
+---
+/* /map — standalone Mapbox view of every geocoded place.
+   Phase A of the map migration (replaces the consumer Google My Maps
+   iframe). Pulls /places.geojson generated at build time by
+   scripts/generate-geojson.mjs. */
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<Base
+  title="Japan map — Japan Finds"
+  description="Interactive map of every place on Japan Finds — nature, food markets, museums, onsen, theme parks, anime pilgrimage sites and more."
+>
+  <Header />
+  <main id="main" class="map-main">
+    <div id="japan-map" aria-label="Interactive map of Japan Finds places"></div>
+    <p class="map-hint" hidden>Tap the map to enable zoom</p>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style is:global>
+  /* Mapbox creates popup DOM dynamically — these rules need to be global so
+     they apply when the popup mounts on click. Match the brand chip palette
+     (Rice White card, Ink Black border, mono captions). */
+  .mapboxgl-popup-content {
+    padding: 0;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+  .mapboxgl-popup-tip {
+    display: none;
+  }
+  .mapboxgl-popup-close-button {
+    color: var(--color-ink-black);
+    font-size: 18px;
+    padding: 2px 8px;
+    line-height: 1;
+  }
+  .map-popup {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    min-width: 220px;
+    max-width: 280px;
+  }
+  .map-popup-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: var(--radius-sm);
+    background: var(--color-concrete-gray);
+  }
+  .map-popup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    min-width: 0;
+    flex: 1;
+  }
+  .map-popup-name {
+    margin: 0;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color-ink-black);
+  }
+  .map-popup-area {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 11px;
+    color: var(--color-ink-60);
+    letter-spacing: 0.02em;
+  }
+  .map-popup-link {
+    margin-top: 2px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+</style>
+
+<style>
+  .map-main {
+    position: relative;
+    padding: 0;
+  }
+  #japan-map {
+    width: 100%;
+    height: 95vh;
+    background: var(--color-concrete-gray);
+  }
+  /* Mobile tap-to-activate hint. Hidden by default; the client script
+     reveals it on touch devices and removes it on the first click. */
+  .map-hint {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 6px 14px;
+    background: var(--color-ink-black);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: var(--radius-pill);
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: var(--shadow-sm);
+  }
+</style>
+
+<script>
+  import mapboxgl from "mapbox-gl";
+  import "mapbox-gl/dist/mapbox-gl.css";
+
+  // Inlined at build time by Vite. On localhost preview this is the .env
+  // placeholder (tiles 401 until you set a real local token). On Vercel
+  // it is the production token from PUBLIC_MAPBOX_TOKEN env var.
+  mapboxgl.accessToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
+
+  const map = new mapboxgl.Map({
+    container: "japan-map",
+    style: "mapbox://styles/mapbox/light-v11",
+    center: [138, 36],
+    zoom: 4.5,
+    minZoom: 4,
+    maxZoom: 18,
+  });
+
+  map.on("load", () => {
+    map.addSource("places", {
+      type: "geojson",
+      data: "/places.geojson",
+      cluster: true,
+      clusterMaxZoom: 14,
+      clusterRadius: 50,
+    });
+
+    // Cluster bubbles — Rice White fill, Concrete Gray border, Ink Black count.
+    // Radius steps grow with cluster size but cap at 50px per spec.
+    map.addLayer({
+      id: "clusters",
+      type: "circle",
+      source: "places",
+      filter: ["has", "point_count"],
+      paint: {
+        "circle-color": "#F7F3EA",
+        "circle-stroke-color": "#E6E1D8",
+        "circle-stroke-width": 1.5,
+        "circle-radius": [
+          "step",
+          ["get", "point_count"],
+          20,
+          25, 30,
+          100, 40,
+          250, 50,
+        ],
+      },
+    });
+    map.addLayer({
+      id: "cluster-count",
+      type: "symbol",
+      source: "places",
+      filter: ["has", "point_count"],
+      layout: {
+        "text-field": ["get", "point_count_abbreviated"],
+        "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+        "text-size": 12,
+      },
+      paint: { "text-color": "#151515" },
+    });
+
+    // Individual pins coloured by primary_category. Matches the See/Do/Eat/Stay
+    // chip palette used by /places card colour blocks (brand.md).
+    map.addLayer({
+      id: "unclustered",
+      type: "circle",
+      source: "places",
+      filter: ["!", ["has", "point_count"]],
+      paint: {
+        "circle-color": [
+          "match",
+          ["get", "primary_category"],
+          "See", "#176BFF",
+          "Do", "#FF3B30",
+          "Eat", "#FFD84D",
+          "Stay", "#3f7548",
+          /* default */ "#999999",
+        ],
+        "circle-radius": 6,
+        "circle-stroke-width": 1.5,
+        "circle-stroke-color": "#151515",
+      },
+    });
+
+    // Click a cluster: zoom in to expand it.
+    map.on("click", "clusters", (e) => {
+      const f = map.queryRenderedFeatures(e.point, { layers: ["clusters"] })[0];
+      const id = f.properties.cluster_id;
+      map.getSource("places").getClusterExpansionZoom(id, (err, zoom) => {
+        if (err) return;
+        map.easeTo({ center: f.geometry.coordinates, zoom });
+      });
+    });
+
+    // Click a pin: popup with name, area, link to /places.
+    map.on("click", "unclustered", (e) => {
+      const f = e.features[0];
+      const coords = f.geometry.coordinates.slice();
+      const p = f.properties;
+      const img = p.hero_image
+        ? `<img src="${p.hero_image}" alt="" loading="lazy" class="map-popup-img" />`
+        : `<div class="map-popup-img" aria-hidden="true"></div>`;
+      const area = p.address_or_area || "";
+      const name = p.name || "";
+      const html = `
+        <div class="map-popup">
+          ${img}
+          <div class="map-popup-text">
+            <h3 class="map-popup-name">${name}</h3>
+            <p class="map-popup-area">${area}</p>
+            <a class="map-popup-link" href="/places">View on /places →</a>
+          </div>
+        </div>
+      `;
+      new mapboxgl.Popup({ offset: 8, closeButton: true, closeOnClick: true })
+        .setLngLat(coords)
+        .setHTML(html)
+        .addTo(map);
+    });
+
+    for (const layer of ["clusters", "unclustered"]) {
+      map.on("mouseenter", layer, () => {
+        map.getCanvas().style.cursor = "pointer";
+      });
+      map.on("mouseleave", layer, () => {
+        map.getCanvas().style.cursor = "";
+      });
+    }
+  });
+
+  // Mobile UX: disable scroll-zoom (wheel + pinch) until the user taps the
+  // map. Touch-pan (dragPan) stays enabled — users expect a map to pan with a
+  // single-finger drag. The "Tap to enable zoom" hint surfaces only on
+  // coarse-pointer devices and clears after first interaction.
+  if (window.matchMedia("(pointer: coarse)").matches) {
+    map.scrollZoom.disable();
+    map.touchZoomRotate.disable();
+    const hint = document.querySelector(".map-hint");
+    if (hint) hint.hidden = false;
+    const activate = () => {
+      map.scrollZoom.enable();
+      map.touchZoomRotate.enable();
+      if (hint) hint.hidden = true;
+    };
+    map.once("click", activate);
+  }
+</script>
