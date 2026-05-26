@@ -1,0 +1,17 @@
+name: "Gosho Aoyama Manga Factory"
+address_or_area: "Hokuei, Yurashuku"
+region: "Chugoku"
+prefecture: "Tottori"
+primary_category: "See"
+public_label: "anime"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ89kHhMh1VjURfy7KxXz4Wy8
+lat: 35.498031999999995
+lng: 133.76180979999998
+hero_image: /places/gosho-aoyama-manga-factory.webp
+hero_attribution: "Photo via Google"
