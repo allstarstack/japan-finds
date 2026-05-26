@@ -1,5 +1,5 @@
-name: "Nyuto Onsen Area"
-address_or_area: "Nyuto, Akita"
+name: "Tsurunoyu Onsen"
+address_or_area: "Nyuto Onsen, Akita"
 region: "Tohoku"
 prefecture: "Akita"
 primary_category: "Stay"
@@ -15,6 +15,6 @@ lat: 39.805188799999996
 lng: 140.7798893
 hours:
 hours_cache_date: '2026-05-25'
-hero_image: /places/nyuto-onsen-area.webp
+hero_image: /places/tsurunoyu-onsen.webp
 hero_attribution: Photo via Google
 time_sensitive: true
