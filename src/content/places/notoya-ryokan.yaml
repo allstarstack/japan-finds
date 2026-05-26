@@ -1,0 +1,18 @@
+name: "Notoya Ryokan"
+address_or_area: "446 Ginzanshinhata, Obanazawa"
+region: "Tohoku"
+prefecture: "Yamagata"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJO1R1attdiV8R_M7rXnfErLE
+lat: 38.5691334
+lng: 140.53151929999999
+hero_image: /places/notoya-ryokan.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
