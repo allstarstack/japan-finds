@@ -1,0 +1,23 @@
+name: "Kamakura Kokomae Station"
+address_or_area: "1 Chome-1 Koshigoe, Kamakura"
+region: "Kanto"
+prefecture: "Kanagawa"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJIRZ85hZPGGARffzavFo4QRk
+lat: 35.3067242
+lng: 139.5005569
+hero_image: /places/kamakura-kokomae-station.webp
+hero_attribution: "Photo via Google"
+viral: true
+viral_signal:
+  source: "Reels coverage"
+  engagement: "100K+ likes range"
+  date: "2024-2025"
