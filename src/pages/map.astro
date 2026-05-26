@@ -19,20 +19,51 @@ import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 
-const SUBCAT_LEGEND = [
+/* Where (/places) sub-category legend — Phase A.9 C3 reordered to
+   "top hits first" intent priority (was legacy CSV-import order). Each
+   row is a toggle filter; clicking removes its `value` from the active
+   set. The `value` is the public_label slug (URL token in ?places=).
+   Keep this in sync with the Mapbox paint expression below — both
+   render the same color → category mapping. */
+const PLACES_LEGEND = [
   { value: "nature_water",     label: "Nature & Water",     color: "#176BFF" },
   { value: "culture_history",  label: "Culture & History",  color: "#FF3B30" },
-  { value: "animals",          label: "Animals",            color: "#4D8B57" },
-  { value: "quirky_museums",   label: "Quirky Museums",     color: "#7B3FA0" },
-  { value: "anime",            label: "Anime",              color: "#E91E63" },
   { value: "onsen_ryokan",     label: "Onsen & Ryokan",     color: "#9B7EBD" },
-  { value: "photo_spots",      label: "Photo Spots",        color: "#FF6B6B" },
-  { value: "scenic_transport", label: "Scenic Transport",   color: "#FF9800" },
   { value: "theme_parks",      label: "Theme Parks",        color: "#FFD84D" },
-  { value: "parks",            label: "Parks",              color: "#A4C49C" },
-  { value: "workshops_crafts", label: "Workshops & Crafts", color: "#8B5A2B" },
-  { value: "food_markets",     label: "Food Markets",       color: "#D4A017" },
+  { value: "anime",            label: "Anime",              color: "#E91E63" },
   { value: "cafes",            label: "Cafes",              color: "#D2B48C" },
+  { value: "food_markets",     label: "Food Markets",       color: "#D4A017" },
+  { value: "photo_spots",      label: "Photo Spots",        color: "#FF6B6B" },
+  { value: "animals",          label: "Animals",            color: "#4D8B57" },
+  { value: "workshops_crafts", label: "Workshops & Crafts", color: "#8B5A2B" },
+  { value: "scenic_transport", label: "Scenic Transport",   color: "#FF9800" },
+  { value: "parks",            label: "Parks",              color: "#A4C49C" },
+  { value: "quirky_museums",   label: "Quirky Museums",     color: "#7B3FA0" },
+  /* Base-tier rows carry empty public_label; toggling this hides them
+     as a group. The `value` "_base" is a private sentinel — never appears
+     in YAML, only in URL params and the in-memory active set. */
+  { value: "_base",            label: "Base towns",         color: "#999999" },
+];
+
+/* Eat (/eat) cuisine legend — Phase A.9 C3 adds the 13 chip-rail
+   cuisines as filter rows on /map. Source of truth: src/data/eat-chips.js
+   CUISINE_CHIPS. The swatch on /map is the white-ring style (matches
+   the pin paint — solid pin styling is for /eat-map only, where there's
+   nothing to differentiate against). Order matches the chip rail. */
+const EAT_LEGEND = [
+  { value: "sushi",       cuisine: "Sushi",                  label: "Sushi" },
+  { value: "tempura",     cuisine: "Tempura",                label: "Tempura" },
+  { value: "unagi",       cuisine: "Unagi",                  label: "Unagi" },
+  { value: "sukiyaki",    cuisine: "Sukiyaki & Shabu-shabu", label: "Sukiyaki & Shabu-shabu" },
+  { value: "yakiniku",    cuisine: "Yakiniku",               label: "Yakiniku" },
+  { value: "yakitori",    cuisine: "Yakitori",               label: "Yakitori" },
+  { value: "tonkatsu",    cuisine: "Tonkatsu",               label: "Tonkatsu" },
+  { value: "ramen",       cuisine: "Ramen",                  label: "Ramen" },
+  { value: "soba",        cuisine: "Soba",                   label: "Soba" },
+  { value: "udon",        cuisine: "Udon",                   label: "Udon" },
+  { value: "izakaya",     cuisine: "Izakaya",                label: "Izakaya" },
+  { value: "okonomiyaki", cuisine: "Okonomiyaki",            label: "Okonomiyaki" },
+  { value: "shokudo",     cuisine: "Shokudo",                label: "Shokudo" },
 ];
 
 /* Phase A.9 Stay sub-category legend (PHASE_A9_BUILD_SPEC §2).
@@ -94,51 +125,108 @@ const STAY_LEGEND = [
         <span class="map-legend-toggle-text">Legend</span>
         <span class="map-legend-chev" aria-hidden="true">▾</span>
       </button>
-      <ul id="map-legend-list" class="map-legend-list" data-legend-list>
-        {
-          SUBCAT_LEGEND.map((c) => (
-            <li>
-              <span
-                class="map-legend-swatch"
-                style={`background:${c.color}`}
-                aria-hidden="true"
-              />
-              <span>{c.label}</span>
-            </li>
-          ))
-        }
-        <li>
-          <span class="map-legend-swatch map-legend-swatch--ring" aria-hidden="true" />
-          <span>Tabelog restaurants</span>
-        </li>
-        <li>
-          <span
-            class="map-legend-swatch"
-            style="background:#999999"
-            aria-hidden="true"
-          />
-          <span>Base towns</span>
-        </li>
-        {/* Phase A.9 Stay group. All 9 rows share the same Aizome Indigo
-            swatch — sub-category is the filter axis, colour is per-source.
-            Listed at the bottom of the flat list for C2; C3 wraps the
-            full legend in three named groups + toggle behaviour. */}
-        <li class="map-legend-group" aria-hidden="false">
-          <span class="map-legend-group-title">Stay</span>
-        </li>
-        {
-          STAY_LEGEND.map((s) => (
-            <li>
-              <span
-                class="map-legend-swatch"
-                style={`background:${STAY_INDIGO}`}
-                aria-hidden="true"
-              />
-              <span>{s.label}</span>
-            </li>
-          ))
-        }
-      </ul>
+      {/* Phase A.9 C3 — three grouped sections, each row is a click-toggle
+          filter. data-source identifies the URL param the row belongs to
+          (?places= / ?eat= / ?stay=); data-value is the slug stored in
+          that param. Initial data-active="true" — JS rehydrates from URL
+          on init. Group header buttons (Where/Eat/Stay) toggle all rows
+          in the group at once for symmetry with the rail "Clear" idiom. */}
+      <div id="map-legend-list" class="map-legend-list" data-legend-list>
+        <div class="map-legend-section" data-legend-section="places">
+          <button
+            type="button"
+            class="map-legend-section-title"
+            data-legend-group-toggle="places"
+            aria-pressed="true"
+            title="Toggle all Where rows"
+          >Where</button>
+          <ul class="map-legend-rows">
+            {
+              PLACES_LEGEND.map((c) => (
+                <li
+                  class="map-legend-row"
+                  data-legend-row="places"
+                  data-value={c.value}
+                  data-active="true"
+                  role="button"
+                  tabindex="0"
+                  aria-pressed="true"
+                >
+                  <span
+                    class="map-legend-swatch"
+                    style={`background:${c.color}`}
+                    aria-hidden="true"
+                  />
+                  <span class="map-legend-label">{c.label}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div class="map-legend-section" data-legend-section="eat">
+          <button
+            type="button"
+            class="map-legend-section-title"
+            data-legend-group-toggle="eat"
+            aria-pressed="true"
+            title="Toggle all Eat rows"
+          >Eat</button>
+          <ul class="map-legend-rows">
+            {
+              EAT_LEGEND.map((c) => (
+                <li
+                  class="map-legend-row"
+                  data-legend-row="eat"
+                  data-value={c.value}
+                  data-active="true"
+                  role="button"
+                  tabindex="0"
+                  aria-pressed="true"
+                >
+                  <span
+                    class="map-legend-swatch map-legend-swatch--ring"
+                    aria-hidden="true"
+                  />
+                  <span class="map-legend-label">{c.label}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div class="map-legend-section" data-legend-section="stay">
+          <button
+            type="button"
+            class="map-legend-section-title"
+            data-legend-group-toggle="stay"
+            aria-pressed="true"
+            title="Toggle all Stay rows"
+          >Stay</button>
+          <ul class="map-legend-rows">
+            {
+              STAY_LEGEND.map((s) => (
+                <li
+                  class="map-legend-row"
+                  data-legend-row="stay"
+                  data-value={s.value}
+                  data-active="true"
+                  role="button"
+                  tabindex="0"
+                  aria-pressed="true"
+                >
+                  <span
+                    class="map-legend-swatch"
+                    style={`background:${STAY_INDIGO}`}
+                    aria-hidden="true"
+                  />
+                  <span class="map-legend-label">{s.label}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="map-error" hidden data-error role="alert">
@@ -422,15 +510,24 @@ const STAY_LEGEND = [
     transform: rotate(-90deg);
   }
   .map-legend-list {
-    list-style: none;
     margin: 0;
     padding: 0 12px 10px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    max-height: 70vh;
+    overflow-y: auto;
   }
   .map-legend-list[hidden] { display: none; }
-  .map-legend-list li {
+  .map-legend-rows {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .map-legend-rows li {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -445,29 +542,69 @@ const STAY_LEGEND = [
     border: 1.5px solid var(--color-ink-black);
     flex-shrink: 0;
   }
-  /* Tabelog swatch mirrors the /eat pin styling — white fill, thick red ring. */
+  /* /eat swatch mirrors the /eat pin styling — white fill, thick red ring.
+     All 13 cuisine rows use the same swatch on /map; cuisine identity is
+     in the label text + URL slug, not the swatch colour. */
   .map-legend-swatch--ring {
     background: #ffffff;
     border-color: #ff3b30;
     border-width: 2.5px;
   }
 
-  /* Phase A.9 — minimal Stay group header above its 9 sub-cat rows.
-     C3 will wrap the whole legend in three named groups + toggle UI;
-     this is the compatibility shim for C2 so the section is discoverable
-     without taking on the structural reorg early. */
-  .map-legend-list .map-legend-group {
-    margin-top: 6px;
-    padding-top: 6px;
+  /* Phase A.9 C3 — three named legend groups (Where / Eat / Stay), each
+     header is a clickable button that toggles its whole group on/off.
+     Individual rows are click-toggles too — same active/inactive visual
+     contract on both. */
+  .map-legend-section + .map-legend-section {
+    margin-top: 8px;
+    padding-top: 8px;
     border-top: 1px dashed var(--color-ink-30);
   }
-  .map-legend-group-title {
+  .map-legend-section-title {
+    display: block;
+    width: 100%;
+    margin: 0 0 4px;
+    padding: 2px 0;
+    background: transparent;
+    border: none;
     font-family: var(--font-mono);
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-ink-60);
+    text-align: left;
+    cursor: pointer;
+  }
+  .map-legend-section-title:hover { color: var(--color-ink-black); }
+  .map-legend-section-title[aria-pressed="false"] {
+    color: var(--color-ink-30);
+  }
+
+  /* Toggle rows — default active is the rendered state.
+     Inactive: swatch dims to 30%, label gains a strikethrough so the
+     state is read at a glance even with reduced colour. The cursor and
+     keyboard role come from the role/tabindex attrs in HTML. */
+  .map-legend-row {
+    cursor: pointer;
+    user-select: none;
+    border-radius: var(--radius-sm);
+    padding: 1px 4px;
+    margin: 0 -4px;
+    transition: background 100ms ease-out;
+  }
+  .map-legend-row:hover { background: var(--color-rice-tint); }
+  .map-legend-row:focus-visible {
+    outline: 2px solid var(--color-ink-black);
+    outline-offset: 1px;
+  }
+  .map-legend-row[data-active="false"] .map-legend-swatch {
+    opacity: 0.3;
+  }
+  .map-legend-row[data-active="false"] .map-legend-label {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    color: var(--color-ink-30);
   }
 
   /* Error overlay — auth/network failure. Replaces the silent blank gray. */
@@ -576,7 +713,114 @@ const STAY_LEGEND = [
   let map;
   let mapErrored = false;
 
-  /* ---------- URL query state for ?categories= ----------
+  /* ---------- Phase A.9 C3 — legend toggle state ----------
+     Three independent active-slug sets, one per source. Default state
+     = "all rows active" — stored as null sentinel so we can tell the
+     difference between "user explicitly toggled every row off" (empty
+     Set) and "no filter applied yet" (null). URL params:
+       ?places=<csv of active slugs>  ?eat=<csv>  ?stay=<csv>
+     Default (all active) omits the param; an explicit empty value
+     ("?places=") is the all-off state. The semantic split (active vs
+     inactive lists) follows the spec; verbose URLs on heavy toggling
+     are accepted as the cost of being explicit. The three params are
+     deliberately separate to avoid slug-collision risk between
+     /places "Onsen & Ryokan" cluster (slug onsen_ryokan) and the
+     identically-named /stays primary_cat. */
+  const LEGEND_SLUG_SETS = {
+    places: new Set(["nature_water", "culture_history", "animals",
+      "quirky_museums", "anime", "onsen_ryokan", "photo_spots",
+      "scenic_transport", "theme_parks", "parks", "workshops_crafts",
+      "food_markets", "cafes", "_base"]),
+    eat: new Set(["sushi", "tempura", "unagi", "sukiyaki", "yakiniku",
+      "yakitori", "tonkatsu", "ramen", "soba", "udon", "izakaya",
+      "okonomiyaki", "shokudo"]),
+    stay: new Set(["onsen_ryokan", "design_hotel", "machiya_kominka",
+      "glamping", "resort", "capsule_themed", "mountain_lodge",
+      "heritage_hotel", "temple_stay"]),
+  };
+  // Eat URL slug → restaurants.json cuisine_chip value. Used at filter
+  // time so the feature's `cuisine` property can be tested against the
+  // lowercase slug set.
+  const EAT_SLUG_TO_CUISINE = {
+    sushi: "Sushi",
+    tempura: "Tempura",
+    unagi: "Unagi",
+    sukiyaki: "Sukiyaki & Shabu-shabu",
+    yakiniku: "Yakiniku",
+    yakitori: "Yakitori",
+    tonkatsu: "Tonkatsu",
+    ramen: "Ramen",
+    soba: "Soba",
+    udon: "Udon",
+    izakaya: "Izakaya",
+    okonomiyaki: "Okonomiyaki",
+    shokudo: "Shokudo",
+  };
+  const EAT_CUISINE_TO_SLUG = Object.fromEntries(
+    Object.entries(EAT_SLUG_TO_CUISINE).map(([s, c]) => [c, s]),
+  );
+
+  // null = "no filter applied for this source" (default all-active).
+  // Set = explicit active list (possibly empty = all-inactive).
+  let activeLegend = { places: null, eat: null, stay: null };
+
+  function readLegendFromURL() {
+    const p = new URLSearchParams(window.location.search);
+    for (const source of ["places", "eat", "stay"]) {
+      if (!p.has(source)) {
+        activeLegend[source] = null;
+        continue;
+      }
+      const raw = p.get(source);
+      if (raw === "") {
+        activeLegend[source] = new Set();
+        continue;
+      }
+      const slugs = raw
+        .split(",")
+        .map((s) => s.trim().toLowerCase())
+        .filter((s) => LEGEND_SLUG_SETS[source].has(s));
+      activeLegend[source] = new Set(slugs);
+    }
+  }
+
+  function syncLegendToURL() {
+    const p = new URLSearchParams(window.location.search);
+    for (const source of ["places", "eat", "stay"]) {
+      const active = activeLegend[source];
+      const all = LEGEND_SLUG_SETS[source];
+      if (active === null || (active.size === all.size && [...all].every((s) => active.has(s)))) {
+        // Default state (all active or no filter applied) — clean URL.
+        p.delete(source);
+      } else if (active.size === 0) {
+        // Explicit all-off — keep the param present but empty.
+        p.set(source, "");
+      } else {
+        p.set(source, Array.from(active).join(","));
+      }
+    }
+    const qs = p.toString();
+    const newURL = window.location.pathname + (qs ? "?" + qs : "") + window.location.hash;
+    history.replaceState(null, "", newURL);
+  }
+
+  function isLegendActive(source, slug) {
+    const active = activeLegend[source];
+    if (active === null) return true; // default — every row visible
+    return active.has(slug);
+  }
+
+  function setLegendActive(source, slug, on) {
+    if (activeLegend[source] === null) {
+      // First toggle from default state — initialize to the full set so
+      // we can remove one item from it.
+      activeLegend[source] = new Set(LEGEND_SLUG_SETS[source]);
+    }
+    if (on) activeLegend[source].add(slug);
+    else activeLegend[source].delete(slug);
+  }
+
+  /* ---------- URL query state for ?categories= (toolbar chips) ----------
      Phase A.8: click-to-include semantics. Param lists ACTIVE chips
      only; missing param OR empty value = no chips active = show all.
      Backward-compat: old links from Phase A.6 (?categories=tabelog)
@@ -639,10 +883,35 @@ const STAY_LEGEND = [
      (Tabelog) features map to the Eat chip — toggling Eat shows
      both /places food markets/cafés AND /eat Tabelog restaurants. */
   function passesFilter(f) {
-    if (activeCats.size === 0) return true;
-    if (f.properties.source === "eat") return activeCats.has("Eat");
-    if (f.properties.source === "stay") return activeCats.has("Stay");
-    return activeCats.has(f.properties.primary_category);
+    // Layer 1: toolbar primary-category chips (See/Do/Eat/Stay).
+    // Empty active set = no toolbar filter; non-empty = include-mode.
+    if (activeCats.size !== 0) {
+      if (f.properties.source === "eat") {
+        if (!activeCats.has("Eat")) return false;
+      } else if (f.properties.source === "stay") {
+        if (!activeCats.has("Stay")) return false;
+      } else {
+        if (!activeCats.has(f.properties.primary_category)) return false;
+      }
+    }
+    // Layer 2: legend row toggles (Phase A.9 C3). Each source has its
+    // own active set; null = unfiltered default = every row visible.
+    const src = f.properties.source;
+    if (src === "places") {
+      const slug = f.properties.public_label || "_base";
+      return isLegendActive("places", slug);
+    }
+    if (src === "eat") {
+      const slug = EAT_CUISINE_TO_SLUG[f.properties.cuisine] || "";
+      // Restaurants with cuisines outside the 13-chip set (none today,
+      // defensive) pass when no filter is applied, fail when one is.
+      if (!slug) return activeLegend.eat === null;
+      return isLegendActive("eat", slug);
+    }
+    if (src === "stay") {
+      return isLegendActive("stay", f.properties.primary_cat);
+    }
+    return true;
   }
   function applyCategoryFilter() {
     if (!allFeatures || !map || !map.getSource("places")) return;
@@ -721,11 +990,77 @@ const STAY_LEGEND = [
     });
   }
 
+  /* ---------- Legend row toggle (Phase A.9 C3) ----------
+     Each row is a button-like <li> (role=button, tabindex=0). Click or
+     keyboard activation flips its data-active, updates the matching
+     active-slug set, syncs URL, and re-applies the map filter. Group
+     header buttons toggle every row in the group at once. */
+  function paintLegendFromState() {
+    document.querySelectorAll("[data-legend-row]").forEach((row) => {
+      const src = row.dataset.legendRow;
+      const slug = row.dataset.value;
+      const on = isLegendActive(src, slug);
+      row.dataset.active = String(on);
+      row.setAttribute("aria-pressed", String(on));
+    });
+    // Group title aria-pressed reflects "any row active in the group".
+    document.querySelectorAll("[data-legend-group-toggle]").forEach((btn) => {
+      const src = btn.dataset.legendGroupToggle;
+      const rows = document.querySelectorAll(`[data-legend-row="${src}"]`);
+      const anyActive = Array.from(rows).some((r) => r.dataset.active === "true");
+      btn.setAttribute("aria-pressed", String(anyActive));
+    });
+  }
+
+  function setupLegendRows() {
+    function toggleRow(row) {
+      const src = row.dataset.legendRow;
+      const slug = row.dataset.value;
+      const wasOn = isLegendActive(src, slug);
+      setLegendActive(src, slug, !wasOn);
+      paintLegendFromState();
+      syncLegendToURL();
+      applyCategoryFilter();
+    }
+    document.querySelectorAll("[data-legend-row]").forEach((row) => {
+      row.addEventListener("click", () => toggleRow(row));
+      row.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          toggleRow(row);
+        }
+      });
+    });
+    // Group header → toggle every row in the group. If any are active,
+    // turn them all off; if none are active, turn them all on.
+    document.querySelectorAll("[data-legend-group-toggle]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const src = btn.dataset.legendGroupToggle;
+        const rows = document.querySelectorAll(`[data-legend-row="${src}"]`);
+        const anyOn = Array.from(rows).some(
+          (r) => isLegendActive(src, r.dataset.value),
+        );
+        // anyOn → turn all off; otherwise turn all on (back to default).
+        if (anyOn) {
+          activeLegend[src] = new Set();
+        } else {
+          activeLegend[src] = null; // null = default = all active
+        }
+        paintLegendFromState();
+        syncLegendToURL();
+        applyCategoryFilter();
+      });
+    });
+  }
+
   /* ---------- Init ---------- */
   activeCats = readCategoriesFromURL();
+  readLegendFromURL();
   setupCategoryButtons();
   setupLegend();
+  setupLegendRows();
   updateButtonStates();
+  paintLegendFromState();
 
   map = new mapboxgl.Map({
     container: "japan-map",
