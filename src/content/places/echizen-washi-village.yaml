@@ -1,0 +1,19 @@
+name: "Echizen Washi Village"
+address_or_area: "8-44 Shinzaikechō, Echizen"
+region: "Hokuriku Shinetsu"
+prefecture: "Fukui"
+primary_category: "Do"
+public_label: "workshops_crafts"
+planning_flags: "rainy_day"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ1XGJrSyp-F8ReW1vYGvz7Kg
+lat: 35.9109839
+lng: 136.2447556
+hero_image: /places/echizen-washi-village.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
