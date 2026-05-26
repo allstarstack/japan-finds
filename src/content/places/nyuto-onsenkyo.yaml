@@ -1,0 +1,18 @@
+name: "Nyuto Onsenkyo"
+address_or_area: "Komagatake-2-1 Tazawako Obonai, Semboku"
+region: "Tohoku"
+prefecture: "Akita"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJW1aBvZRmhV8REQV0GMFHXms
+lat: 39.800895499999996
+lng: 140.7947045
+hero_image: /places/nyuto-onsenkyo.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
