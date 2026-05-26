@@ -30,7 +30,11 @@ jobs:
           python-version: '3.11'
 
       - name: Install deps
-        run: pip install pyyaml
+        # enrich_with_places_api.py imports these at module top regardless of mode:
+        #   requests, Pillow (PIL), ruamel.yaml. The script uses ruamel.yaml — NOT
+        #   pyyaml — because round-trip comment + ordering preservation matters
+        #   when the same script writes YAML in non-csv-only modes.
+        run: pip install requests Pillow ruamel.yaml
 
       - name: Regenerate CSV from YAML
         # --csv-only mode reads local YAMLs only — no Places API call, no key needed.
