@@ -1,0 +1,18 @@
+name: "Sekizenkan Kashoutei"
+address_or_area: "Nakanojo, Shima"
+region: "Kanto"
+prefecture: "Gunma"
+primary_category: "Stay"
+public_label: "onsen_ryokan"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ7fPYIxILHmARtMSSs99Lv1E
+lat: 36.6863394
+lng: 138.77377909999998
+hero_image: /places/sekizenkan-kashoutei.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
