@@ -1,0 +1,18 @@
+name: "Kiyo Ceramics"
+address_or_area: "1-chōme-6-4 Iidabashi, Chiyoda City"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "Do"
+public_label: "workshops_crafts"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJRyE0a_eNGGARXFG5-28FWw4
+lat: 35.6988182
+lng: 139.74883029999998
+hero_image: /places/kiyo-ceramics.webp
+hero_attribution: "Photo via Google"
