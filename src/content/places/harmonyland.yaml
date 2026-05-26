@@ -1,0 +1,18 @@
+name: "Harmonyland"
+address_or_area: "Hiji, Fujiwara"
+region: "Kyushu"
+prefecture: "Oita"
+primary_category: "Do"
+public_label: "theme_parks"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJPUDZCxYZRDURfVQ6VUealRU
+lat: 33.4001589
+lng: 131.5468003
+hero_image: /places/harmonyland.webp
+hero_attribution: "Photo via Google"
