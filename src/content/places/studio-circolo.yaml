@@ -1,0 +1,18 @@
+name: "Studio Circolo"
+address_or_area: "101 4-chōme-18-12 Todoroki, Setagaya City"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "Do"
+public_label: "workshops_crafts"
+planning_flags: "rainy_day;with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJ44frvuX1GGAR2jSXnX6quUc
+lat: 35.6107357
+lng: 139.6521838
+hero_image: /places/studio-circolo.webp
+hero_attribution: "Photo via Google"
