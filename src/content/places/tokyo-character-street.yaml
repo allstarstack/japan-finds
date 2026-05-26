@@ -1,0 +1,18 @@
+name: "Tokyo Character Street"
+address_or_area: "Chiyoda City, Marunouchi"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "anime"
+planning_flags: "rainy_day;with_kids;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJGeYlX_mLGGARx_4HVNDXOxA
+lat: 35.682033499999996
+lng: 139.7686549
+hero_image: /places/tokyo-character-street.webp
+hero_attribution: "Photo via Google"
