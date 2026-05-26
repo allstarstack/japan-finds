@@ -1,0 +1,19 @@
+name: "Suginami Animation Museum"
+address_or_area: "Suginami City, Kamiogi"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "See"
+public_label: "quirky_museums"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJHcI_OQruGGARM2ZKib1iU8s
+lat: 35.7105716
+lng: 139.60779399999998
+hero_image: /places/suginami-animation-museum.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
