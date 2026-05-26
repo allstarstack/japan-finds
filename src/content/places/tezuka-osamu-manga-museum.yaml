@@ -1,0 +1,19 @@
+name: "Tezuka Osamu Manga Museum"
+address_or_area: "7-65 Mukogawachō, Takarazuka"
+region: "Kansai"
+prefecture: "Hyogo"
+primary_category: "See"
+public_label: "quirky_museums"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJNXYGVGj0AGARPs43EyeYMpU
+lat: 34.8071314
+lng: 135.3483309
+hero_image: /places/tezuka-osamu-manga-museum.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
