@@ -1,0 +1,109 @@
+# Monthly My Maps digest cron — surfaces new places since the last sync and
+# emails Steven a copy of the current places_mymaps_v2.csv so the Google My
+# Map re-import takes one click + one upload.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   GMAIL_USERNAME       — full Gmail address used as the sender
+#   GMAIL_APP_PASSWORD   — Gmail App Password (not the account password; create at myaccount.google.com → Security → 2-Step Verification → App passwords)
+#   NOTIFICATION_EMAIL   — recipient address (can be same as GMAIL_USERNAME)
+
+name: Monthly My Maps Digest
+
+on:
+  schedule:
+    - cron: '0 14 1 * *' # 1st of month, 14:00 UTC — 9am EDT / 8am EST (per project note)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: pip install pyyaml
+
+      - name: Regenerate CSV from YAML
+        # --csv-only mode reads local YAMLs only — no Places API call, no key needed.
+        run: python scripts/enrich_with_places_api.py --csv-only
+
+      - name: Compute diff
+        id: diff
+        run: |
+          python scripts/diff_mymaps_csv.py places_mymaps_last_sent.csv places_mymaps_v2.csv > /tmp/diff.txt
+          if [ -s /tmp/diff.txt ]; then
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            NEW_COUNT=$(grep -c '^  + ' /tmp/diff.txt || true)
+            REMOVED_COUNT=$(grep -c '^  - ' /tmp/diff.txt || true)
+            echo "new_count=${NEW_COUNT:-0}" >> "$GITHUB_OUTPUT"
+            echo "removed_count=${REMOVED_COUNT:-0}" >> "$GITHUB_OUTPUT"
+            echo "--- diff content ---"
+            cat /tmp/diff.txt
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            echo "no changes since last sent"
+          fi
+
+      - name: Compose email body
+        if: steps.diff.outputs.has_changes == 'true'
+        id: compose
+        run: |
+          {
+            echo 'body<<DIGEST_END'
+            echo "Monthly My Maps digest for Japan Finds."
+            echo
+            echo "${{ steps.diff.outputs.new_count }} new place(s), ${{ steps.diff.outputs.removed_count }} removed since the last sync."
+            echo
+            cat /tmp/diff.txt
+            echo
+            echo "── Re-import into Google My Maps ──"
+            echo
+            echo "1. Open Google My Maps (https://www.google.com/maps/d/) and edit the Japan Map."
+            echo "2. On the existing data layer, click the three-dot menu → 'Open data table.'"
+            echo "3. Select all rows → Delete (this preserves the layer + styling)."
+            echo "4. Click 'Import' → upload the attached places_mymaps_v2.csv."
+            echo "5. Field mapping prompt: Position → Latitude/Longitude; Title → Name."
+            echo "6. Group / style by → Cluster."
+            echo "7. Verify cluster colours match; re-apply per-cluster overrides if needed."
+            echo "8. Save."
+            echo
+            echo "Once uploaded, this workflow has already committed places_mymaps_last_sent.csv"
+            echo "as the new baseline, so next month's digest measures from the fresh state."
+            echo
+            echo "— monthly-mymaps-digest"
+            echo 'DIGEST_END'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Send digest email
+        if: steps.diff.outputs.has_changes == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_USERNAME }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          subject: "Japan Finds: Monthly My Maps Digest — ${{ steps.diff.outputs.new_count }} new places"
+          to: ${{ secrets.NOTIFICATION_EMAIL }}
+          from: ${{ secrets.GMAIL_USERNAME }}
+          body: ${{ steps.compose.outputs.body }}
+          attachments: places_mymaps_v2.csv
+
+      - name: Update baseline reference file
+        if: steps.diff.outputs.has_changes == 'true'
+        run: |
+          cp places_mymaps_v2.csv places_mymaps_last_sent.csv
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add places_mymaps_last_sent.csv
+          git commit -m "chore: monthly mymaps digest reference update"
+          git push
