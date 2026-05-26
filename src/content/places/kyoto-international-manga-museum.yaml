@@ -1,0 +1,19 @@
+name: "Kyoto International Manga Museum"
+address_or_area: "452 Kinbukichō, Nakagyo Ward"
+region: "Kansai"
+prefecture: "Kyoto"
+primary_category: "See"
+public_label: "quirky_museums"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJh1qJf4YIAWARTAOFMHrSHvI
+lat: 35.0118576
+lng: 135.7594192
+hero_image: /places/kyoto-international-manga-museum.webp
+hero_attribution: "Photo via Google"
+local_favorite: true
