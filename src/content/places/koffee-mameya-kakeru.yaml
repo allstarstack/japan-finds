@@ -1,0 +1,18 @@
+name: "Koffee Mameya Kakeru"
+address_or_area: "2-chōme-16-14 Hirano, Koto City"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "Eat"
+public_label: "cafes"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "cross-validated-meta-gemini-2026-05"
+place_id: ChIJ9f0aP7iJGGAR3BB7LqfZdhE
+lat: 35.6764735
+lng: 139.804184
+hero_image: /places/koffee-mameya-kakeru.webp
+hero_attribution: "Photo via Google"
