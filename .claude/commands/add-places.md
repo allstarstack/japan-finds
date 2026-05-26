@@ -168,6 +168,88 @@ When an item routes to `/eat`, do NOT attempt to write to `src/data/restaurants.
 
 Identification (correct place resolved) is the gating factor for HIGH, the same way it is in `/add-products`. A clean cascade match on the wrong place isn't HIGH.
 
+## End-of-batch CSV refresh + My Maps sync reminder
+
+The site's `/places` and `/eat` are the source of truth, but the two public Google My Maps (Japan Map + Restaurants Map) are downstream snapshots fed by CSV re-import. When `/add-places` writes new HIGH items, those maps fall out of sync until the CSVs are regenerated AND a human re-imports them in Google My Maps UI.
+
+Each batch run handles the half it can automate, and surfaces the half it can't.
+
+### Skip condition
+
+If HIGH count is **0** for this batch (everything went to `drafts/_review/` or was skipped), skip the CSV refresh AND the pending-file update entirely. There's nothing to re-import — go straight to the end-of-batch report with "Manual My Maps re-import needed: NO."
+
+### Step 1 — Regenerate the CSVs (automated, free)
+
+After the per-item loop completes, if HIGH count > 0:
+
+```
+python3 scripts/enrich_with_places_api.py --csv-only
+```
+
+Free (reads local YAML only, no API spend), fast (~1s). Regenerates `places_mymaps_v2.csv` and `restaurants_mymaps_v5.csv` at repo root.
+
+### Step 2 — Update the sync-pending reminder file (automated)
+
+Create or append to `drafts/_review/SYNC_MY_MAPS_PENDING.md`. This file's presence is the physical reminder that the public maps are stale; the human deletes it after re-importing.
+
+**If the file does NOT exist** (first batch since last sync), create it with this template (replace `<DATE>`, `<N>`, `<SLUG_LIST>` with current values):
+
+```markdown
+# My Maps sync pending
+
+The public Google My Maps are stale — the CSVs in this repo are newer than what's deployed.
+
+## Why this file exists
+`/add-places` writes new place YAMLs and regenerates the My Maps CSVs automatically, but the actual Google My Maps re-import is manual (Google's consumer My Maps product has no programmatic data sync API).
+
+**Delete this file once you've completed the My Maps upload — its presence indicates the public maps are stale.**
+
+## Re-import instructions
+
+### Japan Map (places)
+1. Open Google My Maps (https://www.google.com/maps/d/) and edit the Japan Map.
+2. Click the existing data layer's three-dot menu → "Open data table."
+3. Select all rows → Delete (this preserves the layer + styling).
+4. With the empty layer selected, click "Import" → upload `places_mymaps_v2.csv` from the repo root.
+5. Field mapping prompt:
+   - Position columns → "Latitude" and "Longitude"
+   - Title column → "Name"
+6. Group / style by → "Cluster" (the column name in the CSV).
+7. Verify all 13 clusters render with the expected colours. Re-apply per-cluster overrides if any look off (the Phase D D1 closing decisions log in `docs/PROJECT_STATE.md` has the authoritative cluster-label mapping).
+8. Save.
+
+### Restaurants Map (/eat)
+Only required if this batch routed any items to /eat AND you've written them through whatever /eat workflow exists (`/add-places` does NOT write to /eat directly — see the Routing rule).
+1. Open the editable URL of the Restaurants Map.
+2. Same data-table → delete-rows → import flow with `restaurants_mymaps_v5.csv`.
+3. Group / style by → "Cluster."
+4. Save.
+
+## Batches pending
+<!-- Each /add-places batch appends a new dated entry below. -->
+- **<DATE>** — <N> new place(s) added this batch (cumulative since file created: <N>). Slugs: <SLUG_LIST>.
+```
+
+**If the file DOES exist** (a prior batch's reminder hasn't been cleared yet), do NOT overwrite. Append a new dated entry to the "Batches pending" section at the bottom. The cumulative count carries forward — read the latest "cumulative since file created" value from the existing entries, add this batch's HIGH count, and write the new cumulative total into the new entry. Format:
+
+```markdown
+- **<DATE>** — <N> new place(s) added this batch (cumulative since file created: <CUMULATIVE>). Slugs: <SLUG_LIST>.
+```
+
+The cumulative count gives the human a single glance-at-it number for how much drift has built up.
+
+### Step 3 — One final commit, batched
+
+Bundle the CSV regeneration + pending-file update into a single closing commit AFTER all per-item commits in the batch have landed:
+
+```
+git add places_mymaps_v2.csv restaurants_mymaps_v5.csv drafts/_review/SYNC_MY_MAPS_PENDING.md
+git commit -m "csv: refresh My Maps data after batch (+<N> places)"
+git push origin main
+```
+
+Where `<N>` is the count of HIGH items written to `src/content/places/` THIS BATCH (not cumulative). Push direct to main, same as the per-item commits.
+
 ## End-of-batch report
 - Total items found (split by input source: chat URL / queue file / pasted markdown / plain text) / processed / skipped.
 - HIGH confidence count (committed live to `/places`).
@@ -177,6 +259,7 @@ Identification (correct place resolved) is the gating factor for HIGH, the same 
 - Hero photos: fetched successfully / missing (flagged for D3 manual override).
 - Local-favorite / viral booleans set in this batch (with the signal that triggered each).
 - Web-search citations for the descriptions and the local_favorite / viral signals — for spot-checking.
+- **Manual My Maps re-import needed:** `YES (see drafts/_review/SYNC_MY_MAPS_PENDING.md)` if HIGH items were added this batch. Otherwise `NO (no HIGH items added)`.
 
 ## Rules
 - One item at a time. Don't parallelize — voice consistency matters more than speed.
