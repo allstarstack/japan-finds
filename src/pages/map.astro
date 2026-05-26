@@ -34,6 +34,24 @@ const SUBCAT_LEGEND = [
   { value: "food_markets",     label: "Food Markets",       color: "#D4A017" },
   { value: "cafes",            label: "Cafes",              color: "#D2B48C" },
 ];
+
+/* Phase A.9 Stay sub-category legend (PHASE_A9_BUILD_SPEC §2).
+   All 9 rows share Aizome Indigo — sub-category is the legend axis;
+   colour stays uniform per source. Display label "Capsule & novelty"
+   maps to the storage slug `capsule_themed` (slug-stable, label-mutable
+   per the spec). Order is the spec's table — by row count, descending. */
+const STAY_INDIGO = "#3B4F81";
+const STAY_LEGEND = [
+  { value: "onsen_ryokan",    label: "Onsen ryokan" },
+  { value: "design_hotel",    label: "Design hotel" },
+  { value: "machiya_kominka", label: "Machiya & kominka" },
+  { value: "glamping",        label: "Glamping" },
+  { value: "resort",          label: "Resort" },
+  { value: "capsule_themed",  label: "Capsule & novelty" },
+  { value: "mountain_lodge",  label: "Mountain lodge" },
+  { value: "heritage_hotel",  label: "Heritage hotel" },
+  { value: "temple_stay",     label: "Temple stay" },
+];
 ---
 
 <Base
@@ -101,6 +119,25 @@ const SUBCAT_LEGEND = [
           />
           <span>Base towns</span>
         </li>
+        {/* Phase A.9 Stay group. All 9 rows share the same Aizome Indigo
+            swatch — sub-category is the filter axis, colour is per-source.
+            Listed at the bottom of the flat list for C2; C3 wraps the
+            full legend in three named groups + toggle behaviour. */}
+        <li class="map-legend-group" aria-hidden="false">
+          <span class="map-legend-group-title">Stay</span>
+        </li>
+        {
+          STAY_LEGEND.map((s) => (
+            <li>
+              <span
+                class="map-legend-swatch"
+                style={`background:${STAY_INDIGO}`}
+                aria-hidden="true"
+              />
+              <span>{s.label}</span>
+            </li>
+          ))
+        }
       </ul>
     </div>
 
@@ -415,6 +452,24 @@ const SUBCAT_LEGEND = [
     border-width: 2.5px;
   }
 
+  /* Phase A.9 — minimal Stay group header above its 9 sub-cat rows.
+     C3 will wrap the whole legend in three named groups + toggle UI;
+     this is the compatibility shim for C2 so the section is discoverable
+     without taking on the structural reorg early. */
+  .map-legend-list .map-legend-group {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px dashed var(--color-ink-30);
+  }
+  .map-legend-group-title {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+
   /* Error overlay — auth/network failure. Replaces the silent blank gray. */
   .map-error {
     position: absolute;
@@ -586,6 +641,7 @@ const SUBCAT_LEGEND = [
   function passesFilter(f) {
     if (activeCats.size === 0) return true;
     if (f.properties.source === "eat") return activeCats.has("Eat");
+    if (f.properties.source === "stay") return activeCats.has("Stay");
     return activeCats.has(f.properties.primary_category);
   }
   function applyCategoryFilter() {
@@ -853,6 +909,29 @@ const SUBCAT_LEGEND = [
       },
     });
 
+    // Phase A.9 stay pins: solid Aizome Indigo fill, ink stroke. Distinct
+    // from /places (different hue, not in the 13-cluster palette) and from
+    // /eat (solid fill, not the open ring). The 9 sub-cats share one fill —
+    // legend rows are the filter axis (wired in C3), colour stays per-source.
+    // The seed currently has no lat/lng, so this layer renders zero markers
+    // until the D7-style enrichment pass populates coordinates.
+    map.addLayer({
+      id: "unclustered-stays",
+      type: "circle",
+      source: "places",
+      filter: [
+        "all",
+        ["!", ["has", "point_count"]],
+        ["==", ["get", "source"], "stay"],
+      ],
+      paint: {
+        "circle-color": "#3B4F81",
+        "circle-radius": 6,
+        "circle-stroke-width": 1.5,
+        "circle-stroke-color": "#151515",
+      },
+    });
+
     // Cluster click: expand the cluster (zoom in until it bursts).
     map.on("click", "clusters", (e) => {
       const f = map.queryRenderedFeatures(e.point, { layers: ["clusters"] })[0];
@@ -894,6 +973,44 @@ const SUBCAT_LEGEND = [
           </div>
         `;
       }
+      if (p.source === "stay") {
+        // No /stay route this phase, so the CTA is the official source
+        // URL (hotel site). Slug → display label is duplicated here from
+        // STAY_LEGEND in the frontmatter; if you change either keep both
+        // in sync (one map, both sides of the JS↔Astro boundary).
+        const STAY_CAT_LABEL = {
+          onsen_ryokan: "Onsen ryokan",
+          design_hotel: "Design hotel",
+          machiya_kominka: "Machiya & kominka",
+          glamping: "Glamping",
+          resort: "Resort",
+          capsule_themed: "Capsule & novelty",
+          mountain_lodge: "Mountain lodge",
+          heritage_hotel: "Heritage hotel",
+          temple_stay: "Temple stay",
+        };
+        const where = [p.city, p.prefecture].filter(Boolean).join(", ");
+        const meta = [STAY_CAT_LABEL[p.primary_cat] || p.primary_cat, p.price_tier]
+          .filter(Boolean)
+          .join(" · ");
+        const nameHTML = p.name_jp
+          ? `${p.name} <span class="map-popup-jp">${p.name_jp}</span>`
+          : p.name;
+        const externalLink = p.source_url
+          ? `<a class="map-popup-link" href="${p.source_url}" target="_blank" rel="noopener">Visit hotel site →</a>`
+          : "";
+        return `
+          <div class="map-popup">
+            ${img}
+            <div class="map-popup-text">
+              <h3 class="map-popup-name">${nameHTML}</h3>
+              ${where ? `<p class="map-popup-area">${where}</p>` : ""}
+              ${meta ? `<p class="map-popup-area">${meta}</p>` : ""}
+              ${externalLink}
+            </div>
+          </div>
+        `;
+      }
       // /places branch
       const area = p.address_or_area || "";
       return `
@@ -908,7 +1025,7 @@ const SUBCAT_LEGEND = [
       `;
     }
 
-    for (const layer of ["unclustered-places", "unclustered-eat"]) {
+    for (const layer of ["unclustered-places", "unclustered-eat", "unclustered-stays"]) {
       map.on("click", layer, (e) => {
         const f = e.features[0];
         const coords = f.geometry.coordinates.slice();
@@ -919,7 +1036,12 @@ const SUBCAT_LEGEND = [
       });
     }
 
-    for (const layer of ["clusters", "unclustered-places", "unclustered-eat"]) {
+    for (const layer of [
+      "clusters",
+      "unclustered-places",
+      "unclustered-eat",
+      "unclustered-stays",
+    ]) {
       map.on("mouseenter", layer, () => {
         map.getCanvas().style.cursor = "pointer";
       });
