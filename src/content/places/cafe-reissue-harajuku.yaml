@@ -1,0 +1,18 @@
+name: "Cafe Reissue Harajuku"
+address_or_area: "3-chōme-25-7 Jingūmae, Shibuya"
+region: "Kanto"
+prefecture: "Tokyo"
+primary_category: "Eat"
+public_label: "cafes"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "cross-validated-meta-gemini-2026-05"
+place_id: ChIJfyW8OaOMGGARiYF53TCqEsM
+lat: 35.6711763
+lng: 139.7079583
+hero_image: /places/cafe-reissue-harajuku.webp
+hero_attribution: "Photo via Google"
