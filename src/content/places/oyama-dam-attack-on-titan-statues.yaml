@@ -1,0 +1,17 @@
+name: "Oyama Dam Attack on Titan Statues"
+address_or_area: "Oyamamachi Nishioyama, Hita"
+region: "Kyushu"
+prefecture: "Oita"
+primary_category: "See"
+public_label: "anime"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+discovered_via: "research-batch-2026-05"
+place_id: ChIJKYx8__MVQTURjLCIm7OPdbw
+lat: 33.2434582
+lng: 130.95747649999998
+hero_image: /places/oyama-dam-attack-on-titan-statues.webp
+hero_attribution: "Photo via Google"
