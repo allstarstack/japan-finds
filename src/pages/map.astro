@@ -1,18 +1,39 @@
 ---
 /* /map — standalone Mapbox view of every geocoded place.
-   Phase A of the map migration (replaces the consumer Google My Maps
-   iframe); Phase A.5 polish adds primary-category filters, URL state,
-   geolocation, lazy popups, and loading/empty/error states.
+   Phase A.8: sub-category pin coloring (13 distinct colors keyed off
+   public_label) + bottom-left legend + click-to-include filter chips.
 
    Data: /places.geojson is generated at build time by
    scripts/generate-geojson.mjs. Filter state is layered:
-     - Primary-category filter (4 buttons above the map; URL ?categories=)
-     - URL hash (#zoom/lat/lng) via Mapbox-native hash:true
-     - Lazy popup HTML built on click (not pre-rendered per pin)
-*/
+     - Primary-category filter (4 click-to-include chips; URL ?categories=)
+       Default: no chips active = show all pins. Click chip → adds to
+       active set. Pins shown iff their primary_category is in the
+       active set OR active set is empty.
+     - Sub-category pin colour by public_label (independent of filter).
+     - URL hash (#zoom/lat/lng) via Mapbox-native hash:true.
+     - Lazy popup HTML built on click (not pre-rendered per pin).
+
+   Sub-category palette is the single source of truth for the Mapbox
+   paint expression AND the rendered legend — keep both in sync. */
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+
+const SUBCAT_LEGEND = [
+  { value: "nature_water",     label: "Nature & Water",     color: "#176BFF" },
+  { value: "culture_history",  label: "Culture & History",  color: "#FF3B30" },
+  { value: "animals",          label: "Animals",            color: "#4D8B57" },
+  { value: "quirky_museums",   label: "Quirky Museums",     color: "#7B3FA0" },
+  { value: "anime",            label: "Anime",              color: "#E91E63" },
+  { value: "onsen_ryokan",     label: "Onsen & Ryokan",     color: "#9B7EBD" },
+  { value: "photo_spots",      label: "Photo Spots",        color: "#FF6B6B" },
+  { value: "scenic_transport", label: "Scenic Transport",   color: "#FF9800" },
+  { value: "theme_parks",      label: "Theme Parks",        color: "#FFD84D" },
+  { value: "parks",            label: "Parks",              color: "#A4C49C" },
+  { value: "workshops_crafts", label: "Workshops & Crafts", color: "#8B5A2B" },
+  { value: "food_markets",     label: "Food Markets",       color: "#D4A017" },
+  { value: "cafes",            label: "Cafes",              color: "#D2B48C" },
+];
 ---
 
 <Base
@@ -44,11 +65,43 @@ import SiteFooter from "../components/SiteFooter.astro";
       <span class="map-loading-text">Loading map…</span>
     </div>
 
-    <div class="map-empty" hidden data-empty aria-live="polite">
-      <div class="map-empty-card">
-        <p class="map-empty-text">All categories hidden.</p>
-        <p class="map-empty-sub">Tap a filter button to show places.</p>
-      </div>
+    <div class="map-legend" data-legend>
+      <button
+        type="button"
+        class="map-legend-toggle"
+        data-legend-toggle
+        aria-expanded="true"
+        aria-controls="map-legend-list"
+      >
+        <span class="map-legend-toggle-text">Legend</span>
+        <span class="map-legend-chev" aria-hidden="true">▾</span>
+      </button>
+      <ul id="map-legend-list" class="map-legend-list" data-legend-list>
+        {
+          SUBCAT_LEGEND.map((c) => (
+            <li>
+              <span
+                class="map-legend-swatch"
+                style={`background:${c.color}`}
+                aria-hidden="true"
+              />
+              <span>{c.label}</span>
+            </li>
+          ))
+        }
+        <li>
+          <span class="map-legend-swatch map-legend-swatch--ring" aria-hidden="true" />
+          <span>Tabelog restaurants</span>
+        </li>
+        <li>
+          <span
+            class="map-legend-swatch"
+            style="background:#999999"
+            aria-hidden="true"
+          />
+          <span>Base towns</span>
+        </li>
+      </ul>
     </div>
 
     <div class="map-error" hidden data-error role="alert">
@@ -219,12 +272,11 @@ import SiteFooter from "../components/SiteFooter.astro";
       opacity 120ms ease-out;
     box-shadow: var(--shadow-sm);
   }
-  .map-cat[aria-pressed="false"] {
-    opacity: 0.35;
-  }
-  /* Ring width is 3px (vs 2px) for stronger colour legibility at button
-     size. The Eat ring (Egg Yellow #FFD84D) is light so it benefits the
-     most; the Stay green (#3f7548) also reads more confidently at 3px. */
+  /* Click-to-include filter chips (Phase A.8): chips default INACTIVE
+     (outline only, no colored ring, no opacity dim). Click → adds to
+     filter set; the colored inset ring marks the active state. Empty
+     active set = no filter = show all pins (the default). Ring width
+     3px (vs 2px) for stronger colour legibility at button size. */
   .map-cat[aria-pressed="true"].map-cat--see { box-shadow: inset 0 0 0 3px #176bff, var(--shadow-sm); }
   .map-cat[aria-pressed="true"].map-cat--do { box-shadow: inset 0 0 0 3px #ff3b30, var(--shadow-sm); }
   .map-cat[aria-pressed="true"].map-cat--eat { box-shadow: inset 0 0 0 3px #ffd84d, var(--shadow-sm); }
@@ -291,35 +343,76 @@ import SiteFooter from "../components/SiteFooter.astro";
     to { transform: rotate(360deg); }
   }
 
-  /* Empty filter state — centered card when 0 categories active. */
-  .map-empty {
+  /* Legend panel — bottom-left, brand-styled. Desktop default open;
+     mobile default collapsed (JS sets aria-expanded=false + list[hidden]
+     on coarse-pointer devices). */
+  .map-legend {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 12;
-    pointer-events: none; /* still allow map dragging through */
-  }
-  .map-empty-card {
-    padding: 16px 20px;
+    bottom: 24px;
+    left: 12px;
+    z-index: 11;
     background: var(--color-rice-white);
-    border: 1.5px solid var(--color-ink-black);
+    border: 1.5px solid var(--color-concrete-gray);
     border-radius: var(--radius-card);
-    box-shadow: var(--shadow-md);
-    text-align: center;
-  }
-  .map-empty-text {
-    margin: 0;
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--color-ink-black);
-  }
-  .map-empty-sub {
-    margin: 4px 0 0;
+    box-shadow: var(--shadow-sm);
     font-family: var(--font-mono);
     font-size: 11px;
-    color: var(--color-ink-60);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+    max-width: 220px;
+  }
+  .map-legend-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: transparent;
+    border: none;
+    font: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  .map-legend-toggle-text { flex: 1; }
+  .map-legend-chev {
+    transition: transform 120ms ease-out;
+  }
+  .map-legend-toggle[aria-expanded="false"] .map-legend-chev {
+    transform: rotate(-90deg);
+  }
+  .map-legend-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 12px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .map-legend-list[hidden] { display: none; }
+  .map-legend-list li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.3;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .map-legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-ink-black);
+    flex-shrink: 0;
+  }
+  /* Tabelog swatch mirrors the /eat pin styling — white fill, thick red ring. */
+  .map-legend-swatch--ring {
+    background: #ffffff;
+    border-color: #ff3b30;
+    border-width: 2.5px;
   }
 
   /* Error overlay — auth/network failure. Replaces the silent blank gray. */
@@ -428,20 +521,23 @@ import SiteFooter from "../components/SiteFooter.astro";
   let map;
   let mapErrored = false;
 
-  /* ---------- URL query state for ?categories= ---------- */
+  /* ---------- URL query state for ?categories= ----------
+     Phase A.8: click-to-include semantics. Param lists ACTIVE chips
+     only; missing param OR empty value = no chips active = show all.
+     Backward-compat: old links from Phase A.6 (?categories=tabelog)
+     route to Eat; old links from Phase A.7 with the full 4-chip list
+     activate all 4 (which functionally shows all under the new
+     default-show-all semantics — visual chip state differs but pin
+     set is identical). */
   function readCategoriesFromURL() {
     const p = new URLSearchParams(window.location.search);
-    if (!p.has("categories")) return new Set(ALL_CATS); // omitted = all
+    if (!p.has("categories")) return new Set(); // omitted = no filter (show all)
     const raw = p.get("categories");
-    if (raw === "") return new Set(); // explicit empty = none selected
+    if (raw === "") return new Set(); // explicit empty = no filter (show all)
     const cats = raw
       .split(",")
       .map((s) => s.trim().toLowerCase())
       .filter(Boolean)
-      // Backward-compat for old links written when the Tabelog chip
-      // was its own filter (Phase A.6). 'tabelog' in the URL maps to
-      // the merged 'Eat' chip, so links written during the brief
-      // 5-chip window keep working.
       .map((s) => (s === "tabelog" ? "eat" : s))
       .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
       .filter((c) => ALL_CATS.includes(c));
@@ -450,10 +546,9 @@ import SiteFooter from "../components/SiteFooter.astro";
 
   function syncCategoriesToURL() {
     const p = new URLSearchParams(window.location.search);
-    if (activeCats.size === ALL_CATS.length) {
+    // No active chips = default state = omit param (cleaner URLs).
+    if (activeCats.size === 0) {
       p.delete("categories");
-    } else if (activeCats.size === 0) {
-      p.set("categories", "");
     } else {
       p.set(
         "categories",
@@ -468,25 +563,28 @@ import SiteFooter from "../components/SiteFooter.astro";
     history.replaceState(null, "", newURL);
   }
 
-  /* ---------- UI state sync ---------- */
+  /* ---------- UI state sync ----------
+     Reset link is visible when ANY chip is active (i.e. not at the
+     default "all inactive = show all" state). Empty-state overlay is
+     gone — under click-to-include semantics, "no chips active" means
+     "show all", which is the desired default, not an empty result. */
   function updateButtonStates() {
     document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
       const c = btn.dataset.catBtn;
       btn.setAttribute("aria-pressed", String(activeCats.has(c)));
     });
     const reset = document.querySelector("[data-reset]");
-    if (reset) reset.hidden = activeCats.size === ALL_CATS.length;
-    const empty = document.querySelector("[data-empty]");
-    if (empty) empty.hidden = activeCats.size > 0;
+    if (reset) reset.hidden = activeCats.size === 0;
   }
 
   /* ---------- Map filtering ----------
-     Single 4-chip filter. /places features pass when their
-     primary_category chip is active; /eat (Tabelog) features pass
-     when the Eat chip is active. So toggling Eat off hides BOTH
-     /places food markets/cafes AND /eat Tabelog restaurants in one
-     gesture — which matches the cleaner user model. */
+     Click-to-include: empty active set = no filter = show every pin
+     (default state, matches user intuition). When chips are active,
+     features pass iff their category is in the active set. /eat
+     (Tabelog) features map to the Eat chip — toggling Eat shows
+     both /places food markets/cafés AND /eat Tabelog restaurants. */
   function passesFilter(f) {
+    if (activeCats.size === 0) return true;
     if (f.properties.source === "eat") return activeCats.has("Eat");
     return activeCats.has(f.properties.primary_category);
   }
@@ -516,7 +614,8 @@ import SiteFooter from "../components/SiteFooter.astro";
     const reset = document.querySelector("[data-reset]");
     if (reset)
       reset.addEventListener("click", () => {
-        activeCats = new Set(ALL_CATS);
+        // Reset → default state (no active filters = show all).
+        activeCats = new Set();
         updateButtonStates();
         syncCategoriesToURL();
         applyCategoryFilter();
@@ -548,9 +647,28 @@ import SiteFooter from "../components/SiteFooter.astro";
     if (loading) loading.hidden = true;
   }
 
+  /* ---------- Legend toggle ----------
+     Desktop default open; collapse on coarse-pointer (mobile/tablet) so
+     it doesn't eat half the map. Click the header bar to expand/collapse. */
+  function setupLegend() {
+    const toggle = document.querySelector("[data-legend-toggle]");
+    const list = document.querySelector("[data-legend-list]");
+    if (!toggle || !list) return;
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      toggle.setAttribute("aria-expanded", "false");
+      list.hidden = true;
+    }
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      list.hidden = expanded;
+    });
+  }
+
   /* ---------- Init ---------- */
   activeCats = readCategoriesFromURL();
   setupCategoryButtons();
+  setupLegend();
   updateButtonStates();
 
   map = new mapboxgl.Map({
@@ -673,9 +791,13 @@ import SiteFooter from "../components/SiteFooter.astro";
       paint: { "text-color": "#151515" },
     });
 
-    // /places pins: filled circles coloured by primary_category, matches
-    // /places card colour-block palette (Konbini Blue / Tokyo Red / Egg
-    // Yellow / darkened Matcha #3f7548 — the AA-safe green per global.css).
+    // /places pins: coloured by public_label (sub-category). 13 distinct
+    // colours give at-a-glance regional scan-ability ("this area is mostly
+    // culture", "lots of workshops here") that the old My Maps had and the
+    // primary_category-only colouring lost. Empty public_label (base-tier
+    // rows: ~22 places like base towns / stay bases) falls through to
+    // Concrete Gray. Keep this expression in sync with SUBCAT_LEGEND in
+    // the frontmatter — both render the same color → category mapping.
     map.addLayer({
       id: "unclustered-places",
       type: "circle",
@@ -688,12 +810,21 @@ import SiteFooter from "../components/SiteFooter.astro";
       paint: {
         "circle-color": [
           "match",
-          ["get", "primary_category"],
-          "See", "#176BFF",
-          "Do", "#FF3B30",
-          "Eat", "#FFD84D",
-          "Stay", "#3f7548",
-          "#999999",
+          ["get", "public_label"],
+          "nature_water", "#176BFF",
+          "culture_history", "#FF3B30",
+          "animals", "#4D8B57",
+          "quirky_museums", "#7B3FA0",
+          "anime", "#E91E63",
+          "onsen_ryokan", "#9B7EBD",
+          "photo_spots", "#FF6B6B",
+          "scenic_transport", "#FF9800",
+          "theme_parks", "#FFD84D",
+          "parks", "#A4C49C",
+          "workshops_crafts", "#8B5A2B",
+          "food_markets", "#D4A017",
+          "cafes", "#D2B48C",
+          /* base-tier / no public_label */ "#999999",
         ],
         "circle-radius": 6,
         "circle-stroke-width": 1.5,
