@@ -1,8 +1,15 @@
 ---
 /* /map — standalone Mapbox view of every geocoded place.
    Phase A of the map migration (replaces the consumer Google My Maps
-   iframe). Pulls /places.geojson generated at build time by
-   scripts/generate-geojson.mjs. */
+   iframe); Phase A.5 polish adds primary-category filters, URL state,
+   geolocation, lazy popups, and loading/empty/error states.
+
+   Data: /places.geojson is generated at build time by
+   scripts/generate-geojson.mjs. Filter state is layered:
+     - Primary-category filter (4 buttons above the map; URL ?categories=)
+     - URL hash (#zoom/lat/lng) via Mapbox-native hash:true
+     - Lazy popup HTML built on click (not pre-rendered per pin)
+*/
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
@@ -14,16 +21,48 @@ import SiteFooter from "../components/SiteFooter.astro";
 >
   <Header />
   <main id="main" class="map-main">
+    <div class="map-toolbar">
+      <div
+        class="map-cat-filters"
+        role="group"
+        aria-label="Filter map by primary category"
+      >
+        <button type="button" class="map-cat map-cat--see" data-cat-btn="See" aria-pressed="true">See</button>
+        <button type="button" class="map-cat map-cat--do" data-cat-btn="Do" aria-pressed="true">Do</button>
+        <button type="button" class="map-cat map-cat--eat" data-cat-btn="Eat" aria-pressed="true">Eat</button>
+        <button type="button" class="map-cat map-cat--stay" data-cat-btn="Stay" aria-pressed="true">Stay</button>
+      </div>
+      <button type="button" class="map-reset" data-reset hidden>Reset</button>
+    </div>
+
     <div id="japan-map" aria-label="Interactive map of Japan Finds places"></div>
-    <p class="map-hint" hidden>Tap the map to enable zoom</p>
+
+    <p class="map-hint" hidden data-hint>Tap the map to enable zoom</p>
+
+    <div class="map-loading" data-loading>
+      <span class="map-loading-spinner" aria-hidden="true"></span>
+      <span class="map-loading-text">Loading map…</span>
+    </div>
+
+    <div class="map-empty" hidden data-empty aria-live="polite">
+      <div class="map-empty-card">
+        <p class="map-empty-text">All categories hidden.</p>
+        <p class="map-empty-sub">Tap a filter button to show places.</p>
+      </div>
+    </div>
+
+    <div class="map-error" hidden data-error role="alert">
+      <div class="map-error-card">
+        <p class="map-error-text">Map unavailable — please refresh.</p>
+        <button type="button" class="map-error-reload" data-reload>Reload page</button>
+      </div>
+    </div>
   </main>
   <SiteFooter />
 </Base>
 
 <style is:global>
-  /* Mapbox creates popup DOM dynamically — these rules need to be global so
-     they apply when the popup mounts on click. Match the brand chip palette
-     (Rice White card, Ink Black border, mono captions). */
+  /* Popup overrides — Mapbox creates these dynamically, so global rules. */
   .mapboxgl-popup-content {
     padding: 0;
     background: var(--color-rice-white);
@@ -32,9 +71,7 @@ import SiteFooter from "../components/SiteFooter.astro";
     box-shadow: var(--shadow-md);
     overflow: hidden;
   }
-  .mapboxgl-popup-tip {
-    display: none;
-  }
+  .mapboxgl-popup-tip { display: none; }
   .mapboxgl-popup-close-button {
     color: var(--color-ink-black);
     font-size: 18px;
@@ -90,6 +127,24 @@ import SiteFooter from "../components/SiteFooter.astro";
     text-decoration: underline;
     text-underline-offset: 2px;
   }
+
+  /* Geolocate control — brand-style the default Mapbox button. */
+  .mapboxgl-ctrl-group {
+    background: var(--color-rice-white) !important;
+    border: 1.5px solid var(--color-ink-black) !important;
+    border-radius: var(--radius-sm) !important;
+    box-shadow: var(--shadow-sm) !important;
+  }
+  .mapboxgl-ctrl-group button {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .mapboxgl-ctrl-group button:not(:disabled):hover {
+    background: var(--color-rice-tint) !important;
+  }
+  .mapboxgl-ctrl-attrib {
+    background: rgba(247, 243, 234, 0.85) !important;
+  }
 </style>
 
 <style>
@@ -102,11 +157,73 @@ import SiteFooter from "../components/SiteFooter.astro";
     height: 95vh;
     background: var(--color-concrete-gray);
   }
-  /* Mobile tap-to-activate hint. Hidden by default; the client script
-     reveals it on touch devices and removes it on the first click. */
-  .map-hint {
+
+  /* Toolbar floats absolutely so the map keeps its full 95vh. */
+  .map-toolbar {
     position: absolute;
     top: 12px;
+    left: 12px;
+    right: 12px;
+    z-index: 12;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    pointer-events: none; /* let the map receive drags through gaps */
+  }
+  .map-cat-filters {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    pointer-events: auto;
+  }
+  .map-reset {
+    pointer-events: auto;
+    padding: 6px 10px;
+    background: transparent;
+    border: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  .map-reset:hover { color: var(--color-tokyo-red); }
+
+  /* Category filter buttons. Active state shows a 2px inset accent ring
+     in the category colour. Inactive state dims via opacity. */
+  .map-cat {
+    padding: 6px 12px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    cursor: pointer;
+    transition:
+      box-shadow 120ms ease-out,
+      opacity 120ms ease-out;
+    box-shadow: var(--shadow-sm);
+  }
+  .map-cat[aria-pressed="false"] {
+    opacity: 0.35;
+  }
+  .map-cat[aria-pressed="true"].map-cat--see { box-shadow: inset 0 0 0 2px #176bff, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--do { box-shadow: inset 0 0 0 2px #ff3b30, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--eat { box-shadow: inset 0 0 0 2px #ffd84d, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--stay { box-shadow: inset 0 0 0 2px #3f7548, var(--shadow-sm); }
+
+  /* Mobile tap-to-activate hint (revealed by JS on coarse-pointer). */
+  .map-hint {
+    position: absolute;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
@@ -119,9 +236,157 @@ import SiteFooter from "../components/SiteFooter.astro";
     letter-spacing: 0.04em;
     text-transform: uppercase;
     border-radius: var(--radius-pill);
-    z-index: 10;
+    z-index: 11;
     pointer-events: none;
     box-shadow: var(--shadow-sm);
+  }
+
+  /* Loading state: visible before Mapbox 'load' event fires. */
+  .map-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-sm);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    z-index: 13;
+  }
+  .map-loading-spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--color-concrete-gray);
+    border-top-color: var(--color-ink-black);
+    border-radius: 50%;
+    animation: map-spin 0.7s linear infinite;
+  }
+  @keyframes map-spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* Empty filter state — centered card when 0 categories active. */
+  .map-empty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    pointer-events: none; /* still allow map dragging through */
+  }
+  .map-empty-card {
+    padding: 16px 20px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+  }
+  .map-empty-text {
+    margin: 0;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-ink-black);
+  }
+  .map-empty-sub {
+    margin: 4px 0 0;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--color-ink-60);
+  }
+
+  /* Error overlay — auth/network failure. Replaces the silent blank gray. */
+  .map-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 14;
+  }
+  .map-error-card {
+    padding: 16px 20px;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-tokyo-red);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .map-error-text {
+    margin: 0;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-ink-black);
+  }
+  .map-error-reload {
+    padding: 6px 14px;
+    background: var(--color-ink-black);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  /* Inline toast (geolocation denied, etc.) — auto-dismisses in 3s. */
+  :global(.map-toast) {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 14px;
+    background: var(--color-ink-black);
+    color: #fff;
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    z-index: 15;
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Mobile: compact category buttons, full toolbar width. */
+  @media (max-width: 640px) {
+    .map-toolbar {
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      gap: 6px;
+    }
+    .map-cat {
+      padding: 5px 8px;
+      font-size: 10px;
+      letter-spacing: 0.02em;
+    }
+    .map-cat-filters {
+      flex: 1;
+      justify-content: space-between;
+    }
+    .map-reset {
+      font-size: 10px;
+      padding: 5px 6px;
+    }
   }
 </style>
 
@@ -129,31 +394,203 @@ import SiteFooter from "../components/SiteFooter.astro";
   import mapboxgl from "mapbox-gl";
   import "mapbox-gl/dist/mapbox-gl.css";
 
-  // Inlined at build time by Vite. On localhost preview this is the .env
-  // placeholder (tiles 401 until you set a real local token). On Vercel
-  // it is the production token from PUBLIC_MAPBOX_TOKEN env var.
+  // Inlined at build time. On Vercel = real production token; localhost
+  // with the .env placeholder will 401-fail (caught by the error overlay).
   mapboxgl.accessToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
 
-  const map = new mapboxgl.Map({
+  const ALL_CATS = ["See", "Do", "Eat", "Stay"];
+  let activeCats;
+  let allFeatures = null; // fetched once; filter rebuilds source.data
+  let map;
+  let mapErrored = false;
+
+  /* ---------- URL query state for ?categories= ---------- */
+  function readCategoriesFromURL() {
+    const p = new URLSearchParams(window.location.search);
+    if (!p.has("categories")) return new Set(ALL_CATS); // omitted = all
+    const raw = p.get("categories");
+    if (raw === "") return new Set(); // explicit empty = none selected
+    const cats = raw
+      .split(",")
+      .map((s) => s.trim().toLowerCase())
+      .filter(Boolean)
+      .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
+      .filter((c) => ALL_CATS.includes(c));
+    return new Set(cats);
+  }
+
+  function syncCategoriesToURL() {
+    const p = new URLSearchParams(window.location.search);
+    if (activeCats.size === ALL_CATS.length) {
+      p.delete("categories");
+    } else if (activeCats.size === 0) {
+      p.set("categories", "");
+    } else {
+      p.set(
+        "categories",
+        Array.from(activeCats).map((c) => c.toLowerCase()).join(","),
+      );
+    }
+    const qs = p.toString();
+    const newURL =
+      window.location.pathname +
+      (qs ? "?" + qs : "") +
+      window.location.hash;
+    history.replaceState(null, "", newURL);
+  }
+
+  /* ---------- UI state sync ---------- */
+  function updateButtonStates() {
+    document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
+      const c = btn.dataset.catBtn;
+      btn.setAttribute("aria-pressed", String(activeCats.has(c)));
+    });
+    const reset = document.querySelector("[data-reset]");
+    if (reset) reset.hidden = activeCats.size === ALL_CATS.length;
+    const empty = document.querySelector("[data-empty]");
+    if (empty) empty.hidden = activeCats.size > 0;
+  }
+
+  /* ---------- Map filtering ---------- */
+  function applyCategoryFilter() {
+    if (!allFeatures || !map || !map.getSource("places")) return;
+    const filtered = allFeatures.filter((f) =>
+      activeCats.has(f.properties.primary_category),
+    );
+    // Re-setting the data triggers Mapbox to re-cluster from scratch, so
+    // cluster counts update to reflect the new filter set.
+    map.getSource("places").setData({
+      type: "FeatureCollection",
+      features: filtered,
+    });
+  }
+
+  /* ---------- Button + reset wiring ---------- */
+  function setupCategoryButtons() {
+    document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const c = btn.dataset.catBtn;
+        if (activeCats.has(c)) activeCats.delete(c);
+        else activeCats.add(c);
+        updateButtonStates();
+        syncCategoriesToURL();
+        applyCategoryFilter();
+      });
+    });
+    const reset = document.querySelector("[data-reset]");
+    if (reset)
+      reset.addEventListener("click", () => {
+        activeCats = new Set(ALL_CATS);
+        updateButtonStates();
+        syncCategoriesToURL();
+        applyCategoryFilter();
+      });
+    const reload = document.querySelector("[data-reload]");
+    if (reload) reload.addEventListener("click", () => window.location.reload());
+  }
+
+  /* ---------- Toast helper for transient errors ---------- */
+  function showToast(text) {
+    let toast = document.querySelector(".map-toast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.className = "map-toast";
+      document.querySelector(".map-main").appendChild(toast);
+    }
+    toast.textContent = text;
+    toast.hidden = false;
+    clearTimeout(toast._dismissTimer);
+    toast._dismissTimer = setTimeout(() => {
+      toast.hidden = true;
+    }, 3000);
+  }
+
+  function showErrorOverlay() {
+    const err = document.querySelector("[data-error]");
+    if (err) err.hidden = false;
+    const loading = document.querySelector("[data-loading]");
+    if (loading) loading.hidden = true;
+  }
+
+  /* ---------- Init ---------- */
+  activeCats = readCategoriesFromURL();
+  setupCategoryButtons();
+  updateButtonStates();
+
+  map = new mapboxgl.Map({
     container: "japan-map",
     style: "mapbox://styles/mapbox/light-v11",
     center: [138, 36],
     zoom: 4.5,
     minZoom: 4,
     maxZoom: 18,
+    // Mapbox-native URL hash sync. Format: #zoom/lat/lng[/bearing/pitch].
+    // Note: user spec said #lng/lat/zoom — Mapbox's native order is
+    // zoom/lat/lng. If a custom order is wanted later, replace with custom
+    // moveend+zoomend handlers writing window.location.hash.
+    hash: true,
   });
 
+  // Mapbox auth/network errors → show the error overlay instead of
+  // silent blank-gray. Dedupe so repeated tile failures don't bounce.
+  map.on("error", (e) => {
+    if (mapErrored) return;
+    const err = e && e.error ? e.error : {};
+    const status = err.status;
+    const msg = err.message || "";
+    if (status === 401 || status === 403 || /unauthorized|forbidden|access token/i.test(msg)) {
+      mapErrored = true;
+      showErrorOverlay();
+    }
+  });
+
+  // Geolocate control — brand-styled via global CSS overrides above.
+  const geolocate = new mapboxgl.GeolocateControl({
+    positionOptions: { enableHighAccuracy: true, timeout: 6000 },
+    trackUserLocation: false,
+    showAccuracyCircle: false,
+    showUserLocation: true,
+    fitBoundsOptions: { maxZoom: 12 },
+  });
+  map.addControl(geolocate, "bottom-right");
+  geolocate.on("error", () => showToast("Location unavailable"));
+
   map.on("load", () => {
+    const loading = document.querySelector("[data-loading]");
+    if (loading) loading.hidden = true;
+
+    fetch("/places.geojson")
+      .then((r) => {
+        if (!r.ok) throw new Error("geojson fetch failed: " + r.status);
+        return r.json();
+      })
+      .then((data) => {
+        allFeatures = data.features;
+        initLayers();
+      })
+      .catch((err) => {
+        console.error("places.geojson load failed", err);
+        showErrorOverlay();
+      });
+  });
+
+  /* ---------- Add source + layers (after geojson loads) ---------- */
+  function initLayers() {
+    const filtered = allFeatures.filter((f) =>
+      activeCats.has(f.properties.primary_category),
+    );
     map.addSource("places", {
       type: "geojson",
-      data: "/places.geojson",
+      data: { type: "FeatureCollection", features: filtered },
       cluster: true,
       clusterMaxZoom: 14,
       clusterRadius: 50,
     });
 
-    // Cluster bubbles — Rice White fill, Concrete Gray border, Ink Black count.
-    // Radius steps grow with cluster size but cap at 50px per spec.
+    // Plain numbered cluster bubbles: Rice White fill, Concrete Gray
+    // border, max radius 50. (Donut clusters considered + rejected as
+    // over-engineered for an editorial site — category buttons solve
+    // cluster-ambiguity better than visual donuts.)
     map.addLayer({
       id: "clusters",
       type: "circle",
@@ -181,13 +618,14 @@ import SiteFooter from "../components/SiteFooter.astro";
       layout: {
         "text-field": ["get", "point_count_abbreviated"],
         "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
-        "text-size": 12,
+        "text-size": 11,
       },
       paint: { "text-color": "#151515" },
     });
 
-    // Individual pins coloured by primary_category. Matches the See/Do/Eat/Stay
-    // chip palette used by /places card colour blocks (brand.md).
+    // Individual pins coloured by primary_category — matches /places card
+    // colour-block palette (Konbini Blue / Tokyo Red / Egg Yellow /
+    // darkened Matcha #3f7548 — the AA-safe darkened green per global.css).
     map.addLayer({
       id: "unclustered",
       type: "circle",
@@ -201,7 +639,7 @@ import SiteFooter from "../components/SiteFooter.astro";
           "Do", "#FF3B30",
           "Eat", "#FFD84D",
           "Stay", "#3f7548",
-          /* default */ "#999999",
+          "#999999",
         ],
         "circle-radius": 6,
         "circle-stroke-width": 1.5,
@@ -209,7 +647,7 @@ import SiteFooter from "../components/SiteFooter.astro";
       },
     });
 
-    // Click a cluster: zoom in to expand it.
+    // Cluster click: expand the cluster (zoom in until it bursts).
     map.on("click", "clusters", (e) => {
       const f = map.queryRenderedFeatures(e.point, { layers: ["clusters"] })[0];
       const id = f.properties.cluster_id;
@@ -219,7 +657,10 @@ import SiteFooter from "../components/SiteFooter.astro";
       });
     });
 
-    // Click a pin: popup with name, area, link to /places.
+    // Pin click: BUILD POPUP HTML LAZILY here, only when a pin is
+    // actually clicked. No pre-rendering 383 popup templates upfront.
+    // The hero image src is set inside this handler too, so the browser
+    // only requests it when the user opens the popup.
     map.on("click", "unclustered", (e) => {
       const f = e.features[0];
       const coords = f.geometry.coordinates.slice();
@@ -239,7 +680,7 @@ import SiteFooter from "../components/SiteFooter.astro";
           </div>
         </div>
       `;
-      new mapboxgl.Popup({ offset: 8, closeButton: true, closeOnClick: true })
+      new mapboxgl.Popup({ offset: 8 })
         .setLngLat(coords)
         .setHTML(html)
         .addTo(map);
@@ -253,16 +694,13 @@ import SiteFooter from "../components/SiteFooter.astro";
         map.getCanvas().style.cursor = "";
       });
     }
-  });
+  }
 
-  // Mobile UX: disable scroll-zoom (wheel + pinch) until the user taps the
-  // map. Touch-pan (dragPan) stays enabled — users expect a map to pan with a
-  // single-finger drag. The "Tap to enable zoom" hint surfaces only on
-  // coarse-pointer devices and clears after first interaction.
+  /* ---------- Mobile scroll-zoom gating ---------- */
   if (window.matchMedia("(pointer: coarse)").matches) {
     map.scrollZoom.disable();
     map.touchZoomRotate.disable();
-    const hint = document.querySelector(".map-hint");
+    const hint = document.querySelector("[data-hint]");
     if (hint) hint.hidden = false;
     const activate = () => {
       map.scrollZoom.enable();

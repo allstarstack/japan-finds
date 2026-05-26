@@ -1,7 +1,10 @@
 ---
 /* Site header — wordmark lockup + primary nav.
    Mobile: wordmark + hamburger (opens a full-screen menu).
-   Desktop: wordmark + centered links + red CTA. */
+   Desktop: wordmark + centered links + red CTA.
+
+   The "Get the Japan Map" CTA is hidden on /map itself (the CTA would
+   point at the page the user is already on). */
 import SavePin from "./SavePin.astro";
 import { PLACES_MAP_URL } from "../data/site.js";
 
@@ -14,6 +17,8 @@ const navLinks = [
   { label: "Shop Waitlist", href: "/#shop" },
   { label: "Partner", href: "/#partner" },
 ];
+
+const onMapPage = Astro.url.pathname === "/map" || Astro.url.pathname === "/map/";
 ---
 
 <header class="hdr">
@@ -32,12 +37,14 @@ const navLinks = [
       </ul>
     </nav>
 
-    <a
-      class="btn btn--primary btn--sm hdr__cta"
-      href={PLACES_MAP_URL}
-      target="_blank"
-      rel="noopener"
-    >Get the Japan Map&nbsp;→</a>
+    {!onMapPage && (
+      <a
+        class="btn btn--primary btn--sm hdr__cta"
+        href={PLACES_MAP_URL}
+        target="_blank"
+        rel="noopener"
+      >Get the Japan Map&nbsp;→</a>
+    )}
 
     <button
       class="hamburger"
@@ -61,12 +68,14 @@ const navLinks = [
         {navLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
       </ul>
     </nav>
-    <a
-      class="btn btn--primary btn--lg m-menu__cta"
-      href={PLACES_MAP_URL}
-      target="_blank"
-      rel="noopener"
-    >Get the Japan Map&nbsp;→</a>
+    {!onMapPage && (
+      <a
+        class="btn btn--primary btn--lg m-menu__cta"
+        href={PLACES_MAP_URL}
+        target="_blank"
+        rel="noopener"
+      >Get the Japan Map&nbsp;→</a>
+    )}
   </div>
 </header>
 
