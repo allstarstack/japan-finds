@@ -1,0 +1,17 @@
+name: "Walden Woods Kyoto"
+address_or_area: "Shimogyo Ward, Kyoto"
+region: "Kansai"
+prefecture: "Kyoto"
+primary_category: "Eat"
+public_label: "cafes"
+planning_flags: "rainy_day;day_trips"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "add_places"
+place_id: ChIJq6qXHbsIAWARjXEJ-LqoT_M
+lat: 34.9933458
+lng: 135.7631616
+hero_image: /places/walden-woods-kyoto.webp
+hero_attribution: "Photo via Google"
