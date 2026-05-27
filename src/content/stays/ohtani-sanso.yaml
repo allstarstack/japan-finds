@@ -6,6 +6,9 @@ prefecture: Yamaguchi
 primary_cat: onsen_ryokan
 price_tier: luxury
 description: Luxury onsen ryokan in Nagato-Yumoto established 1881.
-distinctive: Five distinct baths, private rotenburo suites, astronomical observatory
-  dome
+distinctive: Five distinct baths, private rotenburo suites, astronomical observatory dome
 source_url: https://otanisanso.co.jp/
+place_id: ChIJOzysixNnQzURkd-LNF1OXUA
+lat: 34.326034
+lng: 131.17499949999998
+photo_cache_path: /stays/ohtani-sanso.webp

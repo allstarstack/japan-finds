@@ -5,7 +5,10 @@ city: Ochi
 prefecture: Kochi
 primary_cat: glamping
 price_tier: mid
-description: Riverside campground on Japan's clearest river with Kengo Kuma Jyubako
-  cabins.
+description: Riverside campground on Japan's clearest river with Kengo Kuma Jyubako cabins.
 distinctive: Design-forward glamping, kayaking and rafting, eco-practices
 source_url: https://www.snowpeak.co.jp/
+place_id: ChIJuzlrNmgxTjUR52QNXfwqBEc
+lat: 33.5621739
+lng: 133.26389659999998
+photo_cache_path: /stays/snow-peak-ochi-niyodogawa-campfield.webp

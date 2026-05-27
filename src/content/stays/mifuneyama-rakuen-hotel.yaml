@@ -5,7 +5,10 @@ city: Takeo
 prefecture: Saga
 primary_cat: onsen_ryokan
 price_tier: upscale
-description: Heritage hotel at foot of Mt Mifune in 150,000-tsubo garden created by
-  Lord Nabeshima.
+description: Heritage hotel at foot of Mt Mifune in 150,000-tsubo garden created by Lord Nabeshima.
 distinctive: teamLab Ruins and Heritage art installation in onsen ruins, private rotenburo
 source_url: http://www.mifuneyama.co.jp/
+place_id: ChIJjz3R_10oQDUR5Q3OzKCuuYg
+lat: 33.182522399999996
+lng: 130.0163457
+photo_cache_path: /stays/mifuneyama-rakuen-hotel.webp

@@ -5,8 +5,10 @@ city: Taketomi
 prefecture: Okinawa
 primary_cat: resort
 price_tier: luxury
-description: Village-style resort on preserved Taketomi Island with Ryukyu red-tile
-  houses.
-distinctive: Living inside a UNESCO-recognized traditional settlement; star-gazing
-  and water buffalo carts.
+description: Village-style resort on preserved Taketomi Island with Ryukyu red-tile houses.
+distinctive: Living inside a UNESCO-recognized traditional settlement; star-gazing and water buffalo carts.
 source_url: https://hoshinoresorts.com/en/hotels/hoshinoyataketomijima/
+place_id: ChIJR8cUprJ1YDQRFecIzAAsxRw
+lat: 24.3231267
+lng: 124.0959491
+photo_cache_path: /stays/hoshinoya-taketomi-island.webp

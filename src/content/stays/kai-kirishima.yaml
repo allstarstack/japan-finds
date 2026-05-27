@@ -6,6 +6,9 @@ prefecture: Kagoshima
 primary_cat: onsen_ryokan
 price_tier: upscale
 description: Sulfur-spring ryokan with Sakurajima views.
-distinctive: Every room faces Sakurajima volcano, monorail to bathhouse in silvergrass
-  field
+distinctive: Every room faces Sakurajima volcano, monorail to bathhouse in silvergrass field
 source_url: https://hoshinoresorts.com/en/hotels/kaikirishima/
+place_id: ChIJszf4d-obPzURsUBb_Dje1UA
+lat: 31.868128700000003
+lng: 130.87164819999998
+photo_cache_path: /stays/kai-kirishima.webp

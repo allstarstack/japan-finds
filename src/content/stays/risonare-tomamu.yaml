@@ -6,6 +6,9 @@ prefecture: Hokkaido
 primary_cat: glamping
 price_tier: upscale
 description: All-suite alpine resort in Tomamu's forest with panoramic seasonal views.
-distinctive: Suites over 100m² each with private sauna and jet bath, access to Cloud
-  Terrace and Ice Village
+distinctive: Suites over 100m² each with private sauna and jet bath, access to Cloud Terrace and Ice Village
 source_url: https://hoshinoresorts.com/en/hotels/risonaretomamu/
+place_id: ChIJ4-l0SElhc18RLp-M2pqdtZc
+lat: 43.0669937
+lng: 142.6339569
+photo_cache_path: /stays/risonare-tomamu.webp

@@ -8,3 +8,7 @@ price_tier: luxury
 description: 300-year-old ryokan in central Kyoto with 18 rooms.
 distinctive: Legendary omotenashi and private garden views; no online booking.
 source_url: https://tawaraya-kyoto.jp/
+place_id: ChIJ8_eJA44IAWAR-q1_53xCxRg
+lat: 35.0102623
+lng: 135.7659155
+photo_cache_path: /stays/tawaraya-ryokan.webp

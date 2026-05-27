@@ -1,0 +1,19 @@
+reason: address_mismatch
+slug: aman-kyoto
+original:
+  id: jf-stay-0047
+  name: Aman Kyoto
+  name_jp: アマン京都
+  city: Kyoto
+  prefecture: Kyoto
+  primary_cat: onsen_ryokan
+  price_tier: luxury
+  description: Low-rise resort in hidden garden forest north of Kyoto.
+  distinctive: Secret garden arrival and onsen-equipped pavilions.
+  source_url: https://www.aman.com/resorts/aman-kyoto
+api_response:
+  place_id: ChIJ-8IdwOupAWARZk21GnGrDU8
+  display_name: Aman Kyoto
+  formatted_address: 1 Okitayama Washimine-cho, 大北山鷲峯町 北区 京都市 京都府 603-8458, Japan
+  lat: 35.050764099999995
+  lng: 135.73058419999998

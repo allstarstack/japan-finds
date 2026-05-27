@@ -5,8 +5,10 @@ city: Miyoshi
 prefecture: Tokushima
 primary_cat: machiya_kominka
 price_tier: mid
-description: 300-year-old thatched minka c.1720 in Iya Valley purchased by Alex Kerr
-  in 1973.
-distinctive: Original irori hearths and soot-blackened pine floors, center of Chiiori
-  Trust
+description: 300-year-old thatched minka c.1720 in Iya Valley purchased by Alex Kerr in 1973.
+distinctive: Original irori hearths and soot-blackened pine floors, center of Chiiori Trust
 source_url: https://www.chiiori.org/
+place_id: ChIJN43vdKwmUjUReHCUurW70tY
+lat: 33.8640696
+lng: 133.86235729999999
+photo_cache_path: /stays/chiiori.webp

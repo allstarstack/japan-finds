@@ -6,6 +6,9 @@ prefecture: Kyoto
 primary_cat: design_hotel
 price_tier: luxury
 description: Tadao Ando-designed 9-suite boutique on Shirakawa canal in Gion.
-distinctive: Each suite uses different native material, private balconies, Jean-Georges
-  restaurant
+distinctive: Each suite uses different native material, private balconies, Jean-Georges restaurant
 source_url: https://theshinmonzen.com/
+place_id: ChIJP4C6gNUJAWARnDZ2wSCyMx0
+lat: 35.006288999999995
+lng: 135.7746146
+photo_cache_path: /stays/the-shinmonzen.webp

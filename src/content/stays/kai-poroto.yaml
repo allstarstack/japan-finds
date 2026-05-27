@@ -5,7 +5,10 @@ city: Shiraoi
 prefecture: Hokkaido
 primary_cat: onsen_ryokan
 price_tier: upscale
-description: Lakeside onsen ryokan overlooking Lake Poroto, opened 2022 by Hoshino
-  Resorts. Interiors celebrate Ainu culture.
+description: Lakeside onsen ryokan overlooking Lake Poroto, opened 2022 by Hoshino Resorts. Interiors celebrate Ainu culture.
 distinctive: Cone-shaped bathhouse inspired by Ainu architecture; moor spring waters.
 source_url: https://hoshinoresorts.com/en/hotels/kaiporoto/
+place_id: ChIJofSGZe5rdV8RDBFnVhfVkVI
+lat: 42.5601463
+lng: 141.3618455
+photo_cache_path: /stays/kai-poroto.webp

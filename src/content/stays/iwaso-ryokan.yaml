@@ -6,6 +6,9 @@ prefecture: Hiroshima
 primary_cat: onsen_ryokan
 price_tier: luxury
 description: Miyajima's iconic inn first opened 1854 in Momijidani Park.
-distinctive: Hanare cottages integrated with maple forest and mountain stream, tatami-only
-  policy
+distinctive: Hanare cottages integrated with maple forest and mountain stream, tatami-only policy
 source_url: https://www.iwaso.com/
+place_id: ChIJw5ebVrawWjUR3VaTiC01gcc
+lat: 34.295109599999996
+lng: 132.3223151
+photo_cache_path: /stays/iwaso-ryokan.webp

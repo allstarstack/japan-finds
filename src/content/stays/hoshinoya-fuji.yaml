@@ -5,8 +5,10 @@ city: Fujikawaguchiko
 prefecture: Yamanashi
 primary_cat: glamping
 price_tier: luxury
-description: Japan's first glamping resort on a hillside overlooking Lake Kawaguchi
-  and Mt. Fuji. Cabin-style rooms with terrace dining.
-distinctive: Glamping with hotel service; forest butlers, outdoor kitchens, and Mt.
-  Fuji views.
+description: Japan's first glamping resort on a hillside overlooking Lake Kawaguchi and Mt. Fuji. Cabin-style rooms with terrace dining.
+distinctive: Glamping with hotel service; forest butlers, outdoor kitchens, and Mt. Fuji views.
 source_url: https://hoshinoresorts.com/en/hotels/hoshinoyafuji/
+place_id: ChIJi7goJwhfGWARVpMQanJ4fFQ
+lat: 35.5253284
+lng: 138.7450933
+photo_cache_path: /stays/hoshinoya-fuji.webp

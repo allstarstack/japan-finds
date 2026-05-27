@@ -6,6 +6,9 @@ prefecture: Yamagata
 primary_cat: temple_stay
 price_tier: budget
 description: Temple lodging atop Mt Haguro, connected to Dewa Sanzan shrine.
-distinctive: Stay in 1697 building, vegan shojin ryori, morning prayers, 2,446 stone
-  steps approach
+distinctive: Stay in 1697 building, vegan shojin ryori, morning prayers, 2,446 stone steps approach
 source_url: http://www.dewasanzan.jp/
+place_id: ChIJO8V0lR8EjF8RMMVbPe1ZnQ8
+lat: 38.7033961
+lng: 139.97988279999998
+photo_cache_path: /stays/mt-haguro-saikan.webp

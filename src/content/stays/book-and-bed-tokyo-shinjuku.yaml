@@ -8,3 +8,7 @@ price_tier: budget
 description: Bookstore-themed capsule hostel where guests sleep in bookshelves.
 distinctive: Sleep inside a bookshelf cubby surrounded by 3,000 books.
 source_url: https://bookandbedtokyo.com/
+place_id: ChIJfSeu7deMGGARRybLRmUjGIw
+lat: 35.6953417
+lng: 139.700672
+photo_cache_path: /stays/book-and-bed-tokyo-shinjuku.webp

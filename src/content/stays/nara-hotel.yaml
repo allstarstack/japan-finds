@@ -5,7 +5,10 @@ city: Nara
 prefecture: Nara
 primary_cat: heritage_hotel
 price_tier: upscale
-description: Five-star historic hotel opened 1909 designed by Tatsuno Kingo overlooking
-  Nara Park.
+description: Five-star historic hotel opened 1909 designed by Tatsuno Kingo overlooking Nara Park.
 distinctive: Taisho-era wooden interiors and tea lounge with deer park views.
 source_url: https://narahotel.co.jp/
+place_id: ChIJ2bAtORO5AGAR0SsDLpQh2gc
+lat: 34.6798175
+lng: 135.83382749999998
+photo_cache_path: /stays/nara-hotel.webp

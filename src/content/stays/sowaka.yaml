@@ -8,3 +8,7 @@ price_tier: luxury
 description: Ryokan-style hotel converted from 100-year-old teahouse near Yasaka Shrine.
 distinctive: Original patina, tatami, kimonoed staff, 23 rooms with private gardens
 source_url: https://sowaka.com/
+place_id: ChIJa0AGicQIAWARJIs0FhLMRyo
+lat: 35.0017701
+lng: 135.7784897
+photo_cache_path: /stays/sowaka.webp

@@ -8,3 +8,7 @@ price_tier: mid
 description: Shinjuku hotel famous for life-size Godzilla head on terrace.
 distinctive: Godzilla-themed rooms and direct view of Godzilla head from terrace.
 source_url: https://shinjuku.gracery.com/
+place_id: ChIJF-U1JdiMGGARaay7KIrrtZ0
+lat: 35.695358299999995
+lng: 139.7020345
+photo_cache_path: /stays/hotel-gracery-shinjuku.webp

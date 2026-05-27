@@ -6,6 +6,9 @@ prefecture: Hiroshima
 primary_cat: design_hotel
 price_tier: mid
 description: Renovated 1943 waterfront warehouse complex with Hotel Cycle.
-distinctive: 'Cyclist-first hotel: in-room bike racks, repair station, Shimanami Kaido
-  access.'
+distinctive: 'Cyclist-first hotel: in-room bike racks, repair station, Shimanami Kaido access.'
 source_url: https://onomichi-u2.com/hotel-cycle/
+place_id: ChIJW18zQDcAUTURpR9zL2NrL6A
+lat: 34.401956999999996
+lng: 133.189816
+photo_cache_path: /stays/onomichi-u2.webp
