@@ -264,10 +264,44 @@ export const cheatSheetSchema = z.object({
   medical_caution: z.boolean().optional(),
 });
 
+/* Phase A.9 stays schema (PHASE_A9_BUILD_SPEC §1).
+   New "Stay" source on /map, parallel to places/eat. 136-row seed imported
+   from docs/build/stays_seed.csv via scripts/import_stays_seed.py.
+   place_id / lat / lng / photo_cache_path are populated by a later D7-style
+   enrichment workstream — kept optional so the initial seed lands clean. */
+export const staySchema = z.object({
+  id: z.string().regex(/^jf-stay-\d{4}$/, "must match jf-stay-####"),
+  name: z.string(),
+  name_jp: z.string(),
+  city: z.string(),
+  prefecture: z.string(),
+  primary_cat: z.enum([
+    "onsen_ryokan",
+    "design_hotel",
+    "machiya_kominka",
+    "glamping",
+    "resort",
+    "capsule_themed",
+    "mountain_lodge",
+    "heritage_hotel",
+    "temple_stay",
+  ]),
+  price_tier: z.enum(["budget", "mid", "upscale", "luxury"]),
+  description: z.string(),
+  distinctive: z.string(),
+  source_url: z.string().url(),
+  // Enrichment fields — populated by a later workstream.
+  place_id: z.string().optional(),
+  lat: z.number().optional(),
+  lng: z.number().optional(),
+  photo_cache_path: z.string().optional(),
+});
+
 export const schemas = {
   products: productSchema,
   places: placeSchema,
   stores: storeSchema,
   routes: routeSchema,
+  stays: staySchema,
   "cheat-sheets": cheatSheetSchema,
 };

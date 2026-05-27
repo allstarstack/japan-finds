@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-/* Generate public/places.geojson from src/content/places/*.yaml AND
-   src/data/restaurants.json (Tabelog Hyakumeiten /eat collection).
-   Each feature carries a `source` property ("places" or "eat") so the
-   map can render and filter them distinctly.
+/* Generate public/places.geojson from src/content/places/*.yaml,
+   src/data/restaurants.json (Tabelog Hyakumeiten /eat collection), and
+   src/content/stays/*.yaml (Phase A.9 stays). Each feature carries a
+   `source` property ("places" | "eat" | "stay") so the map can render
+   and filter them distinctly.
 
    Runs as a prebuild step so the Mapbox map sources on /map and the
    /places + /eat list-page map views are always in sync with the YAML +
@@ -15,8 +16,13 @@
      /eat:    every entry in restaurants.json with lat AND lng. The
               current dataset (May 2026) has 282 entries, all geocoded;
               the skip-on-missing-coords rule is defensive only.
+     /stays:  Phase A.9 seed lands without lat/lng — the D7-style
+              enrichment workstream populates them. Until then this
+              scan emits zero features (all 136 skip on no-coords);
+              the log line surfaces the count so the enrichment gap
+              is visible at every build.
 
-   Skip rule for either source: missing lat AND/OR lng → exclude with
+   Skip rule for any source: missing lat AND/OR lng → exclude with
    per-source skipped count surfaced in the build log. */
 
 import { readFileSync, writeFileSync, readdirSync } from "fs";
@@ -25,6 +31,7 @@ import yaml from "js-yaml";
 
 const PLACES_DIR = "src/content/places";
 const EAT_FILE = "src/data/restaurants.json";
+const STAYS_DIR = "src/content/stays";
 const OUT_PATH = "public/places.geojson";
 
 const features = [];
@@ -33,6 +40,8 @@ let placesSkippedNoCoords = 0;
 let placesSkippedNotReady = 0;
 let eatScanned = 0;
 let eatSkippedNoCoords = 0;
+let staysScanned = 0;
+let staysSkippedNoCoords = 0;
 
 /* ---- /places (YAML) ---- */
 for (const fn of readdirSync(PLACES_DIR)) {
@@ -109,6 +118,38 @@ for (const r of eat) {
   });
 }
 
+/* ---- /stays (YAML) ----
+   Phase A.9 introduces stays as the third map source. The 136-row seed
+   lands without coordinates; the D7-style place_id enrichment pass that
+   parallels /places D1 will populate lat/lng later. Until then this
+   scan emits 0 features and the build log surfaces the skip count. */
+for (const fn of readdirSync(STAYS_DIR)) {
+  if (!fn.endsWith(".yaml")) continue;
+  staysScanned++;
+  const data = yaml.load(readFileSync(join(STAYS_DIR, fn), "utf-8"));
+  if (!data || typeof data !== "object") continue;
+  if (typeof data.lat !== "number" || typeof data.lng !== "number") {
+    staysSkippedNoCoords++;
+    continue;
+  }
+  features.push({
+    type: "Feature",
+    geometry: { type: "Point", coordinates: [data.lng, data.lat] },
+    properties: {
+      source: "stay",
+      slug: fn.replace(/\.yaml$/, ""),
+      name: data.name,
+      name_jp: data.name_jp || "",
+      primary_cat: data.primary_cat,
+      price_tier: data.price_tier,
+      city: data.city || "",
+      prefecture: data.prefecture || "",
+      source_url: data.source_url || "",
+      hero_image: data.photo_cache_path || null,
+    },
+  });
+}
+
 writeFileSync(
   OUT_PATH,
   JSON.stringify({ type: "FeatureCollection", features }, null, 2),
@@ -117,5 +158,6 @@ writeFileSync(
 console.log(
   `geojson: ${features.length} features → ${OUT_PATH}\n` +
     `  /places: scanned ${placesScanned} yaml, skipped ${placesSkippedNotReady} not-ready, ${placesSkippedNoCoords} without lat/lng\n` +
-    `  /eat:    scanned ${eatScanned} restaurants, skipped ${eatSkippedNoCoords} without lat/lng`,
+    `  /eat:    scanned ${eatScanned} restaurants, skipped ${eatSkippedNoCoords} without lat/lng\n` +
+    `  /stays:  scanned ${staysScanned} yaml, skipped ${staysSkippedNoCoords} without lat/lng`,
 );

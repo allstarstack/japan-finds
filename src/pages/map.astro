@@ -18,22 +18,114 @@
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import { existsSync, readFileSync } from "node:fs";
 
-const SUBCAT_LEGEND = [
+/* Where (/places) sub-category legend — Phase A.9 C3 reordered to
+   "top hits first" intent priority (was legacy CSV-import order). Each
+   row is a toggle filter; clicking removes its `value` from the active
+   set. The `value` is the public_label slug (URL token in ?places=).
+   Keep this in sync with the Mapbox paint expression below — both
+   render the same color → category mapping. */
+const PLACES_LEGEND = [
   { value: "nature_water",     label: "Nature & Water",     color: "#176BFF" },
   { value: "culture_history",  label: "Culture & History",  color: "#FF3B30" },
-  { value: "animals",          label: "Animals",            color: "#4D8B57" },
-  { value: "quirky_museums",   label: "Quirky Museums",     color: "#7B3FA0" },
-  { value: "anime",            label: "Anime",              color: "#E91E63" },
   { value: "onsen_ryokan",     label: "Onsen & Ryokan",     color: "#9B7EBD" },
-  { value: "photo_spots",      label: "Photo Spots",        color: "#FF6B6B" },
-  { value: "scenic_transport", label: "Scenic Transport",   color: "#FF9800" },
   { value: "theme_parks",      label: "Theme Parks",        color: "#FFD84D" },
-  { value: "parks",            label: "Parks",              color: "#A4C49C" },
-  { value: "workshops_crafts", label: "Workshops & Crafts", color: "#8B5A2B" },
-  { value: "food_markets",     label: "Food Markets",       color: "#D4A017" },
+  { value: "anime",            label: "Anime",              color: "#E91E63" },
   { value: "cafes",            label: "Cafes",              color: "#D2B48C" },
+  { value: "food_markets",     label: "Food Markets",       color: "#D4A017" },
+  { value: "photo_spots",      label: "Photo Spots",        color: "#FF6B6B" },
+  { value: "animals",          label: "Animals",            color: "#4D8B57" },
+  { value: "workshops_crafts", label: "Workshops & Crafts", color: "#8B5A2B" },
+  { value: "scenic_transport", label: "Scenic Transport",   color: "#FF9800" },
+  { value: "parks",            label: "Parks",              color: "#A4C49C" },
+  { value: "quirky_museums",   label: "Quirky Museums",     color: "#7B3FA0" },
+  /* Base-tier rows carry empty public_label; toggling this hides them
+     as a group. The `value` "_base" is a private sentinel — never appears
+     in YAML, only in URL params and the in-memory active set. */
+  { value: "_base",            label: "Base towns",         color: "#999999" },
 ];
+
+/* Eat (/eat) cuisine legend — Phase A.9 C3 adds the 13 chip-rail
+   cuisines as filter rows on /map. Source of truth: src/data/eat-chips.js
+   CUISINE_CHIPS. The swatch on /map is the white-ring style (matches
+   the pin paint — solid pin styling is for /eat-map only, where there's
+   nothing to differentiate against). Order matches the chip rail. */
+const EAT_LEGEND = [
+  { value: "sushi",       cuisine: "Sushi",                  label: "Sushi" },
+  { value: "tempura",     cuisine: "Tempura",                label: "Tempura" },
+  { value: "unagi",       cuisine: "Unagi",                  label: "Unagi" },
+  { value: "sukiyaki",    cuisine: "Sukiyaki & Shabu-shabu", label: "Sukiyaki & Shabu-shabu" },
+  { value: "yakiniku",    cuisine: "Yakiniku",               label: "Yakiniku" },
+  { value: "yakitori",    cuisine: "Yakitori",               label: "Yakitori" },
+  { value: "tonkatsu",    cuisine: "Tonkatsu",               label: "Tonkatsu" },
+  { value: "ramen",       cuisine: "Ramen",                  label: "Ramen" },
+  { value: "soba",        cuisine: "Soba",                   label: "Soba" },
+  { value: "udon",        cuisine: "Udon",                   label: "Udon" },
+  { value: "izakaya",     cuisine: "Izakaya",                label: "Izakaya" },
+  { value: "okonomiyaki", cuisine: "Okonomiyaki",            label: "Okonomiyaki" },
+  { value: "shokudo",     cuisine: "Shokudo",                label: "Shokudo" },
+];
+
+/* Phase A.9 Stay sub-category legend (PHASE_A9_BUILD_SPEC §2).
+   All 9 rows share Aizome Indigo — sub-category is the legend axis;
+   colour stays uniform per source. Display label "Capsule & novelty"
+   maps to the storage slug `capsule_themed` (slug-stable, label-mutable
+   per the spec). Order is the spec's table — by row count, descending. */
+const STAY_INDIGO = "#3B4F81";
+const STAY_LEGEND = [
+  { value: "onsen_ryokan",    label: "Onsen ryokan" },
+  { value: "design_hotel",    label: "Design hotel" },
+  { value: "machiya_kominka", label: "Machiya & kominka" },
+  { value: "glamping",        label: "Glamping" },
+  { value: "resort",          label: "Resort" },
+  { value: "capsule_themed",  label: "Capsule & novelty" },
+  { value: "mountain_lodge",  label: "Mountain lodge" },
+  { value: "heritage_hotel",  label: "Heritage hotel" },
+  { value: "temple_stay",     label: "Temple stay" },
+];
+
+/* Phase A.9 C6 — empty-state for sources with zero placed markers.
+   Read at build time from the prebuild-generated geojson. If a source
+   has 0 features in the file, its legend section renders a brand-voice
+   message above dimmed, non-interactive rows. Generalizable to any
+   source — currently triggers only for stays (D7-style lat/lng
+   enrichment is the followup workstream).
+   countsAvailable: false in dev-server without prebuild → empty state
+   is suppressed entirely (no false-positive on a fresh checkout). */
+const GEOJSON_PATH = "public/places.geojson";
+const PLACED_COUNTS: Record<string, number> = { places: 0, eat: 0, stay: 0 };
+let countsAvailable = false;
+if (existsSync(GEOJSON_PATH)) {
+  try {
+    const geojson = JSON.parse(readFileSync(GEOJSON_PATH, "utf-8"));
+    for (const f of geojson.features ?? []) {
+      const src = f?.properties?.source;
+      if (src && src in PLACED_COUNTS) PLACED_COUNTS[src]++;
+    }
+    countsAvailable = true;
+  } catch (e) {
+    console.warn("[/map] could not read", GEOJSON_PATH, e);
+  }
+}
+const isSourceEmpty = (src: string) =>
+  countsAvailable && PLACED_COUNTS[src] === 0;
+
+// Per-source empty-state copy. Row-count substitutes for the
+// "<n> categories" part. Same shape across sources so a future zero-
+// placed source picks the matching template without code changes; new
+// sources just add an entry here. Brand voice: short, declarative,
+// no apology — "curated" signals the work is done, "verified" signals
+// what's pending.
+const EMPTY_STATE_MESSAGE: Record<string, (n: number) => string> = {
+  places: (n) => `${n} place categories curated. Locations being verified — pins appear soon.`,
+  eat: (n) => `${n} cuisine categories curated. Locations being verified — pins appear soon.`,
+  stay: (n) => `${n} stay categories curated. Locations being verified — pins appear soon.`,
+};
+// Row count excludes the _base sentinel for /places (Base towns isn't
+// a category in the human sense — it's the catchall for unlabeled
+// rows). Other sources count all rows.
+const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length;
 ---
 
 <Base
@@ -46,12 +138,15 @@ const SUBCAT_LEGEND = [
       <div
         class="map-cat-filters"
         role="group"
-        aria-label="Filter map by category"
+        aria-label="Switch map mode"
       >
-        <button type="button" class="map-cat map-cat--see" data-cat-btn="See" aria-pressed="true">See</button>
-        <button type="button" class="map-cat map-cat--do" data-cat-btn="Do" aria-pressed="true">Do</button>
-        <button type="button" class="map-cat map-cat--eat" data-cat-btn="Eat" aria-pressed="true">Eat</button>
-        <button type="button" class="map-cat map-cat--stay" data-cat-btn="Stay" aria-pressed="true">Stay</button>
+        {/* Phase A.9 C5 — three mode chips matching the three legend
+            sections and the site nav (Where/Eat/Stay). See+Do collapsed
+            into Where since both filtered /places. Default state: no
+            chip pressed = trip-planner view (all sources visible). */}
+        <button type="button" class="map-cat map-cat--where" data-cat-btn="where" aria-pressed="false">Where</button>
+        <button type="button" class="map-cat map-cat--eat" data-cat-btn="eat" aria-pressed="false">Eat</button>
+        <button type="button" class="map-cat map-cat--stay" data-cat-btn="stay" aria-pressed="false">Stay</button>
       </div>
       <button type="button" class="map-reset" data-reset hidden>Reset</button>
     </div>
@@ -76,32 +171,126 @@ const SUBCAT_LEGEND = [
         <span class="map-legend-toggle-text">Legend</span>
         <span class="map-legend-chev" aria-hidden="true">▾</span>
       </button>
-      <ul id="map-legend-list" class="map-legend-list" data-legend-list>
-        {
-          SUBCAT_LEGEND.map((c) => (
-            <li>
-              <span
-                class="map-legend-swatch"
-                style={`background:${c.color}`}
-                aria-hidden="true"
-              />
-              <span>{c.label}</span>
-            </li>
-          ))
-        }
-        <li>
-          <span class="map-legend-swatch map-legend-swatch--ring" aria-hidden="true" />
-          <span>Tabelog restaurants</span>
-        </li>
-        <li>
-          <span
-            class="map-legend-swatch"
-            style="background:#999999"
-            aria-hidden="true"
-          />
-          <span>Base towns</span>
-        </li>
-      </ul>
+      {/* Phase A.9 C5 — three grouped sections.
+          Group headers (Where / Eat / Stay) are non-interactive labels.
+          The whole legend toggles between two layouts via data-mode on
+          the list container:
+            data-mode=""              all three sections visible (default)
+            data-mode="where|eat|stay"  only the matching section visible
+          Rows inside a visible section are click-to-focus:
+            cluster=null   all rows active (no dim)
+            cluster=<slug> only that row active; peers dim+strikethrough
+          Clicking a row in any section also enters that section's mode
+          (so a single tap on "Ramen" jumps straight to Eat-mode focused
+          on Ramen, even if you started in the default trip-planner view). */}
+      <div id="map-legend-list" class="map-legend-list" data-legend-list>
+        <div
+          class="map-legend-section"
+          data-legend-section="places"
+          data-empty={isSourceEmpty("places") ? "true" : "false"}
+        >
+          <span class="map-legend-section-title">Where</span>
+          {isSourceEmpty("places") && (
+            <p class="map-legend-empty">
+              {EMPTY_STATE_MESSAGE.places(PLACES_ROW_COUNT)}
+            </p>
+          )}
+          <ul class="map-legend-rows">
+            {
+              PLACES_LEGEND.map((c) => (
+                <li
+                  class="map-legend-row"
+                  data-legend-row="places"
+                  data-value={c.value}
+                  data-active="true"
+                  role="button"
+                  tabindex={isSourceEmpty("places") ? -1 : 0}
+                  aria-pressed="false"
+                  aria-disabled={isSourceEmpty("places") ? "true" : "false"}
+                >
+                  <span
+                    class="map-legend-swatch"
+                    style={`background:${c.color}`}
+                    aria-hidden="true"
+                  />
+                  <span class="map-legend-label">{c.label}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div
+          class="map-legend-section"
+          data-legend-section="eat"
+          data-empty={isSourceEmpty("eat") ? "true" : "false"}
+        >
+          <span class="map-legend-section-title">Eat</span>
+          {isSourceEmpty("eat") && (
+            <p class="map-legend-empty">
+              {EMPTY_STATE_MESSAGE.eat(EAT_LEGEND.length)}
+            </p>
+          )}
+          <ul class="map-legend-rows">
+            {
+              EAT_LEGEND.map((c) => (
+                <li
+                  class="map-legend-row"
+                  data-legend-row="eat"
+                  data-value={c.value}
+                  data-active="true"
+                  role="button"
+                  tabindex={isSourceEmpty("eat") ? -1 : 0}
+                  aria-pressed="false"
+                  aria-disabled={isSourceEmpty("eat") ? "true" : "false"}
+                >
+                  <span
+                    class="map-legend-swatch map-legend-swatch--ring"
+                    aria-hidden="true"
+                  />
+                  <span class="map-legend-label">{c.label}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        <div
+          class="map-legend-section"
+          data-legend-section="stay"
+          data-empty={isSourceEmpty("stay") ? "true" : "false"}
+        >
+          <span class="map-legend-section-title">Stay</span>
+          {isSourceEmpty("stay") && (
+            <p class="map-legend-empty">
+              {EMPTY_STATE_MESSAGE.stay(STAY_LEGEND.length)}
+            </p>
+          )}
+          <ul class="map-legend-rows">
+            {
+              STAY_LEGEND.map((s) => (
+                <li
+                  class="map-legend-row"
+                  data-legend-row="stay"
+                  data-value={s.value}
+                  data-active="true"
+                  role="button"
+                  tabindex={isSourceEmpty("stay") ? -1 : 0}
+                  aria-pressed="false"
+                  aria-disabled={isSourceEmpty("stay") ? "true" : "false"}
+                >
+                  <span
+                    class="map-legend-swatch"
+                    style={`background:${STAY_INDIGO}`}
+                    aria-hidden="true"
+                  />
+                  <span class="map-legend-label">{s.label}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="map-error" hidden data-error role="alert">
@@ -272,15 +461,15 @@ const SUBCAT_LEGEND = [
       opacity 120ms ease-out;
     box-shadow: var(--shadow-sm);
   }
-  /* Click-to-include filter chips (Phase A.8): chips default INACTIVE
-     (outline only, no colored ring, no opacity dim). Click → adds to
-     filter set; the colored inset ring marks the active state. Empty
-     active set = no filter = show all pins (the default). Ring width
-     3px (vs 2px) for stronger colour legibility at button size. */
-  .map-cat[aria-pressed="true"].map-cat--see { box-shadow: inset 0 0 0 3px #176bff, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--do { box-shadow: inset 0 0 0 3px #ff3b30, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--eat { box-shadow: inset 0 0 0 3px #ffd84d, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--stay { box-shadow: inset 0 0 0 3px #3f7548, var(--shadow-sm); }
+  /* Phase A.9 C5 — mode-switching chips. Default inactive (outline-only
+     pill). Pressing a chip activates that mode and pops the inset ring
+     in the source's brand colour. Click the pressed chip again to clear
+     back to the default trip-planner view. Ring width 3px for legibility
+     at button size. STAY ring uses Aizome Indigo to match the C2 pin
+     colour. */
+  .map-cat[aria-pressed="true"].map-cat--where { box-shadow: inset 0 0 0 3px #176bff, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--eat   { box-shadow: inset 0 0 0 3px #ffd84d, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--stay  { box-shadow: inset 0 0 0 3px #3B4F81, var(--shadow-sm); }
 
   /* Mobile tap-to-activate hint (revealed by JS on coarse-pointer). */
   .map-hint {
@@ -385,15 +574,24 @@ const SUBCAT_LEGEND = [
     transform: rotate(-90deg);
   }
   .map-legend-list {
-    list-style: none;
     margin: 0;
     padding: 0 12px 10px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    max-height: 70vh;
+    overflow-y: auto;
   }
   .map-legend-list[hidden] { display: none; }
-  .map-legend-list li {
+  .map-legend-rows {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .map-legend-rows li {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -408,11 +606,117 @@ const SUBCAT_LEGEND = [
     border: 1.5px solid var(--color-ink-black);
     flex-shrink: 0;
   }
-  /* Tabelog swatch mirrors the /eat pin styling — white fill, thick red ring. */
+  /* /eat swatch mirrors the /eat pin styling — white fill, thick red ring.
+     All 13 cuisine rows use the same swatch on /map; cuisine identity is
+     in the label text + URL slug, not the swatch colour. */
   .map-legend-swatch--ring {
     background: #ffffff;
     border-color: #ff3b30;
     border-width: 2.5px;
+  }
+
+  /* Phase A.9 C5 — mode-driven legend section visibility.
+     data-mode on the legend list dictates which section(s) render:
+       (no attr / data-mode="")        all three sections visible
+       data-mode="where"               only Where section
+       data-mode="eat"                 only Eat section
+       data-mode="stay"                only Stay section
+     Sections are hidden via display:none — full hide, not dim — so the
+     active mode reads as a single focused panel. Section divider
+     borders (`.map-legend-section + .map-legend-section`) naturally
+     collapse when peers are display:none. */
+  .map-legend-list[data-mode="where"] .map-legend-section:not([data-legend-section="places"]),
+  .map-legend-list[data-mode="eat"] .map-legend-section:not([data-legend-section="eat"]),
+  .map-legend-list[data-mode="stay"] .map-legend-section:not([data-legend-section="stay"]) {
+    display: none;
+  }
+
+  /* Phase A.9 C4 — three named legend groups (Where / Eat / Stay).
+     Headers are non-interactive labels — source-level filtering lives
+     in the toolbar chips (Where/Eat/Stay). Rows are click-to-focus,
+     single-select within their section. */
+  .map-legend-section + .map-legend-section {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--color-ink-30);
+  }
+  .map-legend-section-title {
+    display: block;
+    width: 100%;
+    margin: 0 0 4px;
+    padding: 2px 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+
+  /* Toggle rows. Default state: every row data-active="true" (no dim).
+     Focused state: the chosen row stays data-active="true" while peers
+     flip to data-active="false" (dim swatch + strikethrough label).
+     :has() lets us pick out the focused row in CSS without an extra
+     data-attr — "any row in this section is dimmed" implies the
+     surviving active row is the focused one. */
+  .map-legend-row {
+    cursor: pointer;
+    user-select: none;
+    border-radius: var(--radius-sm);
+    padding: 1px 4px;
+    margin: 0 -4px;
+    transition: background 100ms ease-out;
+  }
+  .map-legend-row:hover { background: var(--color-rice-tint); }
+  .map-legend-row:focus-visible {
+    outline: 2px solid var(--color-ink-black);
+    outline-offset: 1px;
+  }
+  .map-legend-row[data-active="false"] .map-legend-swatch {
+    opacity: 0.3;
+  }
+  .map-legend-row[data-active="false"] .map-legend-label {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    color: var(--color-ink-30);
+  }
+  /* Focus row — only highlighted when its section has at least one
+     dimmed peer (i.e. a focus is set). Light tint + bold label so it
+     reads as "this is the active filter". */
+  .map-legend-section:has(.map-legend-row[data-active="false"])
+    .map-legend-row[data-active="true"] {
+    background: var(--color-rice-tint);
+  }
+  .map-legend-section:has(.map-legend-row[data-active="false"])
+    .map-legend-row[data-active="true"] .map-legend-label {
+    font-weight: 600;
+  }
+
+  /* Phase A.9 C6 — empty-state for sources with zero placed markers.
+     Brand-voice inline message above the rows; all rows in the empty
+     section dim and become non-interactive (pointer-events disabled,
+     out of tab order, aria-disabled). When enrichment lands and the
+     section becomes non-empty, this whole block silently drops away
+     — data-empty flips to "false" at build time. */
+  .map-legend-empty {
+    margin: 0 0 6px;
+    padding: 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+  }
+  .map-legend-section[data-empty="true"] .map-legend-row {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+  }
+  .map-legend-section[data-empty="true"] .map-legend-row .map-legend-label {
+    color: var(--color-ink-30);
+  }
+  .map-legend-section[data-empty="true"] .map-legend-row:hover {
+    background: transparent;
   }
 
   /* Error overlay — auth/network failure. Replaces the silent blank gray. */
@@ -507,54 +811,120 @@ const SUBCAT_LEGEND = [
   // with the .env placeholder will 401-fail (caught by the error overlay).
   mapboxgl.accessToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
 
-  // Four filter chips matching the See/Do/Eat/Stay primary_category
-  // groupings. "Eat" covers BOTH /places primary_category=Eat (food
-  // markets + cafés) AND /eat source items (Tabelog Hyakumeiten). The
-  // Tabelog curation signal stays visible in pin styling (open-ring vs
-  // solid-fill) and popup content (year + rank + Hyakumeiten label) —
-  // it just doesn't get its own filter button. Splitting curation
-  // source from content type in the filter UI confused first-time
-  // users; one Eat chip is cleaner.
-  const ALL_CATS = ["See", "Do", "Eat", "Stay"];
-  let activeCats;
+  /* Phase A.9 C5 — mode + cluster two-axis filter state.
+       mode: null | "where" | "eat" | "stay"
+         null  = default trip-planner view; all sources visible, all
+                 three legend sections rendered.
+         set   = mode-switched view; only that source's markers visible
+                 AND only that section's legend rows rendered.
+       cluster: null | <slug>
+         null  = no sub-cluster focus within the active mode.
+         set   = single legend row focused inside the active section;
+                 only matching features visible. Meaningful only when
+                 mode is also set (mode=null + cluster=X is ignored).
+     URL: ?mode=where&cluster=anime. Default omits both. */
+  const ALL_MODES = ["where", "eat", "stay"];
+  const MODE_TO_SOURCE = { where: "places", eat: "eat", stay: "stay" };
+  let mode = null;
+  let cluster = null;
   let allFeatures = null; // fetched once; filter rebuilds source.data
   let map;
   let mapErrored = false;
 
-  /* ---------- URL query state for ?categories= ----------
-     Phase A.8: click-to-include semantics. Param lists ACTIVE chips
-     only; missing param OR empty value = no chips active = show all.
-     Backward-compat: old links from Phase A.6 (?categories=tabelog)
-     route to Eat; old links from Phase A.7 with the full 4-chip list
-     activate all 4 (which functionally shows all under the new
-     default-show-all semantics — visual chip state differs but pin
-     set is identical). */
-  function readCategoriesFromURL() {
+  /* ---------- Phase A.9 C5 — legend slug catalogue ----------
+     One Set per mode, used to validate URL ?cluster= values against
+     known slugs. Keys are the data-legend-section attribute (i.e. the
+     source name, not the mode name) so the existing legend markup
+     doesn't need to change. */
+  const LEGEND_SLUG_SETS = {
+    places: new Set(["nature_water", "culture_history", "animals",
+      "quirky_museums", "anime", "onsen_ryokan", "photo_spots",
+      "scenic_transport", "theme_parks", "parks", "workshops_crafts",
+      "food_markets", "cafes", "_base"]),
+    eat: new Set(["sushi", "tempura", "unagi", "sukiyaki", "yakiniku",
+      "yakitori", "tonkatsu", "ramen", "soba", "udon", "izakaya",
+      "okonomiyaki", "shokudo"]),
+    stay: new Set(["onsen_ryokan", "design_hotel", "machiya_kominka",
+      "glamping", "resort", "capsule_themed", "mountain_lodge",
+      "heritage_hotel", "temple_stay"]),
+  };
+  // Eat URL slug → restaurants.json cuisine_chip value. Used at filter
+  // time so the feature's `cuisine` property can be tested against the
+  // lowercase slug set.
+  const EAT_SLUG_TO_CUISINE = {
+    sushi: "Sushi",
+    tempura: "Tempura",
+    unagi: "Unagi",
+    sukiyaki: "Sukiyaki & Shabu-shabu",
+    yakiniku: "Yakiniku",
+    yakitori: "Yakitori",
+    tonkatsu: "Tonkatsu",
+    ramen: "Ramen",
+    soba: "Soba",
+    udon: "Udon",
+    izakaya: "Izakaya",
+    okonomiyaki: "Okonomiyaki",
+    shokudo: "Shokudo",
+  };
+  const EAT_CUISINE_TO_SLUG = Object.fromEntries(
+    Object.entries(EAT_SLUG_TO_CUISINE).map(([s, c]) => [c, s]),
+  );
+
+  /* ---------- URL state — single ?mode= + optional ?cluster= ----------
+     Phase A.9 C5: trade C3/C4's three-param scheme for one mode param.
+     Migration from older link formats (C3 csv-per-source, C4 single-
+     slug-per-source, A.8 ?categories=) is best-effort: pick the first
+     valid source token and rewrite the URL on init so the user lands
+     in the new scheme without an extra page reload. */
+  function readModeFromURL() {
     const p = new URLSearchParams(window.location.search);
-    if (!p.has("categories")) return new Set(); // omitted = no filter (show all)
-    const raw = p.get("categories");
-    if (raw === "") return new Set(); // explicit empty = no filter (show all)
-    const cats = raw
-      .split(",")
-      .map((s) => s.trim().toLowerCase())
-      .filter(Boolean)
-      .map((s) => (s === "tabelog" ? "eat" : s))
-      .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-      .filter((c) => ALL_CATS.includes(c));
-    return new Set(cats);
+
+    // 1. New-scheme ?mode= (preferred).
+    let m = (p.get("mode") || "").trim().toLowerCase();
+    let c = (p.get("cluster") || "").trim().toLowerCase();
+
+    // 2. Legacy C4 single-slug-per-source: ?places=, ?eat=, ?stay=.
+    //    First matching one wins. cluster value picked from that param.
+    if (!m) {
+      for (const [src, modeName] of [["places", "where"], ["eat", "eat"], ["stay", "stay"]]) {
+        const raw = (p.get(src) || "").trim().toLowerCase();
+        if (raw) {
+          m = modeName;
+          c = raw.split(",")[0]; // C3 csv → take first token
+          break;
+        }
+      }
+    }
+
+    // 3. Legacy A.8/C4 ?categories= toolbar-only param. tabelog → eat.
+    if (!m) {
+      const raw = (p.get("categories") || "").trim().toLowerCase();
+      if (raw) {
+        const first = raw.split(",")[0];
+        if (first === "tabelog" || first === "eat") m = "eat";
+        else if (first === "stay") m = "stay";
+        else if (first === "see" || first === "do") m = "where";
+      }
+    }
+
+    if (!ALL_MODES.includes(m)) {
+      mode = null;
+      cluster = null;
+      return;
+    }
+    mode = m;
+    const src = MODE_TO_SOURCE[m];
+    cluster = c && LEGEND_SLUG_SETS[src].has(c) ? c : null;
   }
 
-  function syncCategoriesToURL() {
+  function syncURL() {
     const p = new URLSearchParams(window.location.search);
-    // No active chips = default state = omit param (cleaner URLs).
-    if (activeCats.size === 0) {
-      p.delete("categories");
-    } else {
-      p.set(
-        "categories",
-        Array.from(activeCats).map((c) => c.toLowerCase()).join(","),
-      );
-    }
+    // Strip legacy params on every sync so migrated links self-clean.
+    for (const k of ["places", "eat", "stay", "categories"]) p.delete(k);
+    if (mode) p.set("mode", mode);
+    else p.delete("mode");
+    if (mode && cluster) p.set("cluster", cluster);
+    else p.delete("cluster");
     const qs = p.toString();
     const newURL =
       window.location.pathname +
@@ -564,29 +934,43 @@ const SUBCAT_LEGEND = [
   }
 
   /* ---------- UI state sync ----------
-     Reset link is visible when ANY chip is active (i.e. not at the
-     default "all inactive = show all" state). Empty-state overlay is
-     gone — under click-to-include semantics, "no chips active" means
-     "show all", which is the desired default, not an empty result. */
+     Chip aria-pressed reflects the active mode (one of three, or none).
+     Legend container's data-mode drives section-visibility CSS.
+     Reset surfaces whenever mode OR cluster is non-default. */
   function updateButtonStates() {
     document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
-      const c = btn.dataset.catBtn;
-      btn.setAttribute("aria-pressed", String(activeCats.has(c)));
+      btn.setAttribute(
+        "aria-pressed",
+        String(mode !== null && btn.dataset.catBtn === mode),
+      );
     });
+    const list = document.querySelector("[data-legend-list]");
+    if (list) list.dataset.mode = mode || "";
     const reset = document.querySelector("[data-reset]");
-    if (reset) reset.hidden = activeCats.size === 0;
+    if (reset) reset.hidden = mode === null && cluster === null;
   }
 
   /* ---------- Map filtering ----------
-     Click-to-include: empty active set = no filter = show every pin
-     (default state, matches user intuition). When chips are active,
-     features pass iff their category is in the active set. /eat
-     (Tabelog) features map to the Eat chip — toggling Eat shows
-     both /places food markets/cafés AND /eat Tabelog restaurants. */
+     Two-axis filter from the C5 model:
+       1. Mode (null | "where" | "eat" | "stay") gates the source.
+          null = all sources visible (trip-planner default).
+       2. Cluster (null | slug) gates within the active mode's source.
+          Meaningful only when mode is also set.
+     Features pass iff both axes admit them. */
   function passesFilter(f) {
-    if (activeCats.size === 0) return true;
-    if (f.properties.source === "eat") return activeCats.has("Eat");
-    return activeCats.has(f.properties.primary_category);
+    const src = f.properties.source;
+    if (mode !== null && MODE_TO_SOURCE[mode] !== src) return false;
+    if (cluster === null) return true;
+    if (mode === "where" && src === "places") {
+      return (f.properties.public_label || "_base") === cluster;
+    }
+    if (mode === "eat" && src === "eat") {
+      return EAT_CUISINE_TO_SLUG[f.properties.cuisine] === cluster;
+    }
+    if (mode === "stay" && src === "stay") {
+      return f.properties.primary_cat === cluster;
+    }
+    return true;
   }
   function applyCategoryFilter() {
     if (!allFeatures || !map || !map.getSource("places")) return;
@@ -599,25 +983,36 @@ const SUBCAT_LEGEND = [
     });
   }
 
-  /* ---------- Button + reset wiring ---------- */
+  /* ---------- Chip + reset wiring ----------
+     Click a chip → enter that mode (also clears any prior cluster
+     focus, since entering a new mode invalidates an old mode's
+     cluster slug). Click the active chip again → exit to default.
+     Reset clears both axes in one tap. */
   function setupCategoryButtons() {
     document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const c = btn.dataset.catBtn;
-        if (activeCats.has(c)) activeCats.delete(c);
-        else activeCats.add(c);
+        const target = btn.dataset.catBtn;
+        if (mode === target) {
+          mode = null;
+          cluster = null;
+        } else {
+          mode = target;
+          cluster = null;
+        }
         updateButtonStates();
-        syncCategoriesToURL();
+        paintLegendFromState();
+        syncURL();
         applyCategoryFilter();
       });
     });
     const reset = document.querySelector("[data-reset]");
     if (reset)
       reset.addEventListener("click", () => {
-        // Reset → default state (no active filters = show all).
-        activeCats = new Set();
+        mode = null;
+        cluster = null;
         updateButtonStates();
-        syncCategoriesToURL();
+        paintLegendFromState();
+        syncURL();
         applyCategoryFilter();
       });
     const reload = document.querySelector("[data-reload]");
@@ -665,11 +1060,73 @@ const SUBCAT_LEGEND = [
     });
   }
 
+  /* ---------- Legend row focus (Phase A.9 C5) ----------
+     Click-to-focus, single-select within the active mode's section.
+     Clicking a row in a section whose source doesn't match the active
+     mode auto-enters that mode (so clicking "Ramen" inside Eat while
+     in Where-mode flips to Eat-mode and focuses Ramen). This keeps
+     the row-click as a single-tap action even when the user hasn't
+     pre-selected a mode chip — friendlier than ignoring the click.
+     Row visual contract: data-active="true" = visible/normal style;
+     data-active="false" = dimmed (used when a peer in the same section
+     IS focused). aria-pressed mirrors "this row is the current focus". */
+  function paintLegendFromState() {
+    document.querySelectorAll("[data-legend-row]").forEach((row) => {
+      const src = row.dataset.legendRow;
+      const slug = row.dataset.value;
+      // Cluster is only meaningful when its source matches the mode.
+      const sectionHasFocus =
+        cluster !== null && mode !== null && MODE_TO_SOURCE[mode] === src;
+      const on = sectionHasFocus ? cluster === slug : true;
+      row.dataset.active = String(on);
+      row.setAttribute("aria-pressed", String(sectionHasFocus && cluster === slug));
+    });
+  }
+
+  function setupLegendRows() {
+    function activate(row) {
+      // C6: rows in empty sections are decorative only — pointer-events
+      // already blocks clicks, but keyboard activation also gates here.
+      if (row.getAttribute("aria-disabled") === "true") return;
+      const src = row.dataset.legendRow;
+      const slug = row.dataset.value;
+      const targetMode = Object.entries(MODE_TO_SOURCE)
+        .find(([, s]) => s === src)[0];
+      if (mode === targetMode && cluster === slug) {
+        // Clicking the focused row in the active mode clears the cluster
+        // but stays in the mode — consistent with chip behaviour where
+        // re-clicking exits one layer at a time.
+        cluster = null;
+      } else {
+        mode = targetMode;
+        cluster = slug;
+      }
+      updateButtonStates();
+      paintLegendFromState();
+      syncURL();
+      applyCategoryFilter();
+    }
+    document.querySelectorAll("[data-legend-row]").forEach((row) => {
+      row.addEventListener("click", () => activate(row));
+      row.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          activate(row);
+        }
+      });
+    });
+  }
+
   /* ---------- Init ---------- */
-  activeCats = readCategoriesFromURL();
+  readModeFromURL();
   setupCategoryButtons();
   setupLegend();
+  setupLegendRows();
   updateButtonStates();
+  paintLegendFromState();
+  // Self-clean any legacy ?places=/?eat=/?stay=/?categories= params
+  // that readModeFromURL migrated into mode/cluster.
+  syncURL();
 
   map = new mapboxgl.Map({
     container: "japan-map",
@@ -853,6 +1310,29 @@ const SUBCAT_LEGEND = [
       },
     });
 
+    // Phase A.9 stay pins: solid Aizome Indigo fill, ink stroke. Distinct
+    // from /places (different hue, not in the 13-cluster palette) and from
+    // /eat (solid fill, not the open ring). The 9 sub-cats share one fill —
+    // legend rows are the filter axis (wired in C3), colour stays per-source.
+    // The seed currently has no lat/lng, so this layer renders zero markers
+    // until the D7-style enrichment pass populates coordinates.
+    map.addLayer({
+      id: "unclustered-stays",
+      type: "circle",
+      source: "places",
+      filter: [
+        "all",
+        ["!", ["has", "point_count"]],
+        ["==", ["get", "source"], "stay"],
+      ],
+      paint: {
+        "circle-color": "#3B4F81",
+        "circle-radius": 6,
+        "circle-stroke-width": 1.5,
+        "circle-stroke-color": "#151515",
+      },
+    });
+
     // Cluster click: expand the cluster (zoom in until it bursts).
     map.on("click", "clusters", (e) => {
       const f = map.queryRenderedFeatures(e.point, { layers: ["clusters"] })[0];
@@ -882,6 +1362,9 @@ const SUBCAT_LEGEND = [
         const nameHTML = p.name_jp
           ? `${p.name} <span class="map-popup-jp">${p.name_jp}</span>`
           : p.name;
+        // Anchor-link CTA: /eat#<slug> lands on the matching card, which
+        // self-highlights for 2s via the :target rule in RestaurantCard.
+        const href = p.slug ? `/eat#${p.slug}` : "/eat";
         return `
           <div class="map-popup">
             ${img}
@@ -889,26 +1372,67 @@ const SUBCAT_LEGEND = [
               <h3 class="map-popup-name">${nameHTML}</h3>
               ${metaLine ? `<p class="map-popup-area">${metaLine}</p>` : ""}
               ${provenance ? `<p class="map-popup-area">${provenance}</p>` : ""}
-              <a class="map-popup-link" href="/eat">View on /eat →</a>
+              <a class="map-popup-link" href="${href}">More about this restaurant →</a>
+            </div>
+          </div>
+        `;
+      }
+      if (p.source === "stay") {
+        // No /stay route this phase, so the CTA is the official source
+        // URL (hotel site). Slug → display label is duplicated here from
+        // STAY_LEGEND in the frontmatter; if you change either keep both
+        // in sync (one map, both sides of the JS↔Astro boundary).
+        const STAY_CAT_LABEL = {
+          onsen_ryokan: "Onsen ryokan",
+          design_hotel: "Design hotel",
+          machiya_kominka: "Machiya & kominka",
+          glamping: "Glamping",
+          resort: "Resort",
+          capsule_themed: "Capsule & novelty",
+          mountain_lodge: "Mountain lodge",
+          heritage_hotel: "Heritage hotel",
+          temple_stay: "Temple stay",
+        };
+        const where = [p.city, p.prefecture].filter(Boolean).join(", ");
+        const meta = [STAY_CAT_LABEL[p.primary_cat] || p.primary_cat, p.price_tier]
+          .filter(Boolean)
+          .join(" · ");
+        const nameHTML = p.name_jp
+          ? `${p.name} <span class="map-popup-jp">${p.name_jp}</span>`
+          : p.name;
+        const externalLink = p.source_url
+          ? `<a class="map-popup-link" href="${p.source_url}" target="_blank" rel="noopener">Visit hotel site →</a>`
+          : "";
+        return `
+          <div class="map-popup">
+            ${img}
+            <div class="map-popup-text">
+              <h3 class="map-popup-name">${nameHTML}</h3>
+              ${where ? `<p class="map-popup-area">${where}</p>` : ""}
+              ${meta ? `<p class="map-popup-area">${meta}</p>` : ""}
+              ${externalLink}
             </div>
           </div>
         `;
       }
       // /places branch
       const area = p.address_or_area || "";
+      // Anchor-link CTA: /places#<slug> lands on the matching card,
+      // which self-highlights for 2s via the :target rule in PlaceCard.
+      const href = p.slug ? `/places#${p.slug}` : "/places";
       return `
         <div class="map-popup">
           ${img}
           <div class="map-popup-text">
             <h3 class="map-popup-name">${p.name || ""}</h3>
             ${area ? `<p class="map-popup-area">${area}</p>` : ""}
-            <a class="map-popup-link" href="/places">View on /places →</a>
+            <a class="map-popup-link" href="${href}">More about this place →</a>
           </div>
         </div>
       `;
     }
 
-    for (const layer of ["unclustered-places", "unclustered-eat"]) {
+    for (const layer of ["unclustered-places", "unclustered-eat", "unclustered-stays"]) {
       map.on("click", layer, (e) => {
         const f = e.features[0];
         const coords = f.geometry.coordinates.slice();
@@ -919,7 +1443,12 @@ const SUBCAT_LEGEND = [
       });
     }
 
-    for (const layer of ["clusters", "unclustered-places", "unclustered-eat"]) {
+    for (const layer of [
+      "clusters",
+      "unclustered-places",
+      "unclustered-eat",
+      "unclustered-stays",
+    ]) {
       map.on("mouseenter", layer, () => {
         map.getCanvas().style.cursor = "pointer";
       });
