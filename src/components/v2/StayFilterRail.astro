@@ -1,0 +1,249 @@
+---
+/* Phase A.9 / Stay-launch filter rail — 9 category chips, single-select,
+   horizontal-scroll on mobile / wrap on desktop. Mirrors PlaceFilterRail
+   but without the planning-flag / badge secondary row: stays don't carry
+   planning_flags or local_favorite / viral fields. Region filtering is
+   handled by the shared LocationChipRow as on /places.
+
+   Filtering is client-side and in place. Chip state mirrors to the URL
+   (?chip=) for shareable links. Counts and the empty state live on
+   /stay; this component drives them by data-attribute. */
+import { STAYS_PRIMARY_CHIPS } from "../../data/stay-chips.js";
+
+interface Props {
+  counts: Record<string, number>; // primary_cat -> count
+}
+const { counts } = Astro.props;
+---
+
+<div class="srail" data-stay-rail>
+  <div class="srail-inner">
+    <div class="srail-track" role="group" aria-label="Filter stays by type">
+      {
+        STAYS_PRIMARY_CHIPS.map((c) => (
+          <button
+            type="button"
+            class="schip"
+            data-chip={c.value}
+            data-color={c.color}
+            aria-pressed="false"
+          >
+            {c.label}
+            <span class="schip-n">{counts[c.value] ?? 0}</span>
+          </button>
+        ))
+      }
+    </div>
+    <p class="srail-hint" data-srail-hint aria-hidden="true">{STAYS_PRIMARY_CHIPS.length} categories · scroll →</p>
+  </div>
+</div>
+
+<style>
+  .srail {
+    background: var(--color-white);
+  }
+  .srail-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+  }
+
+  .srail-track {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 12px var(--gutter-mobile) 8px;
+    scroll-padding-inline: var(--gutter-mobile);
+  }
+  .srail-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .srail-hint {
+    margin: 0;
+    padding: 0 var(--gutter-mobile) 12px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+
+  .schip {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 38px;
+    padding: 8px 14px;
+    background: transparent;
+    border: 1.5px solid var(--color-ink-black);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--color-ink-black);
+    transition: background-color 120ms ease-out, color 120ms ease-out;
+  }
+  .schip[data-color="blue"] {
+    --c: var(--color-konbini-blue);
+  }
+  .schip-n {
+    font-weight: 700;
+  }
+  .schip[hidden] {
+    display: none;
+  }
+  .schip.is-active {
+    background: var(--c);
+    border-color: var(--c);
+    color: #fff;
+  }
+
+  @media (min-width: 1024px) {
+    .srail-track {
+      flex-wrap: wrap;
+      overflow-x: visible;
+      padding: 16px var(--gutter-desktop) 16px;
+    }
+    .srail-hint {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const rail = document.querySelector("[data-stay-rail]");
+  if (rail) {
+    const chips = [...rail.querySelectorAll(".schip")];
+    const railHint = rail.querySelector("[data-srail-hint]");
+    const locationBtns = [
+      ...document.querySelectorAll(
+        "[data-location-row] [data-location-chip]",
+      ),
+    ];
+    const cards = [...document.querySelectorAll("[data-grid] .stc")];
+    const grid = document.querySelector("[data-grid]");
+    const countEl = document.querySelector("[data-count]");
+    const emptyEl = document.querySelector("[data-empty]");
+    const searchInput = document.querySelector("[data-search-input]");
+
+    const validLocations = new Set(
+      locationBtns.map((b) => b.dataset.locationChip || "").filter(Boolean),
+    );
+
+    let activeLocation = null;
+    let activeChip = null;
+    let query = "";
+
+    const cardData = cards.map((el) => ({
+      el,
+      chip: el.dataset.chip || "",
+      region: el.dataset.region || "",
+      search: el.dataset.search || "",
+    }));
+
+    const matches = (c, { location, chip, tokens }) => {
+      if (!tokens.every((t) => c.search.includes(t))) return false;
+      const okLocation = !location || c.region === location;
+      const okChip = !chip || c.chip === chip;
+      return okChip && okLocation;
+    };
+
+    const syncURL = () => {
+      const p = new URLSearchParams();
+      if (activeLocation) p.set("region", activeLocation);
+      if (activeChip) p.set("chip", activeChip);
+      const qs = p.toString();
+      history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+    };
+
+    const apply = () => {
+      const tokens = query.split(/\s+/).filter(Boolean);
+      const state = { location: activeLocation, chip: activeChip, tokens };
+
+      let n = 0;
+      for (const c of cardData) {
+        const show = matches(c, state);
+        c.el.hidden = !show;
+        if (show) n++;
+      }
+
+      for (const b of locationBtns) {
+        const v = b.dataset.locationChip || "";
+        const on = v === (activeLocation ?? "");
+        b.setAttribute("aria-pressed", String(on));
+        b.classList.toggle("is-active", on);
+      }
+
+      let visibleChips = 0;
+      for (const chip of chips) {
+        const v = chip.dataset.chip;
+        const count = cardData.reduce(
+          (a, c) => a + (matches(c, { ...state, chip: v }) ? 1 : 0),
+          0,
+        );
+        const nEl = chip.querySelector(".schip-n");
+        if (nEl) nEl.textContent = String(count);
+        const on = v === activeChip;
+        const hide = count === 0 && !on;
+        chip.hidden = hide;
+        if (!hide) visibleChips++;
+        chip.setAttribute("aria-pressed", String(on));
+        chip.classList.toggle("is-active", on);
+      }
+      if (railHint)
+        railHint.textContent = visibleChips + " categories · scroll →";
+
+      if (countEl) countEl.textContent = n + (n === 1 ? " stay" : " stays");
+      if (emptyEl) emptyEl.hidden = n !== 0;
+      if (grid) grid.hidden = n === 0;
+    };
+
+    const readURL = () => {
+      activeLocation = null;
+      activeChip = null;
+      const params = new URLSearchParams(location.search);
+      const region = params.get("region");
+      if (region && validLocations.has(region)) activeLocation = region;
+      const chip0 = params.get("chip");
+      if (chip0 && chips.some((c) => c.dataset.chip === chip0))
+        activeChip = chip0;
+    };
+
+    if (searchInput) {
+      searchInput.addEventListener("input", () => {
+        query = searchInput.value.trim().toLowerCase();
+        apply();
+      });
+    }
+
+    locationBtns.forEach((b) =>
+      b.addEventListener("click", () => {
+        const v = b.dataset.locationChip || "";
+        activeLocation = v && v !== activeLocation ? v : null;
+        apply();
+        syncURL();
+        b.scrollIntoView({ inline: "center", block: "nearest" });
+      }),
+    );
+    chips.forEach((c) =>
+      c.addEventListener("click", () => {
+        activeChip = activeChip === c.dataset.chip ? null : c.dataset.chip;
+        apply();
+        syncURL();
+        c.scrollIntoView({ inline: "center", block: "nearest" });
+      }),
+    );
+
+    window.addEventListener("popstate", () => {
+      readURL();
+      apply();
+    });
+
+    readURL();
+    apply();
+  }
+</script>

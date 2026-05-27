@@ -1,0 +1,197 @@
+---
+/* /stay — Phase A.9 / Stay-launch list page.
+   136-row collection (src/content/stays/) rendered as a sticky-rail grid
+   that mirrors /places: 9 category chips, region chips, search, list.
+   Map view is intentionally NOT included this phase — D7 hasn't yet
+   populated lat/lng for any stays, so the map source is empty (the
+   /map page's STAY layer carries an empty-state message until then). */
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import StayCard from "../components/v2/StayCard.astro";
+import StayFilterRail from "../components/v2/StayFilterRail.astro";
+import LocationChipRow from "../components/v2/LocationChipRow.astro";
+import SearchBox from "../components/v2/SearchBox.astro";
+import { prefectureToRegion, REGION_LABELS } from "../data/regions.js";
+
+const stays = await getCollection("stays");
+stays.sort((a, b) =>
+  a.data.name.toLowerCase().localeCompare(b.data.name.toLowerCase()),
+);
+const total = stays.length;
+
+const counts: Record<string, number> = {};
+for (const s of stays) {
+  const c = s.data.primary_cat;
+  if (c) counts[c] = (counts[c] ?? 0) + 1;
+}
+
+const regionCounts: Record<string, number> = {};
+for (const s of stays) {
+  const r = prefectureToRegion(s.data.prefecture);
+  if (r) regionCounts[r] = (regionCounts[r] ?? 0) + 1;
+}
+
+const regionChips = Object.entries(REGION_LABELS)
+  .map(([slug, label]) => ({ slug, label, count: regionCounts[slug] ?? 0 }))
+  .filter((c) => c.count > 0);
+---
+
+<Base
+  title="Where to stay in Japan — Japan Finds"
+  description={`${total} distinctive Japanese stays — onsen ryokan, design hotels, machiya, glamping and more. Filter by category and region.`}
+>
+  <Header />
+  <main id="main">
+    <section class="shero">
+      <div class="wrap">
+        <p class="eyebrow">JAPAN FINDS · WHERE TO STAY</p>
+        <h1>Where to actually stay in Japan.</h1>
+        <p class="shero-sub">
+          {total} distinctive stays — onsen ryokan, design hotels, machiya,
+          glamping and more. Filter to what you want to book.
+        </p>
+      </div>
+    </section>
+
+    <div class="rail-sticky">
+      <SearchBox placeholder={`Search ${total} stays`} />
+      <LocationChipRow chips={regionChips} hintLabel="regions" />
+      <StayFilterRail counts={counts} />
+    </div>
+
+    <section class="sresults">
+      <div class="wrap">
+        <h2 class="results-count" data-count>{total} stays</h2>
+        <p class="xlink">Looking for places to visit? <a href="/places">See → /places</a></p>
+        <div class="grid" data-grid>
+          {stays.map((s) => <StayCard entry={s} />)}
+        </div>
+        <p class="results-empty" data-empty hidden>
+          Nothing matches. Try a different category or region.
+        </p>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .wrap {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--gutter-mobile);
+  }
+
+  .rail-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-white);
+    border-bottom: var(--border-ink);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+
+  .shero {
+    padding: 30px 0 28px;
+  }
+  .shero h1 {
+    margin: 10px 0 0;
+    font-family: var(--font-head);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+  }
+  .shero-sub {
+    margin: 14px 0 0;
+    max-width: 40ch;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-ink-60);
+  }
+
+  .sresults {
+    background: var(--color-white);
+    padding: 20px 0 56px;
+  }
+  .results-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+    margin-bottom: 14px;
+  }
+  .xlink {
+    margin: -4px 0 14px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-60);
+  }
+  .xlink a {
+    color: var(--color-ink-black);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  /* Native lazy-render: skip layout/paint for off-screen cards so the
+     whole 136-card grid stays in the DOM (instant filtering) without
+     paying the up-front render cost. Matches /places. */
+  .grid :global(.stc) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 420px;
+  }
+  .results-empty {
+    padding: 48px 0;
+    font-family: var(--font-head);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding: 0 var(--gutter-desktop);
+    }
+    .shero {
+      padding: 56px 0 40px;
+    }
+    .shero h1 {
+      font-size: 72px;
+      letter-spacing: -0.035em;
+    }
+    .shero-sub {
+      font-size: 19px;
+    }
+    .sresults {
+      padding: 24px 0 72px;
+    }
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+  }
+</style>

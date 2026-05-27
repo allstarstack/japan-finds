@@ -1,0 +1,219 @@
+---
+/* Phase A.9 / Stay-launch stay card.
+   Mirrors PlaceCard.astro structure with the stays-schema fields surfaced:
+   description (2-3 line body), distinctive (italic "why this one" hook),
+   and source_url (external property link). Hero uses photo_cache_path
+   when D7 has populated it, otherwise a solid Aizome Indigo colour-block
+   placeholder — all 9 stays categories share that one Stay-card colour.
+
+   data-* attributes drive the client-side filter in StayFilterRail.
+   data-search composes name (en + jp), category label, location and the
+   distinctive line so a query for "ryokan", "Kyoto", or part of the
+   distinctive hook all resolve. */
+import type { CollectionEntry } from "astro:content";
+import { STAYS_PRIMARY_CHIPS, PRICE_TIER_GLYPH } from "../../data/stay-chips.js";
+import { prefectureToRegion } from "../../data/regions.js";
+
+interface Props {
+  entry: CollectionEntry<"stays">;
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+
+const chipMeta = STAYS_PRIMARY_CHIPS.find((c) => c.value === d.primary_cat);
+const catLabel = chipMeta?.label ?? d.primary_cat;
+const priceGlyph = PRICE_TIER_GLYPH[d.price_tier] ?? "";
+
+const regionSlug = prefectureToRegion(d.prefecture) ?? "";
+
+const searchText = [
+  d.name,
+  d.name_jp,
+  catLabel,
+  d.primary_cat,
+  d.city,
+  d.prefecture,
+  regionSlug,
+  d.distinctive,
+]
+  .filter(Boolean)
+  .join(" ")
+  .toLowerCase();
+---
+
+<article
+  id={entry.id}
+  class="stc"
+  data-slug={entry.id}
+  data-chip={d.primary_cat}
+  data-region={regionSlug}
+  data-price={d.price_tier}
+  data-search={searchText}
+>
+  <div class="stc-media">
+    {d.photo_cache_path ? (
+      <img
+        class="stc-img"
+        src={d.photo_cache_path}
+        alt=""
+        loading="lazy"
+        width="900"
+        height="600"
+      />
+    ) : (
+      <div class="stc-block" aria-hidden="true" />
+    )}
+  </div>
+  <div class="stc-body">
+    <div class="stc-meta">
+      <span class="chip chip--blue">{catLabel}</span>
+      {priceGlyph && <span class="stc-price" aria-label={`Price tier: ${d.price_tier}`}>{priceGlyph}</span>}
+    </div>
+    <h3 class="stc-name">{d.name}</h3>
+    {d.name_jp && <p class="stc-jp">{d.name_jp}</p>}
+    <p class="stc-area">{d.city}, {d.prefecture}</p>
+    <p class="stc-desc">{d.description}</p>
+    <p class="stc-distinctive"><em>{d.distinctive}</em></p>
+    <a class="stc-link" href={d.source_url} target="_blank" rel="noopener">
+      More about this stay&nbsp;→
+    </a>
+  </div>
+</article>
+
+<style>
+  .stc {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--color-rice-white);
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    transition: border-color 120ms ease-out;
+  }
+  .stc[hidden] {
+    display: none;
+  }
+  .stc:hover,
+  .stc:focus-within {
+    border-color: var(--color-ink-black);
+  }
+
+  .stc-media {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    overflow: hidden;
+  }
+  .stc-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Colour-block placeholder — single Stay-card colour (Aizome Indigo
+     in the map legend; konbini-blue in the design tokens). All 9 stays
+     categories share it. D7 swaps this for the real photo per-entry. */
+  .stc-block {
+    width: 100%;
+    height: 100%;
+    background: var(--color-konbini-blue);
+  }
+
+  .stc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    padding: 12px;
+  }
+
+  /* Category badge + price chip sit on one row above the name. */
+  .stc-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .stc-price {
+    padding: 2px 8px;
+    background: var(--color-concrete-gray);
+    border-radius: var(--radius-pill);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+  }
+
+  .stc-name {
+    margin: 3px 0 0;
+    font-family: var(--font-head);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+  }
+  .stc-jp {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+  }
+  .stc-area {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+  }
+  .stc-desc {
+    margin: 4px 0 0;
+    font-family: var(--font-body);
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--color-ink-black);
+    /* Bound to 3 visual lines so cards align across the grid even when
+       the YAML description varies in length. */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .stc-distinctive {
+    margin: 4px 0 0;
+    font-family: var(--font-body);
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .stc-link {
+    margin: auto 0 0;
+    padding-top: 10px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+    text-decoration: none;
+  }
+  .stc-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  @media (min-width: 1024px) {
+    .stc-body {
+      padding: 14px;
+    }
+    .stc-name {
+      font-size: 16px;
+    }
+  }
+</style>
