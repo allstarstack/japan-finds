@@ -1,10 +1,18 @@
 # /add-eats
 
 Append Tabelog Hyakumeiten restaurants into the Japan Finds /eat collection
-(`src/data/restaurants.json`). Accepts a Tabelog restaurant URL, a queue of
-URLs, pasted research markdown, or a "name + neighborhood + city" string as
-fallback. No photo input — restaurant heroes come from Google Places Photos
-via the existing enrichment script.
+(`src/data/restaurants.json`). Accepts a **Google Maps URL** or a **Tabelog
+restaurant URL** as equal-class first-class inputs — the URL itself
+disambiguates the processing path. Also accepts a queue of URLs (mixed types
+fine), pasted research markdown, or a "name + neighborhood + city" string as
+fallback when neither URL is handy. No photo input — restaurant heroes come
+from Google Places Photos via the existing enrichment script.
+
+Why both URL types are first-class: a Tabelog URL is faster when the user
+already has the tab open from research (Hyakumeiten badge is right on the
+page). A Google Maps URL is faster in-the-moment (mobile share from the Maps
+app — matches the /add-places convention). Neither is primary; the user
+picks whichever they have at hand.
 
 Restaurants not on a Tabelog Hyakumeiten list are gated behind an explicit
 policy override (see **Hyakumeiten gate** below). The /eat collection's
@@ -13,8 +21,8 @@ depends on every entry having a Hyakumeiten lineage OR a documented exception
 in the `policy_exception` field.
 
 ## Inputs to check
-1. `drafts/eats/links.txt` — one Tabelog URL per line. Ignore blank lines and `#`-prefixed comments.
-2. If the user pastes a single Tabelog URL in chat, process that and skip the folder scan.
+1. `drafts/eats/links.txt` — one URL per line. URLs may be Google Maps share URLs OR Tabelog restaurant URLs OR a mix; the per-item loop branches on host. Ignore blank lines and `#`-prefixed comments.
+2. If the user pastes a single URL in chat (Google Maps or Tabelog), process that and skip the folder scan.
 3. If the user pastes research markdown (Hyakumeiten-list scrapes from blog posts, summary tables, etc.), parse it: each named restaurant + neighborhood/city is one item.
 4. If the user pastes a plain "name + neighborhood + city" string (no URL), treat as a single item and resolve via Tabelog search + Places API Text Search.
 
@@ -33,6 +41,37 @@ Write ONLY fields present in existing restaurants.json entries. Do NOT invent sy
 The one new field this skill introduces is `policy_exception` (see **Hyakumeiten gate**). It is the only field that doesn't appear in existing entries — and only on entries that override the curation policy.
 
 ## Per-item loop
+
+The two URL paths converge on the same Hyakumeiten verification, place_id collision pre-check, and write logic. They differ only in how name + place_id + initial metadata are sourced. The Tabelog path is shorter when the Tabelog page is fetchable (Hyakumeiten badge is direct evidence); the Google Maps path requires one extra web-search step to find the corresponding Tabelog page.
+
+### If input is a GOOGLE MAPS URL:
+1. **Short-URL follow step.** If the URL is `https://maps.app.goo.gl/...` (Google's short share format, common from the mobile Maps app), follow the HTTP 302 redirect first to get the canonical URL. One-shot with `curl -sLI -A "Mozilla/5.0" <url>` and grep the `location:` header. Name and coordinates are embedded in the resolved URL's path (e.g. `/maps/place/<URL-encoded-name>/@<lat>,<lng>,...`). Don't try to parse the short URL itself — it carries no place identifiers.
+2. **Extract `place_id` if directly embedded** in the canonical URL (modern format: `?q=place_id:ChIJ...`). Older Maps URLs with geo IDs like `!1s0x...:0x...` are NOT the modern `place_id` and need to be resolved via Text Search anyway. If the canonical URL only carries name + coordinates, capture name + area and resolve in step 4.
+3. **Place_id collision pre-check (FIRST — before any spend).** If a `place_id` was directly extracted in step 2, run the pre-check immediately:
+   ```
+   grep -o '"place_id": "<ChIJ...>"' src/data/restaurants.json
+   ```
+   A hit means re-import. STOP for that item, log "duplicate of `<existing-id>`," skip without writing. No further API calls, no Tabelog search, no spend.
+4. **Resolve place_id + lat/lng/address via Places API Text Search** if not already extracted, using the canonical URL's embedded name + city/area:
+   ```
+   curl -s -X POST "https://places.googleapis.com/v1/places:searchText" \
+     -H "Content-Type: application/json" \
+     -H "X-Goog-Api-Key: $GOOGLE_PLACES_API_KEY" \
+     -H "X-Goog-FieldMask: places.id,places.displayName,places.formattedAddress,places.location,places.addressComponents" \
+     -d '{"textQuery": "<name from URL> <city/area from URL>"}'
+   ```
+   Then re-run the collision pre-check from step 3 against the newly-resolved `place_id`.
+5. **Find the corresponding Tabelog page via web search.** Capture the displayName (Japanese name preferred — it's what the URL carries) and search:
+   ```
+   <name_jp> tabelog
+   ```
+   Look for a `tabelog.com/<city>/A####/A######/########/` URL in the top results. If found, capture that URL — it becomes the canonical Tabelog reference for Hyakumeiten verification in step 7.
+6. **If no Tabelog page is found via web search** (no Tabelog result in top 5; or results are clearly wrong restaurants of the same name): treat this as a Hyakumeiten miss. Don't try to fetch Tabelog directly — there's no URL to fetch. Skip to step 7 and run the gate with `"Tabelog page (no Tabelog listing found via web search)"` in the bullet list.
+7. **Hyakumeiten verification.** Run the **Hyakumeiten gate** (below). If a Tabelog URL was found in step 5, the gate uses Tabelog page → `award.tabelog.com` → web search in that order. If no Tabelog URL was found in step 5, the gate uses `award.tabelog.com` (search by `<name_jp> <city>` against cuisine-list pages) + web search only — and the missing-Tabelog-listing fact is part of the gate prompt's bullet list. As always, the gate runs BEFORE any further paid API call; a declined gate costs $0.
+8. Apply the **Cuisine + city chip rules** (below). `cuisine_chip` comes from the Tabelog page's genre (if found) or from web-search context (Hyakumeiten cuisine listing the restaurant appears on). If neither yields a clear cuisine, STOP and ask — don't guess.
+9. Apply the **Price + reservation rules** (below). Source the dinner price range from the Tabelog page when available; otherwise from Places API price level (rough mapping) or from web-search hints. Mark confidence MED if price tier is inferred rather than read from Tabelog.
+10. Set confidence per the **Confidence levels** section below.
+11. Hero photo: fetch from Places API directly using the `photos` field from Place Details (the place_id is already resolved). Convert to `.webp`, save to `public/eat/<id>.webp`. If no photo available, leave `hero_image` unset and flag for manual override.
 
 ### If input is a TABELOG URL:
 1. **Tabelog is bot-protected on individual restaurant pages.** One WebFetch attempt with 20s timeout. If it succeeds, extract `name_jp`, `name_en` (romanization shown on the page), neighborhood, address, dinner price range, reservation policy, genre. If it fails, go to step 3.
@@ -60,7 +99,7 @@ The one new field this skill introduces is `policy_exception` (see **Hyakumeiten
 
 ### If input is the URL QUEUE (`drafts/eats/links.txt`):
 1. Read the file. Skip blank lines and `#`-prefixed comments.
-2. Process each URL through the TABELOG URL loop above, one at a time. Don't parallelize.
+2. For each URL, branch on host: `tabelog.com` → TABELOG URL loop above. `maps.app.goo.gl` or `google.com/maps` or `maps.google.com` → GOOGLE MAPS URL loop above. Anything else → log as "unrecognised URL host," skip. One URL at a time, don't parallelize.
 3. After every 5 items, briefly self-check the last 5 `notes` strings against `docs/brand.md` voice exemplars. Flag drift if you see it.
 
 ### If input is PASTED RESEARCH MARKDOWN:
@@ -252,12 +291,16 @@ If HIGH count is 0, skip the CSV refresh AND the pending-file update entirely.
 - If routing is ambiguous (could be /eat or /places), STOP and ask.
 
 ## Failure handling
+- Google Maps short URL doesn't resolve (302 returns no `location:` header, or canonical URL has no name embedded) → log the input, skip the item. No API spend.
+- Google Maps canonical URL resolves but Text Search returns no match for the embedded name → log + skip. Surface the displayName so the user can fall back to plain "name + neighborhood + city" input.
+- Google Maps path can't find a Tabelog page via web search → not a failure mode; the gate handles it (run the gate with `"Tabelog page (no Tabelog listing found via web search)"` in the bullet list). The user decides via the override prompt.
 - Tabelog restaurant page fetch fails (503 / bot block) → fall back to `award.tabelog.com` + web search. Cite all sources used in `notes`.
 - `award.tabelog.com` fetch fails too → web-search Hyakumeiten verification, run the gate with `"award.tabelog.com (bot-blocked, not verifiable)"` in the bullet list.
-- Place_id pre-check finds an existing entry with the same `place_id` → log "duplicate of `<existing-id>`," skip, no further API calls, no spend.
+- Place_id pre-check finds an existing entry with the same `place_id` → log "duplicate of `<existing-id>`," skip, no further API calls, no spend. Applies equally to both URL paths.
 - Place_id resolves to the wrong restaurant (chain-name confusion, common name in multiple cities) → log + skip. Don't write to the wrong restaurant.
 - Photo fetch fails (API photo missing, rate limit, network) → write the entry without `hero_image`, flag for manual override. Don't block the entry write on photo failure.
 - ID collision after 3 attempts (`<id>`, `<id>-2`, `<id>-3` all taken by *different* place_ids) → skip, log reason. If the collisions share a `place_id`, the pre-check is broken — surface the bug instead of silently skipping.
+- Unrecognised URL host in the queue file (not `tabelog.com` / `maps.app.goo.gl` / `google.com/maps` / `maps.google.com`) → log "unrecognised URL host," skip. Don't try to guess the path.
 - `GOOGLE_PLACES_API_KEY` missing from `.env.local` → STOP. Don't proceed with degraded mode.
 
 ## Cost awareness
