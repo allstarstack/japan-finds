@@ -19,71 +19,22 @@ import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import { existsSync, readFileSync } from "node:fs";
+import {
+  PLACES_LEGEND_ROWS,
+  EAT_LEGEND_ROWS,
+  STAY_LEGEND_ROWS,
+  STAY_PIN_COLOR,
+} from "../data/map-legends.js";
 
-/* Where (/places) sub-category legend — Phase A.9 C3 reordered to
-   "top hits first" intent priority (was legacy CSV-import order). Each
-   row is a toggle filter; clicking removes its `value` from the active
-   set. The `value` is the public_label slug (URL token in ?places=).
-   Keep this in sync with the Mapbox paint expression below — both
-   render the same color → category mapping. */
-const PLACES_LEGEND = [
-  { value: "nature_water",     label: "Nature & Water",     color: "#176BFF" },
-  { value: "culture_history",  label: "Culture & History",  color: "#FF3B30" },
-  { value: "onsen_ryokan",     label: "Onsen Towns",        color: "#9B7EBD" },
-  { value: "theme_parks",      label: "Theme Parks",        color: "#FFD84D" },
-  { value: "anime",            label: "Anime",              color: "#E91E63" },
-  { value: "cafes",            label: "Cafes",              color: "#D2B48C" },
-  { value: "food_markets",     label: "Food Markets",       color: "#D4A017" },
-  { value: "photo_spots",      label: "Photo Spots",        color: "#FF6B6B" },
-  { value: "animals",          label: "Animals",            color: "#4D8B57" },
-  { value: "workshops_crafts", label: "Workshops & Crafts", color: "#8B5A2B" },
-  { value: "scenic_transport", label: "Scenic Transport",   color: "#FF9800" },
-  { value: "parks",            label: "Parks",              color: "#A4C49C" },
-  { value: "quirky_museums",   label: "Quirky Museums",     color: "#7B3FA0" },
-  /* Base-tier rows carry empty public_label; toggling this hides them
-     as a group. The `value` "_base" is a private sentinel — never appears
-     in YAML, only in URL params and the in-memory active set. */
-  { value: "_base",            label: "Base towns",         color: "#999999" },
-];
-
-/* Eat (/eat) cuisine legend — Phase A.9 C3 adds the 13 chip-rail
-   cuisines as filter rows on /map. Source of truth: src/data/eat-chips.js
-   CUISINE_CHIPS. The swatch on /map is the white-ring style (matches
-   the pin paint — solid pin styling is for /eat-map only, where there's
-   nothing to differentiate against). Order matches the chip rail. */
-const EAT_LEGEND = [
-  { value: "sushi",       cuisine: "Sushi",                  label: "Sushi" },
-  { value: "tempura",     cuisine: "Tempura",                label: "Tempura" },
-  { value: "unagi",       cuisine: "Unagi",                  label: "Unagi" },
-  { value: "sukiyaki",    cuisine: "Sukiyaki & Shabu-shabu", label: "Sukiyaki & Shabu-shabu" },
-  { value: "yakiniku",    cuisine: "Yakiniku",               label: "Yakiniku" },
-  { value: "yakitori",    cuisine: "Yakitori",               label: "Yakitori" },
-  { value: "tonkatsu",    cuisine: "Tonkatsu",               label: "Tonkatsu" },
-  { value: "ramen",       cuisine: "Ramen",                  label: "Ramen" },
-  { value: "soba",        cuisine: "Soba",                   label: "Soba" },
-  { value: "udon",        cuisine: "Udon",                   label: "Udon" },
-  { value: "izakaya",     cuisine: "Izakaya",                label: "Izakaya" },
-  { value: "okonomiyaki", cuisine: "Okonomiyaki",            label: "Okonomiyaki" },
-  { value: "shokudo",     cuisine: "Shokudo",                label: "Shokudo" },
-];
-
-/* Phase A.9 Stay sub-category legend (PHASE_A9_BUILD_SPEC §2).
-   All 9 rows share Aizome Indigo — sub-category is the legend axis;
-   colour stays uniform per source. Display label "Capsule & novelty"
-   maps to the storage slug `capsule_themed` (slug-stable, label-mutable
-   per the spec). Order is the spec's table — by row count, descending. */
-const STAY_INDIGO = "#3B4F81";
-const STAY_LEGEND = [
-  { value: "onsen_ryokan",    label: "Onsen ryokan" },
-  { value: "design_hotel",    label: "Design hotel" },
-  { value: "machiya_kominka", label: "Machiya & kominka" },
-  { value: "glamping",        label: "Glamping" },
-  { value: "resort",          label: "Resort" },
-  { value: "capsule_themed",  label: "Capsule & novelty" },
-  { value: "mountain_lodge",  label: "Mountain lodge" },
-  { value: "heritage_hotel",  label: "Heritage hotel" },
-  { value: "temple_stay",     label: "Temple stay" },
-];
+/* Legend rows are imported above. `slug` is the public_label /
+   cuisine / primary_cat token used by URL params, the in-memory
+   filter state, and the Mapbox paint expressions. Phase A.9 C3
+   "top hits first" intent priority lives in map-legends.js so the
+   ordering choice is preserved alongside its companion paint data. */
+const PLACES_LEGEND = PLACES_LEGEND_ROWS;
+const EAT_LEGEND = EAT_LEGEND_ROWS;
+const STAY_LEGEND = STAY_LEGEND_ROWS;
+const STAY_INDIGO = STAY_PIN_COLOR;
 
 /* Phase A.9 C6 — empty-state for sources with zero placed markers.
    Read at build time from the prebuild-generated geojson. If a source
@@ -125,7 +76,7 @@ const EMPTY_STATE_MESSAGE: Record<string, (n: number) => string> = {
 // Row count excludes the _base sentinel for /places (Base towns isn't
 // a category in the human sense — it's the catchall for unlabeled
 // rows). Other sources count all rows.
-const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length;
+const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
 ---
 
 <Base
@@ -201,7 +152,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
                 <li
                   class="map-legend-row"
                   data-legend-row="places"
-                  data-value={c.value}
+                  data-value={c.slug}
                   data-active="true"
                   role="button"
                   tabindex={isSourceEmpty("places") ? -1 : 0}
@@ -237,7 +188,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
                 <li
                   class="map-legend-row"
                   data-legend-row="eat"
-                  data-value={c.value}
+                  data-value={c.slug}
                   data-active="true"
                   role="button"
                   tabindex={isSourceEmpty("eat") ? -1 : 0}
@@ -272,7 +223,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
                 <li
                   class="map-legend-row"
                   data-legend-row="stay"
-                  data-value={s.value}
+                  data-value={s.slug}
                   data-active="true"
                   role="button"
                   tabindex={isSourceEmpty("stay") ? -1 : 0}
@@ -815,6 +766,19 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
 <script>
   import mapboxgl from "mapbox-gl";
   import "mapbox-gl/dist/mapbox-gl.css";
+  import {
+    MAP_INIT,
+    PLACES_LEGEND_SLUGS,
+    EAT_LEGEND_SLUGS,
+    STAY_LEGEND_SLUGS,
+    EAT_SLUG_TO_CUISINE,
+    EAT_CUISINE_TO_SLUG,
+    PLACES_PAINT_COLOR,
+    EAT_RING_FILL,
+    EAT_RING_STROKE,
+    STAY_PIN_COLOR,
+    STAY_SLUG_TO_LABEL,
+  } from "../data/map-legends.js";
 
   // Inlined at build time. On Vercel = real production token; localhost
   // with the .env placeholder will 401-fail (caught by the error overlay).
@@ -840,44 +804,15 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
   let map;
   let mapErrored = false;
 
-  /* ---------- Phase A.9 C5 — legend slug catalogue ----------
-     One Set per mode, used to validate URL ?cluster= values against
-     known slugs. Keys are the data-legend-section attribute (i.e. the
-     source name, not the mode name) so the existing legend markup
-     doesn't need to change. */
+  /* Per-mode slug Sets for URL ?cluster= validation. Keys are the
+     data-legend-section attribute (the source name, not the mode
+     name) so the legend markup is unchanged. Slug sets and the
+     EAT slug↔cuisine maps are imported from map-legends.js. */
   const LEGEND_SLUG_SETS = {
-    places: new Set(["nature_water", "culture_history", "animals",
-      "quirky_museums", "anime", "onsen_ryokan", "photo_spots",
-      "scenic_transport", "theme_parks", "parks", "workshops_crafts",
-      "food_markets", "cafes", "_base"]),
-    eat: new Set(["sushi", "tempura", "unagi", "sukiyaki", "yakiniku",
-      "yakitori", "tonkatsu", "ramen", "soba", "udon", "izakaya",
-      "okonomiyaki", "shokudo"]),
-    stay: new Set(["onsen_ryokan", "design_hotel", "machiya_kominka",
-      "glamping", "resort", "capsule_themed", "mountain_lodge",
-      "heritage_hotel", "temple_stay"]),
+    places: PLACES_LEGEND_SLUGS,
+    eat: EAT_LEGEND_SLUGS,
+    stay: STAY_LEGEND_SLUGS,
   };
-  // Eat URL slug → restaurants.json cuisine_chip value. Used at filter
-  // time so the feature's `cuisine` property can be tested against the
-  // lowercase slug set.
-  const EAT_SLUG_TO_CUISINE = {
-    sushi: "Sushi",
-    tempura: "Tempura",
-    unagi: "Unagi",
-    sukiyaki: "Sukiyaki & Shabu-shabu",
-    yakiniku: "Yakiniku",
-    yakitori: "Yakitori",
-    tonkatsu: "Tonkatsu",
-    ramen: "Ramen",
-    soba: "Soba",
-    udon: "Udon",
-    izakaya: "Izakaya",
-    okonomiyaki: "Okonomiyaki",
-    shokudo: "Shokudo",
-  };
-  const EAT_CUISINE_TO_SLUG = Object.fromEntries(
-    Object.entries(EAT_SLUG_TO_CUISINE).map(([s, c]) => [c, s]),
-  );
 
   /* ---------- URL state — single ?mode= + optional ?cluster= ----------
      Phase A.9 C5: trade C3/C4's three-param scheme for one mode param.
@@ -1137,18 +1072,12 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
   // that readModeFromURL migrated into mode/cluster.
   syncURL();
 
+  // MAP_INIT centralizes style/center/zoom/hash so MapView.astro on
+  // /places-map and /eat-map opens at the same viewport. Mapbox-native
+  // hash sync (#zoom/lat/lng) lives there too.
   map = new mapboxgl.Map({
     container: "japan-map",
-    style: "mapbox://styles/mapbox/light-v11",
-    center: [138, 36],
-    zoom: 4.5,
-    minZoom: 4,
-    maxZoom: 18,
-    // Mapbox-native URL hash sync. Format: #zoom/lat/lng[/bearing/pitch].
-    // Note: user spec said #lng/lat/zoom — Mapbox's native order is
-    // zoom/lat/lng. If a custom order is wanted later, replace with custom
-    // moveend+zoomend handlers writing window.location.hash.
-    hash: true,
+    ...MAP_INIT,
   });
 
   // Mapbox auth/network errors → show the error overlay instead of
@@ -1262,8 +1191,9 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
     // culture", "lots of workshops here") that the old My Maps had and the
     // primary_category-only colouring lost. Empty public_label (base-tier
     // rows: ~22 places like base towns / stay bases) falls through to
-    // Concrete Gray. Keep this expression in sync with SUBCAT_LEGEND in
-    // the frontmatter — both render the same color → category mapping.
+    // Concrete Gray. Paint expression imported from map-legends.js — it's
+    // built from the same dict the legend swatches read, so colour →
+    // category drift across the two is structurally impossible.
     map.addLayer({
       id: "unclustered-places",
       type: "circle",
@@ -1274,24 +1204,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
         ["==", ["get", "source"], "places"],
       ],
       paint: {
-        "circle-color": [
-          "match",
-          ["get", "public_label"],
-          "nature_water", "#176BFF",
-          "culture_history", "#FF3B30",
-          "animals", "#4D8B57",
-          "quirky_museums", "#7B3FA0",
-          "anime", "#E91E63",
-          "onsen_ryokan", "#9B7EBD",
-          "photo_spots", "#FF6B6B",
-          "scenic_transport", "#FF9800",
-          "theme_parks", "#FFD84D",
-          "parks", "#A4C49C",
-          "workshops_crafts", "#8B5A2B",
-          "food_markets", "#D4A017",
-          "cafes", "#D2B48C",
-          /* base-tier / no public_label */ "#999999",
-        ],
+        "circle-color": PLACES_PAINT_COLOR,
         "circle-radius": 6,
         "circle-stroke-width": 1.5,
         "circle-stroke-color": "#151515",
@@ -1312,10 +1225,10 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
         ["==", ["get", "source"], "eat"],
       ],
       paint: {
-        "circle-color": "#FFFFFF",
+        "circle-color": EAT_RING_FILL,
         "circle-radius": 6,
         "circle-stroke-width": 2.5,
-        "circle-stroke-color": "#FF3B30",
+        "circle-stroke-color": EAT_RING_STROKE,
       },
     });
 
@@ -1335,7 +1248,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
         ["==", ["get", "source"], "stay"],
       ],
       paint: {
-        "circle-color": "#3B4F81",
+        "circle-color": STAY_PIN_COLOR,
         "circle-radius": 6,
         "circle-stroke-width": 1.5,
         "circle-stroke-color": "#151515",
@@ -1387,23 +1300,11 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
         `;
       }
       if (p.source === "stay") {
-        // No /stay route this phase, so the CTA is the official source
-        // URL (hotel site). Slug → display label is duplicated here from
-        // STAY_LEGEND in the frontmatter; if you change either keep both
-        // in sync (one map, both sides of the JS↔Astro boundary).
-        const STAY_CAT_LABEL = {
-          onsen_ryokan: "Onsen ryokan",
-          design_hotel: "Design hotel",
-          machiya_kominka: "Machiya & kominka",
-          glamping: "Glamping",
-          resort: "Resort",
-          capsule_themed: "Capsule & novelty",
-          mountain_lodge: "Mountain lodge",
-          heritage_hotel: "Heritage hotel",
-          temple_stay: "Temple stay",
-        };
+        // CTA: external hotel site (no /stay detail route this phase).
+        // STAY_SLUG_TO_LABEL imported from map-legends.js — same data
+        // the legend renders, so popup labels can't drift from legend.
         const where = [p.city, p.prefecture].filter(Boolean).join(", ");
-        const meta = [STAY_CAT_LABEL[p.primary_cat] || p.primary_cat, p.price_tier]
+        const meta = [STAY_SLUG_TO_LABEL[p.primary_cat] || p.primary_cat, p.price_tier]
           .filter(Boolean)
           .join(" · ");
         const nameHTML = p.name_jp

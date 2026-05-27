@@ -25,6 +25,10 @@
    dispatch a "mapview:show" CustomEvent so MapView can call map.resize()
    (Mapbox needs to recompute when its container transitions from 0×0). */
 import "mapbox-gl/dist/mapbox-gl.css";
+import {
+  PLACES_LEGEND_ROWS,
+  EAT_LEGEND_ROWS,
+} from "../../data/map-legends.js";
 
 interface Props {
   containerId: string;
@@ -44,49 +48,7 @@ const {
   legendKind = "places",
 } = Astro.props;
 
-/* /places-map sub-category legend — same 13 colours as /map standalone,
-   plus the Base towns fallback row. No Tabelog row here (this view is
-   source==="places" only; Tabelog is in /eat). */
-const PLACES_LEGEND = [
-  { label: "Nature & Water",     color: "#176BFF" },
-  { label: "Culture & History",  color: "#FF3B30" },
-  { label: "Animals",            color: "#4D8B57" },
-  { label: "Quirky Museums",     color: "#7B3FA0" },
-  { label: "Anime",              color: "#E91E63" },
-  { label: "Onsen Towns",        color: "#9B7EBD" },
-  { label: "Photo Spots",        color: "#FF6B6B" },
-  { label: "Scenic Transport",   color: "#FF9800" },
-  { label: "Theme Parks",        color: "#FFD84D" },
-  { label: "Parks",              color: "#A4C49C" },
-  { label: "Workshops & Crafts", color: "#8B5A2B" },
-  { label: "Food Markets",       color: "#D4A017" },
-  { label: "Cafes",              color: "#D2B48C" },
-  { label: "Base towns",         color: "#999999" },
-];
-
-/* /eat-map cuisine legend — pulls from RestaurantCard.astro's existing
-   .rc-block-- palette. Two adjustments for map visibility:
-     - "ink" (Unagi, Yakiniku) keeps fill #151515 but uses Rice White
-       border so the pin isn't ink-on-ink.
-     - "gray" (Soba, Udon) shifts from #e6e1d8 Concrete Gray (too close
-       to the Rice White map background) to #999999 medium gray. */
-const EAT_LEGEND = [
-  { label: "Sushi",                  color: "#ff3b30" },
-  { label: "Tempura",                color: "#ffd84d" },
-  { label: "Unagi",                  color: "#151515" },
-  { label: "Sukiyaki & Shabu-shabu", color: "#b93028" },
-  { label: "Yakiniku",               color: "#151515" },
-  { label: "Yakitori",               color: "#176bff" },
-  { label: "Tonkatsu",               color: "#ffd84d" },
-  { label: "Ramen",                  color: "#ff3b30" },
-  { label: "Soba",                   color: "#999999" },
-  { label: "Udon",                   color: "#999999" },
-  { label: "Izakaya",                color: "#4d8b57" },
-  { label: "Okonomiyaki",            color: "#ffd84d" },
-  { label: "Shokudo",                color: "#4d8b57" },
-];
-
-const legendRows = legendKind === "eat" ? EAT_LEGEND : PLACES_LEGEND;
+const legendRows = legendKind === "eat" ? EAT_LEGEND_ROWS : PLACES_LEGEND_ROWS;
 ---
 
 <div
@@ -409,65 +371,30 @@ const legendRows = legendKind === "eat" ? EAT_LEGEND : PLACES_LEGEND;
 
 <script>
   import mapboxgl from "mapbox-gl";
+  import {
+    MAP_INIT,
+    PLACES_PAINT_COLOR,
+    EAT_PAINT_COLOR,
+    EAT_PAINT_STROKE,
+  } from "../../data/map-legends.js";
 
-  /* Pin paint expressions — defined once, selected by sourceFilter. */
+  /* Pin paint expressions — selected by sourceFilter. /eat pins are
+     solid (not ring) on /eat-map; per-cuisine fill from the shared
+     module. Border colour flips to Rice White only for the two
+     ink-filled cuisines (Unagi, Yakiniku) so the dark pin remains
+     visible against the ink-on-light map background. */
   const PLACES_PAINT = {
-    "circle-color": [
-      "match",
-      ["get", "public_label"],
-      "nature_water", "#176BFF",
-      "culture_history", "#FF3B30",
-      "animals", "#4D8B57",
-      "quirky_museums", "#7B3FA0",
-      "anime", "#E91E63",
-      "onsen_ryokan", "#9B7EBD",
-      "photo_spots", "#FF6B6B",
-      "scenic_transport", "#FF9800",
-      "theme_parks", "#FFD84D",
-      "parks", "#A4C49C",
-      "workshops_crafts", "#8B5A2B",
-      "food_markets", "#D4A017",
-      "cafes", "#D2B48C",
-      /* base-tier / no public_label */ "#999999",
-    ],
+    "circle-color": PLACES_PAINT_COLOR,
     "circle-radius": 6,
     "circle-stroke-width": 1.5,
     "circle-stroke-color": "#151515",
   };
 
-  /* /eat pins are solid (not ring) on /eat-map — no source differentiation
-     needed when the whole map is /eat. Per-cuisine fill colours from the
-     existing RestaurantCard tokens. Border colour expression flips to Rice
-     White only for the two ink-filled cuisines so the dark pin remains
-     visible. */
   const EAT_PAINT = {
-    "circle-color": [
-      "match",
-      ["get", "cuisine"],
-      "Sushi", "#ff3b30",
-      "Tempura", "#ffd84d",
-      "Unagi", "#151515",
-      "Sukiyaki & Shabu-shabu", "#b93028",
-      "Yakiniku", "#151515",
-      "Yakitori", "#176bff",
-      "Tonkatsu", "#ffd84d",
-      "Ramen", "#ff3b30",
-      "Soba", "#999999",
-      "Udon", "#999999",
-      "Izakaya", "#4d8b57",
-      "Okonomiyaki", "#ffd84d",
-      "Shokudo", "#4d8b57",
-      "#999999",
-    ],
+    "circle-color": EAT_PAINT_COLOR,
     "circle-radius": 6,
     "circle-stroke-width": 1.5,
-    "circle-stroke-color": [
-      "match",
-      ["get", "cuisine"],
-      "Unagi", "#F7F3EA",
-      "Yakiniku", "#F7F3EA",
-      "#151515",
-    ],
+    "circle-stroke-color": EAT_PAINT_STROKE,
   };
 
   /* Initialize each MapView instance on the page. There's typically one,
@@ -483,12 +410,7 @@ const legendRows = legendKind === "eat" ? EAT_LEGEND : PLACES_LEGEND;
 
     const map = new mapboxgl.Map({
       container: containerId,
-      style: "mapbox://styles/mapbox/light-v11",
-      center: [138, 36],
-      zoom: 4.5,
-      minZoom: 4,
-      maxZoom: 18,
-      hash: true,
+      ...MAP_INIT,
     });
 
     /* State scoped to this MapView instance. */
