@@ -18,6 +18,7 @@
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import { existsSync, readFileSync } from "node:fs";
 
 /* Where (/places) sub-category legend — Phase A.9 C3 reordered to
    "top hits first" intent priority (was legacy CSV-import order). Each
@@ -83,6 +84,48 @@ const STAY_LEGEND = [
   { value: "heritage_hotel",  label: "Heritage hotel" },
   { value: "temple_stay",     label: "Temple stay" },
 ];
+
+/* Phase A.9 C6 — empty-state for sources with zero placed markers.
+   Read at build time from the prebuild-generated geojson. If a source
+   has 0 features in the file, its legend section renders a brand-voice
+   message above dimmed, non-interactive rows. Generalizable to any
+   source — currently triggers only for stays (D7-style lat/lng
+   enrichment is the followup workstream).
+   countsAvailable: false in dev-server without prebuild → empty state
+   is suppressed entirely (no false-positive on a fresh checkout). */
+const GEOJSON_PATH = "public/places.geojson";
+const PLACED_COUNTS: Record<string, number> = { places: 0, eat: 0, stay: 0 };
+let countsAvailable = false;
+if (existsSync(GEOJSON_PATH)) {
+  try {
+    const geojson = JSON.parse(readFileSync(GEOJSON_PATH, "utf-8"));
+    for (const f of geojson.features ?? []) {
+      const src = f?.properties?.source;
+      if (src && src in PLACED_COUNTS) PLACED_COUNTS[src]++;
+    }
+    countsAvailable = true;
+  } catch (e) {
+    console.warn("[/map] could not read", GEOJSON_PATH, e);
+  }
+}
+const isSourceEmpty = (src: string) =>
+  countsAvailable && PLACED_COUNTS[src] === 0;
+
+// Per-source empty-state copy. Row-count substitutes for the
+// "<n> categories" part. Same shape across sources so a future zero-
+// placed source picks the matching template without code changes; new
+// sources just add an entry here. Brand voice: short, declarative,
+// no apology — "curated" signals the work is done, "verified" signals
+// what's pending.
+const EMPTY_STATE_MESSAGE: Record<string, (n: number) => string> = {
+  places: (n) => `${n} place categories curated. Locations being verified — pins appear soon.`,
+  eat: (n) => `${n} cuisine categories curated. Locations being verified — pins appear soon.`,
+  stay: (n) => `${n} stay categories curated. Locations being verified — pins appear soon.`,
+};
+// Row count excludes the _base sentinel for /places (Base towns isn't
+// a category in the human sense — it's the catchall for unlabeled
+// rows). Other sources count all rows.
+const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length;
 ---
 
 <Base
@@ -141,8 +184,17 @@ const STAY_LEGEND = [
           (so a single tap on "Ramen" jumps straight to Eat-mode focused
           on Ramen, even if you started in the default trip-planner view). */}
       <div id="map-legend-list" class="map-legend-list" data-legend-list>
-        <div class="map-legend-section" data-legend-section="places">
+        <div
+          class="map-legend-section"
+          data-legend-section="places"
+          data-empty={isSourceEmpty("places") ? "true" : "false"}
+        >
           <span class="map-legend-section-title">Where</span>
+          {isSourceEmpty("places") && (
+            <p class="map-legend-empty">
+              {EMPTY_STATE_MESSAGE.places(PLACES_ROW_COUNT)}
+            </p>
+          )}
           <ul class="map-legend-rows">
             {
               PLACES_LEGEND.map((c) => (
@@ -152,8 +204,9 @@ const STAY_LEGEND = [
                   data-value={c.value}
                   data-active="true"
                   role="button"
-                  tabindex="0"
+                  tabindex={isSourceEmpty("places") ? -1 : 0}
                   aria-pressed="false"
+                  aria-disabled={isSourceEmpty("places") ? "true" : "false"}
                 >
                   <span
                     class="map-legend-swatch"
@@ -167,8 +220,17 @@ const STAY_LEGEND = [
           </ul>
         </div>
 
-        <div class="map-legend-section" data-legend-section="eat">
+        <div
+          class="map-legend-section"
+          data-legend-section="eat"
+          data-empty={isSourceEmpty("eat") ? "true" : "false"}
+        >
           <span class="map-legend-section-title">Eat</span>
+          {isSourceEmpty("eat") && (
+            <p class="map-legend-empty">
+              {EMPTY_STATE_MESSAGE.eat(EAT_LEGEND.length)}
+            </p>
+          )}
           <ul class="map-legend-rows">
             {
               EAT_LEGEND.map((c) => (
@@ -178,8 +240,9 @@ const STAY_LEGEND = [
                   data-value={c.value}
                   data-active="true"
                   role="button"
-                  tabindex="0"
+                  tabindex={isSourceEmpty("eat") ? -1 : 0}
                   aria-pressed="false"
+                  aria-disabled={isSourceEmpty("eat") ? "true" : "false"}
                 >
                   <span
                     class="map-legend-swatch map-legend-swatch--ring"
@@ -192,8 +255,17 @@ const STAY_LEGEND = [
           </ul>
         </div>
 
-        <div class="map-legend-section" data-legend-section="stay">
+        <div
+          class="map-legend-section"
+          data-legend-section="stay"
+          data-empty={isSourceEmpty("stay") ? "true" : "false"}
+        >
           <span class="map-legend-section-title">Stay</span>
+          {isSourceEmpty("stay") && (
+            <p class="map-legend-empty">
+              {EMPTY_STATE_MESSAGE.stay(STAY_LEGEND.length)}
+            </p>
+          )}
           <ul class="map-legend-rows">
             {
               STAY_LEGEND.map((s) => (
@@ -203,8 +275,9 @@ const STAY_LEGEND = [
                   data-value={s.value}
                   data-active="true"
                   role="button"
-                  tabindex="0"
+                  tabindex={isSourceEmpty("stay") ? -1 : 0}
                   aria-pressed="false"
+                  aria-disabled={isSourceEmpty("stay") ? "true" : "false"}
                 >
                   <span
                     class="map-legend-swatch"
@@ -619,6 +692,33 @@ const STAY_LEGEND = [
     font-weight: 600;
   }
 
+  /* Phase A.9 C6 — empty-state for sources with zero placed markers.
+     Brand-voice inline message above the rows; all rows in the empty
+     section dim and become non-interactive (pointer-events disabled,
+     out of tab order, aria-disabled). When enrichment lands and the
+     section becomes non-empty, this whole block silently drops away
+     — data-empty flips to "false" at build time. */
+  .map-legend-empty {
+    margin: 0 0 6px;
+    padding: 0;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--color-ink-60);
+  }
+  .map-legend-section[data-empty="true"] .map-legend-row {
+    opacity: 0.4;
+    pointer-events: none;
+    cursor: default;
+  }
+  .map-legend-section[data-empty="true"] .map-legend-row .map-legend-label {
+    color: var(--color-ink-30);
+  }
+  .map-legend-section[data-empty="true"] .map-legend-row:hover {
+    background: transparent;
+  }
+
   /* Error overlay — auth/network failure. Replaces the silent blank gray. */
   .map-error {
     position: absolute;
@@ -985,6 +1085,9 @@ const STAY_LEGEND = [
 
   function setupLegendRows() {
     function activate(row) {
+      // C6: rows in empty sections are decorative only — pointer-events
+      // already blocks clicks, but keyboard activation also gates here.
+      if (row.getAttribute("aria-disabled") === "true") return;
       const src = row.dataset.legendRow;
       const slug = row.dataset.value;
       const targetMode = Object.entries(MODE_TO_SOURCE)
