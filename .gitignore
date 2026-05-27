@@ -43,3 +43,14 @@ src/data/restaurants.json.bak
 drafts/photos/
 drafts/_review/
 drafts/links.txt
+
+# Scratch artifacts from past enrichment / pilot runs — local-only:
+# Phase D D5 download/merge dumps, the Chrome smoke-test runners' JSON
+# outputs, the 25-row pilot fixture, and the null-image / miss inventories.
+d5d_responses/
+d5d_tabs/
+chrome_test_*.json
+chrome_smoke_10.json
+pilot_25.json
+null_image_products.json
+all_misses.txt

@@ -118,11 +118,13 @@ const mapsUrl = r.place_id
   }
   /* Phase A.9 C4 — :target highlight when a /map popup CTA deep-links
      to this card (href="/eat#<slug>"). 2-second Egg Sando Yellow glow
-     that fades to nothing. Mirrors the PlaceCard :target rule for
-     symmetry across both list pages. */
+     that fades to nothing. Mirrors the PlaceCard :target rule. The
+     scroll-margin must clear the sticky chip rail (view-toggle +
+     LocationChipRow + ChipRow ≈ 200px); the original 80px dropped the
+     landed card under the rail. */
   .rc:target {
     animation: rc-target-highlight 2s ease-out;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 220px;
   }
   @keyframes rc-target-highlight {
     0% {

@@ -179,11 +179,14 @@ const searchText = [
   /* Phase A.9 C4 — :target highlight when a /map popup CTA deep-links
      to this card (href="/places#<slug>"). 2-second Egg Sando Yellow
      glow that fades to nothing so the user spots the landed card.
-     scroll-margin-top keeps the card clear of the sticky header on
-     auto-scroll. */
+     scroll-margin-top must clear the sticky chip rail (view-toggle +
+     SearchBox + LocationChipRow + PlaceFilterRail ≈ 220px when pinned
+     at the top of the viewport after scroll). An 80px value here used
+     to drop the landed card under the rail, which looked like the
+     scroll had failed entirely. */
   .plc:target {
     animation: plc-target-highlight 2s ease-out;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 220px;
   }
   @keyframes plc-target-highlight {
     0% {

@@ -394,6 +394,15 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.value !== "_base").length
   .mapboxgl-ctrl-attrib {
     background: rgba(247, 243, 234, 0.85) !important;
   }
+  /* Mapbox vendor logo defaults to 21px tall, which trips Lighthouse
+     a11y "tap targets are sized appropriately" (WCAG 2.2 target-size,
+     ≥24×24 CSS px). Bumping the height clears the audit without
+     altering the wordmark's aspect ratio — the background-image still
+     centers, and the wider element is incidentally easier to hit. */
+  .mapboxgl-ctrl-logo {
+    height: 24px !important;
+    background-size: contain !important;
+  }
 </style>
 
 <style>
