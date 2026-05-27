@@ -1,0 +1,174 @@
+D5c Editorial Review Flagged Rows
+Generated: 2026-05-20
+Input: docs/d5/products_enriched_master.json (455 records)
+Queue: docs/d5/d5_review_queue.txt (362 slugs)
+Flagged: 21 rows
+Passed: 341 rows
+
+
+slug: character-snack-tins
+confidence: low
+description: Character snack tins. Cookies or candy in a tin people keep forever and call storage. Good for kids, coworkers, and your inner raccoon.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: character-toothbrushes
+confidence: low
+description: Character toothbrushes. Tiny travel toothbrushes wearing Sanrio, Pokemon, or Anpanman branding. Useful, cute, and somehow cheaper than coffee.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: cheap-hard-shell-suitcase
+confidence: low
+description: Cheap hard-shell suitcase. Extra luggage for the final boss called 'I bought too much.' Buy it near the end, not day two.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: cheap-uncertified-electronics
+confidence: low
+description: Cheap no-name electronics. The price looks brave; the charger looks like a lawsuit. Stick to known brands for adapters and heat tools.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: coin-purse
+confidence: low
+description: Gamaguchi coin purse. Tiny clasp pouch for the yen avalanche. Buy one before the 1-yen coins start reproducing.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: daiso-silicone-egg-cooker
+confidence: low
+description: Daiso silicone egg cooker. Microwave egg gadget for hotel-room snack scientists.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: daiso-tabi-socks-toe-split
+confidence: low
+description: Daiso tabi socks. Toe-split socks for geta, sandals, or maximum foot confusion.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: konbini-vinyl-umbrella
+confidence: low
+description: Konbini vinyl umbrella. Clear plastic umbrella sold when the sky betrays everyone. Buy one once, lose it twice, join Japan.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: microwave-ramen-cooker
+confidence: medium
+description: Microwave ramen cooker. Makes instant noodles without a stove, then becomes the bowl. Dorm room, hotel room, lazy-night engineering.
+flags:
+  safety_candidate:
+    - voltage_candidate: matched 'Microwave' in name/category — no voltage safety flag
+
+
+slug: microwave-rice-cooker-cup
+confidence: low
+description: Microwave rice cooker cup. One-cup rice maker for people who refuse full appliance commitment. Tiny kitchen law and order for solo meals.
+flags:
+  safety_candidate:
+    - voltage_candidate: matched 'Microwave' in name/category — no voltage safety flag
+
+
+slug: sea-urchin-uni-in-tube
+confidence: low
+description: Uni tube. Briny sea urchin paste for rice, pasta, and people who think butter is too emotionally stable.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: shoe-bag
+confidence: low
+description: Shoe bag. A travel pouch for shoes, because Japan is very good at reminding your sneakers they are the problem.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: strong-zero
+confidence: medium
+description: Strong Zero chu-hi. 9% ABV, cheap, fizzy, and famously disrespectful to your evening plans. Lemon and grapefruit are the konbini classics.
+flags:
+  safety_candidate:
+    - grapefruit_strong_zero_hard_avoid: explicit hard-avoid candidate per brand.md
+
+
+slug: strong-zero-hangover-cure-aisle-items
+confidence: low
+description: Ukon no Chikara. Tiny turmeric drink parked near the alcohol-regret shelf. Konbini pregame logic in a 100 ml bottle.
+flags:
+  safety_candidate:
+    - alcohol_candidate: matched 'Strong Zero' — no alcohol safety flag
+
+
+slug: tiny-scissors-with-cap
+confidence: low
+description: Tiny scissors with cap. Pocket scissors with a blade cover, made for tags, packaging, and emergency hangnail diplomacy. The kind of cheap shop item that saves a whole day.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: tokyo-milk-cheese-factory-cookies
+confidence: low
+description: Tokyo Milk Cheese Factory cookies. Thin cheese-and-milk sandwich cookies with that sweet-salty thing Japan does too well. Buy them when the souvenir needs to look expensive without behaving like luggage.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: toraya-yokan
+confidence: low
+description: Toraya yokan. Dense bean jelly in a polished gift box. Serious wagashi for tea people, grandparents, and anyone immune to cute packaging.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: traveler-s-notebook-refill
+confidence: low
+description: Traveler's Notebook refill. Slim paper refill for the leather notebook system. The blank one is the safer buy when your travel plans already have enough structure.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: tsukemono-pickles-pack
+confidence: low
+description: Tsukemono pickles pack. Crunchy salted pickles for rice, bentos, and late-night fridge grazing. Small pack, big salty personality.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: uji-matcha-kyoto
+confidence: low
+description: Uji matcha. Kyoto matcha powder for whisking, lattes, or pretending your kitchen is calmer than it is. Buy sealed tins, not random green dust.
+flags:
+  format:
+    - missing_value: source_url is null
+
+
+slug: umeboshi-gift-pack
+confidence: low
+description: Umeboshi gift pack. Pickled plums boxed like serious business. Salty, sour, and built for rice, tea, or relatives who do not want candy.
+flags:
+  format:
+    - missing_value: source_url is null
