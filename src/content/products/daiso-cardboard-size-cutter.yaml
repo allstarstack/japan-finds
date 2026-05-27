@@ -1,0 +1,39 @@
+id: JF-0469
+slug: daiso-cardboard-size-cutter
+name_en: Daiso Cardboard Size Adjustment Cutter
+category: 100-yen
+intent:
+- bring_home
+- day_one_fixes
+status: ready
+name_jp: 段ボールサイズ調整カッター
+brand: Daiso
+where_found:
+- Daiso (ダイソー)
+- Daiso Net Store
+price_yen: "¥110"
+what_it_is: Plastic ruler with a fixed 2-3mm blade that scores cardboard at a set height. Slide it around an oversized box, cut the four corners, and fold the box down to the size of what's inside.
+why_travelers_care: Shipping souvenirs home from Japan? Box volume sets the price. ¥110 of plastic shrinks any oversized box to the size of what's actually in it, so the post office charges you for contents, not air.
+source_links:
+- https://jp.daisonet.com/products/4550480252537
+- https://www.mdn.co.jp/product/goodsLab/5210
+- https://100yenmania.com/cutter-2/
+confidence: high
+trip_score: 5
+suitcase_score: 8
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: A plastic straightedge with a 2-3mm fixed blade. Set the height, drag it around an oversized cardboard box, cut the four corners with a regular knife, and fold the box down to fit the contents. ¥110 saved on every shipment home.
+english_name: Daiso Cardboard Size Adjustment Cutter
+japanese_name: 段ボールサイズ調整カッター
+subcategory: packing tool
+price_range_jpy: "110"
+where_to_buy:
+- Daiso
+- Daiso Net Store
+image: /products/daiso-cardboard-size-cutter.webp
+safety_flags: []
+enrichment_confidence: high
+enrichment_source_url: https://www.mdn.co.jp/product/goodsLab/5210
+enrichment_date: '2026-05-27'
