@@ -4,19 +4,30 @@ export type Affiliate = {
   label: string;         // short headline shown in module + tools
   copy: string;          // longer brand-voice one-liner for /tools page
   url: string;           // affiliate tracking URL (empty string if pending approval)
-  active: boolean;       // master visibility flag
-  module: boolean;       // include in <GoingToJapan /> module
-  tools: boolean;        // include on /tools page
+  active: boolean;       // master visibility flag — /tools filters by active && tools
+  module: boolean;       // legacy: kept for /tools filtering symmetry; GoingToJapan
+                         //   now owns its own ordered item list and reads URL only
+  tools: boolean;        // include on /tools page (requires active === true)
 };
 
 export const affiliates: Affiliate[] = [
   {
-    id: 'airalo',
-    partner: 'Airalo',
-    label: 'eSIM for Japan',
-    copy: 'Cheap eSIM, works the second you land. Skip the rental Wi-Fi counter.',
-    url: 'https://airalo.pxf.io/c/6060868/1268485/15608',
-    active: true,
+    id: 'safetywing',
+    partner: 'SafetyWing',
+    label: 'Travel insurance',
+    copy: '',         // fill when approved
+    url: '',          // fill when approved
+    active: false,
+    module: true,
+    tools: true,
+  },
+  {
+    id: 'wise',
+    partner: 'Wise',
+    label: 'Multi-currency card',
+    copy: '',         // fill when approved
+    url: '',          // fill when approved
+    active: false,
     module: true,
     tools: true,
   },
@@ -38,6 +49,36 @@ export const affiliates: Affiliate[] = [
     url: 'https://click.jrpass.com/aff_c?offer_id=20&aff_id=1954',
     active: true,
     module: false,   // editorial-only, not in module
+    tools: true,
+  },
+  {
+    id: 'ninja-wifi',
+    partner: 'Ninja WiFi',
+    label: 'Pocket WiFi rental',
+    copy: '',         // fill when approved
+    url: '',          // fill when approved
+    active: false,
+    module: true,
+    tools: true,
+  },
+  {
+    id: 'airalo',
+    partner: 'Airalo',
+    label: 'eSIM for Japan',
+    copy: 'Cheap eSIM, works the second you land. Skip the rental Wi-Fi counter.',
+    url: 'https://airalo.pxf.io/c/6060868/1268485/15608',
+    active: true,
+    module: true,
+    tools: true,
+  },
+  {
+    id: 'welcome-suica',
+    partner: 'Welcome Suica',
+    label: 'IC card for tourists',
+    copy: '',         // fill when approved
+    url: '',          // fill when approved
+    active: false,
+    module: true,
     tools: true,
   },
   {
