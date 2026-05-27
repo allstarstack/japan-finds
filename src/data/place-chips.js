@@ -19,7 +19,7 @@ export const PRIMARY_CHIPS = [
   { value: "animals", label: "Animals", color: "green" },
   { value: "food_markets", label: "Food Markets", color: "yellow" },
   { value: "cafes", label: "Cafes", color: "yellow" },
-  { value: "onsen_ryokan", label: "Onsen & Ryokan", color: "blue" },
+  { value: "onsen_ryokan", label: "Onsen Towns", color: "blue" },
   { value: "quirky_museums", label: "Quirky Museums", color: "green" },
   { value: "theme_parks", label: "Theme Parks", color: "red" },
   { value: "parks", label: "Parks", color: "red" },
