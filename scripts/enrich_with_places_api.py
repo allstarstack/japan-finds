@@ -820,15 +820,18 @@ def load_api_key():
     return None
 
 
-def select_stratified_stays(files, n_per_cat):
+def select_stratified_stays(files, n_per_cat, only_cats=None):
     """Group stay YAML paths by primary_cat, return up to N from each.
     Sorted within each category by filename so the selection is stable
-    across runs (idempotency-friendly)."""
+    across runs (idempotency-friendly). If only_cats is set, restrict to
+    that whitelist (matches the spec's 5-category dry-run sample)."""
     by_cat = {}
     for path in files:
         try:
             data = load_yaml_file(path)
             cat = data.get("primary_cat") or "uncategorized"
+            if only_cats and cat not in only_cats:
+                continue
             by_cat.setdefault(cat, []).append(path)
         except Exception:
             continue
@@ -869,6 +872,10 @@ def main():
     p.add_argument("--stratified-sample", type=int, default=0,
                    help="Stays only: pick N entries per primary_cat (preferred over "
                         "--sample for dry-runs; un-stratified pilots overstate hit rates)")
+    p.add_argument("--stratified-categories", default="",
+                   help="Stays only: comma-separated primary_cat whitelist for --stratified-sample. "
+                        "Empty = all 9 categories. Spec D7 dry-run uses: "
+                        "onsen_ryokan,design_hotel,machiya_kominka,glamping,temple_stay")
     p.add_argument("--hours", action="store_true",
                    help="Opt in to fetching opening hours (Place Details "
                         "Enterprise SKU, ~4x cost). Default is photos-only — "
@@ -963,9 +970,14 @@ def main():
             if not args.csv_only:
                 all_files = sorted(d.glob("*.yaml"))
                 if kind == "stays" and args.stratified_sample:
-                    files = select_stratified_stays(all_files, args.stratified_sample)
+                    only_cats = (
+                        {c.strip() for c in args.stratified_categories.split(",") if c.strip()}
+                        if args.stratified_categories else None
+                    )
+                    files = select_stratified_stays(all_files, args.stratified_sample, only_cats=only_cats)
                     log.info(f"    stratified-sample selected {len(files)} files across "
-                             f"{len(set((load_yaml_file(p).get('primary_cat') or 'uncategorized') for p in files))} categories")
+                             f"{len(set((load_yaml_file(p).get('primary_cat') or 'uncategorized') for p in files))} categories"
+                             + (f" (filtered to {sorted(only_cats)})" if only_cats else ""))
                 elif args.sample:
                     files = all_files[: args.sample]
                 else:

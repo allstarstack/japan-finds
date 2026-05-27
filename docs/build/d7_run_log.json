@@ -1,0 +1,17 @@
+{
+  "total": 5,
+  "live_writes": 5,
+  "review_queue": 0,
+  "no_match": 0,
+  "address_mismatch": 0,
+  "skipped_already_enriched": 0,
+  "actual_cost_usd_estimate": 0.35,
+  "per_category_hit_rate": {
+    "design_hotel": "1/1",
+    "glamping": "1/1",
+    "machiya_kominka": "1/1",
+    "onsen_ryokan": "1/1",
+    "temple_stay": "1/1"
+  },
+  "elapsed_seconds": 6.2
+}
