@@ -5,8 +5,10 @@ city: Onomichi
 prefecture: Hiroshima
 primary_cat: machiya_kominka
 price_tier: luxury
-description: Contemporary ryokan opened 2021 in 1876 Horiuchi merchant mansion on
-  Ikuchijima.
-distinctive: First hotel by Aman-founder Adrian Zecha, restored by Shiro Miura, yubune
-  bathhouse
+description: Contemporary ryokan opened 2021 in 1876 Horiuchi merchant mansion on Ikuchijima.
+distinctive: First hotel by Aman-founder Adrian Zecha, restored by Shiro Miura, yubune bathhouse
 source_url: https://azumi.co/setoda
+place_id: ChIJkXIp3q5RUDURmP8gvdT6Tik
+lat: 34.30422060000001
+lng: 133.0850149
+photo_cache_path: /stays/azumi-setoda.webp

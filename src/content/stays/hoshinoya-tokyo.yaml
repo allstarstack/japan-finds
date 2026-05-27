@@ -5,8 +5,10 @@ city: Chiyoda
 prefecture: Tokyo
 primary_cat: onsen_ryokan
 price_tier: luxury
-description: High-rise ryokan in Otemachi with tatami corridors and 17th-floor onsen
-  from 1,500m underground.
-distinctive: Modern interpretation of ryokan hospitality in central Tokyo; tatami-air
-  corridor and rooftop onsen.
+description: High-rise ryokan in Otemachi with tatami corridors and 17th-floor onsen from 1,500m underground.
+distinctive: Modern interpretation of ryokan hospitality in central Tokyo; tatami-air corridor and rooftop onsen.
 source_url: https://hoshinoresorts.com/en/hotels/hoshinoyatokyo/
+place_id: ChIJQ3xyRgaMGGARUS7IVQTZRQY
+lat: 35.6875834
+lng: 139.7650244
+photo_cache_path: /stays/hoshinoya-tokyo.webp

@@ -5,8 +5,10 @@ city: Kurashiki
 prefecture: Okayama
 primary_cat: machiya_kominka
 price_tier: luxury
-description: Eight-room ryokan occupying converted Edo-period sugar-wholesaler houses
-  on canal.
-distinctive: Stay inside connected white-walled merchant homes in Bikan Historical
-  Quarter
+description: Eight-room ryokan occupying converted Edo-period sugar-wholesaler houses on canal.
+distinctive: Stay inside connected white-walled merchant homes in Bikan Historical Quarter
 source_url: https://www.ryokan-kurashiki.jp/
+place_id: ChIJjaYSejhWUTUR2C7lQiWEAWA
+lat: 34.5957832
+lng: 133.7721747
+photo_cache_path: /stays/ryokan-kurashiki.webp

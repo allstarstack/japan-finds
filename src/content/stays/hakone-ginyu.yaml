@@ -5,7 +5,10 @@ city: Hakone
 prefecture: Kanagawa
 primary_cat: onsen_ryokan
 price_tier: luxury
-description: 20-room hillside retreat where each room has its own open-air bath overlooking
-  Haya River canyon.
+description: 20-room hillside retreat where each room has its own open-air bath overlooking Haya River canyon.
 distinctive: Private terrace onsen in every room; Balinese-inspired spa and kaiseki.
 source_url: http://www.hakoneginyu.co.jp/
+place_id: ChIJJ_8rdT2iGWARZCqx5v3zsfg
+lat: 35.2431088
+lng: 139.0627308
+photo_cache_path: /stays/hakone-ginyu.webp

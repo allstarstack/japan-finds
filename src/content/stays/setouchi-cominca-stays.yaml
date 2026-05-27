@@ -5,8 +5,10 @@ city: Onomichi
 prefecture: Hiroshima
 primary_cat: machiya_kominka
 price_tier: upscale
-description: High-end kominka converted from former miso factory in preserved merchant
-  district.
-distinctive: UNESCO-recognized restoration using 17 traditional techniques, private
-  garden stone bath
+description: High-end kominka converted from former miso factory in preserved merchant district.
+distinctive: UNESCO-recognized restoration using 17 traditional techniques, private garden stone bath
 source_url: https://setouchi-cominca.jp/
+place_id: ChIJo86TyC3NUDURAqy_qlvlM-Q
+lat: 35.0293408
+lng: 132.9506511
+photo_cache_path: /stays/setouchi-cominca-stays.webp

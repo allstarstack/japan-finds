@@ -6,6 +6,9 @@ prefecture: Kumamoto
 primary_cat: onsen_ryokan
 price_tier: upscale
 description: Classic forest ryokan in Kurokawa Onsen village.
-distinctive: 24-hour access to variety of baths, open-air pools and saunas with valley
-  views
+distinctive: 24-hour access to variety of baths, open-air pools and saunas with valley views
 source_url: https://www.okunoyu.com/
+place_id: ChIJsxMwYsIwQTURSSaiRoY2AWg
+lat: 33.0777667
+lng: 131.1478841
+photo_cache_path: /stays/kurokawa-onsen-okunoyu.webp

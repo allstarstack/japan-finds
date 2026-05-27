@@ -5,8 +5,10 @@ city: Toyako
 prefecture: Hokkaido
 primary_cat: design_hotel
 price_tier: upscale
-description: Kengo Kuma redesign of former nursing home into nature-inspired lakeside
-  boutique.
-distinctive: Cave-like lobby with local cedar, every room has balcony hinoki bathtub
-  overlooking Lake Toya
+description: Kengo Kuma redesign of former nursing home into nature-inspired lakeside boutique.
+distinctive: Cave-like lobby with local cedar, every room has balcony hinoki bathtub overlooking Lake Toya
 source_url: https://www.wehoteltoya.com/
+place_id: ChIJJcKkHUhXdV8RuZnzXbBvKaY
+lat: 42.6428696
+lng: 140.8235378
+photo_cache_path: /stays/we-hotel-toya.webp

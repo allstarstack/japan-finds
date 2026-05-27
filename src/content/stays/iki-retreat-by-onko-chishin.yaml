@@ -6,6 +6,9 @@ prefecture: Nagasaki
 primary_cat: design_hotel
 price_tier: luxury
 description: Design Hotels member spa ryokan on Iki Island.
-distinctive: All rooms with private open-air baths fed by natural hot spring, Michelin
-  Guide 5-Red Pavilion
+distinctive: All rooms with private open-air baths fed by natural hot spring, Michelin Guide 5-Red Pavilion
 source_url: https://iki-retreat.com/
+place_id: ChIJKy8uN88VajUR9jxnh09b4TI
+lat: 33.804888999999996
+lng: 129.684359
+photo_cache_path: /stays/iki-retreat-by-onko-chishin.webp

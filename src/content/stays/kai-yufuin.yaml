@@ -6,6 +6,9 @@ prefecture: Oita
 primary_cat: design_hotel
 price_tier: upscale
 description: Kengo Kuma-designed hot-spring ryokan between Mt Yufu and rice terraces.
-distinctive: Outdoor baths overlooking terraces, Firefly Room with shichitoi-straw
-  installation
+distinctive: Outdoor baths overlooking terraces, Firefly Room with shichitoi-straw installation
 source_url: https://hoshinoresorts.com/en/hotels/kaiyufuin/
+place_id: ChIJAQAAADCsRjURucUHYcj-kMM
+lat: 33.2787826
+lng: 131.35384779999998
+photo_cache_path: /stays/kai-yufuin.webp

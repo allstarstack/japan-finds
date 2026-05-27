@@ -5,7 +5,10 @@ city: Tokyo
 prefecture: Tokyo
 primary_cat: capsule_themed
 price_tier: budget
-description: Capsule-style hotel in Jimbocho curated by manga sommeliers with 5,000+
-  volumes.
+description: Capsule-style hotel in Jimbocho curated by manga sommeliers with 5,000+ volumes.
 distinctive: Manga library as lobby; themed pods for immersive reading nights.
 source_url: https://mangaarthotel.com/
+place_id: ChIJYVYM5gGNGGARj9FjxyfVklU
+lat: 35.6937795
+lng: 139.76454909999998
+photo_cache_path: /stays/manga-art-hotel-tokyo.webp

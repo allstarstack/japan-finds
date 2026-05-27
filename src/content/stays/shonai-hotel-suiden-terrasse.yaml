@@ -6,6 +6,9 @@ prefecture: Yamagata
 primary_cat: design_hotel
 price_tier: mid
 description: Shigeru Ban-designed hotel appearing to float on rice paddies.
-distinctive: Paper-tube structure, paddy-view rooms, natural hot spring, farm-to-table
-  dining
+distinctive: Paper-tube structure, paddy-view rooms, natural hot spring, farm-to-table dining
 source_url: https://suiden-terrasse.jp/
+place_id: ChIJo_9_GFwajF8RS0abLzL46oo
+lat: 38.746198199999995
+lng: 139.8222385
+photo_cache_path: /stays/shonai-hotel-suiden-terrasse.webp

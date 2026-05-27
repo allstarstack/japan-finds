@@ -6,6 +6,9 @@ prefecture: Okinawa
 primary_cat: resort
 price_tier: upscale
 description: All-suite private-beach resort on remote coral island.
-distinctive: 60 villa-style rooms over 53m², manta-ray waters, star-filled skies,
-  lagoon pools
+distinctive: 60 villa-style rooms over 53m², manta-ray waters, star-filled skies, lagoon pools
 source_url: https://hoshinoresorts.com/en/hotels/risonarekohamajima/
+place_id: ChIJcdi5uWR3YDQRML92uoS_N2E
+lat: 24.332308599999998
+lng: 124.0000816
+photo_cache_path: /stays/risonare-kohamajima.webp

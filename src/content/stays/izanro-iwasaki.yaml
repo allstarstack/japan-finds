@@ -6,6 +6,9 @@ prefecture: Tottori
 primary_cat: onsen_ryokan
 price_tier: luxury
 description: Historic ryokan dating to 1920 in Misasa radon hot-spring valley.
-distinctive: Imperial family patronage, radium onsen famed for health benefits, riverside
-  garden
+distinctive: Imperial family patronage, radium onsen famed for health benefits, riverside garden
 source_url: https://izanro.co.jp/
+place_id: ChIJ_0-zjJDbVTURjYOjpv7gC0M
+lat: 35.4111367
+lng: 133.894266
+photo_cache_path: /stays/izanro-iwasaki.webp

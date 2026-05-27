@@ -5,7 +5,10 @@ city: Naoshima
 prefecture: Kagawa
 primary_cat: design_hotel
 price_tier: luxury
-description: Museum-hotel hybrid designed by Tadao Ando where art museum and hotel
-  are one.
+description: Museum-hotel hybrid designed by Tadao Ando where art museum and hotel are one.
 distinctive: Overnight inside working contemporary art museum, after-hours access
 source_url: https://benesse-artsite.jp/
+place_id: ChIJu-H0aC_uUzURhcnP5-wFTPA
+lat: 34.4452233
+lng: 133.990853
+photo_cache_path: /stays/benesse-house.webp

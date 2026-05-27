@@ -1,0 +1,19 @@
+{
+  "total": 135,
+  "live_writes": 135,
+  "review_queue": 0,
+  "no_match": 0,
+  "address_mismatch": 0,
+  "per_category_hit_rate": {
+    "capsule_themed": "6/6",
+    "design_hotel": "22/22",
+    "glamping": "9/9",
+    "heritage_hotel": "6/6",
+    "machiya_kominka": "11/11",
+    "mountain_lodge": "6/6",
+    "onsen_ryokan": "63/63",
+    "resort": "7/7",
+    "temple_stay": "5/5"
+  },
+  "notes": "Final D7 state. train-hostel-hokutosei deleted from seed (dead domain + Google no_result = confirmed closed). All remaining 135 stays cleanly enriched with place_id / lat / lng / photo_cache_path."
+}

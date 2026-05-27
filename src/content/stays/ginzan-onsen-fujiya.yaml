@@ -5,7 +5,10 @@ city: Obanazawa
 prefecture: Yamagata
 primary_cat: design_hotel
 price_tier: upscale
-description: Eight-room boutique in center of Ginzan's Taisho streetscape, rebuilt
-  by Kengo Kuma.
+description: Eight-room boutique in center of Ginzan's Taisho streetscape, rebuilt by Kengo Kuma.
 distinctive: Wood-lattice facade and riverside onsen in historic silver-mine town.
 source_url: https://fujiya-ginzan.com/
+place_id: ChIJLdM9FdtdiV8RC7D2q5N8uUk
+lat: 38.569499
+lng: 140.5311485
+photo_cache_path: /stays/ginzan-onsen-fujiya.webp

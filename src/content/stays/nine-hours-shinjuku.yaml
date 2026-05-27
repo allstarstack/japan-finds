@@ -5,7 +5,10 @@ city: Tokyo
 prefecture: Tokyo
 primary_cat: capsule_themed
 price_tier: budget
-description: Minimalist capsule designed by Fumie Shibata around 7h sleep +1h shower
-  +1h lounge.
+description: Minimalist capsule designed by Fumie Shibata around 7h sleep +1h shower +1h lounge.
 distinctive: Sleek, futuristic pod design; pay-by-the-hour model.
 source_url: https://ninehours.co.jp/
+place_id: ChIJj9u6ZReNGGARWf7nVDsrB8A
+lat: 35.6903539
+lng: 139.70824149999999
+photo_cache_path: /stays/nine-hours-shinjuku.webp

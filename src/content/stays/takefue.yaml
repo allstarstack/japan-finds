@@ -6,6 +6,9 @@ prefecture: Kumamoto
 primary_cat: onsen_ryokan
 price_tier: luxury
 description: 11 private lodges scattered in 16,500 sqm bamboo forest.
-distinctive: Lodges built around natural hot spring streams; seasonal mountain-foraged
-  kaiseki.
+distinctive: Lodges built around natural hot spring streams; seasonal mountain-foraged kaiseki.
 source_url: https://takefue.com
+place_id: ChIJLbQqmPowQTURqgVyf3s5VYY
+lat: 33.064771799999995
+lng: 131.1510189
+photo_cache_path: /stays/takefue.webp

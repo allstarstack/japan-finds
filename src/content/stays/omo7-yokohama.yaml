@@ -8,3 +8,7 @@ price_tier: upscale
 description: Harbor-area hotel near Tokyo Bay.
 distinctive: Port-city themed base with local Chinatown and waterfront guides.
 source_url: https://hoshinoresorts.com/en/hotels/omo7yokohama/
+place_id: ChIJpezVmsNdGGAR7A3TwDijfGw
+lat: 35.4436573
+lng: 139.63802970000003
+photo_cache_path: /stays/omo7-yokohama.webp

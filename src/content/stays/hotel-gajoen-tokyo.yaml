@@ -8,3 +8,7 @@ price_tier: upscale
 description: Art deco hotel famous for its Hyakudan Kaidan staircase.
 distinctive: Museum-hotel with preserved Showa-era art interiors.
 source_url: https://www.hotelgajoen-tokyo.com/
+place_id: ChIJ-RYxUR6LGGAR3Kk7Wtrwdi8
+lat: 35.6317881
+lng: 139.7137936
+photo_cache_path: /stays/hotel-gajoen-tokyo.webp

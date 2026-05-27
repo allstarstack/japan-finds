@@ -5,8 +5,10 @@ city: Yomitan
 prefecture: Okinawa
 primary_cat: resort
 price_tier: luxury
-description: Oceanfront low-rise resort with 100 rooms, all with ocean views and private
-  terraces.
-distinctive: Ryukyu Kingdom design language, year-round heated pool, and cliffside
-  Banta Cafe.
+description: Oceanfront low-rise resort with 100 rooms, all with ocean views and private terraces.
+distinctive: Ryukyu Kingdom design language, year-round heated pool, and cliffside Banta Cafe.
 source_url: https://hoshinoresorts.com/en/hotels/hoshinoyaokinawa/
+place_id: ChIJe-_p5MQX5TQRr8Bj7SjJ2-s
+lat: 26.4203689
+lng: 127.71480380000001
+photo_cache_path: /stays/hoshinoya-okinawa.webp

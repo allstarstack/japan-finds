@@ -5,7 +5,10 @@ city: Otaru
 prefecture: Hokkaido
 primary_cat: heritage_hotel
 price_tier: mid
-description: Boutique renovation of 1931 Etchuya Hotel, Hokkaido's first hotel for
-  foreigners.
+description: Boutique renovation of 1931 Etchuya Hotel, Hokkaido's first hotel for foreigners.
 distinctive: Art Deco facade, stained glass, free evening wine, canal-side heritage
 source_url: https://www.livelyhotels.com/unwindotaru/
+place_id: ChIJi8g-gE3gCl8R7lAcx8bGjH8
+lat: 43.1975729
+lng: 141.0010556
+photo_cache_path: /stays/unwind-hotel-bar-otaru.webp

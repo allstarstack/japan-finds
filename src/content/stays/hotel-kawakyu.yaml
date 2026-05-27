@@ -8,3 +8,7 @@ price_tier: luxury
 description: Coastal resort in faux-Norman castle with gold-leaf dome.
 distinctive: All 85 rooms are suites, many with private rotenburo, ocean views
 source_url: https://www.hotel-kawakyu.jp/
+place_id: ChIJ388gZiChB2ARRIf0dmvDApI
+lat: 33.6885863
+lng: 135.357508
+photo_cache_path: /stays/hotel-kawakyu.webp

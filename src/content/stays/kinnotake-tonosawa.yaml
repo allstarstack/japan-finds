@@ -6,6 +6,9 @@ prefecture: Kanagawa
 primary_cat: onsen_ryokan
 price_tier: luxury
 description: Adult-only luxury ryokan with 8 forest suites.
-distinctive: Each suite has private source-fed onsen and suspension-bridge forest
-  views.
+distinctive: Each suite has private source-fed onsen and suspension-bridge forest views.
 source_url: https://kinnotake-resorts.com/kinnotake-tonosawa/
+place_id: ChIJm26t266jGWARmzWN5sy3TKc
+lat: 35.2337293
+lng: 139.0889301
+photo_cache_path: /stays/kinnotake-tonosawa.webp
