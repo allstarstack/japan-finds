@@ -22,9 +22,6 @@
   --color-white: #ffffff;
   --color-rice-tint: #f1ecdd; /* §01 Start Here background — HANDOFF §2.1 */
 
-  /* Hover-state derivations — HANDOFF §6 */
-  --color-tokyo-red-dark: #e5342b; /* primary button hover */
-
   /* Type — locked families (BUILD_SPEC.md) */
   --font-head: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;

@@ -17,34 +17,28 @@ const { counts } = Astro.props;
 ---
 
 <div class="srail" data-stay-rail>
-  <div class="srail-inner">
-    <div class="srail-track" role="group" aria-label="Filter stays by type">
-      {
-        STAYS_PRIMARY_CHIPS.map((c) => (
-          <button
-            type="button"
-            class="schip"
-            data-chip={c.value}
-            data-color={c.color}
-            aria-pressed="false"
-          >
-            {c.label}
-            <span class="schip-n">{counts[c.value] ?? 0}</span>
-          </button>
-        ))
-      }
-    </div>
-    <p class="srail-hint" data-srail-hint aria-hidden="true">{STAYS_PRIMARY_CHIPS.length} categories · scroll →</p>
+  <div class="srail-track" role="group" aria-label="Filter stays by type">
+    {
+      STAYS_PRIMARY_CHIPS.map((c) => (
+        <button
+          type="button"
+          class="schip"
+          data-chip={c.value}
+          data-color={c.color}
+          aria-pressed="false"
+        >
+          {c.label}
+          <span class="schip-n">{counts[c.value] ?? 0}</span>
+        </button>
+      ))
+    }
   </div>
+  <p class="srail-hint" data-srail-hint aria-hidden="true">{STAYS_PRIMARY_CHIPS.length} categories · scroll →</p>
 </div>
 
 <style>
   .srail {
     background: var(--color-white);
-  }
-  .srail-inner {
-    max-width: var(--content-max);
-    margin: 0 auto;
   }
 
   .srail-track {
