@@ -1,10 +1,14 @@
 id: jf-stay-0014
 name: KAI Aso
 name_jp: 界 阿蘇
-city: Aso
-prefecture: Kumamoto
+city: Kokonoe
+prefecture: Oita
 primary_cat: onsen_ryokan
 price_tier: upscale
 description: 12 villa-style ryokans inside Aso-Kuju National Park, each with private hot spring.
 distinctive: Caldera views and Learn & Drink caldera shochu program.
 source_url: https://hoshinoresorts.com/en/hotels/kaiaso/
+place_id: ChIJX4ZUN6w2QTURgeC6AZ3j8zQ
+lat: 33.0806161
+lng: 131.19365
+photo_cache_path: /stays/kai-aso.webp

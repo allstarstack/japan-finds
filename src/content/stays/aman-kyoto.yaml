@@ -8,3 +8,7 @@ price_tier: luxury
 description: Low-rise resort in hidden garden forest north of Kyoto.
 distinctive: Secret garden arrival and onsen-equipped pavilions.
 source_url: https://www.aman.com/resorts/aman-kyoto
+place_id: ChIJ-8IdwOupAWARZk21GnGrDU8
+lat: 35.050764099999995
+lng: 135.73058419999998
+photo_cache_path: /stays/aman-kyoto.webp

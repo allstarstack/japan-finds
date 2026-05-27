@@ -423,20 +423,57 @@ def write_review_yaml(slug, data, api_result, reason):
     log.warning(f"    [review] {slug} → {out_path} (reason: {reason})")
 
 
+# Romaji → kanji prefecture map. The Places API often returns
+# formatted_address purely in kanji (especially for properties whose
+# Google profile is in Japanese); romanized substring checks then miss.
+# All 47 prefectures included for completeness, even though stays
+# seed only uses ~30 of them.
+PREFECTURE_KANJI = {
+    "hokkaido": "北海道",
+    "aomori": "青森", "iwate": "岩手", "miyagi": "宮城", "akita": "秋田",
+    "yamagata": "山形", "fukushima": "福島",
+    "ibaraki": "茨城", "tochigi": "栃木", "gunma": "群馬", "saitama": "埼玉",
+    "chiba": "千葉", "tokyo": "東京", "kanagawa": "神奈川",
+    "niigata": "新潟", "toyama": "富山", "ishikawa": "石川", "fukui": "福井",
+    "yamanashi": "山梨", "nagano": "長野", "gifu": "岐阜", "shizuoka": "静岡",
+    "aichi": "愛知",
+    "mie": "三重", "shiga": "滋賀", "kyoto": "京都", "osaka": "大阪",
+    "hyogo": "兵庫", "nara": "奈良", "wakayama": "和歌山",
+    "tottori": "鳥取", "shimane": "島根", "okayama": "岡山", "hiroshima": "広島",
+    "yamaguchi": "山口",
+    "tokushima": "徳島", "kagawa": "香川", "ehime": "愛媛", "kochi": "高知",
+    "fukuoka": "福岡", "saga": "佐賀", "nagasaki": "長崎", "kumamoto": "熊本",
+    "oita": "大分", "miyazaki": "宮崎", "kagoshima": "鹿児島", "okinawa": "沖縄",
+}
+
+
 def address_text_match(formatted_address, prefecture, city):
-    """Return True if formatted_address contains prefecture OR city (case-insensitive,
-    accent-tolerant best-effort). The Google API mixes English + Japanese names;
-    we check both raw text and lowercased."""
+    """Return True if formatted_address contains prefecture OR city.
+
+    Checks both the romanized seed value (substring on raw + lowercased)
+    AND the kanji prefecture root (via PREFECTURE_KANJI lookup). Prefecture
+    strings carrying '/' (e.g. 'Hiroshima/Okayama' on multi-region cruises)
+    are split and each part tested independently — addresses won't contain
+    the slash."""
     if not formatted_address:
         return False
     haystack = str(formatted_address)
     haystack_lc = haystack.lower()
-    for needle in (prefecture, city):
-        if not needle:
+
+    candidates = []
+    for raw in (prefecture, city):
+        if not raw:
             continue
-        n = str(needle).strip()
-        if not n:
-            continue
+        for part in str(raw).split("/"):
+            p = part.strip()
+            if not p:
+                continue
+            candidates.append(p)
+            kj = PREFECTURE_KANJI.get(p.lower())
+            if kj:
+                candidates.append(kj)
+
+    for n in candidates:
         if n in haystack or n.lower() in haystack_lc:
             return True
     return False
@@ -1086,53 +1123,14 @@ def main():
             "per_category_hit_rate": per_cat_rate,
             "elapsed_seconds": round(elapsed, 1),
         }
+        # The log reflects the CURRENT run only. Cumulative state should be
+        # reconstructed from src/content/stays/ + drafts/_d7_review/ — those
+        # files are the source of truth. (The prior merge logic over-counted
+        # per-category totals because each run iterates the same files.)
         log_path = Path("docs/build/d7_run_log.json")
         log_path.parent.mkdir(parents=True, exist_ok=True)
-        # Merge with prior run log so the dry-run sample's stats aren't clobbered.
-        if log_path.exists():
-            try:
-                prior = json.loads(log_path.read_text())
-                d7_log = {
-                    "total": d7_log["total"] + prior.get("total", 0),
-                    "live_writes": d7_log["live_writes"] + prior.get("live_writes", 0),
-                    "review_queue": d7_log["review_queue"] + prior.get("review_queue", 0),
-                    "no_match": d7_log["no_match"] + prior.get("no_match", 0),
-                    "address_mismatch": d7_log["address_mismatch"] + prior.get("address_mismatch", 0),
-                    "skipped_already_enriched": d7_log["skipped_already_enriched"]
-                                                + prior.get("skipped_already_enriched", 0),
-                    "actual_cost_usd_estimate": round(
-                        d7_log["actual_cost_usd_estimate"]
-                        + prior.get("actual_cost_usd_estimate", 0.0), 2),
-                    "per_category_hit_rate": _merge_per_cat(
-                        prior.get("per_category_hit_rate", {}),
-                        d7_log["per_category_hit_rate"]),
-                    "elapsed_seconds": round(
-                        d7_log["elapsed_seconds"]
-                        + prior.get("elapsed_seconds", 0.0), 1),
-                }
-            except Exception:
-                pass
         log_path.write_text(json.dumps(d7_log, indent=2, ensure_ascii=False))
         log.info(f"  d7 run log → {log_path}")
-
-
-def _merge_per_cat(prior, current):
-    """Merge per-category hit-rate strings 'hits/total' across runs."""
-    out = {}
-    keys = set(prior.keys()) | set(current.keys())
-    for k in sorted(keys):
-        ph, pt = _parse_ratio(prior.get(k, "0/0"))
-        ch, ct = _parse_ratio(current.get(k, "0/0"))
-        out[k] = f"{ph + ch}/{pt + ct}"
-    return out
-
-
-def _parse_ratio(s):
-    try:
-        h, t = s.split("/")
-        return int(h), int(t)
-    except Exception:
-        return 0, 0
 
 
 if __name__ == "__main__":

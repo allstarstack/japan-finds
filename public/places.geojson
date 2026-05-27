@@ -7112,6 +7112,28 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          138.2663832,
+          37.8087758
+        ]
+      },
+      "properties": {
+        "source": "places",
+        "slug": "taraibune-tub-boat-riding-experience",
+        "name": "Taraibune Tub-Boat Riding Experience (たらい舟)",
+        "public_label": "scenic_transport",
+        "primary_category": "See",
+        "address_or_area": "Ogi, Sado",
+        "hero_image": "/places/taraibune-tub-boat-riding-experience.webp",
+        "local_favorite": false,
+        "viral": false,
+        "viral_signal": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           133.0641938,
           34.259778
         ]
@@ -15523,6 +15545,2976 @@
         "city": "Tokyo",
         "prefecture": "Tokyo",
         "hero_image": "/eat/tabelog-hyakumeiten-top-100-uokyu-ajimise-honten-ningyocho.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.96108900000002,
+          37.478055
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "aizu-higashiyama-onsen-mukaitaki",
+        "name": "Aizu Higashiyama Onsen Mukaitaki",
+        "name_jp": "会津東山温泉 向瀧",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Aizuwakamatsu",
+        "prefecture": "Fukushima",
+        "source_url": "https://www.aizu-mukaitaki.com/",
+        "hero_image": "/stays/aizu-higashiyama-onsen-mukaitaki.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.73058419999998,
+          35.050764099999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "aman-kyoto",
+        "name": "Aman Kyoto",
+        "name_jp": "アマン京都",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://www.aman.com/resorts/aman-kyoto",
+        "hero_image": "/stays/aman-kyoto.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.79695759999998,
+          34.2925404
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "amanemu",
+        "name": "Amanemu",
+        "name_jp": "アマネム",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Shima",
+        "prefecture": "Mie",
+        "source_url": "https://www.aman.com/resorts/amanemu",
+        "hero_image": "/stays/amanemu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7955244,
+          35.7282891
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "andon-ryokan",
+        "name": "Andon Ryokan",
+        "name_jp": "行燈旅館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "mid",
+        "city": "Taito",
+        "prefecture": "Tokyo",
+        "source_url": "https://andon.co.jp/",
+        "hero_image": "/stays/andon-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.3883122,
+          34.1180403
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "anrakuji-temple-shukubo",
+        "name": "Anrakuji Temple Shukubo",
+        "name_jp": "安楽寺",
+        "primary_cat": "temple_stay",
+        "price_tier": "budget",
+        "city": "Kamiita",
+        "prefecture": "Tokushima",
+        "source_url": "https://anrakuji.jp/",
+        "hero_image": "/stays/anrakuji-temple-shukubo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9247661,
+          34.969057899999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "asaba-ryokan",
+        "name": "Asaba Ryokan",
+        "name_jp": "浅羽旅館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Izu",
+        "prefecture": "Shizuoka",
+        "source_url": "http://www.asaba-ryokan.com/",
+        "hero_image": "/stays/asaba-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.4855728,
+          33.6344176
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "auberge-tosayama",
+        "name": "Auberge Tosayama",
+        "name_jp": "オーベルジュ土佐山",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "mid",
+        "city": "Kochi",
+        "prefecture": "Kochi",
+        "source_url": "https://www.auberge-tosayama.jp/",
+        "hero_image": "/stays/auberge-tosayama.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.0850149,
+          34.30422060000001
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "azumi-setoda",
+        "name": "Azumi Setoda",
+        "name_jp": "AZUMI瀬戸田",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "luxury",
+        "city": "Onomichi",
+        "prefecture": "Hiroshima",
+        "source_url": "https://azumi.co/setoda",
+        "hero_image": "/stays/azumi-setoda.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.990853,
+          34.4452233
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "benesse-house",
+        "name": "Benesse House",
+        "name_jp": "ベネッセハウス",
+        "primary_cat": "design_hotel",
+        "price_tier": "luxury",
+        "city": "Naoshima",
+        "prefecture": "Kagawa",
+        "source_url": "https://benesse-artsite.jp/",
+        "hero_image": "/stays/benesse-house.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.3630854,
+          36.288967
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "beniya-mukayu",
+        "name": "Beniya Mukayu",
+        "name_jp": "べにや無何有",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Kaga",
+        "prefecture": "Ishikawa",
+        "source_url": "http://mukayu.com/",
+        "hero_image": "/stays/beniya-mukayu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.894064,
+          35.0874861
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "biwako-ryokusuitei",
+        "name": "Biwako Ryokusuitei",
+        "name_jp": "びわ湖緑水亭",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Otsu",
+        "prefecture": "Shiga",
+        "source_url": "https://www.ryokusuitei.com/",
+        "hero_image": "/stays/biwako-ryokusuitei.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.700672,
+          35.6953417
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "book-and-bed-tokyo-shinjuku",
+        "name": "Book and Bed Tokyo Shinjuku",
+        "name_jp": "ブックアンドベッド東京新宿",
+        "primary_cat": "capsule_themed",
+        "price_tier": "budget",
+        "city": "Tokyo",
+        "prefecture": "Tokyo",
+        "source_url": "https://bookandbedtokyo.com/",
+        "hero_image": "/stays/book-and-bed-tokyo-shinjuku.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.86235729999999,
+          33.8640696
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "chiiori",
+        "name": "Chiiori",
+        "name_jp": "篪庵",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "mid",
+        "city": "Miyoshi",
+        "prefecture": "Tokushima",
+        "source_url": "https://www.chiiori.org/",
+        "hero_image": "/stays/chiiori.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7199727,
+          38.228306599999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "densho-sen-nen-no-yado-sakan",
+        "name": "Densho Sen-nen no Yado Sakan",
+        "name_jp": "伝承千年の宿 佐勘",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Sendai",
+        "prefecture": "Miyagi",
+        "source_url": "https://www.sakan-ryokan.jp/",
+        "hero_image": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5938011,
+          34.212316699999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "ekoin",
+        "name": "Ekoin",
+        "name_jp": "恵光院",
+        "primary_cat": "temple_stay",
+        "price_tier": "mid",
+        "city": "Koya",
+        "prefecture": "Wakayama",
+        "source_url": "http://www.ekoin.jp/",
+        "hero_image": "/stays/ekoin.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.8390671,
+          34.6784041
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "fufu-nara",
+        "name": "FUFU Nara",
+        "name_jp": "ふふ奈良",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Nara",
+        "prefecture": "Nara",
+        "source_url": "https://www.fufunara.jp/",
+        "hero_image": "/stays/fufu-nara.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0590056,
+          35.2442237
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "fujiya-hotel-hakone",
+        "name": "Fujiya Hotel Hakone",
+        "name_jp": "富士屋ホテル",
+        "primary_cat": "heritage_hotel",
+        "price_tier": "upscale",
+        "city": "Hakone",
+        "prefecture": "Kanagawa",
+        "source_url": "https://www.fujiyahotel.jp/",
+        "hero_image": "/stays/fujiya-hotel-hakone.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5848399,
+          34.2159553
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "fukuchiin",
+        "name": "Fukuchiin",
+        "name_jp": "福智院",
+        "primary_cat": "temple_stay",
+        "price_tier": "mid",
+        "city": "Koyasan",
+        "prefecture": "Wakayama",
+        "source_url": "http://www.fukuchiin.com/",
+        "hero_image": "/stays/fukuchiin.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.8533012,
+          32.7456005
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "garden-terrace-nagasaki-hotel-resort",
+        "name": "Garden Terrace Nagasaki Hotel & Resort",
+        "name_jp": "ガーデンテラス長崎ホテル＆リゾート",
+        "primary_cat": "resort",
+        "price_tier": "upscale",
+        "city": "Nagasaki",
+        "prefecture": "Nagasaki",
+        "source_url": "https://www.gt-nagasaki.jp/",
+        "hero_image": "/stays/garden-terrace-nagasaki-hotel-resort.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.5311485,
+          38.569499
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "ginzan-onsen-fujiya",
+        "name": "Ginzan Onsen Fujiya",
+        "name_jp": "銀山温泉 藤屋",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Obanazawa",
+        "prefecture": "Yamagata",
+        "source_url": "https://fujiya-ginzan.com/",
+        "hero_image": "/stays/ginzan-onsen-fujiya.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.6210232,
+          43.055749399999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "glamping-stay-tomamu",
+        "name": "GLAMPING STAY TOMAMU",
+        "name_jp": "グランピングステイトマム",
+        "primary_cat": "glamping",
+        "price_tier": "mid",
+        "city": "Shimukappu",
+        "prefecture": "Hokkaido",
+        "source_url": "https://glampingstaytomamu.hokkaido.jp/",
+        "hero_image": "/stays/glamping-stay-tomamu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.04856139999998,
+          35.247364399999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "gora-kadan",
+        "name": "Gora Kadan",
+        "name_jp": "強羅花壇",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Hakone",
+        "prefecture": "Kanagawa",
+        "source_url": "https://gorakadan.com/",
+        "hero_image": "/stays/gora-kadan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6383587,
+          36.2487698
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "gosenjaku-hotel-kamikochi",
+        "name": "Gosenjaku Hotel Kamikochi",
+        "name_jp": "五千尺ホテル上高地",
+        "primary_cat": "design_hotel",
+        "price_tier": "luxury",
+        "city": "Matsumoto",
+        "prefecture": "Nagano",
+        "source_url": "https://gosenjaku.co.jp/",
+        "hero_image": "/stays/gosenjaku-hotel-kamikochi.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.284066,
+          34.3895112
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "guntu",
+        "name": "guntû",
+        "name_jp": "ガンツウ",
+        "primary_cat": "resort",
+        "price_tier": "luxury",
+        "city": "Seto Inland Sea",
+        "prefecture": "Hiroshima/Okayama",
+        "source_url": "https://guntu.jp",
+        "hero_image": "/stays/guntu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0627308,
+          35.2431088
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hakone-ginyu",
+        "name": "Hakone Ginyu",
+        "name_jp": "箱根吟遊",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Hakone",
+        "prefecture": "Kanagawa",
+        "source_url": "http://www.hakoneginyu.co.jp/",
+        "hero_image": "/stays/hakone-ginyu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7564528,
+          35.6573407
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "henn-na-hotel-tokyo-hamamatsucho",
+        "name": "Henn na Hotel Tokyo Hamamatsucho",
+        "name_jp": "変なホテル東京浜松町",
+        "primary_cat": "capsule_themed",
+        "price_tier": "mid",
+        "city": "Minato",
+        "prefecture": "Tokyo",
+        "source_url": "https://www.hennnahotel.com/hamamatsucho/",
+        "hero_image": "/stays/henn-na-hotel-tokyo-hamamatsucho.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.741242,
+          35.5544291
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "henn-na-hotel-tokyo-haneda",
+        "name": "Henn na Hotel Tokyo Haneda",
+        "name_jp": "変なホテル東京羽田",
+        "primary_cat": "capsule_themed",
+        "price_tier": "mid",
+        "city": "Tokyo",
+        "prefecture": "Tokyo",
+        "source_url": "https://www.hennnahotel.com/haneda/",
+        "hero_image": "/stays/henn-na-hotel-tokyo-haneda.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6822882,
+          42.8433487
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "higashiyama-niseko-village-a-ritz-carlton-reserve",
+        "name": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
+        "name_jp": "東山ニセコビレッジ・リッツ・カールトン・リザーブ",
+        "primary_cat": "mountain_lodge",
+        "price_tier": "luxury",
+        "city": "Niseko",
+        "prefecture": "Hokkaido",
+        "source_url": "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/",
+        "hero_image": "/stays/higashiyama-niseko-village-a-ritz-carlton-reserve.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.76566689999999,
+          35.0103334
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hiiragiya-ryokan",
+        "name": "Hiiragiya Ryokan",
+        "name_jp": "柊家旅館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://hiiragiya.co.jp/",
+        "hero_image": "/stays/hiiragiya-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.2587828,
+          36.1402794
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "honjin-hiranoya-bekkan",
+        "name": "Honjin Hiranoya Bekkan",
+        "name_jp": "本陣平野屋 別館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Takayama",
+        "prefecture": "Gifu",
+        "source_url": "https://honjinhiranoya.co.jp/",
+        "hero_image": "/stays/honjin-hiranoya-bekkan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3554479,
+          40.6616861
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshino-resorts-aomoriya",
+        "name": "Hoshino Resorts Aomoriya",
+        "name_jp": "青森屋",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Misawa",
+        "prefecture": "Aomori",
+        "source_url": "https://hoshinoresorts.com/ja/hotels/aomoriya/",
+        "hero_image": "/stays/hoshino-resorts-aomoriya.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7045,
+          38.2354268
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshino-resorts-kai-akiu",
+        "name": "Hoshino Resorts KAI Akiu",
+        "name_jp": "界 秋保",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Sendai",
+        "prefecture": "Miyagi",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaiaiku/",
+        "hero_image": "/stays/hoshino-resorts-kai-akiu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9826831,
+          40.5762296
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshino-resorts-oirase-keiryu-hotel",
+        "name": "Hoshino Resorts Oirase Keiryu Hotel",
+        "name_jp": "奥入瀬渓流ホテル",
+        "primary_cat": "mountain_lodge",
+        "price_tier": "upscale",
+        "city": "Towada",
+        "prefecture": "Aomori",
+        "source_url": "https://hoshinoresorts.com/ja/hotels/oirasekeiryu/",
+        "hero_image": "/stays/hoshino-resorts-oirase-keiryu-hotel.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.7450933,
+          35.5253284
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshinoya-fuji",
+        "name": "Hoshinoya Fuji",
+        "name_jp": "星のや富士",
+        "primary_cat": "glamping",
+        "price_tier": "luxury",
+        "city": "Fujikawaguchiko",
+        "prefecture": "Yamanashi",
+        "source_url": "https://hoshinoresorts.com/en/hotels/hoshinoyafuji/",
+        "hero_image": "/stays/hoshinoya-fuji.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.5909137,
+          36.3582581
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshinoya-karuizawa",
+        "name": "Hoshinoya Karuizawa",
+        "name_jp": "星のや軽井沢",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Karuizawa",
+        "prefecture": "Nagano",
+        "source_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakaruizawa/",
+        "hero_image": "/stays/hoshinoya-karuizawa.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.6769726,
+          35.0113079
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshinoya-kyoto",
+        "name": "Hoshinoya Kyoto",
+        "name_jp": "星のや京都",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://hoshinoresorts.com/en/hotels/hoshinoyakyoto/",
+        "hero_image": "/stays/hoshinoya-kyoto.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.71480380000001,
+          26.4203689
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshinoya-okinawa",
+        "name": "Hoshinoya Okinawa",
+        "name_jp": "星のや沖縄",
+        "primary_cat": "resort",
+        "price_tier": "luxury",
+        "city": "Yomitan",
+        "prefecture": "Okinawa",
+        "source_url": "https://hoshinoresorts.com/en/hotels/hoshinoyaokinawa/",
+        "hero_image": "/stays/hoshinoya-okinawa.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.0959491,
+          24.3231267
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshinoya-taketomi-island",
+        "name": "Hoshinoya Taketomi Island",
+        "name_jp": "星のや竹富島",
+        "primary_cat": "resort",
+        "price_tier": "luxury",
+        "city": "Taketomi",
+        "prefecture": "Okinawa",
+        "source_url": "https://hoshinoresorts.com/en/hotels/hoshinoyataketomijima/",
+        "hero_image": "/stays/hoshinoya-taketomi-island.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7650244,
+          35.6875834
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hoshinoya-tokyo",
+        "name": "Hoshinoya Tokyo",
+        "name_jp": "星のや東京",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Chiyoda",
+        "prefecture": "Tokyo",
+        "source_url": "https://hoshinoresorts.com/en/hotels/hoshinoyatokyo/",
+        "hero_image": "/stays/hoshinoya-tokyo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.9667663,
+          35.3049621
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hotel-clad",
+        "name": "Hotel CLAD",
+        "name_jp": "ホテルクラッド",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Gotemba",
+        "prefecture": "Shizuoka",
+        "source_url": "https://hotelclad.jp/",
+        "hero_image": "/stays/hotel-clad.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7137936,
+          35.6317881
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hotel-gajoen-tokyo",
+        "name": "Hotel Gajoen Tokyo",
+        "name_jp": "ホテル雅叙園東京",
+        "primary_cat": "heritage_hotel",
+        "price_tier": "upscale",
+        "city": "Meguro",
+        "prefecture": "Tokyo",
+        "source_url": "https://www.hotelgajoen-tokyo.com/",
+        "hero_image": "/stays/hotel-gajoen-tokyo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7020345,
+          35.695358299999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hotel-gracery-shinjuku",
+        "name": "Hotel Gracery Shinjuku",
+        "name_jp": "ホテルグレイスリー新宿",
+        "primary_cat": "capsule_themed",
+        "price_tier": "mid",
+        "city": "Tokyo",
+        "prefecture": "Tokyo",
+        "source_url": "https://shinjuku.gracery.com/",
+        "hero_image": "/stays/hotel-gracery-shinjuku.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.4074334,
+          33.589931799999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hotel-il-palazzo",
+        "name": "Hotel Il Palazzo",
+        "name_jp": "ホテル・イル・パラッツォ",
+        "primary_cat": "heritage_hotel",
+        "price_tier": "upscale",
+        "city": "Fukuoka",
+        "prefecture": "Fukuoka",
+        "source_url": "https://www.hotel-il-palazzo.com/",
+        "hero_image": "/stays/hotel-il-palazzo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.357508,
+          33.6885863
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "hotel-kawakyu",
+        "name": "Hotel Kawakyu",
+        "name_jp": "ホテル川久",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Shirahama",
+        "prefecture": "Wakayama",
+        "source_url": "https://www.hotel-kawakyu.jp/",
+        "hero_image": "/stays/hotel-kawakyu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.684359,
+          33.804888999999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "iki-retreat-by-onko-chishin",
+        "name": "IKI RETREAT by Onko Chishin",
+        "name_jp": "IKI RETREAT by 温故知新",
+        "primary_cat": "design_hotel",
+        "price_tier": "luxury",
+        "city": "Iki",
+        "prefecture": "Nagasaki",
+        "source_url": "https://iki-retreat.com/",
+        "hero_image": "/stays/iki-retreat-by-onko-chishin.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.3223151,
+          34.295109599999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "iwaso-ryokan",
+        "name": "Iwaso Ryokan",
+        "name_jp": "岩惣",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Hatsukaichi",
+        "prefecture": "Hiroshima",
+        "source_url": "https://www.iwaso.com/",
+        "hero_image": "/stays/iwaso-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.894266,
+          35.4111367
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "izanro-iwasaki",
+        "name": "Izanro Iwasaki",
+        "name_jp": "依山楼岩崎",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Misasa",
+        "prefecture": "Tottori",
+        "source_url": "https://izanro.co.jp/",
+        "hero_image": "/stays/izanro-iwasaki.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.8076632,
+          36.5315787
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-alps",
+        "name": "KAI Alps",
+        "name_jp": "界 アルプス",
+        "primary_cat": "mountain_lodge",
+        "price_tier": "upscale",
+        "city": "Omachi",
+        "prefecture": "Nagano",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaialps/",
+        "hero_image": "/stays/kai-alps.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.19365,
+          33.0806161
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-aso",
+        "name": "KAI Aso",
+        "name_jp": "界 阿蘇",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Kokonoe",
+        "prefecture": "Oita",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaiaso/",
+        "hero_image": "/stays/kai-aso.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.50760649999998,
+          33.279398
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-beppu",
+        "name": "KAI Beppu",
+        "name_jp": "界 別府",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Beppu",
+        "prefecture": "Oita",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaibeppu/",
+        "hero_image": "/stays/kai-beppu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.620581,
+          34.7621423
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-enshu",
+        "name": "KAI Enshu",
+        "name_jp": "界 遠州",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Hamamatsu",
+        "prefecture": "Shizuoka",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaienshu/",
+        "hero_image": "/stays/kai-enshu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0840236,
+          35.223500099999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-hakone",
+        "name": "KAI Hakone",
+        "name_jp": "界 箱根",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Hakone",
+        "prefecture": "Kanagawa",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaihakone/",
+        "hero_image": "/stays/kai-hakone.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.09146170000002,
+          34.968584799999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-ito",
+        "name": "KAI Ito",
+        "name_jp": "界 伊東",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Ito",
+        "prefecture": "Shizuoka",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaiito/",
+        "hero_image": "/stays/kai-ito.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.6311849,
+          35.433483599999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-izumo",
+        "name": "KAI Izumo",
+        "name_jp": "界 出雲",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Izumo",
+        "prefecture": "Shimane",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaiizumo/",
+        "hero_image": "/stays/kai-izumo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7158787,
+          36.8279737
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-kinugawa",
+        "name": "KAI Kinugawa",
+        "name_jp": "界 鬼怒川",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Nikko",
+        "prefecture": "Tochigi",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaikinugawa/",
+        "hero_image": "/stays/kai-kinugawa.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.87164819999998,
+          31.868128700000003
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-kirishima",
+        "name": "KAI Kirishima",
+        "name_jp": "界 霧島",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Kirishima",
+        "prefecture": "Kagoshima",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaikirishima/",
+        "hero_image": "/stays/kai-kirishima.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.9884212,
+          36.2616955
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-matsumoto",
+        "name": "KAI Matsumoto",
+        "name_jp": "界 松本",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Matsumoto",
+        "prefecture": "Nagano",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaimatsumoto/",
+        "hero_image": "/stays/kai-matsumoto.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4966859,
+          36.736474
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-nikko",
+        "name": "KAI Nikko",
+        "name_jp": "界 日光",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Nikko",
+        "prefecture": "Tochigi",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kainikko/",
+        "hero_image": "/stays/kai-nikko.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.55367239999998,
+          36.1921049
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-okuhida",
+        "name": "KAI Okuhida",
+        "name_jp": "界 奥飛騨",
+        "primary_cat": "mountain_lodge",
+        "price_tier": "upscale",
+        "city": "Okuhida",
+        "prefecture": "Gifu",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaiokuhida/",
+        "hero_image": "/stays/kai-okuhida.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3618455,
+          42.5601463
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-poroto",
+        "name": "KAI Poroto",
+        "name_jp": "界 ポロト",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Shiraoi",
+        "prefecture": "Hokkaido",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaiporoto/",
+        "hero_image": "/stays/kai-poroto.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0121316,
+          35.2622657
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-sengokuhara",
+        "name": "KAI Sengokuhara",
+        "name_jp": "界 仙石原",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Hakone",
+        "prefecture": "Kanagawa",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaisengokuhara/",
+        "hero_image": "/stays/kai-sengokuhara.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.0086212,
+          35.4187346
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-tamatsukuri",
+        "name": "KAI Tamatsukuri",
+        "name_jp": "界 玉造",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Matsue",
+        "prefecture": "Shimane",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaitamatsukuri/",
+        "hero_image": "/stays/kai-tamatsukuri.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.57489769999998,
+          40.5117493
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-tsugaru",
+        "name": "KAI Tsugaru",
+        "name_jp": "界 津軽",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Owani",
+        "prefecture": "Aomori",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaitsugaru/",
+        "hero_image": "/stays/kai-tsugaru.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.35384779999998,
+          33.2787826
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kai-yufuin",
+        "name": "KAI Yufuin",
+        "name_jp": "界 由布院",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Yufu",
+        "prefecture": "Oita",
+        "source_url": "https://hoshinoresorts.com/en/hotels/kaiyufuin/",
+        "hero_image": "/stays/kai-yufuin.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.62853579999998,
+          36.24279
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kamikochi-imperial-hotel",
+        "name": "Kamikochi Imperial Hotel",
+        "name_jp": "上高地帝国ホテル",
+        "primary_cat": "heritage_hotel",
+        "price_tier": "upscale",
+        "city": "Matsumoto",
+        "prefecture": "Nagano",
+        "source_url": "https://www.imperialhotel.co.jp/j/kamikochi/",
+        "hero_image": "/stays/kamikochi-imperial-hotel.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.6359352,
+          36.2482547
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kamikochi-nishi-ito-ya-mountain-lodge",
+        "name": "Kamikochi Nishi-Ito-Ya Mountain Lodge",
+        "name_jp": "上高地西糸屋山荘",
+        "primary_cat": "mountain_lodge",
+        "price_tier": "upscale",
+        "city": "Matsumoto",
+        "prefecture": "Nagano",
+        "source_url": "https://nishiitoya.com/",
+        "hero_image": "/stays/kamikochi-nishi-ito-ya-mountain-lodge.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.3766168,
+          36.2502608
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kayotei",
+        "name": "Kayotei",
+        "name_jp": "かよう亭",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Kaga",
+        "prefecture": "Ishikawa",
+        "source_url": "https://www.kayotei.jp/",
+        "hero_image": "/stays/kayotei.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0889301,
+          35.2337293
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kinnotake-tonosawa",
+        "name": "Kinnotake Tonosawa",
+        "name_jp": "金乃竹 塔ノ沢",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Hakone",
+        "prefecture": "Kanagawa",
+        "source_url": "https://kinnotake-resorts.com/kinnotake-tonosawa/",
+        "hero_image": "/stays/kinnotake-tonosawa.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.71979,
+          36.8356758
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kinugawa-onsen-asaya",
+        "name": "Kinugawa Onsen Asaya",
+        "name_jp": "鬼怒川温泉 あさや",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Nikko",
+        "prefecture": "Tochigi",
+        "source_url": "https://www.asaya-hotel.co.jp/",
+        "hero_image": "/stays/kinugawa-onsen-asaya.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9952456,
+          44.0720959
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kitakobushi-shiretoko-hotel-resort",
+        "name": "Kitakobushi Shiretoko Hotel & Resort",
+        "name_jp": "北こぶし知床 ホテル＆リゾート",
+        "primary_cat": "mountain_lodge",
+        "price_tier": "upscale",
+        "city": "Shari",
+        "prefecture": "Hokkaido",
+        "source_url": "https://www.shiretoko.co.jp/en/",
+        "hero_image": "/stays/kitakobushi-shiretoko-hotel-resort.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.8943917,
+          35.4102137
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kiya-ryokan",
+        "name": "Kiya Ryokan",
+        "name_jp": "木屋旅館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Misasa",
+        "prefecture": "Tottori",
+        "source_url": "https://misasa.co.jp/",
+        "hero_image": "/stays/kiya-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.6587514,
+          36.569184
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kuro-machiya-heritage-hotel",
+        "name": "KURO Machiya Heritage Hotel",
+        "name_jp": "KURO 町家ヘリテージホテル",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "upscale",
+        "city": "Kanazawa",
+        "prefecture": "Ishikawa",
+        "source_url": "https://kuro-kanazawa.com/",
+        "hero_image": "/stays/kuro-machiya-heritage-hotel.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1478841,
+          33.0777667
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kurokawa-onsen-okunoyu",
+        "name": "Kurokawa Onsen Okunoyu",
+        "name_jp": "黒川温泉 奥の湯",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Minamioguni",
+        "prefecture": "Kumamoto",
+        "source_url": "https://www.okunoyu.com/",
+        "hero_image": "/stays/kurokawa-onsen-okunoyu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1391817,
+          33.0775854
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kurokawa-onsen-yamabiko-ryokan",
+        "name": "Kurokawa Onsen Yamabiko Ryokan",
+        "name_jp": "黒川温泉 山彦旅館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "mid",
+        "city": "Minamioguni",
+        "prefecture": "Kumamoto",
+        "source_url": "https://yamabiko-ryokan.com/",
+        "hero_image": "/stays/kurokawa-onsen-yamabiko-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1567315,
+          33.078027399999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kurokawa-onsen-yamamizuki",
+        "name": "Kurokawa Onsen Yamamizuki",
+        "name_jp": "黒川温泉 山みず木",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Minamioguni",
+        "prefecture": "Kumamoto",
+        "source_url": "https://www.yamamizuki.com/",
+        "hero_image": "/stays/kurokawa-onsen-yamamizuki.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.2371005,
+          33.321649
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "kuroshio-honjin",
+        "name": "Kuroshio Honjin",
+        "name_jp": "黒潮本陣",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "mid",
+        "city": "Nakatosa",
+        "prefecture": "Kochi",
+        "source_url": "http://www.honjin.or.jp/",
+        "hero_image": "/stays/kuroshio-honjin.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.10475979999998,
+          43.272923999999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "lake-shikaribetsu-kotan",
+        "name": "Lake Shikaribetsu Kotan",
+        "name_jp": "然別湖コタン",
+        "primary_cat": "glamping",
+        "price_tier": "mid",
+        "city": "Shikaoi",
+        "prefecture": "Hokkaido",
+        "source_url": "https://kotan.jp/",
+        "hero_image": "/stays/lake-shikaribetsu-kotan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7296949,
+          40.5706874
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "lamp-no-yado-aoni-onsen",
+        "name": "Lamp no Yado Aoni Onsen",
+        "name_jp": "ランプの宿 青荷温泉",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "mid",
+        "city": "Kuroishi",
+        "prefecture": "Aomori",
+        "source_url": "https://www.aoninet.com/",
+        "hero_image": "/stays/lamp-no-yado-aoni-onsen.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.56751979999999,
+          39.2893536
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "lien-tono",
+        "name": "Lien Tono",
+        "name_jp": "Lien遠野 語り部のいる宿",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "mid",
+        "city": "Tōno",
+        "prefecture": "Iwate",
+        "source_url": "https://www.lien-tono.com/",
+        "hero_image": "/stays/lien-tono.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.1994786,
+          34.409058
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "log",
+        "name": "LOG",
+        "name_jp": "LOG",
+        "primary_cat": "design_hotel",
+        "price_tier": "luxury",
+        "city": "Onomichi",
+        "prefecture": "Hiroshima",
+        "source_url": "https://log-on.com/",
+        "hero_image": "/stays/log.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.76454909999998,
+          35.6937795
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "manga-art-hotel-tokyo",
+        "name": "Manga Art Hotel Tokyo",
+        "name_jp": "マンガアートホテル東京",
+        "primary_cat": "capsule_themed",
+        "price_tier": "budget",
+        "city": "Tokyo",
+        "prefecture": "Tokyo",
+        "source_url": "https://mangaarthotel.com/",
+        "hero_image": "/stays/manga-art-hotel-tokyo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.04205819999999,
+          35.2214594
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "matsuzakaya-honten",
+        "name": "Matsuzakaya Honten",
+        "name_jp": "松坂屋本店",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Hakone",
+        "prefecture": "Kanagawa",
+        "source_url": "https://www.matsuzakaya-honten.jp/",
+        "hero_image": "/stays/matsuzakaya-honten.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.0163457,
+          33.182522399999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "mifuneyama-rakuen-hotel",
+        "name": "Mifuneyama Rakuen Hotel",
+        "name_jp": "御船山楽園ホテル",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Takeo",
+        "prefecture": "Saga",
+        "source_url": "http://www.mifuneyama.co.jp/",
+        "hero_image": "/stays/mifuneyama-rakuen-hotel.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9409267,
+          35.245339
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "mother-farm-glamping",
+        "name": "Mother Farm Glamping",
+        "name_jp": "マザー牧場 グランピング",
+        "primary_cat": "glamping",
+        "price_tier": "mid",
+        "city": "Futtsu",
+        "prefecture": "Chiba",
+        "source_url": "https://motherfarmglamping.com/",
+        "hero_image": "/stays/mother-farm-glamping.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.97988279999998,
+          38.7033961
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "mt-haguro-saikan",
+        "name": "Mt. Haguro Saikan",
+        "name_jp": "羽黒山 斎館",
+        "primary_cat": "temple_stay",
+        "price_tier": "budget",
+        "city": "Tsuruoka",
+        "prefecture": "Yamagata",
+        "source_url": "http://www.dewasanzan.jp/",
+        "hero_image": "/stays/mt-haguro-saikan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.99433879999998,
+          34.456131899999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "naoshima-ryokan-roka",
+        "name": "Naoshima Ryokan Roka",
+        "name_jp": "直島旅館 ろ霞",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Naoshima",
+        "prefecture": "Kagawa",
+        "source_url": "https://roka.voyage/",
+        "hero_image": "/stays/naoshima-ryokan-roka.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.83382749999998,
+          34.6798175
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "nara-hotel",
+        "name": "Nara Hotel",
+        "name_jp": "奈良ホテル",
+        "primary_cat": "heritage_hotel",
+        "price_tier": "upscale",
+        "city": "Nara",
+        "prefecture": "Nara",
+        "source_url": "https://narahotel.co.jp/",
+        "hero_image": "/stays/nara-hotel.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7486739,
+          35.0000354
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "nazuna-kyoto-tsubaki-st",
+        "name": "Nazuna Kyoto Tsubaki St",
+        "name_jp": "Nazuna 京都 椿通",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "upscale",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://www.nazuna.co/",
+        "hero_image": "/stays/nazuna-kyoto-tsubaki-st.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.70824149999999,
+          35.6903539
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "nine-hours-shinjuku",
+        "name": "Nine Hours Shinjuku",
+        "name_jp": "ナインアワーズ新宿",
+        "primary_cat": "capsule_themed",
+        "price_tier": "budget",
+        "city": "Tokyo",
+        "prefecture": "Tokyo",
+        "source_url": "https://ninehours.co.jp/",
+        "hero_image": "/stays/nine-hours-shinjuku.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6223305,
+          42.8394239
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "niseko-konbu-onsen-tsuruga-besso-moku-no-sho",
+        "name": "Niseko Konbu Onsen Tsuruga Besso Moku no Sho",
+        "name_jp": "鶴雅別荘 杢の抄",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Niseko",
+        "prefecture": "Hokkaido",
+        "source_url": "https://www.mokunosho.com/",
+        "hero_image": "/stays/niseko-konbu-onsen-tsuruga-besso-moku-no-sho.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          134.8056167,
+          35.62535
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "nishimuraya-honkan",
+        "name": "Nishimuraya Honkan",
+        "name_jp": "西村屋本館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Toyooka",
+        "prefecture": "Hyogo",
+        "source_url": "https://www.nishimuraya.ne.jp/honkan/",
+        "hero_image": "/stays/nishimuraya-honkan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.17499949999998,
+          34.326034
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "ohtani-sanso",
+        "name": "Ohtani Sanso",
+        "name_jp": "大谷山荘",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Nagato",
+        "prefecture": "Yamaguchi",
+        "source_url": "https://otanisanso.co.jp/",
+        "hero_image": "/stays/ohtani-sanso.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7535423,
+          34.980258899999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo3-kyoto-toji",
+        "name": "OMO3 Kyoto Toji",
+        "name_jp": "OMO3京都東寺",
+        "primary_cat": "design_hotel",
+        "price_tier": "mid",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo3kyototoji/",
+        "hero_image": "/stays/omo3-kyoto-toji.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7359607,
+          35.675022
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo3-tokyo-akasaka",
+        "name": "OMO3 Tokyo Akasaka",
+        "name_jp": "OMO3東京赤坂",
+        "primary_cat": "design_hotel",
+        "price_tier": "mid",
+        "city": "Minato",
+        "prefecture": "Tokyo",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo3tokyoakasaka/",
+        "hero_image": "/stays/omo3-tokyo-akasaka.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.776841,
+          35.0039361
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo5-kyoto-gion",
+        "name": "OMO5 Kyoto Gion",
+        "name_jp": "OMO5京都祇園",
+        "primary_cat": "design_hotel",
+        "price_tier": "mid",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo5kyotogion/",
+        "hero_image": "/stays/omo5-kyoto-gion.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7685167,
+          35.0092672
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo5-kyoto-sanjo",
+        "name": "OMO5 Kyoto Sanjo",
+        "name_jp": "OMO5京都三条",
+        "primary_cat": "design_hotel",
+        "price_tier": "mid",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo5kyotosanjo/",
+        "hero_image": "/stays/omo5-kyoto-sanjo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7292201,
+          35.7329647
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo5-tokyo-otsuka",
+        "name": "OMO5 Tokyo Otsuka",
+        "name_jp": "OMO5東京大塚",
+        "primary_cat": "design_hotel",
+        "price_tier": "mid",
+        "city": "Toshima",
+        "prefecture": "Tokyo",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo5tokyootsuka/",
+        "hero_image": "/stays/omo5-tokyo-otsuka.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3641376,
+          43.7701376
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo7-asahikawa",
+        "name": "OMO7 Asahikawa",
+        "name_jp": "OMO7旭川",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Asahikawa",
+        "prefecture": "Hokkaido",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo7asahikawa/",
+        "hero_image": "/stays/omo7-asahikawa.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.5018895,
+          34.6508135
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo7-osaka",
+        "name": "OMO7 Osaka",
+        "name_jp": "OMO7大阪",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Osaka",
+        "prefecture": "Osaka",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo7osaka/",
+        "hero_image": "/stays/omo7-osaka.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.63802970000003,
+          35.4436573
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "omo7-yokohama",
+        "name": "OMO7 Yokohama",
+        "name_jp": "OMO7横浜",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Yokohama",
+        "prefecture": "Kanagawa",
+        "source_url": "https://hoshinoresorts.com/en/hotels/omo7yokohama/",
+        "hero_image": "/stays/omo7-yokohama.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.189816,
+          34.401956999999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "onomichi-u2",
+        "name": "Onomichi U2",
+        "name_jp": "ONOMICHI U2",
+        "primary_cat": "design_hotel",
+        "price_tier": "mid",
+        "city": "Onomichi",
+        "prefecture": "Hiroshima",
+        "source_url": "https://onomichi-u2.com/hotel-cycle/",
+        "hero_image": "/stays/onomichi-u2.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.71113499999998,
+          35.693064899999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "onsen-ryokan-yuen-shinjuku",
+        "name": "Onsen Ryokan Yuen Shinjuku",
+        "name_jp": "温泉旅館 由縁新宿",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Shinjuku",
+        "prefecture": "Tokyo",
+        "source_url": "https://www.yuen-shinjuku.jp/",
+        "hero_image": "/stays/onsen-ryokan-yuen-shinjuku.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.25290529999998,
+          36.1422545
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "oyado-koto-no-yume",
+        "name": "Oyado Koto no Yume",
+        "name_jp": "お宿 古都の夢",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "mid",
+        "city": "Takayama",
+        "prefecture": "Gifu",
+        "source_url": "https://kotoyume.com/",
+        "hero_image": "/stays/oyado-koto-no-yume.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.0627164,
+          35.091144299999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "risonare-atami",
+        "name": "Risonare Atami",
+        "name_jp": "リゾナーレ熱海",
+        "primary_cat": "glamping",
+        "price_tier": "upscale",
+        "city": "Atami",
+        "prefecture": "Shizuoka",
+        "source_url": "https://hoshinoresorts.com/en/hotels/risonareatami/",
+        "hero_image": "/stays/risonare-atami.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          124.0000816,
+          24.332308599999998
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "risonare-kohamajima",
+        "name": "RISONARE Kohamajima",
+        "name_jp": "リゾナーレ小浜島",
+        "primary_cat": "resort",
+        "price_tier": "upscale",
+        "city": "Taketomi",
+        "prefecture": "Okinawa",
+        "source_url": "https://hoshinoresorts.com/en/hotels/risonarekohamajima/",
+        "hero_image": "/stays/risonare-kohamajima.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.9787848,
+          37.058096299999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "risonare-nasu",
+        "name": "Risonare Nasu",
+        "name_jp": "リゾナーレ那須",
+        "primary_cat": "resort",
+        "price_tier": "upscale",
+        "city": "Nasu",
+        "prefecture": "Tochigi",
+        "source_url": "https://hoshinoresorts.com/en/hotels/risonarenasu/",
+        "hero_image": "/stays/risonare-nasu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.6339569,
+          43.0669937
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "risonare-tomamu",
+        "name": "Risonare Tomamu",
+        "name_jp": "リゾナーレトマム",
+        "primary_cat": "glamping",
+        "price_tier": "upscale",
+        "city": "Shimukappu",
+        "prefecture": "Hokkaido",
+        "source_url": "https://hoshinoresorts.com/en/hotels/risonaretomamu/",
+        "hero_image": "/stays/risonare-tomamu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.3272039,
+          35.869311
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "risonare-yatsugatake",
+        "name": "Risonare Yatsugatake",
+        "name_jp": "リゾナーレ八ヶ岳",
+        "primary_cat": "resort",
+        "price_tier": "upscale",
+        "city": "Hokuto",
+        "prefecture": "Yamanashi",
+        "source_url": "https://hoshinoresorts.com/en/hotels/risonareyatsugatake/",
+        "hero_image": "/stays/risonare-yatsugatake.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.7721747,
+          34.5957832
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "ryokan-kurashiki",
+        "name": "Ryokan Kurashiki",
+        "name_jp": "旅館くらしき",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "luxury",
+        "city": "Kurashiki",
+        "prefecture": "Okayama",
+        "source_url": "https://www.ryokan-kurashiki.jp/",
+        "hero_image": "/stays/ryokan-kurashiki.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.34681899999998,
+          35.095579799999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "ryokan-masuya",
+        "name": "Ryokan Masuya",
+        "name_jp": "旅館ますや",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "mid",
+        "city": "Oda",
+        "prefecture": "Shimane",
+        "source_url": "https://masuya-ginzan.jp/",
+        "hero_image": "/stays/ryokan-masuya.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.801545,
+          37.020564
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "satoyama-jujo",
+        "name": "Satoyama Jujo",
+        "name_jp": "里山十帖",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "luxury",
+        "city": "Minamiuonuma",
+        "prefecture": "Niigata",
+        "source_url": "https://satoyama-jujo.com/",
+        "hero_image": "/stays/satoyama-jujo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.4293788,
+          32.522293
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "sea-cruise-glamping-kumamoto-amakusa",
+        "name": "SEA CRUISE GLAMPING Kumamoto Amakusa",
+        "name_jp": "SEA CRUISE GLAMPING熊本天草",
+        "primary_cat": "glamping",
+        "price_tier": "mid",
+        "city": "Kamiamakusa",
+        "prefecture": "Kumamoto",
+        "source_url": "https://en.kumamoto-glamping.com/",
+        "hero_image": "/stays/sea-cruise-glamping-kumamoto-amakusa.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.2529458,
+          34.2731093
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "sekitei",
+        "name": "Sekitei",
+        "name_jp": "庭園の宿 石亭",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Hatsukaichi",
+        "prefecture": "Hiroshima",
+        "source_url": "http://www.sekitei.to/",
+        "hero_image": "/stays/sekitei.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.9506511,
+          35.0293408
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "setouchi-cominca-stays",
+        "name": "Setouchi Cominca Stays",
+        "name_jp": "Setouchi Cominca Stays",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "upscale",
+        "city": "Onomichi",
+        "prefecture": "Hiroshima",
+        "source_url": "https://setouchi-cominca.jp/",
+        "hero_image": "/stays/setouchi-cominca-stays.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.817031,
+          33.9229147
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "setouchi-retreat-aonagi",
+        "name": "Setouchi Retreat Aonagi",
+        "name_jp": "瀬戸内リトリート青凪",
+        "primary_cat": "design_hotel",
+        "price_tier": "luxury",
+        "city": "Matsuyama",
+        "prefecture": "Ehime",
+        "source_url": "https://www.setouchi-aonagi.com/",
+        "hero_image": "/stays/setouchi-retreat-aonagi.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          136.9062679,
+          36.261048699999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "shirakawa-go-no-yu",
+        "name": "Shirakawa-go no Yu",
+        "name_jp": "白川郷の湯",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "mid",
+        "city": "Shirakawa",
+        "prefecture": "Gifu",
+        "source_url": "https://shirakawago-no-yu.jp/",
+        "hero_image": "/stays/shirakawa-go-no-yu.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8222385,
+          38.746198199999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "shonai-hotel-suiden-terrasse",
+        "name": "Shonai Hotel Suiden Terrasse",
+        "name_jp": "ショウナイホテル スイデンテラス",
+        "primary_cat": "design_hotel",
+        "price_tier": "mid",
+        "city": "Tsuruoka",
+        "prefecture": "Yamagata",
+        "source_url": "https://suiden-terrasse.jp/",
+        "hero_image": "/stays/shonai-hotel-suiden-terrasse.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.1517873,
+          35.7836387
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "shukubo-komadori-sanso",
+        "name": "Shukubo Komadori Sanso",
+        "name_jp": "駒鳥山荘",
+        "primary_cat": "temple_stay",
+        "price_tier": "mid",
+        "city": "Ome",
+        "prefecture": "Tokyo",
+        "source_url": "https://www.komadorisanso.jp/",
+        "hero_image": "/stays/shukubo-komadori-sanso.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          133.26389659999998,
+          33.5621739
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "snow-peak-ochi-niyodogawa-campfield",
+        "name": "Snow Peak Ochi Niyodogawa Campfield",
+        "name_jp": "スノーピークおち仁淀川",
+        "primary_cat": "glamping",
+        "price_tier": "mid",
+        "city": "Ochi",
+        "prefecture": "Kochi",
+        "source_url": "https://www.snowpeak.co.jp/",
+        "hero_image": "/stays/snow-peak-ochi-niyodogawa-campfield.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7784897,
+          35.0017701
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "sowaka",
+        "name": "SOWAKA",
+        "name_jp": "そわか",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "luxury",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://sowaka.com/",
+        "hero_image": "/stays/sowaka.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.2410153,
+          35.8057971
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "suimeikan",
+        "name": "Suimeikan",
+        "name_jp": "下呂温泉 水明館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Gero",
+        "prefecture": "Gifu",
+        "source_url": "https://www.suimeikan.co.jp/",
+        "hero_image": "/stays/suimeikan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.3977634,
+          38.1688808
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "takamiya-ryokan-miyamaso",
+        "name": "Takamiya Ryokan Miyamaso",
+        "name_jp": "深山荘 高見屋",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Yamagata",
+        "prefecture": "Yamagata",
+        "source_url": "http://www.zao.co.jp/takamiya/",
+        "hero_image": "/stays/takamiya-ryokan-miyamaso.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.1510189,
+          33.064771799999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "takefue",
+        "name": "Takefue",
+        "name_jp": "竹ふえ",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Minamioguni",
+        "prefecture": "Kumamoto",
+        "source_url": "https://takefue.com",
+        "hero_image": "/stays/takefue.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.68621869999998,
+          35.3956583
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "takenoya-ryokan",
+        "name": "Takenoya Ryokan",
+        "name_jp": "竹野屋旅館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Izumo",
+        "prefecture": "Shimane",
+        "source_url": "https://en.takenoya-ryokan.co.jp/",
+        "hero_image": "/stays/takenoya-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7659155,
+          35.0102623
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "tawaraya-ryokan",
+        "name": "Tawaraya Ryokan",
+        "name_jp": "俵屋旅館",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://tawaraya-kyoto.jp/",
+        "hero_image": "/stays/tawaraya-ryokan.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.7746146,
+          35.006288999999995
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "the-shinmonzen",
+        "name": "The Shinmonzen",
+        "name_jp": "ザ・シンモンゼン",
+        "primary_cat": "design_hotel",
+        "price_tier": "luxury",
+        "city": "Kyoto",
+        "prefecture": "Kyoto",
+        "source_url": "https://theshinmonzen.com/",
+        "hero_image": "/stays/the-shinmonzen.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.2471391,
+          34.7968671
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "tosen-goshobo",
+        "name": "Tosen Goshobo",
+        "name_jp": "陶泉 御所坊",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Kobe",
+        "prefecture": "Hyogo",
+        "source_url": "http://www.goshoboh.com/",
+        "hero_image": "/stays/tosen-goshobo.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.0769427,
+          26.601827
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "treeful-treehouse-sustainable-resort",
+        "name": "Treeful Treehouse Sustainable Resort",
+        "name_jp": "Treeful Treehouse",
+        "primary_cat": "glamping",
+        "price_tier": "upscale",
+        "city": "Nago",
+        "prefecture": "Okinawa",
+        "source_url": "https://treeful.net/",
+        "hero_image": "/stays/treeful-treehouse-sustainable-resort.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.704006,
+          35.6643833
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "trunk-hotel",
+        "name": "Trunk Hotel",
+        "name_jp": "TRUNK(HOTEL)",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Shibuya",
+        "prefecture": "Tokyo",
+        "source_url": "https://trunk-hotel.com/",
+        "hero_image": "/stays/trunk-hotel.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7798893,
+          39.805188799999996
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "tsuru-no-yu-onsen",
+        "name": "Tsuru no Yu Onsen",
+        "name_jp": "鶴の湯温泉",
+        "primary_cat": "machiya_kominka",
+        "price_tier": "mid",
+        "city": "Semboku",
+        "prefecture": "Akita",
+        "source_url": "http://www.tsurunoyu.com/",
+        "hero_image": "/stays/tsuru-no-yu-onsen.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.0010556,
+          43.1975729
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "unwind-hotel-bar-otaru",
+        "name": "UNWIND HOTEL & BAR OTARU",
+        "name_jp": "UNWIND HOTEL & BAR 小樽",
+        "primary_cat": "heritage_hotel",
+        "price_tier": "mid",
+        "city": "Otaru",
+        "prefecture": "Hokkaido",
+        "source_url": "https://www.livelyhotels.com/unwindotaru/",
+        "hero_image": "/stays/unwind-hotel-bar-otaru.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8235378,
+          42.6428696
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "we-hotel-toya",
+        "name": "WE Hotel Toya",
+        "name_jp": "WE ホテル洞爺",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Toyako",
+        "prefecture": "Hokkaido",
+        "source_url": "https://www.wehoteltoya.com/",
+        "hero_image": "/stays/we-hotel-toya.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          131.36317720000002,
+          33.2540696
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "yufuin-sanso-waremokou",
+        "name": "Yufuin Sanso Waremokou",
+        "name_jp": "湯布院 山荘 吾亦紅",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "upscale",
+        "city": "Yufu",
+        "prefecture": "Oita",
+        "source_url": "https://www.waremokou.com/",
+        "hero_image": "/stays/yufuin-sanso-waremokou.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6773586,
+          42.9046156
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "zaborin",
+        "name": "Zaborin",
+        "name_jp": "坐忘林",
+        "primary_cat": "onsen_ryokan",
+        "price_tier": "luxury",
+        "city": "Kutchan",
+        "prefecture": "Hokkaido",
+        "source_url": "https://zaborin.com/",
+        "hero_image": "/stays/zaborin.webp"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.4963941,
+          34.6957441
+        ]
+      },
+      "properties": {
+        "source": "stay",
+        "slug": "zentis-osaka",
+        "name": "Zentis Osaka",
+        "name_jp": "ゼンティス大阪",
+        "primary_cat": "design_hotel",
+        "price_tier": "upscale",
+        "city": "Osaka",
+        "prefecture": "Osaka",
+        "source_url": "https://zentishotels.com/",
+        "hero_image": "/stays/zentis-osaka.webp"
       }
     }
   ]
