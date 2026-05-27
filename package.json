@@ -15,7 +15,7 @@
     "verify-pills": "node scripts/verify-pills.mjs",
     "enrich:refresh": "python3 scripts/enrich_with_places_api.py --hours-only --refresh-stale",
     "geojson": "node scripts/generate-geojson.mjs",
-    "prebuild": "rm -rf node_modules/.astro/data-store.json && npm run geojson && npm run enrich:refresh || true"
+    "prebuild": "rm -rf node_modules/.astro/data-store.json && npm run geojson"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
