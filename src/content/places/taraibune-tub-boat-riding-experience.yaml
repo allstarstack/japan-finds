@@ -1,0 +1,19 @@
+name: "Taraibune Tub-Boat Riding Experience (たらい舟)"
+address_or_area: "Ogi, Sado"
+region: "Hokuriku Shinetsu"
+prefecture: "Niigata"
+primary_category: "See"
+public_label: "scenic_transport"
+planning_flags: "with_kids"
+launch_tier: "standard"
+status: "ready"
+public_render: true
+address_verified: false
+source_type: "chat_url"
+place_id: ChIJ4TvL7VyH9F8Rr9tni9ywB-o
+lat: 37.8087758
+lng: 138.2663832
+hero_image: /places/taraibune-tub-boat-riding-experience.webp
+hero_attribution: Photo via Google
+local_favorite: false
+viral: false
