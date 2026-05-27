@@ -95,12 +95,15 @@ const STAY_LEGEND = [
       <div
         class="map-cat-filters"
         role="group"
-        aria-label="Filter map by category"
+        aria-label="Switch map mode"
       >
-        <button type="button" class="map-cat map-cat--see" data-cat-btn="See" aria-pressed="true">See</button>
-        <button type="button" class="map-cat map-cat--do" data-cat-btn="Do" aria-pressed="true">Do</button>
-        <button type="button" class="map-cat map-cat--eat" data-cat-btn="Eat" aria-pressed="true">Eat</button>
-        <button type="button" class="map-cat map-cat--stay" data-cat-btn="Stay" aria-pressed="true">Stay</button>
+        {/* Phase A.9 C5 — three mode chips matching the three legend
+            sections and the site nav (Where/Eat/Stay). See+Do collapsed
+            into Where since both filtered /places. Default state: no
+            chip pressed = trip-planner view (all sources visible). */}
+        <button type="button" class="map-cat map-cat--where" data-cat-btn="where" aria-pressed="false">Where</button>
+        <button type="button" class="map-cat map-cat--eat" data-cat-btn="eat" aria-pressed="false">Eat</button>
+        <button type="button" class="map-cat map-cat--stay" data-cat-btn="stay" aria-pressed="false">Stay</button>
       </div>
       <button type="button" class="map-reset" data-reset hidden>Reset</button>
     </div>
@@ -125,16 +128,18 @@ const STAY_LEGEND = [
         <span class="map-legend-toggle-text">Legend</span>
         <span class="map-legend-chev" aria-hidden="true">▾</span>
       </button>
-      {/* Phase A.9 C4 — three grouped sections.
-          Group headers (Where / Eat / Stay) are non-interactive labels;
-          source-level filtering is the toolbar's job, not the legend's.
-          Rows are click-to-focus, single-select within their source:
-            * default — focusedLegend[src] = null, every row in source visible
-            * click row X — only X visible; others get data-active="false"
-              (dimmed swatch + strikethrough label)
-            * click X again — clear, back to default
-          data-legend-row identifies the source (URL param it writes to);
-          data-value is the slug. */}
+      {/* Phase A.9 C5 — three grouped sections.
+          Group headers (Where / Eat / Stay) are non-interactive labels.
+          The whole legend toggles between two layouts via data-mode on
+          the list container:
+            data-mode=""              all three sections visible (default)
+            data-mode="where|eat|stay"  only the matching section visible
+          Rows inside a visible section are click-to-focus:
+            cluster=null   all rows active (no dim)
+            cluster=<slug> only that row active; peers dim+strikethrough
+          Clicking a row in any section also enters that section's mode
+          (so a single tap on "Ramen" jumps straight to Eat-mode focused
+          on Ramen, even if you started in the default trip-planner view). */}
       <div id="map-legend-list" class="map-legend-list" data-legend-list>
         <div class="map-legend-section" data-legend-section="places">
           <span class="map-legend-section-title">Where</span>
@@ -383,15 +388,15 @@ const STAY_LEGEND = [
       opacity 120ms ease-out;
     box-shadow: var(--shadow-sm);
   }
-  /* Click-to-include filter chips (Phase A.8): chips default INACTIVE
-     (outline only, no colored ring, no opacity dim). Click → adds to
-     filter set; the colored inset ring marks the active state. Empty
-     active set = no filter = show all pins (the default). Ring width
-     3px (vs 2px) for stronger colour legibility at button size. */
-  .map-cat[aria-pressed="true"].map-cat--see { box-shadow: inset 0 0 0 3px #176bff, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--do { box-shadow: inset 0 0 0 3px #ff3b30, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--eat { box-shadow: inset 0 0 0 3px #ffd84d, var(--shadow-sm); }
-  .map-cat[aria-pressed="true"].map-cat--stay { box-shadow: inset 0 0 0 3px #3f7548, var(--shadow-sm); }
+  /* Phase A.9 C5 — mode-switching chips. Default inactive (outline-only
+     pill). Pressing a chip activates that mode and pops the inset ring
+     in the source's brand colour. Click the pressed chip again to clear
+     back to the default trip-planner view. Ring width 3px for legibility
+     at button size. STAY ring uses Aizome Indigo to match the C2 pin
+     colour. */
+  .map-cat[aria-pressed="true"].map-cat--where { box-shadow: inset 0 0 0 3px #176bff, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--eat   { box-shadow: inset 0 0 0 3px #ffd84d, var(--shadow-sm); }
+  .map-cat[aria-pressed="true"].map-cat--stay  { box-shadow: inset 0 0 0 3px #3B4F81, var(--shadow-sm); }
 
   /* Mobile tap-to-activate hint (revealed by JS on coarse-pointer). */
   .map-hint {
@@ -537,9 +542,25 @@ const STAY_LEGEND = [
     border-width: 2.5px;
   }
 
+  /* Phase A.9 C5 — mode-driven legend section visibility.
+     data-mode on the legend list dictates which section(s) render:
+       (no attr / data-mode="")        all three sections visible
+       data-mode="where"               only Where section
+       data-mode="eat"                 only Eat section
+       data-mode="stay"                only Stay section
+     Sections are hidden via display:none — full hide, not dim — so the
+     active mode reads as a single focused panel. Section divider
+     borders (`.map-legend-section + .map-legend-section`) naturally
+     collapse when peers are display:none. */
+  .map-legend-list[data-mode="where"] .map-legend-section:not([data-legend-section="places"]),
+  .map-legend-list[data-mode="eat"] .map-legend-section:not([data-legend-section="eat"]),
+  .map-legend-list[data-mode="stay"] .map-legend-section:not([data-legend-section="stay"]) {
+    display: none;
+  }
+
   /* Phase A.9 C4 — three named legend groups (Where / Eat / Stay).
      Headers are non-interactive labels — source-level filtering lives
-     in the toolbar chips (See/Do/Eat/Stay). Rows are click-to-focus,
+     in the toolbar chips (Where/Eat/Stay). Rows are click-to-focus,
      single-select within their section. */
   .map-legend-section + .map-legend-section {
     margin-top: 8px;
@@ -690,29 +711,31 @@ const STAY_LEGEND = [
   // with the .env placeholder will 401-fail (caught by the error overlay).
   mapboxgl.accessToken = import.meta.env.PUBLIC_MAPBOX_TOKEN;
 
-  // Four filter chips matching the See/Do/Eat/Stay primary_category
-  // groupings. "Eat" covers BOTH /places primary_category=Eat (food
-  // markets + cafés) AND /eat source items (Tabelog Hyakumeiten). The
-  // Tabelog curation signal stays visible in pin styling (open-ring vs
-  // solid-fill) and popup content (year + rank + Hyakumeiten label) —
-  // it just doesn't get its own filter button. Splitting curation
-  // source from content type in the filter UI confused first-time
-  // users; one Eat chip is cleaner.
-  const ALL_CATS = ["See", "Do", "Eat", "Stay"];
-  let focusedCat = null; // null = no toolbar filter (all four visually active)
+  /* Phase A.9 C5 — mode + cluster two-axis filter state.
+       mode: null | "where" | "eat" | "stay"
+         null  = default trip-planner view; all sources visible, all
+                 three legend sections rendered.
+         set   = mode-switched view; only that source's markers visible
+                 AND only that section's legend rows rendered.
+       cluster: null | <slug>
+         null  = no sub-cluster focus within the active mode.
+         set   = single legend row focused inside the active section;
+                 only matching features visible. Meaningful only when
+                 mode is also set (mode=null + cluster=X is ignored).
+     URL: ?mode=where&cluster=anime. Default omits both. */
+  const ALL_MODES = ["where", "eat", "stay"];
+  const MODE_TO_SOURCE = { where: "places", eat: "eat", stay: "stay" };
+  let mode = null;
+  let cluster = null;
   let allFeatures = null; // fetched once; filter rebuilds source.data
   let map;
   let mapErrored = false;
 
-  /* ---------- Phase A.9 C4 — legend focus state ----------
-     Each source has at most one focused row at a time:
-       focusedLegend.places  null | <PLACES slug>
-       focusedLegend.eat     null | <EAT slug>
-       focusedLegend.stay    null | <STAY slug>
-     null = no focus = every row visible. URL form is a single slug
-     per source — ?places=animals (not csv); default omits the param.
-     Three separate params avoid slug collision between /places
-     onsen_ryokan (cluster) and /stays onsen_ryokan (primary_cat). */
+  /* ---------- Phase A.9 C5 — legend slug catalogue ----------
+     One Set per mode, used to validate URL ?cluster= values against
+     known slugs. Keys are the data-legend-section attribute (i.e. the
+     source name, not the mode name) so the existing legend markup
+     doesn't need to change. */
   const LEGEND_SLUG_SETS = {
     places: new Set(["nature_water", "culture_history", "animals",
       "quirky_museums", "anime", "onsen_ryokan", "photo_spots",
@@ -747,71 +770,61 @@ const STAY_LEGEND = [
     Object.entries(EAT_SLUG_TO_CUISINE).map(([s, c]) => [c, s]),
   );
 
-  let focusedLegend = { places: null, eat: null, stay: null };
-
-  function readLegendFromURL() {
+  /* ---------- URL state — single ?mode= + optional ?cluster= ----------
+     Phase A.9 C5: trade C3/C4's three-param scheme for one mode param.
+     Migration from older link formats (C3 csv-per-source, C4 single-
+     slug-per-source, A.8 ?categories=) is best-effort: pick the first
+     valid source token and rewrite the URL on init so the user lands
+     in the new scheme without an extra page reload. */
+  function readModeFromURL() {
     const p = new URLSearchParams(window.location.search);
-    for (const source of ["places", "eat", "stay"]) {
-      if (!p.has(source)) {
-        focusedLegend[source] = null;
-        continue;
+
+    // 1. New-scheme ?mode= (preferred).
+    let m = (p.get("mode") || "").trim().toLowerCase();
+    let c = (p.get("cluster") || "").trim().toLowerCase();
+
+    // 2. Legacy C4 single-slug-per-source: ?places=, ?eat=, ?stay=.
+    //    First matching one wins. cluster value picked from that param.
+    if (!m) {
+      for (const [src, modeName] of [["places", "where"], ["eat", "eat"], ["stay", "stay"]]) {
+        const raw = (p.get(src) || "").trim().toLowerCase();
+        if (raw) {
+          m = modeName;
+          c = raw.split(",")[0]; // C3 csv → take first token
+          break;
+        }
       }
-      // Single-slug form. If a legacy comma-joined value comes in from a
-      // C3-era link, take the first token so the link still resolves to
-      // something sensible.
-      const first = (p.get(source) || "")
-        .split(",")[0]
-        .trim()
-        .toLowerCase();
-      focusedLegend[source] = LEGEND_SLUG_SETS[source].has(first)
-        ? first
-        : null;
     }
-  }
 
-  function syncLegendToURL() {
-    const p = new URLSearchParams(window.location.search);
-    for (const source of ["places", "eat", "stay"]) {
-      const slug = focusedLegend[source];
-      if (slug) p.set(source, slug);
-      else p.delete(source);
+    // 3. Legacy A.8/C4 ?categories= toolbar-only param. tabelog → eat.
+    if (!m) {
+      const raw = (p.get("categories") || "").trim().toLowerCase();
+      if (raw) {
+        const first = raw.split(",")[0];
+        if (first === "tabelog" || first === "eat") m = "eat";
+        else if (first === "stay") m = "stay";
+        else if (first === "see" || first === "do") m = "where";
+      }
     }
-    const qs = p.toString();
-    const newURL = window.location.pathname + (qs ? "?" + qs : "") + window.location.hash;
-    history.replaceState(null, "", newURL);
+
+    if (!ALL_MODES.includes(m)) {
+      mode = null;
+      cluster = null;
+      return;
+    }
+    mode = m;
+    const src = MODE_TO_SOURCE[m];
+    cluster = c && LEGEND_SLUG_SETS[src].has(c) ? c : null;
   }
 
-  // Does this slug pass the legend filter for its source? null focus
-  // means "no filter, all rows pass"; non-null means "only matches".
-  function isLegendActive(source, slug) {
-    const f = focusedLegend[source];
-    if (f === null) return true;
-    return f === slug;
-  }
-
-  /* ---------- URL query state for ?categories= (toolbar chips) ----------
-     Phase A.9 C4: single-select-with-clear semantics, matching the
-     legend rows. ?categories=Eat means "only /eat sources visible".
-     Default state (all four chips visually active) = no filter = param
-     omitted. Backward-compat: legacy multi-value Phase A.8 links
-     (?categories=See,Eat) collapse to the first valid token; legacy
-     ?categories=tabelog still routes to Eat. */
-  function readCategoriesFromURL() {
+  function syncURL() {
     const p = new URLSearchParams(window.location.search);
-    if (!p.has("categories")) return null;
-    const raw = (p.get("categories") || "").trim();
-    if (!raw) return null;
-    // Take the first token for legacy A.8 multi-value compatibility.
-    let tok = raw.split(",")[0].trim().toLowerCase();
-    if (tok === "tabelog") tok = "eat";
-    const cap = tok.charAt(0).toUpperCase() + tok.slice(1);
-    return ALL_CATS.includes(cap) ? cap : null;
-  }
-
-  function syncCategoriesToURL() {
-    const p = new URLSearchParams(window.location.search);
-    if (focusedCat === null) p.delete("categories");
-    else p.set("categories", focusedCat);
+    // Strip legacy params on every sync so migrated links self-clean.
+    for (const k of ["places", "eat", "stay", "categories"]) p.delete(k);
+    if (mode) p.set("mode", mode);
+    else p.delete("mode");
+    if (mode && cluster) p.set("cluster", cluster);
+    else p.delete("cluster");
     const qs = p.toString();
     const newURL =
       window.location.pathname +
@@ -821,56 +834,41 @@ const STAY_LEGEND = [
   }
 
   /* ---------- UI state sync ----------
-     Default state: focusedCat === null → every chip aria-pressed=true
-     (all sources visible). Focused state: only the focused chip is
-     aria-pressed=true. Reset link surfaces when any filter (toolbar or
-     legend) is non-default. */
+     Chip aria-pressed reflects the active mode (one of three, or none).
+     Legend container's data-mode drives section-visibility CSS.
+     Reset surfaces whenever mode OR cluster is non-default. */
   function updateButtonStates() {
     document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
-      const c = btn.dataset.catBtn;
-      const pressed = focusedCat === null || focusedCat === c;
-      btn.setAttribute("aria-pressed", String(pressed));
+      btn.setAttribute(
+        "aria-pressed",
+        String(mode !== null && btn.dataset.catBtn === mode),
+      );
     });
+    const list = document.querySelector("[data-legend-list]");
+    if (list) list.dataset.mode = mode || "";
     const reset = document.querySelector("[data-reset]");
-    if (reset) {
-      const anyLegend =
-        focusedLegend.places || focusedLegend.eat || focusedLegend.stay;
-      reset.hidden = focusedCat === null && !anyLegend;
-    }
+    if (reset) reset.hidden = mode === null && cluster === null;
   }
 
   /* ---------- Map filtering ----------
-     Two layers, each single-select-with-clear:
-       1. Toolbar (focusedCat): null = all sources visible; "Eat" = only
-          /eat features; "See"/"Do" = /places features with that
-          primary_category; "Stay" = only /stay features.
-       2. Legend (focusedLegend[src]): null = every row visible in that
-          source; "<slug>" = only features whose public_label / cuisine /
-          primary_cat matches that slug.
-     Layers AND together. A feature passes iff both layers admit it. */
+     Two-axis filter from the C5 model:
+       1. Mode (null | "where" | "eat" | "stay") gates the source.
+          null = all sources visible (trip-planner default).
+       2. Cluster (null | slug) gates within the active mode's source.
+          Meaningful only when mode is also set.
+     Features pass iff both axes admit them. */
   function passesFilter(f) {
     const src = f.properties.source;
-    if (focusedCat !== null) {
-      if (src === "eat") {
-        if (focusedCat !== "Eat") return false;
-      } else if (src === "stay") {
-        if (focusedCat !== "Stay") return false;
-      } else {
-        // /places — primary_category is "See" or "Do".
-        if (focusedCat !== f.properties.primary_category) return false;
-      }
+    if (mode !== null && MODE_TO_SOURCE[mode] !== src) return false;
+    if (cluster === null) return true;
+    if (mode === "where" && src === "places") {
+      return (f.properties.public_label || "_base") === cluster;
     }
-    if (src === "places") {
-      const slug = f.properties.public_label || "_base";
-      return isLegendActive("places", slug);
+    if (mode === "eat" && src === "eat") {
+      return EAT_CUISINE_TO_SLUG[f.properties.cuisine] === cluster;
     }
-    if (src === "eat") {
-      const slug = EAT_CUISINE_TO_SLUG[f.properties.cuisine] || "";
-      if (!slug) return focusedLegend.eat === null;
-      return isLegendActive("eat", slug);
-    }
-    if (src === "stay") {
-      return isLegendActive("stay", f.properties.primary_cat);
+    if (mode === "stay" && src === "stay") {
+      return f.properties.primary_cat === cluster;
     }
     return true;
   }
@@ -885,29 +883,36 @@ const STAY_LEGEND = [
     });
   }
 
-  /* ---------- Button + reset wiring ----------
-     Single-select-with-clear. Clicking the focused chip again clears
-     back to the all-active default. Reset clears both toolbar and
-     legend focus in one shot. */
+  /* ---------- Chip + reset wiring ----------
+     Click a chip → enter that mode (also clears any prior cluster
+     focus, since entering a new mode invalidates an old mode's
+     cluster slug). Click the active chip again → exit to default.
+     Reset clears both axes in one tap. */
   function setupCategoryButtons() {
     document.querySelectorAll("[data-cat-btn]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const c = btn.dataset.catBtn;
-        focusedCat = focusedCat === c ? null : c;
+        const target = btn.dataset.catBtn;
+        if (mode === target) {
+          mode = null;
+          cluster = null;
+        } else {
+          mode = target;
+          cluster = null;
+        }
         updateButtonStates();
-        syncCategoriesToURL();
+        paintLegendFromState();
+        syncURL();
         applyCategoryFilter();
       });
     });
     const reset = document.querySelector("[data-reset]");
     if (reset)
       reset.addEventListener("click", () => {
-        focusedCat = null;
-        focusedLegend = { places: null, eat: null, stay: null };
+        mode = null;
+        cluster = null;
         updateButtonStates();
         paintLegendFromState();
-        syncCategoriesToURL();
-        syncLegendToURL();
+        syncURL();
         applyCategoryFilter();
       });
     const reload = document.querySelector("[data-reload]");
@@ -955,23 +960,26 @@ const STAY_LEGEND = [
     });
   }
 
-  /* ---------- Legend row focus (Phase A.9 C4) ----------
-     Click-to-focus, single-select within source. Click row → focus it.
-     Click focused row → clear focus. Click a different row → swap.
+  /* ---------- Legend row focus (Phase A.9 C5) ----------
+     Click-to-focus, single-select within the active mode's section.
+     Clicking a row in a section whose source doesn't match the active
+     mode auto-enters that mode (so clicking "Ramen" inside Eat while
+     in Where-mode flips to Eat-mode and focuses Ramen). This keeps
+     the row-click as a single-tap action even when the user hasn't
+     pre-selected a mode chip — friendlier than ignoring the click.
      Row visual contract: data-active="true" = visible/normal style;
      data-active="false" = dimmed (used when a peer in the same section
-     IS focused). When no focus is set, every row is data-active="true"
-     (no dim). aria-pressed mirrors "this row is the current focus". */
+     IS focused). aria-pressed mirrors "this row is the current focus". */
   function paintLegendFromState() {
     document.querySelectorAll("[data-legend-row]").forEach((row) => {
       const src = row.dataset.legendRow;
       const slug = row.dataset.value;
-      const f = focusedLegend[src];
-      // Default (no focus in section) = all rows active.
-      // Focus set = only the focused row is active.
-      const on = f === null ? true : f === slug;
+      // Cluster is only meaningful when its source matches the mode.
+      const sectionHasFocus =
+        cluster !== null && mode !== null && MODE_TO_SOURCE[mode] === src;
+      const on = sectionHasFocus ? cluster === slug : true;
       row.dataset.active = String(on);
-      row.setAttribute("aria-pressed", String(f === slug));
+      row.setAttribute("aria-pressed", String(sectionHasFocus && cluster === slug));
     });
   }
 
@@ -979,10 +987,20 @@ const STAY_LEGEND = [
     function activate(row) {
       const src = row.dataset.legendRow;
       const slug = row.dataset.value;
-      focusedLegend[src] = focusedLegend[src] === slug ? null : slug;
+      const targetMode = Object.entries(MODE_TO_SOURCE)
+        .find(([, s]) => s === src)[0];
+      if (mode === targetMode && cluster === slug) {
+        // Clicking the focused row in the active mode clears the cluster
+        // but stays in the mode — consistent with chip behaviour where
+        // re-clicking exits one layer at a time.
+        cluster = null;
+      } else {
+        mode = targetMode;
+        cluster = slug;
+      }
+      updateButtonStates();
       paintLegendFromState();
-      syncLegendToURL();
-      updateButtonStates(); // Reset visibility may flip.
+      syncURL();
       applyCategoryFilter();
     }
     document.querySelectorAll("[data-legend-row]").forEach((row) => {
@@ -997,13 +1015,15 @@ const STAY_LEGEND = [
   }
 
   /* ---------- Init ---------- */
-  focusedCat = readCategoriesFromURL();
-  readLegendFromURL();
+  readModeFromURL();
   setupCategoryButtons();
   setupLegend();
   setupLegendRows();
   updateButtonStates();
   paintLegendFromState();
+  // Self-clean any legacy ?places=/?eat=/?stay=/?categories= params
+  // that readModeFromURL migrated into mode/cluster.
+  syncURL();
 
   map = new mapboxgl.Map({
     container: "japan-map",
