@@ -501,4 +501,21 @@ for (const chip of FEATURED_CHIPS) {
     const params = new URLSearchParams(window.location.search);
     setView(params.get("view") === "map" ? "map" : "list", { writeURL: false });
   });
+
+  /* Re-scroll to the hash target after layout settles. The cards use
+     `content-visibility: auto` for perf — the browser's initial scroll
+     can land on the placeholder's intrinsic size instead of the painted
+     card's true position, which previously made popup-CTA deep links
+     look like they had landed at the top of the page. Two RAFs let the
+     filter rail's init pass and content-visibility activation finish,
+     then we explicitly re-scroll with the card's scroll-margin honored. */
+  if (window.location.hash) {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    if (id) {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ block: "start" });
+      }));
+    }
+  }
 </script>
