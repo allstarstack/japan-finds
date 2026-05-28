@@ -1,7 +1,8 @@
 ---
 /* /places — Phase B-2 places import ("Where" in the nav).
-   Hero + Japan Map CTA + 6 featured cards, sticky filter rail, and the
-   full place grid. Mirrors /products structure. Sort: alphabetical by
+   Hero, sticky filter rail, and the full place grid. Mirrors the other
+   list pages (/eat, /stay, /products) for cross-page consistency: hero →
+   search → chips → grid, no featured-six block. Sort: alphabetical by
    name — places have no verified/unverified split like products do. */
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
@@ -67,31 +68,6 @@ for (const p of standard) {
 const regionChips = Object.entries(REGION_LABELS)
   .map(([slug, label]) => ({ slug, label, count: regionCounts[slug] ?? 0 }))
   .filter((c) => c.count > 0);
-
-/* Featured 6 — auto-pick (BUILD_SPEC says an algorithm is fine here).
-   One place from each of six experience chips, spread across regions.
-   Deterministic: within each chip's alphabetical list the scan starts
-   from the midpoint, so the picks aren't all clustered at the start of
-   the alphabet, then takes the first place in a not-yet-used region. */
-const FEATURED_CHIPS = [
-  "nature_water",
-  "food_markets",
-  "animals",
-  "onsen_ryokan",
-  "quirky_museums",
-  "culture_history",
-];
-const featured = [];
-const usedRegions = new Set<string>();
-for (const chip of FEATURED_CHIPS) {
-  const pool = standard.filter((p) => p.data.public_label === chip);
-  if (!pool.length) continue;
-  const mid = Math.floor(pool.length / 2);
-  const rotated = [...pool.slice(mid), ...pool.slice(0, mid)];
-  const pick = rotated.find((p) => !usedRegions.has(p.data.region)) ?? rotated[0];
-  featured.push(pick);
-  usedRegions.add(pick.data.region);
-}
 ---
 
 <Base
@@ -108,22 +84,6 @@ for (const chip of FEATURED_CHIPS) {
           {total} places, Hokkaido to Okinawa — nature, food markets, museums,
           onsen and more. Filter to what you want to see.
         </p>
-      </div>
-    </section>
-
-    <section class="pfeat" data-featured>
-      <div class="wrap">
-        <p class="eyebrow">START HERE</p>
-        <h2 class="pfeat-h2">Six to start with.</h2>
-        <div class="feat-strip">
-          {
-            featured.map((p) => (
-              <div class="feat-cell">
-                <PlaceCard entry={p} />
-              </div>
-            ))
-          }
-        </div>
       </div>
     </section>
 
@@ -243,43 +203,9 @@ for (const chip of FEATURED_CHIPS) {
     align-self: flex-start;
   }
 
-  /* Featured block + results sit on white so the rice-white cards read */
-  .pfeat,
+  /* Results sit on white so the rice-white cards read. */
   .presults {
     background: var(--color-white);
-  }
-  .pfeat {
-    padding: 28px 0;
-    border-top: var(--border-ink);
-  }
-  /* Hidden by the filter rail while a filter is active. */
-  .pfeat[hidden] {
-    display: none;
-  }
-  .pfeat-h2 {
-    margin: 8px 0 16px;
-    font-family: var(--font-head);
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-
-  /* Featured strip — horizontal-scroll on mobile, grid above 640px */
-  .feat-strip {
-    display: flex;
-    gap: 12px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    scroll-snap-type: x proximity;
-    padding-bottom: 4px;
-  }
-  .feat-strip::-webkit-scrollbar {
-    display: none;
-  }
-  .feat-cell {
-    flex: 0 0 60%;
-    max-width: 240px;
-    scroll-snap-align: start;
   }
 
   /* Results */
@@ -334,15 +260,6 @@ for (const chip of FEATURED_CHIPS) {
   }
 
   @media (min-width: 640px) {
-    .feat-strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      overflow: visible;
-    }
-    .feat-cell {
-      flex: none;
-      max-width: none;
-    }
     .grid {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -375,15 +292,6 @@ for (const chip of FEATURED_CHIPS) {
     .pmap-card .btn {
       align-self: auto;
       flex-shrink: 0;
-    }
-    .pfeat {
-      padding: 40px 0;
-    }
-    .pfeat-h2 {
-      font-size: 32px;
-    }
-    .feat-strip {
-      grid-template-columns: repeat(6, 1fr);
     }
     .presults {
       padding: 24px 0 72px;

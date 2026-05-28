@@ -1,9 +1,10 @@
 ---
 /* /products — Phase B-1 catalog launch.
-   Hero + 6 featured cards, sticky filter rail, and the full 384-product
-   grid. Sort: newest-first by id (descending) — viewers arriving from a
-   recent video land on the most recently added product first
-   (SEARCH_AND_SORT Phase A). */
+   Hero, sticky filter rail, and the full 384-product grid. Mirrors the
+   other list pages (/eat, /stay, /places) for cross-page consistency:
+   hero → search → chips → grid, no featured-six block. Sort: newest-first
+   by id (descending) — viewers arriving from a recent video land on the
+   most recently added product first (SEARCH_AND_SORT Phase A). */
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
@@ -38,14 +39,6 @@ for (const p of launch) {
   if (p.data.sub_chip && SUB_CHIPS[c as keyof typeof SUB_CHIPS])
     (subAvail[c] ??= []).push(p.data.sub_chip);
 }
-
-/* Featured 6 hero cards, in the order locked by the Phase B-1 prompt. */
-const FEATURED_ORDER = [
-  "JF-0228", "JF-0135", "JF-0010", "JF-0297", "JF-0379", "JF-0099",
-];
-const featured = FEATURED_ORDER.map((id) =>
-  launch.find((p) => p.data.id === id),
-).filter((p) => p !== undefined);
 ---
 
 <Base
@@ -62,22 +55,6 @@ const featured = FEATURED_ORDER.map((id) =>
           {total} picks across konbini, drugstores, Donki, 100-yen shops and
           more. Filter to what you're shopping for.
         </p>
-      </div>
-    </section>
-
-    <section class="pfeat">
-      <div class="wrap">
-        <p class="eyebrow">START HERE</p>
-        <h2 class="pfeat-h2">Six to start with.</h2>
-        <div class="feat-strip">
-          {
-            featured.map((p) => (
-              <div class="feat-cell">
-                <ProductCard entry={p} />
-              </div>
-            ))
-          }
-        </div>
       </div>
     </section>
 
@@ -149,39 +126,9 @@ const featured = FEATURED_ORDER.map((id) =>
     color: var(--color-ink-60);
   }
 
-  /* Featured block + results sit on white so the rice-white cards read */
-  .pfeat,
+  /* Results sit on white so the rice-white cards read. */
   .presults {
     background: var(--color-white);
-  }
-  .pfeat {
-    padding: 28px 0;
-    border-top: var(--border-ink);
-  }
-  .pfeat-h2 {
-    margin: 8px 0 16px;
-    font-family: var(--font-head);
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-  }
-
-  /* Featured strip — horizontal-scroll on mobile, grid above 640px */
-  .feat-strip {
-    display: flex;
-    gap: 12px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    scroll-snap-type: x proximity;
-    padding-bottom: 4px;
-  }
-  .feat-strip::-webkit-scrollbar {
-    display: none;
-  }
-  .feat-cell {
-    flex: 0 0 72%;
-    max-width: 280px;
-    scroll-snap-align: start;
   }
 
   /* Results */
@@ -221,15 +168,6 @@ const featured = FEATURED_ORDER.map((id) =>
   }
 
   @media (min-width: 640px) {
-    .feat-strip {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      overflow: visible;
-    }
-    .feat-cell {
-      flex: none;
-      max-width: none;
-    }
     .grid {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -248,15 +186,6 @@ const featured = FEATURED_ORDER.map((id) =>
     }
     .phero-sub {
       font-size: 19px;
-    }
-    .pfeat {
-      padding: 40px 0;
-    }
-    .pfeat-h2 {
-      font-size: 32px;
-    }
-    .feat-strip {
-      grid-template-columns: repeat(6, 1fr);
     }
     .presults {
       padding: 24px 0 72px;

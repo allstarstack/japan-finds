@@ -41,9 +41,29 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
 const mapsUrl = r.place_id
   ? `https://www.google.com/maps/place/?q=place_id:${r.place_id}`
   : r.maps_search;
+
+/* Searchable text blob the /eat ChipRow script matches against:
+   name (en + jp), genre / cuisine label, and the location fields
+   (city, prefecture, neighborhood, region) so "Tantantei", "ramen",
+   "Hamadayama", "Tokyo" all resolve. Mirrors the data-search convention
+   on PlaceCard / StayCard. Lowercased once here; the query is lowercased
+   client-side. */
+const searchText = [
+  r.name_en,
+  r.name_jp,
+  r.genre,
+  r.cuisine_chip,
+  r.city,
+  r.prefecture,
+  r.neighborhood,
+  r.region,
+]
+  .filter(Boolean)
+  .join(" ")
+  .toLowerCase();
 ---
 
-<article id={r.id} class="rc" data-slug={r.id} data-cuisine={cuisine} data-city={city} data-flags={flags.join(" ")}>
+<article id={r.id} class="rc" data-slug={r.id} data-cuisine={cuisine} data-city={city} data-flags={flags.join(" ")} data-search={searchText}>
   <div class="rc-media">
     {
       r.hero_image ? (

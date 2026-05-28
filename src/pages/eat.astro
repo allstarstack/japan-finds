@@ -12,6 +12,7 @@ import Header from "../components/Header.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import ChipRow from "../components/eat/ChipRow.astro";
 import LocationChipRow from "../components/v2/LocationChipRow.astro";
+import SearchBox from "../components/v2/SearchBox.astro";
 import MapView from "../components/v2/MapView.astro";
 import RestaurantCard from "../components/eat/RestaurantCard.astro";
 import MethodologyFooter from "../components/eat/MethodologyFooter.astro";
@@ -94,6 +95,7 @@ const cityChips = CITY_CHIPS
           <button type="button" data-view-btn="map" aria-pressed="false">Map</button>
         </div>
       </div>
+      <SearchBox placeholder={`Search ${total} restaurants`} />
       <LocationChipRow chips={cityChips} hintLabel="cities" />
       <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
     </div>
