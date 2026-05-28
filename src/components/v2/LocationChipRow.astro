@@ -90,6 +90,10 @@ const total = sorted.reduce((s, c) => s + c.count, 0);
     padding: 12px var(--gutter-mobile) 10px;
     scroll-padding-inline: var(--gutter-mobile);
     background: var(--color-white);
+    /* Cap at the content column so chips align with the page's hero/results
+       at viewports ≥ content-max; no effect when viewport is narrower. */
+    max-width: var(--content-max);
+    margin: 0 auto;
     /* Hairline moved to desktop-only below; on mobile the rail-hint owns
        the bottom border so the count microcopy reads as belonging to the
        row of chips above it, not the rail beneath. */
@@ -148,7 +152,9 @@ const total = sorted.reduce((s, c) => s + c.count, 0);
      mobile. Hidden on desktop, where .lc-row wraps and its own hairline
      returns. */
   .lc-rail-hint {
-    margin: 0;
+    /* margin: 0 auto pairs with max-width to share the row's column cap. */
+    margin: 0 auto;
+    max-width: var(--content-max);
     padding: 0 var(--gutter-mobile) 8px;
     font-family: var(--font-mono);
     font-size: 10px;

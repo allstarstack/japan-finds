@@ -48,13 +48,18 @@ const { counts } = Astro.props;
     scrollbar-width: none;
     padding: 12px var(--gutter-mobile) 8px;
     scroll-padding-inline: var(--gutter-mobile);
+    /* Cap at the content column so the stay rail aligns with the
+       page's hero/SearchBox at viewports ≥ content-max. */
+    max-width: var(--content-max);
+    margin: 0 auto;
   }
   .srail-track::-webkit-scrollbar {
     display: none;
   }
 
   .srail-hint {
-    margin: 0;
+    margin: 0 auto;
+    max-width: var(--content-max);
     padding: 0 var(--gutter-mobile) 12px;
     font-family: var(--font-mono);
     font-size: 10px;
