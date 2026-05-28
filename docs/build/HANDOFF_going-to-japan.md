@@ -1,5 +1,68 @@
 # HANDOFF — "Going to Japan?" section
 
+> ## AMENDED 2026-05-27 — pivot to cheat-sheet previews
+>
+> The spec below (V2: ordered by lead time, 6 affiliate cards) shipped
+> against this handoff and was force-pushed away the same day. The
+> affiliate-checklist direction duplicated `/cheat-sheets`, which is
+> the canonical depth surface for the same information. Affiliate
+> links live inside individual cheat sheets and were untouched by this
+> pivot.
+>
+> **What the section is now:** a homepage-only 6-card preview of
+> featured cheat sheets that funnels into `/cheat-sheets/<slug>`. No
+> outbound affiliate links from this surface.
+>
+> **What changed vs the spec below:**
+>
+> - **Content source:** the `cheat-sheets` content collection
+>   (`src/content/cheat-sheets/*.md`) instead of `src/data/affiliates.ts`.
+>   Affiliate placeholders that were added in the first PR (SafetyWing,
+>   Wise, Ninja WiFi, Welcome Suica) were reverted; `affiliates.ts`
+>   returns to pre-PR state and `/tools` continues consuming it
+>   unchanged.
+> - **Featured slugs (hardcoded, editorial order):** `first-24-hours`,
+>   `phone-setup`, `ic-cards`, `jr-pass`, `cash-cards-atms`,
+>   `luggage-forwarding`. Intentionally different from the
+>   `/cheat-sheets` index `SHEET_ORDER` so the two surfaces stay
+>   decoupled.
+> - **Per-card content:** 01–06 numeral (kept from V2), cheat-sheet
+>   title (Inter 700), tagline pulled by `extractLede(entry.body)`
+>   from `src/data/cheat-sheets.js` (Inter 400, ink-60), "Updated
+>   YYYY-MM-DD" chip using `last_verified` from frontmatter (same
+>   bordered concrete-pill styling as the V2 lead-time chip), "Read
+>   the guide →" CTA pointing at `/cheat-sheets/<slug>`. Brand label
+>   slot dropped.
+> - **Tagline flag:** cheat-sheet frontmatter carries no `tagline`
+>   field. The brand one-liner already lives in the markdown body and
+>   is pulled by `extractLede()` for the existing `/cheat-sheets`
+>   list — reused here so the source files remain the single source of
+>   truth. No `.md` migration required.
+> - **Section copy:** title "Going to Japan?" and subtitle "Sort these
+>   before you fly." kept verbatim. Eyebrow updated to "Practical
+>   first · verified before publish". Desktop right-aligned tag updated
+>   to "6 guides · before you fly".
+> - **Section footer:** added a "View all cheat sheets →" link to
+>   `/cheat-sheets` below the card grid.
+> - **Visual treatment kept from V2:** mobile-first single-column
+>   timeline rows with shared borders, 3-up card grid at ≥1024px,
+>   palette and type stack unchanged (Rice / Ink / Concrete +
+>   `--color-ink-60`; Space Grotesk 700, Inter 400/700, IBM Plex Mono
+>   500).
+> - **Homepage placement:** moved below `<StartHere />` (§01). After
+>   the pivot the section reads as deeper-reading downstream of the
+>   four orientation cards, not as a pre-Hero affiliate checklist.
+> - **`/cheat-sheets` adoption:** dropped. The `fluid` prop was
+>   removed from the component and the `<GoingToJapan fluid />` call
+>   site was removed from `src/pages/cheat-sheets/index.astro` — the
+>   section would otherwise have made `/cheat-sheets` link to itself.
+>   Component is homepage-only.
+>
+> The original spec is preserved below as historical record. Do not
+> implement it again — use the amended direction.
+>
+> ---
+
 **Surface:** "Going to Japan?" section
 **Repo / file path:** [FILL IN — e.g. allstarsteven.com/components/sections/GoingToJapan.jsx]
 **Finalist:** V2 — Ordered by lead time
