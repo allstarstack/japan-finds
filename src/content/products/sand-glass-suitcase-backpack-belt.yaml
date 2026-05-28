@@ -1,0 +1,45 @@
+id: JF-0470
+slug: sand-glass-suitcase-backpack-belt
+name_en: SAND GLASS Suitcase Backpack Belt 3G92
+category: other
+intent:
+- bring_home
+- gift_easy
+status: ready
+name_jp: キャリーを背負えるベルト 3G92
+brand: SAND GLASS (サンドグラス)
+where_found:
+- Rakuten
+- Amazon JP
+- Yodobashi Camera
+- Yahoo Shopping
+price_yen: "¥2,690"
+what_it_is: Nylon harness with two shoulder straps that clips around a rolling suitcase's telescoping handle so you can wear it like a backpack. Adjusts 130–160cm, 230g, rated to 20kg.
+why_travelers_care: Japanese stations have a lot of stairs, Kyoto has cobblestones, Hokkaido has snow. About ¥2,700 of insurance for the moments your wheels stop working.
+source_links:
+- https://item.rakuten.co.jp/backyard/3g92/
+- https://item.rakuten.co.jp/sactown/3g92/
+- https://www.amazon.co.jp/dp/B07VM5KPWW
+- https://www.yodobashi.com/product/100000001007541099/
+confidence: high
+trip_score: 7
+suitcase_score: 8
+launch_category: travel_gear
+fill_type: verified
+display_strategy: show_all
+description: Sand Glass nylon harness that straps to a roller suitcase's handle and turns it into a backpack. Rated for 20kg — the fix for station stairs, cobblestones, and any path your wheels lose to.
+english_name: SAND GLASS Suitcase Backpack Belt (model 3G92)
+japanese_name: キャリーを背負えるベルト 3G92
+subcategory: travel accessory
+price_range_jpy: "2,690-3,200"
+where_to_buy:
+- Rakuten
+- Amazon JP
+- Yodobashi Camera
+- Yahoo Shopping
+- Yubisha (brand site)
+enrichment_confidence: high
+enrichment_source_url: https://yubisha.co.jp/product/3G92-00/
+enrichment_date: '2026-05-28'
+image: /products/sand-glass-suitcase-backpack-belt.webp
+safety_flags: []
