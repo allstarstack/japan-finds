@@ -1,79 +1,116 @@
 ---
-/* "Going to Japan?" — pre-trip affiliate module (Affiliates Phase 1).
-   Surfaces the essential pre-trip affiliates as cards. Lives on the
-   homepage (below the hero) and the /cheat-sheets index.
+/* "Going to Japan?" — homepage cheat-sheet preview (amended 2026-05-27).
+   See docs/build/HANDOFF_going-to-japan.md (AMENDED block) for the pivot
+   rationale. Earlier V2 implementation surfaced affiliate links — that
+   duplicated /cheat-sheets, which is the canonical depth surface. This
+   pass reframes the section as a 6-card preview that funnels into the
+   cheat sheets; affiliate links live inside those sheets, untouched here.
 
-   Every URL is sourced from src/data/affiliates.ts — nothing is hardcoded
-   here. Renders only entries flagged active && module, so a partner is
-   added, removed, or swapped by editing the config (no component change).
-   When Agoda's URL lands, flipping active:true there auto-renders the
-   third card; the grid steps from 2-up to 3-up on its own.
+   Featured slug list is hardcoded — editorial order on the homepage is
+   intentionally different from /cheat-sheets' SHEET_ORDER, so the two
+   surfaces stay decoupled. Frontmatter carries no tagline field; the
+   one-liner is the brand lede already pulled by extractLede() for the
+   /cheat-sheets list — same single source of truth.
 
-   Card pattern mirrors v2/PlaceCard.astro (.plc): Rice White surface,
-   1.5px Concrete Gray border, --radius-card, border-emphasis on
-   hover/focus. The whole card is a single <a> so it is keyboard-navigable
-   by default. Affiliate links carry rel="noopener nofollow sponsored"
-   (the `sponsored` value is required for paid links per Google guidance).
+   Component is homepage-only after this PR (no fluid prop). */
+import { getCollection } from "astro:content";
+import { extractLede, fmtDate } from "../data/cheat-sheets.js";
 
-   Layout follows the project's 1024px breakpoint (tokens.css / global.css),
-   not the spec's 1200px note — flagged as drift. `fluid` drops the section's
-   own gutters/max-width/divider so the module fills a parent container that
-   already constrains width (the /cheat-sheets 720px column). */
-import { affiliates } from "../data/affiliates";
+const FEATURED_SLUGS = [
+  "first-24-hours",
+  "phone-setup",
+  "ic-cards",
+  "jr-pass",
+  "cash-cards-atms",
+  "luggage-forwarding",
+];
 
-interface Props {
-  /* false (default): self-contained section — content-max width, page
-     gutters, top divider — matching other homepage sections.
-     true: fills the parent's content box, no divider — for use inside an
-     already-constrained column (e.g. the /cheat-sheets index .wrap). */
-  fluid?: boolean;
-}
+const byId = new Map(
+  (await getCollection("cheat-sheets")).map((e) => [e.id, e]),
+);
 
-const { fluid = false } = Astro.props;
-
-const items = affiliates.filter((a) => a.active && a.module);
+const items = FEATURED_SLUGS.map((slug, i) => {
+  const entry = byId.get(slug);
+  if (!entry) {
+    throw new Error(`GoingToJapan: no source file for "${slug}.md"`);
+  }
+  return {
+    n: String(i + 1).padStart(2, "0"),
+    slug,
+    title: entry.data.title,
+    tagline: extractLede(entry.body),
+    updated: fmtDate(entry.data.last_verified),
+    href: `/cheat-sheets/${slug}`,
+  };
+});
 ---
 
-{
-  items.length > 0 && (
-    <section
-      class:list={["gtj", { "gtj--fluid": fluid }]}
-      aria-labelledby="gtj-h2"
-    >
-      <div class="gtj__inner">
-        <header class="gtj__head">
-          <h2 id="gtj-h2" class="gtj__title">
-            Going to Japan?
-          </h2>
-          <p class="gtj__sub">Sort these before you fly.</p>
-        </header>
-
-        <ul class="gtj__grid">
-          {items.map((a) => (
-            <li class="gtj__item">
-              <a
-                class="gtj__card"
-                href={a.url}
-                target="_blank"
-                rel="noopener nofollow sponsored"
-              >
-                <span class="gtj__partner">{a.partner}</span>
-                <h3 class="gtj__label">{a.label}</h3>
-                <span class="gtj__arrow" aria-hidden="true">
-                  →
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
+<section class="gtj" aria-labelledby="gtj-h2">
+  <div class="gtj__inner">
+    <header class="gtj__head">
+      <div class="gtj__head-text">
+        <h2 id="gtj-h2" class="gtj__title">Going to Japan?</h2>
+        <p class="gtj__sub">Sort these before you fly.</p>
       </div>
-    </section>
-  )
-}
+      <span class="gtj__head-tag" aria-hidden="true">
+        6 guides · before you fly
+      </span>
+    </header>
+
+    <p class="gtj__eyebrow" aria-hidden="true">
+      Practical first · verified before publish
+    </p>
+
+    <ul class="gtj__list">
+      {items.map((it) => (
+        <li class="gtj__list-item">
+          <a class="gtj__row" href={it.href}>
+            <span class="gtj__row-num">{it.n}</span>
+            <div class="gtj__row-body">
+              <div class="gtj__row-meta">
+                <span class="gtj__chip">Updated {it.updated}</span>
+              </div>
+              <h3 class="gtj__name">{it.title}</h3>
+              <p class="gtj__detail">{it.tagline}</p>
+            </div>
+            <span class="gtj__cta">
+              Read the guide <span aria-hidden="true">→</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <ul class="gtj__grid">
+      {items.map((it) => (
+        <li class="gtj__grid-item">
+          <a class="gtj__card" href={it.href}>
+            <div class="gtj__card-head">
+              <span class="gtj__num">{it.n}</span>
+            </div>
+            <span class="gtj__chip">Updated {it.updated}</span>
+            <h3 class="gtj__name">{it.title}</h3>
+            <p class="gtj__detail">{it.tagline}</p>
+            <div class="gtj__card-foot">
+              <span class="gtj__cta">
+                Read the guide <span aria-hidden="true">→</span>
+              </span>
+              <span class="gtj__num gtj__num--tail" aria-hidden="true">
+                {it.n}
+              </span>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <a class="gtj__viewall" href="/cheat-sheets">
+      View all cheat sheets <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
 
 <style>
-  /* Section rhythm + full-bleed top divider mirror the other homepage
-     sections (StartHere / CheatSheets): padding 32/72, border-top ink. */
   .gtj {
     padding: 32px 0;
     border-top: var(--border-ink);
@@ -82,97 +119,189 @@ const items = affiliates.filter((a) => a.active && a.module);
     padding: 0 var(--gutter-mobile);
   }
 
-  /* Fluid: no own width container or divider — the parent column governs
-     width. Vertical margin matches the /cheat-sheets list rhythm. */
-  .gtj--fluid {
-    padding: 0;
-    border-top: 0;
-    margin: 32px 0 0;
-  }
-  .gtj--fluid .gtj__inner {
-    padding: 0;
-  }
+  /* ---- Head ---- */
 
   .gtj__head {
-    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .gtj__head-tag {
+    display: none; /* desktop-only */
   }
   .gtj__title {
-    font-size: 30px;
+    margin: 0;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 36px;
     line-height: 1.02;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
+    color: var(--color-ink-black);
   }
   .gtj__sub {
-    margin-top: 6px;
-    font-size: 14px;
-    line-height: 1.5;
+    margin: 10px 0 0;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
     color: var(--color-ink-60);
   }
 
-  /* Stacks on mobile. */
-  .gtj__grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .gtj__item {
-    display: flex;
+  .gtj__eyebrow {
+    margin: 18px 0 14px;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
   }
 
-  /* Card — mirrors .plc (v2/PlaceCard.astro): Rice White surface, Concrete
-     Gray border, card radius, flex column. The whole card is the link. */
-  .gtj__card {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 4px;
-    padding: 14px;
+  /* ---- Mobile timeline rows (default) ---- */
+
+  .gtj__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--color-concrete-gray);
+    border-bottom: none;
     background: var(--color-rice-white);
-    border: 1.5px solid var(--color-concrete-gray);
-    border-radius: var(--radius-card);
+  }
+  .gtj__list-item {
+    border-bottom: 1px solid var(--color-concrete-gray);
+  }
+  .gtj__row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "num body cta";
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
     text-decoration: none;
     color: inherit;
-    transition: border-color 120ms ease-out;
   }
-  /* Hover/focus: border emphasis only — no shadow gimmicks (mirrors .plc). */
-  .gtj__card:hover,
-  .gtj__card:focus-visible {
-    border-color: var(--color-ink-black);
+  .gtj__row-num {
+    grid-area: num;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    color: var(--color-ink-black);
+  }
+  .gtj__row-body {
+    grid-area: body;
+    min-width: 0;
+  }
+  .gtj__row-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+  .gtj__row .gtj__cta {
+    grid-area: cta;
+    padding-left: 8px;
+    font-size: 11px;
+    max-width: 7ch;
+    white-space: normal;
+    text-align: right;
+    line-height: 1.25;
   }
 
-  /* Partner name — small mono label above the headline (IBM Plex Mono 500). */
-  .gtj__partner {
+  /* ---- Updated chip — same bordered concrete pill as the V2 lead chip ---- */
+
+  .gtj__chip {
+    display: inline-block;
+    padding: 2px 7px;
+    border: 1px solid var(--color-concrete-gray);
+    background: var(--color-rice-white);
     font-family: var(--font-mono);
-    font-size: 11px;
     font-weight: 500;
-    letter-spacing: 0.04em;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    white-space: nowrap;
+  }
+
+  /* ---- Title — Inter 700 ---- */
+
+  .gtj__name {
+    margin: 0 0 2px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color-ink-black);
+  }
+  .gtj__detail {
+    margin: 0;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.35;
     color: var(--color-ink-60);
   }
-  /* Headline — Space Grotesk 700, h3-equivalent in the card scale (.plc-name). */
-  .gtj__label {
-    margin: 2px 0 0;
-    font-family: var(--font-head);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.18;
-    letter-spacing: -0.01em;
-    color: var(--color-ink-black);
-  }
-  /* Arrow indicator — pinned to the card bottom so cards align (mirrors
-     .plc-map). Nudges on hover; global.css disables this under
-     prefers-reduced-motion. */
-  .gtj__arrow {
-    margin: auto 0 0;
-    padding-top: 12px;
+
+  /* ---- CTA — mono uppercase ---- */
+
+  .gtj__cta {
     font-family: var(--font-mono);
-    font-size: 14px;
     font-weight: 500;
-    line-height: 1;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: var(--color-ink-black);
-    transition: transform 120ms ease-out;
+    white-space: nowrap;
   }
-  .gtj__card:hover .gtj__arrow,
-  .gtj__card:focus-visible .gtj__arrow {
-    transform: translateX(3px);
+
+  /* ---- Numeral ---- */
+
+  .gtj__num {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--color-ink-60);
+  }
+
+  /* ---- Desktop grid (hidden on mobile) ---- */
+
+  .gtj__grid {
+    display: none;
+  }
+
+  .gtj__row:hover,
+  .gtj__row:focus-visible,
+  .gtj__card:hover,
+  .gtj__card:focus-visible {
+    outline: none;
+  }
+  .gtj__list-item:has(.gtj__row:hover),
+  .gtj__list-item:has(.gtj__row:focus-visible) {
+    background: color-mix(in srgb, var(--color-concrete-gray) 30%, transparent);
+  }
+
+  /* ---- View all footer link ---- */
+
+  .gtj__viewall {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-concrete-gray);
+    padding-bottom: 2px;
+  }
+  .gtj__viewall:hover,
+  .gtj__viewall:focus-visible {
+    border-bottom-color: var(--color-ink-black);
   }
 
   @media (min-width: 1024px) {
@@ -184,38 +313,95 @@ const items = affiliates.filter((a) => a.active && a.module);
       margin: 0 auto;
       padding: 0 var(--gutter-desktop);
     }
-    .gtj--fluid {
-      padding: 0;
-      margin: 40px 0 0;
+
+    .gtj__title {
+      font-size: 64px;
+      line-height: 1;
+      letter-spacing: -0.03em;
     }
-    .gtj--fluid .gtj__inner {
-      max-width: none;
+    .gtj__sub {
+      margin-top: 16px;
+      font-size: 19px;
+    }
+    .gtj__head-tag {
+      display: inline-block;
+      flex-shrink: 0;
+      font-family: var(--font-mono);
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-ink-60);
+    }
+    .gtj__eyebrow {
+      margin: 28px 0 18px;
+      font-size: 11px;
+    }
+
+    .gtj__list {
+      display: none;
+    }
+    .gtj__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      list-style: none;
       margin: 0;
       padding: 0;
     }
-    .gtj__head {
-      margin-bottom: 24px;
+    .gtj__grid-item {
+      display: flex;
     }
-    .gtj__title {
-      font-size: 40px;
-      line-height: 1;
-      letter-spacing: -0.025em;
+
+    .gtj__card {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 14px 16px 16px;
+      background: var(--color-rice-white);
+      border: 1px solid var(--color-concrete-gray);
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 120ms ease-out;
     }
-    .gtj__sub {
-      margin-top: 8px;
+    .gtj__card:hover,
+    .gtj__card:focus-visible {
+      border-color: var(--color-ink-black);
+    }
+    .gtj__card-head {
+      display: flex;
+      align-items: flex-start;
+    }
+    .gtj__card .gtj__chip {
+      align-self: flex-start;
+      margin-top: 14px;
+      padding: 3px 8px;
+      font-size: 10px;
+    }
+    .gtj__card .gtj__name {
+      margin-top: 10px;
       font-size: 16px;
     }
-    /* 2-up for the two active items; auto-fit steps to 3-up when Agoda
-       activates a third card — no markup change needed. */
-    .gtj__grid {
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-      gap: 16px;
+    .gtj__card .gtj__detail {
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.4;
     }
-    .gtj__card {
-      padding: 16px;
+    .gtj__card-foot {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--color-concrete-gray);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .gtj__label {
-      font-size: 18px;
+    .gtj__num--tail {
+      color: var(--color-ink-60);
+    }
+
+    .gtj__viewall {
+      margin-top: 32px;
+      font-size: 12px;
     }
   }
 </style>

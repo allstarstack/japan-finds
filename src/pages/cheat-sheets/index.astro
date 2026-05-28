@@ -7,7 +7,6 @@
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Header from "../../components/Header.astro";
-import GoingToJapan from "../../components/GoingToJapan.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
 import { extractLede, fmtDate } from "../../data/cheat-sheets.js";
 
@@ -49,8 +48,6 @@ const sheets = SHEET_ORDER.map((id) => {
           Verified before publish.
         </p>
       </header>
-
-      <GoingToJapan fluid />
 
       <ul class="cs-list">
         {
