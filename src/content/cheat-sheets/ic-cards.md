@@ -1,10 +1,10 @@
 ---
-title: Suica / IC Cards
+title: Suica & IC Cards
 slug: ic-cards
 last_verified: 2026-05-18
 ---
 
-# Suica / IC Cards
+# Suica & IC Cards
 
 One card for trains, buses, konbini, vending machines, lockers.
 

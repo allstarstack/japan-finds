@@ -1,36 +1,92 @@
 ---
-/* /cheat-sheets — Phase B-3 index ("Cheat Sheets" in the nav).
-   Nine sheets in a fixed editorial order (BUILD_SPEC_cheat_sheets.md §5):
-   the order is editorial, not data, so it is a hardcoded slug array. Each
-   row links to the full sheet; the lede is the brand one-liner pulled from
-   the markdown body. No hero, no decoration — matches /products · /places. */
+/* /cheat-sheets — V4 composite index (ported from
+   docs/build/CheatSheets_v4_source.jsx; see that file for the locked
+   aesthetic system and the original V4 hover/focus state spec).
+
+   Featured row: First 24 Hours + Japan Events 2026 (2-up at ≥1024px).
+   Evergreen grid: the other 8 sheets (3-col at ≥1024px).
+
+   The featured "Right now · …" eyebrow from V4 has been dropped: only
+   the events card carries a current-year badge (derived at build time
+   from new Date().getFullYear() — do not hardcode). Both featured
+   cards lead with the sheet's category label instead.
+
+   Routing: real /cheat-sheets/<slug> routes (the V4 source's
+   #-fragment / :target highlight pattern doesn't apply — dropped).
+
+   Sheet titles, taglines, and last_verified come from the content
+   collection. Per-slug icon + category live in SHEET_META below
+   because cheat-sheet frontmatter intentionally stays small (see
+   cheatSheetSchema). */
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import Header from "../../components/Header.astro";
 import SiteFooter from "../../components/SiteFooter.astro";
+import CSIcon from "../../components/CSIcon.astro";
 import { extractLede, fmtDate } from "../../data/cheat-sheets.js";
 
-const SHEET_ORDER = [
-  "first-24-hours",
+const FEATURED_SLUGS = ["first-24-hours", "japan-events-2026"];
+
+const EVERGREEN_SLUGS = [
   "ic-cards",
   "phone-setup",
   "cash-cards-atms",
-  "luggage-forwarding",
   "jr-pass",
-  "donki-drugstore-taxfree",
+  "luggage-forwarding",
   "konbini",
+  "donki-drugstore-taxfree",
   "japan-with-kids",
-  "japan-events-2026",
 ];
+
+/* Per-slug presentation metadata. Icon names match CSIcon kinds.
+   yearBadge: true paints the build-year pill on the featured card. */
+const SHEET_META: Record<
+  string,
+  { icon: string; category: string; yearBadge?: boolean }
+> = {
+  "first-24-hours":          { icon: "sunrise",  category: "Orientation" },
+  "japan-events-2026":       { icon: "calendar", category: "Events", yearBadge: true },
+  "ic-cards":                { icon: "iccard",   category: "Transit" },
+  "phone-setup":              { icon: "phone",    category: "Connectivity" },
+  "cash-cards-atms":          { icon: "yen",      category: "Money" },
+  "jr-pass":                  { icon: "ticket",   category: "Transit" },
+  "luggage-forwarding":       { icon: "suitcase", category: "Logistics" },
+  "konbini":                  { icon: "onigiri",  category: "Food" },
+  "donki-drugstore-taxfree":  { icon: "pill",     category: "Shopping" },
+  "japan-with-kids":          { icon: "family",   category: "Family" },
+};
 
 const byId = new Map(
   (await getCollection("cheat-sheets")).map((e) => [e.id, e]),
 );
-const sheets = SHEET_ORDER.map((id) => {
-  const entry = byId.get(id);
-  if (!entry) throw new Error(`/cheat-sheets: no source file for "${id}.md"`);
-  return entry;
-});
+
+/* japan-events-2026 frontmatter title carries a " — Japan Finds" SEO
+   suffix the other sheets don't have. Strip it for card display only —
+   no schema change. */
+const cleanTitle = (t: string) => t.replace(/\s+—\s+Japan Finds$/, "");
+
+const buildCard = (slug: string) => {
+  const entry = byId.get(slug);
+  if (!entry) throw new Error(`/cheat-sheets: no source file for "${slug}.md"`);
+  const meta = SHEET_META[slug];
+  if (!meta) throw new Error(`/cheat-sheets: SHEET_META missing for "${slug}"`);
+  return {
+    slug,
+    href: `/cheat-sheets/${slug}`,
+    title: cleanTitle(entry.data.title),
+    tagline: extractLede(entry.body),
+    updated: fmtDate(entry.data.last_verified),
+    icon: meta.icon,
+    category: meta.category,
+    yearBadge: meta.yearBadge ?? false,
+  };
+};
+
+const featured = FEATURED_SLUGS.map(buildCard);
+const evergreen = EVERGREEN_SLUGS.map(buildCard);
+
+const currentYear = new Date().getFullYear();
+const evergreenCount = String(evergreen.length).padStart(2, "0");
 ---
 
 <Base
@@ -39,30 +95,70 @@ const sheets = SHEET_ORDER.map((id) => {
 >
   <Header />
   <main id="main" class="cs-index">
-    <div class="wrap">
+    <div class="cs-wrap">
       <header class="cs-head">
-        <p class="eyebrow">JAPAN FINDS · HOW</p>
-        <h1>Cheat sheets</h1>
-        <p class="cs-sub">
+        <p class="cs-eyebrow">JAPAN FINDS · HOW</p>
+        <h1 class="cs-h1">Cheat sheets</h1>
+        <p class="cs-intro">
           The stuff people actually DM about. Practical first, witty second.
           Verified before publish.
         </p>
       </header>
 
-      <ul class="cs-list">
-        {
-          sheets.map((entry) => (
-            <li>
-              <a class="cs-row" href={`/cheat-sheets/${entry.id}`}>
-                <h2 class="cs-row__title">{entry.data.title}</h2>
-                <p class="cs-row__lede">{extractLede(entry.body)}</p>
-                <p class="cs-row__meta">
-                  Last verified: {fmtDate(entry.data.last_verified)}
-                </p>
-              </a>
-            </li>
-          ))
-        }
+      <ul class="cs-featured">
+        {featured.map((it) => (
+          <li>
+            <a class="cs-feat" href={it.href}>
+              <div class="cs-feat__topline">
+                <span class="cs-feat__cat">{it.category}</span>
+                <CSIcon kind={it.icon} size={26} />
+              </div>
+              <h2 class="cs-feat__title">
+                <span>{it.title}</span>
+                {it.yearBadge && (
+                  <span class="cs-feat__badge">{currentYear}</span>
+                )}
+              </h2>
+              <p class="cs-feat__lede">{it.tagline}</p>
+              <div class="cs-feat__foot">
+                <span class="cs-feat__upd">Updated {it.updated}</span>
+                <span class="cs-feat__cta">
+                  Open sheet <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <div class="cs-divider">
+        <span class="cs-divider__label">
+          Evergreen reference · {evergreenCount}
+        </span>
+        <span class="cs-divider__rule" aria-hidden="true"></span>
+      </div>
+
+      <ul class="cs-grid">
+        {evergreen.map((it) => (
+          <li>
+            <a class="cs-card" href={it.href}>
+              <div class="cs-card__topline">
+                <div class="cs-card__iconwell">
+                  <CSIcon kind={it.icon} size={26} />
+                </div>
+                <span class="cs-card__cat">{it.category}</span>
+              </div>
+              <h3 class="cs-card__title">{it.title}</h3>
+              <p class="cs-card__lede">{it.tagline}</p>
+              <div class="cs-card__foot">
+                <span class="cs-card__upd">Updated {it.updated}</span>
+                <span class="cs-card__cta">
+                  Open <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   </main>
@@ -70,102 +166,319 @@ const sheets = SHEET_ORDER.map((id) => {
 </Base>
 
 <style>
-  .wrap {
-    max-width: 720px;
+  .cs-wrap {
+    max-width: var(--content-max);
     margin: 0 auto;
-    padding: 40px var(--gutter-mobile) 56px;
+    padding: 32px var(--gutter-mobile) 40px;
+    color: var(--color-ink-black);
   }
 
-  /* Mono eyebrow — shared idiom with /products. */
-  .eyebrow {
+  /* ---- Head ---- */
+
+  .cs-eyebrow {
     font-family: var(--font-mono);
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.16em;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-ink-60);
-    margin-bottom: 12px;
+    margin: 0 0 14px;
   }
-  .cs-head h1 {
-    font-size: 40px;
+  .cs-h1 {
+    margin: 0 0 10px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 34px;
     line-height: 1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.028em;
   }
-  .cs-sub {
-    margin-top: 14px;
+  .cs-intro {
+    margin: 0 0 28px;
     max-width: 48ch;
-    font-size: 16px;
-    line-height: 1.55;
-    color: var(--color-ink-60);
-  }
-
-  .cs-list {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  /* Whole card is the link (BUILD_SPEC §5). */
-  .cs-row {
-    display: block;
-    padding: 18px;
-    background: var(--color-white);
-    border: var(--border-ink);
-    border-radius: var(--radius-card);
-    text-decoration: none;
-    color: inherit;
-    transition:
-      box-shadow 120ms ease-out,
-      transform 80ms ease-out;
-  }
-  .cs-row:hover,
-  .cs-row:focus-visible {
-    box-shadow: var(--shadow-md);
-    transform: translate(-2px, -2px);
-  }
-  .cs-row__title {
-    font-size: 21px;
-    line-height: 1.12;
-    letter-spacing: -0.02em;
-  }
-  .cs-row__lede {
-    margin-top: 7px;
+    font-family: var(--font-body);
+    font-weight: 400;
     font-size: 15px;
     line-height: 1.5;
+    color: var(--color-ink-black);
+  }
+
+  /* ---- Featured row ---- */
+
+  .cs-featured {
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .cs-feat {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 22px 24px;
+    background: var(--color-rice-white);
+    border: 1px solid var(--color-ink-black);
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 120ms ease, border-color 120ms ease;
+  }
+  .cs-feat:hover {
+    transform: translateY(-2px);
+  }
+  .cs-feat:focus-visible {
+    outline: 2px solid var(--color-ink-black);
+    outline-offset: 3px;
+  }
+  .cs-feat__topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  .cs-feat__cat {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+  }
+  .cs-feat__title {
+    margin: 0 0 12px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .cs-feat__badge {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    background: var(--color-egg-yellow);
+    color: var(--color-ink-black);
+    padding: 3px 8px;
+    border-radius: 2px;
+    align-self: center;
+  }
+  .cs-feat__lede {
+    margin: 0 0 22px;
+    flex: 1;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--color-ink-black);
+  }
+  .cs-feat__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid var(--color-concrete-gray);
+  }
+  .cs-feat__upd {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
     color: var(--color-ink-60);
   }
-  /* "Last verified" — muted microcopy. The brand names this Concrete Gray,
-     but #E6E1D8 as text on Rice White is invisible (~1.1:1); --color-ink-60
-     is the codebase's de-emphasised text token and clears AA. */
-  .cs-row__meta {
-    margin-top: 12px;
+  .cs-feat__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid var(--color-ink-black);
+  }
+
+  /* ---- Section divider ---- */
+
+  .cs-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .cs-divider__label {
     font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+  }
+  .cs-divider__rule {
+    flex: 1;
+    height: 1px;
+    background: var(--color-ink-30);
+  }
+
+  /* ---- Evergreen grid ---- */
+
+  .cs-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .cs-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: var(--color-rice-white);
+    border: 1px solid var(--color-concrete-gray);
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 120ms ease, transform 120ms ease;
+  }
+  .cs-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-ink-black);
+  }
+  .cs-card:focus-visible {
+    outline: 2px solid var(--color-ink-black);
+    outline-offset: 3px;
+  }
+  .cs-card__topline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .cs-card__iconwell {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-ink-15);
+    border: 1px solid var(--color-concrete-gray);
+    border-radius: 4px;
+  }
+  .cs-card__cat {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    padding: 4px 8px;
+    border: 1px solid var(--color-ink-black);
+    border-radius: 2px;
+  }
+  .cs-card__title {
+    margin: 0 0 7px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  .cs-card__lede {
+    margin: 0 0 16px;
+    flex: 1;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-ink-black);
+  }
+  .cs-card__foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--color-concrete-gray);
+  }
+  .cs-card__upd {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.06em;
     color: var(--color-ink-60);
+  }
+  .cs-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 13px;
+    padding-bottom: 1px;
+    border-bottom: 1.5px solid var(--color-ink-black);
+  }
+
+  /* Touch devices: replace hover lift with a press state so taps feel
+     responsive without sticky hover styles. */
+  @media (hover: none) {
+    .cs-feat:hover,
+    .cs-card:hover {
+      transform: none;
+    }
+    .cs-feat:active,
+    .cs-card:active {
+      transform: translateY(1px);
+    }
+    .cs-card:active {
+      border-color: var(--color-ink-black);
+    }
   }
 
   @media (min-width: 1024px) {
-    .wrap {
-      padding: 72px var(--gutter-mobile) 88px;
+    .cs-wrap {
+      padding: 64px var(--gutter-desktop) 80px;
     }
-    .cs-head h1 {
+
+    .cs-h1 {
       font-size: 56px;
     }
-    .cs-sub {
+    .cs-intro {
       font-size: 18px;
+      max-width: 640px;
     }
-    .cs-list {
-      margin-top: 40px;
+
+    .cs-featured {
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 40px;
     }
-    .cs-row {
-      padding: 22px 24px;
+    .cs-feat {
+      padding: 28px;
+      min-height: 320px;
     }
-    .cs-row__title {
-      font-size: 24px;
+    .cs-feat__title {
+      font-size: 36px;
     }
-    .cs-row__lede {
+    .cs-feat__lede {
       font-size: 16px;
+      max-width: 420px;
+    }
+
+    .cs-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .cs-card {
+      padding: 22px;
+      min-height: 220px;
+    }
+    .cs-card__title {
+      font-size: 20px;
     }
   }
 </style>
