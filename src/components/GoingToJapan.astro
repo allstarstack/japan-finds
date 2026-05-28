@@ -74,7 +74,7 @@ const items = FEATURED_SLUGS.map((slug, i) => {
               <p class="gtj__detail">{it.tagline}</p>
             </div>
             <span class="gtj__cta">
-              Read <span aria-hidden="true">→</span>
+              Read the guide <span aria-hidden="true">→</span>
             </span>
           </a>
         </li>
@@ -204,6 +204,10 @@ const items = FEATURED_SLUGS.map((slug, i) => {
     grid-area: cta;
     padding-left: 8px;
     font-size: 11px;
+    max-width: 7ch;
+    white-space: normal;
+    text-align: right;
+    line-height: 1.25;
   }
 
   /* ---- Updated chip — same bordered concrete pill as the V2 lead chip ---- */
