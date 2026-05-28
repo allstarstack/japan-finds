@@ -88,17 +88,6 @@ const regionChips = Object.entries(REGION_LABELS)
     </section>
 
     <div class="rail-sticky">
-      <div class="view-toggle-row">
-        <div
-          class="view-toggle"
-          role="group"
-          aria-label="Toggle list or map view"
-          data-view-toggle
-        >
-          <button type="button" data-view-btn="list" aria-pressed="true">List</button>
-          <button type="button" data-view-btn="map" aria-pressed="false">Map</button>
-        </div>
-      </div>
       <SearchBox placeholder="Search 333 places" />
       <LocationChipRow chips={regionChips} hintLabel="regions" />
       <PlaceFilterRail counts={counts} flagCounts={flagCounts} />
@@ -106,7 +95,18 @@ const regionChips = Object.entries(REGION_LABELS)
 
     <section class="presults" data-list-section>
       <div class="wrap">
-        <h2 class="results-count" data-count>{total} places</h2>
+        <div class="presults-bar">
+          <h2 class="results-count" data-count>{total} places</h2>
+          <div
+            class="view-toggle"
+            role="group"
+            aria-label="Toggle list or map view"
+            data-view-toggle
+          >
+            <button type="button" data-view-btn="list" aria-pressed="true">List</button>
+            <button type="button" data-view-btn="map" aria-pressed="false">Map</button>
+          </div>
+        </div>
         <p class="xlink">Looking for restaurants? <a href="/eat">See → /eat</a></p>
         <div class="grid" data-grid>
           {places.map((p) => <PlaceCard entry={p} />)}
@@ -138,14 +138,12 @@ const regionChips = Object.entries(REGION_LABELS)
     padding: 0 var(--gutter-mobile);
   }
 
-  /* Phase D D6 — sticky wrapper that holds the location row and the
-     primary/planning rail as a single unit. The inner rail is no longer
-     sticky itself; this wrapper owns the sticky and the ink border under
-     the whole chip block. */
+  /* Filter block wrapper — holds the view toggle, search, and the
+     location + primary/planning chip rails as a single unit. Scrolls
+     with the page (was previously sticky; the always-pinned footprint
+     starved the card grid on mobile). The white surface + ink hairline
+     remain as the visual separator between filters and the grid. */
   .rail-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 20;
     background: var(--color-white);
     border-bottom: var(--border-ink);
   }
@@ -213,13 +211,13 @@ const regionChips = Object.entries(REGION_LABELS)
     padding: 20px 0 56px;
   }
   .results-count {
+    margin: 0;
     font-family: var(--font-mono);
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-ink-60);
-    margin-bottom: 14px;
   }
   /* Wayfinding aside — sits between the results count and the grid as a
      low-key cross-link to /eat. Sub-CTA weight, mono to read as inline
@@ -302,16 +300,20 @@ const regionChips = Object.entries(REGION_LABELS)
     }
   }
 
-  /* View toggle (list/map segmented control). Lives at the top of the
-     rail-sticky block, right-aligned on desktop, full-width on mobile.
-     max-width + margin auto keeps the toggle's right edge aligned with
-     the page's content column at viewports ≥ --content-max. */
-  .view-toggle-row {
+  /* Count + view-toggle bar. Count text left, segmented control right
+     (pushed via margin-left: auto on .view-toggle). flex-wrap lets the
+     toggle drop below the count if the column gets cramped on the
+     narrowest mobile widths — keeps the row clean rather than letting
+     the toggle squeeze the count text. */
+  .presults-bar {
     display: flex;
-    justify-content: flex-end;
-    padding: 8px var(--gutter-mobile);
-    max-width: var(--content-max);
-    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+    margin-bottom: 14px;
+  }
+  .presults-bar .view-toggle {
+    margin-left: auto;
   }
   .view-toggle {
     display: inline-flex;
@@ -339,23 +341,6 @@ const regionChips = Object.entries(REGION_LABELS)
   }
   .presults[hidden],
   .presults-map[hidden] { display: none; }
-
-  @media (max-width: 640px) {
-    .view-toggle-row {
-      justify-content: stretch;
-    }
-    .view-toggle {
-      width: 100%;
-    }
-    .view-toggle button {
-      flex: 1;
-    }
-  }
-  @media (min-width: 1024px) {
-    .view-toggle-row {
-      padding: 8px var(--gutter-desktop);
-    }
-  }
 </style>
 
 <script>

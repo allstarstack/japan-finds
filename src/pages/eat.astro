@@ -84,17 +84,6 @@ const cityChips = CITY_CHIPS
     </section>
 
     <div class="rail-sticky">
-      <div class="view-toggle-row">
-        <div
-          class="view-toggle"
-          role="group"
-          aria-label="Toggle list or map view"
-          data-view-toggle
-        >
-          <button type="button" data-view-btn="list" aria-pressed="true">List</button>
-          <button type="button" data-view-btn="map" aria-pressed="false">Map</button>
-        </div>
-      </div>
       <SearchBox placeholder={`Search ${total} restaurants`} />
       <LocationChipRow chips={cityChips} hintLabel="cities" />
       <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
@@ -107,6 +96,15 @@ const cityChips = CITY_CHIPS
           <button type="button" class="eclear" data-clear hidden>
             Clear filters
           </button>
+          <div
+            class="view-toggle"
+            role="group"
+            aria-label="Toggle list or map view"
+            data-view-toggle
+          >
+            <button type="button" data-view-btn="list" aria-pressed="true">List</button>
+            <button type="button" data-view-btn="map" aria-pressed="false">Map</button>
+          </div>
         </div>
         <p class="xlink">Looking for places to go? <a href="/places">See → /places</a></p>
         <div class="grid" data-grid>
@@ -141,14 +139,12 @@ const cityChips = CITY_CHIPS
     padding: 0 var(--gutter-mobile);
   }
 
-  /* Phase D D6 — sticky wrapper that holds the location row and the
-     cuisine/flag rail as a single unit. The inner rails are no longer
-     sticky themselves; this wrapper owns the sticky and the ink border
-     under the whole chip block. */
+  /* Filter block wrapper — holds the view toggle, search, and the
+     location + cuisine/flag rails as a single unit. Scrolls with the
+     page (was previously sticky; the always-pinned footprint starved
+     the card grid on mobile). The white surface + ink hairline remain
+     as the visual separator between filters and the grid. */
   .rail-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 20;
     background: var(--color-white);
     border-bottom: var(--border-ink);
   }
@@ -193,12 +189,19 @@ const cityChips = CITY_CHIPS
     background: var(--color-white);
     padding: 18px 0 8px;
   }
+  /* Count + clear + view-toggle bar. align-items: center (was baseline)
+     so the segmented control sits flush with the count text. The toggle
+     is pushed to the right via margin-left: auto; flex-wrap lets it
+     drop below on the narrowest mobile widths. */
   .eresults-bar {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     gap: 6px 14px;
     margin-bottom: 14px;
+  }
+  .eresults-bar .view-toggle {
+    margin-left: auto;
   }
   /* Wayfinding aside — sits between the results bar and the grid as a
      low-key cross-link to /places. Sub-CTA weight, mono to read as
@@ -299,16 +302,8 @@ const cityChips = CITY_CHIPS
     }
   }
 
-  /* View toggle — mirrors /places. Same segmented control styling.
-     max-width + margin auto keeps the toggle aligned with the
-     page's content column at viewports ≥ --content-max. */
-  .view-toggle-row {
-    display: flex;
-    justify-content: flex-end;
-    padding: 8px var(--gutter-mobile);
-    max-width: var(--content-max);
-    margin: 0 auto;
-  }
+  /* View toggle — segmented control. Lives on the .eresults-bar above;
+     mirrors /places. */
   .view-toggle {
     display: inline-flex;
     border: 1.5px solid var(--color-ink-black);
@@ -335,15 +330,6 @@ const cityChips = CITY_CHIPS
   }
   .eresults[hidden],
   .eresults-map[hidden] { display: none; }
-
-  @media (max-width: 640px) {
-    .view-toggle-row { justify-content: stretch; }
-    .view-toggle { width: 100%; }
-    .view-toggle button { flex: 1; }
-  }
-  @media (min-width: 1024px) {
-    .view-toggle-row { padding: 8px var(--gutter-desktop); }
-  }
 </style>
 
 <script>

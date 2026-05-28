@@ -84,10 +84,12 @@ const regionChips = Object.entries(REGION_LABELS)
     padding: 0 var(--gutter-mobile);
   }
 
+  /* Filter block wrapper — holds the search, location row, and stay
+     category rail. Scrolls with the page (was previously sticky; the
+     always-pinned footprint starved the card grid on mobile). The
+     white surface + ink hairline remain as the visual separator
+     between filters and the grid. */
   .rail-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 20;
     background: var(--color-white);
     border-bottom: var(--border-ink);
   }

@@ -85,13 +85,12 @@ for (const p of launch) {
     padding: 0 var(--gutter-mobile);
   }
 
-  /* SEARCH_AND_SORT Phase B — sticky wrapper holding the search box + filter
-     rail as one unit. Owns the sticky and the bottom ink border that the
-     inner rail used to carry (mirrors the /places .rail-sticky). */
+  /* Filter block wrapper — holds the search box and category rail.
+     Scrolls with the page (was previously sticky; the always-pinned
+     footprint starved the card grid on mobile). The white surface +
+     ink hairline remain as the visual separator between filters and
+     the grid. */
   .rail-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 20;
     background: var(--color-white);
     border-bottom: var(--border-ink);
   }
