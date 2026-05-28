@@ -32,12 +32,14 @@ const { placeholder, label = "Search this page" } = Astro.props;
 </div>
 
 <style>
-  .searchbox {
-    padding: 12px var(--gutter-mobile);
-  }
+  /* Cap-outside / padding-inside, matching the page .wrap pattern.
+     Putting padding on .searchbox (the outer) instead made the cap
+     shrink inside the padded zone, so the input drifted one gutter-
+     width left of the hero column at viewports ≥ --content-max. */
   .searchbox-wrap {
     max-width: var(--content-max);
     margin: 0 auto;
+    padding: 12px var(--gutter-mobile);
   }
 
   /* Full-width on mobile; caps at ~600px on desktop (BUILD_SPEC §B-4). */
@@ -85,7 +87,7 @@ const { placeholder, label = "Search this page" } = Astro.props;
   }
 
   @media (min-width: 1024px) {
-    .searchbox {
+    .searchbox-wrap {
       padding: 14px var(--gutter-desktop);
     }
   }

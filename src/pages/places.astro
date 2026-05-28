@@ -395,11 +395,15 @@ for (const chip of FEATURED_CHIPS) {
   }
 
   /* View toggle (list/map segmented control). Lives at the top of the
-     rail-sticky block, right-aligned on desktop, full-width on mobile. */
+     rail-sticky block, right-aligned on desktop, full-width on mobile.
+     max-width + margin auto keeps the toggle's right edge aligned with
+     the page's content column at viewports ≥ --content-max. */
   .view-toggle-row {
     display: flex;
     justify-content: flex-end;
     padding: 8px var(--gutter-mobile);
+    max-width: var(--content-max);
+    margin: 0 auto;
   }
   .view-toggle {
     display: inline-flex;

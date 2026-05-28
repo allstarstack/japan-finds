@@ -287,11 +287,15 @@ const cityChips = CITY_CHIPS
     }
   }
 
-  /* View toggle — mirrors /places. Same segmented control styling. */
+  /* View toggle — mirrors /places. Same segmented control styling.
+     max-width + margin auto keeps the toggle aligned with the
+     page's content column at viewports ≥ --content-max. */
   .view-toggle-row {
     display: flex;
     justify-content: flex-end;
     padding: 8px var(--gutter-mobile);
+    max-width: var(--content-max);
+    margin: 0 auto;
   }
   .view-toggle {
     display: inline-flex;
