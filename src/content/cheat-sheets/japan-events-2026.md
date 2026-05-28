@@ -1,5 +1,5 @@
 ---
-title: "Japan Events 2026 — Japan Finds"
+title: "Japan Events 2026"
 slug: japan-events-2026
 description: "Japan's annual events worth flying for. By month, with 2026 dates as reference."
 last_verified: 2026-05-19
