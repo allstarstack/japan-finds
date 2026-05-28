@@ -1,9 +1,9 @@
 # Japan Finds — Project State
 
-**Last updated:** 2026-05-28 (late) — Major run shipped: D7 stay enrichment, cross-page architecture work (PRs #34–#38), homepage "Going to Japan?" pivot, cheat-sheets V4 redesign, unified layout. Polish pass 2 running overnight. Next awake-only: neighborhood-search test, /eat search box, "Six to start with" removal decision.
+**Last updated:** 2026-05-28 (late morning) — Shipped this session: PR #39 polish pass 2, PR #40 Going-to-Japan V4 alignment, PR #41 list-page consistency, PR #42 homepage dividers (divider-contrast follow-up in progress). List-page audit complete, sort question resolved. A.10 map-UX design output ready for review. Two workstreams teed up next: filter-header rework (content-starving sticky filters) and A.10 implementation.
 
 ## What this is
-The traveling state doc. Drop at the top of any new Claude chat for full context in ~500 tokens instead of replaying history. Update after major milestones — and AFTER any decision reversal, immediately.
+The traveling state doc. Drop at the top of any new chat for full context in ~500 tokens instead of replaying history. Update after major milestones — and AFTER any decision reversal, immediately.
 
 ## Site state
 - **URL:** japan.allstarsteven.com
@@ -14,91 +14,76 @@ The traveling state doc. Drop at the top of any new Claude chat for full context
 - **Counts:** 363 places · 282 restaurants (Tabelog Hyakumeiten) · 135 stays · ~384 products · 10 cheat sheets
 
 ## What's shipped (most recent first)
-- **PR #38 — Cross-page layout consistency (merged 2026-05-28):** Unified container alignment. Capped LocationChipRow + StayFilterRail + view-toggle-row at `--content-max` (they drifted left at ≥1280px). Plus search-bar left-edge aligned to hero/chip column on /places, /eat, /stay. Audit found /stay hero was never `text-align:center` — the "centered" look was chip-rail drift. No new container utility — extended the existing pattern.
-- **PR #37 — Cheat-sheets V4 redesign (merged 2026-05-28):** /cheat-sheets index rebuilt as composite layout — 2-up featured row (First 24 Hours + Japan Events 2026) + 3-up evergreen grid (8 sheets). All 10 sheets, real `/cheat-sheets/<slug>` routes (not #fragments), 4 new icons (sunrise/phone/suitcase/family) in V4 1.5px ink-stroke style, year-derived 2026 badge, extractLede() taglines, existing intro kept. Renames: "JR Pass Basics"→"JR Pass Math", "Suica / IC Cards"→"Suica & IC Cards" (frontmatter, propagate everywhere). Egg-yellow token already existed. React→Astro port (viewport prop → CSS @media).
-- **PR #36 — "Going to Japan?" pivot (merged 2026-05-27):** Homepage section reframed from affiliate checklist → 6-card cheat-sheet preview (first-24-hours, phone-setup, ic-cards, jr-pass, cash-cards-atms, luggage-forwarding). Links to /cheat-sheets/<slug>, "Read the guide →" CTAs, "View all cheat sheets →" footer. Moved BELOW Start here. Removed from /cheat-sheets/index (was homepage+cheat-sheets via fluid prop; now homepage-only). affiliates.ts reverted to pre-PR state. Original V2 affiliate commits kept as historical record.
-- **PR #35 — Site polish pass (merged 2026-05-27):** /stay category-chip-row alignment fix, `--color-tokyo-red-dark` token prune, homepage CTA "Browse restaurants"→"See where to eat", cuisine-chip single-select audit (all 4 list pages clean, no drift).
-- **PR #34 — Housekeeping (merged 2026-05-27):** Untracked Python helpers triaged (dead one-shots deleted, build specs + D5c artifacts committed). New `src/data/map-legends.js` shared module — consolidated PLACES/EAT/STAY legend config + paint expressions + slug-validation Sets + Mapbox init that were duplicated across map.astro and MapView.astro (held in sync by comments). Net −253/+76 in the two .astro files.
-- **D7 — Stay enrichment (merged 2026-05-27, squashed):** 135/135 stays enriched with place_id/lat/lng, 134 photos, 100% category hit rate, ~$9.87 spend. `train-hostel-hokutosei` deleted (confirmed permanently closed — 136→135). `densho-sen-nen-no-yado-sakan` has place_id but no Google photo → D3 photo-override candidate. `enrich_with_places_api.py` parameterized (collection + photo-dir args) — reusable for future D-series. /map STAY mode now shows 135 indigo pins; /stay cards render photos. `d7_run_log.json` committed to docs/build/.
-- **Earlier (PR #32 and before):** /stay launch bundle, /add-stays + /add-eats slash commands, Phase A.9 map architecture, Phase D enrichment, cheat-sheets B-3, brand system, unified /map. See git log + earlier PROJECT_STATE revisions for detail.
-
-### Recently-discovered-already-merged
-- **D6 location filter + search-and-sort** — both were listed as "pending PRs" but turned out already merged. /places, /eat, /stay, /products all have region/category filtering; /products + /places + /stay have client-side search + newest-first sort. (NOTE: /eat is MISSING its search box — see queue.)
+- **PR #42 — Homepage section dividers (merging; divider-contrast follow-up in progress):** New SectionDivider component between every consecutive <main> child; removed the old heavy 1.5px ink-black section borders. FOLLOW-UP: first pass used Concrete Gray hairlines, which are ~1.1:1 on Rice White = effectively invisible (brand.md's own warning). Fix in progress: switch to a visible-but-subtle ink-tone hairline (~12% ink or `--color-ink-60`), and verify the §02 Going-to-Japan → §03 Map boundary actually renders.
+- **PR #41 — List-page consistency (merging):** /eat got a SearchBox + RestaurantCard data-search blob + ChipRow token-AND predicate, mirroring /places + /stay exactly. Featured/"six to start with" section removed from BOTH /places and /products (it was on both). Dead featuredEl toggle removed from PlaceFilterRail. All four list pages now uniformly hero → search → chips → grid. (+54 / −185.)
+- **PR #40 — Going to Japan V4 alignment (merged):** Homepage GoingToJapan rewritten in the V4 cheat-sheets card vocabulary (iconwell + category chip via CSIcon + local SHEET_META). Removed the six identical "UPDATED" date chips and the redundant tail numeral. Anchored as §02 "GOING TO JAPAN · BEFORE YOU FLY"; MapSection renumbered §02 → §03 (filled the pre-launch §03 gap; homepage now reads §01→§06 continuously). Mobile timeline-list dropped for a single responsive grid.
+- **PR #39 — Polish pass 2 (merged):** Stay card added to homepage Start here as §05 (ink-black stripe — the unused chip slot), label "Four useful things" → "Five". Eyebrow added to /eat hero. events-2026 frontmatter title " — Japan Finds" suffix removed + the now-redundant cleanTitle strip helper deleted from cheat-sheets/index. (C4 "Browse the catalog" CTA — confirmed never existed, skipped.)
+- **PR #38 — Cross-page layout consistency (merged 2026-05-28):** Capped LocationChipRow + StayFilterRail + view-toggle-row at `--content-max`; search-bar left-edge aligned to hero/chip column on /places, /eat, /stay (propagated to /products via shared SearchBox). The "/stay centered hero" was an illusion from chip-rail drift — no text-align:center existed.
+- **PR #37 — Cheat-sheets V4 redesign (merged 2026-05-28):** /cheat-sheets index rebuilt; 2-up featured row + 3-up grid, real `/cheat-sheets/<slug>` routes, V4 icons (1.5px ink-stroke), egg-yellow 2026 badge, extractLede() taglines. Renames: "JR Pass Basics"→"JR Pass Math", "Suica / IC"→"Suica & IC Cards".
+- **PR #36 — "Going to Japan?" pivot (merged 2026-05-27):** Reframed from affiliate checklist → cheat-sheet preview (now superseded visually by #40's V4 alignment). affiliates.ts reverted; component moved below Start here; removed from /cheat-sheets index.
+- **PRs #34/#35, D7 stay enrichment, Phase A.9, Phase D:** see prior PROJECT_STATE revisions + git log. D7: 135/135 stays enriched, ~$9.87. map-legends.js shared module (PR #34).
 
 ## What's in flight
-- **Polish pass 2** (`feat/polish-pass-2`, running overnight 2026-05-28): adds Stay card to homepage Start here (was 4 cards, missing Stay), adds eyebrow to /eat hero (the only list page without one), cleans `events-2026` frontmatter " — Japan Finds" suffix, revises "Browse the catalog" homepage CTA if present. Feature branch — review + merge in the morning.
+- **#42 divider-contrast fix** — see above. The only thing between here and "list-page + homepage polish workstream done."
 
 ## What's queued
 
-### Awake-only — next session (decisions/tests needed)
-- **Neighborhood-search test.** A site reviewer asked for neighborhood-level search (type "Shibuya"/"Gion") on /places, /eat, /stay. Region chips are too coarse (Kanto = 7 prefectures); exact names need prior knowledge; neighborhood is the missing middle. FIRST: test whether existing search already matches the city/area field (type "Shinjuku" in /places search). If it filters → already works. If only matches names → extend search to match location field (its own PR). Data has city/prefecture; unclear if neighborhood granularity exists.
-- **/eat search box.** /eat is the only list page without search (consistency gap + 282 restaurants is a lot to scan). Ties to neighborhood-search decision above — when added, decide if it matches location.
-- **"Six to start with" on /places — removal decision.** /places has a featured 6-card section; /eat and /stay don't (read cleaner). Leaning REMOVE (homepage Start here already does site-level orientation; consistency; lower maintenance). Counterargument: /places is the biggest/most-overwhelming list (363) and the featured 6 give cold first-timers entry points. Steven's call.
+### Next workstreams (one chat each)
+- **Filter-header rework (HIGH impact — all 4 list pages).** The filter block (search + 2–3 stacked horizontally-scrolling chip rows: location, category, attributes) is tall AND sticky, so it permanently eats ~half the viewport and starves the cards (<2 rows visible while scrolling). First-principles fix: minimize the PINNED footprint. Full filters at the top; on scroll-down collapse to a slim sticky bar (search + "Filters" button w/ active count + active-filter pills); tuck secondary groups (category, attributes) behind a "Filters" disclosure so even the top block is shorter; on mobile the Filters button opens a drawer/sheet. Controls accessible, not dominant. Shared components: SearchBox, ChipRow, the filter rails. CC-doable with the pattern locked (above).
+- **A.10 — Map UX consolidation (design output READY).** Fold the WHERE/EAT/STAY mode toolbar into the legend panel header → one control surface. Design variants are produced; next step is review against the brief's eval rubric → lock a direction → spec CC. Brief lives in this session's history; rubric: one control surface / unambiguous active mode / pin-colors legible / works on phone / brand tokens only / interaction model intact (mutually-exclusive modes, single-select clusters).
 
-### Strategic / architectural
-- **D8 — Per-restaurant Tabelog URL enrichment for /eat.** /eat cards currently link to Tabelog *category* list pages (top-100), not the specific restaurant. Backfill `tabelog_url` for 282 entries (scraping, likely free, needs manual review queue — similar shape to D7). Then /eat links to per-restaurant Tabelog (credibility + utility in one link). Needs supervision, not autonomous.
-- **/cheat-sheets affiliate placement pass.** Per affiliate-density decision: put eSIM affiliate in Phone Setup (prominent) + First 24 Hours (contextual) + /tools. Other affiliates relevance-anchored inside their topical sheets. Content/copy judgment needed.
-- **Per-item pages** (`/products/<slug>`, `/places/<slug>`, `/eat/<slug>`, `/stay/<slug>`). ~1,403 pages. SEO, direct-link, future shop integration, Pagefind. Biggest remaining workstream, 3-4 CC sessions.
-- **Phase A.10 — Map UX consolidation.** Fold the 3 toolbar chips (WHERE/EAT/STAY) into the legend panel header. Needs design judgment.
-- **ManyChat conditional email capture** + /products & /places default flows.
+### Quick / pending decisions
+- **Neighborhood-granularity test.** /places + /stay (+ now /eat) search matches name + prefecture/region/area. Open question: does it catch neighborhood level (type "Shinjuku" in /places search)? Filters → done. Only matches coarser → finer granularity is a separate small enhancement, low priority.
 
-### Design work (not CC)
-- **Homepage other sections + cheat-sheets per-page redesigns** — as needed. The "Going to Japan?" + cheat-sheets-index redesigns are done (PRs #36/#37). Run Claude Design → verify against brand.md → CC implements.
-
-### Phase D continued
-- **D3 — Steven photo override on top-N cards.** Manual, ongoing. Now includes /stay (densho-sen-nen-no-yado-sakan is a priority — no Google photo).
+### Strategic / architectural (own focused sessions)
+- **D8 — per-restaurant Tabelog URL backfill** for 282 /eat entries (scraping + review queue, supervised).
+- **Per-item pages** (`/products/<slug>` etc., ~1,403 pages) — biggest remaining workstream, 3–4 CC sessions.
+- **/cheat-sheets affiliate placement pass** (eSIM in Phone Setup + First 24 Hours + /tools; relevance-anchored).
+- **ManyChat conditional email capture.**
 
 ### Small follow-ups
-- **events-2026 frontmatter title cleanup** — folding into polish pass 2 (remove " — Japan Finds" suffix; render-time strip from PR #37 becomes redundant).
-- **Matsuyama Castle re-enrichment** — matched to wrong place. Edit YAML, delete place_id, re-run enrich. Paid API — auto-mode OFF.
-- **136→135 stays seed vet** — manual cull now that D7 makes them visible on map.
+- **/places search placeholder mismatch:** placeholder reads "Search 333 places" but ALL JAPAN chip reads 363 — reconcile the counts.
+- **Matsuyama Castle re-enrichment** — wrong place match; edit YAML, delete place_id, re-run. Paid API → auto-mode OFF.
+- **136→135 stays seed vet** — manual cull.
+- **D3 photo overrides** — densho-sen-nen-no-yado-sakan is priority (place_id but no Google photo).
 - **Hero photo brand-coherence check** — overdue.
-
-### Phase D — site-wide eval pass (later)
-Structured 3–5hr: Lighthouse baseline, banned-words pass, axe a11y audit, brand voice review, UX pattern audit, content audit, friend user tests. Includes /stay + redesigned /cheat-sheets in scope.
-
-### Background queue
-- POSSIBLE_MISSING_FLAGS audit (102 product slugs) · scenic transport LineString routes on /map · sub-chip behavior on /products · 21 v2-deferred product items
 
 ## Active decisions log
 
-### 2026-05-28 — Information architecture + monetization (this session)
-- **IA principle (locked):** cheat sheets own HOW/logistics; /places /eat /stay /products own WHERE/WHAT. Topic overlap is fine when the job differs (e.g., Konbini Basics cheat sheet = how-to-use logistics; /products konbini items = what-to-buy). All 10 cheat sheets pass this test — none cut.
-- **"Going to Japan?" = cheat-sheet preview, NOT affiliate listing.** Cheat sheets are the canonical depth surface; affiliate links live INSIDE sheets, earned via depth, not impulse-clicked from the homepage. Higher-quality referrals convert better.
-- **Affiliate density (locked):** relevance-anchored, not scattered. eSIM in Phone Setup (prominent) + First 24 Hours (contextual) + /tools. Same principle for other affiliates inside their topical sheets. NOT on /places/eat/stay cards.
-- **Cheat-sheets featured row:** First 24 Hours (existing #1, best cold-start orientation) + Japan Events 2026 (freshness/2026 badge). Subjective call, one-line flip if revisited.
-- **Taglines:** use existing `extractLede(entry.body)` — single source of truth, no separate tagline frontmatter field. Editing a sheet's opening line updates its card tagline (a feature).
-- **Renames accepted:** JR Pass Math (captures "it's a math problem" angle), Suica & IC Cards (punctuation). Rejected 4 others (Konbini Basics, Cash/Cards/ATMs, Donki/Drugstore/Tax-Free stay — V4's renames lost scope).
-- **Layout convention:** single max-width container centered in viewport, content left-aligned within (NOT center-aligned text). All heroes/search/chips share one left edge. Minimal fix (cap the outliers) over a new .container utility — the pattern already exists in 5+ places.
-- **PR scoping (reaffirmed):** one logical unit per PR. Layout ≠ features ≠ content. Bundling only when items share a true logical unit (e.g., "polish pass" of independent small fixes).
+### 2026-05-28 (late morning)
+- **Sort defaults — resolved, no change.** Only /products has a real recency signal (JF-#### IDs increment on add). /places/eat/stay date fields are batch enrichment stamps — sorting by them = arbitrary. So /products = newest (real), others = alphabetical (honest/predictable). The asymmetry reflects real data differences, not a bug. No sort menu (pages are filterable; defaults are correct).
+- **/eat search added** (PR #41), mirroring /places/stay field set.
+- **Featured/"six to start with" removed** from /places and /products (PR #41) — all four list pages uniform.
+- **Going to Japan → V4 card alignment** (PR #40); §02 anchor; Map → §03.
+- **Homepage dividers must be visible, not Concrete Gray.** Concrete Gray (#E6E1D8) on Rice White (#F7F3EA) ≈ 1.1:1 = invisible (brand.md flags this). Standalone section dividers in whitespace need an ink-tone hairline (~12% ink or `--color-ink-60`). Concrete Gray stays valid only for borders against an edge (card outlines).
+- **Filter-header pattern direction (to implement):** compact sticky bar on scroll + Filters disclosure for secondary groups; full filters at top.
 
 ### Carried decisions (still in force)
-- Hotels → /stay; "where to sleep?" vs /places "where to drop by?" Edge cases (iconic hotel bars) can go /places.
-- /places "Onsen & Ryokan" → display "Onsen Towns" (slug `onsen_ryokan` retained).
-- STAY marker = Aizome Indigo `#3B4F81`. Single-select category chips across all list pages.
-- Enrichment defaults photos-only (`--hours` only when needed). Live "open now" dropped. Prebuild hook no longer calls paid API (the $90.62 leak, fixed PR #31).
+- Hotels → /stay; iconic-hotel-bar edge cases can go /places. /places "Onsen & Ryokan" displays "Onsen Towns" (slug `onsen_ryokan`). STAY marker = Aizome Indigo #3B4F81. Single-select category chips across list pages.
+- Enrichment defaults photos-only. Prebuild hook no longer calls paid API (the $90.62 leak, fixed PR #31).
 - ChatGPT regular chat won the enrichment bake-off; deep-research modes wrong for structured extraction.
 - Restaurant framing: "Steven aggregates Tabelog Hyakumeiten. Honest about it."
+- IA principle: cheat sheets own HOW/logistics; /places/eat/stay/products own WHERE/WHAT.
+- Affiliate density: relevance-anchored inside topical sheets, not scattered on cards.
+
+## Key process learnings (this session)
+- **Screenshot-diagnosis keeps getting corrected by CC reading real code.** The "/stay centered hero" was chip-rail drift; the homepage "had no dividers" actually had heavy ink borders; the divider "wasn't there" was a contrast issue. Lesson: for layout/CSS issues, prefer a CC read-first audit over diagnosing from a screenshot.
+- **A subtle treatment still needs enough contrast to exist.** "Subtle" ≠ "invisible." Check the chosen color against its actual background before shipping a divider/hairline.
 
 ## Files in Claude project
-- `brand.md` — locked brand spec
-- `preferences.md` — working preferences
-- `PROJECT_STATE.md` — this file
+- `brand.md`, `preferences.md`, `PROJECT_STATE.md` (this file).
 
 ## Files in repo (`docs/build/`)
-- `HANDOFF_going-to-japan.md` (amended), `CheatSheets_v4_source.jsx`, `d7_run_log.json`
-- `STAY_LAUNCH_BUILD_SPEC.md`, `PHASE_A9_BUILD_SPEC.md`, `QUICK_ADD_COMMANDS_BUILD_SPEC.md`, `stays_seed.csv`
-- Historical Phase D specs: `BUILD_SPEC_cost_kill.md`, `BUILD_SPEC_d5b5_finish.md`, `BUILD_SPEC_d5c_editorial_review.md`, `BUILD_SPEC_d5d_download_merge.md`, `OVERNIGHT_QUESTIONS.md`
+- HANDOFF_going-to-japan.md, CheatSheets_v4_source.jsx, d7_run_log.json, STAY_LAUNCH_BUILD_SPEC.md, PHASE_A9_BUILD_SPEC.md, QUICK_ADD_COMMANDS_BUILD_SPEC.md, stays_seed.csv, plus historical Phase D specs.
 
 ## Conversation handoff rules
-- New chat = paste this doc + state workstream + relevant Desktop files (or rely on project-files auto-load).
-- Update immediately after any decision reversal — don't wait for the next milestone.
-- One chat = one workstream; one branch per chat (exception: a "polish pass" of independent small fixes can batch).
+- New chat = paste/rely on this doc + state the workstream.
+- One chat = one workstream; one branch per chat (exception: a "polish pass" of independent small fixes).
+- Update immediately after any decision reversal.
 - CC auto-accept OFF for: paid APIs (Google Places), main-touching, destructive git ops. ON for feature-branch UI/content work.
 - CC handoff threshold: any task touching 2+ files or needing iterative bug-fix → build spec to CC, not chat-terminal relay.
 
-### For next session (awake-only)
-1. Run the neighborhood-search test (type "Shinjuku" in /places search) → determines /eat-search + neighborhood approach.
-2. Decide "Six to start with" removal on /places.
-3. Review + merge polish pass 2 if it finished overnight.
-Then pick from the strategic queue: D8 (Tabelog per-restaurant, supervised), /cheat-sheets affiliate placement, or per-item pages (the big one).
+### Next two chats (after #41/#42 merge)
+1. **Filter-header rework** — paste this doc; I spec the compact-sticky + Filters-disclosure pattern for CC. (Higher user impact.)
+2. **A.10 map UX** — paste this doc + the design output; I run it against the rubric, lock a direction, spec CC. (Design already done.)
+Both bootstrap from this doc. CC builds run sequentially (one repo), but the two chats keep the workstreams clean.
