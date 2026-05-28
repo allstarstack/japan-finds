@@ -208,9 +208,6 @@ const { counts, flagCounts } = Astro.props;
     const grid = document.querySelector("[data-grid]");
     const countEl = document.querySelector("[data-count]");
     const emptyEl = document.querySelector("[data-empty]");
-    // "Six to start with" strip — hidden while a filter is active so the
-    // page unambiguously reflects the filter (the strip never filters).
-    const featuredEl = document.querySelector("[data-featured]");
     const searchInput = document.querySelector("[data-search-input]");
 
     const validLocations = new Set(
@@ -347,12 +344,6 @@ const { counts, flagCounts } = Astro.props;
       if (countEl) countEl.textContent = n + (n === 1 ? " place" : " places");
       if (emptyEl) emptyEl.hidden = n !== 0;
       if (grid) grid.hidden = n === 0;
-      const filtering =
-        !!activeLocation ||
-        !!activeChip ||
-        activeFlags.size > 0 ||
-        tokens.length > 0;
-      if (featuredEl) featuredEl.hidden = filtering;
 
       /* Phase B: broadcast which place slugs are currently visible so
          a sibling MapView component (when the user is in map-view) can

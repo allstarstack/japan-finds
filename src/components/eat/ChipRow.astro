@@ -265,6 +265,7 @@ const FLAG_DIMS = [
     const countEl = document.querySelector("[data-count]");
     const emptyEl = document.querySelector<HTMLElement>("[data-empty]");
     const clearEl = document.querySelector<HTMLElement>("[data-clear]");
+    const searchInput = document.querySelector<HTMLInputElement>("[data-search-input]");
     const TOTAL = cards.length;
 
     const validLocations = new Set(
@@ -282,6 +283,7 @@ const FLAG_DIMS = [
     let activeLocation: string | null = null;
     const activeCuisines = new Set<string>();
     const activeFlags = new Set<string>();
+    let query = "";
 
     const cardFlags = (card: HTMLElement) =>
       (card.dataset.flags || "").split(" ").filter(Boolean);
@@ -300,6 +302,10 @@ const FLAG_DIMS = [
     };
 
     const apply = () => {
+      // Token-AND substring search over each card's data-search blob.
+      // Mirrors /places + /stay: search ANDs with chip filters in the
+      // same predicate.
+      const tokens = query.split(/\s+/).filter(Boolean);
       let n = 0;
       for (const card of cards) {
         // Location, cuisine, flags all AND together. Cuisine and location
@@ -311,7 +317,10 @@ const FLAG_DIMS = [
           activeCuisines.has(card.dataset.cuisine || "");
         const fl = cardFlags(card);
         const okFlags = [...activeFlags].every((f) => fl.includes(f));
-        const show = okLocation && okCuisine && okFlags;
+        const okSearch = tokens.every((t) =>
+          (card.dataset.search || "").includes(t),
+        );
+        const show = okLocation && okCuisine && okFlags && okSearch;
         card.hidden = !show;
         if (show) n++;
       }
@@ -338,7 +347,8 @@ const FLAG_DIMS = [
         clearEl.hidden =
           !activeLocation &&
           activeCuisines.size === 0 &&
-          activeFlags.size === 0;
+          activeFlags.size === 0 &&
+          query === "";
 
       /* Phase B: broadcast visible restaurant slugs for a sibling
          MapView (when /eat is in map-view). Late-attaching listeners
@@ -430,9 +440,18 @@ const FLAG_DIMS = [
         activeLocation = null;
         activeCuisines.clear();
         activeFlags.clear();
+        query = "";
+        if (searchInput) searchInput.value = "";
         apply();
         syncURL();
       });
+
+    if (searchInput) {
+      searchInput.addEventListener("input", () => {
+        query = searchInput.value.trim().toLowerCase();
+        apply();
+      });
+    }
 
     /* Re-apply filter state when the URL changes via browser navigation
        (back/forward) — keeps the rail and the URL coherent. */
