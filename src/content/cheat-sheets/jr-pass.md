@@ -1,10 +1,10 @@
 ---
-title: JR Pass Basics
+title: JR Pass Math
 slug: jr-pass
 last_verified: 2026-05-18
 ---
 
-# JR Pass Basics
+# JR Pass Math
 
 A 7/14/21-day all-you-can-ride pass on most JR trains and Shinkansen. Designed for moving fast, not staying put.
 
