@@ -1,0 +1,35 @@
+---
+/* Homepage section divider — a 1px ink-black @ 12% hairline at content
+   width. Sits between top-level sections so §01–§06 break visually
+   without the heavy 1.5px ink rule each section used to draw
+   individually. Subtle, uniform, decorative — role="presentation" keeps
+   it out of the a11y tree.
+
+   The earlier Concrete Gray version (#E6E1D8) sat at ~1.1:1 on Rice
+   White — brand.md flags that combination as "effectively invisible."
+   ink-black at 12% gives a quiet but actually-visible hairline on both
+   surfaces the homepage uses (Rice White, White) without re-introducing
+   the 1.5px chrome rule the V4 cleanup removed. */
+---
+
+<div class="section-divider" role="presentation">
+  <span class="section-divider__rule" aria-hidden="true"></span>
+</div>
+
+<style>
+  .section-divider {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--gutter-mobile);
+  }
+  .section-divider__rule {
+    display: block;
+    height: 1px;
+    background: rgba(21, 21, 21, 0.12);
+  }
+  @media (min-width: 1024px) {
+    .section-divider {
+      padding: 0 var(--gutter-desktop);
+    }
+  }
+</style>
