@@ -1,20 +1,20 @@
 ---
-/* "Going to Japan?" — homepage cheat-sheet preview (amended 2026-05-27).
-   See docs/build/HANDOFF_going-to-japan.md (AMENDED block) for the pivot
-   rationale. Earlier V2 implementation surfaced affiliate links — that
-   duplicated /cheat-sheets, which is the canonical depth surface. This
-   pass reframes the section as a 6-card preview that funnels into the
-   cheat sheets; affiliate links live inside those sheets, untouched here.
+/* §02 "Going to Japan?" — homepage cheat-sheet preview (V4-aligned 2026-05-28).
+   Earlier pass surfaced a bordered "Updated <date>" chip on each card; the
+   six featured sheets all share the same last_verified, so the six identical
+   chips carried no information. This pass ports the /cheat-sheets V4
+   evergreen-card vocabulary (iconwell + category chip topline) so the
+   preview matches the index it links to. Card meta on the homepage is the
+   numeral + category — no per-card date, no redundant tail numeral.
 
-   Featured slug list is hardcoded — editorial order on the homepage is
-   intentionally different from /cheat-sheets' SHEET_ORDER, so the two
-   surfaces stay decoupled. Frontmatter carries no tagline field; the
-   one-liner is the brand lede already pulled by extractLede() for the
-   /cheat-sheets list — same single source of truth.
-
-   Component is homepage-only after this PR (no fluid prop). */
+   Featured slug list stays hardcoded — editorial order on the homepage is
+   intentionally different from the /cheat-sheets index. Per-slug icon +
+   category mirror the SHEET_META on the cheat-sheets index; the icon set
+   (CSIcon) is the single source of truth for both surfaces. */
 import { getCollection } from "astro:content";
-import { extractLede, fmtDate } from "../data/cheat-sheets.js";
+import { extractLede } from "../data/cheat-sheets.js";
+import Eyebrow from "./Eyebrow.astro";
+import CSIcon from "./CSIcon.astro";
 
 const FEATURED_SLUGS = [
   "first-24-hours",
@@ -25,6 +25,18 @@ const FEATURED_SLUGS = [
   "luggage-forwarding",
 ];
 
+/* Mirrors SHEET_META in /cheat-sheets/index.astro for the same six slugs.
+   Kept here (not re-exported from the index page) so the homepage component
+   has no cross-page import — the icon library (CSIcon) is the shared piece. */
+const SHEET_META: Record<string, { icon: string; category: string }> = {
+  "first-24-hours":      { icon: "sunrise",  category: "Orientation" },
+  "phone-setup":         { icon: "phone",    category: "Connectivity" },
+  "ic-cards":            { icon: "iccard",   category: "Transit" },
+  "jr-pass":             { icon: "ticket",   category: "Transit" },
+  "cash-cards-atms":     { icon: "yen",      category: "Money" },
+  "luggage-forwarding":  { icon: "suitcase", category: "Logistics" },
+};
+
 const byId = new Map(
   (await getCollection("cheat-sheets")).map((e) => [e.id, e]),
 );
@@ -34,69 +46,48 @@ const items = FEATURED_SLUGS.map((slug, i) => {
   if (!entry) {
     throw new Error(`GoingToJapan: no source file for "${slug}.md"`);
   }
+  const meta = SHEET_META[slug];
+  if (!meta) {
+    throw new Error(`GoingToJapan: SHEET_META missing for "${slug}"`);
+  }
   return {
     n: String(i + 1).padStart(2, "0"),
     slug,
     title: entry.data.title,
     tagline: extractLede(entry.body),
-    updated: fmtDate(entry.data.last_verified),
+    icon: meta.icon,
+    category: meta.category,
     href: `/cheat-sheets/${slug}`,
   };
 });
 ---
 
-<section class="gtj" aria-labelledby="gtj-h2">
+<section id="going-to-japan" class="gtj" aria-labelledby="gtj-h2">
   <div class="gtj__inner">
+    <Eyebrow n={2} title="GOING TO JAPAN" after="BEFORE YOU FLY" />
     <header class="gtj__head">
       <div class="gtj__head-text">
         <h2 id="gtj-h2" class="gtj__title">Going to Japan?</h2>
         <p class="gtj__sub">Sort these before you fly.</p>
       </div>
-      <span class="gtj__head-tag" aria-hidden="true">
-        6 guides · before you fly
-      </span>
     </header>
-
-    <p class="gtj__eyebrow" aria-hidden="true">
-      Practical first · verified before publish
-    </p>
-
-    <ul class="gtj__list">
-      {items.map((it) => (
-        <li class="gtj__list-item">
-          <a class="gtj__row" href={it.href}>
-            <span class="gtj__row-num">{it.n}</span>
-            <div class="gtj__row-body">
-              <div class="gtj__row-meta">
-                <span class="gtj__chip">Updated {it.updated}</span>
-              </div>
-              <h3 class="gtj__name">{it.title}</h3>
-              <p class="gtj__detail">{it.tagline}</p>
-            </div>
-            <span class="gtj__cta">
-              Read the guide <span aria-hidden="true">→</span>
-            </span>
-          </a>
-        </li>
-      ))}
-    </ul>
 
     <ul class="gtj__grid">
       {items.map((it) => (
         <li class="gtj__grid-item">
           <a class="gtj__card" href={it.href}>
-            <div class="gtj__card-head">
-              <span class="gtj__num">{it.n}</span>
+            <div class="gtj__card-top">
+              <div class="gtj__iconwell">
+                <CSIcon kind={it.icon} size={26} />
+              </div>
+              <span class="gtj__cat">{it.category}</span>
             </div>
-            <span class="gtj__chip">Updated {it.updated}</span>
+            <span class="gtj__card-num" aria-hidden="true">{it.n}</span>
             <h3 class="gtj__name">{it.title}</h3>
             <p class="gtj__detail">{it.tagline}</p>
             <div class="gtj__card-foot">
               <span class="gtj__cta">
                 Read the guide <span aria-hidden="true">→</span>
-              </span>
-              <span class="gtj__num gtj__num--tail" aria-hidden="true">
-                {it.n}
               </span>
             </div>
           </a>
@@ -122,13 +113,7 @@ const items = FEATURED_SLUGS.map((slug, i) => {
   /* ---- Head ---- */
 
   .gtj__head {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  .gtj__head-tag {
-    display: none; /* desktop-only */
+    margin-bottom: 22px;
   }
   .gtj__title {
     margin: 0;
@@ -148,118 +133,77 @@ const items = FEATURED_SLUGS.map((slug, i) => {
     color: var(--color-ink-60);
   }
 
-  .gtj__eyebrow {
-    margin: 18px 0 14px;
-    font-family: var(--font-mono);
-    font-weight: 500;
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--color-ink-60);
-  }
+  /* ---- Card grid (mobile 1-col, desktop 3-col) ---- */
 
-  /* ---- Mobile timeline rows (default) ---- */
-
-  .gtj__list {
+  .gtj__grid {
     list-style: none;
     margin: 0;
     padding: 0;
-    border: 1px solid var(--color-concrete-gray);
-    border-bottom: none;
-    background: var(--color-rice-white);
-  }
-  .gtj__list-item {
-    border-bottom: 1px solid var(--color-concrete-gray);
-  }
-  .gtj__row {
     display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: "num body cta";
-    align-items: center;
-    gap: 14px;
-    padding: 14px 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .gtj__grid-item {
+    display: flex;
+  }
+
+  .gtj__card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    background: var(--color-rice-white);
+    border: 1px solid var(--color-concrete-gray);
+    border-radius: 4px;
     text-decoration: none;
     color: inherit;
+    transition: border-color 120ms ease, transform 120ms ease;
   }
-  .gtj__row-num {
-    grid-area: num;
-    font-family: var(--font-mono);
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.06em;
-    color: var(--color-ink-black);
+  .gtj__card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-ink-black);
   }
-  .gtj__row-body {
-    grid-area: body;
-    min-width: 0;
+  .gtj__card:focus-visible {
+    outline: 2px solid var(--color-ink-black);
+    outline-offset: 3px;
   }
-  .gtj__row-meta {
+
+  /* ---- Topline: iconwell + category chip (V4 evergreen) ---- */
+
+  .gtj__card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .gtj__iconwell {
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 5px;
-    flex-wrap: wrap;
-  }
-  .gtj__row .gtj__cta {
-    grid-area: cta;
-    padding-left: 8px;
-    font-size: 11px;
-    max-width: 7ch;
-    white-space: normal;
-    text-align: right;
-    line-height: 1.25;
-  }
-
-  /* ---- Updated chip — same bordered concrete pill as the V2 lead chip ---- */
-
-  .gtj__chip {
-    display: inline-block;
-    padding: 2px 7px;
+    justify-content: center;
+    background: var(--color-ink-15);
     border: 1px solid var(--color-concrete-gray);
-    background: var(--color-rice-white);
-    font-family: var(--font-mono);
-    font-weight: 500;
-    font-size: 9px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--color-ink-black);
-    white-space: nowrap;
-  }
-
-  /* ---- Title — Inter 700 ---- */
-
-  .gtj__name {
-    margin: 0 0 2px;
-    font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
+    border-radius: 4px;
     color: var(--color-ink-black);
   }
-  .gtj__detail {
-    margin: 0;
-    font-family: var(--font-body);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.35;
-    color: var(--color-ink-60);
-  }
-
-  /* ---- CTA — mono uppercase ---- */
-
-  .gtj__cta {
+  .gtj__cat {
     font-family: var(--font-mono);
     font-weight: 500;
     font-size: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-ink-black);
-    white-space: nowrap;
+    padding: 4px 8px;
+    border: 1px solid var(--color-ink-black);
+    border-radius: 2px;
   }
 
-  /* ---- Numeral ---- */
+  /* ---- Single numeral — small mono label between topline and title ---- */
 
-  .gtj__num {
+  .gtj__card-num {
+    display: block;
+    margin: 0 0 4px;
     font-family: var(--font-mono);
     font-weight: 500;
     font-size: 11px;
@@ -267,28 +211,64 @@ const items = FEATURED_SLUGS.map((slug, i) => {
     color: var(--color-ink-60);
   }
 
-  /* ---- Desktop grid (hidden on mobile) ---- */
+  /* ---- Title + lede ---- */
 
-  .gtj__grid {
-    display: none;
+  .gtj__name {
+    margin: 0 0 7px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--color-ink-black);
+  }
+  .gtj__detail {
+    margin: 0 0 16px;
+    flex: 1;
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-ink-black);
   }
 
-  .gtj__row:hover,
-  .gtj__row:focus-visible,
-  .gtj__card:hover,
-  .gtj__card:focus-visible {
-    outline: none;
+  /* ---- Footer ---- */
+
+  .gtj__card-foot {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 12px;
+    border-top: 1px solid var(--color-concrete-gray);
   }
-  .gtj__list-item:has(.gtj__row:hover),
-  .gtj__list-item:has(.gtj__row:focus-visible) {
-    background: color-mix(in srgb, var(--color-concrete-gray) 30%, transparent);
+  .gtj__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 13px;
+    padding-bottom: 1px;
+    border-bottom: 1.5px solid var(--color-ink-black);
+    color: var(--color-ink-black);
+  }
+
+  /* Touch devices: drop hover lift, swap for press state. */
+  @media (hover: none) {
+    .gtj__card:hover {
+      transform: none;
+    }
+    .gtj__card:active {
+      transform: translateY(1px);
+      border-color: var(--color-ink-black);
+    }
   }
 
   /* ---- View all footer link ---- */
 
   .gtj__viewall {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 24px;
     font-family: var(--font-mono);
     font-weight: 500;
     font-size: 11px;
@@ -314,6 +294,9 @@ const items = FEATURED_SLUGS.map((slug, i) => {
       padding: 0 var(--gutter-desktop);
     }
 
+    .gtj__head {
+      margin-bottom: 36px;
+    }
     .gtj__title {
       font-size: 64px;
       line-height: 1;
@@ -323,80 +306,17 @@ const items = FEATURED_SLUGS.map((slug, i) => {
       margin-top: 16px;
       font-size: 19px;
     }
-    .gtj__head-tag {
-      display: inline-block;
-      flex-shrink: 0;
-      font-family: var(--font-mono);
-      font-weight: 500;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--color-ink-60);
-    }
-    .gtj__eyebrow {
-      margin: 28px 0 18px;
-      font-size: 11px;
-    }
 
-    .gtj__list {
-      display: none;
-    }
     .gtj__grid {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+      gap: 16px;
     }
-    .gtj__grid-item {
-      display: flex;
-    }
-
     .gtj__card {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      padding: 14px 16px 16px;
-      background: var(--color-rice-white);
-      border: 1px solid var(--color-concrete-gray);
-      text-decoration: none;
-      color: inherit;
-      transition: border-color 120ms ease-out;
+      padding: 22px;
+      min-height: 220px;
     }
-    .gtj__card:hover,
-    .gtj__card:focus-visible {
-      border-color: var(--color-ink-black);
-    }
-    .gtj__card-head {
-      display: flex;
-      align-items: flex-start;
-    }
-    .gtj__card .gtj__chip {
-      align-self: flex-start;
-      margin-top: 14px;
-      padding: 3px 8px;
-      font-size: 10px;
-    }
-    .gtj__card .gtj__name {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-    .gtj__card .gtj__detail {
-      margin-top: 4px;
-      font-size: 13px;
-      line-height: 1.4;
-    }
-    .gtj__card-foot {
-      margin-top: 16px;
-      padding-top: 12px;
-      border-top: 1px solid var(--color-concrete-gray);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .gtj__num--tail {
-      color: var(--color-ink-60);
+    .gtj__name {
+      font-size: 20px;
     }
 
     .gtj__viewall {
