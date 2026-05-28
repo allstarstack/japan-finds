@@ -1,134 +1,80 @@
 ---
-/* "Going to Japan?" — pre-trip section (V2: ordered by lead time).
-   Implements docs/build/HANDOFF_going-to-japan.md against the V2 source
-   in docs/build/Going_to_Japan_variants_v3.html. Lives on the homepage
-   below the hero and on /cheat-sheets (via fluid prop).
+/* "Going to Japan?" — homepage cheat-sheet preview (amended 2026-05-27).
+   See docs/build/HANDOFF_going-to-japan.md (AMENDED block) for the pivot
+   rationale. Earlier V2 implementation surfaced affiliate links — that
+   duplicated /cheat-sheets, which is the canonical depth surface. This
+   pass reframes the section as a 6-card preview that funnels into the
+   cheat sheets; affiliate links live inside those sheets, untouched here.
 
-   The component owns the order, copy, and lead-time labels — the items
-   are hardcoded in V2_ORDERED so the 01–06 numerals carry real meaning
-   (longest pre-trip window first, on-arrival last). DO NOT reorder.
+   Featured slug list is hardcoded — editorial order on the homepage is
+   intentionally different from /cheat-sheets' SHEET_ORDER, so the two
+   surfaces stay decoupled. Frontmatter carries no tagline field; the
+   one-liner is the brand lede already pulled by extractLede() for the
+   /cheat-sheets list — same single source of truth.
 
-   Affiliate URLs are looked up by id from src/data/affiliates.ts so
-   that approving a partner is a single-field edit there with no
-   component change. Empty URLs render with href="#" and no target/rel —
-   the visual placeholder is fine for v1 per the HANDOFF.
+   Component is homepage-only after this PR (no fluid prop). */
+import { getCollection } from "astro:content";
+import { extractLede, fmtDate } from "../data/cheat-sheets.js";
 
-   Brand tokens: only --color-rice-white, --color-ink-black,
-   --color-concrete-gray, --color-ink-60 from tokens.css. Type stack:
-   Space Grotesk 700 (head), Inter 400/700 (body/name), IBM Plex Mono
-   500 (numerals, brand, lead chip, CTA). Inter 700 on the item name
-   follows the V2 JSX, which the HANDOFF names as visual source of
-   truth (the spec's token line lists Inter 400 only; the JSX uses 700
-   for the name — resolved in favour of the JSX). */
-import { affiliates } from "../data/affiliates";
-
-interface Props {
-  /* false (default): self-contained section — content-max width, page
-     gutters, top divider — matching other homepage sections.
-     true: fills the parent's content box, no divider — for use inside an
-     already-constrained column (e.g. the /cheat-sheets index .wrap). */
-  fluid?: boolean;
-}
-
-const { fluid = false } = Astro.props;
-
-/* Lead-time ordered. DO NOT REORDER — the 01–06 numerals encode the
-   real pre-trip chronology. */
-const V2_ORDERED = [
-  {
-    n: "01",
-    brand: "SafetyWing",
-    name: "Travel insurance",
-    detail: "Active before non-refundable bookings.",
-    lead: "Before booking",
-    affiliateId: "safetywing",
-  },
-  {
-    n: "02",
-    brand: "Wise",
-    name: "Multi-currency card",
-    detail: "Order, receive, activate.",
-    lead: "2 weeks ahead",
-    affiliateId: "wise",
-  },
-  {
-    n: "03",
-    brand: "JRPass.com",
-    name: "JR Pass (nationwide)",
-    detail: "Buy online, voucher arrives by mail.",
-    lead: "1 week ahead",
-    affiliateId: "jrpass-nationwide",
-  },
-  {
-    n: "04",
-    brand: "Ninja WiFi",
-    name: "Pocket WiFi rental",
-    detail: "Reserve airport-counter pickup.",
-    lead: "3 days ahead",
-    affiliateId: "ninja-wifi",
-  },
-  {
-    n: "05",
-    brand: "Airalo",
-    name: "eSIM for Japan",
-    detail: "Install now, activates on landing.",
-    lead: "Day before",
-    affiliateId: "airalo",
-  },
-  {
-    n: "06",
-    brand: "Welcome Suica",
-    name: "IC card for tourists",
-    detail: "Grab from an airport kiosk.",
-    lead: "On arrival",
-    affiliateId: "welcome-suica",
-  },
+const FEATURED_SLUGS = [
+  "first-24-hours",
+  "phone-setup",
+  "ic-cards",
+  "jr-pass",
+  "cash-cards-atms",
+  "luggage-forwarding",
 ];
 
-const urlById = Object.fromEntries(affiliates.map((a) => [a.id, a.url]));
-const items = V2_ORDERED.map((it) => ({
-  ...it,
-  url: urlById[it.affiliateId] || "",
-}));
+const byId = new Map(
+  (await getCollection("cheat-sheets")).map((e) => [e.id, e]),
+);
+
+const items = FEATURED_SLUGS.map((slug, i) => {
+  const entry = byId.get(slug);
+  if (!entry) {
+    throw new Error(`GoingToJapan: no source file for "${slug}.md"`);
+  }
+  return {
+    n: String(i + 1).padStart(2, "0"),
+    slug,
+    title: entry.data.title,
+    tagline: extractLede(entry.body),
+    updated: fmtDate(entry.data.last_verified),
+    href: `/cheat-sheets/${slug}`,
+  };
+});
 ---
 
-<section
-  class:list={["gtj", { "gtj--fluid": fluid }]}
-  aria-labelledby="gtj-h2"
->
+<section class="gtj" aria-labelledby="gtj-h2">
   <div class="gtj__inner">
     <header class="gtj__head">
       <div class="gtj__head-text">
         <h2 id="gtj-h2" class="gtj__title">Going to Japan?</h2>
         <p class="gtj__sub">Sort these before you fly.</p>
       </div>
-      <span class="gtj__head-tag" aria-hidden="true">6 items · pre-trip</span>
+      <span class="gtj__head-tag" aria-hidden="true">
+        6 guides · before you fly
+      </span>
     </header>
 
     <p class="gtj__eyebrow" aria-hidden="true">
-      Earliest first · ordered by lead time
+      Practical first · verified before publish
     </p>
 
     <ul class="gtj__list">
       {items.map((it) => (
         <li class="gtj__list-item">
-          <a
-            class="gtj__row"
-            href={it.url || "#"}
-            target={it.url ? "_blank" : undefined}
-            rel={it.url ? "noopener nofollow sponsored" : undefined}
-          >
+          <a class="gtj__row" href={it.href}>
             <span class="gtj__row-num">{it.n}</span>
             <div class="gtj__row-body">
               <div class="gtj__row-meta">
-                <span class="gtj__lead">{it.lead}</span>
-                <span class="gtj__brand">{it.brand}</span>
+                <span class="gtj__chip">Updated {it.updated}</span>
               </div>
-              <h3 class="gtj__name">{it.name}</h3>
-              <p class="gtj__detail">{it.detail}</p>
+              <h3 class="gtj__name">{it.title}</h3>
+              <p class="gtj__detail">{it.tagline}</p>
             </div>
             <span class="gtj__cta">
-              Open <span aria-hidden="true">→</span>
+              Read <span aria-hidden="true">→</span>
             </span>
           </a>
         </li>
@@ -138,22 +84,16 @@ const items = V2_ORDERED.map((it) => ({
     <ul class="gtj__grid">
       {items.map((it) => (
         <li class="gtj__grid-item">
-          <a
-            class="gtj__card"
-            href={it.url || "#"}
-            target={it.url ? "_blank" : undefined}
-            rel={it.url ? "noopener nofollow sponsored" : undefined}
-          >
+          <a class="gtj__card" href={it.href}>
             <div class="gtj__card-head">
               <span class="gtj__num">{it.n}</span>
-              <span class="gtj__brand">{it.brand}</span>
             </div>
-            <span class="gtj__lead">{it.lead}</span>
-            <h3 class="gtj__name">{it.name}</h3>
-            <p class="gtj__detail">{it.detail}</p>
+            <span class="gtj__chip">Updated {it.updated}</span>
+            <h3 class="gtj__name">{it.title}</h3>
+            <p class="gtj__detail">{it.tagline}</p>
             <div class="gtj__card-foot">
               <span class="gtj__cta">
-                Open <span aria-hidden="true">→</span>
+                Read the guide <span aria-hidden="true">→</span>
               </span>
               <span class="gtj__num gtj__num--tail" aria-hidden="true">
                 {it.n}
@@ -163,29 +103,20 @@ const items = V2_ORDERED.map((it) => ({
         </li>
       ))}
     </ul>
+
+    <a class="gtj__viewall" href="/cheat-sheets">
+      View all cheat sheets <span aria-hidden="true">→</span>
+    </a>
   </div>
 </section>
 
 <style>
-  /* Section rhythm + full-bleed top divider mirror the other homepage
-     sections (StartHere / CheatSheets): padding 32/72, border-top ink. */
   .gtj {
     padding: 32px 0;
     border-top: var(--border-ink);
   }
   .gtj__inner {
     padding: 0 var(--gutter-mobile);
-  }
-
-  /* Fluid: no own width container or divider — the parent column governs
-     width. Vertical margin matches the /cheat-sheets list rhythm. */
-  .gtj--fluid {
-    padding: 0;
-    border-top: 0;
-    margin: 32px 0 0;
-  }
-  .gtj--fluid .gtj__inner {
-    padding: 0;
   }
 
   /* ---- Head ---- */
@@ -197,7 +128,7 @@ const items = V2_ORDERED.map((it) => ({
     gap: 16px;
   }
   .gtj__head-tag {
-    display: none; /* desktop-only per V2 source */
+    display: none; /* desktop-only */
   }
   .gtj__title {
     margin: 0;
@@ -216,8 +147,6 @@ const items = V2_ORDERED.map((it) => ({
     line-height: 1.4;
     color: var(--color-ink-60);
   }
-
-  /* ---- Eyebrow above the list ---- */
 
   .gtj__eyebrow {
     margin: 18px 0 14px;
@@ -277,9 +206,9 @@ const items = V2_ORDERED.map((it) => ({
     font-size: 11px;
   }
 
-  /* ---- Lead chip — bordered concrete pill, mono uppercase ---- */
+  /* ---- Updated chip — same bordered concrete pill as the V2 lead chip ---- */
 
-  .gtj__lead {
+  .gtj__chip {
     display: inline-block;
     padding: 2px 7px;
     border: 1px solid var(--color-concrete-gray);
@@ -290,20 +219,10 @@ const items = V2_ORDERED.map((it) => ({
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--color-ink-black);
+    white-space: nowrap;
   }
 
-  /* ---- Brand label — mono uppercase, ink-60 ---- */
-
-  .gtj__brand {
-    font-family: var(--font-mono);
-    font-weight: 500;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-ink-60);
-  }
-
-  /* ---- Item name — Inter 700 (spec component line + V2 JSX) ---- */
+  /* ---- Title — Inter 700 ---- */
 
   .gtj__name {
     margin: 0 0 2px;
@@ -322,7 +241,7 @@ const items = V2_ORDERED.map((it) => ({
     color: var(--color-ink-60);
   }
 
-  /* ---- CTA — mono uppercase, single verb across all six ---- */
+  /* ---- CTA — mono uppercase ---- */
 
   .gtj__cta {
     font-family: var(--font-mono);
@@ -334,7 +253,7 @@ const items = V2_ORDERED.map((it) => ({
     white-space: nowrap;
   }
 
-  /* ---- Numeral (desktop card head + tail) ---- */
+  /* ---- Numeral ---- */
 
   .gtj__num {
     font-family: var(--font-mono);
@@ -350,8 +269,6 @@ const items = V2_ORDERED.map((it) => ({
     display: none;
   }
 
-  /* ---- Border-emphasis hover/focus (mirrors .plc pattern site-wide) ---- */
-
   .gtj__row:hover,
   .gtj__row:focus-visible,
   .gtj__card:hover,
@@ -363,6 +280,26 @@ const items = V2_ORDERED.map((it) => ({
     background: color-mix(in srgb, var(--color-concrete-gray) 30%, transparent);
   }
 
+  /* ---- View all footer link ---- */
+
+  .gtj__viewall {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-ink-black);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-concrete-gray);
+    padding-bottom: 2px;
+  }
+  .gtj__viewall:hover,
+  .gtj__viewall:focus-visible {
+    border-bottom-color: var(--color-ink-black);
+  }
+
   @media (min-width: 1024px) {
     .gtj {
       padding: 72px 0;
@@ -371,15 +308,6 @@ const items = V2_ORDERED.map((it) => ({
       max-width: var(--content-max);
       margin: 0 auto;
       padding: 0 var(--gutter-desktop);
-    }
-    .gtj--fluid {
-      padding: 0;
-      margin: 40px 0 0;
-    }
-    .gtj--fluid .gtj__inner {
-      max-width: none;
-      margin: 0;
-      padding: 0;
     }
 
     .gtj__title {
@@ -406,7 +334,6 @@ const items = V2_ORDERED.map((it) => ({
       font-size: 11px;
     }
 
-    /* Hide mobile timeline, show desktop grid. */
     .gtj__list {
       display: none;
     }
@@ -422,7 +349,6 @@ const items = V2_ORDERED.map((it) => ({
       display: flex;
     }
 
-    /* ---- Desktop card ---- */
     .gtj__card {
       display: flex;
       flex-direction: column;
@@ -441,14 +367,8 @@ const items = V2_ORDERED.map((it) => ({
     .gtj__card-head {
       display: flex;
       align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
     }
-    .gtj__card .gtj__brand {
-      font-size: 10px;
-      letter-spacing: 0.08em;
-    }
-    .gtj__card .gtj__lead {
+    .gtj__card .gtj__chip {
       align-self: flex-start;
       margin-top: 14px;
       padding: 3px 8px;
@@ -473,6 +393,11 @@ const items = V2_ORDERED.map((it) => ({
     }
     .gtj__num--tail {
       color: var(--color-ink-60);
+    }
+
+    .gtj__viewall {
+      margin-top: 32px;
+      font-size: 12px;
     }
   }
 </style>
