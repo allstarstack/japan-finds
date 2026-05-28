@@ -60,11 +60,6 @@ const byId = new Map(
   (await getCollection("cheat-sheets")).map((e) => [e.id, e]),
 );
 
-/* japan-events-2026 frontmatter title carries a " — Japan Finds" SEO
-   suffix the other sheets don't have. Strip it for card display only —
-   no schema change. */
-const cleanTitle = (t: string) => t.replace(/\s+—\s+Japan Finds$/, "");
-
 const buildCard = (slug: string) => {
   const entry = byId.get(slug);
   if (!entry) throw new Error(`/cheat-sheets: no source file for "${slug}.md"`);
@@ -73,7 +68,7 @@ const buildCard = (slug: string) => {
   return {
     slug,
     href: `/cheat-sheets/${slug}`,
-    title: cleanTitle(entry.data.title),
+    title: entry.data.title,
     tagline: extractLede(entry.body),
     updated: fmtDate(entry.data.last_verified),
     icon: meta.icon,

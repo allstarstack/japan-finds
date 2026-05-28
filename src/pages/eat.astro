@@ -71,6 +71,7 @@ const cityChips = CITY_CHIPS
   <main id="main">
     <section class="ehero">
       <div class="wrap">
+        <p class="eyebrow">JAPAN FINDS · WHERE TO EAT</p>
         <h1>Where to eat in Japan, ranked by people who live there.</h1>
         <p class="ehero-sub">
           Tabelog Hyakumeiten — 282 restaurants across 13 categories. The
@@ -150,12 +151,21 @@ const cityChips = CITY_CHIPS
     border-bottom: var(--border-ink);
   }
 
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+
   /* Hero — text on the body background, no image (BUILD_SPEC §1). */
   .ehero {
     padding: 30px 0 24px;
   }
   .ehero h1 {
-    margin: 0;
+    margin: 10px 0 0;
     max-width: 22ch;
     font-family: var(--font-head);
     font-size: 36px;
