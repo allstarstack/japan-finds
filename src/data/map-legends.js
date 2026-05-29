@@ -40,38 +40,16 @@ const PLACES_PIN_COLORS = {
 const PLACES_BASE_COLOR = "#999999";
 const PLACES_BASE_LABEL = "Base towns";
 
-/* Legend display order — "top hits first" intent priority (Phase A.9 C3).
-   Differs from PRIMARY_CHIPS' filter-rail order, which is a See/Eat/
-   Stay/Do intent grouping rather than a hit-rate ordering. */
-const PLACES_LEGEND_ORDER = [
-  "nature_water",
-  "culture_history",
-  "onsen_ryokan",
-  "theme_parks",
-  "anime",
-  "cafes",
-  "food_markets",
-  "photo_spots",
-  "animals",
-  "workshops_crafts",
-  "scenic_transport",
-  "parks",
-  "quirky_museums",
-];
-
-const PLACES_LABELS = Object.fromEntries(
-  PRIMARY_CHIPS.map((c) => [c.value, c.label]),
-);
-
-/* /places legend rows. Labels look up in PRIMARY_CHIPS so e.g.
-   "Onsen Towns" is a single edit in place-chips.js. _base sentinel
-   appended last — it represents the fallback colour rendered for
-   features with no public_label. */
+/* /places legend rows derived from PRIMARY_CHIPS so the legend reads
+   in the same order as the /places filter rail — slug, label and the
+   ordering are all single-source. _base sentinel appended last — it
+   represents the fallback colour rendered for features with no
+   public_label. */
 export const PLACES_LEGEND_ROWS = [
-  ...PLACES_LEGEND_ORDER.map((slug) => ({
-    slug,
-    label: PLACES_LABELS[slug],
-    color: PLACES_PIN_COLORS[slug],
+  ...PRIMARY_CHIPS.map((c) => ({
+    slug: c.value,
+    label: c.label,
+    color: PLACES_PIN_COLORS[c.value],
   })),
   { slug: "_base", label: PLACES_BASE_LABEL, color: PLACES_BASE_COLOR },
 ];
