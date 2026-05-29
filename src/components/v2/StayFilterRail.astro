@@ -199,6 +199,23 @@ const { counts } = Astro.props;
       if (countEl) countEl.textContent = n + (n === 1 ? " stay" : " stays");
       if (emptyEl) emptyEl.hidden = n !== 0;
       if (grid) grid.hidden = n === 0;
+
+      /* MapView listens for this event to filter the map source to the
+         currently-visible cohort. Slugs come from data-slug on each
+         StayCard (entry.id). Mirrors the broadcast from /places and
+         /eat filter rails. */
+      const visibleSlugs = new Set();
+      for (const c of cardData) {
+        if (!c.el.hidden) {
+          const s = c.el.dataset.slug;
+          if (s) visibleSlugs.add(s);
+        }
+      }
+      document.dispatchEvent(
+        new CustomEvent("stay:filter-changed", {
+          detail: { visibleSlugs },
+        }),
+      );
     };
 
     const readURL = () => {
