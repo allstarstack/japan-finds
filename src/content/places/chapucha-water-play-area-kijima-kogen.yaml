@@ -13,6 +13,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Parks & Water Play"
 place_id: ChIJMcZsw0OvRjURr7x2AHd8FAM
+shared_place_id_with:
+  - kijima-kogen-park
+place_id_note: "Inherited from parent Kijima Kogen Park — Chapucha is a sub-feature inside the park. Verification needed if Chapucha has its own distinct Google Place listing; if so, replace this place_id and drop the shared_place_id_with annotation."
 lat: 33.2642753
 lng: 131.4268067
 hours:

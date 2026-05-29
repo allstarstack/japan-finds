@@ -92,8 +92,12 @@ const mapsUrl = d.place_id
 /* SEARCH_AND_SORT Phase B — searchable text blob the place filter script
    matches against: name (en + jp), category label, the experience chip,
    and location (prefecture / region / area) so "onsen", "Oita", "Kyushu"
-   and a place name all resolve. planning_flags stay out — they're
-   filter-only and never rendered. Lowercased once here. */
+   and a place name all resolve. `search_aliases` (optional, per entry)
+   folds in neighborhood names / alternative romanisations / common typos
+   that aren't already in name + address_or_area — opt-in to fix the
+   neighborhood-granularity gap on entries whose address_or_area is just
+   city + prefecture. planning_flags stay out — they're filter-only and
+   never rendered. Lowercased once here. */
 const searchText = [
   en,
   jp,
@@ -102,6 +106,7 @@ const searchText = [
   d.prefecture,
   regionSlug,
   d.address_or_area,
+  ...(d.search_aliases ?? []),
 ]
   .filter(Boolean)
   .join(" ")

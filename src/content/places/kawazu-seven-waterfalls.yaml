@@ -12,6 +12,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Nature Walks & Views"
 place_id: ChIJA2PRs03kGWARI-J-uK8mCjQ
+shared_place_id_with:
+  - kawazu
+place_id_note: "Intentional: shared place_id with the kawazu base entry whose centroid coincides with this named feature."
 lat: 34.7957781
 lng: 138.933771
 hours:

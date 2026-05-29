@@ -12,6 +12,9 @@ address_verified: false
 source_type: "food_research_v1"
 original_category: "Food & Markets"
 place_id: ChIJE-ywz9a6AmAR1uD5rAwvJkw
+shared_place_id_with:
+  - takayama-old-town-markets
+place_id_note: "Shared with takayama-old-town-markets (broader culture/history entry). The Miyagawa Morning Market likely has its own distinct Google Place listing — verification needed; if so, replace this place_id and drop the shared_place_id_with annotation."
 lat: 36.144704
 lng: 137.2579466
 hours:
