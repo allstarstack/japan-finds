@@ -89,7 +89,7 @@ const cityChips = CITY_CHIPS
       <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
     </div>
 
-    <section class="eresults" data-list-section>
+    <section class="eresults">
       <div class="wrap">
         <div class="eresults-bar">
           <h2 class="eresults-count" data-count>Showing {total} of {total}</h2>
@@ -107,12 +107,14 @@ const cityChips = CITY_CHIPS
           </div>
         </div>
         <p class="xlink">Looking for places to go? <a href="/places">See → /places</a></p>
-        <div class="grid" data-grid>
-          {sorted.map((r) => <RestaurantCard restaurant={r} />)}
+        <div data-list-section>
+          <div class="grid" data-grid>
+            {sorted.map((r) => <RestaurantCard restaurant={r} />)}
+          </div>
+          <p class="eresults-empty" data-empty hidden>
+            Nothing here yet. Back when there is.
+          </p>
         </div>
-        <p class="eresults-empty" data-empty hidden>
-          Nothing here yet. Back when there is.
-        </p>
       </div>
     </section>
 
@@ -328,7 +330,6 @@ const cityChips = CITY_CHIPS
     background: var(--color-ink-black);
     color: #fff;
   }
-  .eresults[hidden],
   .eresults-map[hidden] { display: none; }
 </style>
 

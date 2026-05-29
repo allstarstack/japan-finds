@@ -103,7 +103,7 @@ const regionChips = Object.entries(REGION_LABELS)
       <PlaceFilterRail counts={counts} flagCounts={flagCounts} />
     </div>
 
-    <section class="presults" data-list-section>
+    <section class="presults">
       <div class="wrap">
         <div class="presults-bar">
           <h2 class="results-count" data-count>{total} places</h2>
@@ -118,12 +118,14 @@ const regionChips = Object.entries(REGION_LABELS)
           </div>
         </div>
         <p class="xlink">Looking for restaurants? <a href="/eat">See → /eat</a></p>
-        <div class="grid" data-grid>
-          {places.map((p) => <PlaceCard entry={p} />)}
+        <div data-list-section>
+          <div class="grid" data-grid>
+            {places.map((p) => <PlaceCard entry={p} />)}
+          </div>
+          <p class="results-empty" data-empty hidden>
+            Nothing matches. Try a place name or region.
+          </p>
         </div>
-        <p class="results-empty" data-empty hidden>
-          Nothing matches. Try a place name or region.
-        </p>
       </div>
     </section>
 
@@ -349,7 +351,6 @@ const regionChips = Object.entries(REGION_LABELS)
     background: var(--color-ink-black);
     color: #fff;
   }
-  .presults[hidden],
   .presults-map[hidden] { display: none; }
 </style>
 
