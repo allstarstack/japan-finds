@@ -189,10 +189,17 @@ const cityChips = CITY_CHIPS
   /* Results sit on white so the rice-white cards read. Bottom padding
      lives on [data-list-section] (not the always-visible .eresults wrap)
      so map view doesn't carry the grid's vertical reserve as a dead
-     band between the controls row and the map. */
+     band between the controls row and the map.
+
+     flow-root establishes a new block formatting context so the xlink's
+     margin-bottom stays inside the white section. Without it, the margin
+     collapses out the bottom (no padding/border to block it) and the
+     body's rice-white shows through as a beige strip between the
+     controls and the map in map view. */
   .eresults {
     background: var(--color-white);
     padding: 18px 0 0;
+    display: flow-root;
   }
   [data-list-section] {
     padding-bottom: 8px;
