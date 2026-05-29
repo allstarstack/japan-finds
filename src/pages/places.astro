@@ -98,7 +98,7 @@ const regionChips = Object.entries(REGION_LABELS)
     </section>
 
     <div class="rail-sticky">
-      <SearchBox placeholder="Search 333 places" />
+      <SearchBox placeholder={`Search ${total} places`} />
       <LocationChipRow chips={regionChips} hintLabel="regions" />
       <PlaceFilterRail counts={counts} flagCounts={flagCounts} />
     </div>
