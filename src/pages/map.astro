@@ -122,9 +122,12 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
   <Header />
   <main id="main" class="map-main">
     {/* A.10 — top toolbar folded into the legend header. Mode-switch
-        (WHERE / EAT / STAY) lives as a segmented control inside the
+        (GO / EAT / STAY) lives as a segmented control inside the
         legend card so there's one unified control surface in the
-        bottom-left, not a toolbar-top / legend-bottom diagonal. */}
+        bottom-left, not a toolbar-top / legend-bottom diagonal. The
+        internal mode key for the GO bucket remains "where"
+        (data-mode-btn="where", sourceFilter "places"); only the
+        display label changed. */}
     <div id="japan-map" aria-label="Interactive map of Japan Finds places"></div>
 
     <p class="map-hint" hidden data-hint>Tap the map to enable zoom</p>
@@ -158,7 +161,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
           class="map-legend-seg"
           data-mode-btn="where"
           aria-pressed="false"
-        >WHERE</button>
+        >GO</button>
         <button
           type="button"
           class="map-legend-seg"
@@ -701,7 +704,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
   }
 
   /* Pin swatches — must equal the rendered Mapbox pin for the mode.
-     WHERE: filled disc, per-cluster colour (inline style from
+     GO: filled disc, per-cluster colour (inline style from
      PLACES_LEGEND_ROWS.color). EAT: hollow ring matching the /map
      mixed-source pin (white fill + Tokyo Red stroke). STAY: filled
      Aizome Indigo disc. Disc border 1.5px rgba(21,21,21,0.18). */
