@@ -12,6 +12,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Culture & History"
 place_id: ChIJE-ywz9a6AmAR1uD5rAwvJkw
+shared_place_id_with:
+  - takayama-miyagawa-morning-market
+place_id_note: "Shared with takayama-miyagawa-morning-market. Broader culture/history entry covering the Old Town area; the Morning Market is a distinct named venue inside it. Verification needed for which entry should retain this place_id."
 lat: 36.144704
 lng: 137.2579466
 hours:

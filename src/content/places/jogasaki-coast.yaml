@@ -12,6 +12,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Nature Walks & Views"
 place_id: ChIJPz5bHGnbGWARzDROk5rcW8I
+shared_place_id_with:
+  - izu-kogen
+place_id_note: "Intentional: shared place_id with the izu-kogen base entry whose centroid coincides with this named feature."
 lat: 34.8910482
 lng: 139.1399205
 hours:

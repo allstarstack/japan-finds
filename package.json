@@ -13,6 +13,7 @@
     "convert": "node scripts/convert-source.mjs",
     "verify-status": "node scripts/verify-status.mjs",
     "verify-pills": "node scripts/verify-pills.mjs",
+    "verify-place-ids": "node scripts/verify-place-ids.mjs",
     "enrich:refresh": "python3 scripts/enrich_with_places_api.py --hours-only --refresh-stale",
     "geojson": "node scripts/generate-geojson.mjs",
     "prebuild": "rm -rf node_modules/.astro/data-store.json && npm run geojson"

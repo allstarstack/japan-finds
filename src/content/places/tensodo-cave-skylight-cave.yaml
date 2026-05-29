@@ -12,6 +12,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Sea Caves & Coastal Features"
 place_id: ChIJf0FkCHP3GWARWjRcnTo-1MM
+shared_place_id_with:
+  - dogashima
+place_id_note: "Intentional: shared place_id with the dogashima base entry whose centroid coincides with this named feature."
 lat: 34.7827086
 lng: 138.7661468
 hours:

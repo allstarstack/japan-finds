@@ -186,6 +186,29 @@ export const placeSchema = z.object({
   // (BUILD_SPEC_cost_kill.md); the fields are retained (no schema change) but
   // are no longer rendered. See `placesHours` above for `hours`.
   place_id: z.string().optional(),
+  // When two or more entries intentionally share a Google place_id (an
+  // editorial split of one venue, or a base-tier "area" entry whose
+  // centroid coincides with a named feature inside it), each member must
+  // list the other group members here. scripts/verify-place-ids.mjs reads
+  // this to distinguish documented sharing from accidental duplicates;
+  // any group of entries with a shared place_id whose members don't
+  // mutually reference each other fails validation. Slugs only (no
+  // .yaml suffix, no path).
+  shared_place_id_with: z.array(z.string()).optional(),
+  // Free-form note about the place_id — usually "verification needed"
+  // for entries that inherit a sibling's place_id (sub-features without
+  // their own Google listing), or a one-liner explaining why an entry
+  // shares its place_id with another. Read by verify-place-ids.mjs only
+  // for the report; not used by the renderer.
+  place_id_note: z.string().optional(),
+  // Optional list of extra search tokens (neighborhood names, alternative
+  // romanisations, common typos) that the PlaceCard data-search blob folds
+  // in alongside name + address_or_area. Empty by default; opt-in per
+  // entry. Use this to fix neighborhood-granularity gaps where address_or_area
+  // doesn't carry the neighborhood (e.g. a Shinjuku place whose address
+  // string is just "Tokyo"). Tokens are joined into the lowercased search
+  // blob; no separator semantics — each item is matched as a substring.
+  search_aliases: z.array(z.string()).optional(),
   lat: z.number().optional(),
   lng: z.number().optional(),
   // 62 rows (beaches, capes, viewpoints) carry an empty `hours:` key,

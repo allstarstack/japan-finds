@@ -12,6 +12,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Nature & Water"
 place_id: ChIJOaW8YLmnRjUR8hDZNS3N3Is
+shared_place_id_with:
+  - beppu-hells-onsen-town
+place_id_note: "Intentional editorial split — same Beppu Hells venue, two cards (nature/See frame here, onsen-town stay frame on beppu-hells-onsen-town)."
 lat: 33.315883299999996
 lng: 131.4696745
 hours:

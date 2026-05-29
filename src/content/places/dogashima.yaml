@@ -12,6 +12,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Base Town"
 place_id: ChIJf0FkCHP3GWARWjRcnTo-1MM
+shared_place_id_with:
+  - tensodo-cave-skylight-cave
+place_id_note: "Intentional: base-tier area entry whose centroid lands on the named feature (Tensodo Cave) inside it."
 lat: 34.7827086
 lng: 138.7661468
 hours:

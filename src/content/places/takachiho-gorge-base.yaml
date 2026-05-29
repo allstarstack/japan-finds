@@ -12,6 +12,9 @@ address_verified: false
 source_type: "backlog_import"
 original_category: "Base Town"
 place_id: ChIJLwml_t0sRzURix_JnSldeVg
+shared_place_id_with:
+  - takachiho-gorge
+place_id_note: "Intentional: base-tier area entry whose centroid lands on the named feature (Takachiho Gorge) inside it."
 lat: 32.7012777
 lng: 131.30072719999998
 hours:
