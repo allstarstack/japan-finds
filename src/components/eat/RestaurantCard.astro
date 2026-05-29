@@ -38,9 +38,12 @@ const resLine = `${r.reservation_required} · ${r.notes}`;
 
 /* Phase D D1 — link straight to the matched business via place_id; the
    old name-search URL is the fallback for any row that matched nothing. */
+const mapsQuery = encodeURIComponent(
+  [r.name_jp || r.name_en, r.neighborhood, r.city].filter(Boolean).join(" ")
+);
 const mapsUrl = r.place_id
-  ? `https://www.google.com/maps/place/?q=place_id:${r.place_id}`
-  : r.maps_search;
+  ? `https://www.google.com/maps/search/?api=1&query=${mapsQuery}&query_place_id=${r.place_id}`
+  : `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 
 /* Searchable text blob the /eat ChipRow script matches against:
    name (en + jp), genre / cuisine label, and the location fields
