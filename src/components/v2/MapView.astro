@@ -1,20 +1,22 @@
 ---
-/* MapView.astro — shared Mapbox map component used by /places and /eat
-   list-pages when the user toggles to map view. Pure subset of the
-   /map.astro standalone — no category filter buttons (chip rails drive
-   filtering instead, via a custom event broadcast from their apply()).
+/* MapView.astro — shared Mapbox map component used by /places, /eat,
+   and /stay list-pages when the user toggles to map view. Pure subset
+   of the /map.astro standalone — no category filter buttons (chip rails
+   drive filtering instead, via a custom event broadcast from their
+   apply()).
 
    Props (data-attrs on root, read by the client script):
      containerId          unique Mapbox container element id
-     sourceFilter         "places" | "eat" — restrict /places.geojson to
-                          one collection
+     sourceFilter         "places" | "eat" | "stay" — restrict
+                          /places.geojson to one collection
      filterEventName      e.g. "places:filter-changed" — listen for
                           { detail: { visibleSlugs: Set<string> } } and
                           re-set source data to features whose slug is
                           in the set
      height               CSS height value, default "78vh"
      showLegend           render the bottom-left brand legend
-     legendKind           "places" | "eat" — which palette to render
+     legendKind           "places" | "eat" | "stay" — which palette
+                          to render
 
    Late-attach safety: the rail's first apply() may fire before MapView's
    listener attaches (URL-driven initial filter state). On init MapView
@@ -28,15 +30,17 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import {
   PLACES_LEGEND_ROWS,
   EAT_LEGEND_ROWS,
+  STAY_LEGEND_ROWS,
+  STAY_PIN_COLOR,
 } from "../../data/map-legends.js";
 
 interface Props {
   containerId: string;
-  sourceFilter: "places" | "eat";
+  sourceFilter: "places" | "eat" | "stay";
   filterEventName?: string;
   height?: string;
   showLegend?: boolean;
-  legendKind?: "places" | "eat";
+  legendKind?: "places" | "eat" | "stay";
 }
 
 const {
@@ -48,7 +52,16 @@ const {
   legendKind = "places",
 } = Astro.props;
 
-const legendRows = legendKind === "eat" ? EAT_LEGEND_ROWS : PLACES_LEGEND_ROWS;
+/* STAY_LEGEND_ROWS lacks a per-row color (all stay pins share the
+   Aizome Indigo STAY_PIN_COLOR — sub-cat is the legend filter axis on
+   /map, colour stays uniform). Inject the shared colour here so the
+   swatch-rendering loop below stays uniform across all three kinds. */
+const legendRows =
+  legendKind === "eat"
+    ? EAT_LEGEND_ROWS
+    : legendKind === "stay"
+      ? STAY_LEGEND_ROWS.map((r) => ({ ...r, color: STAY_PIN_COLOR }))
+      : PLACES_LEGEND_ROWS;
 ---
 
 <div
@@ -376,13 +389,17 @@ const legendRows = legendKind === "eat" ? EAT_LEGEND_ROWS : PLACES_LEGEND_ROWS;
     PLACES_PAINT_COLOR,
     EAT_PAINT_COLOR,
     EAT_PAINT_STROKE,
+    STAY_PIN_COLOR,
+    STAY_SLUG_TO_LABEL,
   } from "../../data/map-legends.js";
 
   /* Pin paint expressions — selected by sourceFilter. /eat pins are
      solid (not ring) on /eat-map; per-cuisine fill from the shared
      module. Border colour flips to Rice White only for the two
      ink-filled cuisines (Unagi, Yakiniku) so the dark pin remains
-     visible against the ink-on-light map background. */
+     visible against the ink-on-light map background. /stay pins share
+     one Aizome Indigo fill across all 9 sub-cats (sub-cat is the
+     filter axis on /map; colour stays uniform per source). */
   const PLACES_PAINT = {
     "circle-color": PLACES_PAINT_COLOR,
     "circle-radius": 6,
@@ -395,6 +412,13 @@ const legendRows = legendKind === "eat" ? EAT_LEGEND_ROWS : PLACES_LEGEND_ROWS;
     "circle-radius": 6,
     "circle-stroke-width": 1.5,
     "circle-stroke-color": EAT_PAINT_STROKE,
+  };
+
+  const STAY_PAINT = {
+    "circle-color": STAY_PIN_COLOR,
+    "circle-radius": 6,
+    "circle-stroke-width": 1.5,
+    "circle-stroke-color": "#151515",
   };
 
   /* Initialize each MapView instance on the page. There's typically one,
@@ -607,7 +631,12 @@ const legendRows = legendKind === "eat" ? EAT_LEGEND_ROWS : PLACES_LEGEND_ROWS;
         type: "circle",
         source: "places",
         filter: ["!", ["has", "point_count"]],
-        paint: sourceFilter === "eat" ? EAT_PAINT : PLACES_PAINT,
+        paint:
+          sourceFilter === "eat"
+            ? EAT_PAINT
+            : sourceFilter === "stay"
+              ? STAY_PAINT
+              : PLACES_PAINT,
       });
 
       /* Cluster click → expand. */
@@ -650,6 +679,36 @@ const legendRows = legendKind === "eat" ? EAT_LEGEND_ROWS : PLACES_LEGEND_ROWS;
                 ${metaLine ? `<p class="mv-popup-area">${metaLine}</p>` : ""}
                 ${provenance ? `<p class="mv-popup-area">${provenance}</p>` : ""}
                 <a class="mv-popup-link" href="/eat">View on /eat →</a>
+              </div>
+            </div>
+          `;
+        } else if (p.source === "stay") {
+          /* No /stay/<slug> detail route this phase — popup CTA is the
+             external hotel site, mirroring StayCard's primary link.
+             STAY_SLUG_TO_LABEL maps the primary_cat slug to its display
+             label (same source the legend reads from, so popup ↔ legend
+             can't drift). */
+          const where = [p.city, p.prefecture].filter(Boolean).join(", ");
+          const meta = [
+            STAY_SLUG_TO_LABEL[p.primary_cat] || p.primary_cat,
+            p.price_tier,
+          ]
+            .filter(Boolean)
+            .join(" · ");
+          const nameHTML = p.name_jp
+            ? `${p.name} <span class="mv-popup-jp">${p.name_jp}</span>`
+            : p.name;
+          const externalLink = p.source_url
+            ? `<a class="mv-popup-link" href="${p.source_url}" target="_blank" rel="noopener">Visit hotel site →</a>`
+            : "";
+          html = `
+            <div class="mv-popup">
+              ${img}
+              <div class="mv-popup-text">
+                <h3 class="mv-popup-name">${nameHTML}</h3>
+                ${where ? `<p class="mv-popup-area">${where}</p>` : ""}
+                ${meta ? `<p class="mv-popup-area">${meta}</p>` : ""}
+                ${externalLink}
               </div>
             </div>
           `;
