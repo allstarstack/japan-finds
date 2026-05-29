@@ -142,6 +142,11 @@ export const productSchema = z.object({
    filename, so the file IS the slug. */
 export const placeSchema = z.object({
   // required
+  // Monotonic add-signal (jf-place-####), assigned in baseline by git
+  // first-add-date asc + filename asc; new rows take the next id. Required
+  // is the rail that prevents a future add from silently sorting to the
+  // bottom of /places (PLACES_ADD_SIGNAL_BUILD_SPEC).
+  id: z.string(),
   name: z.string(),
   address_or_area: z.string(),
   region: z.string(),
