@@ -103,7 +103,7 @@ const regionChips = Object.entries(REGION_LABELS)
       <PlaceFilterRail counts={counts} flagCounts={flagCounts} />
     </div>
 
-    <section class="presults" data-list-section>
+    <section class="presults">
       <div class="wrap">
         <div class="presults-bar">
           <h2 class="results-count" data-count>{total} places</h2>
@@ -118,12 +118,14 @@ const regionChips = Object.entries(REGION_LABELS)
           </div>
         </div>
         <p class="xlink">Looking for restaurants? <a href="/eat">See → /eat</a></p>
-        <div class="grid" data-grid>
-          {places.map((p) => <PlaceCard entry={p} />)}
+        <div data-list-section>
+          <div class="grid" data-grid>
+            {places.map((p) => <PlaceCard entry={p} />)}
+          </div>
+          <p class="results-empty" data-empty hidden>
+            Nothing matches. Try a place name or region.
+          </p>
         </div>
-        <p class="results-empty" data-empty hidden>
-          Nothing matches. Try a place name or region.
-        </p>
       </div>
     </section>
 
@@ -211,14 +213,23 @@ const regionChips = Object.entries(REGION_LABELS)
     align-self: flex-start;
   }
 
-  /* Results sit on white so the rice-white cards read. */
+  /* Results sit on white so the rice-white cards read. Bottom padding
+     lives on [data-list-section] (not the always-visible .presults wrap)
+     so map view doesn't carry the grid's vertical reserve as a dead
+     band between the controls row and the map.
+
+     flow-root establishes a new block formatting context so the xlink's
+     margin-bottom stays inside the white section. Without it, the margin
+     collapses out the bottom (no padding/border to block it) and the
+     body's rice-white shows through as a beige strip between the
+     controls and the map in map view. */
   .presults {
     background: var(--color-white);
+    padding: 20px 0 0;
+    display: flow-root;
   }
-
-  /* Results */
-  .presults {
-    padding: 20px 0 56px;
+  [data-list-section] {
+    padding-bottom: 56px;
   }
   .results-count {
     margin: 0;
@@ -302,7 +313,10 @@ const regionChips = Object.entries(REGION_LABELS)
       flex-shrink: 0;
     }
     .presults {
-      padding: 24px 0 72px;
+      padding: 24px 0 0;
+    }
+    [data-list-section] {
+      padding-bottom: 72px;
     }
     .grid {
       grid-template-columns: repeat(4, 1fr);
@@ -349,7 +363,15 @@ const regionChips = Object.entries(REGION_LABELS)
     background: var(--color-ink-black);
     color: #fff;
   }
-  .presults[hidden],
+  /* Override the global red focus ring on toggle segments. The 2px red
+     outline at +2px offset bled past the active button's right edge into
+     the seam between List/Map, reading as a red divider. An inset ink
+     hairline keeps the focus affordance neutral and stays inside the
+     segment so adjacent buttons don't overlap it. */
+  .view-toggle button:focus-visible {
+    outline: 1.5px solid var(--color-ink-black);
+    outline-offset: -1.5px;
+  }
   .presults-map[hidden] { display: none; }
 </style>
 
