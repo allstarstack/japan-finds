@@ -2,8 +2,11 @@
 /* /places — Phase B-2 places import ("Where" in the nav).
    Hero, sticky filter rail, and the full place grid. Mirrors the other
    list pages (/eat, /stay, /products) for cross-page consistency: hero →
-   search → chips → grid, no featured-six block. Sort: alphabetical by
-   name — places have no verified/unverified split like products do. */
+   search → chips → grid, no featured-six block. Sort: newest-first by
+   `id` (jf-place-####), matching /products' newest-first behaviour
+   (PLACES_ADD_SIGNAL_BUILD_SPEC). Baseline ids assigned via git
+   first-add-date asc + filename asc, so a desc id sort = newest batch
+   first within today's data. */
 import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
@@ -18,8 +21,15 @@ import { prefectureToRegion, REGION_LABELS } from "../data/regions.js";
 const places = (await getCollection("places")).filter(
   (p) => p.data.status === "ready" && p.data.public_render !== false,
 );
-places.sort((a, b) =>
-  a.data.name.toLowerCase().localeCompare(b.data.name.toLowerCase()),
+/* Trailing-digit extractor keeps the comparator scheme-agnostic — works
+   for jf-place-#### today, would survive an id-prefix rename. Alpha is a
+   defensive tiebreak (ids are unique). */
+const idNum = (e) =>
+  parseInt(String(e.data.id).match(/(\d+)$/)?.[1] ?? "0", 10);
+places.sort(
+  (a, b) =>
+    idNum(b) - idNum(a) ||
+    a.data.name.toLowerCase().localeCompare(b.data.name.toLowerCase()),
 );
 
 /* Standard-tier places are the default browse; base-tier are reachable
