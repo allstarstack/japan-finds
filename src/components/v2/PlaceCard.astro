@@ -82,10 +82,12 @@ const catLabel = chipMeta?.label ?? cat;
 /* Phase D D1 — link straight to the matched place via place_id. The
    old name-search URL (which let Google's geocoder find an area-level
    pin) is the fallback for the one row that matched no Google Place. */
+const mapsQuery = encodeURIComponent(
+  [en, d.address_or_area, d.prefecture].filter(Boolean).join(" ")
+);
 const mapsUrl = d.place_id
-  ? `https://www.google.com/maps/place/?q=place_id:${d.place_id}`
-  : "https://www.google.com/maps/search/?api=1&query=" +
-    encodeURIComponent(`${en}, ${d.prefecture}`);
+  ? `https://www.google.com/maps/search/?api=1&query=${mapsQuery}&query_place_id=${d.place_id}`
+  : `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
 
 /* SEARCH_AND_SORT Phase B — searchable text blob the place filter script
    matches against: name (en + jp), category label, the experience chip,
