@@ -146,7 +146,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
     <div
       class="map-legend"
       data-legend
-      data-mode=""
+      data-mode="where"
       data-counts={JSON.stringify(COUNTS_BY_MODE)}
     >
       <div class="map-legend-handle" aria-hidden="true"></div>
@@ -160,7 +160,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
           type="button"
           class="map-legend-seg"
           data-mode-btn="where"
-          aria-pressed="false"
+          aria-pressed="true"
         >GO</button>
         <button
           type="button"
@@ -178,7 +178,7 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
 
       <div class="map-legend-meta">
         <span class="map-legend-counts" data-counts-text>
-          {COUNTS_BY_MODE.all.clusters} clusters · {COUNTS_BY_MODE.all.pins} pins
+          {COUNTS_BY_MODE.where.clusters} clusters · {COUNTS_BY_MODE.where.pins} pins
         </span>
         <button
           type="button"
@@ -931,7 +931,11 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
     }
 
     if (!ALL_MODES.includes(m)) {
-      mode = null;
+      // Default landing → GO (places) mode. The all-sources "no mode"
+      // state stays reachable mid-session by de-toggling the GO segment,
+      // but it isn't the default — landing on /map shows the places
+      // legend with its own pin count (not the GO+EAT+STAY sum).
+      mode = "where";
       cluster = null;
       return;
     }

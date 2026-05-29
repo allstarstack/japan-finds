@@ -5,7 +5,7 @@ region: "Kanto"
 prefecture: "Tokyo"
 primary_category: "Do"
 public_label: "quirky_museums"
-planning_flags: "rainy_day"
+planning_flags: "rainy_day;with_kids"
 launch_tier: "standard"
 status: "ready"
 public_render: true

@@ -268,8 +268,8 @@ const { counts, flagCounts } = Astro.props;
     const apply = () => {
       // Token-AND substring search over each card's data-search blob. An
       // active query also reveals base-tier cards — otherwise searching a
-      // stay-base by name would silently miss it, and "Search 333 places"
-      // would overstate what's findable.
+      // stay-base by name would silently miss it, and the search placeholder
+      // count would overstate what's findable.
       const tokens = query.split(/\s+/).filter(Boolean);
       const state = {
         location: activeLocation,

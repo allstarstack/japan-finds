@@ -7232,28 +7232,6 @@
       },
       "properties": {
         "source": "places",
-        "slug": "teamlab-planets-tokyo",
-        "name": "teamLab Planets TOKYO",
-        "public_label": "quirky_museums",
-        "primary_category": "Do",
-        "address_or_area": "Toyosu, Tokyo",
-        "hero_image": "/places/teamlab-planets-tokyo.webp",
-        "local_favorite": false,
-        "viral": false,
-        "viral_signal": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          139.7897739,
-          35.6491207
-        ]
-      },
-      "properties": {
-        "source": "places",
         "slug": "teamlab-planets-toyosu",
         "name": "teamLab Planets Toyosu",
         "public_label": "quirky_museums",
