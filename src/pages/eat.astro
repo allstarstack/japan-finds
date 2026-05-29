@@ -186,10 +186,16 @@ const cityChips = CITY_CHIPS
     padding: 0 0 26px;
   }
 
-  /* Results sit on white so the rice-white cards read. */
+  /* Results sit on white so the rice-white cards read. Bottom padding
+     lives on [data-list-section] (not the always-visible .eresults wrap)
+     so map view doesn't carry the grid's vertical reserve as a dead
+     band between the controls row and the map. */
   .eresults {
     background: var(--color-white);
-    padding: 18px 0 8px;
+    padding: 18px 0 0;
+  }
+  [data-list-section] {
+    padding-bottom: 8px;
   }
   /* Count + clear + view-toggle bar. align-items: center (was baseline)
      so the segmented control sits flush with the count text. The toggle
@@ -296,7 +302,7 @@ const cityChips = CITY_CHIPS
       padding: 0 0 36px;
     }
     .eresults {
-      padding: 22px 0 8px;
+      padding: 22px 0 0;
     }
     .grid {
       grid-template-columns: repeat(4, 1fr);
@@ -329,6 +335,15 @@ const cityChips = CITY_CHIPS
   .view-toggle button[aria-pressed="true"] {
     background: var(--color-ink-black);
     color: #fff;
+  }
+  /* Override the global red focus ring on toggle segments. The 2px red
+     outline at +2px offset bled past the active button's right edge into
+     the seam between List/Map, reading as a red divider. An inset ink
+     hairline keeps the focus affordance neutral and stays inside the
+     segment so adjacent buttons don't overlap it. */
+  .view-toggle button:focus-visible {
+    outline: 1.5px solid var(--color-ink-black);
+    outline-offset: -1.5px;
   }
   .eresults-map[hidden] { display: none; }
 </style>
