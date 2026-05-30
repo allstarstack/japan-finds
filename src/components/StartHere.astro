@@ -5,7 +5,6 @@ import { PLACES_MAP_URL } from "../data/site.js";
 
 const cards = [
   {
-    sec: 1,
     stripe: "var(--color-tokyo-red)",
     chipClass: "chip--red",
     label: "MAP",
@@ -17,7 +16,6 @@ const cards = [
     external: false,
   },
   {
-    sec: 2,
     stripe: "var(--color-egg-yellow)",
     chipClass: "chip--yellow",
     label: "SHOPPING",
@@ -28,7 +26,6 @@ const cards = [
     href: "/products",
   },
   {
-    sec: 3,
     stripe: "var(--color-matcha-green)",
     chipClass: "chip--green",
     label: "CHEAT SHEETS",
@@ -39,7 +36,6 @@ const cards = [
     href: "/cheat-sheets",
   },
   {
-    sec: 4,
     stripe: "var(--color-konbini-blue)",
     chipClass: "chip--blue",
     label: "RESTAURANTS",
@@ -50,7 +46,6 @@ const cards = [
     href: "/eat",
   },
   {
-    sec: 5,
     stripe: "var(--color-ink-black)",
     chipClass: "chip--ink",
     label: "STAY",
@@ -76,7 +71,6 @@ const cards = [
             <div class="rc__body">
               <div class="rc__head">
                 <span class:list={["chip", c.chipClass]}>{c.label}</span>
-                <span class="rc__sec">§0{c.sec}</span>
               </div>
               <h3 class="rc__title">{c.title}</h3>
               <p class="rc__copy">{c.body}</p>
@@ -142,12 +136,6 @@ const cards = [
     align-items: center;
     gap: 8px;
     margin-bottom: 10px;
-  }
-  .rc__sec {
-    margin-left: auto;
-    font-family: var(--font-mono);
-    font-size: 10px;
-    color: var(--color-ink-60);
   }
   .rc__title {
     margin-bottom: 6px;
