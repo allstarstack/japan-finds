@@ -36,7 +36,7 @@ const FEATURED = new Set([
   "JF-0135", // Megrhythm Steam Eye Mask
   "JF-0010", // Daiso Tabi Socks (Toe-Split)
   "JF-0297", // Hanko Name Stamp
-  "JF-0379", // Hada Labo Gokujyun Hyaluronic Lotion
+  "JF-0361", // Hada Labo Gokujyun Hyaluronic Lotion
   "JF-0099", // Donki Costume / Cosplay Floor Finds
 ]);
 

@@ -1,6 +1,6 @@
 id: JF-0435
 slug: plus-air-in-eraser
-name_en: Plus Air-In Eraser
+name_en: Plus Air-In Mt. Fuji Eraser
 category: stationery
 intent:
 - stock_up
@@ -11,6 +11,10 @@ where_found:
 - Plus official
 - Amazon JP
 - Yodobashi
+- LOFT
+- Tokyu Hands
+- Bic Camera
+- stationery shops
 price_yen: 100-200
 what_it_is: Soft eraser with internal air pockets, clean erase.
 why_travelers_care: Pen-nerd cult eraser.
@@ -32,6 +36,8 @@ where_to_buy:
 - Loft
 - Hands
 - Itoya
+- Yodobashi Camera
+- Amazon Japan
 - major stationery stores
 enrichment_confidence: high
 enrichment_source_url: https://bungu.plus.co.jp/special/st/fujisan/

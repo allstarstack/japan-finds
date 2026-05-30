@@ -9,6 +9,7 @@ name_jp: 肌ラボ 極潤
 brand: Rohto
 where_found:
 - All drugstores
+- Donki
 - Rohto online
 - Amazon JP
 - Yodobashi
@@ -26,6 +27,7 @@ suitcase_score: 9
 launch_category: skincare_beauty
 fill_type: verified
 display_strategy: show_all
+featured: true
 description: Hada Labo Gokujyun Hyaluronic Lotion. Watery Japanese toner-lotion with
   hyaluronic acid. Drugstore shelf staple for dry airplane skin.
 english_name: Hada Labo Gokujyun Hyaluronic Lotion
