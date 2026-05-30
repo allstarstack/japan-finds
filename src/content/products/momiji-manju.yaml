@@ -6,7 +6,7 @@ intent:
 - local_editions
 status: ready
 name_jp: もみじ饅頭
-brand: Various Hiroshima makers
+brand: Nishiki-do / Yamada-ya / others
 where_found:
 - Hiroshima
 - Miyajima
@@ -35,6 +35,8 @@ price_range_jpy: 120-1500
 where_to_buy:
 - Hiroshima Station
 - Nishikido shops
+- Miyajima shops
+- airport souvenir shops
 - department store food halls
 safety_flags:
 - contains_gluten

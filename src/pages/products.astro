@@ -43,7 +43,7 @@ for (const p of launch) {
 
 <Base
   title="What to buy in Japan — Japan Finds"
-  description="384 Japan shopping picks — konbini, drugstores, Donki, 100-yen and more. Filter by what you're shopping for."
+  description={`${total} Japan shopping picks — konbini, drugstores, Donki, 100-yen and more. Filter by what you're shopping for.`}
 >
   <Header />
   <main id="main">
@@ -59,7 +59,7 @@ for (const p of launch) {
     </section>
 
     <div class="rail-sticky">
-      <SearchBox placeholder="Search 380 products" />
+      <SearchBox placeholder={`Search ${total} products`} />
       <FilterRail counts={counts} subAvail={subAvail} />
     </div>
 
