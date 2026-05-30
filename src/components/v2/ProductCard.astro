@@ -29,7 +29,7 @@ const showAll = d.display_strategy === "show_all";
 const meta = showAll
   ? [d.name_jp, d.brand].filter(Boolean).join(" · ")
   : "";
-const where = d.where_found?.join(" · ") ?? "";
+const where = d.where_to_buy?.join(" · ") ?? "";
 const cat = d.launch_category;
 const label = cat ? CHIP_LABEL[cat] : "";
 const color = cat ? CHIP_COLOR[cat] : "white";

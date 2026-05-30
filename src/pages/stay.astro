@@ -216,8 +216,8 @@ const regionChips = Object.entries(REGION_LABELS)
     gap: 12px;
   }
   /* Native lazy-render: skip layout/paint for off-screen cards so the
-     whole 136-card grid stays in the DOM (instant filtering) without
-     paying the up-front render cost. Matches /places. */
+     whole grid stays in the DOM (instant filtering) without paying the
+     up-front render cost. Matches /places. */
   .grid :global(.stc) {
     content-visibility: auto;
     contain-intrinsic-size: auto 420px;
