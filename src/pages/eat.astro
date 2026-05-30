@@ -80,6 +80,12 @@ const cityChips = CITY_CHIPS
           (ramen, soba, the shokudo lists). Steven isn't a foodie. These are
           the picks because the locals voted, not because he ate there.
         </p>
+        <a
+          class="ehero-cite"
+          href="https://award.tabelog.com/hyakumeiten"
+          target="_blank"
+          rel="noopener"
+        >See the Hyakumeiten lists on Tabelog&nbsp;→</a>
       </div>
     </section>
 
@@ -179,6 +185,24 @@ const cityChips = CITY_CHIPS
     font-size: 15px;
     line-height: 1.55;
     color: var(--color-ink-60);
+  }
+  /* Single source-of-truth link to the master Hyakumeiten hub. Replaces
+     the per-card "Tabelog list" link that pointed at per-category award
+     pages (21 distinct cuisine/region permutations). Mono small-caps to
+     match the .rc-link voice. */
+  .ehero-cite {
+    display: inline-block;
+    margin: 12px 0 0;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
+    text-decoration: none;
+  }
+  .ehero-cite:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 
   /* Restaurants Map CTA — single button (BUILD_SPEC §2). */
