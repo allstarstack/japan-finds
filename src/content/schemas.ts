@@ -231,6 +231,10 @@ export const placeSchema = z.object({
       date: z.string(),
     })
     .optional(),
+  // Optional Klook affiliate booking link. When present, the place card
+  // renders a "Book tickets on Klook →" CTA; absent = no CTA. Site-wide
+  // affiliate disclosure in SiteFooter covers it.
+  klook_url: z.string().url().optional(),
 });
 
 export const storeSchema = z.object({
