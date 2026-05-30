@@ -293,8 +293,8 @@ export const cheatSheetSchema = z.object({
 });
 
 /* Phase A.9 stays schema (PHASE_A9_BUILD_SPEC §1).
-   New "Stay" source on /map, parallel to places/eat. 136-row seed imported
-   from docs/build/stays_seed.csv via scripts/import_stays_seed.py.
+   New "Stay" source on /map, parallel to places/eat. Seed imported from
+   docs/build/stays_seed.csv via scripts/import_stays_seed.py.
    place_id / lat / lng / photo_cache_path are populated by a later D7-style
    enrichment workstream — kept optional so the initial seed lands clean. */
 export const staySchema = z.object({
