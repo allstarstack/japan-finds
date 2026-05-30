@@ -10,7 +10,7 @@ import { PLACES_MAP_URL } from "../data/site.js";
 
 /* Root-relative anchors so the nav works from any page, not just home. */
 const navLinks = [
-  { label: "Go", href: "/places" },
+  { label: "Go", href: "/places", aria: "Where to go — places to visit in Japan" },
   { label: "Eat", href: "/eat" },
   { label: "Stay", href: "/stay" },
   { label: "Finds", href: "/products" },
@@ -34,7 +34,7 @@ const onMapPage = Astro.url.pathname === "/map" || Astro.url.pathname === "/map/
 
     <nav class="hdr__nav" aria-label="Primary">
       <ul class="hdr__links">
-        {navLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+        {navLinks.map((l) => <li><a href={l.href} aria-label={l.aria}>{l.label}</a></li>)}
       </ul>
     </nav>
 
@@ -63,7 +63,7 @@ const onMapPage = Astro.url.pathname === "/map" || Astro.url.pathname === "/map/
     </div>
     <nav class="m-menu__nav" aria-label="Mobile">
       <ul>
-        {navLinks.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+        {navLinks.map((l) => <li><a href={l.href} aria-label={l.aria}>{l.label}</a></li>)}
       </ul>
     </nav>
     {!onMapPage && (
