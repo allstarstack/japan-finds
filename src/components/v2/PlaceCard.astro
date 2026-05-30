@@ -352,21 +352,31 @@ const searchText = [
     text-underline-offset: 3px;
   }
 
-  /* Klook affiliate CTA — twin of .plc-map (same typography, weight,
-     arrow, hover) so the two outbound actions read as equals. Only
-     rendered when the entry carries `klook_url`. Site-wide affiliate
-     disclosure in SiteFooter covers the sponsored relationship. */
+  /* Klook affiliate CTA — contained ink-black button (NOT full-width).
+     The text-link variant blended in too well; the button restores the
+     scan signal that this is a transactional action, distinct from the
+     reference Maps link above it. align-self: flex-start + auto width
+     so it hugs its label instead of spanning the card. Only rendered
+     when the entry carries `klook_url`. Site-wide affiliate disclosure
+     in SiteFooter covers the sponsored relationship. */
   .plc-klook {
+    align-self: flex-start;
+    margin-top: 4px;
+    padding: 7px 11px;
+    background: var(--color-ink-black);
+    color: var(--color-rice-white);
     font-family: var(--font-mono);
     font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: var(--color-ink-black);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: opacity 120ms ease-out;
   }
-  .plc-klook:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  .plc-klook:hover,
+  .plc-klook:focus-visible {
+    opacity: 0.85;
   }
 
   @media (min-width: 1024px) {
