@@ -1,0 +1,149 @@
+---
+/* /products/guides/<slug> — category landing pages.
+   Renders an intro section (copy from src/data/product-guides.ts) and a
+   grid of products whose launch_category matches the guide. Reuses the
+   existing ProductCard so card visuals stay consistent with /products.
+   No filter rail — the page IS the filter. Sort: newest-first by id,
+   mirroring /products (SEARCH_AND_SORT Phase A). */
+import { getCollection } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import Header from "../../../components/Header.astro";
+import SiteFooter from "../../../components/SiteFooter.astro";
+import ProductCard from "../../../components/v2/ProductCard.astro";
+import { GUIDES, type ProductGuide } from "../../../data/product-guides";
+
+export async function getStaticPaths() {
+  return Object.entries(GUIDES).map(([slug, guide]) => ({
+    params: { slug },
+    props: { guide },
+  }));
+}
+
+interface Props {
+  guide: ProductGuide;
+}
+
+const { guide } = Astro.props;
+
+const products = (await getCollection("products"))
+  .filter(
+    (p) =>
+      p.data.status === "ready" &&
+      p.data.launch_category === guide.launch_category,
+  )
+  .sort((a, b) => b.data.id.localeCompare(a.data.id));
+
+const total = products.length;
+---
+
+<Base title={guide.title} description={guide.description}>
+  <Header />
+  <main id="main">
+    <section class="ghero">
+      <div class="wrap">
+        <p class="eyebrow">{guide.eyebrow}</p>
+        <h1>{guide.headline}</h1>
+        <p class="ghero-intro">{guide.intro}</p>
+      </div>
+    </section>
+
+    <section class="gresults">
+      <div class="wrap">
+        <h2 class="results-count">{total} {total === 1 ? "find" : "finds"}</h2>
+        <div class="grid">
+          {products.map((p) => <ProductCard entry={p} />)}
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</Base>
+
+<style>
+  .wrap {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 0 var(--gutter-mobile);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+  }
+
+  .ghero {
+    padding: 30px 0 28px;
+  }
+  .ghero h1 {
+    margin: 10px 0 0;
+    font-family: var(--font-head);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+  }
+  .ghero-intro {
+    margin: 14px 0 0;
+    max-width: 56ch;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--color-ink-black);
+  }
+
+  .gresults {
+    background: var(--color-white);
+    padding: 24px 0 56px;
+    border-top: var(--border-ink);
+  }
+  .results-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ink-60);
+    margin-bottom: 14px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .grid :global(.pc) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 190px;
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .wrap {
+      padding: 0 var(--gutter-desktop);
+    }
+    .ghero {
+      padding: 56px 0 40px;
+    }
+    .ghero h1 {
+      font-size: 72px;
+      letter-spacing: -0.035em;
+    }
+    .ghero-intro {
+      font-size: 19px;
+    }
+    .gresults {
+      padding: 32px 0 72px;
+    }
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+  }
+</style>
