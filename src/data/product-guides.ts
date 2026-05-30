@@ -60,4 +60,34 @@ export const GUIDES: Record<string, ProductGuide> = {
     intro:
       "Japan treats snacks like a seasonal sport — limited flavors, region-only drops, packaging better than it has any right to be. Most people grab a tower of Kit Kats at the airport and call it done. This is the better list: the snacks worth real suitcase space, the ones to eat in-country because they won't survive the flight, and the regional stuff you can only get where you're standing.",
   },
+  skincare: {
+    launch_category: "skincare_beauty",
+    title: "Japanese Skincare Worth Buying — Japan Finds",
+    description:
+      "Beyond Hada Labo and the hyped sheet masks. The Japanese skincare actually worth your bathroom shelf — at a fraction of the export price.",
+    eyebrow: "JAPAN FINDS · SHOPPING GUIDES",
+    headline: "Japanese skincare worth buying.",
+    intro:
+      "Japanese skincare has a cult for a reason — the formulating is good and the drugstore prices are almost insulting next to what the same bottles cost once they're exported. But the shelf is deep and plenty of it is hype. This is what earns the bathroom-shelf space: the lotions, essences, sunscreens, and cleansers people actually re-buy, not just the ones with the prettiest packaging.",
+  },
+  "100-yen": {
+    launch_category: "hundred_yen",
+    title: "What to Buy at a 100 Yen Shop in Japan — Japan Finds",
+    description:
+      "Daiso, Seria, Can Do. The 100-yen finds worth carrying home — the surprisingly-good homeware, stationery, and travel bits that cost basically nothing.",
+    eyebrow: "JAPAN FINDS · SHOPPING GUIDES",
+    headline: "What to buy at the 100 yen shop.",
+    intro:
+      "Japan's 100-yen shops — Daiso, Seria, Can Do — are where you find out how much quality a single coin actually buys. Most of it is what you'd expect for the price. A real chunk of it is quietly excellent and ends up being the thing you reach for every day back home. This is that chunk: the homeware, stationery, and travel bits worth filling a basket with before you fly out.",
+  },
+  stationery: {
+    launch_category: "stationery",
+    title: "Japanese Stationery Worth Buying — Japan Finds",
+    description:
+      "Pens, notebooks, and desk things Japan does better than anywhere. The stationery worth a detour to Itoya or Loft — not just the famous gel pens.",
+    eyebrow: "JAPAN FINDS · SHOPPING GUIDES",
+    headline: "Japanese stationery worth the detour.",
+    intro:
+      "Japanese stationery sounds boring until you've used a pen that glides the way the Japanese gel pens do. The country treats paper and ink as a serious craft, and stores like Itoya and Loft are full of things you didn't know you wanted. This is the short list worth a detour: the pens, notebooks, and desk small-things that justify the suitcase weight.",
+  },
 };
