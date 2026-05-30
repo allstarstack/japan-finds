@@ -69,7 +69,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-tantantei-hamadayama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1318/A131805/13000705/"
   },
   {
     "id": "tabelog-ramen-menya-kintoki-ekoda",
@@ -147,7 +148,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-menya-kintoki-ekoda.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1321/A132101/13139195/"
   },
   {
     "id": "tabelog-ramen-chuka-soba-nishikawa-chitose-funabashi",
@@ -204,7 +206,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-chuka-soba-nishikawa-chitose-funabashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1318/A131813/13213036/"
   },
   {
     "id": "tabelog-ramen-mendokoro-haru-iriya",
@@ -296,7 +299,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-mendokoro-haru-iriya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131104/13143115/"
   },
   {
     "id": "tabelog-ramen-teuchi-kagehinata-bubaigawara",
@@ -363,7 +367,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-teuchi-kagehinata-bubaigawara.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1326/A132602/13297403/"
   },
   {
     "id": "tabelog-ramen-japanese-soba-noodles-tsuta-yoyogi-uehara",
@@ -430,7 +435,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-japanese-soba-noodles-tsuta-yoyogi-uehara.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1318/A131811/13241560/"
   },
   {
     "id": "tabelog-ramen-ichiban-ichiban-machida",
@@ -492,7 +498,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-ichiban-ichiban-machida.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1327/A132701/13001469/"
   },
   {
     "id": "tabelog-ramen-santora-edogawabashi",
@@ -592,7 +599,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-santora-edogawabashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1309/A130905/13240660/"
   },
   {
     "id": "tabelog-ramen-tsukemen-michi-kameari",
@@ -664,7 +672,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-tsukemen-michi-kameari.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1324/A132403/13094595/"
   },
   {
     "id": "tabelog-ramen-sakurajosui-funakoshi-sakurajosui",
@@ -726,7 +735,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-sakurajosui-funakoshi-sakurajosui.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1318/A131809/13281101/"
   },
   {
     "id": "tabelog-ramen-chuka-soba-nishino-hongo-sanchome",
@@ -817,7 +827,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-chuka-soba-nishino-hongo-sanchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1310/A131004/13218311/"
   },
   {
     "id": "tabelog-ramen-ramen-yamaguchi-omokagebashi",
@@ -889,7 +900,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-ramen-yamaguchi-omokagebashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1305/A130504/13151200/"
   },
   {
     "id": "tabelog-ramen-ramen-kozo-shin-fukushima",
@@ -989,7 +1001,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-ramen-kozo-shin-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27077479/"
   },
   {
     "id": "tabelog-ramen-chuka-soba-kokokarasakie-mikuni",
@@ -1071,7 +1084,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-chuka-soba-kokokarasakie-mikuni.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270301/27105350/"
   },
   {
     "id": "tabelog-ramen-sodaisho-tenjimbashisuji-rokuchome",
@@ -1143,7 +1157,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-sodaisho-tenjimbashisuji-rokuchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270103/27003383/"
   },
   {
     "id": "tabelog-ramen-menya-seiryu-nagase",
@@ -1205,7 +1220,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-menya-seiryu-nagase.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2707/A270703/27103068/"
   },
   {
     "id": "tabelog-ramen-mendokoro-amakawa-kujo",
@@ -1292,7 +1308,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-mendokoro-amakawa-kujo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270105/27109749/"
   },
   {
     "id": "tabelog-ramen-nakagawa-waz-jr-awaji",
@@ -1383,7 +1400,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-nakagawa-waz-jr-awaji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270307/27105320/"
   },
   {
     "id": "tabelog-ramen-seikou-udoku-uji",
@@ -1440,7 +1458,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-seikou-udoku-uji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2607/A260701/26030760/"
   },
   {
     "id": "tabelog-ramen-seabura-no-kami-mibu-honten-shijo-omiya",
@@ -1540,7 +1559,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-seabura-no-kami-mibu-honten-shijo-omiya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260203/26022456/"
   },
   {
     "id": "tabelog-ramen-menya-takakura-nijo-karasuma-oike",
@@ -1640,7 +1660,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-menya-takakura-nijo-karasuma-oike.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26003182/"
   },
   {
     "id": "tabelog-ramen-chuka-soba-takayasu-ichijoji",
@@ -1712,7 +1733,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-chuka-soba-takayasu-ichijoji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260303/26001199/"
   },
   {
     "id": "tabelog-ramen-kobushi-ramen-umekoji-kyotonishi",
@@ -1803,7 +1825,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-kobushi-ramen-umekoji-kyotonishi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260203/26017616/"
   },
   {
     "id": "tabelog-ramen-menya-inoichi-hanare-shijo",
@@ -1903,7 +1926,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-ramen-menya-inoichi-hanare-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26029810/"
   },
   {
     "id": "tabelog-sushi-shinbashi-shimizu-shimbashi",
@@ -1994,7 +2018,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-shinbashi-shimizu-shimbashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130103/13002892/"
   },
   {
     "id": "tabelog-sushi-mitani-yotsuya",
@@ -2023,7 +2048,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-mitani-yotsuya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1309/A130902/13042204/"
   },
   {
     "id": "tabelog-sushi-edomaezushi-sushitsu-roppongi",
@@ -2106,7 +2132,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-edomaezushi-sushitsu-roppongi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130701/13061640/"
   },
   {
     "id": "tabelog-sushi-uwotoku-higashi-mukojima",
@@ -2173,7 +2200,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-uwotoku-higashi-mukojima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1312/A131203/13017947/"
   },
   {
     "id": "tabelog-sushi-hatsunezushi-kamata",
@@ -2235,7 +2263,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-hatsunezushi-kamata.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1315/A131503/13017742/"
   },
   {
     "id": "tabelog-sushi-sushi-risaki-yoyogi-koen",
@@ -2262,7 +2291,8 @@
     "lng": 139.6915407,
     "hours": null,
     "hours_cache_date": "2026-05-19",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1303/A130301/13235258/"
   },
   {
     "id": "tabelog-sushi-satake-tsukiji-shijo",
@@ -2328,7 +2358,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-satake-tsukiji-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130103/13258466/"
   },
   {
     "id": "tabelog-sushi-kiyota-hanare-ginza",
@@ -2390,7 +2421,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-kiyota-hanare-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13256392/"
   },
   {
     "id": "tabelog-sushi-sushi-murase-roppongi",
@@ -2457,7 +2489,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-murase-roppongi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130701/13174475/"
   },
   {
     "id": "tabelog-sushi-sano-sushi-shibakoen",
@@ -2557,7 +2590,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sano-sushi-shibakoen.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1314/A131401/13290845/"
   },
   {
     "id": "tabelog-sushi-sushi-matsuura-shirokane-takanawa",
@@ -2624,7 +2658,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-matsuura-shirokane-takanawa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1316/A131602/13239788/"
   },
   {
     "id": "tabelog-sushi-sushi-takahashi-ginza-itchome",
@@ -2691,7 +2726,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-takahashi-ginza-itchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13165933/"
   },
   {
     "id": "tabelog-sushi-sushi-miki-kitashinchi",
@@ -2758,7 +2794,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-miki-kitashinchi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27118905/"
   },
   {
     "id": "tabelog-sushi-sushi-shizuku-nagahoribashi",
@@ -2825,7 +2862,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-shizuku-nagahoribashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270201/27093524/"
   },
   {
     "id": "tabelog-sushi-sushi-akazu-kitashinchi",
@@ -2892,7 +2930,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-akazu-kitashinchi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27114022/"
   },
   {
     "id": "tabelog-sushi-sushi-noguchi-kitashinchi",
@@ -2959,7 +2998,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-noguchi-kitashinchi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27004965/"
   },
   {
     "id": "tabelog-sushi-sushi-sanshin-tanimachi-rokuchome",
@@ -3026,7 +3066,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-sanshin-tanimachi-rokuchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270204/27095402/"
   },
   {
     "id": "tabelog-sushi-takahashi-kentaro-naniwabashi",
@@ -3055,7 +3096,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-takahashi-kentaro-naniwabashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27140862/"
   },
   {
     "id": "tabelog-sushi-gion-sushi-tadaho-gion-shijo",
@@ -3155,7 +3197,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-gion-sushi-tadaho-gion-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260301/26029012/"
   },
   {
     "id": "tabelog-sushi-sushi-matsumoto-gion-shijo",
@@ -3242,7 +3285,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-sushi-matsumoto-gion-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260301/26002579/"
   },
   {
     "id": "tabelog-sushi-kiu-karasuma",
@@ -3271,7 +3315,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sushi-kiu-karasuma.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26034605/"
   },
   {
     "id": "tabelog-izakaya-nodoguro-ginza-nakamata-higashi-ginza",
@@ -3343,7 +3388,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-nodoguro-ginza-nakamata-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13186922/"
   },
   {
     "id": "tabelog-izakaya-shokudo-todaka-gotanda",
@@ -3410,7 +3456,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shokudo-todaka-gotanda.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1316/A131603/13187669/"
   },
   {
     "id": "tabelog-izakaya-shoto-rankan-shinsen",
@@ -3477,7 +3524,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shoto-rankan-shinsen.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1303/A130301/13246953/"
   },
   {
     "id": "tabelog-izakaya-shukou-shinyashiki-nishi-waseda",
@@ -3564,7 +3612,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shukou-shinyashiki-nishi-waseda.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1305/A130503/13193868/"
   },
   {
     "id": "tabelog-izakaya-shinsuke-yushima",
@@ -3631,7 +3680,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shinsuke-yushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131101/13003607/"
   },
   {
     "id": "tabelog-izakaya-sanchokuya-taka-shinsen",
@@ -3693,7 +3743,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-sanchokuya-taka-shinsen.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1303/A130301/13008327/"
   },
   {
     "id": "tabelog-izakaya-kotaro-shibuya",
@@ -3760,7 +3811,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-kotaro-shibuya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1303/A130301/13123997/"
   },
   {
     "id": "tabelog-izakaya-kanda-koju-kanda",
@@ -3822,7 +3874,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-kanda-koju-kanda.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1310/A131002/13011272/"
   },
   {
     "id": "tabelog-izakaya-makino-shimbamba",
@@ -3889,7 +3942,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-makino-shimbamba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1314/A131405/13027466/"
   },
   {
     "id": "tabelog-izakaya-ginza-nomikoji-yamagishi-ginza",
@@ -3956,7 +4010,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-ginza-nomikoji-yamagishi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13289912/"
   },
   {
     "id": "tabelog-izakaya-rikugyo-nakano",
@@ -4048,7 +4103,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-rikugyo-nakano.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1319/A131902/13000216/"
   },
   {
     "id": "tabelog-izakaya-otsuka-miyaho-otsuka",
@@ -4139,7 +4195,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-otsuka-miyaho-otsuka.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1323/A132302/13103559/"
   },
   {
     "id": "tabelog-izakaya-brio-fukushima",
@@ -4201,7 +4258,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-brio-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27130963/"
   },
   {
     "id": "tabelog-izakaya-shushi-mon-oebashi",
@@ -4292,7 +4350,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shushi-mon-oebashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270102/27130325/"
   },
   {
     "id": "tabelog-izakaya-shokudo-kuro-usagi-tenjimbashisuji-rokuchome",
@@ -4359,7 +4418,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shokudo-kuro-usagi-tenjimbashisuji-rokuchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270103/27136227/"
   },
   {
     "id": "tabelog-izakaya-shukotetsu-nippombashi",
@@ -4426,7 +4486,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shukotetsu-nippombashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270202/27050565/"
   },
   {
     "id": "tabelog-izakaya-hide-shinsaibashi",
@@ -4498,7 +4559,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-hide-shinsaibashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270201/27013057/"
   },
   {
     "id": "tabelog-izakaya-henkotsu-kyoto-station",
@@ -4565,7 +4627,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-henkotsu-kyoto-station.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260101/26000797/"
   },
   {
     "id": "tabelog-izakaya-hiiragitei-higashiyama",
@@ -4627,7 +4690,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-hiiragitei-higashiyama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26031016/"
   },
   {
     "id": "tabelog-izakaya-hotel-de-ogawa-gion-shijo",
@@ -4694,7 +4758,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-hotel-de-ogawa-gion-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26041273/"
   },
   {
     "id": "tabelog-izakaya-shinme-kamigyo",
@@ -4761,7 +4826,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-izakaya-shinme-kamigyo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260203/26002592/"
   },
   {
     "id": "tabelog-tempura-tenpura-tatsumi-otemachi",
@@ -4861,7 +4927,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tenpura-tatsumi-otemachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130201/13141129/"
   },
   {
     "id": "tabelog-tempura-tempura-fukutaro-nezu",
@@ -4936,7 +5003,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-fukutaro-nezu.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131106/13204299/"
   },
   {
     "id": "tabelog-tempura-mikawa-zezankyo-monzen-nakacho",
@@ -5027,7 +5095,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-mikawa-zezankyo-monzen-nakacho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1313/A131303/13090866/"
   },
   {
     "id": "tabelog-tempura-tempura-iwai-ginza",
@@ -5089,7 +5158,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-iwai-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13183675/"
   },
   {
     "id": "tabelog-tempura-tenfuku-omori",
@@ -5180,7 +5250,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tenfuku-omori.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1315/A131502/13082681/"
   },
   {
     "id": "tabelog-tempura-seiju-tsukiji",
@@ -5247,7 +5318,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-seiju-tsukiji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1313/A131301/13058904/"
   },
   {
     "id": "tabelog-tempura-tempura-fukamachi-kyobashi",
@@ -5362,7 +5434,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-fukamachi-kyobashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130202/13004105/"
   },
   {
     "id": "tabelog-tempura-tempura-yamanoue-nihonbashi-mitsukoshi-mitsukoshimae",
@@ -5434,7 +5507,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-yamanoue-nihonbashi-mitsukoshi-mitsukoshimae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130202/13044042/"
   },
   {
     "id": "tabelog-tempura-shunkeian-aragaki-shintomicho",
@@ -5500,7 +5574,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-shunkeian-aragaki-shintomicho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1313/A131301/13210026/"
   },
   {
     "id": "tabelog-tempura-tempura-asanuma-nihonbashi",
@@ -5591,7 +5666,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-asanuma-nihonbashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130202/13275655/"
   },
   {
     "id": "tabelog-tempura-tempura-maehira-azabu-juban",
@@ -5658,7 +5734,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-maehira-azabu-juban.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130702/13212060/"
   },
   {
     "id": "tabelog-tempura-tempura-yamanoue-ginza-higashi-ginza",
@@ -5758,7 +5835,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-yamanoue-ginza-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13207702/"
   },
   {
     "id": "tabelog-tempura-tempura-kawaharazaki-naniwabashi",
@@ -5825,7 +5903,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-kawaharazaki-naniwabashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270102/27070191/"
   },
   {
     "id": "tabelog-tempura-ippoh-honten-higobashi",
@@ -5916,7 +5995,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-ippoh-honten-higobashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270102/27000267/"
   },
   {
     "id": "tabelog-tempura-tenfura-matsuyamachi-seiten-sakaisuji-hommachi",
@@ -5983,7 +6063,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tenfura-matsuyamachi-seiten-sakaisuji-hommachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270106/27108617/"
   },
   {
     "id": "tabelog-tempura-numata-kitashinchi",
@@ -6012,7 +6093,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-numata-kitashinchi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27119864/"
   },
   {
     "id": "tabelog-tempura-shunten-shin-tanimachi-kyuchome",
@@ -6041,7 +6123,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-shunten-shin-tanimachi-kyuchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270205/27118815/"
   },
   {
     "id": "tabelog-tempura-numata-sou-naniwabashi",
@@ -6141,7 +6224,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-numata-sou-naniwabashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27140129/"
   },
   {
     "id": "tabelog-tempura-tempura-yoshikawa-kyoto-shiyakusho-mae",
@@ -6232,7 +6316,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-yoshikawa-kyoto-shiyakusho-mae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26001150/"
   },
   {
     "id": "tabelog-tempura-tenyaka-kamigyo",
@@ -6299,7 +6384,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tenyaka-kamigyo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260501/26011319/"
   },
   {
     "id": "tabelog-tempura-tempura-kawatatsu-katsuragawa",
@@ -6378,7 +6464,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tempura-kawatatsu-katsuragawa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260401/26004797/"
   },
   {
     "id": "tabelog-tempura-tenpura-kyobayashi-kyoto-station",
@@ -6469,7 +6556,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tempura-tenpura-kyobayashi-kyoto-station.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260101/26000484/"
   },
   {
     "id": "tabelog-yakitori-yakitori-imai-gaienmae",
@@ -6531,7 +6619,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-yakitori-imai-gaienmae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1306/A130603/13025995/"
   },
   {
     "id": "tabelog-yakitori-tokoshima-nishi-taishido",
@@ -6598,7 +6687,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-tokoshima-nishi-taishido.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1317/A131706/13114433/"
   },
   {
     "id": "tabelog-yakitori-torisawa-kameido",
@@ -6665,7 +6755,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-torisawa-kameido.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1312/A131202/13135959/"
   },
   {
     "id": "tabelog-yakitori-toriyoshi-nakameguro-honten-nakameguro",
@@ -6737,7 +6828,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-toriyoshi-nakameguro-honten-nakameguro.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1317/A131701/13003200/"
   },
   {
     "id": "tabelog-yakitori-bless-morishita",
@@ -6799,7 +6891,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-bless-morishita.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1312/A131201/13246437/"
   },
   {
     "id": "tabelog-yakitori-minami-aoyama-nanachome-hiroo",
@@ -6861,7 +6954,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-minami-aoyama-nanachome-hiroo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130703/13200559/"
   },
   {
     "id": "tabelog-yakitori-yakitori-nakamura-toranomon-hills",
@@ -6928,7 +7022,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-yakitori-nakamura-toranomon-hills.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1308/A130802/13299397/"
   },
   {
     "id": "tabelog-yakitori-toriyoshi-ginza-uchisaiwaicho",
@@ -7000,7 +7095,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-toriyoshi-ginza-uchisaiwaicho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13016582/"
   },
   {
     "id": "tabelog-yakitori-tori-aroma-jinbocho",
@@ -7067,7 +7163,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-tori-aroma-jinbocho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1310/A131003/13280797/"
   },
   {
     "id": "tabelog-yakitori-ogawa-ningyocho",
@@ -7149,7 +7246,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-ogawa-ningyocho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130204/13063782/"
   },
   {
     "id": "tabelog-yakitori-nezu-yakitori-terusumi-nezu",
@@ -7211,7 +7309,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-nezu-yakitori-terusumi-nezu.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131106/13182104/"
   },
   {
     "id": "tabelog-yakitori-shirokane-toritama-honten-hiroo",
@@ -7278,7 +7377,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-shirokane-toritama-honten-hiroo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1316/A131602/13005504/"
   },
   {
     "id": "tabelog-yakitori-yakitori-kokure-fukushima",
@@ -7350,7 +7450,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-yakitori-kokure-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27114944/"
   },
   {
     "id": "tabelog-yakitori-ryobo-yotsubashi",
@@ -7421,7 +7522,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-ryobo-yotsubashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270201/27135982/"
   },
   {
     "id": "tabelog-yakitori-goichi-nakazakicho",
@@ -7493,7 +7595,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-goichi-nakazakicho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27060097/"
   },
   {
     "id": "tabelog-yakitori-ichijuu-fukushima",
@@ -7565,7 +7668,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-ichijuu-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27085273/"
   },
   {
     "id": "tabelog-yakitori-sumibi-yakitori-kokure-shin-fukushima",
@@ -7637,7 +7741,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-sumibi-yakitori-kokure-shin-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27092024/"
   },
   {
     "id": "tabelog-yakitori-goichi-nishitenma-oebashi",
@@ -7725,7 +7830,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-goichi-nishitenma-oebashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270102/27128378/"
   },
   {
     "id": "tabelog-yakitori-sumibi-sosai-toriya-hitomi-sanjo-keihan",
@@ -7792,7 +7898,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-sumibi-sosai-toriya-hitomi-sanjo-keihan.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260301/26005610/"
   },
   {
     "id": "tabelog-yakitori-yakitori-kyoto-tachibana-kyoto-shiyakusho-mae",
@@ -7875,7 +7982,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-yakitori-kyoto-tachibana-kyoto-shiyakusho-mae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26036590/"
   },
   {
     "id": "tabelog-yakitori-wabiya-korekido-gion-hanamikoji-gion-shijo",
@@ -7966,7 +8074,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakitori-wabiya-korekido-gion-hanamikoji-gion-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260301/26000850/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-aoki-daimon-daimon",
@@ -8048,7 +8157,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-aoki-daimon-daimon.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1314/A131401/13190933/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsujp-omotesando-omotesando",
@@ -8130,7 +8240,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsujp-omotesando-omotesando.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1306/A130602/13264557/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-enraku-ikegami",
@@ -8212,7 +8323,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-enraku-ikegami.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1317/A131714/13034183/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-oryu-shirokane-takanawa",
@@ -8303,7 +8415,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-oryu-shirokane-takanawa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1316/A131602/13249768/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-narikura-minami-asagaya",
@@ -8376,7 +8489,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-narikura-minami-asagaya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1319/A131905/13236380/"
   },
   {
     "id": "tabelog-tonkatsu-maruichi-keikyu-kamata",
@@ -8442,7 +8556,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-maruichi-keikyu-kamata.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1315/A131503/13017765/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-aoki-ginza-8-chome-shimbashi",
@@ -8533,7 +8648,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-aoki-ginza-8-chome-shimbashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13219635/"
   },
   {
     "id": "tabelog-tonkatsu-tonpei-uguisudani",
@@ -8624,7 +8740,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonpei-uguisudani.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131104/13069370/"
   },
   {
     "id": "tabelog-tonkatsu-nishimura-higashi-ginza",
@@ -8686,7 +8803,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-nishimura-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13025298/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-nanaido-gaienmae",
@@ -8748,7 +8866,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-nanaido-gaienmae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1306/A130603/13229075/"
   },
   {
     "id": "tabelog-tonkatsu-kurobuta-tonkatsu-horiichi-shimbashi",
@@ -8813,7 +8932,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-kurobuta-tonkatsu-horiichi-shimbashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130103/13258841/"
   },
   {
     "id": "tabelog-tonkatsu-tokyo-tonkatsu-gabuu-ueno-okachimachi",
@@ -8913,7 +9033,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tokyo-tonkatsu-gabuu-ueno-okachimachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131101/13308066/"
   },
   {
     "id": "tabelog-tonkatsu-new-babe-tanimachi-yonchome",
@@ -9005,7 +9126,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-new-babe-tanimachi-yonchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270104/27121557/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-koshiro-shinsaibashi",
@@ -9127,7 +9249,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-koshiro-shinsaibashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270201/27134224/"
   },
   {
     "id": "tabelog-tonkatsu-takuya-higashi-umeda",
@@ -9194,7 +9317,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-takuya-higashi-umeda.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27002290/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-nakamura-senbayashi-omiya",
@@ -9285,7 +9409,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-nakamura-senbayashi-omiya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270304/27092639/"
   },
   {
     "id": "tabelog-tonkatsu-shibaken-noe-uchindai",
@@ -9376,7 +9501,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-shibaken-noe-uchindai.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270304/27124443/"
   },
   {
     "id": "tabelog-tonkatsu-epais-kitashinchi",
@@ -9463,7 +9589,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-epais-kitashinchi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27072441/"
   },
   {
     "id": "tabelog-tonkatsu-utsusemitei-nijojo-mae",
@@ -9545,7 +9672,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-utsusemitei-nijojo-mae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260203/26030601/"
   },
   {
     "id": "tabelog-tonkatsu-jukuseibuta-kawamura-yamashina",
@@ -9612,7 +9740,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-jukuseibuta-kawamura-yamashina.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260603/26029597/"
   },
   {
     "id": "tabelog-tonkatsu-tonkatsu-yamamoto-kyoto-shiyakusho-mae",
@@ -9703,7 +9832,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-tonkatsu-tonkatsu-yamamoto-kyoto-shiyakusho-mae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26006075/"
   },
   {
     "id": "tabelog-yakiniku-sato-brian-nigou-asagaya",
@@ -9775,7 +9905,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-sato-brian-nigou-asagaya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1319/A131905/13159782/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-reimen-yuchun-roppongi",
@@ -9875,7 +10006,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-reimen-yuchun-roppongi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130701/13230170/"
   },
   {
     "id": "tabelog-yakiniku-akasaka-raimon-akasaka-mitsuke",
@@ -9932,7 +10064,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-akasaka-raimon-akasaka-mitsuke.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1308/A130801/13224635/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-jumbo-shinozaki-honten-edogawa",
@@ -10004,7 +10137,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-jumbo-shinozaki-honten-edogawa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1312/A131205/13003075/"
   },
   {
     "id": "tabelog-yakiniku-kirakutei-hiroo",
@@ -10071,7 +10205,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-kirakutei-hiroo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130703/13007145/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-reimen-daiju-otsuka",
@@ -10171,7 +10306,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-reimen-daiju-otsuka.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1323/A132302/13245971/"
   },
   {
     "id": "tabelog-yakiniku-shimura-tokujuen-shimura-sakaue",
@@ -10238,7 +10374,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-shimura-tokujuen-shimura-sakaue.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1322/A132205/13043209/"
   },
   {
     "id": "tabelog-yakiniku-yugentei-nishiazabu-honten-hiroo",
@@ -10310,7 +10447,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yugentei-nishiazabu-honten-hiroo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130701/13003488/"
   },
   {
     "id": "tabelog-yakiniku-akasaka-ozeki-honten-akasaka-mitsuke",
@@ -10382,7 +10520,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-akasaka-ozeki-honten-akasaka-mitsuke.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1308/A130801/13015197/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-shimizu-fudomae",
@@ -10449,7 +10588,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-shimizu-fudomae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1317/A131710/13096548/"
   },
   {
     "id": "tabelog-yakiniku-yamadaya-mikawashima",
@@ -10515,7 +10655,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yamadaya-mikawashima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131104/13032374/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-jumbo-hanare-hongo-sanchome",
@@ -10587,7 +10728,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-jumbo-hanare-hongo-sanchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1310/A131004/13160962/"
   },
   {
     "id": "tabelog-yakiniku-rikichan-kitahama-kitahama",
@@ -10659,7 +10801,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-rikichan-kitahama-kitahama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270102/27133700/"
   },
   {
     "id": "tabelog-yakiniku-kitan-in-namba",
@@ -10759,7 +10902,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-kitan-in-namba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270202/27128757/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-kappa-kajioka-shonai",
@@ -10826,7 +10970,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-kappa-kajioka-shonai.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2706/A270601/27023459/"
   },
   {
     "id": "tabelog-yakiniku-kuku-hanare-sakai-higashi",
@@ -10926,7 +11071,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-kuku-hanare-sakai-higashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2705/A270501/27128792/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-masachan-tsumori",
@@ -10988,7 +11134,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-masachan-tsumori.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270406/27023255/"
   },
   {
     "id": "tabelog-yakiniku-kitashinchi-yamagataya-kitashinchi",
@@ -11055,7 +11202,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-kitashinchi-yamagataya-kitashinchi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27011099/"
   },
   {
     "id": "tabelog-yakiniku-hatsuda-shugakuin",
@@ -11084,7 +11232,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-hatsuda-shugakuin.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260303/26006045/"
   },
   {
     "id": "tabelog-yakiniku-yakiniku-yazawa-kyoto-shijo",
@@ -11164,7 +11313,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-yakiniku-yazawa-kyoto-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26028368/"
   },
   {
     "id": "tabelog-yakiniku-niku-ryori-arakawa-kyoto-kawaramachi",
@@ -11231,7 +11381,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-niku-ryori-arakawa-kyoto-kawaramachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26006491/"
   },
   {
     "id": "tabelog-yakiniku-ebata-kamigyo",
@@ -11298,7 +11449,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-yakiniku-ebata-kamigyo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260501/26001035/"
   },
   {
     "id": "tabelog-soba-la-strada-nakano-sakaue",
@@ -11355,7 +11507,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-la-strada-nakano-sakaue.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1319/A131903/13141774/"
   },
   {
     "id": "tabelog-soba-soba-sasuga-higashi-ginza",
@@ -11455,7 +11608,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-soba-sasuga-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13002488/"
   },
   {
     "id": "tabelog-soba-edo-soba-hosokawa-ryogoku",
@@ -11517,7 +11671,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-edo-soba-hosokawa-ryogoku.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1312/A131201/13002967/"
   },
   {
     "id": "tabelog-soba-tamawarai-meiji-jingumae",
@@ -11590,7 +11745,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-tamawarai-meiji-jingumae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1306/A130601/13129390/"
   },
   {
     "id": "tabelog-soba-tsukiji-bunkajin-tsukiji",
@@ -11664,7 +11820,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-tsukiji-bunkajin-tsukiji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13159030/"
   },
   {
     "id": "tabelog-soba-teuchi-soba-matsunaga-kita-sando",
@@ -11731,7 +11888,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-teuchi-soba-matsunaga-kita-sando.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1306/A130601/13024514/"
   },
   {
     "id": "tabelog-soba-kyoshin-nezu",
@@ -11813,7 +11971,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-kyoshin-nezu.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131106/13187177/"
   },
   {
     "id": "tabelog-soba-teuchi-soba-jiyusan-higashi-nagasaki",
@@ -11875,7 +12034,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-teuchi-soba-jiyusan-higashi-nagasaki.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1321/A132101/13025978/"
   },
   {
     "id": "tabelog-soba-namiki-yabusoba-asakusa",
@@ -11937,7 +12097,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-namiki-yabusoba-asakusa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131102/13003650/"
   },
   {
     "id": "tabelog-soba-soba-an-mitate-azabu-juban",
@@ -11999,7 +12160,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-soba-an-mitate-azabu-juban.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130702/13274939/"
   },
   {
     "id": "tabelog-soba-muromachi-sunaba-nihonbashi-shin-nihonbashi",
@@ -12086,7 +12248,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-muromachi-sunaba-nihonbashi-shin-nihonbashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1310/A131002/13000316/"
   },
   {
     "id": "tabelog-soba-asakusa-juroku-asakusa",
@@ -12158,7 +12321,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-asakusa-juroku-asakusa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131102/13185027/"
   },
   {
     "id": "tabelog-soba-sobakiri-oshiro-tsurugaoka",
@@ -12220,7 +12384,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-sobakiri-oshiro-tsurugaoka.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270203/27051719/"
   },
   {
     "id": "tabelog-soba-makino-fukushima",
@@ -12303,7 +12468,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-makino-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27002682/"
   },
   {
     "id": "tabelog-soba-sobajin-aki-kitahama",
@@ -12394,7 +12560,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-sobajin-aki-kitahama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270102/27003569/"
   },
   {
     "id": "tabelog-soba-osaka-matsushita-nakazakicho",
@@ -12461,7 +12628,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-osaka-matsushita-nakazakicho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27086760/"
   },
   {
     "id": "tabelog-soba-teuchi-soba-noda-koritsu",
@@ -12543,7 +12711,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-teuchi-soba-noda-koritsu.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2707/A270704/27013548/"
   },
   {
     "id": "tabelog-soba-soba-takama-tenjimbashisuji-rokuchome",
@@ -12605,7 +12774,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-soba-takama-tenjimbashisuji-rokuchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270103/27000530/"
   },
   {
     "id": "tabelog-soba-teuchi-soba-hanamomo-marutamachi",
@@ -12672,7 +12842,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-teuchi-soba-hanamomo-marutamachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26016470/"
   },
   {
     "id": "tabelog-soba-soba-roujina-kyoto-shiyakusho-mae",
@@ -12763,7 +12934,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-soba-soba-roujina-kyoto-shiyakusho-mae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26023992/"
   },
   {
     "id": "tabelog-udon-kitsune-an-higashi-ginza",
@@ -12855,7 +13027,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-kitsune-an-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13181414/"
   },
   {
     "id": "tabelog-udon-teuchi-udon-kogera-higashimurayama",
@@ -12917,7 +13090,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-teuchi-udon-kogera-higashimurayama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1328/A132805/13163619/"
   },
   {
     "id": "tabelog-udon-oniyanma-nakameguro-nakameguro",
@@ -12989,7 +13163,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-oniyanma-nakameguro-nakameguro.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1317/A131701/13199054/"
   },
   {
     "id": "tabelog-udon-teuchi-shimada-omotesando",
@@ -13071,7 +13246,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-teuchi-shimada-omotesando.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1306/A130602/13006991/"
   },
   {
     "id": "tabelog-udon-taniya-suitengumae",
@@ -13143,7 +13319,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-taniya-suitengumae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130204/13114085/"
   },
   {
     "id": "tabelog-udon-tenchaya-nanakura-shimbashi",
@@ -13205,7 +13382,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-tenchaya-nanakura-shimbashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130103/13002602/"
   },
   {
     "id": "tabelog-udon-udon-shin-minami-shinjuku",
@@ -13277,7 +13455,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-udon-shin-minami-shinjuku.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1304/A130401/13125862/"
   },
   {
     "id": "tabelog-udon-oniyanma-shimbashi-shimbashi",
@@ -13349,7 +13528,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-oniyanma-shimbashi-shimbashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130103/13162575/"
   },
   {
     "id": "tabelog-udon-murayama-mangetsu-udon-musashimurayama",
@@ -13411,7 +13591,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-murayama-mangetsu-udon-musashimurayama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1329/A132901/13026307/"
   },
   {
     "id": "tabelog-udon-teuchi-udon-hasegawa-oizumi-gakuen",
@@ -13493,7 +13674,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-teuchi-udon-hasegawa-oizumi-gakuen.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1321/A132103/13105083/"
   },
   {
     "id": "tabelog-udon-shosan-keisei-tateishi",
@@ -13560,7 +13742,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-shosan-keisei-tateishi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1324/A132403/13022111/"
   },
   {
     "id": "tabelog-udon-godaime-hanayama-udon-ginza-higashi-ginza",
@@ -13652,7 +13835,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-godaime-hanayama-udon-ginza-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13200630/"
   },
   {
     "id": "tabelog-udon-udon-kurajyu-senbayashi-omiya",
@@ -13739,7 +13923,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-udon-kurajyu-senbayashi-omiya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270304/27000719/"
   },
   {
     "id": "tabelog-udon-usamitei-matsubaya-shinsaibashi",
@@ -13806,7 +13991,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-usamitei-matsubaya-shinsaibashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270201/27000931/"
   },
   {
     "id": "tabelog-udon-udon-sanku-shin-fukushima",
@@ -13873,7 +14059,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-udon-sanku-shin-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27066859/"
   },
   {
     "id": "tabelog-udon-mitsushima-shinuchi-kadomashi",
@@ -13902,7 +14089,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-mitsushima-shinuchi-kadomashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2707/A270701/27107160/"
   },
   {
     "id": "tabelog-udon-ue-wo-muite-korien",
@@ -13964,7 +14152,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-ue-wo-muite-korien.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2707/A270702/27094977/"
   },
   {
     "id": "tabelog-udon-chitose-honten-namba",
@@ -14031,7 +14220,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-chitose-honten-namba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270202/27002763/"
   },
   {
     "id": "tabelog-udon-okakita-higashiyama",
@@ -14093,7 +14283,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-okakita-higashiyama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260302/26000919/"
   },
   {
     "id": "tabelog-udon-yamamoto-menzo-higashiyama",
@@ -14160,7 +14351,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-udon-yamamoto-menzo-higashiyama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260301/26002504/"
   },
   {
     "id": "tabelog-unagi-unagi-mejiro-zorome-mejiro",
@@ -14251,7 +14443,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-unagi-mejiro-zorome-mejiro.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1305/A130502/13224277/"
   },
   {
     "id": "tabelog-unagi-ishibashi-edogawabashi",
@@ -14333,7 +14526,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-ishibashi-edogawabashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1309/A130905/13003531/"
   },
   {
     "id": "tabelog-unagi-ginza-yondaime-takahashiya-higashi-ginza",
@@ -14400,7 +14594,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-ginza-yondaime-takahashiya-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13262334/"
   },
   {
     "id": "tabelog-unagi-shinsen-ichinoya-shinsen",
@@ -14491,7 +14686,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-shinsen-ichinoya-shinsen.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1303/A130301/13004659/"
   },
   {
     "id": "tabelog-unagi-unagi-akimoto-kojimachi",
@@ -14582,7 +14778,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-unagi-akimoto-kojimachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1308/A130803/13000415/"
   },
   {
     "id": "tabelog-unagi-hashimoto-edogawabashi",
@@ -14673,7 +14870,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-hashimoto-edogawabashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1309/A130905/13003531/"
   },
   {
     "id": "tabelog-unagi-unagi-aikawa-takadanobaba",
@@ -14755,7 +14953,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-unagi-aikawa-takadanobaba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1305/A130503/13029734/"
   },
   {
     "id": "tabelog-unagi-yashima-shin-okachimachi",
@@ -14855,7 +15054,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-yashima-shin-okachimachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131101/13024325/"
   },
   {
     "id": "tabelog-unagi-yama-no-chaya-akasaka-mitsuke",
@@ -14946,7 +15146,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-yama-no-chaya-akasaka-mitsuke.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1308/A130802/13002739/"
   },
   {
     "id": "tabelog-unagi-tsugumian-komagome",
@@ -14997,7 +15198,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-tsugumian-komagome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1323/A132301/13080463/"
   },
   {
     "id": "tabelog-unagi-unagiya-higashi-nagasaki",
@@ -15079,7 +15281,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-unagiya-higashi-nagasaki.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1321/A132101/13012445/"
   },
   {
     "id": "tabelog-unagi-watabe-kasuga",
@@ -15161,7 +15364,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-watabe-kasuga.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1310/A131003/13042184/"
   },
   {
     "id": "tabelog-unagi-uoi-honten-sekime-takadono",
@@ -15261,7 +15465,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-uoi-honten-sekime-takadono.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270304/27003671/"
   },
   {
     "id": "tabelog-unagi-unagi-nishihara-tanimachi-yonchome",
@@ -15343,7 +15548,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-unagi-nishihara-tanimachi-yonchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270104/27081196/"
   },
   {
     "id": "tabelog-unagi-yoshitora-sakaisuji-hommachi",
@@ -15425,7 +15631,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-yoshitora-sakaisuji-hommachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270106/27001073/"
   },
   {
     "id": "tabelog-unagi-warajiya-shichijo",
@@ -15516,7 +15723,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-warajiya-shichijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260304/26000406/"
   },
   {
     "id": "tabelog-unagi-daikokuya-unagibei-karasuma",
@@ -15583,7 +15791,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-daikokuya-unagibei-karasuma.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26030320/"
   },
   {
     "id": "tabelog-unagi-unagiya-hirokawa-arashiyama",
@@ -15674,7 +15883,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-unagi-unagiya-hirokawa-arashiyama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260403/26000921/"
   },
   {
     "id": "tabelog-okonomiyaki-santekan-roppongi-itchome",
@@ -15774,7 +15984,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-santekan-roppongi-itchome.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130701/13163322/"
   },
   {
     "id": "tabelog-okonomiyaki-okonomiyaki-imari-ebisu-daikanyama",
@@ -15846,7 +16057,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-okonomiyaki-imari-ebisu-daikanyama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1303/A130302/13155810/"
   },
   {
     "id": "tabelog-okonomiyaki-ushio-roppongi",
@@ -15913,7 +16125,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-ushio-roppongi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1307/A130701/13038559/"
   },
   {
     "id": "tabelog-okonomiyaki-okotaro-kameari",
@@ -15980,7 +16193,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-okotaro-kameari.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1324/A132403/13061247/"
   },
   {
     "id": "tabelog-okonomiyaki-okonomiyaki-kiji-shinagawa-shinagawa",
@@ -16080,7 +16294,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-okonomiyaki-kiji-shinagawa-shinagawa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1314/A131403/13120197/"
   },
   {
     "id": "tabelog-okonomiyaki-naniwa-nerima",
@@ -16152,7 +16367,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-naniwa-nerima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1321/A132102/13008999/"
   },
   {
     "id": "tabelog-okonomiyaki-fukutake-hasunuma",
@@ -16219,7 +16435,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-fukutake-hasunuma.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1317/A131714/13003312/"
   },
   {
     "id": "tabelog-okonomiyaki-genki-kinshicho",
@@ -16286,7 +16503,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-genki-kinshicho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1312/A131201/13072955/"
   },
   {
     "id": "tabelog-okonomiyaki-okonomiyaki-dan-namba",
@@ -16353,7 +16571,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-okonomiyaki-dan-namba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270202/27123588/"
   },
   {
     "id": "tabelog-okonomiyaki-dontaku-nakazakicho",
@@ -16420,7 +16639,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-dontaku-nakazakicho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27009618/"
   },
   {
     "id": "tabelog-okonomiyaki-hana-osakajo-kitazume",
@@ -16487,7 +16707,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-hana-osakajo-kitazume.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270107/27019304/"
   },
   {
     "id": "tabelog-okonomiyaki-okonomiyaki-shimizu-nakanoshima",
@@ -16516,7 +16737,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-okonomiyaki-shimizu-nakanoshima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270102/27118081/"
   },
   {
     "id": "tabelog-okonomiyaki-mizuno-namba",
@@ -16588,7 +16810,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-mizuno-namba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270202/27001278/"
   },
   {
     "id": "tabelog-okonomiyaki-zonoya-tamade",
@@ -16655,7 +16878,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-zonoya-tamade.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270406/27002851/"
   },
   {
     "id": "tabelog-okonomiyaki-okonomiyaki-yoshino-shichijo",
@@ -16712,7 +16936,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-okonomiyaki-yoshino-shichijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260304/26001618/"
   },
   {
     "id": "tabelog-okonomiyaki-yamamoto-mambo-kyoto-station",
@@ -16779,7 +17004,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-yamamoto-mambo-kyoto-station.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260101/26034294/"
   },
   {
     "id": "tabelog-okonomiyaki-arata-toji",
@@ -16846,7 +17072,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-arata-toji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260101/26001641/"
   },
   {
     "id": "tabelog-okonomiyaki-gion-negiyaki-kana-higashi-gion-shijo",
@@ -16913,7 +17140,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-okonomiyaki-gion-negiyaki-kana-higashi-gion-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260301/26000572/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-zakuro-tbs-akasaka",
@@ -17013,7 +17241,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-zakuro-tbs-akasaka.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1308/A130801/13002758/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-moritaya-tokyo-marunouchi-nijubashimae",
@@ -17113,7 +17342,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-moritaya-tokyo-marunouchi-nijubashimae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130201/13006083/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-mita-basara-honten-mita",
@@ -17213,7 +17443,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-mita-basara-honten-mita.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1314/A131402/13094054/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-yoyogi-imahan-minami-shinjuku",
@@ -17285,7 +17516,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-yoyogi-imahan-minami-shinjuku.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1318/A131810/13001039/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-tokyo-nikushabuya-hideaki-ginza",
@@ -17347,7 +17579,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-tokyo-nikushabuya-hideaki-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13287203/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-kagayaki-takaracho",
@@ -17414,7 +17647,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-kagayaki-takaracho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13187129/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-ningyocho-imahan-garden-terrace-nagatacho",
@@ -17514,7 +17748,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-ningyocho-imahan-garden-terrace-nagatacho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1308/A130803/13199422/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-kagayaki-minowa",
@@ -17543,7 +17778,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-kagayaki-minowa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1324/A132401/13083284/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-pretty-pork-factory-seibu-shinjuku",
@@ -17635,7 +17871,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-pretty-pork-factory-seibu-shinjuku.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1304/A130401/13254601/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-yonekyu-honten-asakusa",
@@ -17702,7 +17939,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-yonekyu-honten-asakusa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131102/13003667/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-ningyocho-imahan-ueno-hirokoji-ueno-hirokoji",
@@ -17802,7 +18040,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-ningyocho-imahan-ueno-hirokoji-ueno-hirokoji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1311/A131101/13005082/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-ningyocho-imahan-ginza-ginza",
@@ -17869,7 +18108,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-ningyocho-imahan-ginza-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13016566/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-harijyu-dotonbori-honten-osaka-namba",
@@ -17936,7 +18176,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-harijyu-dotonbori-honten-osaka-namba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270202/27001250/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-karen-osaka-shinsaibashi-shinsaibashi",
@@ -18036,7 +18277,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-karen-osaka-shinsaibashi-shinsaibashi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270201/27013726/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-shabutei-nishi-umeda-nishi-umeda",
@@ -18108,7 +18350,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-shabutei-nishi-umeda-nishi-umeda.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27003519/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-san-bettei-kitashinchi-kitashinchi",
@@ -18200,7 +18443,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-san-bettei-kitashinchi-kitashinchi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270101/27137152/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-toriou-bettei-shin-fukushima",
@@ -18267,7 +18511,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-toriou-bettei-shin-fukushima.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270108/27137353/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-yasuda-shirokitakoendori",
@@ -18329,7 +18574,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-yasuda-shirokitakoendori.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270304/27004667/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-moritaya-kiyamachi-sanjo",
@@ -18429,7 +18675,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-moritaya-kiyamachi-sanjo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26000410/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-sukiyaki-iroha-kitamise-gion-shijo",
@@ -18501,7 +18748,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-sukiyaki-iroha-kitamise-gion-shijo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260201/26002605/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-moritaya-jr-kyoto-isetan-kyoto-station",
@@ -18573,7 +18821,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-moritaya-jr-kyoto-isetan-kyoto-station.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260101/26000411/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-moritaya-shijo-inokuma-omiya",
@@ -18673,7 +18922,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-moritaya-shijo-inokuma-omiya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260203/26000409/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-hyoto-kyoto-ekimae-kyoto-station",
@@ -18773,7 +19023,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-hyoto-kyoto-ekimae-kyoto-station.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260101/26031208/"
   },
   {
     "id": "tabelog-sukiyaki-shabu-shabu-yamafuku-sanjo",
@@ -18845,7 +19096,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-sukiyaki-shabu-shabu-yamafuku-sanjo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260301/26019742/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-meatpia-yonezawa",
@@ -18936,7 +19188,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-meatpia-yonezawa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/yamagata/A0602/A060201/6000398/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-ichifuji-shokudo-osaka-temmangu",
@@ -18998,7 +19251,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-ichifuji-shokudo-osaka-temmangu.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270103/27031421/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-hanafusa-izumo",
@@ -19065,7 +19319,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-hanafusa-izumo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/shimane/A3202/A320201/32000232/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-nishimura-shokudo-toba",
@@ -19132,7 +19387,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-nishimura-shokudo-toba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/mie/A2403/A240302/24000942/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-hakko-shokudo-ohori-koen",
@@ -19214,7 +19470,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-hakko-shokudo-ohori-koen.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/fukuoka/A4001/A400105/40050325/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-katsuretsu-yotsuya-takeda-yotsuya",
@@ -19301,7 +19558,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-katsuretsu-yotsuya-takeda-yotsuya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1309/A130902/13131643/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-motsuni-taro-kashiwa",
@@ -19368,7 +19626,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-motsuni-taro-kashiwa.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/chiba/A1203/A120301/12001718/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-daikoku-namba",
@@ -19430,7 +19689,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-daikoku-namba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/osaka/A2701/A270202/27001293/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-kyokasuzuke-uokyu-ginza-higashi-ginza",
@@ -19492,7 +19752,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-kyokasuzuke-uokyu-ginza-higashi-ginza.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1301/A130101/13005687/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-sanpukutei-bakurocho",
@@ -19579,7 +19840,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-sanpukutei-bakurocho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130204/13059379/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-hamabe-hamakanaya",
@@ -19646,7 +19908,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-hamabe-hamakanaya.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/chiba/A1206/A120603/12035117/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-wakayanagi-shokudo-saga",
@@ -19713,7 +19976,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-wakayanagi-shokudo-saga.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/saga/A4101/A410101/41001919/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-sazanami-ise-ise",
@@ -19780,7 +20044,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-sazanami-ise-ise.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/mie/A2403/A240301/24001215/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-shokudo-namae-kitakata",
@@ -19852,7 +20117,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-shokudo-namae-kitakata.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/fukushima/A0706/A070601/7000006/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-aji-fry-shokudo-kaba-beppu",
@@ -19927,7 +20193,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-aji-fry-shokudo-kaba-beppu.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/fukuoka/A4001/A400202/40057140/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-nonkiya-mune-marutamachi",
@@ -19994,7 +20261,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-nonkiya-mune-marutamachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/kyoto/A2601/A260202/26016501/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-tarafuku-yono-hommachi",
@@ -20081,7 +20349,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-tarafuku-yono-hommachi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/saitama/A1101/A110101/11046666/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-suwachika-osaki-hirokoji",
@@ -20143,7 +20412,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-suwachika-osaki-hirokoji.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1316/A131603/13014630/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-shunya-banchan-ishigaki",
@@ -20205,7 +20475,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-shunya-banchan-ishigaki.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/okinawa/A4705/A470501/47012017/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-suzuki-sengyo-niigata-chuo",
@@ -20272,7 +20543,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-suzuki-sengyo-niigata-chuo.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/niigata/A1501/A150101/15011022/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-kyuroku-kannon",
@@ -20339,7 +20611,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-kyuroku-kannon.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/chiba/A1205/A120501/12000082/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-naochan-nobeoka",
@@ -20426,7 +20699,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-naochan-nobeoka.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/miyazaki/A4505/A450501/45000063/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-rebanira-kin-taro-tokyo-shimbamba",
@@ -20473,7 +20747,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-rebanira-kin-taro-tokyo-shimbamba.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1314/A131405/13289015/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-kappa-kurashiki",
@@ -20555,7 +20830,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-kappa-kurashiki.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/okayama/A3302/A330201/33000185/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-jintei-koriyama",
@@ -20646,7 +20922,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-jintei-koriyama.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/fukushima/A0702/A070201/7000028/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-katei-saien-sasaki-mejiro",
@@ -20728,7 +21005,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-katei-saien-sasaki-mejiro.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1305/A130502/13012434/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-shokudo-wata-shinjuku-gyoenmae",
@@ -20811,7 +21089,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-shokudo-wata-shinjuku-gyoenmae.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1304/A130402/13301720/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-umeyama-teppei-shokudo-watanabedori",
@@ -20878,7 +21157,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-umeyama-teppei-shokudo-watanabedori.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/fukuoka/A4001/A400103/40018886/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-himi-uoichiba-shokudo-himi",
@@ -20950,7 +21230,8 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-himi-uoichiba-shokudo-himi.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/toyama/A1604/A160402/16008630/"
   },
   {
     "id": "tabelog-hyakumeiten-top-100-uokyu-ajimise-honten-ningyocho",
@@ -21032,6 +21313,7 @@
     "hours_cache_date": "2026-05-19",
     "hero_image": "/eat/tabelog-hyakumeiten-top-100-uokyu-ajimise-honten-ningyocho.webp",
     "hero_attribution": "Photo via Google",
-    "time_sensitive": true
+    "time_sensitive": true,
+    "tabelog_url": "https://tabelog.com/en/tokyo/A1302/A130204/13051336/"
   }
 ]
