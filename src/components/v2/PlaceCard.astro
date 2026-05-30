@@ -157,6 +157,16 @@ const searchText = [
         <a class="plc-map" href={mapsUrl} target="_blank" rel="noopener">
           View on Google Maps&nbsp;→
         </a>
+        {d.klook_url && (
+          <a
+            class="plc-klook"
+            href={d.klook_url}
+            target="_blank"
+            rel="sponsored noopener"
+          >
+            Book tickets on Klook&nbsp;→
+          </a>
+        )}
       </div>
     </article>
   )
@@ -340,6 +350,30 @@ const searchText = [
   .plc-map:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+
+  /* Klook affiliate CTA — ink-black primary button. Only rendered when
+     the entry carries `klook_url`. Site-wide affiliate disclosure in
+     SiteFooter covers the sponsored relationship. */
+  .plc-klook {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--color-ink-black);
+    color: var(--color-rice-white);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
+    transition: opacity 120ms ease-out;
+  }
+  .plc-klook:hover,
+  .plc-klook:focus-visible {
+    opacity: 0.85;
   }
 
   @media (min-width: 1024px) {
