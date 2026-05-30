@@ -352,28 +352,21 @@ const searchText = [
     text-underline-offset: 3px;
   }
 
-  /* Klook affiliate CTA — ink-black primary button. Only rendered when
-     the entry carries `klook_url`. Site-wide affiliate disclosure in
-     SiteFooter covers the sponsored relationship. */
+  /* Klook affiliate CTA — twin of .plc-map (same typography, weight,
+     arrow, hover) so the two outbound actions read as equals. Only
+     rendered when the entry carries `klook_url`. Site-wide affiliate
+     disclosure in SiteFooter covers the sponsored relationship. */
   .plc-klook {
-    display: block;
-    margin-top: 10px;
-    padding: 10px 12px;
-    background: var(--color-ink-black);
-    color: var(--color-rice-white);
     font-family: var(--font-mono);
     font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--color-ink-black);
     text-decoration: none;
-    text-transform: uppercase;
-    border-radius: var(--radius-sm);
-    transition: opacity 120ms ease-out;
   }
-  .plc-klook:hover,
-  .plc-klook:focus-visible {
-    opacity: 0.85;
+  .plc-klook:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 
   @media (min-width: 1024px) {
