@@ -49,19 +49,15 @@ export function restaurantCity(r) {
   return NAMED_CITIES.has(r.city) ? r.city.toLowerCase() : "elsewhere";
 }
 
-/* Planning flags — two single-select dimensions. Within a dimension the
-   chips are mutually exclusive (a restaurant is either walk-in or
-   reservation-only; either ¥ or ¥¥¥¥), so picking one unpicks its sibling —
-   AND-ing two flags from the same dimension would always yield 0 results.
-   The two dimensions combine: Walk-in OK + Casual is a valid pairing.
-   "recommended" reservations carry no flag — too ambiguous to filter on
-   (BUILD_SPEC §3). */
-export const FLAG_CHIPS = [
-  { slug: "walk-in", label: "Walk-in OK", dim: "reservation" },
-  { slug: "reservation", label: "Reservation needed", dim: "reservation" },
-  { slug: "casual", label: "Casual (¥)", dim: "price" },
-  { slug: "splurge", label: "Splurge (¥¥¥¥)", dim: "price" },
-];
+/* Planning flag chips (walk-in / reservation / casual / splurge) were
+   removed: source data assigns `reservation_required` and `price_tier`
+   per-cuisine stereotype, so combining them with a cuisine chip almost
+   always collapsed to 0 (e.g. every Sushi row is yes+¥¥¥¥, every Ramen
+   row is walk-in+¥). The chips were honest about that, but they
+   double-encoded the cuisine selection, so they're gone as filters.
+   `reservation_required` and `price_tier` are still shown on each card
+   (badge + meta line); only the filter UI was removed. Reinstate the
+   chips alongside any future per-restaurant flag enrichment pass. */
 
 /* cuisine_chip -> colour-block token (BUILD_SPEC §5). Drives the card's
    placeholder block. `red-deep` is Tokyo Signal Red darkened ~30% so the
@@ -87,16 +83,4 @@ const SLUG_BY_VALUE = new Map(CUISINE_CHIPS.map((c) => [c.value, c.slug]));
 /* cuisine_chip value -> URL slug. */
 export function cuisineSlug(value) {
   return SLUG_BY_VALUE.get(value) ?? "";
-}
-
-/* Planning-flag slugs that apply to one restaurant record. Precomputed at
-   build time and stamped onto the card as `data-flags` so the client
-   filter never needs to ship this logic. */
-export function restaurantFlags(r) {
-  const out = [];
-  if (r.reservation_required === "walk-in OK") out.push("walk-in");
-  if (r.reservation_required === "yes") out.push("reservation");
-  if (r.price_tier === "¥") out.push("casual");
-  if (r.price_tier === "¥¥¥¥") out.push("splurge");
-  return out;
 }

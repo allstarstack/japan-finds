@@ -588,22 +588,36 @@ const PLACES_ROW_COUNT = PLACES_LEGEND.filter((c) => c.slug !== "_base").length;
     text-transform: uppercase;
     color: var(--color-ink-60);
   }
+  /* Expand/collapse control. Concrete-gray bordered box with ink-black
+     chevron — reads as a secondary button (not the heavier filled-red
+     CTA weight). 44×44 hit target clears WCAG 2.2 target-size; the
+     bigger box also offsets the meta-row's counts text visually so the
+     control reads as the primary interactive thing in that row. */
   .map-legend-caret {
     appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
     background: transparent;
-    border: 0;
-    padding: 2px 4px;
-    margin: -2px -4px;
+    border: 1.5px solid var(--color-concrete-gray);
+    border-radius: var(--radius-sm);
     color: var(--color-ink-black);
     font-family: var(--font-mono);
-    font-size: 12px;
-    cursor: pointer;
+    font-size: 14px;
     line-height: 1;
+    cursor: pointer;
+    transition: border-color 120ms ease-out, background 120ms ease-out;
+  }
+  .map-legend-caret:hover {
+    border-color: var(--color-ink-black);
+    background: var(--color-rice-tint);
   }
   .map-legend-caret:focus-visible {
     outline: 2px solid var(--color-ink-black);
     outline-offset: 2px;
-    border-radius: var(--radius-sm);
   }
   .map-legend-chev {
     display: inline-block;

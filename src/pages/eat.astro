@@ -19,10 +19,8 @@ import MethodologyFooter from "../components/eat/MethodologyFooter.astro";
 import {
   CITY_CHIPS,
   CUISINE_CHIPS,
-  FLAG_CHIPS,
   cuisineSlug,
   restaurantCity,
-  restaurantFlags,
 } from "../data/eat-chips.js";
 
 /* Fixed sort: cuisine chip order, then rank_in_city ascending. */
@@ -42,11 +40,6 @@ for (const r of sorted) {
   const s = cuisineSlug(r.cuisine_chip);
   if (s) cuisineCounts[s]++;
 }
-const flagCounts: Record<string, number> = {};
-for (const f of FLAG_CHIPS) flagCounts[f.slug] = 0;
-for (const r of sorted)
-  for (const f of restaurantFlags(r)) flagCounts[f]++;
-
 /* Phase D D6 — per-city counts for the LocationChipRow. Same convention as
    cuisineCounts: count every visible row. Chips with a zero count drop out
    (defensive — all 5 buckets currently have rows). */
@@ -92,7 +85,7 @@ const cityChips = CITY_CHIPS
     <div class="rail-sticky">
       <SearchBox placeholder={`Search ${total} restaurants`} />
       <LocationChipRow chips={cityChips} hintLabel="cities" />
-      <ChipRow cuisineCounts={cuisineCounts} flagCounts={flagCounts} />
+      <ChipRow cuisineCounts={cuisineCounts} />
     </div>
 
     <section class="eresults">
