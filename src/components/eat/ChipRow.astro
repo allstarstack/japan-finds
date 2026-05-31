@@ -38,7 +38,7 @@ const { cuisineCounts } = Astro.props;
         ))
       }
     </div>
-    <p class="ec-rail-hint" aria-hidden="true">{CUISINE_CHIPS.length} cuisines · scroll →</p>
+    <p class="ec-rail-hint" data-rail-hint aria-hidden="true">{CUISINE_CHIPS.length} cuisines · scroll →</p>
   </div>
 </div>
 
@@ -136,6 +136,12 @@ const { cuisineCounts } = Astro.props;
   .ec-chip[data-color="gray"] {
     --c: var(--color-ink-black);
   }
+  /* The script hides zero-count chips via the `hidden` attribute; the base
+     `display: inline-flex` outranks the UA [hidden] rule, so restore it
+     (same pattern as .pchip[hidden] on /places). */
+  .ec-chip[hidden] {
+    display: none;
+  }
   .ec-chip.is-active {
     background: var(--c);
     border-color: var(--c);
@@ -186,8 +192,33 @@ const { cuisineCounts } = Astro.props;
     const countEl = document.querySelector("[data-count]");
     const emptyEl = document.querySelector<HTMLElement>("[data-empty]");
     const clearEl = document.querySelector<HTMLElement>("[data-clear]");
+    const railHint = rail.querySelector<HTMLElement>("[data-rail-hint]");
     const searchInput = document.querySelector<HTMLInputElement>("[data-search-input]");
     const TOTAL = cards.length;
+
+    /* One descriptor per card so the grid-visibility pass and every
+       per-chip count read the same precomputed fields. Mirrors the
+       cardData pattern on /places. */
+    const cardData = cards.map((el) => ({
+      el,
+      cuisine: el.dataset.cuisine || "",
+      city: el.dataset.city || "",
+      search: el.dataset.search || "",
+    }));
+
+    /* Single matching predicate — drives both the visible grid and every
+       facet count, so a chip's number always equals the rows you get
+       after clicking it (no label-vs-result drift). Cuisine and location
+       are single-select; search is token-AND substring. */
+    const matches = (
+      c: { cuisine: string; city: string; search: string },
+      state: { location: string | null; cuisine: string | null; tokens: string[] },
+    ) => {
+      if (!state.tokens.every((t) => c.search.includes(t))) return false;
+      if (state.location && c.city !== state.location) return false;
+      if (state.cuisine && c.cuisine !== state.cuisine) return false;
+      return true;
+    };
 
     const validLocations = new Set(
       locationBtns
@@ -219,33 +250,58 @@ const { cuisineCounts } = Astro.props;
       // Mirrors /places + /stay: search ANDs with chip filters in the
       // same predicate.
       const tokens = query.split(/\s+/).filter(Boolean);
+      const activeCuisine = [...activeCuisines][0] ?? null; // single-select
+      const state = {
+        location: activeLocation,
+        cuisine: activeCuisine,
+        tokens,
+      };
+
+      // Grid visibility + result count.
       let n = 0;
-      for (const card of cards) {
-        // Location, cuisine, search all AND together. Cuisine and location
-        // are single-select.
-        const okLocation =
-          !activeLocation || card.dataset.city === activeLocation;
-        const okCuisine =
-          activeCuisines.size === 0 ||
-          activeCuisines.has(card.dataset.cuisine || "");
-        const okSearch = tokens.every((t) =>
-          (card.dataset.search || "").includes(t),
-        );
-        const show = okLocation && okCuisine && okSearch;
-        card.hidden = !show;
+      for (const c of cardData) {
+        const show = matches(c, state);
+        c.el.hidden = !show;
         if (show) n++;
       }
+
+      // Location chips keep their static build-time counts — only their
+      // pressed state updates here. Matches /places, which does the same
+      // for region chips.
       for (const b of locationBtns) {
         const v = b.dataset.locationChip || "";
         const on = v === (activeLocation ?? "");
         b.setAttribute("aria-pressed", String(on));
         b.classList.toggle("is-active", on);
       }
+
+      // Cuisine chips — contextual counts. Each chip's number is "how
+      // many rows if THIS cuisine were the active one" under the current
+      // location + search. Single-select, so we swap the cuisine in
+      // rather than add it. A zero-count chip is hidden so no click can
+      // land on an empty result; the active chip stays visible so it can
+      // still be toggled off even at zero. (Per the /eat zero-handling
+      // rule: we removed flag chips to kill phantom-empty results, so
+      // don't reintroduce one here.)
+      let visibleChips = 0;
       for (const b of cuisineBtns) {
-        const on = activeCuisines.has(b.dataset.cuisineChip || "");
+        const v = b.dataset.cuisineChip || "";
+        const count = cardData.reduce(
+          (a, c) => a + (matches(c, { ...state, cuisine: v }) ? 1 : 0),
+          0,
+        );
+        const nEl = b.querySelector(".ec-n");
+        if (nEl) nEl.textContent = String(count);
+        const on = activeCuisines.has(v);
+        const hide = count === 0 && !on;
+        b.hidden = hide;
+        if (!hide) visibleChips++;
         b.setAttribute("aria-pressed", String(on));
         b.classList.toggle("is-active", on);
       }
+      if (railHint)
+        railHint.textContent = `${visibleChips} cuisines · scroll →`;
+
       if (countEl) countEl.textContent = `Showing ${n} of ${TOTAL}`;
       if (emptyEl) emptyEl.hidden = n !== 0;
       if (grid) grid.hidden = n === 0;
